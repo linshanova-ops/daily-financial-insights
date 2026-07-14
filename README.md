@@ -4,15 +4,15 @@ Cursor Agent Skills for the full daily financial research pipeline — from gath
 
 **Entry point (agent):** ask for a "daily financial briefing" (or invoke `/daily-financial-briefing`). It orchestrates the stages below in order.
 
-**Entry point (website):** [linshanova](https://linshanova-ops.github.io/daily-financial-insights/) — Next.js app in [`web/`](./web/) that renders briefings from `web/content/briefings/`.
+**Entry point (website):** [linshanova](https://linshanova-ops.github.io/daily-financial-insights/) — Next.js app in [`web/`](./web/) that renders briefings from `web/content/briefings/` and live-polls the JSON feed on `main`.
 
-## Public website
+## Public website (permanent)
 
-The repo is public. The site deploys to GitHub Pages via `.github/workflows/deploy-pages.yml`.
+See **[docs/PUBLIC_SITE.md](./docs/PUBLIC_SITE.md)** for the one-time GitHub Pages enable step, custom domain, and automatic daily briefing setup (`CURSOR_API_KEY`).
 
-1. In GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**
-2. Merge to `main` (or run the workflow manually)
-3. Open https://linshanova-ops.github.io/daily-financial-insights/
+- Permanent URL: https://linshanova-ops.github.io/daily-financial-insights/
+- Auto-deploy: push to `main` + scheduled rebuilds
+- Live feed: site polls `web/public/data/*.json` every 60s from GitHub
 
 | Skill | Stage | Purpose |
 |-------|-------|---------|

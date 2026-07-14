@@ -2,6 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import type { Briefing, BriefingFrontmatter } from "./types";
+import { formatBriefingDate } from "./briefings-format";
+
+export { formatBriefingDate };
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "briefings");
 
@@ -49,15 +52,4 @@ export function getBriefingByDate(date: string): Briefing | null {
 
 export function getAllBriefingDates(): string[] {
   return getAllBriefings().map((item) => item.date);
-}
-
-export function formatBriefingDate(date: string): string {
-  const parsed = new Date(`${date}T12:00:00Z`);
-  return new Intl.DateTimeFormat("en-US", {
-    weekday: "long",
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "UTC",
-  }).format(parsed);
 }

@@ -1,12 +1,17 @@
-import Link from "next/link";
-import { formatBriefingDate, getAllBriefings } from "@/lib/briefings";
+import { LiveArchive } from "@/components/LiveArchive";
+import { getAllBriefings } from "@/lib/briefings";
 
 export const metadata = {
   title: "Archive",
 };
 
 export default function BriefingsArchivePage() {
-  const briefings = getAllBriefings();
+  const briefings = getAllBriefings().map((item) => ({
+    date: item.date,
+    title: item.title,
+    marketTone: item.marketTone,
+    coverageWindow: item.coverageWindow,
+  }));
 
   return (
     <section className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8">
@@ -18,34 +23,9 @@ export default function BriefingsArchivePage() {
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-ink-soft">
         Each entry is a dated output from the daily financial research pipeline.
+        This list refreshes automatically when new briefings land on main.
       </p>
-
-      {briefings.length === 0 ? (
-        <p className="mt-12 text-ink-soft">No briefings published yet.</p>
-      ) : (
-        <ul className="mt-12 divide-y divide-line border-y border-line">
-          {briefings.map((briefing) => (
-            <li key={briefing.date}>
-              <Link
-                href={`/briefings/${briefing.date}`}
-                className="group flex flex-col gap-2 py-6 transition hover:bg-paper/60 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8 sm:px-2"
-              >
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-forest">
-                    {formatBriefingDate(briefing.date)}
-                  </p>
-                  <h2 className="display mt-2 text-2xl tracking-tight text-ink group-hover:text-forest">
-                    {briefing.title}
-                  </h2>
-                </div>
-                <p className="max-w-xl text-sm leading-relaxed text-ink-soft sm:text-right">
-                  {briefing.marketTone}
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      <LiveArchive initialItems={briefings} />
     </section>
   );
 }

@@ -1,5 +1,5 @@
-import { BriefingView } from "@/components/BriefingView";
 import { EmptyState } from "@/components/EmptyState";
+import { LiveHome } from "@/components/LiveHome";
 import { getLatestBriefing } from "@/lib/briefings";
 
 export default function HomePage() {
@@ -9,5 +9,5 @@ export default function HomePage() {
     return <EmptyState />;
   }
 
-  return <BriefingView briefing={briefing} />;
+  return <LiveHome initialBriefing={briefing} />;
 }
