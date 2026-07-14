@@ -31,8 +31,11 @@ For source quality tiers and go-to outlets per category, see [references/sources
 ## Verification Rules
 
 - **Date every item.** If a search result has no visible date, open the article or find a second source. Discard if unverifiable.
+- **Prefer primary sources for official data.** Macro prints → BLS / BEA / NBS / central-bank releases; policy rates and speeches → Fed/PBOC/ECB sites; company guidance → company IR. Secondary outlets are for market color and triangulation, not for inventing the print.
 - **Triangulate market-moving claims.** Any item that would drive a signal downstream needs 2+ independent sources, or must be marked `single-source`. Two outlets carrying the same wire story (e.g. both republishing Reuters) count as one source; independence means separately reported. A `single-source` item may still drive a signal if nothing contradicts it — carry the flag through to the report's caveats section rather than dropping the item.
-- **Numbers over adjectives.** Record "CPI 3.2% y/y vs 3.0% expected", not "inflation came in hot". Capture the actual figures.
+- **Numbers over adjectives.** Record "CPI 3.2% y/y vs 3.0% expected", not "inflation came in hot". Capture actual, prior, and consensus when available.
+- **Index closes vs intraday.** Quote the **official close** (or settle) for daily moves. If using an open/intraday print, label it explicitly. Never mix Kosdaq/Nikkei/Kospi or other index names.
+- **China yuan units.** `亿元` = CNY 100 million. `100亿元` = **CNY10bn**, not CNY100bn. Always convert carefully before writing `CNY…bn`.
 - **Separate fact from interpretation.** The log records what happened; opinions from the article go in a separate `commentary` note or are dropped.
 
 ## News Log Format

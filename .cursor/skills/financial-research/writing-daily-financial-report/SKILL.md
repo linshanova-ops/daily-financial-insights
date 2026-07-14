@@ -31,11 +31,23 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 ## Style Rules
 
 - **Numbers, dates, names** — "PBOC cut the 7-day reverse repo rate 10bp to 1.4% on Tuesday", not "China eased policy recently"
+- **Source every hard number** — attach outlet/agency on first use of a figure (e.g. BLS, Yicai, Fed). If you cannot name a source, do not publish the figure.
+- **Beat/miss is vs consensus, not vs prior** — for inflation, cooler-than-expected = miss; hotter = beat. For growth/jobs, above-consensus = beat.
 - **Confidence language is calibrated:** *is/did* for confirmed facts; *appears/suggests* for graded inference; *possible/worth watching* for weak signals. Never present a WEAK signal in *is* language.
 - **Facts before interpretation** within each section — reader should be able to see where reporting ends and judgment begins
 - **Length:** ~1,000–1,500 words total. Executive summary ≤ 120 words.
 - **Quiet days:** say "little regime-relevant news today" in one line rather than inflating minor items. A short honest report beats a padded one.
 - **Language:** match the user's request language (Chinese request → Chinese report, keeping key terms/tickers in original form)
+
+## Pre-publish accuracy gate
+
+Before finalizing website YAML, re-check:
+
+1. Every index % change matches the named index's **close** (not another Asia index).
+2. Every official print matches the primary release (BLS/NBS/PBOC/Fed).
+3. Consensus labels (beat/miss) match actual vs survey.
+4. PBOC OMO: ops size, maturity, **net** = ops − maturity, with correct 亿元→CNY bn conversion.
+5. No conflicting levels for the same asset in one briefing (e.g. two different gold prices without labels).
 
 ## Mandatory Disclaimer
 
