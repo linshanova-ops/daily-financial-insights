@@ -1,0 +1,10 @@
+# Root config so Netlify can connect directly to this public GitHub repo.
+# Connect at https://app.netlify.com/start → pick linshanova-ops/daily-financial-insights
+
+[build]
+  base = "web"
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"

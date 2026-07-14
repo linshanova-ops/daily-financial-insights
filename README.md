@@ -1,8 +1,18 @@
 # Daily Financial Insights
 
-Cursor Agent Skills for the full daily financial research pipeline — from gathering the latest global and China financial news to a finished briefing with practical suggestions.
+Cursor Agent Skills for the full daily financial research pipeline — from gathering the latest global and China financial news to a finished briefing with practical suggestions — plus a website that publishes those briefings.
 
-**Entry point:** ask the agent for a "daily financial briefing" (or invoke `/daily-financial-briefing`). It orchestrates the stages below in order.
+**Entry point (agent):** ask for a "daily financial briefing" (or invoke `/daily-financial-briefing`). It orchestrates the stages below in order.
+
+**Entry point (website):** [linshanova](https://linshanova-ops.github.io/daily-financial-insights/) — Next.js app in [`web/`](./web/) that renders briefings from `web/content/briefings/`.
+
+## Public website
+
+The repo is public. The site deploys to GitHub Pages via `.github/workflows/deploy-pages.yml`.
+
+1. In GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**
+2. Merge to `main` (or run the workflow manually)
+3. Open https://linshanova-ops.github.io/daily-financial-insights/
 
 | Skill | Stage | Purpose |
 |-------|-------|---------|
@@ -16,7 +26,17 @@ Cursor Agent Skills for the full daily financial research pipeline — from gath
 
 Each stage skill also works standalone (e.g. "what does this news signal?" triggers `interpreting-market-signals` directly).
 
-## Setup
+## Website
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+Seed briefing: `web/content/briefings/2026-07-13.md`. Design and implementation notes live under `docs/superpowers/`.
+
+## Skills setup
 
 Clone this repo into your project (or copy `.cursor/skills/financial-research/` into an existing project's `.cursor/skills/` directory). Cursor discovers skills automatically from `.cursor/skills/`.
 
