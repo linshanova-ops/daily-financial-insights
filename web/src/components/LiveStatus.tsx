@@ -7,7 +7,7 @@ interface LiveStatusProps {
 
 export function LiveStatus({ updatedAt, live }: LiveStatusProps) {
   return (
-    <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-5 pb-2 text-xs sm:px-8">
+    <div className="flex items-center gap-3 pb-2 text-xs">
       <span
         className={`inline-flex h-2 w-2 rounded-full ${
           live ? "bg-forest-bright animate-pulse" : "bg-ink/30"
@@ -15,7 +15,7 @@ export function LiveStatus({ updatedAt, live }: LiveStatusProps) {
         aria-hidden
       />
       <span className="font-semibold uppercase tracking-[0.18em] text-ink/50">
-        {live ? "Live feed" : "Cached"}
+        {live ? "Live feed · 15s" : "Cached"}
       </span>
       {updatedAt ? (
         <span className="text-ink/45">

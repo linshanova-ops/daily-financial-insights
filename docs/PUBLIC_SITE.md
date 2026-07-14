@@ -20,9 +20,9 @@ Optional custom domain: Settings → Pages → Custom domain → `linshanova.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Content feed** | `web/public/data/*.json` is the live feed. The site polls GitHub raw every 60s, so new briefings appear without waiting for a full CDN rebuild. |
+| **Content feed** | `web/public/data/*.json` is the live feed. The site polls GitHub raw every **15 seconds** (plus a Refresh button), so new briefings appear almost immediately after they hit `main`. |
 | **Deploy workflow** | On every push to `main` (and twice daily on a schedule), GitHub Actions rebuilds and deploys Pages. |
-| **Daily briefing workflow** | Weekday cron runs a Cursor cloud agent (needs `CURSOR_API_KEY` secret) to gather news and write `web/content/briefings/YYYY-MM-DD.md`, sync JSON, and push to `main`. |
+| **Briefing workflow** | Weekdays every **4 hours** (UTC), a Cursor cloud agent (needs `CURSOR_API_KEY` secret) gathers news, writes `web/content/briefings/YYYY-MM-DD.md`, syncs JSON, and pushes to `main`. |
 
 ### Enable automatic daily briefings
 
