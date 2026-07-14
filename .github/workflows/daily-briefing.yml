@@ -37,6 +37,7 @@ jobs:
 
       - name: Generate and publish today's briefing
         if: steps.key.outputs.present == 'true'
+        timeout-minutes: 45
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           REPO_URL: https://github.com/linshanova-ops/daily-financial-insights
