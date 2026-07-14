@@ -2,17 +2,17 @@
   "date": "2026-07-14",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 13–14, 2026",
-  "marketTone": "CPI relief meets oil overhang — June inflation beat everywhere (core 2.6% y/y), yields fell and futures turned up, but Brent >$86 and Warsh testimony keep hike anxiety alive.",
+  "marketTone": "CPI relief meets oil overhang — June inflation missed everywhere (core 2.6% y/y vs ~2.9% consensus), yields fell and futures turned up, but Brent >$86 and Warsh testimony keep hike anxiety alive.",
   "summary": [
-    "June CPI downside surprise (8:30am ET): headline -0.4% m/m, 3.5% y/y (vs 3.8% consensus, 4.2% May); core flat m/m, 2.6% y/y (vs 2.9%) — largest monthly headline drop since April 2020; energy -5.7%, shelter +0.1% (BLS, CNBC).",
+    "June CPI miss / downside surprise (8:30am ET): headline -0.4% m/m, 3.5% y/y (vs ~3.8% consensus, 4.2% May); core flat m/m, 2.6% y/y (vs ~2.9%) — largest monthly headline drop since April 2020; energy -5.7%, shelter +0.1% (BLS; consensus FactSet/CNBC).",
     "Oil/geopolitics still the risk backdrop: WTI +9.4% to $78.14 and Brent +9.6% to $83.30 Monday; Brent pushed above $86 Tuesday after Trump reinstated an Iran blockade and floated a 20% Hormuz 'guardian' fee; US equities fell Monday (S&P -0.8%, Nasdaq -1.6%).",
     "Asia split Tuesday: China A-shares V-recovery (Shanghai +1.36%, ChiNext +3.43%, >4,200 advancers); Nikkei -1.92%; Kospi +0.73% on foreign/institutional semi buying after Monday's sell-sidecar stress."
   ],
   "signal": "Core disinflation arrived — but markets must decide whether a backward-looking June print outweighs forward-looking Hormuz oil risk and a hawkish Fed bench (Waller Monday, Warsh today).",
-  "watch": "Warsh House testimony (10:00am ET) — does he treat the CPI beat as progress or dismiss it as pre-oil-spike noise? Treasury yield follow-through is the tell.",
-  "globalRegime": "The Fed holds at 3.50%–3.75%, but the dominant question has shifted from 'how soon do hikes return?' to 'does June's core cool-down delay them?' June CPI delivered a broad beat — headline 3.5% y/y, core 2.6% y/y — yet Monday's oil spike and Governor Waller's Monday warning that several months of improvement are needed before holding steady mean the tightening narrative is dented, not dead. The July Monetary Policy Report still says inflation 'stepped up' this spring.",
+  "watch": "Warsh House testimony (10:00am ET) — does he treat the CPI miss as progress or dismiss it as pre-oil-spike noise? Treasury yield follow-through is the tell.",
+  "globalRegime": "The Fed holds at 3.50%–3.75%, but the dominant question has shifted from 'how soon do hikes return?' to 'does June's core cool-down delay them?' June CPI delivered a broad miss vs consensus — headline 3.5% y/y (vs ~3.8%), core 2.6% y/y (vs ~2.9%) — yet Monday's oil spike and Governor Waller's Monday warning that several months of improvement are needed before holding steady mean the tightening narrative is dented, not dead. The July Monetary Policy Report still says inflation 'stepped up' this spring.",
   "globalChanged": [
-    "June CPI beat across the board: -0.4% m/m headline (vs -0.2% expected), 3.5% y/y (vs 3.8%); core flat m/m (vs +0.2%), 2.6% y/y (vs 2.9%). Services ex-energy flat; shelter +0.1%; energy -5.7% m/m but still +15.7% y/y (BLS, CNBC).",
+    "June CPI miss across the board: -0.4% m/m headline (vs -0.2% expected), 3.5% y/y (vs ~3.8%); core flat m/m (vs +0.2%), 2.6% y/y (vs ~2.9%). Services ex-energy flat; shelter +0.1%; energy -5.7% m/m but still +15.7% y/y (BLS; consensus FactSet/CNBC).",
     "Post-CPI tape: Treasury yields fell sharply and equity futures turned mostly positive — initial relief, though traders note June data predates this week's oil spike (CNBC).",
     "Geopolitical premium intact: Trump reinstated Iran shipping blockade + 20% Hormuz fee; Brent >$86 Tuesday; Kpler showed 14 Hormuz crossings Sunday vs 37 a week earlier (Reuters, CNBC).",
     "Fed communication pipeline: Gov. Waller (Jul 13) said a hot core CPI would force near-term tightening consideration; Chair Warsh's prepared House remarks emphasize 'getting monetary policy right' ahead of 10am ET testimony (Federal Reserve, CNBC, PBS)."
@@ -38,9 +38,9 @@
   "signals": [
     {
       "grade": "STRONG",
-      "name": "Core disinflation pivot — June CPI beat",
-      "evidence": "Core flat m/m, 2.6% y/y (vs 2.9% expected); headline -0.4% m/m, 3.5% y/y (vs 3.8%); shelter +0.1%; post-CPI yields fell sharply (BLS, CNBC).",
-      "mechanism": "Broad downside surprise eases near-term re-hike urgency and supports duration/risk assets — unless Fed officials dismiss it as backward-looking.",
+      "name": "Core disinflation pivot — June CPI miss",
+      "evidence": "Core flat m/m, 2.6% y/y (vs ~2.9% expected); headline -0.4% m/m, 3.5% y/y (vs ~3.8%); shelter +0.1%; post-CPI yields fell sharply (BLS; consensus FactSet/CNBC).",
+      "mechanism": "Broad downside surprise vs consensus eases near-term re-hike urgency and supports duration/risk assets — unless Fed officials dismiss it as backward-looking.",
       "disprovedIf": "Warsh explicitly rejects CPI progress and 2y yields reclaim 4.30%+ within 48 hours."
     },
     {
@@ -53,7 +53,7 @@
     {
       "grade": "MODERATE",
       "name": "Fed tightening narrative dented, not dead",
-      "evidence": "CPI core 2.6% y/y beat; but Waller Jul 13 said several months of improvement needed; Warsh prepared remarks stress price stability; oil >$86.",
+      "evidence": "CPI core 2.6% y/y miss vs ~2.9% consensus; but Waller Jul 13 said several months of improvement needed; Warsh prepared remarks stress price stability; oil >$86.",
       "mechanism": "One soft core print lowers July-hike urgency but hawkish Fed bench + energy shock keeps September hike pricing alive.",
       "disprovedIf": "CME FedWatch September hike probability falls below 30% and Warsh downplays hike risk in testimony."
     },
@@ -83,7 +83,7 @@
     {
       "priority": "HIGH",
       "headline": "Warsh House testimony — CPI vs oil framing",
-      "why": "STRONG core-disinflation signal meets STRONG Hormuz premium; Warsh sets whether CPI beat changes Fed reaction function.",
+      "why": "STRONG core-disinflation signal meets STRONG Hormuz premium; Warsh sets whether the CPI miss changes Fed reaction function.",
       "watch": "House Financial Services hearing 10:00am ET; language on June CPI, energy shocks, 'policy firming,' and forward guidance.",
       "trigger": "Warsh endorses near-term tightening or dismisses CPI as insufficient progress.",
       "invalidator": "Warsh acknowledges disinflation progress and explicitly downplays September hike risk.",

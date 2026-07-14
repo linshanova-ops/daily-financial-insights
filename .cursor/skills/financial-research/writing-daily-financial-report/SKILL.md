@@ -45,6 +45,7 @@ End every report with:
 
 ## Common Mistakes
 
+- **Calling cooler inflation a "beat"** — below-consensus CPI/PCE is a **miss** / downside surprise, not a beat. Keep consensus vs actual side-by-side so the label is checkable.
 - **Executive summary written first and never updated** — write it last, after the body is final.
 - **Copy-pasting stage outputs verbatim** — the analysis stages produce working notes; the report needs them edited for a reader (dedupe items that appear in both global and China sections, cut internal jargon like "news-log item #4").
 - **Losing traceability while editing** — tightening prose must not detach claims from their sources; keep at least outlet names on key facts.
