@@ -1,0 +1,42 @@
+name: Generate daily briefing
+
+on:
+  schedule:
+    - cron: "0 13 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check for CURSOR_API_KEY
+        id: key
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          if [ -z "$CURSOR_API_KEY" ]; then
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Add repository secret CURSOR_API_KEY to enable automatic daily briefings."
+            echo "Manual publish: add web/content/briefings/YYYY-MM-DD.md, run npm run sync-data in web/, push to main."
+          else
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install Cursor SDK
+        if: steps.key.outputs.present == 'true'
+        run: npm install @cursor/sdk@latest
+
+      - name: Generate and publish today's briefing
+        if: steps.key.outputs.present == 'true'
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          REPO_URL: https://github.com/linshanova-ops/daily-financial-insights
+        run: node scripts/generate-daily-briefing.mjs

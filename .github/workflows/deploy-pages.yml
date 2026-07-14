@@ -3,6 +3,9 @@ name: Deploy linshanova to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Redeploy twice daily so the public site stays fresh.
+    - cron: "15 0,12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -33,6 +36,9 @@ jobs:
 
       - name: Install
         run: npm ci
+
+      - name: Sync briefing JSON feed
+        run: npm run sync-data
 
       - name: Build static site
         run: npm run build

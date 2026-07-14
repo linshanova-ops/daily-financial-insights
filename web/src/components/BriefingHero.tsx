@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { formatBriefingDate } from "@/lib/briefings";
+import { formatBriefingDate } from "@/lib/briefings-format";
 
 interface BriefingHeroProps {
   date: string;
