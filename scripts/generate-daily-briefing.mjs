@@ -1,7 +1,6 @@
 /**
  * Kicks a Cursor cloud agent that runs the daily-financial-briefing pipeline,
- * writes web/content/briefings/YYYY-MM-DD.md, syncs JSON via npm run sync-data,
- * and pushes straight to main (which triggers the Pages deploy workflow).
+ * writes web/content/briefings/YYYY-MM-DD.md, syncs JSON, and pushes to main.
  *
  * Requires: CURSOR_API_KEY
  */
@@ -40,7 +39,7 @@ const prompt = `You are publishing linshanova's daily financial briefing for ${t
 Do not open a PR — push to main so GitHub Pages redeploys automatically.`;
 
 async function main() {
-  await using agent = Agent.create({
+  const agent = Agent.create({
     apiKey,
     model: { id: "composer-2" },
     cloud: {
@@ -75,6 +74,8 @@ async function main() {
       process.exit(err.isRetryable ? 75 : 1);
     }
     throw err;
+  } finally {
+    await agent[Symbol.asyncDispose]();
   }
 }
 
