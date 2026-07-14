@@ -23,18 +23,20 @@
     "Semiconductor stress persists into ASML (Jul 15) and TSMC (Jul 16) earnings despite Kospi's +0.7% Tuesday recovery on institutional buying."
   ],
   "globalTensions": "CPI and oil are telling opposite stories — June headline fell on gasoline that has since surged ~10%. Markets rallied on disinflation data while Brent sits at one-month highs; whether equities hold gains through Warsh will reveal which narrative dominates.",
-  "chinaStance": "Moderately loose via quantity, cautious on price — PBOC injected net CNY226.5bn Tuesday (CNY236.5bn 7-day reverse repos at 1.40% vs CNY10bn maturity) while holding rates; no LPR cut signal amid imported energy inflation risk.",
+  "chinaStance": "Moderately loose via quantity, cautious on price — PBOC net-injected CNY226.5bn via 7-day OMO Tuesday and announced a CNY1.4tn 6-month buyout reverse repo for Jul 15 to keep banking-system liquidity ample; rates held, no LPR cut signal while oil lifts imported-inflation risk (Yicai/PBOC; Wallstreetcn overnight framing).",
   "chinaChanged": [
-    "A-shares V-recovery: Shanghai Composite +1.36% to 3,967.13, Shenzhen Component +2.77%, ChiNext +3.43%; >4,200 stocks rose; turnover ~CNY2.7tn (Sina Finance).",
-    "Sector rotation: compute hardware/PCB and oil/gas led; semis materials and AI servers lagged — domestic positioning snapback diverging from US tech weakness (Sina).",
-    "PBOC Tuesday OMO: CNY236.5bn 7-day reverse repos at 1.40%, net +CNY226.5bn after CNY10bn (100亿元) maturity — continuing tax-period liquidity support (Yicai)."
+    "华尔街见闻 overnight tape (into Tue Asia): Nasdaq −1.55%, Philadelphia Semiconductor −4.78%; SK Hynix Seoul −15.37% (largest on record in their tally); spot gold ~$3,999 (−2.93%); Brent intradaily ~+10%; BTC >3% lower and briefly below $62k — risk assets pricing the oil→Fed chain, not a classic safe-haven bid (华尔街见闻早餐 7/14).",
+    "A-shares V-recovery after that overnight shock: Shanghai +1.36% to 3,967.13, Shenzhen +2.77%, ChiNext +3.43%; >4,200 advancers; turnover ~CNY2.7tn — hardware/PCB and oil/gas led while semis materials lagged (Sina; context from 华尔街见闻 Mon close Shanghai −2.06%).",
+    "华尔街见闻 China policy color: Premier Li Qiang stressed smooth old/new growth-engine transition and AI scale commercialization; 《扩大消费“十五五”规划》 targets social retail sales ~CNY60tn by 2030 with an “AI+consumption” push (华尔街见闻早餐).",
+    "PBOC liquidity stack: Tue CNY236.5bn 7-day reverse repos at 1.40% (net +CNY226.5bn after CNY10bn maturity); separately announced CNY1.4tn 6-month buyout reverse repo for Jul 15 (expire 2027-01-15) — mid-tenor support into tax week (Yicai).",
+    "BlockBeats crypto–macro: BTC sold with tech as Hormuz/oil risk repriced Fed path — treated as high-beta risk asset, not digital gold, in this shock; same oil→inflation→liquidity chain BlockBeats has used when crude spikes (BlockBeats / 律动)."
   ],
   "chinaImplies": [
-    "Onshore rebound is tactical/sectoral, not a policy pivot — no LPR cut signal while global oil rises.",
-    "If US yields fall sustainably post-CPI, A-share hardware could extend gains; if Warsh re-hawkishness lifts yields, the bounce may fade.",
-    "Tax-period funding stress (Jul 15–17) likely means further PBOC injections this week."
+    "CNY1.4tn buyout RR cushions Jul 15–17 tax-period funding stress, but does not neutralize oil-driven PPI/import-bill risk — quantity easing ≠ rate pivot.",
+    "If CPI relief sticks and Warsh stays non-committal on near-term hikes, A-share hardware bounce can extend; a re-hawkish Warsh + Brent >$85 keeps ChiNext fragile.",
+    "华尔街见闻 carried Xingzheng strategy arguing Monday’s year-line break can be a bull-market support absent a systemic shock — treat as a watchable thesis, not a fact; invalidated if Shanghai re-breaks Monday’s low on rising volume."
   ],
-  "chinaDivergences": "A-shares bounced +1.4% to +3.4% while US Nasdaq fell ~1.6% Monday — onshore risk appetite diverged from Monday's US tech weakness. Nikkei closed +0.74% Tuesday after an early oil-led dip; Kospi +0.73% with semi buying, while China semis materials lagged — uneven chip sentiment.",
+  "chinaDivergences": "Onshore equities staged a V-recovery Tuesday while Wallstreetcn’s overnight book showed US tech/semis, gold, and BTC all weak with oil surging — China price action and global risk assets are not synchronized. Nikkei +0.74% / Kospi +0.73% closed firmer, but China semis materials still lagged hardware — chip sentiment remains uneven across venues.",
   "signals": [
     {
       "grade": "STRONG",
@@ -60,14 +62,21 @@
     {
       "grade": "MODERATE",
       "name": "China onshore rebound is tactical",
-      "evidence": "Shanghai +1.36%, ChiNext +3.43% with hardware/oil leadership; PBOC net +CNY226.5bn without rate cut (Sina, Yicai).",
-      "mechanism": "Domestic positioning snapback and sector themes, not a monetary policy pivot.",
+      "evidence": "Shanghai +1.36%, ChiNext +3.43% with hardware/oil leadership after Mon −2.06% (华尔街见闻); PBOC net +CNY226.5bn OMO plus CNY1.4tn buyout RR announced for Jul 15 (Yicai).",
+      "mechanism": "Liquidity quantity + positioning snapback, not an LPR/rate pivot — oil import inflation still constrains price tools.",
       "disprovedIf": "Shanghai closes below Monday's intraday low on rising volume with broad northbound outflows."
     },
     {
       "grade": "MODERATE",
+      "name": "Oil→Fed chain hits crypto as risk asset",
+      "evidence": "华尔街见闻: BTC >3% down, briefly <$62k alongside SOX −4.78% and gold ~$3,999 as Brent spiked; BlockBeats frames BTC as high-beta liquidity asset when oil lifts hike odds.",
+      "mechanism": "Energy shock → inflation/Fed-path anxiety → de-risking of duration and crypto; BTC does not behave as a safe haven in the first 24–48h of Hormuz escalation.",
+      "disprovedIf": "BTC reclaims pre-escalation levels while Brent stays above $85 for two sessions (i.e., crypto decouples from the oil→Fed chain)."
+    },
+    {
+      "grade": "MODERATE",
       "name": "Semiconductor cycle still on trial",
-      "evidence": "Nasdaq -1.6% Monday; Kospi sell-sidecar Monday, +0.73% Tuesday on semi buying; ASML/TSMC earnings Jul 15–16.",
+      "evidence": "Nasdaq −1.55% / SOX −4.78% Monday (华尔街见闻); Kospi sell-sidecar Monday, +0.73% Tuesday on semi buying; ASML/TSMC earnings Jul 15–16.",
       "mechanism": "Geopolitical risk-off plus peak-cycle fears hit high-duration AI/semi multiples ahead of capex guidance tests.",
       "disprovedIf": "ASML bookings and TSMC capex guidance both beat and Nasdaq semis reclaim Monday's losses within two sessions."
     },
@@ -111,27 +120,27 @@
       "status": "escalated"
     },
     {
-      "priority": "MEDIUM",
-      "headline": "ASML then TSMC earnings (Jul 15–16)",
-      "why": "MODERATE semi-cycle signal.",
-      "watch": "ASML sales/bookings vs €8.4–9.0bn Q2 guide; TSMC revenue/capex vs $39–40.2bn Q2 guide.",
-      "trigger": "Either company cuts H2/capex tone or misses bookings/guidance.",
-      "invalidator": "Both guide higher on AI demand and semis rally broadly.",
+      "priority": "HIGH",
+      "headline": "PBOC CNY1.4tn buyout reverse repo (Jul 15)",
+      "why": "MODERATE China liquidity signal; tests whether quantity tools keep DR007 calm through tax week.",
+      "watch": "Jul 15 operation results; DR007 vs 1.40% policy rate; any follow-on OMO size Jul 15–17.",
+      "trigger": "DR007 rises above 1.50% for two sessions despite the CNY1.4tn injection.",
+      "invalidator": "DR007 stays ≤1.40% through Jul 17 with orderly funding and no forced A-share de-leveraging.",
       "horizon": "days",
-      "status": "continuing"
+      "status": "new"
     },
     {
-      "priority": "LOW",
-      "headline": "Contrarian check — disinflation trade overdone",
-      "why": "If CPI and yields point dovish, crowded trade is long duration / short dollar.",
-      "watch": "Brent reclaiming $88 while 10y yields rise above 4.65% simultaneously.",
-      "trigger": "Both conditions met for 2 sessions = oil overwhelming CPI relief.",
-      "invalidator": "Core PPI (Jul 15) confirms disinflation trend with oil below $82.",
+      "priority": "MEDIUM",
+      "headline": "BTC vs oil — BlockBeats risk-asset test",
+      "why": "MODERATE oil→Fed→crypto signal from BlockBeats / 华尔街见闻 tape.",
+      "watch": "BTC level vs $62k; Brent daily close; whether BTC rises only when oil/Fed-path pressure eases.",
+      "trigger": "BTC makes a new post-escalation low while Brent holds >$85.",
+      "invalidator": "BTC reclaims pre-escalation levels with Brent still >$85 (decoupling).",
       "horizon": "days",
       "status": "new"
     }
   ],
-  "sources": "Bureau of Labor Statistics (June CPI), Federal Reserve (Waller Jul 13 speech; July MPR), FactSet CPI consensus preview, CNBC, Reuters, PBS, Sina Finance, Yicai, Kabutan/Nikkei close reports, Businesskorea/Kospi reports.",
-  "singleSource": "Lipow ~$16/bbl Hormuz fee estimate (CNBC); Kpler Hormuz crossing counts via CNBC (14 vs 37).",
+  "sources": "Bureau of Labor Statistics (June CPI), Federal Reserve (Waller Jul 13 speech; July MPR), FactSet CPI consensus preview, CNBC, Reuters, PBS, 华尔街见闻 (Wallstreetcn breakfast 2026-07-14), BlockBeats/律动, Sina Finance, Yicai/PBOC, Kabutan/Nikkei close reports, Businesskorea/Kospi reports.",
+  "singleSource": "Lipow ~$16/bbl Hormuz fee estimate (CNBC); Kpler Hormuz crossing counts via CNBC (14 vs 37); Xingzheng year-line support thesis via 华尔街见闻.",
   "slug": "2026-07-14"
 }

@@ -1,10 +1,25 @@
+const chinaSources = [
+  {
+    name: "华尔街见闻",
+    english: "Wallstreetcn",
+    href: "https://wallstreetcn.com/",
+    role: "Overnight global closes, China policy calendars, A-share strategy, and cross-asset tape.",
+  },
+  {
+    name: "BlockBeats",
+    english: "律动",
+    href: "https://www.theblockbeats.info/",
+    role: "Crypto–macro transmission — how oil, Fed path, and Asia risk-off hit BTC and other risk assets.",
+  },
+];
+
 const stages = [
   {
     id: "01",
     name: "Gather",
     skill: "gathering-financial-news",
     summary:
-      "Sweep eight news categories into a dated, sourced news log. Undated items are discarded.",
+      "Sweep eight news categories into a dated, sourced news log. Undated items are discarded. China desk always includes 华尔街见闻 and BlockBeats.",
   },
   {
     id: "02",
@@ -18,7 +33,7 @@ const stages = [
     name: "China analysis",
     skill: "analyzing-china-macro",
     summary:
-      "Decode PBOC and fiscal stance first, then read growth engines, markets, and external linkages.",
+      "Decode PBOC and fiscal stance first, then read growth engines, markets, and external linkages — with required color from 华尔街见闻 and BlockBeats.",
   },
   {
     id: "04",
@@ -89,6 +104,39 @@ export default function PipelinePage() {
           </li>
         ))}
       </ol>
+
+      <div className="mt-16 border-t border-line pt-14">
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-copper">
+          China sources
+        </p>
+        <h2 className="display mt-3 max-w-3xl text-3xl tracking-tight text-ink sm:text-4xl">
+          Required desks for every China section
+        </h2>
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
+          Official prints still come from PBOC, NBS, and CSRC. These two outlets
+          are mandatory for China color and crypto–macro linkage on linshanova.
+        </p>
+        <ul className="mt-10 grid gap-8 sm:grid-cols-2">
+          {chinaSources.map((source) => (
+            <li key={source.name} className="border-t border-line pt-6">
+              <a
+                href={source.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="display text-2xl tracking-tight text-ink transition-colors hover:text-forest"
+              >
+                {source.name}
+              </a>
+              <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-ink/40">
+                {source.english}
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-ink-soft">
+                {source.role}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
