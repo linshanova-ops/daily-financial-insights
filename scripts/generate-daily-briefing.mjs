@@ -25,7 +25,8 @@ const prompt = `You are publishing linshanova's daily financial briefing for ${t
    (72h if weekend/Monday). Use dated sources only.
 
 2. Write web/content/briefings/${today}.md using the exact YAML frontmatter schema in
-   web/content/briefings/2026-07-13.md (all keys required).
+   web/content/briefings/2026-07-13.md (all keys required). If today's file already
+   exists, update it with the latest developments instead of skipping.
 
 3. From web/, run: npm ci && npm run sync-data
    so web/public/data/index.json, latest.json, and briefings/${today}.json update.
@@ -38,21 +39,40 @@ const prompt = `You are publishing linshanova's daily financial briefing for ${t
 
 Do not open a PR — push to main so GitHub Pages redeploys automatically.`;
 
+async function disposeAgent(agent) {
+  if (!agent) return;
+  try {
+    if (typeof agent[Symbol.asyncDispose] === "function") {
+      await agent[Symbol.asyncDispose]();
+      return;
+    }
+    if (typeof agent.close === "function") {
+      agent.close();
+    }
+  } catch (err) {
+    console.warn(`[briefing] dispose warning: ${err?.message ?? err}`);
+  }
+}
+
 async function main() {
-  const agent = Agent.create({
+  // Current @cursor/sdk: Agent.create(...) returns a Promise<SDKAgent>.
+  const agent = await Agent.create({
     apiKey,
     model: { id: "composer-2" },
     cloud: {
       repos: [{ url: repoUrl, startingRef: "main" }],
       autoCreatePR: false,
       skipReviewerRequest: true,
+      workOnCurrentBranch: true,
     },
   });
 
   try {
-    const run = await agent.send(prompt);
-    console.log(`[briefing] agent=${agent.agentId} run=${run.id}`);
+    console.log(`[briefing] agent=${agent.agentId}`);
     console.log(`[briefing] track: https://cursor.com/agents/${agent.agentId}`);
+
+    const run = await agent.send(prompt);
+    console.log(`[briefing] run=${run.id}`);
 
     for await (const event of run.stream()) {
       if (event.type === "status") console.log(`[briefing] ${event.status}`);
@@ -64,18 +84,20 @@ async function main() {
     const result = await run.wait();
     if (result.status !== "finished") {
       console.error(`[briefing] ended as ${result.status}`);
+      if (result.result) console.error(`[briefing] result: ${result.result}`);
       process.exit(2);
     }
 
     console.log(`[briefing] finished in ${result.durationMs}ms`);
   } catch (err) {
+    console.error(`[briefing] error name=${err?.name}`);
+    console.error(`[briefing] error message=${err?.message}`);
     if (err instanceof CursorAgentError) {
-      console.error(`[briefing] failed: ${err.message}`);
       process.exit(err.isRetryable ? 75 : 1);
     }
-    throw err;
+    process.exit(1);
   } finally {
-    await agent[Symbol.asyncDispose]();
+    await disposeAgent(agent);
   }
 }
 
