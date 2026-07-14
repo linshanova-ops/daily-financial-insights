@@ -57,9 +57,9 @@ export default function PipelinePage() {
         From raw news to a five-minute briefing
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft">
-        Daily Financial Insights is powered by Cursor Agent skills. Each stage
-        only consumes what the previous stage verified — analysis cites the news
-        log, suggestions cite graded signals, and the published report stays
+        linshanova is powered by Cursor Agent skills. Each stage only consumes
+        what the previous stage verified — analysis cites the news log,
+        suggestions cite graded signals, and the published report stays
         traceable.
       </p>
 

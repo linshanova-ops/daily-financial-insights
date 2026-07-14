@@ -1,6 +1,9 @@
-# Daily Financial Insights — Website
+# linshanova — website
 
-Publication layer for the Daily Financial Insights research pipeline.
+Public site for the Daily Financial Insights research pipeline.
+
+**Live URL (after GitHub Pages is enabled):**  
+https://linshanova-ops.github.io/daily-financial-insights/
 
 ## Develop
 
@@ -10,22 +13,14 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
-
 ## Publish a briefing
 
-Add a Markdown file at `content/briefings/YYYY-MM-DD.md` with the YAML frontmatter schema used by `2026-07-13.md`, then rebuild:
+Add `content/briefings/YYYY-MM-DD.md` (see `2026-07-13.md` for the schema), merge to `main`, and the Pages workflow rebuilds the site.
+
+## Static export
 
 ```bash
-npm run build
-npm start
+GITHUB_PAGES=true npm run build
 ```
 
-## Routes
-
-| Path | Purpose |
-|------|---------|
-| `/` | Latest briefing |
-| `/briefings` | Archive |
-| `/briefings/[date]` | Single day |
-| `/pipeline` | Six-stage skill pipeline explainer |
+Output is written to `web/out/`.

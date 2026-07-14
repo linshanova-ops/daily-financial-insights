@@ -10,7 +10,7 @@ export function SiteHeader() {
   return (
     <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
       <Link href="/" className="display text-lg tracking-tight text-forest sm:text-xl">
-        Daily Financial Insights
+        linshanova
       </Link>
       <nav className="flex items-center gap-5 text-sm font-medium text-ink-soft">
         {links.map((link) => (
