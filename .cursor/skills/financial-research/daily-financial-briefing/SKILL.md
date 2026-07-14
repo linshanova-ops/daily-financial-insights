@@ -30,7 +30,7 @@ Run stages in order. Read each stage's skill before executing it.
 - **After stages 2–3:** Every claim in the assessment cites a news-log item. No claims from memory of "how things usually are."
 - **After stage 4:** Every signal is graded (strong/moderate/weak) with reasoning. Ungraded observations stay out of the suggestions stage.
 - **After stage 5:** Max 5 suggestions, each with a trigger and an invalidator.
-- **After stage 6:** Report follows the template; disclaimer present.
+- **After stage 6:** Report follows the template; disclaimer present. Re-run the writing skill's **pre-publish accuracy gate** (primary-source prints, close vs open, beat/miss vs consensus, PBOC 亿元 conversion). Do not publish website YAML until that gate passes.
 
 ## Defaults (override only if user specifies)
 

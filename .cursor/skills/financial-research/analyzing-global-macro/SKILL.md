@@ -27,6 +27,8 @@ Where are the major central banks (Fed, ECB, BOJ) in their cycle? Did today's ne
 ### 2. Growth & inflation
 What did today's data say relative to expectations? Beats/misses matter more than levels. Classify each release: confirms trend / breaks trend / ambiguous. One data point never proves a trend has changed — say "if confirmed by [next release]".
 
+**Inflation terminology:** vs consensus, higher-than-expected inflation is a **beat** (hawkish surprise); cooler-/lower-than-expected inflation is a **miss** / downside surprise (dovish relative to consensus). Never call a below-consensus CPI/PCE print a "beat."
+
 ### 3. Risk sentiment & flows
 Risk-on or risk-off today, and why? Cross-check equities against credit spreads, VIX, gold, JPY, and Treasuries. **Divergences are more informative than confirmations** — e.g., equities up while credit spreads widen is a warning worth flagging; everything moving together is just a mood.
 

@@ -20,9 +20,13 @@ English-language:
 - **Xinhua / State Council (english.gov.cn)** — official policy text; treat as primary source of what was announced, apply judgment on framing
 
 Chinese-language (use when accessible; often faster and more detailed):
-- **财新 (Caixin)**, **21世纪经济报道**, **证券时报**, **中国人民银行官网 (pbc.gov.cn)**, **中国证监会 (csrc.gov.cn)**, **国家统计局 (stats.gov.cn)**
+- **华尔街见闻 (Wallstreetcn)** — required China/global desk sweep for linshanova; strong on overnight closes, policy calendars, A-share strategy notes, and cross-asset tape (wallstreetcn.com)
+- **BlockBeats / 律动 (theblockbeats.info)** — required for China-facing crypto–macro and risk-asset transmission (BTC/ETH vs oil, Fed path, Asia risk-off); treat as tier 3 — verify hard macro prints against tier 1–2
+- **财新 (Caixin)**, **21世纪经济报道**, **证券时报**, **第一财经 (Yicai)**, **中国人民银行官网 (pbc.gov.cn)**, **中国证监会 (csrc.gov.cn)**, **国家统计局 (stats.gov.cn)**
 
 Reading official Chinese sources: announcements are often deliberately understated. Watch for signal phrases — 适度宽松 (moderately loose), 稳中求进 (progress amid stability), 逆周期调节 (counter-cyclical adjustment) — whose appearance/disappearance matters more than the surrounding prose.
+
+**linshanova China minimum:** every daily China section should cite at least one item each from **华尔街见闻** and **BlockBeats** (or explicitly note if either had no coverage-window items).
 
 ## Market Data Quick Checks
 

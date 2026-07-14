@@ -20,22 +20,32 @@ const today = new Date().toISOString().slice(0, 10);
 
 const prompt = `You are publishing linshanova's daily financial briefing for ${today}.
 
+ACCURACY IS NON-NEGOTIABLE. Wrong figures or wrong beat/miss labels are worse than a shorter briefing.
+
 1. Run the full daily-financial-briefing skill pipeline under .cursor/skills/financial-research/
    (gather → global → China → signals → suggestions → report). Coverage: last 24h
-   (72h if weekend/Monday). Use dated sources only.
+   (72h if weekend/Monday). Use dated sources only. Prefer primary sources for official
+   data (BLS, Fed, PBOC, NBS, company IR). For China, always sweep 华尔街见闻
+   (wallstreetcn.com) and BlockBeats/律动 (theblockbeats.info) and cite at least one
+   item from each in the China section when they have coverage-window news.
 
-2. Write web/content/briefings/${today}.md using the exact YAML frontmatter schema in
-   web/content/briefings/2026-07-13.md (all keys required). If today's file already
-   exists, update it with the latest developments instead of skipping.
+2. Before writing, verify: (a) each index move is that index's official close;
+   (b) inflation/jobs/GDP beat|miss is vs consensus not vs prior — cooler CPI = miss;
+   (c) PBOC OMO net injection = ops − maturity with 亿元 correctly converted
+   (100亿元 = CNY10bn); (d) gold/oil levels are settles or explicitly labeled spot.
 
-3. From web/, run: npm ci && npm run sync-data
+3. Write web/content/briefings/${today}.md using the exact YAML frontmatter schema in
+   web/content/briefings/2026-07-13.md (all keys required). Cite sources on hard numbers.
+   If today's file already exists, update it with the latest developments instead of skipping.
+
+4. From web/, run: npm ci && npm run sync-data
    so web/public/data/index.json, latest.json, and briefings/${today}.json update.
 
-4. Commit on main with message: content: publish ${today} daily briefing
+5. Commit on main with message: content: publish ${today} daily briefing
    Include web/content/briefings/${today}.md and web/public/data/**
    Push to origin main.
 
-5. Reply with DONE ${today} and the commit SHA.
+6. Reply with DONE ${today} and the commit SHA.
 
 Do not open a PR — push to main so GitHub Pages redeploys automatically.`;
 

@@ -8,12 +8,12 @@
     "Asia sold off Monday: Nikkei -1.6%, Kospi >5% (sell-sidecar triggered), China A-shares opened -0.75% with >3,700 stocks falling; US futures down (S&P -0.3%, Nasdaq -0.5%).",
     "Rates repriced hawkish: 10-year Treasury +2bp to 4.59%; Fed funds futures now imply ~50% chance of 2+ hikes by December (up from 47.6% Friday)."
   ],
-  "signal": "Markets are pricing an inflation shock, not a classic safe-haven event — oil and dollar up, gold -1.1%, copper weak, yields rising.",
+  "signal": "Markets are pricing an inflation shock, not a classic safe-haven event — oil and dollar up, gold lower (COMEX settle near $3,997), copper weak, yields rising.",
   "watch": "Tuesday's US CPI (8:30am ET) lands 90 minutes before Fed Chair Warsh's debut congressional testimony — the day's defining catalyst pair.",
   "globalRegime": "The Fed is on hold at 3.50%–3.75%, but the market narrative has shifted from \"when does easing resume?\" to \"how soon do hikes return?\" Inflation remains the dominant risk — the Fed's July 10 Monetary Policy Report said price increases \"stepped up further this spring,\" driven by tariffs, Middle East energy costs, and AI infrastructure demand. Growth is still expanding, and the labor market is stable (unemployment 4.2% in June), but supply-side inflation shocks are overriding the disinflation story.",
   "globalChanged": [
     "Geopolitical escalation reversed the oil relief trade. After Brent had fallen to ~$70 on Jul 10, weekend hostilities sent it back above $78–79 — roughly 9% above pre-war (late February) levels (Al Jazeera, Reuters).",
-    "Cross-asset moves confirm inflation repricing, not panic. The dollar index rose to ~101.12, 10-year yields climbed to 4.59%, and gold fell ~1.1% to $4,074/oz — consistent with higher real-rate expectations rather than pure risk aversion (Reuters, ET Now).",
+    "Cross-asset moves confirm inflation repricing, not panic. The dollar index rose to ~101.12, 10-year yields climbed to 4.59%, and COMEX gold settled near $3,997/oz (about -2.6%; early spot prints near $4,070) — consistent with higher real-rate expectations rather than pure risk aversion (Reuters, Dow Jones/Morningstar).",
     "Semiconductor euphoria met profit-taking. Friday's US session was strong (S&P +0.42% to 7,575; SK Hynix ADR +13% on Nasdaq debut), but Monday's Kospi plunge (>5%, SK Hynix -10%, Samsung -5–6%) and weak China semis suggest the AI/memory trade is vulnerable to cycle-fear and geopolitical risk (Chosun Biz, Yicai).",
     "Fed communication pipeline is loaded. Chair Kevin Warsh testifies before Congress Jul 14 (House, 10am ET) and Jul 15 (Senate) — his first Humphrey-Hawkins hearings, with CPI dropping just 90 minutes before Tuesday's session."
   ],
@@ -40,7 +40,7 @@
     {
       "grade": "STRONG",
       "name": "Inflation-shock repricing, not safe-haven panic",
-      "evidence": "Oil +4%, dollar +0.1%, 10y yield +2bp to 4.59%, gold -1.1%, Fed hike odds rising.",
+      "evidence": "Oil +4%, dollar +0.1%, 10y yield +2bp to 4.59%, COMEX gold settle near $3,997 (~-2.6%), Fed hike odds rising.",
       "mechanism": "Hormuz disruption raises energy costs → inflation expectations rise → real yields and dollar strengthen, pressuring non-yielding gold and growth multiples.",
       "disprovedIf": "Oil reverses below $72 and 10y yields fall below 4.50% within 48 hours without new escalation."
     },
@@ -78,7 +78,7 @@
       "priority": "HIGH",
       "headline": "Tuesday's CPI–Warsh double catalyst",
       "why": "STRONG inflation-repricing signal; defines whether hawkish pricing accelerates.",
-      "watch": "US CPI Jun (Jul 14, 8:30am ET) — consensus ~3.8% headline / ~2.8% core; Warsh House testimony 10:00am ET.",
+      "watch": "US CPI Jun (Jul 14, 8:30am ET) — consensus ~3.8% headline / ~2.9% core (FactSet); Warsh House testimony 10:00am ET.",
       "trigger": "Headline CPI ≥4.0% or Warsh language endorsing near-term tightening.",
       "invalidator": "CPI ≤3.5% headline with core ≤2.7% and Warsh emphasizing patience.",
       "horizon": "days",
