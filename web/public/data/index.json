@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-14T12:07:57.083Z",
-  "latest": "2026-07-13",
+  "generatedAt": "2026-07-14T12:21:05.040Z",
+  "latest": "2026-07-14",
   "briefings": [
+    {
+      "date": "2026-07-14",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Risk-off intensifies — Trump reinstates Hormuz blockade and floats a 20% cargo fee; oil jumps ~9–10%, US equities fall, yields rise into today's CPI and Warsh testimony.",
+      "coverageWindow": "July 13–14, 2026"
+    },
     {
       "date": "2026-07-13",
       "title": "Daily Financial Briefing",
