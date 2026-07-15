@@ -34,7 +34,7 @@ English-language:
 - **Xinhua / State Council (english.gov.cn)** — official policy text; treat as primary source of what was announced, apply judgment on framing
 
 Chinese-language (use when accessible; often faster and more detailed):
-- **华尔街见闻 (Wallstreetcn)** — required China/global desk sweep for linshanova; strong on overnight closes, policy calendars, A-share strategy notes, and cross-asset tape (wallstreetcn.com)
+- **华尔街见闻 (Wallstreetcn)** — required China/global desk sweep for syravocado; strong on overnight closes, policy calendars, A-share strategy notes, and cross-asset tape (wallstreetcn.com)
 - **BlockBeats / 律动 (theblockbeats.info)** — required for China-facing crypto–macro and risk-asset transmission (BTC/ETH vs oil, Fed path, Asia risk-off); treat as tier 3 — verify hard macro prints against tier 1–2
 - **财联社 (CLS, cls.cn)** — fastest A-share/policy flashes; **东方财富 (Eastmoney)** — quotes, turnover, sector flows
 - **新华财经 (Xinhua Finance)** — official market wrap; **第一财经 (Yicai)** — PBOC OMO and policy detail

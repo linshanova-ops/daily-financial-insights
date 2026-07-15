@@ -93,12 +93,12 @@ export default function PipelinePage() {
         From raw news to a five-minute briefing
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft">
-        linshanova is powered by Cursor Agent skills. Each stage only consumes
+        syravocado is powered by Cursor Agent skills. Each stage only consumes
         what the previous stage verified — analysis cites the news log,
         suggestions cite graded signals, and the published report stays
         traceable. Visitors trigger a new run with{" "}
         <span className="font-semibold text-ink">Refresh now</span> on the
-        homepage (rate-limited); there is no fixed 4-hour weekday schedule.
+        homepage (rate-limited).
       </p>
 
       <ol className="mt-14 space-y-0">

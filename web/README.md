@@ -1,4 +1,4 @@
-# linshanova — website
+# syravocado — website
 
 Public site for the Daily Financial Insights research pipeline.
 

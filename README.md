@@ -4,7 +4,7 @@ Cursor Agent Skills for the full daily financial research pipeline — from gath
 
 **Entry point (agent):** ask for a "daily financial briefing" (or invoke `/daily-financial-briefing`). It orchestrates the stages below in order.
 
-**Entry point (website):** [linshanova](https://linshanova-ops.github.io/daily-financial-insights/) — Next.js app in [`web/`](./web/) that renders briefings from `web/content/briefings/` and live-polls the JSON feed on `main`.
+**Entry point (website):** [syravocado](https://linshanova-ops.github.io/daily-financial-insights/) — Next.js app in [`web/`](./web/) that renders briefings from `web/content/briefings/` and live-polls the JSON feed on `main`.
 
 ## Public website (permanent)
 
