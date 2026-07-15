@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #0f1419;
-  --ink-soft: #243039;
-  --mist: #eef2f4;
-  --mist-deep: #dce5ea;
-  --forest: #0b3d2e;
-  --forest-bright: #146349;
-  --copper: #c45c26;
-  --copper-soft: #e8a27a;
-  --paper: #f5f7f8;
-  --line: rgba(15, 20, 25, 0.12);
+  /* Brand: elegant wine red (class name forest kept for stability) */
+  --ink: #141012;
+  --ink-soft: #3a3034;
+  --mist: #f5f0f1;
+  --mist-deep: #e8dde0;
+  --forest: #7a1c28;
+  --forest-bright: #a3283a;
+  --copper: #b56a3c;
+  --copper-soft: #e2b896;
+  --paper: #faf6f7;
+  --line: rgba(20, 16, 18, 0.12);
   --strong: #8b1e1e;
   --moderate: #9a6116;
   --weak: #3d5a6c;
   /* Module accents */
   --azure: #1f4f6e;
   --azure-soft: #dbe7ef;
-  --crimson: #8f2d3c;
-  --crimson-soft: #f2e0e2;
+  --crimson: #9b3040;
+  --crimson-soft: #f3e2e5;
   --violet: #4c3a6e;
   --violet-soft: #e6e1f0;
   --amber: #92600f;
@@ -68,9 +69,9 @@ body {
   min-height: 100vh;
   color: var(--foreground);
   background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(20, 99, 73, 0.16), transparent 55%),
-    radial-gradient(900px 500px at 90% 0%, rgba(196, 92, 38, 0.12), transparent 50%),
-    linear-gradient(180deg, #e8eef1 0%, var(--mist) 40%, #e4ebe7 100%);
+    radial-gradient(1200px 600px at 10% -10%, rgba(122, 28, 40, 0.14), transparent 55%),
+    radial-gradient(900px 500px at 90% 0%, rgba(181, 106, 60, 0.12), transparent 50%),
+    linear-gradient(180deg, #f3e9eb 0%, var(--mist) 40%, #efe6e8 100%);
   font-family: var(--font-manrope), system-ui, sans-serif;
 }
 
@@ -81,8 +82,8 @@ body::before {
   pointer-events: none;
   opacity: 0.35;
   background-image:
-    linear-gradient(rgba(15, 20, 25, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(15, 20, 25, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(20, 16, 18, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 16, 18, 0.03) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: linear-gradient(180deg, black, transparent 85%);
   z-index: 0;
@@ -132,13 +133,13 @@ a {
 
 @keyframes grade-pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(196, 92, 38, 0.35);
+    box-shadow: 0 0 0 0 rgba(163, 40, 58, 0.35);
   }
   70% {
-    box-shadow: 0 0 0 12px rgba(196, 92, 38, 0);
+    box-shadow: 0 0 0 12px rgba(163, 40, 58, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(196, 92, 38, 0);
+    box-shadow: 0 0 0 0 rgba(163, 40, 58, 0);
   }
 }
 

@@ -28,14 +28,23 @@ export interface AssetView {
   invalidator: string;
 }
 
+export interface KeySource {
+  label: string;
+  href: string;
+}
+
 export interface BriefingFrontmatter {
   date: string;
   title: string;
   coverageWindow: string;
+  /** ISO timestamp when this briefing was published (UTC). */
+  publishedAt?: string;
   marketTone: string;
   summary: string[];
   signal: string;
   watch: string;
+  /** Clickable primary links for the day's key prints. */
+  keySources?: KeySource[];
   globalRegime: string;
   globalChanged: string[];
   globalImplies: string[];

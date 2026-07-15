@@ -1,4 +1,5 @@
 import type { Signal, SignalGrade } from "@/lib/types";
+import { KindLabel } from "./KindLabel";
 
 const gradeStyles: Record<SignalGrade, string> = {
   STRONG: "bg-strong/10 text-strong",
@@ -13,22 +14,25 @@ interface SignalListProps {
 export function SignalList({ signals }: SignalListProps) {
   return (
     <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
-      <div className="flex items-center gap-3">
+      <div className="flex flex-wrap items-center gap-3">
         <span className="h-6 w-1 rounded-full bg-amber" aria-hidden />
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber">
           Signals
         </p>
+        <KindLabel kind="judgment" />
       </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
         What the day reveals
       </h2>
+      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
+        Evidence rows are facts from the day&apos;s tape. Mechanism and
+        &ldquo;disproved if&rdquo; are interpretive judgments.
+      </p>
       <ol className="mt-10 space-y-8">
-        {signals.map((signal, index) => (
+        {signals.map((signal) => (
           <li
             key={signal.name}
-            className={`grade-pulse border-b border-line pb-8 last:border-b-0 ${
-              index === 0 ? "" : ""
-            }`}
+            className="grade-pulse border-b border-line pb-8 last:border-b-0"
           >
             <div className="flex flex-wrap items-center gap-3">
               <span
@@ -42,15 +46,21 @@ export function SignalList({ signals }: SignalListProps) {
             </div>
             <dl className="mt-4 grid gap-3 text-sm leading-relaxed text-ink-soft sm:grid-cols-2">
               <div>
-                <dt className="font-semibold text-ink">Evidence</dt>
+                <dt className="flex flex-wrap items-center gap-2 font-semibold text-ink">
+                  Evidence <KindLabel kind="fact" />
+                </dt>
                 <dd className="mt-1">{signal.evidence}</dd>
               </div>
               <div>
-                <dt className="font-semibold text-ink">Mechanism</dt>
+                <dt className="flex flex-wrap items-center gap-2 font-semibold text-ink">
+                  Mechanism <KindLabel kind="judgment" />
+                </dt>
                 <dd className="mt-1">{signal.mechanism}</dd>
               </div>
               <div className="sm:col-span-2">
-                <dt className="font-semibold text-ink">Disproved if</dt>
+                <dt className="flex flex-wrap items-center gap-2 font-semibold text-ink">
+                  Disproved if <KindLabel kind="judgment" />
+                </dt>
                 <dd className="mt-1">{signal.disprovedIf}</dd>
               </div>
             </dl>

@@ -1,5 +1,6 @@
 import { accents, type ModuleAccent } from "@/lib/module-accents";
 import { Bullet } from "./Bullet";
+import { KindLabel } from "./KindLabel";
 
 interface SituationBlockProps {
   eyebrow: string;
@@ -40,6 +41,9 @@ export function SituationBlock({
         {title}
       </h2>
       <div className={`mt-6 max-w-3xl border-l-2 pl-4 ${a.panel}`}>
+        <div className="flex flex-wrap items-center gap-2 px-0 pt-3">
+          <KindLabel kind="judgment" />
+        </div>
         <p className="py-3 pr-3 text-base leading-relaxed text-ink-soft sm:text-lg">
           <span className={`font-semibold ${a.stanceLabel}`}>
             {stanceLabel}:{" "}
@@ -50,9 +54,12 @@ export function SituationBlock({
 
       <div className="mt-10 grid gap-10 lg:grid-cols-2">
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
-            What changed
-          </h3>
+          <div className="flex flex-wrap items-center gap-2">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
+              What changed
+            </h3>
+            <KindLabel kind="fact" />
+          </div>
           <ul className="mt-4 space-y-4 text-base leading-relaxed text-ink-soft">
             {changed.map((item) => (
               <Bullet key={item} dotClass={a.bulletDot}>
@@ -62,9 +69,12 @@ export function SituationBlock({
           </ul>
         </div>
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
-            What it implies
-          </h3>
+          <div className="flex flex-wrap items-center gap-2">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
+              What it implies
+            </h3>
+            <KindLabel kind="judgment" />
+          </div>
           <ul className="mt-4 space-y-4 text-base leading-relaxed text-ink-soft">
             {implies.map((item) => (
               <Bullet key={item} dotClass={a.bulletDot}>
@@ -76,9 +86,12 @@ export function SituationBlock({
       </div>
 
       <div className="mt-10 border-t border-line pt-6">
-        <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
-          {tensionsLabel}
-        </h3>
+        <div className="flex flex-wrap items-center gap-2">
+          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
+            {tensionsLabel}
+          </h3>
+          <KindLabel kind="judgment" />
+        </div>
         <p className="mt-3 max-w-4xl text-base leading-relaxed text-ink-soft">
           {tensions}
         </p>

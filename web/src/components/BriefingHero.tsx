@@ -1,17 +1,22 @@
 import Link from "next/link";
 import { formatBriefingDate } from "@/lib/briefings-format";
+import { formatPublishedAt } from "@/lib/format-published";
 
 interface BriefingHeroProps {
   date: string;
   marketTone: string;
+  publishedAt?: string | null;
   showCta?: boolean;
 }
 
 export function BriefingHero({
   date,
   marketTone,
+  publishedAt,
   showCta = true,
 }: BriefingHeroProps) {
+  const publishedLabel = formatPublishedAt(publishedAt);
+
   return (
     <section className="relative min-h-[88vh] overflow-hidden px-5 pb-16 pt-10 sm:px-8 sm:pt-16">
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -30,6 +35,11 @@ export function BriefingHero({
             Daily Financial Insights
           </span>
         </h1>
+        {publishedLabel ? (
+          <p className="reveal reveal-delay-1 text-sm font-medium tracking-wide text-ink/55">
+            Published {publishedLabel}
+          </p>
+        ) : null}
         <p className="reveal reveal-delay-2 max-w-2xl text-lg leading-relaxed text-ink-soft sm:text-xl">
           {marketTone}
         </p>

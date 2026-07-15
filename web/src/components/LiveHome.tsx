@@ -2,6 +2,11 @@
 
 import { useCallback, useEffect, useState } from "react";
 import type { Briefing } from "@/lib/types";
+import { diffBriefings } from "@/lib/briefing-diff";
+import {
+  fetchBriefingByDate,
+  fetchBriefingIndex,
+} from "@/lib/content-feed";
 import {
   reloadPublishedBriefing,
   requestBriefingRefresh,
@@ -19,6 +24,11 @@ interface LiveHomeProps {
 
 export function LiveHome({ initialBriefing }: LiveHomeProps) {
   const [briefing, setBriefing] = useState(initialBriefing);
+  const [previous, setPrevious] = useState<Briefing | null>(null);
+  const [previousDate, setPreviousDate] = useState<string | null>(null);
+  const [publishedAt, setPublishedAt] = useState<string | null>(
+    initialBriefing.publishedAt ?? null,
+  );
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
   const [live, setLive] = useState(false);
   const [phase, setPhase] = useState<RefreshPhase>("idle");
@@ -27,11 +37,26 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
 
   const pullFeed = useCallback(async (signal?: AbortSignal) => {
     try {
-      const next = await reloadPublishedBriefing();
+      const [next, index] = await Promise.all([
+        reloadPublishedBriefing(),
+        fetchBriefingIndex(signal),
+      ]);
       if (signal?.aborted) return;
+
       setBriefing(next);
+      setPublishedAt(next.publishedAt ?? index.generatedAt ?? null);
       setUpdatedAt(new Date().toISOString());
       setLive(true);
+
+      const priorDate =
+        index.briefings.find((item) => item.date !== next.date)?.date ?? null;
+      setPreviousDate(priorDate);
+      if (priorDate) {
+        const prior = await fetchBriefingByDate(priorDate, signal);
+        if (!signal?.aborted) setPrevious(prior);
+      } else {
+        setPrevious(null);
+      }
     } catch {
       if (!signal?.aborted) setLive(false);
     }
@@ -64,13 +89,15 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
       if (result.message) setStatusMessage(result.message);
       if (result.briefing) {
         setBriefing(result.briefing);
+        setPublishedAt(result.briefing.publishedAt ?? new Date().toISOString());
         setUpdatedAt(new Date().toISOString());
         setLive(true);
+        void pullFeed();
       }
     } finally {
       setBusy(false);
     }
-  }, []);
+  }, [pullFeed]);
 
   const buttonLabel =
     phase === "requesting"
@@ -80,6 +107,8 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
         : busy
           ? "Working…"
           : "Refresh now";
+
+  const changes = diffBriefings(briefing, previous);
 
   return (
     <>
@@ -105,12 +134,17 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
           </p>
         ) : (
           <p className="pb-2 text-xs text-ink/45">
-            Refresh now requests a new briefing from live sources (rate-limited),
-            then updates this page when it is published.
+            Refresh now requests a new briefing from live sources (max 5 per
+            day), then updates this page when it is published.
           </p>
         )}
       </div>
-      <BriefingView briefing={briefing} />
+      <BriefingView
+        briefing={briefing}
+        previousDate={previousDate}
+        changesSincePrevious={changes}
+        publishedAtFallback={publishedAt}
+      />
     </>
   );
 }

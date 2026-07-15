@@ -1,4 +1,5 @@
 import type { WatchItem, WatchPriority } from "@/lib/types";
+import { KindLabel } from "./KindLabel";
 
 const priorityStyles: Record<WatchPriority, string> = {
   HIGH: "text-strong",
@@ -13,11 +14,12 @@ interface WatchListProps {
 export function WatchList({ items }: WatchListProps) {
   return (
     <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
-      <div className="flex items-center gap-3">
+      <div className="flex flex-wrap items-center gap-3">
         <span className="h-6 w-1 rounded-full bg-copper" aria-hidden />
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-copper">
           What to watch
         </p>
+        <KindLabel kind="judgment" />
       </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
         Triggers and invalidators

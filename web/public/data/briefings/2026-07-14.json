@@ -2,6 +2,29 @@
   "date": "2026-07-14",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 13–14, 2026",
+  "publishedAt": "2026-07-14T20:30:00.000Z",
+  "keySources": [
+    {
+      "label": "BLS — June CPI",
+      "href": "https://www.bls.gov/news.release/archives/cpi_07142026.htm"
+    },
+    {
+      "label": "Federal Reserve",
+      "href": "https://www.federalreserve.gov/"
+    },
+    {
+      "label": "CME FedWatch",
+      "href": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+    },
+    {
+      "label": "华尔街见闻",
+      "href": "https://wallstreetcn.com/"
+    },
+    {
+      "label": "BlockBeats",
+      "href": "https://www.theblockbeats.info/"
+    }
+  ],
   "marketTone": "CPI miss eases July-hike panic, but Warsh says not 'mission accomplished' — S&P +0.4% and Nasdaq +0.9% close up while Brent settles at $84.73 and Iran blockade risk persists.",
   "summary": [
     "June CPI downside surprise (BLS, 8:30am ET): headline -0.4% m/m, 3.5% y/y (vs ~3.8% consensus, 4.2% May); core flat m/m, 2.6% y/y (vs ~0.2% m/m and ~2.9% y/y consensus); energy -5.7% m/m, shelter +0.1% — largest monthly headline drop since April 2020.",

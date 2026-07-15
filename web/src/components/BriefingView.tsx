@@ -1,4 +1,5 @@
 import type { Briefing } from "@/lib/types";
+import type { BriefingChange } from "@/lib/briefing-diff";
 import { BriefingHero } from "./BriefingHero";
 import { ExecutiveSummary } from "./ExecutiveSummary";
 import { SituationBlock } from "./SituationBlock";
@@ -6,26 +7,42 @@ import { AssetFramework } from "./AssetFramework";
 import { SignalList } from "./SignalList";
 import { WatchList } from "./WatchList";
 import { SourcesCaveats } from "./SourcesCaveats";
+import { KeySources } from "./KeySources";
+import { SinceLastBriefing } from "./SinceLastBriefing";
 
 interface BriefingViewProps {
   briefing: Briefing;
   showHeroCta?: boolean;
+  previousDate?: string | null;
+  changesSincePrevious?: BriefingChange[] | null;
+  publishedAtFallback?: string | null;
 }
 
 export function BriefingView({
   briefing,
   showHeroCta = true,
+  previousDate = null,
+  changesSincePrevious = null,
+  publishedAtFallback = null,
 }: BriefingViewProps) {
   return (
     <>
       <BriefingHero
         date={briefing.date}
         marketTone={briefing.marketTone}
+        publishedAt={briefing.publishedAt ?? publishedAtFallback}
         showCta={showHeroCta}
       />
-      <div className="mx-auto mb-4 w-full max-w-6xl px-5 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
+      <div className="mx-auto mb-2 w-full max-w-6xl px-5 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
         Coverage window: {briefing.coverageWindow}
       </div>
+      <KeySources sources={briefing.keySources} />
+      {changesSincePrevious ? (
+        <SinceLastBriefing
+          previousDate={previousDate}
+          changes={changesSincePrevious}
+        />
+      ) : null}
       <ExecutiveSummary
         summary={briefing.summary}
         signal={briefing.signal}

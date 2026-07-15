@@ -24,7 +24,7 @@ Anyone clicking **Refresh now** requests a fresh briefing generation. The 4-hour
 ## Rate limit
 
 - If a briefing workflow is queued/in-progress, return that status (do not start another).
-- If the last successful/failed run finished < 30 minutes ago, return 429 and keep polling the feed.
+- At most **5** briefing workflow runs per UTC day; further requests return 429 until the next UTC day.
 
 ## Setup (one-time)
 

@@ -50,7 +50,7 @@ GitHub Pages is static, so the click trigger lives on a tiny Netlify function.
 
 6. Re-run **Deploy syravocado to GitHub Pages** (or push to `main`) so the static site embeds that URL.
 
-7. Open the site → **Refresh now**. You should see “Generating…” then an updated briefing (usually several minutes). Rate limit: once per 30 minutes.
+7. Open the site → **Refresh now**. You should see “Generating…” then an updated briefing (usually several minutes). Rate limit: **max 5 refreshes per UTC day**.
 
 ### Enable briefing generation (CURSOR_API_KEY)
 
