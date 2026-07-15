@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-15T05:48:48.930Z",
-  "latest": "2026-07-14",
+  "generatedAt": "2026-07-15T14:17:04.057Z",
+  "latest": "2026-07-15",
   "briefings": [
+    {
+      "date": "2026-07-15",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Double disinflation miss — June CPI and PPI both cool vs consensus, Kospi +6.2% and ASML guidance raised; but Brent back above $85 and Warsh says inflation fight is not 'mission accomplished'.",
+      "coverageWindow": "July 14–15, 2026"
+    },
     {
       "date": "2026-07-14",
       "title": "Daily Financial Briefing",
