@@ -2,87 +2,88 @@
   "date": "2026-07-15",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 14–15, 2026",
-  "marketTone": "Double disinflation miss — June CPI and PPI both cool vs consensus, Kospi +6.2% and ASML guidance raised; but Brent back above $85 and Warsh says inflation fight is not 'mission accomplished'.",
+  "marketTone": "Double disinflation miss — June CPI and PPI both cool vs consensus, Kospi +6.2% and ASML raised FY26 sales again; Warsh's Senate Day-2 kept the hawkish filter alive while Brent settled $85.90 and China Q2 GDP missed at 4.3%.",
   "summary": [
-    "June CPI downside surprise (BLS, Jul 14): headline -0.4% m/m, 3.5% y/y (vs ~3.8% consensus); core flat m/m, 2.6% y/y (vs ~0.2% m/m and ~2.9% y/y) — largest monthly headline drop since April 2020; energy -5.7% m/m.",
-    "June PPI also missed (BLS, Jul 15): headline -0.3% m/m, 5.5% y/y (vs ~6.2% consensus); core ex food/energy +0.2% m/m (vs ~0.4%) — corroborates CPI disinflation in the pipeline.",
-    "Post-CPI US close (Jul 14): S&P +0.38% to 7,543.59, Nasdaq +0.90% to 26,107.01; 10y Treasury ~4.57% (-~6bp); July Fed hike odds fell to ~17% (CME FedWatch); COMEX gold settled +1.60% at $4,061.10/oz (Morningstar/Dow Jones).",
-    "Asia Wed: Kospi +6.24% to 7,284.41 on SK Hynix ADR +27% and CPI relief; Nikkei +1.49% to 68,751.51; Hang Seng +1.40% to 24,681.10; Shanghai -0.29% to 3,955.58 — Korea/H-shares rally, A-shares lag."
+    "June PPI miss (BLS, Jul 15): headline -0.3% m/m, 5.5% y/y (vs unchanged m/m consensus); core ex food/energy +0.2% m/m (vs +0.3%); core ex food/energy/trade +0.1% m/m, 5.1% y/y — second straight disinflation print after Tuesday's CPI.",
+    "June CPI downside surprise (BLS, Jul 14): headline -0.4% m/m, 3.5% y/y (vs ~3.8% consensus); core flat m/m, 2.6% y/y (vs ~0.2% m/m and ~2.9% y/y) — largest monthly headline drop since April 2020.",
+    "Post-CPI US close (Jul 14): S&P +0.38% to 7,543.59, Nasdaq +0.90% to 26,107.01; 10y Treasury ~4.57% (-~6bp); July Fed hike odds ~17% post-PPI (CME FedWatch/CNBC); COMEX gold settled +1.60% at $4,061.10/oz (Morningstar/Dow Jones).",
+    "Asia Wed: Kospi +6.24% to 7,284.41 on SK Hynix +8.83% and CPI relief; Nikkei +1.49% to 68,751; Hang Seng +1.40% to 24,681.10; Shanghai -0.29% to 3,955.58 on Q2 GDP miss and semis profit-taking — Korea/H-shares rally, A-shares lag."
   ],
-  "signal": "Disinflation relief is confirmed in both CPI and PPI, but forward oil ($85+ Brent) and Warsh's hawkish filter keep September hike pricing near ~60% — markets split between 'inflation cooling' and 'energy hasn't'.",
-  "watch": "Warsh Senate testimony (10am ET) after soft PPI — does the Chair re-heat the hawkish narrative the CPI/PPI misses cooled?",
-  "globalRegime": "The Fed holds at 3.50%–3.75%. June CPI and PPI both delivered broad misses vs consensus, pulling July hike odds from ~45% pre-CPI to ~17% post-data (CME FedWatch). Chair Warsh's House testimony (Jul 14) reaffirmed zero tolerance for elevated inflation, rejected declaring 'mission accomplished' on one soft print, and offered no forward guidance. Brent settled $84.73 Tuesday but climbed back above $85 Wednesday as the Iran blockade persists. ASML's second 2026 guidance raise and a Kospi +6% rebound signal the AI/semi trade is alive beneath IBM's -25% warning.",
+  "signal": "CPI and PPI both missed vs consensus, but Warsh's Senate Day-2 reaffirmed zero tolerance for elevated inflation and Brent settled $85.90 — markets split between 'disinflation confirmed' and 'energy hasn't / Chair won't declare victory.'",
+  "watch": "TSMC revenue/capex guide (Jul 16) after Kospi +6% and ASML's second FY26 raise — does the AI/memory rebound hold through Taiwan's bellwether?",
+  "globalRegime": "The Fed holds at 3.50%–3.75%. June CPI and PPI both delivered broad misses vs consensus, pulling July hike odds from ~45% pre-CPI to ~17% post-PPI (CME FedWatch). Chair Warsh's House Q&A (Jul 14) and Senate hearing (Jul 15) reaffirmed zero tolerance for elevated inflation, rejected declaring 'mission accomplished' on one soft print, and offered no forward guidance. Brent settled $85.90 Wednesday (+1.38% from $84.73) as the Iran blockade persists. ASML's second 2026 guidance raise and a Kospi +6% rebound signal the AI/semi trade is alive beneath IBM's -25% warning.",
   "globalChanged": [
-    "June CPI miss across the board: headline -0.4% m/m (vs -0.2% expected), 3.5% y/y (vs ~3.8%); core flat m/m (vs +0.2%), 2.6% y/y (vs ~2.9%); shelter +0.1% m/m; energy -5.7% m/m (BLS; consensus CNBC/Dow Jones).",
-    "June PPI miss (Jul 15): headline -0.3% m/m, 5.5% y/y (vs ~6.2% consensus); core ex food/energy +0.2% m/m (vs ~0.4%); core ex food/energy/trade +0.1% m/m, 5.1% y/y — May y/y revised down to 6.0% from 6.5% (BLS).",
-    "Post-CPI risk-on US close: S&P +0.38% to 7,543.59, Nasdaq +0.90% to 26,107.01, Dow +0.02% to 52,508.27; 10y yield ~4.57% (-~6bp from ~4.62%); July Fed hike probability ~17% vs ~45% Monday (CME FedWatch; CNBC/Reuters).",
-    "Earnings split: JPM Q2 NI $21.2bn ($7.70 EPS, record quarter); Goldman +9%; IBM -25% to $217.05 on preliminary Q2 miss ($2.93 adj EPS vs $3.01 expected) — worst single-day drop in company history (SEC/AP/CNBC).",
-    "Semis/AI rebound: SK Hynix ADR +27.29% to $193.92 (Barclays $330 PT); ASML raised FY26 sales to €43–45bn from €36–40bn, Q2 net sales €9.3bn beat (ASML IR/CNBC Jul 15); Kospi closed +6.24% to 7,284.41 with buy-side sidecar at open (Yonhap/Chosun Biz).",
-    "Oil/geopolitics: Brent settled +1.72% at $84.73 Jul 14 (ICE/Morningstar); spot ~$85.30 Wed as US reinstated Iran-only naval blockade and Trump scrapped the 20% Hormuz fee for Gulf investment deals (AP/CENTCOM/Bloomberg)."
+    "June PPI miss (Jul 15, BLS): headline -0.3% m/m (vs unchanged consensus), 5.5% y/y; core ex food/energy +0.2% m/m (vs +0.3%); core ex food/energy/trade +0.1% m/m, 5.1% y/y; May m/m revised to +0.6% from +1.1% (BLS/CNBC).",
+    "June CPI miss (Jul 14, BLS): headline -0.4% m/m (vs -0.2% expected), 3.5% y/y (vs ~3.8%); core flat m/m (vs +0.2%), 2.6% y/y (vs ~2.9%); shelter +0.1% m/m; energy -5.7% m/m.",
+    "Post-CPI risk-on US close: S&P +0.38% to 7,543.59, Nasdaq +0.90% to 26,107.01, Dow +0.02% to 52,508.27; 10y yield ~4.57% (-~6bp); July Fed hike probability ~17% vs ~45% Monday; September hike now ~50-50 post-PPI (CME FedWatch; CNBC Jul 15).",
+    "Warsh Senate testimony (Jul 15): identical prepared remarks submitted to Senate Banking; House Q&A Jul 14 — 'not mission accomplished' on June CPI, no forward guidance, 'no tolerance' for elevated inflation (Fed/CNN/PBS).",
+    "Earnings split: JPM Q2 NI $21.2bn ($7.70 EPS, record quarter); Goldman +9%; IBM -25% to $217.05 on preliminary Q2 miss ($2.93 adj EPS vs $3.01 expected, $17.2bn revenue vs $17.86bn) — worst single-day drop in company history (SEC 8-K/AP/CNBC).",
+    "Semis/AI rebound: SK Hynix +8.83% to KRW2,082,000, ADR +27.29% to $193.92; ASML raised FY26 sales to €43–45bn from €36–40bn, Q2 net sales €9.3bn beat (ASML IR Jul 15); Kospi +6.24% to 7,284.41 with buy-side sidecar at open (Yonhap/Businesskorea).",
+    "Oil/geopolitics: Brent settled +1.38% at $85.90 Jul 15 (Investing.com/ICE); Jul 14 settle $84.73; US reinstated Iran-only naval blockade, Trump scrapped 20% Hormuz fee for Gulf investment deals (AP/CENTCOM/Bloomberg)."
   ],
   "globalImplies": [
-    "July FOMC hold is now the base case (~83% per CME), but September hike pricing near ~60% (Reuters/CNBC) means back-to-back CPI/PPI misses did not kill the tightening narrative — especially with Brent back above $85.",
-    "June gasoline-driven CPI relief predates this week's oil spike; July CPI will capture forward energy pressure unless Hormuz tensions ease.",
+    "July FOMC hold is now the base case (~83% per CME), but September hike pricing near ~50% post-PPI (CNBC) means back-to-back CPI/PPI misses did not kill the tightening narrative — especially with Brent at $85.90 settle.",
+    "June gasoline-driven CPI/PPI relief predates this week's oil spike; July CPI will capture forward energy pressure unless Hormuz tensions ease.",
     "IBM's capex-shift warning (clients buying hardware over software) is a micro read on AI infrastructure crowding out legacy IT spend — bullish for memory/chips, bearish for enterprise software multiples."
   ],
-  "globalTensions": "CPI/PPI and oil still tell opposite stories — June headline fell on energy that has since surged, and Warsh explicitly warned against declaring victory. Korea/Nasdaq ripped on CPI + ASML while Shanghai slipped -0.29% but Hang Seng rallied +1.40%; gold rebounded on CPI (COMEX $4,061 settle) but spot eased toward $4,030 Wed as oil climbed — relief, not all-clear.",
-  "chinaStance": "Moderately loose via quantity, cautious on price — PBOC executed CNY1.4tn 6-month buyout reverse repo Jul 15 (net +CNY500bn after CNY900bn maturity); 7-day rate held at 1.40%, no LPR-cut signal while oil lifts imported-inflation risk (PBOC/人民网).",
+  "globalTensions": "CPI/PPI and oil still tell opposite stories — June headline fell on energy that has since surged, and Warsh explicitly warned against declaring victory. Korea/Nasdaq ripped on CPI + ASML while Shanghai slipped -0.29% on GDP miss; gold rebounded on CPI (COMEX $4,061 settle Jul 14) while Brent settled higher Jul 15 — relief, not all-clear.",
+  "chinaStance": "Moderately loose via quantity, cautious on price — PBOC executed CNY1.4tn 6-month buyout reverse repo Jul 15 (net +CNY500bn after CNY900bn maturity); 7-day rate held at 1.40%, no LPR-cut signal while oil lifts imported-inflation risk (PBOC/新华网/人民网).",
   "chinaChanged": [
-    "PBOC Jul 15 buyout RR landed: CNY1.4tn (14000亿元) 6-month operation, CNY900bn maturing same day → net +CNY500bn (5000亿元); Jul 3-month and 6-month buyout ops together net +CNY700bn for the month vs net withdrawal last month (PBOC/人民网/央视网).",
-    "Q2 GDP 4.3% y/y (NBS, Jul 15) missed ~4.5% consensus — weakest since Q4 2022; fixed-asset investment -5.7% H1; industrial production +5.3%, retail sales rebounded (NBS/Trading Economics).",
-    "A-shares Wed close weak: Shanghai -0.29% to 3,955.58, CSI 300 -0.20% to 4,786.78, ChiNext -1.21%, STAR 50 -4.25%; semiconductors led declines, pharma/innovative drugs outperformed; ~CNY2.6tn turnover (金融界/新浪).",
-    "H-shares rallied: Hang Seng +1.40% to 24,681.10, Hang Seng Tech +1.30% on CPI relief and tech bid (Yahoo HK/RTHK) — sharp A/H divergence.",
-    "华尔街见闻 (Jul 15): CPI miss lifted US equities and cooled July hike bets, but notes tariff pass-through in core goods (appliances +0.98% m/m, apparel +0.43%) and warns core PCE may print hotter than CPI — Fed hold narrative intact (华尔街见闻 3751219).",
-    "BlockBeats/律动 (Jul 15): market message that Nvidia will resume H20 chip sales in China with US government licensing assurance; Trump pushed House GENIUS Act crypto vote (BlockBeats flash 302775).",
-    "Trade: Trump announced 19% tariff on Indonesian imports (vs threatened 32%), with Indonesia pledging $150bn US energy, $45bn farm goods, 50 Boeing jets (华尔街见闻 3751174/新华社)."
+    "PBOC Jul 15 buyout RR landed: CNY1.4tn (14000亿元) 6-month operation, CNY900bn maturing same day → net +CNY500bn (5000亿元); Jul 3-month and 6-month buyout ops together net +CNY700bn for the month vs net withdrawal last month (PBOC/新华网/央视网).",
+    "Q2 GDP 4.3% y/y (NBS, Jul 15) missed ~4.5% consensus — weakest since Q4 2022; Q2 q/q +0.9% in line; H1 GDP +4.7%; fixed-asset investment -5.7% H1; industrial production +5.3% June; retail sales +1.0% June; urban unemployment 5.0% (NBS).",
+    "A-shares Wed close weak: Shanghai -0.29% to 3,955.58, CSI 300 -0.20% to 4,786.78, ChiNext -1.21% to 3,804, STAR 50 -4.25%; semiconductors led declines (德明利跌停), pharma/innovative drugs outperformed; ~CNY2.57tn turnover (华尔街见闻 3776980).",
+    "H-shares rallied: Hang Seng +1.40% to 24,681.10, Hang Seng Tech +1.30% on CPI relief and tech bid (RTHK/华尔街见闻 3776980) — sharp A/H divergence.",
+    "华尔街见闻 (Jul 15 3776948): CPI miss lifted US equities and cooled July hike bets; notes tariff pass-through in core goods and warns core PCE may print hotter than CPI — Fed hold narrative intact; China June exports +27% y/y, H1 +17.6%.",
+    "BlockBeats/律动 (Jul 15 flash 302775): market message that Nvidia will resume H20 chip sales in China with US government licensing assurance.",
+    "Trade: Trump announced 19% tariff on Indonesian imports (vs threatened 32%), with Indonesia pledging $150bn US energy, $45bn farm goods, 50 Boeing jets (华尔街见闻 3776948/新华社)."
   ],
   "chinaImplies": [
     "CNY500bn buyout RR net injection cushions Jul 15–17 tax-period funding stress, but does not neutralize oil-driven PPI/import-bill risk — quantity easing ≠ rate pivot.",
     "Nvidia H20 resumption (BlockBeats) is a positive supply-chain signal for China AI hardware, but A-share semis still fell Wed — onshore positioning lags the Korea/US memory rally.",
-    "H-shares caught the global CPI bid (+1.40%) while A-shares did not; if Warsh's Senate tone stays non-committal, H-tech could extend gains, but weak GDP keeps ChiNext fragile."
+    "H-shares caught the global CPI bid (+1.40%) while A-shares did not; weak Q2 GDP keeps ChiNext fragile even if Warsh's Senate tone stays non-committal on near-term hikes."
   ],
-  "chinaDivergences": "Kospi +6.24% and SK Hynix +8.8% domestically vs Shanghai -0.29% but Hang Seng +1.40% — CPI relief hits Korea/H-shares hardest while onshore A-shares lag on GDP disappointment and semis positioning. PBOC injecting CNY500bn while A-shares fall = liquidity is ample but risk appetite is sector-selective, not broad beta.",
+  "chinaDivergences": "Kospi +6.24% and SK Hynix +8.83% domestically vs Shanghai -0.29% but Hang Seng +1.40% — CPI relief hits Korea/H-shares hardest while onshore A-shares lag on GDP disappointment and semis profit-taking. PBOC injecting CNY500bn while A-shares fall = liquidity is ample but risk appetite is sector-selective, not broad beta.",
   "assetFramework": [
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
       "regime": "Fed path via real yields — CPI/PPI-vs-oil tug decides the discount rate; AI/semi earnings a secondary support",
-      "driver": "Post-CPI S&P +0.38% to 7,543.59, Nasdaq +0.90%; July hike odds ~17% (CME); ASML FY26 sales raise; IBM -25% on Q2 miss",
+      "driver": "Post-CPI S&P +0.38% to 7,543.59, Nasdaq +0.90%; July hike odds ~17% post-PPI (CME); ASML FY26 sales raise; IBM -25% on Q2 miss",
       "read": "Rates-relief beta held: Nasdaq/semis led while IBM's software miss was idiosyncratic, not a market regime flip",
       "invalidator": "Equities fall while yields also fall for 2+ sessions — would signal earnings/growth fear replacing the rates regime"
     },
     {
       "asset": "US Treasuries (10y)",
       "regime": "Inflation prints vs consensus + Fed communication — data-led range trading",
-      "driver": "June CPI and PPI both missed; 10y ~4.57% (-~6bp); Warsh: not 'mission accomplished', no forward guidance",
+      "driver": "June CPI and PPI both missed; 10y ~4.57% post-CPI (-~6bp); Warsh Senate Jul 15: no forward guidance, House Q&A 'not mission accomplished'",
       "read": "CPI/PPI beta dominated the move; Warsh's hawkish frame capped the rally rather than reversing it",
       "invalidator": "10y back above 4.65% without a hot data print — fiscal-supply or term-premium regime taking over"
     },
     {
       "asset": "US dollar (DXY)",
       "regime": "Rate differentials with a safe-haven bid on Hormuz headlines",
-      "driver": "July hike odds ~17% post-CPI/PPI; Brent spot back above $85 on Iran blockade",
+      "driver": "July hike odds ~17% post-CPI/PPI; Brent settled $85.90 Jul 15 on Iran blockade",
       "read": "Softer rates pull vs oil/geo bid roughly offset — no decisive break; regime intact",
-      "invalidator": "DXY breaks lower while September hike odds hold ~60% — would suggest flows, not rates, in control"
+      "invalidator": "DXY breaks lower while September hike odds hold ~50% — would suggest flows, not rates, in control"
     },
     {
       "asset": "Gold (COMEX)",
       "regime": "Two-layer: classic real-yield beta day-to-day, central-bank/fiscal-hedge floor structurally",
-      "driver": "COMEX settled +1.60% at $4,061.10 as 10y fell ~6bp; spot eased toward $4,030 Wed as oil climbed",
-      "read": "Traded the real-yield beta on the CPI close; Wednesday fade with oil shows the CPI/oil tension, not a floor break",
+      "driver": "COMEX settled +1.60% at $4,061.10 Jul 14 as 10y fell ~6bp; Brent settled higher Jul 15 at $85.90",
+      "read": "Traded the real-yield beta on the CPI close; oil settling higher shows the CPI/oil tension, not a floor break",
       "invalidator": "Gold falls >3% on a day real yields decline — would question the hedge-demand floor"
     },
     {
       "asset": "Oil (Brent)",
       "regime": "Geopolitical supply risk — Hormuz blockade premium dominates demand signals",
-      "driver": "Brent settled $84.73 Jul 14 (+1.72%); spot ~$85.30 Wed; Iran-only blockade reinstated, 20% Hormuz fee scrapped",
-      "read": "Premium persists despite fee U-turn — supply-risk beta is pricing the barrel, overwriting June CPI energy relief",
+      "driver": "Brent settled $85.90 Jul 15 (+1.38%); Jul 14 settle $84.73; Iran-only blockade reinstated, 20% Hormuz fee scrapped",
+      "read": "Premium persists despite fee U-turn — supply-risk beta is pricing the barrel, overwriting June CPI/PPI energy relief",
       "invalidator": "Brent settles below $78 with Hormuz crossings >40/day — premium unwound"
     },
     {
       "asset": "China equities (Shanghai / ChiNext)",
       "regime": "Domestic growth/liquidity vs selective global risk beta — A/H split",
-      "driver": "Shanghai -0.29%, ChiNext -1.21%, Q2 GDP 4.3% miss; Hang Seng +1.40%; PBOC net +CNY500bn buyout RR",
-      "read": "Liquidity landed but A-shares ignored it; H-shares caught the global CPI bid — domestic beta lost to growth disappointment",
+      "driver": "Shanghai -0.29%, ChiNext -1.21%, STAR 50 -4.25%; Q2 GDP 4.3% miss; Hang Seng +1.40%; PBOC net +CNY500bn buyout RR",
+      "read": "Liquidity landed but A-shares ignored it; H-shares caught the global CPI bid — domestic beta lost to growth disappointment + semis profit-taking",
       "invalidator": "Shanghai reclaims 4,000 on rising volume with DR007 ≤1.40% — liquidity beta back in charge"
     },
     {
@@ -95,7 +96,7 @@
     {
       "asset": "Bitcoin",
       "regime": "High-beta global liquidity asset in the oil→Fed chain — not digital gold in this shock",
-      "driver": "BlockBeats: GENIUS Act House push; CPI/PPI cooled July hike odds; Brent still >$85",
+      "driver": "CPI/PPI cooled July hike odds to ~17%; Brent settled $85.90; BlockBeats Nvidia H20 China headline",
       "read": "Still priced as liquidity beta — crypto policy headlines are secondary to the Fed-odds/oil chain",
       "invalidator": "BTC rallies while Brent >$85 and September hike odds rise — would signal decoupling from the rates chain"
     }
@@ -104,81 +105,81 @@
     {
       "grade": "STRONG",
       "name": "Core disinflation pivot — CPI and PPI both miss",
-      "evidence": "CPI core flat m/m, 2.6% y/y (vs ~2.9% expected); headline -0.4% m/m, 3.5% y/y (vs ~3.8%); PPI headline -0.3% m/m, 5.5% y/y (vs ~6.2%); core PPI +0.2% m/m (vs ~0.4%); July hike odds ~17% post-CPI (BLS; CME FedWatch).",
+      "evidence": "CPI core flat m/m, 2.6% y/y (vs ~2.9% expected); headline -0.4% m/m, 3.5% y/y (vs ~3.8%); PPI headline -0.3% m/m (vs unchanged), 5.5% y/y; core PPI +0.2% m/m (vs +0.3%); July hike odds ~17% post-PPI (BLS; CME FedWatch/CNBC).",
       "mechanism": "Back-to-back downside surprises vs consensus ease near-term re-hike urgency and support duration/semis — unless Fed officials dismiss prints as backward-looking.",
       "disprovedIf": "September hike probability reclaims >70% and 10y yields break above 4.65% within one week."
     },
     {
       "grade": "STRONG",
       "name": "AI/memory trade rebound despite IBM warning",
-      "evidence": "SK Hynix ADR +27.29%; ASML FY26 sales raised to €43–45bn (second raise); Kospi +6.24% with buy-side sidecar; IBM -25% on capex shift to hardware (ASML IR; Yonhap; AP).",
+      "evidence": "SK Hynix +8.83% / ADR +27.29%; ASML FY26 sales raised to €43–45bn (second raise); Kospi +6.24% with buy-side sidecar; IBM -25% on capex shift to hardware (ASML IR; Yonhap; SEC 8-K).",
       "mechanism": "CPI relief + equipment demand visibility outweigh legacy IT spend crowding-out; Korea's leveraged semi positioning amplifies the bounce.",
       "disprovedIf": "Kospi gives back >50% of Wednesday's gain by Friday and ASML orders miss in Q3."
     },
     {
       "grade": "STRONG",
       "name": "Hormuz blockade premium persists despite fee reversal",
-      "evidence": "Brent settled $84.73 Jul 14 (+1.72%); spot ~$85.30 Wed; US reinstated Iran-only blockade Jul 14 4pm ET; Trump scrapped 20% Hormuz fee (Morningstar/AP/Bloomberg).",
+      "evidence": "Brent settled $85.90 Jul 15 (+1.38%); Jul 14 settle $84.73; US reinstated Iran-only blockade Jul 14 4pm ET; Trump scrapped 20% Hormuz fee (Investing.com/AP/Bloomberg).",
       "mechanism": "Supply-risk and shipping disruption raise forward inflation expectations, limiting how much June CPI/PPI relief can reprice Fed path.",
       "disprovedIf": "Brent settles below $78 for three sessions and daily Hormuz crossings exceed 40 without new escalation."
     },
     {
       "grade": "MODERATE",
-      "name": "Warsh hawkish frame survives CPI miss",
-      "evidence": "House testimony Jul 14: 'no tolerance' for elevated inflation; Q&A: June drop not 'mission accomplished'; no forward guidance; Senate hearing scheduled Jul 15 10am ET (Fed/CNN).",
-      "mechanism": "Chair sets interpretive filter — markets must weigh backward-looking CPI/PPI against forward oil shock; keeps September hike pricing alive (~60% per CNBC).",
-      "disprovedIf": "Warsh Senate testimony Wed explicitly downplays September hike risk and cites June CPI as sufficient progress."
+      "name": "Warsh hawkish frame survives CPI/PPI misses",
+      "evidence": "House Q&A Jul 14: 'not mission accomplished'; Senate hearing Jul 15 with identical prepared remarks — 'no tolerance' for elevated inflation, no forward guidance; September hike ~50-50 post-PPI (Fed/CNN/CNBC).",
+      "mechanism": "Chair sets interpretive filter — markets must weigh backward-looking CPI/PPI against forward oil shock; keeps September hike pricing alive.",
+      "disprovedIf": "Warsh explicitly downplays September hike risk in post-hearing press and cites June disinflation as sufficient progress."
     },
     {
       "grade": "MODERATE",
       "name": "A-shares lag global semi/CPI relief; H-shares catch bid",
-      "evidence": "Shanghai -0.29%, CSI 300 -0.20% Wed vs Hang Seng +1.40% and Kospi +6.24%; Q2 GDP 4.3% miss; PBOC net +CNY500bn buyout RR; semis led A-share declines (金融界/RTHK).",
-      "mechanism": "Domestic GDP disappointment and onshore semi positioning absorb liquidity injections without broad beta rally — H-shares track global CPI relief, A-shares do not.",
+      "evidence": "Shanghai -0.29%, STAR 50 -4.25% Wed vs Hang Seng +1.40% and Kospi +6.24%; Q2 GDP 4.3% miss; PBOC net +CNY500bn buyout RR; semis led A-share declines (华尔街见闻 3776980/RTHK).",
+      "mechanism": "Domestic GDP disappointment and onshore semi profit-taking absorb liquidity injections without broad beta rally — H-shares track global CPI relief, A-shares do not.",
       "disprovedIf": "CSI 300 reclaims 4,850 with northbound inflows >CNY5bn for two consecutive sessions."
     },
     {
       "grade": "WEAK",
       "name": "Tariff pass-through lurking beneath soft CPI",
-      "evidence": "华尔街见闻 cites appliances +0.98% m/m, apparel +0.43%; BofA expects core PCE 0.34% m/m vs flat core CPI; but June PPI core +0.2% m/m also missed hawkish consensus (华尔街见闻 3751219; BLS).",
+      "evidence": "华尔街见闻 3776948 cites tariff pass-through in core goods and warns core PCE may print hotter than CPI; but June PPI core +0.2% m/m also missed hawkish +0.3% consensus (华尔街见闻; BLS).",
       "mechanism": "Headline disinflation may be energy-driven while goods tariffs feed into PCE with a lag — but soft PPI argues upstream pressure is easing, not building.",
-      "disprovedIf": "Core PCE prints ≥0.3% m/m and Warsh cites goods inflation in Senate testimony."
+      "disprovedIf": "Core PCE prints ≥0.3% m/m and Warsh cites goods inflation as a reason to stay hawkish."
     }
   ],
   "watchItems": [
     {
       "priority": "HIGH",
-      "headline": "Warsh Senate testimony after soft PPI",
-      "why": "STRONG CPI/PPI-disinflation signal meets STRONG Hormuz premium; Chair's Day-2 tone decides whether hawkish pricing returns.",
-      "watch": "Senate Banking Committee hearing 10:00am ET; language on June CPI/PPI vs oil, September path.",
-      "trigger": "Warsh endorses near-term tightening despite CPI/PPI misses.",
-      "invalidator": "Warsh downplays September hike risk and cites June disinflation as sufficient progress.",
-      "horizon": "hours",
-      "status": "escalated"
+      "headline": "TSMC revenue/capex guide after Kospi +6%",
+      "why": "STRONG AI/memory rebound signal; tests whether CPI relief sustains the chip rally through Taiwan's bellwether.",
+      "watch": "TSMC Jul 16 revenue/capex guide; Kospi holding 7,200; SOX vs Mon -4.78% close.",
+      "trigger": "TSMC guides below consensus and Kospi closes below 7,000 within 3 sessions.",
+      "invalidator": "TSMC capex guide above street and Kospi holds 7,250+ through Friday.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "priority": "HIGH",
-      "headline": "Hormuz blockade vs. oil settle band",
+      "headline": "Hormuz blockade vs. Brent settle band",
       "why": "STRONG energy-premium signal; forward inflation risk that can overwrite June CPI/PPI.",
-      "watch": "Brent daily settle/spot; CENTCOM statements; vessel counts through Hormuz.",
-      "trigger": "Brent sustains above $85 on settle for 3 sessions or crossings stay below 20/day.",
+      "watch": "Brent daily settle (Jul 15: $85.90); CENTCOM statements; vessel counts through Hormuz.",
+      "trigger": "Brent sustains above $86 on settle for 3 sessions or crossings stay below 20/day.",
       "invalidator": "Brent settle below $80 with crossings >40/day and no new military strikes for 5 days.",
       "horizon": "days",
       "status": "continuing"
     },
     {
       "priority": "HIGH",
-      "headline": "Korea/semiconductor follow-through after Kospi +6%",
-      "why": "STRONG AI/memory rebound signal; tests whether CPI relief sustains the chip rally through TSMC (Jul 16).",
-      "watch": "Kospi holding 7,200; SK Hynix vs ADR premium; TSMC revenue/capex guide Jul 16.",
-      "trigger": "Kospi closes below 7,000 or SK Hynix ADR premium collapses below 20% within 3 sessions.",
-      "invalidator": "Kospi holds 7,250+ through TSMC earnings with SOX +3% from Monday close.",
+      "headline": "September hike odds post double disinflation miss",
+      "why": "STRONG CPI/PPI signal meets MODERATE Warsh hawkish filter; September now ~50-50 per CNBC post-PPI.",
+      "watch": "CME FedWatch September/October hike probability; 10y yield vs ~4.57% post-CPI.",
+      "trigger": "September hike probability reclaims >65% with Brent >$86 settle.",
+      "invalidator": "September hike odds fall below 35% with core PCE ≤0.2% m/m.",
       "horizon": "days",
       "status": "new"
     },
     {
       "priority": "MEDIUM",
       "headline": "PBOC buyout RR execution vs. onshore equity response",
-      "why": "MODERATE China liquidity signal; CNY500bn net landed but A-shares still fell.",
+      "why": "MODERATE China liquidity signal; CNY500bn net landed but A-shares still fell on GDP/semis.",
       "watch": "DR007 vs 1.40% policy rate; follow-on OMO Jul 15–17; Jul 22 LPR fixing.",
       "trigger": "DR007 rises above 1.50% for two sessions despite Jul 15 net injection.",
       "invalidator": "DR007 stays ≤1.40% and Shanghai reclaims 4,000 on rising volume.",
@@ -187,16 +188,16 @@
     },
     {
       "priority": "LOW",
-      "headline": "Contrarian check — CPI disinflation fully priced",
+      "headline": "Contrarian check — CPI/PPI disinflation fully priced",
       "why": "If Kospi +6% and yields -6bp all point dovish, crowded trades are long semis/short dollar.",
       "watch": "10y reclaiming 4.65% while Kospi falls >3% in one session.",
-      "trigger": "Both conditions met = markets rejecting CPI-relief thesis.",
-      "invalidator": "September hike odds fall below 40% with Brent below $82.",
+      "trigger": "Both conditions met = markets rejecting disinflation thesis.",
+      "invalidator": "September hike odds fall below 40% with Brent settle below $82.",
       "horizon": "days",
-      "status": "new"
+      "status": "continuing"
     }
   ],
-  "sources": "Bureau of Labor Statistics (June CPI, June PPI), Federal Reserve (Warsh testimony Jul 14), CME FedWatch, Reuters, CNBC, AP, Morningstar/Dow Jones, ASML IR, SEC (JPM 8-K), Yonhap, Chosun Biz, NBS, 金融界/新浪, 人民网/央视网, 华尔街见闻 (3751219/3751174), BlockBeats/律动 (flash 302775), Bloomberg, CENTCOM, RTHK.",
-  "singleSource": "Indonesia deal $150bn energy pledge (Trump social/新华社 via 华尔街见闻); IBM worst-day claim vs Oct 1987 (FactSet via CNBC).",
+  "sources": "Bureau of Labor Statistics (June CPI, June PPI), Federal Reserve (Warsh testimony Jul 14–15), CME FedWatch, Reuters, CNBC, AP, Morningstar/Dow Jones, ASML IR, SEC (IBM 8-K, JPM 8-K), Yonhap, Businesskorea, NBS, RTHK, 新华网/人民网/央视网, 华尔街见闻 (3776948/3776980), BlockBeats/律动 (flash 302775), Bloomberg, CENTCOM, Investing.com.",
+  "singleSource": "Indonesia deal $150bn energy pledge (Trump social/新华社 via 华尔街见闻); IBM worst-day claim vs Oct 1987 (FactSet via Forbes/CNBC).",
   "slug": "2026-07-15"
 }
