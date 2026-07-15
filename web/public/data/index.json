@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-15T15:50:31.953Z",
-  "latest": "2026-07-15",
+  "generatedAt": "2026-07-15T15:59:35.688Z",
+  "latest": "2026-07-16",
   "briefings": [
+    {
+      "date": "2026-07-16",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Back-to-back US inflation misses (CPI + PPI) plus ASML's second FY26 sales raise fueled a Kospi +6.2% semi rip; China Q2 GDP missed at 4.3% while H-shares outperformed A-shares — TSMC's Jul 16 print is the next AI-demand test.",
+      "coverageWindow": "July 15–16, 2026"
+    },
     {
       "date": "2026-07-15",
       "title": "Daily Financial Briefing",

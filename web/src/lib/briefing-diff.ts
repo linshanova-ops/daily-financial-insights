@@ -1,8 +1,13 @@
-import type { Briefing } from "./types";
+import type { Briefing, FactLine } from "./types";
+import { asSourcedFacts } from "./sourced-facts";
 
 export interface BriefingChange {
   kind: "tone" | "signal" | "watch" | "summary" | "print";
   text: string;
+}
+
+function factTexts(items: FactLine[] | undefined): string[] {
+  return asSourcedFacts(items).map((item) => item.text);
 }
 
 /**
@@ -52,20 +57,22 @@ export function diffBriefings(
     }
   }
 
-  const prevSummary = new Set(previous.summary);
-  for (const line of current.summary) {
+  const prevSummary = new Set(factTexts(previous.summary));
+  for (const line of factTexts(current.summary)) {
     if (!prevSummary.has(line)) {
       changes.push({ kind: "summary", text: line });
     }
   }
 
-  // Surface first novel "what changed" print lines (cap to keep the module short).
   const prevPrints = new Set([
-    ...previous.globalChanged,
-    ...previous.chinaChanged,
+    ...factTexts(previous.globalChanged),
+    ...factTexts(previous.chinaChanged),
   ]);
   let printAdds = 0;
-  for (const line of [...current.globalChanged, ...current.chinaChanged]) {
+  for (const line of [
+    ...factTexts(current.globalChanged),
+    ...factTexts(current.chinaChanged),
+  ]) {
     if (prevPrints.has(line)) continue;
     changes.push({ kind: "print", text: line });
     printAdds += 1;

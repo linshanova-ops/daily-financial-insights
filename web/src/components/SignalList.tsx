@@ -1,5 +1,6 @@
 import type { Signal, SignalGrade } from "@/lib/types";
 import { KindLabel } from "./KindLabel";
+import { SourceButton } from "./SourceButton";
 
 const gradeStyles: Record<SignalGrade, string> = {
   STRONG: "bg-strong/10 text-strong",
@@ -49,7 +50,10 @@ export function SignalList({ signals }: SignalListProps) {
                 <dt className="flex flex-wrap items-center gap-2 font-semibold text-ink">
                   Evidence <KindLabel kind="fact" />
                 </dt>
-                <dd className="mt-1">{signal.evidence}</dd>
+                <dd className="mt-1">
+                  {signal.evidence}
+                  <SourceButton sources={signal.evidenceSources} />
+                </dd>
               </div>
               <div>
                 <dt className="flex flex-wrap items-center gap-2 font-semibold text-ink">
