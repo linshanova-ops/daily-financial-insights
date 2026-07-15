@@ -1,9 +1,10 @@
 name: Generate daily briefing
 
 on:
-  schedule:
-    # Weekdays every 4 hours so reports refresh through the trading day (UTC).
-    - cron: "10 0,4,8,12,16,20 * * 1-5"
+  # On-demand from the website "Refresh now" button (via Netlify function → repository_dispatch)
+  # and manual runs from the Actions tab.
+  repository_dispatch:
+    types: [refresh-briefing]
   workflow_dispatch:
 
 jobs:

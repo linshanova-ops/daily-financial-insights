@@ -8,11 +8,11 @@ Cursor Agent Skills for the full daily financial research pipeline — from gath
 
 ## Public website (permanent)
 
-See **[docs/PUBLIC_SITE.md](./docs/PUBLIC_SITE.md)** for the one-time GitHub Pages enable step, custom domain, and automatic daily briefing setup (`CURSOR_API_KEY`).
+See **[docs/PUBLIC_SITE.md](./docs/PUBLIC_SITE.md)** for GitHub Pages, on-demand **Refresh now** (Netlify function + `GITHUB_PAT`), and `CURSOR_API_KEY` setup.
 
 - Permanent URL: https://linshanova-ops.github.io/daily-financial-insights/
-- Auto-deploy: push to `main` + scheduled rebuilds
-- Live feed: site polls `web/public/data/*.json` every 60s from GitHub
+- Auto-deploy: push to `main`
+- Updates: visitors click **Refresh now** to generate a new briefing (not a fixed 4-hour cron)
 
 | Skill | Stage | Purpose |
 |-------|-------|---------|
