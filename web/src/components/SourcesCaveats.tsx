@@ -9,9 +9,12 @@ export function SourcesCaveats({
 }: SourcesCaveatsProps) {
   return (
     <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
-      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-copper">
-        Sources & caveats
-      </p>
+      <div className="flex items-center gap-3">
+        <span className="h-6 w-1 rounded-full bg-ink/50" aria-hidden />
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-ink/60">
+          Sources & caveats
+        </p>
+      </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
         Traceability
       </h2>

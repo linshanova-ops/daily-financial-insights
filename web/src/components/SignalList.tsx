@@ -13,9 +13,12 @@ interface SignalListProps {
 export function SignalList({ signals }: SignalListProps) {
   return (
     <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
-      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-copper">
-        Signals
-      </p>
+      <div className="flex items-center gap-3">
+        <span className="h-6 w-1 rounded-full bg-amber" aria-hidden />
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber">
+          Signals
+        </p>
+      </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
         What the day reveals
       </h2>

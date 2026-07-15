@@ -1,3 +1,18 @@
+const usSources = [
+  {
+    name: "Federal Reserve / BLS / Treasury",
+    english: "Primary US",
+    href: "https://www.federalreserve.gov/",
+    role: "Official policy, CPI/PPI/employment prints, and the daily yield curve — tier-1 numbers only.",
+  },
+  {
+    name: "CME FedWatch + Reuters/WSJ",
+    english: "Market path",
+    href: "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+    role: "Implied Fed path plus wire tape for US equities, rates, and cross-asset settles.",
+  },
+];
+
 const chinaSources = [
   {
     name: "华尔街见闻",
@@ -11,6 +26,12 @@ const chinaSources = [
     href: "https://www.theblockbeats.info/",
     role: "Crypto–macro transmission — how oil, Fed path, and Asia risk-off hit BTC and other risk assets.",
   },
+  {
+    name: "PBOC / NBS / 财联社",
+    english: "Official + flash",
+    href: "http://www.pbc.gov.cn/",
+    role: "Policy rates and OMO from PBOC; macro prints from NBS; CLS for fastest A-share flashes.",
+  },
 ];
 
 const stages = [
@@ -19,7 +40,7 @@ const stages = [
     name: "Gather",
     skill: "gathering-financial-news",
     summary:
-      "Sweep eight news categories into a dated, sourced news log. Undated items are discarded. China desk always includes 华尔街见闻 and BlockBeats.",
+      "Sweep eight news categories into a dated, sourced news log. Prefer primary US (Fed/BLS/Treasury) and China (PBOC/NBS) prints; always include 华尔街见闻 and BlockBeats.",
   },
   {
     id: "02",
@@ -37,10 +58,10 @@ const stages = [
   },
   {
     id: "04",
-    name: "Signals",
+    name: "Signals + asset framework",
     skill: "interpreting-market-signals",
     summary:
-      "Extract graded, falsifiable inferences — each with evidence, mechanism, and a disproof condition.",
+      "Extract graded, falsifiable signals, then apply the stable asset framework: for each major asset, name the dominant regime (beta), today's driver, the read, and the regime invalidator.",
   },
   {
     id: "05",
@@ -54,7 +75,7 @@ const stages = [
     name: "Report",
     skill: "writing-daily-financial-report",
     summary:
-      "Assemble the briefing for a busy reader. The website publishes this final stage.",
+      "Assemble the briefing for a busy reader — summary, global, China, asset framework, signals, watch list. The website publishes this final stage.",
   },
 ];
 
@@ -106,24 +127,53 @@ export default function PipelinePage() {
       </ol>
 
       <div className="mt-16 border-t border-line pt-14">
-        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-copper">
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-azure">
+          US sources
+        </p>
+        <h2 className="display mt-3 max-w-3xl text-3xl tracking-tight text-ink sm:text-4xl">
+          Primary desks for the global section
+        </h2>
+        <ul className="mt-10 grid gap-8 sm:grid-cols-2">
+          {usSources.map((source) => (
+            <li key={source.name} className="border-t border-azure/30 pt-6">
+              <a
+                href={source.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="display text-2xl tracking-tight text-ink transition-colors hover:text-azure"
+              >
+                {source.name}
+              </a>
+              <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-ink/40">
+                {source.english}
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-ink-soft">
+                {source.role}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mt-16 border-t border-line pt-14">
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-crimson">
           China sources
         </p>
         <h2 className="display mt-3 max-w-3xl text-3xl tracking-tight text-ink sm:text-4xl">
           Required desks for every China section
         </h2>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
-          Official prints still come from PBOC, NBS, and CSRC. These two outlets
-          are mandatory for China color and crypto–macro linkage on linshanova.
+          Official prints still come from PBOC, NBS, and CSRC. Wallstreetcn and
+          BlockBeats are mandatory for China color and crypto–macro linkage.
         </p>
-        <ul className="mt-10 grid gap-8 sm:grid-cols-2">
+        <ul className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {chinaSources.map((source) => (
-            <li key={source.name} className="border-t border-line pt-6">
+            <li key={source.name} className="border-t border-crimson/30 pt-6">
               <a
                 href={source.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="display text-2xl tracking-tight text-ink transition-colors hover:text-forest"
+                className="display text-2xl tracking-tight text-ink transition-colors hover:text-crimson"
               >
                 {source.name}
               </a>

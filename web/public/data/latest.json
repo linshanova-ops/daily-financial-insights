@@ -37,6 +37,64 @@
     "BlockBeats frames BTC as a high-beta liquidity asset in the oil→Fed chain — CPI miss helped odds, but Hormuz blockade risk keeps crypto tied to macro rates, not digital-gold status."
   ],
   "chinaDivergences": "Onshore equities staged a V-recovery Tuesday while 华尔街见闻's overnight book showed US tech/semis, gold, and BTC all weak with oil surging — China price action and global risk assets remain desynchronized. Nikkei +0.74% to 67,743.50 and Kospi +0.73% to 6,856.83 closed firmer after Monday's sell-sidecar, but China semis materials still lagged hardware leadership.",
+  "assetFramework": [
+    {
+      "asset": "US equities (S&P 500 / Nasdaq)",
+      "regime": "Fed path via real yields — CPI-vs-oil tug decides the discount rate; earnings a secondary support",
+      "driver": "10y -6bp to ~4.57% post-CPI miss; July hike odds ~16.6% vs ~45–50% Monday (CME FedWatch); JPM/Citi Q2 beats",
+      "read": "S&P +0.40% to 7,545, Nasdaq +0.92% — consistent with the rates-relief beta; bank earnings added support, not the driver",
+      "invalidator": "Equities fall while yields also fall for 2+ sessions — would signal earnings/growth fear replacing the rates regime"
+    },
+    {
+      "asset": "US Treasuries (10y)",
+      "regime": "Inflation prints vs consensus + Fed communication — data-led range trading",
+      "driver": "June CPI miss (3.5% y/y vs ~3.8%); Warsh: no forward guidance, not 'mission accomplished'",
+      "read": "10y ~4.57% (-6bp) — CPI beta dominated; Warsh's hawkish frame limited the rally rather than reversing it",
+      "invalidator": "10y back above 4.65% without a hot data print — would signal fiscal-supply or term-premium regime taking over"
+    },
+    {
+      "asset": "US dollar (DXY)",
+      "regime": "Rate differentials with a safe-haven bid on Hormuz headlines",
+      "driver": "July hike odds collapsed post-CPI; blockade risk still live",
+      "read": "Softer rates pull vs geopolitical bid roughly offset — no decisive move; regime intact",
+      "invalidator": "DXY breaks lower while September hike odds hold ~60% — would suggest flows, not rates, in control"
+    },
+    {
+      "asset": "Gold (COMEX)",
+      "regime": "Two-layer: classic real-yield beta day-to-day, central-bank/fiscal-hedge floor structurally (post-2022 regime)",
+      "driver": "Settled +1.60% at $4,061 as 10y fell ~6bp; Mon it fell ~2.6% when yields rose",
+      "read": "Trading the real-yield beta cleanly this week; the CB-buying floor is why dips keep getting bought",
+      "invalidator": "Gold falls >3% on a day real yields decline — would question the hedge-demand floor"
+    },
+    {
+      "asset": "Oil (Brent)",
+      "regime": "Geopolitical supply risk — Hormuz blockade premium dominates demand signals",
+      "driver": "Brent settled $84.73 (+1.72%) after Mon +9.6%; Trump kept Iran-only blockade, dropped 20% fee",
+      "read": "Premium persists despite fee U-turn — supply-risk beta, not demand, is pricing the barrel",
+      "invalidator": "Brent settles below $78 with Hormuz crossings >40/day — premium unwound"
+    },
+    {
+      "asset": "China equities (Shanghai / ChiNext)",
+      "regime": "Domestic liquidity + positioning snapback; partially decoupled from global risk beta",
+      "driver": "PBOC net +CNY226.5bn OMO, CNY1.4tn buyout RR for Jul 15; Mon -2.06% washout",
+      "read": "V-recovery (+1.36% / +3.43%) on liquidity + oversold bounce while US semis fell — domestic beta won today",
+      "invalidator": "Shanghai closes below Monday's low on rising volume — snapback thesis dead, global risk beta back in charge"
+    },
+    {
+      "asset": "CNY",
+      "regime": "PBOC fix as the policy signal; rate differentials constrain but do not drive daily moves",
+      "driver": "7-day OMO rate held at 1.40%; quantity easing without price easing",
+      "read": "Stable-fix regime — PBOC is signaling FX stability while easing via quantity; imported energy inflation argues against rate cuts",
+      "invalidator": "Fix persistently weaker than model estimates for a week — would signal tolerated depreciation"
+    },
+    {
+      "asset": "Bitcoin",
+      "regime": "High-beta global liquidity asset in the oil→Fed chain — not digital gold in this shock",
+      "driver": "Mon: BTC >3% down, briefly <$62k with SOX -4.78%; post-CPI rebound toward $63.5k as hike odds fell (BlockBeats)",
+      "read": "Textbook liquidity beta both directions — sold the hawkish repricing, bought the CPI relief",
+      "invalidator": "BTC rallies while Brent >$84 and hike odds rise — would signal decoupling from the rates chain"
+    }
+  ],
   "signals": [
     {
       "grade": "STRONG",

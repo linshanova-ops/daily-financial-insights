@@ -24,9 +24,10 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 2. **Executive summary** — 3–5 bullets: the day's most important facts + the single most important signal + the top suggestion. A reader who stops here should still be correctly oriented.
 3. **Global situation** — from `analyzing-global-macro` output, tightened
 4. **China situation** — from `analyzing-china-macro` output, tightened
-5. **Signals** — the graded list, strongest first
-6. **What to watch (suggestions)** — the prioritized watch-list with triggers/invalidators
-7. **Sources & caveats** — key sources consulted; flag any single-source items relied on; standing disclaimer
+5. **Asset framework** — stable per-asset regime lens (see `interpreting-market-signals/references/asset-framework.md`): for each of the eight canonical assets, name the dominant regime (beta), today's driver reading with a number, how the asset traded vs the regime, and the regime invalidator. Website key: `assetFramework`.
+6. **Signals** — the graded list, strongest first
+7. **What to watch (suggestions)** — the prioritized watch-list with triggers/invalidators
+8. **Sources & caveats** — key sources consulted; flag any single-source items relied on; standing disclaimer
 
 ## Style Rules
 

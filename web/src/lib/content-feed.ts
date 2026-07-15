@@ -21,6 +21,14 @@ export function getLiveFeedBase(): string {
   if (typeof process !== "undefined" && process.env.NEXT_PUBLIC_CONTENT_FEED) {
     return process.env.NEXT_PUBLIC_CONTENT_FEED.replace(/\/$/, "");
   }
+  // Local dev serves the synced JSON from public/ — poll that instead of
+  // GitHub raw so unpublished briefing changes are visible immediately.
+  if (
+    typeof window !== "undefined" &&
+    ["localhost", "127.0.0.1"].includes(window.location.hostname)
+  ) {
+    return "/data";
+  }
   return `https://raw.githubusercontent.com/${REPO}/${BRANCH}/web/public/data`;
 }
 

@@ -35,7 +35,11 @@ ACCURACY IS NON-NEGOTIABLE. Wrong figures or wrong beat/miss labels are worse th
    (100亿元 = CNY10bn); (d) gold/oil levels are settles or explicitly labeled spot.
 
 3. Write web/content/briefings/${today}.md using the exact YAML frontmatter schema in
-   web/content/briefings/2026-07-13.md (all keys required). Cite sources on hard numbers.
+   web/content/briefings/2026-07-14.md (all keys required, INCLUDING assetFramework —
+   the stable per-asset regime lens described in
+   .cursor/skills/financial-research/interpreting-market-signals/references/asset-framework.md;
+   cover all eight canonical assets: US equities, US 10y, DXY, gold, oil, China equities,
+   CNY, BTC). Cite sources on hard numbers.
    If today's file already exists, update it with the latest developments instead of skipping.
 
 4. From web/, run: npm ci && npm run sync-data

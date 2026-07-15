@@ -11,6 +11,20 @@
 
 Rule: prefer at least one tier 1–2 source for signal-driving items. If only tier 3–4 coverage exists, the item may still be used but must be marked `single-source` and flagged in the report's caveats. Tier 4 alone is never sufficient for a STRONG signal.
 
+## US Market Coverage (required daily sweep)
+
+Primary (tier 1) — always for official numbers:
+- **Federal Reserve (federalreserve.gov)** — statements, speeches, testimony, MPR, minutes
+- **BLS (bls.gov)** — CPI, PPI, employment; **BEA (bea.gov)** — GDP, PCE
+- **US Treasury (treasury.gov)** — daily yield curve, auctions, TIC flows
+- **CME FedWatch** — market-implied Fed path (cite the probability, dated)
+- **SEC filings / company IR** — earnings and guidance for market-moving names
+
+Market/press (tier 2–3):
+- **Reuters, Bloomberg, WSJ, Financial Times** — default wires for US market moves
+- **CNBC, MarketWatch, Barron's** — same-day tape color, cross-check vs settles
+- **Morningstar/Dow Jones settle reports** — COMEX/NYMEX official settles (gold, oil)
+
 ## China Coverage
 
 English-language:
@@ -22,7 +36,9 @@ English-language:
 Chinese-language (use when accessible; often faster and more detailed):
 - **华尔街见闻 (Wallstreetcn)** — required China/global desk sweep for linshanova; strong on overnight closes, policy calendars, A-share strategy notes, and cross-asset tape (wallstreetcn.com)
 - **BlockBeats / 律动 (theblockbeats.info)** — required for China-facing crypto–macro and risk-asset transmission (BTC/ETH vs oil, Fed path, Asia risk-off); treat as tier 3 — verify hard macro prints against tier 1–2
-- **财新 (Caixin)**, **21世纪经济报道**, **证券时报**, **第一财经 (Yicai)**, **中国人民银行官网 (pbc.gov.cn)**, **中国证监会 (csrc.gov.cn)**, **国家统计局 (stats.gov.cn)**
+- **财联社 (CLS, cls.cn)** — fastest A-share/policy flashes; **东方财富 (Eastmoney)** — quotes, turnover, sector flows
+- **新华财经 (Xinhua Finance)** — official market wrap; **第一财经 (Yicai)** — PBOC OMO and policy detail
+- **财新 (Caixin)**, **21世纪经济报道**, **证券时报**, **中国人民银行官网 (pbc.gov.cn)**, **国家外汇管理局 (safe.gov.cn)**, **中国证监会 (csrc.gov.cn)**, **国家统计局 (stats.gov.cn)**, **财政部 (mof.gov.cn)**
 
 Reading official Chinese sources: announcements are often deliberately understated. Watch for signal phrases — 适度宽松 (moderately loose), 稳中求进 (progress amid stability), 逆周期调节 (counter-cyclical adjustment) — whose appearance/disappearance matters more than the surrounding prose.
 
