@@ -2,6 +2,7 @@ import type { Briefing } from "@/lib/types";
 import { BriefingHero } from "./BriefingHero";
 import { ExecutiveSummary } from "./ExecutiveSummary";
 import { SituationBlock } from "./SituationBlock";
+import { AssetFramework } from "./AssetFramework";
 import { SignalList } from "./SignalList";
 import { WatchList } from "./WatchList";
 import { SourcesCaveats } from "./SourcesCaveats";
@@ -39,6 +40,7 @@ export function BriefingView({
         implies={briefing.globalImplies}
         tensionsLabel="Tensions"
         tensions={briefing.globalTensions}
+        accent="azure"
       />
       <SituationBlock
         eyebrow="China situation"
@@ -49,7 +51,11 @@ export function BriefingView({
         implies={briefing.chinaImplies}
         tensionsLabel="Divergences to watch"
         tensions={briefing.chinaDivergences}
+        accent="crimson"
       />
+      {briefing.assetFramework?.length ? (
+        <AssetFramework assets={briefing.assetFramework} />
+      ) : null}
       <SignalList signals={briefing.signals} />
       <WatchList items={briefing.watchItems} />
       <SourcesCaveats

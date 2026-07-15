@@ -42,6 +42,64 @@
     "H-shares caught the global CPI bid (+1.40%) while A-shares did not; if Warsh's Senate tone stays non-committal, H-tech could extend gains, but weak GDP keeps ChiNext fragile."
   ],
   "chinaDivergences": "Kospi +6.24% and SK Hynix +8.8% domestically vs Shanghai -0.29% but Hang Seng +1.40% — CPI relief hits Korea/H-shares hardest while onshore A-shares lag on GDP disappointment and semis positioning. PBOC injecting CNY500bn while A-shares fall = liquidity is ample but risk appetite is sector-selective, not broad beta.",
+  "assetFramework": [
+    {
+      "asset": "US equities (S&P 500 / Nasdaq)",
+      "regime": "Fed path via real yields — CPI/PPI-vs-oil tug decides the discount rate; AI/semi earnings a secondary support",
+      "driver": "Post-CPI S&P +0.38% to 7,543.59, Nasdaq +0.90%; July hike odds ~17% (CME); ASML FY26 sales raise; IBM -25% on Q2 miss",
+      "read": "Rates-relief beta held: Nasdaq/semis led while IBM's software miss was idiosyncratic, not a market regime flip",
+      "invalidator": "Equities fall while yields also fall for 2+ sessions — would signal earnings/growth fear replacing the rates regime"
+    },
+    {
+      "asset": "US Treasuries (10y)",
+      "regime": "Inflation prints vs consensus + Fed communication — data-led range trading",
+      "driver": "June CPI and PPI both missed; 10y ~4.57% (-~6bp); Warsh: not 'mission accomplished', no forward guidance",
+      "read": "CPI/PPI beta dominated the move; Warsh's hawkish frame capped the rally rather than reversing it",
+      "invalidator": "10y back above 4.65% without a hot data print — fiscal-supply or term-premium regime taking over"
+    },
+    {
+      "asset": "US dollar (DXY)",
+      "regime": "Rate differentials with a safe-haven bid on Hormuz headlines",
+      "driver": "July hike odds ~17% post-CPI/PPI; Brent spot back above $85 on Iran blockade",
+      "read": "Softer rates pull vs oil/geo bid roughly offset — no decisive break; regime intact",
+      "invalidator": "DXY breaks lower while September hike odds hold ~60% — would suggest flows, not rates, in control"
+    },
+    {
+      "asset": "Gold (COMEX)",
+      "regime": "Two-layer: classic real-yield beta day-to-day, central-bank/fiscal-hedge floor structurally",
+      "driver": "COMEX settled +1.60% at $4,061.10 as 10y fell ~6bp; spot eased toward $4,030 Wed as oil climbed",
+      "read": "Traded the real-yield beta on the CPI close; Wednesday fade with oil shows the CPI/oil tension, not a floor break",
+      "invalidator": "Gold falls >3% on a day real yields decline — would question the hedge-demand floor"
+    },
+    {
+      "asset": "Oil (Brent)",
+      "regime": "Geopolitical supply risk — Hormuz blockade premium dominates demand signals",
+      "driver": "Brent settled $84.73 Jul 14 (+1.72%); spot ~$85.30 Wed; Iran-only blockade reinstated, 20% Hormuz fee scrapped",
+      "read": "Premium persists despite fee U-turn — supply-risk beta is pricing the barrel, overwriting June CPI energy relief",
+      "invalidator": "Brent settles below $78 with Hormuz crossings >40/day — premium unwound"
+    },
+    {
+      "asset": "China equities (Shanghai / ChiNext)",
+      "regime": "Domestic growth/liquidity vs selective global risk beta — A/H split",
+      "driver": "Shanghai -0.29%, ChiNext -1.21%, Q2 GDP 4.3% miss; Hang Seng +1.40%; PBOC net +CNY500bn buyout RR",
+      "read": "Liquidity landed but A-shares ignored it; H-shares caught the global CPI bid — domestic beta lost to growth disappointment",
+      "invalidator": "Shanghai reclaims 4,000 on rising volume with DR007 ≤1.40% — liquidity beta back in charge"
+    },
+    {
+      "asset": "CNY",
+      "regime": "PBOC fix as the policy signal; quantity easing without price easing",
+      "driver": "7-day rate held 1.40%; CNY1.4tn buyout RR net +CNY500bn; oil lifts imported-inflation risk",
+      "read": "Stable-fix regime — PBOC eases via quantity while oil argues against an LPR cut",
+      "invalidator": "Fix persistently weaker than model estimates for a week — would signal tolerated depreciation"
+    },
+    {
+      "asset": "Bitcoin",
+      "regime": "High-beta global liquidity asset in the oil→Fed chain — not digital gold in this shock",
+      "driver": "BlockBeats: GENIUS Act House push; CPI/PPI cooled July hike odds; Brent still >$85",
+      "read": "Still priced as liquidity beta — crypto policy headlines are secondary to the Fed-odds/oil chain",
+      "invalidator": "BTC rallies while Brent >$85 and September hike odds rise — would signal decoupling from the rates chain"
+    }
+  ],
   "signals": [
     {
       "grade": "STRONG",

@@ -20,6 +20,14 @@ export interface WatchItem {
   status: "new" | "continuing" | "escalated" | "retired";
 }
 
+export interface AssetView {
+  asset: string;
+  regime: string;
+  driver: string;
+  read: string;
+  invalidator: string;
+}
+
 export interface BriefingFrontmatter {
   date: string;
   title: string;
@@ -36,6 +44,8 @@ export interface BriefingFrontmatter {
   chinaChanged: string[];
   chinaImplies: string[];
   chinaDivergences: string;
+  /** Stable per-asset regime lens (alpha/beta framework); optional for older briefings. */
+  assetFramework?: AssetView[];
   signals: Signal[];
   watchItems: WatchItem[];
   sources: string;

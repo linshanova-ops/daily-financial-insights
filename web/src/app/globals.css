@@ -14,6 +14,15 @@
   --strong: #8b1e1e;
   --moderate: #9a6116;
   --weak: #3d5a6c;
+  /* Module accents */
+  --azure: #1f4f6e;
+  --azure-soft: #dbe7ef;
+  --crimson: #8f2d3c;
+  --crimson-soft: #f2e0e2;
+  --violet: #4c3a6e;
+  --violet-soft: #e6e1f0;
+  --amber: #92600f;
+  --amber-soft: #f2e7d3;
   --background: var(--mist);
   --foreground: var(--ink);
 }
@@ -34,6 +43,14 @@
   --color-strong: var(--strong);
   --color-moderate: var(--moderate);
   --color-weak: var(--weak);
+  --color-azure: var(--azure);
+  --color-azure-soft: var(--azure-soft);
+  --color-crimson: var(--crimson);
+  --color-crimson-soft: var(--crimson-soft);
+  --color-violet: var(--violet);
+  --color-violet-soft: var(--violet-soft);
+  --color-amber: var(--amber);
+  --color-amber-soft: var(--amber-soft);
   --font-sans: var(--font-manrope);
   --font-display: var(--font-fraunces);
 }
