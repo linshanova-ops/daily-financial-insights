@@ -37,9 +37,11 @@ ACCURACY IS NON-NEGOTIABLE. Wrong figures or wrong beat/miss labels are worse th
    (100亿元 = CNY10bn); (d) gold/oil levels are settles or explicitly labeled spot.
 
 3. Write web/content/briefings/${today}.md using the exact YAML frontmatter schema in
-   web/content/briefings/2026-07-15.md (all keys required, INCLUDING assetFramework,
-   publishedAt as ISO UTC now, and keySources with clickable primary URLs for the day's
-   hard prints — BLS/Fed/NBS/PBOC/etc when cited). assetFramework is the stable
+   web/content/briefings/2026-07-16.md when present (else 2026-07-15.md). All keys required,
+   INCLUDING assetFramework, publishedAt as ISO UTC now, keySources, AND per-fact source
+   buttons: summary/globalChanged/chinaChanged entries should be objects
+   { text, sources: [{ label, href }] } pointing at the original primary post (BLS/Fed/
+   Treasury/NBS/PBOC/ASML IR/华尔街见闻/Caixin/Yicai/etc). assetFramework is the stable
    per-asset regime lens in
    .cursor/skills/financial-research/interpreting-market-signals/references/asset-framework.md;
    cover all eight canonical assets: US equities, US 10y, DXY, gold, oil, China equities,

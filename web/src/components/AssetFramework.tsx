@@ -1,6 +1,7 @@
 import type { AssetView } from "@/lib/types";
 import { accents } from "@/lib/module-accents";
 import { KindLabel } from "./KindLabel";
+import { SourceButton } from "./SourceButton";
 
 interface AssetFrameworkProps {
   assets: AssetView[];
@@ -55,7 +56,10 @@ export function AssetFramework({ assets }: AssetFrameworkProps) {
                 <dt className="font-semibold uppercase tracking-[0.14em] text-violet">
                   Driver today
                 </dt>
-                <dd className="mt-1">{view.driver}</dd>
+                <dd className="mt-1">
+                  {view.driver}
+                  <SourceButton sources={view.driverSources} />
+                </dd>
               </div>
               <div>
                 <dt className="font-semibold uppercase tracking-[0.14em] text-violet">

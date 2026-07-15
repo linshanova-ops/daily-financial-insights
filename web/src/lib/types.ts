@@ -1,10 +1,22 @@
 export type SignalGrade = "STRONG" | "MODERATE" | "WEAK";
 export type WatchPriority = "HIGH" | "MEDIUM" | "LOW";
 
+export interface FactSource {
+  label: string;
+  href: string;
+}
+
+export interface KeySource {
+  label: string;
+  href: string;
+}
+
 export interface Signal {
   grade: SignalGrade;
   name: string;
   evidence: string;
+  /** Optional click-throughs for the evidence row. */
+  evidenceSources?: FactSource[];
   mechanism: string;
   disprovedIf: string;
 }
@@ -24,14 +36,19 @@ export interface AssetView {
   asset: string;
   regime: string;
   driver: string;
+  /** Optional click-throughs for the driver reading. */
+  driverSources?: FactSource[];
   read: string;
   invalidator: string;
 }
 
-export interface KeySource {
-  label: string;
-  href: string;
+/** A fact line with optional click-through to the original source post. */
+export interface SourcedFact {
+  text: string;
+  sources?: FactSource[];
 }
+
+export type FactLine = string | SourcedFact;
 
 export interface BriefingFrontmatter {
   date: string;
@@ -40,18 +57,18 @@ export interface BriefingFrontmatter {
   /** ISO timestamp when this briefing was published (UTC). */
   publishedAt?: string;
   marketTone: string;
-  summary: string[];
+  summary: FactLine[];
   signal: string;
   watch: string;
   /** Clickable primary links for the day's key prints. */
   keySources?: KeySource[];
   globalRegime: string;
-  globalChanged: string[];
-  globalImplies: string[];
+  globalChanged: FactLine[];
+  globalImplies: FactLine[];
   globalTensions: string;
   chinaStance: string;
-  chinaChanged: string[];
-  chinaImplies: string[];
+  chinaChanged: FactLine[];
+  chinaImplies: FactLine[];
   chinaDivergences: string;
   /** Stable per-asset regime lens (alpha/beta framework); optional for older briefings. */
   assetFramework?: AssetView[];

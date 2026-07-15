@@ -1,9 +1,11 @@
+import type { FactLine } from "@/lib/types";
+import { asSourcedFacts, factKey } from "@/lib/sourced-facts";
 import { accents } from "@/lib/module-accents";
 import { Bullet } from "./Bullet";
 import { KindLabel } from "./KindLabel";
 
 interface ExecutiveSummaryProps {
-  summary: string[];
+  summary: FactLine[];
   signal: string;
   watch: string;
 }
@@ -14,6 +16,7 @@ export function ExecutiveSummary({
   watch,
 }: ExecutiveSummaryProps) {
   const a = accents.forest;
+  const facts = asSourcedFacts(summary);
 
   return (
     <section
@@ -33,9 +36,13 @@ export function ExecutiveSummary({
         The day in five minutes
       </h2>
       <ul className="mt-8 space-y-4 text-base leading-relaxed text-ink-soft sm:text-lg">
-        {summary.map((item) => (
-          <Bullet key={item} dotClass={a.bulletDot}>
-            {item}
+        {facts.map((item, index) => (
+          <Bullet
+            key={factKey(item, index)}
+            dotClass={a.bulletDot}
+            sources={item.sources}
+          >
+            {item.text}
           </Bullet>
         ))}
       </ul>

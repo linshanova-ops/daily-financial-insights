@@ -1,3 +1,5 @@
+import type { FactLine } from "@/lib/types";
+import { asSourcedFacts, factKey } from "@/lib/sourced-facts";
 import { accents, type ModuleAccent } from "@/lib/module-accents";
 import { Bullet } from "./Bullet";
 import { KindLabel } from "./KindLabel";
@@ -7,8 +9,8 @@ interface SituationBlockProps {
   title: string;
   stanceLabel: string;
   stance: string;
-  changed: string[];
-  implies: string[];
+  changed: FactLine[];
+  implies: FactLine[];
   tensionsLabel: string;
   tensions: string;
   accent?: ModuleAccent;
@@ -26,6 +28,8 @@ export function SituationBlock({
   accent = "forest",
 }: SituationBlockProps) {
   const a = accents[accent];
+  const changedFacts = asSourcedFacts(changed);
+  const implyFacts = asSourcedFacts(implies);
 
   return (
     <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
@@ -61,9 +65,13 @@ export function SituationBlock({
             <KindLabel kind="fact" />
           </div>
           <ul className="mt-4 space-y-4 text-base leading-relaxed text-ink-soft">
-            {changed.map((item) => (
-              <Bullet key={item} dotClass={a.bulletDot}>
-                {item}
+            {changedFacts.map((item, index) => (
+              <Bullet
+                key={factKey(item, index)}
+                dotClass={a.bulletDot}
+                sources={item.sources}
+              >
+                {item.text}
               </Bullet>
             ))}
           </ul>
@@ -76,9 +84,9 @@ export function SituationBlock({
             <KindLabel kind="judgment" />
           </div>
           <ul className="mt-4 space-y-4 text-base leading-relaxed text-ink-soft">
-            {implies.map((item) => (
-              <Bullet key={item} dotClass={a.bulletDot}>
-                {item}
+            {implyFacts.map((item, index) => (
+              <Bullet key={factKey(item, index)} dotClass={a.bulletDot}>
+                {item.text}
               </Bullet>
             ))}
           </ul>
