@@ -25,9 +25,11 @@ ACCURACY IS NON-NEGOTIABLE. Wrong figures or wrong beat/miss labels are worse th
 1. Run the full daily-financial-briefing skill pipeline under .cursor/skills/financial-research/
    (gather → global → China → signals → suggestions → report). Coverage: last 24h
    (72h if weekend/Monday). Use dated sources only. Prefer primary sources for official
-   data (BLS, Fed, PBOC, NBS, company IR). For China, always sweep 华尔街见闻
-   (wallstreetcn.com) and BlockBeats/律动 (theblockbeats.info) and cite at least one
-   item from each in the China section when they have coverage-window news.
+   data (BLS, Fed, US Treasury yield curve, PBOC, NBS, company IR). Use Yahoo Finance
+   for US index/quote checks only (secondary). For China, always sweep 华尔街见闻
+   (wallstreetcn.com), Caixin/财新 or 第一财经/Yicai, and BlockBeats/律动
+   (theblockbeats.info) and cite at least one item from each desk family in the China
+   section when they have coverage-window news.
 
 2. Before writing, verify: (a) each index move is that index's official close;
    (b) inflation/jobs/GDP beat|miss is vs consensus not vs prior — cooler CPI = miss;

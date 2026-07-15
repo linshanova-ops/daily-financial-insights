@@ -23,8 +23,16 @@ export const SOURCE_CATALOG: SourceLink[] = [
     href: "https://www.federalreserve.gov/",
   },
   {
+    label: "US Treasury",
+    href: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
+  },
+  {
     label: "CME FedWatch",
     href: "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+  },
+  {
+    label: "Yahoo Finance",
+    href: "https://finance.yahoo.com/",
   },
   {
     label: "NBS",
@@ -37,6 +45,18 @@ export const SOURCE_CATALOG: SourceLink[] = [
   {
     label: "华尔街见闻",
     href: "https://wallstreetcn.com/",
+  },
+  {
+    label: "Caixin",
+    href: "https://www.caixinglobal.com/",
+  },
+  {
+    label: "第一财经",
+    href: "https://www.yicai.com/",
+  },
+  {
+    label: "Yicai",
+    href: "https://www.yicai.com/",
   },
   {
     label: "BlockBeats",
@@ -79,6 +99,10 @@ export const DEFAULT_KEY_SOURCES: SourceLink[] = [
     href: "https://www.bls.gov/news.release/archives/ppi_07152026.htm",
   },
   {
+    label: "US Treasury — yield curve",
+    href: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
+  },
+  {
     label: "NBS — China GDP",
     href: "https://www.stats.gov.cn/english/",
   },
@@ -93,6 +117,18 @@ export const DEFAULT_KEY_SOURCES: SourceLink[] = [
   {
     label: "CME FedWatch",
     href: "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+  },
+  {
+    label: "Yahoo Finance",
+    href: "https://finance.yahoo.com/",
+  },
+  {
+    label: "Caixin Global",
+    href: "https://www.caixinglobal.com/",
+  },
+  {
+    label: "第一财经 (Yicai)",
+    href: "https://www.yicai.com/",
   },
 ];
 

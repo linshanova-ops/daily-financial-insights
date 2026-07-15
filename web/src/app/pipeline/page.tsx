@@ -1,15 +1,27 @@
 const usSources = [
   {
-    name: "Federal Reserve / BLS / Treasury",
+    name: "Federal Reserve / BLS",
     english: "Primary US",
     href: "https://www.federalreserve.gov/",
-    role: "Official policy, CPI/PPI/employment prints, and the daily yield curve — tier-1 numbers only.",
+    role: "Official policy, testimony, CPI/PPI/employment prints — tier-1 numbers only.",
+  },
+  {
+    name: "US Treasury yield curve",
+    english: "Rates primary",
+    href: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
+    role: "Daily Treasury yield curve — preferred primary for 2y/10y levels and curve moves.",
   },
   {
     name: "CME FedWatch + Reuters/WSJ",
     english: "Market path",
     href: "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
     role: "Implied Fed path plus wire tape for US equities, rates, and cross-asset settles.",
+  },
+  {
+    name: "Yahoo Finance",
+    english: "Quotes / secondary",
+    href: "https://finance.yahoo.com/",
+    role: "US index and equity quote checks plus secondary headlines — not a substitute for wires or primary prints.",
   },
 ];
 
@@ -19,6 +31,18 @@ const chinaSources = [
     english: "Wallstreetcn",
     href: "https://wallstreetcn.com/",
     role: "Overnight global closes, China policy calendars, A-share strategy, and cross-asset tape.",
+  },
+  {
+    name: "财新 / Caixin",
+    english: "Caixin Global",
+    href: "https://www.caixinglobal.com/",
+    role: "Independent China financial journalism — property, banking, local debt, and policy depth.",
+  },
+  {
+    name: "第一财经",
+    english: "Yicai",
+    href: "https://www.yicai.com/",
+    role: "PBOC OMO detail, onshore policy color, and same-day China macro/market reporting.",
   },
   {
     name: "BlockBeats",
@@ -40,7 +64,7 @@ const stages = [
     name: "Gather",
     skill: "gathering-financial-news",
     summary:
-      "Sweep eight news categories into a dated, sourced news log. Prefer primary US (Fed/BLS/Treasury) and China (PBOC/NBS) prints; always include 华尔街见闻 and BlockBeats.",
+      "Sweep eight news categories into a dated, sourced news log. Prefer primary US (Fed/BLS/Treasury yield curve) and China (PBOC/NBS) prints; use Yahoo Finance for US quote checks; always include 华尔街见闻, Caixin/Yicai, and BlockBeats.",
   },
   {
     id: "02",
@@ -54,7 +78,7 @@ const stages = [
     name: "China analysis",
     skill: "analyzing-china-macro",
     summary:
-      "Decode PBOC and fiscal stance first, then read growth engines, markets, and external linkages — with required color from 华尔街见闻 and BlockBeats.",
+      "Decode PBOC and fiscal stance first, then read growth engines, markets, and external linkages — with required color from 华尔街见闻, Caixin/第一财经, and BlockBeats.",
   },
   {
     id: "04",
@@ -165,8 +189,9 @@ export default function PipelinePage() {
           Required desks for every China section
         </h2>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
-          Official prints still come from PBOC, NBS, and CSRC. Wallstreetcn and
-          BlockBeats are mandatory for China color and crypto–macro linkage.
+          Official prints still come from PBOC, NBS, and CSRC. Wallstreetcn,
+          Caixin/第一财经, and BlockBeats are mandatory for China color, policy
+          depth, and crypto–macro linkage.
         </p>
         <ul className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {chinaSources.map((source) => (

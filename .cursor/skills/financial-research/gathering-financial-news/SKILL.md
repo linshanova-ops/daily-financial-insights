@@ -22,7 +22,7 @@ Timing note: a "daily" sweep run during Asian morning hours should treat the pri
 3. **Equity markets** — major index moves (S&P 500, Nasdaq, Stoxx, Nikkei, CSI 300, Hang Seng), notable sector or single-name moves with market-wide implications
 4. **Rates, credit & FX** — Treasury yields, yield-curve moves, credit spreads, DXY, CNY, JPY, EUR
 5. **Commodities** — oil, gold, copper, agricultural staples; supply/demand news
-6. **China-specific** — policy announcements, regulator statements, property sector, local government debt, major SOE/tech news, capital flows (Stock Connect). Always check **华尔街见闻** and **BlockBeats (律动)** in addition to Caixin/Yicai/official sites.
+6. **China-specific** — policy announcements, regulator statements, property sector, local government debt, major SOE/tech news, capital flows (Stock Connect). Always check **华尔街见闻**, **Caixin / 第一财经 (Yicai)**, and **BlockBeats (律动)** in addition to official sites.
 7. **Geopolitics & trade** — conflicts, sanctions, tariffs, elections with market relevance
 8. **Corporate/systemic** — earnings or corporate events large enough to move markets or reveal macro information (a mega-cap guidance cut is macro news; a small-cap beat is not)
 
