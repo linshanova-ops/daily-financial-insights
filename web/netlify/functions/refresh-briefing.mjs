@@ -1,11 +1,12 @@
 /**
  * Public, rate-limited trigger for the Generate daily briefing workflow.
  * Requires Netlify env GITHUB_PAT (fine-grained: Actions read/write on this repo).
+ * Limit: max 5 briefing generations per UTC day.
  */
 const OWNER = "linshanova-ops";
 const REPO = "daily-financial-insights";
 const WORKFLOW_FILE = "daily-briefing.yml";
-const MIN_INTERVAL_MS = 30 * 60 * 1000;
+const MAX_RUNS_PER_DAY = 5;
 const ALLOWED_ORIGINS = [
   "https://linshanova-ops.github.io",
   "http://localhost:3000",
@@ -24,6 +25,18 @@ function corsHeaders(origin) {
     "Access-Control-Max-Age": "86400",
     "Content-Type": "application/json",
   };
+}
+
+function utcDayStart(date = new Date()) {
+  return Date.UTC(
+    date.getUTCFullYear(),
+    date.getUTCMonth(),
+    date.getUTCDate(),
+    0,
+    0,
+    0,
+    0,
+  );
 }
 
 async function gh(pathname, { token, method = "GET", body } = {}) {
@@ -78,7 +91,7 @@ export async function handler(event) {
 
   try {
     const { response: runsRes, data: runsData } = await gh(
-      `/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=5`,
+      `/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=30`,
       { token },
     );
 
@@ -115,24 +128,31 @@ export async function handler(event) {
       };
     }
 
-    const latest = runs[0];
-    if (latest?.updated_at) {
-      const age = Date.now() - new Date(latest.updated_at).getTime();
-      if (age < MIN_INTERVAL_MS) {
-        const retryAfterSec = Math.ceil((MIN_INTERVAL_MS - age) / 1000);
-        return {
-          statusCode: 429,
-          headers: { ...headers, "Retry-After": String(retryAfterSec) },
-          body: JSON.stringify({
-            ok: false,
-            status: "rate_limited",
-            retryAfterSec,
-            message:
-              "Briefings can be regenerated at most once every 30 minutes.",
-            lastRunAt: latest.updated_at,
-          }),
-        };
-      }
+    const dayStart = utcDayStart();
+    const todaysRuns = runs.filter((run) => {
+      if (!run?.created_at) return false;
+      return new Date(run.created_at).getTime() >= dayStart;
+    });
+
+    if (todaysRuns.length >= MAX_RUNS_PER_DAY) {
+      const nextDay = new Date(dayStart + 24 * 60 * 60 * 1000);
+      const retryAfterSec = Math.max(
+        1,
+        Math.ceil((nextDay.getTime() - Date.now()) / 1000),
+      );
+      return {
+        statusCode: 429,
+        headers: { ...headers, "Retry-After": String(retryAfterSec) },
+        body: JSON.stringify({
+          ok: false,
+          status: "rate_limited",
+          retryAfterSec,
+          usedToday: todaysRuns.length,
+          limit: MAX_RUNS_PER_DAY,
+          message: `Briefings can be regenerated at most ${MAX_RUNS_PER_DAY} times per day (UTC). Try again tomorrow.`,
+          lastRunAt: todaysRuns[0]?.created_at,
+        }),
+      };
     }
 
     const { response: dispatchRes, data: dispatchData } = await gh(
@@ -179,8 +199,9 @@ export async function handler(event) {
       body: JSON.stringify({
         ok: true,
         status: "queued",
-        message:
-          "Briefing refresh queued. The live feed will update when generation finishes.",
+        usedToday: todaysRuns.length + 1,
+        limit: MAX_RUNS_PER_DAY,
+        message: `Briefing refresh queued (${todaysRuns.length + 1}/${MAX_RUNS_PER_DAY} today). The live feed will update when generation finishes.`,
       }),
     };
   } catch (err) {

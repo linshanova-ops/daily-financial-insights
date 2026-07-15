@@ -1,6 +1,31 @@
+import { linkifySources } from "@/lib/source-links";
+
 interface SourcesCaveatsProps {
   sources: string;
   singleSource: string;
+}
+
+function LinkedSourceText({ text }: { text: string }) {
+  const parts = linkifySources(text);
+  return (
+    <>
+      {parts.map((part, index) =>
+        typeof part === "string" ? (
+          <span key={`t-${index}`}>{part}</span>
+        ) : (
+          <a
+            key={`${part.label}-${index}`}
+            href={part.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-forest underline decoration-copper/40 underline-offset-4 transition hover:text-forest-bright"
+          >
+            {part.label}
+          </a>
+        ),
+      )}
+    </>
+  );
 }
 
 export function SourcesCaveats({
@@ -21,7 +46,7 @@ export function SourcesCaveats({
       <div className="mt-8 space-y-4 text-base leading-relaxed text-ink-soft">
         <p>
           <span className="font-semibold text-ink">Primary sources consulted: </span>
-          {sources}
+          <LinkedSourceText text={sources} />
         </p>
         <p>
           <span className="font-semibold text-ink">Single-source items relied on: </span>

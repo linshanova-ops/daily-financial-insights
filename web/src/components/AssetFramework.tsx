@@ -1,5 +1,6 @@
 import type { AssetView } from "@/lib/types";
 import { accents } from "@/lib/module-accents";
+import { KindLabel } from "./KindLabel";
 
 interface AssetFrameworkProps {
   assets: AssetView[];
@@ -15,13 +16,14 @@ export function AssetFramework({ assets }: AssetFrameworkProps) {
 
   return (
     <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
-      <div className="flex items-center gap-3">
+      <div className="flex flex-wrap items-center gap-3">
         <span className={`h-6 w-1 rounded-full ${a.headerBar}`} aria-hidden />
         <p
           className={`text-xs font-semibold uppercase tracking-[0.24em] ${a.eyebrow}`}
         >
           Asset framework
         </p>
+        <KindLabel kind="judgment" />
       </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
         One stable lens per asset
