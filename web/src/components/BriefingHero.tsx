@@ -25,7 +25,7 @@ export function BriefingHero({
           {formatBriefingDate(date)}
         </p>
         <h1 className="display reveal reveal-delay-1 max-w-5xl text-5xl leading-[0.95] tracking-tight text-ink sm:text-7xl lg:text-8xl">
-          linshanova
+          syravocado
           <span className="mt-3 block text-2xl font-normal tracking-normal text-forest sm:text-3xl lg:text-4xl">
             Daily Financial Insights
           </span>

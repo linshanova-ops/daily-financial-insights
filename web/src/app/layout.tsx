@@ -17,11 +17,11 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "linshanova",
-    template: "%s · linshanova",
+    default: "syravocado",
+    template: "%s · syravocado",
   },
   description:
-    "linshanova — daily global and China financial briefings from the gather → analyze → signal → suggest research pipeline.",
+    "syravocado — daily global and China financial briefings from the gather → analyze → signal → suggest research pipeline.",
 };
 
 export default function RootLayout({

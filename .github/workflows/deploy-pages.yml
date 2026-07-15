@@ -1,4 +1,4 @@
-name: Deploy linshanova to GitHub Pages
+name: Deploy syravocado to GitHub Pages
 
 on:
   push:

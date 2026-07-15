@@ -18,7 +18,7 @@ if (!apiKey) {
 
 const today = new Date().toISOString().slice(0, 10);
 
-const prompt = `You are publishing linshanova's daily financial briefing for ${today}.
+const prompt = `You are publishing syravocado's daily financial briefing for ${today}.
 
 ACCURACY IS NON-NEGOTIABLE. Wrong figures or wrong beat/miss labels are worse than a shorter briefing.
 

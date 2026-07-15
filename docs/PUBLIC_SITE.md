@@ -1,4 +1,4 @@
-# linshanova — permanent public site
+# syravocado — permanent public site
 
 ## Permanent URL
 
@@ -10,9 +10,9 @@ This repo’s GitHub App token cannot flip Pages on for you. As the repo owner:
 
 1. Open https://github.com/linshanova-ops/daily-financial-insights/settings/pages  
 2. Under **Build and deployment → Source**, choose **GitHub Actions**  
-3. Open the Actions tab → run **Deploy linshanova to GitHub Pages** (or push to `main`)
+3. Open the Actions tab → run **Deploy syravocado to GitHub Pages** (or push to `main`)
 
-Optional custom domain: Settings → Pages → Custom domain → `linshanova.com` (or similar), then add the DNS records GitHub shows.
+Optional custom domain: Settings → Pages → Custom domain → `syravocado.com` (or similar), then add the DNS records GitHub shows.
 
 ## How updates work
 
@@ -48,7 +48,7 @@ GitHub Pages is static, so the click trigger lives on a tiny Netlify function.
    - Name: `NEXT_PUBLIC_REFRESH_API`  
    - Value: the function URL from step 4
 
-6. Re-run **Deploy linshanova to GitHub Pages** (or push to `main`) so the static site embeds that URL.
+6. Re-run **Deploy syravocado to GitHub Pages** (or push to `main`) so the static site embeds that URL.
 
 7. Open the site → **Refresh now**. You should see “Generating…” then an updated briefing (usually several minutes). Rate limit: once per 30 minutes.
 
