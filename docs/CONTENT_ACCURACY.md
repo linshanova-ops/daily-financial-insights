@@ -20,11 +20,13 @@
 - Skills: `daily-financial-briefing`, `gathering-financial-news`, `writing-daily-financial-report`
 - Generator prompt: `scripts/generate-daily-briefing.mjs` (Refresh / Actions agent)
 - Pre-publish: writing skill **accuracy gate** must pass before sync
-- **Site-wide automated link scan (required):** from `web/`, run `npm run scan-links`
-  - Walks **every** `href` in all briefing YAML fields (any section) and every `https?://` URL under `web/src` (pages, catalogs, pipeline)
-  - Fails on denylisted wallstreetcn / BlockBeats IDs and on URL-embedded years older than the briefing year
-  - Denylist: `web/scripts/rejected-source-ids.json` — append newly discovered bad IDs when a reader finds one
-  - Wired into `prebuild`, GitHub Pages deploy, and the Refresh generator prompt — publish must not proceed on FAIL
+- **Site-wide automated accuracy scan (required):** from `web/`, run `npm run scan-links`
+  - Walks **every** `href` in all briefing YAML fields (any section) and every `https?://` URL under `web/src`
+  - For each sourced claim (summary / global / China / figures / asset framework / signals): fetches the cited page(s) and checks (1) source year/validity and (2) that distinctive claim numbers appear in the page text (union across multi-source facts)
+  - Host adapters: 华尔街见闻 article API, Yahoo chart API, BOK `menuNo` fix; official archives that bot-block (BLS / TSMC IR) may pass only when the URL embeds the briefing year
+  - Fails on denylisted IDs, wrong publication years (e.g. wallstreetcn `3751205` = 2025), unreachable non-hub articles, or claims whose numbers are missing from cited pages
+  - Denylist: `web/scripts/rejected-source-ids.json`
+  - Wired into `prebuild`, GitHub Pages deploy, and the Refresh generator — publish must not proceed on FAIL
 
 ## If a reader finds an error
 

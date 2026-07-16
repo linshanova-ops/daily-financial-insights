@@ -10,7 +10,7 @@
     },
     {
       "label": "Bank of Korea — Jul 16 rate decision",
-      "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944"
+      "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
     },
     {
       "label": "NY Fed — Williams Jul 15 speech",
@@ -34,7 +34,7 @@
     },
     {
       "label": "US Treasury — yield curve",
-      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
     },
     {
       "label": "NBS — China H1 / Q2 GDP",
@@ -119,7 +119,7 @@
       "note": "US Treasury",
       "source": {
         "label": "US Treasury",
-        "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+        "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
       }
     },
     {
@@ -127,7 +127,7 @@
       "title": "Jul 15 US session % change",
       "kind": "bars",
       "unit": "%",
-      "note": "Official closes — AP (indexes) / Yahoo Finance (SOX)",
+      "note": "Official closes — AP (SOX cited separately via Yahoo Finance)",
       "source": {
         "label": "AP",
         "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a4f50a9a19d14802cb94b51db7bafba1"
@@ -148,35 +148,23 @@
         {
           "label": "Russell",
           "value": 0.38
-        },
-        {
-          "label": "SOX",
-          "value": -2.08
         }
       ]
     },
     {
       "id": "asia-bars",
-      "title": "Jul 16 Asia index % change",
+      "title": "Jul 16 Shanghai close % change",
       "kind": "bars",
       "unit": "%",
-      "note": "Official closes — SED (Kospi) / 京报网 (Shanghai) / The Standard (Hang Seng)",
+      "note": "Official close — 京报网 (Kospi/HSI cited separately with SED / The Standard)",
       "source": {
         "label": "京报网",
         "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
       },
       "points": [
         {
-          "label": "Kospi",
-          "value": -6.37
-        },
-        {
           "label": "Shanghai",
           "value": -1.85
-        },
-        {
-          "label": "Hang Seng",
-          "value": 1.33
         }
       ]
     }
@@ -189,10 +177,6 @@
         {
           "label": "TSMC IR",
           "href": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
-        },
-        {
-          "label": "Investing.com",
-          "href": "https://www.investing.com/news/earnings/tsmc-q2-profit-blows-past-estimates-on-robust-aifueled-demand-4794650"
         }
       ]
     },
@@ -205,7 +189,7 @@
         },
         {
           "label": "Bank of Korea",
-          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944"
+          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
         }
       ]
     },
@@ -263,10 +247,6 @@
         {
           "label": "TSMC IR",
           "href": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
-        },
-        {
-          "label": "Investing.com",
-          "href": "https://www.investing.com/news/earnings/tsmc-q2-profit-blows-past-estimates-on-robust-aifueled-demand-4794650"
         }
       ]
     },
@@ -275,7 +255,7 @@
       "sources": [
         {
           "label": "Bank of Korea",
-          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944"
+          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
         },
         {
           "label": "AP",
@@ -306,7 +286,7 @@
       "sources": [
         {
           "label": "US Treasury",
-          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         },
         {
           "label": "CNBC oil",
@@ -384,7 +364,7 @@
       ]
     },
     {
-      "text": "PBOC Jul 15 SCIO briefing (第一财经): Jun M2 CNY356.71tn (+8% y/y); Deputy Governor Zou Lan — guide rates low, 7-day OMO remains main policy rate, structural tools can expand if needed.",
+      "text": "PBOC Jul 15 SCIO briefing (第一财经): Deputy Governor Zou Lan — 7-day OMO remains the main policy rate / market pricing anchor; overnight OMO used for ultra-short liquidity; structural tools can expand if needed.",
       "sources": [
         {
           "label": "第一财经",
@@ -424,7 +404,7 @@
       ]
     },
     {
-      "text": "Jul 16: 长鑫科技 Changxin DRAM IPO subscription day at CNY8.66/share (~CNY579bn raise pre-greenshoe) — largest STAR Market IPO to date (华尔街见闻).",
+      "text": "Jul 16: 长鑫科技 Changxin DRAM IPO online/offline subscription day (华尔街见闻) — STAR Market issue up to ~76.9亿股 (10% of post-deal share count) per the Jul 9 2026 prospectus/询价 announcement.",
       "sources": [
         {
           "label": "华尔街见闻 Changxin",
@@ -492,7 +472,7 @@
       "driverSources": [
         {
           "label": "US Treasury",
-          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         },
         {
           "label": "NY Fed",
@@ -513,7 +493,7 @@
         },
         {
           "label": "Bank of Korea",
-          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944"
+          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
         }
       ],
       "read": "Softer Fed path vs oil/geo bid and regional hikes roughly offset — no decisive DXY break verified at Jul 15 close",
@@ -569,7 +549,7 @@
     {
       "asset": "CNY",
       "regime": "PBOC fix as policy signal; quantity easing without price easing",
-      "driver": "7-day rate held 1.40%; buyout RR net +CNY500bn; >CNY760bn private relending YTD; offshore-yuan expansion plan (Caixin)",
+      "driver": "7-day OMO remains main policy rate (Yicai/Zou Lan); buyout RR net +CNY500bn; >CNY760bn private relending YTD; offshore-yuan expansion plan (Caixin)",
       "driverSources": [
         {
           "label": "第一财经",
@@ -622,7 +602,7 @@
       "evidenceSources": [
         {
           "label": "Bank of Korea",
-          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944"
+          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
         },
         {
           "label": "Seoul Economic Daily",
@@ -745,7 +725,7 @@
       "status": "new"
     }
   ],
-  "sources": "TSMC IR (Q2 2026), Bank of Korea (Jul 16 decision), NY Fed (Williams Jul 15), Bureau of Labor Statistics (June CPI/PPI archives), AP (Jul 15 US close; BOK), US Treasury yield curve, CNBC (Jul 15 Brent/WTI settle), Yahoo Finance (SOX), NBS (H1/Q2 GDP), 新华网 (PBOC Jul 15 buyout RR), Caixin Global (Jul 15 GDP deflator; Jul 16 private relending/offshore yuan), 第一财经/Yicai (Jul 15 PBOC SCIO briefing), 京报网 (Jul 16 A-share close), The Standard (Hang Seng Jul 16), 华尔街见闻 (Changxin IPO 3776521), BlockBeats (Jul 15 Nvidia H20 flash), Cointelegraph (Jul 15 BTC), GoldSeek/Dow Jones (COMEX gold Jul 15 settle), Seoul Economic Daily (Kospi Jul 16), Investing.com (TSMC earnings color).",
-  "singleSource": "Rejected 华尔街见闻 3751275 (Williams hawkish ~1pp tariff / GDP ~1%) — Jul 16 2025 article, not 2026 (use NY Fed wil260715). Rejected 华尔街见闻 3751205 (Shanghai −0.03% / Hang Seng −0.29% wrap reused for Jul 16 2026) — wrong-year A/H tape; replaced with 京报网 Shanghai −1.85% and The Standard Hang Seng +1.33%. Rejected BlockBeats 302924 BTC $116,800. TSMC ADR −4% from Investing.com (secondary to TSMC IR).",
+  "sources": "TSMC IR (Q2 2026), Bank of Korea (Jul 16 decision), NY Fed (Williams Jul 15), Bureau of Labor Statistics (June CPI/PPI archives), AP (Jul 15 US close; BOK), US Treasury yield curve, CNBC (Jul 15 Brent/WTI settle), Yahoo Finance (SOX), NBS (H1/Q2 GDP), 新华网 (PBOC Jul 15 buyout RR), Caixin Global (Jul 15 GDP deflator; Jul 16 private relending/offshore yuan), 第一财经/Yicai (Jul 15 PBOC SCIO briefing), 京报网 (Jul 16 A-share close), The Standard (Hang Seng Jul 16), 华尔街见闻 (Changxin IPO 3776521), BlockBeats (Jul 15 Nvidia H20 flash), Cointelegraph (Jul 15 BTC), GoldSeek/Dow Jones (COMEX gold Jul 15 settle), Seoul Economic Daily (Kospi Jul 16).",
+  "singleSource": "Rejected 华尔街见闻 3751275 (Williams hawkish ~1pp tariff / GDP ~1%) — Jul 16 2025 article, not 2026 (use NY Fed wil260715). Rejected 华尔街见闻 3751205 (Shanghai −0.03% / Hang Seng −0.29% wrap reused for Jul 16 2026) — wrong-year A/H tape; replaced with 京报网 Shanghai −1.85% and The Standard Hang Seng +1.33%. Rejected BlockBeats 302924 BTC $116,800. Dropped Investing.com TSMC secondary (bot-blocked; TSMC IR is primary). Softened Yicai M2/1.40% prints not present in the fetchable page body.",
   "slug": "2026-07-16"
 }

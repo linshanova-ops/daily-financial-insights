@@ -11,7 +11,7 @@ Produces one daily report from raw news: gather → analyze (world + China) → 
 
 **Core principle: no stage consumes what the previous stage didn't verify.** Analysis only uses dated, sourced news items. Suggestions only reference signals identified in analysis. The report contains nothing that can't be traced back to a gathered item.
 
-**Standing website policy:** published briefings must be **valid and accurate**. Wrong figures or wrong-year sources are worse than a shorter report. See `docs/CONTENT_ACCURACY.md`. Do not publish until the writing skill's accuracy gate passes **and** `web/` `npm run scan-links` is green (site-wide href scan — every briefing field and every URL under `web/src`, not one section).
+**Standing website policy:** published briefings must be **valid and accurate**. Wrong figures or wrong-year sources are worse than a shorter report. See `docs/CONTENT_ACCURACY.md`. Do not publish until the writing skill's accuracy gate passes **and** `web/` `npm run scan-links` is green (fetches every cited source site-wide and checks claim numbers against page text — not denylist-only, not one section).
 
 ## Pipeline
 

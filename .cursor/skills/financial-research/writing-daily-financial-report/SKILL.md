@@ -53,7 +53,7 @@ Before finalizing website YAML, re-check:
 7. **华尔街见闻 cites:** for Shanghai / Hang Seng / Fed speech numbers, prefer primary URLs. If citing wallstreetcn.com, the page must show the coverage year (or a same-day primary confirms the level). Reject month-day-only wraps and IDs near known-bad 2025 clusters (3751205 A/H wrap; 3751275 Williams) — note rejections in `singleSource`.
 8. **Crypto prints:** prefer dated Cointelegraph / CoinDesk / Yahoo Finance BTC-USD (or similar) over a single BlockBeats HTX flash. If BlockBeats is used for crypto color, triangulate the level against an independent dated source before publishing.
 9. Every `href` on a sourced fact must support the number claimed; if the page is wrong-year or off-level, replace the source — do not keep a convenient link.
-10. **Site-wide machine scan:** after writing YAML, from `web/` run `npm run scan-links`. It audits **all** hrefs in every briefing field and hardcoded URLs under `web/src`. Failures block publish; add newly found bad IDs to `web/scripts/rejected-source-ids.json`.
+10. **Site-wide machine scan:** after writing YAML, from `web/` run `npm run scan-links`. It fetches **all** cited hrefs (every briefing field + `web/src`), checks publication year, and verifies claim numbers appear on the cited page(s). Failures block publish; fix the cite/claim or add bad IDs to `web/scripts/rejected-source-ids.json`.
 
 ## Mandatory Disclaimer
 
