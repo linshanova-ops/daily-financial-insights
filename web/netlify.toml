@@ -1,10 +1,21 @@
+# Netlify is ONLY the Refresh-now API bridge for GitHub Pages.
+# Do not build/serve the Next.js site here — that burns free credits.
+# Live site: https://linshanova-ops.github.io/daily-financial-insights/
+# Function URL (unchanged): /.netlify/functions/refresh-briefing
+
 [build]
-  command = "npm run build"
-  publish = "out"
+  # Cheap no-op publish stub (not the real site).
+  command = "mkdir -p netlify-stub && printf '%s\\n' '<!doctype html><meta charset=utf-8><title>syravocado refresh bridge</title><p>API bridge only. Public site: <a href=\"https://linshanova-ops.github.io/daily-financial-insights/\">GitHub Pages</a>.</p>' > netlify-stub/index.html"
+  publish = "netlify-stub"
   functions = "netlify/functions"
+  # Skip Netlify builds unless the function or this config changed.
+  # Exit 0 = skip build (saves credits). Exit 1 = run build.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- netlify.toml netlify/"
 
 [build.environment]
   NODE_VERSION = "22"
+  # Avoid installing the Next app for function-only deploys.
+  NETLIFY_SKIP_INSTALL = "true"
 
 [functions]
   directory = "netlify/functions"
