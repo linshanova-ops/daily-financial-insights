@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import syrMark from "../../public/brand/syr-mark.png";
 
 const links = [
   { href: "/", label: "Today" },
@@ -15,7 +16,7 @@ export function SiteHeader() {
         className="display flex items-center gap-2.5 text-lg tracking-tight text-forest sm:gap-3 sm:text-xl"
       >
         <Image
-          src="/brand/syr-mark.png"
+          src={syrMark}
           alt=""
           width={36}
           height={36}
