@@ -24,6 +24,7 @@
   - Walks **every** `href` in all briefing YAML fields (any section) and every `https?://` URL under `web/src`
   - For each sourced claim (summary / global / China / figures / asset framework / signals): fetches the cited page(s) and checks (1) source year/validity and (2) that distinctive claim numbers appear in the page text (union across multi-source facts)
   - Host adapters: 华尔街见闻 article API, Yahoo chart API, BOK `menuNo` fix; **BLS/SEC** via declared bot User-Agent (`syravocado-link-audit/2.0 research@…`); **TSMC IR** Cloudflare blocks are resolved through the matching SEC EDGAR 6-K exhibit (same prints)
+  - CI soft-fallback: if a dated article URL (`/YYYY/MM/DD/`) is IP-blocked (e.g. SED from GitHub Actions) but embeds the briefing year, treat as year-trusted with a warning — do not block Pages deploy
   - Fails on denylisted IDs, wrong publication years (e.g. wallstreetcn `3751205` = 2025), unreachable non-hub articles, or claims whose numbers are missing from cited pages
   - Denylist: `web/scripts/rejected-source-ids.json`
   - Wired into `prebuild`, GitHub Pages deploy, and the Refresh generator — publish must not proceed on FAIL
