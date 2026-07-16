@@ -42,10 +42,14 @@ gate passes.
    (d) gold/oil levels are settles or explicitly labeled spot;
    (e) every hard quote's source page year matches the coverage window — reject stale
        aggregator flashes (e.g. BlockBeats "7月15日" BTC $116k in a 2026 briefing);
-   (f) crypto prints triangulated: BlockBeats alone is not enough for BTC/ETH levels —
+   (f) 华尔街见闻 / wallstreetcn.com: do not cite month-day-only A/H or Fed wraps for
+       index closes or speeches — require explicit calendar year on the page or confirm
+       vs primary/tier-2 same-day tape; treat IDs near rejected 2025 wraps (3751205,
+       3751275) as suspect; prefer 京报网 / The Standard / SED / NY Fed / BLS for closes;
+   (g) crypto prints triangulated: BlockBeats alone is not enough for BTC/ETH levels —
        pair with dated Cointelegraph/CoinDesk/Yahoo (or similar);
-   (g) every sourced-fact href opens to a page that supports the claimed number;
-   (h) optional figures[] values must match sourced facts in the same briefing.
+   (h) every sourced-fact href opens to a page that supports the claimed number;
+   (i) optional figures[] values must match sourced facts in the same briefing.
 
 3. Write web/content/briefings/${today}.md using the exact YAML frontmatter schema in
    web/content/briefings/2026-07-16.md when present (else 2026-07-15.md). All keys required,
