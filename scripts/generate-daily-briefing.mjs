@@ -64,15 +64,19 @@ gate passes.
    note any rejected bad cites in singleSource/caveats.
    If today's file already exists, update it with the latest developments instead of skipping.
 
-4. From web/, run: npm ci && npm run sync-data
-   so web/public/data/index.json, latest.json, and briefings/${today}.json update.
+4. From web/, run: npm ci && npm run sync-data && npm run scan-links
+   so web/public/data/index.json, latest.json, and briefings/${today}.json update,
+   and the site-wide link scanner passes. scan-links walks EVERY href in briefing
+   YAML and web/src (not one section). If it fails, fix or omit the bad cite,
+   append newly discovered bad IDs to web/scripts/rejected-source-ids.json, and
+   re-run until green. Do not push a failing scan.
 
 5. Commit on main with message: content: publish ${today} daily briefing
-   Include web/content/briefings/${today}.md and web/public/data/**
-   Push to origin main.
+   Include web/content/briefings/${today}.md, web/public/data/**, and any
+   rejected-source-ids.json updates. Push to origin main.
 
-6. Reply with DONE ${today} and the commit SHA. If the accuracy gate failed on any item,
-   say what was rejected and why.
+6. Reply with DONE ${today} and the commit SHA. If the accuracy gate or scan-links
+   failed on any item, say what was rejected and why.
 
 Do not open a PR — push to main so GitHub Pages redeploys automatically.`;
 

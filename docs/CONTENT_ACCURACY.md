@@ -19,8 +19,13 @@
 
 - Skills: `daily-financial-briefing`, `gathering-financial-news`, `writing-daily-financial-report`
 - Generator prompt: `scripts/generate-daily-briefing.mjs` (Refresh / Actions agent)
-- Pre-publish: writing skill **accuracy gate** must pass before `npm run sync-data` and push
+- Pre-publish: writing skill **accuracy gate** must pass before sync
+- **Site-wide automated link scan (required):** from `web/`, run `npm run scan-links`
+  - Walks **every** `href` in all briefing YAML fields (any section) and every `https?://` URL under `web/src` (pages, catalogs, pipeline)
+  - Fails on denylisted wallstreetcn / BlockBeats IDs and on URL-embedded years older than the briefing year
+  - Denylist: `web/scripts/rejected-source-ids.json` — append newly discovered bad IDs when a reader finds one
+  - Wired into `prebuild`, GitHub Pages deploy, and the Refresh generator prompt — publish must not proceed on FAIL
 
 ## If a reader finds an error
 
-Correct the briefing YAML, re-sync public JSON, note the rejection in `singleSource` / caveats when a bad cite was removed, and push so Pages redeploys.
+Correct the briefing YAML (or static `href`), re-run `npm run sync-data && npm run scan-links`, add the bad id/URL to `rejected-source-ids.json` if it was a new stale cite, note the rejection in `singleSource` / caveats when removed, and push so Pages redeploys.

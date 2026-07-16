@@ -128,7 +128,9 @@ export default function PipelinePage() {
         <span className="font-semibold text-ink">Accuracy policy:</span> every
         published briefing must use dated, coverage-window sources. Wrong-year
         or unsupported quotes are rejected — a shorter accurate briefing beats
-        a wrong figure.
+        a wrong figure. Before deploy, an automated scan checks{" "}
+        <span className="font-semibold text-ink">every source link</span> on
+        the site (all briefing fields and static pages), not just one section.
       </p>
 
       <ol className="mt-14 space-y-0">

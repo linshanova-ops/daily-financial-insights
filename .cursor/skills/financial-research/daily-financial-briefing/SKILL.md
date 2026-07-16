@@ -11,7 +11,7 @@ Produces one daily report from raw news: gather → analyze (world + China) → 
 
 **Core principle: no stage consumes what the previous stage didn't verify.** Analysis only uses dated, sourced news items. Suggestions only reference signals identified in analysis. The report contains nothing that can't be traced back to a gathered item.
 
-**Standing website policy:** published briefings must be **valid and accurate**. Wrong figures or wrong-year sources are worse than a shorter report. See `docs/CONTENT_ACCURACY.md`. Do not publish until the writing skill's accuracy gate passes.
+**Standing website policy:** published briefings must be **valid and accurate**. Wrong figures or wrong-year sources are worse than a shorter report. See `docs/CONTENT_ACCURACY.md`. Do not publish until the writing skill's accuracy gate passes **and** `web/` `npm run scan-links` is green (site-wide href scan — every briefing field and every URL under `web/src`, not one section).
 
 ## Pipeline
 
@@ -32,7 +32,7 @@ Run stages in order. Read each stage's skill before executing it.
 - **After stages 2–3:** Every claim in the assessment cites a news-log item. No claims from memory of "how things usually are."
 - **After stage 4:** Every signal is graded (strong/moderate/weak) with reasoning. Ungraded observations stay out of the suggestions stage.
 - **After stage 5:** Max 5 suggestions, each with a trigger and an invalidator.
-- **After stage 6:** Report follows the template; disclaimer present. Re-run the writing skill's **pre-publish accuracy gate** in full (primary-source prints, close vs open, beat/miss vs consensus, PBOC 亿元 conversion, **year check on every hard quote**, crypto triangulation, href supports the claimed number). Do not publish website YAML or sync `web/public/data` until that gate passes.
+- **After stage 6:** Report follows the template; disclaimer present. Re-run the writing skill's **pre-publish accuracy gate** in full (primary-source prints, close vs open, beat/miss vs consensus, PBOC 亿元 conversion, **year check on every hard quote**, crypto triangulation, href supports the claimed number). Then from `web/`: `npm run sync-data && npm run scan-links`. Do not publish if `scan-links` fails.
 
 ## Defaults (override only if user specifies)
 
