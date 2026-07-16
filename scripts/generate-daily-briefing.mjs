@@ -391,6 +391,47 @@ function mergePr(prNumber) {
   console.log(`[briefing] merged PR #${prNumber}`);
 }
 
+/**
+ * Merges via GITHUB_TOKEN do not trigger other push workflows (GitHub recursion
+ * guard). Explicitly dispatch Pages deploy so the live site updates.
+ */
+function triggerPagesDeploy() {
+  const dispatched = gh(
+    [
+      "workflow",
+      "run",
+      "Deploy syravocado to GitHub Pages",
+      "--ref",
+      "main",
+    ],
+    { allowFail: true },
+  );
+  if (dispatched.status === 0) {
+    console.log("[briefing] dispatched Pages deploy workflow");
+    return;
+  }
+  // Fallback: repository_dispatch (also allowed to start workflows from GITHUB_TOKEN).
+  const repoPath = repoUrl.replace(/^https?:\/\/github\.com\//, "").replace(/\.git$/, "");
+  const api = gh(
+    [
+      "api",
+      "-X",
+      "POST",
+      `repos/${repoPath}/dispatches`,
+      "-f",
+      "event_type=deploy-pages",
+    ],
+    { allowFail: true },
+  );
+  if (api.status === 0) {
+    console.log("[briefing] dispatched deploy-pages repository_dispatch");
+    return;
+  }
+  console.error(
+    `[briefing] WARNING: could not trigger Pages deploy. Merge is on main; run Deploy manually.\n${dispatched.stderr || dispatched.stdout}\n${api.stderr || api.stdout}`,
+  );
+}
+
 async function main() {
   const agent = await Agent.create({
     apiKey,
@@ -429,6 +470,7 @@ async function main() {
       const check = await waitForChecks(pr.number);
       if (check.state === "success") {
         mergePr(pr.number);
+        triggerPagesDeploy();
         console.log(`[briefing] DONE ${today} merged via PR #${pr.number}`);
         return;
       }

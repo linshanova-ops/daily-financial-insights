@@ -12,7 +12,9 @@ permissions:
   pull-requests: write
   checks: read
   statuses: read
-  actions: read
+  # Needed to workflow_dispatch Pages deploy after GITHUB_TOKEN merge
+  # (push events from GITHUB_TOKEN do not start other workflows).
+  actions: write
 
 jobs:
   briefing:
