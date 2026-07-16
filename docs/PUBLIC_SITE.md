@@ -56,6 +56,16 @@ GitHub Pages is static, so the click trigger lives on a tiny Netlify function.
 
 7. Open the **GitHub Pages** site (not the Netlify stub) → **Refresh now**. You should see “Generating…” then an updated briefing (usually several minutes). Rate limit: **max 5 refreshes per UTC day**.
 
+### Fail-closed Refresh (accuracy gate)
+
+Refresh does **not** push straight to `main`. Flow:
+
+1. Cursor agent drafts on branch `briefing/YYYY-MM-DD` and opens a PR (`[skip netlify] content: publish …`)
+2. GitHub Action **Briefing accuracy gate** runs `npm run sync-data` + `npm run scan-links`
+3. If green → orchestrator auto-merges → Pages deploys  
+4. If red → agent rewrites (up to 3 attempts) → re-check → merge  
+5. If still failing → PR left open; **live site stays on the last good briefing**
+
 ### Keep Netlify credits low
 
 - The public site is GitHub Pages; Netlify is only the refresh API.
