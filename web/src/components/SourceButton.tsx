@@ -16,7 +16,7 @@ export function SourceButton({ sources }: SourceButtonProps) {
           href={source.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-forest px-2 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-paper transition hover:bg-forest-bright"
+          className="focus-ring inline-flex items-center bg-forest px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-paper transition hover:bg-forest-bright"
         >
           Source · {source.label}
         </a>
