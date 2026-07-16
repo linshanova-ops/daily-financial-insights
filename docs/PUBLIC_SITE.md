@@ -34,15 +34,19 @@ GitHub Pages is static, so the click trigger lives on a tiny Netlify function.
    - Permissions: **Actions → Read and write**  
    - Copy the token
 
-2. **Connect Netlify to this repo**
+2. **Connect Netlify to this repo (functions-only bridge)**
    - https://app.netlify.com/start → import `linshanova-ops/daily-financial-insights`  
-   - Build settings are already in `netlify.toml` (`base = web`)
+   - **Base directory:** `web`  
+   - Build settings come from `web/netlify.toml`: Netlify publishes a tiny stub page and the `refresh-briefing` function only — **not** the Next.js site (GitHub Pages hosts the real site).  
+   - Builds are skipped unless `web/netlify.toml` or `web/netlify/` change, so briefing pushes do not burn Netlify credits.
 
 3. **Netlify → Site configuration → Environment variables**
-   - `GITHUB_PAT` = the PAT from step 1
+   - `GITHUB_PAT` = the PAT from step 1  
+   - Keep this secret on Netlify only; do not put it in the frontend.
 
-4. **Deploy the Netlify site** (push to `main` or Trigger deploy). Copy the function URL:  
-   `https://<your-site>.netlify.app/.netlify/functions/refresh-briefing`
+4. **Deploy the Netlify bridge** (one Trigger deploy, or a push that touches `web/netlify/`). Copy the function URL:  
+   `https://<your-site>.netlify.app/.netlify/functions/refresh-briefing`  
+   That path must stay stable — the GitHub Pages site calls it via `NEXT_PUBLIC_REFRESH_API`.
 
 5. **GitHub → Settings → Secrets and variables → Actions → Variables**
    - Name: `NEXT_PUBLIC_REFRESH_API`  
@@ -50,7 +54,15 @@ GitHub Pages is static, so the click trigger lives on a tiny Netlify function.
 
 6. Re-run **Deploy syravocado to GitHub Pages** (or push to `main`) so the static site embeds that URL.
 
-7. Open the site → **Refresh now**. You should see “Generating…” then an updated briefing (usually several minutes). Rate limit: **max 5 refreshes per UTC day**.
+7. Open the **GitHub Pages** site (not the Netlify stub) → **Refresh now**. You should see “Generating…” then an updated briefing (usually several minutes). Rate limit: **max 5 refreshes per UTC day**.
+
+### Keep Netlify credits low
+
+- The public site is GitHub Pages; Netlify is only the refresh API.
+- Do **not** browse or promote `*.netlify.app` as the main site (bandwidth/requests).
+- Do **not** re-enable a full `npm run build` on Netlify.
+- Optional: Netlify → Build & deploy → stop “deploy previews” / branch deploys you don’t need.
+- After this functions-only config lands, most `main` pushes skip Netlify entirely.
 
 ### Enable briefing generation (CURSOR_API_KEY)
 
