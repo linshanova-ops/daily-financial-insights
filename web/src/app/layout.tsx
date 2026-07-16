@@ -32,9 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fraunces.variable} ${manrope.variable} antialiased`}>
+        <a href="#main-content" className="skip-link focus-ring">
+          Skip to content
+        </a>
         <div className="site-shell">
           <SiteHeader />
-          <main>{children}</main>
+          <main id="main-content">{children}</main>
           <SiteFooter />
         </div>
       </body>

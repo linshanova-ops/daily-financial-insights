@@ -18,7 +18,7 @@ function LinkedSourceText({ text }: { text: string }) {
             href={part.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-forest underline decoration-copper/40 underline-offset-4 transition hover:text-forest-bright"
+            className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4 transition hover:text-forest-bright"
           >
             {part.label}
           </a>
@@ -33,7 +33,7 @@ export function SourcesCaveats({
   singleSource,
 }: SourcesCaveatsProps) {
   return (
-    <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
+    <section id="sources" className="scroll-mt-24 mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
       <div className="flex items-center gap-3">
         <span className="h-6 w-1 rounded-full bg-ink/50" aria-hidden />
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-ink/60">

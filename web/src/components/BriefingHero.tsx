@@ -7,6 +7,8 @@ interface BriefingHeroProps {
   marketTone: string;
   publishedAt?: string | null;
   showCta?: boolean;
+  /** Full brand hero on Today; compact on archive detail pages. */
+  variant?: "full" | "compact";
 }
 
 export function BriefingHero({
@@ -14,46 +16,71 @@ export function BriefingHero({
   marketTone,
   publishedAt,
   showCta = true,
+  variant = "full",
 }: BriefingHeroProps) {
   const publishedLabel = formatPublishedAt(publishedAt);
+  const compact = variant === "compact";
 
   return (
-    <section className="relative min-h-[88vh] overflow-hidden px-5 pb-16 pt-10 sm:px-8 sm:pt-16">
+    <section
+      className={`relative overflow-hidden px-5 sm:px-8 ${
+        compact ? "pb-10 pt-8 sm:pt-10" : "min-h-[88vh] pb-16 pt-10 sm:pt-16"
+      }`}
+    >
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-forest/15 blur-3xl" />
         <div className="absolute bottom-10 right-0 h-80 w-80 rounded-full bg-copper/15 blur-3xl" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-mist to-transparent" />
+        {!compact ? (
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-mist to-transparent" />
+        ) : null}
       </div>
 
-      <div className="mx-auto flex min-h-[70vh] w-full max-w-6xl flex-col justify-end gap-8">
+      <div
+        className={`mx-auto flex w-full max-w-6xl flex-col gap-6 ${
+          compact ? "" : "min-h-[70vh] justify-end gap-8"
+        }`}
+      >
         <p className="reveal text-xs font-semibold uppercase tracking-[0.28em] text-forest">
           {formatBriefingDate(date)}
         </p>
-        <h1 className="display reveal reveal-delay-1 max-w-5xl text-5xl leading-[0.95] tracking-tight text-ink sm:text-7xl lg:text-8xl">
-          syravocado
-          <span className="mt-3 block text-2xl font-normal tracking-normal text-forest sm:text-3xl lg:text-4xl">
-            Daily Financial Insights
-          </span>
-        </h1>
+        {compact ? (
+          <h1 className="display reveal reveal-delay-1 max-w-4xl text-4xl leading-[1.05] tracking-tight text-ink sm:text-5xl">
+            {formatBriefingDate(date)}
+            <span className="mt-2 block text-xl font-normal tracking-normal text-forest sm:text-2xl">
+              Daily briefing
+            </span>
+          </h1>
+        ) : (
+          <h1 className="display reveal reveal-delay-1 max-w-5xl text-5xl leading-[0.95] tracking-tight text-ink sm:text-7xl lg:text-8xl">
+            syravocado
+            <span className="mt-3 block text-2xl font-normal tracking-normal text-forest sm:text-3xl lg:text-4xl">
+              Daily Financial Insights
+            </span>
+          </h1>
+        )}
         {publishedLabel ? (
           <p className="reveal reveal-delay-1 text-sm font-medium tracking-wide text-ink/55">
             Published {publishedLabel}
           </p>
         ) : null}
-        <p className="reveal reveal-delay-2 max-w-2xl text-lg leading-relaxed text-ink-soft sm:text-xl">
+        <p
+          className={`reveal reveal-delay-2 max-w-2xl leading-relaxed text-ink-soft ${
+            compact ? "text-base sm:text-lg" : "text-lg sm:text-xl"
+          }`}
+        >
           {marketTone}
         </p>
         {showCta ? (
           <div className="reveal reveal-delay-3 flex flex-wrap items-center gap-4">
             <a
               href="#executive-summary"
-              className="inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
+              className="focus-ring inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
             >
               Read briefing
             </a>
             <Link
               href="/pipeline"
-              className="text-sm font-semibold text-ink-soft underline decoration-copper/60 underline-offset-4 transition hover:text-forest"
+              className="focus-ring text-sm font-semibold text-ink-soft underline decoration-copper/60 underline-offset-4 transition hover:text-forest"
             >
               How the pipeline works
             </Link>
