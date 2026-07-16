@@ -62,7 +62,7 @@ Refresh does **not** push straight to `main`. Flow:
 
 1. Cursor agent drafts on branch `briefing/YYYY-MM-DD` and opens a PR (`[skip netlify] content: publish …`)
 2. GitHub Action **Briefing accuracy gate** runs `npm run sync-data` + `npm run scan-links`
-3. If green → orchestrator auto-merges → Pages deploys  
+3. If green → orchestrator auto-merges → explicitly dispatches **Deploy syravocado to GitHub Pages** (GITHUB_TOKEN merges do not fire `push` workflows) 
 4. If red → agent rewrites (up to 3 attempts) → re-check → merge  
 5. If still failing → PR left open; **live site stays on the last good briefing**
 
