@@ -20,21 +20,32 @@ const today = new Date().toISOString().slice(0, 10);
 
 const prompt = `You are publishing syravocado's daily financial briefing for ${today}.
 
-ACCURACY IS NON-NEGOTIABLE. Wrong figures or wrong beat/miss labels are worse than a shorter briefing.
+STANDING POLICY (docs/CONTENT_ACCURACY.md): website content must be VALID and ACCURATE.
+Wrong figures, wrong-year sources, or hrefs that do not support the claimed number are
+worse than a shorter briefing. Prefer omit over invent. Do not publish until the accuracy
+gate passes.
 
 1. Run the full daily-financial-briefing skill pipeline under .cursor/skills/financial-research/
    (gather → global → China → signals → suggestions → report). Coverage: last 24h
-   (72h if weekend/Monday). Use dated sources only. Prefer primary sources for official
-   data (BLS, Fed, US Treasury yield curve, PBOC, NBS, company IR). Use Yahoo Finance
-   for US index/quote checks only (secondary). For China, always sweep 华尔街见闻
-   (wallstreetcn.com), Caixin/财新 or 第一财经/Yicai, and BlockBeats/律动
-   (theblockbeats.info) and cite at least one item from each desk family in the China
-   section when they have coverage-window news.
+   (72h if weekend/Monday). Use dated sources only — verify **calendar year**, not just
+   month-day. Prefer primary sources for official data (BLS, Fed, US Treasury yield curve,
+   PBOC, NBS, company IR). Use Yahoo Finance for US index/quote checks only (secondary).
+   For China, always sweep 华尔街见闻 (wallstreetcn.com), Caixin/财新 or 第一财经/Yicai,
+   and BlockBeats/律动 (theblockbeats.info) and cite at least one item from each desk
+   family in the China section when they have coverage-window news.
 
-2. Before writing, verify: (a) each index move is that index's official close;
+2. Pre-publish accuracy gate (ALL required):
+   (a) each index move is that index's official close;
    (b) inflation/jobs/GDP beat|miss is vs consensus not vs prior — cooler CPI = miss;
    (c) PBOC OMO net injection = ops − maturity with 亿元 correctly converted
-   (100亿元 = CNY10bn); (d) gold/oil levels are settles or explicitly labeled spot.
+       (100亿元 = CNY10bn);
+   (d) gold/oil levels are settles or explicitly labeled spot;
+   (e) every hard quote's source page year matches the coverage window — reject stale
+       aggregator flashes (e.g. BlockBeats "7月15日" BTC $116k in a 2026 briefing);
+   (f) crypto prints triangulated: BlockBeats alone is not enough for BTC/ETH levels —
+       pair with dated Cointelegraph/CoinDesk/Yahoo (or similar);
+   (g) every sourced-fact href opens to a page that supports the claimed number;
+   (h) optional figures[] values must match sourced facts in the same briefing.
 
 3. Write web/content/briefings/${today}.md using the exact YAML frontmatter schema in
    web/content/briefings/2026-07-16.md when present (else 2026-07-15.md). All keys required,
@@ -45,7 +56,8 @@ ACCURACY IS NON-NEGOTIABLE. Wrong figures or wrong beat/miss labels are worse th
    per-asset regime lens in
    .cursor/skills/financial-research/interpreting-market-signals/references/asset-framework.md;
    cover all eight canonical assets: US equities, US 10y, DXY, gold, oil, China equities,
-   CNY, BTC). Cite sources on hard numbers.
+   CNY, BTC). Cite sources on hard numbers. If a figure cannot be verified, omit it and
+   note any rejected bad cites in singleSource/caveats.
    If today's file already exists, update it with the latest developments instead of skipping.
 
 4. From web/, run: npm ci && npm run sync-data
@@ -55,7 +67,8 @@ ACCURACY IS NON-NEGOTIABLE. Wrong figures or wrong beat/miss labels are worse th
    Include web/content/briefings/${today}.md and web/public/data/**
    Push to origin main.
 
-6. Reply with DONE ${today} and the commit SHA.
+6. Reply with DONE ${today} and the commit SHA. If the accuracy gate failed on any item,
+   say what was rejected and why.
 
 Do not open a PR — push to main so GitHub Pages redeploys automatically.`;
 

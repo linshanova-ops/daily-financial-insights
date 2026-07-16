@@ -124,6 +124,12 @@ export default function PipelinePage() {
         <span className="font-semibold text-ink">Refresh now</span> on the
         homepage (rate-limited).
       </p>
+      <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
+        <span className="font-semibold text-ink">Accuracy policy:</span> every
+        published briefing must use dated, coverage-window sources. Wrong-year
+        or unsupported quotes are rejected — a shorter accurate briefing beats
+        a wrong figure.
+      </p>
 
       <ol className="mt-14 space-y-0">
         {stages.map((stage, index) => (

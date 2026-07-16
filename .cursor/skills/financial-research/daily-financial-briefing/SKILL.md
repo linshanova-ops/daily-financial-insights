@@ -11,6 +11,8 @@ Produces one daily report from raw news: gather → analyze (world + China) → 
 
 **Core principle: no stage consumes what the previous stage didn't verify.** Analysis only uses dated, sourced news items. Suggestions only reference signals identified in analysis. The report contains nothing that can't be traced back to a gathered item.
 
+**Standing website policy:** published briefings must be **valid and accurate**. Wrong figures or wrong-year sources are worse than a shorter report. See `docs/CONTENT_ACCURACY.md`. Do not publish until the writing skill's accuracy gate passes.
+
 ## Pipeline
 
 Run stages in order. Read each stage's skill before executing it.
@@ -26,11 +28,11 @@ Run stages in order. Read each stage's skill before executing it.
 
 ## Quality Gates (check before advancing)
 
-- **After stage 1:** Every item has a publication date within the coverage window (see Defaults) and a named source. Discard undated or stale items — do not carry them forward "for context" unless explicitly labeled as background.
+- **After stage 1:** Every item has a publication date within the coverage window (see Defaults), a named source, and a **verified calendar year**. Discard undated, stale, or wrong-year items — do not carry them forward "for context" unless explicitly labeled as background.
 - **After stages 2–3:** Every claim in the assessment cites a news-log item. No claims from memory of "how things usually are."
 - **After stage 4:** Every signal is graded (strong/moderate/weak) with reasoning. Ungraded observations stay out of the suggestions stage.
 - **After stage 5:** Max 5 suggestions, each with a trigger and an invalidator.
-- **After stage 6:** Report follows the template; disclaimer present. Re-run the writing skill's **pre-publish accuracy gate** (primary-source prints, close vs open, beat/miss vs consensus, PBOC 亿元 conversion). Do not publish website YAML until that gate passes.
+- **After stage 6:** Report follows the template; disclaimer present. Re-run the writing skill's **pre-publish accuracy gate** in full (primary-source prints, close vs open, beat/miss vs consensus, PBOC 亿元 conversion, **year check on every hard quote**, crypto triangulation, href supports the claimed number). Do not publish website YAML or sync `web/public/data` until that gate passes.
 
 ## Defaults (override only if user specifies)
 

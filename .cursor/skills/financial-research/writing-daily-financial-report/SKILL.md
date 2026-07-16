@@ -49,6 +49,9 @@ Before finalizing website YAML, re-check:
 3. Consensus labels (beat/miss) match actual vs survey.
 4. PBOC OMO: ops size, maturity, **net** = ops − maturity, with correct 亿元→CNY bn conversion.
 5. No conflicting levels for the same asset in one briefing (e.g. two different gold prices without labels).
+6. **Calendar-year / coverage-window check on every hard quote.** Open the cited URL and confirm the article's publication year matches the briefing coverage window. Reject undated aggregator flashes that only say "7月15日" without year if the level conflicts with same-day tier-1/2 tape (example: BTC $116k flash vs Jul 2026 mid-$60k Cointelegraph/Fortune — treat as stale and discard).
+7. **Crypto prints:** prefer dated Cointelegraph / CoinDesk / Yahoo Finance BTC-USD (or similar) over a single BlockBeats HTX flash. If BlockBeats is used for crypto color, triangulate the level against an independent dated source before publishing.
+8. Every `href` on a sourced fact must support the number claimed; if the page is wrong-year or off-level, replace the source — do not keep a convenient link.
 
 ## Mandatory Disclaimer
 
