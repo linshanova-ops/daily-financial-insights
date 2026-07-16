@@ -35,7 +35,7 @@ English-language:
 - **Xinhua / State Council (english.gov.cn)** — official policy text; treat as primary source of what was announced, apply judgment on framing
 
 Chinese-language (use when accessible; often faster and more detailed):
-- **华尔街见闻 (Wallstreetcn)** — required China/global desk sweep for syravocado; strong on overnight closes, policy calendars, A-share strategy notes, and cross-asset tape (wallstreetcn.com)
+- **华尔街见闻 (Wallstreetcn)** — required China/global desk sweep for syravocado; strong on overnight closes, policy calendars, A-share strategy notes, and cross-asset tape (wallstreetcn.com). **Year gate:** many wraps omit calendar year; never cite a month-day-only A/H or Fed piece for an official close/speech without confirming year on-page or via primary tape. Known-bad 2025 IDs reused in 2026 sweeps: `3751205` (A/H wrap), `3751275` (Williams) — reject and prefer 京报网 / The Standard / NY Fed / newer 2026 IDs.
 - **第一财经 (Yicai, yicai.com)** — required for PBOC OMO detail, onshore policy color, and same-day China macro/market reporting
 - **财新 (Caixin, caixin.com / caixinglobal.com)** — required for deeper China policy and financial-system reporting (pair with Wallstreetcn)
 - **BlockBeats / 律动 (theblockbeats.info)** — required for China-facing crypto–macro and risk-asset transmission (BTC/ETH vs oil, Fed path, Asia risk-off); treat as tier 3 — verify hard macro **and crypto price** prints against tier 1–2. Never publish a BlockBeats BTC/ETH level without confirming the flash's calendar year and an independent dated quote in the coverage window (stale "7月15日 / $116k" flashes have already polluted a 2026 briefing).

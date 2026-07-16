@@ -1,0 +1,14 @@
+{
+  "wallstreetcnArticleIds": ["3751205", "3751275"],
+  "blockbeatsFlashIds": ["302924"],
+  "exactUrlSubstrings": [
+    "wallstreetcn.com/articles/3751205",
+    "wallstreetcn.com/articles/3751275",
+    "theblockbeats.info/flash/302924"
+  ],
+  "notes": [
+    "3751205 — 2025 A/H wrap (Shanghai −0.03% / Hang Seng −0.29%) reused for Jul 16 2026",
+    "3751275 — 2025 Williams hawkish wrap reused for Jul 16 2026",
+    "302924 — stale BlockBeats BTC $116,800 flash"
+  ]
+}

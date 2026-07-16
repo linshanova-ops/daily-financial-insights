@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "sync-data": "node scripts/sync-briefing-data.mjs",
-    "prebuild": "npm run sync-data",
+    "scan-links": "node scripts/scan-source-links.mjs",
+    "prebuild": "npm run sync-data && npm run scan-links",
     "build": "next build",
     "start": "next start",
     "lint": "eslint ."

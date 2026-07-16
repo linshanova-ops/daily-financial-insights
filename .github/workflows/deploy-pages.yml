@@ -40,6 +40,9 @@ jobs:
       - name: Sync briefing JSON feed
         run: npm run sync-data
 
+      - name: Scan all website source links
+        run: npm run scan-links
+
       - name: Build static site
         run: npm run build
         env:
