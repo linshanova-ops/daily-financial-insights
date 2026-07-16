@@ -22,6 +22,13 @@ interface LiveHomeProps {
   initialBriefing: Briefing;
 }
 
+function formatCountdown(sec: number): string {
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  if (m <= 0) return `${s}s`;
+  return `${m}m ${String(s).padStart(2, "0")}s`;
+}
+
 export function LiveHome({ initialBriefing }: LiveHomeProps) {
   const [briefing, setBriefing] = useState(initialBriefing);
   const [previous, setPrevious] = useState<Briefing | null>(null);
@@ -34,6 +41,7 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
   const [phase, setPhase] = useState<RefreshPhase>("idle");
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [retryAfterSec, setRetryAfterSec] = useState<number | null>(null);
 
   const pullFeed = useCallback(async (signal?: AbortSignal) => {
     try {
@@ -76,9 +84,21 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
     };
   }, [pullFeed, busy]);
 
+  useEffect(() => {
+    if (retryAfterSec == null || retryAfterSec <= 0) return;
+    const id = window.setInterval(() => {
+      setRetryAfterSec((prev) => {
+        if (prev == null || prev <= 1) return null;
+        return prev - 1;
+      });
+    }, 1000);
+    return () => window.clearInterval(id);
+  }, [retryAfterSec]);
+
   const onRefreshNow = useCallback(async () => {
     setBusy(true);
     setStatusMessage(null);
+    setRetryAfterSec(null);
     try {
       const result = await requestBriefingRefresh((nextPhase, message) => {
         setPhase(nextPhase);
@@ -87,6 +107,9 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
 
       setPhase(result.phase);
       if (result.message) setStatusMessage(result.message);
+      if (result.retryAfterSec != null && result.retryAfterSec > 0) {
+        setRetryAfterSec(result.retryAfterSec);
+      }
       if (result.briefing) {
         setBriefing(result.briefing);
         setPublishedAt(result.briefing.publishedAt ?? new Date().toISOString());
@@ -99,14 +122,25 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
     }
   }, [pullFeed]);
 
+  const rateLimited = phase === "rate_limited" || (retryAfterSec != null && retryAfterSec > 0);
   const buttonLabel =
     phase === "requesting"
       ? "Requesting…"
       : phase === "generating"
         ? "Generating…"
-        : busy
-          ? "Working…"
-          : "Refresh now";
+        : rateLimited
+          ? retryAfterSec
+            ? `Retry in ${formatCountdown(retryAfterSec)}`
+            : "Rate limited"
+          : busy
+            ? "Working…"
+            : "Refresh now";
+
+  const helperCopy =
+    statusMessage ??
+    (process.env.NEXT_PUBLIC_REFRESH_API
+      ? "Refresh requests a new briefing from live sources (max 5 per UTC day), then updates this page when published."
+      : "Shows the latest published briefing. On-demand generation needs NEXT_PUBLIC_REFRESH_API.");
 
   const changes = diffBriefings(briefing, previous);
 
@@ -122,22 +156,21 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
           <button
             type="button"
             onClick={() => void onRefreshNow()}
-            disabled={busy}
-            className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-forest underline decoration-copper/50 underline-offset-4 disabled:opacity-50"
+            disabled={busy || rateLimited}
+            aria-busy={busy}
+            className="focus-ring mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-forest underline decoration-copper/50 underline-offset-4 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {buttonLabel}
           </button>
         </div>
-        {statusMessage ? (
-          <p className="pb-2 text-sm text-ink-soft" role="status">
-            {statusMessage}
-          </p>
-        ) : (
-          <p className="pb-2 text-xs text-ink/45">
-            Refresh now requests a new briefing from live sources (max 5 per
-            day), then updates this page when it is published.
-          </p>
-        )}
+        <p className="pb-2 text-sm text-ink-soft" role="status">
+          {helperCopy}
+          {publishedAt ? (
+            <span className="mt-1 block text-xs text-ink/45">
+              Latest published {new Date(publishedAt).toLocaleString()}
+            </span>
+          ) : null}
+        </p>
       </div>
       <BriefingView
         briefing={briefing}

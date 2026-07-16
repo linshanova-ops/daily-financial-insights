@@ -16,7 +16,11 @@ export function AssetFramework({ assets }: AssetFrameworkProps) {
   const a = accents.violet;
 
   return (
-    <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
+    <section
+      id="asset-framework"
+      className="section-band scroll-mt-24 border-y border-line/60 bg-paper/55"
+    >
+    <div className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
       <div className="flex flex-wrap items-center gap-3">
         <span className={`h-6 w-1 rounded-full ${a.headerBar}`} aria-hidden />
         <p
@@ -77,6 +81,7 @@ export function AssetFramework({ assets }: AssetFrameworkProps) {
           </article>
         ))}
       </div>
+    </div>
     </section>
   );
 }

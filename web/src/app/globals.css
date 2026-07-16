@@ -94,9 +94,36 @@ a {
   text-decoration: none;
 }
 
+:focus-visible,
+.focus-ring:focus-visible {
+  outline: 2px solid var(--forest-bright);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 50;
+  background: var(--forest);
+  color: var(--paper);
+  padding: 0.6rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 .site-shell {
   position: relative;
   z-index: 1;
+}
+
+.section-band {
+  background-image:
+    radial-gradient(700px 280px at 8% 0%, rgba(122, 28, 40, 0.05), transparent 60%);
 }
 
 .display {
@@ -156,7 +183,8 @@ a {
   .reveal-delay-1,
   .reveal-delay-2,
   .reveal-delay-3,
-  .grade-pulse {
-    animation: none;
+  .grade-pulse,
+  .animate-pulse {
+    animation: none !important;
   }
 }

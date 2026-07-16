@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import type { BriefingChange } from "@/lib/briefing-diff";
 import { formatBriefingDate } from "@/lib/briefings-format";
+import { CollapseToggle, useCollapsedList } from "./CollapsibleList";
 
 interface SinceLastBriefingProps {
   previousDate?: string | null;
@@ -19,6 +22,9 @@ export function SinceLastBriefing({
   previousDate,
   changes,
 }: SinceLastBriefingProps) {
+  const { visible, needsCollapse, expanded, hiddenCount, toggle } =
+    useCollapsedList(changes, 5);
+
   return (
     <section className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8">
       <div className="flex items-center gap-3">
@@ -35,7 +41,7 @@ export function SinceLastBriefing({
           Compared with{" "}
           <Link
             href={`/briefings/${previousDate}`}
-            className="font-semibold text-forest underline decoration-copper/40 underline-offset-4"
+            className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4"
           >
             {formatBriefingDate(previousDate)}
           </Link>
@@ -43,7 +49,7 @@ export function SinceLastBriefing({
         </p>
       ) : null}
       <ul className="mt-6 space-y-3">
-        {changes.map((change, index) => (
+        {visible.map((change, index) => (
           <li
             key={`${change.kind}-${index}`}
             className="flex flex-col gap-1 border-l-2 border-copper/35 pl-4 sm:flex-row sm:gap-3"
@@ -57,6 +63,14 @@ export function SinceLastBriefing({
           </li>
         ))}
       </ul>
+      {needsCollapse ? (
+        <CollapseToggle
+          expanded={expanded}
+          hiddenCount={hiddenCount}
+          onToggle={toggle}
+          moreLabel="Show more changes"
+        />
+      ) : null}
     </section>
   );
 }

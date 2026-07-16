@@ -8,11 +8,14 @@ import { SignalList } from "./SignalList";
 import { WatchList } from "./WatchList";
 import { SourcesCaveats } from "./SourcesCaveats";
 import { KeySources } from "./KeySources";
+import { KeyFigures } from "./KeyFigures";
 import { SinceLastBriefing } from "./SinceLastBriefing";
+import { SectionNav } from "./SectionNav";
 
 interface BriefingViewProps {
   briefing: Briefing;
   showHeroCta?: boolean;
+  heroVariant?: "full" | "compact";
   previousDate?: string | null;
   changesSincePrevious?: BriefingChange[] | null;
   publishedAtFallback?: string | null;
@@ -21,10 +24,13 @@ interface BriefingViewProps {
 export function BriefingView({
   briefing,
   showHeroCta = true,
+  heroVariant = "full",
   previousDate = null,
   changesSincePrevious = null,
   publishedAtFallback = null,
 }: BriefingViewProps) {
+  const figures = briefing.figures ?? [];
+
   return (
     <>
       <BriefingHero
@@ -32,10 +38,13 @@ export function BriefingView({
         marketTone={briefing.marketTone}
         publishedAt={briefing.publishedAt ?? publishedAtFallback}
         showCta={showHeroCta}
+        variant={heroVariant}
       />
-      <div className="mx-auto mb-2 w-full max-w-6xl px-5 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
+      <SectionNav hasFigures={figures.length > 0} />
+      <div className="mx-auto mb-2 w-full max-w-6xl px-5 pt-4 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
         Coverage window: {briefing.coverageWindow}
       </div>
+      {figures.length ? <KeyFigures figures={figures} /> : null}
       <KeySources sources={briefing.keySources} />
       {changesSincePrevious ? (
         <SinceLastBriefing
@@ -49,6 +58,7 @@ export function BriefingView({
         watch={briefing.watch}
       />
       <SituationBlock
+        id="global-situation"
         eyebrow="Global situation"
         title="World regime and today's delta"
         stanceLabel="Regime"
@@ -58,8 +68,10 @@ export function BriefingView({
         tensionsLabel="Tensions"
         tensions={briefing.globalTensions}
         accent="azure"
+        band
       />
       <SituationBlock
+        id="china-situation"
         eyebrow="China situation"
         title="Policy stance and domestic pulse"
         stanceLabel="Policy stance"

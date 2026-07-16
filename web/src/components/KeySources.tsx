@@ -20,7 +20,7 @@ export function KeySources({ sources }: KeySourcesProps) {
               href={source.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-semibold text-forest underline decoration-copper/50 underline-offset-4 transition hover:text-forest-bright"
+              className="focus-ring text-sm font-semibold text-forest underline decoration-copper/50 underline-offset-4 transition hover:text-forest-bright"
             >
               {source.label}
             </a>

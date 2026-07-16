@@ -50,6 +50,26 @@ export interface SourcedFact {
 
 export type FactLine = string | SourcedFact;
 
+/** Author-defined visual figure — values must match sourced briefing facts. */
+export interface FigurePoint {
+  label: string;
+  value: number;
+}
+
+export interface BriefingFigure {
+  id: string;
+  title: string;
+  kind: "stat" | "bars";
+  /** Large primary value for kind=stat (e.g. "$84.95", "4.55%"). */
+  display?: string;
+  /** Optional secondary line for kind=stat (e.g. "+$0.22", "Jul 15"). */
+  delta?: string;
+  unit?: string;
+  points?: FigurePoint[];
+  note?: string;
+  source: FactSource;
+}
+
 export interface BriefingFrontmatter {
   date: string;
   title: string;
@@ -62,6 +82,8 @@ export interface BriefingFrontmatter {
   watch: string;
   /** Clickable primary links for the day's key prints. */
   keySources?: KeySource[];
+  /** Optional accurate key figures for visual strip (never invent values). */
+  figures?: BriefingFigure[];
   globalRegime: string;
   globalChanged: FactLine[];
   globalImplies: FactLine[];

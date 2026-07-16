@@ -5,6 +5,7 @@ import { Bullet } from "./Bullet";
 import { KindLabel } from "./KindLabel";
 
 interface SituationBlockProps {
+  id?: string;
   eyebrow: string;
   title: string;
   stanceLabel: string;
@@ -14,9 +15,11 @@ interface SituationBlockProps {
   tensionsLabel: string;
   tensions: string;
   accent?: ModuleAccent;
+  band?: boolean;
 }
 
 export function SituationBlock({
+  id,
   eyebrow,
   title,
   stanceLabel,
@@ -26,13 +29,18 @@ export function SituationBlock({
   tensionsLabel,
   tensions,
   accent = "forest",
+  band = false,
 }: SituationBlockProps) {
   const a = accents[accent];
   const changedFacts = asSourcedFacts(changed);
   const implyFacts = asSourcedFacts(implies);
 
   return (
-    <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
+    <section
+      id={id}
+      className={`scroll-mt-24 ${band ? "section-band border-y border-line/60 bg-paper/55" : ""}`}
+    >
+    <div className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
       <div className="flex items-center gap-3">
         <span className={`h-6 w-1 rounded-full ${a.headerBar}`} aria-hidden />
         <p
@@ -104,6 +112,7 @@ export function SituationBlock({
           {tensions}
         </p>
       </div>
+    </div>
     </section>
   );
 }

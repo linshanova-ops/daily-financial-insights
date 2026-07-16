@@ -45,6 +45,7 @@ export default async function BriefingPage({ params }: BriefingPageProps) {
     <BriefingView
       briefing={briefing}
       showHeroCta={false}
+      heroVariant="compact"
       previousDate={previous?.date ?? null}
       changesSincePrevious={changes}
     />
