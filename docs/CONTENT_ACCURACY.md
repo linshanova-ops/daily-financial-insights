@@ -18,7 +18,8 @@
 ## Pipeline enforcement
 
 - Skills: `daily-financial-briefing`, `gathering-financial-news`, `writing-daily-financial-report`
-- Generator prompt: `scripts/generate-daily-briefing.mjs` (Refresh / Actions agent)
+- Generator: `scripts/generate-daily-briefing.mjs` (Refresh / Actions)
+- **Fail-closed publish:** Refresh never pushes to `main`. It opens PR branch `briefing/YYYY-MM-DD`, CI workflow `briefing-accuracy.yml` must pass `scan-links`, then the orchestrator auto-merges. On CI failure the agent rewrites (up to 3 attempts). If still red, the PR stays open and the live site is unchanged.
 - Pre-publish: writing skill **accuracy gate** must pass before sync
 - **Site-wide automated accuracy scan (required):** from `web/`, run `npm run scan-links`
   - Walks **every** `href` in all briefing YAML fields (any section) and every `https?://` URL under `web/src`

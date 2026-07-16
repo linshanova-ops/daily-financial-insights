@@ -7,6 +7,13 @@ on:
     types: [refresh-briefing]
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+  statuses: read
+  actions: read
+
 jobs:
   briefing:
     runs-on: ubuntu-latest
@@ -27,7 +34,7 @@ jobs:
           if [ -z "$CURSOR_API_KEY" ]; then
             echo "present=false" >> "$GITHUB_OUTPUT"
             echo "::notice::Add repository secret CURSOR_API_KEY to enable automatic daily briefings."
-            echo "Manual publish: add web/content/briefings/YYYY-MM-DD.md, run npm run sync-data in web/, push to main."
+            echo "Manual publish: open a PR with web/content/briefings/YYYY-MM-DD.md; Briefing accuracy gate must pass."
           else
             echo "present=true" >> "$GITHUB_OUTPUT"
           fi
@@ -36,10 +43,11 @@ jobs:
         if: steps.key.outputs.present == 'true'
         run: npm install @cursor/sdk@latest
 
-      - name: Generate and publish today's briefing
+      - name: Generate briefing PR, wait for CI, auto-merge when green
         if: steps.key.outputs.present == 'true'
-        timeout-minutes: 45
+        timeout-minutes: 90
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           REPO_URL: https://github.com/linshanova-ops/daily-financial-insights
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/generate-daily-briefing.mjs

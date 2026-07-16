@@ -1,0 +1,47 @@
+name: Briefing accuracy gate
+
+# Fail-closed gate for Refresh PRs: must pass before auto-merge to main.
+on:
+  pull_request:
+    paths:
+      - "web/content/briefings/**"
+      - "web/public/data/**"
+      - "web/scripts/scan-source-links.mjs"
+      - "web/scripts/rejected-source-ids.json"
+      - "web/package.json"
+      - "web/package-lock.json"
+
+jobs:
+  scan-links:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install
+        run: npm ci
+
+      - name: Sync briefing JSON feed
+        run: npm run sync-data
+
+      - name: Fail if briefing JSON is out of sync
+        run: |
+          # index.json always rewrites generatedAt — ignore it. Require briefings + latest match markdown.
+          if ! git -C .. diff --quiet -- web/public/data/briefings web/public/data/latest.json; then
+            echo "::error::web/public/data briefings/latest are out of sync with markdown. Run npm run sync-data and commit."
+            git -C .. diff --stat -- web/public/data/briefings web/public/data/latest.json
+            exit 1
+          fi
+
+      - name: Scan all website source links
+        run: npm run scan-links
