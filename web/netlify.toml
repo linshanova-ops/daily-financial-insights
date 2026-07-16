@@ -12,6 +12,15 @@
   # Exit 0 = skip build (saves credits). Exit 1 = run build.
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- netlify.toml netlify/"
 
+# Always skip Deploy Previews / branch deploys — public site is GitHub Pages.
+# Refresh PRs must not burn Netlify credits on preview builds.
+# (`true` exits 0 → Netlify cancels the build.)
+[context.deploy-preview]
+  ignore = "true"
+
+[context.branch-deploy]
+  ignore = "true"
+
 [build.environment]
   NODE_VERSION = "22"
   # Avoid installing the Next app for function-only deploys.

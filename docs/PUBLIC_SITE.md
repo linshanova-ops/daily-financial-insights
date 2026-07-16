@@ -61,8 +61,8 @@ GitHub Pages is static, so the click trigger lives on a tiny Netlify function.
 - The public site is GitHub Pages; Netlify is only the refresh API.
 - Do **not** browse or promote `*.netlify.app` as the main site (bandwidth/requests).
 - Do **not** re-enable a full `npm run build` on Netlify.
-- Optional: Netlify → Build & deploy → stop “deploy previews” / branch deploys you don’t need.
-- After this functions-only config lands, most `main` pushes skip Netlify entirely.
+- Deploy Previews and branch deploys are always skipped in `web/netlify.toml` (`[context.deploy-preview]` / `[context.branch-deploy]` `ignore = "true"`).
+- After this functions-only config lands, most `main` pushes skip Netlify entirely; production builds still run only when `web/netlify.toml` or `web/netlify/` change.
 
 ### Enable briefing generation (CURSOR_API_KEY)
 
