@@ -22,8 +22,15 @@ const srcDir = path.join(webRoot, "src");
 const rejectPath = path.join(__dirname, "rejected-source-ids.json");
 const skipFetch = process.env.SCAN_LINKS_SKIP_FETCH === "1";
 
-const UA =
+/** Browser-like UA for ordinary news desks. */
+const BROWSER_UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 syravocado-link-audit/2.0";
+/**
+ * Declared bot UA required by BLS / SEC fair-access policies.
+ * Format: "<app> <contact-email>" — browser UAs get HTTP 403 on these hosts.
+ */
+const DECLARED_UA =
+  "syravocado-link-audit/2.0 research@syravocado.local";
 
 const rejects = JSON.parse(fs.readFileSync(rejectPath, "utf8"));
 const deniedWallIds = new Set(rejects.wallstreetcnArticleIds ?? []);
@@ -32,10 +39,12 @@ const deniedSubstrings = (rejects.exactUrlSubstrings ?? []).map((s) =>
   s.toLowerCase(),
 );
 
-/** Official archives that often bot-block; trust only when URL embeds briefing year. */
+/**
+ * Hosts that still may bot-block even with a declared UA.
+ * Trust only when the URL embeds the briefing year (fallback, not preferred).
+ * BLS + TSMC are handled via declared UA / SEC EDGAR adapters instead.
+ */
 const OFFICIAL_URL_YEAR_TRUST = [
-  /bls\.gov\/news\.release\/archives\//i,
-  /investor\.tsmc\.com\/.*\/20\d{2}\//i,
   /home\.treasury\.gov\/resource-center\/data-chart-center\/interest-rates/i,
   /federalreserve\.gov\/newsevents\/.*20\d{2}/i,
   /asml\.com\/en\/news\/press-releases\/20\d{2}\//i,
@@ -206,6 +215,149 @@ function yearsFromBody(text) {
   return [...years];
 }
 
+async function httpGet(url, userAgent) {
+  const res = await fetch(url, {
+    headers: {
+      "user-agent": userAgent,
+      accept: "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+    },
+    redirect: "follow",
+    signal: AbortSignal.timeout(25000),
+  });
+  const raw = await res.text();
+  return { res, raw };
+}
+
+/** Browser UA first; on 401/403 retry with declared bot UA (BLS/SEC). */
+async function httpGetWithUaFallback(url) {
+  let { res, raw } = await httpGet(url, BROWSER_UA);
+  let via = "http";
+  if (res.status === 401 || res.status === 403) {
+    ({ res, raw } = await httpGet(url, DECLARED_UA));
+    via = "http-declared-ua";
+  }
+  return { res, raw, via };
+}
+
+/**
+ * investor.tsmc.com is Cloudflare-blocked; resolve Q2/Qx prints via SEC EDGAR 6-K exhibits.
+ * @param {string} href
+ */
+async function fetchTsmcViaSec(href) {
+  const yearMatch = href.match(/\/(20\d{2})\//);
+  const year = yearMatch ? Number(yearMatch[1]) : new Date().getUTCFullYear();
+  const quarterMatch = href.match(/\/q([1-4])\/?$/i);
+  const quarter = quarterMatch ? Number(quarterMatch[1]) : null;
+  // Q2 results typically file in July; Q1 in April, etc.
+  const monthHint = { 1: "04", 2: "07", 3: "10", 4: "01" }[quarter] ?? null;
+
+  try {
+    const subRes = await fetch(
+      "https://data.sec.gov/submissions/CIK0001046179.json",
+      {
+        headers: { "user-agent": DECLARED_UA, accept: "application/json" },
+        signal: AbortSignal.timeout(25000),
+      },
+    );
+    if (!subRes.ok) {
+      return {
+        ok: false,
+        status: subRes.status,
+        text: "",
+        years: [year],
+        via: "sec-edgar-tsmc",
+        error: `submissions HTTP ${subRes.status}`,
+      };
+    }
+    const sub = await subRes.json();
+    const recent = sub?.filings?.recent;
+    if (!recent?.form) {
+      return {
+        ok: false,
+        text: "",
+        years: [year],
+        via: "sec-edgar-tsmc",
+        error: "no recent filings",
+      };
+    }
+
+    /** @type {string[]} */
+    const candidates = [];
+    for (let i = 0; i < recent.form.length; i++) {
+      if (recent.form[i] !== "6-K") continue;
+      const date = recent.filingDate[i];
+      if (!String(date).startsWith(String(year))) continue;
+      if (monthHint && !String(date).includes(`-${monthHint}-`)) {
+        // keep as secondary candidate
+        candidates.push(recent.accessionNumber[i]);
+        continue;
+      }
+      candidates.unshift(recent.accessionNumber[i]);
+    }
+    if (!candidates.length) {
+      return {
+        ok: false,
+        text: "",
+        years: [year],
+        via: "sec-edgar-tsmc",
+        error: `no ${year} 6-K filings found`,
+      };
+    }
+
+    for (const accession of [...new Set(candidates)].slice(0, 4)) {
+      const accPath = accession.replace(/-/g, "");
+      const idxUrl = `https://www.sec.gov/Archives/edgar/data/1046179/${accPath}/index.json`;
+      const { res: idxRes, raw: idxRaw } = await httpGet(idxUrl, DECLARED_UA);
+      if (!idxRes.ok) continue;
+      let items = [];
+      try {
+        items = JSON.parse(idxRaw)?.directory?.item ?? [];
+      } catch {
+        continue;
+      }
+      const names = items.map((it) => it.name).filter(Boolean);
+      const pick =
+        names.find((n) => /presentatione?\.htm$/i.test(n)) ||
+        names.find((n) => /withguidance|earningsrelease/i.test(n)) ||
+        names.find((n) => /tsm-.*6k\.htm$/i.test(n));
+      if (!pick) continue;
+      const docUrl = `https://www.sec.gov/Archives/edgar/data/1046179/${accPath}/${pick}`;
+      const { res, raw } = await httpGet(docUrl, DECLARED_UA);
+      if (!res.ok || raw.length < 200) continue;
+      const { text, dates } = htmlToPlain(raw);
+      if (!text || text.length < 40) continue;
+      return {
+        ok: true,
+        status: res.status,
+        text,
+        years: [
+          ...new Set([
+            year,
+            ...yearsFromDateStrings(dates),
+            ...yearsFromBody(text),
+          ]),
+        ],
+        via: `sec-edgar-tsmc:${pick}`,
+      };
+    }
+    return {
+      ok: false,
+      text: "",
+      years: [year],
+      via: "sec-edgar-tsmc",
+      error: "no usable 6-K exhibit body",
+    };
+  } catch (e) {
+    return {
+      ok: false,
+      text: "",
+      years: [year],
+      via: "sec-edgar-tsmc",
+      error: String(e.message || e),
+    };
+  }
+}
+
 /**
  * Fetch page/API content for evidence + year checks.
  * @returns {Promise<{ ok: boolean, status?: number, text: string, years: number[], via: string, error?: string }>}
@@ -221,7 +373,7 @@ async function fetchSource(href) {
       const api = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?interval=1d&range=10d`;
       const res = await fetch(api, {
         headers: {
-          "user-agent": UA,
+          "user-agent": BROWSER_UA,
           accept: "application/json",
         },
         signal: AbortSignal.timeout(20000),
@@ -270,7 +422,7 @@ async function fetchSource(href) {
     try {
       const api = `https://api-one-wscn.awtmt.com/apiv1/content/articles/${wId}?extract=1`;
       const res = await fetch(api, {
-        headers: { "user-agent": UA, accept: "application/json" },
+        headers: { "user-agent": BROWSER_UA, accept: "application/json" },
         signal: AbortSignal.timeout(20000),
       });
       const json = await res.json();
@@ -313,21 +465,65 @@ async function fetchSource(href) {
     }
   }
 
+  // TSMC IR site is Cloudflare-blocked — use SEC 6-K exhibits for the same prints.
+  if (/investor\.tsmc\.com/i.test(href)) {
+    const sec = await fetchTsmcViaSec(href);
+    if (sec.ok) return sec;
+    // fall through to HTTP attempt (rarely works) then return SEC error
+    const direct = await (async () => {
+      try {
+        const { res, raw, via } = await httpGetWithUaFallback(href);
+        if (res.ok && raw.length > 500) {
+          const { text, dates } = htmlToPlain(raw);
+          return {
+            ok: true,
+            status: res.status,
+            text,
+            years: [
+              ...new Set([
+                ...yearsInUrl(href),
+                ...yearsFromDateStrings(dates),
+                ...yearsFromBody(text),
+              ]),
+            ],
+            via,
+          };
+        }
+      } catch {
+        /* ignore */
+      }
+      return null;
+    })();
+    if (direct?.ok) return direct;
+    return sec;
+  }
+
   let url = href;
   if (/bok\.or\.kr\/.*view\.do/i.test(href) && !/menuNo=/i.test(href)) {
     url += (href.includes("?") ? "&" : "?") + "menuNo=400022";
   }
 
+  // BLS / SEC prefer declared UA first (browser UA is reliably 403).
+  const preferDeclared =
+    /bls\.gov/i.test(href) || /sec\.gov/i.test(href);
+
   try {
-    const res = await fetch(url, {
-      headers: {
-        "user-agent": UA,
-        accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
-      },
-      redirect: "follow",
-      signal: AbortSignal.timeout(20000),
-    });
-    const raw = await res.text();
+    let res;
+    let raw;
+    let via;
+    if (preferDeclared) {
+      ({ res, raw } = await httpGet(url, DECLARED_UA));
+      via = "http-declared-ua";
+      if (!res.ok) {
+        const second = await httpGet(url, BROWSER_UA);
+        res = second.res;
+        raw = second.raw;
+        via = "http";
+      }
+    } else {
+      ({ res, raw, via } = await httpGetWithUaFallback(url));
+    }
+
     const spa =
       res.ok &&
       raw.length < 5000 &&
@@ -339,7 +535,7 @@ async function fetchSource(href) {
         status: res.status,
         text: "",
         years: yearsInUrl(href),
-        via: "http",
+        via,
         error: `HTTP ${res.status}`,
       };
     }
@@ -349,7 +545,7 @@ async function fetchSource(href) {
         status: res.status,
         text: "",
         years: yearsInUrl(href),
-        via: "http-spa",
+        via: `${via}-spa`,
         error: "SPA shell without article body",
       };
     }
@@ -361,7 +557,7 @@ async function fetchSource(href) {
         ...yearsFromBody(text),
       ]),
     ];
-    return { ok: true, status: res.status, text, years, via: "http" };
+    return { ok: true, status: res.status, text, years, via };
   } catch (e) {
     return {
       ok: false,

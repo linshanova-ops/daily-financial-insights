@@ -23,7 +23,7 @@
 - **Site-wide automated accuracy scan (required):** from `web/`, run `npm run scan-links`
   - Walks **every** `href` in all briefing YAML fields (any section) and every `https?://` URL under `web/src`
   - For each sourced claim (summary / global / China / figures / asset framework / signals): fetches the cited page(s) and checks (1) source year/validity and (2) that distinctive claim numbers appear in the page text (union across multi-source facts)
-  - Host adapters: 华尔街见闻 article API, Yahoo chart API, BOK `menuNo` fix; official archives that bot-block (BLS / TSMC IR) may pass only when the URL embeds the briefing year
+  - Host adapters: 华尔街见闻 article API, Yahoo chart API, BOK `menuNo` fix; **BLS/SEC** via declared bot User-Agent (`syravocado-link-audit/2.0 research@…`); **TSMC IR** Cloudflare blocks are resolved through the matching SEC EDGAR 6-K exhibit (same prints)
   - Fails on denylisted IDs, wrong publication years (e.g. wallstreetcn `3751205` = 2025), unreachable non-hub articles, or claims whose numbers are missing from cited pages
   - Denylist: `web/scripts/rejected-source-ids.json`
   - Wired into `prebuild`, GitHub Pages deploy, and the Refresh generator — publish must not proceed on FAIL
