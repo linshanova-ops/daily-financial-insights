@@ -149,9 +149,9 @@
     },
     {
       "id": "oil-bars",
-      "title": "Jul 15 oil settles ($)",
+      "title": "Jul 15 oil settles",
       "kind": "bars",
-      "unit": "",
+      "unit": "$",
       "note": "CNBC settles — Brent Sep / WTI Aug",
       "source": {
         "label": "CNBC oil",
