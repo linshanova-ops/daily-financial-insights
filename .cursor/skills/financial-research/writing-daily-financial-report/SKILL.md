@@ -33,7 +33,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 
 - **Numbers, dates, names** — "PBOC cut the 7-day reverse repo rate 10bp to 1.4% on Tuesday", not "China eased policy recently"
 - **Source every hard number** — attach outlet/agency on first use of a figure (e.g. BLS, Yicai, Fed). If you cannot name a source, do not publish the figure.
-- **Beat/miss is vs consensus, not vs prior** — for inflation, cooler-than-expected = miss; hotter = beat. For growth/jobs, above-consensus = beat.
+- **Beat/miss is vs consensus, not vs prior** — for inflation, cooler-than-expected = miss; hotter = beat. For growth/jobs (GDP, payrolls, retail sales), above-consensus = beat; below = miss. **Never swap “good news” for beat/miss:** jobless claims or unemployment below consensus is still a **below-consensus / downside print** on that series — say “below consensus,” not “beat,” just because markets read it as strong labor.
 - **Confidence language is calibrated:** *is/did* for confirmed facts; *appears/suggests* for graded inference; *possible/worth watching* for weak signals. Never present a WEAK signal in *is* language.
 - **Facts before interpretation** within each section — reader should be able to see where reporting ends and judgment begins
 - **Length:** ~1,000–1,500 words total. Executive summary ≤ 120 words.
@@ -64,6 +64,7 @@ End every report with:
 ## Common Mistakes
 
 - **Calling cooler inflation a "beat"** — below-consensus CPI/PCE is a **miss** / downside surprise, not a beat. Keep consensus vs actual side-by-side so the label is checkable.
+- **Calling below-consensus jobless claims a "beat"** — 208k vs 218k expected is below consensus; “beat” confuses market tone with the print-vs-survey label. Prefer “below consensus.”
 - **Executive summary written first and never updated** — write it last, after the body is final.
 - **Copy-pasting stage outputs verbatim** — the analysis stages produce working notes; the report needs them edited for a reader (dedupe items that appear in both global and China sections, cut internal jargon like "news-log item #4").
 - **Losing traceability while editing** — tightening prose must not detach claims from their sources; keep at least outlet names on key facts.
