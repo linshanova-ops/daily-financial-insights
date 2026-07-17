@@ -40,7 +40,7 @@ On every visit to Today, a **freestanding marshmallow avocado** (no frame / plat
 ## Visual placement
 
 - Freestanding avocado with the brand hero (no frame).
-- Welcome line secondary to brand `h1`; fades away at t=3s.
+- Welcome line is secondary to brand `h1` but **a little larger** than normal body/caption (~`text-lg`–`text-xl` on desktop); fades away at t=3s.
 - Existing hero atmosphere only.
 
 ## Technical notes
