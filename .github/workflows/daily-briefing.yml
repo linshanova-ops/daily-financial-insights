@@ -1,11 +1,16 @@
 name: Generate daily briefing
 
 on:
-  # On-demand from the website "Refresh now" button (via Netlify function → repository_dispatch)
-  # and manual runs from the Actions tab.
+  # Twice daily — 08:00 and 20:00 China Standard Time (UTC+8) = 00:00 and 12:00 UTC.
+  # Morning run: prior US cash session + overnight Asia.
+  # Evening run: same-day China close (US cash not yet open).
+  schedule:
+    - cron: "0 0,12 * * *"
+  # Manual runs from the Actions tab (no public Refresh button).
+  workflow_dispatch:
+  # Optional legacy hook (unused by the public site).
   repository_dispatch:
     types: [refresh-briefing]
-  workflow_dispatch:
 
 permissions:
   contents: write

@@ -18,8 +18,8 @@
 ## Pipeline enforcement
 
 - Skills: `daily-financial-briefing`, `gathering-financial-news`, `writing-daily-financial-report`
-- Generator: `scripts/generate-daily-briefing.mjs` (Refresh / Actions)
-- **Fail-closed publish:** Refresh never pushes to `main`. It opens PR branch `briefing/YYYY-MM-DD`, CI workflow `briefing-accuracy.yml` must pass `scan-links`, then the orchestrator auto-merges and dispatches Pages deploy (GITHUB_TOKEN merges do not trigger push workflows). On CI failure the agent rewrites (up to 3 attempts). If still red, the PR stays open and the live site is unchanged.
+- Generator: `scripts/generate-daily-briefing.mjs` (twice-daily schedule / Actions)
+- **Fail-closed publish:** scheduled (and manual) generation never pushes to `main`. It opens PR branch `briefing/YYYY-MM-DD`, CI workflow `briefing-accuracy.yml` must pass `scan-links`, then the orchestrator auto-merges and dispatches Pages deploy (GITHUB_TOKEN merges do not trigger push workflows). On CI failure the agent rewrites (up to 3 attempts). If still red, the PR stays open and the live site is unchanged.
 - Pre-publish: writing skill **accuracy gate** must pass before sync
 - **Site-wide automated accuracy scan (required):** from `web/`, run `npm run scan-links`
   - Walks **every** `href` in all briefing YAML fields (any section) and every `https?://` URL under `web/src`
@@ -28,7 +28,7 @@
   - CI soft-fallback: if a dated article URL (`/YYYY/MM/DD/`) is IP-blocked (e.g. SED from GitHub Actions) but embeds the briefing year, treat as year-trusted with a warning — do not block Pages deploy
   - Fails on denylisted IDs, wrong publication years (e.g. wallstreetcn `3751205` = 2025), unreachable non-hub articles, or claims whose numbers are missing from cited pages
   - Denylist: `web/scripts/rejected-source-ids.json`
-  - Wired into `prebuild`, GitHub Pages deploy, and the Refresh generator — publish must not proceed on FAIL
+  - Wired into `prebuild`, GitHub Pages deploy, and the scheduled generator — publish must not proceed on FAIL
 
 ## If a reader finds an error
 
