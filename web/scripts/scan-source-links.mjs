@@ -48,10 +48,12 @@ const OFFICIAL_URL_YEAR_TRUST = [
   /home\.treasury\.gov\/resource-center\/data-chart-center\/interest-rates/i,
   /federalreserve\.gov\/newsevents\/.*20\d{2}/i,
   /asml\.com\/en\/news\/press-releases\/20\d{2}\//i,
+  /stats\.gov\.cn\/.*\/20\d{2}/i,
 ];
 
-/** News URLs with /YYYY/MM/DD/ (or /YYYY/MM/) that some CI egress IPs 403 (e.g. SED). */
+/** News URLs with /YYYY/MM/DD/, /YYYY/MM/, or compact /YYYYMM/ (e.g. NBS). */
 const DATED_ARTICLE_PATH = /\/(20\d{2})\/(\d{2})(?:\/\d{2})?\//;
+const COMPACT_MONTH_PATH = /\/(20\d{2})(\d{2})\//;
 
 /** Homepage / tool hubs — validate reachability + denylist, not claim evidence. */
 const HUB_HOSTS = new Set([
@@ -148,9 +150,12 @@ function officialUrlYearTrust(href, briefingYear) {
 /** True when URL path embeds briefing year as a dated article path. */
 function datedArticleYearTrust(href, briefingYear) {
   if (briefingYear == null) return false;
-  const m = href.match(DATED_ARTICLE_PATH);
-  if (!m) return false;
-  return Number(m[1]) === briefingYear;
+  const slash = href.match(DATED_ARTICLE_PATH);
+  if (slash && Number(slash[1]) === briefingYear) return true;
+  // NBS-style compact /YYYYMM/ (e.g. /PressRelease/202607/…)
+  const compact = href.match(COMPACT_MONTH_PATH);
+  if (compact && Number(compact[1]) === briefingYear) return true;
+  return false;
 }
 
 /** Combined soft trust when a live fetch is blocked in CI. */
