@@ -1,68 +1,61 @@
 # Welcome wave (syravocado hero greeting)
 
 **Date:** 2026-07-17  
-**Status:** Spec revised — avocado-only hand wave (3s); pending implementation  
+**Status:** Spec revised — freestanding avocado body-wave (3s); pending implementation  
 **Site:** GitHub Pages (`syravocado`) — static Next export  
 
 ## Goal
 
-On every visit to Today, the **marshmallow avocado mascot** (not the SYR favicon badge) greets the reader by **waving one hand for 3 seconds**, with one welcome line — without blocking the briefing.
+On every visit to Today, a **freestanding marshmallow avocado** (no frame / plate / badge behind it) greets the reader by **waving itself for 3 seconds** with a slight grow, then returns to normal size; the welcome line disappears when those 3 seconds end — without blocking the briefing.
 
 ## Non-goals
 
 - No full-screen splash / gate / click-to-enter
-- No waving / rocking the `syr-mark.png` favicon badge (SYR letters + mark) as a substitute
-- No Netlify involvement (Pages-only UI)
-- No change to Refresh, accuracy gate, or briefing content pipeline
-- Not a first-visit-only flow (user chose every open)
+- No waving the `syr-mark.png` favicon badge
+- No separate “hand-only” limb layer; the **whole avocado** waves
+- No square/cream frame, card, or backing plate behind the mascot
+- No Netlify / Refresh / accuracy-pipeline changes
+- Not first-visit-only
 
 ## Assets
 
 | Asset | Role |
 |-------|------|
-| `web/public/brand/syr-mark.png` | Favicon + header only — **unchanged, does not wave** |
-| `web/public/brand/avocado-mascot.png` | Hero mascot body (avocado only) |
-| `web/public/brand/avocado-arm.png` (or equivalent layered piece) | Waveable hand/arm layered on the mascot |
-
-If a single layered SVG/PNG composite is cleaner, that is fine as long as **only the hand/arm moves**, not the whole SYR badge.
+| `web/public/brand/syr-mark.png` | Favicon + header only — static |
+| `web/public/brand/avocado-mascot.png` | Transparent cutout of avocado only (no background frame) |
 
 ## Behavior
 
-1. **Where:** Full hero on **Today** (`variant="full"` in `BriefingHero`). Compact archive heroes: no wave / no welcome line.
-2. **When:** Every load of Today (including hard refresh and return visits).
-3. **Motion:** Avocado’s **hand waves for 3.0 seconds**, then settles to a rest pose. Wave should read as a greeting (arm pivots from the shoulder), not a whole-body tilt of the logo.
-4. **Copy (exact):**  
-   `Welcome to syravocado — hope you enjoy today’s brief.`
-5. **Copy lifecycle:** Line appears with the wave and **fades out** as the 3s wave ends (or within ~0.3s after). It must not compete with the brand `h1` or `marketTone` afterward.
-6. **Blocking:** Briefing content, CTAs, and scroll remain available throughout. No click-capturing overlay.
-7. **Reduced motion:** If `prefers-reduced-motion: reduce`, show static avocado at rest + welcome line once (no hand animation); prefer a simple opacity fade for the line only.
-8. **Accessibility:** Welcome line is real text. Decorative motion needs no live region. Mascot `alt=""` if brand name is adjacent, or short alt naming the mascot.
+1. **Where:** Today full hero only (`BriefingHero` `variant="full"`). Compact archive: no greeting.
+2. **When:** Every Today load.
+3. **Motion (3.0s total):**
+   - Whole avocado **waves** (gentle side-to-side rock from a low pivot).
+   - Slightly **scales up** during the wave, then **resumes normal size** when the 3s ends.
+4. **Copy (exact):** `Welcome to syravocado — hope you enjoy today’s brief.`
+5. **Copy lifecycle:** Visible during the wave; **opacity → 0 when the 3s ends** (gone, not lingering).
+6. **Blocking:** None — content usable throughout.
+7. **Reduced motion:** Static avocado at normal size; welcome line omitted or instantly hidden (no wave/grow).
+8. **Accessibility:** Real text for the welcome line while visible; decorative mascot.
 
 ## Visual placement
 
-- Brand-first: avocado sits with the **syravocado** hero identity (above or beside the display title) so the first viewport remains one composition: brand, headline stack, market tone, CTA.
-- Welcome line is secondary (smaller, softer token colors). No pill, badge, card, or sticker overlay language.
-- Atmosphere: existing hero gradients only.
+- Freestanding avocado with the brand hero (no frame).
+- Welcome line secondary to brand `h1`; fades away at t=3s.
+- Existing hero atmosphere only.
 
 ## Technical notes
 
-- Prefer CSS (layered arm + `transform-origin` at shoulder) or a tiny client component; no heavy animation libraries.
-- Respect GitHub Pages `basePath` for image URLs (same pattern as `SiteHeader`).
-- Wave duration constant: **3000ms**.
+- CSS animation on one `<img>` (rotate + scale), duration **3000ms**, `forwards` end state = `rotate(0) scale(1)`.
+- Transparent PNG cutout; respect Pages `basePath`.
 
 ## Success criteria
 
-- [ ] Viewer perceives the **avocado’s hand** waving (not the favicon badge rocking)
-- [ ] Wave runs **~3 seconds** on every Today load, then rests
-- [ ] Exact welcome line appears and fades with the wave
-- [ ] No gate; content usable throughout
-- [ ] Compact pages unchanged
-- [ ] `prefers-reduced-motion` disables the hand wave
-- [ ] Desktop and mobile still pass brand-first / one-composition rules
+- [ ] Avocado only — no visible frame/plate behind it
+- [ ] Whole avocado waves for **3s** (not favicon, not a detached hand)
+- [ ] Slightly larger during wave; back to normal size at end
+- [ ] Welcome line disappears when the 3s ends
+- [ ] No gate; compact pages unchanged; reduced-motion safe
 
 ## Out of scope for v1
 
-- Sound
-- Localized welcome strings
-- Wave on header favicon mark
-- Session “already waved” memory
+- Sound, i18n, header favicon wave, session memory
