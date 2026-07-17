@@ -1,56 +1,68 @@
 # Welcome wave (syravocado hero greeting)
 
 **Date:** 2026-07-17  
-**Status:** Approved in conversation; pending user review of this spec before implementation  
+**Status:** Spec revised — avocado-only hand wave (3s); pending implementation  
 **Site:** GitHub Pages (`syravocado`) — static Next export  
 
 ## Goal
 
-On every visit, greet the reader with a short wave of the marshmallow avocado mark and one welcome line — without blocking or delaying access to the briefing.
+On every visit to Today, the **marshmallow avocado mascot** (not the SYR favicon badge) greets the reader by **waving one hand for 3 seconds**, with one welcome line — without blocking the briefing.
 
 ## Non-goals
 
 - No full-screen splash / gate / click-to-enter
+- No waving / rocking the `syr-mark.png` favicon badge (SYR letters + mark) as a substitute
 - No Netlify involvement (Pages-only UI)
 - No change to Refresh, accuracy gate, or briefing content pipeline
 - Not a first-visit-only flow (user chose every open)
 
+## Assets
+
+| Asset | Role |
+|-------|------|
+| `web/public/brand/syr-mark.png` | Favicon + header only — **unchanged, does not wave** |
+| `web/public/brand/avocado-mascot.png` | Hero mascot body (avocado only) |
+| `web/public/brand/avocado-arm.png` (or equivalent layered piece) | Waveable hand/arm layered on the mascot |
+
+If a single layered SVG/PNG composite is cleaner, that is fine as long as **only the hand/arm moves**, not the whole SYR badge.
+
 ## Behavior
 
-1. **Where:** Full hero on **Today** (`variant="full"` in `BriefingHero`). Compact archive heroes keep the mark quiet (no wave / no welcome line) so archive pages stay content-first.
+1. **Where:** Full hero on **Today** (`variant="full"` in `BriefingHero`). Compact archive heroes: no wave / no welcome line.
 2. **When:** Every load of Today (including hard refresh and return visits).
-3. **Motion:** Marshmallow avocado (`public/brand/syr-mark.png`, same asset as favicon/header) plays a short **arm-wave** (~1.5–2.0s), then settles to rest.
+3. **Motion:** Avocado’s **hand waves for 3.0 seconds**, then settles to a rest pose. Wave should read as a greeting (arm pivots from the shoulder), not a whole-body tilt of the logo.
 4. **Copy (exact):**  
    `Welcome to syravocado — hope you enjoy today’s brief.`
-5. **Copy lifecycle:** Line appears with the wave and **fades out** as the wave ends (or shortly after). It must not compete with the brand `h1` or `marketTone` after the greeting finishes.
-6. **Blocking:** Briefing content, CTAs, and scroll remain available for the entire greeting. No overlay that captures clicks.
-7. **Reduced motion:** If `prefers-reduced-motion: reduce`, show the static mark and the welcome line once (no wave animation); line may remain briefly then fade, or stay as a static soft subtitle for one beat — prefer fade without motion keyframes.
-8. **Accessibility:** Welcome line is real text (not only in an image). Decorative motion does not require a live region announcement. Mark has appropriate alt / is marked decorative if adjacent text already names the brand.
+5. **Copy lifecycle:** Line appears with the wave and **fades out** as the 3s wave ends (or within ~0.3s after). It must not compete with the brand `h1` or `marketTone` afterward.
+6. **Blocking:** Briefing content, CTAs, and scroll remain available throughout. No click-capturing overlay.
+7. **Reduced motion:** If `prefers-reduced-motion: reduce`, show static avocado at rest + welcome line once (no hand animation); prefer a simple opacity fade for the line only.
+8. **Accessibility:** Welcome line is real text. Decorative motion needs no live region. Mascot `alt=""` if brand name is adjacent, or short alt naming the mascot.
 
 ## Visual placement
 
-- Brand-first: mark sits with the **syravocado** hero identity (above or beside the display title — implementer’s choice as long as the first viewport still reads as one composition: brand, one headline stack, market tone, CTA).
-- Welcome line is secondary to the brand name (smaller, softer color from existing tokens — e.g. `text-ink-soft` / forest muted). No pill, badge, card, or floating sticker on hero media.
-- Atmosphere stays the existing hero gradients; do not add a second full-bleed “splash” plane.
+- Brand-first: avocado sits with the **syravocado** hero identity (above or beside the display title) so the first viewport remains one composition: brand, headline stack, market tone, CTA.
+- Welcome line is secondary (smaller, softer token colors). No pill, badge, card, or sticker overlay language.
+- Atmosphere: existing hero gradients only.
 
 ## Technical notes
 
-- Prefer CSS animation (or a tiny client component) over heavy libraries.
-- If the mark is a still PNG, wave via transform origin on a wrapper (rotate/wiggle of the whole mark is acceptable for v1); SVG limb split is optional later.
-- Reuse `syr-mark.png`; do not introduce a second mascot asset unless the PNG cannot read as a wave.
-- Keep GitHub Pages `basePath` in mind for any image URLs (same pattern as `SiteHeader`).
+- Prefer CSS (layered arm + `transform-origin` at shoulder) or a tiny client component; no heavy animation libraries.
+- Respect GitHub Pages `basePath` for image URLs (same pattern as `SiteHeader`).
+- Wave duration constant: **3000ms**.
 
 ## Success criteria
 
-- [ ] Every Today load shows a ~1.5–2s wave + the exact welcome line
-- [ ] No gate; content readable/clickable throughout
-- [ ] Compact briefing pages unchanged (no greeting)
-- [ ] `prefers-reduced-motion` disables the wave
-- [ ] Desktop and mobile first viewport still pass the brand-first / one-composition rules
+- [ ] Viewer perceives the **avocado’s hand** waving (not the favicon badge rocking)
+- [ ] Wave runs **~3 seconds** on every Today load, then rests
+- [ ] Exact welcome line appears and fades with the wave
+- [ ] No gate; content usable throughout
+- [ ] Compact pages unchanged
+- [ ] `prefers-reduced-motion` disables the hand wave
+- [ ] Desktop and mobile still pass brand-first / one-composition rules
 
 ## Out of scope for v1
 
 - Sound
 - Localized welcome strings
-- Wave on header mark for non-Today pages
-- Persisting “already waved this session” (user asked every open)
+- Wave on header favicon mark
+- Session “already waved” memory
