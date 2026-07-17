@@ -29,6 +29,8 @@ What did today's data say relative to expectations? Beats/misses matter more tha
 
 **Inflation terminology:** vs consensus, higher-than-expected inflation is a **beat** (hawkish surprise); cooler-/lower-than-expected inflation is a **miss** / downside surprise (dovish relative to consensus). Never call a below-consensus CPI/PCE print a "beat."
 
+**Jobs / inverted series:** payrolls/GDP above consensus = beat. For jobless claims and unemployment, lower-than-consensus is a downside print on the series — write “below consensus,” not “beat,” even if risk assets treat it as strong labor.
+
 ### 3. Risk sentiment & flows
 Risk-on or risk-off today, and why? Cross-check equities against credit spreads, VIX, gold, JPY, and Treasuries. **Divergences are more informative than confirmations** — e.g., equities up while credit spreads widen is a warning worth flagging; everything moving together is just a mood.
 
