@@ -87,7 +87,7 @@
       "title": "Initial jobless claims",
       "kind": "stat",
       "display": "208,000",
-      "delta": "Week ended Jul 11 · below ~218k consensus",
+      "delta": "Week ended Jul 11 · miss estimate vs ~218k",
       "note": "CNBC / Labor Dept via Jul 16 data",
       "source": {
         "label": "CNBC Treasury",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "text": "Jul 16 data: June retail sales +0.2% m/m (in line; control group +0.5%); initial jobless claims 208,000 (below ~218k consensus); June pending home sales −5.4% m/m to index 72.5 (NAR, Jul 16).",
+      "text": "Jul 16 data: June retail sales +0.2% m/m (in line; control group +0.5%); initial jobless claims 208,000 (miss estimate vs ~218k); June pending home sales −5.4% m/m to index 72.5 (NAR, Jul 16).",
       "sources": [
         {
           "label": "AP retail sales",
@@ -289,7 +289,7 @@
       ]
     },
     {
-      "text": "Initial jobless claims 208,000 for week ended Jul 11 (CNBC/Labor Dept, Jul 16) vs ~218,000 expected — lowest since May.",
+      "text": "Initial jobless claims 208,000 for week ended Jul 11 (CNBC/Labor Dept, Jul 16) — miss estimate vs ~218,000 expected; lowest since May.",
       "sources": [
         {
           "label": "CNBC",

@@ -77,8 +77,8 @@ FAIL-CLOSED PUBLISH (critical):
 
 2. Pre-publish accuracy gate (ALL required):
    (a) each index move is that index's official close;
-   (b) inflation/jobs/GDP beat|miss is vs consensus not vs prior — cooler CPI = miss;
-       jobless claims/unemployment below consensus = "below consensus" (never "beat");
+   (b) beat|miss is vs estimate only — cooler/less than estimate = "miss estimate";
+       hotter/more than estimate = "beat estimate" (CPI, jobs, GDP, claims — never swap tone for label);
    (c) PBOC OMO net injection = ops − maturity with 亿元 correctly converted
        (100亿元 = CNY10bn);
    (d) gold/oil levels are settles or explicitly labeled spot;

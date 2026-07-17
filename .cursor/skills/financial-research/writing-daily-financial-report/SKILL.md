@@ -33,7 +33,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 
 - **Numbers, dates, names** — "PBOC cut the 7-day reverse repo rate 10bp to 1.4% on Tuesday", not "China eased policy recently"
 - **Source every hard number** — attach outlet/agency on first use of a figure (e.g. BLS, Yicai, Fed). If you cannot name a source, do not publish the figure.
-- **Beat/miss is vs consensus, not vs prior** — for inflation, cooler-than-expected = miss; hotter = beat. For growth/jobs (GDP, payrolls, retail sales), above-consensus = beat; below = miss. **Never swap “good news” for beat/miss:** jobless claims or unemployment below consensus is still a **below-consensus / downside print** on that series — say “below consensus,” not “beat,” just because markets read it as strong labor.
+- **Beat/miss is vs estimate (consensus), not vs prior** — compare the print to the survey number only: **cooler / less than estimate = miss estimate**; **hotter / more than estimate = beat estimate**. Applies to CPI/PPI/PCE, GDP, payrolls, retail sales, jobless claims, unemployment, and other prints. Never swap “good news” for beat/miss (e.g. claims below estimate is still a **miss estimate**, even if markets read strong labor).
 - **Confidence language is calibrated:** *is/did* for confirmed facts; *appears/suggests* for graded inference; *possible/worth watching* for weak signals. Never present a WEAK signal in *is* language.
 - **Facts before interpretation** within each section — reader should be able to see where reporting ends and judgment begins
 - **Length:** ~1,000–1,500 words total. Executive summary ≤ 120 words.
@@ -46,7 +46,7 @@ Before finalizing website YAML, re-check:
 
 1. Every index % change matches the named index's **close** (not another Asia index).
 2. Every official print matches the primary release (BLS/NBS/PBOC/Fed).
-3. Consensus labels (beat/miss) match actual vs survey.
+3. Beat/miss labels match actual vs estimate (**less = miss estimate**, **more = beat estimate**).
 4. PBOC OMO: ops size, maturity, **net** = ops − maturity, with correct 亿元→CNY bn conversion.
 5. No conflicting levels for the same asset in one briefing (e.g. two different gold prices without labels).
 6. **Calendar-year / coverage-window check on every hard quote.** Open the cited URL and confirm the article's publication year matches the briefing coverage window. Reject undated aggregator flashes that only say "7月15日" without year if the level conflicts with same-day tier-1/2 tape (example: BTC $116k flash vs Jul 2026 mid-$60k Cointelegraph/Fortune — treat as stale and discard).
@@ -63,8 +63,7 @@ End every report with:
 
 ## Common Mistakes
 
-- **Calling cooler inflation a "beat"** — below-consensus CPI/PCE is a **miss** / downside surprise, not a beat. Keep consensus vs actual side-by-side so the label is checkable.
-- **Calling below-consensus jobless claims a "beat"** — 208k vs 218k expected is below consensus; “beat” confuses market tone with the print-vs-survey label. Prefer “below consensus.”
+- **Calling a below-estimate print a "beat"** — cooler CPI/PCE or lower jobless claims than the survey are each a **miss estimate**, not a beat. Keep actual vs estimate side-by-side so the label is checkable.
 - **Executive summary written first and never updated** — write it last, after the body is final.
 - **Copy-pasting stage outputs verbatim** — the analysis stages produce working notes; the report needs them edited for a reader (dedupe items that appear in both global and China sections, cut internal jargon like "news-log item #4").
 - **Losing traceability while editing** — tightening prose must not detach claims from their sources; keep at least outlet names on key facts.
