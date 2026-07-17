@@ -2,7 +2,7 @@
   "date": "2026-07-17",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 16–17, 2026",
-  "publishedAt": "2026-07-17T15:45:00.000Z",
+  "publishedAt": "2026-07-17T16:39:15.000Z",
   "keySources": [
     {
       "label": "AP — Jul 16 US indexes",
@@ -51,6 +51,18 @@
     {
       "label": "MNI — PBOC Jul 17 CNY fix",
       "href": "https://www.mnimarkets.com/articles/mni-pboc-sets-yuan-parity-higher-at-67934-fri-599percent-yy-1784252674575"
+    },
+    {
+      "label": "Xinhua — Jul 17 A-share close",
+      "href": "https://english.news.cn/20260717/aeadf5ff51084a3cb257e9175030db2d/c.html"
+    },
+    {
+      "label": "The Standard — Hang Seng Jul 17",
+      "href": "https://www.thestandard.com.hk/finance/article/337535/Hang-Seng-Index-slumps-over-400-points-on-Friday-Zai-sinks-28-percent"
+    },
+    {
+      "label": "Fed — Jefferson Jul 16 speech",
+      "href": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm"
     },
     {
       "label": "第一财经 — WAIC Jul 17",
@@ -161,24 +173,45 @@
     },
     {
       "id": "asia-bars",
-      "title": "Jul 16 Shanghai close % change",
+      "title": "Jul 17 Shanghai close % change",
       "kind": "bars",
       "unit": "%",
-      "note": "Official close — 京报网 (Jul 17 onshore close omitted — no dated primary close at publish)",
+      "note": "Official close — Xinhua (Jul 16 京报网 −1.85% in chinaChanged)",
       "source": {
-        "label": "京报网",
-        "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
+        "label": "Xinhua",
+        "href": "https://english.news.cn/20260717/aeadf5ff51084a3cb257e9175030db2d/c.html"
       },
       "points": [
         {
           "label": "Shanghai",
-          "value": -1.85
+          "value": -3.05
+        },
+        {
+          "label": "Shenzhen",
+          "value": -5.4
+        },
+        {
+          "label": "ChiNext",
+          "value": -7.15
         }
       ]
     }
   ],
-  "marketTone": "Jul 16 chip profit-taking dragged Nasdaq −1.47% and SOX −4.3% despite in-line June retail sales (+0.2%) and jobless claims at 208k; Dallas Fed's Logan called for modestly higher rates while Brent settled $84.23. Jul 17: WAIC opens in Shanghai and PBOC set the CNY fix at 6.7934.",
+  "marketTone": "Jul 16 chip profit-taking dragged Nasdaq −1.47% and SOX −4.3%; Jul 17 A-shares plunged (Shanghai −3.05% to 3764, broke 3800) as global semi beta overwhelmed WAIC headlines; Logan/Jefferson Fed split keeps September hike debate alive with Brent $84.23.",
   "summary": [
+    {
+      "text": "Jul 17 A-share close (Xinhua): Shanghai −3.05% to 3,764.15 (broke 3800), Shenzhen −5.4% to 13,706.88, ChiNext −7.15% to 3,428.63, STAR −8.13%; turnover 2.65tn yuan (+252bn vs prior). Hang Seng −1.8% to 24,562 (The Standard) — global tech selloff overwhelmed WAIC opening day.",
+      "sources": [
+        {
+          "label": "Xinhua A-share",
+          "href": "https://english.news.cn/20260717/aeadf5ff51084a3cb257e9175030db2d/c.html"
+        },
+        {
+          "label": "The Standard HSI",
+          "href": "https://www.thestandard.com.hk/finance/article/337535/Hang-Seng-Index-slumps-over-400-points-on-Friday-Zai-sinks-28-percent"
+        }
+      ]
+    },
     {
       "text": "Jul 16 US close (AP): S&P −0.51% to 7,533.77, Nasdaq −1.47% to 25,881.95, Dow −0.20% to 52,552.97 — chip/AI names led declines (SOX closed 11867.50 per Yahoo Finance) even as ~75% of S&P constituents closed higher.",
       "sources": [
@@ -210,11 +243,15 @@
       ]
     },
     {
-      "text": "Dallas Fed President Logan (Jul 16): 'modestly higher interest rates' needed — PCE inflation 4.1% y/y through May, 'not on track all the way back to 2%'; first explicit hike call under Chair Warsh ahead of Jul 28–29 FOMC.",
+      "text": "Fed speaker split (Jul 16): Logan called for 'modestly higher interest rates' (PCE 4.1% y/y); Jefferson said policy 'well positioned' at 3-1/2 to 3-3/4% but could 'reconsider' if inflation does not cool soon — both ahead of Jul 28–29 FOMC.",
       "sources": [
         {
-          "label": "Dallas Fed",
+          "label": "Dallas Fed Logan",
           "href": "https://www.dallasfed.org/news/speeches/logan/2026/lkl260716"
+        },
+        {
+          "label": "Fed Jefferson",
+          "href": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm"
         }
       ]
     },
@@ -257,9 +294,9 @@
       ]
     }
   ],
-  "signal": "Chip profit-taking (SOX 11867.50 close) overwhelmed resilient consumer data and Jul 16's broad S&P breadth — AI beta is margin- and rates-sensitive, not earnings-proof.",
-  "watch": "Logan's modest-hike call vs Williams' Jul 15 peak-inflation frame — does another Fed voter join Logan before Jul 28–29 while Brent holds ~$84?",
-  "globalRegime": "Fed holds 3.50%–3.75% with split communication: Williams (Jul 15) saw inflation peaking after CPI/PPI misses, but Logan (Jul 16) called for modestly higher rates with PCE at 4.1% y/y. Jul 16 US equities fell on semis (−4.3% SOX) while retail sales (+0.2%) and claims (208k) held firm; Brent settled $84.23 and 10y Treasury 4.57% as Iran strikes continued.",
+  "signal": "Jul 17 onshore plunge (Shanghai −3.05%, broke 3800) synced with global semi de-risking — WAIC and mobile-AI approvals failed to offset SOX/Nasdaq drag.",
+  "watch": "Logan hawkish vs Jefferson conditional vs Williams dovish — does a third 2026 voter tip September hike odds above 50% before Jul 28–29 while Brent holds ~$84?",
+  "globalRegime": "Fed holds 3.50%–3.75% with split communication: Williams (Jul 15) saw inflation peaking after CPI/PPI misses, but Logan (Jul 16) called for modestly higher rates and Jefferson (Jul 16) left the door open to reconsider if inflation does not cool. Jul 16 US equities fell on semis (−4.3% SOX) while retail sales (+0.2%) and claims (208k) held firm; Brent settled $84.23 and 10y Treasury 4.57%. Jul 17 A-shares plunged −3.05% Shanghai as global chip beta overwhelmed local AI headlines.",
   "globalChanged": [
     {
       "text": "Jul 16 US official close (AP): S&P −0.51% to 7,533.77, Nasdaq −1.47% to 25,881.95, Dow −0.20% to 52,552.97, Russell 2000 −0.1% to 2,974.57.",
@@ -324,6 +361,15 @@
       ]
     },
     {
+      "text": "Jefferson (Jul 16, Fed): policy 'well positioned' at 3-1/2 to 3-3/4%; could 'reconsider our current policy stance' if inflation does not cool soon; Middle East energy shock + AI demand effects are key uncertainties.",
+      "sources": [
+        {
+          "label": "Fed Jefferson",
+          "href": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm"
+        }
+      ]
+    },
+    {
       "text": "Logan (Jul 16, Dallas Fed): inflation 'too high, for too long' at 4.1% PCE y/y; 'modestly higher interest rates' would better balance dual mandate; labor market 'solid' without restraint.",
       "sources": [
         {
@@ -344,9 +390,27 @@
       "text": "Pending sales −5.4% warns housing remains the soft spot despite resilient control-group retail — high rates + record prices still bite."
     }
   ],
-  "globalTensions": "Retail/claims resilience vs SOX −4.3%; Williams dovish Jul 15 frame vs Logan hawkish Jul 16; CPI/PPI misses vs Brent $84.23 and gold below $4,000; S&P down while most constituents up.",
-  "chinaStance": "Moderately loose via structural tools and event-driven AI support, cautious on price — Jul 17 PBOC fix at 6.7934 (weaker vs survey) and WAIC policy showcase; Jul 16 onshore semis/storage still weak (−1.85% Shanghai) while mobile-AI approvals (Apple Intelligence et al.) add selective tech support.",
+  "globalTensions": "Retail/claims resilience vs SOX −4.3%; Williams dovish Jul 15 vs Logan hawkish vs Jefferson conditional Jul 16; CPI/PPI misses vs Brent $84.23; Jul 17 Shanghai −3.05% vs WAIC opening; S&P down while most constituents up.",
+  "chinaStance": "Moderately loose via structural tools and event-driven AI support, cautious on price — Jul 17 PBOC fix at 6.7934 (weaker vs survey) and WAIC policy showcase; Jul 17 onshore plunge (−3.05% Shanghai, broke 3800) shows global semi beta still dominates local AI headlines.",
   "chinaChanged": [
+    {
+      "text": "Jul 17 A-share close (Xinhua): Shanghai −3.05% to 3,764.15, Shenzhen −5.4% to 13,706.88, ChiNext −7.15% to 3,428.63, STAR −8.13% to 1,938.77; turnover 2.65tn yuan (up from 2.4tn); financial/power gained, pharma led declines.",
+      "sources": [
+        {
+          "label": "Xinhua A-share",
+          "href": "https://english.news.cn/20260717/aeadf5ff51084a3cb257e9175030db2d/c.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 17 Hang Seng close −1.8% to 24,562 (The Standard); Hang Seng Tech −4.4% to 4,623 — Z.ai −28.5%, SMIC −10% amid global tech selloff.",
+      "sources": [
+        {
+          "label": "The Standard HSI",
+          "href": "https://www.thestandard.com.hk/finance/article/337535/Hang-Seng-Index-slumps-over-400-points-on-Friday-Zai-sinks-28-percent"
+        }
+      ]
+    },
     {
       "text": "Jul 17: 2026 WAIC opens in Shanghai — '智能伙伴 共创未来' theme across expo/Zhangjiang/West Bund venues (第一财经 Jul 16 preview).",
       "sources": [
@@ -413,7 +477,7 @@
   ],
   "chinaImplies": [
     {
-      "text": "WAIC + mobile-AI approvals are policy-supportive for on-device AI, but Jul 16 onshore storage/semis selloff shows domestic beta still tracks global chip de-risking more than local headlines."
+      "text": "Jul 17 onshore crash (−3.05% Shanghai, broke 3800) synced with Hang Seng −1.8% and Jul 16 SOX −4.3% — global chip de-risking dominates WAIC/mobile-AI headlines."
     },
     {
       "text": "Oil import −41.3% y/y is partly strategic/reserve management but reinforces demand-reset narrative alongside Q2 GDP miss — limits how much Brent relief helps onshore inflation expectations."
@@ -422,7 +486,7 @@
       "text": "Fix at 6.7934 weaker than survey suggests PBOC tolerates mild CNY softness while WAIC showcases tech — not an LPR-cut signal."
     }
   ],
-  "chinaDivergences": "Jul 16 Hang Seng +1.33% vs Shanghai −1.85%; global SOX −4.3% vs mobile-AI approval headline; Changxin IPO frenzy vs storage chip limit-downs; PBOC fix weaker than survey vs WAIC openness narrative.",
+  "chinaDivergences": "Jul 16 Hang Seng +1.33% vs Shanghai −1.85%; Jul 17 both fell (HSI −1.8% vs Shanghai −3.05%); WAIC openness vs STAR −8.13%; Changxin IPO frenzy vs storage chip limit-downs; PBOC fix weaker than survey vs event-driven AI narrative.",
   "assetFramework": [
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
@@ -512,11 +576,15 @@
     {
       "asset": "China equities (Shanghai / ChiNext)",
       "regime": "Domestic growth/liquidity vs global semi beta — event-driven AI pockets",
-      "driver": "Shanghai −1.85% Jul 16 (京报网); WAIC opens Jul 17; mobile-AI approvals Jul 16",
+      "driver": "Shanghai −3.05% Jul 17 to 3764.15 (Xinhua); Hang Seng −1.8% Jul 17; WAIC opens Jul 17; mobile-AI approvals Jul 16",
       "driverSources": [
         {
-          "label": "京报网",
-          "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
+          "label": "Xinhua",
+          "href": "https://english.news.cn/20260717/aeadf5ff51084a3cb257e9175030db2d/c.html"
+        },
+        {
+          "label": "The Standard HSI",
+          "href": "https://www.thestandard.com.hk/finance/article/337535/Hang-Seng-Index-slumps-over-400-points-on-Friday-Zai-sinks-28-percent"
         },
         {
           "label": "第一财经 WAIC",
@@ -527,8 +595,8 @@
           "href": "https://www.caixinglobal.com/2026-07-16/china-clears-mobile-based-ai-models-opening-path-for-apple-intelligence-in-china-102464642.html"
         }
       ],
-      "read": "Onshore still tracking global chip unwind; WAIC/approvals are selective support, not index beta",
-      "invalidator": "Shanghai reclaims 3,950 on rising volume with storage sector stabilizing"
+      "read": "Jul 17 onshore and offshore both sold — global chip unwind overwhelmed WAIC/approval headlines; A/H split closed",
+      "invalidator": "Shanghai reclaims 3,900 on rising volume with storage sector stabilizing"
     },
     {
       "asset": "CNY",
@@ -564,6 +632,27 @@
   "signals": [
     {
       "grade": "STRONG",
+      "name": "Jul 17 onshore plunge syncs with global semi de-risking",
+      "evidence": "Shanghai −3.05% to 3764.15, ChiNext −7.15%, STAR −8.13% Jul 17 (Xinhua); Hang Seng −1.8% Jul 17 (The Standard); follows Jul 16 SOX 11867.50 close and Nasdaq −1.47%.",
+      "evidenceSources": [
+        {
+          "label": "Xinhua",
+          "href": "https://english.news.cn/20260717/aeadf5ff51084a3cb257e9175030db2d/c.html"
+        },
+        {
+          "label": "The Standard",
+          "href": "https://www.thestandard.com.hk/finance/article/337535/Hang-Seng-Index-slumps-over-400-points-on-Friday-Zai-sinks-28-percent"
+        },
+        {
+          "label": "AP",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-b2a85bf17cbb4653ba83bb7c655366c0"
+        }
+      ],
+      "mechanism": "WAIC and mobile-AI approvals failed to offset global chip positioning unwind — onshore beta tracks SOX, not local policy headlines.",
+      "disprovedIf": "Shanghai reclaims 3,900 within three sessions while SOX stays below 12,000."
+    },
+    {
+      "grade": "STRONG",
       "name": "Chip profit-taking overwhelms resilient macro prints",
       "evidence": "Jul 16 SOX closed 11867.50; Nasdaq −1.47%; S&P −0.51% despite retail +0.2% in-line and claims 208k (AP/Yahoo/CNBC).",
       "evidenceSources": [
@@ -581,15 +670,19 @@
     },
     {
       "grade": "STRONG",
-      "name": "Fed speaker split — Logan hawkish after Williams dovish",
-      "evidence": "Logan Jul 16: 'modestly higher interest rates'; PCE 4.1% y/y; vs Williams Jul 15 peak-inflation frame (NY Fed wil260715 cited in prior session).",
+      "name": "Fed speaker split — Logan hawkish, Jefferson conditional, Williams dovish",
+      "evidence": "Logan Jul 16: 'modestly higher interest rates'; Jefferson Jul 16: could 'reconsider' if inflation does not cool; vs Williams Jul 15 peak-inflation frame (NY Fed wil260715).",
       "evidenceSources": [
         {
           "label": "Dallas Fed",
           "href": "https://www.dallasfed.org/news/speeches/logan/2026/lkl260716"
+        },
+        {
+          "label": "Fed Jefferson",
+          "href": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm"
         }
       ],
-      "mechanism": "First explicit hike call from a 2026 voter under Warsh — markets must reprice September odds that CPI/PPI misses had compressed.",
+      "mechanism": "Two Jul 16 Fed voices lean hawkish/conditional while Williams set dovish frame Jul 15 — September odds must reprice ahead of Jul 28–29.",
       "disprovedIf": "Two subsequent Fed speakers reject hike case and September hike odds fall below 30%."
     },
     {
@@ -625,22 +718,32 @@
     {
       "grade": "WEAK",
       "name": "China AI event cycle vs onshore semi beta",
-      "evidence": "WAIC opens Jul 17 (第一财经); mobile-AI approvals Jul 16 (Caixin); Shanghai −1.85% Jul 16 (京报网).",
+      "evidence": "WAIC opens Jul 17 (第一财经); mobile-AI approvals Jul 16 (Caixin); Shanghai −3.05% Jul 17 (Xinhua).",
       "evidenceSources": [
         {
           "label": "第一财经",
           "href": "https://www.yicai.com/news/103278199.html"
         },
         {
-          "label": "京报网",
-          "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
+          "label": "Xinhua",
+          "href": "https://english.news.cn/20260717/aeadf5ff51084a3cb257e9175030db2d/c.html"
         }
       ],
-      "mechanism": "Policy/showcase headlines land but global semi de-risking dominates A-share beta near-term.",
+      "mechanism": "Policy/showcase headlines land but global semi de-risking dominates A-share beta — Jul 17 plunge confirms.",
       "disprovedIf": "STAR 50 outperforms SOX by >5pp over five sessions while Shanghai holds 3,850+."
     }
   ],
   "watchItems": [
+    {
+      "priority": "HIGH",
+      "headline": "Jul 17 onshore plunge depth — Shanghai 3764.15 / broke 3800",
+      "why": "STRONG onshore sync signal — global semi beta overwhelmed WAIC.",
+      "watch": "Shanghai vs 3764.15 Jul 17 close; STAR vs 1938.77; storage/semis vs Jul 17 lows.",
+      "trigger": "Shanghai closes below 3,700 with turnover >2.8tn yuan — broadens from chip-led to liquidity stress.",
+      "invalidator": "Shanghai reclaims 3,900 within three sessions with SOX stabilizing above 12,000.",
+      "horizon": "days",
+      "status": "new"
+    },
     {
       "priority": "HIGH",
       "headline": "SOX / Nasdaq chip unwind depth after Jul 16 close 11867.50",
@@ -653,9 +756,9 @@
     },
     {
       "priority": "HIGH",
-      "headline": "Logan hike call vs Williams frame into Jul 28–29 FOMC",
+      "headline": "Logan/Jefferson vs Williams frame into Jul 28–29 FOMC",
       "why": "STRONG Fed-communication split after CPI/PPI misses.",
-      "watch": "Fed speakers after Logan Jul 16; September hike odds; 10y vs 4.57% Jul 16.",
+      "watch": "Fed speakers after Logan/Jefferson Jul 16; September hike odds; 10y vs 4.57% Jul 16.",
       "trigger": "Second 2026 voter explicitly backs modest hike and September odds exceed 50%.",
       "invalidator": "Core PCE ≤0.15% m/m and two Fed speakers align with Williams peak-inflation view.",
       "horizon": "days",
@@ -674,25 +777,15 @@
     {
       "priority": "MEDIUM",
       "headline": "WAIC policy signaling Jul 17–20",
-      "why": "WEAK China AI event signal — could shift domestic sentiment if paired with easing rhetoric.",
-      "watch": "WAIC keynote/policy readouts; STAR AI listings; onshore AI app names vs SOX.",
-      "trigger": "Official readout mentions expanded semi/AI fiscal support with concrete size/timeline.",
+      "why": "WEAK China AI event signal — Jul 17 plunge shows headlines alone insufficient.",
+      "watch": "WAIC keynote/policy readouts; STAR AI listings; onshore AI vs SOX.",
+      "trigger": "Official readout mentions expanded semi/AI fiscal support with concrete size/timeline AND Shanghai stabilizes above 3,850.",
       "invalidator": "Shanghai falls another −2% during WAIC with no policy size attached.",
       "horizon": "days",
-      "status": "new"
-    },
-    {
-      "priority": "LOW",
-      "headline": "Contrarian — Jul 16 breadth vs cap-weighted drop",
-      "why": "AP noted more S&P risers than fallers despite index −0.5% — unwind may be concentrated not systemic.",
-      "watch": "S&P 500 equal-weight vs cap-weight spread; % of members above 50-day average.",
-      "trigger": "Equal-weight also −1%+ for two sessions — confirms broad risk-off, not just Mag 7/semi.",
-      "invalidator": "Cap-weight catches up to equal-weight with SOX stabilizing above 12,200.",
-      "horizon": "days",
-      "status": "new"
+      "status": "escalated"
     }
   ],
-  "sources": "AP (Jul 16 US close; June retail sales), Dallas Fed (Logan Jul 16), CNBC (Jul 16 Treasury yields/claims; Brent/WTI settle), US Treasury yield curve, NAR (June pending home sales), Yahoo Finance (SOX), GoldSeek (COMEX gold Jul 16), CoinDesk + Cointelegraph (BTC Jul 16), MNI (PBOC Jul 17 fix), 第一财经/Yicai (WAIC Jul 17 preview), Caixin Global (Jun oil imports Jul 17; mobile AI approvals Jul 16), 京报网 (Jul 16 A-share close), 华尔街见闻 (3777149 Jul 17 breakfast; 3777116 Changxin IPO), BlockBeats (302775 H20 flash Jul 16).",
-  "singleSource": "Omitted Jul 17 onshore A-share and Hang Seng official closes — no dated 京报网/The Standard Jul 17 close article verified at publish (Jul 16 京报网 close used for asia-bars). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). BlockBeats 302775 triangulated with Caixin/mobile-AI context only for policy color, not for a BTC print.",
+  "sources": "AP (Jul 16 US close; June retail sales), Dallas Fed (Logan Jul 16), Fed Board (Jefferson Jul 16), CNBC (Jul 16 Treasury yields/claims; Brent/WTI settle), US Treasury yield curve, NAR (June pending home sales), Yahoo Finance (SOX), GoldSeek (COMEX gold Jul 16), CoinDesk + Cointelegraph (BTC Jul 16), MNI (PBOC Jul 17 fix), Xinhua (Jul 17 A-share close), The Standard (Hang Seng Jul 17), 第一财经/Yicai (WAIC Jul 17 preview), Caixin Global (Jun oil imports Jul 17; mobile AI approvals Jul 16), 京报网 (Jul 16 A-share close), 华尔街见闻 (3777149 Jul 17 breakfast; 3777116 Changxin IPO), BlockBeats (302775 H20 flash Jul 16).",
+  "singleSource": "Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). BlockBeats 302775 used for H20 policy color only, not BTC print. MNI PBOC fix page timed out in manual fetch but dated URL retained — scan-links must verify.",
   "slug": "2026-07-17"
 }
