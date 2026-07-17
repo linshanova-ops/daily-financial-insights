@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-16T12:25:30.171Z",
-  "latest": "2026-07-16",
+  "generatedAt": "2026-07-17T03:48:02.767Z",
+  "latest": "2026-07-17",
   "briefings": [
+    {
+      "date": "2026-07-17",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Jul 16 chip profit-taking dragged Nasdaq −1.47% and SOX −4.3% despite in-line June retail sales (+0.2%) and jobless claims at 208k; Dallas Fed's Logan called for modestly higher rates while Brent settled $84.23. Jul 17: WAIC opens in Shanghai and PBOC set the CNY fix at 6.7934.",
+      "coverageWindow": "July 16–17, 2026"
+    },
     {
       "date": "2026-07-16",
       "title": "Daily Financial Briefing",
