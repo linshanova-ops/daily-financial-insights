@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { formatBriefingDate } from "@/lib/briefings-format";
 import { formatPublishedAt } from "@/lib/format-published";
+import { WelcomeWave } from "./WelcomeWave";
 
 interface BriefingHeroProps {
   date: string;
@@ -37,9 +38,11 @@ export function BriefingHero({
 
       <div
         className={`mx-auto flex w-full max-w-6xl flex-col gap-6 ${
-          compact ? "" : "min-h-[70vh] justify-end gap-8"
+          compact ? "" : "min-h-[70vh] justify-between gap-10"
         }`}
       >
+        {!compact ? <WelcomeWave /> : null}
+        <div className={`flex flex-col gap-6 ${compact ? "" : "pb-2"}`}>
         <p className="reveal text-xs font-semibold uppercase tracking-[0.28em] text-forest">
           {formatBriefingDate(date)}
         </p>
@@ -86,6 +89,7 @@ export function BriefingHero({
             </Link>
           </div>
         ) : null}
+        </div>
       </div>
     </section>
   );
