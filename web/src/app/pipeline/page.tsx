@@ -120,9 +120,8 @@ export default function PipelinePage() {
         syravocado is powered by Cursor Agent skills. Each stage only consumes
         what the previous stage verified — analysis cites the news log,
         suggestions cite graded signals, and the published report stays
-        traceable. Visitors trigger a new run with{" "}
-        <span className="font-semibold text-ink">Refresh now</span> on the
-        homepage (rate-limited).
+        traceable. New briefings publish automatically twice daily (08:00 and
+        20:00 China time) via GitHub Actions — no visitor click required.
       </p>
       <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
         <span className="font-semibold text-ink">Accuracy policy:</span> every

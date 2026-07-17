@@ -51,8 +51,6 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: "true"
-          # Optional: Netlify function URL so Refresh now can trigger generation.
-          NEXT_PUBLIC_REFRESH_API: ${{ vars.NEXT_PUBLIC_REFRESH_API }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
