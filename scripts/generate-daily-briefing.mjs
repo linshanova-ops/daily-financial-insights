@@ -357,6 +357,12 @@ function formatFailingChecks(prNumber, failing) {
 }
 
 function mergePr(prNumber) {
+  // Cursor cloud PRs are often opened as drafts; cannot squash-merge until ready.
+  const ready = gh(["pr", "ready", String(prNumber)], { allowFail: true });
+  if (ready.status === 0) {
+    console.log(`[briefing] marked PR #${prNumber} ready for review`);
+  }
+
   // Waited for green checks already — merge immediately (fail-closed gate).
   const merged = gh(
     [
