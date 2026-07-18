@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-17T16:41:06.371Z",
-  "latest": "2026-07-17",
+  "generatedAt": "2026-07-18T00:34:37.527Z",
+  "latest": "2026-07-18",
   "briefings": [
+    {
+      "date": "2026-07-18",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Moonshot Kimi K3 (Jul 16) triggered a global chip de-risking: Jul 17 S&P −1.01% to 7,457.69, SOX 11,673.89, Shanghai −3.05% (broke 3800); Brent settled $88.10 on Iran/Kuwait escalation; sentiment 54.4 beat estimate but surveys largely pre-dated the oil spike.",
+      "coverageWindow": "July 15–18, 2026"
+    },
     {
       "date": "2026-07-17",
       "title": "Daily Financial Briefing",
