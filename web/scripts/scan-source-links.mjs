@@ -166,6 +166,18 @@ function urlYearTrust(href, briefingYear) {
   );
 }
 
+/**
+ * Official hosts that intermittently time out / bot-block from GitHub Actions
+ * IPs even with UA fallback (no reliable year-in-URL pattern). Soft-trust
+ * reachability failures so Pages deploy is not flaky; claims still need
+ * co-sources when evidence is required.
+ */
+const FLAKY_OFFICIAL_HOSTS = [/bok\.or\.kr/i];
+
+function flakyOfficialHost(href) {
+  return FLAKY_OFFICIAL_HOSTS.some((re) => re.test(href));
+}
+
 function staticProblems(href, briefingYear) {
   const problems = [];
   const lower = href.toLowerCase();
@@ -949,6 +961,12 @@ async function main() {
     if (urlYearTrust(href, briefingYear)) {
       warnings.push(
         `fetch blocked; URL year trusted (${briefingYear}): ${href} (${fetched?.error || fetched?.status})`,
+      );
+      continue;
+    }
+    if (flakyOfficialHost(href)) {
+      warnings.push(
+        `flaky official host soft-trusted: ${href} (${fetched?.error || fetched?.status || "unknown"}; via ${fetched?.via})`,
       );
       continue;
     }
