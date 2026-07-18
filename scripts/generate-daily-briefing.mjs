@@ -2,15 +2,19 @@
  * Kicks a Cursor cloud agent that drafts today's briefing on a PR branch.
  * Fail-closed publish:
  *   1) Agent opens PR (never pushes to main)
- *   2) GitHub CI runs scan-links (briefing-accuracy.yml)
- *   3) If green → auto-merge
- *   4) If red → agent rewrites (up to MAX_FIX_ATTEMPTS) → re-check → merge
+ *   2) Orchestrator marks the PR ready (Cursor autoCreatePR opens drafts;
+ *      draft PRs often never get CI — that was the stuck-loop root cause)
+ *   3) GitHub CI runs scan-links (briefing-accuracy.yml)
+ *   4) If green → auto-merge
+ *   5) If red → agent rewrites (up to MAX_FIX_ATTEMPTS) → re-check → merge
+ *   6) If PR is already MERGED (overlapping run won) → treat as success
  *
  * Requires: CURSOR_API_KEY
  * Optional: GITHUB_TOKEN / GH_TOKEN (Actions provides GITHUB_TOKEN) for PR merge
  */
 import { spawnSync } from "node:child_process";
 import { Agent, CursorAgentError } from "@cursor/sdk";
+import { evaluatePrPublishState } from "./lib/briefing-publish-helpers.mjs";
 
 const apiKey = process.env.CURSOR_API_KEY;
 const repoUrl =
@@ -20,6 +24,8 @@ const githubToken = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
 const MAX_FIX_ATTEMPTS = 3;
 const CHECK_POLL_MS = 20_000;
 const CHECK_TIMEOUT_MS = 20 * 60_000;
+/** Fail faster when CI never queues (usually still-draft / workflow skip). */
+const CHECK_START_TIMEOUT_MS = 8 * 60_000;
 
 if (!apiKey) {
   console.error("Missing CURSOR_API_KEY");
@@ -211,16 +217,68 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+/**
+ * Cursor cloud autoCreatePR opens drafts. Mark ready BEFORE waiting on CI —
+ * otherwise checks may never start and the orchestrator loops until timeout.
+ */
+function ensurePrReady(prNumber) {
+  const view = gh(
+    ["pr", "view", String(prNumber), "--json", "isDraft,state"],
+    { allowFail: true },
+  );
+  if (view.status === 0 && view.stdout) {
+    try {
+      const data = JSON.parse(view.stdout);
+      if (data.state === "MERGED") {
+        console.log(`[briefing] PR #${prNumber} already merged`);
+        return "merged";
+      }
+      if (data.state && data.state !== "OPEN") {
+        console.log(`[briefing] PR #${prNumber} state=${data.state}`);
+        return "closed";
+      }
+      if (data.isDraft === false) {
+        return "ready";
+      }
+    } catch {
+      /* fall through to gh pr ready */
+    }
+  }
+  const ready = gh(["pr", "ready", String(prNumber)], { allowFail: true });
+  if (ready.status === 0) {
+    console.log(`[briefing] marked PR #${prNumber} ready for review (pre-CI)`);
+    return "ready";
+  }
+  console.warn(
+    `[briefing] could not mark PR #${prNumber} ready: ${ready.stderr || ready.stdout}`,
+  );
+  return "unknown";
+}
+
 async function waitForChecks(prNumber) {
   const started = Date.now();
+  let sawActionable = false;
+  let lastReadyNudge = 0;
   while (Date.now() - started < CHECK_TIMEOUT_MS) {
+    // Re-nudge draft → ready while CI has not appeared (every ~2 min).
+    if (!sawActionable && Date.now() - lastReadyNudge > 120_000) {
+      const readyState = ensurePrReady(prNumber);
+      lastReadyNudge = Date.now();
+      if (readyState === "merged") {
+        return { state: "success", failingLog: "" };
+      }
+      if (readyState === "closed") {
+        return { state: "closed", failingLog: `PR #${prNumber} closed` };
+      }
+    }
+
     const view = gh(
       [
         "pr",
         "view",
         String(prNumber),
         "--json",
-        "statusCheckRollup,mergeStateStatus,state",
+        "statusCheckRollup,mergeStateStatus,state,isDraft",
       ],
       { allowFail: true },
     );
@@ -229,74 +287,60 @@ async function waitForChecks(prNumber) {
       continue;
     }
     const data = JSON.parse(view.stdout || "{}");
-    if (data.state && data.state !== "OPEN") {
+    const evaluated = evaluatePrPublishState({
+      prState: data.state,
+      checks: data.statusCheckRollup,
+    });
+
+    if (evaluated.state === "success") {
+      if (String(data.state || "").toUpperCase() === "MERGED") {
+        console.log(`[briefing] PR #${prNumber} already merged — done`);
+      }
+      return { state: "success", failingLog: "" };
+    }
+    if (evaluated.state === "closed") {
       return { state: "closed", failingLog: `PR state=${data.state}` };
     }
-    const checks = Array.isArray(data.statusCheckRollup)
-      ? data.statusCheckRollup
-      : [];
-    // Ignore Netlify canceled/neutral noise; require GitHub Actions accuracy gate.
-    const actionable = checks.filter((c) => {
-      const name = `${c.name || ""} ${c.context || ""}`;
-      if (/netlify/i.test(name)) return false;
-      return true;
-    });
-
-    if (!actionable.length) {
-      console.log("[briefing] waiting for CI checks to start…");
-      await sleep(CHECK_POLL_MS);
-      continue;
-    }
-
-    const pending = actionable.filter((c) => {
-      const status = (c.status || c.state || "").toUpperCase();
-      return (
-        status === "PENDING" ||
-        status === "QUEUED" ||
-        status === "IN_PROGRESS" ||
-        status === "WAITING" ||
-        status === "REQUESTED" ||
-        (!c.conclusion && status !== "COMPLETED")
-      );
-    });
-    const failing = actionable.filter((c) => {
-      const conclusion = (c.conclusion || "").toUpperCase();
-      return (
-        conclusion === "FAILURE" ||
-        conclusion === "CANCELLED" ||
-        conclusion === "TIMED_OUT" ||
-        conclusion === "ACTION_REQUIRED" ||
-        conclusion === "STARTUP_FAILURE" ||
-        conclusion === "ERROR" ||
-        conclusion === "FAIL"
-      );
-    });
-    const allSuccess = actionable.every((c) => {
-      const conclusion = (c.conclusion || "").toUpperCase();
-      const status = (c.status || "").toUpperCase();
-      return (
-        conclusion === "SUCCESS" ||
-        conclusion === "NEUTRAL" ||
-        conclusion === "SKIPPED" ||
-        (status === "COMPLETED" &&
-          (conclusion === "SUCCESS" ||
-            conclusion === "NEUTRAL" ||
-            conclusion === "SKIPPED"))
-      );
-    });
-
-    console.log(
-      `[briefing] checks: ${actionable.length} actionable, ${pending.length} pending, ${failing.length} failing`,
-    );
-
-    if (failing.length) {
+    if (evaluated.state === "failure") {
+      const failing = (Array.isArray(data.statusCheckRollup)
+        ? data.statusCheckRollup
+        : []
+      ).filter((c) => {
+        const conclusion = String(c.conclusion || "").toUpperCase();
+        return (
+          conclusion === "FAILURE" ||
+          conclusion === "CANCELLED" ||
+          conclusion === "TIMED_OUT" ||
+          conclusion === "ACTION_REQUIRED" ||
+          conclusion === "STARTUP_FAILURE" ||
+          conclusion === "ERROR" ||
+          conclusion === "FAIL"
+        );
+      });
       return {
         state: "failure",
         failingLog: formatFailingChecks(prNumber, failing),
       };
     }
-    if (!pending.length && allSuccess) {
-      return { state: "success", failingLog: "" };
+
+    if (evaluated.actionable > 0) {
+      sawActionable = true;
+      console.log(
+        `[briefing] checks: ${evaluated.actionable} actionable, ${evaluated.pending} pending, ${evaluated.failing} failing` +
+          (data.isDraft ? " (still draft!)" : ""),
+      );
+    } else {
+      console.log(
+        `[briefing] waiting for CI checks to start…` +
+          (data.isDraft ? " PR is still draft" : ""),
+      );
+      if (Date.now() - started >= CHECK_START_TIMEOUT_MS) {
+        return {
+          state: "timeout",
+          failingLog:
+            "Timed out waiting for CI checks to start. PR may still be draft or workflows did not queue.",
+        };
+      }
     }
     await sleep(CHECK_POLL_MS);
   }
@@ -357,11 +401,8 @@ function formatFailingChecks(prNumber, failing) {
 }
 
 function mergePr(prNumber) {
-  // Cursor cloud PRs are often opened as drafts; cannot squash-merge until ready.
-  const ready = gh(["pr", "ready", String(prNumber)], { allowFail: true });
-  if (ready.status === 0) {
-    console.log(`[briefing] marked PR #${prNumber} ready for review`);
-  }
+  // Belt-and-suspenders: ready was requested before CI wait, but re-check.
+  ensurePrReady(prNumber);
 
   // Waited for green checks already — merge immediately (fail-closed gate).
   const merged = gh(
@@ -472,14 +513,53 @@ async function main() {
     }
     console.log(`[briefing] PR #${pr.number} ${pr.url}`);
 
+    // Critical: leave draft before any CI wait (see ensurePrReady docs).
+    const initialReady = ensurePrReady(pr.number);
+    if (initialReady === "merged") {
+      triggerPagesDeploy();
+      console.log(
+        `[briefing] DONE ${today} already merged via PR #${pr.number}`,
+      );
+      return;
+    }
+    if (initialReady === "closed") {
+      console.error(
+        `[briefing] PR #${pr.number} closed before CI. Live site unchanged.`,
+      );
+      process.exit(3);
+    }
+
     for (let attempt = 1; attempt <= MAX_FIX_ATTEMPTS; attempt++) {
       console.log(`[briefing] CI wait attempt ${attempt}/${MAX_FIX_ATTEMPTS}`);
       const check = await waitForChecks(pr.number);
       if (check.state === "success") {
-        mergePr(pr.number);
+        // Re-resolve: overlapping run may have merged already.
+        const latest = gh(
+          ["pr", "view", String(pr.number), "--json", "state"],
+          { allowFail: true },
+        );
+        let alreadyMerged = false;
+        if (latest.status === 0 && latest.stdout) {
+          try {
+            alreadyMerged =
+              JSON.parse(latest.stdout).state === "MERGED";
+          } catch {
+            /* ignore */
+          }
+        }
+        if (!alreadyMerged) {
+          mergePr(pr.number);
+        }
         triggerPagesDeploy();
         console.log(`[briefing] DONE ${today} merged via PR #${pr.number}`);
         return;
+      }
+
+      if (check.state === "closed") {
+        console.error(
+          `[briefing] PR closed during CI wait. Live site unchanged.`,
+        );
+        process.exit(3);
       }
 
       console.error(`[briefing] CI ${check.state}`);
@@ -491,10 +571,20 @@ async function main() {
         process.exit(4);
       }
 
+      // Only ask the agent to rewrite on real CI failures, not start-timeouts
+      // from a still-draft PR — re-ready and retry first.
+      if (check.state === "timeout") {
+        console.log("[briefing] re-marking PR ready after CI start timeout…");
+        ensurePrReady(pr.number);
+        await sleep(15_000);
+        continue;
+      }
+
       console.log("[briefing] asking agent to rewrite for CI failures…");
       await runAgentPrompt(agent, buildFixPrompt(check.failingLog || check.state));
       // Re-resolve PR in case number stayed the same
       pr = findBriefingPr() || pr;
+      ensurePrReady(pr.number);
       await sleep(15_000); // let CI queue
     }
   } catch (err) {
