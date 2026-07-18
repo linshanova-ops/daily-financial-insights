@@ -21,6 +21,12 @@ permissions:
   # (push events from GITHUB_TOKEN do not start other workflows).
   actions: write
 
+# Overlapping schedule/dispatch runs race on briefing/YYYY-MM-DD and can open
+# duplicate draft PRs that never get CI. Queue extras; do not cancel an in-flight publish.
+concurrency:
+  group: generate-daily-briefing
+  cancel-in-progress: false
+
 jobs:
   briefing:
     runs-on: ubuntu-latest
