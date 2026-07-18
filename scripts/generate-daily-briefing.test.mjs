@@ -80,3 +80,23 @@ describe("evaluatePrPublishState", () => {
     assert.equal(r.pending, 1);
   });
 });
+
+describe("workflow wiring", () => {
+  it("accuracy gate listens for ready_for_review (draft → ready)", () => {
+    const yml = readFileSync(
+      join(root, ".github/workflows/briefing-accuracy.yml"),
+      "utf8",
+    );
+    assert.match(yml, /ready_for_review/);
+  });
+
+  it("generate workflow serializes overlapping runs", () => {
+    const yml = readFileSync(
+      join(root, ".github/workflows/daily-briefing.yml"),
+      "utf8",
+    );
+    assert.match(yml, /concurrency:/);
+    assert.match(yml, /generate-daily-briefing/);
+    assert.match(yml, /cancel-in-progress:\s*false/);
+  });
+});
