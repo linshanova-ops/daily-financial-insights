@@ -3,6 +3,10 @@ name: Briefing accuracy gate
 # Fail-closed gate for Refresh PRs: must pass before auto-merge to main.
 on:
   pull_request:
+    # Include ready_for_review: Cursor autoCreatePR opens drafts; the
+    # orchestrator marks them ready before waiting on CI. Without this event,
+    # accuracy CI may never queue after draft → ready.
+    types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - "web/content/briefings/**"
       - "web/public/data/**"

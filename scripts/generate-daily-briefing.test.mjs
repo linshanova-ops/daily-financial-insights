@@ -1,9 +1,14 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
 import { describe, it } from "node:test";
+import { fileURLToPath } from "node:url";
 import {
   evaluatePrPublishState,
   filterActionableChecks,
 } from "./lib/briefing-publish-helpers.mjs";
+
+const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 describe("filterActionableChecks", () => {
   it("drops Netlify noise and keeps accuracy gate", () => {

@@ -14,7 +14,11 @@
  */
 import { spawnSync } from "node:child_process";
 import { Agent, CursorAgentError } from "@cursor/sdk";
-import { evaluatePrPublishState } from "./lib/briefing-publish-helpers.mjs";
+import {
+  evaluatePrPublishState,
+  filterActionableChecks,
+  isFailingCheck,
+} from "./lib/briefing-publish-helpers.mjs";
 
 const apiKey = process.env.CURSOR_API_KEY;
 const repoUrl =
@@ -302,21 +306,9 @@ async function waitForChecks(prNumber) {
       return { state: "closed", failingLog: `PR state=${data.state}` };
     }
     if (evaluated.state === "failure") {
-      const failing = (Array.isArray(data.statusCheckRollup)
-        ? data.statusCheckRollup
-        : []
-      ).filter((c) => {
-        const conclusion = String(c.conclusion || "").toUpperCase();
-        return (
-          conclusion === "FAILURE" ||
-          conclusion === "CANCELLED" ||
-          conclusion === "TIMED_OUT" ||
-          conclusion === "ACTION_REQUIRED" ||
-          conclusion === "STARTUP_FAILURE" ||
-          conclusion === "ERROR" ||
-          conclusion === "FAIL"
-        );
-      });
+      const failing = filterActionableChecks(data.statusCheckRollup).filter(
+        isFailingCheck,
+      );
       return {
         state: "failure",
         failingLog: formatFailingChecks(prNumber, failing),
@@ -400,9 +392,32 @@ function formatFailingChecks(prNumber, failing) {
     .join("\n\n");
 }
 
+function prState(prNumber) {
+  const view = gh(
+    ["pr", "view", String(prNumber), "--json", "state"],
+    { allowFail: true },
+  );
+  if (view.status !== 0 || !view.stdout) return "";
+  try {
+    return String(JSON.parse(view.stdout).state || "");
+  } catch {
+    return "";
+  }
+}
+
+function mergeAlreadyDone(prNumber, ...messages) {
+  if (prState(prNumber) === "MERGED") return true;
+  const blob = messages.join("\n").toLowerCase();
+  return blob.includes("already merged") || blob.includes("pull request is merged");
+}
+
 function mergePr(prNumber) {
   // Belt-and-suspenders: ready was requested before CI wait, but re-check.
-  ensurePrReady(prNumber);
+  const readyState = ensurePrReady(prNumber);
+  if (readyState === "merged" || prState(prNumber) === "MERGED") {
+    console.log(`[briefing] PR #${prNumber} already merged`);
+    return;
+  }
 
   // Waited for green checks already — merge immediately (fail-closed gate).
   const merged = gh(
@@ -415,28 +430,53 @@ function mergePr(prNumber) {
     ],
     { allowFail: true },
   );
-  if (merged.status !== 0) {
-    // Fallback: enable auto-merge in case of brief race with required checks.
-    const auto = gh(
-      [
-        "pr",
-        "merge",
-        String(prNumber),
-        "--auto",
-        "--squash",
-        "--delete-branch",
-      ],
-      { allowFail: true },
-    );
-    if (auto.status !== 0) {
-      throw new Error(
-        `merge failed: ${merged.stderr || merged.stdout}\n${auto.stderr || auto.stdout}`,
-      );
-    }
+  if (merged.status === 0) {
+    console.log(`[briefing] merged PR #${prNumber}`);
+    return;
+  }
+  if (mergeAlreadyDone(prNumber, merged.stderr, merged.stdout)) {
+    console.log(`[briefing] PR #${prNumber} already merged`);
+    return;
+  }
+
+  // Fallback: enable auto-merge in case of brief race with required checks.
+  const auto = gh(
+    [
+      "pr",
+      "merge",
+      String(prNumber),
+      "--auto",
+      "--squash",
+      "--delete-branch",
+    ],
+    { allowFail: true },
+  );
+  if (auto.status === 0) {
     console.log(`[briefing] auto-merge enabled for PR #${prNumber}`);
     return;
   }
-  console.log(`[briefing] merged PR #${prNumber}`);
+  if (mergeAlreadyDone(prNumber, auto.stderr, auto.stdout)) {
+    console.log(`[briefing] PR #${prNumber} already merged`);
+    return;
+  }
+  throw new Error(
+    `merge failed: ${merged.stderr || merged.stdout}\n${auto.stderr || auto.stdout}`,
+  );
+}
+
+/** True when today's briefing markdown is already on main (another run won). */
+function briefingExistsOnMain() {
+  const repoPath = repoUrl
+    .replace(/^https?:\/\/github\.com\//, "")
+    .replace(/\.git$/, "");
+  const res = gh(
+    [
+      "api",
+      `repos/${repoPath}/contents/web/content/briefings/${today}.md?ref=main`,
+    ],
+    { allowFail: true },
+  );
+  return res.status === 0;
 }
 
 /**
@@ -523,6 +563,13 @@ async function main() {
       return;
     }
     if (initialReady === "closed") {
+      if (briefingExistsOnMain()) {
+        triggerPagesDeploy();
+        console.log(
+          `[briefing] DONE ${today} — PR closed but briefing already on main`,
+        );
+        return;
+      }
       console.error(
         `[briefing] PR #${pr.number} closed before CI. Live site unchanged.`,
       );
@@ -534,20 +581,7 @@ async function main() {
       const check = await waitForChecks(pr.number);
       if (check.state === "success") {
         // Re-resolve: overlapping run may have merged already.
-        const latest = gh(
-          ["pr", "view", String(pr.number), "--json", "state"],
-          { allowFail: true },
-        );
-        let alreadyMerged = false;
-        if (latest.status === 0 && latest.stdout) {
-          try {
-            alreadyMerged =
-              JSON.parse(latest.stdout).state === "MERGED";
-          } catch {
-            /* ignore */
-          }
-        }
-        if (!alreadyMerged) {
+        if (prState(pr.number) !== "MERGED") {
           mergePr(pr.number);
         }
         triggerPagesDeploy();
@@ -556,6 +590,13 @@ async function main() {
       }
 
       if (check.state === "closed") {
+        if (briefingExistsOnMain()) {
+          triggerPagesDeploy();
+          console.log(
+            `[briefing] DONE ${today} — PR closed but briefing already on main`,
+          );
+          return;
+        }
         console.error(
           `[briefing] PR closed during CI wait. Live site unchanged.`,
         );
