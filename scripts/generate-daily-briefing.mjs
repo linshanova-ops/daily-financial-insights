@@ -112,16 +112,22 @@ FAIL-CLOSED PUBLISH (critical):
    it and note rejected bad cites in singleSource/caveats.
    If today's file already exists, update it with the latest developments instead of skipping.
 
-4. From web/, run: npm ci && npm run sync-data && npm run scan-links
+4. Market Dashboard (required): from web/, run
+   \`node scripts/fetch-market-closes.mjs --inject content/briefings/${today}.md\`
+   This fetches real closes (Yahoo / U.S. Treasury / CoinGecko / OKX) into frontmatter
+   \`marketDashboard\`. Do NOT invent tape levels by hand. Do NOT delete the injected block.
+   If a single row fails, the script omits it — that is OK.
+
+5. From web/, run: npm ci && npm run sync-data && npm run scan-links
    Fix until scan-links is green before you finish. Append newly discovered bad IDs to
    web/scripts/rejected-source-ids.json when needed.
 
-5. Commit on \`${branchName}\` with message: content: publish ${today} daily briefing
+6. Commit on \`${branchName}\` with message: content: publish ${today} daily briefing
    Include web/content/briefings/${today}.md, web/public/data/**, and any
    rejected-source-ids.json updates. Push the branch and open/update the PR to main
    with title: ${prTitle}
 
-6. Reply with: DONE ${today} BRANCH=${branchName} PR=<url-or-number>
+7. Reply with: DONE ${today} BRANCH=${branchName} PR=<url-or-number>
    Do not merge. Do not push to main.`;
 }
 

@@ -387,6 +387,38 @@ async function fetchTsmcViaSec(href) {
  * @returns {Promise<{ ok: boolean, status?: number, text: string, years: number[], via: string, error?: string }>}
  */
 async function fetchSource(href) {
+  // OKX public funding endpoint (Market Dashboard BTC funding row).
+  if (/okx\.com\/api\/v5\/public\/funding-rate/i.test(href)) {
+    try {
+      const res = await fetch(href, {
+        headers: { accept: "application/json", "user-agent": BROWSER_UA },
+        signal: AbortSignal.timeout(20000),
+      });
+      const json = await res.json();
+      const row = json?.data?.[0] ?? {};
+      const text = normalizeText(
+        [row.instId, row.fundingRate, row.fundingTime, JSON.stringify(json)].join(
+          " ",
+        ),
+      );
+      return {
+        ok: res.ok && text.length > 5,
+        status: res.status,
+        text,
+        years: [new Date().getUTCFullYear()],
+        via: "okx-funding-api",
+      };
+    } catch (e) {
+      return {
+        ok: false,
+        text: "",
+        years: [],
+        via: "okx-funding-api",
+        error: String(e.message || e),
+      };
+    }
+  }
+
   // Yahoo quote pages often block HTML; chart API still exposes closes.
   const yf = href.match(
     /finance\.yahoo\.com\/quote\/([^/?#]+)(?:\/history)?/i,
