@@ -2,7 +2,7 @@
   "date": "2026-07-18",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 15–18, 2026",
-  "publishedAt": "2026-07-18T12:30:00.000Z",
+  "publishedAt": "2026-07-18T00:28:40.000Z",
   "keySources": [
     {
       "label": "Straits Times — Jul 17 US close",
@@ -136,10 +136,6 @@
         {
           "label": "Nasdaq",
           "value": -1.4
-        },
-        {
-          "label": "Russell",
-          "value": -0.4
         }
       ]
     },
@@ -262,7 +258,7 @@
   "globalRegime": "Fed holds 3.50%–3.75% with a speaker split (Logan hawkish Jul 16 vs Williams dovish Jul 15) while forward inflation risk re-accelerates: Brent jumped to $88.10 Jul 17 (+15.9% on the week) as CENTCOM completed a seventh night of Iran strikes. Jul 17 US equities posted broad weekly losses (Nasdaq −2.9%) as Kimi K3 reignited AI capex-return doubts — SOX entered a bear market (−20.2% from Jun 22 high) even as Michigan sentiment 54.4 beat estimate. Jul 17 Shanghai −3.05% synced the China beta with the global semi unwind.",
   "globalChanged": [
     {
-      "text": "Jul 17 US official close (Straits Times/Reuters): S&P −1.01% to 7,457.69, Nasdaq −1.40% to 25,520.24, Dow −0.77% to 52,146.42, Russell 2000 −0.4% to 2,962.22 — all three majors posted weekly losses (S&P −1.6%, Nasdaq −2.9%, Dow −0.9%).",
+      "text": "Jul 17 US official close (Straits Times): S&P −1.01% to 7,457.69, Nasdaq −1.40% to 25,520.24, Dow −0.77% to 52,146.42 — all three majors posted weekly losses (S&P −1.6%, Nasdaq −2.9%, Dow −0.9%).",
       "sources": [
         {
           "label": "Straits Times",
