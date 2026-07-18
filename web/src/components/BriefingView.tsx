@@ -9,6 +9,7 @@ import { WatchList } from "./WatchList";
 import { SourcesCaveats } from "./SourcesCaveats";
 import { KeySources } from "./KeySources";
 import { KeyFigures } from "./KeyFigures";
+import { MarketDashboard } from "./MarketDashboard";
 import { SinceLastBriefing } from "./SinceLastBriefing";
 import { SectionNav } from "./SectionNav";
 
@@ -30,6 +31,7 @@ export function BriefingView({
   publishedAtFallback = null,
 }: BriefingViewProps) {
   const figures = briefing.figures ?? [];
+  const marketDashboard = briefing.marketDashboard;
 
   return (
     <>
@@ -40,10 +42,16 @@ export function BriefingView({
         showCta={showHeroCta}
         variant={heroVariant}
       />
-      <SectionNav hasFigures={figures.length > 0} />
+      <SectionNav
+        hasFigures={figures.length > 0}
+        hasMarketDashboard={Boolean(marketDashboard?.groups?.length)}
+      />
       <div className="mx-auto mb-2 w-full max-w-6xl px-5 pt-4 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
         Coverage window: {briefing.coverageWindow}
       </div>
+      {marketDashboard?.groups?.length ? (
+        <MarketDashboard data={marketDashboard} />
+      ) : null}
       {figures.length ? <KeyFigures figures={figures} /> : null}
       <KeySources sources={briefing.keySources} />
       {changesSincePrevious ? (

@@ -743,5 +743,233 @@
   ],
   "sources": "Straits Times/Reuters (Jul 17 US close; SOX bear market; Netflix), CNBC (Jul 17 Brent/WTI settle; Treasury yields; Michigan sentiment), Morningstar/Dow Jones (COMEX gold Jul 17 settle), Yahoo Finance (SOX close), CoinDesk + Cointelegraph (BTC Jul 17), Xinhua + 第一财经 (Jul 17 A-share close), Caixin Global (WAICO Jul 17), 华尔街见闻 (3777268 Jul 18 breakfast; 3777230 Kimi/Goldman Jul 17; 3777236 Morgan Stanley Jul 17; 3777234 MIIT Jul 17), BlockBeats/律动 (59003 Base App Jul 17; flash 157221 Arkham Jul 18), Reuters/KFGO (June housing starts Jul 17).",
   "singleSource": "Rejected AP Jul 17 S&P level 7,475.69 (typo vs −76.08pt move from 7,533.77 — use Straits Times 7,457.69). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). Rejected wallstreetcn 3772569 Trump Iran postpone cite — page references 'Jul 18 Monday' inconsistent with Jul 18 2026 Saturday; omitted until primary-dated confirmation. Michigan survey >70% pre-strike caveat from 华尔街见闻 3777241/3777268, not primary U.Mich page.",
+  "marketDashboard": {
+    "asOf": "2026-07-18T10:06:29.747Z",
+    "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,457.69",
+            "change": "−1.01%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "25,520.24",
+            "change": "−1.40%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "18.77",
+            "change": "+12.19%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "64,141.12",
+            "change": "−4.03%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "24,562.24",
+            "change": "−1.78%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,623.17",
+            "change": null,
+            "changeDirection": "flat",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,764.16",
+            "change": "−3.05%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.18%",
+            "change": "+2.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.28%",
+            "change": "0.0 bp",
+            "changeDirection": "flat",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.55%",
+            "change": "−2.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.06%",
+            "change": "−3.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "162.3530",
+            "change": "−0.01%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.7768",
+            "change": "+0.06%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-18",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,012.70",
+            "change": "+0.68%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent crude",
+            "latest": "$88.10",
+            "change": "+4.59%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-17",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$63,939",
+            "change": "+1.42%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-18",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0051%",
+            "change": "+0.128 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-18",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
   "slug": "2026-07-18"
 }

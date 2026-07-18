@@ -70,6 +70,30 @@ export interface BriefingFigure {
   source: FactSource;
 }
 
+/** One tape row in the Market Dashboard closes table. */
+export interface MarketDashboardRow {
+  id: string;
+  asset: string;
+  latest: string;
+  change?: string | null;
+  changeDirection?: "up" | "down" | "flat";
+  asOfDate: string;
+  source: FactSource;
+}
+
+export interface MarketDashboardGroup {
+  id: string;
+  title: string;
+  rows: MarketDashboardRow[];
+}
+
+/** Snapshot of market closes captured at briefing generate time. */
+export interface MarketDashboard {
+  asOf: string;
+  note?: string;
+  groups: MarketDashboardGroup[];
+}
+
 export interface BriefingFrontmatter {
   date: string;
   title: string;
@@ -84,6 +108,11 @@ export interface BriefingFrontmatter {
   keySources?: KeySource[];
   /** Optional accurate key figures for visual strip (never invent values). */
   figures?: BriefingFigure[];
+  /**
+   * Market closes tape (indices / yields / FX / commodities / crypto).
+   * Populated at generate time by fetch-market-closes.mjs — not live on the page.
+   */
+  marketDashboard?: MarketDashboard;
   globalRegime: string;
   globalChanged: FactLine[];
   globalImplies: FactLine[];

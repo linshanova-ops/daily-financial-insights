@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | GitHub Actions runs **Generate daily briefing** at **08:00 and 20:00 China time** (`0 0,12 * * *` UTC). Cursor agent drafts on `briefing/YYYY-MM-DD`, accuracy CI must pass, then auto-merge + Pages deploy. |
+| **Twice-daily schedule** | GitHub Actions runs **Generate daily briefing** at **08:00 and 20:00 China time** (`0 0,12 * * *` UTC). Cursor agent drafts on `briefing/YYYY-MM-DD`, injects **Market Dashboard** closes (Yahoo / Treasury / CoinGecko / OKX), accuracy CI must pass, then auto-merge + Pages deploy. |
 | **Manual** | Actions tab → **Generate daily briefing** → Run workflow (rare overrides). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | On push to `main` (and after briefing merge dispatch), GitHub Actions rebuilds and deploys Pages. |
