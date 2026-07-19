@@ -19,6 +19,7 @@ import {
   filterActionableChecks,
   isFailingCheck,
 } from "./lib/briefing-publish-helpers.mjs";
+import { beijingDateString } from "./lib/briefing-slot-gate.mjs";
 
 const apiKey = process.env.CURSOR_API_KEY;
 const repoUrl =
@@ -36,9 +37,11 @@ if (!apiKey) {
   process.exit(1);
 }
 
-const today = new Date().toISOString().slice(0, 10);
+// Beijing calendar date (slot gate may start ~20m before 08:00, still UTC prior day).
+const today = process.env.BRIEFING_DATE || beijingDateString();
 const branchName = `briefing/${today}`;
 const prTitle = `[skip netlify] content: publish ${today} daily briefing`;
+console.log(`[briefing] briefingDate=${today} (Asia/Shanghai)`);
 
 function gh(args, { allowFail = false } = {}) {
   const env = { ...process.env };

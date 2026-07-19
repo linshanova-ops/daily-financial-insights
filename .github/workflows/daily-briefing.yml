@@ -1,10 +1,9 @@
 name: Generate daily briefing
 
 on:
-  # Poll every 5 minutes. A slot gate only runs generate inside:
-  #   Beijing 08:00 (00:00 UTC) and Beijing 20:00 (12:00 UTC)
-  # for ~25 minutes after each slot — so GitHub cron delay of a few minutes
-  # still lands near 8am/8pm China time. Outside the window the job no-ops.
+  # Poll every 5 minutes. Slot gate opens ~20m BEFORE Beijing 08:00 / 20:00
+  # through ~25m after, so generate can finish by the hour (early start) and
+  # still catch small GitHub cron delays. Outside the window the job no-ops.
   schedule:
     - cron: "*/5 * * * *"
   # Manual runs from the Actions tab (no public Refresh button).
@@ -72,4 +71,6 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           REPO_URL: https://github.com/linshanova-ops/daily-financial-insights
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # From slot gate on schedule; empty on manual → script uses Beijing today.
+          BRIEFING_DATE: ${{ steps.gate.outputs.briefing_date }}
         run: node scripts/generate-daily-briefing.mjs
