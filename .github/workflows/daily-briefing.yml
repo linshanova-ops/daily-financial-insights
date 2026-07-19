@@ -1,11 +1,12 @@
 name: Generate daily briefing
 
 on:
-  # Twice daily — 08:00 and 20:00 China Standard Time (UTC+8) = 00:00 and 12:00 UTC.
-  # Morning run: prior US cash session + overnight Asia.
-  # Evening run: same-day China close (US cash not yet open).
+  # Poll every 5 minutes. A slot gate only runs generate inside:
+  #   Beijing 08:00 (00:00 UTC) and Beijing 20:00 (12:00 UTC)
+  # for ~25 minutes after each slot — so GitHub cron delay of a few minutes
+  # still lands near 8am/8pm China time. Outside the window the job no-ops.
   schedule:
-    - cron: "0 0,12 * * *"
+    - cron: "*/5 * * * *"
   # Manual runs from the Actions tab (no public Refresh button).
   workflow_dispatch:
   # Optional legacy hook (unused by the public site).
@@ -39,8 +40,16 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Beijing 08:00 / 20:00 slot gate
+        id: gate
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node scripts/briefing-slot-gate.mjs
+
       - name: Check for CURSOR_API_KEY
         id: key
+        if: github.event_name != 'schedule' || steps.gate.outputs.should_run == 'true'
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
         run: |
