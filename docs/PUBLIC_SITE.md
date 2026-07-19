@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | Target publish **08:00 and 20:00 Beijing (GMT+8)**. Workflow polls every **5 minutes**; a slot gate only generates inside ~25 minutes after `00:00` / `12:00` UTC (so a few minutes of GitHub cron delay still lands near 8am/8pm). Skips if that slot already published. Cursor agent drafts on `briefing/YYYY-MM-DD`, injects **Market Dashboard** closes, accuracy CI must pass, then auto-merge + Pages deploy. |
+| **Twice-daily schedule** | Target on-site by **08:00 and 20:00 Beijing (GMT+8)**. Workflow polls every **5 minutes**; slot gate opens ~**20 minutes early** through ~**25 minutes after** each hour so generate can finish on time (and still absorb small GitHub delays). Skips if that slot already published. Uses Beijing calendar dates. Cursor agent drafts on `briefing/YYYY-MM-DD`, injects **Market Dashboard**, accuracy CI, auto-merge + Pages deploy. |
 | **Manual** | Actions tab → **Generate daily briefing** → Run workflow (rare overrides). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | On push to `main` (and after briefing merge dispatch), GitHub Actions rebuilds and deploys Pages. |
@@ -45,7 +45,11 @@ Only one generate job runs at a time (`concurrency` group); overlapping dispatch
 | 08:00 | 00:00 | Prior **US** cash session (already closed) + overnight Asia |
 | 20:00 | 12:00 | Same-day **China** session (closed 15:00); US cash not yet open |
 
-Acceptable slip: about **10 minutes** after the hour (gate allows up to ~25 minutes so a delayed 5‑minute poll can still fire). Manual **Run workflow** / `repository_dispatch` bypass the gate.
+Generate starts up to **~20 minutes early** so the site can be ready at the hour; catch-up window runs ~**25 minutes** after if needed. Manual **Run workflow** / `repository_dispatch` bypass the gate.
+
+### Netlify credits
+
+The 5‑minute GitHub Actions polls **do not use Netlify credits** (GitHub-hosted runners only). Briefing PRs are titled `[skip netlify]`, Deploy Previews are ignored, and production Netlify builds skip unless `web/netlify.toml` / `web/netlify/` change. Public site deploys are **GitHub Pages**.
 
 ### Netlify (optional / legacy)
 

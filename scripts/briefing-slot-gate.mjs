@@ -1,6 +1,6 @@
 /**
- * GitHub Actions entry: exit 0 always; write should_run to GITHUB_OUTPUT.
- * Scheduled runs only proceed inside Beijing 08:00 / 20:00 windows.
+ * GitHub Actions entry: write should_run (+ briefing_date / slot_id) to GITHUB_OUTPUT.
+ * Scheduled runs open ~20m before Beijing 08:00 / 20:00 through ~25m after.
  */
 import fs from "node:fs";
 import { evaluateScheduleGate } from "./lib/briefing-slot-gate.mjs";
@@ -33,6 +33,11 @@ async function loadLatestFromMain() {
   }
 }
 
+function appendOutput(lines) {
+  if (!outputPath) return;
+  fs.appendFileSync(outputPath, `${lines.filter(Boolean).join("\n")}\n`);
+}
+
 async function main() {
   const latest = eventName === "schedule" ? await loadLatestFromMain() : null;
   const decision = evaluateScheduleGate({
@@ -45,16 +50,16 @@ async function main() {
   console.log(`[slot-gate] ${decision.reason}`);
   if (decision.slot) {
     console.log(
-      `[slot-gate] slot=${decision.slot.id} date=${decision.slot.date} +${decision.slot.minutesAfterStart}m`,
+      `[slot-gate] slot=${decision.slot.id} date=${decision.slot.date} minutesFromStart=${decision.slot.minutesFromStart.toFixed(1)}`,
     );
   }
 
-  if (outputPath) {
-    fs.appendFileSync(
-      outputPath,
-      `should_run=${decision.shouldRun ? "true" : "false"}\n`,
-    );
-  }
+  appendOutput([
+    `should_run=${decision.shouldRun ? "true" : "false"}`,
+    decision.slot ? `slot_id=${decision.slot.id}` : "slot_id=",
+    decision.slot ? `briefing_date=${decision.slot.date}` : "briefing_date=",
+  ]);
+
   console.log(
     `[slot-gate] should_run=${decision.shouldRun ? "true" : "false"}`,
   );
