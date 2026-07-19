@@ -1,6 +1,6 @@
 /**
  * GitHub Actions entry: write should_run (+ briefing_date / slot_id) to GITHUB_OUTPUT.
- * Scheduled runs open ~20m before Beijing 08:00 / 20:00 through ~25m after.
+ * Scheduled runs open at Beijing 08:00 / 20:00 through +20m (not before).
  */
 import fs from "node:fs";
 import { evaluateScheduleGate } from "./lib/briefing-slot-gate.mjs";

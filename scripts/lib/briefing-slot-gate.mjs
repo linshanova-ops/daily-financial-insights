@@ -1,18 +1,18 @@
 /**
  * Decide whether a scheduled generate should run for Beijing 08:00 / 20:00.
  *
- * GitHub cron is unreliable, so we poll every few minutes and open each slot
- * EARLY (default 20m before) through a short LATE window (default 25m after).
- * That way generate can finish by the hour. Skip if that slot already published.
+ * Policy: capture real market data AT/AFTER the hour (not before), and finish
+ * publish within LATE_MINUTES (default 20). We poll every few minutes; the gate
+ * opens at the Beijing hour and stays open for the late window only.
  */
 
-/** Start generate this many minutes before the Beijing hour. */
-export const EARLY_MINUTES = 20;
+/** Do not start before the Beijing hour — data must reflect 08:00 / 20:00. */
+export const EARLY_MINUTES = 0;
 
-/** Keep trying this many minutes after the Beijing hour if still unpublished. */
-export const LATE_MINUTES = 25;
+/** Max delay after the Beijing hour to still start generate (minutes). */
+export const LATE_MINUTES = 20;
 
-/** @deprecated use LATE_MINUTES — kept for older imports/tests */
+/** @deprecated use LATE_MINUTES */
 export const SLOT_WINDOW_MINUTES = LATE_MINUTES;
 
 /** UTC hours for Beijing 08:00 and 20:00 (CST, no DST). */
@@ -41,7 +41,8 @@ export function slotStartUtc(slotIdOrSlot, dateStr) {
     typeof slotIdOrSlot === "string"
       ? SLOT_UTC_HOURS[slotIdOrSlot]
       : slotIdOrSlot.utcHour;
-  const date = dateStr || (typeof slotIdOrSlot === "object" ? slotIdOrSlot.date : null);
+  const date =
+    dateStr || (typeof slotIdOrSlot === "object" ? slotIdOrSlot.date : null);
   if (utcHour == null || !date) {
     throw new Error("slotStartUtc requires slot id/hour and YYYY-MM-DD date");
   }
@@ -56,7 +57,6 @@ export function activeSlot(
   earlyMinutes = EARLY_MINUTES,
   lateMinutes = LATE_MINUTES,
 ) {
-  // Candidate Beijing dates: today and tomorrow in Beijing (covers pre-midnight UTC early morning).
   const dates = new Set([
     beijingDateString(now),
     beijingDateString(new Date(now.getTime() + 24 * 60 * 60 * 1000)),
@@ -97,7 +97,7 @@ export function activeSlot(
 }
 
 /**
- * True when main already has this slot's briefing published at/after early-open.
+ * True when main already has this slot's briefing published at/after slot start.
  * @param {{ date?: string, publishedAt?: string } | null} latest
  */
 export function slotAlreadyPublished(
@@ -109,8 +109,7 @@ export function slotAlreadyPublished(
   if (latest.date !== slot.date) return false;
   const pub = new Date(latest.publishedAt);
   if (Number.isNaN(pub.getTime())) return false;
-  const earlyOpen =
-    slot.start.getTime() - earlyMinutes * 60_000;
+  const earlyOpen = slot.start.getTime() - earlyMinutes * 60_000;
   return pub.getTime() >= earlyOpen;
 }
 
@@ -138,7 +137,7 @@ export function evaluateScheduleGate(opts) {
   if (!slot) {
     return {
       shouldRun: false,
-      reason: `outside Beijing 08:00/20:00 windows (−${earlyMinutes}m / +${lateMinutes}m)`,
+      reason: `outside Beijing 08:00/20:00 windows (0–${lateMinutes}m after the hour)`,
       slot: null,
     };
   }

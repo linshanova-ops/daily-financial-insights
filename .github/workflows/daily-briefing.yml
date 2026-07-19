@@ -1,9 +1,9 @@
 name: Generate daily briefing
 
 on:
-  # Poll every 5 minutes. Slot gate opens ~20m BEFORE Beijing 08:00 / 20:00
-  # through ~25m after, so generate can finish by the hour (early start) and
-  # still catch small GitHub cron delays. Outside the window the job no-ops.
+  # Poll every 5 minutes. Slot gate opens AT Beijing 08:00 / 20:00 (not before —
+  # market data must be as-of those hours) through +20m so generate can still
+  # start if GitHub cron slips a little. Outside the window the job no-ops.
   schedule:
     - cron: "*/5 * * * *"
   # Manual runs from the Actions tab (no public Refresh button).
