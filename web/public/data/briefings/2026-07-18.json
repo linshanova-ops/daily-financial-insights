@@ -17,8 +17,8 @@
       "href": "https://www.cnbc.com/2026/07/17/treasury-yields-tumble-as-traders-weigh-domestic-outlook-and-fresh-middle-east-strikes.html"
     },
     {
-      "label": "Morningstar/Dow Jones — COMEX gold Jul 17",
-      "href": "https://www.morningstar.com/news/dow-jones/202607175997/comex-gold-ends-the-week-223-lower-at-401270-data-talk"
+      "label": "华尔街见闻 — Jul 18 breakfast (spot gold)",
+      "href": "https://wallstreetcn.com/articles/3777268"
     },
     {
       "label": "CoinDesk — BTC Jul 17",
@@ -103,15 +103,15 @@
       }
     },
     {
-      "id": "gold-settle",
-      "title": "COMEX gold settle",
+      "id": "gold-spot",
+      "title": "Spot gold settle",
       "kind": "stat",
-      "display": "$4,012.70",
-      "delta": "+0.68% · Jul 17",
-      "note": "Morningstar/Dow Jones COMEX settle",
+      "display": "$4,016.21",
+      "delta": "+1.00% · Jul 17 spot",
+      "note": "华尔街见闻 breakfast — spot, not COMEX settle",
       "source": {
-        "label": "Morningstar",
-        "href": "https://www.morningstar.com/news/dow-jones/202607175997/comex-gold-ends-the-week-223-lower-at-401270-data-talk"
+        "label": "华尔街见闻 breakfast",
+        "href": "https://wallstreetcn.com/articles/3777268"
       }
     },
     {
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "text": "Jul 17 risk-off tape: Brent Sep futures settled $88.10 (+4.59%) and WTI Aug $82.49 (+4.48%) on Kuwait infrastructure strike headlines; 10y Treasury 4.545% (CNBC); COMEX gold settled $4,012.70 (+0.68%); BTC ~$63,870 (CoinDesk) after dipping below $62,500 at the Wall St open (Cointelegraph).",
+      "text": "Jul 17 risk-off tape: Brent Sep futures settled $88.10 (+4.59%) and WTI Aug $82.49 (+4.48%) on Kuwait infrastructure strike headlines; 10y Treasury 4.545% (CNBC); spot gold $4,016.21 (+1.00%, 华尔街见闻 breakfast); BTC ~$63,870 (CoinDesk) after dipping below $62,500 at the Wall St open (Cointelegraph).",
       "sources": [
         {
           "label": "CNBC oil",
@@ -192,8 +192,8 @@
           "href": "https://www.cnbc.com/2026/07/17/treasury-yields-tumble-as-traders-weigh-domestic-outlook-and-fresh-middle-east-strikes.html"
         },
         {
-          "label": "Morningstar gold",
-          "href": "https://www.morningstar.com/news/dow-jones/202607175997/comex-gold-ends-the-week-223-lower-at-401270-data-talk"
+          "label": "华尔街见闻 breakfast",
+          "href": "https://wallstreetcn.com/articles/3777268"
         },
         {
           "label": "CoinDesk BTC",
@@ -293,7 +293,7 @@
       ]
     },
     {
-      "text": "Jul 17 rates/commodities: 10y Treasury 4.545% (CNBC, −2bp); Brent Sep settled $88.10 (+4.59%); WTI Aug $82.49 (+4.48%); COMEX gold settled $4,012.70 (+0.68%, Morningstar/Dow Jones).",
+      "text": "Jul 17 rates/commodities: 10y Treasury 4.545% (CNBC, −2bp); Brent Sep settled $88.10 (+4.59%); WTI Aug $82.49 (+4.48%); COMEX gold settled $4,016.21 (+1.00%, 华尔街见闻 breakfast).",
       "sources": [
         {
           "label": "CNBC Treasury",
@@ -304,8 +304,8 @@
           "href": "https://www.cnbc.com/2026/07/17/oil-price-today-brent-wti.html"
         },
         {
-          "label": "Morningstar gold",
-          "href": "https://www.morningstar.com/news/dow-jones/202607175997/comex-gold-ends-the-week-223-lower-at-401270-data-talk"
+          "label": "华尔街见闻 breakfast",
+          "href": "https://wallstreetcn.com/articles/3777268"
         }
       ]
     },
@@ -438,7 +438,7 @@
       "text": "Power/bank gains vs semi/pharma limit-downs suggest a defensive rotation within a broader liquidity-stress day, not a policy pivot."
     }
   ],
-  "chinaDivergences": "WAIC policy showcase vs Shanghai −3.05%; Kimi K3 bullish China-AI narrative vs Goldman 'compute expansion era ending'; Jul 16 Hang Seng −1.8% vs Jul 17 onshore −3.05% (both sold but A-shares harder); COMEX gold +0.68% vs SOX bear market (hedge vs growth de-risking).",
+  "chinaDivergences": "WAIC policy showcase vs Shanghai −3.05%; Kimi K3 bullish China-AI narrative vs Goldman 'compute expansion era ending'; Jul 16 Hang Seng −1.8% vs Jul 17 onshore −3.05% (both sold but A-shares harder); spot gold +1.00% vs SOX bear market (hedge vs growth de-risking).",
   "assetFramework": [
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
@@ -502,11 +502,11 @@
     {
       "asset": "Gold (COMEX)",
       "regime": "Real-yield beta with geo-hedge floor",
-      "driver": "Jul 17 COMEX settle $4,012.70 (+0.68%); Brent $88.10; 10y 4.545%",
+      "driver": "Jul 17 spot gold $4,016.21 (+1.00%); Brent $88.10; 10y 4.545%",
       "driverSources": [
         {
-          "label": "Morningstar gold",
-          "href": "https://www.morningstar.com/news/dow-jones/202607175997/comex-gold-ends-the-week-223-lower-at-401270-data-talk"
+          "label": "华尔街见闻 breakfast",
+          "href": "https://wallstreetcn.com/articles/3777268"
         },
         {
           "label": "CNBC Treasury",
@@ -741,7 +741,7 @@
       "status": "continuing"
     }
   ],
-  "sources": "Straits Times/Reuters (Jul 17 US close; SOX bear market; Netflix), CNBC (Jul 17 Brent/WTI settle; Treasury yields; Michigan sentiment), Morningstar/Dow Jones (COMEX gold Jul 17 settle), Yahoo Finance (SOX close), CoinDesk + Cointelegraph (BTC Jul 17), Xinhua + 第一财经 (Jul 17 A-share close), Caixin Global (WAICO Jul 17), 华尔街见闻 (3777268 Jul 18 breakfast; 3777230 Kimi/Goldman Jul 17; 3777236 Morgan Stanley Jul 17; 3777234 MIIT Jul 17), BlockBeats/律动 (59003 Base App Jul 17; flash 157221 Arkham Jul 18), Reuters/KFGO (June housing starts Jul 17).",
+  "sources": "Straits Times/Reuters (Jul 17 US close; SOX bear market; Netflix), CNBC (Jul 17 Brent/WTI settle; Treasury yields; Michigan sentiment), 华尔街见闻 (3777268 Jul 18 breakfast; spot gold), Yahoo Finance (SOX close), CoinDesk + Cointelegraph (BTC Jul 17), Xinhua + 第一财经 (Jul 17 A-share close), Caixin Global (WAICO Jul 17), 华尔街见闻 (3777268 Jul 18 breakfast; 3777230 Kimi/Goldman Jul 17; 3777236 Morgan Stanley Jul 17; 3777234 MIIT Jul 17), BlockBeats/律动 (59003 Base App Jul 17; flash 157221 Arkham Jul 18), Reuters/KFGO (June housing starts Jul 17).",
   "singleSource": "Rejected AP Jul 17 S&P level 7,475.69 (typo vs −76.08pt move from 7,533.77 — use Straits Times 7,457.69). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). Rejected wallstreetcn 3772569 Trump Iran postpone cite — page references 'Jul 18 Monday' inconsistent with Jul 18 2026 Saturday; omitted until primary-dated confirmation. Michigan survey >70% pre-strike caveat from 华尔街见闻 3777241/3777268, not primary U.Mich page.",
   "marketDashboard": {
     "asOf": "2026-07-18T15:33:06.351Z",
