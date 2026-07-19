@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-18T15:34:44.190Z",
-  "latest": "2026-07-18",
+  "generatedAt": "2026-07-19T07:57:30.262Z",
+  "latest": "2026-07-19",
   "briefings": [
+    {
+      "date": "2026-07-19",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Weekend US-Iran escalation — two US troops killed in Jordan, Kuwait desalination/oil hits, and Jul 19 CENTCOM airstrikes — landed after Jul 17 Brent settled $88.10 (+15.90% on the week) and SOX entered a bear market; equities/crypto closed Jul 17 risk-off (S&P −1.01%, Shanghai −3.05%).",
+      "coverageWindow": "July 17–19, 2026"
+    },
     {
       "date": "2026-07-18",
       "title": "Daily Financial Briefing",
