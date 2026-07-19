@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | GitHub Actions runs **Generate daily briefing** at **08:00 and 20:00 China time** (`0 0,12 * * *` UTC). Cursor agent drafts on `briefing/YYYY-MM-DD`, injects **Market Dashboard** closes (Yahoo / Treasury / CoinGecko / OKX), accuracy CI must pass, then auto-merge + Pages deploy. |
+| **Twice-daily schedule** | Target publish **08:00 and 20:00 Beijing (GMT+8)**. Workflow polls every **5 minutes**; a slot gate only generates inside ~25 minutes after `00:00` / `12:00` UTC (so a few minutes of GitHub cron delay still lands near 8am/8pm). Skips if that slot already published. Cursor agent drafts on `briefing/YYYY-MM-DD`, injects **Market Dashboard** closes, accuracy CI must pass, then auto-merge + Pages deploy. |
 | **Manual** | Actions tab → **Generate daily briefing** → Run workflow (rare overrides). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | On push to `main` (and after briefing merge dispatch), GitHub Actions rebuilds and deploys Pages. |
@@ -43,7 +43,9 @@ Only one generate job runs at a time (`concurrency` group); overlapping dispatch
 | China time | UTC | Mainly captures |
 |------------|-----|-----------------|
 | 08:00 | 00:00 | Prior **US** cash session (already closed) + overnight Asia |
-| 20:00 | 12:00 | Same-day **China** session (closed 15:00); US cash not open yet |
+| 20:00 | 12:00 | Same-day **China** session (closed 15:00); US cash not yet open |
+
+Acceptable slip: about **10 minutes** after the hour (gate allows up to ~25 minutes so a delayed 5‑minute poll can still fire). Manual **Run workflow** / `repository_dispatch` bypass the gate.
 
 ### Netlify (optional / legacy)
 

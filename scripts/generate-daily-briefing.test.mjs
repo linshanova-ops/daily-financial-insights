@@ -99,4 +99,14 @@ describe("workflow wiring", () => {
     assert.match(yml, /generate-daily-briefing/);
     assert.match(yml, /cancel-in-progress:\s*false/);
   });
+
+  it("generate workflow polls every 5m with Beijing slot gate", () => {
+    const yml = readFileSync(
+      join(root, ".github/workflows/daily-briefing.yml"),
+      "utf8",
+    );
+    assert.match(yml, /\*\/5 \* \* \* \*/);
+    assert.match(yml, /briefing-slot-gate\.mjs/);
+    assert.match(yml, /should_run/);
+  });
 });
