@@ -22,6 +22,7 @@ import {
 import { beijingDateString } from "./lib/briefing-slot-gate.mjs";
 import {
   formatInboxPromptBlock,
+  loadInboxFetchStatus,
   loadInboxForBriefing,
 } from "./lib/load-inbox-context.mjs";
 
@@ -48,9 +49,15 @@ const prTitle = `[skip netlify] content: publish ${today} daily briefing`;
 console.log(`[briefing] briefingDate=${today} (Asia/Shanghai)`);
 
 const inboxItems = loadInboxForBriefing(today);
+const inboxFetchStatus = loadInboxFetchStatus();
 console.log(
   `[briefing] inbox sources: ${inboxItems.map((i) => i.sourceId).join(", ") || "(none)"}`,
 );
+if (inboxFetchStatus) {
+  console.log(
+    `[briefing] inbox fetch: ok=${inboxFetchStatus.ok} reason=${inboxFetchStatus.reason || "-"}`,
+  );
+}
 
 function gh(args, { allowFail = false } = {}) {
   const env = { ...process.env };
@@ -98,13 +105,21 @@ FAIL-CLOSED PUBLISH (critical):
    family in the China section when they have coverage-window news.
 
    INBOX NEWSLETTERS (Gmail IMAP — already fetched when present):
-   - 彭博 Markets Daily China 中文版 (daily): merge into China / Global / Assets / Watch.
+   - 彭博 Markets Daily China 中文版 (daily): merge section→module as labeled in the
+     newsletter block (国际要闻→global, 大中华→china, 市场一览→assets, 日程/央行→watch).
      **Keep Chinese text Chinese** for bullets whose primary cite is this newsletter.
-     Do NOT use its 全球市况 tape to replace Market Dashboard numbers.
+     Do NOT use 全球市况 tape to replace Market Dashboard numbers.
    - Glassnode Insights (weekly, usually Tuesday): merge into crypto assetFramework /
      signals / watch when on-chain color is relevant.
-   ${formatInboxPromptBlock(inboxItems)}
-   If inbox files exist under web/content/inbox/, include them in the PR commit for audit.
+   - Cite policy: use ONLY the stable href given for each inbox source (never tracking
+     links from the email). When an inbox source is used, also list it in keySources.
+   - Evening backfill: if web/content/briefings/${today}.md already exists AND inbox
+     captures are new/updated this run, UPDATE that briefing to merge the new inbox
+     material — do not skip just because the file exists.
+   - If inbox fetch failed, note briefly in caveats/singleSource; do not invent mail.
+   ${formatInboxPromptBlock(inboxItems, inboxFetchStatus)}
+   If inbox files exist under web/content/inbox/ (including last-fetch.json), include
+   them in the PR commit for audit.
 
 2. Pre-publish accuracy gate (ALL required):
    (a) each index move is that index's official close;

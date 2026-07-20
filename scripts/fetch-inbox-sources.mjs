@@ -22,11 +22,13 @@ import { fileURLToPath } from "node:url";
 import { ImapFlow } from "imapflow";
 import { simpleParser } from "mailparser";
 import { beijingDateString } from "./lib/briefing-slot-gate.mjs";
+import { INBOX_LAST_FETCH_REL } from "./lib/load-inbox-context.mjs";
 import {
   extractBloombergDateKey,
   formatInboxMarkdown,
   inboxRelPath,
   isPlaceholderInboxCapture,
+  isWelcomeNewsletter,
   pickSource,
 } from "./lib/inbox-sources.mjs";
 
@@ -58,9 +60,29 @@ function ensureDir(filePath) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
+function writeFetchStatus(payload) {
+  const abs = path.join(root, INBOX_LAST_FETCH_REL);
+  ensureDir(abs);
+  const body = {
+    at: new Date().toISOString(),
+    briefingDate,
+    ...payload,
+  };
+  fs.writeFileSync(abs, `${JSON.stringify(body, null, 2)}\n`);
+}
+
+function looksInteresting(from, subject) {
+  const blob = `${from} ${subject}`.toLowerCase();
+  return (
+    blob.includes("bloomberg") ||
+    blob.includes("glassnode") ||
+    subject.includes("中文版") ||
+    subject.includes("全球市况")
+  );
+}
+
 async function fetchRecentMessages(client, { days = 10, limit = 40 } = {}) {
   const since = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
-  // Gmail: search last N days in INBOX
   const uids = await client.search({ since }, { uid: true });
   if (!uids?.length) return [];
 
@@ -76,11 +98,24 @@ async function fetchRecentMessages(client, { days = 10, limit = 40 } = {}) {
   return out;
 }
 
+function existingReceivedAt(abs) {
+  try {
+    const md = fs.readFileSync(abs, "utf8");
+    const m = md.match(/^receivedAt:\s*"([^"]+)"/m);
+    if (!m) return null;
+    const d = new Date(m[1]);
+    return Number.isNaN(d.getTime()) ? null : d;
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   if (!user || !pass) {
     console.error(
       "[inbox] Missing INBOX_IMAP_USER / INBOX_IMAP_PASSWORD — skip fetch.",
     );
+    writeFetchStatus({ ok: false, reason: "missing-secrets", saved: [], skipped: [] });
     process.exitCode = 0;
     if (asJson) {
       process.stdout.write(
@@ -103,6 +138,7 @@ async function main() {
   });
 
   const saved = [];
+  const skipped = [];
   const seenWeekly = new Set();
 
   try {
@@ -112,7 +148,6 @@ async function main() {
       const messages = await fetchRecentMessages(client);
       console.log(`[inbox] scanned ${messages.length} recent message(s)`);
 
-      // Newest first
       messages.sort((a, b) => Number(b.uid) - Number(a.uid));
 
       for (const msg of messages) {
@@ -120,11 +155,23 @@ async function main() {
         const parsed = await simpleParser(msg.source);
         const from = addressListToString(parsed.from);
         const subject = parsed.subject || "";
+
+        if (isWelcomeNewsletter(subject, parsed.text || "")) {
+          console.log(`[inbox] skip welcome: ${subject}`);
+          skipped.push({ reason: "welcome", subject, from });
+          continue;
+        }
+
         const source = pickSource(from, subject);
-        if (!source) continue;
+        if (!source) {
+          if (looksInteresting(from, subject)) {
+            console.log(`[inbox] skip unmatched: ${subject} | from=${from}`);
+            skipped.push({ reason: "unmatched", subject, from });
+          }
+          continue;
+        }
 
         const when = parsed.date || new Date();
-        // Daily: prefer subject 年月日 (Bloomberg title), else Beijing/UTC day of email
         if (source.cadence === "daily") {
           const subjectDay =
             source.id === "bloomberg-markets-daily-china"
@@ -136,11 +183,29 @@ async function main() {
             subjectDay === briefingDate ||
             (!subjectDay &&
               (emailDay === briefingDate || bjDay === briefingDate));
-          if (!matchesBriefing) continue;
+          if (!matchesBriefing) {
+            console.log(
+              `[inbox] skip date-mismatch: ${subject} (subjectDay=${subjectDay || "n/a"} emailDay=${emailDay} bjDay=${bjDay} want=${briefingDate})`,
+            );
+            skipped.push({
+              reason: "date-mismatch",
+              subject,
+              from,
+              subjectDay,
+              emailDay,
+              bjDay,
+              briefingDate,
+            });
+            continue;
+          }
         }
 
         if (source.cadence === "weekly") {
-          if (seenWeekly.has(source.id)) continue;
+          if (seenWeekly.has(source.id)) {
+            console.log(`[inbox] skip weekly-duplicate: ${subject}`);
+            skipped.push({ reason: "weekly-duplicate", subject, from });
+            continue;
+          }
           seenWeekly.add(source.id);
         }
 
@@ -150,18 +215,25 @@ async function main() {
             ? new Date(`${briefingDate}T12:00:00.000Z`)
             : when,
         );
-        // Skip if daily already saved for briefingDate
         const abs = path.join(root, rel);
+
         if (source.cadence === "daily" && fs.existsSync(abs)) {
-          console.log(`[inbox] exists ${rel} — keep`);
-          saved.push({ sourceId: source.id, path: rel, skipped: true });
-          continue;
+          const prev = existingReceivedAt(abs);
+          // Refresh if a newer same-day mail arrived (evening backfill).
+          if (prev && when <= prev) {
+            console.log(`[inbox] exists ${rel} — keep (not newer)`);
+            skipped.push({ reason: "exists-keep", subject, path: rel });
+            saved.push({ sourceId: source.id, path: rel, skipped: true });
+            continue;
+          }
+          console.log(`[inbox] exists ${rel} — replace with newer`);
         }
+
         if (source.cadence === "weekly" && fs.existsSync(abs)) {
           const existing = fs.readFileSync(abs, "utf8");
-          // Replace signup/welcome placeholders; keep a real weekly Insights.
           if (!isPlaceholderInboxCapture(existing)) {
             console.log(`[inbox] weekly exists ${rel} — keep`);
+            skipped.push({ reason: "weekly-exists", subject, path: rel });
             saved.push({ sourceId: source.id, path: rel, skipped: true });
             continue;
           }
@@ -180,6 +252,7 @@ async function main() {
 
         if (!text || text.length < 40) {
           console.warn(`[inbox] skip empty body: ${subject}`);
+          skipped.push({ reason: "empty-body", subject, from });
           continue;
         }
 
@@ -200,11 +273,6 @@ async function main() {
           from,
           chars: text.length,
         });
-
-        // One daily bloomberg per run is enough
-        if (source.cadence === "daily") {
-          // continue scanning for weekly
-        }
       }
     } finally {
       lock.release();
@@ -212,20 +280,28 @@ async function main() {
     await client.logout();
   } catch (err) {
     console.error(`[inbox] fetch failed: ${err?.message || err}`);
-    // Soft-fail — briefing can continue without inbox sources
+    writeFetchStatus({
+      ok: false,
+      reason: String(err?.message || err),
+      saved,
+      skipped,
+    });
     process.exitCode = 0;
     if (asJson) {
       process.stdout.write(
-        `${JSON.stringify({ ok: false, reason: String(err?.message || err), saved }, null, 2)}\n`,
+        `${JSON.stringify({ ok: false, reason: String(err?.message || err), saved, skipped }, null, 2)}\n`,
       );
     }
     return;
   }
 
-  console.log(`[inbox] done — ${saved.length} file(s)`);
+  writeFetchStatus({ ok: true, saved, skipped });
+  console.log(
+    `[inbox] done — ${saved.filter((s) => !s.skipped).length} saved, ${skipped.length} skipped`,
+  );
   if (asJson) {
     process.stdout.write(
-      `${JSON.stringify({ ok: true, briefingDate, saved }, null, 2)}\n`,
+      `${JSON.stringify({ ok: true, briefingDate, saved, skipped }, null, 2)}\n`,
     );
   }
 }
