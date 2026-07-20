@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-19T07:57:30.262Z",
-  "latest": "2026-07-19",
+  "generatedAt": "2026-07-20T06:02:33.791Z",
+  "latest": "2026-07-20",
   "briefings": [
+    {
+      "date": "2026-07-20",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Jul 20 Brent intraday topped $90 after Jul 18–19 CENTCOM strikes and Kuwait/Jordan infrastructure hits; Jul 17 last US close was risk-off (S&P −1.01%, SOX bear market) while Jul 20 China state-team buying (>500亿 + ~100亿) and CSRC stability talks lifted morning A/H shares.",
+      "coverageWindow": "July 17–20, 2026"
+    },
     {
       "date": "2026-07-19",
       "title": "Daily Financial Briefing",
