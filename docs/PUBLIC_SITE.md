@@ -45,14 +45,18 @@ Only one generate job runs at a time (`concurrency` group); overlapping dispatch
 | 08:00 | 00:00 | Prior **US** cash session (already closed) + overnight Asia |
 | 20:00 | 12:00 | Same-day **China** session (closed 15:00); US cash not yet open |
 
-Generate starts **at/after** 08:00 / 20:00 Beijing so Market Dashboard and news reflect that clock; max start delay **20 minutes**. Manual **Run workflow** bypasses the gate. External `repository_dispatch` without `force` uses the same gate; `client_payload.force=true` forces a run (catch-up).
+Generate starts **at/after** 08:00 / 20:00 Beijing so Market Dashboard and news reflect that clock; max start delay **45 minutes** (on-time target still the top of the hour). Manual **Run workflow** bypasses the gate. External `repository_dispatch` without `force` uses the same gate; `client_payload.force=true` forces a run (catch-up).
+
+Evening runs always refresh the same Beijing date even when morning already published (new inbox + fresh Market Dashboard).
 
 ### Schedule reliability (and cost)
 
-GitHub’s `schedule` event is **best-effort** and can skip a whole 20‑minute window (this caused the missed 2026-07-20 08:00 Beijing publish). Mitigations in-repo:
+GitHub’s `schedule` event is **best-effort** and can skip short windows (this caused the missed 2026-07-20 08:00 Beijing publish). Mitigations in-repo:
 
-1. **Dense cron** — every minute inside the two windows (not all-day `*/5`)
-2. **Optional free external ping** — [cron-job.org](https://cron-job.org) free tier (or similar) POSTs `repository_dispatch` during those windows
+1. **Dense cron** — every minute for **45 minutes** after each Beijing hour (not all-day `*/5`)
+2. **Slot skip-if-done** — once morning or evening publishes, later ticks no-op in seconds
+3. **Pages deploy retries** — merge fails the job if deploy cannot be dispatched (so you notice)
+4. **Optional free external ping** — [cron-job.org](https://cron-job.org) free tier (or similar) POSTs `repository_dispatch` during those windows (recommended belt-and-suspenders)
 
 **Cost:** Public-repo GitHub Actions minutes are free. External cron free tier is **$0**. **No Netlify credits** (Actions + Pages only; briefing PRs are `[skip netlify]`). Cursor API usage still applies when a generate actually runs (one morning + one evening when slots fire).
 
@@ -66,7 +70,7 @@ curl -X POST \
   -d '{"event_type":"refresh-briefing"}'
 ```
 
-Schedule that curl every 1–5 minutes at **00:00–00:19 UTC** and **12:00–12:19 UTC** only. Without `"force":true`, the slot gate still prevents off-window Cursor runs.
+Schedule that curl every 1–5 minutes at **00:00–00:44 UTC** and **12:00–12:44 UTC** only. Without `"force":true`, the slot gate still prevents off-window Cursor runs.
 
 ### Netlify credits
 
