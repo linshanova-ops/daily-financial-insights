@@ -108,7 +108,11 @@ Gmail: enable IMAP in Settings → Forwarding and POP/IMAP, and create an App Pa
 
 Sources today:
 
-- **彭博 Markets Daily China 中文版** (daily, before Beijing 08:00) → China / Global / Assets / Watch  
+- **彭博 Markets Daily China 中文版** (daily, before Beijing 08:00) → China / Global / Assets / Watch (section-mapped; 全球市况 does not replace Market Dashboard)
 - **Glassnode Insights** (weekly, usually Tuesday) → crypto assetFramework / signals / watch  
 
-Missing or failed IMAP is soft-fail — the briefing still runs without inbox files.
+Cites use stable landing pages only (Bloomberg Asia / Glassnode Insights tag). When used, they also appear in `keySources`. Welcome/signup mail is ignored.
+
+Missing or failed IMAP is soft-fail — the briefing still runs; the generate prompt notes `caveats` when `last-fetch.json` reports failure. Actions logs include `[inbox] skip …` reasons (unmatched, date-mismatch, welcome, etc.).
+
+If mail arrives after the morning run, the Beijing **20:00** generate updates the same day’s briefing.
