@@ -6,7 +6,10 @@
  */
 import fs from "node:fs";
 import {
+  activeSlot,
+  beijingDateString,
   evaluateScheduleGate,
+  missedUnpublishedSlot,
   usesSlotGate,
 } from "./lib/briefing-slot-gate.mjs";
 
@@ -46,31 +49,42 @@ function appendOutput(lines) {
 }
 
 async function main() {
+  const now = new Date();
   const gated = usesSlotGate(eventName, forceDispatch);
-  const latest = gated ? await loadLatestFromMain() : null;
+  const latest = await loadLatestFromMain();
   const decision = evaluateScheduleGate({
     eventName,
-    now: new Date(),
-    latest,
+    now,
+    latest: gated ? latest : latest,
     forceDispatch,
   });
 
+  // On force/manual, still infer slot + date so generate gets evening/morning context.
+  let slot = decision.slot;
+  if (!slot) {
+    slot =
+      activeSlot(now) ||
+      missedUnpublishedSlot(now, latest) ||
+      null;
+  }
+  const briefingDate = slot?.date || beijingDateString(now);
+
   console.log(`[slot-gate] event=${eventName} force=${forceDispatch}`);
   console.log(`[slot-gate] ${decision.reason}`);
-  if (decision.slot) {
+  if (slot) {
     console.log(
-      `[slot-gate] slot=${decision.slot.id} date=${decision.slot.date} minutesFromStart=${decision.slot.minutesFromStart.toFixed(1)}`,
+      `[slot-gate] slot=${slot.id} date=${slot.date} minutesFromStart=${Number(slot.minutesFromStart || 0).toFixed(1)}`,
     );
   }
 
   appendOutput([
     `should_run=${decision.shouldRun ? "true" : "false"}`,
-    decision.slot ? `slot_id=${decision.slot.id}` : "slot_id=",
-    decision.slot ? `briefing_date=${decision.slot.date}` : "briefing_date=",
+    slot ? `slot_id=${slot.id}` : "slot_id=",
+    `briefing_date=${briefingDate}`,
   ]);
 
   console.log(
-    `[slot-gate] should_run=${decision.shouldRun ? "true" : "false"}`,
+    `[slot-gate] should_run=${decision.shouldRun ? "true" : "false"} briefing_date=${briefingDate}`,
   );
 
   if (!decision.shouldRun) {

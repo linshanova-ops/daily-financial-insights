@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | Capture & publish for **08:00 and 20:00 Beijing (GMT+8)**. GitHub cron fires **every minute** during `00:00–00:44` and `12:00–12:44` UTC. Slot gate: start **at/after** the hour, max **+45 minutes** (absorbs cron skips), skip if that slot already published. Morning = first publish; evening = same-day refresh (inbox + Market Dashboard). Accuracy CI → auto-merge → Pages deploy (retried). |
+| **Twice-daily schedule** | Capture & publish for **08:00 and 20:00 Beijing (GMT+8)**. Primary cron every **5 minutes** for **+45m** after each hour. If that window never published, **missed-slot catch-up** keeps trying every 30m for **3 hours**. Morning = first publish; evening = same-day refresh. Accuracy CI → auto-merge → Pages deploy (retried). |
 | **Manual** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge the orchestrator dispatches Pages (with retries). Safety-net cron at `:50` UTC also redeploys. |
@@ -51,12 +51,13 @@ Evening runs always refresh the same Beijing date even when morning already publ
 
 ### Schedule reliability (and cost)
 
-GitHub’s `schedule` event is **best-effort** and can skip short windows (this caused the missed 2026-07-20 08:00 Beijing publish). Mitigations in-repo:
+GitHub’s `schedule` event is **best-effort** and can skip entire windows (missed 2026-07-20 **both** 08:00 and 20:00 Beijing until manual/force catch-up). Mitigations in-repo:
 
-1. **Dense cron** — every minute for **45 minutes** after each Beijing hour (not all-day `*/5`)
-2. **Slot skip-if-done** — once morning or evening publishes, later ticks no-op in seconds
-3. **Pages deploy retries** — merge fails the job if deploy cannot be dispatched (so you notice)
-4. **Optional free external ping** — [cron-job.org](https://cron-job.org) free tier (or similar) POSTs `repository_dispatch` during those windows (recommended belt-and-suspenders)
+1. **Primary cron** — every 5 minutes for **45 minutes** after each Beijing hour (lighter than every-minute; dense schedules were still fully skipped)
+2. **Missed-slot catch-up** — every 30 minutes for **3 hours** after each hour if that slot never published
+3. **Slot skip-if-done** — once morning or evening publishes, later ticks no-op in seconds
+4. **Pages deploy retries** — merge fails the job if deploy cannot be dispatched (so you notice)
+5. **Optional free external ping** — [cron-job.org](https://cron-job.org) free tier (or similar) POSTs `repository_dispatch` during those windows (**strongly recommended**)
 
 **Cost:** Public-repo GitHub Actions minutes are free. External cron free tier is **$0**. **No Netlify credits** (Actions + Pages only; briefing PRs are `[skip netlify]`). Cursor API usage still applies when a generate actually runs (one morning + one evening when slots fire).
 
@@ -70,7 +71,7 @@ curl -X POST \
   -d '{"event_type":"refresh-briefing"}'
 ```
 
-Schedule that curl every 1–5 minutes at **00:00–00:44 UTC** and **12:00–12:44 UTC** only. Without `"force":true`, the slot gate still prevents off-window Cursor runs.
+Schedule that curl every 5 minutes at **00:00–03:00 UTC** and **12:00–15:00 UTC**. Without `"force":true`, the slot gate still prevents duplicate Cursor runs after a slot publishes.
 
 ### Netlify credits
 

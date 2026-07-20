@@ -3,9 +3,11 @@ import { describe, it } from "node:test";
 import {
   EARLY_MINUTES,
   LATE_MINUTES,
+  MISSED_CATCHUP_HOURS,
   activeSlot,
   beijingDateString,
   evaluateScheduleGate,
+  missedUnpublishedSlot,
   slotAlreadyPublished,
   slotStartUtc,
 } from "./briefing-slot-gate.mjs";
@@ -131,9 +133,48 @@ describe("evaluateScheduleGate", () => {
     assert.equal(r.slot?.id, "morning");
   });
 
-  it(`defaults early=${EARLY_MINUTES}m late=${LATE_MINUTES}m`, () => {
+  it(`defaults early=${EARLY_MINUTES}m late=${LATE_MINUTES}m catchup=${MISSED_CATCHUP_HOURS}h`, () => {
     assert.equal(EARLY_MINUTES, 0);
     assert.equal(LATE_MINUTES, 45);
+    assert.equal(MISSED_CATCHUP_HOURS, 3);
+  });
+
+  it("missed-slot catch-up runs evening after primary window if unpublished", () => {
+    // 13:05 UTC = ~65m after 20:00 Beijing; primary closed at +45m
+    const r = evaluateScheduleGate({
+      eventName: "schedule",
+      now: new Date("2026-07-20T13:05:00.000Z"),
+      latest: {
+        date: "2026-07-20",
+        publishedAt: "2026-07-20T06:47:24.000Z", // morning only
+      },
+    });
+    assert.equal(r.shouldRun, true);
+    assert.equal(r.slot?.id, "evening");
+    assert.match(r.reason, /missed-slot catch-up/);
+  });
+
+  it("missed-slot catch-up skips when evening already published", () => {
+    const r = evaluateScheduleGate({
+      eventName: "schedule",
+      now: new Date("2026-07-20T13:05:00.000Z"),
+      latest: {
+        date: "2026-07-20",
+        publishedAt: "2026-07-20T12:10:00.000Z",
+      },
+    });
+    assert.equal(r.shouldRun, false);
+  });
+});
+
+describe("missedUnpublishedSlot", () => {
+  it("returns evening after primary window when only morning published", () => {
+    const slot = missedUnpublishedSlot(
+      new Date("2026-07-20T13:00:00.000Z"),
+      { date: "2026-07-20", publishedAt: "2026-07-20T00:10:00.000Z" },
+    );
+    assert.equal(slot?.id, "evening");
+    assert.equal(slot?.date, "2026-07-20");
   });
 });
 

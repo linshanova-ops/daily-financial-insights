@@ -1,15 +1,17 @@
 name: Generate daily briefing
 
 on:
-  # Fire every minute during the Beijing publish windows:
-  #   08:00–08:44 Beijing = 00:00–00:44 UTC
-  #   20:00–20:44 Beijing = 12:00–12:44 UTC
-  # Dense ticks raise the odds GitHub delivers at least one on-time run.
-  # Slot gate: at/after the hour, max +45m, skip if that slot already published.
-  # Optional free external cron (cron-job.org) backup — docs/PUBLIC_SITE.md.
+  # Beijing publish windows (GitHub schedule is best-effort):
+  #   08:00 Beijing = 00:00 UTC — primary every 5m through +45m
+  #   20:00 Beijing = 12:00 UTC — same
+  # Missed-slot catch-up: every 30m for 3h after each hour if that slot
+  # never published (GitHub has skipped entire dense windows before).
+  # Optional free external cron backup — docs/PUBLIC_SITE.md.
   schedule:
-    - cron: "0-44 0 * * *"
-    - cron: "0-44 12 * * *"
+    - cron: "0,5,10,15,20,25,30,35,40,45 0 * * *"
+    - cron: "0,5,10,15,20,25,30,35,40,45 12 * * *"
+    - cron: "0,30 1,2,3 * * *"
+    - cron: "0,30 13,14,15 * * *"
   # Manual runs from the Actions tab (bypasses slot gate).
   workflow_dispatch:
   # External cron backup / legacy hook.

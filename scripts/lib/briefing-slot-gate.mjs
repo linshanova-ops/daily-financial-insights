@@ -1,8 +1,9 @@
 /**
  * Decide whether a scheduled/cron generate should run for Beijing 08:00 / 20:00.
  *
- * Policy: capture real market data AT/AFTER the hour (not before), and only
- * start generate within LATE_MINUTES (default 20) after each hour.
+ * Policy: capture real market data AT/AFTER the hour (not before). Prefer starting
+ * within LATE_MINUTES after each hour; if GitHub skipped the whole primary window,
+ * MISSED_CATCHUP_HOURS still allows a catch-up until the slot is published.
  *
  * - workflow_dispatch / repository_dispatch+force → always run (manual catch-up)
  * - schedule / repository_dispatch (external cron backup) → slot gate
@@ -12,11 +13,17 @@
 export const EARLY_MINUTES = 0;
 
 /**
- * Max delay after the Beijing hour to still start generate (minutes).
- * Primary target is on-the-hour; window extends to absorb GitHub cron skips
- * (a full miss of a short window previously delayed the live site a full day).
+ * Preferred max delay after the Beijing hour for on-time generate (minutes).
+ * Keep this modest; missed-slot catch-up covers longer GitHub cron gaps.
  */
 export const LATE_MINUTES = 45;
+
+/**
+ * If the primary window never fired / never published, allow catch-up for this
+ * many hours after slot start (GitHub schedule is best-effort and can skip
+ * entire dense windows).
+ */
+export const MISSED_CATCHUP_HOURS = 3;
 
 /** @deprecated use LATE_MINUTES */
 export const SLOT_WINDOW_MINUTES = LATE_MINUTES;
@@ -103,6 +110,51 @@ export function activeSlot(
 }
 
 /**
+ * Find an unpublished Beijing slot whose start was within the last
+ * `catchupHours` (after the primary LATE_MINUTES window).
+ * Prefers the most recently started unpublished slot.
+ */
+export function missedUnpublishedSlot(
+  now = new Date(),
+  latest = null,
+  {
+    earlyMinutes = EARLY_MINUTES,
+    lateMinutes = LATE_MINUTES,
+    catchupHours = MISSED_CATCHUP_HOURS,
+  } = {},
+) {
+  const t = now.getTime();
+  const dates = new Set([
+    beijingDateString(now),
+    beijingDateString(new Date(t - 24 * 60 * 60 * 1000)),
+  ]);
+
+  /** @type {null | { id: string, utcHour: number, date: string, start: Date, minutesFromStart: number }} */
+  let best = null;
+
+  for (const date of dates) {
+    for (const [id, utcHour] of Object.entries(SLOT_UTC_HOURS)) {
+      const start = slotStartUtc(id, date);
+      const primaryClose = start.getTime() + lateMinutes * 60_000;
+      const catchupClose = start.getTime() + catchupHours * 60 * 60_000;
+      // Only after primary window ends, and before catch-up deadline
+      if (t < primaryClose || t >= catchupClose) continue;
+      const slot = {
+        id,
+        utcHour,
+        date,
+        start,
+        minutesFromStart: (t - start.getTime()) / 60_000,
+      };
+      if (slotAlreadyPublished(latest, slot, earlyMinutes)) continue;
+      if (!best || slot.start.getTime() > best.start.getTime()) best = slot;
+    }
+  }
+
+  return best;
+}
+
+/**
  * True when main already has this slot's briefing published at/after slot start.
  * @param {{ date?: string, publishedAt?: string } | null} latest
  */
@@ -127,7 +179,7 @@ export function usesSlotGate(eventName, forceDispatch = false) {
 }
 
 /**
- * @param {{ eventName: string, now?: Date, latest?: { date?: string, publishedAt?: string } | null, earlyMinutes?: number, lateMinutes?: number, forceDispatch?: boolean }} opts
+ * @param {{ eventName: string, now?: Date, latest?: { date?: string, publishedAt?: string } | null, earlyMinutes?: number, lateMinutes?: number, catchupHours?: number, forceDispatch?: boolean }} opts
  */
 export function evaluateScheduleGate(opts) {
   const {
@@ -136,6 +188,7 @@ export function evaluateScheduleGate(opts) {
     latest = null,
     earlyMinutes = EARLY_MINUTES,
     lateMinutes = LATE_MINUTES,
+    catchupHours = MISSED_CATCHUP_HOURS,
     forceDispatch = false,
   } = opts;
 
@@ -150,31 +203,42 @@ export function evaluateScheduleGate(opts) {
     };
   }
 
-  const slot = activeSlot(now, earlyMinutes, lateMinutes);
-  if (!slot) {
+  const primary = activeSlot(now, earlyMinutes, lateMinutes);
+  if (primary) {
+    if (slotAlreadyPublished(latest, primary, earlyMinutes)) {
+      return {
+        shouldRun: false,
+        reason: `${primary.id} slot already published (date=${latest.date} publishedAt=${latest.publishedAt})`,
+        slot: primary,
+      };
+    }
+    const when =
+      primary.minutesFromStart < 0
+        ? `${Math.abs(Math.round(primary.minutesFromStart))}m before`
+        : `${Math.round(primary.minutesFromStart)}m after`;
     return {
-      shouldRun: false,
-      reason: `outside Beijing 08:00/20:00 windows (0–${lateMinutes}m after the hour)`,
-      slot: null,
+      shouldRun: true,
+      reason: `${primary.id} slot open (${when} ${String(primary.utcHour).padStart(2, "0")}:00 UTC / Beijing hour; briefing date ${primary.date})`,
+      slot: primary,
     };
   }
 
-  if (slotAlreadyPublished(latest, slot, earlyMinutes)) {
+  const missed = missedUnpublishedSlot(now, latest, {
+    earlyMinutes,
+    lateMinutes,
+    catchupHours,
+  });
+  if (missed) {
     return {
-      shouldRun: false,
-      reason: `${slot.id} slot already published (date=${latest.date} publishedAt=${latest.publishedAt})`,
-      slot,
+      shouldRun: true,
+      reason: `${missed.id} missed-slot catch-up (${Math.round(missed.minutesFromStart)}m after ${String(missed.utcHour).padStart(2, "0")}:00 UTC; briefing date ${missed.date})`,
+      slot: missed,
     };
   }
-
-  const when =
-    slot.minutesFromStart < 0
-      ? `${Math.abs(Math.round(slot.minutesFromStart))}m before`
-      : `${Math.round(slot.minutesFromStart)}m after`;
 
   return {
-    shouldRun: true,
-    reason: `${slot.id} slot open (${when} ${String(slot.utcHour).padStart(2, "0")}:00 UTC / Beijing hour; briefing date ${slot.date})`,
-    slot,
+    shouldRun: false,
+    reason: `outside Beijing 08:00/20:00 windows (0–${lateMinutes}m) and no unpublished slot within ${catchupHours}h catch-up`,
+    slot: null,
   };
 }
