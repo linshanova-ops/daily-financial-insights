@@ -90,3 +90,25 @@ Until that secret exists, publish manually:
 cd web && npm run sync-data
 git add web/content web/public/data && git commit -m "content: YYYY-MM-DD briefing" && git push
 ```
+
+### Inbox newsletters (Gmail IMAP)
+
+Before each generate run, Actions fetches subscribed mail into `web/content/inbox/` and the agent merges it into existing modules (not a new page). Chinese Bloomberg text stays Chinese.
+
+Repo → Settings → Secrets and variables → Actions — set:
+
+| Secret | Example |
+|--------|---------|
+| `INBOX_IMAP_HOST` | `imap.gmail.com` |
+| `INBOX_IMAP_USER` | Gmail address subscribed to the newsletters |
+| `INBOX_IMAP_PASSWORD` | Gmail **App Password** (not the normal login password) |
+| `INBOX_IMAP_PORT` | `993` (optional; defaults to 993) |
+
+Gmail: enable IMAP in Settings → Forwarding and POP/IMAP, and create an App Password under Google Account → Security.
+
+Sources today:
+
+- **彭博 Markets Daily China 中文版** (daily, before Beijing 08:00) → China / Global / Assets / Watch  
+- **Glassnode Insights** (weekly, usually Tuesday) → crypto assetFramework / signals / watch  
+
+Missing or failed IMAP is soft-fail — the briefing still runs without inbox files.

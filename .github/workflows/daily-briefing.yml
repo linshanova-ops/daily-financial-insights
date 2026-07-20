@@ -68,9 +68,21 @@ jobs:
             echo "present=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Install Cursor SDK
-        if: steps.key.outputs.present == 'true'
-        run: npm install @cursor/sdk@latest
+      - name: Install script deps (IMAP + Cursor SDK)
+        if: steps.gate.outputs.should_run == 'true' && steps.key.outputs.present == 'true'
+        run: |
+          npm install @cursor/sdk@latest
+          npm install --prefix scripts
+
+      - name: Fetch inbox newsletters (Bloomberg daily + Glassnode weekly)
+        if: steps.gate.outputs.should_run == 'true' && steps.key.outputs.present == 'true'
+        env:
+          INBOX_IMAP_HOST: ${{ secrets.INBOX_IMAP_HOST }}
+          INBOX_IMAP_USER: ${{ secrets.INBOX_IMAP_USER }}
+          INBOX_IMAP_PASSWORD: ${{ secrets.INBOX_IMAP_PASSWORD }}
+          INBOX_IMAP_PORT: ${{ secrets.INBOX_IMAP_PORT }}
+          BRIEFING_DATE: ${{ steps.gate.outputs.briefing_date }}
+        run: node scripts/fetch-inbox-sources.mjs
 
       - name: Generate briefing PR, wait for CI, auto-merge when green
         if: steps.key.outputs.present == 'true'
