@@ -51,17 +51,18 @@ Evening runs always refresh the same Beijing date even when morning already publ
 
 ### Schedule reliability (and cost)
 
-GitHub’s `schedule` event is **best-effort** and can skip entire windows (missed 2026-07-20 **both** 08:00 and 20:00 Beijing until manual/force catch-up). Mitigations in-repo:
+**GitHub `schedule` alone cannot guarantee on-time publishes** (it skipped both 2026-07-20 Beijing windows). Full setup: **[ON_TIME_PUBLISH.md](./ON_TIME_PUBLISH.md)** (external cron-job.org ping — free, ~5 minutes).
 
-1. **Primary cron** — every 5 minutes for **45 minutes** after each Beijing hour (lighter than every-minute; dense schedules were still fully skipped)
-2. **Missed-slot catch-up** — every 30 minutes for **3 hours** after each hour if that slot never published
-3. **Slot skip-if-done** — once morning or evening publishes, later ticks no-op in seconds
-4. **Pages deploy retries** — merge fails the job if deploy cannot be dispatched (so you notice)
-5. **Optional free external ping** — [cron-job.org](https://cron-job.org) free tier (or similar) POSTs `repository_dispatch` during those windows (**strongly recommended**)
+In-repo mitigations (recovery, not a substitute for external cron):
 
-**Cost:** Public-repo GitHub Actions minutes are free. External cron free tier is **$0**. **No Netlify credits** (Actions + Pages only; briefing PRs are `[skip netlify]`). Cursor API usage still applies when a generate actually runs (one morning + one evening when slots fire).
+1. Light primary ticks at `:00/:15/:30/:45` UTC 0 and 12  
+2. **Hourly heartbeat** at `:05` — publishes if a slot is still missing (up to **6h**)  
+3. **Overdue alert** workflow fails ~50m after the hour if still unpublished  
+4. Pages deploy retries after merge  
 
-Example free backup (GitHub PAT with `repo` scope as a secret on the cron service — not committed):
+**Cost:** Public-repo Actions minutes are free. cron-job.org free tier is **$0**. No Netlify. Cursor API only when a generate actually runs.
+
+Example ping body (details in ON_TIME_PUBLISH.md):
 
 ```bash
 curl -X POST \
@@ -71,7 +72,7 @@ curl -X POST \
   -d '{"event_type":"refresh-briefing"}'
 ```
 
-Schedule that curl every 5 minutes at **00:00–03:00 UTC** and **12:00–15:00 UTC**. Without `"force":true`, the slot gate still prevents duplicate Cursor runs after a slot publishes.
+Without `"force":true`, the slot gate no-ops after a slot has already published.
 
 ### Netlify credits
 

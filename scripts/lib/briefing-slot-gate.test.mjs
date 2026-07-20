@@ -99,8 +99,8 @@ describe("evaluateScheduleGate", () => {
     const r = evaluateScheduleGate({
       eventName: "repository_dispatch",
       forceDispatch: false,
-      now: new Date("2026-07-19T03:00:00.000Z"),
-      latest: null,
+      now: new Date("2026-07-19T08:00:00.000Z"), // outside morning catch-up (ends 06:00)
+      latest: { date: "2026-07-19", publishedAt: "2026-07-19T00:10:00.000Z" },
     });
     assert.equal(r.shouldRun, false);
   });
