@@ -2,6 +2,17 @@
  * Matchers + filename helpers for newsletter inbox sources (pure / testable).
  */
 
+/** Signup / confirmation mail — not usable as briefing source. */
+export function isWelcomeNewsletter(subject = "", text = "") {
+  const s = String(subject).toLowerCase();
+  const t = String(text).toLowerCase();
+  if (s.includes("welcome to")) return true;
+  if (s.startsWith("welcome ")) return true;
+  if (t.includes("thanks for signing up")) return true;
+  if (t.includes("thanks for subscribing")) return true;
+  return false;
+}
+
 export const INBOX_SOURCES = [
   {
     id: "bloomberg-markets-daily-china",
@@ -10,6 +21,7 @@ export const INBOX_SOURCES = [
     /** Keep Chinese text when merging into the briefing. */
     keepLanguage: "zh",
     match({ from = "", subject = "" }) {
+      if (isWelcomeNewsletter(subject)) return false;
       const f = from.toLowerCase();
       const s = subject.toLowerCase();
       const fromOk =
@@ -30,15 +42,17 @@ export const INBOX_SOURCES = [
     cadence: "weekly",
     keepLanguage: "en",
     match({ from = "", subject = "" }) {
+      if (isWelcomeNewsletter(subject)) return false;
       const f = from.toLowerCase();
       const s = subject.toLowerCase();
       const fromOk = f.includes("glassnode");
       const subjectOk =
         s.includes("insight") ||
-        s.includes("week") ||
+        s.includes("week on chain") ||
+        s.includes("week-on-chain") ||
         s.includes("on-chain") ||
         s.includes("onchain");
-      return fromOk && (subjectOk || fromOk);
+      return fromOk && subjectOk;
     },
   },
 ];
@@ -75,6 +89,13 @@ export function inboxRelPath(source, when = new Date()) {
   }
   const day = when.toISOString().slice(0, 10);
   return `web/content/inbox/${source.id}/${day}.md`;
+}
+
+/** True when a saved capture is signup mail and should be replaced. */
+export function isPlaceholderInboxCapture(markdown = "") {
+  const subject = markdown.match(/^subject:\s*(.+)$/m)?.[1] || "";
+  const body = markdown.split(/\n---\n/).slice(1).join("\n---\n");
+  return isWelcomeNewsletter(subject, body);
 }
 
 export function formatInboxMarkdown({

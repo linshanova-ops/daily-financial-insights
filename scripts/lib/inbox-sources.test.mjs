@@ -4,6 +4,8 @@ import {
   extractBloombergDateKey,
   formatInboxMarkdown,
   inboxRelPath,
+  isPlaceholderInboxCapture,
+  isWelcomeNewsletter,
   isoWeekKey,
   pickSource,
 } from "./inbox-sources.mjs";
@@ -27,8 +29,44 @@ describe("pickSource", () => {
     assert.equal(src?.cadence, "weekly");
   });
 
+  it("ignores Glassnode welcome mail", () => {
+    assert.equal(
+      pickSource(
+        "Glassnode <insights@glassnode.com>",
+        "Welcome to Glassnode Insights",
+      ),
+      null,
+    );
+  });
+
   it("ignores unrelated mail", () => {
     assert.equal(pickSource("noreply@example.com", "Your receipt"), null);
+  });
+});
+
+describe("welcome helpers", () => {
+  it("detects welcome subjects", () => {
+    assert.equal(isWelcomeNewsletter("Welcome to Glassnode Insights"), true);
+    assert.equal(
+      isWelcomeNewsletter("Glassnode Insights: Weekly On-Chain"),
+      false,
+    );
+  });
+
+  it("detects placeholder captures", () => {
+    const md = formatInboxMarkdown({
+      source: {
+        id: "glassnode-insights",
+        label: "Glassnode Insights",
+        cadence: "weekly",
+        keepLanguage: "en",
+      },
+      subject: "Welcome to Glassnode Insights",
+      from: "insights@glassnode.com",
+      date: new Date("2026-07-20T00:00:00.000Z"),
+      text: "Thanks for signing up to receive Glassnode newsletters.",
+    });
+    assert.equal(isPlaceholderInboxCapture(md), true);
   });
 });
 
