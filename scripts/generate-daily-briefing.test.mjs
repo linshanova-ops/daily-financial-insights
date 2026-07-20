@@ -100,13 +100,15 @@ describe("workflow wiring", () => {
     assert.match(yml, /cancel-in-progress:\s*false/);
   });
 
-  it("generate workflow polls every 5m with Beijing slot gate", () => {
+  it("generate workflow densifies cron inside Beijing windows", () => {
     const yml = readFileSync(
       join(root, ".github/workflows/daily-briefing.yml"),
       "utf8",
     );
-    assert.match(yml, /\*\/5 \* \* \* \*/);
+    assert.match(yml, /0-19 0 \* \* \*/);
+    assert.match(yml, /0-19 12 \* \* \*/);
     assert.match(yml, /briefing-slot-gate\.mjs/);
     assert.match(yml, /should_run/);
+    assert.match(yml, /DISPATCH_FORCE/);
   });
 });

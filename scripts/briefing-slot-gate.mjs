@@ -1,11 +1,18 @@
 /**
  * GitHub Actions entry: write should_run (+ briefing_date / slot_id) to GITHUB_OUTPUT.
- * Scheduled runs open at Beijing 08:00 / 20:00 through +20m (not before).
+ *
+ * schedule / external repository_dispatch → Beijing slot gate
+ * workflow_dispatch / repository_dispatch+force → always run
  */
 import fs from "node:fs";
-import { evaluateScheduleGate } from "./lib/briefing-slot-gate.mjs";
+import {
+  evaluateScheduleGate,
+  usesSlotGate,
+} from "./lib/briefing-slot-gate.mjs";
 
 const eventName = process.env.GITHUB_EVENT_NAME || "schedule";
+const forceDispatch =
+  process.env.DISPATCH_FORCE === "true" || process.env.DISPATCH_FORCE === "1";
 const repo =
   process.env.GITHUB_REPOSITORY || "linshanova-ops/daily-financial-insights";
 const outputPath = process.env.GITHUB_OUTPUT;
@@ -39,14 +46,16 @@ function appendOutput(lines) {
 }
 
 async function main() {
-  const latest = eventName === "schedule" ? await loadLatestFromMain() : null;
+  const gated = usesSlotGate(eventName, forceDispatch);
+  const latest = gated ? await loadLatestFromMain() : null;
   const decision = evaluateScheduleGate({
     eventName,
     now: new Date(),
     latest,
+    forceDispatch,
   });
 
-  console.log(`[slot-gate] event=${eventName}`);
+  console.log(`[slot-gate] event=${eventName} force=${forceDispatch}`);
   console.log(`[slot-gate] ${decision.reason}`);
   if (decision.slot) {
     console.log(

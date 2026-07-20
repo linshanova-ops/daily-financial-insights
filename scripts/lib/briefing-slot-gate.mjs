@@ -1,9 +1,11 @@
 /**
- * Decide whether a scheduled generate should run for Beijing 08:00 / 20:00.
+ * Decide whether a scheduled/cron generate should run for Beijing 08:00 / 20:00.
  *
- * Policy: capture real market data AT/AFTER the hour (not before), and finish
- * publish within LATE_MINUTES (default 20). We poll every few minutes; the gate
- * opens at the Beijing hour and stays open for the late window only.
+ * Policy: capture real market data AT/AFTER the hour (not before), and only
+ * start generate within LATE_MINUTES (default 20) after each hour.
+ *
+ * - workflow_dispatch / repository_dispatch+force → always run (manual catch-up)
+ * - schedule / repository_dispatch (external cron backup) → slot gate
  */
 
 /** Do not start before the Beijing hour — data must reflect 08:00 / 20:00. */
@@ -113,8 +115,15 @@ export function slotAlreadyPublished(
   return pub.getTime() >= earlyOpen;
 }
 
+/** Events that must respect the Beijing slot window (unless forceDispatch). */
+export function usesSlotGate(eventName, forceDispatch = false) {
+  if (eventName === "workflow_dispatch") return false;
+  if (eventName === "repository_dispatch" && forceDispatch) return false;
+  return eventName === "schedule" || eventName === "repository_dispatch";
+}
+
 /**
- * @param {{ eventName: string, now?: Date, latest?: { date?: string, publishedAt?: string } | null, earlyMinutes?: number, lateMinutes?: number }} opts
+ * @param {{ eventName: string, now?: Date, latest?: { date?: string, publishedAt?: string } | null, earlyMinutes?: number, lateMinutes?: number, forceDispatch?: boolean }} opts
  */
 export function evaluateScheduleGate(opts) {
   const {
@@ -123,12 +132,16 @@ export function evaluateScheduleGate(opts) {
     latest = null,
     earlyMinutes = EARLY_MINUTES,
     lateMinutes = LATE_MINUTES,
+    forceDispatch = false,
   } = opts;
 
-  if (eventName !== "schedule") {
+  if (!usesSlotGate(eventName, forceDispatch)) {
     return {
       shouldRun: true,
-      reason: `event=${eventName} (not schedule — always run)`,
+      reason:
+        eventName === "repository_dispatch" && forceDispatch
+          ? "repository_dispatch force=true (manual catch-up — always run)"
+          : `event=${eventName} (manual — always run)`,
       slot: null,
     };
   }
