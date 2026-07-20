@@ -26,6 +26,7 @@ import {
   extractBloombergDateKey,
   formatInboxMarkdown,
   inboxRelPath,
+  isPlaceholderInboxCapture,
   pickSource,
 } from "./lib/inbox-sources.mjs";
 
@@ -157,9 +158,14 @@ async function main() {
           continue;
         }
         if (source.cadence === "weekly" && fs.existsSync(abs)) {
-          console.log(`[inbox] weekly exists ${rel} — keep`);
-          saved.push({ sourceId: source.id, path: rel, skipped: true });
-          continue;
+          const existing = fs.readFileSync(abs, "utf8");
+          // Replace signup/welcome placeholders; keep a real weekly Insights.
+          if (!isPlaceholderInboxCapture(existing)) {
+            console.log(`[inbox] weekly exists ${rel} — keep`);
+            saved.push({ sourceId: source.id, path: rel, skipped: true });
+            continue;
+          }
+          console.log(`[inbox] weekly placeholder ${rel} — replace`);
         }
 
         const text =
