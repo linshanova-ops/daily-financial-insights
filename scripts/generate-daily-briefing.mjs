@@ -20,6 +20,10 @@ import {
   isFailingCheck,
 } from "./lib/briefing-publish-helpers.mjs";
 import { beijingDateString } from "./lib/briefing-slot-gate.mjs";
+import {
+  formatInboxPromptBlock,
+  loadInboxForBriefing,
+} from "./lib/load-inbox-context.mjs";
 
 const apiKey = process.env.CURSOR_API_KEY;
 const repoUrl =
@@ -42,6 +46,11 @@ const today = process.env.BRIEFING_DATE || beijingDateString();
 const branchName = `briefing/${today}`;
 const prTitle = `[skip netlify] content: publish ${today} daily briefing`;
 console.log(`[briefing] briefingDate=${today} (Asia/Shanghai)`);
+
+const inboxItems = loadInboxForBriefing(today);
+console.log(
+  `[briefing] inbox sources: ${inboxItems.map((i) => i.sourceId).join(", ") || "(none)"}`,
+);
 
 function gh(args, { allowFail = false } = {}) {
   const env = { ...process.env };
@@ -88,6 +97,15 @@ FAIL-CLOSED PUBLISH (critical):
    and BlockBeats/律动 (theblockbeats.info) and cite at least one item from each desk
    family in the China section when they have coverage-window news.
 
+   INBOX NEWSLETTERS (Gmail IMAP — already fetched when present):
+   - 彭博 Markets Daily China 中文版 (daily): merge into China / Global / Assets / Watch.
+     **Keep Chinese text Chinese** for bullets whose primary cite is this newsletter.
+     Do NOT use its 全球市况 tape to replace Market Dashboard numbers.
+   - Glassnode Insights (weekly, usually Tuesday): merge into crypto assetFramework /
+     signals / watch when on-chain color is relevant.
+   ${formatInboxPromptBlock(inboxItems)}
+   If inbox files exist under web/content/inbox/, include them in the PR commit for audit.
+
 2. Pre-publish accuracy gate (ALL required):
    (a) each index move is that index's official close;
    (b) beat|miss is vs estimate only — cooler/less than estimate = "miss estimate";
@@ -126,8 +144,9 @@ FAIL-CLOSED PUBLISH (critical):
    web/scripts/rejected-source-ids.json when needed.
 
 6. Commit on \`${branchName}\` with message: content: publish ${today} daily briefing
-   Include web/content/briefings/${today}.md, web/public/data/**, and any
-   rejected-source-ids.json updates. Push the branch and open/update the PR to main
+   Include web/content/briefings/${today}.md, web/public/data/**, any new
+   web/content/inbox/** captures, and any rejected-source-ids.json updates.
+   Push the branch and open/update the PR to main
    with title: ${prTitle}
 
 7. Reply with: DONE ${today} BRANCH=${branchName} PR=<url-or-number>
