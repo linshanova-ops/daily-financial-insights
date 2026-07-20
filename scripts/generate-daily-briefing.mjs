@@ -42,7 +42,7 @@ if (!apiKey) {
   process.exit(1);
 }
 
-# Beijing calendar date (slot gate may start ~20m before 08:00, still UTC prior day).
+// Beijing calendar date (slot gate may start ~20m before 08:00, still UTC prior day).
 const today = process.env.BRIEFING_DATE || beijingDateString();
 /** @type {'morning'|'evening'|''} */
 const slotId = process.env.BRIEFING_SLOT_ID === "evening"
