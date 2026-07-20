@@ -133,7 +133,7 @@ describe("evaluateScheduleGate", () => {
 
   it(`defaults early=${EARLY_MINUTES}m late=${LATE_MINUTES}m`, () => {
     assert.equal(EARLY_MINUTES, 0);
-    assert.equal(LATE_MINUTES, 20);
+    assert.equal(LATE_MINUTES, 45);
   });
 });
 
