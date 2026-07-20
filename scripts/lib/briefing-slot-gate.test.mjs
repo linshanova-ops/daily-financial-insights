@@ -99,8 +99,8 @@ describe("evaluateScheduleGate", () => {
     const r = evaluateScheduleGate({
       eventName: "repository_dispatch",
       forceDispatch: false,
-      now: new Date("2026-07-19T03:00:00.000Z"),
-      latest: null,
+      now: new Date("2026-07-19T08:00:00.000Z"), // outside morning catch-up (ends 06:00)
+      latest: { date: "2026-07-19", publishedAt: "2026-07-19T00:10:00.000Z" },
     });
     assert.equal(r.shouldRun, false);
   });
@@ -136,7 +136,7 @@ describe("evaluateScheduleGate", () => {
   it(`defaults early=${EARLY_MINUTES}m late=${LATE_MINUTES}m catchup=${MISSED_CATCHUP_HOURS}h`, () => {
     assert.equal(EARLY_MINUTES, 0);
     assert.equal(LATE_MINUTES, 45);
-    assert.equal(MISSED_CATCHUP_HOURS, 3);
+    assert.equal(MISSED_CATCHUP_HOURS, 6);
   });
 
   it("missed-slot catch-up runs evening after primary window if unpublished", () => {

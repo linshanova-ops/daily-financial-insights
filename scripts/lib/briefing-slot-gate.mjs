@@ -20,10 +20,10 @@ export const LATE_MINUTES = 45;
 
 /**
  * If the primary window never fired / never published, allow catch-up for this
- * many hours after slot start (GitHub schedule is best-effort and can skip
- * entire dense windows).
+ * many hours after slot start. Hourly heartbeat + external cron rely on this.
+ * (GitHub schedule is best-effort and has skipped entire windows.)
  */
-export const MISSED_CATCHUP_HOURS = 3;
+export const MISSED_CATCHUP_HOURS = 6;
 
 /** @deprecated use LATE_MINUTES */
 export const SLOT_WINDOW_MINUTES = LATE_MINUTES;

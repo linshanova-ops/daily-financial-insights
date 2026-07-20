@@ -1,0 +1,29 @@
+name: Overdue Beijing slot alert
+
+# Fails loudly if morning/evening never published ~50m after the hour.
+# Enable "Send notifications for failed workflows" in GitHub so you get email.
+on:
+  schedule:
+    - cron: "50 0 * * *"
+    - cron: "50 12 * * *"
+    # Also mid catch-up window
+    - cron: "5 1,2,13,14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+      - name: Fail if Beijing slot still unpublished
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node scripts/check-overdue-slot.mjs
