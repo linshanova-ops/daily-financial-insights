@@ -136,7 +136,7 @@ describe("evaluateScheduleGate", () => {
   it(`defaults early=${EARLY_MINUTES}m late=${LATE_MINUTES}m catchup=${MISSED_CATCHUP_HOURS}h`, () => {
     assert.equal(EARLY_MINUTES, 0);
     assert.equal(LATE_MINUTES, 45);
-    assert.equal(MISSED_CATCHUP_HOURS, 3);
+    assert.equal(MISSED_CATCHUP_HOURS, 6);
   });
 
   it("missed-slot catch-up runs evening after primary window if unpublished", () => {

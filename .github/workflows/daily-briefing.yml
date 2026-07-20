@@ -1,22 +1,17 @@
 name: Generate daily briefing
 
 on:
-  # Beijing publish windows (GitHub schedule is best-effort):
-  #   08:00 Beijing = 00:00 UTC — primary every 5m through +45m
-  #   20:00 Beijing = 12:00 UTC — same
-  # Missed-slot catch-up: every 30m for 3h after each hour if that slot
-  # never published (GitHub has skipped entire dense windows before).
-  # Optional free external cron backup — docs/PUBLIC_SITE.md.
+  # GitHub schedule is BEST-EFFORT and has skipped entire publish windows.
+  # Strategy:
+  #   1) Light primary ticks at :00/:15/:30/:45 of Beijing hours (UTC 0 and 12)
+  #   2) Hourly heartbeat at :05 every hour — recovers missed slots for 6h
+  #   3) External cron-job.org repository_dispatch (REQUIRED for true on-time)
+  #      — see docs/ON_TIME_PUBLISH.md
   schedule:
-    - cron: "0,5,10,15,20,25,30,35,40,45 0 * * *"
-    - cron: "0,5,10,15,20,25,30,35,40,45 12 * * *"
-    - cron: "0,30 1,2,3 * * *"
-    - cron: "0,30 13,14,15 * * *"
-  # Manual runs from the Actions tab (bypasses slot gate).
+    - cron: "0,15,30,45 0 * * *"
+    - cron: "0,15,30,45 12 * * *"
+    - cron: "5 * * * *"
   workflow_dispatch:
-  # External cron backup / legacy hook.
-  # Omit client_payload.force → same Beijing slot gate as schedule.
-  # {"event_type":"refresh-briefing","client_payload":{"force":true}} → always run.
   repository_dispatch:
     types: [refresh-briefing]
 
@@ -25,12 +20,8 @@ permissions:
   pull-requests: write
   checks: read
   statuses: read
-  # Needed to workflow_dispatch Pages deploy after GITHUB_TOKEN merge
-  # (push events from GITHUB_TOKEN do not start other workflows).
   actions: write
 
-# Overlapping schedule/dispatch runs race on briefing/YYYY-MM-DD and can open
-# duplicate draft PRs that never get CI. Queue extras; do not cancel an in-flight publish.
 concurrency:
   group: generate-daily-briefing
   cancel-in-progress: false

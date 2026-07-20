@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | Capture & publish for **08:00 and 20:00 Beijing (GMT+8)**. Primary cron every **5 minutes** for **+45m** after each hour. If that window never published, **missed-slot catch-up** keeps trying every 30m for **3 hours**. Morning = first publish; evening = same-day refresh. Accuracy CI → auto-merge → Pages deploy (retried). |
+| **Twice-daily schedule** | **08:00 / 20:00 Beijing.** In-repo: light ticks + **hourly heartbeat** (recovers misses up to 6h). **Required for true on-time:** free external cron → `repository_dispatch` — see [ON_TIME_PUBLISH.md](./ON_TIME_PUBLISH.md). Accuracy CI → auto-merge → Pages. |
 | **Manual** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge the orchestrator dispatches Pages (with retries). Safety-net cron at `:50` UTC also redeploys. |
