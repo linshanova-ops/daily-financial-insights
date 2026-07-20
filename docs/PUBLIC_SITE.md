@@ -18,10 +18,10 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | Capture & publish for **08:00 and 20:00 Beijing (GMT+8)**. GitHub cron fires **every minute** during `00:00–00:19` and `12:00–12:19` UTC only. Slot gate: start **at/after** the hour, max **+20 minutes**, skip if that slot already published. Agent drafts `briefing/YYYY-MM-DD`, injects **Market Dashboard**, accuracy CI, auto-merge + Pages deploy. |
+| **Twice-daily schedule** | Capture & publish for **08:00 and 20:00 Beijing (GMT+8)**. GitHub cron fires **every minute** during `00:00–00:44` and `12:00–12:44` UTC. Slot gate: start **at/after** the hour, max **+45 minutes** (absorbs cron skips), skip if that slot already published. Morning = first publish; evening = same-day refresh (inbox + Market Dashboard). Accuracy CI → auto-merge → Pages deploy (retried). |
 | **Manual** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
-| **Deploy workflow** | On push to `main` (and after briefing merge dispatch), GitHub Actions rebuilds and deploys Pages. |
+| **Deploy workflow** | After each merge the orchestrator dispatches Pages (with retries). Safety-net cron at `:50` UTC also redeploys. |
 
 There is **no public Refresh now button**. Visitors always see the latest published briefing.
 
@@ -45,14 +45,18 @@ Only one generate job runs at a time (`concurrency` group); overlapping dispatch
 | 08:00 | 00:00 | Prior **US** cash session (already closed) + overnight Asia |
 | 20:00 | 12:00 | Same-day **China** session (closed 15:00); US cash not yet open |
 
-Generate starts **at/after** 08:00 / 20:00 Beijing so Market Dashboard and news reflect that clock; max start delay **20 minutes**. Manual **Run workflow** bypasses the gate. External `repository_dispatch` without `force` uses the same gate; `client_payload.force=true` forces a run (catch-up).
+Generate starts **at/after** 08:00 / 20:00 Beijing so Market Dashboard and news reflect that clock; max start delay **45 minutes** (on-time target still the top of the hour). Manual **Run workflow** bypasses the gate. External `repository_dispatch` without `force` uses the same gate; `client_payload.force=true` forces a run (catch-up).
+
+Evening runs always refresh the same Beijing date even when morning already published (new inbox + fresh Market Dashboard).
 
 ### Schedule reliability (and cost)
 
-GitHub’s `schedule` event is **best-effort** and can skip a whole 20‑minute window (this caused the missed 2026-07-20 08:00 Beijing publish). Mitigations in-repo:
+GitHub’s `schedule` event is **best-effort** and can skip short windows (this caused the missed 2026-07-20 08:00 Beijing publish). Mitigations in-repo:
 
-1. **Dense cron** — every minute inside the two windows (not all-day `*/5`)
-2. **Optional free external ping** — [cron-job.org](https://cron-job.org) free tier (or similar) POSTs `repository_dispatch` during those windows
+1. **Dense cron** — every minute for **45 minutes** after each Beijing hour (not all-day `*/5`)
+2. **Slot skip-if-done** — once morning or evening publishes, later ticks no-op in seconds
+3. **Pages deploy retries** — merge fails the job if deploy cannot be dispatched (so you notice)
+4. **Optional free external ping** — [cron-job.org](https://cron-job.org) free tier (or similar) POSTs `repository_dispatch` during those windows (recommended belt-and-suspenders)
 
 **Cost:** Public-repo GitHub Actions minutes are free. External cron free tier is **$0**. **No Netlify credits** (Actions + Pages only; briefing PRs are `[skip netlify]`). Cursor API usage still applies when a generate actually runs (one morning + one evening when slots fire).
 
@@ -66,7 +70,7 @@ curl -X POST \
   -d '{"event_type":"refresh-briefing"}'
 ```
 
-Schedule that curl every 1–5 minutes at **00:00–00:19 UTC** and **12:00–12:19 UTC** only. Without `"force":true`, the slot gate still prevents off-window Cursor runs.
+Schedule that curl every 1–5 minutes at **00:00–00:44 UTC** and **12:00–12:44 UTC** only. Without `"force":true`, the slot gate still prevents off-window Cursor runs.
 
 ### Netlify credits
 

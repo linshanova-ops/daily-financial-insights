@@ -1,16 +1,15 @@
 name: Generate daily briefing
 
 on:
-  # Fire every minute during the Beijing publish windows only:
-  #   08:00–08:19 Beijing = 00:00–00:19 UTC
-  #   20:00–20:19 Beijing = 12:00–12:19 UTC
+  # Fire every minute during the Beijing publish windows:
+  #   08:00–08:44 Beijing = 00:00–00:44 UTC
+  #   20:00–20:44 Beijing = 12:00–12:44 UTC
   # Dense ticks raise the odds GitHub delivers at least one on-time run.
-  # Slot gate still enforces: at/after the hour, max +20m, skip if already published.
-  # Optional free external cron (cron-job.org) can also POST repository_dispatch
-  # as backup — see docs/PUBLIC_SITE.md (no Netlify cost).
+  # Slot gate: at/after the hour, max +45m, skip if that slot already published.
+  # Optional free external cron (cron-job.org) backup — docs/PUBLIC_SITE.md.
   schedule:
-    - cron: "0-19 0 * * *"
-    - cron: "0-19 12 * * *"
+    - cron: "0-44 0 * * *"
+    - cron: "0-44 12 * * *"
   # Manual runs from the Actions tab (bypasses slot gate).
   workflow_dispatch:
   # External cron backup / legacy hook.
@@ -85,12 +84,12 @@ jobs:
         run: node scripts/fetch-inbox-sources.mjs
 
       - name: Generate briefing PR, wait for CI, auto-merge when green
-        if: steps.key.outputs.present == 'true'
+        if: steps.gate.outputs.should_run == 'true' && steps.key.outputs.present == 'true'
         timeout-minutes: 90
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           REPO_URL: https://github.com/linshanova-ops/daily-financial-insights
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # From slot gate on schedule; empty on manual → script uses Beijing today.
           BRIEFING_DATE: ${{ steps.gate.outputs.briefing_date }}
+          BRIEFING_SLOT_ID: ${{ steps.gate.outputs.slot_id }}
         run: node scripts/generate-daily-briefing.mjs

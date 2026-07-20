@@ -11,8 +11,12 @@
 /** Do not start before the Beijing hour — data must reflect 08:00 / 20:00. */
 export const EARLY_MINUTES = 0;
 
-/** Max delay after the Beijing hour to still start generate (minutes). */
-export const LATE_MINUTES = 20;
+/**
+ * Max delay after the Beijing hour to still start generate (minutes).
+ * Primary target is on-the-hour; window extends to absorb GitHub cron skips
+ * (a full miss of a short window previously delayed the live site a full day).
+ */
+export const LATE_MINUTES = 45;
 
 /** @deprecated use LATE_MINUTES */
 export const SLOT_WINDOW_MINUTES = LATE_MINUTES;

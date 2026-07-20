@@ -32,14 +32,14 @@ describe("activeSlot (on/after hour only)", () => {
     assert.equal(Math.round(slot.minutesFromStart), 0);
   });
 
-  it("allows morning up to +20m", () => {
-    const slot = activeSlot(new Date("2026-07-19T00:19:00.000Z"));
+  it("allows morning up to +45m (catch-up after cron skips)", () => {
+    const slot = activeSlot(new Date("2026-07-19T00:44:00.000Z"));
     assert.equal(slot?.id, "morning");
-    assert.equal(Math.round(slot.minutesFromStart), 19);
+    assert.equal(Math.round(slot.minutesFromStart), 44);
   });
 
-  it("closes morning at +20m", () => {
-    assert.equal(activeSlot(new Date("2026-07-19T00:20:00.000Z")), null);
+  it("closes morning at +45m", () => {
+    assert.equal(activeSlot(new Date("2026-07-19T00:45:00.000Z")), null);
   });
 
   it("opens evening at 12:00 UTC (20:00 Beijing)", () => {
@@ -133,7 +133,7 @@ describe("evaluateScheduleGate", () => {
 
   it(`defaults early=${EARLY_MINUTES}m late=${LATE_MINUTES}m`, () => {
     assert.equal(EARLY_MINUTES, 0);
-    assert.equal(LATE_MINUTES, 20);
+    assert.equal(LATE_MINUTES, 45);
   });
 });
 
