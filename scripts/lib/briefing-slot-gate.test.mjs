@@ -93,6 +93,25 @@ describe("evaluateScheduleGate", () => {
     assert.equal(r.shouldRun, true);
   });
 
+  it("repository_dispatch without force uses slot gate", () => {
+    const r = evaluateScheduleGate({
+      eventName: "repository_dispatch",
+      forceDispatch: false,
+      now: new Date("2026-07-19T03:00:00.000Z"),
+      latest: null,
+    });
+    assert.equal(r.shouldRun, false);
+  });
+
+  it("repository_dispatch force=true always runs", () => {
+    const r = evaluateScheduleGate({
+      eventName: "repository_dispatch",
+      forceDispatch: true,
+      now: new Date("2026-07-19T03:00:00.000Z"),
+    });
+    assert.equal(r.shouldRun, true);
+  });
+
   it("does not run before the hour", () => {
     const r = evaluateScheduleGate({
       eventName: "schedule",
@@ -117,3 +136,4 @@ describe("evaluateScheduleGate", () => {
     assert.equal(LATE_MINUTES, 20);
   });
 });
+

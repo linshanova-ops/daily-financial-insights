@@ -18,8 +18,8 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | Capture & publish for **08:00 and 20:00 Beijing (GMT+8)**. Workflow polls every **5 minutes**; slot gate opens **at the hour** (not before — tape/news as-of 8am/8pm) and allows start for up to **20 minutes** after. Skips if that slot already published. Beijing calendar dates. Agent drafts `briefing/YYYY-MM-DD`, injects **Market Dashboard**, accuracy CI, auto-merge + Pages deploy. |
-| **Manual** | Actions tab → **Generate daily briefing** → Run workflow (rare overrides). |
+| **Twice-daily schedule** | Capture & publish for **08:00 and 20:00 Beijing (GMT+8)**. GitHub cron fires **every minute** during `00:00–00:19` and `12:00–12:19` UTC only. Slot gate: start **at/after** the hour, max **+20 minutes**, skip if that slot already published. Agent drafts `briefing/YYYY-MM-DD`, injects **Market Dashboard**, accuracy CI, auto-merge + Pages deploy. |
+| **Manual** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | On push to `main` (and after briefing merge dispatch), GitHub Actions rebuilds and deploys Pages. |
 
@@ -45,11 +45,32 @@ Only one generate job runs at a time (`concurrency` group); overlapping dispatch
 | 08:00 | 00:00 | Prior **US** cash session (already closed) + overnight Asia |
 | 20:00 | 12:00 | Same-day **China** session (closed 15:00); US cash not yet open |
 
-Generate starts **at/after** 08:00 / 20:00 Beijing so Market Dashboard and news reflect that clock; max start delay **20 minutes**. Manual **Run workflow** / `repository_dispatch` bypass the gate.
+Generate starts **at/after** 08:00 / 20:00 Beijing so Market Dashboard and news reflect that clock; max start delay **20 minutes**. Manual **Run workflow** bypasses the gate. External `repository_dispatch` without `force` uses the same gate; `client_payload.force=true` forces a run (catch-up).
+
+### Schedule reliability (and cost)
+
+GitHub’s `schedule` event is **best-effort** and can skip a whole 20‑minute window (this caused the missed 2026-07-20 08:00 Beijing publish). Mitigations in-repo:
+
+1. **Dense cron** — every minute inside the two windows (not all-day `*/5`)
+2. **Optional free external ping** — [cron-job.org](https://cron-job.org) free tier (or similar) POSTs `repository_dispatch` during those windows
+
+**Cost:** Public-repo GitHub Actions minutes are free. External cron free tier is **$0**. **No Netlify credits** (Actions + Pages only; briefing PRs are `[skip netlify]`). Cursor API usage still applies when a generate actually runs (one morning + one evening when slots fire).
+
+Example free backup (GitHub PAT with `repo` scope as a secret on the cron service — not committed):
+
+```bash
+curl -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer $GITHUB_PAT" \
+  https://api.github.com/repos/linshanova-ops/daily-financial-insights/dispatches \
+  -d '{"event_type":"refresh-briefing"}'
+```
+
+Schedule that curl every 1–5 minutes at **00:00–00:19 UTC** and **12:00–12:19 UTC** only. Without `"force":true`, the slot gate still prevents off-window Cursor runs.
 
 ### Netlify credits
 
-The 5‑minute GitHub Actions polls **do not use Netlify credits** (GitHub-hosted runners only). Briefing PRs are titled `[skip netlify]`, Deploy Previews are ignored, and production Netlify builds skip unless `web/netlify.toml` / `web/netlify/` change. Public site deploys are **GitHub Pages**.
+Scheduled generate / dispatch polls **do not use Netlify credits**. Briefing PRs are titled `[skip netlify]`, Deploy Previews are ignored, and production Netlify builds skip unless `web/netlify.toml` / `web/netlify/` change. Public site deploys are **GitHub Pages**.
 
 ### Netlify (optional / legacy)
 
