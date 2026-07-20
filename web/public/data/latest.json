@@ -2,7 +2,7 @@
   "date": "2026-07-20",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 17–20, 2026",
-  "publishedAt": "2026-07-20T06:00:00.000Z",
+  "publishedAt": "2026-07-20T06:47:24.000Z",
   "keySources": [
     {
       "label": "CNBC — Jul 20 Brent/WTI intraday",
@@ -749,9 +749,9 @@
     }
   ],
   "sources": "CNBC (Jul 20 Brent/WTI intraday; Jul 17 settle/Treasury), AP (Jul 19 casualties), AP (Jul 19 airstrikes), BBC (Jul 18–19 US/Iran), Straits Times (Jul 17 US close; SOX bear market), CoinDesk (Jul 20 BTC), BlockBeats/律动 (303598 Jul 19 ETF flows), 央视网 (Jul 19 state-team buying), SCMP (Jul 20 A-share rebound), 第一财经 (Jul 20 LPR), 21财经 (Jul 20 open/OMO/fix), 华尔街见闻 (3777165 Jul 17 close; 3776948 Changxin payment; 3777268 Jul 17 spot gold), Caixin Global (Jul 18 QDII).",
-  "singleSource": "Rejected BlockBeats 303605/303615 (BTC $120k/$118k flashes — wrong-year/stale vs Jul 2026 ~$64k tape). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). Jul 20 China index moves labeled intraday/morning where official Jul 20 close unavailable at publish. SCMP '60 billion yuan' headline omitted — 央视网 primary cites >500亿元 (国新 program) and ~100亿元 (诚通 recent) separately. No Jul 20 华尔街见闻 breakfast published at generate time — used 3777165 (Jul 17 close) and 3776948 (Jul 20 Changxin payment) within 72h window.",
+  "singleSource": "Rejected BlockBeats 303605/303615 (BTC $120k/$118k flashes — wrong-year/stale vs Jul 2026 ~$64k tape). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). Jul 20 China index moves labeled intraday/morning where official Jul 20 close unavailable at publish. SCMP '60 billion yuan' headline omitted — 央视网 primary cites >500亿元 (国新 program) and ~100亿元 (诚通 recent) separately. No Jul 20 华尔街见闻 breakfast published at generate time — used 3777165 (Jul 17 close) and 3776948 (Jul 20 Changxin payment) within 72h window. Glassnode Insights inbox (2026-W30) was a subscription welcome only — no Week on Chain on-chain data to merge.",
   "marketDashboard": {
-    "asOf": "2026-07-20T05:59:46.215Z",
+    "asOf": "2026-07-20T06:47:24.541Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -809,8 +809,8 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "24,986.16",
-            "change": "+1.73%",
+            "latest": "24,990.83",
+            "change": "+1.74%",
             "changeDirection": "up",
             "asOfDate": "2026-07-20",
             "source": {
@@ -821,7 +821,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,717.30",
+            "latest": "4,717.21",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-07-20",
@@ -833,8 +833,8 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,757.26",
-            "change": "−0.18%",
+            "latest": "3,750.37",
+            "change": "−0.37%",
             "changeDirection": "down",
             "asOfDate": "2026-07-20",
             "source": {
@@ -905,7 +905,7 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "162.3700",
+            "latest": "162.3680",
             "change": "−0.00%",
             "changeDirection": "down",
             "asOfDate": "2026-07-20",
@@ -917,8 +917,8 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7722",
-            "change": "−0.00%",
+            "latest": "6.7717",
+            "change": "−0.01%",
             "changeDirection": "down",
             "asOfDate": "2026-07-20",
             "source": {
@@ -929,8 +929,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,010.30",
-            "change": "−0.06%",
+            "latest": "$4,008.00",
+            "change": "−0.12%",
             "changeDirection": "down",
             "asOfDate": "2026-07-20",
             "source": {
@@ -941,8 +941,8 @@
           {
             "id": "brent",
             "asset": "Brent crude",
-            "latest": "$90.58",
-            "change": "+2.81%",
+            "latest": "$90.91",
+            "change": "+3.19%",
             "changeDirection": "up",
             "asOfDate": "2026-07-20",
             "source": {
@@ -953,8 +953,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$64,097",
-            "change": "−0.91%",
+            "latest": "$63,762",
+            "change": "−1.39%",
             "changeDirection": "down",
             "asOfDate": "2026-07-20",
             "source": {
