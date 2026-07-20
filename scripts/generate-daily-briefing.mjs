@@ -42,11 +42,17 @@ if (!apiKey) {
   process.exit(1);
 }
 
-// Beijing calendar date (slot gate may start ~20m before 08:00, still UTC prior day).
+# Beijing calendar date (slot gate may start ~20m before 08:00, still UTC prior day).
 const today = process.env.BRIEFING_DATE || beijingDateString();
+/** @type {'morning'|'evening'|''} */
+const slotId = process.env.BRIEFING_SLOT_ID === "evening"
+  ? "evening"
+  : process.env.BRIEFING_SLOT_ID === "morning"
+    ? "morning"
+    : "";
 const branchName = `briefing/${today}`;
 const prTitle = `[skip netlify] content: publish ${today} daily briefing`;
-console.log(`[briefing] briefingDate=${today} (Asia/Shanghai)`);
+console.log(`[briefing] briefingDate=${today} (Asia/Shanghai) slot=${slotId || "manual"}`);
 
 const inboxItems = loadInboxForBriefing(today);
 const inboxFetchStatus = loadInboxFetchStatus();
@@ -82,11 +88,25 @@ function gh(args, { allowFail = false } = {}) {
 }
 
 function buildPublishPrompt() {
+  const slotLabel =
+    slotId === "morning"
+      ? "MORNING slot (Beijing 08:00) — first publish of the day when possible"
+      : slotId === "evening"
+        ? "EVENING slot (Beijing 20:00) — REQUIRED same-day refresh even if morning already published"
+        : "MANUAL / catch-up run";
+
   return `You are drafting syravocado's daily financial briefing for ${today}.
 
 STANDING POLICY (docs/CONTENT_ACCURACY.md): website content must be VALID and ACCURATE.
 Wrong figures, wrong-year sources, or hrefs that do not support the claimed number are
 worse than a shorter briefing. Prefer omit over invent.
+
+PUBLISH SLOT: ${slotLabel}
+- Always set publishedAt to ISO UTC now.
+- Re-run Market Dashboard inject every time (fresh closes).
+- If web/content/briefings/${today}.md already exists: UPDATE it (do not skip).
+  Evening runs must merge any new inbox mail and refresh narrative for the China session.
+- Accuracy gate must pass before you finish.
 
 FAIL-CLOSED PUBLISH (critical):
 - Work on git branch \`${branchName}\` (create/reset from latest main).
@@ -525,41 +545,56 @@ function briefingExistsOnMain() {
 /**
  * Merges via GITHUB_TOKEN do not trigger other push workflows (GitHub recursion
  * guard). Explicitly dispatch Pages deploy so the live site updates.
+ * Retries because a missed dispatch leaves the site stale after a green merge.
  */
 function triggerPagesDeploy() {
-  const dispatched = gh(
-    [
-      "workflow",
-      "run",
-      "Deploy syravocado to GitHub Pages",
-      "--ref",
-      "main",
-    ],
-    { allowFail: true },
-  );
-  if (dispatched.status === 0) {
-    console.log("[briefing] dispatched Pages deploy workflow");
-    return;
+  const attempts = [
+    () =>
+      gh(
+        [
+          "workflow",
+          "run",
+          "Deploy syravocado to GitHub Pages",
+          "--ref",
+          "main",
+        ],
+        { allowFail: true },
+      ),
+    () => {
+      const repoPath = repoUrl
+        .replace(/^https?:\/\/github\.com\//, "")
+        .replace(/\.git$/, "");
+      return gh(
+        [
+          "api",
+          "-X",
+          "POST",
+          `repos/${repoPath}/dispatches`,
+          "-f",
+          "event_type=deploy-pages",
+        ],
+        { allowFail: true },
+      );
+    },
+  ];
+
+  const errors = [];
+  for (let round = 0; round < 3; round++) {
+    for (const attempt of attempts) {
+      const res = attempt();
+      if (res.status === 0) {
+        console.log(
+          `[briefing] dispatched Pages deploy (round ${round + 1})`,
+        );
+        return;
+      }
+      errors.push(res.stderr || res.stdout || `status=${res.status}`);
+    }
+    // Brief pause before retry
+    spawnSync("sleep", [String(2 * (round + 1))], { stdio: "ignore" });
   }
-  // Fallback: repository_dispatch (also allowed to start workflows from GITHUB_TOKEN).
-  const repoPath = repoUrl.replace(/^https?:\/\/github\.com\//, "").replace(/\.git$/, "");
-  const api = gh(
-    [
-      "api",
-      "-X",
-      "POST",
-      `repos/${repoPath}/dispatches`,
-      "-f",
-      "event_type=deploy-pages",
-    ],
-    { allowFail: true },
-  );
-  if (api.status === 0) {
-    console.log("[briefing] dispatched deploy-pages repository_dispatch");
-    return;
-  }
-  console.error(
-    `[briefing] WARNING: could not trigger Pages deploy. Merge is on main; run Deploy manually.\n${dispatched.stderr || dispatched.stdout}\n${api.stderr || api.stdout}`,
+  throw new Error(
+    `Pages deploy dispatch failed after retries — live site may stay stale.\n${errors.join("\n")}`,
   );
 }
 

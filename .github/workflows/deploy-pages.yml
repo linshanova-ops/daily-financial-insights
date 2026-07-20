@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    # Redeploy twice daily so the public site stays fresh.
-    - cron: "15 0,12 * * *"
+    # Safety-net redeploy after each Beijing publish window (incl. catch-up).
+    - cron: "50 0,12 * * *"
   workflow_dispatch:
   # Orchestrator dispatches this after GITHUB_TOKEN merges (push from that
   # token does not start other workflows).

@@ -18,10 +18,10 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | Capture & publish for **08:00 and 20:00 Beijing (GMT+8)**. GitHub cron fires **every minute** during `00:00–00:19` and `12:00–12:19` UTC only. Slot gate: start **at/after** the hour, max **+20 minutes**, skip if that slot already published. Agent drafts `briefing/YYYY-MM-DD`, injects **Market Dashboard**, accuracy CI, auto-merge + Pages deploy. |
+| **Twice-daily schedule** | Capture & publish for **08:00 and 20:00 Beijing (GMT+8)**. GitHub cron fires **every minute** during `00:00–00:44` and `12:00–12:44` UTC. Slot gate: start **at/after** the hour, max **+45 minutes** (absorbs cron skips), skip if that slot already published. Morning = first publish; evening = same-day refresh (inbox + Market Dashboard). Accuracy CI → auto-merge → Pages deploy (retried). |
 | **Manual** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
-| **Deploy workflow** | On push to `main` (and after briefing merge dispatch), GitHub Actions rebuilds and deploys Pages. |
+| **Deploy workflow** | After each merge the orchestrator dispatches Pages (with retries). Safety-net cron at `:50` UTC also redeploys. |
 
 There is **no public Refresh now button**. Visitors always see the latest published briefing.
 
