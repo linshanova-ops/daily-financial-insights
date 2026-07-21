@@ -57,6 +57,12 @@ export function FundView({ data }: { data: FundBundle }) {
         <span className="mx-2 text-line">·</span>
         信源 {data.meta.sourcesChecked}
       </p>
+      {data.meta.lastScan ? (
+        <p className="mt-1.5 text-xs tracking-wide text-ink/40">
+          上次扫描 · 抓取 {data.meta.lastScan.fetched} · 新增{" "}
+          {data.meta.lastScan.newConfirmed} · 待复核 {data.meta.lastScan.review}
+        </p>
+      ) : null}
 
       <div
         role="tablist"
@@ -178,6 +184,11 @@ function FeedTab({
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                   {sig.summary}
                 </p>
+                {sig.summaryEn ? (
+                  <p className="mt-1 text-sm leading-relaxed text-ink/50">
+                    {sig.summaryEn}
+                  </p>
+                ) : null}
                 <p className="mt-2 text-xs tracking-wide text-ink/45">
                   <span className="text-forest">{sig.fund}</span>
                   <span className="mx-2">·</span>
@@ -210,7 +221,20 @@ function FeedTab({
           <ul>
             {data.review.map((item) => (
               <li key={item.id} className="border-t border-line/70 py-4">
-                <p className="font-medium text-ink">{item.title}</p>
+                <p className="font-medium text-ink">
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="focus-ring transition-colors hover:text-forest"
+                    >
+                      {item.title}
+                    </a>
+                  ) : (
+                    item.title
+                  )}
+                </p>
                 <p className="mt-1 text-sm leading-relaxed text-ink-soft">
                   {item.reason}
                 </p>

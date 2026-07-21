@@ -15,10 +15,13 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  bilingualSummary,
+  cleanHeadline,
   confidenceTier,
   formatShanghaiLabel,
   fundAliases,
   parseRssItems,
+  resolvePublisherUrl,
   scoreFundMention,
   signalDedupKey,
   withinHours,
@@ -79,10 +82,6 @@ function toSignalDate(pubDate) {
   if (Number.isNaN(d.getTime())) return formatShanghaiLabel().slice(0, 10).replace(/-/g, ".");
   const label = formatShanghaiLabel(d);
   return label.slice(0, 10);
-}
-
-function zhSummary(title, fundName, tag) {
-  return `${fundName}：${title}（标签：${tag}）。`;
 }
 
 async function collectItems(monitored) {
@@ -171,16 +170,19 @@ function matchItems(items, monitored) {
       continue;
     }
 
-    const tag = guessTag(item.title);
+    const title = cleanHeadline(item.title);
+    const tag = guessTag(title);
+    const { summaryEn, summary } = bilingualSummary(title, best.fund.name, tag);
     const row = {
       id: `sig-${toSignalDate(item.pubDate).replaceAll(".", "")}-${Math.abs(
-        hash(item.title + best.fund.name),
+        hash(title + best.fund.name),
       )
         .toString(36)
         .slice(0, 6)}`,
       date: toSignalDate(item.pubDate),
-      title: item.title,
-      summary: zhSummary(item.title, best.fund.name, tag),
+      title,
+      summary,
+      summaryEn,
       fund: best.fund.name,
       source: item.source,
       tag,
@@ -203,6 +205,27 @@ function matchItems(items, monitored) {
   }
 
   return { confirmed, review };
+}
+
+/** Resolve Google News links to publisher URLs (bounded concurrency). */
+async function resolveSignalHrefs(rows, concurrency = 3) {
+  const need = rows.filter(
+    (r) => r.href && /news\.google\.com/i.test(String(r.href)),
+  );
+  let i = 0;
+  async function worker() {
+    while (i < need.length) {
+      const idx = i++;
+      const row = need[idx];
+      const resolved = await resolvePublisherUrl(row.href, { timeoutMs: 10000 });
+      if (resolved) row.href = resolved;
+    }
+  }
+  await Promise.all(
+    Array.from({ length: Math.min(concurrency, Math.max(need.length, 1)) }, () =>
+      worker(),
+    ),
+  );
 }
 
 function hash(s) {
@@ -287,6 +310,8 @@ async function main() {
   console.log(`[fund-scan] fetched items=${items.length}`);
 
   const { confirmed, review } = matchItems(items, monitored);
+  await resolveSignalHrefs(confirmed);
+  await resolveSignalHrefs(review);
   const { merged, added } = mergeConfirmed(existingSignals, confirmed);
 
   // Drop ephemeral confidence field from persisted confirmed rows
