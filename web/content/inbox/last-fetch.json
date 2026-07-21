@@ -1,0 +1,13 @@
+{
+  "fetchedAt": "2026-07-21T05:40:03.000Z",
+  "status": "ok",
+  "captureCount": 1,
+  "captures": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-21.md",
+      "receivedAt": "2026-07-21T00:00:00.000Z"
+    }
+  ],
+  "skipped": []
+}

@@ -2,8 +2,44 @@
   "date": "2026-07-21",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 20–21, 2026",
-  "publishedAt": "2026-07-21T00:17:35.000Z",
+  "publishedAt": "2026-07-21T05:47:54.000Z",
   "keySources": [
+    {
+      "label": "彭博 Markets Daily China / 财经早茶 (Jul 21)",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "新浪财经 — Jul 21 A-share morning close",
+      "href": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniipxxk4855281.shtml"
+    },
+    {
+      "label": "Caixin — Jul 21 youth unemployment",
+      "href": "https://www.caixinglobal.com/2026-07-21/chinas-youth-jobless-rate-falls-again-in-june-but-labor-pressures-persist-102466368.html"
+    },
+    {
+      "label": "Caixin — Jul 21 insurers equity pledge",
+      "href": "https://www.caixinglobal.com/2026-07-21/chinas-big-insurers-pledge-more-equity-investment-to-steady-market-102466342.html"
+    },
+    {
+      "label": "Caixin — Jul 21 Citi China upgrade",
+      "href": "https://www.caixinglobal.com/2026-07-21/global-banks-turn-more-bullish-on-chinese-stocks-as-south-korea-trade-cools-102466340.html"
+    },
+    {
+      "label": "第一财经 — Jul 21 coast guard",
+      "href": "https://www.yicai.com/news/103285553.html"
+    },
+    {
+      "label": "StatCan — Jun 2026 CPI (Jul 20 release)",
+      "href": "https://www150.statcan.gc.ca/n1/daily-quotidien/260720/dq260720a-eng.htm"
+    },
+    {
+      "label": "White House — Jul 20 Canada Section 338 tariffs",
+      "href": "https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-imposes-additional-tariffs-on-canada/"
+    },
+    {
+      "label": "City AM — Jul 21 Burnham fiscal flexibility",
+      "href": "https://www.cityam.com/borrowing-costs-jump-after-burnham-fiscal-flexibility-remarks/"
+    },
     {
       "label": "CNBC — Jul 20 US close",
       "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
@@ -137,52 +173,52 @@
     },
     {
       "id": "asia-bars",
-      "title": "Jul 20 Shanghai close % change",
+      "title": "Jul 21 China morning session % change",
       "kind": "bars",
       "unit": "%",
-      "note": "Official close — Xinhua Jul 20 (latest China session at publish)",
+      "note": "Morning close — 新浪财经 Jul 21",
       "source": {
-        "label": "Xinhua",
-        "href": "https://english.news.cn/20260720/8641dfcf386c41b38aeae6aab34bb8e6/c.html"
+        "label": "新浪财经",
+        "href": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniipxxk4855281.shtml"
       },
       "points": [
         {
           "label": "Shanghai",
-          "value": 0.85
+          "value": 0.62
         },
         {
           "label": "Shenzhen",
-          "value": -0.71
+          "value": 3.41
         },
         {
           "label": "ChiNext",
-          "value": 0.42
+          "value": 5.2
         },
         {
           "label": "STAR",
-          "value": -2.28
+          "value": 6.94
         }
       ]
     }
   ],
-  "marketTone": "Jul 20 US reopen reversed morning chip relief into a red close (S&P −0.19% to 7,443.28) as Brent settled $89.22 (+1.3%, intraday $91.42) on Trump casualty rhetoric and Houthi Saudi embargo headlines; 10y rose to 4.594%. BTC held ~$65k (one-month high $65,700) despite Goldman PB record tech de-grossing. China still on Jul 20 official close (Shanghai +0.85%) ahead of Jul 21 session; Mag 7 earnings week opens with GM/3M today.",
+  "marketTone": "Jul 21 A-share morning rebound (Shanghai +0.62% to 3,819.66; ChiNext +5.20%; chips/semi led per 新浪财经) contrasts with Jul 20 US risk-off (S&P −0.19% to 7,443.28, Brent $89.22 settle). Burnham/Healey fiscal “flexibility” pushed UK 10y gilts to 5.049%; Canada Jun CPI missed at 2.8% y/y vs 2.9% est. BTC ~$65k; Mag 7 earnings (GM today, Alphabet/Tesla Jul 22).",
   "summary": [
     {
-      "text": "Jul 20 US official close (CNBC): S&P −0.19% to 7,443.28, Nasdaq −0.05% to 25,508.07, Dow −0.59% to 51,839.26 — indices opened higher (S&P +0.5%, Nasdaq +0.8% at the open) then reversed as oil climbed; Apple −2%+ weighed on the Dow.       VanEck Semiconductor ETF (SMH) posted a modest gain and the PHLX Semiconductor Index rose ~0.5% (新浪财经 Jul 21 wrap of Jul 20 close).",
+      "text": "Jul 21 A-share morning close (新浪财经): Shanghai +0.62% to 3,819.66, Shenzhen +3.41% to 14,074.22, ChiNext +5.20% to 3,622.27, STAR +6.94% to 1,837.94; turnover 2.01tn yuan (+330bn vs prior). Chips/semi and算力租赁 led; PBOC Jul 21 net OMO +165亿元 (2530亿元 7d ops − 2365亿元 maturity @ 1.4%).",
+      "sources": [
+        {
+          "label": "新浪财经 Jul 21",
+          "href": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniipxxk4855281.shtml"
+        }
+      ]
+    },
+    {
+      "text": "Jul 20 US official close (CNBC): S&P −0.19% to 7,443.28, Nasdaq −0.05% to 25,508.07, Dow −0.59% to 51,839.26 — morning rally reversed on oil/Middle East; Apple −2%+ weighed. Brent settled $89.22 (+1.3%); 10y 4.594% (+5.3 bp).",
       "sources": [
         {
           "label": "CNBC Jul 20",
           "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
         },
-        {
-          "label": "新浪财经 Jul 21",
-          "href": "https://finance.sina.com.cn/stock/t/2026-07-21/doc-iniiphzn9410816.shtml"
-        }
-      ]
-    },
-    {
-      "text": "Jul 20 oil settle (CNBC): Brent Sep +1.3% at $89.22/bbl (intraday high $91.42); WTI Aug +0.9% at $83.23. Trump Truth Social said Iran will pay for three US service-member deaths; Houthis declared a maritime embargo on Saudi Arabia; Iran FM Baghaei said talks could resume on Tehran's interests — prices eased from session highs.",
-      "sources": [
         {
           "label": "CNBC oil Jul 20",
           "href": "https://www.cnbc.com/2026/07/20/oil-prices-today-brent-wti-crude-us-iran-centcom-hormuz.html"
@@ -190,68 +226,103 @@
       ]
     },
     {
-      "text": "Jul 20 rates (CNBC): 10y Treasury 4.594% (+5.3 bp vs 4.541% prior close), 2y 4.211% (+3 bp), 30y 5.115% (+5 bp) as Middle East escalation offset last week's CPI/PPI relief.",
+      "text": "Jul 21 UK fiscal shock (City AM/Independent): PM Andy Burnham said he would use “flexibility” within existing fiscal rules; 10y gilt yield rose ~8 bp to 5.049% (two-month high). John Healey named Chancellor in surprise move.",
       "sources": [
         {
-          "label": "CNBC Treasury",
-          "href": "https://www.cnbc.com/2026/07/20/treasury-yields-wall-street-iran-war-tensions.html"
+          "label": "City AM Jul 21",
+          "href": "https://www.cityam.com/borrowing-costs-jump-after-burnham-fiscal-flexibility-remarks/"
+        },
+        {
+          "label": "Independent Jul 21",
+          "href": "https://www.independent.co.uk/news/business/andy-burnham-chancellor-rachel-reeves-prime-minister-b3018379.html"
         }
       ]
     },
     {
-      "text": "Jul 20 crypto (CoinDesk/Cointelegraph): BTC touched a one-month high $65,700 then settled ~$65,000–$65,300 at the US close — holding $65k resistance while decoupling modestly from the Jul 17 semi selloff. Jul 21 (BlockBeats): Trump posted a Truth Social video captioned “史上最伟大的比特币解释”.",
+      "text": "Jul 20 Canada (StatCan/White House): Jun CPI +2.8% y/y vs 2.9% est (miss estimate; prior 3.2%); trimmed/median core both below 2% for first time in ~6 years. Trump signed Section 338 proclamations for additional 50% tariffs on many Canadian goods effective Aug 19 (energy/potash/critical minerals exempt).",
+      "sources": [
+        {
+          "label": "StatCan Jun CPI",
+          "href": "https://www150.statcan.gc.ca/n1/daily-quotidien/260720/dq260720a-eng.htm"
+        },
+        {
+          "label": "White House Jul 20",
+          "href": "https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-imposes-additional-tariffs-on-canada/"
+        }
+      ]
+    },
+    {
+      "text": "中国6月全国城镇16—24岁劳动力失业率降至14.9%（彭博 Markets Daily China / 财经早茶 Jul 21； Caixin/NBS Monday release: −0.7 pp from May, third monthly decline). 国务院常务 会议要求确保完成全年经济社会发展目标任务，强化预算管理。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Caixin Jul 21",
+          "href": "https://www.caixinglobal.com/2026-07-21/chinas-youth-jobless-rate-falls-again-in-june-but-labor-pressures-persist-102466368.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 20 crypto (CoinDesk/Cointelegraph): BTC ~$65k (intraday high $65,700). Jul 21 (BlockBeats): Trump Truth Social video captioned “史上最伟大的比特币解释”. Goldman PB record US tech de-grossing (~10% mkt-cap cut, 第一财经 Jul 21).",
       "sources": [
         {
           "label": "CoinDesk Jul 20",
           "href": "https://www.coindesk.com/tech/2026/07/20/live-markets-oil-bounce-and-lingering-ai-selloff-pushes-bitcoin-under-usd64-000"
         },
         {
-          "label": "Cointelegraph Jul 20",
-          "href": "https://cointelegraph.com/markets/bitcoin-defies-recent-tech-stocks-sell-off-are-bulls-eyeing-70k-rally"
-        },
-        {
           "label": "BlockBeats Jul 21",
           "href": "https://www.theblockbeats.info/flash/303712"
-        }
-      ]
-    },
-    {
-      "text": "Jul 21 pre-open (第一财经/Caixin): Goldman PB says hedge funds cut US tech at a record pace — net sellers in six of the past eight weeks, ~10% market-cap reduction since early June; Moonshot AI paused Kimi K3 new sign-ups Jul 19 after demand overwhelmed compute (Caixin Jul 21). Jul 20 China official close unchanged at publish: Shanghai +0.85% to 3,796.28 (Xinhua).",
-      "sources": [
+        },
         {
           "label": "第一财经 Goldman",
           "href": "https://www.yicai.com/news/103284217.html"
-        },
-        {
-          "label": "Caixin Kimi",
-          "href": "https://www.caixinglobal.com/2026-07-21/kimi-k3-demand-surge-forces-moonshot-ai-to-pause-sign-ups-102466370.html"
-        },
-        {
-          "label": "Xinhua Jul 20",
-          "href": "https://english.news.cn/20260720/8641dfcf386c41b38aeae6aab34bb8e6/c.html"
-        }
-      ]
-    },
-    {
-      "text": "Earnings week (GM IR/CNBC): GM Q2 2026 results due Jul 21 ~6:30 a.m. ET (call 8:30 a.m. ET); 3M and Schwab also premarket. Alphabet and Tesla report Jul 22 after the close — first Mag 7 prints since Kimi K3 / SOX bear-market stress.",
-      "sources": [
-        {
-          "label": "GM IR",
-          "href": "https://investor.gm.com/events/event-details/general-motors-company-q2-2026-earnings-conference-call/"
-        },
-        {
-          "label": "CNBC Jul 20",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
         }
       ]
     }
   ],
-  "signal": "Jul 20 Brent $89.22 settle and US index reversal (S&P −0.19% after +0.5% open) keep the oil→Fed chain live into Mag 7 earnings while BTC ~$65k and partial SOX recovery (+0.5%) split the Kimi/semi narrative from institutional tech de-grossing (Goldman PB ~10% cut). Jul 20 PHLX Semi +0.5% (新浪财经).",
-  "watch": "Does Jul 21 GM/Alphabet/Tesla guidance confirm or reject Kimi-driven AI-capex doubts while Brent holds ≥$89 — and can Jul 20 Shanghai +0.85% hold through the US earnings barrage?",
+  "signal": "Jul 21 China morning semi rebound (Shanghai +0.62%, ChiNext +5.20%, STAR +6.94%) diverges from Jul 20 US risk-off (S&P −0.19%, Brent $89.22) and UK gilt selloff (5.049% 10y on Burnham fiscal flexibility). BTC ~$65k holds while Goldman PB ~10% US tech cut and Kimi capacity pause keep AI-capex scrutiny live into Mag 7 earnings.",
+  "watch": "Does Jul 21 chip/semi morning bid (2.01tn yuan turnover) hold through US earnings (GM today, Alphabet/Tesla Jul 22) and Brent ≥$89 — and does late-July Politburo deliver stronger easing signals (Goldman/Bloomberg Jul 21)?",
   "globalRegime": "Fed holds 3.50%–3.75% with Jul 14–15 CPI/PPI misses backward-looking while Jul 20 Brent $89.22 settle (+~20% MTD per CNBC) and 10y 4.594% re-price forward inflation. Jul 20 US equities reversed morning chip relief into a red close (S&P −0.19%); PHLX Semi rose ~0.5% Mon but remains in bear-market territory vs Jun 22 record. Jul 28–29 FOMC and Mag 7 earnings (Alphabet/Tesla Jul 22) are the next hard tests.",
   "globalChanged": [
     {
-      "text": "Jul 20 US official close (CNBC): S&P −0.19% to 7,443.28, Nasdaq −0.05% to 25,508.07, Dow −0.59% to 51,839.26 — morning rally (S&P +0.5%, Nasdaq +0.8%) fully reversed on oil/Middle East headlines; Apple −2%+ dragged the Dow.",
+      "text": "Jul 21 UK (City AM/Independent): Andy Burnham became PM; said he would use “flexibility” within existing fiscal rules; 10y gilt yield rose ~8 bp to 5.049% (two-month high). John Healey named Chancellor (surprise vs Mahmood speculation).",
+      "sources": [
+        {
+          "label": "City AM Jul 21",
+          "href": "https://www.cityam.com/borrowing-costs-jump-after-burnham-fiscal-flexibility-remarks/"
+        },
+        {
+          "label": "Independent Jul 21",
+          "href": "https://www.independent.co.uk/news/business/andy-burnham-chancellor-rachel-reeves-prime-minister-b3018379.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 20 Canada CPI (StatCan): headline +2.8% y/y vs 2.9% est (miss estimate; prior 3.2%); m/m −0.4%. Trimmed CPI 1.8% and median CPI 1.9% — both below 2% for first time in ~6 years.",
+      "sources": [
+        {
+          "label": "StatCan Jun CPI",
+          "href": "https://www150.statcan.gc.ca/n1/daily-quotidien/260720/dq260720a-eng.htm"
+        }
+      ]
+    },
+    {
+      "text": "Jul 20 US–Canada trade (White House/USTR): Trump signed three Section 338 proclamations imposing additional 50% tariffs on ~$20bn Canadian imports (autos, alcohol, dairy lists); effective Aug 19 (30 days). Energy, potash, Section 232 goods, fish, critical minerals exempt.",
+      "sources": [
+        {
+          "label": "White House Jul 20",
+          "href": "https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-imposes-additional-tariffs-on-canada/"
+        },
+        {
+          "label": "USTR Jul 20",
+          "href": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-president-trump-imposing-section-338-tariffs-canada"
+        }
+      ]
+    },
+    {
+      "text": "Jul 20 US official close (CNBC): S&P −0.19% to 7,443.28, Nasdaq −0.05% to 25,508.07, Dow −0.59% to 51,839.26 — morning rally fully reversed on oil/Middle East headlines; Apple −2%+ dragged the Dow.",
       "sources": [
         {
           "label": "CNBC Jul 20",
@@ -338,67 +409,72 @@
     }
   ],
   "globalTensions": "Jul 20 PHLX Semi +0.5% vs S&P −0.19%; BTC ~$65k vs Brent $89.22; Goldman ~10% tech cut vs weekly BTC ETF inflows; Jul 20 Shanghai +0.85% vs Jul 17 −3.05% still diverging from global semi beta.",
-  "chinaStance": "Moderately loose via quantity (Jul 20 net OMO +1745亿元) and explicit state-team equity support, cautious on price — Jul LPR held 3.0%/3.5%; Jul 21 morning brings 1000亿元 treasury cash-deposit maturity (Sina Jul 20 calendar) and continued buyback wave (第一财经: 100+ firms disclosed Jul 20). Kimi K3 demand pause (Caixin Jul 21) keeps domestic AI/semi narrative hot into WAIC week.",
+  "chinaStance": "Moderately loose via quantity (Jul 20 net OMO +1745亿元; Jul 21 net +165亿元 per 新浪财经) and explicit state-team equity support (insurers pledged Jul 20, Caixin Jul 21), cautious on price — Jul LPR held 3.0%/3.5%. State Council growth-target emphasis (Bloomberg inbox Jul 21) and Goldman Politburo easing watch keep fiscal/monetary expectations active.",
   "chinaChanged": [
     {
-      "text": "Jul 21 (Caixin): Moonshot AI halted new Kimi K3 sign-ups Jul 19 after demand for the 2.8T-parameter open-weight model overwhelmed compute — rapid adoption after Jul 17 release continues to pressure AI/semi pricing globally.",
+      "text": "Jul 21 A-share morning close (新浪财经): Shanghai +0.62% to 3,819.66, Shenzhen +3.41%, ChiNext +5.20%, STAR +6.94%; turnover 2.01tn yuan. Chips/semi, 算力租赁 and氧化锆 led; PBOC net OMO +165亿元 (2530 − 2365亿元 @ 1.4%).",
+      "sources": [
+        {
+          "label": "新浪财经 Jul 21",
+          "href": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniipxxk4855281.shtml"
+        }
+      ]
+    },
+    {
+      "text": "中国6月全国城镇16—24岁劳动力失业率降至14.9%（彭博 Markets Daily China / 财经早茶 Jul 21； Caixin/NBS: −0.7 pp from May to 14.9%; overall urban rate 5.0%).",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Caixin Jul 21",
+          "href": "https://www.caixinglobal.com/2026-07-21/chinas-youth-jobless-rate-falls-again-in-june-but-labor-pressures-persist-102466368.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 (Caixin): China Life, PICC, China Pacific, Ping An and New China Life pledged increased long-term equity investment Jul 20 to support the market after last week's losses — extends state-team rescue narrative.",
+      "sources": [
+        {
+          "label": "Caixin insurers",
+          "href": "https://www.caixinglobal.com/2026-07-21/chinas-big-insurers-pledge-more-equity-investment-to-steady-market-102466342.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 (Caixin): Citigroup upgraded Chinese equities to overweight and downgraded South Korea — global banks rotating toward cheaper China AI exposure as Korea trade cools.",
+      "sources": [
+        {
+          "label": "Caixin Citi",
+          "href": "https://www.caixinglobal.com/2026-07-21/global-banks-turn-more-bullish-on-chinese-stocks-as-south-korea-trade-cools-102466340.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 (第一财经): 中国海警局允许菲方从仁爱礁非法坐滩军舰转运伤员（人道主义考虑），同时依法继续维权执法。",
+      "sources": [
+        {
+          "label": "第一财经 Jul 21",
+          "href": "https://www.yicai.com/news/103285553.html"
+        }
+      ]
+    },
+    {
+      "text": "中国国务院常务会议要求确保完成全年经济社会发展目标任务，进一步强化预算管理（彭博 Markets Daily China / 财经早茶 Jul 21）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 (Caixin): Moonshot AI halted new Kimi K3 sign-ups Jul 19 after demand overwhelmed compute — 2.8T-parameter model released Jul 17.",
       "sources": [
         {
           "label": "Caixin Kimi",
           "href": "https://www.caixinglobal.com/2026-07-21/kimi-k3-demand-surge-forces-moonshot-ai-to-pause-sign-ups-102466370.html"
-        }
-      ]
-    },
-    {
-      "text": "Jul 21 (第一财经): Goldman PB record US tech selling (~10% mkt-cap cut in two months) is a cross-read for China AI/semi beta after Kimi K3 — domestic frontier models still drawing users even as onshore semis lagged Jul 20 (STAR −2.28%, Xinhua).",
-      "sources": [
-        {
-          "label": "第一财经",
-          "href": "https://www.yicai.com/news/103284217.html"
-        },
-        {
-          "label": "Xinhua Jul 20",
-          "href": "https://english.news.cn/20260720/8641dfcf386c41b38aeae6aab34bb8e6/c.html"
-        }
-      ]
-    },
-    {
-      "text": "Jul 21 (第一财经): Jul 20 saw 100+ listed firms disclose buyback/increase plans; Jul 2026 YTD ~103 new repurchase programs (>160亿元 ceiling) and 58 increase plans (>100亿元 ceiling) per Wind — insurers (Ping An, PICC, CPIC, New China Life) also pledged larger market support Jul 20.",
-      "sources": [
-        {
-          "label": "第一财经 buybacks",
-          "href": "https://www.yicai.com/news/103284236.html"
-        }
-      ]
-    },
-    {
-      "text": "Jul 20 (华尔街见闻 3776948): 长鑫科技 Changxin DRAM STAR IPO payment day — issue price CNY8.66/share after Jul 16 subscription; proceeds for DRAM capacity and HBM R&D; coincided with Jul 20 turnover 2.70tn yuan.",
-      "sources": [
-        {
-          "label": "华尔街见闻 Changxin",
-          "href": "https://wallstreetcn.com/articles/3776948"
-        }
-      ]
-    },
-    {
-      "text": "Jul 20 official close (Xinhua/21财经): Shanghai +0.85% to 3,796.28, Shenzhen −0.71%, ChiNext +0.42%, STAR −2.28%; turnover 2.70tn yuan; power/coal/liquor led, PCB/memory chips lagged — latest verified China close at morning publish (Jul 21 session not yet closed).",
-      "sources": [
-        {
-          "label": "Xinhua Jul 20",
-          "href": "https://english.news.cn/20260720/8641dfcf386c41b38aeae6aab34bb8e6/c.html"
-        },
-        {
-          "label": "21财经 Jul 20 wrap",
-          "href": "https://m.21jingji.com/article/20260721/herald/c48cf4a663d8b15e8f39d25449843f57.html"
-        }
-      ]
-    },
-    {
-      "text": "Jul 20 (Caixin): China will phase out the consumption-tax exemption on lithium-ion EV batteries — equalizing tax burden vs gasoline vehicles as conventional auto sales weaken.",
-      "sources": [
-        {
-          "label": "Caixin EV tax",
-          "href": "https://www.caixinglobal.com/2026-07-20/china-to-end-key-tax-break-on-lithium-ev-batteries-102466130.html"
         }
       ]
     },
@@ -414,16 +490,16 @@
   ],
   "chinaImplies": [
     {
-      "text": "Kimi K3 sign-up pause confirms domestic demand strength but also compute bottlenecks — supports state-team bid onshore while STAR −2.28% shows semi supply-chain stress persists."
+      "text": "Jul 21 morning semi/chip rebound (ChiNext +5.20%, STAR +6.94%) may signal domestic dip-buying after Kimi stress — watch whether afternoon/full close confirms."
     },
     {
-      "text": "Buyback/increase wave (100+ Jul 20 disclosures) complements Jul 19 state-team announcements — quantity/structural support active without LPR cut."
+      "text": "Youth unemployment 14.9% (third monthly decline) eases near-term labor anxiety but stays above year-ago — Politburo may still lean accommodative."
     },
     {
-      "text": "EV battery tax-break removal (Caixin Jul 20) adds fiscal pressure on the auto supply chain even as Jul 20 liquor/coal leaders lifted Shanghai."
+      "text": "Insurer equity pledges + Citi China upgrade (Jul 21) reinforce state-team bid alongside quantity easing (Jul 21 net OMO +165亿元)."
     }
   ],
-  "chinaDivergences": "Jul 20 Shanghai +0.85% vs STAR −2.28%; Jul 20 PHLX Semi +0.5% vs Jul 17 bear market; BTC ~$65k vs Brent $89.22; Goldman ~10% US tech cut vs China buyback wave; Kimi demand surge vs sign-up pause.",
+  "chinaDivergences": "Jul 21 Shanghai +0.62% morning vs Jul 20 S&P −0.19%; ChiNext +5.20% vs Jul 20 PHLX Semi +0.5%; BTC ~$65k vs Brent $89.22; UK gilts 5.049% vs US 10y 4.594%; Kimi demand surge vs sign-up pause.",
   "assetFramework": [
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
@@ -512,37 +588,33 @@
     },
     {
       "asset": "China equities (Shanghai / ChiNext)",
-      "regime": "State-team stabilization vs global semi-AI beta — event-driven policy pockets",
-      "driver": "Jul 20 official close Shanghai +0.85% to 3,796.28, STAR −2.28%; 100+ buyback/increase disclosures Jul 20 (第一财经); Kimi sign-up pause Jul 19",
+      "regime": "Morning semi/chip rebound vs global AI-beta stress — state-team stabilization active",
+      "driver": "Jul 21 morning Shanghai +0.62% to 3,819.66, ChiNext +5.20%, STAR +6.94%; turnover 2.01tn yuan; insurers pledged equity support Jul 20",
       "driverSources": [
         {
-          "label": "Xinhua Jul 20",
-          "href": "https://english.news.cn/20260720/8641dfcf386c41b38aeae6aab34bb8e6/c.html"
+          "label": "新浪财经 Jul 21",
+          "href": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniipxxk4855281.shtml"
         },
         {
-          "label": "第一财经",
-          "href": "https://www.yicai.com/news/103284236.html"
-        },
-        {
-          "label": "Caixin Kimi",
-          "href": "https://www.caixinglobal.com/2026-07-21/kimi-k3-demand-surge-forces-moonshot-ai-to-pause-sign-ups-102466370.html"
+          "label": "Caixin insurers",
+          "href": "https://www.caixinglobal.com/2026-07-21/chinas-big-insurers-pledge-more-equity-investment-to-steady-market-102466342.html"
         }
       ],
-      "read": "Latest verified close Jul 20 — administrative backstop held Shanghai green but breadth weak; Jul 21 session pending at morning publish",
-      "invalidator": "Shanghai closes below 3,750 on rising volume with SOX falling another −3%"
+      "read": "Jul 21 morning chip bounce diverges from Jul 20 US risk-off — full-day confirmation pending; breadth strong in semis/算力租赁",
+      "invalidator": "Shanghai closes below 3,750 on rising volume with US Mag 7 missing estimates"
     },
     {
       "asset": "CNY",
       "regime": "PBOC fix as policy signal; quantity easing without price easing",
-      "driver": "Jul 20 net OMO +1745亿元; LPR hold 3.0%/3.5%; Jul 21 1000亿元 treasury cash-deposit maturity (Sina calendar); Brent $89.22",
+      "driver": "Jul 21 net OMO +165亿元 (2530 − 2365亿元 @ 1.4%); Jul 20 net +1745亿元; LPR hold 3.0%/3.5%; Brent $89.22",
       "driverSources": [
+        {
+          "label": "新浪财经 Jul 21",
+          "href": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniipxxk4855281.shtml"
+        },
         {
           "label": "21财经 Jul 20",
           "href": "https://m.21jingji.com/article/20260721/herald/c48cf4a663d8b15e8f39d25449843f57.html"
-        },
-        {
-          "label": "第一财经 LPR",
-          "href": "https://www.yicai.com/news/103281884.html"
         },
         {
           "label": "CNBC oil",
@@ -575,6 +647,36 @@
     }
   ],
   "signals": [
+    {
+      "grade": "STRONG",
+      "name": "Jul 21 China morning semi rebound (ChiNext +5.20%)",
+      "evidence": "新浪财经 Jul 21 morning: Shanghai +0.62% to 3,819.66, ChiNext +5.20%, STAR +6.94%; turnover 2.01tn yuan; chips/semi and算力租赁 led.",
+      "evidenceSources": [
+        {
+          "label": "新浪财经 Jul 21",
+          "href": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniipxxk4855281.shtml"
+        }
+      ],
+      "mechanism": "Domestic dip-buying in semis after Kimi/global AI stress — tests whether morning bid survives US Mag 7 earnings and Brent ≥$89.",
+      "disprovedIf": "Shanghai closes below 3,750 within five sessions with ChiNext giving back >50% of morning gain."
+    },
+    {
+      "grade": "STRONG",
+      "name": "UK gilt selloff on Burnham fiscal flexibility (5.049% 10y)",
+      "evidence": "City AM/Independent Jul 21: Burnham said he would use flexibility within fiscal rules; 10y gilt 5.049% (+8 bp, two-month high); Healey named Chancellor.",
+      "evidenceSources": [
+        {
+          "label": "City AM Jul 21",
+          "href": "https://www.cityam.com/borrowing-costs-jump-after-burnham-fiscal-flexibility-remarks/"
+        },
+        {
+          "label": "Independent Jul 21",
+          "href": "https://www.independent.co.uk/news/business/andy-burnham-chancellor-rachel-reeves-prime-minister-b3018379.html"
+        }
+      ],
+      "mechanism": "Early fiscal-risk repricing in G7 long-end adds to oil-driven inflation premium ahead of Jul 28–29 FOMC.",
+      "disprovedIf": "10y gilt yield falls below 4.85% for three sessions without oil relief."
+    },
     {
       "grade": "STRONG",
       "name": "Jul 20 Brent $89.22 settle after $91.42 intraday",
@@ -669,6 +771,26 @@
   "watchItems": [
     {
       "priority": "HIGH",
+      "headline": "Jul 21 China morning semi bid vs US earnings",
+      "why": "STRONG morning chip rebound diverges from Jul 20 US risk-off.",
+      "watch": "Shanghai 3,819.66 morning level; GM Q2 ~6:30 a.m. ET Jul 21; Alphabet/Tesla Jul 22; Brent ≥$89.",
+      "trigger": "Shanghai closes below 3,750 while S&P also breaks 7,400.",
+      "invalidator": "Shanghai holds 3,800+ with Mag 7 capex guides stable.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "HIGH",
+      "headline": "Burnham/Healey fiscal path — UK 10y 5.049%",
+      "why": "STRONG gilt selloff on day-one flexibility comments.",
+      "watch": "First budget steps; 10y gilt vs US 10y spread; pound vs USD.",
+      "trigger": "10y gilt closes above 5.15% for two sessions.",
+      "invalidator": "Burnham explicitly caps borrowing below current OBR path.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "HIGH",
       "headline": "Mag 7 earnings — GM today, Alphabet/Tesla Jul 22",
       "why": "STRONG AI-capex falsifier after Kimi K3 and Goldman ~10% tech cut.",
       "watch": "GM Q2 ~6:30 a.m. ET Jul 21; Alphabet/Tesla Jul 22 after close; capex and cloud margin commentary.",
@@ -718,10 +840,10 @@
       "status": "new"
     }
   ],
-  "sources": "CNBC (Jul 20 US close, Brent/WTI settle, Treasury yields), CoinDesk / Cointelegraph (Jul 20 BTC), BlockBeats/律动 (303712 Jul 21 Trump BTC), 第一财经 (Jul 21 Goldman PB, buyback wave), Caixin Global (Jul 21 Kimi K3, Jul 20 EV battery tax), 华尔街见闻 (3776948 Changxin payment Jul 20), Xinhua (Jul 20 A-share close), 21财经 (Jul 20/21 market wrap), GM IR (Jul 21 earnings calendar).",
-  "singleSource": "Rejected BlockBeats 303605/303615 (BTC $120k/$118k flashes — wrong-year/stale vs Jul 2026 ~$65k tape). Rejected 华尔街见闻 3751205/3751275/3751638 (2025 stale wraps). Jul 21 China session not yet closed at morning publish (08:17 Beijing) — latest A-share close remains Jul 20. No inbox newsletters captured this run (last-fetch ok, 0 captures). Glassnode Insights not merged — no on-chain data in coverage window.",
+  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 新浪财经 (Jul 21 morning A-share close), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), 第一财经 (Jul 21 coast guard, Goldman PB), BlockBeats/律动 (303712 Jul 21 Trump BTC), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury), CoinDesk/Cointelegraph (Jul 20 BTC), GM IR (earnings calendar).",
+  "singleSource": "Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels). Rejected 华尔街见闻 3751205/3751275/3751515 (2025 stale API year on Jul 2026 sweep — full A/H close unverified; using 2026-dated 新浪财经 morning print). Youth unemployment 14.9% via Caixin/NBS; NBS English H1 release lists overall 5.0% only. EU AliExpress €550mn fine omitted (Bloomberg inbox only, no standalone primary). Glassnode Insights not merged — no fresh on-chain capture this run.",
   "marketDashboard": {
-    "asOf": "2026-07-21T00:18:43.386Z",
+    "asOf": "2026-07-21T05:46:14.831Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -767,8 +889,8 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "64,496.62",
-            "change": "+0.55%",
+            "latest": "65,873.86",
+            "change": "+2.70%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -779,10 +901,10 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "24,562.24",
-            "change": "−1.78%",
+            "latest": "25,129.53",
+            "change": "−0.05%",
             "changeDirection": "down",
-            "asOfDate": "2026-07-17",
+            "asOfDate": "2026-07-21",
             "source": {
               "label": "Yahoo Finance (^HSI)",
               "href": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -791,10 +913,10 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,752.15",
+            "latest": "4,807.95",
             "change": null,
             "changeDirection": "flat",
-            "asOfDate": "2026-07-20",
+            "asOfDate": "2026-07-21",
             "source": {
               "label": "Yahoo Finance (HSTECH.HK)",
               "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
@@ -803,10 +925,10 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,764.16",
-            "change": "−3.05%",
-            "changeDirection": "down",
-            "asOfDate": "2026-07-17",
+            "latest": "3,832.21",
+            "change": "+0.95%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-21",
             "source": {
               "label": "Yahoo Finance (000001.SS)",
               "href": "https://finance.yahoo.com/quote/000001.SS/"
@@ -875,8 +997,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "162.4880",
-            "change": "−0.01%",
+            "latest": "162.4790",
+            "change": "−0.02%",
             "changeDirection": "down",
             "asOfDate": "2026-07-21",
             "source": {
@@ -887,10 +1009,10 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7574",
-            "change": "−0.22%",
+            "latest": "6.7645",
+            "change": "−0.12%",
             "changeDirection": "down",
-            "asOfDate": "2026-07-20",
+            "asOfDate": "2026-07-21",
             "source": {
               "label": "Yahoo Finance (CNY=X)",
               "href": "https://finance.yahoo.com/quote/CNY%3DX/"
@@ -899,9 +1021,9 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,009.30",
-            "change": "−0.08%",
-            "changeDirection": "down",
+            "latest": "$4,065.40",
+            "change": "+1.37%",
+            "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
               "label": "Yahoo Finance (GC=F)",
@@ -911,9 +1033,9 @@
           {
             "id": "brent",
             "asset": "Brent crude",
-            "latest": "$88.87",
-            "change": "+0.87%",
-            "changeDirection": "up",
+            "latest": "$88.62",
+            "change": "−0.67%",
+            "changeDirection": "down",
             "asOfDate": "2026-07-21",
             "source": {
               "label": "Yahoo Finance (BZ=F)",
@@ -923,8 +1045,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$65,164",
-            "change": "+0.29%",
+            "latest": "$65,584",
+            "change": "+2.29%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
