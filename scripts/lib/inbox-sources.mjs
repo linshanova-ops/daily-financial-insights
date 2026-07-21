@@ -133,6 +133,18 @@ export function isPlaceholderInboxCapture(markdown = "") {
   return isWelcomeNewsletter(subject, body);
 }
 
+/**
+ * Agent generate sometimes rewrote IMAP bodies into "## Mergeable sections".
+ * Those captures lose raw headers like 今日图表 — always prefer a fresh IMAP save.
+ */
+export function isAgentReformattedInboxCapture(markdown = "") {
+  const body = stripInboxFrontmatter(markdown);
+  return (
+    /##\s*Mergeable sections/i.test(body) ||
+    /Captured for briefing merge/i.test(body)
+  );
+}
+
 export function stripInboxFrontmatter(markdown = "") {
   const raw = String(markdown);
   if (!raw.startsWith("---")) return raw.trim();

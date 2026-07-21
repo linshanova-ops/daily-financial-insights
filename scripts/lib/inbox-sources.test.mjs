@@ -2,12 +2,15 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import {
   formatBloombergForPrompt,
+  hasBloombergChartOfDay,
+  normalizeBloombergSectionBreaks,
   parseBloombergSections,
 } from "./inbox-bloomberg-sections.mjs";
 import {
   extractBloombergDateKey,
   formatInboxMarkdown,
   inboxRelPath,
+  isAgentReformattedInboxCapture,
   isPlaceholderInboxCapture,
   isWelcomeNewsletter,
   isoWeekKey,
@@ -148,6 +151,10 @@ describe("extractBloombergDateKey", () => {
 describe("parseBloombergSections", () => {
   const sample = `开场一两句。
 
+今日图表
+高盛对冲基金美股科技仓位降至多年低位
+过去两个月对冲基金撤离美股科技的速度创纪录，反映对估值与政策不确定性的避险。
+
 全球市况
 标普500指数涨1%
 纳斯达克涨2%
@@ -168,9 +175,10 @@ A股反弹
 央行逆回购
 `;
 
-  it("splits labeled sections", () => {
+  it("splits labeled sections including 今日图表", () => {
     const sections = parseBloombergSections(sample);
     const ids = sections.map((s) => s.id);
+    assert.ok(ids.includes("chartOfDay"));
     assert.ok(ids.includes("globalTape"));
     assert.ok(ids.includes("international"));
     assert.ok(ids.includes("greaterChina"));
@@ -179,12 +187,57 @@ A股反弹
     assert.ok(ids.includes("policy"));
   });
 
-  it("fences tape in prompt format", () => {
+  it("fences tape and requires figures mapping for 今日图表", () => {
     const out = formatBloombergForPrompt(sample);
+    assert.match(out, /今日图表 → Figures/);
+    assert.match(out, /kind: insight/);
+    assert.match(out, /高盛对冲基金/);
     assert.match(out, /Mergeable sections/);
     assert.match(out, /国际要闻/);
     assert.match(out, /CROSS-CHECK ONLY/);
     assert.match(out, /标普500/);
+  });
+
+  it("recovers 今日图表 when HTML collapsed headers onto one line", () => {
+    const collapsed =
+      "开场。 今日图表 高盛科技仓位降至低位 反映避险。 国际要闻 美联储讲话 大中华新闻 A股反弹 经济数据日程 明日CPI";
+    const normalized = normalizeBloombergSectionBreaks(collapsed);
+    assert.match(normalized, /\n今日图表\n/);
+    assert.match(normalized, /\n国际要闻\n/);
+    assert.match(normalized, /\n大中华新闻\n/);
+    const sections = parseBloombergSections(collapsed);
+    const ids = sections.map((s) => s.id);
+    assert.ok(ids.includes("chartOfDay"));
+    assert.ok(ids.includes("international"));
+    assert.ok(ids.includes("greaterChina"));
+    assert.ok(hasBloombergChartOfDay(collapsed));
+    const chart = sections.find((s) => s.id === "chartOfDay");
+    assert.match(chart.body, /高盛科技仓位/);
+  });
+});
+
+describe("isAgentReformattedInboxCapture", () => {
+  it("detects Mergeable-sections rewrites that drop raw headers", () => {
+    const md = `---
+sourceId: bloomberg-markets-daily-china
+---
+
+# Bloomberg Markets Daily China — 2026-07-21
+
+Captured for briefing merge.
+
+## Mergeable sections
+
+### 国际要闻
+- 一条新闻
+`;
+    assert.equal(isAgentReformattedInboxCapture(md), true);
+    assert.equal(
+      isAgentReformattedInboxCapture(
+        `---\nsourceId: x\n---\n\n今日图表\n高盛仓位\n`,
+      ),
+      false,
+    );
   });
 });
 

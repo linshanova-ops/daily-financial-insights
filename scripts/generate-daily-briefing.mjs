@@ -137,6 +137,10 @@ FAIL-CLOSED PUBLISH (critical):
      (section map when labeled; otherwise use Chinese bullets carefully).
      **Keep Chinese text Chinese** for bullets whose primary cite is this newsletter.
      Do NOT use 全球市况 tape to replace Market Dashboard numbers.
+     **今日图表 (REQUIRED when present in inbox):** add a figures[] entry
+     \`id: bloomberg-chart-of-day\`, \`kind: insight\`, with \`title\` + required
+     \`analysis\` (one clear so-what). Keep Chinese if the section is Chinese.
+     Optional \`display\`/\`delta\` only when a hard number is stated — never invent.
    - Glassnode Insights / Week on Chain (weekly, usually Tuesday): merge into crypto
      assetFramework / signals / watch when on-chain color is relevant.
      Ignore webinar / "Now live" promos (fetcher already drops them).
@@ -149,6 +153,8 @@ FAIL-CLOSED PUBLISH (critical):
    ${formatInboxPromptBlock(inboxItems, inboxFetchStatus)}
    If inbox files exist under web/content/inbox/ (including last-fetch.json), include
    them in the PR commit for audit.
+   Do NOT rewrite or reformat web/content/inbox/** bodies — commit the IMAP capture
+   bytes as fetched (so 今日图表 and other sections stay intact for the next run).
 
 2. Pre-publish accuracy gate (ALL required):
    (a) each index move is that index's official close;
@@ -175,6 +181,8 @@ FAIL-CLOSED PUBLISH (critical):
    { text, sources: [{ label, href }] } pointing at the original primary post.
    assetFramework covers all eight canonical assets. If a figure cannot be verified, omit
    it and note rejected bad cites in singleSource/caveats.
+   figures[] may include kind: stat | bars | insight. When inbox has 今日图表, include
+   kind: insight (id bloomberg-chart-of-day) with analysis.
    If today's file already exists, update it with the latest developments instead of skipping.
 
 4. Market Dashboard (required): from web/, run
