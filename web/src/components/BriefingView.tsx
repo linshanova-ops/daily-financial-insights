@@ -13,6 +13,7 @@ import { MarketDashboard } from "./MarketDashboard";
 import { MarketOverview } from "./MarketOverview";
 import { SinceLastBriefing } from "./SinceLastBriefing";
 import { SectionNav } from "./SectionNav";
+import { DetailTabs } from "./DetailTabs";
 
 interface BriefingViewProps {
   briefing: Briefing;
@@ -46,6 +47,19 @@ export function BriefingView({
         showCta={showHeroCta}
         variant={heroVariant}
       />
+      <div id="skim" className="scroll-mt-28">
+        <ExecutiveSummary
+          summary={briefing.summary}
+          signal={briefing.signal}
+          watch={briefing.watch}
+        />
+      </div>
+      {changesSincePrevious ? (
+        <SinceLastBriefing
+          previousDate={previousDate}
+          changes={changesSincePrevious}
+        />
+      ) : null}
       <SectionNav
         hasFigures={figures.length > 0}
         hasMarketOverview={hasMarketOverview}
@@ -62,50 +76,49 @@ export function BriefingView({
       ) : null}
       {figures.length ? <KeyFigures figures={figures} /> : null}
       <KeySources sources={briefing.keySources} />
-      {changesSincePrevious ? (
-        <SinceLastBriefing
-          previousDate={previousDate}
-          changes={changesSincePrevious}
-        />
-      ) : null}
-      <ExecutiveSummary
-        summary={briefing.summary}
-        signal={briefing.signal}
-        watch={briefing.watch}
-      />
-      <SituationBlock
-        id="global-situation"
-        eyebrow="Global situation"
-        title="World regime and today's delta"
-        stanceLabel="Regime"
-        stance={briefing.globalRegime}
-        changed={briefing.globalChanged}
-        implies={briefing.globalImplies}
-        tensionsLabel="Tensions"
-        tensions={briefing.globalTensions}
-        accent="azure"
-        band
-      />
-      <SituationBlock
-        id="china-situation"
-        eyebrow="China situation"
-        title="Policy stance and domestic pulse"
-        stanceLabel="Policy stance"
-        stance={briefing.chinaStance}
-        changed={briefing.chinaChanged}
-        implies={briefing.chinaImplies}
-        tensionsLabel="Divergences to watch"
-        tensions={briefing.chinaDivergences}
-        accent="crimson"
-      />
-      {briefing.assetFramework?.length ? (
-        <AssetFramework assets={briefing.assetFramework} />
-      ) : null}
-      <SignalList signals={briefing.signals} />
-      <WatchList items={briefing.watchItems} />
-      <SourcesCaveats
-        sources={briefing.sources}
-        singleSource={briefing.singleSource}
+      <DetailTabs
+        panels={{
+          global: (
+            <SituationBlock
+              id="global-situation"
+              eyebrow="Global situation"
+              title="World regime and today's delta"
+              stanceLabel="Regime"
+              stance={briefing.globalRegime}
+              changed={briefing.globalChanged}
+              implies={briefing.globalImplies}
+              tensionsLabel="Tensions"
+              tensions={briefing.globalTensions}
+              accent="azure"
+              band
+            />
+          ),
+          china: (
+            <SituationBlock
+              id="china-situation"
+              eyebrow="China situation"
+              title="Policy stance and domestic pulse"
+              stanceLabel="Policy stance"
+              stance={briefing.chinaStance}
+              changed={briefing.chinaChanged}
+              implies={briefing.chinaImplies}
+              tensionsLabel="Divergences to watch"
+              tensions={briefing.chinaDivergences}
+              accent="crimson"
+            />
+          ),
+          assets: briefing.assetFramework?.length ? (
+            <AssetFramework assets={briefing.assetFramework} />
+          ) : null,
+          signals: <SignalList signals={briefing.signals} />,
+          watch: <WatchList items={briefing.watchItems} />,
+          sources: (
+            <SourcesCaveats
+              sources={briefing.sources}
+              singleSource={briefing.singleSource}
+            />
+          ),
+        }}
       />
     </>
   );
