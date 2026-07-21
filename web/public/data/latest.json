@@ -2,7 +2,7 @@
   "date": "2026-07-21",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 20–21, 2026",
-  "publishedAt": "2026-07-21T12:06:46.000Z",
+  "publishedAt": "2026-07-21T12:46:35.000Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 21)",
@@ -1117,7 +1117,7 @@
     ]
   },
   "marketDashboard": {
-    "asOf": "2026-07-21T12:06:56.085Z",
+    "asOf": "2026-07-21T12:46:48.371Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -1151,8 +1151,8 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "17.75",
-            "change": "−4.83%",
+            "latest": "17.87",
+            "change": "−4.18%",
             "changeDirection": "down",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1271,8 +1271,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "162.7540",
-            "change": "+0.15%",
+            "latest": "162.7740",
+            "change": "+0.16%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1295,8 +1295,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,061.40",
-            "change": "+1.27%",
+            "latest": "$4,060.50",
+            "change": "+1.25%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1307,8 +1307,8 @@
           {
             "id": "brent",
             "asset": "Brent crude",
-            "latest": "$90.72",
-            "change": "+1.68%",
+            "latest": "$90.89",
+            "change": "+1.87%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1319,8 +1319,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$66,225",
-            "change": "+2.23%",
+            "latest": "$66,475",
+            "change": "+2.87%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
