@@ -1,13 +1,32 @@
 {
-  "fetchedAt": "2026-07-21T05:40:03.000Z",
-  "status": "ok",
-  "captureCount": 1,
-  "captures": [
+  "at": "2026-07-21T06:57:40.329Z",
+  "briefingDate": "2026-07-21",
+  "ok": true,
+  "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-21.md",
-      "receivedAt": "2026-07-21T00:00:00.000Z"
+      "subject": "彭博财经早茶：智谱数据中心；特朗普对伊施压",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5002,
+      "mailbox": "INBOX"
     }
   ],
-  "skipped": []
+  "skipped": [
+    {
+      "reason": "unmatched",
+      "subject": "Now live: Charting Crypto with Coinbase Institutional",
+      "from": "\"Glassnode\" <insights@glassnode.com>"
+    },
+    {
+      "reason": "welcome",
+      "subject": "Welcome to Glassnode Insights",
+      "from": "\"Glassnode\" <insights@glassnode.com>"
+    },
+    {
+      "reason": "unmatched",
+      "subject": "You've subscribed!",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
+    }
+  ]
 }

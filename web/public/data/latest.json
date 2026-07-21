@@ -2,7 +2,7 @@
   "date": "2026-07-21",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 20–21, 2026",
-  "publishedAt": "2026-07-21T06:36:31.000Z",
+  "publishedAt": "2026-07-21T07:05:00.000Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 21)",
@@ -75,6 +75,10 @@
     {
       "label": "Caixin — Jul 20 EV battery tax break",
       "href": "https://www.caixinglobal.com/2026-07-20/china-to-end-key-tax-break-on-lithium-ev-batteries-102466130.html"
+    },
+    {
+      "label": "BlockBeats — Trump BTC video Jul 21",
+      "href": "https://www.theblockbeats.info/flash/303712"
     },
     {
       "label": "华尔街见闻 — Changxin IPO Jul 16",
@@ -261,7 +265,7 @@
       ]
     },
     {
-      "text": "Jul 20 crypto (CoinDesk/Cointelegraph): BTC ~$65k (intraday high $65,700). Goldman PB record US tech de-grossing (~10% mkt-cap cut, 第一财经 Jul 21).",
+      "text": "Jul 20–21 crypto: BTC ~$65k at Jul 20 US close (CoinDesk/Cointelegraph). Jul 21 (BlockBeats 303712): Trump posted Truth Social video titled「史上最伟大的比特币解释」. Goldman PB record US tech de-grossing (~10% mkt-cap cut, 第一财经 Jul 21).",
       "sources": [
         {
           "label": "CoinDesk Jul 20",
@@ -270,6 +274,10 @@
         {
           "label": "Cointelegraph Jul 20",
           "href": "https://cointelegraph.com/markets/bitcoin-defies-recent-tech-stocks-sell-off-are-bulls-eyeing-70k-rally"
+        },
+        {
+          "label": "BlockBeats Jul 21",
+          "href": "https://www.theblockbeats.info/flash/303712"
         },
         {
           "label": "第一财经 Goldman",
@@ -367,7 +375,7 @@
       ]
     },
     {
-      "text": "Jul 20 crypto (CoinDesk/Cointelegraph): BTC one-month high $65,700 intraday, ~$65,000–$65,300 at US close — decoupling modestly from Nasdaq while oil stayed firm; Strategy raised $263M via stock sale the prior week (Cointelegraph).",
+      "text": "Jul 20 crypto (CoinDesk/Cointelegraph): BTC one-month high $65,700 intraday, ~$65,000–$65,300 at US close — decoupling modestly from Nasdaq while oil stayed firm; Strategy raised $263M via stock sale the prior week (Cointelegraph). Jul 21 (BlockBeats 303712): Trump Truth Social BTC video.",
       "sources": [
         {
           "label": "CoinDesk",
@@ -376,6 +384,10 @@
         {
           "label": "Cointelegraph",
           "href": "https://cointelegraph.com/markets/bitcoin-defies-recent-tech-stocks-sell-off-are-bulls-eyeing-70k-rally"
+        },
+        {
+          "label": "BlockBeats Jul 21",
+          "href": "https://www.theblockbeats.info/flash/303712"
         }
       ]
     },
@@ -663,7 +675,7 @@
     {
       "asset": "Bitcoin",
       "regime": "High-beta global liquidity asset in the oil→AI-capex chain",
-      "driver": "CoinDesk/Cointelegraph Jul 20 BTC ~$65k (high $65,700); Goldman ~10% US tech cut",
+      "driver": "CoinDesk/Cointelegraph Jul 20 BTC ~$65k (high $65,700); BlockBeats 303712 Trump BTC video Jul 21; Goldman ~10% US tech cut",
       "driverSources": [
         {
           "label": "CoinDesk",
@@ -672,9 +684,13 @@
         {
           "label": "Cointelegraph",
           "href": "https://cointelegraph.com/markets/bitcoin-defies-recent-tech-stocks-sell-off-are-bulls-eyeing-70k-rally"
+        },
+        {
+          "label": "BlockBeats Jul 21",
+          "href": "https://www.theblockbeats.info/flash/303712"
         }
       ],
-      "read": "Split tape — $65k hold vs Brent $89.22 and tech de-grossing",
+      "read": "Split tape — $65k–$66k hold vs Brent $89.22 and tech de-grossing; Trump BTC headline adds political/crypto crossover bid",
       "invalidator": "BTC closes below $62,500 for three sessions with weekly ETF flows negative"
     }
   ],
@@ -883,9 +899,9 @@
     }
   ],
   "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 新浪财经 (Jul 21 A-share morning), 第一财经 (Jul 21 semi V, Goldman PB, coast guard), 华尔街见闻 (3776521 Changxin IPO), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury/earnings calendar), CoinDesk/Cointelegraph (Jul 20 BTC).",
-  "singleSource": "Omitted BlockBeats Jul 21 flashes (303710/303712 — CI unreachable; no triangulated alt). Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels). Rejected 华尔街见闻 3751205/3751275/3751515/3751638/3751711 (2025 stale API year on Jul 2026 sweep — A/H close unverified; using 2026-dated 新浪财经 morning print). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only (no standalone primary beyond Bloomberg Asia hub). Glassnode Insights not merged — no fresh on-chain capture this run. 21财经 OMO wrap unreachable — PBOC net OMO from 新浪财经 Jul 21 morning article.",
+  "singleSource": "Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels; news/59062 Polymarket page dates 2025). Rejected 华尔街见闻 3751205/3751275/3751515/3751638/3751711 (2025 stale API year on Jul 2026 sweep — A/H close unverified; using 2026-dated 新浪财经 morning print). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only (no standalone primary beyond Bloomberg Asia hub). Glassnode Insights not merged — no fresh on-chain capture this run. 21财经 OMO wrap unreachable — PBOC net OMO from 新浪财经 Jul 21 morning article. No 今日图表 in Bloomberg inbox this run — bloomberg-chart-of-day figure omitted.",
   "marketDashboard": {
-    "asOf": "2026-07-21T06:35:07.046Z",
+    "asOf": "2026-07-21T07:04:55.153Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -931,8 +947,8 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "65,979.69",
-            "change": "+2.87%",
+            "latest": "66,232.19",
+            "change": "+3.26%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -943,8 +959,8 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,149.32",
-            "change": "+0.02%",
+            "latest": "25,156.80",
+            "change": "+0.05%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -955,7 +971,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,819.52",
+            "latest": "4,821.94",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-07-21",
@@ -967,8 +983,8 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,850.14",
-            "change": "+1.42%",
+            "latest": "3,858.09",
+            "change": "+1.63%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1039,7 +1055,7 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "162.5280",
+            "latest": "162.5360",
             "change": "+0.01%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
@@ -1051,8 +1067,8 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7650",
-            "change": "−0.11%",
+            "latest": "6.7632",
+            "change": "−0.14%",
             "changeDirection": "down",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1063,8 +1079,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,078.30",
-            "change": "+1.70%",
+            "latest": "$4,084.50",
+            "change": "+1.85%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1075,8 +1091,8 @@
           {
             "id": "brent",
             "asset": "Brent crude",
-            "latest": "$88.42",
-            "change": "−0.90%",
+            "latest": "$88.52",
+            "change": "−0.78%",
             "changeDirection": "down",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1087,8 +1103,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$65,821",
-            "change": "+2.90%",
+            "latest": "$65,879",
+            "change": "+3.10%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
