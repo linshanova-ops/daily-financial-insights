@@ -89,7 +89,9 @@ async function listCandidateMailboxes(client) {
   /** @type {string[]} */
   const out = ["INBOX"];
   try {
-    for await (const box of client.list()) {
+    // imapflow: list() returns Promise<MailboxObject[]>, not an async iterable
+    const boxes = await client.list();
+    for (const box of boxes || []) {
       const pathName = box.path || box.name || "";
       if (!pathName || pathName === "INBOX") continue;
       const lower = pathName.toLowerCase();
