@@ -153,6 +153,8 @@ FAIL-CLOSED PUBLISH (critical):
    ${formatInboxPromptBlock(inboxItems, inboxFetchStatus)}
    If inbox files exist under web/content/inbox/ (including last-fetch.json), include
    them in the PR commit for audit.
+   Do NOT rewrite or reformat web/content/inbox/** bodies — commit the IMAP capture
+   bytes as fetched (so 今日图表 and other sections stay intact for the next run).
 
 2. Pre-publish accuracy gate (ALL required):
    (a) each index move is that index's official close;
