@@ -1,0 +1,12 @@
+{
+  "title": "对冲基金信息监控",
+  "subtitle": "追踪专业信源，对全球 AUM Top 100 对冲基金管理机构进行语境匹配、时效校验与人工可复核的置信度分层。",
+  "updatedAt": "2026-07-21T19:33:00+08:00",
+  "updatedAtLabel": "2026.07.21 19:33",
+  "timezone": "Asia / Shanghai",
+  "sourcesChecked": "3/3",
+  "sourcesNote": "1 个信源仅索引可用",
+  "scanWindow": "每日扫描过去 72 小时 · 命中永久归档",
+  "phase": 1,
+  "phaseNote": "v1 is content-driven. Live source scan (Approach 3) comes in phase 2."
+}
