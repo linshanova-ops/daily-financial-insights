@@ -1,0 +1,405 @@
+{
+  "note": "Admin: add/remove fund ranks (or names) here. Deploy via PR. Visitors cannot edit.",
+  "funds": [
+    {
+      "rank": 1,
+      "name": "Citadel Investment Group"
+    },
+    {
+      "rank": 2,
+      "name": "Ares Management"
+    },
+    {
+      "rank": 3,
+      "name": "Balyasny Asset Management"
+    },
+    {
+      "rank": 4,
+      "name": "Oracle Investment Management"
+    },
+    {
+      "rank": 5,
+      "name": "Rokos Capital Management"
+    },
+    {
+      "rank": 6,
+      "name": "Point72 Asset Management"
+    },
+    {
+      "rank": 7,
+      "name": "Millennium Capital Partners"
+    },
+    {
+      "rank": 8,
+      "name": "Squarepoint Capital"
+    },
+    {
+      "rank": 9,
+      "name": "D. E. Shaw"
+    },
+    {
+      "rank": 10,
+      "name": "Alphadyne Asset Management"
+    },
+    {
+      "rank": 11,
+      "name": "ExodusPoint Capital Management"
+    },
+    {
+      "rank": 12,
+      "name": "Two Sigma International"
+    },
+    {
+      "rank": 13,
+      "name": "Two Sigma Investments"
+    },
+    {
+      "rank": 14,
+      "name": "Garda Capital"
+    },
+    {
+      "rank": 15,
+      "name": "Goldman Sachs Asset Management"
+    },
+    {
+      "rank": 16,
+      "name": "Mariner Investment Group"
+    },
+    {
+      "rank": 17,
+      "name": "Angelo Gordon"
+    },
+    {
+      "rank": 18,
+      "name": "Bridgewater Associates"
+    },
+    {
+      "rank": 19,
+      "name": "Renaissance Technologies"
+    },
+    {
+      "rank": 20,
+      "name": "Lighthouse Investment Partners"
+    },
+    {
+      "rank": 21,
+      "name": "Bracebridge Capital"
+    },
+    {
+      "rank": 22,
+      "name": "Cerberus Capital Management"
+    },
+    {
+      "rank": 23,
+      "name": "AQR Capital Management"
+    },
+    {
+      "rank": 24,
+      "name": "Tudor Investment Corporation"
+    },
+    {
+      "rank": 25,
+      "name": "Capula Investment Management"
+    },
+    {
+      "rank": 26,
+      "name": "Fortress Investment Group"
+    },
+    {
+      "rank": 27,
+      "name": "Viking Global Investors"
+    },
+    {
+      "rank": 28,
+      "name": "Tiger Global Management"
+    },
+    {
+      "rank": 29,
+      "name": "Coatue Management"
+    },
+    {
+      "rank": 30,
+      "name": "Adage Capital Management"
+    },
+    {
+      "rank": 31,
+      "name": "Brevan Howard Asset Management"
+    },
+    {
+      "rank": 32,
+      "name": "Stone Point Capital"
+    },
+    {
+      "rank": 33,
+      "name": "III Capital"
+    },
+    {
+      "rank": 34,
+      "name": "Farallon Capital Management"
+    },
+    {
+      "rank": 35,
+      "name": "Och-Ziff Capital Management"
+    },
+    {
+      "rank": 36,
+      "name": "Sculptor Capital Management"
+    },
+    {
+      "rank": 37,
+      "name": "GoldenTree Asset Management"
+    },
+    {
+      "rank": 38,
+      "name": "Polar Asset Management Partners"
+    },
+    {
+      "rank": 39,
+      "name": "Man Group"
+    },
+    {
+      "rank": 40,
+      "name": "Davidson Kempner Capital Management"
+    },
+    {
+      "rank": 41,
+      "name": "Tenaron Capital Management"
+    },
+    {
+      "rank": 42,
+      "name": "Element Capital Management"
+    },
+    {
+      "rank": 43,
+      "name": "Oaktree Capital Management"
+    },
+    {
+      "rank": 44,
+      "name": "Holocene Advisors"
+    },
+    {
+      "rank": 45,
+      "name": "Silver Point Capital"
+    },
+    {
+      "rank": 46,
+      "name": "Centerbridge Partners"
+    },
+    {
+      "rank": 47,
+      "name": "Symmetry Investments"
+    },
+    {
+      "rank": 48,
+      "name": "Voloridge Investment Management"
+    },
+    {
+      "rank": 49,
+      "name": "Field Street Capital Management"
+    },
+    {
+      "rank": 50,
+      "name": "Hudson Bay Capital Management"
+    },
+    {
+      "rank": 51,
+      "name": "BlackRock Alternative Advisors"
+    },
+    {
+      "rank": 52,
+      "name": "Marshall Wace"
+    },
+    {
+      "rank": 53,
+      "name": "Apollo Capital"
+    },
+    {
+      "rank": 54,
+      "name": "King Street Capital Management"
+    },
+    {
+      "rank": 55,
+      "name": "Paskewitz Asset Management"
+    },
+    {
+      "rank": 56,
+      "name": "Lansdowne Partners"
+    },
+    {
+      "rank": 57,
+      "name": "Pictet Alternative Investments"
+    },
+    {
+      "rank": 58,
+      "name": "Alyeska Investment Group"
+    },
+    {
+      "rank": 59,
+      "name": "Select Equity"
+    },
+    {
+      "rank": 60,
+      "name": "Cheyne Capital"
+    },
+    {
+      "rank": 61,
+      "name": "Graham Capital Management"
+    },
+    {
+      "rank": 62,
+      "name": "Kayne Anderson Capital Advisors"
+    },
+    {
+      "rank": 63,
+      "name": "Polar Capital Partners"
+    },
+    {
+      "rank": 64,
+      "name": "HBK Capital Management"
+    },
+    {
+      "rank": 65,
+      "name": "Moore Capital Management"
+    },
+    {
+      "rank": 66,
+      "name": "Lyxor Asset Management"
+    },
+    {
+      "rank": 67,
+      "name": "Ruffer"
+    },
+    {
+      "rank": 68,
+      "name": "Wellington Management"
+    },
+    {
+      "rank": 69,
+      "name": "Capstone Investment Advisors"
+    },
+    {
+      "rank": 70,
+      "name": "TCI Fund Management"
+    },
+    {
+      "rank": 71,
+      "name": "Benefit Street Partners"
+    },
+    {
+      "rank": 72,
+      "name": "Magnetar Capital"
+    },
+    {
+      "rank": 73,
+      "name": "Pine River Capital Management"
+    },
+    {
+      "rank": 74,
+      "name": "Willis Towers Watson"
+    },
+    {
+      "rank": 75,
+      "name": "Baupost Group"
+    },
+    {
+      "rank": 76,
+      "name": "Strategic Value Partners"
+    },
+    {
+      "rank": 77,
+      "name": "Onex Credit Partners"
+    },
+    {
+      "rank": 78,
+      "name": "Woodline Partners"
+    },
+    {
+      "rank": 79,
+      "name": "Horsley Bridge Partners"
+    },
+    {
+      "rank": 80,
+      "name": "RAM Active Investments"
+    },
+    {
+      "rank": 81,
+      "name": "Haidar Capital Management"
+    },
+    {
+      "rank": 82,
+      "name": "Diameter Capital Partners"
+    },
+    {
+      "rank": 83,
+      "name": "Gopher Asset Management"
+    },
+    {
+      "rank": 84,
+      "name": "Wafra Investment Group"
+    },
+    {
+      "rank": 85,
+      "name": "Paloma Partners"
+    },
+    {
+      "rank": 86,
+      "name": "Brigade Capital Management"
+    },
+    {
+      "rank": 87,
+      "name": "Marathon Asset Management"
+    },
+    {
+      "rank": 88,
+      "name": "Lone Pine Capital"
+    },
+    {
+      "rank": 89,
+      "name": "Beach Point Capital Management"
+    },
+    {
+      "rank": 90,
+      "name": "Arrowstreet Capital"
+    },
+    {
+      "rank": 91,
+      "name": "Stockbridge"
+    },
+    {
+      "rank": 92,
+      "name": "Third Point"
+    },
+    {
+      "rank": 93,
+      "name": "Guggenheim Capital Markets"
+    },
+    {
+      "rank": 94,
+      "name": "Appaloosa Management"
+    },
+    {
+      "rank": 95,
+      "name": "Hillhouse Capital"
+    },
+    {
+      "rank": 96,
+      "name": "Alpha Wave Global"
+    },
+    {
+      "rank": 97,
+      "name": "BFAM Partners"
+    },
+    {
+      "rank": 98,
+      "name": "Grantham, Mayo, Van Otterloo"
+    },
+    {
+      "rank": 99,
+      "name": "Pershing Square Capital Management"
+    },
+    {
+      "rank": 100,
+      "name": "Alcentra"
+    }
+  ]
+}

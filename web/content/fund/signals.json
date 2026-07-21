@@ -1,0 +1,90 @@
+[
+  {
+    "id": "sig-20260710-01",
+    "date": "2026.07.10",
+    "title": "Qube expands beyond quant roots with launch of fundamental equity portfolio management team",
+    "summary": "Qube Research & Technologies 扩展量化业务边界，组建基本面股票投资组合管理团队。",
+    "fund": "Qube Research & Technologies",
+    "source": "Hedgeweek",
+    "tag": "组织 / 产品",
+    "status": "confirmed",
+    "href": null
+  },
+  {
+    "id": "sig-20260709-02",
+    "date": "2026.07.09",
+    "title": "Verition parts company with quant portfolio manager",
+    "summary": "Verition 与一名量化投资组合经理结束合作，属于多经理平台的人事变动信号。",
+    "fund": "Verition Fund Management",
+    "source": "Hedgeweek",
+    "tag": "人员变动",
+    "status": "confirmed",
+    "href": null
+  },
+  {
+    "id": "sig-20260708-03",
+    "date": "2026.07.08",
+    "title": "Balyasny hires power strategist Alexander Dalsgaard in Singapore",
+    "summary": "Balyasny 在新加坡扩充电力交易团队，显示其亚洲商品与能源能力继续加码。",
+    "fund": "Balyasny Asset Management",
+    "source": "Hedgeweek",
+    "tag": "招聘 / 亚洲",
+    "status": "confirmed",
+    "href": null
+  },
+  {
+    "id": "sig-20260707-04",
+    "date": "2026.07.07",
+    "title": "Smaller hedge funds outperform multistrategy giants in H1 2026",
+    "summary": "2026 年上半年，小型对冲基金整体表现领先部分大型多策略平台。",
+    "fund": "Industry Signal",
+    "source": "With Intelligence",
+    "tag": "业绩",
+    "status": "confirmed",
+    "href": null
+  },
+  {
+    "id": "sig-20260703-05",
+    "date": "2026.07.03",
+    "title": "Jain Global rebounds as Millennium partnership moves closer",
+    "summary": "Jain Global 业绩反弹，与 Millennium 的合作讨论进一步推进。",
+    "fund": "Millennium Capital Partners",
+    "source": "With Intelligence",
+    "tag": "合作 / 业绩",
+    "status": "confirmed",
+    "href": null
+  },
+  {
+    "id": "sig-20260702-06",
+    "date": "2026.07.02",
+    "title": "Point72 leads multi-PM giants at midyear as firms capitalise on June volatility",
+    "summary": "Point72 在多经理平台年中业绩比较中居前，6 月波动为策略贡献收益。",
+    "fund": "Point72 Asset Management",
+    "source": "Hedgeweek",
+    "tag": "业绩",
+    "status": "confirmed",
+    "href": null
+  },
+  {
+    "id": "sig-20260630-07",
+    "date": "2026.06.30",
+    "title": "Millennium targets at least $10bn in new capital raise",
+    "summary": "Millennium 据报计划募集至少 100 亿美元新资金，募资规模构成重要容量信号。",
+    "fund": "Millennium Capital Partners",
+    "source": "Reuters",
+    "tag": "募资",
+    "status": "confirmed",
+    "href": null
+  },
+  {
+    "id": "sig-20260626-08",
+    "date": "2026.06.26",
+    "title": "Elliott alumni establish new generation of activist hedge funds",
+    "summary": "Elliott 前员工创办的新一代激进投资机构开始形成可观察的生态。",
+    "fund": "Elliott Investment Management",
+    "source": "P&I",
+    "tag": "人员 / 新基金",
+    "status": "confirmed",
+    "href": null
+  }
+]

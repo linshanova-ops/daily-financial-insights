@@ -1,0 +1,16 @@
+[
+  {
+    "id": "rev-01",
+    "title": "大型资管机构季度 AUM 更新",
+    "reason": "仅命中集团名称，未确认是否涉及对冲基金业务。",
+    "confidence": "42%",
+    "status": "review"
+  },
+  {
+    "id": "rev-02",
+    "title": "量化基金招聘需求上升",
+    "reason": "行业级文章，尚未与 Top 100 中单一机构形成强关联。",
+    "confidence": "36%",
+    "status": "review"
+  }
+]
