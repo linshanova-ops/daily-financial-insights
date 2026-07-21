@@ -139,7 +139,8 @@ FAIL-CLOSED PUBLISH (critical):
      merge **all** labeled sections into China / Global / Assets / Watch / Figures.
      Do NOT treat it as a China-only source or drop 国际要闻 / 市场一览 / 日程 / 央行动态.
      Section map: 国际要闻→globalChanged (every bullet); 大中华新闻→chinaChanged (every
-     bullet); 市场一览→summary/assetFramework drivers; 经济数据日程+央行和政府动态→watchItems;
+     bullet); 市场一览→marketOverview.items[] (structured label/text above Market closes —
+     never dump as a Global/China prose blob); 经济数据日程+央行和政府动态→watchItems;
      今日图表→figures insight; 全球市况→cross-check only (never replace marketDashboard).
      **Keep Chinese text Chinese** for bullets whose primary cite is this newsletter.
      **今日图表 (REQUIRED when present in inbox):** add a figures[] entry
@@ -156,8 +157,8 @@ FAIL-CLOSED PUBLISH (critical):
      If the newsletter fence below contains "## 今日图表 → Figures (REQUIRED)", you MUST
      add that insight figure — do not skip it.
      Coverage self-check before finishing: every 国际要闻 and 大中华新闻 bullet appears
-     (or is explicitly noted as duplicate of a stronger primary cite); 市场一览 themes
-     appear in summary/drivers; calendar/policy items appear in watchItems.
+     (or is explicitly noted as duplicate of a stronger primary cite); 市场一览 is in
+     marketOverview (not Global/China); calendar/policy items appear in watchItems.
    - Glassnode Insights / Week on Chain (weekly, usually Tuesday): merge into crypto
      assetFramework / signals / watch when on-chain color is relevant.
      Ignore webinar / "Now live" promos (fetcher already drops them).
@@ -203,6 +204,8 @@ FAIL-CLOSED PUBLISH (critical):
    it and note rejected bad cites in singleSource/caveats.
    figures[] may include kind: stat | bars | insight. When inbox has 今日图表 / chartImage,
    include kind: insight (id bloomberg-chart-of-day) with analysis and imageSrc.
+   When inbox has 市场一览, populate marketOverview { asOfDate, items[{label,text}], source }
+   with Chinese desk color — shown above Market closes. Do not invent prints.
    Include web/public/inbox-charts/** in the commit when those files exist.
    If today's file already exists, update it with the latest developments instead of skipping.
 

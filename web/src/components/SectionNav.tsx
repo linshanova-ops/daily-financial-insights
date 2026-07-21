@@ -1,7 +1,8 @@
 "use client";
 
 const sections = [
-  { href: "#market-dashboard", label: "Markets" },
+  { href: "#market-overview", label: "Tape" },
+  { href: "#market-dashboard", label: "Closes" },
   { href: "#key-figures", label: "Figures" },
   { href: "#executive-summary", label: "Summary" },
   { href: "#global-situation", label: "Global" },
@@ -14,15 +15,18 @@ const sections = [
 
 interface SectionNavProps {
   hasFigures?: boolean;
+  hasMarketOverview?: boolean;
   hasMarketDashboard?: boolean;
 }
 
 export function SectionNav({
   hasFigures = false,
+  hasMarketOverview = false,
   hasMarketDashboard = false,
 }: SectionNavProps) {
   const items = sections.filter((item) => {
     if (item.href === "#key-figures") return hasFigures;
+    if (item.href === "#market-overview") return hasMarketOverview;
     if (item.href === "#market-dashboard") return hasMarketDashboard;
     return true;
   });

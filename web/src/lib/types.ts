@@ -104,6 +104,26 @@ export interface MarketDashboard {
   groups: MarketDashboardGroup[];
 }
 
+/** One desk-color line from Bloomberg 市场一览 (qualitative tape, not closes). */
+export interface MarketOverviewItem {
+  /** Short sleeve label, e.g. 美国股市 / 外汇市场. */
+  label: string;
+  /** Chinese desk color from the email — keep as sourced. */
+  text: string;
+}
+
+/**
+ * Morning desk tape from 彭博 市场一览 — qualitative color above Market closes.
+ * Values must come from the inbox newsletter (never invent levels).
+ */
+export interface MarketOverview {
+  /** Briefing / email calendar day (YYYY-MM-DD). */
+  asOfDate: string;
+  note?: string;
+  items: MarketOverviewItem[];
+  source: FactSource;
+}
+
 export interface BriefingFrontmatter {
   date: string;
   title: string;
@@ -118,6 +138,11 @@ export interface BriefingFrontmatter {
   keySources?: KeySource[];
   /** Optional accurate key figures for visual strip (never invent values). */
   figures?: BriefingFigure[];
+  /**
+   * Qualitative 市场一览 desk color from 彭博 daily email.
+   * Shown above Market closes — not a substitute for marketDashboard prints.
+   */
+  marketOverview?: MarketOverview;
   /**
    * Market closes tape (indices / yields / FX / commodities / crypto).
    * Populated at generate time by fetch-market-closes.mjs — not live on the page.

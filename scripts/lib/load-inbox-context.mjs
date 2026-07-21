@@ -120,7 +120,7 @@ function formatOneInboxItem(item, index) {
 ${langRule}
 ${citeRule}
 ${chartRule}
-FULL COVERAGE: merge **all** newsletter sections (国际要闻 + 大中华新闻 + 市场一览 + 日程/央行动态 + 今日图表) into Global/China/Assets/Watch/Figures — not China-only cherry-picks. Add this source to keySources when used.
+FULL COVERAGE: merge **all** newsletter sections — 国际要闻→Global, 大中华→China, 市场一览→marketOverview (above closes, not Global/China dump), 日程/央行动态→Watch, 今日图表→Figures. Add this source to keySources when used.
 
 \`\`\`newsletter
 ${prepared}

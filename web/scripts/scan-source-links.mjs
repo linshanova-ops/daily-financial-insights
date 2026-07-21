@@ -818,7 +818,7 @@ function loadClaimGroups() {
     if (Array.isArray(data.figures)) {
       data.figures.forEach((fig, i) => {
         if (!fig?.source?.href) return;
-        let text = [fig.title, fig.display, fig.delta]
+        let text = [fig.title, fig.display, fig.delta, fig.analysis]
           .filter(Boolean)
           .join(" ");
         if (Array.isArray(fig.points)) {
@@ -826,6 +826,13 @@ function loadClaimGroups() {
         }
         addGroup(`${file}.figures[${i}]`, text, [fig.source]);
       });
+    }
+
+    if (data.marketOverview?.source?.href && Array.isArray(data.marketOverview.items)) {
+      const text = data.marketOverview.items
+        .map((it) => `${it?.label || ""} ${it?.text || ""}`)
+        .join(" ");
+      addGroup(`${file}.marketOverview`, text, [data.marketOverview.source]);
     }
 
     if (Array.isArray(data.assetFramework)) {

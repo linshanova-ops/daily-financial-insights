@@ -47,7 +47,8 @@ export const BLOOMBERG_SECTION_DEFS = [
   {
     id: "marketOverview",
     title: "市场一览",
-    mergeTo: "assetFramework drivers",
+    mergeTo:
+      "marketOverview.items[] (REQUIRED when present) — above Market closes; NOT globalChanged/chinaChanged",
     patterns: [/^市场一览/],
   },
   {
@@ -204,7 +205,7 @@ export function formatBloombergForPrompt(text, { maxSectionChars = 3500 } = {}) 
       "Merge every labeled section below into the briefing modules:\n" +
       "- 国际要闻 → globalChanged (cover **all** bullets: geopolitics, UK/US/Canada, M&A, tech/AI corporate, not just China-adjacent)\n" +
       "- 大中华新闻 → chinaChanged (cover **all** bullets)\n" +
-      "- 市场一览 → summary and/or assetFramework drivers (keep Chinese; color for US/Europe/FX/energy/metals/ADR)\n" +
+      "- 市场一览 → marketOverview.items[] (label + Chinese text; place above Market closes — do NOT dump into Global/China)\n" +
       "- 经济数据日程 + 央行和政府动态 → watch / watchItems\n" +
       "- 今日图表 → figures[] insight (imageSrc when present)\n" +
       "- 全球市况 → CROSS-CHECK ONLY (never overwrite marketDashboard)\n" +
