@@ -55,14 +55,6 @@
     {
       "label": "华尔街见闻 — Kimi/Goldman Jul 17",
       "href": "https://wallstreetcn.com/articles/3777230"
-    },
-    {
-      "label": "BlockBeats — Base App Jul 17",
-      "href": "https://www.theblockbeats.info/news/59003"
-    },
-    {
-      "label": "BlockBeats — Arkham Jul 18",
-      "href": "https://www.theblockbeats.info/flash/157221"
     }
   ],
   "figures": [
@@ -238,19 +230,6 @@
           "href": "https://wallstreetcn.com/articles/3777230"
         }
       ]
-    },
-    {
-      "text": "Jul 17–18 crypto: Coinbase relaunched Coinbase Wallet as The Base App with Flashblocks (BlockBeats Jul 17); Arkham ARKM airdrop opened Jul 18 with 2,554 on-chain transfers (BlockBeats flash 157221).",
-      "sources": [
-        {
-          "label": "BlockBeats Base",
-          "href": "https://www.theblockbeats.info/news/59003"
-        },
-        {
-          "label": "BlockBeats Arkham",
-          "href": "https://www.theblockbeats.info/flash/157221"
-        }
-      ]
     }
   ],
   "signal": "Kimi K3 'DeepSeek 2.0' fears pushed SOX into a bear market and synced Jul 17 Shanghai −3.05% with Nasdaq −1.4% — open-weight Chinese frontier models are now a falsifiable drag on global AI capex multiples, not just a local headline.",
@@ -405,24 +384,6 @@
         {
           "label": "华尔街见闻 breakfast",
           "href": "https://wallstreetcn.com/articles/3777268"
-        }
-      ]
-    },
-    {
-      "text": "BlockBeats (Jul 17): Coinbase Wallet rebranded as The Base App with Flashblocks (200ms blocks) — Base shifts from pure L2 infrastructure to platform operator model.",
-      "sources": [
-        {
-          "label": "BlockBeats Base",
-          "href": "https://www.theblockbeats.info/news/59003"
-        }
-      ]
-    },
-    {
-      "text": "BlockBeats (Jul 18): Arkham ARKM airdrop claim opened; on-chain contract showed 2,554 transfer records.",
-      "sources": [
-        {
-          "label": "BlockBeats Arkham",
-          "href": "https://www.theblockbeats.info/flash/157221"
         }
       ]
     }
@@ -741,8 +702,8 @@
       "status": "continuing"
     }
   ],
-  "sources": "Straits Times/Reuters (Jul 17 US close; SOX bear market; Netflix), CNBC (Jul 17 Brent/WTI settle; Treasury yields; Michigan sentiment), 华尔街见闻 (3777268 Jul 18 breakfast; spot gold), Yahoo Finance (SOX close), CoinDesk + Cointelegraph (BTC Jul 17), Xinhua + 第一财经 (Jul 17 A-share close), Caixin Global (WAICO Jul 17), 华尔街见闻 (3777268 Jul 18 breakfast; 3777230 Kimi/Goldman Jul 17; 3777236 Morgan Stanley Jul 17; 3777234 MIIT Jul 17), BlockBeats/律动 (59003 Base App Jul 17; flash 157221 Arkham Jul 18), Reuters/KFGO (June housing starts Jul 17).",
-  "singleSource": "Rejected AP Jul 17 S&P level 7,475.69 (typo vs −76.08pt move from 7,533.77 — use Straits Times 7,457.69). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). Rejected wallstreetcn 3772569 Trump Iran postpone cite — page references 'Jul 18 Monday' inconsistent with Jul 18 2026 Saturday; omitted until primary-dated confirmation. Michigan survey >70% pre-strike caveat from 华尔街见闻 3777241/3777268, not primary U.Mich page.",
+  "sources": "Straits Times/Reuters (Jul 17 US close; SOX bear market; Netflix), CNBC (Jul 17 Brent/WTI settle; Treasury yields; Michigan sentiment), 华尔街见闻 (3777268 Jul 18 breakfast; spot gold), Yahoo Finance (SOX close), CoinDesk + Cointelegraph (BTC Jul 17), Xinhua + 第一财经 (Jul 17 A-share close), Caixin Global (WAICO Jul 17), 华尔街见闻 (3777268 Jul 18 breakfast; 3777230 Kimi/Goldman Jul 17; 3777236 Morgan Stanley Jul 17; 3777234 MIIT Jul 17), Reuters/KFGO (June housing starts Jul 17).",
+  "singleSource": "Omitted BlockBeats 59003/157221 (CI unreachable). Rejected AP Jul 17 S&P level 7,475.69 (typo vs −76.08pt move from 7,533.77 — use Straits Times 7,457.69). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). Rejected wallstreetcn 3772569 Trump Iran postpone cite — page references 'Jul 18 Monday' inconsistent with Jul 18 2026 Saturday; omitted until primary-dated confirmation. Michigan survey >70% pre-strike caveat from 华尔街见闻 3777241/3777268, not primary U.Mich page.",
   "marketDashboard": {
     "asOf": "2026-07-18T15:33:06.351Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",

@@ -33,10 +33,6 @@
       "href": "https://www.coindesk.com/markets/2026/07/18/massive-bitcoin-call-spreads-target-usd72-000-by-month-end-right-when-the-fed-meets"
     },
     {
-      "label": "BlockBeats — BTC ETF weekly flows Jul 19",
-      "href": "https://www.theblockbeats.info/flash/303598"
-    },
-    {
       "label": "Xinhua — Jul 17 A-share close",
       "href": "https://english.news.cn/20260717/aeadf5ff51084a3cb257e9175030db2d/c.html"
     },
@@ -96,18 +92,6 @@
       "source": {
         "label": "华尔街见闻 breakfast",
         "href": "https://wallstreetcn.com/articles/3777268"
-      }
-    },
-    {
-      "id": "btc-etf-week",
-      "title": "US spot BTC ETF weekly net inflow",
-      "kind": "stat",
-      "display": "23.86亿美元",
-      "delta": "Week to Jul 19 · IBIT +25.69亿美元",
-      "note": "BlockBeats / Farside Jul 19",
-      "source": {
-        "label": "BlockBeats ETF",
-        "href": "https://www.theblockbeats.info/flash/303598"
       }
     },
     {
@@ -219,12 +203,8 @@
       ]
     },
     {
-      "text": "Jul 19 crypto (BlockBeats/CoinDesk): US spot Bitcoin ETF weekly net inflow 23.86亿美元 weekly net inflow (IBIT +25.69亿美元; other ETFs net −1.83亿美元); Deribit traders bought $2.5bn notional Jul 31 $70k/$72k call spreads (CoinDesk Jul 18, BTC $64,679.71 cited).",
+      "text": "Jul 19 crypto (CoinDesk Jul 18): Deribit traders bought $2.5bn notional Jul 31 $70k/$72k bull call spreads ahead of the Fed meeting.",
       "sources": [
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
-        },
         {
           "label": "CoinDesk BTC",
           "href": "https://www.coindesk.com/markets/2026/07/18/massive-bitcoin-call-spreads-target-usd72-000-by-month-end-right-when-the-fed-meets"
@@ -254,7 +234,7 @@
     }
   ],
   "signal": "Weekend Gulf escalation after Jul 17 Brent $88.10 and SOX bear-market confirmation — Kuwait/Jordan infrastructure hits and Jul 19 US troop deaths re-arm the oil→Fed channel ahead of Monday's reopen and Jul 28–29 FOMC.",
-  "watch": "Does Monday Brent gap above $88.10 with Hormuz crossings still depressed — while SOX holds above 11,500 — or does 23.86亿美元 weekly BTC ETF inflow signal a risk-on reopen despite the weekend strikes?",
+  "watch": "Does Monday Brent gap above $88.10 with Hormuz crossings still depressed — while SOX holds above 11,500 — or does Deribit call spreads signal a risk-on reopen despite the weekend strikes?",
   "globalRegime": "Fed holds 3.50%–3.75% with a speaker split (Logan hawkish Jul 16 vs Williams dovish Jul 15) while forward inflation risk re-accelerated: Brent settled $88.10 Jul 17 (+15.90% on the week, 华尔街见闻 breakfast) before a Jul 18–19 weekend of US-Iran strikes on Kuwait/Jordan infrastructure and Jul 19 CENTCOM retaliation. Jul 17 US equities posted broad weekly losses (Nasdaq −2.9%) as Kimi K3 reignited AI-capex doubts — SOX entered a bear market (−20.2% from Jun 22 high). Markets are closed Jul 18–19; weekend geopolitics is the delta.",
   "globalChanged": [
     {
@@ -328,15 +308,11 @@
       ]
     },
     {
-      "text": "Jul 18–19 crypto (CoinDesk/BlockBeats): Deribit $2.5bn notional Jul 31 $70k/$72k bull call spreads (CoinDesk, BTC $64,679.71); week to Jul 19 US spot BTC ETF net inflow 23.86亿美元 (BlockBeats/Farside, IBIT +25.69亿美元).",
+      "text": "Jul 18–19 crypto (CoinDesk Jul 18): Deribit $2.5bn notional Jul 31 $70k/$72k bull call spreads ahead of the Fed meeting.",
       "sources": [
         {
           "label": "CoinDesk",
-          "href": "https://www.coindesk.com/markets/2026/07/18/massive-bitcoin-call-spreads-target-usd72-000-by-month-end-right-when-the-fed-meets"
-        },
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
+          "href": "https://www.coindesk.com/markets/2026/07/18/massive-bitcoin-call-spreads-target-usd72-000-by-month-end-right-when-the-fed-meets'"
         }
       ]
     }
@@ -352,7 +328,7 @@
       "text": "Michigan 54.4 beat is stale vs Jul 17 oil spike and Jul 18–19 escalation — expect sentiment to soften before the final July print if Brent holds ≥$88."
     }
   ],
-  "globalTensions": "Jul 17 SOX bear market vs 23.86亿美元 weekly BTC ETF inflow; Michigan 54.4 beat vs Brent +15.90% on week and weekend Kuwait/Jordan hits; 10y eased Jul 17 while 2y rose; Kimi K3 open-weight threat vs Jul 31 Deribit $72k call spreads betting on Fed hold.",
+  "globalTensions": "Jul 17 SOX bear market vs Deribit call spreads; Michigan 54.4 beat vs Brent +15.90% on week and weekend Kuwait/Jordan hits; 10y eased Jul 17 while 2y rose; Kimi K3 open-weight threat vs Jul 31 Deribit $72k call spreads betting on Fed hold.",
   "chinaStance": "Moderately loose via structural AI support and outbound-investment expansion, cautious on price — Jul 17 onshore plunge (−3.05% Shanghai) shows global semi/AI beta still dominates; Jul 18 Caixin reports new QDII quotas and battery-tax pivot toward next-gen chemistries; no Jul 19 PBOC fix (weekend).",
   "chinaChanged": [
     {
@@ -407,15 +383,6 @@
           "href": "https://www.yicai.com/brief/103280878.html"
         }
       ]
-    },
-    {
-      "text": "Jul 19 (BlockBeats): US spot Bitcoin ETF weekly net inflow 23.86亿美元 (IBIT +25.69亿美元) — institutional bid persists despite Jul 17 onshore/global risk-off.",
-      "sources": [
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
-        }
-      ]
     }
   ],
   "chinaImplies": [
@@ -429,7 +396,7 @@
       "text": "Weekend Gulf escalation adds import-inflation risk for Monday A-share reopen — watch whether Jul 17 power/bank defensive rotation extends or global semi beta dominates again."
     }
   ],
-  "chinaDivergences": "Jul 17 WAIC/WAICO policy showcase vs Shanghai −3.05%; 23.86亿美元 weekly BTC ETF inflow vs Jul 17 onshore −3.05%; QDII expansion plan vs tight Q2 quota freeze; COMEX gold +0.68% Jul 17 vs SOX bear market.",
+  "chinaDivergences": "Jul 17 WAIC/WAICO policy showcase vs Shanghai −3.05%; Deribit call spreads inflow vs Jul 17 onshore −3.05%; QDII expansion plan vs tight Q2 quota freeze; COMEX gold +0.68% Jul 17 vs SOX bear market.",
   "assetFramework": [
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
@@ -569,15 +536,11 @@
     {
       "asset": "Bitcoin",
       "regime": "High-beta global liquidity asset in the oil→AI-capex chain",
-      "driver": "CoinDesk Jul 18 BTC $64,679.71; BlockBeats Jul 19 weekly ETF inflow 23.86亿美元; Jul 17 SOX bear market and sub-$62.5k Wall St open (Cointelegraph Jul 17)",
+      "driver": "CoinDesk Jul 18 Deribit $2.5bn call spreads; Jul 17 SOX bear market and sub-$62.5k Wall St open (Cointelegraph Jul 17)",
       "driverSources": [
         {
           "label": "CoinDesk",
           "href": "https://www.coindesk.com/markets/2026/07/18/massive-bitcoin-call-spreads-target-usd72-000-by-month-end-right-when-the-fed-meets"
-        },
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
         },
         {
           "label": "Cointelegraph Jul 17",
@@ -650,13 +613,9 @@
     },
     {
       "grade": "MODERATE",
-      "name": "BTC ETF weekly inflow 23.86亿美元 vs risk-off tape",
-      "evidence": "BlockBeats Jul 19: weekly net inflow 23.86亿美元 (IBIT +25.69亿美元); CoinDesk Jul 18: $2.5bn Deribit Jul 31 $70k/$72k call spreads, BTC $64,679.71.",
+      "name": "Deribit $2.5bn call spreads vs risk-off tape",
+      "evidence": "CoinDesk Jul 18: $2.5bn Deribit Jul 31 $70k/$72k call spreads.",
       "evidenceSources": [
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
-        },
         {
           "label": "CoinDesk",
           "href": "https://www.coindesk.com/markets/2026/07/18/massive-bitcoin-call-spreads-target-usd72-000-by-month-end-right-when-the-fed-meets"
@@ -747,7 +706,7 @@
     },
     {
       "priority": "MEDIUM",
-      "headline": "BTC ETF 23.86亿美元 weekly inflow vs Jul 31 $72k call spreads",
+      "headline": "Deribit $2.5bn call spreads vs Jul 31 $72k strikes",
       "why": "MODERATE crypto divergence from Jul 17 risk-off.",
       "watch": "Weekly ETF flow update; Deribit Jul 31 spread open interest; BTC vs $64,679.71 CoinDesk Jul 18 cite.",
       "trigger": "ETF inflows continue while BTC holds $65k through Monday despite SOX −3%.",
@@ -756,7 +715,7 @@
       "status": "new"
     }
   ],
-  "sources": "AP (Jul 19 US airstrikes), BBC (Jul 18–19 US/Iran exchange), Straits Times (Jul 17 US close; SOX bear market), CNBC (Jul 17 Brent/WTI settle; Treasury yields; Michigan sentiment), 华尔街见闻 (3777268 Jul 18 breakfast; spot gold/Brent weekly), CoinDesk (Jul 18 BTC call spreads), Cointelegraph (Jul 17 BTC sub-$62.5k), BlockBeats/律动 (303598 Jul 19 ETF flows), Xinhua + 第一财经 (Jul 17 A-share close; Jul 18 wrap), Caixin Global (Jul 18 QDII/battery/AI certs), 华尔街见闻 (3777268 Jul 18 breakfast).",
+  "sources": "AP (Jul 19 US airstrikes), BBC (Jul 18–19 US/Iran exchange), Straits Times (Jul 17 US close; SOX bear market), CNBC (Jul 17 Brent/WTI settle; Treasury yields; Michigan sentiment), 华尔街见闻 (3777268 Jul 18 breakfast; spot gold/Brent weekly), CoinDesk (Jul 18 BTC call spreads), Cointelegraph (Jul 17 BTC sub-$62.5k), Xinhua + 第一财经 (Jul 17 A-share close; Jul 18 wrap), Caixin Global (Jul 18 QDII/battery/AI certs), 华尔街见闻 (3777268 Jul 18 breakfast).",
   "singleSource": "Rejected BlockBeats 303605/303615 (BTC $120k/$118k liquidation flashes — wrong-year/stale vs Jul 2026 ~$64k tape; triangulate with CoinDesk/Cointelegraph only). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). No Jul 19 华尔街见闻 breakfast published at generate time — used Jul 18 3777268 within 72h window. Michigan >70% pre-strike caveat from 华尔街见闻 3777268, not primary U.Mich page.",
   "marketDashboard": {
     "asOf": "2026-07-19T07:53:22.238Z",
