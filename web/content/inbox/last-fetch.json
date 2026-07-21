@@ -1,20 +1,20 @@
 {
-  "at": "2026-07-21T07:21:36.092Z",
+  "at": "2026-07-21T12:01:06.060Z",
   "briefingDate": "2026-07-21",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-21.md",
-      "subject": "彭博财经早茶：智谱数据中心；特朗普对伊施压",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5002,
-      "mailbox": "INBOX",
-      "chartImage": "/inbox-charts/bloomberg-2026-07-21.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-21.png"
+      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：智谱数据中心；特朗普对伊施压",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-21.md"
+    },
     {
       "reason": "unmatched",
       "subject": "Now live: Charting Crypto with Coinbase Institutional",
