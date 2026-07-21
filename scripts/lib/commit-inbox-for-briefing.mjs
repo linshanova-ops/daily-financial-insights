@@ -60,6 +60,16 @@ export function commitInboxCapturesToBriefingBranch(briefingDate, inboxItems) {
     fs.existsSync(path.join(root, rel)),
   );
 
+  // Also stage any 今日图表 image files written by fetch.
+  const chartDir = path.join(root, "web/public/inbox-charts");
+  if (fs.existsSync(chartDir)) {
+    for (const name of fs.readdirSync(chartDir)) {
+      if (/^bloomberg-.*\.(png|jpe?g|webp|gif)$/i.test(name)) {
+        unique.push(`web/public/inbox-charts/${name}`);
+      }
+    }
+  }
+
   let chartOfDay = false;
   for (const item of inboxItems || []) {
     if (item.sourceId !== "bloomberg-markets-daily-china") continue;

@@ -13,6 +13,7 @@ The generate agent merges them into existing briefing modules:
 
 - Bloomberg matchers include **Markets Daily China** and **财经早茶** (Gmail Updates tab is fine — still INBOX/All Mail)
 - **今日图表** maps to Figures as `kind: insight` with a required analysis point
+- Chart images are saved under `web/public/inbox-charts/bloomberg-YYYY-MM-DD.*` and linked via figures `imageSrc`
 - Glassnode matchers require Week on Chain / Insights — webinar “Now live” promos are ignored
 - Bloomberg is **section-parsed** when headers exist; HTML/collapsed bodies are normalized so headers like 今日图表 stay detectable; 全球市况 is cross-check only
 - Agent must **not** rewrite raw IMAP captures into “Mergeable sections” (that drops 今日图表); fetch replaces such reformatted files on the next run

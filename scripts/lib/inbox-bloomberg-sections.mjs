@@ -134,7 +134,7 @@ export function parseBloombergSections(text) {
   for (const line of lines) {
     const header = matchHeader(line);
     if (header) {
-      if (current.lines.some((l) => l.trim())) {
+      if (current.lines.some((l) => l.trim()) || current.chartOfDay) {
         sections.push({
           id: current.id,
           title: current.title,
@@ -157,7 +157,7 @@ export function parseBloombergSections(text) {
     current.lines.push(line);
   }
 
-  if (current.lines.some((l) => l.trim())) {
+  if (current.lines.some((l) => l.trim()) || current.chartOfDay) {
     sections.push({
       id: current.id,
       title: current.title,
@@ -168,7 +168,7 @@ export function parseBloombergSections(text) {
     });
   }
 
-  return sections.filter((s) => s.body.length > 0);
+  return sections.filter((s) => s.body.length > 0 || s.chartOfDay);
 }
 
 /**
@@ -200,7 +200,7 @@ export function formatBloombergForPrompt(text, { maxSectionChars = 3500 } = {}) 
   const parts = [];
   if (chartDay.length) {
     parts.push(
-      "## 今日图表 → Figures (REQUIRED)\nAdd ONE figures[] entry with kind: insight, id: bloomberg-chart-of-day.\n- title: short chart theme (Chinese OK)\n- analysis: one clear so-what sentence (required) — what the chart implies for today's risk/policy/tape\n- display/delta: only if a hard number is stated in the section (do not invent)\n- source: 彭博 Markets Daily China / 财经早茶 stable citeHref\nKeep analysis Chinese if the section is Chinese.\n\n" +
+      "## 今日图表 → Figures (REQUIRED)\nAdd ONE figures[] entry with kind: insight, id: bloomberg-chart-of-day.\n- title: short chart theme (Chinese OK); if body empty, infer from surrounding bullets + the chart IMAGE file\n- analysis: one clear so-what sentence (required) — what the chart implies for today's risk/policy/tape\n- imageSrc: use inbox chartImage path when present (e.g. /inbox-charts/bloomberg-YYYY-MM-DD.jpg)\n- display/delta: only if a hard number is stated in the section (do not invent)\n- source: 彭博 Markets Daily China / 财经早茶 stable citeHref\nKeep analysis Chinese if the section is Chinese.\n\n" +
         chartDay.join("\n\n"),
     );
   }

@@ -142,6 +142,10 @@ FAIL-CLOSED PUBLISH (critical):
      **今日图表 (REQUIRED when present in inbox):** add a figures[] entry
      \`id: bloomberg-chart-of-day\`, \`kind: insight\`, with \`title\` + required
      \`analysis\` (one clear so-what). Keep Chinese if the section is Chinese.
+     When inbox frontmatter has \`chartImage\`, set \`imageSrc\` to that path
+     (e.g. /inbox-charts/bloomberg-${today}.jpg) and KEEP the image file in the
+     commit under web/public/inbox-charts/. Open the image to write analysis —
+     do not omit just because the text section body is empty (chart is often image-only).
      Optional \`display\`/\`delta\` only when a hard number is stated — never invent.
      If the newsletter fence below contains "## 今日图表 → Figures (REQUIRED)", you MUST
      add that insight figure — do not skip it.
@@ -188,8 +192,9 @@ FAIL-CLOSED PUBLISH (critical):
    { text, sources: [{ label, href }] } pointing at the original primary post.
    assetFramework covers all eight canonical assets. If a figure cannot be verified, omit
    it and note rejected bad cites in singleSource/caveats.
-   figures[] may include kind: stat | bars | insight. When inbox has 今日图表, include
-   kind: insight (id bloomberg-chart-of-day) with analysis.
+   figures[] may include kind: stat | bars | insight. When inbox has 今日图表 / chartImage,
+   include kind: insight (id bloomberg-chart-of-day) with analysis and imageSrc.
+   Include web/public/inbox-charts/** in the commit when those files exist.
    If today's file already exists, update it with the latest developments instead of skipping.
 
 4. Market Dashboard (required): from web/, run
@@ -204,7 +209,8 @@ FAIL-CLOSED PUBLISH (critical):
 
 6. Commit on \`${branchName}\` with message: content: publish ${today} daily briefing
    Include web/content/briefings/${today}.md, web/public/data/**, any new
-   web/content/inbox/** captures, and any rejected-source-ids.json updates.
+   web/content/inbox/** captures, web/public/inbox-charts/** chart images, and any
+   rejected-source-ids.json updates.
    Push the branch and open/update the PR to main
    with title: ${prTitle}
 
