@@ -59,7 +59,7 @@ export interface FigurePoint {
 export interface BriefingFigure {
   id: string;
   title: string;
-  kind: "stat" | "bars";
+  kind: "stat" | "bars" | "insight";
   /** Large primary value for kind=stat (e.g. "$84.95", "4.55%"). */
   display?: string;
   /** Optional secondary line for kind=stat (e.g. "+$0.22", "Jul 15"). */
@@ -67,6 +67,11 @@ export interface BriefingFigure {
   unit?: string;
   points?: FigurePoint[];
   note?: string;
+  /**
+   * Required for kind=insight (Bloomberg 今日图表): one clear analysis point
+   * explaining what the chart implies for today's tape / policy / risk.
+   */
+  analysis?: string;
   source: FactSource;
 }
 

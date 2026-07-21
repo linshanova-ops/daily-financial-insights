@@ -10,6 +10,14 @@ export const BLOOMBERG_SECTION_DEFS = [
     patterns: [/^导语/, /^今日要点/, /^核心要点/, /^要点/],
   },
   {
+    id: "chartOfDay",
+    title: "今日图表",
+    mergeTo:
+      "figures[] as kind=insight (REQUIRED when present) — title + clear analysis point",
+    chartOfDay: true,
+    patterns: [/^今日图表/, /^图表点评/, /^图表/],
+  },
+  {
     id: "globalTape",
     title: "全球市况",
     mergeTo: "CROSS-CHECK ONLY — never replace marketDashboard",
@@ -58,8 +66,7 @@ function matchHeader(line) {
 }
 
 /**
- * @param {string} text raw newsletter body (no frontmatter required)
- * @returns {{ id: string, title: string, mergeTo: string, tapeOnly?: boolean, body: string }[]}
+ * @returns {{ id: string, title: string, mergeTo: string, tapeOnly?: boolean, chartOfDay?: boolean, body: string }[]}
  */
 export function parseBloombergSections(text) {
   const lines = String(text || "").replace(/\r\n/g, "\n").split("\n");
@@ -69,6 +76,7 @@ export function parseBloombergSections(text) {
     title: "开篇",
     mergeTo: "summary / china opener if substantive",
     tapeOnly: false,
+    chartOfDay: false,
     lines: [],
   };
 
@@ -81,6 +89,7 @@ export function parseBloombergSections(text) {
           title: current.title,
           mergeTo: current.mergeTo,
           tapeOnly: current.tapeOnly,
+          chartOfDay: current.chartOfDay,
           body: current.lines.join("\n").trim(),
         });
       }
@@ -89,6 +98,7 @@ export function parseBloombergSections(text) {
         title: header.title,
         mergeTo: header.mergeTo,
         tapeOnly: Boolean(header.tapeOnly),
+        chartOfDay: Boolean(header.chartOfDay),
         lines: [],
       };
       continue;
@@ -102,6 +112,7 @@ export function parseBloombergSections(text) {
       title: current.title,
       mergeTo: current.mergeTo,
       tapeOnly: current.tapeOnly,
+      chartOfDay: current.chartOfDay,
       body: current.lines.join("\n").trim(),
     });
   }
@@ -122,6 +133,7 @@ export function formatBloombergForPrompt(text, { maxSectionChars = 3500 } = {}) 
   }
 
   const mergeable = [];
+  const chartDay = [];
   const tape = [];
   for (const s of sections) {
     const body =
@@ -130,10 +142,17 @@ export function formatBloombergForPrompt(text, { maxSectionChars = 3500 } = {}) 
         : s.body;
     const block = `### ${s.title}\nMerge → ${s.mergeTo}\n\n${body}`;
     if (s.tapeOnly) tape.push(block);
+    else if (s.chartOfDay) chartDay.push(block);
     else mergeable.push(block);
   }
 
   const parts = [];
+  if (chartDay.length) {
+    parts.push(
+      "## 今日图表 → Figures (REQUIRED)\nAdd ONE figures[] entry with kind: insight, id: bloomberg-chart-of-day.\n- title: short chart theme (Chinese OK)\n- analysis: one clear so-what sentence (required) — what the chart implies for today's risk/policy/tape\n- display/delta: only if a hard number is stated in the section (do not invent)\n- source: 彭博 Markets Daily China / 财经早茶 stable citeHref\nKeep analysis Chinese if the section is Chinese.\n\n" +
+        chartDay.join("\n\n"),
+    );
+  }
   if (mergeable.length) {
     parts.push("## Mergeable sections\n\n" + mergeable.join("\n\n"));
   }

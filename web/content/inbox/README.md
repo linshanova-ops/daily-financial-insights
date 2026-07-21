@@ -12,6 +12,7 @@ Files are markdown with YAML frontmatter (`sourceId`, `subject`, `receivedAt`, `
 The generate agent merges them into existing briefing modules:
 
 - Bloomberg matchers include **Markets Daily China** and **财经早茶** (Gmail Updates tab is fine — still INBOX/All Mail)
+- **今日图表** maps to Figures as `kind: insight` with a required analysis point
 - Glassnode matchers require Week on Chain / Insights — webinar “Now live” promos are ignored
 - Bloomberg is **section-parsed** when headers exist; 全球市况 is cross-check only
 - Chinese Bloomberg text must stay Chinese

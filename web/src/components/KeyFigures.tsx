@@ -104,6 +104,7 @@ function FigureSource({ figure }: { figure: BriefingFigure }) {
 export function KeyFigures({ figures }: KeyFiguresProps) {
   if (!figures.length) return null;
 
+  const insights = figures.filter((f) => f.kind === "insight");
   const stats = figures.filter((f) => f.kind === "stat");
   const charts = figures.filter((f) => f.kind === "bars");
 
@@ -121,8 +122,44 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           Verified prints from this briefing — each figure links to its primary
-          source.
+          source. Chart-of-the-day insights come from 彭博 今日图表 when
+          available.
         </p>
+
+        {insights.length ? (
+          <div className="mt-8 space-y-6">
+            {insights.map((figure) => (
+              <article
+                key={figure.id}
+                className="border-t-2 border-forest bg-gradient-to-br from-mist/80 to-transparent pt-5"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-forest">
+                  Chart of the day · 今日图表
+                </p>
+                <h3 className="display mt-2 text-2xl tracking-tight text-ink sm:text-3xl">
+                  {figure.title}
+                </h3>
+                {figure.display ? (
+                  <p className="mt-3 text-3xl font-semibold tabular-nums tracking-tight text-ink">
+                    {figure.display}
+                    {figure.delta ? (
+                      <span className="ml-3 text-base font-medium text-ink-soft">
+                        {figure.delta}
+                      </span>
+                    ) : null}
+                  </p>
+                ) : null}
+                {figure.analysis ? (
+                  <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink">
+                    <span className="font-semibold text-forest">Analysis · </span>
+                    {figure.analysis}
+                  </p>
+                ) : null}
+                <FigureSource figure={figure} />
+              </article>
+            ))}
+          </div>
+        ) : null}
 
         {stats.length ? (
           <div className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">

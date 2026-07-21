@@ -148,6 +148,10 @@ describe("extractBloombergDateKey", () => {
 describe("parseBloombergSections", () => {
   const sample = `开场一两句。
 
+今日图表
+高盛对冲基金美股科技仓位降至多年低位
+过去两个月对冲基金撤离美股科技的速度创纪录，反映对估值与政策不确定性的避险。
+
 全球市况
 标普500指数涨1%
 纳斯达克涨2%
@@ -168,9 +172,10 @@ A股反弹
 央行逆回购
 `;
 
-  it("splits labeled sections", () => {
+  it("splits labeled sections including 今日图表", () => {
     const sections = parseBloombergSections(sample);
     const ids = sections.map((s) => s.id);
+    assert.ok(ids.includes("chartOfDay"));
     assert.ok(ids.includes("globalTape"));
     assert.ok(ids.includes("international"));
     assert.ok(ids.includes("greaterChina"));
@@ -179,8 +184,11 @@ A股反弹
     assert.ok(ids.includes("policy"));
   });
 
-  it("fences tape in prompt format", () => {
+  it("fences tape and requires figures mapping for 今日图表", () => {
     const out = formatBloombergForPrompt(sample);
+    assert.match(out, /今日图表 → Figures/);
+    assert.match(out, /kind: insight/);
+    assert.match(out, /高盛对冲基金/);
     assert.match(out, /Mergeable sections/);
     assert.match(out, /国际要闻/);
     assert.match(out, /CROSS-CHECK ONLY/);
