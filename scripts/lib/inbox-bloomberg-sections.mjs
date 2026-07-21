@@ -15,7 +15,15 @@ export const BLOOMBERG_SECTION_DEFS = [
     mergeTo:
       "figures[] as kind=insight (REQUIRED when present) — title + clear analysis point",
     chartOfDay: true,
-    patterns: [/^今日图表/, /^【今日图表】/, /^图表点评/, /^图表\s*$/],
+    patterns: [
+      /^今日图表/,
+      /^【今日图表】/,
+      /^图表点评/,
+      /^图说/,
+      /^一图/,
+      /^Chart of the Day/i,
+      /^图表\s*$/,
+    ],
   },
   {
     id: "globalTape",
@@ -69,6 +77,7 @@ const INLINE_SECTION_HEADERS = [
   "数据日程",
   "今日要点",
   "核心要点",
+  "图说",
   "导语",
 ];
 
@@ -92,7 +101,7 @@ export function normalizeBloombergSectionBreaks(text) {
 }
 
 export function hasBloombergChartOfDay(text) {
-  return /今日图表|图表点评/.test(String(text || ""));
+  return /今日图表|图表点评|图说|一图|Chart of the Day/i.test(String(text || ""));
 }
 
 function matchHeader(line) {

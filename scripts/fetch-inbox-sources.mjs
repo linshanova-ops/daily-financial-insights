@@ -162,6 +162,7 @@ function emailBodyToText(parsed) {
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
     .replace(/<(br|BR)\s*\/?\s*>/g, "\n")
     .replace(/<\/(p|div|tr|li|h[1-6]|table|section|article|header|footer)>/gi, "\n")
+    .replace(/<img[^>]*alt=["']([^"']+)["'][^>]*>/gi, "\n$1\n")
     .replace(/<[^>]+>/g, " ")
     .replace(/&nbsp;/gi, " ")
     .replace(/&amp;/gi, "&")

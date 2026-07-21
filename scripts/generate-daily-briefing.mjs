@@ -20,11 +20,13 @@ import {
   isFailingCheck,
 } from "./lib/briefing-publish-helpers.mjs";
 import { beijingDateString } from "./lib/briefing-slot-gate.mjs";
+import { commitInboxCapturesToBriefingBranch } from "./lib/commit-inbox-for-briefing.mjs";
 import {
   formatInboxPromptBlock,
   loadInboxFetchStatus,
   loadInboxForBriefing,
 } from "./lib/load-inbox-context.mjs";
+import { hasBloombergChartOfDay } from "./lib/inbox-bloomberg-sections.mjs";
 
 const apiKey = process.env.CURSOR_API_KEY;
 const repoUrl =
@@ -141,6 +143,8 @@ FAIL-CLOSED PUBLISH (critical):
      \`id: bloomberg-chart-of-day\`, \`kind: insight\`, with \`title\` + required
      \`analysis\` (one clear so-what). Keep Chinese if the section is Chinese.
      Optional \`display\`/\`delta\` only when a hard number is stated — never invent.
+     If the newsletter fence below contains "## 今日图表 → Figures (REQUIRED)", you MUST
+     add that insight figure — do not skip it.
    - Glassnode Insights / Week on Chain (weekly, usually Tuesday): merge into crypto
      assetFramework / signals / watch when on-chain color is relevant.
      Ignore webinar / "Now live" promos (fetcher already drops them).
@@ -150,9 +154,12 @@ FAIL-CLOSED PUBLISH (critical):
      captures are new/updated this run, UPDATE that briefing to merge the new inbox
      material — do not skip just because the file exists.
    - If inbox fetch failed, note briefly in caveats/singleSource; do not invent mail.
+   - Inbox files on this branch were synced from IMAP before you started. Keep
+     web/content/inbox/** EXACTLY as on the branch (raw IMAP). Do NOT rewrite them
+     into "## Mergeable sections" summaries.
    ${formatInboxPromptBlock(inboxItems, inboxFetchStatus)}
    If inbox files exist under web/content/inbox/ (including last-fetch.json), include
-   them in the PR commit for audit.
+   them in the PR commit for audit (already present on branch — do not delete).
    Do NOT rewrite or reformat web/content/inbox/** bodies — commit the IMAP capture
    bytes as fetched (so 今日图表 and other sections stay intact for the next run).
 
@@ -616,11 +623,31 @@ function triggerPagesDeploy() {
 }
 
 async function main() {
+  // Push runner-local IMAP captures to the briefing branch so the cloud agent
+  // clones raw 今日图表 instead of a stale reformatted file from main.
+  const inboxPush = commitInboxCapturesToBriefingBranch(today, inboxItems);
+  const startingRef = inboxPush.pushed ? inboxPush.branch : "main";
+  if (inboxPush.chartOfDay) {
+    console.log("[briefing] 今日图表 detected in IMAP capture — agent must add insight figure");
+  } else {
+    const bloomberg = inboxItems.find(
+      (i) => i.sourceId === "bloomberg-markets-daily-china",
+    );
+    if (bloomberg) {
+      console.log(
+        `[briefing] no 今日图表 header in bloomberg capture (${bloomberg.body.length} chars)`,
+      );
+      console.log(
+        `[briefing] bloomberg hasChart=${hasBloombergChartOfDay(bloomberg.body)}`,
+      );
+    }
+  }
+
   const agent = await Agent.create({
     apiKey,
     model: { id: "composer-2" },
     cloud: {
-      repos: [{ url: repoUrl, startingRef: "main" }],
+      repos: [{ url: repoUrl, startingRef }],
       autoCreatePR: true,
       skipReviewerRequest: true,
     },
