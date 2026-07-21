@@ -42,12 +42,20 @@ export function BriefingHero({
       </div>
 
       <div
-        className={`mx-auto flex w-full max-w-6xl flex-col gap-6 ${
-          compact || skim ? "" : "min-h-[70vh] justify-between gap-10"
+        className={`mx-auto flex w-full max-w-6xl gap-6 ${
+          skim
+            ? "flex-col items-stretch md:flex-row md:items-center md:justify-between md:gap-10"
+            : compact
+              ? "flex-col"
+              : "min-h-[70vh] flex-col justify-between gap-10"
         }`}
       >
         {!compact && !skim ? <WelcomeWave /> : null}
-        <div className={`flex flex-col gap-6 ${compact || skim ? "" : "pb-2"}`}>
+        <div
+          className={`flex min-w-0 flex-col gap-6 ${
+            skim ? "flex-1 md:max-w-xl lg:max-w-2xl" : compact ? "" : "pb-2"
+          }`}
+        >
           <p className="reveal text-xs font-semibold uppercase tracking-[0.28em] text-forest">
             {formatBriefingDate(date)}
           </p>
@@ -115,6 +123,11 @@ export function BriefingHero({
             </div>
           ) : null}
         </div>
+        {skim ? (
+          <div className="reveal reveal-delay-2 flex shrink-0 justify-center md:justify-end">
+            <WelcomeWave />
+          </div>
+        ) : null}
       </div>
     </section>
   );
