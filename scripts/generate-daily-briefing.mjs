@@ -144,8 +144,11 @@ FAIL-CLOSED PUBLISH (critical):
      \`analysis\` (one clear so-what). Keep Chinese if the section is Chinese.
      When inbox frontmatter has \`chartImage\`, set \`imageSrc\` to that path
      (e.g. /inbox-charts/bloomberg-${today}.jpg) and KEEP the image file in the
-     commit under web/public/inbox-charts/. Open the image to write analysis —
-     do not omit just because the text section body is empty (chart is often image-only).
+     commit under web/public/inbox-charts/. Open/read the image file first —
+     title + analysis MUST describe what the chart actually shows (axes, series,
+     caption). Do NOT invent a theme from the bullet above/below 今日图表 if it
+     contradicts the image (common failure: pairing the wrong 国际要闻 bullet).
+     Do not omit just because the text section body is empty (chart is often image-only).
      Optional \`display\`/\`delta\` only when a hard number is stated — never invent.
      If the newsletter fence below contains "## 今日图表 → Figures (REQUIRED)", you MUST
      add that insight figure — do not skip it.
