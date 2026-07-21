@@ -191,6 +191,7 @@ A股反弹
     const out = formatBloombergForPrompt(sample);
     assert.match(out, /FULL EMAIL COVERAGE/);
     assert.match(out, /国际要闻 → globalChanged/);
+    assert.match(out, /市场一览 → marketOverview/);
     assert.match(out, /今日图表 → Figures/);
     assert.match(out, /kind: insight/);
     assert.match(out, /高盛对冲基金/);

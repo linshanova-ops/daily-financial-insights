@@ -2,7 +2,7 @@
   "date": "2026-07-21",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 20–21, 2026",
-  "publishedAt": "2026-07-21T07:32:52.000Z",
+  "publishedAt": "2026-07-21T08:20:00.000Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 21)",
@@ -427,15 +427,6 @@
     },
     {
       "text": "谷歌据报正在开发一款用于优化Gemini人工智能模型的服务器芯片，最快可能于2028年投入部署；贝莱德据悉计划发行逾120亿美元债券，为Meta位于德州的数据中心园区提供融资（彭博 Markets Daily China / 财经早茶 Jul 21）。",
-      "sources": [
-        {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": "市场一览（彭博 Jul 21）：美股苹果和特斯拉下跌拖累大盘、芯片股在财报前反弹；中概金龙指数上涨（阿里、京东贡献最大）；美债追随英债下跌并受伊朗威胁压制；彭博美元指数基本持稳，加元因通胀降温走弱、澳元跑赢G10；欧洲股债受英国财政风险与中东局势拖累；油价小幅上涨、金价小幅下跌、伦敦期铜上涨。",
       "sources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -1019,7 +1010,45 @@
     }
   ],
   "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 网易财经 (Jul 21 A-share close), 新浪财经 (Jul 21 A-share morning/OMO), 第一财经 (Jul 21 semi V, Goldman PB, coast guard), 华尔街见闻 (3776521 Changxin IPO), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury/earnings calendar), CoinDesk/Cointelegraph (Jul 20 BTC).",
-  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video Jul 21 — theblockbeats.info unreachable in CI scan). Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels; news/59062 Polymarket page dates 2025). Rejected 华尔街见闻 3751515 (denylisted mid-day A/H wrap; +0.72% Shanghai conflicts with 网易财经 Jul 21 official close +1.79%). Also rejected 3751205/3751275 (2025 stale wraps). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture this run. 今日图表 image-only in Bloomberg email — IMAP fetch did not save chartImage PNG; bloomberg-chart-of-day analysis from 国际要闻 Goldman tech-de-grossing bullet.",
+  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video Jul 21 — theblockbeats.info unreachable in CI scan). Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels; news/59062 Polymarket page dates 2025). Rejected 华尔街见闻 3751515 (denylisted mid-day A/H wrap; +0.72% Shanghai conflicts with 网易财经 Jul 21 official close +1.79%). Also rejected 3751205/3751275 (2025 stale wraps). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture this run. 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-21.png (抗癌新药获批数量). 市场一览 desk color lives in marketOverview (not Global/China prose).",
+  "marketOverview": {
+    "asOfDate": "2026-07-21",
+    "note": "Qualitative desk color from 彭博财经早茶 — not official closes.",
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    "items": [
+      {
+        "label": "美国股市",
+        "text": "苹果和特斯拉下跌拖累大盘，芯片股在一系列财报公布前反弹"
+      },
+      {
+        "label": "中概股",
+        "text": "金龙中国指数上涨，阿里巴巴和京东集团对指数贡献最大"
+      },
+      {
+        "label": "美国债市",
+        "text": "美债追随英债下跌，特朗普对伊朗的威胁也令债市承压"
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数基本持稳，CPI数据显示加拿大通胀降温后，加元兑美元下跌。澳元跑赢其他G10货币"
+      },
+      {
+        "label": "欧洲股债",
+        "text": "财政风险拖累英国国债下跌并跑输同类债券。欧洲股市下跌，受到中东紧张局势拖累"
+      },
+      {
+        "label": "能源",
+        "text": "油价小幅上涨，交易员权衡中东冲突恶化消息以及暂时停火可能性"
+      },
+      {
+        "label": "金属",
+        "text": "黄金价格小幅下跌，交易员评估美联储加息遏制通胀的可能性。伦敦期铜上涨"
+      }
+    ]
+  },
   "marketDashboard": {
     "asOf": "2026-07-21T07:26:55.627Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
