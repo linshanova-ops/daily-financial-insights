@@ -4,6 +4,7 @@ import { useEffect, useId, useState, type KeyboardEvent, type ReactNode } from "
 import {
   DETAIL_TABS,
   detailTabFromHash,
+  isKnownDetailHash,
   type DetailTabId,
 } from "@/lib/detail-tabs";
 
@@ -18,7 +19,15 @@ export function DetailTabs({ panels }: DetailTabsProps) {
   const [active, setActive] = useState<DetailTabId>("global");
 
   useEffect(() => {
-    const sync = () => setActive(detailTabFromHash(window.location.hash));
+    const sync = () => {
+      const hash = window.location.hash;
+      setActive(detailTabFromHash(hash));
+      if (isKnownDetailHash(hash)) {
+        requestAnimationFrame(() => {
+          document.getElementById("detail")?.scrollIntoView({ block: "start" });
+        });
+      }
+    };
     sync();
     window.addEventListener("hashchange", sync);
     return () => window.removeEventListener("hashchange", sync);

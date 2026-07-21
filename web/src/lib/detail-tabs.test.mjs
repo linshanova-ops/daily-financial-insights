@@ -1,7 +1,11 @@
 // web/src/lib/detail-tabs.test.mjs
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { detailTabFromHash, DETAIL_TABS } from "./detail-tabs.ts";
+import {
+  detailTabFromHash,
+  isKnownDetailHash,
+  DETAIL_TABS,
+} from "./detail-tabs.ts";
 
 describe("detailTabFromHash", () => {
   it("defaults to global for empty or unknown hash", () => {
@@ -17,7 +21,17 @@ describe("detailTabFromHash", () => {
     assert.equal(detailTabFromHash("#signals"), "signals");
     assert.equal(detailTabFromHash("#watch"), "watch");
     assert.equal(detailTabFromHash("#sources"), "sources");
+    assert.equal(detailTabFromHash("#sources-caveats"), "sources");
     assert.equal(detailTabFromHash("#detail"), "global");
+  });
+
+  it("recognizes known detail hashes", () => {
+    assert.equal(isKnownDetailHash(""), false);
+    assert.equal(isKnownDetailHash("#"), false);
+    assert.equal(isKnownDetailHash("#nope"), false);
+    assert.equal(isKnownDetailHash("#china-situation"), true);
+    assert.equal(isKnownDetailHash("#detail"), true);
+    assert.equal(isKnownDetailHash("#sources-caveats"), true);
   });
 
   it("accepts bare ids without hash", () => {
