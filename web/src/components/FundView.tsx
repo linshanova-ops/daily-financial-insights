@@ -250,8 +250,7 @@ function FundsTab({
         </p>
       </div>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-soft">
-        当前监控 {total} 家管理机构。Admin 增删请编辑{" "}
-        <code className="text-forest">web/content/fund/monitored.json</code>。
+        当前监控 {total} 家管理机构（2026 AUM 选型）。
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
