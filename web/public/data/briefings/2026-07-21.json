@@ -77,10 +77,6 @@
       "href": "https://www.caixinglobal.com/2026-07-20/china-to-end-key-tax-break-on-lithium-ev-batteries-102466130.html"
     },
     {
-      "label": "BlockBeats — Trump BTC video Jul 21",
-      "href": "https://www.theblockbeats.info/flash/303712"
-    },
-    {
       "label": "华尔街见闻 — Changxin IPO Jul 16",
       "href": "https://wallstreetcn.com/articles/3776521"
     },
@@ -283,7 +279,7 @@
       ]
     },
     {
-      "text": "Jul 20–21 crypto: BTC ~$65k at Jul 20 US close (CoinDesk/Cointelegraph). Jul 21 (BlockBeats 303712): Trump posted Truth Social video titled「史上最伟大的比特币解释」. Goldman PB record US tech de-grossing (~10% mkt-cap cut, 第一财经 Jul 21).",
+      "text": "Jul 20–21 crypto: BTC ~$65k at Jul 20 US close (CoinDesk/Cointelegraph). Goldman PB record US tech de-grossing (~10% mkt-cap cut, 第一财经 Jul 21).",
       "sources": [
         {
           "label": "CoinDesk Jul 20",
@@ -292,10 +288,6 @@
         {
           "label": "Cointelegraph Jul 20",
           "href": "https://cointelegraph.com/markets/bitcoin-defies-recent-tech-stocks-sell-off-are-bulls-eyeing-70k-rally"
-        },
-        {
-          "label": "BlockBeats Jul 21",
-          "href": "https://www.theblockbeats.info/flash/303712"
         },
         {
           "label": "第一财经 Goldman",
@@ -393,7 +385,7 @@
       ]
     },
     {
-      "text": "Jul 20 crypto (CoinDesk/Cointelegraph): BTC one-month high $65,700 intraday, ~$65,000–$65,300 at US close — decoupling modestly from Nasdaq while oil stayed firm; Strategy raised $263M via stock sale the prior week (Cointelegraph). Jul 21 (BlockBeats 303712): Trump Truth Social BTC video.",
+      "text": "Jul 20 crypto (CoinDesk/Cointelegraph): BTC one-month high $65,700 intraday, ~$65,000–$65,300 at US close — decoupling modestly from Nasdaq while oil stayed firm; Strategy raised $263M via stock sale the prior week (Cointelegraph).",
       "sources": [
         {
           "label": "CoinDesk",
@@ -402,10 +394,6 @@
         {
           "label": "Cointelegraph",
           "href": "https://cointelegraph.com/markets/bitcoin-defies-recent-tech-stocks-sell-off-are-bulls-eyeing-70k-rally"
-        },
-        {
-          "label": "BlockBeats Jul 21",
-          "href": "https://www.theblockbeats.info/flash/303712"
         }
       ]
     },
@@ -710,7 +698,7 @@
     {
       "asset": "Bitcoin",
       "regime": "High-beta global liquidity asset in the oil→AI-capex chain",
-      "driver": "CoinDesk/Cointelegraph Jul 20 BTC ~$65k (high $65,700); BlockBeats 303712 Trump BTC video Jul 21; Goldman ~10% US tech cut",
+      "driver": "CoinDesk/Cointelegraph Jul 20 BTC ~$65k (high $65,700); Goldman ~10% US tech cut (第一财经 Jul 21)",
       "driverSources": [
         {
           "label": "CoinDesk",
@@ -721,11 +709,11 @@
           "href": "https://cointelegraph.com/markets/bitcoin-defies-recent-tech-stocks-sell-off-are-bulls-eyeing-70k-rally"
         },
         {
-          "label": "BlockBeats Jul 21",
-          "href": "https://www.theblockbeats.info/flash/303712"
+          "label": "第一财经 Goldman",
+          "href": "https://www.yicai.com/news/103284217.html"
         }
       ],
-      "read": "Split tape — $65k–$66k hold vs Brent $89.22 and tech de-grossing; Trump BTC headline adds political/crypto crossover bid",
+      "read": "Split tape — $65k–$66k hold vs Brent $89.22 and tech de-grossing",
       "invalidator": "BTC closes below $62,500 for three sessions with weekly ETF flows negative"
     }
   ],
