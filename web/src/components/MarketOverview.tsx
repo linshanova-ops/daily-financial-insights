@@ -23,7 +23,7 @@ export function MarketOverview({ data }: MarketOverviewProps) {
           <p
             className={`text-xs font-semibold uppercase tracking-[0.24em] ${accent.eyebrow}`}
           >
-            Market color · 市场一览
+            Market color
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
