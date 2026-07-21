@@ -1,12 +1,37 @@
 {
   "title": "对冲基金信息监控",
   "subtitle": "追踪专业信源，对全球 AUM Top 100 对冲基金管理机构进行语境匹配、时效校验与人工可复核的置信度分层。",
-  "updatedAt": "2026-07-21T19:33:00+08:00",
-  "updatedAtLabel": "2026.07.21 19:33",
+  "updatedAt": "2026-07-21T12:08:55.619Z",
+  "updatedAtLabel": "2026.07.21 20:08",
   "timezone": "Asia / Shanghai",
-  "sourcesChecked": "3/3",
-  "sourcesNote": "1 个信源仅索引可用",
+  "sourcesChecked": "2/3",
+  "sourcesNote": "hedgeweek:10 · google-news:600 · with-intelligence:down(index-only in v2 — no public RSS)",
   "scanWindow": "每日扫描过去 72 小时 · 命中永久归档",
-  "phase": 1,
-  "phaseNote": "v1 is content-driven. Live source scan (Approach 3) comes in phase 2."
+  "phase": 2,
+  "phaseNote": "Live RSS scan on briefing windows (Hedgeweek + Google News). Confirmed hits are permanent.",
+  "lastScan": {
+    "at": "2026-07-21T12:08:55.619Z",
+    "fetched": 610,
+    "newConfirmed": 0,
+    "review": 18,
+    "sources": [
+      {
+        "id": "hedgeweek",
+        "ok": true,
+        "count": 10
+      },
+      {
+        "id": "google-news",
+        "ok": true,
+        "count": 600,
+        "note": "6 batches ok"
+      },
+      {
+        "id": "with-intelligence",
+        "ok": false,
+        "count": 0,
+        "note": "index-only in v2 — no public RSS"
+      }
+    ]
+  }
 }
