@@ -135,10 +135,13 @@ FAIL-CLOSED PUBLISH (critical):
    - Do not recycle prior-briefing narratives unless re-confirmed with a fresh href today.
 
    INBOX NEWSLETTERS (Gmail IMAP — already fetched when present):
-   - 彭博 Markets Daily China / 财经早茶 (daily): merge into China / Global / Assets / Watch
-     (section map when labeled; otherwise use Chinese bullets carefully).
+   - 彭博 Markets Daily China / 财经早茶 (daily): this is a **full global + China** digest —
+     merge **all** labeled sections into China / Global / Assets / Watch / Figures.
+     Do NOT treat it as a China-only source or drop 国际要闻 / 市场一览 / 日程 / 央行动态.
+     Section map: 国际要闻→globalChanged (every bullet); 大中华新闻→chinaChanged (every
+     bullet); 市场一览→summary/assetFramework drivers; 经济数据日程+央行和政府动态→watchItems;
+     今日图表→figures insight; 全球市况→cross-check only (never replace marketDashboard).
      **Keep Chinese text Chinese** for bullets whose primary cite is this newsletter.
-     Do NOT use 全球市况 tape to replace Market Dashboard numbers.
      **今日图表 (REQUIRED when present in inbox):** add a figures[] entry
      \`id: bloomberg-chart-of-day\`, \`kind: insight\`, with \`title\` + required
      \`analysis\` (one clear so-what). Keep Chinese if the section is Chinese.
@@ -152,6 +155,9 @@ FAIL-CLOSED PUBLISH (critical):
      Optional \`display\`/\`delta\` only when a hard number is stated — never invent.
      If the newsletter fence below contains "## 今日图表 → Figures (REQUIRED)", you MUST
      add that insight figure — do not skip it.
+     Coverage self-check before finishing: every 国际要闻 and 大中华新闻 bullet appears
+     (or is explicitly noted as duplicate of a stronger primary cite); 市场一览 themes
+     appear in summary/drivers; calendar/policy items appear in watchItems.
    - Glassnode Insights / Week on Chain (weekly, usually Tuesday): merge into crypto
      assetFramework / signals / watch when on-chain color is relevant.
      Ignore webinar / "Now live" promos (fetcher already drops them).
