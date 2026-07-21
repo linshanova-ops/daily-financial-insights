@@ -2,7 +2,7 @@
   "date": "2026-07-21",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 20–21, 2026",
-  "publishedAt": "2026-07-21T08:20:00.000Z",
+  "publishedAt": "2026-07-21T12:06:46.000Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 21)",
@@ -81,6 +81,18 @@
       "href": "https://wallstreetcn.com/articles/3776521"
     },
     {
+      "label": "investinglive — Jul 21 UK ILO unemployment",
+      "href": "https://www.investinglive.com/news/uk-may-ilo-unemployment-rate-4-9-vs-5-0-expected"
+    },
+    {
+      "label": "The Standard — Jul 21 HK June CPI",
+      "href": "https://www.thestandard.com.hk/finance/article/337804/Hong-Kongs-June-CPI-remains-at-2-percent"
+    },
+    {
+      "label": "Taiwan News — Jul 21 June export orders",
+      "href": "https://www.taiwannews.com.tw/news/6405091"
+    },
+    {
       "label": "第一财经 — Jul 21 semi equipment deep V",
       "href": "https://www.yicai.com/news/103285612.html"
     },
@@ -140,6 +152,18 @@
       "source": {
         "label": "CoinDesk",
         "href": "https://www.coindesk.com/tech/2026/07/20/live-markets-oil-bounce-and-lingering-ai-selloff-pushes-bitcoin-under-usd64-000"
+      }
+    },
+    {
+      "id": "taiwan-orders",
+      "title": "Taiwan Jun export orders",
+      "kind": "stat",
+      "display": "+59.4% y/y",
+      "delta": "Beat estimate (47.3%) · record NT$3.08tn",
+      "note": "Taiwan News / MOEA Jul 21",
+      "source": {
+        "label": "Taiwan News",
+        "href": "https://www.taiwannews.com.tw/news/6405091"
       }
     },
     {
@@ -208,7 +232,7 @@
       ]
     }
   ],
-  "marketTone": "Jul 21 A-share full-day rally (Shanghai +1.79%, ChiNext +7.05%, turnover 2.96tn; semi deep-V per 第一财经) diverges from Jul 20 US risk-off (S&P −0.19%, Brent $89.22). Burnham/Healey fiscal “flexibility” pushed UK 10y gilts to 5.049%; Goldman PB record US tech de-grossing (彭博 Jul 21). BTC ~$66k; Mag 7 earnings (Alphabet/Tesla Jul 22).",
+  "marketTone": "Jul 21 A-share full-day rally (Shanghai +1.79%, ChiNext +7.05%, turnover 2.96tn; semi deep-V per 第一财经) diverges from Jul 20 US risk-off (S&P −0.19%, Brent $89.22). Same-day Asia/UK prints: Taiwan Jun export orders +59.4% y/y beat estimate (47.3%); HK Jun CPI +2.0% y/y miss estimate (2.2%); UK May ILO unemployment 4.9% miss estimate (5.0%). Burnham/Healey fiscal “flexibility” pushed UK 10y gilts to 5.049%; Goldman PB record US tech de-grossing (彭博 Jul 21). Mag 7 earnings (Alphabet/Tesla Jul 22).",
   "summary": [
     {
       "text": "Jul 21 A-share official close (网易财经): Shanghai +1.79%, Shenzhen +4.81%, ChiNext +7.05%, STAR +10.73%; turnover 2.96tn yuan (+255bn vs prior). 半导体设备指数深V：早盘一度−6.49%，午后涨超10.1%（第一财经 Jul 21）。PBOC Jul 21 net OMO +165亿元 (2530 − 2365亿元 @ 1.4%).",
@@ -280,6 +304,23 @@
       ]
     },
     {
+      "text": "Jul 21 Asia/UK data (investinglive/The Standard/Taiwan News): Taiwan Jun export orders +59.4% y/y vs 47.3% est (beat estimate; record NT$3.08tn, ICT +81.9%); HK Jun CPI +2.0% y/y vs 2.2% est (miss estimate; underlying +1.9%); UK May ILO unemployment 4.9% vs 5.0% est (miss estimate; payrolls −4k in Jun).",
+      "sources": [
+        {
+          "label": "Taiwan News Jul 21",
+          "href": "https://www.taiwannews.com.tw/news/6405091"
+        },
+        {
+          "label": "The Standard Jul 21",
+          "href": "https://www.thestandard.com.hk/finance/article/337804/Hong-Kongs-June-CPI-remains-at-2-percent"
+        },
+        {
+          "label": "investinglive Jul 21",
+          "href": "https://www.investinglive.com/news/uk-may-ilo-unemployment-rate-4-9-vs-5-0-expected"
+        }
+      ]
+    },
+    {
       "text": "Jul 20–21 crypto: BTC ~$65k at Jul 20 US close (CoinDesk/Cointelegraph). Goldman PB record US tech de-grossing (~10% mkt-cap cut, 第一财经 Jul 21).",
       "sources": [
         {
@@ -297,10 +338,19 @@
       ]
     }
   ],
-  "signal": "Jul 21 A-share full-day rally (Shanghai +1.79%, ChiNext +7.05%, 2.96tn turnover) diverges from Jul 20 US risk-off (S&P −0.19%, Brent $89.22) and UK gilt selloff (5.049% 10y on Burnham fiscal flexibility). Goldman PB record US tech cut (彭博 Jul 21) and Kimi capacity pause keep AI-capex scrutiny live into Mag 7 earnings; BTC ~$66k holds.",
-  "watch": "Does Jul 21 chip/semi bid (2.96tn yuan turnover) hold through US earnings earnings (Alphabet/Tesla Jul 22) and Brent ≥$89 — and does late-July Politburo deliver stronger easing signals (Goldman/Bloomberg Jul 21)?",
+  "signal": "Jul 21 A-share full-day rally (Shanghai +1.79%, ChiNext +7.05%, 2.96tn turnover) diverges from Jul 20 US risk-off (S&P −0.19%, Brent $89.22) and UK gilt selloff (5.049% 10y on Burnham fiscal flexibility). Taiwan Jun export orders +59.4% beat (AI/ICT demand) contrasts with HK CPI +2.0% miss and UK ILO 4.9% miss — mixed Asia inflation/labour vs strong tech pipeline. Goldman PB record US tech cut (彭博 Jul 21) and Kimi capacity pause keep AI-capex scrutiny live into Mag 7 earnings.",
+  "watch": "Does Jul 21 chip/semi bid (2.96tn yuan turnover) hold through US earnings (Alphabet/Tesla Jul 22) and Brent ≥$89 — and does late-July Politburo deliver stronger easing signals (Goldman/Bloomberg Jul 21)? Taiwan +59.4% export-order beat vs HK CPI miss sets up a split read on Asia inflation into FOMC week.",
   "globalRegime": "Fed holds 3.50%–3.75% with Jul 14–15 CPI/PPI misses backward-looking while Jul 20 Brent $89.22 settle (+~20% MTD per CNBC) and 10y 4.594% re-price forward inflation. Jul 20 US equities reversed morning chip relief into a red close (S&P −0.19%); PHLX Semi rose ~0.5% Mon but remains in bear-market territory vs Jun 22 record. Jul 28–29 FOMC and Mag 7 earnings (Alphabet/Tesla Jul 22) are the next hard tests.",
   "globalChanged": [
+    {
+      "text": "特朗普誓言要让伊朗为造成美军士兵身亡付出数倍代价；伊朗支持的也门胡塞武装威胁对沙特实施海上封锁。与此同时，德黑兰称调解方提出缓和美伊冲突方案，据报其中一项建议是停火10天（彭博 Markets Daily China / 财经早茶 Jul 21）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
     {
       "text": "Jul 21 UK (City AM/Independent): Andy Burnham became PM; said he would use “flexibility” within existing fiscal rules; 10y gilt yield rose ~8 bp to 5.049% (two-month high). John Healey named Chancellor (surprise vs Mahmood speculation).",
       "sources": [
@@ -320,6 +370,33 @@
         {
           "label": "StatCan Jun CPI",
           "href": "https://www150.statcan.gc.ca/n1/daily-quotidien/260720/dq260720a-eng.htm"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 UK labour (investinglive/ONS): May ILO unemployment 4.9% vs 5.0% est (miss estimate; prior 4.9%); employment change +147k vs +80k est (beat estimate); average weekly earnings +4.3% 3m/y vs +4.5% est (miss estimate). June payrolls change −4k.",
+      "sources": [
+        {
+          "label": "investinglive Jul 21",
+          "href": "https://www.investinglive.com/news/uk-may-ilo-unemployment-rate-4-9-vs-5-0-expected"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 Taiwan export orders (Taiwan News/MOEA): June orders +59.4% y/y vs 47.3% est (beat estimate; prior +47.2%) to record NT$3.08tn (US$95.3bn). ICT orders +81.9%, electronic +79.9%; US-sourced orders +83.6%.",
+      "sources": [
+        {
+          "label": "Taiwan News Jul 21",
+          "href": "https://www.taiwannews.com.tw/news/6405091"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 Hong Kong CPI (The Standard/C&SD): June composite CPI +2.0% y/y vs 2.2% est (miss estimate; prior +2.0%); underlying inflation +1.9% (unchanged from May). Government warned Middle East oil tensions may lift future CPI.",
+      "sources": [
+        {
+          "label": "The Standard Jul 21",
+          "href": "https://www.thestandard.com.hk/finance/article/337804/Hong-Kongs-June-CPI-remains-at-2-percent"
         }
       ]
     },
@@ -950,13 +1027,13 @@
     },
     {
       "priority": "MEDIUM",
-      "headline": "彭博财经早茶日程 — 英失业率 / 台外销 / 港CPI",
-      "why": "Same-day Asia/UK prints listed in Markets Daily China calendar.",
-      "watch": "英国5月ILO失业率（预估4.9%）；台湾6月外销订单同比（预估47.3%）；香港6月综合CPI同比（预估2.2%）。",
-      "trigger": "UK ILO or HK CPI prints hot vs estimate with gilt/USD moves.",
-      "invalidator": "All three print in-line with limited FX/rates reaction.",
-      "horizon": "hours",
-      "status": "new"
+      "headline": "Jul 21 Asia/UK data slate — printed",
+      "why": "Bloomberg inbox calendar items released Jul 21.",
+      "watch": "Taiwan Jun export orders +59.4% y/y (beat 47.3% est); HK Jun CPI +2.0% y/y (miss 2.2% est); UK May ILO unemployment 4.9% (miss 5.0% est).",
+      "trigger": "Taiwan ICT strength persists with USD/TWD firm while HK CPI re-accelerates above 2.5%.",
+      "invalidator": "All three prints fade from cross-asset pricing within 48h.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "priority": "MEDIUM",
@@ -990,16 +1067,6 @@
     },
     {
       "priority": "MEDIUM",
-      "headline": "Jul 21 data calendar — UK ILO, Taiwan orders, HK CPI",
-      "why": "Bloomberg inbox Jul 21 Asia data slate.",
-      "watch": "14:00 UK May ILO unemployment (est 4.9%); 16:00 Taiwan Jun export orders (est 47.3% y/y); 16:30 HK Jun CPI (est 2.2% y/y).",
-      "trigger": "Taiwan orders beat >50% y/y with USD/CNY breaking lower.",
-      "invalidator": "HK CPI above 2.5% y/y with USD/CNY fix weaker for three sessions.",
-      "horizon": "hours",
-      "status": "new"
-    },
-    {
-      "priority": "MEDIUM",
       "headline": "Jul 21 PBOC liquidity — 1000亿元 treasury deposit maturity",
       "why": "Quantity tool watch after Jul 20 net OMO +1745亿元.",
       "watch": "Jul 21 OMO size vs 2365亿元 maturing (Sina weekly calendar); DR007.",
@@ -1009,8 +1076,8 @@
       "status": "new"
     }
   ],
-  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 网易财经 (Jul 21 A-share close), 新浪财经 (Jul 21 A-share morning/OMO), 第一财经 (Jul 21 semi V, Goldman PB, coast guard), 华尔街见闻 (3776521 Changxin IPO), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury/earnings calendar), CoinDesk/Cointelegraph (Jul 20 BTC).",
-  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video Jul 21 — theblockbeats.info unreachable in CI scan). Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels; news/59062 Polymarket page dates 2025). Rejected 华尔街见闻 3751515 (denylisted mid-day A/H wrap; +0.72% Shanghai conflicts with 网易财经 Jul 21 official close +1.79%). Also rejected 3751205/3751275 (2025 stale wraps). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture this run. 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-21.png (抗癌新药获批数量). 市场一览 desk color lives in marketOverview (not Global/China prose).",
+  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 网易财经 (Jul 21 A-share close), 新浪财经 (Jul 21 A-share morning/OMO), 第一财经 (Jul 21 semi V, Goldman PB, coast guard), 华尔街见闻 (3776521 Changxin IPO), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury/earnings calendar), CoinDesk/Cointelegraph (Jul 20 BTC), Taiwan News (Jul 21 export orders), The Standard (Jul 21 HK CPI), investinglive (Jul 21 UK ILO).",
+  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video Jul 21 — theblockbeats.info unreachable in CI scan). Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels; news/59062 Polymarket page dates 2025). Rejected 华尔街见闻 3751515 (denylisted mid-day A/H wrap; +0.72% Shanghai conflicts with 网易财经 Jul 21 official close +1.79%). Also rejected 3751205/3751275/3751711/3751602 (2025 stale wraps). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture this run. 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-21.png (抗癌新药获批数量). 市场一览 desk color lives in marketOverview (not Global/China prose). Evening refresh merged Jul 21 Taiwan/HK/UK data prints; marketDashboard re-injected at publish.",
   "marketOverview": {
     "asOfDate": "2026-07-21",
     "note": "Qualitative desk color from 彭博财经早茶 — not official closes.",
@@ -1050,7 +1117,7 @@
     ]
   },
   "marketDashboard": {
-    "asOf": "2026-07-21T07:26:55.627Z",
+    "asOf": "2026-07-21T12:06:56.085Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -1084,10 +1151,10 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "18.65",
-            "change": "−0.64%",
+            "latest": "17.75",
+            "change": "−4.83%",
             "changeDirection": "down",
-            "asOfDate": "2026-07-20",
+            "asOfDate": "2026-07-21",
             "source": {
               "label": "Yahoo Finance (^VIX)",
               "href": "https://finance.yahoo.com/quote/%5EVIX/"
@@ -1108,9 +1175,9 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,170.11",
-            "change": "+0.11%",
-            "changeDirection": "up",
+            "latest": "25,132.29",
+            "change": "−0.04%",
+            "changeDirection": "down",
             "asOfDate": "2026-07-21",
             "source": {
               "label": "Yahoo Finance (^HSI)",
@@ -1120,7 +1187,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,828.64",
+            "latest": "4,814.83",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-07-21",
@@ -1204,8 +1271,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "162.5830",
-            "change": "+0.04%",
+            "latest": "162.7540",
+            "change": "+0.15%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1216,8 +1283,8 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7645",
-            "change": "−0.12%",
+            "latest": "6.7540",
+            "change": "−0.27%",
             "changeDirection": "down",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1228,8 +1295,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,076.50",
-            "change": "+1.65%",
+            "latest": "$4,061.40",
+            "change": "+1.27%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1240,8 +1307,8 @@
           {
             "id": "brent",
             "asset": "Brent crude",
-            "latest": "$89.25",
-            "change": "+0.03%",
+            "latest": "$90.72",
+            "change": "+1.68%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1252,8 +1319,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$65,863",
-            "change": "+2.81%",
+            "latest": "$66,225",
+            "change": "+2.23%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1264,9 +1331,9 @@
           {
             "id": "btc-funding",
             "asset": "BTC funding rate",
-            "latest": "0.0008%",
-            "change": "−0.072 bp",
-            "changeDirection": "down",
+            "latest": "0.0017%",
+            "change": "+0.092 bp",
+            "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
               "label": "OKX funding API",
