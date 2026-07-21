@@ -27,6 +27,12 @@ import { beijingDateString } from "./lib/briefing-slot-gate.mjs";
 import { INBOX_LAST_FETCH_REL } from "./lib/load-inbox-context.mjs";
 import { hasBloombergChartOfDay } from "./lib/inbox-bloomberg-sections.mjs";
 import {
+  bloombergChartPublicPath,
+  bloombergChartRelPath,
+  findChartOfDayRemoteUrl,
+  pickBloombergChartAttachment,
+} from "./lib/inbox-bloomberg-chart-image.mjs";
+import {
   extractBloombergDateKey,
   formatInboxMarkdown,
   inboxRelPath,
@@ -154,28 +160,100 @@ function existingReceivedAt(abs) {
 /** Prefer text/plain; for HTML-only mail keep block breaks so 今日图表 stays a header. */
 function emailBodyToText(parsed) {
   const plain = (parsed.text || "").trim();
-  if (plain.length >= 40) return plain;
   const html = parsed.html ? String(parsed.html) : "";
-  if (!html.trim()) return plain;
-  return html
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<(br|BR)\s*\/?\s*>/g, "\n")
-    .replace(/<\/(p|div|tr|li|h[1-6]|table|section|article|header|footer)>/gi, "\n")
-    .replace(/<img[^>]*alt=["']([^"']+)["'][^>]*>/gi, "\n$1\n")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/gi, " ")
-    .replace(/&amp;/gi, "&")
-    .replace(/&lt;/gi, "<")
-    .replace(/&gt;/gi, ">")
-    .replace(/&#(\d+);/g, (_, n) => {
-      const code = Number(n);
-      return Number.isFinite(code) ? String.fromCharCode(code) : " ";
-    })
-    .replace(/[ \t]+\n/g, "\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .replace(/[ \t]{2,}/g, " ")
-    .trim();
+  const fromHtml = html.trim()
+    ? html
+        .replace(/<script[\s\S]*?<\/script>/gi, " ")
+        .replace(/<style[\s\S]*?<\/style>/gi, " ")
+        .replace(/<(br|BR)\s*\/?\s*>/g, "\n")
+        .replace(/<\/(p|div|tr|li|h[1-6]|table|section|article|header|footer)>/gi, "\n")
+        .replace(/<img[^>]*alt=["']([^"']+)["'][^>]*>/gi, "\n$1\n")
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&nbsp;/gi, " ")
+        .replace(/&amp;/gi, "&")
+        .replace(/&lt;/gi, "<")
+        .replace(/&gt;/gi, ">")
+        .replace(/&#(\d+);/g, (_, n) => {
+          const code = Number(n);
+          return Number.isFinite(code) ? String.fromCharCode(code) : " ";
+        })
+        .replace(/[ \t]+\n/g, "\n")
+        .replace(/\n{3,}/g, "\n\n")
+        .replace(/[ \t]{2,}/g, " ")
+        .trim()
+    : "";
+
+  const plainHasChart = /今日图表|图表点评|图说|Chart of the Day/i.test(plain);
+  const htmlHasChart = /今日图表|图表点评|图说|Chart of the Day/i.test(fromHtml);
+  if (plain.length >= 40 && plainHasChart) return plain;
+  if (fromHtml.length >= 40 && htmlHasChart) return fromHtml;
+  if (plain.length >= 40) return plain;
+  return fromHtml || plain;
+}
+
+/**
+ * Save 今日图表 image next to public assets. Returns public path or null.
+ */
+async function saveBloombergChartImage(parsed, briefingDate) {
+  const picked = pickBloombergChartAttachment(parsed);
+  if (picked?.buffer) {
+    const rel = bloombergChartRelPath(briefingDate, picked.ext);
+    const abs = path.join(root, rel);
+    ensureDir(abs);
+    fs.writeFileSync(abs, picked.buffer);
+    console.log(
+      `[inbox] chart image saved ${rel} (${picked.bytes} bytes, ${picked.reason})`,
+    );
+    return {
+      publicPath: bloombergChartPublicPath(briefingDate, picked.ext),
+      rel,
+      alt: picked.alt || "",
+      bytes: picked.bytes,
+    };
+  }
+
+  const remote = findChartOfDayRemoteUrl(parsed?.html || "");
+  if (remote?.url) {
+    try {
+      const res = await fetch(remote.url, {
+        headers: { "user-agent": "syravocado-inbox-fetch/1.0" },
+        redirect: "follow",
+      });
+      if (!res.ok) {
+        console.warn(`[inbox] chart remote fetch HTTP ${res.status}`);
+        return null;
+      }
+      const ct = res.headers.get("content-type") || "image/jpeg";
+      const buf = Buffer.from(await res.arrayBuffer());
+      if (buf.length < 8000) {
+        console.warn(`[inbox] chart remote too small (${buf.length}) — skip`);
+        return null;
+      }
+      const ext = ct.includes("png")
+        ? "png"
+        : ct.includes("webp")
+          ? "webp"
+          : ct.includes("gif")
+            ? "gif"
+            : "jpg";
+      const rel = bloombergChartRelPath(briefingDate, ext);
+      const absImg = path.join(root, rel);
+      ensureDir(absImg);
+      fs.writeFileSync(absImg, buf);
+      console.log(`[inbox] chart image downloaded ${rel} (${buf.length} bytes)`);
+      return {
+        publicPath: bloombergChartPublicPath(briefingDate, ext),
+        rel,
+        alt: remote.alt || "",
+        bytes: buf.length,
+      };
+    } catch (err) {
+      console.warn(`[inbox] chart remote fetch failed: ${err?.message || err}`);
+    }
+  }
+
+  console.log("[inbox] no 今日图表 image attachment found");
+  return null;
 }
 
 async function main() {
@@ -310,14 +388,25 @@ async function main() {
 
       if (source.cadence === "daily" && fs.existsSync(abs)) {
         const existingMd = fs.readFileSync(abs, "utf8");
-        if (isAgentReformattedInboxCapture(existingMd)) {
+        const chartRelCandidates = ["jpg", "png", "webp", "gif"].map((ext) =>
+          path.join(root, bloombergChartRelPath(briefingDate, ext)),
+        );
+        const hasChartFile = chartRelCandidates.some((p) => fs.existsSync(p));
+        if (
+          source.id === "bloomberg-markets-daily-china" &&
+          hasBloombergChartOfDay(existingMd) &&
+          !hasChartFile
+        ) {
+          console.log(
+            `[inbox] exists ${rel} — replace to extract 今日图表 image`,
+          );
+        } else if (isAgentReformattedInboxCapture(existingMd)) {
           console.log(
             `[inbox] exists ${rel} — replace agent-reformatted capture (restore raw IMAP)`,
           );
         } else {
           const prev = existingReceivedAt(abs);
           if (prev && when <= prev) {
-            // Still refresh if the on-disk file lost 今日图表 but this message has it
             const existingHasChart = hasBloombergChartOfDay(existingMd);
             const incomingPreview =
               (parsed.text || "") + " " + (parsed.html || "");
@@ -360,17 +449,31 @@ async function main() {
         continue;
       }
 
+      let chartImage = null;
+      let chartAlt = "";
+      let chartRel = null;
+      if (source.id === "bloomberg-markets-daily-china") {
+        const chart = await saveBloombergChartImage(parsed, briefingDate);
+        if (chart) {
+          chartImage = chart.publicPath;
+          chartAlt = chart.alt || "";
+          chartRel = chart.rel;
+        }
+      }
+
       const md = formatInboxMarkdown({
         source,
         subject,
         from,
         date: when,
         text,
+        chartImage,
+        chartAlt,
       });
       ensureDir(abs);
       fs.writeFileSync(abs, md.endsWith("\n") ? md : `${md}\n`);
       console.log(
-        `[inbox] saved ${rel} (${text.length} chars) from ${msg._mailbox || "?"}`,
+        `[inbox] saved ${rel} (${text.length} chars) from ${msg._mailbox || "?"}${chartImage ? ` chart=${chartImage}` : ""}`,
       );
       saved.push({
         sourceId: source.id,
@@ -379,6 +482,8 @@ async function main() {
         from,
         chars: text.length,
         mailbox: msg._mailbox || "",
+        chartImage: chartImage || undefined,
+        chartRel: chartRel || undefined,
       });
     }
     await client.logout();

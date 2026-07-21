@@ -5,6 +5,14 @@ interface KeyFiguresProps {
   figures: BriefingFigure[];
 }
 
+function assetUrl(src?: string): string | undefined {
+  if (!src) return undefined;
+  if (/^https?:\/\//i.test(src)) return src;
+  const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const path = src.startsWith("/") ? src : `/${src}`;
+  return `${base}${path}`;
+}
+
 function formatSigned(value: number, unit?: string): string {
   const sign = value > 0 ? "+" : "";
   const body = Number.isInteger(value) ? String(value) : value.toFixed(2);
@@ -139,6 +147,16 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
                 <h3 className="display mt-2 text-2xl tracking-tight text-ink sm:text-3xl">
                   {figure.title}
                 </h3>
+                {assetUrl(figure.imageSrc) ? (
+                  <figure className="mt-5 overflow-hidden border border-ink/10 bg-mist/40">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={assetUrl(figure.imageSrc)}
+                      alt={figure.title || "Bloomberg chart of the day"}
+                      className="h-auto w-full max-h-[28rem] object-contain object-left bg-white"
+                    />
+                  </figure>
+                ) : null}
                 {figure.display ? (
                   <p className="mt-3 text-3xl font-semibold tabular-nums tracking-tight text-ink">
                     {figure.display}

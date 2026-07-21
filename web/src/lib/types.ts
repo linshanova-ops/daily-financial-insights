@@ -72,6 +72,11 @@ export interface BriefingFigure {
    * explaining what the chart implies for today's tape / policy / risk.
    */
   analysis?: string;
+  /**
+   * Site path to the chart image saved from the email
+   * (e.g. "/inbox-charts/bloomberg-2026-07-21.jpg").
+   */
+  imageSrc?: string;
   source: FactSource;
 }
 

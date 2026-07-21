@@ -73,6 +73,20 @@ export function loadInboxFetchStatus() {
   }
 }
 
+function readFrontmatterField(markdown, key) {
+  const re = new RegExp(`^${key}:\\s*(.+)$`, "m");
+  const m = String(markdown || "").match(re);
+  if (!m) return "";
+  let v = m[1].trim();
+  if (
+    (v.startsWith('"') && v.endsWith('"')) ||
+    (v.startsWith("'") && v.endsWith("'"))
+  ) {
+    v = v.slice(1, -1);
+  }
+  return v;
+}
+
 function formatOneInboxItem(item, index) {
   const langRule =
     item.keepLanguage === "zh"
@@ -83,6 +97,14 @@ function formatOneInboxItem(item, index) {
   const citeRule = citeHref
     ? `Cite as { label: "${item.label}", href: "${citeHref}" } — never email tracking links.`
     : `Cite label "${item.label}" with a stable public landing page — never email tracking links.`;
+
+  const chartImage = readFrontmatterField(item.body, "chartImage");
+  const chartAlt = readFrontmatterField(item.body, "chartAlt");
+  const chartRule = chartImage
+    ? `今日图表 IMAGE (REQUIRED): file \`${chartImage}\` is already in the repo (also under web/public/inbox-charts/). Add figures[] entry id=bloomberg-chart-of-day, kind=insight with imageSrc: "${chartImage}", title, and required analysis. Open/read the image file to write an accurate analysis (Chinese OK). Keep the image file in the PR commit.`
+    : item.sourceId === "bloomberg-markets-daily-china"
+      ? "今日图表: if section header exists but no chartImage frontmatter, still add insight analysis from section text when possible."
+      : "";
 
   const rawBody = stripInboxFrontmatter(item.body);
   let prepared;
@@ -97,6 +119,7 @@ function formatOneInboxItem(item, index) {
   return `### Inbox ${index + 1}: ${item.label} (\`${item.path}\`)
 ${langRule}
 ${citeRule}
+${chartRule}
 Merge into existing modules only (China/Global/Assets/Watch as appropriate). Add this source to keySources when used.
 
 \`\`\`newsletter

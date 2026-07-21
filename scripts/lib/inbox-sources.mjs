@@ -173,8 +173,13 @@ export function formatInboxMarkdown({
   from,
   date,
   text,
+  chartImage,
+  chartAlt,
 }) {
   const received = date instanceof Date ? date.toISOString() : String(date || "");
+  const chartLines = chartImage
+    ? `chartImage: ${JSON.stringify(chartImage)}\nchartAlt: ${JSON.stringify(chartAlt || "")}\n`
+    : "";
   return `---
 sourceId: ${source.id}
 sourceLabel: ${JSON.stringify(source.label)}
@@ -184,7 +189,7 @@ citeHref: ${JSON.stringify(source.citeHref || INBOX_CITE_HREFS[source.id] || "")
 subject: ${JSON.stringify(subject || "")}
 from: ${JSON.stringify(from || "")}
 receivedAt: ${JSON.stringify(received)}
----
+${chartLines}---
 
 ${(text || "").trim()}
 `;
