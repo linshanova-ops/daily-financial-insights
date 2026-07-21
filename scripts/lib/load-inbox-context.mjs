@@ -101,7 +101,7 @@ function formatOneInboxItem(item, index) {
   const chartImage = readFrontmatterField(item.body, "chartImage");
   const chartAlt = readFrontmatterField(item.body, "chartAlt");
   const chartRule = chartImage
-    ? `今日图表 IMAGE (REQUIRED): file \`${chartImage}\` is already in the repo (also under web/public/inbox-charts/). Add figures[] entry id=bloomberg-chart-of-day, kind=insight with imageSrc: "${chartImage}", title, and required analysis. Open/read the image file to write an accurate analysis (Chinese OK). Keep the image file in the PR commit.`
+    ? `今日图表 IMAGE (REQUIRED): file \`${chartImage}\` is already in the repo (also under web/public/inbox-charts/). Add figures[] entry id=bloomberg-chart-of-day, kind=insight with imageSrc: "${chartImage}", title, and required analysis. Open/read the image first — title+analysis must match the chart content (not a neighboring news bullet). Keep Chinese OK. Keep the image file in the PR commit.`
     : item.sourceId === "bloomberg-markets-daily-china"
       ? "今日图表: if section header exists but no chartImage frontmatter, still add insight analysis from section text when possible."
       : "";
@@ -120,7 +120,7 @@ function formatOneInboxItem(item, index) {
 ${langRule}
 ${citeRule}
 ${chartRule}
-Merge into existing modules only (China/Global/Assets/Watch as appropriate). Add this source to keySources when used.
+FULL COVERAGE: merge **all** newsletter sections — 国际要闻→Global, 大中华→China, 市场一览→marketOverview (above closes, not Global/China dump), 日程/央行动态→Watch, 今日图表→Figures. Add this source to keySources when used.
 
 \`\`\`newsletter
 ${prepared}

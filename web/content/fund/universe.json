@@ -1,0 +1,902 @@
+[
+  {
+    "rank": 1,
+    "name": "Citadel Investment Group",
+    "country": "美国",
+    "city": "Chicago",
+    "aum": 445.959,
+    "strategy": "Multi Strategy",
+    "change": "—"
+  },
+  {
+    "rank": 2,
+    "name": "Ares Management",
+    "country": "美国",
+    "city": "Los Angeles",
+    "aum": 318.748,
+    "strategy": "Alternative Credit",
+    "change": "—"
+  },
+  {
+    "rank": 3,
+    "name": "Balyasny Asset Management",
+    "country": "美国",
+    "city": "Chicago",
+    "aum": 265.152,
+    "strategy": "Multi Strategy",
+    "change": "—"
+  },
+  {
+    "rank": 4,
+    "name": "Oracle Investment Management",
+    "country": "美国",
+    "city": "Greenwich",
+    "aum": 265.152,
+    "strategy": "Long / Short",
+    "change": "NEW"
+  },
+  {
+    "rank": 5,
+    "name": "Rokos Capital Management",
+    "country": "英国",
+    "city": "London",
+    "aum": 229.815,
+    "strategy": "Global Macro",
+    "change": "—"
+  },
+  {
+    "rank": 6,
+    "name": "Point72 Asset Management",
+    "country": "美国",
+    "city": "Stamford",
+    "aum": 220.93,
+    "strategy": "Multi Strategy",
+    "change": "—"
+  },
+  {
+    "rank": 7,
+    "name": "Millennium Capital Partners",
+    "country": "美国",
+    "city": "New York",
+    "aum": 218,
+    "strategy": "Multi Strategy",
+    "change": "↓3"
+  },
+  {
+    "rank": 8,
+    "name": "Squarepoint Capital",
+    "country": "英国",
+    "city": "London",
+    "aum": 180.767,
+    "strategy": "Systematic",
+    "change": "—"
+  },
+  {
+    "rank": 9,
+    "name": "D. E. Shaw",
+    "country": "美国",
+    "city": "New York",
+    "aum": 154.587,
+    "strategy": "Absolute Return",
+    "change": "↑2"
+  },
+  {
+    "rank": 10,
+    "name": "Alphadyne Asset Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 147.366,
+    "strategy": "Global Macro",
+    "change": "↑2"
+  },
+  {
+    "rank": 11,
+    "name": "ExodusPoint Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 119.722,
+    "strategy": "Multi Strategy",
+    "change": "↑5"
+  },
+  {
+    "rank": 12,
+    "name": "Two Sigma International",
+    "country": "英国",
+    "city": "London",
+    "aum": 110.281,
+    "strategy": "Systematic",
+    "change": "↑6"
+  },
+  {
+    "rank": 13,
+    "name": "Two Sigma Investments",
+    "country": "美国",
+    "city": "New York",
+    "aum": 110.281,
+    "strategy": "Systematic",
+    "change": "↑6"
+  },
+  {
+    "rank": 14,
+    "name": "Garda Capital",
+    "country": "美国",
+    "city": "Minneapolis",
+    "aum": 106.637,
+    "strategy": "Fixed Income",
+    "change": "↓7"
+  },
+  {
+    "rank": 15,
+    "name": "Goldman Sachs Asset Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 106.24,
+    "strategy": "Fund of Funds",
+    "change": "↓2"
+  },
+  {
+    "rank": 16,
+    "name": "Mariner Investment Group",
+    "country": "美国",
+    "city": "New York",
+    "aum": 103.601,
+    "strategy": "Multi Strategy",
+    "change": "↓7"
+  },
+  {
+    "rank": 17,
+    "name": "Angelo Gordon",
+    "country": "美国",
+    "city": "New York",
+    "aum": 100.051,
+    "strategy": "Credit / Distressed",
+    "change": "↑3"
+  },
+  {
+    "rank": 18,
+    "name": "Bridgewater Associates",
+    "country": "美国",
+    "city": "Westport",
+    "aum": 97.887,
+    "strategy": "Global Macro",
+    "change": "↓8"
+  },
+  {
+    "rank": 19,
+    "name": "Renaissance Technologies",
+    "country": "美国",
+    "city": "East Setauket",
+    "aum": 91.958,
+    "strategy": "Systematic",
+    "change": "↓2"
+  },
+  {
+    "rank": 20,
+    "name": "Lighthouse Investment Partners",
+    "country": "美国",
+    "city": "Palm Beach Gardens",
+    "aum": 85.748,
+    "strategy": "Fund of Funds",
+    "change": "↑10"
+  },
+  {
+    "rank": 21,
+    "name": "Bracebridge Capital",
+    "country": "美国",
+    "city": "Boston",
+    "aum": 84.739,
+    "strategy": "Absolute Return",
+    "change": "↑3"
+  },
+  {
+    "rank": 22,
+    "name": "Cerberus Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 84.095,
+    "strategy": "Distressed",
+    "change": "↓7"
+  },
+  {
+    "rank": 23,
+    "name": "AQR Capital Management",
+    "country": "美国",
+    "city": "Greenwich",
+    "aum": 83.848,
+    "strategy": "Systematic",
+    "change": "—"
+  },
+  {
+    "rank": 24,
+    "name": "Tudor Investment Corporation",
+    "country": "美国",
+    "city": "Stamford",
+    "aum": 83.566,
+    "strategy": "Global Macro",
+    "change": "↑2"
+  },
+  {
+    "rank": 25,
+    "name": "Capula Investment Management",
+    "country": "英国",
+    "city": "London",
+    "aum": 78.324,
+    "strategy": "Fixed Income",
+    "change": "↓11"
+  },
+  {
+    "rank": 26,
+    "name": "Fortress Investment Group",
+    "country": "美国",
+    "city": "New York",
+    "aum": 71.327,
+    "strategy": "Distressed",
+    "change": "↓4"
+  },
+  {
+    "rank": 27,
+    "name": "Viking Global Investors",
+    "country": "美国",
+    "city": "Greenwich",
+    "aum": 69.79,
+    "strategy": "Long / Short",
+    "change": "↓2"
+  },
+  {
+    "rank": 28,
+    "name": "Tiger Global Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 69.562,
+    "strategy": "Long / Short",
+    "change": "↑1"
+  },
+  {
+    "rank": 29,
+    "name": "Coatue Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 69.416,
+    "strategy": "Long / Short",
+    "change": "↓1"
+  },
+  {
+    "rank": 30,
+    "name": "Adage Capital Management",
+    "country": "美国",
+    "city": "Boston",
+    "aum": 59.994,
+    "strategy": "Long / Short",
+    "change": "↑1"
+  },
+  {
+    "rank": 31,
+    "name": "Brevan Howard Asset Management",
+    "country": "英国",
+    "city": "London",
+    "aum": 58.63,
+    "strategy": "Global Macro",
+    "change": "↓4"
+  },
+  {
+    "rank": 32,
+    "name": "Stone Point Capital",
+    "country": "美国",
+    "city": "Greenwich",
+    "aum": 56.767,
+    "strategy": "Long / Short",
+    "change": "—"
+  },
+  {
+    "rank": 33,
+    "name": "III Capital",
+    "country": "美国",
+    "city": "Boca Raton",
+    "aum": 55.301,
+    "strategy": "Fixed Income",
+    "change": "↑21"
+  },
+  {
+    "rank": 34,
+    "name": "Farallon Capital Management",
+    "country": "美国",
+    "city": "San Francisco",
+    "aum": 48.181,
+    "strategy": "Multi Strategy",
+    "change": "↑2"
+  },
+  {
+    "rank": 35,
+    "name": "Och-Ziff Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 44.026,
+    "strategy": "Multi Strategy",
+    "change": "↓1"
+  },
+  {
+    "rank": 36,
+    "name": "Sculptor Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 44.026,
+    "strategy": "Multi Strategy",
+    "change": "↓1"
+  },
+  {
+    "rank": 37,
+    "name": "GoldenTree Asset Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 43.734,
+    "strategy": "Credit",
+    "change": "—"
+  },
+  {
+    "rank": 38,
+    "name": "Polar Asset Management Partners",
+    "country": "加拿大",
+    "city": "Toronto",
+    "aum": 42.905,
+    "strategy": "Multi Strategy",
+    "change": "↑14"
+  },
+  {
+    "rank": 39,
+    "name": "Man Group",
+    "country": "英国",
+    "city": "London",
+    "aum": 41.696,
+    "strategy": "Systematic",
+    "change": "↑5"
+  },
+  {
+    "rank": 40,
+    "name": "Davidson Kempner Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 41.633,
+    "strategy": "Distressed",
+    "change": "↓7"
+  },
+  {
+    "rank": 41,
+    "name": "Tenaron Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 40.039,
+    "strategy": "Global Macro",
+    "change": "↑2"
+  },
+  {
+    "rank": 42,
+    "name": "Element Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 40.031,
+    "strategy": "Global Macro",
+    "change": "↓21"
+  },
+  {
+    "rank": 43,
+    "name": "Oaktree Capital Management",
+    "country": "美国",
+    "city": "Los Angeles",
+    "aum": 38.35,
+    "strategy": "Distressed",
+    "change": "↓5"
+  },
+  {
+    "rank": 44,
+    "name": "Holocene Advisors",
+    "country": "美国",
+    "city": "New York",
+    "aum": 38.046,
+    "strategy": "Long / Short",
+    "change": "↓5"
+  },
+  {
+    "rank": 45,
+    "name": "Silver Point Capital",
+    "country": "美国",
+    "city": "Greenwich",
+    "aum": 37.087,
+    "strategy": "Distressed",
+    "change": "↑15"
+  },
+  {
+    "rank": 46,
+    "name": "Centerbridge Partners",
+    "country": "美国",
+    "city": "New York",
+    "aum": 37.036,
+    "strategy": "Credit / Distressed",
+    "change": "↓4"
+  },
+  {
+    "rank": 47,
+    "name": "Symmetry Investments",
+    "country": "中国香港",
+    "city": "Hong Kong",
+    "aum": 36.435,
+    "strategy": "Fixed Income",
+    "change": "↓6"
+  },
+  {
+    "rank": 48,
+    "name": "Voloridge Investment Management",
+    "country": "美国",
+    "city": "Jupiter",
+    "aum": 36.274,
+    "strategy": "Systematic",
+    "change": "↓3"
+  },
+  {
+    "rank": 49,
+    "name": "Field Street Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 36.006,
+    "strategy": "Fixed Income",
+    "change": "↑14"
+  },
+  {
+    "rank": 50,
+    "name": "Hudson Bay Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 33.892,
+    "strategy": "Multi Strategy",
+    "change": "↑1"
+  },
+  {
+    "rank": 51,
+    "name": "BlackRock Alternative Advisors",
+    "country": "美国",
+    "city": "New York",
+    "aum": 33.25,
+    "strategy": "Fund of Funds",
+    "change": "↓5"
+  },
+  {
+    "rank": 52,
+    "name": "Marshall Wace",
+    "country": "英国",
+    "city": "London",
+    "aum": 33.004,
+    "strategy": "Long / Short",
+    "change": "↑39"
+  },
+  {
+    "rank": 53,
+    "name": "Apollo Capital",
+    "country": "美国",
+    "city": "New York",
+    "aum": 32.68,
+    "strategy": "Alternative Credit",
+    "change": "↓5"
+  },
+  {
+    "rank": 54,
+    "name": "King Street Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 32.316,
+    "strategy": "Credit / Distressed",
+    "change": "↑4"
+  },
+  {
+    "rank": 55,
+    "name": "Paskewitz Asset Management",
+    "country": "美国",
+    "city": "Edison",
+    "aum": 31.844,
+    "strategy": "Systematic",
+    "change": "↓2"
+  },
+  {
+    "rank": 56,
+    "name": "Lansdowne Partners",
+    "country": "英国",
+    "city": "London",
+    "aum": 31.74,
+    "strategy": "Long / Short",
+    "change": "↓7"
+  },
+  {
+    "rank": 57,
+    "name": "Pictet Alternative Investments",
+    "country": "瑞士",
+    "city": "Geneva",
+    "aum": 31.715,
+    "strategy": "Fund of Funds",
+    "change": "↓7"
+  },
+  {
+    "rank": 58,
+    "name": "Alyeska Investment Group",
+    "country": "美国",
+    "city": "Chicago",
+    "aum": 31.652,
+    "strategy": "Multi Strategy",
+    "change": "↑15"
+  },
+  {
+    "rank": 59,
+    "name": "Select Equity",
+    "country": "美国",
+    "city": "New York",
+    "aum": 31.574,
+    "strategy": "Long / Short",
+    "change": "↓19"
+  },
+  {
+    "rank": 60,
+    "name": "Cheyne Capital",
+    "country": "英国",
+    "city": "London",
+    "aum": 28.969,
+    "strategy": "Credit / Convertibles",
+    "change": "↓5"
+  },
+  {
+    "rank": 61,
+    "name": "Graham Capital Management",
+    "country": "美国",
+    "city": "Rowayton",
+    "aum": 28.538,
+    "strategy": "Global Macro",
+    "change": "↑31"
+  },
+  {
+    "rank": 62,
+    "name": "Kayne Anderson Capital Advisors",
+    "country": "美国",
+    "city": "Los Angeles",
+    "aum": 28.444,
+    "strategy": "Alternative Credit",
+    "change": "↓6"
+  },
+  {
+    "rank": 63,
+    "name": "Polar Capital Partners",
+    "country": "英国",
+    "city": "London",
+    "aum": 28.107,
+    "strategy": "Long / Short",
+    "change": "↑7"
+  },
+  {
+    "rank": 64,
+    "name": "HBK Capital Management",
+    "country": "美国",
+    "city": "Dallas",
+    "aum": 28.013,
+    "strategy": "Multi Strategy",
+    "change": "↑15"
+  },
+  {
+    "rank": 65,
+    "name": "Moore Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 27.984,
+    "strategy": "Global Macro",
+    "change": "↓18"
+  },
+  {
+    "rank": 66,
+    "name": "Lyxor Asset Management",
+    "country": "法国",
+    "city": "Paris",
+    "aum": 27.924,
+    "strategy": "Fund of Funds",
+    "change": "↓7"
+  },
+  {
+    "rank": 67,
+    "name": "Ruffer",
+    "country": "英国",
+    "city": "London",
+    "aum": 27.6,
+    "strategy": "Absolute Return",
+    "change": "↓6"
+  },
+  {
+    "rank": 68,
+    "name": "Wellington Management",
+    "country": "美国",
+    "city": "Boston",
+    "aum": 27.21,
+    "strategy": "Multi Strategy",
+    "change": "↓4"
+  },
+  {
+    "rank": 69,
+    "name": "Capstone Investment Advisors",
+    "country": "美国",
+    "city": "New York",
+    "aum": 26.99,
+    "strategy": "Volatility",
+    "change": "↓4"
+  },
+  {
+    "rank": 70,
+    "name": "TCI Fund Management",
+    "country": "英国",
+    "city": "London",
+    "aum": 26.5,
+    "strategy": "Long / Short",
+    "change": "↓4"
+  },
+  {
+    "rank": 71,
+    "name": "Benefit Street Partners",
+    "country": "美国",
+    "city": "New York",
+    "aum": 26.07,
+    "strategy": "Credit",
+    "change": "↓9"
+  },
+  {
+    "rank": 72,
+    "name": "Magnetar Capital",
+    "country": "美国",
+    "city": "Evanston",
+    "aum": 24.95,
+    "strategy": "Multi Strategy",
+    "change": "↑3"
+  },
+  {
+    "rank": 73,
+    "name": "Pine River Capital Management",
+    "country": "美国",
+    "city": "Minnetonka",
+    "aum": 24.053,
+    "strategy": "Global Macro",
+    "change": "↑78"
+  },
+  {
+    "rank": 74,
+    "name": "Willis Towers Watson",
+    "country": "英国",
+    "city": "London",
+    "aum": 23.92,
+    "strategy": "Fund of Funds",
+    "change": "↓3"
+  },
+  {
+    "rank": 75,
+    "name": "Baupost Group",
+    "country": "美国",
+    "city": "Boston",
+    "aum": 23.585,
+    "strategy": "Long / Short",
+    "change": "↓6"
+  },
+  {
+    "rank": 76,
+    "name": "Strategic Value Partners",
+    "country": "美国",
+    "city": "Greenwich",
+    "aum": 23.424,
+    "strategy": "Distressed",
+    "change": "↑1"
+  },
+  {
+    "rank": 77,
+    "name": "Onex Credit Partners",
+    "country": "加拿大",
+    "city": "Toronto",
+    "aum": 23.411,
+    "strategy": "Credit",
+    "change": "↑20"
+  },
+  {
+    "rank": 78,
+    "name": "Woodline Partners",
+    "country": "美国",
+    "city": "San Francisco",
+    "aum": 22.744,
+    "strategy": "Long / Short",
+    "change": "↑34"
+  },
+  {
+    "rank": 79,
+    "name": "Horsley Bridge Partners",
+    "country": "美国",
+    "city": "San Francisco",
+    "aum": 22.29,
+    "strategy": "Fund of Funds",
+    "change": "↓5"
+  },
+  {
+    "rank": 80,
+    "name": "RAM Active Investments",
+    "country": "瑞士",
+    "city": "Geneva",
+    "aum": 22,
+    "strategy": "Emerging Markets",
+    "change": "NEW"
+  },
+  {
+    "rank": 81,
+    "name": "Haidar Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 21.921,
+    "strategy": "Global Macro",
+    "change": "↓13"
+  },
+  {
+    "rank": 82,
+    "name": "Diameter Capital Partners",
+    "country": "美国",
+    "city": "New York",
+    "aum": 21.578,
+    "strategy": "Credit",
+    "change": "↑13"
+  },
+  {
+    "rank": 83,
+    "name": "Gopher Asset Management",
+    "country": "中国",
+    "city": "Shanghai",
+    "aum": 21.2,
+    "strategy": "Absolute Return",
+    "change": "↓7"
+  },
+  {
+    "rank": 84,
+    "name": "Wafra Investment Group",
+    "country": "美国",
+    "city": "New York",
+    "aum": 20.813,
+    "strategy": "Multi Strategy",
+    "change": "↓3"
+  },
+  {
+    "rank": 85,
+    "name": "Paloma Partners",
+    "country": "美国",
+    "city": "Greenwich",
+    "aum": 20.803,
+    "strategy": "Multi Strategy",
+    "change": "↓28"
+  },
+  {
+    "rank": 86,
+    "name": "Brigade Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 20.342,
+    "strategy": "Credit",
+    "change": "↑10"
+  },
+  {
+    "rank": 87,
+    "name": "Marathon Asset Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 20.321,
+    "strategy": "Distressed",
+    "change": "↓9"
+  },
+  {
+    "rank": 88,
+    "name": "Lone Pine Capital",
+    "country": "美国",
+    "city": "Greenwich",
+    "aum": 19.846,
+    "strategy": "Long / Short",
+    "change": "↑15"
+  },
+  {
+    "rank": 89,
+    "name": "Beach Point Capital Management",
+    "country": "美国",
+    "city": "Santa Monica",
+    "aum": 19.736,
+    "strategy": "Credit",
+    "change": "↑25"
+  },
+  {
+    "rank": 90,
+    "name": "Arrowstreet Capital",
+    "country": "美国",
+    "city": "Boston",
+    "aum": 19.6,
+    "strategy": "Systematic",
+    "change": "↓7"
+  },
+  {
+    "rank": 91,
+    "name": "Stockbridge",
+    "country": "美国",
+    "city": "San Francisco",
+    "aum": 19.538,
+    "strategy": "Real Estate",
+    "change": "↓7"
+  },
+  {
+    "rank": 92,
+    "name": "Third Point",
+    "country": "美国",
+    "city": "New York",
+    "aum": 19.324,
+    "strategy": "Event Driven",
+    "change": "↑25"
+  },
+  {
+    "rank": 93,
+    "name": "Guggenheim Capital Markets",
+    "country": "美国",
+    "city": "New York",
+    "aum": 19.206,
+    "strategy": "Fixed Income",
+    "change": "↓7"
+  },
+  {
+    "rank": 94,
+    "name": "Appaloosa Management",
+    "country": "美国",
+    "city": "Short Hills",
+    "aum": 19.1,
+    "strategy": "Distressed",
+    "change": "↓7"
+  },
+  {
+    "rank": 95,
+    "name": "Hillhouse Capital",
+    "country": "中国香港",
+    "city": "Hong Kong",
+    "aum": 19.034,
+    "strategy": "Emerging Markets",
+    "change": "↑5"
+  },
+  {
+    "rank": 96,
+    "name": "Alpha Wave Global",
+    "country": "美国",
+    "city": "New York",
+    "aum": 19.034,
+    "strategy": "Long / Short",
+    "change": "↑5"
+  },
+  {
+    "rank": 97,
+    "name": "BFAM Partners",
+    "country": "中国香港",
+    "city": "Hong Kong",
+    "aum": 18.965,
+    "strategy": "Multi Strategy",
+    "change": "↓8"
+  },
+  {
+    "rank": 98,
+    "name": "Grantham, Mayo, Van Otterloo",
+    "country": "美国",
+    "city": "Boston",
+    "aum": 18.96,
+    "strategy": "Systematic",
+    "change": "↓8"
+  },
+  {
+    "rank": 99,
+    "name": "Pershing Square Capital Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 18.251,
+    "strategy": "Activist",
+    "change": "↓6"
+  },
+  {
+    "rank": 100,
+    "name": "Alcentra",
+    "country": "英国",
+    "city": "London",
+    "aum": 17.896,
+    "strategy": "Credit / Distressed",
+    "change": "↓15"
+  }
+]

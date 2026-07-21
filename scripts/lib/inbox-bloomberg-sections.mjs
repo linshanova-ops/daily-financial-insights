@@ -6,7 +6,7 @@ export const BLOOMBERG_SECTION_DEFS = [
   {
     id: "lede",
     title: "导语 / 要点",
-    mergeTo: "summary (optional) + china opener",
+    mergeTo: "summary opener (global + China — not China-only)",
     patterns: [/^导语/, /^今日要点/, /^核心要点/, /^要点/],
   },
   {
@@ -47,7 +47,8 @@ export const BLOOMBERG_SECTION_DEFS = [
   {
     id: "marketOverview",
     title: "市场一览",
-    mergeTo: "assetFramework drivers",
+    mergeTo:
+      "marketOverview.items[] (REQUIRED when present) — above Market closes; NOT globalChanged/chinaChanged",
     patterns: [/^市场一览/],
   },
   {
@@ -198,6 +199,18 @@ export function formatBloombergForPrompt(text, { maxSectionChars = 3500 } = {}) 
   }
 
   const parts = [];
+  parts.push(
+    "## FULL EMAIL COVERAGE (REQUIRED)\n" +
+      "This newsletter is a **global + China** daily — do NOT keep only China bullets.\n" +
+      "Merge every labeled section below into the briefing modules:\n" +
+      "- 国际要闻 → globalChanged (cover **all** bullets: geopolitics, UK/US/Canada, M&A, tech/AI corporate, not just China-adjacent)\n" +
+      "- 大中华新闻 → chinaChanged (cover **all** bullets)\n" +
+      "- 市场一览 → marketOverview.items[] (label + Chinese text; place above Market closes — do NOT dump into Global/China)\n" +
+      "- 经济数据日程 + 央行和政府动态 → watch / watchItems\n" +
+      "- 今日图表 → figures[] insight (imageSrc when present)\n" +
+      "- 全球市况 → CROSS-CHECK ONLY (never overwrite marketDashboard)\n" +
+      "If a bullet is already covered by a stronger primary cite, still keep a short Chinese paraphrase citing 彭博 when it adds color. Prefer omit only true duplicates of the same fact.",
+  );
   if (chartDay.length) {
     parts.push(
       "## 今日图表 → Figures (REQUIRED)\nAdd ONE figures[] entry with kind: insight, id: bloomberg-chart-of-day.\n- title: short chart theme (Chinese OK); if body empty, infer from surrounding bullets + the chart IMAGE file\n- analysis: one clear so-what sentence (required) — what the chart implies for today's risk/policy/tape\n- imageSrc: use inbox chartImage path when present (e.g. /inbox-charts/bloomberg-YYYY-MM-DD.jpg)\n- display/delta: only if a hard number is stated in the section (do not invent)\n- source: 彭博 Markets Daily China / 财经早茶 stable citeHref\nKeep analysis Chinese if the section is Chinese.\n\n" +
