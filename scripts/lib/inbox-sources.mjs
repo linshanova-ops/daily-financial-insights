@@ -22,7 +22,7 @@ export function isWelcomeNewsletter(subject = "", text = "") {
 export const INBOX_SOURCES = [
   {
     id: "bloomberg-markets-daily-china",
-    label: "彭博 Markets Daily China 中文版",
+    label: "彭博 Markets Daily China / 财经早茶",
     cadence: "daily",
     /** Keep Chinese text when merging into the briefing. */
     keepLanguage: "zh",
@@ -31,16 +31,26 @@ export const INBOX_SOURCES = [
       if (isWelcomeNewsletter(subject)) return false;
       const f = from.toLowerCase();
       const s = subject.toLowerCase();
+      // Skip bare subscription confirmations
+      if (s.includes("you've subscribed") || s.includes("you have subscribed")) {
+        return false;
+      }
       const fromOk =
         f.includes("bloomberg") ||
         f.includes("newschinese@bloomberg") ||
-        f.includes("@bloomberg.net");
+        f.includes("@bloomberg.net") ||
+        f.includes("@news.bloomberg.com");
+      // Markets Daily China 中文版 OR 彭博财经早茶 (what Gmail Updates often delivers)
       const subjectOk =
         s.includes("markets daily china") ||
         subject.includes("中文版") ||
         subject.includes("全球市况") ||
-        s.includes("china markets");
-      return fromOk && (subjectOk || s.includes("bloomberg"));
+        subject.includes("财经早茶") ||
+        subject.includes("早茶") ||
+        s.includes("china markets") ||
+        (subject.includes("彭博") &&
+          (subject.includes("财经") || subject.includes("市况") || subject.includes("要闻")));
+      return fromOk && subjectOk;
     },
   },
   {
@@ -54,11 +64,19 @@ export const INBOX_SOURCES = [
       const f = from.toLowerCase();
       const s = subject.toLowerCase();
       const fromOk = f.includes("glassnode");
-      // Tighten: real Insights / Week on Chain — not Studio promo blasts.
-      if (s.includes("studio") && !s.includes("insight") && !s.includes("week")) {
+      // Reject webinars / product promos (seen: "Now live: Charting Crypto…")
+      if (
+        s.includes("now live") ||
+        s.includes("webinar") ||
+        s.includes("charting crypto") ||
+        s.includes("studio") ||
+        s.includes("intro video") ||
+        s.includes("get to know") ||
+        s.includes("register now") ||
+        s.includes("you are invited")
+      ) {
         return false;
       }
-      if (s.includes("intro video") || s.includes("get to know")) return false;
       const subjectOk =
         s.includes("week on chain") ||
         s.includes("week-on-chain") ||

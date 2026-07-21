@@ -124,13 +124,22 @@ FAIL-CLOSED PUBLISH (critical):
    and BlockBeats/律动 (theblockbeats.info) and cite at least one item from each desk
    family in the China section when they have coverage-window news.
 
+   FRESHNESS (critical for ${today}):
+   - Lead with sources dated **${today}** (Asia desks / same-day prints) and the prior
+     US cash session when this is the morning slot — not last Friday as the spine.
+   - At least ~70% of keySources must be dated inside the last ~36h of the coverage
+     window (72h only on weekend/Monday open). Older cites are background only.
+   - Every keySources label must include an explicit calendar date in-window.
+   - Do not recycle prior-briefing narratives unless re-confirmed with a fresh href today.
+
    INBOX NEWSLETTERS (Gmail IMAP — already fetched when present):
-   - 彭博 Markets Daily China 中文版 (daily): merge section→module as labeled in the
-     newsletter block (国际要闻→global, 大中华→china, 市场一览→assets, 日程/央行→watch).
+   - 彭博 Markets Daily China / 财经早茶 (daily): merge into China / Global / Assets / Watch
+     (section map when labeled; otherwise use Chinese bullets carefully).
      **Keep Chinese text Chinese** for bullets whose primary cite is this newsletter.
      Do NOT use 全球市况 tape to replace Market Dashboard numbers.
-   - Glassnode Insights (weekly, usually Tuesday): merge into crypto assetFramework /
-     signals / watch when on-chain color is relevant.
+   - Glassnode Insights / Week on Chain (weekly, usually Tuesday): merge into crypto
+     assetFramework / signals / watch when on-chain color is relevant.
+     Ignore webinar / "Now live" promos (fetcher already drops them).
    - Cite policy: use ONLY the stable href given for each inbox source (never tracking
      links from the email). When an inbox source is used, also list it in keySources.
    - Evening backfill: if web/content/briefings/${today}.md already exists AND inbox

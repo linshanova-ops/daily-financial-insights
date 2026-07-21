@@ -26,6 +26,14 @@ describe("pickSource", () => {
     assert.equal(src?.keepLanguage, "zh");
   });
 
+  it("matches 彭博财经早茶 (Updates-tab digest)", () => {
+    const src = pickSource(
+      "Bloomberg <noreply@news.bloomberg.com>",
+      "彭博财经早茶：智谱数据中心；特朗普对伊施压",
+    );
+    assert.equal(src?.id, "bloomberg-markets-daily-china");
+  });
+
   it("matches Glassnode Insights / Week on Chain", () => {
     const src = pickSource(
       "Glassnode <insights@glassnode.com>",
@@ -39,7 +47,7 @@ describe("pickSource", () => {
     );
   });
 
-  it("ignores Glassnode welcome and studio promo", () => {
+  it("ignores Glassnode welcome and webinar promos", () => {
     assert.equal(
       pickSource(
         "Glassnode <insights@glassnode.com>",
@@ -48,7 +56,10 @@ describe("pickSource", () => {
       null,
     );
     assert.equal(
-      pickSource("Glassnode <hello@glassnode.com>", "Get to know Glassnode Studio"),
+      pickSource(
+        "Glassnode <insights@glassnode.com>",
+        "Now live: Charting Crypto with Coinbase Institutional",
+      ),
       null,
     );
   });

@@ -11,7 +11,9 @@ before each generate run.
 Files are markdown with YAML frontmatter (`sourceId`, `subject`, `receivedAt`, `citeHref`, …).
 The generate agent merges them into existing briefing modules:
 
-- Bloomberg is **section-parsed** (国际要闻 → global, 大中华 → china, etc.); 全球市况 is cross-check only
+- Bloomberg matchers include **Markets Daily China** and **财经早茶** (Gmail Updates tab is fine — still INBOX/All Mail)
+- Glassnode matchers require Week on Chain / Insights — webinar “Now live” promos are ignored
+- Bloomberg is **section-parsed** when headers exist; 全球市况 is cross-check only
 - Chinese Bloomberg text must stay Chinese
 - Cites use stable landing pages (never email tracking links) and appear in `keySources`
 - `last-fetch.json` records ok/fail + skipped reasons for soft-fail caveats and debugging
