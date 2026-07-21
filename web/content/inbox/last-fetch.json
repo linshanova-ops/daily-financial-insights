@@ -1,5 +1,5 @@
 {
-  "at": "2026-07-21T06:57:40.329Z",
+  "at": "2026-07-21T07:21:36.092Z",
   "briefingDate": "2026-07-21",
   "ok": true,
   "saved": [
@@ -9,7 +9,9 @@
       "subject": "彭博财经早茶：智谱数据中心；特朗普对伊施压",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
       "chars": 5002,
-      "mailbox": "INBOX"
+      "mailbox": "INBOX",
+      "chartImage": "/inbox-charts/bloomberg-2026-07-21.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-21.png"
     }
   ],
   "skipped": [
