@@ -146,7 +146,8 @@
       "id": "bloomberg-chart-of-day",
       "title": "对冲基金撤出美国科技股创纪录",
       "kind": "insight",
-      "analysis": "彭博图表显示，过去两个月对冲基金净卖出美国科技股的节奏为十多年来最快，与Kim i算力挤兑、Mag 7财报周形成共振——AI叙事仍强但仓位去杠杆尚未结束，油价≥$89与英债财政风险进一步抬高再通胀门槛。",
+      "imageSrc": "/inbox-charts/bloomberg-2026-07-21.png",
+      "analysis": "彭博图表显示，过去两个月对冲基金净卖出美国科技股的节奏为十多年来最快，与 Kimi 算力挤兑、Mag 7 财报周形成共振——AI叙事仍强但仓位去杠杆尚未结束，油价≥$89与英债财政风险进一步抬高再通胀门槛。",
       "source": {
         "label": "彭博 Markets Daily China / 财经早茶",
         "href": "https://www.bloomberg.com/asia"
@@ -925,8 +926,8 @@
       "status": "new"
     }
   ],
-  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 网易财经 (Jul 21 A-share close), 新浪财经 (Jul 21 A-share morning/OMO), 第一财经 (Jul 21 semi V, Goldman PB, coast guard), 华尔街见闻 (3776521 Changxin IPO), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury/earnings calendar), CoinDesk/Cointelegraph (Jul 20 BTC), BlockBeats (303712 Trump BTC Jul 21).",
-  "singleSource": "Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels; news/59062 Polymarket page dates 2025). Rejected 华尔街见闻 3751515 (denylisted mid-day A/H wrap; +0.72% Shanghai conflicts with 网易财经 Jul 21 official close +1.79%). Also rejected 3751205/3751275 (2025 stale wraps). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture this run. 今日图表 image-only in Bloomberg email — IMAP fetch did not save chartImage PNG; bloomberg-chart-of-day analysis from 国际要闻 Goldman tech-de-grossing bullet.",
+  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 网易财经 (Jul 21 A-share close), 新浪财经 (Jul 21 A-share morning/OMO), 第一财经 (Jul 21 semi V, Goldman PB, coast guard), 华尔街见闻 (3776521 Changxin IPO), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury/earnings calendar), CoinDesk/Cointelegraph (Jul 20 BTC).",
+  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video Jul 21 — theblockbeats.info unreachable in CI scan). Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels; news/59062 Polymarket page dates 2025). Rejected 华尔街见闻 3751515 (denylisted mid-day A/H wrap; +0.72% Shanghai conflicts with 网易财经 Jul 21 official close +1.79%). Also rejected 3751205/3751275 (2025 stale wraps). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture this run. 今日图表 image-only in Bloomberg email — IMAP fetch did not save chartImage PNG; bloomberg-chart-of-day analysis from 国际要闻 Goldman tech-de-grossing bullet.",
   "marketDashboard": {
     "asOf": "2026-07-21T07:26:55.627Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
