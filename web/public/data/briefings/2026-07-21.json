@@ -85,14 +85,6 @@
       "href": "https://www.yicai.com/news/103285612.html"
     },
     {
-      "label": "BlockBeats — Jul 21 Ethereum Torch NFT",
-      "href": "https://www.theblockbeats.info/flash/303710"
-    },
-    {
-      "label": "BlockBeats — Jul 21 Trump BTC video",
-      "href": "https://www.theblockbeats.info/flash/303712"
-    },
-    {
       "label": "Xinhua — Jul 20 A-share close",
       "href": "https://english.news.cn/20260720/8641dfcf386c41b38aeae6aab34bb8e6/c.html"
     }
@@ -269,19 +261,15 @@
       ]
     },
     {
-      "text": "Jul 20 crypto (CoinDesk/Cointelegraph): BTC ~$65k (intraday high $65,700). Jul 21 BlockBeats: Trump “史上最伟大的比特币解释” video; Ethereum “The Torch” NFT launch ahead of Jul 30 anniversary mint. Goldman PB record US tech de-grossing (~10% mkt-cap cut, 第一财经 Jul 21).",
+      "text": "Jul 20 crypto (CoinDesk/Cointelegraph): BTC ~$65k (intraday high $65,700). Goldman PB record US tech de-grossing (~10% mkt-cap cut, 第一财经 Jul 21).",
       "sources": [
         {
           "label": "CoinDesk Jul 20",
           "href": "https://www.coindesk.com/tech/2026/07/20/live-markets-oil-bounce-and-lingering-ai-selloff-pushes-bitcoin-under-usd64-000"
         },
         {
-          "label": "BlockBeats Trump Jul 21",
-          "href": "https://www.theblockbeats.info/flash/303712"
-        },
-        {
-          "label": "BlockBeats ETH Torch Jul 21",
-          "href": "https://www.theblockbeats.info/flash/303710"
+          "label": "Cointelegraph Jul 20",
+          "href": "https://cointelegraph.com/markets/bitcoin-defies-recent-tech-stocks-sell-off-are-bulls-eyeing-70k-rally"
         },
         {
           "label": "第一财经 Goldman",
@@ -534,15 +522,6 @@
           "href": "https://www.caixinglobal.com/2026-07-21/kimi-k3-demand-surge-forces-moonshot-ai-to-pause-sign-ups-102466370.html"
         }
       ]
-    },
-    {
-      "text": "Jul 21 (BlockBeats 303712): Trump Truth Social video captioned “史上最伟大的比特币解释” — political/crypto crossover headline ahead of US earnings week.",
-      "sources": [
-        {
-          "label": "BlockBeats Trump BTC",
-          "href": "https://www.theblockbeats.info/flash/303712"
-        }
-      ]
     }
   ],
   "chinaImplies": [
@@ -684,7 +663,7 @@
     {
       "asset": "Bitcoin",
       "regime": "High-beta global liquidity asset in the oil→AI-capex chain",
-      "driver": "CoinDesk/Cointelegraph Jul 20 BTC ~$65k; BlockBeats Jul 21 Trump BTC video + Ethereum Torch NFT; Goldman ~10% US tech cut",
+      "driver": "CoinDesk/Cointelegraph Jul 20 BTC ~$65k (high $65,700); Goldman ~10% US tech cut",
       "driverSources": [
         {
           "label": "CoinDesk",
@@ -693,17 +672,9 @@
         {
           "label": "Cointelegraph",
           "href": "https://cointelegraph.com/markets/bitcoin-defies-recent-tech-stocks-sell-off-are-bulls-eyeing-70k-rally"
-        },
-        {
-          "label": "BlockBeats Trump",
-          "href": "https://www.theblockbeats.info/flash/303712"
-        },
-        {
-          "label": "BlockBeats ETH Torch",
-          "href": "https://www.theblockbeats.info/flash/303710"
         }
       ],
-      "read": "Split tape — $65k hold vs Brent $89.22 and tech de-grossing; political headline adds idiosyncratic bid",
+      "read": "Split tape — $65k hold vs Brent $89.22 and tech de-grossing",
       "invalidator": "BTC closes below $62,500 for three sessions with weekly ETF flows negative"
     }
   ],
@@ -911,8 +882,8 @@
       "status": "new"
     }
   ],
-  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 新浪财经 (Jul 21 A-share morning), 第一财经 (Jul 21 semi V, Goldman PB, coast guard), 华尔街见闻 (3776521 Changxin IPO), BlockBeats/律动 (303712 Trump BTC, 303710 ETH Torch), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury/earnings calendar), CoinDesk/Cointelegraph (Jul 20 BTC).",
-  "singleSource": "Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels). Rejected 华尔街见闻 3751205/3751275/3751515/3751638/3751711 (2025 stale API year on Jul 2026 sweep — A/H close unverified; using 2026-dated 新浪财经 morning print). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only (no standalone primary beyond Bloomberg Asia hub). Glassnode Insights not merged — no fresh on-chain capture this run. 21财经 OMO wrap unreachable — PBOC net OMO from 新浪财经 Jul 21 morning article.",
+  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 新浪财经 (Jul 21 A-share morning), 第一财经 (Jul 21 semi V, Goldman PB, coast guard), 华尔街见闻 (3776521 Changxin IPO), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury/earnings calendar), CoinDesk/Cointelegraph (Jul 20 BTC).",
+  "singleSource": "Omitted BlockBeats Jul 21 flashes (303710/303712 — CI unreachable; no triangulated alt). Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels). Rejected 华尔街见闻 3751205/3751275/3751515/3751638/3751711 (2025 stale API year on Jul 2026 sweep — A/H close unverified; using 2026-dated 新浪财经 morning print). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only (no standalone primary beyond Bloomberg Asia hub). Glassnode Insights not merged — no fresh on-chain capture this run. 21财经 OMO wrap unreachable — PBOC net OMO from 新浪财经 Jul 21 morning article.",
   "marketDashboard": {
     "asOf": "2026-07-21T06:35:07.046Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",

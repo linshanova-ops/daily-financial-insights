@@ -29,10 +29,6 @@
       "href": "https://www.coindesk.com/markets/2026/07/20/bitcoin-flat-near-usd64-000-as-oil-hits-a-one-month-high-and-kimi-ai-selloff-lingers"
     },
     {
-      "label": "BlockBeats — BTC ETF weekly flows Jul 19",
-      "href": "https://www.theblockbeats.info/flash/303598"
-    },
-    {
       "label": "央视网 — Jul 19 state-team buying",
       "href": "https://jingji.cctv.com/2026/07/19/ARTIKmtV5Tit55MAfHbS0o4r260719.shtml"
     },
@@ -45,8 +41,8 @@
       "href": "https://www.yicai.com/news/103281884.html"
     },
     {
-      "label": "21财经 — Jul 20 open / PBOC OMO",
-      "href": "https://m.21jingji.com/article/20260720/herald/a7f92ae71cf37eee1259c274dfbd2ba1.html"
+      "label": "新浪财经 — Jul 20 PBOC OMO",
+      "href": "https://finance.sina.com.cn/roll/2026-07-20/doc-iniimkki3088568.shtml"
     },
     {
       "label": "华尔街见闻 — Jul 17 A-share close",
@@ -75,10 +71,6 @@
     {
       "label": "Yahoo Finance — Jul 20 Kospi close",
       "href": "https://finance.yahoo.com/quote/%5EKS11/"
-    },
-    {
-      "label": "BlockBeats — USDe supply Jul 20",
-      "href": "https://www.theblockbeats.info/flash/303686"
     }
   ],
   "figures": [
@@ -112,10 +104,10 @@
       "kind": "stat",
       "display": "1745亿元",
       "delta": "3985亿 ops − 2240亿 maturity · Jul 20",
-      "note": "21财经 / Wind",
+      "note": "新浪财经",
       "source": {
-        "label": "21财经",
-        "href": "https://m.21jingji.com/article/20260720/herald/a7f92ae71cf37eee1259c274dfbd2ba1.html"
+        "label": "新浪财经",
+        "href": "https://finance.sina.com.cn/roll/2026-07-20/doc-iniimkki3088568.shtml"
       }
     },
     {
@@ -128,18 +120,6 @@
       "source": {
         "label": "第一财经",
         "href": "https://www.yicai.com/news/103281884.html"
-      }
-    },
-    {
-      "id": "btc-etf-week",
-      "title": "US spot BTC ETF weekly net inflow",
-      "kind": "stat",
-      "display": "23.86亿美元",
-      "delta": "Week to Jul 19 · IBIT +25.69亿美元",
-      "note": "BlockBeats / Farside Jul 19",
-      "source": {
-        "label": "BlockBeats ETF",
-        "href": "https://www.theblockbeats.info/flash/303598"
       }
     },
     {
@@ -226,7 +206,7 @@
       ]
     },
     {
-      "text": "Jul 19–20 China policy response: 国新 (>500亿元 via buyback-relending program) and 诚通 (~100亿元 recent buys) announced Jul 19 evening (央视网); CSRC convened Jul 20 with listed firms, brokers, and funds (SCMP/21财经); Jul LPR held at 3.0%/3.5% (14th month); PBOC Jul 20 net OMO +1745亿元 at 1.40%.",
+      "text": "Jul 19–20 China policy response: 国新 (>500亿元 via buyback-relending program) and 诚通 (~100亿元 recent buys) announced Jul 19 evening (央视网); CSRC convened Jul 20 with listed firms, brokers, and funds (SCMP); Jul LPR held at 3.0%/3.5% (14th month); PBOC Jul 20 net OMO +1745亿元 at 1.40%.",
       "sources": [
         {
           "label": "央视网",
@@ -241,8 +221,8 @@
           "href": "https://www.yicai.com/news/103281884.html"
         },
         {
-          "label": "21财经 OMO",
-          "href": "https://m.21jingji.com/article/20260720/herald/a7f92ae71cf37eee1259c274dfbd2ba1.html"
+          "label": "新浪财经 OMO",
+          "href": "https://finance.sina.com.cn/roll/2026-07-20/doc-iniimkki3088568.shtml"
         }
       ]
     },
@@ -281,15 +261,11 @@
       ]
     },
     {
-      "text": "Jul 20 crypto (CoinDesk/BlockBeats): BTC ~$64,200, roughly flat on the day (CoinDesk Jul 20); week to Jul 19 US spot BTC ETF net inflow 23.86亿美元 (IBIT +25.69亿美元; other ETFs net −1.83亿美元 per BlockBeats/Farside).",
+      "text": "Jul 20 crypto (CoinDesk Jul 20): BTC ~$64,200, roughly flat on the day as oil hit a one-month high and Kimi AI selloff lingered.",
       "sources": [
         {
           "label": "CoinDesk BTC",
           "href": "https://www.coindesk.com/markets/2026/07/20/bitcoin-flat-near-usd64-000-as-oil-hits-a-one-month-high-and-kimi-ai-selloff-lingers"
-        },
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
         }
       ]
     }
@@ -374,15 +350,11 @@
       ]
     },
     {
-      "text": "Jul 20 crypto (CoinDesk/BlockBeats): BTC ~$64,200 roughly flat (CoinDesk Jul 20); week to Jul 19 US spot BTC ETF net inflow 23.86亿美元 (BlockBeats/Farside, IBIT +25.69亿美元).",
+      "text": "Jul 20 crypto (CoinDesk Jul 20): BTC ~$64,200 roughly flat as oil hit a one-month high.",
       "sources": [
         {
           "label": "CoinDesk",
           "href": "https://www.coindesk.com/markets/2026/07/20/bitcoin-flat-near-usd64-000-as-oil-hits-a-one-month-high-and-kimi-ai-selloff-lingers"
-        },
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
         }
       ]
     }
@@ -398,7 +370,7 @@
       "text": "CENTCOM casualty count rising (Jordan + Iraq) raises escalation risk into the US reopen even if Jul 17 equity close already priced Kimi K3 semi stress."
     }
   ],
-  "globalTensions": "Jul 17 SOX bear market vs 23.86亿美元 weekly BTC ETF inflow; Jul 20 Brent >$90 vs BTC ~$64,200 flat; Jul 17 Michigan 54.4 beat vs Brent +15.90% on week and weekend Kuwait hits; state-team China bid vs global semi/AI de-risking.",
+  "globalTensions": "Jul 17 SOX bear market vs BTC ~$64,200 flat; Jul 20 Brent >$90 vs BTC ~$64,200 flat; Jul 17 Michigan 54.4 beat vs Brent +15.90% on week and weekend Kuwait hits; state-team China bid vs global semi/AI de-risking.",
   "chinaStance": "Moderately loose via quantity (Jul 20 net OMO +1745亿元) and explicit state-team equity support, cautious on price — Jul LPR held 3.0%/3.5% for a 14th month despite Q2 GDP miss and Jul 20 Brent >$90 import-inflation risk; CSRC Jul 20 stability symposium signals administrative backstop after Jul 17 −3.05% Shanghai plunge.",
   "chinaChanged": [
     {
@@ -411,7 +383,7 @@
       ]
     },
     {
-      "text": "Jul 20 (SCMP/21财经/Xinhua): CSRC met listed companies, brokerages, and mutual funds on market stability; afternoon selloff reversed on tail-end ETF buying — official close Shanghai +0.85% to 3,796.28, Hang Seng +2.36% to 25,143.05 (The Standard), turnover 2.70tn yuan.",
+      "text": "Jul 20 (SCMP/Xinhua): CSRC met listed companies, brokerages, and mutual funds on market stability; afternoon selloff reversed on tail-end ETF buying — official close Shanghai +0.85% to 3,796.28, Hang Seng +2.36% to 25,143.05 (The Standard), turnover 2.70tn yuan.",
       "sources": [
         {
           "label": "Xinhua Jul 20",
@@ -424,10 +396,6 @@
         {
           "label": "SCMP",
           "href": "https://www.scmp.com/business/china-business/article/3361139/beijing-steps-stem-chinas-stock-market-decline-us89b-state-purchases"
-        },
-        {
-          "label": "21财经",
-          "href": "https://m.21jingji.com/article/20260720/herald/a7f92ae71cf37eee1259c274dfbd2ba1.html"
         }
       ]
     },
@@ -441,11 +409,11 @@
       ]
     },
     {
-      "text": "Jul 20 PBOC (21财经/第一财经): 7-day OMO 3985亿元 at 1.40% with 2240亿元 maturing → net +1745亿元 (1745亿元); 1y LPR 3.0% and 5y+ LPR 3.5% unchanged.",
+      "text": "Jul 20 PBOC (新浪财经/第一财经): 7-day OMO 3985亿元 at 1.40% with 2240亿元 maturing → net +1745亿元 (1745亿元); 1y LPR 3.0% and 5y+ LPR 3.5% unchanged.",
       "sources": [
         {
-          "label": "21财经",
-          "href": "https://m.21jingji.com/article/20260720/herald/a7f92ae71cf37eee1259c274dfbd2ba1.html"
+          "label": "新浪财经",
+          "href": "https://finance.sina.com.cn/roll/2026-07-20/doc-iniimkki3088568.shtml"
         },
         {
           "label": "第一财经",
@@ -477,24 +445,6 @@
         {
           "label": "Caixin QDII",
           "href": "https://www.caixinglobal.com/2026-07-18/china-plans-new-qdii-quotas-to-expand-retail-access-to-overseas-assets-102465534.html"
-        }
-      ]
-    },
-    {
-      "text": "Jul 20 (BlockBeats 303686): Ethena USDe supply exceeded 60亿枚 (~6.04B tokens) per Etherscan — stablecoin capacity at a record high.",
-      "sources": [
-        {
-          "label": "BlockBeats USDe",
-          "href": "https://www.theblockbeats.info/flash/303686"
-        }
-      ]
-    },
-    {
-      "text": "Jul 19 (BlockBeats): US spot Bitcoin ETF weekly net inflow 23.86亿美元 (IBIT +25.69亿美元) — institutional bid persists despite Jul 17 onshore/global risk-off.",
-      "sources": [
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
         }
       ]
     }
@@ -629,11 +579,11 @@
     {
       "asset": "CNY",
       "regime": "PBOC fix as policy signal; quantity easing without price easing",
-      "driver": "Jul 20 net OMO +1745亿元; LPR hold 3.0%/3.5%; Jul 20 USD/CNY fix 6.7948 (−14bp, 21财经); Brent >$90",
+      "driver": "Jul 20 net OMO +1745亿元; LPR hold 3.0%/3.5%; Brent >$90",
       "driverSources": [
         {
-          "label": "21财经",
-          "href": "https://m.21jingji.com/article/20260720/herald/a7f92ae71cf37eee1259c274dfbd2ba1.html"
+          "label": "新浪财经",
+          "href": "https://finance.sina.com.cn/roll/2026-07-20/doc-iniimkki3088568.shtml"
         },
         {
           "label": "第一财经",
@@ -646,15 +596,11 @@
     {
       "asset": "Bitcoin",
       "regime": "High-beta global liquidity asset in the oil→AI-capex chain",
-      "driver": "CoinDesk Jul 20 BTC ~$64,200 flat; BlockBeats Jul 19 weekly ETF inflow 23.86亿美元; Jul 17 SOX bear market",
+      "driver": "CoinDesk Jul 20 BTC ~$64,200 flat; Jul 17 SOX bear market",
       "driverSources": [
         {
           "label": "CoinDesk Jul 20",
           "href": "https://www.coindesk.com/markets/2026/07/20/bitcoin-flat-near-usd64-000-as-oil-hits-a-one-month-high-and-kimi-ai-selloff-lingers"
-        },
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
         }
       ],
       "read": "Split tape — ETF inflows and flat ~$64k vs Jul 20 Brent >$90 inflation channel; neutral until US reopen resolves oil vs liquidity",
@@ -723,16 +669,12 @@
     },
     {
       "grade": "MODERATE",
-      "name": "BTC ~$64,200 flat vs Brent >$90 and ETF inflow 23.86亿美元",
-      "evidence": "CoinDesk Jul 20 BTC ~$64,200 flat; BlockBeats Jul 19 weekly ETF inflow 23.86亿美元 (IBIT +25.69亿美元).",
+      "name": "BTC ~$64,200 flat vs Brent >$90",
+      "evidence": "CoinDesk Jul 20 BTC ~$64,200 flat.",
       "evidenceSources": [
         {
           "label": "CoinDesk",
           "href": "https://www.coindesk.com/markets/2026/07/20/bitcoin-flat-near-usd64-000-as-oil-hits-a-one-month-high-and-kimi-ai-selloff-lingers"
-        },
-        {
-          "label": "BlockBeats ETF",
-          "href": "https://www.theblockbeats.info/flash/303598"
         }
       ],
       "mechanism": "Institutional spot bid holds while oil inflation channel re-engages — either front-running Fed hold or crowded relief trade into Jul 29.",
@@ -741,7 +683,7 @@
     {
       "grade": "MODERATE",
       "name": "LPR hold (14th month) vs Brent >$90 import-inflation risk",
-      "evidence": "Jul 20 LPR 3.0%/3.5% unchanged (第一财经); Jul 20 Brent >$90 intraday (CNBC); Jul 20 net OMO +1745亿元 (21财经).",
+      "evidence": "Jul 20 LPR 3.0%/3.5% unchanged (第一财经); Jul 20 Brent >$90 intraday (CNBC); Jul 20 net OMO +1745亿元 (新浪财经).",
       "evidenceSources": [
         {
           "label": "第一财经",
@@ -752,8 +694,8 @@
           "href": "https://www.cnbc.com/2026/07/20/oil-prices-today-brent-wti-crude-us-iran-centcom-hormuz.html"
         },
         {
-          "label": "21财经",
-          "href": "https://m.21jingji.com/article/20260720/herald/a7f92ae71cf37eee1259c274dfbd2ba1.html"
+          "label": "新浪财经",
+          "href": "https://finance.sina.com.cn/roll/2026-07-20/doc-iniimkki3088568.shtml"
         }
       ],
       "mechanism": "Price tool frozen while quantity/structural easing continues — oil spike narrows room for LPR cuts even as state team buys equities.",
@@ -820,7 +762,7 @@
     },
     {
       "priority": "MEDIUM",
-      "headline": "BTC ~$64,200 flat vs 23.86亿美元 ETF inflow",
+      "headline": "BTC ~$64,200 flat vs Brent >$90",
       "why": "MODERATE crypto divergence from Jul 17 risk-off and Jul 20 oil spike.",
       "watch": "Weekly ETF flow update; BTC vs CoinDesk ~$64,200 cite; US reopen reaction.",
       "trigger": "BTC holds $64k through US open despite Brent official settle ≥$90.",
@@ -829,8 +771,8 @@
       "status": "continuing"
     }
   ],
-  "sources": "CNBC (Jul 20 Brent/WTI intraday; Jul 17 settle/Treasury), AP (Jul 19 casualties), BBC (Jul 18–19 US/Iran), Straits Times (Jul 17 US close; SOX bear market), CoinDesk (Jul 20 BTC), BlockBeats/律动 (303598 Jul 19 ETF flows; 303686 USDe Jul 20), 央视网 (Jul 19 state-team buying), Xinhua (Jul 20 A-share close), The Standard (Jul 20 HSI), 第一财经 (Jul 20 LPR), 21财经 (Jul 20 OMO/fix), 华尔街见闻 (3777165 Jul 17 close; 3776948 Changxin payment), Caixin Global (Jul 18 QDII), StatCan (Jun CPI Jul 20), SED (Jul 20 Kospi), 金融界 (Jul 20 CSRC), 新浪财经 (Jul 20 ETF tail buying).",
-  "singleSource": "Rejected BlockBeats 303605/303615 (BTC $120k/$118k flashes — wrong-year/stale vs Jul 2026 ~$64k tape). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). SCMP '60 billion yuan' headline omitted — 央视网 primary cites >500亿元 (国新 program) and ~100亿元 (诚通 recent) separately. US session still on Jul 17 close at evening publish (Jul 20 US not yet open at 13:05 UTC). Glassnode Insights inbox (2026-W30) was a subscription welcome only — no Week on Chain on-chain data to merge. No inbox newsletters captured this run.",
+  "sources": "CNBC (Jul 20 Brent/WTI intraday; Jul 17 settle/Treasury), AP (Jul 19 casualties), BBC (Jul 18–19 US/Iran), Straits Times (Jul 17 US close; SOX bear market), CoinDesk (Jul 20 BTC), 央视网 (Jul 19 state-team buying), Xinhua (Jul 20 A-share close), The Standard (Jul 20 HSI), 第一财经 (Jul 20 LPR), 新浪财经 (Jul 20 OMO), 华尔街见闻 (3777165 Jul 17 close; 3776948 Changxin payment), Caixin Global (Jul 18 QDII), StatCan (Jun CPI Jul 20), SED (Jul 20 Kospi), 金融界 (Jul 20 CSRC), 新浪财经 (Jul 20 ETF tail buying).",
+  "singleSource": "Omitted BlockBeats 303598/303686/303710/303712 (CI unreachable). Rejected BlockBeats 303605/303615 (BTC $120k/$118k flashes — wrong-year/stale vs Jul 2026 ~$64k tape). Rejected 华尔街见闻 3751205/3751275 (2025 stale wraps). SCMP '60 billion yuan' headline omitted — 央视网 primary cites >500亿元 (国新 program) and ~100亿元 (诚通 recent) separately. US session still on Jul 17 close at evening publish (Jul 20 US not yet open at 13:05 UTC). Glassnode Insights inbox (2026-W30) was a subscription welcome only — no Week on Chain on-chain data to merge. No inbox newsletters captured this run.",
   "marketDashboard": {
     "asOf": "2026-07-20T13:10:02.280Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
