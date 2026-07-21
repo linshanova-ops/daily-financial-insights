@@ -77,7 +77,7 @@ jobs:
         run: node scripts/fetch-inbox-sources.mjs
 
       # Fund module phase 2: live RSS scan on the same Beijing windows.
-      # Does not require CURSOR_API_KEY — updates web/content/fund/*.json.
+      # Sources: Hedgeweek + Google News + HedgeCo. No CURSOR_API_KEY required.
       - name: Scan Fund signals (Hedgeweek + Google News)
         id: fund
         if: steps.gate.outputs.should_run == 'true'

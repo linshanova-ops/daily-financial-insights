@@ -1,40 +1,5 @@
 [
   {
-    "id": "rev-china quant hedge funds ",
-    "title": "China quant hedge funds hit by AI-led selloff as systematic strategies suffer sharp losses",
-    "reason": "行业级表述，未与单一监控机构形成强关联。",
-    "confidence": "36%",
-    "status": "review"
-  },
-  {
-    "id": "rev-hedge funds may be ready",
-    "title": "Hedge funds may be ready to rebuild AI positions after momentum selloff, UBS says",
-    "reason": "行业级表述，未与单一监控机构形成强关联。",
-    "confidence": "36%",
-    "status": "review"
-  },
-  {
-    "id": "rev-trump media pitches hedg",
-    "title": "Trump Media pitches hedge funds $100,000 monthly fee for faster Truth Social data feed",
-    "reason": "行业级表述，未与单一监控机构形成强关联。",
-    "confidence": "36%",
-    "status": "review"
-  },
-  {
-    "id": "rev-saba capital builds stak",
-    "title": "Saba Capital builds stake in Unite Group as amid growing activist campaign speculation",
-    "reason": "行业级表述，未与单一监控机构形成强关联。",
-    "confidence": "36%",
-    "status": "review"
-  },
-  {
-    "id": "rev-hedge funds rebuild bull",
-    "title": "Hedge funds rebuild bullish oil bets as Middle East conflict drives volatility",
-    "reason": "行业级表述，未与单一监控机构形成强关联。",
-    "confidence": "36%",
-    "status": "review"
-  },
-  {
     "id": "rev-sig-20260721-pxpk4j",
     "title": "Hedge funds slash US technology exposure as AI trade unwind accelerates, says Goldman Sachs",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -49,34 +14,6 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.hedgeweek.com/brevan-howard-establishes-miami-presence/"
-  },
-  {
-    "id": "rev-hedge funds build record",
-    "title": "Hedge funds build record short positions against New Zealand dollar",
-    "reason": "行业级表述，未与单一监控机构形成强关联。",
-    "confidence": "36%",
-    "status": "review"
-  },
-  {
-    "id": "rev-japan’s ruling party eye",
-    "title": "Japan’s ruling party eyes activist hedge funds in proposed governance crackdown",
-    "reason": "行业级表述，未与单一监控机构形成强关联。",
-    "confidence": "36%",
-    "status": "review"
-  },
-  {
-    "id": "rev-can san francisco cash i",
-    "title": "Can San Francisco cash in on hedge funds’ AI rush? - Financial News London",
-    "reason": "行业级表述，未与单一监控机构形成强关联。",
-    "confidence": "36%",
-    "status": "review"
-  },
-  {
-    "id": "rev-hedge funds ramp up bull",
-    "title": "Hedge funds ramp up bullish Brent positions as escalating Middle East conflict drives oil rally - LinkedIn",
-    "reason": "行业级表述，未与单一监控机构形成强关联。",
-    "confidence": "36%",
-    "status": "review"
   },
   {
     "id": "rev-sig-20260721-95unhg",

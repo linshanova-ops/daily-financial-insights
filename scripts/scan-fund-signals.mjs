@@ -126,13 +126,20 @@ async function collectItems(monitored) {
     note: gOk ? `${gOk} batches ok` : "all batches failed",
   });
 
-  // 3) Placeholder slot for a third professional source (index-only when unavailable)
-  sources.push({
-    id: "with-intelligence",
-    ok: false,
-    count: 0,
-    note: "index-only in v2 — no public RSS",
-  });
+  // 3) HedgeCo Insights — public hedge-fund trade RSS (third live source)
+  try {
+    const xml = await fetchText("https://www.hedgeco.net/news/feed/");
+    const parsed = parseRssItems(xml, "HedgeCo");
+    items.push(...parsed);
+    sources.push({ id: "hedgeco", ok: true, count: parsed.length });
+  } catch (err) {
+    sources.push({
+      id: "hedgeco",
+      ok: false,
+      count: 0,
+      error: String(err.message || err),
+    });
+  }
 
   return { items, sources };
 }
@@ -160,17 +167,7 @@ function matchItems(items, monitored) {
 
     const tier = confidenceTier(best.score);
     if (tier === "exclude") {
-      if (best.score >= 30) {
-        review.push({
-          id: `rev-${signalDedupKey(item.title, best.fund.name).slice(0, 24)}`,
-          title: item.title,
-          reason: best.matchedAs
-            ? `弱匹配「${best.matchedAs}」— 语境不足或非事件正文。`
-            : "行业级表述，未与单一监控机构形成强关联。",
-          confidence: `${best.score}%`,
-          status: "review",
-        });
-      }
+      // Skip industry-only / no-name noise from the review queue
       continue;
     }
 
@@ -321,7 +318,7 @@ async function main() {
     scanWindow: "每日扫描过去 72 小时 · 命中永久归档",
     phase: 2,
     phaseNote:
-      "Live RSS scan on briefing windows (Hedgeweek + Google News). Confirmed hits are permanent.",
+      "Live RSS scan on briefing windows (Hedgeweek + Google News + HedgeCo). Confirmed hits are permanent.",
     lastScan: {
       at: now.toISOString(),
       fetched: items.length,
