@@ -20,6 +20,7 @@ export type FundSignal = {
   date: string;
   title: string;
   summary: string;
+  summaryEn?: string;
   fund: string;
   source: string;
   tag: string;
@@ -33,12 +34,20 @@ export type FundReviewItem = {
   reason: string;
   confidence: string;
   status: string;
+  href?: string | null;
 };
 
 export type FundRule = {
   id: string;
   title: string;
   body: string;
+};
+
+export type FundLastScan = {
+  at: string;
+  fetched: number;
+  newConfirmed: number;
+  review: number;
 };
 
 export type FundMeta = {
@@ -52,6 +61,7 @@ export type FundMeta = {
   scanWindow: string;
   phase: number;
   phaseNote: string;
+  lastScan?: FundLastScan;
 };
 
 export type FundBundle = {
