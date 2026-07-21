@@ -25,10 +25,12 @@ import { ImapFlow } from "imapflow";
 import { simpleParser } from "mailparser";
 import { beijingDateString } from "./lib/briefing-slot-gate.mjs";
 import { INBOX_LAST_FETCH_REL } from "./lib/load-inbox-context.mjs";
+import { hasBloombergChartOfDay } from "./lib/inbox-bloomberg-sections.mjs";
 import {
   extractBloombergDateKey,
   formatInboxMarkdown,
   inboxRelPath,
+  isAgentReformattedInboxCapture,
   isPlaceholderInboxCapture,
   isWelcomeNewsletter,
   pickSource,
@@ -140,13 +142,39 @@ async function fetchRecentMessages(client, mailbox, { days = 14, limit = 60 } = 
 function existingReceivedAt(abs) {
   try {
     const md = fs.readFileSync(abs, "utf8");
-    const m = md.match(/^receivedAt:\s*"([^"]+)"/m);
+    const m = md.match(/^receivedAt:\s*["']([^"']+)["']/m);
     if (!m) return null;
     const d = new Date(m[1]);
     return Number.isNaN(d.getTime()) ? null : d;
   } catch {
     return null;
   }
+}
+
+/** Prefer text/plain; for HTML-only mail keep block breaks so 今日图表 stays a header. */
+function emailBodyToText(parsed) {
+  const plain = (parsed.text || "").trim();
+  if (plain.length >= 40) return plain;
+  const html = parsed.html ? String(parsed.html) : "";
+  if (!html.trim()) return plain;
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<(br|BR)\s*\/?\s*>/g, "\n")
+    .replace(/<\/(p|div|tr|li|h[1-6]|table|section|article|header|footer)>/gi, "\n")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&#(\d+);/g, (_, n) => {
+      const code = Number(n);
+      return Number.isFinite(code) ? String.fromCharCode(code) : " ";
+    })
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .replace(/[ \t]{2,}/g, " ")
+    .trim();
 }
 
 async function main() {
@@ -280,14 +308,36 @@ async function main() {
       const abs = path.join(root, rel);
 
       if (source.cadence === "daily" && fs.existsSync(abs)) {
-        const prev = existingReceivedAt(abs);
-        if (prev && when <= prev) {
-          console.log(`[inbox] exists ${rel} — keep (not newer)`);
-          skipped.push({ reason: "exists-keep", subject, path: rel });
-          saved.push({ sourceId: source.id, path: rel, skipped: true });
-          continue;
+        const existingMd = fs.readFileSync(abs, "utf8");
+        if (isAgentReformattedInboxCapture(existingMd)) {
+          console.log(
+            `[inbox] exists ${rel} — replace agent-reformatted capture (restore raw IMAP)`,
+          );
+        } else {
+          const prev = existingReceivedAt(abs);
+          if (prev && when <= prev) {
+            // Still refresh if the on-disk file lost 今日图表 but this message has it
+            const existingHasChart = hasBloombergChartOfDay(existingMd);
+            const incomingPreview =
+              (parsed.text || "") + " " + (parsed.html || "");
+            if (
+              source.id === "bloomberg-markets-daily-china" &&
+              !existingHasChart &&
+              hasBloombergChartOfDay(incomingPreview)
+            ) {
+              console.log(
+                `[inbox] exists ${rel} — replace to recover 今日图表 section`,
+              );
+            } else {
+              console.log(`[inbox] exists ${rel} — keep (not newer)`);
+              skipped.push({ reason: "exists-keep", subject, path: rel });
+              saved.push({ sourceId: source.id, path: rel, skipped: true });
+              continue;
+            }
+          } else {
+            console.log(`[inbox] exists ${rel} — replace with newer`);
+          }
         }
-        console.log(`[inbox] exists ${rel} — replace with newer`);
       }
 
       if (source.cadence === "weekly" && fs.existsSync(abs)) {
@@ -301,15 +351,7 @@ async function main() {
         console.log(`[inbox] weekly placeholder ${rel} — replace`);
       }
 
-      const text =
-        (parsed.text || "").trim() ||
-        (parsed.html
-          ? String(parsed.html)
-              .replace(/<style[\s\S]*?<\/style>/gi, " ")
-              .replace(/<[^>]+>/g, " ")
-              .replace(/\s+/g, " ")
-              .trim()
-          : "");
+      const text = emailBodyToText(parsed);
 
       if (!text || text.length < 40) {
         console.warn(`[inbox] skip empty body: ${subject}`);
