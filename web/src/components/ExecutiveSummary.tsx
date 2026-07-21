@@ -21,7 +21,7 @@ export function ExecutiveSummary({
   return (
     <section
       id="executive-summary"
-      className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 py-14 sm:px-8"
+      className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 py-10 sm:px-8"
     >
       <div className="flex flex-wrap items-center gap-3">
         <span className={`h-6 w-1 rounded-full ${a.headerBar}`} aria-hidden />
