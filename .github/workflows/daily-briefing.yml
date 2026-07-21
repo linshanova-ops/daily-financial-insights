@@ -76,6 +76,24 @@ jobs:
           BRIEFING_DATE: ${{ steps.gate.outputs.briefing_date }}
         run: node scripts/fetch-inbox-sources.mjs
 
+      # Fund module phase 2: live RSS scan on the same Beijing windows.
+      # Does not require CURSOR_API_KEY — updates web/content/fund/*.json.
+      - name: Scan Fund signals (Hedgeweek + Google News)
+        id: fund
+        if: steps.gate.outputs.should_run == 'true'
+        continue-on-error: true
+        run: node scripts/scan-fund-signals.mjs --commit
+
+      - name: Deploy Pages after Fund content refresh
+        if: steps.gate.outputs.should_run == 'true' && steps.fund.outcome == 'success'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api "repos/${{ github.repository }}/dispatches" \
+            -f event_type=deploy-pages \
+            || echo "::notice::Could not dispatch deploy-pages (Fund commit may still trigger push deploy)."
+
       - name: Generate briefing PR, wait for CI, auto-merge when green
         if: steps.gate.outputs.should_run == 'true' && steps.key.outputs.present == 'true'
         timeout-minutes: 90

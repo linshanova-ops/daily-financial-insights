@@ -1,58 +1,49 @@
-# Fund module (v1) — design
+# Fund module — design (v1 + phase 2)
 
-Approved 2026-07-21. Ship Approach 1 now; Approach 3 (live scanner) is phase 2.
+Approved 2026-07-21. Phase 2 automation added same day.
 
 ## Goal
 
-Rebuild Fund Signal（对冲基金信息监控）**inside** syravocado at `/fund`, opened from the upper-right **Fund** nav item (no external jump). Match syravocado visual language. Admin-only add/remove of monitored funds via committed content.
-
-## Non-goals (v1)
-
-- Live crawl of Hedgeweek / With Intelligence / Reuters
-- Real “立即同步” that fetches fresh hits
-- Visitor-facing edit UI for fund selection
-- Pixel-perfect clone of Fund Signal chrome
-
-## Reader / admin model
-
-- **Visitors:** browse 动态 / 监控基金 / 校验规则 on `/fund`
-- **Admin:** edit `web/content/fund/*.json` → PR → Pages deploy
+In-site `/fund` hedge-fund monitor in syravocado style, with admin-only fund selection and **live RSS scanning on Beijing briefing windows**.
 
 ## Nav
 
-- `SiteNav` **Fund** → `/fund` (internal `Link`, not external URL)
+- `SiteNav` **Fund** → `/fund` (internal)
 
-## Page structure
+## UI
 
-In-page tabs:
-
-1. **动态** — metrics + confirmed signals + collapsible review queue  
-2. **监控基金** — monitored roster table (search + strategy filter) + admin note for editing `monitored.json`  
-3. **校验规则** — rule cards from `rules.json`
-
-Meta line: last updated from `meta.json`. Sync button omitted or labeled phase 2.
+- Compact Fund header (accent bar, display title, one subtitle, sync meta line)
+- Tabs: Feed 动态 · Universe 监控基金 · Rules 校验规则
+- Border-led lists (no card chrome); review queue is a simple expand under a rule
+- Admin note for `monitored.json` kept minimal under Universe
 
 ## Data (`web/content/fund/`)
 
 | File | Role |
 |------|------|
-| `universe.json` | Top 100 reference roster |
-| `monitored.json` | Admin selection (`funds: [{rank,name},…]`) |
-| `signals.json` | Confirmed hits |
-| `review.json` | Review / low-confidence queue |
+| `universe.json` | Top 100 reference |
+| `monitored.json` | Admin selection |
+| `signals.json` | Confirmed (permanent merge) |
+| `review.json` | Current review queue |
 | `rules.json` | Validation rules |
-| `meta.json` | updatedAt, source status, phase note |
+| `meta.json` | Sync stamp, source status, phase |
 
-**Add/remove:** edit `monitored.json` (and `universe.json` if needed).
+## Phase 2 automation
 
-## Phase 2 → Approach 3
+- Script: `scripts/scan-fund-signals.mjs` (+ `scripts/lib/fund-signal-match.mjs`)
+- Sources: Hedgeweek RSS, Google News RSS batches, With Intelligence slot (index-only until public feed)
+- Window: 72h; confidence ≥75 confirmed, 45–74 review
+- Confirmed hits never deleted (dedupe by title+fund)
+- Wired in `.github/workflows/daily-briefing.yml` on the same slot gate as briefings (`should_run`), **without** requiring `CURSOR_API_KEY`
+- `--commit` pushes Fund JSON and dispatches `deploy-pages`
 
-Keep UI; add scheduled scanner that writes `signals.json` / `review.json` / `meta.json`. Enable real sync.
+## Admin add/remove
 
-## Acceptance (v1)
+Edit `web/content/fund/monitored.json` → PR/deploy.
 
-1. Fund nav opens `/fund` in-site  
-2. Three tabs work with seeded content  
-3. Monitored list reflects `monitored.json`  
-4. Style matches syravocado (not external theme)  
-5. No dependency on fund-signal-top50 host for page render  
+## Acceptance
+
+1. Fund page elegant / on-brand  
+2. Scan runs on briefing windows and refreshes content  
+3. Confirmed archive grows without wiping history  
+4. Unit tests for match helpers pass  
