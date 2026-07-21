@@ -105,7 +105,9 @@ function isHubUrl(href) {
       (u.hostname === "www.cmegroup.com" && u.pathname.includes("fedwatch")) ||
       (u.hostname === "www.asml.com" && u.pathname.endsWith("/investors")) ||
       (u.hostname === "www.bls.gov" &&
-        (u.pathname === "/" || /\/news\.release\/(cpi|ppi)\.nr0\.htm$/i.test(u.pathname)))
+        (u.pathname === "/" || /\/news\.release\/(cpi|ppi)\.nr0\.htm$/i.test(u.pathname))) ||
+      (u.hostname === "www.bloomberg.com" &&
+        (u.pathname === "/asia" || u.pathname === "/asia/"))
     ) {
       return true;
     }

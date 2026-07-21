@@ -73,8 +73,8 @@
       "href": "https://www150.statcan.gc.ca/n1/daily-quotidien/260720/dq260720a-eng.htm"
     },
     {
-      "label": "SED — Jul 20 Kospi close",
-      "href": "https://en.sedaily.com/finance/2026/07/20/breaking-news-kospi-plunge-triggers-sell-side-sidecar-20260720"
+      "label": "Yahoo Finance — Jul 20 Kospi close",
+      "href": "https://finance.yahoo.com/quote/%5EKS11/"
     },
     {
       "label": "BlockBeats — USDe supply Jul 20",
@@ -272,7 +272,7 @@
       "sources": [
         {
           "label": "SED Kospi",
-          "href": "https://en.sedaily.com/finance/2026/07/20/breaking-news-kospi-plunge-triggers-sell-side-sidecar-20260720"
+          "href": "https://finance.yahoo.com/quote/%5EKS11/"
         },
         {
           "label": "StatCan CPI",
@@ -360,7 +360,7 @@
       "sources": [
         {
           "label": "SED Kospi",
-          "href": "https://en.sedaily.com/finance/2026/07/20/breaking-news-kospi-plunge-triggers-sell-side-sidecar-20260720"
+          "href": "https://finance.yahoo.com/quote/%5EKS11/"
         }
       ]
     },
