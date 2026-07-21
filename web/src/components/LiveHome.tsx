@@ -86,6 +86,7 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
       </div>
       <BriefingView
         briefing={briefing}
+        heroVariant="skim"
         previousDate={previousDate}
         changesSincePrevious={changes}
         publishedAtFallback={publishedAt}

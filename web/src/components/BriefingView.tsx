@@ -18,7 +18,7 @@ import { DetailTabs } from "./DetailTabs";
 interface BriefingViewProps {
   briefing: Briefing;
   showHeroCta?: boolean;
-  heroVariant?: "full" | "compact";
+  heroVariant?: "full" | "compact" | "skim";
   previousDate?: string | null;
   changesSincePrevious?: BriefingChange[] | null;
   publishedAtFallback?: string | null;
