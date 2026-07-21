@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-20T13:11:25.818Z",
-  "latest": "2026-07-20",
+  "generatedAt": "2026-07-21T00:21:46.913Z",
+  "latest": "2026-07-21",
   "briefings": [
+    {
+      "date": "2026-07-21",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Jul 20 US reopen reversed morning chip relief into a red close (S&P −0.19% to 7,443.28) as Brent settled $89.22 (+1.3%, intraday $91.42) on Trump casualty rhetoric and Houthi Saudi embargo headlines; 10y rose to 4.594%. BTC held ~$65k (one-month high $65,700) despite Goldman PB record tech de-grossing. China still on Jul 20 official close (Shanghai +0.85%) ahead of Jul 21 session; Mag 7 earnings week opens with GM/3M today.",
+      "coverageWindow": "July 20–21, 2026"
+    },
     {
       "date": "2026-07-20",
       "title": "Daily Financial Briefing",
