@@ -2,7 +2,7 @@
   "date": "2026-07-21",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 20–21, 2026",
-  "publishedAt": "2026-07-21T12:06:46.000Z",
+  "publishedAt": "2026-07-21T12:46:35.000Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 21)",
@@ -1077,7 +1077,7 @@
     }
   ],
   "sources": "彭博 Markets Daily China / 财经早茶 (Jul 21), 网易财经 (Jul 21 A-share close), 新浪财经 (Jul 21 A-share morning/OMO), 第一财经 (Jul 21 semi V, Goldman PB, coast guard), 华尔街见闻 (3776521 Changxin IPO), Caixin Global (Jul 21 youth unemployment, insurers, Citi upgrade, Kimi K3), StatCan (Jun CPI Jul 20), White House/USTR (Jul 20 Canada tariffs), City AM/Independent (Jul 21 Burnham gilts), CNBC (Jul 20 US close/oil/Treasury/earnings calendar), CoinDesk/Cointelegraph (Jul 20 BTC), Taiwan News (Jul 21 export orders), The Standard (Jul 21 HK CPI), investinglive (Jul 21 UK ILO).",
-  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video Jul 21 — theblockbeats.info unreachable in CI scan). Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels; news/59062 Polymarket page dates 2025). Rejected 华尔街见闻 3751515 (denylisted mid-day A/H wrap; +0.72% Shanghai conflicts with 网易财经 Jul 21 official close +1.79%). Also rejected 3751205/3751275/3751711/3751602 (2025 stale wraps). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture this run. 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-21.png (抗癌新药获批数量). 市场一览 desk color lives in marketOverview (not Global/China prose). Evening refresh merged Jul 21 Taiwan/HK/UK data prints; marketDashboard re-injected at publish.",
+  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video Jul 21 — theblockbeats.info unreachable in CI scan). Rejected BlockBeats stale flashes (wrong-year BTC $116k+ levels; news/59062 Polymarket page dates 2025). Rejected 华尔街见闻 3751515 (denylisted mid-day A/H wrap; +0.72% Shanghai conflicts with 网易财经 Jul 21 official close +1.79%). Also rejected 3751205/3751275/3751711/3751602 (2025 stale wraps). Youth unemployment 14.9% via Caixin/NBS. EU AliExpress €550mn fine via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture this run.   今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-21.png (抗癌新药获批数量). 市场一览 desk color lives in marketOverview (not Global/China prose). Evening slot refresh (Beijing 20:00): merged Jul 21 Taiwan/HK/UK data prints; marketDashboard re-injected at 2026-07-21T12:46:48Z.",
   "marketOverview": {
     "asOfDate": "2026-07-21",
     "note": "Qualitative desk color from 彭博财经早茶 — not official closes.",
@@ -1117,7 +1117,7 @@
     ]
   },
   "marketDashboard": {
-    "asOf": "2026-07-21T12:06:56.085Z",
+    "asOf": "2026-07-21T12:46:48.371Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -1151,8 +1151,8 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "17.75",
-            "change": "−4.83%",
+            "latest": "17.87",
+            "change": "−4.18%",
             "changeDirection": "down",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1271,8 +1271,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "162.7540",
-            "change": "+0.15%",
+            "latest": "162.7740",
+            "change": "+0.16%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1295,8 +1295,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,061.40",
-            "change": "+1.27%",
+            "latest": "$4,060.50",
+            "change": "+1.25%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1307,8 +1307,8 @@
           {
             "id": "brent",
             "asset": "Brent crude",
-            "latest": "$90.72",
-            "change": "+1.68%",
+            "latest": "$90.89",
+            "change": "+1.87%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
@@ -1319,8 +1319,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$66,225",
-            "change": "+2.23%",
+            "latest": "$66,475",
+            "change": "+2.87%",
             "changeDirection": "up",
             "asOfDate": "2026-07-21",
             "source": {
