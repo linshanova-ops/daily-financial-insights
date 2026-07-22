@@ -882,7 +882,13 @@ function loadClaimGroups() {
         if (Array.isArray(fig.points)) {
           text += ` ${fig.points.map((p) => `${p.label} ${p.value}`).join(" ")}`;
         }
-        addGroup(`${file}.figures[${i}]`, text, [fig.source]);
+        addGroup(
+          `${file}.figures[${i}]`,
+          text,
+          Array.isArray(fig.sources) && fig.sources.length
+            ? fig.sources
+            : [fig.source],
+        );
       });
     }
 
