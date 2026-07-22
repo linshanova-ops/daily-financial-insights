@@ -5,6 +5,11 @@
  * within LATE_MINUTES after each hour; if GitHub skipped the whole primary window,
  * MISSED_CATCHUP_HOURS still allows a catch-up until the slot is published.
  *
+ * Weekend policy: Beijing Sat/Sun scheduled slots are skipped (cash markets closed;
+ * saves Cursor tokens). Friday evening catch-up that spills into Saturday clock is
+ * still allowed when slot.date is Friday. Monday covers since Friday close in the
+ * agent prompt (crypto + weekend news included).
+ *
  * - workflow_dispatch / repository_dispatch+force → always run (manual catch-up)
  * - schedule / repository_dispatch (external cron backup) → slot gate
  */
@@ -42,6 +47,33 @@ export function beijingDateString(now = new Date()) {
     month: "2-digit",
     day: "2-digit",
   }).format(now);
+}
+
+/**
+ * Weekday short name for a Beijing calendar date (Sun…Sat).
+ * Uses noon Beijing on that date (CST, no DST) to avoid date-boundary ambiguity.
+ * @param {string} dateStr YYYY-MM-DD
+ */
+export function beijingWeekdayShort(dateStr) {
+  const noonBjAsUtc = new Date(`${dateStr}T04:00:00.000Z`); // 12:00 Asia/Shanghai
+  return new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Shanghai",
+    weekday: "short",
+  }).format(noonBjAsUtc);
+}
+
+/** Scheduled Cursor generates skip Beijing Sat/Sun (cash markets closed). */
+export function isBeijingWeekendDate(dateStr) {
+  const day = beijingWeekdayShort(dateStr);
+  return day === "Sat" || day === "Sun";
+}
+
+/**
+ * Monday Beijing open after the weekend skip — prompts must cover since Friday close
+ * (crypto + weekend news still matter even though cash equities were shut).
+ */
+export function isBeijingPostWeekendOpen(dateStr) {
+  return beijingWeekdayShort(dateStr) === "Mon";
 }
 
 export function utcDateString(now = new Date()) {
@@ -205,6 +237,13 @@ export function evaluateScheduleGate(opts) {
 
   const primary = activeSlot(now, earlyMinutes, lateMinutes);
   if (primary) {
+    if (isBeijingWeekendDate(primary.date)) {
+      return {
+        shouldRun: false,
+        reason: `weekend skip — Beijing ${primary.date} is ${beijingWeekdayShort(primary.date)} (no scheduled Cursor generate; cash markets closed)`,
+        slot: primary,
+      };
+    }
     if (slotAlreadyPublished(latest, primary, earlyMinutes)) {
       return {
         shouldRun: false,
@@ -229,6 +268,13 @@ export function evaluateScheduleGate(opts) {
     catchupHours,
   });
   if (missed) {
+    if (isBeijingWeekendDate(missed.date)) {
+      return {
+        shouldRun: false,
+        reason: `weekend skip — Beijing ${missed.date} is ${beijingWeekdayShort(missed.date)} (no scheduled catch-up generate)`,
+        slot: missed,
+      };
+    }
     return {
       shouldRun: true,
       reason: `${missed.id} missed-slot catch-up (${Math.round(missed.minutesFromStart)}m after ${String(missed.utcHour).padStart(2, "0")}:00 UTC; briefing date ${missed.date})`,

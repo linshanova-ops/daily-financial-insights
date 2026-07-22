@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | **08:00 / 20:00 Beijing.** In-repo: light ticks + **hourly heartbeat** (recovers misses up to 6h). **Required for true on-time:** free external cron → `repository_dispatch` — see [ON_TIME_PUBLISH.md](./ON_TIME_PUBLISH.md). Accuracy CI → auto-merge → Pages. |
+| **Twice-daily schedule** | **08:00 / 20:00 Beijing, Mon–Fri.** Sat/Sun scheduled generates are skipped (cash markets closed; saves Cursor tokens). Monday covers **since Friday close**, including weekend crypto/news. In-repo: light ticks + **hourly heartbeat** (recovers misses up to 6h). **Required for true on-time:** free external cron → `repository_dispatch` — see [ON_TIME_PUBLISH.md](./ON_TIME_PUBLISH.md). Accuracy CI → auto-merge → Pages. |
 | **Manual** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge the orchestrator dispatches Pages (with retries). Safety-net cron at `:50` UTC also redeploys. |
@@ -45,7 +45,7 @@ Only one generate job runs at a time (`concurrency` group); overlapping dispatch
 | 08:00 | 00:00 | Prior **US** cash session (already closed) + overnight Asia |
 | 20:00 | 12:00 | Same-day **China** session (closed 15:00); US cash not yet open |
 
-Generate starts **at/after** 08:00 / 20:00 Beijing so Market Dashboard and news reflect that clock; max start delay **45 minutes** (on-time target still the top of the hour). Manual **Run workflow** bypasses the gate. External `repository_dispatch` without `force` uses the same gate; `client_payload.force=true` forces a run (catch-up).
+Generate starts **at/after** 08:00 / 20:00 Beijing **on weekdays** so Market Dashboard and news reflect that clock; max start delay **45 minutes** (on-time target still the top of the hour). **Beijing Sat/Sun scheduled slots are skipped** (no Cursor agent run). Monday’s briefing must cover **since Friday US cash close**, including weekend crypto and material news. Manual **Run workflow** / `force=true` bypasses the gate (including weekends). External `repository_dispatch` without `force` uses the same gate; `client_payload.force=true` forces a run (catch-up).
 
 Evening runs always refresh the same Beijing date even when morning already published (new inbox + fresh Market Dashboard).
 

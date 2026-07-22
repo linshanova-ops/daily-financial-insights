@@ -7,6 +7,8 @@ import {
   activeSlot,
   beijingDateString,
   evaluateScheduleGate,
+  isBeijingPostWeekendOpen,
+  isBeijingWeekendDate,
   missedUnpublishedSlot,
   slotAlreadyPublished,
   slotStartUtc,
@@ -124,13 +126,15 @@ describe("evaluateScheduleGate", () => {
   });
 
   it("runs at/after the hour when unpublished", () => {
+    // Use a weekday (Wed) — Sat/Sun scheduled slots are skipped.
     const r = evaluateScheduleGate({
       eventName: "schedule",
-      now: new Date("2026-07-19T00:05:00.000Z"),
-      latest: { date: "2026-07-18", publishedAt: "2026-07-18T12:00:00.000Z" },
+      now: new Date("2026-07-15T00:05:00.000Z"),
+      latest: { date: "2026-07-14", publishedAt: "2026-07-14T12:00:00.000Z" },
     });
     assert.equal(r.shouldRun, true);
     assert.equal(r.slot?.id, "morning");
+    assert.equal(r.slot?.date, "2026-07-15");
   });
 
   it(`defaults early=${EARLY_MINUTES}m late=${LATE_MINUTES}m catchup=${MISSED_CATCHUP_HOURS}h`, () => {
@@ -175,6 +179,75 @@ describe("missedUnpublishedSlot", () => {
     );
     assert.equal(slot?.id, "evening");
     assert.equal(slot?.date, "2026-07-20");
+  });
+});
+
+describe("Beijing weekend skip (Sat/Sun scheduled generates)", () => {
+  it("detects Beijing Saturday/Sunday calendar dates", () => {
+    assert.equal(isBeijingWeekendDate("2026-07-18"), true); // Sat
+    assert.equal(isBeijingWeekendDate("2026-07-19"), true); // Sun
+    assert.equal(isBeijingWeekendDate("2026-07-20"), false); // Mon
+    assert.equal(isBeijingWeekendDate("2026-07-17"), false); // Fri
+  });
+
+  it("skips scheduled Saturday morning slot (saves Cursor tokens)", () => {
+    // Beijing Sat 08:00 = Fri 00:00 UTC? No: Sat 08:00 Beijing = Fri 24:00 = Sat 00:00 UTC
+    const r = evaluateScheduleGate({
+      eventName: "schedule",
+      now: new Date("2026-07-18T00:05:00.000Z"), // Sat 08:05 Beijing
+      latest: { date: "2026-07-17", publishedAt: "2026-07-17T12:10:00.000Z" },
+    });
+    assert.equal(r.shouldRun, false);
+    assert.match(r.reason, /weekend/i);
+    assert.equal(r.slot?.date, "2026-07-18");
+  });
+
+  it("skips scheduled Sunday evening slot", () => {
+    const r = evaluateScheduleGate({
+      eventName: "schedule",
+      now: new Date("2026-07-19T12:05:00.000Z"), // Sun 20:05 Beijing
+      latest: { date: "2026-07-17", publishedAt: "2026-07-17T12:10:00.000Z" },
+    });
+    assert.equal(r.shouldRun, false);
+    assert.match(r.reason, /weekend/i);
+  });
+
+  it("still allows Friday evening catch-up that spills into Saturday Beijing clock", () => {
+    // Friday evening start Fri 12:00 UTC; catch-up open until Fri 18:00 UTC (= Sat 02:00 Beijing)
+    const r = evaluateScheduleGate({
+      eventName: "schedule",
+      now: new Date("2026-07-17T13:05:00.000Z"), // Fri+65m; still Friday slot.date
+      latest: { date: "2026-07-17", publishedAt: "2026-07-17T00:10:00.000Z" },
+    });
+    assert.equal(r.shouldRun, true);
+    assert.equal(r.slot?.id, "evening");
+    assert.equal(r.slot?.date, "2026-07-17");
+  });
+
+  it("Monday morning still runs after weekend skip", () => {
+    const r = evaluateScheduleGate({
+      eventName: "schedule",
+      now: new Date("2026-07-20T00:05:00.000Z"), // Mon 08:05 Beijing
+      latest: { date: "2026-07-17", publishedAt: "2026-07-17T12:10:00.000Z" },
+    });
+    assert.equal(r.shouldRun, true);
+    assert.equal(r.slot?.id, "morning");
+    assert.equal(r.slot?.date, "2026-07-20");
+  });
+
+  it("force dispatch still runs on Saturday", () => {
+    const r = evaluateScheduleGate({
+      eventName: "repository_dispatch",
+      forceDispatch: true,
+      now: new Date("2026-07-18T00:05:00.000Z"),
+    });
+    assert.equal(r.shouldRun, true);
+  });
+
+  it("marks Monday as post-weekend open for coverage prompts", () => {
+    assert.equal(isBeijingPostWeekendOpen("2026-07-20"), true);
+    assert.equal(isBeijingPostWeekendOpen("2026-07-21"), false);
+    assert.equal(isBeijingPostWeekendOpen("2026-07-18"), false);
   });
 });
 

@@ -19,7 +19,7 @@ import {
   filterActionableChecks,
   isFailingCheck,
 } from "./lib/briefing-publish-helpers.mjs";
-import { beijingDateString } from "./lib/briefing-slot-gate.mjs";
+import { beijingDateString, isBeijingPostWeekendOpen } from "./lib/briefing-slot-gate.mjs";
 import { commitInboxCapturesToBriefingBranch } from "./lib/commit-inbox-for-briefing.mjs";
 import {
   formatInboxPromptBlock,
@@ -97,6 +97,23 @@ function buildPublishPrompt() {
         ? "EVENING slot (Beijing 20:00) — REQUIRED same-day refresh even if morning already published"
         : "MANUAL / catch-up run";
 
+  const postWeekend = isBeijingPostWeekendOpen(today);
+  const coverageRule = postWeekend
+    ? "Coverage: **since Friday US cash close through now** (~72h). Scheduled Sat/Sun generates are skipped — Monday must reopen the tape."
+    : "Coverage: last 24h (use ~72h only when this is explicitly a post-weekend / Monday open).";
+
+  const postWeekendBlock = postWeekend
+    ? `
+POST-WEEKEND OPEN (Monday — cash markets were closed Sat/Sun):
+- Explicitly cover **since Friday US cash close** (do not treat Friday as stale background).
+- Cash equities/bonds may be thin over the weekend, but **crypto and news still matter**:
+  sweep weekend BTC/ETH tape, ETF flows, and any material geopolitics / policy prints
+  dated Sat–Sun; fold them into Global / Assets / Signals / Watch.
+- Set coverageWindow to span Friday→Monday (e.g. July 17–20), not "last 24h only".
+- Lead with Monday Asia prints + Friday US official closes; weekend crypto/geo as the bridge.
+`
+    : "";
+
   return `You are drafting syravocado's daily financial briefing for ${today}.
 
 STANDING POLICY (docs/CONTENT_ACCURACY.md): website content must be VALID and ACCURATE.
@@ -109,7 +126,7 @@ PUBLISH SLOT: ${slotLabel}
 - If web/content/briefings/${today}.md already exists: UPDATE it (do not skip).
   Evening runs must merge any new inbox mail and refresh narrative for the China session.
 - Accuracy gate must pass before you finish.
-
+${postWeekendBlock}
 FAIL-CLOSED PUBLISH (critical):
 - Work on git branch \`${branchName}\` (create/reset from latest main).
 - Open a pull request INTO main. Do NOT push to main. Do NOT merge the PR.
@@ -118,8 +135,8 @@ FAIL-CLOSED PUBLISH (critical):
   An orchestrator will auto-merge only when CI is green, or ask you to rewrite if red.
 
 1. Run the full daily-financial-briefing skill pipeline under .cursor/skills/financial-research/
-   (gather → global → China → signals → suggestions → report). Coverage: last 24h
-   (72h if weekend/Monday). Use dated sources only — verify **calendar year**, not just
+   (gather → global → China → signals → suggestions → report). ${coverageRule}
+   Use dated sources only — verify **calendar year**, not just
    month-day. Prefer primary sources for official data (BLS, Fed, US Treasury yield curve,
    PBOC, NBS, company IR). Use Yahoo Finance for US index/quote checks only (secondary).
    For China, always sweep 华尔街见闻 (wallstreetcn.com), Caixin/财新 or 第一财经/Yicai,
@@ -128,9 +145,9 @@ FAIL-CLOSED PUBLISH (critical):
 
    FRESHNESS (critical for ${today}):
    - Lead with sources dated **${today}** (Asia desks / same-day prints) and the prior
-     US cash session when this is the morning slot — not last Friday as the spine.
-   - At least ~70% of keySources must be dated inside the last ~36h of the coverage
-     window (72h only on weekend/Monday open). Older cites are background only.
+     US cash session when this is the morning slot${postWeekend ? " — and keep Friday US cash close in the spine after the weekend skip" : " — not last Friday as the spine unless this is Monday open"}.
+   - At least ~70% of keySources must be dated inside the last ~${postWeekend ? "72" : "36"}h of the coverage
+     window${postWeekend ? " (Monday post-weekend open)" : ""}. Older cites are background only.
    - Every keySources label must include an explicit calendar date in-window.
    - Do not recycle prior-briefing narratives unless re-confirmed with a fresh href today.
    - ALWAYS cite the **accurate and latest** source for each fact: if a newer same-topic
