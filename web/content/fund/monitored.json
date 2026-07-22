@@ -400,6 +400,54 @@
     {
       "rank": 100,
       "name": "Alcentra"
+    },
+    {
+      "rank": 101,
+      "name": "HAO Capital"
+    },
+    {
+      "rank": 102,
+      "name": "Sona Asset Management"
+    },
+    {
+      "rank": 103,
+      "name": "Elliott Investment Management"
+    },
+    {
+      "rank": 104,
+      "name": "LMR Partners"
+    },
+    {
+      "rank": 105,
+      "name": "Caxton Associates"
+    },
+    {
+      "rank": 106,
+      "name": "Linden Advisors"
+    },
+    {
+      "rank": 107,
+      "name": "Waha Investments"
+    },
+    {
+      "rank": 108,
+      "name": "PIMCO"
+    },
+    {
+      "rank": 109,
+      "name": "Barings"
+    },
+    {
+      "rank": 110,
+      "name": "Neuberger Berman"
+    },
+    {
+      "rank": 111,
+      "name": "Brookfield"
+    },
+    {
+      "rank": 112,
+      "name": "Schroders"
     }
   ]
 }
