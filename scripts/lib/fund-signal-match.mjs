@@ -34,6 +34,18 @@ function buildAliasSet(name) {
     "Qube Research & Technologies": ["Qube", "QRT"],
     "Verition Fund Management": ["Verition"],
     "Jain Global": ["Jain Global"],
+    "Oaktree Capital Management": ["Oaktree"],
+    "HAO Capital": ["HAO Capital", "Hao Capital"],
+    "Sona Asset Management": ["Sona"],
+    "LMR Partners": ["LMR"],
+    "Caxton Associates": ["Caxton"],
+    "Linden Advisors": ["Linden"],
+    "Waha Investments": ["Waha"],
+    PIMCO: ["PIMCO"],
+    Barings: ["Barings"],
+    "Neuberger Berman": ["Neuberger", "Neuberger Berman"],
+    Brookfield: ["Brookfield"],
+    Schroders: ["Schroders", "Schroder"],
   };
   const knownShort = new Set(
     Object.values(map)

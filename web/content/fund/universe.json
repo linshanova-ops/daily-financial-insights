@@ -898,5 +898,113 @@
     "aum": 17.896,
     "strategy": "Credit / Distressed",
     "change": "↓15"
+  },
+  {
+    "rank": 101,
+    "name": "HAO Capital",
+    "country": "中国香港",
+    "city": "Hong Kong",
+    "aum": 0,
+    "strategy": "Long / Short",
+    "change": "ADD"
+  },
+  {
+    "rank": 102,
+    "name": "Sona Asset Management",
+    "country": "英国",
+    "city": "London",
+    "aum": 0,
+    "strategy": "Relative Value / Credit",
+    "change": "ADD"
+  },
+  {
+    "rank": 103,
+    "name": "Elliott Investment Management",
+    "country": "美国",
+    "city": "New York",
+    "aum": 0,
+    "strategy": "Activist / Multi Strategy",
+    "change": "ADD"
+  },
+  {
+    "rank": 104,
+    "name": "LMR Partners",
+    "country": "英国",
+    "city": "London",
+    "aum": 0,
+    "strategy": "Multi Strategy",
+    "change": "ADD"
+  },
+  {
+    "rank": 105,
+    "name": "Caxton Associates",
+    "country": "美国",
+    "city": "New York",
+    "aum": 0,
+    "strategy": "Global Macro",
+    "change": "ADD"
+  },
+  {
+    "rank": 106,
+    "name": "Linden Advisors",
+    "country": "美国",
+    "city": "New York",
+    "aum": 0,
+    "strategy": "Convertible Arbitrage",
+    "change": "ADD"
+  },
+  {
+    "rank": 107,
+    "name": "Waha Investments",
+    "country": "阿联酋",
+    "city": "Abu Dhabi",
+    "aum": 0,
+    "strategy": "Multi Strategy",
+    "change": "ADD"
+  },
+  {
+    "rank": 108,
+    "name": "PIMCO",
+    "country": "美国",
+    "city": "Newport Beach",
+    "aum": 0,
+    "strategy": "Fixed Income",
+    "change": "ADD"
+  },
+  {
+    "rank": 109,
+    "name": "Barings",
+    "country": "美国",
+    "city": "Charlotte",
+    "aum": 0,
+    "strategy": "Credit / Multi Asset",
+    "change": "ADD"
+  },
+  {
+    "rank": 110,
+    "name": "Neuberger Berman",
+    "country": "美国",
+    "city": "New York",
+    "aum": 0,
+    "strategy": "Multi Asset",
+    "change": "ADD"
+  },
+  {
+    "rank": 111,
+    "name": "Brookfield",
+    "country": "加拿大",
+    "city": "Toronto",
+    "aum": 0,
+    "strategy": "Alternatives",
+    "change": "ADD"
+  },
+  {
+    "rank": 112,
+    "name": "Schroders",
+    "country": "英国",
+    "city": "London",
+    "aum": 0,
+    "strategy": "Multi Asset",
+    "change": "ADD"
   }
 ]
