@@ -3,6 +3,9 @@
  *
  * The agent clones from GitHub — runner-local fetch writes are invisible unless
  * committed. Without this, reformatted inbox on main shadows raw 今日图表.
+ *
+ * Critical: fetch-inbox writes last-fetch.json (and captures) as dirty worktree
+ * files. Switching to briefing/${date} must preserve those bytes across checkout.
  */
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
@@ -40,6 +43,53 @@ function ensureGitIdentity() {
   const email = git(["config", "user.email"], { allowFail: true }).stdout;
   if (!name) git(["config", "user.name", "syravocado-bot"]);
   if (!email) git(["config", "user.email", "syravocado-bot@users.noreply.github.com"]);
+}
+
+/** @param {string[]} rels */
+export function snapshotWorkspaceFiles(rels) {
+  /** @type {Map<string, Buffer>} */
+  const snap = new Map();
+  for (const rel of rels) {
+    const abs = path.join(root, rel);
+    if (fs.existsSync(abs) && fs.statSync(abs).isFile()) {
+      snap.set(rel, fs.readFileSync(abs));
+    }
+  }
+  return snap;
+}
+
+/** @param {Map<string, Buffer>} snap */
+export function restoreWorkspaceFiles(snap) {
+  for (const [rel, buf] of snap) {
+    const abs = path.join(root, rel);
+    fs.mkdirSync(path.dirname(abs), { recursive: true });
+    fs.writeFileSync(abs, buf);
+  }
+}
+
+/**
+ * Drop local modifications / untracked collisions for paths we already
+ * snapshotted, so `git checkout` of the briefing branch cannot abort.
+ * @param {string[]} rels
+ */
+function clearPathsForCheckout(rels) {
+  for (const rel of rels) {
+    // Tracked modifications: restore index/HEAD version temporarily.
+    git(["restore", "--worktree", "--staged", "--source=HEAD", "--", rel], {
+      allowFail: true,
+    });
+    // Older git / missing restore: fall back.
+    git(["checkout", "HEAD", "--", rel], { allowFail: true });
+    const abs = path.join(root, rel);
+    // Untracked file that would still block checkout onto a tracked path:
+    // remove worktree copy; snapshot already holds bytes.
+    if (fs.existsSync(abs)) {
+      const tracked = git(["ls-files", "--", rel], { allowFail: true });
+      if (!tracked.stdout) {
+        fs.rmSync(abs, { force: true });
+      }
+    }
+  }
 }
 
 /**
@@ -94,6 +144,11 @@ export function commitInboxCapturesToBriefingBranch(briefingDate, inboxItems) {
   ensureGitIdentity();
   git(["fetch", "origin", "main", branch], { allowFail: true });
 
+  // Preserve runner-local IMAP captures across the branch switch. Without this,
+  // dirty last-fetch.json / capture md files abort checkout (workflow failure).
+  const snap = snapshotWorkspaceFiles(unique);
+  clearPathsForCheckout(unique);
+
   const localBranch = git(["rev-parse", "--verify", branch], { allowFail: true });
   if (localBranch.status === 0) {
     git(["checkout", branch]);
@@ -114,7 +169,10 @@ export function commitInboxCapturesToBriefingBranch(briefingDate, inboxItems) {
     }
   }
 
-  // Re-write inbox files from the runner snapshot (fetch may be newer than git).
+  // Restore the exact capture bytes from this workflow run.
+  restoreWorkspaceFiles(snap);
+
+  // Re-write inbox markdown from the in-memory snapshot (fetch may be newer).
   for (const item of inboxItems || []) {
     if (!item?.path || !item.body) continue;
     const abs = path.join(root, item.path);

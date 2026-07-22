@@ -9,8 +9,8 @@
       "href": "https://www.bloomberg.com/asia"
     },
     {
-      "label": "CNBC — Jul 20 (Jul 21 Tue US close)",
-      "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+      "label": "Yahoo Finance — Jul 21 US closes (^GSPC/^IXIC/^DJI)",
+      "href": "https://finance.yahoo.com/quote/%5EGSPC/"
     },
     {
       "label": "Aju Press — Jul 22 A-share close",
@@ -37,8 +37,8 @@
       "href": "https://www.theblockbeats.info/flash/257292"
     },
     {
-      "label": "CNBC — Jul 20 (Jul 21 Brent/WTI settle)",
-      "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+      "label": "Xinhua/The Star — Jul 22 (Jul 21 Brent/WTI settle)",
+      "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
     },
     {
       "label": "CNBC — Jul 21 Treasury yields",
@@ -96,10 +96,10 @@
       "kind": "stat",
       "display": "$91.01",
       "delta": "+2% · Sep futures · five-week high",
-      "note": "CNBC official settle after US-Iran/Houthi headlines",
+      "note": "Xinhua settle via The Star after US-Iran/Houthi headlines",
       "source": {
-        "label": "CNBC oil Jul 21",
-        "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+        "label": "The Star / Xinhua oil Jul 22",
+        "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
       }
     },
     {
@@ -108,10 +108,10 @@
       "kind": "stat",
       "display": "$84.91",
       "delta": "+2% · Aug futures",
-      "note": "CNBC Jul 21",
+      "note": "The Star / Xinhua Jul 22",
       "source": {
-        "label": "CNBC oil Jul 21",
-        "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+        "label": "The Star / Xinhua oil Jul 22",
+        "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
       }
     },
     {
@@ -154,10 +154,10 @@
       "title": "Jul 21 US session % change",
       "kind": "bars",
       "unit": "%",
-      "note": "Official closes — CNBC Jul 21 (chip-led rebound snapped 3-day losing streak)",
+      "note": "Official closes — Yahoo Finance Jul 21 (chip-led rebound snapped 3-day losing streak)",
       "source": {
-        "label": "CNBC Jul 20 (Jul 21 close)",
-        "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+        "label": "Yahoo Finance Jul 21 US closes",
+        "href": "https://finance.yahoo.com/quote/%5EGSPC/"
       },
       "points": [
         {
@@ -250,15 +250,15 @@
       ]
     },
     {
-      "text": "Jul 21 US official close (CNBC Jul 20 live blog): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — chip/memory rebound snapped 3-day losing streak. Brent settled $91.01 (+2.0%); 10y 4.63% (+3 bp, two-month high).",
+      "text": "Jul 21 US official close (Yahoo Finance): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — chip/memory rebound snapped 3-day losing streak. Brent settled $91.01 (+2.0%); 10y 4.63% (+3 bp, two-month high).",
       "sources": [
         {
-          "label": "CNBC Jul 20 (Jul 21 close)",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "Yahoo Finance Jul 21 US closes",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Treasury Jul 21",
@@ -344,8 +344,8 @@
           "href": "https://www.cnbc.com/2026/07/21/us-iran-war-trump-hormuz-houthis.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         }
       ]
     },
@@ -470,11 +470,11 @@
       ]
     },
     {
-      "text": "Jul 21 US official close (CNBC Jul 20 live blog): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — chip/memory led (Micron +12%+); snapped 3-day losing streak.",
+      "text": "Jul 21 US official close (Yahoo Finance): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — chip/memory led (Micron +12%+); snapped 3-day losing streak.",
       "sources": [
         {
-          "label": "CNBC Jul 20 (Jul 21 close)",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "Yahoo Finance Jul 21 US closes",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
         }
       ]
     },
@@ -701,15 +701,15 @@
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
       "regime": "AI earnings vs oil/geo inflation — Mag 7 as falsifier",
-      "driver": "Jul 21 S&P +0.89% / Nasdaq +1.29% (CNBC); Brent $91.01; Rubner reset-complete (华尔街见闻); Alphabet/Tesla Jul 22",
+      "driver": "Jul 21 S&P +0.89% / Nasdaq +1.29% (Yahoo Finance); Brent $91.01; Rubner reset-complete (华尔街见闻); Alphabet/Tesla Jul 22",
       "driverSources": [
         {
-          "label": "CNBC Jul 20 (Jul 21 close)",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "Yahoo Finance Jul 21 US closes",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "华尔街见闻 Jul 21",
@@ -729,8 +729,8 @@
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         }
       ],
       "read": "Belly/long-end rose with official oil settle despite ceasefire headlines — inflation channel re-engaged into Jul 28–29 FOMC",
@@ -746,8 +746,8 @@
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "Mitrade Jul 21",
@@ -767,8 +767,8 @@
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Iran Jul 21",
@@ -784,8 +784,8 @@
       "driver": "Jul 21 Brent settled $91.01 (+2.0%, five-week high); WTI $84.91; Hormuz transits near zero since conflict (Bloomberg chart)",
       "driverSources": [
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Iran Jul 21",
@@ -830,8 +830,8 @@
           "href": "http://www.ce.cn/xwzx/gnsz/gdxw/202607/t20260721_3099497.shtml"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         }
       ],
       "read": "Disaster-relief relending is targeted quantity easing; oil import-inflation constraint on near-term LPR cut unchanged",
@@ -862,8 +862,8 @@
       "evidence": "CNBC Jul 21: Brent +2.0% at $91.01; WTI $84.91; US 10th strike night; Houthi Saudi embargo; Hormuz tanker hit.",
       "evidenceSources": [
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Iran Jul 21",
@@ -889,11 +889,11 @@
     {
       "grade": "STRONG",
       "name": "Jul 21 US chip rebound (S&P +0.89%)",
-      "evidence": "CNBC Jul 21: S&P 7,509.20 (+0.89%), Nasdaq +1.29%, Dow +0.74%; Micron +12%+; PHLX Semi +4.9% (华尔街见闻); snapped 3-day losing streak.",
+      "evidence": "Yahoo Finance Jul 21: S&P 7,509.20 (+0.89%), Nasdaq +1.29%, Dow +0.74%; Micron +12%+; PHLX Semi +4.9% (华尔街见闻); snapped 3-day losing streak.",
       "evidenceSources": [
         {
-          "label": "CNBC Jul 20 (Jul 21 close)",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "label": "Yahoo Finance Jul 21 US closes",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
           "label": "华尔街见闻 Jul 21",

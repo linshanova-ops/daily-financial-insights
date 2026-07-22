@@ -1,82 +1,50 @@
 [
   {
-    "id": "rev-sig-20260721-pxpk4j",
-    "title": "Hedge funds slash US technology exposure as AI trade unwind accelerates, says Goldman Sachs",
+    "id": "rev-sig-20260722-5y2030",
+    "title": "Pershing Square Holdings appoints B-FLEXION exec as independent director",
+    "reason": "中等置信度命中「Pershing Square」，待人工复核。",
+    "confidence": "70%",
+    "status": "review",
+    "href": "https://www.hedgeweek.com/pershing-square-holdings-appoints-b-flexion-exec-as-independent-director/"
+  },
+  {
+    "id": "rev-sig-20260722-cgae3a",
+    "title": "Traders at Hong Kong hedge fund swallowed by ExodusPoint are being given some big roles",
+    "reason": "中等置信度命中「ExodusPoint」，待人工复核。",
+    "confidence": "66%",
+    "status": "review",
+    "href": "https://www.efinancialcareers.com/news/traders-at-hong-kong-hedge-fund-swallowed-by-exodus-point-are-being-given-some-big-roles"
+  },
+  {
+    "id": "rev-sig-20260722-1g9739",
+    "title": "Goldman Sachs (NYSE:GS) Notes S&P 500 Tech Selling Pace",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/hedge-funds-slash-us-technology-exposure-as-ai-trade-unwind-accelerates-says-goldman-sachs/"
+    "href": "https://kalkinemedia.com/us/stocks/financial/goldman-sachs-nysegs-notes-sp-500-tech-selling-pace"
   },
   {
-    "id": "rev-sig-20260720-qvkpt0",
-    "title": "Brevan Howard establishes Miami presence",
-    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
-    "confidence": "68%",
+    "id": "rev-sig-20260722-yt0fyk",
+    "title": "SEB Asset Management AB Makes New $9.59 Million Investment in Apollo Global Management Inc. $APO",
+    "reason": "中等置信度命中「Apollo」，待人工复核。",
+    "confidence": "61%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/brevan-howard-establishes-miami-presence/"
+    "href": "https://www.marketbeat.com/instant-alerts/filing-seb-asset-management-ab-makes-new-959-million-investment-in-apollo-global-management-inc-apo-2026-07-22/"
   },
   {
-    "id": "rev-sig-20260721-gne8o7",
-    "title": "Goldman Sachs (GS) Says Hedge Funds Made Their Biggest US Tech Exit Yet",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
+    "id": "rev-sig-20260721-l0u7ua",
+    "title": "XA Investments Details Octagon Underperformance at XAI Floating Rate & Alternative Income Trust and Seeks Shareholder Approval of King Street Sub-Adviser",
+    "reason": "中等置信度命中「King Street」，待人工复核。",
+    "confidence": "66%",
     "status": "review",
-    "href": "https://sg.finance.yahoo.com/news/goldman-sachs-gs-says-hedge-021143178.html"
+    "href": "https://www.quiverquant.com/news/XA+Investments+Details+Octagon+Underperformance+at+XAI+Floating+Rate+%26+Alternative+Income+Trust+and+Seeks+Shareholder+Approval+of+King+Street+Sub-Adviser"
   },
   {
-    "id": "rev-sig-20260721-572fcl",
-    "title": "COIN Stock Price Prediction as Goldman Sachs Warns Hedge Funds Are Dumping US Tech Equities",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
+    "id": "rev-sig-20260721-ljdp4l",
+    "title": "Pershing Square Holdings adds Twelve Securis board member Ranjani Kearsley as INED",
+    "reason": "中等置信度命中「Pershing Square」，待人工复核。",
+    "confidence": "70%",
     "status": "review",
-    "href": "https://coingape.com/markets/coin-stock-price-prediction-as-goldman-sachs-warns-hedge-funds-are-dumping-us-tech-equities/"
-  },
-  {
-    "id": "rev-sig-20260720-2mlxmj",
-    "title": "Goldman Sachs reports record hedge fund sales of US tech stocks",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://cryptobriefing.com/goldman-sachs-hedge-fund-tech-selloff/"
-  },
-  {
-    "id": "rev-sig-20260721-iiiub2",
-    "title": "Hedge Funds Flee AI Stocks at Record Pace — Goldman Sachs Names Three New Destinations for Capital",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://finance.biggo.com/news/bade9e9a-dd79-4d63-be8b-14c1aa484d00"
-  },
-  {
-    "id": "rev-sig-20260720-6k4sb0",
-    "title": "Goldman Sachs: Hedge Funds Dumping U.S. Tech Stocks at Record Pace",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.bitget.com/amp/news/detail/12560605520137"
-  },
-  {
-    "id": "rev-sig-20260721-azie6m",
-    "title": "AI-driven momentum trading faces challenges as Goldman Sachs reports hedge funds have recorded record sales of U.S. tech stocks over the past two months.",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://news.futunn.com/en/post/76305009/ai-driven-momentum-trading-faces-challenges-as-goldman-sachs-reports"
-  },
-  {
-    "id": "rev-sig-20260721-pgdb6m",
-    "title": "Goldman Sachs: Hedge Funds Dump 10% of US Tech Holdings in Two Months, Fastest Pace in Over a Decade",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://finance.biggo.com/news/3ddd4b54-9b33-47f5-a551-24cdce8ccdc8"
-  },
-  {
-    "id": "rev-sig-20260720-kk5yn5",
-    "title": "Goldman Sachs: Hedge funds are selling US tech stocks at a record pace",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.bitget.com/en/amp/news/detail/12560605520138"
+    "href": "https://www.artemis.bm/news/pershing-square-holdings-adds-twelve-securis-board-member-ranjani-kearsley-as-ined/"
   }
 ]

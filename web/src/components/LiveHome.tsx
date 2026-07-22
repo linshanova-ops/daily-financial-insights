@@ -2,9 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import type { Briefing } from "@/lib/types";
-import { diffBriefings } from "@/lib/briefing-diff";
 import {
-  fetchBriefingByDate,
   fetchBriefingIndex,
   fetchLatestBriefing,
 } from "@/lib/content-feed";
@@ -20,7 +18,6 @@ interface LiveHomeProps {
 
 export function LiveHome({ initialBriefing }: LiveHomeProps) {
   const [briefing, setBriefing] = useState(initialBriefing);
-  const [previous, setPrevious] = useState<Briefing | null>(null);
   const [previousDate, setPreviousDate] = useState<string | null>(null);
   const [publishedAt, setPublishedAt] = useState<string | null>(
     initialBriefing.publishedAt ?? null,
@@ -44,12 +41,6 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
       const priorDate =
         index.briefings.find((item) => item.date !== next.date)?.date ?? null;
       setPreviousDate(priorDate);
-      if (priorDate) {
-        const prior = await fetchBriefingByDate(priorDate, signal);
-        if (!signal?.aborted) setPrevious(prior);
-      } else {
-        setPrevious(null);
-      }
     } catch {
       if (!signal?.aborted) setLive(false);
     }
@@ -67,8 +58,6 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
       window.clearInterval(id);
     };
   }, [pullFeed]);
-
-  const changes = diffBriefings(briefing, previous);
 
   return (
     <>
@@ -88,7 +77,6 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
         briefing={briefing}
         heroVariant="skim"
         previousDate={previousDate}
-        changesSincePrevious={changes}
         publishedAtFallback={publishedAt}
       />
     </>

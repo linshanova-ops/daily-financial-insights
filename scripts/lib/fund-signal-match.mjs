@@ -3,51 +3,118 @@
  * Used by scan-fund-signals.mjs and unit tests.
  */
 
+/** Known short brands keyed by official universe name. */
+export const KNOWN_FUND_BRANDS = {
+  "Citadel Investment Group": ["Citadel"],
+  "Millennium Capital Partners": ["Millennium"],
+  "Point72 Asset Management": ["Point72", "Point 72"],
+  "Balyasny Asset Management": ["Balyasny", "BAM"],
+  "D. E. Shaw": ["DE Shaw", "D.E. Shaw", "DESCO"],
+  "Two Sigma Investments": ["Two Sigma"],
+  "Two Sigma International": ["Two Sigma"],
+  "Bridgewater Associates": ["Bridgewater"],
+  "Renaissance Technologies": ["Renaissance", "Medallion"],
+  "Elliott Investment Management": ["Elliott"],
+  "Qube Research & Technologies": ["Qube", "QRT"],
+  "Verition Fund Management": ["Verition"],
+  "Jain Global": ["Jain Global"],
+  "Oaktree Capital Management": ["Oaktree"],
+  "HAO Capital": ["HAO Capital", "Hao Capital"],
+  "Sona Asset Management": ["Sona"],
+  "LMR Partners": ["LMR"],
+  "Caxton Associates": ["Caxton"],
+  "Linden Advisors": ["Linden"],
+  "Waha Investments": ["Waha"],
+  PIMCO: ["PIMCO"],
+  Barings: ["Barings"],
+  "Neuberger Berman": ["Neuberger", "Neuberger Berman"],
+  Brookfield: ["Brookfield"],
+  Schroders: ["Schroders", "Schroder"],
+};
+
 /** @param {string} name */
 function buildAliasSet(name) {
   const base = String(name || "").trim();
-  if (!base) return { aliases: [], knownShort: new Set() };
+  if (!base) return { aliases: [], knownShort: new Set(), knownForFund: [] };
   const aliases = new Set([base]);
 
   // Drop common legal / corporate suffixes
   const short = base
     .replace(
-      /\b(Investment Group|Asset Management|Capital Partners|Capital Management|Capital|Management|Partners|Associates|Corporation|International|Group)\b/gi,
+      /\b(Investment Group|Asset Management|Capital Partners|Capital Management|Capital|Management|Partners|Associates|Corporation|International|Group|Investments|Advisors)\b/gi,
       "",
     )
     .replace(/\s+/g, " ")
     .trim();
   if (short.length >= 3) aliases.add(short);
 
-  // Known short brands
-  const map = {
-    "Citadel Investment Group": ["Citadel"],
-    "Millennium Capital Partners": ["Millennium"],
-    "Point72 Asset Management": ["Point72", "Point 72"],
-    "Balyasny Asset Management": ["Balyasny", "BAM"],
-    "D. E. Shaw": ["DE Shaw", "D.E. Shaw", "DESCO"],
-    "Two Sigma Investments": ["Two Sigma"],
-    "Two Sigma International": ["Two Sigma"],
-    "Bridgewater Associates": ["Bridgewater"],
-    "Renaissance Technologies": ["Renaissance", "Medallion"],
-    "Elliott Investment Management": ["Elliott"],
-    "Qube Research & Technologies": ["Qube", "QRT"],
-    "Verition Fund Management": ["Verition"],
-    "Jain Global": ["Jain Global"],
-  };
+  const knownForFund = KNOWN_FUND_BRANDS[base] || [];
   const knownShort = new Set(
-    Object.values(map)
+    Object.values(KNOWN_FUND_BRANDS)
       .flat()
       .map((s) => s.toLowerCase()),
   );
-  for (const a of map[base] || []) aliases.add(a);
+  for (const a of knownForFund) aliases.add(a);
 
-  return { aliases: [...aliases], knownShort };
+  return { aliases: [...aliases], knownShort, knownForFund };
 }
 
 /** @param {string} name */
 export function fundAliases(name) {
   return buildAliasSet(name).aliases;
+}
+
+/**
+ * Pick one Google News query term per fund.
+ * Prefer known brands (map order); avoid ultra-short generic tokens.
+ * @param {string} name
+ */
+export function primarySearchAlias(name) {
+  const base = String(name || "").trim();
+  if (!base) return "";
+  const { aliases, knownShort, knownForFund } = buildAliasSet(base);
+
+  const isSearchable = (a) => {
+    if (!a) return false;
+    if (a.length >= 4) return true;
+    // Allow short ticker-style brands (LMR, QRT, BAM) when explicitly known
+    if (/^[A-Z]{2,5}$/.test(a) && knownShort.has(a.toLowerCase())) return true;
+    return false;
+  };
+
+  for (const a of knownForFund) {
+    if (isSearchable(a)) return a;
+  }
+
+  const good = aliases
+    .filter(isSearchable)
+    .sort((a, b) => a.length - b.length || a.localeCompare(b));
+  return good[0] || base;
+}
+
+/**
+ * Build the de-duplicated Google News alias list for a monitored set.
+ * Every fund must map to an alias that appears in the returned list
+ * (shared brands like Two Sigma intentionally collide).
+ * @param {{ name: string }[]} monitored
+ */
+export function googleNewsSearchAliases(monitored) {
+  const aliases = [];
+  const seen = new Set();
+  const uncovered = [];
+  for (const fund of monitored) {
+    const alias = primarySearchAlias(fund?.name);
+    if (!alias) {
+      uncovered.push(fund?.name || "(missing name)");
+      continue;
+    }
+    const key = alias.toLowerCase();
+    if (!seen.has(key)) {
+      seen.add(key);
+      aliases.push(alias);
+    }
+  }
+  return { aliases, uncovered, monitoredCount: monitored.length };
 }
 
 /**

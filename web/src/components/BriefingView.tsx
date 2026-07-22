@@ -1,5 +1,4 @@
 import type { Briefing } from "@/lib/types";
-import type { BriefingChange } from "@/lib/briefing-diff";
 import { BriefingHero } from "./BriefingHero";
 import { ExecutiveSummary } from "./ExecutiveSummary";
 import { SituationBlock } from "./SituationBlock";
@@ -11,7 +10,7 @@ import { KeySources } from "./KeySources";
 import { KeyFigures } from "./KeyFigures";
 import { MarketDashboard } from "./MarketDashboard";
 import { MarketOverview } from "./MarketOverview";
-import { SinceLastBriefing } from "./SinceLastBriefing";
+import { PreviousBriefingLink } from "./PreviousBriefingLink";
 import { SectionNav } from "./SectionNav";
 import { DetailTabs } from "./DetailTabs";
 
@@ -20,7 +19,6 @@ interface BriefingViewProps {
   showHeroCta?: boolean;
   heroVariant?: "full" | "compact" | "skim";
   previousDate?: string | null;
-  changesSincePrevious?: BriefingChange[] | null;
   publishedAtFallback?: string | null;
 }
 
@@ -29,7 +27,6 @@ export function BriefingView({
   showHeroCta = true,
   heroVariant = "full",
   previousDate = null,
-  changesSincePrevious = null,
   publishedAtFallback = null,
 }: BriefingViewProps) {
   const figures = briefing.figures ?? [];
@@ -46,6 +43,14 @@ export function BriefingView({
         publishedAt={briefing.publishedAt ?? publishedAtFallback}
         showCta={showHeroCta}
         variant={heroVariant}
+        marketsHref={
+          hasMarketOverview ? "#market-overview" : "#market-dashboard"
+        }
+      />
+      <SectionNav
+        hasFigures={figures.length > 0}
+        hasMarketOverview={hasMarketOverview}
+        hasMarketDashboard={hasMarketDashboard}
       />
       <div id="skim" className="scroll-mt-28">
         <ExecutiveSummary
@@ -54,17 +59,7 @@ export function BriefingView({
           watch={briefing.watch}
         />
       </div>
-      {changesSincePrevious ? (
-        <SinceLastBriefing
-          previousDate={previousDate}
-          changes={changesSincePrevious}
-        />
-      ) : null}
-      <SectionNav
-        hasFigures={figures.length > 0}
-        hasMarketOverview={hasMarketOverview}
-        hasMarketDashboard={hasMarketDashboard}
-      />
+      <PreviousBriefingLink previousDate={previousDate} />
       <div className="mx-auto mb-2 w-full max-w-6xl px-5 pt-4 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
         Coverage window: {briefing.coverageWindow}
       </div>

@@ -12,6 +12,7 @@ const tabs: { id: TabId; label: string; en: string }[] = [
 ];
 
 function formatAum(aum: number): string {
+  if (!aum || aum <= 0) return "—";
   return `$${aum.toFixed(1)}B`;
 }
 
@@ -274,7 +275,7 @@ function FundsTab({
         </p>
       </div>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-soft">
-        当前监控 {total} 家管理机构（2026 AUM 选型）。
+        当前监控 {total} 家管理机构（Top 100 + 指定增补）。
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">

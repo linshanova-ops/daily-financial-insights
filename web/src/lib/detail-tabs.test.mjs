@@ -8,10 +8,10 @@ import {
 } from "./detail-tabs.ts";
 
 describe("detailTabFromHash", () => {
-  it("defaults to global for empty or unknown hash", () => {
-    assert.equal(detailTabFromHash(""), "global");
-    assert.equal(detailTabFromHash("#"), "global");
-    assert.equal(detailTabFromHash("#nope"), "global");
+  it("defaults to signals for empty or unknown hash", () => {
+    assert.equal(detailTabFromHash(""), "signals");
+    assert.equal(detailTabFromHash("#"), "signals");
+    assert.equal(detailTabFromHash("#nope"), "signals");
   });
 
   it("maps section hashes to tabs", () => {
@@ -22,7 +22,7 @@ describe("detailTabFromHash", () => {
     assert.equal(detailTabFromHash("#watch"), "watch");
     assert.equal(detailTabFromHash("#sources"), "sources");
     assert.equal(detailTabFromHash("#sources-caveats"), "sources");
-    assert.equal(detailTabFromHash("#detail"), "global");
+    assert.equal(detailTabFromHash("#detail"), "signals");
   });
 
   it("recognizes known detail hashes", () => {

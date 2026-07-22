@@ -23,7 +23,7 @@ interface DetailTabsProps {
 export function DetailTabs({ panels }: DetailTabsProps) {
   const baseId = useId();
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState<DetailTabId>("global");
+  const [active, setActive] = useState<DetailTabId>("signals");
 
   useEffect(() => {
     const sync = () => {
@@ -40,7 +40,7 @@ export function DetailTabs({ panels }: DetailTabsProps) {
     return () => window.removeEventListener("hashchange", sync);
   }, []);
 
-  function openModules(id: DetailTabId = "global", syncHash = true) {
+  function openModules(id: DetailTabId = "signals", syncHash = true) {
     setOpen(true);
     setActive(id);
     if (!syncHash) return;
@@ -89,7 +89,7 @@ export function DetailTabs({ panels }: DetailTabsProps) {
               type="button"
               className="focus-ring inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
               aria-expanded={false}
-              onClick={() => openModules("global", true)}
+              onClick={() => openModules("signals", true)}
             >
               Open Detail modules
             </button>

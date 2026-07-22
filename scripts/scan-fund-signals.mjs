@@ -9,6 +9,7 @@
  * Usage:
  *   node scripts/scan-fund-signals.mjs
  *   node scripts/scan-fund-signals.mjs --commit
+ *   node scripts/scan-fund-signals.mjs --window-hours 720
  */
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
@@ -20,6 +21,7 @@ import {
   confidenceTier,
   formatShanghaiLabel,
   fundAliases,
+  googleNewsSearchAliases,
   parseRssItems,
   resolvePublisherUrl,
   scoreFundMention,
@@ -30,7 +32,14 @@ import {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 const fundDir = path.join(root, "web/content/fund");
-const WINDOW_HOURS = 72;
+const WINDOW_HOURS = (() => {
+  const idx = process.argv.indexOf("--window-hours");
+  if (idx >= 0 && process.argv[idx + 1]) {
+    const n = Number(process.argv[idx + 1]);
+    if (Number.isFinite(n) && n > 0) return n;
+  }
+  return 72;
+})();
 const UA = "syravocado-fund-scan/1.0 (+https://github.com/linshanova-ops/daily-financial-insights)";
 
 const commitFlag = process.argv.includes("--commit");
@@ -59,12 +68,6 @@ async function fetchText(url) {
 function googleNewsUrl(query) {
   const q = encodeURIComponent(query);
   return `https://news.google.com/rss/search?q=${q}&hl=en-US&gl=US&ceid=US:en`;
-}
-
-function chunk(arr, size) {
-  const out = [];
-  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
-  return out;
 }
 
 function guessTag(title) {
@@ -98,31 +101,58 @@ async function collectItems(monitored) {
     sources.push({ id: "hedgeweek", ok: false, error: String(err.message || err) });
   }
 
-  // 2) Google News batches over short aliases (index-style coverage)
-  const aliases = monitored
-    .flatMap((f) => fundAliases(f.name).slice(0, 2))
-    .filter((a, i, arr) => arr.indexOf(a) === i)
-    .slice(0, 40);
-  const batches = chunk(aliases, 6);
+  // 2) Google News — one dedicated query per monitored alias.
+  // OR-batching (old: 6 aliases per query) let megafunds dominate the RSS
+  // page, so quieter names (Oaktree, LMR, Caxton, …) returned 0 hits even
+  // when solo searches had dozens of articles.
+  const { aliases, uncovered, monitoredCount } = googleNewsSearchAliases(monitored);
+  if (uncovered.length) {
+    console.warn(
+      `[fund-scan] WARN ${uncovered.length}/${monitoredCount} funds lack a search alias:`,
+      uncovered.slice(0, 8).join(", "),
+    );
+  }
+  const GN_CONCURRENCY = 6;
   let gCount = 0;
   let gOk = 0;
-  for (const batch of batches.slice(0, 6)) {
-    const query = batch.map((a) => `"${a}"`).join(" OR ") + " hedge fund";
-    try {
-      const xml = await fetchText(googleNewsUrl(query));
-      const parsed = parseRssItems(xml, "Google News");
+  let gFail = 0;
+  for (let i = 0; i < aliases.length; i += GN_CONCURRENCY) {
+    const slice = aliases.slice(i, i + GN_CONCURRENCY);
+    const results = await Promise.all(
+      slice.map(async (alias) => {
+        const query = `"${alias}" (hedge fund OR asset management OR capital)`;
+        try {
+          const xml = await fetchText(googleNewsUrl(query));
+          return parseRssItems(xml, "Google News");
+        } catch {
+          return null;
+        }
+      }),
+    );
+    for (const parsed of results) {
+      if (!parsed) {
+        gFail += 1;
+        continue;
+      }
       items.push(...parsed);
       gCount += parsed.length;
       gOk += 1;
-    } catch {
-      // continue other batches
     }
   }
   sources.push({
     id: "google-news",
     ok: gOk > 0,
     count: gCount,
-    note: gOk ? `${gOk} batches ok` : "all batches failed",
+    note: gOk
+      ? `${gOk}/${aliases.length} alias queries ok · ${monitoredCount} monitored${gFail ? ` · ${gFail} failed` : ""}`
+      : "all alias queries failed",
+    coverage: {
+      monitored: monitoredCount,
+      searchAliases: aliases.length,
+      uncovered: uncovered.length,
+      aliasQueriesOk: gOk,
+      aliasQueriesFailed: gFail,
+    },
   });
 
   // 3) HedgeCo Insights — public hedge-fund trade RSS (third live source)
@@ -305,7 +335,7 @@ async function main() {
     .map((ref) => byRank.get(ref.rank) || { rank: ref.rank, name: ref.name })
     .filter((f) => f?.name);
 
-  console.log(`[fund-scan] monitored=${monitored.length}`);
+  console.log(`[fund-scan] monitored=${monitored.length} windowHours=${WINDOW_HOURS}`);
   const { items, sources } = await collectItems(monitored);
   console.log(`[fund-scan] fetched items=${items.length}`);
 
@@ -340,15 +370,21 @@ async function main() {
           : `${s.id}:down${s.note ? `(${s.note})` : ""}`,
       )
       .join(" · "),
-    scanWindow: "每日扫描过去 72 小时 · 命中永久归档",
+    scanWindow:
+      WINDOW_HOURS === 72
+        ? "每日扫描过去 72 小时 · 命中永久归档"
+        : WINDOW_HOURS % 24 === 0 && WINDOW_HOURS >= 24
+          ? `每日扫描过去 ${WINDOW_HOURS / 24} 天 · 命中永久归档`
+          : `每日扫描过去 ${WINDOW_HOURS} 小时 · 命中永久归档`,
     phase: 2,
     phaseNote:
-      "Live RSS scan on briefing windows (Hedgeweek + Google News + HedgeCo). Confirmed hits are permanent.",
+      "Live RSS scan on briefing windows (Hedgeweek + Google News + HedgeCo). Confirmed hits are permanent. Google News uses one dedicated query per monitored alias (no OR-batch dilution).",
     lastScan: {
       at: now.toISOString(),
       fetched: items.length,
       newConfirmed: added,
       review: reviewOut.length,
+      windowHours: WINDOW_HOURS,
       sources,
     },
   };
