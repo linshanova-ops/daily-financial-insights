@@ -2,7 +2,7 @@
   "date": "2026-07-22",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 21–22, 2026",
-  "publishedAt": "2026-07-22T12:03:47.000Z",
+  "publishedAt": "2026-07-22T13:02:18.898Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 22)",
@@ -83,6 +83,10 @@
     {
       "label": "网易财经 — Jul 21 A-share close",
       "href": "https://www.163.com/money/article/L2CC6POT00258105.html"
+    },
+    {
+      "label": "鉅亨網 — Jul 22 Hang Seng close",
+      "href": "https://news.cnyes.com/news/id/6542812"
     }
   ],
   "figures": [
@@ -200,14 +204,18 @@
       ]
     }
   ],
-  "marketTone": "Jul 22 A-share profit-taking (Shanghai +0.07%, ChiNext −3.23%) after Jul 21 chip V-reversal; Japan Jun trade deficit ¥406.9bn missed est ¥120bn on oil/yen; UK CPI 2.6% missed est 2.7%. Jul 21 US chip rebound (S&P +0.89%) and Brent $91.01 settle still anchor global oil/geo inflation into Alphabet/Tesla Jul 22 earnings.",
+  "marketTone": "Jul 22 Asia split: A-share profit-taking (Shanghai +0.07%, ChiNext −3.23%) and Hang Seng −0.95% / HSTech −3.04% after Jul 21 chip V-reversal; Japan Jun trade deficit ¥406.9bn missed est ¥120bn; UK CPI 2.6% missed est 2.7%. Jul 21 US chip rebound (S&P +0.89%) and Brent $91.01 settle still anchor oil/geo inflation into Alphabet/Tesla Jul 22 earnings.",
   "summary": [
     {
-      "text": "Jul 22 A-share official close (Aju Press): Shanghai +0.07% to 3,867.03, Shenzhen −1.42%, ChiNext −3.23%, STAR −2.26% — profit-taking after Jul 21 chip V-reversal (Shanghai +1.79%/ChiNext +7.05% per 网易财经 Jul 21); turnover ~2.65tn yuan, >3800 stocks down; gold/oil/power outperformed (Brent >$92 intraday per 金融界 Jul 22). CSRC stability symposiums continue (彭博 Jul 22).",
+      "text": "Jul 22 Asia official close: A-share (Aju Press) Shanghai +0.07% to 3,867.03, Shenzhen −1.42%, ChiNext −3.23%, STAR −2.26% — profit-taking after Jul 21 chip V-reversal (Shanghai +1.79%/ChiNext +7.05% per 网易财经 Jul 21); turnover ~2.65tn yuan, >3800 stocks down. Hang Seng −0.95% to 24,892.66, HSTech −3.04% to 4,668.23 (鉅亨網 Jul 22); Tencent −7%+ on gaming concerns. CSRC stability symposiums continue (彭博 Jul 22).",
       "sources": [
         {
           "label": "Aju Press Jul 22",
           "href": "https://www.ajupress.com/view/20260722161270599"
+        },
+        {
+          "label": "鉅亨網 Jul 22",
+          "href": "https://news.cnyes.com/news/id/6542812"
         },
         {
           "label": "网易财经 Jul 21",
@@ -526,11 +534,15 @@
       ]
     },
     {
-      "text": "Jul 22 A-share official close (Aju Press): Shanghai +0.07% to 3,867.03, Shenzhen −1.42%, ChiNext −3.23%, STAR −2.26%; turnover ~2.65tn yuan, >3800 stocks down — profit-taking after Jul 21 chip V-reversal (网易财经: Shanghai +1.79%, ChiNext +7.05%). 华尔街见闻 Jul 22早餐：日元破163、CSRC 座谈会延续；资源/贵金属板块相对强势。",
+      "text": "Jul 22 Asia official close: A-share (Aju Press) Shanghai +0.07% to 3,867.03, Shenzhen −1.42%, ChiNext −3.23%, STAR −2.26%; turnover ~2.65tn yuan, >3800 stocks down — profit-taking after Jul 21 chip V-reversal (网易财经: Shanghai +1.79%, ChiNext +7.05%). Hang Seng −0.95% to 24,892.66, HSTech −3.04% to 4,668.23 (鉅亨網 Jul 22); 华尔街见闻 Jul 22早餐：日元破163、CSRC 座谈会延续；资源/贵金属板块相对强势。",
       "sources": [
         {
           "label": "Aju Press Jul 22",
           "href": "https://www.ajupress.com/view/20260722161270599"
+        },
+        {
+          "label": "鉅亨網 Jul 22",
+          "href": "https://news.cnyes.com/news/id/6542812"
         },
         {
           "label": "网易财经 Jul 21",
@@ -684,7 +696,7 @@
       "text": "ANZ youth-unemployment-approaching-20% forecast (single-source) keeps labor anxiety live even after Jun NBS 14.9% print — Politburo easing expectations unchanged."
     }
   ],
-  "chinaDivergences": "Jul 22 Shanghai +0.07%/ChiNext −3.23% vs Jul 21 US S&P +0.89%; Jul 22 A-share profit-taking vs Jul 21 chip V-reversal; BTC ~$66.5k vs Brent $91+; Japan trade miss vs UK CPI miss; Hormuz near-zero transits vs ceasefire headlines.",
+  "chinaDivergences": "Jul 22 Shanghai +0.07%/ChiNext −3.23% vs Hang Seng −0.95%/HSTech −3.04% vs Jul 21 US S&P +0.89%; Jul 22 A-share profit-taking vs Jul 21 chip V-reversal; BTC ~$66.5k vs Brent $91+; Japan trade miss vs UK CPI miss; Hormuz near-zero transits vs ceasefire headlines.",
   "assetFramework": [
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
@@ -1082,7 +1094,7 @@
     }
   ],
   "sources": "彭博 Markets Daily China / 财经早茶 (Jul 22), Aju Press (Jul 22 A-share close), AP (Jul 22 Japan trade), ONS (Jul 22 UK CPI), CNBC (Jul 20 Jul 21 US close/oil/Treasury/Iran/SMCI), CoinDesk (Jul 21 BTC), 华尔街见闻 3777606/3776959, 第一财经 103284305 (Jul 21 CSRC symposium), BlockBeats 257292/59069, 中国经济网 (Jul 21 PBOC relending), Mitrade (Jul 21 JPY), TechTimes (Jul 20 tariffs), 网易财经 (Jul 21 A-share close).",
-  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video — prior CI unreachable). Rejected wallstreetcn livenews 2946034 (page shows 2025/07/22 — wrong year for Jul 22 close). ANZ youth-unemployment-approaching-20% via Bloomberg inbox only. China Medical Holdings +800% micro-cap move via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture. 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-22.png (霍尔木兹通航量). 市场一览 desk color in marketOverview. Evening slot (Beijing 20:00): Jul 22 A-share close + Jul 22 Japan trade/UK CPI as latest verified prints; Jul 21 US close prior session.",
+  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video — prior CI unreachable). Rejected wallstreetcn livenews 2946034 (page shows 2025/07/22 — wrong year for Jul 22 close). ANZ youth-unemployment-approaching-20% via Bloomberg inbox only. China Medical Holdings +800% micro-cap move via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture. 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-22.png (霍尔木兹通航量). 市场一览 desk color in marketOverview. Evening slot (Beijing 20:00): Jul 22 A-share + Hang Seng close, Jul 22 Japan trade/UK CPI as latest verified prints; Jul 21 US close prior session; marketDashboard refreshed 2026-07-22T13:02Z.",
   "marketOverview": {
     "asOfDate": "2026-07-22",
     "note": "Qualitative desk color from 彭博财经早茶 — not official closes.",
@@ -1122,7 +1134,7 @@
     ]
   },
   "marketDashboard": {
-    "asOf": "2026-07-22T12:05:57.758Z",
+    "asOf": "2026-07-22T13:02:18.898Z",
     "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -1156,8 +1168,8 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "17.56",
-            "change": "+2.99%",
+            "latest": "17.54",
+            "change": "+2.87%",
             "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1276,8 +1288,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "163.0600",
-            "change": "+0.35%",
+            "latest": "163.0930",
+            "change": "+0.37%",
             "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1288,8 +1300,8 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7609",
-            "change": "−0.17%",
+            "latest": "6.7723",
+            "change": "−0.00%",
             "changeDirection": "down",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1300,8 +1312,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,124.00",
-            "change": "+1.30%",
+            "latest": "$4,122.30",
+            "change": "+1.26%",
             "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1312,9 +1324,9 @@
           {
             "id": "brent",
             "asset": "Brent crude",
-            "latest": "$85.14",
-            "change": "−6.45%",
-            "changeDirection": "down",
+            "latest": "$94.05",
+            "change": "+3.34%",
+            "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (BZ=F)",
@@ -1324,8 +1336,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$65,916",
-            "change": "−0.59%",
+            "latest": "$65,577",
+            "change": "−1.40%",
             "changeDirection": "down",
             "asOfDate": "2026-07-22",
             "source": {
