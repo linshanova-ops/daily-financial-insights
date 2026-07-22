@@ -498,7 +498,7 @@ async function fetchSource(href) {
   if (yf) {
     const symbol = decodeURIComponent(yf[1]);
     try {
-      const api = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?interval=1d&range=10d`;
+      const api = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?interval=1d&range=1mo`;
       const res = await fetch(api, {
         headers: {
           "user-agent": BROWSER_UA,
@@ -517,14 +517,14 @@ async function fetchSource(href) {
         meta.chartPreviousClose,
         ...closes.filter((x) => x != null),
       ];
-      // percent changes between last two closes
-      if (closes.length >= 2) {
-        const a = closes[closes.length - 2];
-        const b = closes[closes.length - 1];
-        if (a && b) {
-          const pct = (((b - a) / a) * 100).toFixed(2);
-          parts.push(pct, String(Math.abs(Number(pct))));
-        }
+      // Percent changes for every consecutive session in range (not just latest),
+      // so older briefing cites can still match historical day moves.
+      for (let i = 1; i < closes.length; i++) {
+        const a = closes[i - 1];
+        const b = closes[i];
+        if (a == null || b == null || !a) continue;
+        const pct = (((b - a) / a) * 100).toFixed(2);
+        parts.push(pct, String(Math.abs(Number(pct))));
       }
       const text = normalizeText(parts.join(" "));
       return {
