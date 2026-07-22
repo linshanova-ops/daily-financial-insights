@@ -2,7 +2,7 @@
   "date": "2026-07-22",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 21–22, 2026",
-  "publishedAt": "2026-07-22T05:45:00.000Z",
+  "publishedAt": "2026-07-22T13:02:18.898Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 22)",
@@ -13,8 +13,32 @@
       "href": "https://finance.yahoo.com/quote/%5EGSPC/"
     },
     {
-      "label": "CNBC — Jul 21 Brent/WTI settle",
-      "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+      "label": "Aju Press — Jul 22 A-share close",
+      "href": "https://www.ajupress.com/view/20260722161270599"
+    },
+    {
+      "label": "AP — Jul 22 Japan Jun trade",
+      "href": "https://apnews.com/article/japan-trade-iran-oil-exports-imports-bf2939b06eff812923a0e792bcf107ed"
+    },
+    {
+      "label": "ONS — Jul 22 UK Jun CPI",
+      "href": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/june2026"
+    },
+    {
+      "label": "华尔街见闻 — Jul 22 breakfast",
+      "href": "https://wallstreetcn.com/articles/3777606"
+    },
+    {
+      "label": "Japan Times — Jul 22 Japan Jun trade",
+      "href": "https://www.japantimes.co.jp/business/2026/07/22/economy/japan-trade-deficit-june/"
+    },
+    {
+      "label": "BlockBeats — Jul 22 token unlocks",
+      "href": "https://www.theblockbeats.info/flash/257292"
+    },
+    {
+      "label": "Xinhua/The Star — Jul 22 (Jul 21 Brent/WTI settle)",
+      "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
     },
     {
       "label": "CNBC — Jul 21 Treasury yields",
@@ -59,6 +83,10 @@
     {
       "label": "网易财经 — Jul 21 A-share close",
       "href": "https://www.163.com/money/article/L2CC6POT00258105.html"
+    },
+    {
+      "label": "鉅亨網 — Jul 22 Hang Seng close",
+      "href": "https://news.cnyes.com/news/id/6542812"
     }
   ],
   "figures": [
@@ -68,10 +96,10 @@
       "kind": "stat",
       "display": "$91.01",
       "delta": "+2% · Sep futures · five-week high",
-      "note": "CNBC official settle after US-Iran/Houthi headlines",
+      "note": "Xinhua settle via The Star after US-Iran/Houthi headlines",
       "source": {
-        "label": "CNBC oil Jul 21",
-        "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+        "label": "The Star / Xinhua oil Jul 22",
+        "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
       }
     },
     {
@@ -80,10 +108,10 @@
       "kind": "stat",
       "display": "$84.91",
       "delta": "+2% · Aug futures",
-      "note": "CNBC Jul 21",
+      "note": "The Star / Xinhua Jul 22",
       "source": {
-        "label": "CNBC oil Jul 21",
-        "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+        "label": "The Star / Xinhua oil Jul 22",
+        "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
       }
     },
     {
@@ -115,7 +143,7 @@
       "title": "霍尔木兹海峡通航量随美伊敌对行动骤降",
       "kind": "insight",
       "imageSrc": "/inbox-charts/bloomberg-2026-07-22.png",
-      "analysis": "彭博「今日图表」跟踪霍尔木兹海峡日通航量：美伊冲突升级后（灰色「伊朗战争」区间）通航量长期处于近零水平；6月临时和平协议后仅有短暂回升，7月再度走弱。含义：实体通行恢复滞后于外交 headlines，实体通行恢复滞后于外交窗口——停火若未带来通航量回升，油价与长端利率的供给侧溢价可能持续主导跨资产定价。",
+      "analysis": "彭博「今日图表」跟踪霍尔木兹海峡日通航量：美伊冲突升级后（灰色「伊朗战争」区间）通航量从100–140艘/日骤降至近零；6月临时和平协议后短暂回升至约50艘/日，7月再度走弱。含义：实体通行恢复滞后于外交窗口——停火若未带来通航量回升，油价与长端利率的供给侧溢价可能持续主导跨资产定价。",
       "source": {
         "label": "彭博 Markets Daily China / 财经早茶",
         "href": "https://www.bloomberg.com/asia"
@@ -128,23 +156,9 @@
       "unit": "%",
       "note": "Official closes — Yahoo Finance Jul 21 (chip-led rebound snapped 3-day losing streak)",
       "source": {
-        "label": "Yahoo Finance Jul 21 (^GSPC)",
+        "label": "Yahoo Finance Jul 21 US closes",
         "href": "https://finance.yahoo.com/quote/%5EGSPC/"
       },
-      "sources": [
-        {
-          "label": "Yahoo Finance Jul 21 (^GSPC)",
-          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "label": "Yahoo Finance Jul 21 (^IXIC)",
-          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "label": "Yahoo Finance Jul 21 (^DJI)",
-          "href": "https://finance.yahoo.com/quote/%5EDJI/"
-        }
-      ],
       "points": [
         {
           "label": "Dow",
@@ -162,54 +176,89 @@
     },
     {
       "id": "asia-bars",
-      "title": "Jul 21 A-share official close % change",
+      "title": "Jul 22 A-share official close % change",
       "kind": "bars",
       "unit": "%",
-      "note": "Official close — 网易财经 Jul 21 (prior session for Jul 22 morning slot)",
+      "note": "Official close — Aju Press Jul 22 (profit-taking after Jul 21 chip V-reversal)",
       "source": {
-        "label": "网易财经 Jul 21",
-        "href": "https://www.163.com/money/article/L2CC6POT00258105.html"
+        "label": "Aju Press Jul 22",
+        "href": "https://www.ajupress.com/view/20260722161270599"
       },
       "points": [
         {
           "label": "Shanghai",
-          "value": 1.79
+          "value": 0.07
         },
         {
           "label": "Shenzhen",
-          "value": 4.81
+          "value": -1.42
         },
         {
           "label": "ChiNext",
-          "value": 7.05
+          "value": -3.23
         },
         {
           "label": "STAR",
-          "value": 10.73
+          "value": -2.26
         }
       ]
     }
   ],
-  "marketTone": "Jul 21 US chip rebound (S&P +0.89% to 7,509.20, Nasdaq +1.29%) diverges from Brent $91.01 settle (+2%) and 10y 4.63% two-month high. Hormuz shipping near zero per Bloomberg chart; USD/JPY breaks 163 (彭博 Jul 22; Yahoo ~163.16). CSRC Mon–Tue stability symposiums; PBOC +1000亿元 支农支小再贷款. SMCI backlog >$60bn, GM 15–17%. Jul 22 data slate: Japan trade, UK CPI, Taiwan unemployment.",
+  "marketTone": "Jul 22 Asia split: A-share profit-taking (Shanghai +0.07%, ChiNext −3.23%) and Hang Seng −0.95% / HSTech −3.04% after Jul 21 chip V-reversal; Japan Jun trade deficit ¥406.9bn missed est ¥120bn; UK CPI 2.6% missed est 2.7%. Jul 21 US chip rebound (S&P +0.89%) and Brent $91.01 settle still anchor oil/geo inflation into Alphabet/Tesla Jul 22 earnings.",
   "summary": [
     {
-      "text": "Jul 21 US official close (Yahoo Finance): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — three-day losing streak snapped on chip/memory rebound (Micron +12%+; PHLX Semi +4.9% per 华尔街见闻 Jul 21). Brent settled $91.01 (+2.0%); 10y 4.63% (+3 bp, two-month high).",
+      "text": "Jul 22 Asia official close: A-share (Aju Press) Shanghai +0.07% to 3,867.03, Shenzhen −1.42%, ChiNext −3.23%, STAR −2.26% — profit-taking after Jul 21 chip V-reversal (Shanghai +1.79%/ChiNext +7.05% per 网易财经 Jul 21); turnover ~2.65tn yuan, >3800 stocks down. Hang Seng −0.95% to 24,892.66, HSTech −3.04% to 4,668.23 (鉅亨網 Jul 22); Tencent −7%+ on gaming concerns. CSRC stability symposiums continue (彭博 Jul 22).",
       "sources": [
         {
-          "label": "Yahoo Finance Jul 21 (^GSPC)",
+          "label": "Aju Press Jul 22",
+          "href": "https://www.ajupress.com/view/20260722161270599"
+        },
+        {
+          "label": "鉅亨網 Jul 22",
+          "href": "https://news.cnyes.com/news/id/6542812"
+        },
+        {
+          "label": "网易财经 Jul 21",
+          "href": "https://www.163.com/money/article/L2CC6POT00258105.html"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Jul 22 Japan Jun trade (Japan Times/MoF): deficit ¥406.9bn vs est ¥120bn (miss estimate; prior revised ¥391.8bn); exports +19.3% y/y (beat 18% est); imports +25.4% on oil/yen — second straight deficit.",
+      "sources": [
+        {
+          "label": "Japan Times Jul 22",
+          "href": "https://www.japantimes.co.jp/business/2026/07/22/economy/japan-trade-deficit-june/"
+        },
+        {
+          "label": "AP Jul 22",
+          "href": "https://apnews.com/article/japan-trade-iran-oil-exports-imports-bf2939b06eff812923a0e792bcf107ed"
+        }
+      ]
+    },
+    {
+      "text": "Jul 22 UK Jun CPI (ONS): +2.6% y/y vs 2.7% est and 2.8% prior (miss estimate / cooler); core CPI 2.6% unchanged; transport inflation eased to 5.7% from 6.8% — partial relief from Iran-war energy spike but BOE still flags Q3 CPI toward 3%.",
+      "sources": [
+        {
+          "label": "ONS Jul 22",
+          "href": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/june2026"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 US official close (Yahoo Finance): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — chip/memory rebound snapped 3-day losing streak. Brent settled $91.01 (+2.0%); 10y 4.63% (+3 bp, two-month high).",
+      "sources": [
+        {
+          "label": "Yahoo Finance Jul 21 US closes",
           "href": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
-          "label": "Yahoo Finance Jul 21 (^IXIC)",
-          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "label": "Yahoo Finance Jul 21 (^DJI)",
-          "href": "https://finance.yahoo.com/quote/%5EDJI/"
-        },
-        {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Treasury Jul 21",
@@ -261,12 +310,8 @@
       ]
     },
     {
-      "text": "FX/crypto: USD/JPY breaks 163 for the first time since 1986 — intervention risk elevated (彭博 Jul 22; Yahoo ~163.16 as of Jul 22). Prior session (Mitrade Jul 21) had printed a 162.70 high (~15 pips below the 162.84 40-year mark). BTC ~$66,400 five-week high (CoinDesk Jul 21) as chip rebound and Clarity Act progress offset tariff headlines.",
+      "text": "Jul 21 FX/crypto: USD/JPY session high 162.70 — within ~15 pips of 40-year high 162.84, intervention risk rising (Mitrade Jul 21). BTC ~$66,400 five-week high (CoinDesk Jul 21) as chip rebound and Clarity Act progress offset tariff headlines.",
       "sources": [
-        {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        },
         {
           "label": "Mitrade Jul 21",
           "href": "https://www.mitrade.com/au/insights/news/live-news/article-1-1921011-20260721"
@@ -278,8 +323,8 @@
       ]
     }
   ],
-  "signal": "Jul 21 chip-led US rebound (S&P +0.89%) runs into Brent $91.01 and Hormuz transits near zero — oil/geo inflation channel still dominates forward pricing (10y 4.63%) even as SMCI >$60bn backlog and BTC ~$66.4k signal AI/crypto dip-buying. CSRC stability symposiums + PBOC 1000亿元 relending anchor China policy bid into Jul 22 data slate (Japan trade, UK CPI, Taiwan unemployment).",
-  "watch": "Does Jul 21 chip bounce hold through Alphabet/Tesla Jul 22 earnings and Brent ≥$91 — and do Jul 22 Japan trade / UK CPI prints re-price the oil→rates chain? Hormuz chart recovery vs ceasefire rhetoric is the falsifier for energy inflation.",
+  "signal": "Jul 22 A-share profit-taking (ChiNext −3.23%) tests Jul 21 chip V-reversal while Japan trade deficit ¥406.9bn (miss est) and UK CPI 2.6% (miss est) re-price oil→rates without full relief. Brent $91.01 + Hormuz near-zero transits still dominate forward inflation into Alphabet/Tesla Jul 22 AMC and Jul 28–29 FOMC.",
+  "watch": "Did Jul 22 ChiNext −3.23% mark orderly profit-taking or start of a second de-risk leg — and do Alphabet/Tesla Jul 22 AMC capex guides validate Jul 21 chip bounce against Brent ≥$91? Japan trade miss + UK CPI miss are backward-looking; Hormuz chart recovery remains the falsifier for energy inflation.",
   "globalRegime": "Fed holds 3.50%–3.75% with Jul 14–15 CPI/PPI misses backward-looking while Jul 21 Brent $91.01 (+2%) and 10y 4.63% (two-month high) re-price forward inflation on Hormuz/Houthi supply risk. Jul 21 US equities snapped a 3-day losing streak on chip rebound (S&P +0.89%) but Citadel Rubner (华尔街见闻 Jul 21) says earnings must validate the reset. Jul 28–29 FOMC and Mag 7 earnings (Alphabet/Tesla Jul 22) are the next hard tests.",
   "globalChanged": [
     {
@@ -299,8 +344,8 @@
           "href": "https://www.cnbc.com/2026/07/21/us-iran-war-trump-hormuz-houthis.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         }
       ]
     },
@@ -403,32 +448,42 @@
       ]
     },
     {
-      "text": "Jul 21 US official close (Yahoo Finance): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — chip/memory led (Micron +12%+); snapped 3-day losing streak.",
+      "text": "Jul 22 UK Jun CPI (ONS): headline +2.6% y/y vs 2.7% est and 2.8% prior (miss estimate); core CPI 2.6% unchanged; transport inflation eased to 5.7% from 6.8% — motor fuels/diesel fell m/m.",
       "sources": [
         {
-          "label": "Yahoo Finance Jul 21 (^GSPC)",
-          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "label": "Yahoo Finance Jul 21 (^IXIC)",
-          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "label": "Yahoo Finance Jul 21 (^DJI)",
-          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+          "label": "ONS Jul 22",
+          "href": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/june2026"
         }
       ]
     },
     {
-      "text": "Jul 21 rates: 10y 4.63% (+3 bp, two-month high), 2y 4.26% (+5 bp), 30y 5.13% (+2 bp) — oil/geo inflation premium despite ceasefire headlines (CNBC narrative; bp deltas aligned to U.S. Treasury daily curve).",
+      "text": "Jul 22 Japan Jun trade (Japan Times/MoF): deficit ¥406.9bn vs est ¥120bn (miss estimate); exports +19.3% (beat 18% est), imports +25.4% on oil/yen and weak yen — second consecutive monthly deficit; USD/JPY ~163.",
+      "sources": [
+        {
+          "label": "Japan Times Jul 22",
+          "href": "https://www.japantimes.co.jp/business/2026/07/22/economy/japan-trade-deficit-june/"
+        },
+        {
+          "label": "AP Jul 22",
+          "href": "https://apnews.com/article/japan-trade-iran-oil-exports-imports-bf2939b06eff812923a0e792bcf107ed"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 US official close (Yahoo Finance): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — chip/memory led (Micron +12%+); snapped 3-day losing streak.",
+      "sources": [
+        {
+          "label": "Yahoo Finance Jul 21 US closes",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        }
+      ]
+    },
+    {
+      "text": "Jul 21 rates (CNBC): 10y 4.63% (+3 bp, two-month high), 2y 4.264% (+4 bp), 30y 5.133% (+2 bp) — oil/geo inflation premium despite ceasefire headlines.",
       "sources": [
         {
           "label": "CNBC Treasury Jul 21",
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
-        },
-        {
-          "label": "U.S. Treasury Jul 21",
-          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
         }
       ]
     },
@@ -479,11 +534,23 @@
       ]
     },
     {
-      "text": "Jul 21 A-share official close (网易财经): Shanghai +1.79%, Shenzhen +4.81%, ChiNext +7.05%, STAR +10.73%; turnover 2.96tn yuan — prior session for Jul 22 morning slot.",
+      "text": "Jul 22 Asia official close: A-share (Aju Press) Shanghai +0.07% to 3,867.03, Shenzhen −1.42%, ChiNext −3.23%, STAR −2.26%; turnover ~2.65tn yuan, >3800 stocks down — profit-taking after Jul 21 chip V-reversal (网易财经: Shanghai +1.79%, ChiNext +7.05%). Hang Seng −0.95% to 24,892.66, HSTech −3.04% to 4,668.23 (鉅亨網 Jul 22); 华尔街见闻 Jul 22早餐：日元破163、CSRC 座谈会延续；资源/贵金属板块相对强势。",
       "sources": [
+        {
+          "label": "Aju Press Jul 22",
+          "href": "https://www.ajupress.com/view/20260722161270599"
+        },
+        {
+          "label": "鉅亨網 Jul 22",
+          "href": "https://news.cnyes.com/news/id/6542812"
+        },
         {
           "label": "网易财经 Jul 21",
           "href": "https://www.163.com/money/article/L2CC6POT00258105.html"
+        },
+        {
+          "label": "华尔街见闻 Jul 22",
+          "href": "https://wallstreetcn.com/articles/3777606"
         }
       ]
     },
@@ -605,18 +672,22 @@
       ]
     },
     {
-      "text": "Jul 21 (BlockBeats 59069): BitGo confidentially filed US IPO registration with SEC — follows Circle Jun 2026 listing; GENIUS Act stablecoin framework cited as regulatory tailwind (crypto infrastructure IPO wave).",
+      "text": "Jul 22 (BlockBeats 257292): ALT/YGG/ENA one-time unlocks this week (ALT ~1.1亿美元 Jul 25); WLD linear unlock ~500万美元/day from Jul 24 — supply overhang watch alongside CoinDesk Jul 21 BTC ~$66,400 five-week high.",
       "sources": [
         {
-          "label": "BlockBeats Jul 21",
-          "href": "https://www.theblockbeats.info/news/59069"
+          "label": "BlockBeats Jul 22",
+          "href": "https://www.theblockbeats.info/flash/257292"
+        },
+        {
+          "label": "CoinDesk Jul 21",
+          "href": "https://www.coindesk.com/business/2026/07/21/live-markets-bitcoin-etfs-post-a-fifth-straight-day-of-inflows-in-a-first-since-april"
         }
       ]
     }
   ],
   "chinaImplies": [
     {
-      "text": "CSRC symposiums + PBOC 1000亿元 relending reinforce stability bid alongside Jul 21 A-share chip rally — tests whether Jul 22 opening holds with US earnings and Brent ≥$91."
+      "text": "Jul 22 ChiNext −3.23% profit-taking after Jul 21 +7.05% tests whether CSRC symposiums + PBOC 1000亿元 relending cap a second de-risk leg — resource/gold bid vs AI hardware unwind is the intraday split."
     },
     {
       "text": "Moonshot $50bn pre-IPO / InnoLight HK IPO / TSMC price hikes show AI supply-chain capital still flowing despite Bessent IP scrutiny narrative."
@@ -625,7 +696,7 @@
       "text": "ANZ youth-unemployment-approaching-20% forecast (single-source) keeps labor anxiety live even after Jun NBS 14.9% print — Politburo easing expectations unchanged."
     }
   ],
-  "chinaDivergences": "Jul 21 Shanghai +1.79%/ChiNext +7.05% vs Jul 21 S&P +0.89%; BTC ~$66.4k vs Brent $91.01; SMCI GM 15–17% vs Intel layoffs; US chip rebound vs Hormuz near-zero transits; MCHI ETF −1.17% vs Jul 21 A-share rally (彭博 snapshot).",
+  "chinaDivergences": "Jul 22 Shanghai +0.07%/ChiNext −3.23% vs Hang Seng −0.95%/HSTech −3.04% vs Jul 21 US S&P +0.89%; Jul 22 A-share profit-taking vs Jul 21 chip V-reversal; BTC ~$66.5k vs Brent $91+; Japan trade miss vs UK CPI miss; Hormuz near-zero transits vs ceasefire headlines.",
   "assetFramework": [
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
@@ -633,20 +704,12 @@
       "driver": "Jul 21 S&P +0.89% / Nasdaq +1.29% (Yahoo Finance); Brent $91.01; Rubner reset-complete (华尔街见闻); Alphabet/Tesla Jul 22",
       "driverSources": [
         {
-          "label": "Yahoo Finance Jul 21 (^GSPC)",
+          "label": "Yahoo Finance Jul 21 US closes",
           "href": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
-          "label": "Yahoo Finance Jul 21 (^IXIC)",
-          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "label": "Yahoo Finance Jul 21 (^DJI)",
-          "href": "https://finance.yahoo.com/quote/%5EDJI/"
-        },
-        {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "华尔街见闻 Jul 21",
@@ -666,8 +729,8 @@
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         }
       ],
       "read": "Belly/long-end rose with official oil settle despite ceasefire headlines — inflation channel re-engaged into Jul 28–29 FOMC",
@@ -676,26 +739,22 @@
     {
       "asset": "US dollar (DXY)",
       "regime": "Rate differentials with Hormuz safe-haven bid",
-      "driver": "Jul 21 10y +3 bp; Brent $91.01 (CNBC); USD/JPY breaks 163 (彭博 Jul 22; Yahoo ~163.16); Section 122 tariff expiry Jul 24",
+      "driver": "Jul 21 10y +3 bp; Brent $91.01 (CNBC); JPY 162.70 session high (Mitrade Jul 21); Section 122 tariff expiry Jul 24",
       "driverSources": [
         {
           "label": "CNBC Treasury Jul 21",
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
-        },
-        {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "Mitrade Jul 21",
           "href": "https://www.mitrade.com/au/insights/news/live-news/article-1-1921011-20260721"
         }
       ],
-      "read": "Geo/oil and yield support likely kept USD firm at margin; JPY break of 163 extends carry-trade / intervention pressure",
+      "read": "Geo/oil and yield support likely kept USD firm at margin; JPY weakness extends carry-trade pressure",
       "invalidator": "DXY breaks lower while Brent >$90 and yields keep rising"
     },
     {
@@ -708,8 +767,8 @@
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Iran Jul 21",
@@ -725,8 +784,8 @@
       "driver": "Jul 21 Brent settled $91.01 (+2.0%, five-week high); WTI $84.91; Hormuz transits near zero since conflict (Bloomberg chart)",
       "driverSources": [
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Iran Jul 21",
@@ -738,9 +797,13 @@
     },
     {
       "asset": "China equities (Shanghai / ChiNext)",
-      "regime": "Policy stability bid vs global oil/geo beta",
-      "driver": "Jul 21 close Shanghai +1.79%, ChiNext +7.05% (网易财经); CSRC symposiums (彭博); PBOC +1000亿元 relending",
+      "regime": "Policy stability bid vs post-rally profit-taking",
+      "driver": "Jul 22 close Shanghai +0.07%, ChiNext −3.23% (Aju Press); Jul 21 chip V-reversal +1.79%/+7.05% (网易财经); CSRC symposiums (彭博); PBOC +1000亿元 relending",
       "driverSources": [
+        {
+          "label": "Aju Press Jul 22",
+          "href": "https://www.ajupress.com/view/20260722161270599"
+        },
         {
           "label": "网易财经 Jul 21",
           "href": "https://www.163.com/money/article/L2CC6POT00258105.html"
@@ -754,8 +817,8 @@
           "href": "http://www.ce.cn/xwzx/gnsz/gdxw/202607/t20260721_3099497.shtml"
         }
       ],
-      "read": "Jul 21 full-day chip rally + CSRC messaging supports Jul 22 open — MCHI −1.17% overnight shows offshore/offshore divergence",
-      "invalidator": "Shanghai closes below 3,850 on rising volume with US Mag 7 missing estimates"
+      "read": "Jul 22 profit-taking on AI hardware after Jul 21 V-reversal — resource/gold outperformed; CSRC messaging limits downside but US Mag 7 earnings are the next beta test",
+      "invalidator": "Shanghai closes below 3,800 on rising volume with ChiNext −5% two sessions despite CSRC pledges"
     },
     {
       "asset": "CNY",
@@ -767,8 +830,8 @@
           "href": "http://www.ce.cn/xwzx/gnsz/gdxw/202607/t20260721_3099497.shtml"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         }
       ],
       "read": "Disaster-relief relending is targeted quantity easing; oil import-inflation constraint on near-term LPR cut unchanged",
@@ -799,8 +862,8 @@
       "evidence": "CNBC Jul 21: Brent +2.0% at $91.01; WTI $84.91; US 10th strike night; Houthi Saudi embargo; Hormuz tanker hit.",
       "evidenceSources": [
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Iran Jul 21",
@@ -829,16 +892,8 @@
       "evidence": "Yahoo Finance Jul 21: S&P 7,509.20 (+0.89%), Nasdaq +1.29%, Dow +0.74%; Micron +12%+; PHLX Semi +4.9% (华尔街见闻); snapped 3-day losing streak.",
       "evidenceSources": [
         {
-          "label": "Yahoo Finance Jul 21 (^GSPC)",
+          "label": "Yahoo Finance Jul 21 US closes",
           "href": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "label": "Yahoo Finance Jul 21 (^IXIC)",
-          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "label": "Yahoo Finance Jul 21 (^DJI)",
-          "href": "https://finance.yahoo.com/quote/%5EDJI/"
         },
         {
           "label": "华尔街见闻 Jul 21",
@@ -863,16 +918,59 @@
     },
     {
       "grade": "MODERATE",
-      "name": "USD/JPY breaks 163 — intervention risk",
-      "evidence": "彭博 Jul 22: USD/JPY breaks 163 for first time since 1986; Yahoo ~163.16 (Jul 22). Mitrade Jul 21 prior session high 162.70 (~15 pips below 40-year high 162.84).",
+      "name": "Jul 22 A-share profit-taking (ChiNext −3.23%)",
+      "evidence": "Aju Press Jul 22: Shanghai +0.07% to 3,867.03, ChiNext −3.23%, turnover ~2.65tn yuan, >3800 stocks down after Jul 21 chip V-reversal (+7.05% ChiNext per 网易财经).",
       "evidenceSources": [
         {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "Aju Press Jul 22",
+          "href": "https://www.ajupress.com/view/20260722161270599"
         },
+        {
+          "label": "网易财经 Jul 21",
+          "href": "https://www.163.com/money/article/L2CC6POT00258105.html"
+        }
+      ],
+      "mechanism": "Orderly de-risk after Jul 21 CSRC-stabilized rally — tests whether Jul 22 AMC Mag 7 earnings re-ignite AI beta or extend hardware unwind.",
+      "disprovedIf": "ChiNext reclaims +3% within three sessions with turnover >3tn yuan and STAR50 >+5% same week."
+    },
+    {
+      "grade": "MODERATE",
+      "name": "Japan Jun trade deficit ¥406.9bn (miss estimate)",
+      "evidence": "Japan Times Jul 22/MoF: deficit ¥406.9bn vs est ¥120bn; exports +19.3% (beat 18% est); imports +25.4% on oil/yen.",
+      "evidenceSources": [
+        {
+          "label": "Japan Times Jul 22",
+          "href": "https://www.japantimes.co.jp/business/2026/07/22/economy/japan-trade-deficit-june/"
+        }
+      ],
+      "mechanism": "Oil-import inflation via weak yen reinforces BOJ/MOF intervention tail risk at USD/JPY ~163 alongside Hormuz supply disruption.",
+      "disprovedIf": "Jul trade balance swings to surplus with Brent settle <$85 for two weeks."
+    },
+    {
+      "grade": "MODERATE",
+      "name": "UK Jun CPI 2.6% (miss estimate)",
+      "evidence": "ONS Jul 22: CPI +2.6% y/y vs 2.7% est and 2.8% prior; core 2.6% unchanged; transport eased to 5.7% from 6.8%.",
+      "evidenceSources": [
+        {
+          "label": "ONS Jul 22",
+          "href": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/june2026"
+        }
+      ],
+      "mechanism": "Cooler headline vs est offers partial gilt relief but core sticky at 2.6% keeps BOE hawkish Q3 3% path live alongside US 10y 4.63%.",
+      "disprovedIf": "Aug CPI re-accelerates above 3% with core >2.8% for two consecutive prints."
+    },
+    {
+      "grade": "MODERATE",
+      "name": "JPY ~163 — 40-year low / intervention risk",
+      "evidence": "Mitrade Jul 21: USD/JPY session high 162.70 (~15 pips below 40-year high 162.84); 彭博 Jul 22 cites 163 break — intervention risk elevated.",
+      "evidenceSources": [
         {
           "label": "Mitrade Jul 21",
           "href": "https://www.mitrade.com/au/insights/news/live-news/article-1-1921011-20260721"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
         }
       ],
       "mechanism": "Oil-driven rate-differential pressure raises BOJ/MOF intervention tail risk into Jul 22 Japan trade data.",
@@ -936,13 +1034,13 @@
     },
     {
       "priority": "HIGH",
-      "headline": "Jul 22 data slate — Japan trade / UK CPI / Taiwan unemployment",
-      "why": "Bloomberg inbox calendar for Jul 22.",
-      "watch": "07:50 Japan Jun trade balance (est −1200bn yen vs prior −3918bn); 07:50 exports +18% est; 14:00 UK Jun CPI +2.7% est vs 2.8% prior; 16:00 Taiwan Jun unemployment 3.3% est.",
-      "trigger": "UK CPI beat estimate (>2.7%) with gilt yields rising alongside US 10y >4.65%.",
-      "invalidator": "UK CPI miss estimate with 10y gilt stable and Brent easing.",
-      "horizon": "hours",
-      "status": "new"
+      "headline": "Jul 22 Japan trade / UK CPI — released",
+      "why": "Bloomberg inbox calendar; both printed Jul 22.",
+      "watch": "Japan Jun deficit ¥406.9bn (miss est ¥120bn); exports +19.3% (beat 18% est); UK CPI +2.6% y/y (miss est 2.7%). Taiwan Jun unemployment 3.3% est at 16:00 still pending.",
+      "trigger": "Combined Japan miss + sticky UK core keeps USD/JPY >163 and US 10y >4.65% despite cooler UK headline.",
+      "invalidator": "UK Aug CPI below 2.5% with Japan Jul trade surplus and Brent settle <$85.",
+      "horizon": "days",
+      "status": "released"
     },
     {
       "priority": "HIGH",
@@ -958,7 +1056,7 @@
       "priority": "MEDIUM",
       "headline": "JPY intervention risk at 163",
       "why": "MODERATE 40-year low with oil-driven rate divergence.",
-      "watch": "USD/JPY above 163; MOF/BOJ rhetoric; Jul 22 Japan trade print.",
+      "watch": "USD/JPY 162.70–163 band; MOF/BOJ rhetoric; Jul 22 Japan trade print.",
       "trigger": "USD/JPY closes above 163.50 with verbal intervention followed by checkable FX ops.",
       "invalidator": "Sustained trade below 160 without intervention headlines.",
       "horizon": "days",
@@ -966,11 +1064,11 @@
     },
     {
       "priority": "MEDIUM",
-      "headline": "CSRC stability symposium follow-through",
-      "why": "MODERATE policy bid after Jul 21 A-share chip rally.",
-      "watch": "CSRC concrete measures post Mon–Tue meetings; STAR/chip index vs Jul 21 +10.73%.",
-      "trigger": "New buyback/dividend mandates with Shanghai holding 3,850+ through US earnings.",
-      "invalidator": "Shanghai breaks 3,800 on rising volume despite CSRC pledges.",
+      "headline": "Jul 22 A-share profit-taking vs CSRC bid",
+      "why": "MODERATE ChiNext −3.23% after Jul 21 +7.05% V-reversal.",
+      "watch": "Shanghai holds 3867+ with resource/gold bid; AI hardware (存储/CPO) follow-through vs Jul 22 AMC Mag 7 earnings.",
+      "trigger": "ChiNext −5% two sessions with Shanghai <3800 despite CSRC pledges and PBOC relending.",
+      "invalidator": "ChiNext +3% within three sessions with turnover >3tn yuan and STAR50 >+5%.",
       "horizon": "days",
       "status": "new"
     },
@@ -995,8 +1093,8 @@
       "status": "new"
     }
   ],
-  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 22), CNBC (Jul 21 US close/oil/Treasury/Iran/SMCI), CoinDesk (Jul 21 BTC), 华尔街见闻 3776959 (Jul 21 Citadel Rubner), 第一财经 103284305 (Jul 21 CSRC symposium), BlockBeats 59069 (Jul 21 BitGo IPO), 中国经济网 (Jul 21 PBOC relending), Mitrade (Jul 21 JPY), TechTimes (Jul 20 tariffs), 网易财经 (Jul 21 A-share close).",
-  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video — prior CI unreachable). Rejected BlockBeats stale flashes in 59069 body (BTC $120k reference is editorial background, not used for levels). ANZ youth-unemployment-approaching-20% via Bloomberg inbox only. China Medical Holdings +800% micro-cap move via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture. 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-22.png (霍尔木兹通航量). 市场一览 desk color in marketOverview. Morning slot (Beijing 08:00): Jul 21 US close + Jul 21 A-share as latest verified prints; Jul 22 Asia session opens on this run.",
+  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 22), Aju Press (Jul 22 A-share close), AP (Jul 22 Japan trade), ONS (Jul 22 UK CPI), CNBC (Jul 20 Jul 21 US close/oil/Treasury/Iran/SMCI), CoinDesk (Jul 21 BTC), 华尔街见闻 3777606/3776959, 第一财经 103284305 (Jul 21 CSRC symposium), BlockBeats 257292/59069, 中国经济网 (Jul 21 PBOC relending), Mitrade (Jul 21 JPY), TechTimes (Jul 20 tariffs), 网易财经 (Jul 21 A-share close).",
+  "singleSource": "Omitted BlockBeats 303712 (Trump BTC video — prior CI unreachable). Rejected wallstreetcn livenews 2946034 (page shows 2025/07/22 — wrong year for Jul 22 close). ANZ youth-unemployment-approaching-20% via Bloomberg inbox only. China Medical Holdings +800% micro-cap move via Bloomberg inbox only. Glassnode Insights not merged — no fresh on-chain capture. 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-22.png (霍尔木兹通航量). 市场一览 desk color in marketOverview. Evening slot (Beijing 20:00): Jul 22 A-share + Hang Seng close, Jul 22 Japan trade/UK CPI as latest verified prints; Jul 21 US close prior session; marketDashboard refreshed 2026-07-22T13:02Z.",
   "marketOverview": {
     "asOfDate": "2026-07-22",
     "note": "Qualitative desk color from 彭博财经早茶 — not official closes.",
@@ -1036,8 +1134,8 @@
     ]
   },
   "marketDashboard": {
-    "asOf": "2026-07-22T05:44:02.721Z",
-    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "asOf": "2026-07-22T13:02:18.898Z",
+    "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
         "id": "global-equities",
@@ -1070,10 +1168,10 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "17.05",
-            "change": "−8.58%",
-            "changeDirection": "down",
-            "asOfDate": "2026-07-21",
+            "latest": "17.54",
+            "change": "+2.87%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (^VIX)",
               "href": "https://finance.yahoo.com/quote/%5EVIX/"
@@ -1082,9 +1180,9 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "66,317.01",
-            "change": "+0.13%",
-            "changeDirection": "up",
+            "latest": "66,115.60",
+            "change": "−0.18%",
+            "changeDirection": "down",
             "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (^N225)",
@@ -1094,8 +1192,8 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "24,873.74",
-            "change": "−1.03%",
+            "latest": "24,892.66",
+            "change": "−0.95%",
             "changeDirection": "down",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1106,7 +1204,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,670.51",
+            "latest": "4,668.23",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-07-22",
@@ -1118,8 +1216,8 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,870.93",
-            "change": "+0.17%",
+            "latest": "3,867.03",
+            "change": "+0.07%",
             "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1190,8 +1288,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "163.1490",
-            "change": "+0.41%",
+            "latest": "163.0930",
+            "change": "+0.37%",
             "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1202,8 +1300,8 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7625",
-            "change": "−0.15%",
+            "latest": "6.7723",
+            "change": "−0.00%",
             "changeDirection": "down",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1214,8 +1312,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,131.00",
-            "change": "+1.47%",
+            "latest": "$4,122.30",
+            "change": "+1.26%",
             "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1225,9 +1323,9 @@
           },
           {
             "id": "brent",
-            "asset": "Brent futures (Yahoo)",
-            "latest": "$92.31",
-            "change": "+1.43%",
+            "asset": "Brent crude",
+            "latest": "$94.05",
+            "change": "+3.34%",
             "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1238,9 +1336,9 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$65,947",
-            "change": "+0.54%",
-            "changeDirection": "up",
+            "latest": "$65,577",
+            "change": "−1.40%",
+            "changeDirection": "down",
             "asOfDate": "2026-07-22",
             "source": {
               "label": "CoinGecko",
@@ -1250,9 +1348,9 @@
           {
             "id": "btc-funding",
             "asset": "BTC funding rate",
-            "latest": "0.0065%",
-            "change": "+1.032 bp",
-            "changeDirection": "up",
+            "latest": "-0.0005%",
+            "change": "−0.692 bp",
+            "changeDirection": "down",
             "asOfDate": "2026-07-22",
             "source": {
               "label": "OKX funding API",
