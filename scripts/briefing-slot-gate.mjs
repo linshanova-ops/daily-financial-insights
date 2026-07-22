@@ -89,7 +89,7 @@ async function main() {
 
   if (!decision.shouldRun) {
     console.log(
-      "::notice::Skipping generate — outside Beijing publish window or slot already done.",
+      "::notice::Skipping generate — outside Beijing weekday publish window, weekend skip, or slot already done.",
     );
   }
 }

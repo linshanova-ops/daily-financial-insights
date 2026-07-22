@@ -6,6 +6,7 @@ import {
   MISSED_CATCHUP_HOURS,
   beijingDateString,
   evaluateScheduleGate,
+  isBeijingWeekendDate,
   slotStartUtc,
 } from "./lib/briefing-slot-gate.mjs";
 
@@ -31,6 +32,13 @@ async function main() {
   const now = new Date();
   const latest = await loadLatest();
   const bj = beijingDateString(now);
+
+  if (isBeijingWeekendDate(bj)) {
+    console.log(
+      `[overdue] ok — weekend skip (beijing=${bj}); no scheduled Sat/Sun Cursor generate`,
+    );
+    return;
+  }
 
   for (const id of /** @type {const} */ (["morning", "evening"])) {
     const start = slotStartUtc(id, bj);

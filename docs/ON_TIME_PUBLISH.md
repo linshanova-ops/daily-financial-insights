@@ -58,7 +58,7 @@ From GitHub docs: repository_dispatch requires authentication with `repo` scope 
    - **00:00–00:45 UTC** (Beijing 08:00 window)
    - **12:00–12:45 UTC** (Beijing 20:00 window)
 
-   Or run every 5 minutes all day — the slot gate no-ops in seconds when nothing is due (cheap; public Actions minutes are free). All-day every 5 minutes is simplest and most reliable.
+   Or run every 5 minutes all day — the slot gate no-ops in seconds when nothing is due (cheap; public Actions minutes are free). **Beijing Sat/Sun** also no-op (weekend skip — no Cursor spend). All-day every 5 minutes is simplest and most reliable.
 
 4. Save and run **Test** once — you should see a new Actions run within ~30s.
 

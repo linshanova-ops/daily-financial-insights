@@ -36,7 +36,7 @@ Run stages in order. Read each stage's skill before executing it.
 
 ## Defaults (override only if user specifies)
 
-- Coverage window: last 24 hours (weekend/Monday: last 72 hours). When running during Asian morning hours, the prior US session counts as today's news.
+- Coverage window: last 24 hours on Mon–Fri publishes. **Scheduled Sat/Sun generates are skipped** (cash markets closed). On **Monday** (post-weekend open), cover **since Friday US cash close** (~72h), including weekend **crypto tape and material news/geo** — do not treat the weekend as empty. When running during Asian morning hours, the prior US session counts as today's news.
 - Scope: global + China (both always; user may narrow)
 - Language: match the user's request language
 - Report length: readable in ~5 minutes (~1,000–1,500 words; up to ~1,800 on days with multiple major stories)
