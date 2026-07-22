@@ -43,6 +43,14 @@ export function BriefingView({
         publishedAt={briefing.publishedAt ?? publishedAtFallback}
         showCta={showHeroCta}
         variant={heroVariant}
+        marketsHref={
+          hasMarketOverview ? "#market-overview" : "#market-dashboard"
+        }
+      />
+      <SectionNav
+        hasFigures={figures.length > 0}
+        hasMarketOverview={hasMarketOverview}
+        hasMarketDashboard={hasMarketDashboard}
       />
       <div id="skim" className="scroll-mt-28">
         <ExecutiveSummary
@@ -52,11 +60,6 @@ export function BriefingView({
         />
       </div>
       <PreviousBriefingLink previousDate={previousDate} />
-      <SectionNav
-        hasFigures={figures.length > 0}
-        hasMarketOverview={hasMarketOverview}
-        hasMarketDashboard={hasMarketDashboard}
-      />
       <div className="mx-auto mb-2 w-full max-w-6xl px-5 pt-4 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
         Coverage window: {briefing.coverageWindow}
       </div>

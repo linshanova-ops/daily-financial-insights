@@ -24,23 +24,13 @@ Make the Today briefing feel like a **morning skim** instead of a long research 
 
 Top → bottom:
 
-1. **Compact hero** — brand `syravocado`, date, published time, one-line `marketTone`. No `min-h-[88vh]`. Today uses `BriefingHero` `compact` (or equivalent). Omit the tall Welcome wave on Today so skim starts in the first viewport; archive detail may keep its current compact hero.
-2. **Skim band** (`#skim`) — full Executive Summary bullets + Signal + Watch (existing fields, unchanged copy). Primary in-page CTAs to Markets / Detail.
-3. **Since last briefing** — removed (was redundant with Skim / Detail). Replaced by a quiet previous-briefing archive link under Skim.
-4. **Sticky SectionNav** — anchors: Skim · Tape · Closes · Figures · Detail.
+1. **Compact hero** — brand `syravocado`, date, published time, one-line `marketTone`. Skim CTA is a single **Markets** button (Pipeline stays in SiteNav). No `min-h-[88vh]`.
+2. **Sticky SectionNav** — under hero so Tape / Closes / Figures / Detail are reachable before Skim: Skim · Tape · Closes · Figures · Detail.
+3. **Skim band** (`#skim`) — full Executive Summary bullets + Signal + Watch (existing fields, unchanged copy).
+4. **Quiet previous-briefing link** under Skim (archive date only).
 5. **Coverage window** line (unchanged).
-6. **Markets stack (always visible)** — Market color → Market closes → Figures → Key sources (key sources stay with figures, not tabbed away).
-7. **Detail tabs** (`#detail`) — one panel with tabs:
-   - Global | China | Assets | Signals | Watch | Sources
-   - Each tab renders the **existing** component(s) with the same data:
-     - Global → `SituationBlock` (global)
-     - China → `SituationBlock` (china)
-     - Assets → `AssetFramework`
-     - Signals → `SignalList` (keep internal show-more)
-     - Watch → `WatchList` (keep internal show-more)
-     - Sources → `SourcesCaveats`
-   - Default tab: **Global**
-   - Hash / deep links select the matching tab and scroll to `#detail` (e.g. `#china-situation`, `#signals`, `#watch`, `#sources-caveats`, asset section id if present).
+6. **Markets stack (always visible)** — Market color → Market closes → Figures → Key sources.
+7. **Detail tabs** (`#detail`) — modules open on demand; default tab **Signals** (morning reader). Tabs: Global | China | Assets | Signals | Watch | Sources.
 
 ## Navigation behavior
 

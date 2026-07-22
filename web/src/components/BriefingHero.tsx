@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { formatBriefingDate } from "@/lib/briefings-format";
 import { formatPublishedAt } from "@/lib/format-published";
 import { WelcomeWave } from "./WelcomeWave";
@@ -10,6 +9,8 @@ interface BriefingHeroProps {
   showCta?: boolean;
   /** Full brand hero on landing, skim on Today, compact on archive detail pages. */
   variant?: "full" | "compact" | "skim";
+  /** Skim primary CTA target (Markets). Pipeline stays in SiteNav. */
+  marketsHref?: string;
 }
 
 export function BriefingHero({
@@ -18,6 +19,7 @@ export function BriefingHero({
   publishedAt,
   showCta = true,
   variant = "full",
+  marketsHref = "#market-dashboard",
 }: BriefingHeroProps) {
   const publishedLabel = formatPublishedAt(publishedAt);
   const compact = variant === "compact";
@@ -100,26 +102,21 @@ export function BriefingHero({
           </p>
           {showCta ? (
             <div className="reveal reveal-delay-3 flex flex-wrap items-center gap-4">
-              <a
-                href={skim ? "#skim" : "#executive-summary"}
-                className="focus-ring inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
-              >
-                {skim ? <>Today&rsquo;s skim</> : "Read briefing"}
-              </a>
-              <Link
-                href="/pipeline"
-                className="focus-ring text-sm font-semibold text-ink-soft underline decoration-copper/60 underline-offset-4 transition hover:text-forest"
-              >
-                How the pipeline works
-              </Link>
               {skim ? (
                 <a
-                  href="#market-overview"
-                  className="focus-ring text-sm font-semibold text-ink-soft underline decoration-copper/60 underline-offset-4 transition hover:text-forest"
+                  href={marketsHref}
+                  className="focus-ring inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
                 >
                   Markets
                 </a>
-              ) : null}
+              ) : (
+                <a
+                  href="#executive-summary"
+                  className="focus-ring inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
+                >
+                  Read briefing
+                </a>
+              )}
             </div>
           ) : null}
         </div>
