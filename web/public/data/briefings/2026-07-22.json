@@ -9,8 +9,8 @@
       "href": "https://www.bloomberg.com/asia"
     },
     {
-      "label": "CNBC — Jul 21 US close",
-      "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+      "label": "Yahoo Finance — Jul 21 US closes (^GSPC/^IXIC/^DJI)",
+      "href": "https://finance.yahoo.com/quote/%5EGSPC/"
     },
     {
       "label": "CNBC — Jul 21 Brent/WTI settle",
@@ -126,11 +126,25 @@
       "title": "Jul 21 US session % change",
       "kind": "bars",
       "unit": "%",
-      "note": "Official closes — CNBC Jul 21 (chip-led rebound snapped 3-day losing streak)",
+      "note": "Official closes — Yahoo Finance Jul 21 (chip-led rebound snapped 3-day losing streak)",
       "source": {
-        "label": "CNBC Jul 21",
-        "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+        "label": "Yahoo Finance Jul 21 (^GSPC)",
+        "href": "https://finance.yahoo.com/quote/%5EGSPC/"
       },
+      "sources": [
+        {
+          "label": "Yahoo Finance Jul 21 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+        }
+      ],
       "points": [
         {
           "label": "Dow",
@@ -179,11 +193,19 @@
   "marketTone": "Jul 21 US chip rebound (S&P +0.89% to 7,509.20, Nasdaq +1.29%) diverges from Brent $91.01 settle (+2%) and 10y 4.63% two-month high. Hormuz shipping near zero per Bloomberg chart; USD/JPY breaks 163 (彭博 Jul 22; Yahoo ~163.16). CSRC Mon–Tue stability symposiums; PBOC +1000亿元 支农支小再贷款. SMCI backlog >$60bn, GM 15–17%. Jul 22 data slate: Japan trade, UK CPI, Taiwan unemployment.",
   "summary": [
     {
-      "text": "Jul 21 US official close (CNBC): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — three-day losing streak snapped on chip/memory rebound (Micron +12%+; PHLX Semi +4.9% per 华尔街见闻 Jul 21). Brent settled $91.01 (+2.0%); 10y 4.63% (+3 bp, two-month high).",
+      "text": "Jul 21 US official close (Yahoo Finance): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — three-day losing streak snapped on chip/memory rebound (Micron +12%+; PHLX Semi +4.9% per 华尔街见闻 Jul 21). Brent settled $91.01 (+2.0%); 10y 4.63% (+3 bp, two-month high).",
       "sources": [
         {
-          "label": "CNBC Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "Yahoo Finance Jul 21 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
         },
         {
           "label": "CNBC oil Jul 21",
@@ -381,11 +403,19 @@
       ]
     },
     {
-      "text": "Jul 21 US official close (CNBC): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — chip/memory led (Micron +12%+); snapped 3-day losing streak.",
+      "text": "Jul 21 US official close (Yahoo Finance): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — chip/memory led (Micron +12%+); snapped 3-day losing streak.",
       "sources": [
         {
-          "label": "CNBC Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "Yahoo Finance Jul 21 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
         }
       ]
     },
@@ -600,11 +630,19 @@
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
       "regime": "AI earnings vs oil/geo inflation — Mag 7 as falsifier",
-      "driver": "Jul 21 S&P +0.89% / Nasdaq +1.29% (CNBC); Brent $91.01; Rubner reset-complete (华尔街见闻); Alphabet/Tesla Jul 22",
+      "driver": "Jul 21 S&P +0.89% / Nasdaq +1.29% (Yahoo Finance); Brent $91.01; Rubner reset-complete (华尔街见闻); Alphabet/Tesla Jul 22",
       "driverSources": [
         {
-          "label": "CNBC Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "Yahoo Finance Jul 21 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
         },
         {
           "label": "CNBC oil Jul 21",
@@ -788,11 +826,19 @@
     {
       "grade": "STRONG",
       "name": "Jul 21 US chip rebound (S&P +0.89%)",
-      "evidence": "CNBC Jul 21: S&P 7,509.20 (+0.89%), Nasdaq +1.29%, Dow +0.74%; Micron +12%+; PHLX Semi +4.9% (华尔街见闻); snapped 3-day losing streak.",
+      "evidence": "Yahoo Finance Jul 21: S&P 7,509.20 (+0.89%), Nasdaq +1.29%, Dow +0.74%; Micron +12%+; PHLX Semi +4.9% (华尔街见闻); snapped 3-day losing streak.",
       "evidenceSources": [
         {
-          "label": "CNBC Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "Yahoo Finance Jul 21 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 21 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
         },
         {
           "label": "华尔街见闻 Jul 21",

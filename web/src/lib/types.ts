@@ -78,6 +78,8 @@ export interface BriefingFigure {
    */
   imageSrc?: string;
   source: FactSource;
+  /** Optional extra cites for accuracy gate (UI still uses `source`). */
+  sources?: FactSource[];
 }
 
 /** One tape row in the Market Dashboard closes table. */
