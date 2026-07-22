@@ -33,6 +33,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 
 - **Numbers, dates, names** — "PBOC cut the 7-day reverse repo rate 10bp to 1.4% on Tuesday", not "China eased policy recently"
 - **Source every hard number** — attach outlet/agency on first use of a figure (e.g. BLS, Yicai, Fed). If you cannot name a source, do not publish the figure.
+- **Always cite the accurate and latest source** — for each fact, use the newest in-window primary (or best secondary) that supports the number. Do not recycle yesterday’s href after changing the label date. If a label includes `Jul 21` (etc.), the URL path date must match when `/YYYY/MM/DD/` is present.
 - **Beat/miss is vs estimate (consensus), not vs prior** — compare the print to the survey number only: **cooler / less than estimate = miss estimate**; **hotter / more than estimate = beat estimate**. Applies to CPI/PPI/PCE, GDP, payrolls, retail sales, jobless claims, unemployment, and other prints. Never swap “good news” for beat/miss (e.g. claims below estimate is still a **miss estimate**, even if markets read strong labor).
 - **Confidence language is calibrated:** *is/did* for confirmed facts; *appears/suggests* for graded inference; *possible/worth watching* for weak signals. Never present a WEAK signal in *is* language.
 - **Facts before interpretation** within each section — reader should be able to see where reporting ends and judgment begins
