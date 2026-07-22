@@ -204,6 +204,64 @@ function staticProblems(href, briefingYear) {
   return problems;
 }
 
+/** Map English month abbreviations used in source labels. */
+const MONTH_ABBR = {
+  jan: "01",
+  feb: "02",
+  mar: "03",
+  apr: "04",
+  may: "05",
+  jun: "06",
+  jul: "07",
+  aug: "08",
+  sep: "09",
+  oct: "10",
+  nov: "11",
+  dec: "12",
+};
+
+/**
+ * Catch "CNBC — Jul 21" labels pointing at /2026/07/20/ article paths.
+ * @returns {string | null}
+ */
+function labelPathDateMismatch(label, href) {
+  const lm = String(label || "").match(
+    /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})\b/i,
+  );
+  const pm = String(href || "").match(/\/(20\d{2})\/(\d{2})\/(\d{2})\//);
+  if (!lm || !pm) return null;
+  const labelMonth = MONTH_ABBR[lm[1].toLowerCase()];
+  const labelDay = String(lm[2]).padStart(2, "0");
+  const [, , pathMonth, pathDay] = pm;
+  if (labelMonth === pathMonth && labelDay === pathDay) return null;
+  return `label date "${lm[0]}" vs URL path ${pm[1]}-${pathMonth}-${pathDay}`;
+}
+
+/** Walk briefing objects for {label, href} pairs with mismatched dates. */
+function collectLabelPathDateMismatches(value, where, out) {
+  if (Array.isArray(value)) {
+    value.forEach((item, i) =>
+      collectLabelPathDateMismatches(item, `${where}[${i}]`, out),
+    );
+    return;
+  }
+  if (value && typeof value === "object") {
+    if (
+      typeof value.label === "string" &&
+      typeof value.href === "string" &&
+      value.href.trim()
+    ) {
+      const mismatch = labelPathDateMismatch(value.label, value.href.trim());
+      if (mismatch) {
+        out.push({ where: `${where}.href`, href: value.href.trim(), mismatch });
+      }
+    }
+    for (const [key, child] of Object.entries(value)) {
+      collectLabelPathDateMismatches(child, `${where}.${key}`, out);
+    }
+  }
+}
+
 function normalizeText(s) {
   return String(s || "")
     .replace(/&amp;/g, "&")
@@ -882,6 +940,24 @@ function selfCheck() {
   if (!sample.length) {
     throw new Error("[scan-links] self-check failed: denylist missed 3751205");
   }
+  const mismatch = labelPathDateMismatch(
+    "CNBC — Jul 21 US close",
+    "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html",
+  );
+  if (!mismatch) {
+    throw new Error(
+      "[scan-links] self-check failed: label/path date mismatch not detected",
+    );
+  }
+  const aligned = labelPathDateMismatch(
+    "CNBC — Jul 21 US close",
+    "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html",
+  );
+  if (aligned) {
+    throw new Error(
+      "[scan-links] self-check failed: aligned label/path date false positive",
+    );
+  }
 }
 
 async function main() {
@@ -897,6 +973,23 @@ async function main() {
   for (const hit of linkHits) {
     for (const p of staticProblems(hit.href, hit.briefingYear)) {
       failures.push(`${hit.where}\n    ${hit.href}\n    · ${p}`);
+    }
+  }
+
+  // --- Pass 1b: source label date vs URL path date ---
+  if (fs.existsSync(contentDir)) {
+    for (const file of fs
+      .readdirSync(contentDir)
+      .filter((f) => f.endsWith(".md"))) {
+      const raw = fs.readFileSync(path.join(contentDir, file), "utf8");
+      const { data } = matter(raw);
+      if (!data) continue;
+      /** @type {{ where: string, href: string, mismatch: string }[]} */
+      const mismatches = [];
+      collectLabelPathDateMismatches(data, file, mismatches);
+      for (const m of mismatches) {
+        failures.push(`${m.where}\n    ${m.href}\n    · ${m.mismatch}`);
+      }
     }
   }
 
