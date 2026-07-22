@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { BriefingView } from "@/components/BriefingView";
-import { diffBriefings } from "@/lib/briefing-diff";
 import {
   formatBriefingDate,
   getAllBriefingDates,
@@ -39,7 +38,6 @@ export default async function BriefingPage({ params }: BriefingPageProps) {
   const all = getAllBriefings();
   const index = all.findIndex((item) => item.date === date);
   const previous = index >= 0 ? all[index + 1] ?? null : null;
-  const changes = diffBriefings(briefing, previous);
 
   return (
     <BriefingView
@@ -47,7 +45,6 @@ export default async function BriefingPage({ params }: BriefingPageProps) {
       showHeroCta={false}
       heroVariant="compact"
       previousDate={previous?.date ?? null}
-      changesSincePrevious={changes}
     />
   );
 }

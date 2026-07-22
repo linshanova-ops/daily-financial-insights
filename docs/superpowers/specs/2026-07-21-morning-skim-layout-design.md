@@ -26,7 +26,7 @@ Top → bottom:
 
 1. **Compact hero** — brand `syravocado`, date, published time, one-line `marketTone`. No `min-h-[88vh]`. Today uses `BriefingHero` `compact` (or equivalent). Omit the tall Welcome wave on Today so skim starts in the first viewport; archive detail may keep its current compact hero.
 2. **Skim band** (`#skim`) — full Executive Summary bullets + Signal + Watch (existing fields, unchanged copy). Primary in-page CTAs to Markets / Detail.
-3. **Since last briefing** (when present) — immediately under Skim; keep existing collapse-after-5 behavior. Not removed; not moved into Detail tabs.
+3. **Since last briefing** — removed (was redundant with Skim / Detail). Replaced by a quiet previous-briefing archive link under Skim.
 4. **Sticky SectionNav** — anchors: Skim · Tape · Closes · Figures · Detail.
 5. **Coverage window** line (unchanged).
 6. **Markets stack (always visible)** — Market color → Market closes → Figures → Key sources (key sources stay with figures, not tabbed away).
@@ -63,16 +63,17 @@ Top → bottom:
 
 | Area | Change |
 |------|--------|
-| `BriefingView` | Reorder into Skim → Markets → Detail tabs |
+| `BriefingView` | Reorder into Skim → quiet prior link → Markets → Detail tabs |
 | `BriefingHero` | Today uses compact (drop full-viewport height on home) |
 | `ExecutiveSummary` | Remains the skim body (may live inside a skim wrapper) |
+| `PreviousBriefingLink` | One-line archive link under Skim (replaces Since-last list) |
 | New `DetailTabs` (name flexible) | Thin wrapper; renders existing section components |
 | `SectionNav` | Skim / Tape / Closes / Figures / Detail; mobile second row for tabs |
 | Briefing content / generate scripts | **No change** |
 
 ## Acceptance criteria
 
-1. All previous briefing sections remain reachable with identical text, figures, cites, and lists.
+1. All briefing content sections remain reachable with identical text, figures, cites, and lists (the auto “what changed” list is intentionally removed as redundant with Skim/Detail).
 2. First viewport on Today reads as brand + short tone + skim takeaways (not a near-full-screen hero alone).
 3. Market color, closes, and figures remain visible without opening a tab.
 4. Global / China / Assets / Signals / Watch / Sources are tabbed, default Global; deep links still work.
