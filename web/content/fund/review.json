@@ -16,20 +16,20 @@
     "href": "https://www.hedgeweek.com/brevan-howard-establishes-miami-presence/"
   },
   {
+    "id": "rev-sig-20260722-kh6jym",
+    "title": "Goldman Sachs (GS) Says Hedge Funds Are Selling US Tech Stocks At A Record Pace",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://simplywall.st/stocks/us/diversified-financials/nyse-gs/goldman-sachs-group/news/goldman-sachs-gs-says-hedge-funds-are-selling-us-tech-stocks"
+  },
+  {
     "id": "rev-sig-20260721-gne8o7",
     "title": "Goldman Sachs (GS) Says Hedge Funds Made Their Biggest US Tech Exit Yet",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
     "href": "https://sg.finance.yahoo.com/news/goldman-sachs-gs-says-hedge-021143178.html"
-  },
-  {
-    "id": "rev-sig-20260721-572fcl",
-    "title": "COIN Stock Price Prediction as Goldman Sachs Warns Hedge Funds Are Dumping US Tech Equities",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://coingape.com/markets/coin-stock-price-prediction-as-goldman-sachs-warns-hedge-funds-are-dumping-us-tech-equities/"
   },
   {
     "id": "rev-sig-20260720-2mlxmj",
@@ -40,12 +40,20 @@
     "href": "https://cryptobriefing.com/goldman-sachs-hedge-fund-tech-selloff/"
   },
   {
-    "id": "rev-sig-20260721-iiiub2",
-    "title": "Hedge Funds Flee AI Stocks at Record Pace — Goldman Sachs Names Three New Destinations for Capital",
+    "id": "rev-sig-20260721-572fcl",
+    "title": "COIN Stock Price Prediction as Goldman Sachs Warns Hedge Funds Are Dumping US Tech Equities",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://finance.biggo.com/news/bade9e9a-dd79-4d63-be8b-14c1aa484d00"
+    "href": "https://coingape.com/markets/coin-stock-price-prediction-as-goldman-sachs-warns-hedge-funds-are-dumping-us-tech-equities/"
+  },
+  {
+    "id": "rev-sig-20260721-pgdb6m",
+    "title": "Goldman Sachs: Hedge Funds Dump 10% of US Tech Holdings in Two Months, Fastest Pace in Over a Decade",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://finance.biggo.com/news/3ddd4b54-9b33-47f5-a551-24cdce8ccdc8"
   },
   {
     "id": "rev-sig-20260720-6k4sb0",
@@ -64,12 +72,12 @@
     "href": "https://news.futunn.com/en/post/76305009/ai-driven-momentum-trading-faces-challenges-as-goldman-sachs-reports"
   },
   {
-    "id": "rev-sig-20260721-pgdb6m",
-    "title": "Goldman Sachs: Hedge Funds Dump 10% of US Tech Holdings in Two Months, Fastest Pace in Over a Decade",
+    "id": "rev-sig-20260721-iiiub2",
+    "title": "Hedge Funds Flee AI Stocks at Record Pace — Goldman Sachs Names Three New Destinations for Capital",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://finance.biggo.com/news/3ddd4b54-9b33-47f5-a551-24cdce8ccdc8"
+    "href": "https://finance.biggo.com/news/bade9e9a-dd79-4d63-be8b-14c1aa484d00"
   },
   {
     "id": "rev-sig-20260720-kk5yn5",
