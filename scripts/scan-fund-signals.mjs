@@ -70,12 +70,6 @@ function googleNewsUrl(query) {
   return `https://news.google.com/rss/search?q=${q}&hl=en-US&gl=US&ceid=US:en`;
 }
 
-function chunk(arr, size) {
-  const out = [];
-  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
-  return out;
-}
-
 function guessTag(title) {
   const t = title.toLowerCase();
   if (/hire|hiring|appoint|joins|names/.test(t)) return "人员 / 招聘";
@@ -107,9 +101,10 @@ async function collectItems(monitored) {
     sources.push({ id: "hedgeweek", ok: false, error: String(err.message || err) });
   }
 
-  // 2) Google News — one primary alias per monitored fund (full coverage).
-  // Previously capped at 40 aliases / 6 batches, so late-ranked admin-added
-  // names (e.g. ranks 101+) never entered the GN query pool.
+  // 2) Google News — one dedicated query per monitored alias.
+  // OR-batching (old: 6 aliases per query) let megafunds dominate the RSS
+  // page, so quieter names (Oaktree, LMR, Caxton, …) returned 0 hits even
+  // when solo searches had dozens of articles.
   const { aliases, uncovered, monitoredCount } = googleNewsSearchAliases(monitored);
   if (uncovered.length) {
     console.warn(
@@ -117,21 +112,31 @@ async function collectItems(monitored) {
       uncovered.slice(0, 8).join(", "),
     );
   }
-  const batches = chunk(aliases, 6);
+  const GN_CONCURRENCY = 6;
   let gCount = 0;
   let gOk = 0;
-  for (const batch of batches) {
-    const query =
-      batch.map((a) => `"${a}"`).join(" OR ") +
-      " (hedge fund OR asset management OR capital)";
-    try {
-      const xml = await fetchText(googleNewsUrl(query));
-      const parsed = parseRssItems(xml, "Google News");
+  let gFail = 0;
+  for (let i = 0; i < aliases.length; i += GN_CONCURRENCY) {
+    const slice = aliases.slice(i, i + GN_CONCURRENCY);
+    const results = await Promise.all(
+      slice.map(async (alias) => {
+        const query = `"${alias}" (hedge fund OR asset management OR capital)`;
+        try {
+          const xml = await fetchText(googleNewsUrl(query));
+          return parseRssItems(xml, "Google News");
+        } catch {
+          return null;
+        }
+      }),
+    );
+    for (const parsed of results) {
+      if (!parsed) {
+        gFail += 1;
+        continue;
+      }
       items.push(...parsed);
       gCount += parsed.length;
       gOk += 1;
-    } catch {
-      // continue other batches
     }
   }
   sources.push({
@@ -139,12 +144,14 @@ async function collectItems(monitored) {
     ok: gOk > 0,
     count: gCount,
     note: gOk
-      ? `${gOk}/${batches.length} batches ok · ${aliases.length} aliases · ${monitoredCount} monitored`
-      : "all batches failed",
+      ? `${gOk}/${aliases.length} alias queries ok · ${monitoredCount} monitored${gFail ? ` · ${gFail} failed` : ""}`
+      : "all alias queries failed",
     coverage: {
       monitored: monitoredCount,
       searchAliases: aliases.length,
       uncovered: uncovered.length,
+      aliasQueriesOk: gOk,
+      aliasQueriesFailed: gFail,
     },
   });
 
@@ -371,7 +378,7 @@ async function main() {
           : `每日扫描过去 ${WINDOW_HOURS} 小时 · 命中永久归档`,
     phase: 2,
     phaseNote:
-      "Live RSS scan on briefing windows (Hedgeweek + Google News + HedgeCo). Confirmed hits are permanent. Google News queries one alias per monitored fund.",
+      "Live RSS scan on briefing windows (Hedgeweek + Google News + HedgeCo). Confirmed hits are permanent. Google News uses one dedicated query per monitored alias (no OR-batch dilution).",
     lastScan: {
       at: now.toISOString(),
       fetched: items.length,

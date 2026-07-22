@@ -14,5 +14,37 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.hedgeweek.com/brevan-howard-establishes-miami-presence/"
+  },
+  {
+    "id": "rev-sig-20260722-1g9739",
+    "title": "Goldman Sachs (NYSE:GS) Notes S&P 500 Tech Selling Pace",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://kalkinemedia.com/us/stocks/financial/goldman-sachs-nysegs-notes-sp-500-tech-selling-pace"
+  },
+  {
+    "id": "rev-sig-20260719-av4afi",
+    "title": "SEB Asset Management AB Acquires New Position in The Goldman Sachs Group, Inc. $GS",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-seb-asset-management-ab-acquires-new-position-in-the-goldman-sachs-group-inc-gs-2026-07-19/"
+  },
+  {
+    "id": "rev-sig-20260721-l0u7ua",
+    "title": "XA Investments Details Octagon Underperformance at XAI Floating Rate & Alternative Income Trust and Seeks Shareholder Approval of King Street Sub-Adviser",
+    "reason": "中等置信度命中「King Street」，待人工复核。",
+    "confidence": "66%",
+    "status": "review",
+    "href": "https://www.quiverquant.com/news/XA+Investments+Details+Octagon+Underperformance+at+XAI+Floating+Rate+%26+Alternative+Income+Trust+and+Seeks+Shareholder+Approval+of+King+Street+Sub-Adviser"
+  },
+  {
+    "id": "rev-sig-20260721-ljdp4l",
+    "title": "Pershing Square Holdings adds Twelve Securis board member Ranjani Kearsley as INED",
+    "reason": "中等置信度命中「Pershing Square」，待人工复核。",
+    "confidence": "70%",
+    "status": "review",
+    "href": "https://www.artemis.bm/news/pershing-square-holdings-adds-twelve-securis-board-member-ranjani-kearsley-as-ined/"
   }
 ]
