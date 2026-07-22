@@ -1,19 +1,33 @@
 {
-  "at": "2026-07-21T12:01:06.060Z",
-  "briefingDate": "2026-07-21",
+  "at": "2026-07-22T00:01:07.613Z",
+  "briefingDate": "2026-07-22",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-21.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-22.md",
+      "subject": "彭博财经早茶：月之暗面估值或猛升；日元创40年新低",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5378,
+      "mailbox": "INBOX",
+      "chartImage": "/inbox-charts/bloomberg-2026-07-22.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-22.png"
     }
   ],
   "skipped": [
     {
-      "reason": "exists-keep",
+      "reason": "unmatched",
+      "subject": "Security Notice",
+      "from": "\"Glassnode\" <noreply@glassnode.com>"
+    },
+    {
+      "reason": "date-mismatch",
       "subject": "彭博财经早茶：智谱数据中心；特朗普对伊施压",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-21.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-07-20",
+      "bjDay": "2026-07-21",
+      "briefingDate": "2026-07-22"
     },
     {
       "reason": "unmatched",
