@@ -305,7 +305,7 @@ export async function buildMarketDashboard() {
       safeRow("brent", () =>
         rowFromYahoo({
           id: "brent",
-          asset: "Brent crude",
+          asset: "Brent futures (Yahoo)",
           symbol: "BZ=F",
           prefix: "$",
           sourceLabel: "Yahoo Finance (BZ=F)",
@@ -328,7 +328,7 @@ export async function buildMarketDashboard() {
 
   return {
     asOf: new Date().toISOString(),
-    note: "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    note: "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     groups,
   };
 }

@@ -2,7 +2,7 @@
   "date": "2026-07-22",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 21–22, 2026",
-  "publishedAt": "2026-07-22T00:11:21.000Z",
+  "publishedAt": "2026-07-22T05:45:00.000Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 22)",
@@ -10,7 +10,7 @@
     },
     {
       "label": "CNBC — Jul 21 US close",
-      "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+      "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
     },
     {
       "label": "CNBC — Jul 21 Brent/WTI settle",
@@ -129,7 +129,7 @@
       "note": "Official closes — CNBC Jul 21 (chip-led rebound snapped 3-day losing streak)",
       "source": {
         "label": "CNBC Jul 21",
-        "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+        "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
       },
       "points": [
         {
@@ -153,7 +153,7 @@
       "unit": "%",
       "note": "Official close — 网易财经 Jul 21 (prior session for Jul 22 morning slot)",
       "source": {
-        "label": "网易财经",
+        "label": "网易财经 Jul 21",
         "href": "https://www.163.com/money/article/L2CC6POT00258105.html"
       },
       "points": [
@@ -176,14 +176,14 @@
       ]
     }
   ],
-  "marketTone": "Jul 21 US chip rebound (S&P +0.89% to 7,509.20, Nasdaq +1.29%) diverges from Brent $91.01 settle (+2%) and 10y 4.63% two-month high. Hormuz shipping near zero per Bloomberg chart; JPY nears 40-year low (162.70). CSRC Mon–Tue stability symposiums; PBOC +1000亿元 支农支小再贷款. SMCI backlog >$60bn, GM 15–17%. Jul 22 data slate: Japan trade, UK CPI, Taiwan unemployment.",
+  "marketTone": "Jul 21 US chip rebound (S&P +0.89% to 7,509.20, Nasdaq +1.29%) diverges from Brent $91.01 settle (+2%) and 10y 4.63% two-month high. Hormuz shipping near zero per Bloomberg chart; USD/JPY breaks 163 (彭博 Jul 22; Yahoo ~163.16). CSRC Mon–Tue stability symposiums; PBOC +1000亿元 支农支小再贷款. SMCI backlog >$60bn, GM 15–17%. Jul 22 data slate: Japan trade, UK CPI, Taiwan unemployment.",
   "summary": [
     {
       "text": "Jul 21 US official close (CNBC): S&P +0.89% to 7,509.20, Nasdaq +1.29% to 25,837.21, Dow +0.74% to 52,224.64 — three-day losing streak snapped on chip/memory rebound (Micron +12%+; PHLX Semi +4.9% per 华尔街见闻 Jul 21). Brent settled $91.01 (+2.0%); 10y 4.63% (+3 bp, two-month high).",
       "sources": [
         {
           "label": "CNBC Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
         },
         {
           "label": "CNBC oil Jul 21",
@@ -239,8 +239,12 @@
       ]
     },
     {
-      "text": "Jul 21 FX/crypto: USD/JPY session high 162.70 — within ~15 pips of 40-year high 162.84, intervention risk rising (Mitrade Jul 21). BTC ~$66,400 five-week high (CoinDesk Jul 21) as chip rebound and Clarity Act progress offset tariff headlines.",
+      "text": "FX/crypto: USD/JPY breaks 163 for the first time since 1986 — intervention risk elevated (彭博 Jul 22; Yahoo ~163.16 as of Jul 22). Prior session (Mitrade Jul 21) had printed a 162.70 high (~15 pips below the 162.84 40-year mark). BTC ~$66,400 five-week high (CoinDesk Jul 21) as chip rebound and Clarity Act progress offset tariff headlines.",
       "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
         {
           "label": "Mitrade Jul 21",
           "href": "https://www.mitrade.com/au/insights/news/live-news/article-1-1921011-20260721"
@@ -381,16 +385,20 @@
       "sources": [
         {
           "label": "CNBC Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
         }
       ]
     },
     {
-      "text": "Jul 21 rates (CNBC): 10y 4.63% (+3 bp, two-month high), 2y 4.264% (+4 bp), 30y 5.133% (+2 bp) — oil/geo inflation premium despite ceasefire headlines.",
+      "text": "Jul 21 rates: 10y 4.63% (+3 bp, two-month high), 2y 4.26% (+5 bp), 30y 5.13% (+2 bp) — oil/geo inflation premium despite ceasefire headlines (CNBC narrative; bp deltas aligned to U.S. Treasury daily curve).",
       "sources": [
         {
           "label": "CNBC Treasury Jul 21",
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
+        },
+        {
+          "label": "U.S. Treasury Jul 21",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
         }
       ]
     },
@@ -596,7 +604,7 @@
       "driverSources": [
         {
           "label": "CNBC Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
         },
         {
           "label": "CNBC oil Jul 21",
@@ -630,7 +638,7 @@
     {
       "asset": "US dollar (DXY)",
       "regime": "Rate differentials with Hormuz safe-haven bid",
-      "driver": "Jul 21 10y +3 bp; Brent $91.01 (CNBC); JPY 162.70 session high (Mitrade Jul 21); Section 122 tariff expiry Jul 24",
+      "driver": "Jul 21 10y +3 bp; Brent $91.01 (CNBC); USD/JPY breaks 163 (彭博 Jul 22; Yahoo ~163.16); Section 122 tariff expiry Jul 24",
       "driverSources": [
         {
           "label": "CNBC Treasury Jul 21",
@@ -641,11 +649,15 @@
           "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
         },
         {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
           "label": "Mitrade Jul 21",
           "href": "https://www.mitrade.com/au/insights/news/live-news/article-1-1921011-20260721"
         }
       ],
-      "read": "Geo/oil and yield support likely kept USD firm at margin; JPY weakness extends carry-trade pressure",
+      "read": "Geo/oil and yield support likely kept USD firm at margin; JPY break of 163 extends carry-trade / intervention pressure",
       "invalidator": "DXY breaks lower while Brent >$90 and yields keep rising"
     },
     {
@@ -780,7 +792,7 @@
       "evidenceSources": [
         {
           "label": "CNBC Jul 21",
-          "href": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
         },
         {
           "label": "华尔街见闻 Jul 21",
@@ -805,16 +817,16 @@
     },
     {
       "grade": "MODERATE",
-      "name": "JPY 162.70 — 40-year low / intervention risk",
-      "evidence": "Mitrade Jul 21: USD/JPY session high 162.70 (~15 pips below 40-year high 162.84); 彭博 Jul 22 cites 163 break — intervention risk elevated.",
+      "name": "USD/JPY breaks 163 — intervention risk",
+      "evidence": "彭博 Jul 22: USD/JPY breaks 163 for first time since 1986; Yahoo ~163.16 (Jul 22). Mitrade Jul 21 prior session high 162.70 (~15 pips below 40-year high 162.84).",
       "evidenceSources": [
-        {
-          "label": "Mitrade Jul 21",
-          "href": "https://www.mitrade.com/au/insights/news/live-news/article-1-1921011-20260721"
-        },
         {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Mitrade Jul 21",
+          "href": "https://www.mitrade.com/au/insights/news/live-news/article-1-1921011-20260721"
         }
       ],
       "mechanism": "Oil-driven rate-differential pressure raises BOJ/MOF intervention tail risk into Jul 22 Japan trade data.",
@@ -900,7 +912,7 @@
       "priority": "MEDIUM",
       "headline": "JPY intervention risk at 163",
       "why": "MODERATE 40-year low with oil-driven rate divergence.",
-      "watch": "USD/JPY 162.70–163 band; MOF/BOJ rhetoric; Jul 22 Japan trade print.",
+      "watch": "USD/JPY above 163; MOF/BOJ rhetoric; Jul 22 Japan trade print.",
       "trigger": "USD/JPY closes above 163.50 with verbal intervention followed by checkable FX ops.",
       "invalidator": "Sustained trade below 160 without intervention headlines.",
       "horizon": "days",
@@ -978,8 +990,8 @@
     ]
   },
   "marketDashboard": {
-    "asOf": "2026-07-22T00:05:15.914Z",
-    "note": "Equities, FX, gold futures, and Brent use the latest two Yahoo daily closes; US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "asOf": "2026-07-22T05:44:02.721Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
         "id": "global-equities",
@@ -1024,10 +1036,10 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "64,141.12",
-            "change": "−4.03%",
-            "changeDirection": "down",
-            "asOfDate": "2026-07-17",
+            "latest": "66,317.01",
+            "change": "+0.13%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (^N225)",
               "href": "https://finance.yahoo.com/quote/%5EN225/"
@@ -1036,10 +1048,10 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,143.05",
-            "change": "+2.36%",
-            "changeDirection": "up",
-            "asOfDate": "2026-07-20",
+            "latest": "24,873.74",
+            "change": "−1.03%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (^HSI)",
               "href": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -1048,10 +1060,10 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,814.83",
+            "latest": "4,670.51",
             "change": null,
             "changeDirection": "flat",
-            "asOfDate": "2026-07-21",
+            "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (HSTECH.HK)",
               "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
@@ -1060,10 +1072,10 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,796.28",
-            "change": "+0.85%",
+            "latest": "3,870.93",
+            "change": "+0.17%",
             "changeDirection": "up",
-            "asOfDate": "2026-07-20",
+            "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (000001.SS)",
               "href": "https://finance.yahoo.com/quote/000001.SS/"
@@ -1132,8 +1144,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "163.1330",
-            "change": "+0.40%",
+            "latest": "163.1490",
+            "change": "+0.41%",
             "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
@@ -1144,10 +1156,10 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7651",
-            "change": "−0.11%",
+            "latest": "6.7625",
+            "change": "−0.15%",
             "changeDirection": "down",
-            "asOfDate": "2026-07-21",
+            "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (CNY=X)",
               "href": "https://finance.yahoo.com/quote/CNY%3DX/"
@@ -1156,10 +1168,10 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,085.20",
-            "change": "+1.87%",
+            "latest": "$4,131.00",
+            "change": "+1.47%",
             "changeDirection": "up",
-            "asOfDate": "2026-07-21",
+            "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (GC=F)",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -1167,11 +1179,11 @@
           },
           {
             "id": "brent",
-            "asset": "Brent crude",
-            "latest": "$91.78",
-            "change": "+2.87%",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$92.31",
+            "change": "+1.43%",
             "changeDirection": "up",
-            "asOfDate": "2026-07-21",
+            "asOfDate": "2026-07-22",
             "source": {
               "label": "Yahoo Finance (BZ=F)",
               "href": "https://finance.yahoo.com/quote/BZ%3DF/"
@@ -1180,8 +1192,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$66,538",
-            "change": "+2.13%",
+            "latest": "$65,947",
+            "change": "+0.54%",
             "changeDirection": "up",
             "asOfDate": "2026-07-22",
             "source": {
