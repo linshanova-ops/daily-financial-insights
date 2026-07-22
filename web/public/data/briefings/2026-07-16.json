@@ -25,8 +25,8 @@
       "href": "https://www.bls.gov/news.release/archives/cpi_07142026.htm"
     },
     {
-      "label": "AP — US indexes Jul 15",
-      "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a4f50a9a19d14802cb94b51db7bafba1"
+      "label": "Yahoo Finance — Jul 15 US closes (^GSPC/^IXIC/^DJI/^RUT)",
+      "href": "https://finance.yahoo.com/quote/%5EGSPC/"
     },
     {
       "label": "CNBC — Brent/WTI Jul 15 settle",
@@ -127,11 +127,29 @@
       "title": "Jul 15 US session % change",
       "kind": "bars",
       "unit": "%",
-      "note": "Official closes — AP (SOX cited separately via Yahoo Finance)",
+      "note": "Official closes — Yahoo Finance Jul 15 (SOX cited separately)",
       "source": {
-        "label": "AP",
-        "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a4f50a9a19d14802cb94b51db7bafba1"
+        "label": "Yahoo Finance Jul 15 (^GSPC)",
+        "href": "https://finance.yahoo.com/quote/%5EGSPC/"
       },
+      "sources": [
+        {
+          "label": "Yahoo Finance Jul 15 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^RUT)",
+          "href": "https://finance.yahoo.com/quote/%5ERUT/"
+        }
+      ],
       "points": [
         {
           "label": "Dow",
@@ -194,11 +212,23 @@
       ]
     },
     {
-      "text": "Jul 15 US close (AP): S&P +0.38% to 7,572.40, Nasdaq +0.62% to 26,269.23 — second session of gains after June CPI/PPI both missed vs consensus; SOX −2.08% to 12,398.89 (Micron −8.02%).",
+      "text": "Jul 15 US close (Yahoo Finance): S&P +0.38% to 7,572.40, Nasdaq +0.62% to 26,269.23 — second session of gains after June CPI/PPI both missed vs consensus; SOX −2.08% to 12,398.89 (Micron −8.02%).",
       "sources": [
         {
-          "label": "AP",
-          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a4f50a9a19d14802cb94b51db7bafba1"
+          "label": "Yahoo Finance Jul 15 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^RUT)",
+          "href": "https://finance.yahoo.com/quote/%5ERUT/"
         },
         {
           "label": "Yahoo Finance SOX",
@@ -273,11 +303,23 @@
       ]
     },
     {
-      "text": "Jul 15 US official close (AP): S&P +0.38% to 7,572.40, Nasdaq +0.62% to 26,269.23, Dow +0.29% to 52,658.64; Russell 2000 +0.38% to 2,976.26.",
+      "text": "Jul 15 US official close (Yahoo Finance): S&P +0.38% to 7,572.40, Nasdaq +0.62% to 26,269.23, Dow +0.29% to 52,658.64; Russell 2000 +0.38% to 2,976.26.",
       "sources": [
         {
-          "label": "AP",
-          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a4f50a9a19d14802cb94b51db7bafba1"
+          "label": "Yahoo Finance Jul 15 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^RUT)",
+          "href": "https://finance.yahoo.com/quote/%5ERUT/"
         }
       ]
     },
@@ -432,8 +474,20 @@
       "driver": "Jul 15 close S&P +0.38% / Nasdaq +0.62%; Williams Jul 15 'inflation peaked'; TSMC Q2 beat Jul 16 with margin warning",
       "driverSources": [
         {
-          "label": "AP",
-          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a4f50a9a19d14802cb94b51db7bafba1"
+          "label": "Yahoo Finance Jul 15 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^RUT)",
+          "href": "https://finance.yahoo.com/quote/%5ERUT/"
         },
         {
           "label": "NY Fed",
@@ -707,7 +761,7 @@
       "status": "new"
     }
   ],
-  "sources": "TSMC IR (Q2 2026), Bank of Korea (Jul 16 decision), NY Fed (Williams Jul 15), Bureau of Labor Statistics (June CPI/PPI archives), AP (Jul 15 US close; BOK), US Treasury yield curve, CNBC (Jul 15 Brent/WTI settle), Yahoo Finance (SOX), NBS (H1/Q2 GDP), 新华网 (PBOC Jul 15 buyout RR), Caixin Global (Jul 15 GDP deflator; Jul 16 private relending/offshore yuan), 第一财经/Yicai (Jul 15 PBOC SCIO briefing), 京报网 (Jul 16 A-share close), The Standard (Hang Seng Jul 16), 华尔街见闻 (Changxin IPO 3776521), BlockBeats (Jul 15 Nvidia H20 flash), Cointelegraph (Jul 15 BTC), GoldSeek/Dow Jones (COMEX gold Jul 15 settle), Seoul Economic Daily (Kospi Jul 16).",
+  "sources": "TSMC IR (Q2 2026), Bank of Korea (Jul 16 decision), NY Fed (Williams Jul 15), Bureau of Labor Statistics (June CPI/PPI archives), Yahoo Finance (Jul 15 US close); AP (BOK), US Treasury yield curve, CNBC (Jul 15 Brent/WTI settle), Yahoo Finance (SOX), NBS (H1/Q2 GDP), 新华网 (PBOC Jul 15 buyout RR), Caixin Global (Jul 15 GDP deflator; Jul 16 private relending/offshore yuan), 第一财经/Yicai (Jul 15 PBOC SCIO briefing), 京报网 (Jul 16 A-share close), The Standard (Hang Seng Jul 16), 华尔街见闻 (Changxin IPO 3776521), BlockBeats (Jul 15 Nvidia H20 flash), Cointelegraph (Jul 15 BTC), GoldSeek/Dow Jones (COMEX gold Jul 15 settle), Seoul Economic Daily (Kospi Jul 16).",
   "singleSource": "Rejected 华尔街见闻 3751275 (Williams hawkish ~1pp tariff / GDP ~1%) — Jul 16 2025 article, not 2026 (use NY Fed wil260715). Rejected 华尔街见闻 3751205 (Shanghai −0.03% / Hang Seng −0.29% wrap reused for Jul 16 2026) — wrong-year A/H tape; replaced with 京报网 Shanghai −1.85% and The Standard Hang Seng +1.33%. Rejected BlockBeats 302924 BTC $116,800. Dropped Investing.com TSMC secondary (bot-blocked; TSMC IR is primary). Softened Yicai M2/1.40% prints not present in the fetchable page body.",
   "slug": "2026-07-16"
 }
