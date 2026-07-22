@@ -30,7 +30,14 @@ import {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 const fundDir = path.join(root, "web/content/fund");
-const WINDOW_HOURS = 72;
+const WINDOW_HOURS = (() => {
+  const idx = process.argv.indexOf("--window-hours");
+  if (idx >= 0 && process.argv[idx + 1]) {
+    const n = Number(process.argv[idx + 1]);
+    if (Number.isFinite(n) && n > 0) return n;
+  }
+  return 72;
+})();
 const UA = "syravocado-fund-scan/1.0 (+https://github.com/linshanova-ops/daily-financial-insights)";
 
 const commitFlag = process.argv.includes("--commit");
@@ -67,6 +74,21 @@ function chunk(arr, size) {
   return out;
 }
 
+/** Prefer a searchable short brand; fall back to official name. */
+function primarySearchAlias(name) {
+  const aliases = fundAliases(name);
+  if (!aliases.length) return String(name || "").trim();
+  // Prefer the shortest alias that still looks like a proper name (≥3 chars),
+  // but keep the official name if stripping would leave a tiny token.
+  const ranked = [...aliases].sort((a, b) => {
+    const aOfficial = a.toLowerCase() === String(name).toLowerCase() ? 1 : 0;
+    const bOfficial = b.toLowerCase() === String(name).toLowerCase() ? 1 : 0;
+    if (aOfficial !== bOfficial) return aOfficial - bOfficial; // non-official first
+    return a.length - b.length;
+  });
+  return ranked[0] || name;
+}
+
 function guessTag(title) {
   const t = title.toLowerCase();
   if (/hire|hiring|appoint|joins|names/.test(t)) return "人员 / 招聘";
@@ -98,16 +120,17 @@ async function collectItems(monitored) {
     sources.push({ id: "hedgeweek", ok: false, error: String(err.message || err) });
   }
 
-  // 2) Google News batches over short aliases (index-style coverage)
+  // 2) Google News — one primary alias per monitored fund (full coverage).
+  // Previously capped at 40 aliases from the top of the list, so late-ranked /
+  // admin-added names (e.g. ranks 101+) never entered the GN query pool.
   const aliases = monitored
-    .flatMap((f) => fundAliases(f.name).slice(0, 2))
-    .filter((a, i, arr) => arr.indexOf(a) === i)
-    .slice(0, 40);
+    .map((f) => primarySearchAlias(f.name))
+    .filter((a, i, arr) => a && arr.indexOf(a) === i);
   const batches = chunk(aliases, 6);
   let gCount = 0;
   let gOk = 0;
-  for (const batch of batches.slice(0, 6)) {
-    const query = batch.map((a) => `"${a}"`).join(" OR ") + " hedge fund";
+  for (const batch of batches) {
+    const query = batch.map((a) => `"${a}"`).join(" OR ") + " (hedge fund OR asset management OR capital)";
     try {
       const xml = await fetchText(googleNewsUrl(query));
       const parsed = parseRssItems(xml, "Google News");
@@ -122,7 +145,9 @@ async function collectItems(monitored) {
     id: "google-news",
     ok: gOk > 0,
     count: gCount,
-    note: gOk ? `${gOk} batches ok` : "all batches failed",
+    note: gOk
+      ? `${gOk}/${batches.length} batches ok · ${aliases.length} aliases`
+      : "all batches failed",
   });
 
   // 3) HedgeCo Insights — public hedge-fund trade RSS (third live source)
@@ -305,7 +330,7 @@ async function main() {
     .map((ref) => byRank.get(ref.rank) || { rank: ref.rank, name: ref.name })
     .filter((f) => f?.name);
 
-  console.log(`[fund-scan] monitored=${monitored.length}`);
+  console.log(`[fund-scan] monitored=${monitored.length} windowHours=${WINDOW_HOURS}`);
   const { items, sources } = await collectItems(monitored);
   console.log(`[fund-scan] fetched items=${items.length}`);
 
@@ -340,15 +365,19 @@ async function main() {
           : `${s.id}:down${s.note ? `(${s.note})` : ""}`,
       )
       .join(" · "),
-    scanWindow: "每日扫描过去 72 小时 · 命中永久归档",
+    scanWindow:
+      WINDOW_HOURS % 24 === 0 && WINDOW_HOURS >= 24
+        ? `每日扫描过去 ${WINDOW_HOURS / 24} 天 · 命中永久归档`
+        : `每日扫描过去 ${WINDOW_HOURS} 小时 · 命中永久归档`,
     phase: 2,
     phaseNote:
-      "Live RSS scan on briefing windows (Hedgeweek + Google News + HedgeCo). Confirmed hits are permanent.",
+      "Live RSS scan on briefing windows (Hedgeweek + Google News + HedgeCo). Confirmed hits are permanent. Google News queries one alias per monitored fund.",
     lastScan: {
       at: now.toISOString(),
       fetched: items.length,
       newConfirmed: added,
       review: reviewOut.length,
+      windowHours: WINDOW_HOURS,
       sources,
     },
   };

@@ -1,5 +1,89 @@
 [
   {
+    "id": "sig-20260717-k08v61",
+    "date": "2026.07.17",
+    "title": "Ex-Millennium money manager’s hedge fund gets Dubai regulatory green light",
+    "summary": "Millennium Capital Partners 风险/监管相关：Ex-Millennium money manager’s hedge fund gets Dubai regulatory green light。",
+    "summaryEn": "Millennium Capital Partners: risk / regulatory note — Ex-Millennium money manager’s hedge fund gets Dubai regulatory green light.",
+    "fund": "Millennium Capital Partners",
+    "source": "Financial News London",
+    "tag": "风险 / 监管",
+    "status": "confirmed",
+    "href": "https://www.fnlondon.com/articles/ex-millennium-money-managers-hedge-fund-gets-dubai-regulatory-green-light-0d99d7ea"
+  },
+  {
+    "id": "sig-20260716-j810nm",
+    "date": "2026.07.16",
+    "title": "Weekly Market Monitor",
+    "summary": "Goldman Sachs Asset Management：Weekly Market Monitor（动态）。",
+    "summaryEn": "Goldman Sachs Asset Management: Weekly Market Monitor.",
+    "fund": "Goldman Sachs Asset Management",
+    "source": "Goldman Sachs Asset Management",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://am.gs.com/en-us/advisors/insights/article/market-monitor-weekly"
+  },
+  {
+    "id": "sig-20260716-dug05",
+    "date": "2026.07.16",
+    "title": "NEUBERGER MUNICIPAL FUND ANNOUNCES MONTHLY DISTRIBUTION",
+    "summary": "Neuberger Berman：NEUBERGER MUNICIPAL FUND ANNOUNCES MONTHLY DISTRIBUTION（动态）。",
+    "summaryEn": "Neuberger Berman: NEUBERGER MUNICIPAL FUND ANNOUNCES MONTHLY DISTRIBUTION.",
+    "fund": "Neuberger Berman",
+    "source": "TradingView",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.tradingview.com/news/prnewswire:9c6d7baf8cac0:0-neuberger-municipal-fund-announces-monthly-distribution/"
+  },
+  {
+    "id": "sig-20260716-5821bb",
+    "date": "2026.07.16",
+    "title": "Neuberger Municipal Fund Seeks Income Exempt From Federal Tax",
+    "summary": "Neuberger Berman：Neuberger Municipal Fund Seeks Income Exempt From Federal Tax（动态）。",
+    "summaryEn": "Neuberger Berman: Neuberger Municipal Fund Seeks Income Exempt From Federal Tax.",
+    "fund": "Neuberger Berman",
+    "source": "Stock Titan",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.stocktitan.net/news/NBH/neuberger-municipal-fund-announces-monthly-h8p1r8gcbmsp.html"
+  },
+  {
+    "id": "sig-20260716-ll3mst",
+    "date": "2026.07.16",
+    "title": "Opportunity Spotlight: AI Infrastructure",
+    "summary": "Brookfield：Opportunity Spotlight: AI Infrastructure（动态）。",
+    "summaryEn": "Brookfield: Opportunity Spotlight: AI Infrastructure.",
+    "fund": "Brookfield",
+    "source": "Brookfield",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.brookfield.com/invest-with-us/institutions/spotlight-ai-opportunities"
+  },
+  {
+    "id": "sig-20260715-id1o2t",
+    "date": "2026.07.15",
+    "title": "Man Group stock reflects steady asset management focus - Ad-hoc-news.de",
+    "summary": "Man Group：Man Group stock reflects steady asset management focus - Ad-hoc-news.de（动态）。",
+    "summaryEn": "Man Group: Man Group stock reflects steady asset management focus - Ad-hoc-news.de.",
+    "fund": "Man Group",
+    "source": "Ad-hoc-news.de",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/man-group-stock-reflects-steady-asset-management-focus/69771658"
+  },
+  {
+    "id": "sig-20260711-hkpulb",
+    "date": "2026.07.11",
+    "title": "Hedge fund Elliott builds stake in software firm CCC — Bloomberg",
+    "summary": "Elliott Investment Management：Hedge fund Elliott builds stake in software firm CCC — Bloomberg（动态）。",
+    "summaryEn": "Elliott Investment Management: Hedge fund Elliott builds stake in software firm CCC — Bloomberg.",
+    "fund": "Elliott Investment Management",
+    "source": "The Edge Malaysia",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://theedgemalaysia.com/node/810268"
+  },
+  {
     "id": "sig-20260710-01",
     "date": "2026.07.10",
     "title": "Qube expands beyond quant roots with launch of fundamental equity portfolio management team",
@@ -10,6 +94,30 @@
     "tag": "组织 / 产品",
     "status": "confirmed",
     "href": null
+  },
+  {
+    "id": "sig-20260710-pkmhuf",
+    "date": "2026.07.10",
+    "title": "Verizon, Lockheed Martin to Outsource Pensions to Goldman Sachs Asset Management - ai-cio.com",
+    "summary": "Goldman Sachs Asset Management：Verizon, Lockheed Martin to Outsource Pensions to Goldman Sachs Asset Management - ai-cio.com（动态）。",
+    "summaryEn": "Goldman Sachs Asset Management: Verizon, Lockheed Martin to Outsource Pensions to Goldman Sachs Asset Management - ai-cio.com.",
+    "fund": "Goldman Sachs Asset Management",
+    "source": "ai-cio.com",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.ai-cio.com/news/verizon-lockheed-martin-to-outsource-pensions-to-goldman-sachs-asset-management/"
+  },
+  {
+    "id": "sig-20260710-mwlgz4",
+    "date": "2026.07.10",
+    "title": "Hedge Fund Elliott Builds Stake in Software Firm CCC",
+    "summary": "Elliott Investment Management：Hedge Fund Elliott Builds Stake in Software Firm CCC（动态）。",
+    "summaryEn": "Elliott Investment Management: Hedge Fund Elliott Builds Stake in Software Firm CCC.",
+    "fund": "Elliott Investment Management",
+    "source": "Bloomberg.com",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.bloomberg.com/news/articles/2026-07-10/hedge-fund-elliott-builds-stake-in-software-firm-ccc"
   },
   {
     "id": "sig-20260709-02",
@@ -48,6 +156,42 @@
     "href": null
   },
   {
+    "id": "sig-20260706-glofi6",
+    "date": "2026.07.06",
+    "title": "Market Know-How 3Q 2026: The Geo Paradigm",
+    "summary": "Goldman Sachs Asset Management：Market Know-How 3Q 2026: The Geo Paradigm（动态）。",
+    "summaryEn": "Goldman Sachs Asset Management: Market Know-How 3Q 2026: The Geo Paradigm.",
+    "fund": "Goldman Sachs Asset Management",
+    "source": "Goldman Sachs Asset Management",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://am.gs.com/en-us/advisors/insights/article/market-know-how"
+  },
+  {
+    "id": "sig-20260706-o2zn1i",
+    "date": "2026.07.06",
+    "title": "US Market Pulse July 2026",
+    "summary": "Goldman Sachs Asset Management：US Market Pulse July 2026（动态）。",
+    "summaryEn": "Goldman Sachs Asset Management: US Market Pulse July 2026.",
+    "fund": "Goldman Sachs Asset Management",
+    "source": "Goldman Sachs Asset Management",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://am.gs.com/en-us/advisors/insights/article/market-pulse"
+  },
+  {
+    "id": "sig-20260706-8v0q9r",
+    "date": "2026.07.06",
+    "title": "Corporate Pension Monthly: June",
+    "summary": "Goldman Sachs Asset Management：Corporate Pension Monthly: June（动态）。",
+    "summaryEn": "Goldman Sachs Asset Management: Corporate Pension Monthly: June.",
+    "fund": "Goldman Sachs Asset Management",
+    "source": "Goldman Sachs Asset Management",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://am.gs.com/en-us/advisors/insights/article/corporate-pension-monthly"
+  },
+  {
     "id": "sig-20260703-05",
     "date": "2026.07.03",
     "title": "Jain Global rebounds as Millennium partnership moves closer",
@@ -72,6 +216,54 @@
     "href": null
   },
   {
+    "id": "sig-20260701-nllbx5",
+    "date": "2026.07.01",
+    "title": "Millennium and Point72 gain as hedge funds rebound from Iran war",
+    "summary": "Point72 Asset Management：Millennium and Point72 gain as hedge funds rebound from Iran war（动态）。",
+    "summaryEn": "Point72 Asset Management: Millennium and Point72 gain as hedge funds rebound from Iran war.",
+    "fund": "Point72 Asset Management",
+    "source": "Financial Times",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.ft.com/content/c223f704-57c7-4962-9b4e-a30496aee6fa?syn-25a6b1a6=1"
+  },
+  {
+    "id": "sig-20260701-vs4ie",
+    "date": "2026.07.01",
+    "title": "Millennium hires ex-BNP Paribas trader to boost Zug office",
+    "summary": "Millennium Capital Partners 人事/招聘动向：Millennium hires ex-BNP Paribas trader to boost Zug office。",
+    "summaryEn": "Millennium Capital Partners: hiring / personnel move — Millennium hires ex-BNP Paribas trader to boost Zug office.",
+    "fund": "Millennium Capital Partners",
+    "source": "Financial News London",
+    "tag": "人员 / 招聘",
+    "status": "confirmed",
+    "href": "https://www.fnlondon.com/articles/millennium-hires-ex-bnp-paribas-trader-to-boost-zug-office-623fe084"
+  },
+  {
+    "id": "sig-20260701-j77gy7",
+    "date": "2026.07.01",
+    "title": "Bridgewater's flagship macro fund gains 8.1% in first half amid market volatility, sources say",
+    "summary": "Bridgewater Associates 业绩相关：Bridgewater's flagship macro fund gains 8.1% in first half amid market volatility, sources say。",
+    "summaryEn": "Bridgewater Associates: performance update — Bridgewater's flagship macro fund gains 8.1% in first half amid market volatility, sources say.",
+    "fund": "Bridgewater Associates",
+    "source": "Reuters",
+    "tag": "业绩",
+    "status": "confirmed",
+    "href": "https://www.reuters.com/technology/bridgewaters-flagship-macro-fund-gains-81-first-half-amid-market-volatility-2026-07-01/"
+  },
+  {
+    "id": "sig-20260701-eujune",
+    "date": "2026.07.01",
+    "title": "Hedge Funds' Role in Today’s Market Environment",
+    "summary": "Goldman Sachs Asset Management：Hedge Funds' Role in Today’s Market Environment（动态）。",
+    "summaryEn": "Goldman Sachs Asset Management: Hedge Funds' Role in Today’s Market Environment.",
+    "fund": "Goldman Sachs Asset Management",
+    "source": "Goldman Sachs Asset Management",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://am.gs.com/en-cz/institutions/insights/article/2026/hedge-funds-role-in-todays-market-environment"
+  },
+  {
     "id": "sig-20260630-07",
     "date": "2026.06.30",
     "title": "Millennium targets at least $10bn in new capital raise",
@@ -84,6 +276,102 @@
     "href": null
   },
   {
+    "id": "sig-20260630-m4zsfe",
+    "date": "2026.06.30",
+    "title": "Millennium to Back Citadel Alum’s Hong Kong Quant Hedge Fund Startup",
+    "summary": "Citadel Investment Group：Millennium to Back Citadel Alum’s Hong Kong Quant Hedge Fund Startup（动态）。",
+    "summaryEn": "Citadel Investment Group: Millennium to Back Citadel Alum’s Hong Kong Quant Hedge Fund Startup.",
+    "fund": "Citadel Investment Group",
+    "source": "LinkedIn",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.linkedin.com/pulse/millennium-back-citadel-alums-hong-kong-quant-hedge-htujf"
+  },
+  {
+    "id": "sig-20260630-pc7t88",
+    "date": "2026.06.30",
+    "title": "Millennium Targets at Least $10 Billion in New Fundraising",
+    "summary": "Millennium Capital Partners 募资/扩容信号：Millennium Targets at Least $10 Billion in New Fundraising。",
+    "summaryEn": "Millennium Capital Partners: capital / fundraising signal — Millennium Targets at Least $10 Billion in New Fundraising.",
+    "fund": "Millennium Capital Partners",
+    "source": "Bloomberg.com",
+    "tag": "募资",
+    "status": "confirmed",
+    "href": "https://www.bloomberg.com/news/articles/2026-06-30/millennium-targets-at-least-10-billion-in-latest-fundraising"
+  },
+  {
+    "id": "sig-20260630-8is83g",
+    "date": "2026.06.30",
+    "title": "NEUBERGER ENERGY INFRASTRUCTURE AND INCOME FUND ANNOUNCES MONTHLY DISTRIBUTION",
+    "summary": "Neuberger Berman：NEUBERGER ENERGY INFRASTRUCTURE AND INCOME FUND ANNOUNCES MONTHLY DISTRIBUTION（动态）。",
+    "summaryEn": "Neuberger Berman: NEUBERGER ENERGY INFRASTRUCTURE AND INCOME FUND ANNOUNCES MONTHLY DISTRIBUTION.",
+    "fund": "Neuberger Berman",
+    "source": "TradingView",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.tradingview.com/news/prnewswire:f046abe721560:0-neuberger-energy-infrastructure-and-income-fund-announces-monthly-distribution/"
+  },
+  {
+    "id": "sig-20260629-pn6q8q",
+    "date": "2026.06.29",
+    "title": "Millennium backed Atlantic Wolf Capital to close as founder returns to Coatue",
+    "summary": "Millennium Capital Partners 募资/扩容信号：Millennium backed Atlantic Wolf Capital to close as founder returns to Coatue。",
+    "summaryEn": "Millennium Capital Partners: capital / fundraising signal — Millennium backed Atlantic Wolf Capital to close as founder returns to Coatue.",
+    "fund": "Millennium Capital Partners",
+    "source": "LinkedIn",
+    "tag": "募资",
+    "status": "confirmed",
+    "href": "https://www.linkedin.com/pulse/millennium-backed-atlantic-wolf-capital-close-founder-jwi8f"
+  },
+  {
+    "id": "sig-20260629-gathzm",
+    "date": "2026.06.29",
+    "title": "Investment Views from Our CIOs",
+    "summary": "Goldman Sachs Asset Management：Investment Views from Our CIOs（动态）。",
+    "summaryEn": "Goldman Sachs Asset Management: Investment Views from Our CIOs.",
+    "fund": "Goldman Sachs Asset Management",
+    "source": "Goldman Sachs Asset Management",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://am.gs.com/en-us/advisors/insights/article/cio-investment-views"
+  },
+  {
+    "id": "sig-20260629-fwpa33",
+    "date": "2026.06.29",
+    "title": "How Elliott is becoming the hedge fund industry’s new ‘Tiger cub’ factory",
+    "summary": "Elliott Investment Management：How Elliott is becoming the hedge fund industry’s new ‘Tiger cub’ factory（动态）。",
+    "summaryEn": "Elliott Investment Management: How Elliott is becoming the hedge fund industry’s new ‘Tiger cub’ factory.",
+    "fund": "Elliott Investment Management",
+    "source": "Financial Times",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.ft.com/content/b5fc43da-45b1-4e56-a278-6edbeba04b7d?syn-25a6b1a6=1"
+  },
+  {
+    "id": "sig-20260628-ex1n9n",
+    "date": "2026.06.28",
+    "title": "How Citadel became an energy giant",
+    "summary": "Citadel Investment Group：How Citadel became an energy giant（动态）。",
+    "summaryEn": "Citadel Investment Group: How Citadel became an energy giant.",
+    "fund": "Citadel Investment Group",
+    "source": "Financial Times",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.ft.com/content/0a2000cb-beb4-4535-bc30-5704d492fec9?syn-25a6b1a6=1"
+  },
+  {
+    "id": "sig-20260627-mlwt3g",
+    "date": "2026.06.27",
+    "title": "Bond giant Pimco flexes muscles with private placements push",
+    "summary": "PIMCO：Bond giant Pimco flexes muscles with private placements push（动态）。",
+    "summaryEn": "PIMCO: Bond giant Pimco flexes muscles with private placements push.",
+    "fund": "PIMCO",
+    "source": "Financial Times",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.ft.com/content/5bd2ea32-4cb1-4575-9cb5-10c528aacc1e?syn-25a6b1a6=1"
+  },
+  {
     "id": "sig-20260626-08",
     "date": "2026.06.26",
     "title": "Elliott alumni establish new generation of activist hedge funds",
@@ -94,5 +382,65 @@
     "tag": "人员 / 新基金",
     "status": "confirmed",
     "href": null
+  },
+  {
+    "id": "sig-20260625-hhl2xt",
+    "date": "2026.06.25",
+    "title": "Fixed Income Outlook 3Q 2026",
+    "summary": "Goldman Sachs Asset Management：Fixed Income Outlook 3Q 2026（动态）。",
+    "summaryEn": "Goldman Sachs Asset Management: Fixed Income Outlook 3Q 2026.",
+    "fund": "Goldman Sachs Asset Management",
+    "source": "Goldman Sachs Asset Management",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://am.gs.com/en-us/advisors/insights/article/fixed-income-outlook"
+  },
+  {
+    "id": "sig-20260624-ohk28c",
+    "date": "2026.06.24",
+    "title": "Millennium hires former ExodusPoint money manager Tom McDonough",
+    "summary": "Millennium Capital Partners 人事/招聘动向：Millennium hires former ExodusPoint money manager Tom McDonough。",
+    "summaryEn": "Millennium Capital Partners: hiring / personnel move — Millennium hires former ExodusPoint money manager Tom McDonough.",
+    "fund": "Millennium Capital Partners",
+    "source": "Financial News London",
+    "tag": "人员 / 招聘",
+    "status": "confirmed",
+    "href": "https://www.fnlondon.com/articles/millennium-hires-former-exoduspoint-money-manager-tom-mcdonough-ccda337a"
+  },
+  {
+    "id": "sig-20260624-fewr8t",
+    "date": "2026.06.24",
+    "title": "Learnings from Earnings",
+    "summary": "Goldman Sachs Asset Management：Learnings from Earnings（动态）。",
+    "summaryEn": "Goldman Sachs Asset Management: Learnings from Earnings.",
+    "fund": "Goldman Sachs Asset Management",
+    "source": "Goldman Sachs Asset Management",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://am.gs.com/en-us/advisors/insights/article/learnings-from-earnings"
+  },
+  {
+    "id": "sig-20260623-6x3mfg",
+    "date": "2026.06.23",
+    "title": "Tower Research lost a top credit trader to hedge fund Millennium despite fixed income push",
+    "summary": "Millennium Capital Partners：Tower Research lost a top credit trader to hedge fund Millennium despite fixed income push（动态）。",
+    "summaryEn": "Millennium Capital Partners: Tower Research lost a top credit trader to hedge fund Millennium despite fixed income push.",
+    "fund": "Millennium Capital Partners",
+    "source": "eFinancialCareers",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.efinancialcareers.com/news/tower-research-lost-a-top-credit-trader-to-hedge-fund-millennium-despite-fixed-income-push"
+  },
+  {
+    "id": "sig-20260623-l58avl",
+    "date": "2026.06.23",
+    "title": "Brookfield Asset Management Announces DOE Conditional Commitment for $17.5 Billion Loan Facilities to Support U.S. Nuclear Reactor Development",
+    "summary": "Brookfield：Brookfield Asset Management Announces DOE Conditional Commitment for $17.5 Billion Loan Facilities to Support U.S. Nuclear Reactor Development（动态）。",
+    "summaryEn": "Brookfield: Brookfield Asset Management Announces DOE Conditional Commitment for $17.5 Billion Loan Facilities to Support U.S. Nuclear Reactor Development.",
+    "fund": "Brookfield",
+    "source": "Quiver Quantitative",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.quiverquant.com/news/Brookfield+Asset+Management+Announces+DOE+Conditional+Commitment+for+%2417.5+Billion+Loan+Facilities+to+Support+U.S.+Nuclear+Reactor+Development"
   }
 ]
