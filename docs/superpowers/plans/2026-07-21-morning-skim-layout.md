@@ -4,6 +4,8 @@
 
 **Goal:** Redesign the Today briefing page as a morning skim (compact hero → skim → markets → Detail tabs) without removing or rewriting any briefing content.
 
+> **Later update (2026-07-22):** the auto “What changed after the last publish” band was removed as redundant with Skim/Detail; replaced by a quiet previous-briefing link.
+
 **Architecture:** Layout-only React changes. A pure `detailTabFromHash` helper maps URL hashes to Detail tab ids. `DetailTabs` wraps existing section components and show/hides panels. `SectionNav` becomes a two-row sticky chrome (primary anchors + Detail tab triggers). `BriefingView` reorders bands; Today home uses a new `skim` hero variant. No markdown schema or generate pipeline changes.
 
 **Tech Stack:** Next.js App Router, React 19 client components, Tailwind 4, existing `node:test` for the hash helper (no Vitest/RTL in `web/`).
