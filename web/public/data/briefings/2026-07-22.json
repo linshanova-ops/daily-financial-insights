@@ -13,8 +13,8 @@
       "href": "https://finance.yahoo.com/quote/%5EGSPC/"
     },
     {
-      "label": "CNBC — Jul 21 Brent/WTI settle",
-      "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+      "label": "Xinhua/The Star — Jul 22 (Jul 21 Brent/WTI settle)",
+      "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
     },
     {
       "label": "CNBC — Jul 21 Treasury yields",
@@ -68,10 +68,10 @@
       "kind": "stat",
       "display": "$91.01",
       "delta": "+2% · Sep futures · five-week high",
-      "note": "CNBC official settle after US-Iran/Houthi headlines",
+      "note": "Xinhua settle via The Star after US-Iran/Houthi headlines",
       "source": {
-        "label": "CNBC oil Jul 21",
-        "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+        "label": "The Star / Xinhua oil Jul 22",
+        "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
       }
     },
     {
@@ -80,10 +80,10 @@
       "kind": "stat",
       "display": "$84.91",
       "delta": "+2% · Aug futures",
-      "note": "CNBC Jul 21",
+      "note": "The Star / Xinhua Jul 22",
       "source": {
-        "label": "CNBC oil Jul 21",
-        "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+        "label": "The Star / Xinhua oil Jul 22",
+        "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
       }
     },
     {
@@ -92,7 +92,7 @@
       "kind": "stat",
       "display": "4.63%",
       "delta": "+3 bp vs 4.60% prior close",
-      "note": "CNBC Jul 21 · two-month high",
+      "note": "The Star / Xinhua Jul 22 · two-month high",
       "source": {
         "label": "CNBC Treasury Jul 21",
         "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
@@ -208,8 +208,8 @@
           "href": "https://finance.yahoo.com/quote/%5EDJI/"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Treasury Jul 21",
@@ -299,8 +299,8 @@
           "href": "https://www.cnbc.com/2026/07/21/us-iran-war-trump-hormuz-houthis.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         }
       ]
     },
@@ -645,8 +645,8 @@
           "href": "https://finance.yahoo.com/quote/%5EDJI/"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "华尔街见闻 Jul 21",
@@ -666,8 +666,8 @@
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         }
       ],
       "read": "Belly/long-end rose with official oil settle despite ceasefire headlines — inflation channel re-engaged into Jul 28–29 FOMC",
@@ -683,8 +683,8 @@
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -708,8 +708,8 @@
           "href": "https://www.cnbc.com/2026/07/21/treasury-yields-bonds-iran-us-politics.html"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Iran Jul 21",
@@ -725,8 +725,8 @@
       "driver": "Jul 21 Brent settled $91.01 (+2.0%, five-week high); WTI $84.91; Hormuz transits near zero since conflict (Bloomberg chart)",
       "driverSources": [
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Iran Jul 21",
@@ -767,8 +767,8 @@
           "href": "http://www.ce.cn/xwzx/gnsz/gdxw/202607/t20260721_3099497.shtml"
         },
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         }
       ],
       "read": "Disaster-relief relending is targeted quantity easing; oil import-inflation constraint on near-term LPR cut unchanged",
@@ -799,8 +799,8 @@
       "evidence": "CNBC Jul 21: Brent +2.0% at $91.01; WTI $84.91; US 10th strike night; Houthi Saudi embargo; Hormuz tanker hit.",
       "evidenceSources": [
         {
-          "label": "CNBC oil Jul 21",
-          "href": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
+          "label": "The Star / Xinhua oil Jul 22",
+          "href": "https://www.thestar.com.my/news/world/2026/07/22/crude-futures-settle-higher"
         },
         {
           "label": "CNBC Iran Jul 21",
