@@ -22,3 +22,11 @@ Use ranks from `universe.json`. Commit and deploy (or wait for the next briefing
 
 `node scripts/scan-fund-signals.mjs` runs on Beijing briefing slots via `daily-briefing.yml`.
 Sources: Hedgeweek, Google News, HedgeCo.
+
+Google News queries **one search alias per monitored fund** (full list — no top-N cap).
+Feed cards only appear when a confirmed article lands in the scan window (default 72h);
+Universe listing alone does not invent news. Optional backfill:
+
+```bash
+node scripts/scan-fund-signals.mjs --window-hours 720
+```

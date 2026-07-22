@@ -1,21 +1,90 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
 import { describe, it } from "node:test";
+import { fileURLToPath } from "node:url";
 import {
   bilingualSummary,
   cleanHeadline,
   confidenceTier,
   fundAliases,
+  googleNewsSearchAliases,
   parseRssItems,
+  primarySearchAlias,
   scoreFundMention,
   signalDedupKey,
   withinHours,
 } from "./fund-signal-match.mjs";
+
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
 describe("fundAliases", () => {
   it("adds short brand forms", () => {
     const a = fundAliases("Citadel Investment Group");
     assert.ok(a.includes("Citadel Investment Group"));
     assert.ok(a.includes("Citadel"));
+  });
+});
+
+describe("primarySearchAlias / googleNewsSearchAliases", () => {
+  it("avoids ultra-short HAO token for Google News", () => {
+    assert.equal(primarySearchAlias("HAO Capital"), "HAO Capital");
+  });
+
+  it("keeps known acronym brands like LMR", () => {
+    assert.equal(primarySearchAlias("LMR Partners"), "LMR");
+  });
+
+  it("prefers Schroders brand over Schroder stem", () => {
+    assert.equal(primarySearchAlias("Schroders"), "Schroders");
+  });
+
+  it("covers the twelve admin-added / late-ranked names", () => {
+    const names = [
+      "Oaktree Capital Management",
+      "HAO Capital",
+      "Sona Asset Management",
+      "Elliott Investment Management",
+      "LMR Partners",
+      "Caxton Associates",
+      "Linden Advisors",
+      "Waha Investments",
+      "PIMCO",
+      "Barings",
+      "Neuberger Berman",
+      "Brookfield",
+      "Schroders",
+    ];
+    const { aliases, uncovered } = googleNewsSearchAliases(
+      names.map((name) => ({ name })),
+    );
+    assert.equal(uncovered.length, 0);
+    assert.equal(aliases.length, names.length);
+  });
+
+  it("covers every monitored fund in the live content set", () => {
+    const monitoredFile = JSON.parse(
+      fs.readFileSync(path.join(root, "web/content/fund/monitored.json"), "utf8"),
+    );
+    const universe = JSON.parse(
+      fs.readFileSync(path.join(root, "web/content/fund/universe.json"), "utf8"),
+    );
+    const byRank = new Map(universe.map((f) => [f.rank, f]));
+    const monitored = monitoredFile.funds
+      .map((ref) => byRank.get(ref.rank) || { rank: ref.rank, name: ref.name })
+      .filter((f) => f?.name);
+
+    assert.ok(monitored.length >= 100, `expected ≥100 monitored, got ${monitored.length}`);
+    const { aliases, uncovered, monitoredCount } = googleNewsSearchAliases(monitored);
+    assert.equal(uncovered.length, 0, `uncovered: ${uncovered.join(", ")}`);
+    assert.equal(monitoredCount, monitored.length);
+    // Shared brands (Two Sigma / Polar) may collapse a few aliases
+    assert.ok(
+      aliases.length >= monitored.length - 5,
+      `alias coverage too low: ${aliases.length}/${monitored.length}`,
+    );
+    // Regression: never silently shrink back to the old 40-alias cap
+    assert.ok(aliases.length > 40, `still capped? aliases=${aliases.length}`);
   });
 });
 

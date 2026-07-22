@@ -9,6 +9,7 @@
  * Usage:
  *   node scripts/scan-fund-signals.mjs
  *   node scripts/scan-fund-signals.mjs --commit
+ *   node scripts/scan-fund-signals.mjs --window-hours 720
  */
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
@@ -20,6 +21,7 @@ import {
   confidenceTier,
   formatShanghaiLabel,
   fundAliases,
+  googleNewsSearchAliases,
   parseRssItems,
   resolvePublisherUrl,
   scoreFundMention,
@@ -74,21 +76,6 @@ function chunk(arr, size) {
   return out;
 }
 
-/** Prefer a searchable short brand; fall back to official name. */
-function primarySearchAlias(name) {
-  const aliases = fundAliases(name);
-  if (!aliases.length) return String(name || "").trim();
-  // Prefer the shortest alias that still looks like a proper name (≥3 chars),
-  // but keep the official name if stripping would leave a tiny token.
-  const ranked = [...aliases].sort((a, b) => {
-    const aOfficial = a.toLowerCase() === String(name).toLowerCase() ? 1 : 0;
-    const bOfficial = b.toLowerCase() === String(name).toLowerCase() ? 1 : 0;
-    if (aOfficial !== bOfficial) return aOfficial - bOfficial; // non-official first
-    return a.length - b.length;
-  });
-  return ranked[0] || name;
-}
-
 function guessTag(title) {
   const t = title.toLowerCase();
   if (/hire|hiring|appoint|joins|names/.test(t)) return "人员 / 招聘";
@@ -121,16 +108,22 @@ async function collectItems(monitored) {
   }
 
   // 2) Google News — one primary alias per monitored fund (full coverage).
-  // Previously capped at 40 aliases from the top of the list, so late-ranked /
-  // admin-added names (e.g. ranks 101+) never entered the GN query pool.
-  const aliases = monitored
-    .map((f) => primarySearchAlias(f.name))
-    .filter((a, i, arr) => a && arr.indexOf(a) === i);
+  // Previously capped at 40 aliases / 6 batches, so late-ranked admin-added
+  // names (e.g. ranks 101+) never entered the GN query pool.
+  const { aliases, uncovered, monitoredCount } = googleNewsSearchAliases(monitored);
+  if (uncovered.length) {
+    console.warn(
+      `[fund-scan] WARN ${uncovered.length}/${monitoredCount} funds lack a search alias:`,
+      uncovered.slice(0, 8).join(", "),
+    );
+  }
   const batches = chunk(aliases, 6);
   let gCount = 0;
   let gOk = 0;
   for (const batch of batches) {
-    const query = batch.map((a) => `"${a}"`).join(" OR ") + " (hedge fund OR asset management OR capital)";
+    const query =
+      batch.map((a) => `"${a}"`).join(" OR ") +
+      " (hedge fund OR asset management OR capital)";
     try {
       const xml = await fetchText(googleNewsUrl(query));
       const parsed = parseRssItems(xml, "Google News");
@@ -146,8 +139,13 @@ async function collectItems(monitored) {
     ok: gOk > 0,
     count: gCount,
     note: gOk
-      ? `${gOk}/${batches.length} batches ok · ${aliases.length} aliases`
+      ? `${gOk}/${batches.length} batches ok · ${aliases.length} aliases · ${monitoredCount} monitored`
       : "all batches failed",
+    coverage: {
+      monitored: monitoredCount,
+      searchAliases: aliases.length,
+      uncovered: uncovered.length,
+    },
   });
 
   // 3) HedgeCo Insights — public hedge-fund trade RSS (third live source)
