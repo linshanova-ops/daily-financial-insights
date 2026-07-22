@@ -133,6 +133,12 @@ FAIL-CLOSED PUBLISH (critical):
      window (72h only on weekend/Monday open). Older cites are background only.
    - Every keySources label must include an explicit calendar date in-window.
    - Do not recycle prior-briefing narratives unless re-confirmed with a fresh href today.
+   - ALWAYS cite the **accurate and latest** source for each fact: if a newer same-topic
+     print exists (same desk or stronger primary), replace the older href — do not keep
+     yesterday's URL after relabeling the date.
+   - Source label date MUST match the article URL path date when the URL embeds
+     /YYYY/MM/DD/ (e.g. label "CNBC — Jul 21" must not point at /2026/07/20/).
+     scan-links fails on this mismatch.
 
    INBOX NEWSLETTERS (Gmail IMAP — already fetched when present):
    - 彭博 Markets Daily China / 财经早茶 (daily): this is a **full global + China** digest —
@@ -193,7 +199,13 @@ FAIL-CLOSED PUBLISH (critical):
    (g) crypto prints triangulated: BlockBeats alone is not enough for BTC/ETH levels —
        pair with dated Cointelegraph/CoinDesk/Yahoo (or similar);
    (h) every sourced-fact href opens to a page that supports the claimed number;
-   (i) optional figures[] values must match sourced facts in the same briefing.
+   (i) optional figures[] values must match sourced facts in the same briefing;
+   (j) cite the latest accurate print for the coverage window — do not leave a
+       newer fact behind an older article URL; when dashboard asOfDate and a
+       narrative cite disagree, refresh the stale side (re-run market closes
+       inject and/or retarget the cite);
+   (k) English month-day in a source label (e.g. "Jul 21") must match /YYYY/MM/DD/
+       in that href when present.
 
 3. Write web/content/briefings/${today}.md using the exact YAML frontmatter schema in
    web/content/briefings/2026-07-16.md when present (else 2026-07-15.md). All keys required,
