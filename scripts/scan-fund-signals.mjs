@@ -364,9 +364,11 @@ async function main() {
       )
       .join(" · "),
     scanWindow:
-      WINDOW_HOURS % 24 === 0 && WINDOW_HOURS >= 24
-        ? `每日扫描过去 ${WINDOW_HOURS / 24} 天 · 命中永久归档`
-        : `每日扫描过去 ${WINDOW_HOURS} 小时 · 命中永久归档`,
+      WINDOW_HOURS === 72
+        ? "每日扫描过去 72 小时 · 命中永久归档"
+        : WINDOW_HOURS % 24 === 0 && WINDOW_HOURS >= 24
+          ? `每日扫描过去 ${WINDOW_HOURS / 24} 天 · 命中永久归档`
+          : `每日扫描过去 ${WINDOW_HOURS} 小时 · 命中永久归档`,
     phase: 2,
     phaseNote:
       "Live RSS scan on briefing windows (Hedgeweek + Google News + HedgeCo). Confirmed hits are permanent. Google News queries one alias per monitored fund.",
