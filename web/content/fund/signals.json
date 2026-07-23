@@ -1,5 +1,41 @@
 [
   {
+    "id": "sig-20260723-csxa0o",
+    "date": "2026.07.23",
+    "title": "Fasanara hires ex-Man Group exec to lead firm-wide AI push",
+    "summary": "Man Group 人事/招聘动向：Fasanara hires ex-Man Group exec to lead firm-wide AI push。",
+    "summaryEn": "Man Group: hiring / personnel move — Fasanara hires ex-Man Group exec to lead firm-wide AI push.",
+    "fund": "Man Group",
+    "source": "Hedgeweek",
+    "tag": "人员 / 招聘",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/fasanara-hires-ex-man-group-exec-to-lead-firm-wide-ai-push/"
+  },
+  {
+    "id": "sig-20260723-erkij8",
+    "date": "2026.07.23",
+    "title": "Citadel Securities sets up Amsterdam equity options hub",
+    "summary": "Citadel Investment Group：Citadel Securities sets up Amsterdam equity options hub（动态）。",
+    "summaryEn": "Citadel Investment Group: Citadel Securities sets up Amsterdam equity options hub.",
+    "fund": "Citadel Investment Group",
+    "source": "Hedgeweek",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/citadel-securities-sets-up-amsterdam-equity-options-hub/"
+  },
+  {
+    "id": "sig-20260723-a67k00",
+    "date": "2026.07.23",
+    "title": "Man Group stock trades steadily as assets and margins shape the outlook - Ad-hoc-news.de",
+    "summary": "Man Group：Man Group stock trades steadily as assets and margins shape the outlook - Ad-hoc-news.de（动态）。",
+    "summaryEn": "Man Group: Man Group stock trades steadily as assets and margins shape the outlook - Ad-hoc-news.de.",
+    "fund": "Man Group",
+    "source": "Ad-hoc-news.de",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/man-group-stock-trades-steadily-as-assets-and-margins-shape-the-outlook/69844244"
+  },
+  {
     "id": "sig-20260722-bbpqja",
     "date": "2026.07.22",
     "title": "Ex-Citadel money manager’s hedge fund eyes $250m in fresh capital",
@@ -10,6 +46,18 @@
     "tag": "募资",
     "status": "confirmed",
     "href": "https://www.fnlondon.com/articles/ex-citadel-money-managers-hedge-fund-eyes-250m-in-fresh-capital-879f1f07"
+  },
+  {
+    "id": "sig-20260722-ehjr0u",
+    "date": "2026.07.22",
+    "title": "Citadel Group launches R115bn CAM Asset Management as a standalone brand",
+    "summary": "Citadel Investment Group 组织/产品动向：Citadel Group launches R115bn CAM Asset Management as a standalone brand。",
+    "summaryEn": "Citadel Investment Group: product / organization update — Citadel Group launches R115bn CAM Asset Management as a standalone brand.",
+    "fund": "Citadel Investment Group",
+    "source": "Citywire",
+    "tag": "组织 / 产品",
+    "status": "confirmed",
+    "href": "https://citywire.com/za/news/citadel-group-launches-r115bn-cam-asset-management-as-a-standalone-brand/a2494687"
   },
   {
     "id": "sig-20260717-k08v61",

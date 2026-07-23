@@ -1,11 +1,11 @@
 [
   {
-    "id": "rev-sig-20260722-5y2030",
-    "title": "Pershing Square Holdings appoints B-FLEXION exec as independent director",
-    "reason": "中等置信度命中「Pershing Square」，待人工复核。",
-    "confidence": "70%",
+    "id": "rev-sig-20260723-8nx4cs",
+    "title": "ExodusPoint gives senior roles to former Ovata traders",
+    "reason": "中等置信度命中「ExodusPoint」，待人工复核。",
+    "confidence": "66%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/pershing-square-holdings-appoints-b-flexion-exec-as-independent-director/"
+    "href": "https://www.hedgeweek.com/exoduspoint-gives-senior-roles-to-former-ovata-traders/"
   },
   {
     "id": "rev-sig-20260722-cgae3a",
@@ -14,6 +14,14 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.efinancialcareers.com/news/traders-at-hong-kong-hedge-fund-swallowed-by-exodus-point-are-being-given-some-big-roles"
+  },
+  {
+    "id": "rev-sig-20260723-xwdvvy",
+    "title": "Aureus Asset Management LLC Boosts Position in The Goldman Sachs Group, Inc. $GS",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-aureus-asset-management-llc-boosts-position-in-the-goldman-sachs-group-inc-gs-2026-07-23/"
   },
   {
     "id": "rev-sig-20260722-rdmkzw",
@@ -38,6 +46,14 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-seb-asset-management-ab-makes-new-959-million-investment-in-apollo-global-management-inc-apo-2026-07-22/"
+  },
+  {
+    "id": "rev-sig-20260723-sb16va",
+    "title": "XA Investments Urges XFLT Shareholders to Vote White Proxy Card for King Street Sub-Advisory Agreement Ahead of July 30 Special Meeting",
+    "reason": "中等置信度命中「King Street」，待人工复核。",
+    "confidence": "66%",
+    "status": "review",
+    "href": "https://www.quiverquant.com/news/XA+Investments+Urges+XFLT+Shareholders+to+Vote+White+Proxy+Card+for+King+Street+Sub-Advisory+Agreement+Ahead+of+July+30+Special+Meeting"
   },
   {
     "id": "rev-sig-20260721-l0u7ua",
