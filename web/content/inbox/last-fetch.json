@@ -1,24 +1,38 @@
 {
-  "at": "2026-07-22T13:01:09.090Z",
-  "briefingDate": "2026-07-22",
+  "at": "2026-07-23T12:01:10.384Z",
+  "briefingDate": "2026-07-23",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-22.md",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-23.md",
       "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：油轮红海遇袭；Alphabet上调支出预估",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-23.md"
+    },
+    {
+      "reason": "unmatched",
+      "subject": "Optimism Meets Overhead",
+      "from": "\"Glassnode\" <insights@glassnode.com>"
+    },
     {
       "reason": "unmatched",
       "subject": "Security Notice",
       "from": "\"Glassnode\" <noreply@glassnode.com>"
     },
     {
-      "reason": "exists-keep",
+      "reason": "date-mismatch",
       "subject": "彭博财经早茶：月之暗面估值或猛升；日元创40年新低",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-22.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-07-21",
+      "bjDay": "2026-07-22",
+      "briefingDate": "2026-07-23"
     },
     {
       "reason": "date-mismatch",
@@ -27,7 +41,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-20",
       "bjDay": "2026-07-21",
-      "briefingDate": "2026-07-22"
+      "briefingDate": "2026-07-23"
     },
     {
       "reason": "unmatched",
