@@ -54,7 +54,8 @@ Before finalizing website YAML, re-check:
 7. **华尔街见闻 cites:** for Shanghai / Hang Seng / Fed speech numbers, prefer primary URLs. If citing wallstreetcn.com, the page must show the coverage year (or a same-day primary confirms the level). Reject month-day-only wraps and IDs near known-bad 2025 clusters (3751205 A/H wrap; 3751275 Williams) — note rejections in `singleSource`.
 8. **Crypto prints:** prefer dated Cointelegraph / CoinDesk / Yahoo Finance BTC-USD (or similar) over a single BlockBeats HTX flash. If BlockBeats is used for crypto color, triangulate the level against an independent dated source before publishing.
 9. Every `href` on a sourced fact must support the number claimed; if the page is wrong-year or off-level, replace the source — do not keep a convenient link.
-10. **Site-wide machine scan:** after writing YAML, from `web/` run `npm run scan-links`. It fetches **all** cited hrefs (every briefing field + `web/src`), checks publication year, and verifies claim numbers appear on the cited page(s). Failures block publish; fix the cite/claim or add bad IDs to `web/scripts/rejected-source-ids.json`.
+10. **Site-wide publish gate:** after writing YAML, from `web/` run **`npm run verify-briefing`** (sync-data, JSON-in-git check, then scan-links). It fetches **all** cited hrefs (every briefing field + `web/src`), checks publication year, and verifies claim numbers appear on the cited page(s). Failures block publish; fix the cite/claim or add bad IDs to `web/scripts/rejected-source-ids.json`.
+11. **Commit markdown + JSON together** — never push briefing `.md` without regenerated `web/public/data/briefings/*.json` and `latest.json` from the same verify run.
 
 ## Mandatory Disclaimer
 
@@ -68,4 +69,4 @@ End every report with:
 - **Executive summary written first and never updated** — write it last, after the body is final.
 - **Copy-pasting stage outputs verbatim** — the analysis stages produce working notes; the report needs them edited for a reader (dedupe items that appear in both global and China sections, cut internal jargon like "news-log item #4").
 - **Losing traceability while editing** — tightening prose must not detach claims from their sources; keep at least outlet names on key facts.
-- **Burying the lede** — if one story dominates the day, it opens the executive summary, even if the template section order puts its detail later.
+- **Pushing markdown without JSON** — always run `npm run verify-briefing` immediately before commit; CI fails if `latest.json` drifted from markdown.

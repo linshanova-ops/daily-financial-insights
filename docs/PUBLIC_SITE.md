@@ -31,7 +31,7 @@ Generation does **not** push straight to `main`. Flow:
 
 1. Cursor agent drafts on branch `briefing/YYYY-MM-DD` and opens a PR (`[skip netlify] content: publish …`)
 2. Orchestrator marks the PR **ready** immediately (Cursor opens drafts; waiting on draft CI is what used to stall publishes)
-3. GitHub Action **Briefing accuracy gate** runs `npm run sync-data` + `npm run scan-links`
+3. GitHub Action **Briefing accuracy gate** runs `npm run verify-briefing` (sync-data + JSON sync check + scan-links)
 4. If green → orchestrator auto-merges → explicitly dispatches **Deploy syravocado to GitHub Pages** (GITHUB_TOKEN merges do not fire `push` workflows)
 5. If red → agent rewrites (up to 3 attempts) → re-check → merge  
 6. If still failing → PR left open; **live site stays on the last good briefing**
@@ -93,7 +93,7 @@ Until that secret exists, publish manually:
 
 ```bash
 # add web/content/briefings/YYYY-MM-DD.md
-cd web && npm run sync-data
+cd web && npm run verify-briefing
 git add web/content web/public/data && git commit -m "content: YYYY-MM-DD briefing" && git push
 ```
 

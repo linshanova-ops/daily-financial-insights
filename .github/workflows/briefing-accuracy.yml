@@ -35,17 +35,5 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Sync briefing JSON feed
-        run: npm run sync-data
-
-      - name: Fail if briefing JSON is out of sync
-        run: |
-          # index.json always rewrites generatedAt — ignore it. Require briefings + latest match markdown.
-          if ! git -C .. diff --quiet -- web/public/data/briefings web/public/data/latest.json; then
-            echo "::error::web/public/data briefings/latest are out of sync with markdown. Run npm run sync-data and commit."
-            git -C .. diff --stat -- web/public/data/briefings web/public/data/latest.json
-            exit 1
-          fi
-
-      - name: Scan all website source links
-        run: npm run scan-links
+      - name: Verify briefing publish gate (sync JSON + scan-links)
+        run: npm run verify-briefing
