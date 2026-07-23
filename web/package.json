@@ -7,6 +7,7 @@
     "sync-data": "node scripts/sync-briefing-data.mjs",
     "fetch-closes": "node scripts/fetch-market-closes.mjs",
     "scan-links": "node scripts/scan-source-links.mjs",
+    "verify-briefing": "node scripts/verify-briefing-publish.mjs",
     "prebuild": "npm run sync-data && npm run scan-links",
     "build": "next build",
     "start": "next start",

@@ -32,7 +32,7 @@ Run stages in order. Read each stage's skill before executing it.
 - **After stages 2–3:** Every claim in the assessment cites a news-log item. No claims from memory of "how things usually are."
 - **After stage 4:** Every signal is graded (strong/moderate/weak) with reasoning. Ungraded observations stay out of the suggestions stage.
 - **After stage 5:** Max 5 suggestions, each with a trigger and an invalidator.
-- **After stage 6:** Report follows the template; disclaimer present. Re-run the writing skill's **pre-publish accuracy gate** in full (primary-source prints, close vs open, beat/miss vs estimate — less = miss estimate / more = beat estimate, PBOC 亿元 conversion, **year check on every hard quote**, crypto triangulation, href supports the claimed number). Then from `web/`: `npm run sync-data && npm run scan-links`. Do not publish if `scan-links` fails.
+- **After stage 6:** Report follows the template; disclaimer present. Re-run the writing skill's **pre-publish accuracy gate** in full (primary-source prints, close vs open, beat/miss vs estimate — less = miss estimate / more = beat estimate, PBOC 亿元 conversion, **year check on every hard quote**, crypto triangulation, href supports the claimed number). Then from `web/`: **`npm run verify-briefing`** (sync-data + JSON-in-git check + scan-links). Do not publish if it fails.
 
 ## Defaults (override only if user specifies)
 

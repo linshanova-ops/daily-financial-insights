@@ -12,16 +12,19 @@
 6. **Beat/miss vs estimate**, not vs prior. **Cooler / less than estimate = miss estimate**; **hotter / more than estimate = beat estimate** (CPI, PPI, GDP, payrolls, claims, etc.). Do not swap market tone for the print label.
 7. **PBOC 亿元 conversion** — `100亿元` = **CNY10bn**. Net OMO = ops − maturity.
 8. **Crypto triangulation** — BlockBeats alone is not enough for a published BTC/ETH print; pair with a dated Cointelegraph / CoinDesk / Yahoo (or similar) quote.
-9. **Href integrity** — if the linked page does not support the number, replace the source; do not keep a convenient wrong link.
+9. **Href integrity** — if the linked page does not support the number, replace the source; do not keep a convenient wrong link. **Aggregator pages (BlockBeats, etc.):** omit embed-only figures that do not appear in CI-fetchable HTML.
 10. **Reject rather than invent** — if a figure cannot be verified, omit it or mark `single-source` in caveats. Never invent.
 
 ## Pipeline enforcement
 
 - Skills: `daily-financial-briefing`, `gathering-financial-news`, `writing-daily-financial-report`
 - Generator: `scripts/generate-daily-briefing.mjs` (twice-daily schedule / Actions)
-- **Fail-closed publish:** scheduled (and manual) generation never pushes to `main`. It opens PR branch `briefing/YYYY-MM-DD`, CI workflow `briefing-accuracy.yml` must pass `scan-links`, then the orchestrator auto-merges and dispatches Pages deploy (GITHUB_TOKEN merges do not trigger push workflows). On CI failure the agent rewrites (up to 3 attempts). If still red, the PR stays open and the live site is unchanged.
+- **Fail-closed publish:** scheduled (and manual) generation never pushes to `main`. It opens PR branch `briefing/YYYY-MM-DD`, CI workflow `briefing-accuracy.yml` must pass **`npm run verify-briefing`**, then the orchestrator auto-merges and dispatches Pages deploy (GITHUB_TOKEN merges do not trigger push workflows). On CI failure the agent rewrites (up to 3 attempts). If still red, the PR stays open and the live site is unchanged.
 - Pre-publish: writing skill **accuracy gate** must pass before sync
-- **Site-wide automated accuracy scan (required):** from `web/`, run `npm run scan-links`
+- **Site-wide automated publish gate (required):** from `web/`, run **`npm run verify-briefing`**
+  1. Regenerates JSON from markdown (`sync-data`)
+  2. **Fails if `web/public/data/briefings/*.json` or `latest.json` are not committed** with the markdown (top CI failure mode)
+  3. Runs `scan-links` (fetch + evidence on every cited claim)
   - Walks **every** `href` in all briefing YAML fields (any section) and every `https?://` URL under `web/src`
   - For each sourced claim (summary / global / China / figures / asset framework / signals): fetches the cited page(s) and checks (1) source year/validity and (2) that distinctive claim numbers appear in the page text (union across multi-source facts)
   - Host adapters: 华尔街见闻 article API, Yahoo chart API, BOK `menuNo` fix; **BLS/SEC** via declared bot User-Agent (`syravocado-link-audit/2.0 research@…`); **TSMC IR** Cloudflare blocks are resolved through the matching SEC EDGAR 6-K exhibit (same prints)
@@ -32,4 +35,4 @@
 
 ## If a reader finds an error
 
-Correct the briefing YAML (or static `href`), re-run `npm run sync-data && npm run scan-links`, add the bad id/URL to `rejected-source-ids.json` if it was a new stale cite, note the rejection in `singleSource` / caveats when removed, and push so Pages redeploys.
+Correct the briefing YAML (or static `href`), re-run **`npm run verify-briefing`**, add the bad id/URL to `rejected-source-ids.json` if it was a new stale cite, note the rejection in `singleSource` / caveats when removed, and push so Pages redeploys.

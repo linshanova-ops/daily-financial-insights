@@ -131,7 +131,7 @@ FAIL-CLOSED PUBLISH (critical):
 - Work on git branch \`${branchName}\` (create/reset from latest main).
 - Open a pull request INTO main. Do NOT push to main. Do NOT merge the PR.
 - PR title MUST be exactly: ${prTitle}
-- The GitHub Action "Briefing accuracy gate" will run npm run scan-links.
+- The GitHub Action "Briefing accuracy gate" runs \`npm run verify-briefing\` (sync-data + JSON sync check + scan-links).
   An orchestrator will auto-merge only when CI is green, or ask you to rewrite if red.
 
 1. Run the full daily-financial-briefing skill pipeline under .cursor/skills/financial-research/
@@ -244,12 +244,16 @@ FAIL-CLOSED PUBLISH (critical):
    \`marketDashboard\`. Do NOT invent tape levels by hand. Do NOT delete the injected block.
    If a single row fails, the script omits it — that is OK.
 
-5. From web/, run: npm ci && npm run sync-data && npm run scan-links
-   Fix until scan-links is green before you finish. Append newly discovered bad IDs to
-   web/scripts/rejected-source-ids.json when needed.
+5. From web/, run: npm ci && npm run verify-briefing
+   This runs sync-data, fails if web/public/data/briefings/*.json or latest.json are not
+   committed with the markdown (same check as CI), then scan-links. Fix until green.
+   Append newly discovered bad IDs to web/scripts/rejected-source-ids.json when needed.
+   **Never commit markdown without verify-briefing in the same commit** — a markdown-only
+   push always fails CI with "JSON out of sync".
 
 6. Commit on \`${branchName}\` with message: content: publish ${today} daily briefing
-   Include web/content/briefings/${today}.md, web/public/data/**, any new
+   Include web/content/briefings/${today}.md, web/public/data/briefings/${today}.json,
+   web/public/data/latest.json, web/public/data/index.json, any new
    web/content/inbox/** captures, web/public/inbox-charts/** chart images, and any
    rejected-source-ids.json updates.
    Push the branch and open/update the PR to main
@@ -271,9 +275,11 @@ ${ciLog.slice(0, 12000)}
 \`\`\`
 
 Requirements:
-1. From web/: npm ci && npm run sync-data && npm run scan-links — must be green.
+1. From web/: npm ci && npm run verify-briefing — must be green (not sync-data + scan-links separately).
 2. Prefer omit unverifiable figures over inventing. Fix wrong-year / unsupported hrefs.
-3. Commit and push to \`${branchName}\`.
+   Do not cite hard numbers (e.g. BlockBeats pre-IPO prices) unless they appear in fetchable
+   page text at the cited href — CI fetches HTML and rejects JS-only embeds.
+3. Commit and push to \`${branchName}\` — stage web/public/data/briefings and latest.json with markdown.
 4. Reply with: FIXED ${today} BRANCH=${branchName} PR=<url-or-number>`;
 }
 
