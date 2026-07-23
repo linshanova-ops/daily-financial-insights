@@ -2,11 +2,27 @@
   "date": "2026-07-23",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 22–23, 2026",
-  "publishedAt": "2026-07-23T00:20:13.561Z",
+  "publishedAt": "2026-07-23T12:27:50.541Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 23)",
       "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "新华财经 — Jul 23 A-share close",
+      "href": "https://m.cnfin.com/yw-lb/zixun/20260723/4444983_1.html"
+    },
+    {
+      "label": "第一财经 — Jul 23 MOFCOM SCIO briefing",
+      "href": "https://www.yicai.com/video/103289678.html"
+    },
+    {
+      "label": "第一财经 — Jul 23 PBOC OMO",
+      "href": "https://www.yicai.com/news/103288621.html"
+    },
+    {
+      "label": "BlockBeats — Jul 21 Korea deleveraging",
+      "href": "https://www.theblockbeats.info/news/63105"
     },
     {
       "label": "CNBC — Alphabet Q2 2026 (Jul 22)",
@@ -142,31 +158,45 @@
     },
     {
       "id": "asia-bars",
-      "title": "Jul 22 A-share official close % change",
+      "title": "Jul 23 A-share official close % change",
       "kind": "bars",
       "unit": "%",
-      "note": "Official close — 华尔街见闻 Jul 23 breakfast (profit-taking after Jul 21 chip V-reversal)",
+      "note": "Official close — 新华财经 / 金融界 Jul 23 (grid/energy up, semis down)",
       "source": {
-        "label": "华尔街见闻 Jul 23",
-        "href": "https://wallstreetcn.com/articles/3777720"
+        "label": "新华财经 Jul 23",
+        "href": "https://m.cnfin.com/yw-lb/zixun/20260723/4444983_1.html"
       },
+      "sources": [
+        {
+          "label": "新华财经 Jul 23",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260723/4444983_1.html"
+        },
+        {
+          "label": "金融界 Jul 23",
+          "href": "https://stock.jrj.com.cn/2026/07/23150457881109.shtml"
+        }
+      ],
       "points": [
         {
           "label": "Shanghai",
-          "value": 0.07
+          "value": 0.25
         },
         {
           "label": "Shenzhen",
-          "value": -1.42
+          "value": 0.44
         },
         {
           "label": "ChiNext",
-          "value": -3.23
+          "value": 0.25
+        },
+        {
+          "label": "STAR 50",
+          "value": -3.78
         }
       ]
     }
   ],
-  "marketTone": "Jul 22 Mag 7 earnings split the AI tape — Alphabet cloud +82% but FY26 capex raised to $195–205bn (stock −4% AMC) while Tesla revenue +26% missed on opex +47% and negative FCF (stock −5% AMC). Brent settled $94.07 (+3.36%) on Houthi Red Sea tanker hits; 30y held ~5.14% for a record 12th day above 5% (Bloomberg chart). China MOF Jul 22 flagged slower H1 expenditure (+1.5%) as fiscal tightening signal.",
+  "marketTone": "Jul 22 Mag 7 earnings split the AI tape — Alphabet cloud +82% but FY26 capex raised to $195–205bn (stock −4% AMC) while Tesla revenue +26% missed on opex +47% and negative FCF (stock −5% AMC). Brent settled $94.07 (+3.36%) on Houthi Red Sea tanker hits; 30y held ~5.14% for a record 12th day above 5% (Bloomberg chart). Jul 23 China close: Shanghai +0.25% to 3876.78 with grid/energy/lithium leading and 科创50 −3.78%; MOFCOM flagged $30bn reciprocal tariff-cut framework talks; PBOC CNY2040bn ops vs CNY6260bn maturity (第一财经).",
   "summary": [
     {
       "text": "Jul 22 US official close (Motley Fool/Yahoo): S&P −0.14% to 7,498.96, Nasdaq −0.57% to 25,690.90, Dow −0.01% to 52,218.58 — energy led while tech softened ahead of Mag 7 AMC. Brent settled $94.07 (+3.36%) and WTI $86.83 (+2.95%) after Houthi missile hits on Saudi Red Sea tankers (CBS Jul 22); 10y ~4.63% (+3 bp) and 30y ~5.14% (12th straight day above 5%).",
@@ -246,11 +276,23 @@
       ]
     },
     {
-      "text": "Jul 23 Asia early session (华尔街见闻 Jul 23 breakfast): ChiNext −3%+, HSTech −3%+, Tencent −7% on gaming concerns; metals/resources bid vs AI hardware unwind — follows Jul 22 official close Shanghai +0.07% / ChiNext −3.23% profit-taking.",
+      "text": "Jul 23 A-share official close (新华财经 / 金融界 Jul 23): Shanghai +0.25% to 3876.78, Shenzhen +0.44% to 14123.31, ChiNext +0.25% to 3575.52, 科创50 −3.78%; turnover 2.2万亿元 with 4200+ stocks up. Grid equipment, lithium and power led; semiconductors weak (华虹宏力 −12%+). MOFCOM SCIO (第一财经 Jul 23): US-China teams exploring $30bn-each reciprocal tariff-cut framework. PBOC Jul 23 OMO: CNY2040亿元 7-day ops vs CNY6260亿元 maturing at 1.40% (第一财经).",
       "sources": [
         {
-          "label": "华尔街见闻 Jul 23",
-          "href": "https://wallstreetcn.com/articles/3777720"
+          "label": "新华财经 Jul 23",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260723/4444983_1.html"
+        },
+        {
+          "label": "金融界 Jul 23",
+          "href": "https://stock.jrj.com.cn/2026/07/23150457881109.shtml"
+        },
+        {
+          "label": "第一财经 MOFCOM Jul 23",
+          "href": "https://www.yicai.com/video/103289678.html"
+        },
+        {
+          "label": "第一财经 PBOC Jul 23",
+          "href": "https://www.yicai.com/news/103288621.html"
         }
       ]
     }
@@ -390,7 +432,7 @@
     }
   ],
   "globalTensions": "Alphabet cloud +82% vs capex $195–205bn and negative FCF; Tesla revenue +26% vs EPS miss and opex +47%; Jul 22 S&P −0.14% vs Brent $94.07; 30y >5% vs Jul 14–15 CPI/PPI misses; Fed hike debate vs retail record buying.",
-  "chinaStance": "Fiscal tightening signal — Jun expenditure largest drop since Oct 2025 and H1 broad deficit narrowed 13% y/y (彭博 Jul 23) despite MOF H1 expenditure +1.5%; no LPR-cut signal while Brent ≥$94. Diplomatic channel active (王毅–卢比奥); AI IP friction (白宫 vs 月之暗面) keeps tech/trade risk live.",
+  "chinaStance": "Fiscal tightening signal — Jun expenditure largest drop since Oct 2025 and H1 broad deficit narrowed 13% y/y (彭博 Jul 23) despite MOF H1 expenditure +1.5%; Jul 23 PBOC CNY2040bn ops vs CNY6260bn maturity reinforces quantity tightening. Diplomatic channel active (王毅–卢比奥; MOFCOM $30bn tariff-cut framework talks Jul 23); AI IP friction (白宫 vs 月之暗面) keeps tech/trade risk live.",
   "chinaChanged": [
     {
       "text": "中国6月财政支出创去年10月份以来最大降幅，上半年广义赤字同比收窄13%，表明财政政策进一步收紧（彭博 Jul 23）。MOF Jul 22：上半年全国一般公共预算收入121047亿元（+4.7%），支出143329亿元（+1.5%）；证券交易印花税同比大增97.3%。",
@@ -485,8 +527,38 @@
       ]
     },
     {
-      "text": "Jul 22 A-share official close (华尔街见闻 Jul 23): 上证 +0.07% to 3867.03, 深证 −1.42%, 创业板 −3.23% — profit-taking after Jul 21 chip V-reversal. Jul 23 early session: 创业板跌超3%, 恒科指跌超3%, 腾讯 −7%+.",
+      "text": "Jul 23 MOFCOM SCIO H1 briefing (第一财经 Jul 23): US-China teams discussing trade-council architecture and exploring各自300亿美元规模对等降税框架安排; soliciting stakeholder comments on both sides. Caixin Jul 23: MOFCOM 「强烈不满」EU €550mn AliExpress DSA fine and French fast-fashion law targeting Shein/Temu.",
       "sources": [
+        {
+          "label": "第一财经 MOFCOM Jul 23",
+          "href": "https://www.yicai.com/video/103289678.html"
+        },
+        {
+          "label": "Caixin EU e-commerce Jul 23",
+          "href": "https://www.caixinglobal.com/2026-07-23/beijing-pushes-back-as-europe-tightens-pressure-on-chinese-e-commerce-102467126.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 23 PBOC OMO (第一财经): CNY2040亿元 7-day reverse repo at 1.40%; CNY6260亿元 maturing same day.",
+      "sources": [
+        {
+          "label": "第一财经 PBOC Jul 23",
+          "href": "https://www.yicai.com/news/103288621.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 23 A-share official close (新华财经 / 金融界): 上证 +0.25% to 3876.78, 深证 +0.44% to 14123.31, 创业板 +0.25% to 3575.52; 科创50 −3.78%; turnover 2.2 万亿元; 4200+ stocks up. Grid equipment, lithium, power led; semis/storage weak (华虹宏力 −12%+). Follows Jul 22 close 上证 +0.07% / 创业板 −3.23% (华尔街见闻 Jul 23 breakfast).",
+      "sources": [
+        {
+          "label": "新华财经 Jul 23",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260723/4444983_1.html"
+        },
+        {
+          "label": "金融界 Jul 23",
+          "href": "https://stock.jrj.com.cn/2026/07/23150457881109.shtml"
+        },
         {
           "label": "华尔街见闻 Jul 23",
           "href": "https://wallstreetcn.com/articles/3777720"
@@ -505,16 +577,16 @@
   ],
   "chinaImplies": [
     {
-      "text": "Jun fiscal expenditure drop + H1 deficit narrowing signal quantity tightening even as MOF reports +1.5% H1 spending — oil import inflation and stamp-tax revenue surge complicate easing expectations."
+      "text": "Jun fiscal expenditure drop + H1 deficit narrowing signal quantity tightening even as MOF reports +1.5% H1 spending — Jul 23 PBOC CNY2040亿元 ops vs CNY6260亿元 maturity reinforces no near-term LPR-cut bias while Brent ≥$94."
     },
     {
-      "text": "Kimi K3 IP scrutiny (白宫) vs Altman praise keeps China AI narrative two-sided — diplomatic channel (王毅–卢比奥) active but tech decoupling risk not priced out."
+      "text": "Kimi K3 IP scrutiny (白宫) vs Altman praise keeps China AI narrative two-sided — diplomatic channel (王毅–卢比奥; MOFCOM $30bn tariff framework Jul 23) active but tech decoupling risk not priced out."
     },
     {
-      "text": "Jul 23 early ChiNext −3%+ / Tencent −7% tests whether Jul 22 profit-taking extends into Mag 7 AMC disappointment — metals bid vs AI hardware unwind is the intraday split."
+      "text": "Jul 23 Shanghai +0.25% with 4200+ advancers but 科创50 −3.78% marks orderly rotation from AI hardware to grid/energy/lithium — Mag 7 AMC disappointment did not break onshore tape."
     }
   ],
-  "chinaDivergences": "Jul 22 Shanghai +0.07% vs ChiNext −3.23% vs Jul 23 HSTech −3%+; Alphabet cloud +82% vs China AI IP friction; Brent $94+ vs MOF fiscal tightening; Korea KOSPI deleveraging (BlockBeats) vs AI capex guides still rising globally.",
+  "chinaDivergences": "Jul 23 Shanghai +0.25% vs 科创50 −3.78% vs Jul 22 ChiNext −3.23%; Alphabet cloud +82% vs China AI IP friction; Brent $94+ vs MOF fiscal tightening + PBOC CNY2040亿元 ops vs CNY6260亿元 maturity; Korea KOSPI deleveraging (BlockBeats Jul 21) vs global AI capex guides still rising.",
   "assetFramework": [
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
@@ -623,30 +695,38 @@
     },
     {
       "asset": "China equities (Shanghai / ChiNext)",
-      "regime": "Fiscal tightening signal vs post-rally profit-taking; global Mag 7 beta",
-      "driver": "Jul 22 close Shanghai +0.07%, ChiNext −3.23%; Jul 23 early ChiNext −3%+, Tencent −7%; MOF H1 expenditure +1.5%; Jun expenditure drop (彭博)",
+      "regime": "Fiscal tightening + sector rotation — grid/energy vs AI hardware unwind",
+      "driver": "Jul 23 Shanghai +0.25% to 3876.78, ChiNext +0.25% to 3575.52, 科创50 −3.78%; turnover 2.2万亿元 (金融界 Jul 23); MOFCOM $30bn tariff framework (第一财经 Jul 23); PBOC CNY2040bn 7-day ops vs CNY6260bn maturity (第一财经 Jul 23)",
       "driverSources": [
         {
-          "label": "华尔街见闻 Jul 23",
-          "href": "https://wallstreetcn.com/articles/3777720"
+          "label": "金融界 Jul 23",
+          "href": "https://stock.jrj.com.cn/2026/07/23150457881109.shtml"
         },
         {
-          "label": "MOF Jul 22",
-          "href": "http://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202607/t20260722_3994019.htm"
+          "label": "新华财经 Jul 23",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260723/4444983_1.html"
         },
         {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "第一财经 MOFCOM Jul 23",
+          "href": "https://www.yicai.com/video/103289678.html"
+        },
+        {
+          "label": "第一财经 PBOC Jul 23",
+          "href": "https://www.yicai.com/news/103288621.html"
         }
       ],
-      "read": "Onshore hardware profit-taking extends into Jul 23 open while resources/metals bid — fiscal tightening narrative caps policy-beta hopes",
-      "invalidator": "Shanghai reclaims 3900 on rising volume with ChiNext +2% same week despite Brent ≥$94"
+      "read": "Broad market held (+0.25% indices) with 4200+ advancers while semis de-risked (科创50 −3.78%) — rotation to grid/lithium/power, not a risk-off break despite Mag 7 AMC",
+      "invalidator": "Shanghai breaks below 3800 on rising volume with STAR50 −5% for two sessions despite Brent ≥$94"
     },
     {
       "asset": "CNY",
       "regime": "PBOC fix as policy signal; fiscal tightening without price easing",
-      "driver": "MOF H1 expenditure +1.5% (Jul 22 briefing); Jun expenditure drop per 彭博 inbox; Brent $94.07 settle import-inflation constraint (华尔街见闻 Jul 23)",
+      "driver": "Jul 23 PBOC CNY2040亿元 7-day reverse repo at 1.40% vs CNY6260亿元 maturing (第一财经 Jul 23); MOF H1 expenditure +1.5%; Brent $94.07 settle",
       "driverSources": [
+        {
+          "label": "第一财经 PBOC Jul 23",
+          "href": "https://www.yicai.com/news/103288621.html"
+        },
         {
           "label": "MOF Jul 22",
           "href": "http://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202607/t20260722_3994019.htm"
@@ -654,13 +734,9 @@
         {
           "label": "华尔街见闻 Jul 23",
           "href": "https://wallstreetcn.com/articles/3777720"
-        },
-        {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "read": "Fiscal tightening + oil ≥$94 argue against near-term LPR cut; diplomacy keeps trade channel open but not a depreciation signal",
+      "read": "Large net OMO withdrawal + fiscal tightening argue against near-term LPR cut; MOFCOM tariff framework keeps trade channel open but not a depreciation signal",
       "invalidator": "Fix persistently weaker than model estimates for a week with MOF announcing new broad stimulus"
     },
     {
@@ -778,16 +854,20 @@
     },
     {
       "grade": "MODERATE",
-      "name": "Jul 22–23 A-share / H-share AI profit-taking",
-      "evidence": "华尔街见闻 Jul 23: Jul 22 ChiNext −3.23%; Jul 23 early ChiNext −3%+, HSTech −3%+, Tencent −7%.",
+      "name": "Jul 23 A-share rotation — broad up, semis down",
+      "evidence": "金融界 Jul 23: Shanghai +0.25% to 3876.78, ChiNext +0.25% to 3575.52, 科创50 −3.78%; 4200+ stocks up; grid/lithium/power led, 华虹宏力 −12%+.",
       "evidenceSources": [
         {
-          "label": "华尔街见闻 Jul 23",
-          "href": "https://wallstreetcn.com/articles/3777720"
+          "label": "新华财经 Jul 23",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260723/4444983_1.html"
+        },
+        {
+          "label": "金融界 Jul 23",
+          "href": "https://stock.jrj.com.cn/2026/07/23150457881109.shtml"
         }
       ],
-      "mechanism": "Orderly de-risk after Jul 21 chip V-reversal — Mag 7 AMC adds second leg risk.",
-      "disprovedIf": "ChiNext +3% within three sessions with turnover >3tn yuan and STAR50 >+5%."
+      "mechanism": "Orderly sector rotation after Jul 22 chip profit-taking — Mag 7 AMC adds semis pressure but onshore indices held on grid/energy/lithium bid.",
+      "disprovedIf": "ChiNext −5% two sessions with Shanghai <3800 despite MOFCOM tariff talks."
     },
     {
       "grade": "WEAK",
@@ -808,7 +888,7 @@
       "priority": "HIGH",
       "headline": "Jul 23 ECB hold + Lagarde presser (20:15/20:45 CET)",
       "why": "STRONG oil + 30y >5% regime; Bloomberg inbox calendar.",
-      "watch": "Deposit rate expected hold 2.25% (post-Jun +25bp); Lagarde on oil pass-through vs growth.\"",
+      "watch": "Deposit rate expected hold 2.25% (post-Jun +25bp); Lagarde on oil pass-through vs growth.",
       "trigger": "Hawkish hold with explicit second-hike signal and EUR higher while Brent ≥$94.",
       "invalidator": "Dovish hold citing growth risks with 10y bund yields falling despite Brent ≥$92.",
       "horizon": "days",
@@ -817,7 +897,7 @@
     {
       "priority": "HIGH",
       "headline": "Mag 7 capex follow-through — Alphabet/Tesla AMC",
-      "why": "STRONG split earnings signal; Nasdaq futures −1% (Motley Fool).\"",
+      "why": "STRONG split earnings signal; Nasdaq futures −1% (Motley Fool).",
       "watch": "GOOG −4% / TSLA −5% AMC; CoreWeave +3.7%; SOX/Nasdaq Thu cash reaction.",
       "trigger": "S&P closes below 7,450 with SOX −3% same week as capex guides hold.",
       "invalidator": "Mag 7 reclaims AMC losses with SOX +3% and Brent settle <$88.",
@@ -827,7 +907,7 @@
     {
       "priority": "HIGH",
       "headline": "Brent $94.07 vs Red Sea / Hormuz flows",
-      "why": "STRONG dual-chokepoint oil signal.\"",
+      "why": "STRONG dual-chokepoint oil signal.",
       "watch": "Official Thu Brent settle; Houthis Saudi embargo follow-through; Iran Hormuz threats.",
       "trigger": "Two consecutive official settles ≥$96.",
       "invalidator": "Official settle below $85 for three sessions with Red Sea transits normalizing.",
@@ -837,7 +917,7 @@
     {
       "priority": "HIGH",
       "headline": "US initial jobless claims (Jul 23 20:30)",
-      "why": "Bloomberg inbox calendar; Fed hike debate live.\"",
+      "why": "Bloomberg inbox calendar; Fed hike debate live.",
       "watch": "Consensus 211k vs prior 208k; 10y reaction with 30y already >5%.",
       "trigger": "Claims beat estimate (>211k) with 10y >4.70% and Sep hike odds rising.",
       "invalidator": "Claims miss estimate (<211k) with 10y <4.55% despite Brent ≥$92.",
@@ -846,38 +926,38 @@
     },
     {
       "priority": "MEDIUM",
-      "headline": "China SWIFT RMB tracker + MOFCOM briefing (Jul 23)",
-      "why": "Bloomberg inbox 09:00 SWIFT; 15:00 MOFCOM H1 briefing.\"",
-      "watch": "Jun SWIFT RMB share vs 2.75% prior; fiscal tightening vs trade data.",
-      "trigger": "RMB SWIFT share falls m/m with MOFCOM citing weak external demand.",
-      "invalidator": "RMB share rises with MOFCOM announcing new consumption/support measures.",
+      "headline": "China MOFCOM SCIO H1 briefing (Jul 23 — done)",
+      "why": "MOFCOM $30bn reciprocal tariff-cut framework flagged at SCIO.",
+      "watch": "Follow-through on trade-council architecture; EU €550mn AliExpress fine response (Caixin Jul 23).",
+      "trigger": "Concrete product list for $30bn tariff cuts announced within two weeks.",
+      "invalidator": "Talks stall with new export-control headlines and CNH weakness >0.3% in a week.",
+      "horizon": "weeks",
+      "status": "continuing"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Jul 23 A-share rotation vs Mag 7 AMC",
+      "why": "MODERATE rotation signal — Shanghai +0.25% but 科创50 −3.78%.",
+      "watch": "Thu A-share follow-through; grid/lithium vs semis breadth; HS300 ETF flows.",
+      "trigger": "ChiNext −5% two sessions with Shanghai <3800 despite tariff-talk headlines.",
+      "invalidator": "ChiNext +3% within three sessions with turnover >3tn yuan and 科创50 >+5%.",
       "horizon": "days",
-      "status": "new"
+      "status": "continuing"
     },
     {
       "priority": "MEDIUM",
       "headline": "王毅上合组织外长会 (Jul 23–25)",
-      "why": "彭博 央行和政府动态 diplomatic calendar.\"",
-      "watch": "Gilgit SCO FMM; US-China follow-through after Rubio meeting.",
+      "why": "彭博 央行和政府动态 diplomatic calendar.",
+      "watch": "Gilgit SCO FMM; US-China follow-through after Rubio meeting and MOFCOM tariff talks.",
       "trigger": "Marketable trade/diplomatic breakthrough on AI/tariff channel.",
       "invalidator": "Events pass with no policy delta priced in CNH or H-shares.",
-      "horizon": "days",
-      "status": "new"
-    },
-    {
-      "priority": "MEDIUM",
-      "headline": "Jul 23 A-share open vs Jul 22 profit-taking",
-      "why": "MODERATE ChiNext −3.23% Jul 22 + early Jul 23 −3%+.\"",
-      "watch": "Shanghai holds 3867+; Tencent/HSTech vs metals/resources bid.",
-      "trigger": "ChiNext −5% two sessions with Shanghai <3800 despite MOFCOM briefing.",
-      "invalidator": "ChiNext +3% within three sessions with turnover >3tn yuan.",
       "horizon": "days",
       "status": "continuing"
     },
     {
       "priority": "LOW",
       "headline": "Intel Q2 earnings Jul 23 AMC",
-      "why": "IBM/TI mixed guides; AI infra split narrative.\"",
+      "why": "IBM/TI mixed guides; AI infra split narrative.",
       "watch": "Data Center/AI revenue vs Q1; 18A foundry commentary.",
       "trigger": "DC/AI miss with guide cut and SOX −3% same session.",
       "invalidator": "Beat with stable GM guide and Intel +5% next day.",
@@ -885,8 +965,8 @@
       "status": "new"
     }
   ],
-  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 23), CNBC (Alphabet/Tesla Jul 22 earnings), Motley Fool (Jul 22 US close), 华尔街见闻 3777720 (Jul 23 breakfast), CBS (Jul 22 Red Sea), MOF (Jul 22 H1 fiscal), Caixin (Jul 23 Nike/Topsports), 第一财经 103286218 (Jul 21 Kimi), BlockBeats 63105 (Jul 21 Korea deleveraging), CNBC (Jul 21 Treasury context).",
-  "singleSource": "Bloomberg 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-23.png (30y days above 5%). IBM/TI detail primarily via 彭博 inbox + 华尔街见闻 — no standalone CNBC IBM print fetched. Jun fiscal expenditure drop magnitude via 彭博 inbox only (MOF Jul 22 gives H1 +1.5% not single-month). Glassnode not merged — no fresh capture. Morning slot (Beijing 08:00): Jul 22 US close + AMC earnings as spine; Jul 23 Asia early-session color from 华尔街见闻 (not official Jul 23 close).",
+  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 23), 新华财经 (Jul 23 A-share close), 第一财经 (Jul 23 MOFCOM SCIO / PBOC OMO), CNBC (Alphabet/Tesla Jul 22 earnings), Motley Fool (Jul 22 US close), 华尔街见闻 3777720 (Jul 23 breakfast), CBS (Jul 22 Red Sea), MOF (Jul 22 H1 fiscal), Caixin (Jul 23 Nike/EU e-commerce), BlockBeats 63105 (Jul (Jul 21 Korea deleveraging), CNBC (Jul 21 Treasury).",
+  "singleSource": "Bloomberg 今日图表 PNG at web/public/inbox-charts/bloomberg-2026-07-23.png (30y days above 5% — 2026 YTD ~26–27 days per chart bars). Jun fiscal expenditure drop magnitude via 彭博 inbox only (MOF Jul 22 gives H1 +1.5% not single-month). SWIFT Jun RMB tracker (09:00 Bloomberg calendar) not yet published for Jul 2026 — latest available Mar 2026 SWIFT print. ECB (20:15 CET) and US jobless claims (20:30 UTC) pending at evening publish. Evening slot (Beijing 20:00): Jul 23 China official close + MOFCOM SCIO merged; Jul 22 US close + AMC earnings remain global spine.",
   "marketOverview": {
     "asOfDate": "2026-07-22",
     "note": "Qualitative desk color from 彭博财经早茶 — not official closes.",
@@ -926,7 +1006,7 @@
     ]
   },
   "marketDashboard": {
-    "asOf": "2026-07-23T00:20:13.561Z",
+    "asOf": "2026-07-23T12:27:50.541Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -960,10 +1040,10 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "16.64",
-            "change": "−2.40%",
-            "changeDirection": "down",
-            "asOfDate": "2026-07-22",
+            "latest": "18.28",
+            "change": "+9.86%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (^VIX)",
               "href": "https://finance.yahoo.com/quote/%5EVIX/"
@@ -972,8 +1052,8 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "66,896.85",
-            "change": "+1.00%",
+            "latest": "66,422.60",
+            "change": "+0.46%",
             "changeDirection": "up",
             "asOfDate": "2026-07-23",
             "source": {
@@ -984,10 +1064,10 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,132.29",
-            "change": "−0.04%",
-            "changeDirection": "down",
-            "asOfDate": "2026-07-21",
+            "latest": "25,210.81",
+            "change": "+1.28%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (^HSI)",
               "href": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -996,10 +1076,10 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,668.23",
+            "latest": "4,698.48",
             "change": null,
             "changeDirection": "flat",
-            "asOfDate": "2026-07-22",
+            "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (HSTECH.HK)",
               "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
@@ -1008,10 +1088,10 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,864.37",
-            "change": "+1.79%",
+            "latest": "3,876.78",
+            "change": "+0.25%",
             "changeDirection": "up",
-            "asOfDate": "2026-07-21",
+            "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (000001.SS)",
               "href": "https://finance.yahoo.com/quote/000001.SS/"
@@ -1080,9 +1160,9 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "163.1060",
-            "change": "−0.05%",
-            "changeDirection": "down",
+            "latest": "163.5600",
+            "change": "+0.23%",
+            "changeDirection": "up",
             "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (JPY=X)",
@@ -1092,10 +1172,10 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7656",
-            "change": "−0.10%",
+            "latest": "6.7602",
+            "change": "−0.08%",
             "changeDirection": "down",
-            "asOfDate": "2026-07-21",
+            "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (CNY=X)",
               "href": "https://finance.yahoo.com/quote/CNY%3DX/"
@@ -1104,9 +1184,9 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,131.00",
-            "change": "+1.47%",
-            "changeDirection": "up",
+            "latest": "$4,079.40",
+            "change": "−1.63%",
+            "changeDirection": "down",
             "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (GC=F)",
@@ -1116,9 +1196,9 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$95.86",
-            "change": "+5.33%",
-            "changeDirection": "up",
+            "latest": "$93.38",
+            "change": "−0.73%",
+            "changeDirection": "down",
             "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (BZ=F)",
@@ -1128,8 +1208,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$66,140",
-            "change": "−0.63%",
+            "latest": "$65,404",
+            "change": "−0.65%",
             "changeDirection": "down",
             "asOfDate": "2026-07-23",
             "source": {
@@ -1140,9 +1220,9 @@
           {
             "id": "btc-funding",
             "asset": "BTC funding rate",
-            "latest": "0.0035%",
-            "change": "+0.273 bp",
-            "changeDirection": "up",
+            "latest": "-0.0033%",
+            "change": "−0.678 bp",
+            "changeDirection": "down",
             "asOfDate": "2026-07-23",
             "source": {
               "label": "OKX funding API",

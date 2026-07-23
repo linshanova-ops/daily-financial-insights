@@ -1,6 +1,6 @@
 {
   "wallstreetcnArticleIds": ["3751205", "3751275", "3751638", "3751515", "3751711", "3751602"],
-  "blockbeatsFlashIds": ["302924", "303605", "303615"],
+  "blockbeatsFlashIds": ["302924", "303605", "303615", "357620"],
   "blockbeatsNewsIds": ["59062", "59103"],
   "exactUrlSubstrings": [
     "wallstreetcn.com/articles/3751205",
@@ -13,7 +13,8 @@
     "theblockbeats.info/flash/303605",
     "theblockbeats.info/flash/303615",
     "theblockbeats.info/news/59062",
-    "theblockbeats.info/news/59103"
+    "theblockbeats.info/news/59103",
+    "theblockbeats.info/flash/357620"
   ],
   "notes": [
     "3751205 — 2025 A/H wrap (Shanghai −0.03% / Hang Seng −0.29%) reused for Jul 16 2026",
@@ -26,6 +27,7 @@
     "303605 — BlockBeats BTC $120k liquidation flash inconsistent with Jul 2026 ~$64k tape",
     "303615 — BlockBeats James Wynn BTC $118,078 short flash inconsistent with Jul 2026 tape",
     "59062 — BlockBeats Polymarket QCEX article page dates only 2025 on Jul 2026 sweep",
-    "59103 — BlockBeats ETH unstaking article page dates only 2023–2024 on Jul 2026 sweep"
+    "59103 — BlockBeats ETH unstaking article page dates only 2023–2024 on Jul 2026 sweep",
+    "357620 — BlockBeats ECB preview flash resolves to 2025 via scan-links API (Jul 2026 sweep)"
   ]
 }
