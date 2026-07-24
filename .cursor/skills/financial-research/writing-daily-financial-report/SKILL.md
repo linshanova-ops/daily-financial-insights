@@ -55,7 +55,8 @@ Before finalizing website YAML, re-check:
 8. **Crypto prints:** prefer dated Cointelegraph / CoinDesk / Yahoo Finance BTC-USD (or similar) over a single BlockBeats HTX flash. If BlockBeats is used for crypto color, triangulate the level against an independent dated source before publishing.
 9. Every `href` on a sourced fact must support the number claimed; if the page is wrong-year or off-level, replace the source — do not keep a convenient link.
 10. **Site-wide publish gate:** after writing YAML, from `web/` run **`npm run verify-briefing`** (sync-data, JSON-in-git check, then scan-links). It fetches **all** cited hrefs (every briefing field + `web/src`), checks publication year, and verifies claim numbers appear on the cited page(s). Failures block publish; fix the cite/claim or add bad IDs to `web/scripts/rejected-source-ids.json`.
-11. **Commit markdown + JSON together** — never push briefing `.md` without regenerated `web/public/data/briefings/*.json` and `latest.json` from the same verify run.
+11. **Live market dashboard on every update** — before verify/commit, from `web/` run `node scripts/fetch-market-closes.mjs --inject content/briefings/YYYY-MM-DD.md` so `marketDashboard.asOf` and row prints reflect the latest available closes/intraday (Asia same-day where open; US prior session until US cash close). Set `publishedAt` to current UTC at that same moment (not the first draft time). Note the re-inject timestamp in `singleSource`.
+12. **Commit markdown + JSON together** — never push briefing `.md` without regenerated `web/public/data/briefings/*.json` and `latest.json` from the same verify run.
 
 ## Mandatory Disclaimer
 
