@@ -2,7 +2,7 @@
   "date": "2026-07-24",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 23–24, 2026",
-  "publishedAt": "2026-07-24T03:51:55.000Z",
+  "publishedAt": "2026-07-24T04:01:10.000Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 24)",
@@ -799,9 +799,9 @@
     ]
   },
   "sources": "CNBC (Jul 23 Brent/WTI settle, Intel earnings), AP (Jul 23 jobless claims), ECB (Jul 23 decision), CBS/华尔街见闻 (Jul 23 forced-labor tariffs), US Treasury (July 2026 FX report PDF), Intel IR (Q2 2026), STL.News (Jul 23 US closes), 彭博 Markets Daily China / 财经早茶 (Jul 24 inbox), 第一财经 (Jul 23 CSRC), 新华网 (Jul 23 PBOC MLF), Caixin Global (Jul 23 EU e-commerce), 华尔街见闻 (3777821 tariffs, 3777421 CSRC), BlockBeats (63137 Alphabet Q2), 新浪财经 (Jul 23 乘联会).",
-  "singleSource": "Jul 24 华尔街见闻 breakfast not yet indexed at publish time — used Jul 23 articles 3777821/3777421 plus 第一财经/Caixin/新浪财经 for China desk triangulation. Mag 7 −$800bn cited via 彭博 inbox (stable bloomberg.com/asia href) as Chinese desk color only. Gold Jul 23 move from 彭博市场一览 desk color only — no COMEX settle verified this run. Morning slot refresh: marketDashboard re-injected at 2026-07-24T03:51:55Z; publishedAt updated to match.",
+  "singleSource": "Jul 24 华尔街见闻 breakfast not yet indexed at publish time — used Jul 23 articles 3777821/3777421 plus 第一财经/Caixin/新浪财经 for China desk triangulation. Mag 7 −$800bn cited via 彭博 inbox (stable bloomberg.com/asia href) as Chinese desk color only. Gold Jul 23 move from 彭博市场一览 desk color only — no COMEX settle verified this run. Morning slot refresh: marketDashboard re-injected at 2026-07-24T04:01:10Z; publishedAt updated to match.",
   "marketDashboard": {
-    "asOf": "2026-07-24T03:51:55.260Z",
+    "asOf": "2026-07-24T04:01:10.204Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -847,8 +847,8 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "64,349.29",
-            "change": "−3.12%",
+            "latest": "64,354.40",
+            "change": "−3.11%",
             "changeDirection": "down",
             "asOfDate": "2026-07-24",
             "source": {
@@ -859,7 +859,7 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "24,894.87",
+            "latest": "24,895.84",
             "change": "−1.25%",
             "changeDirection": "down",
             "asOfDate": "2026-07-24",
@@ -871,7 +871,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,613.34",
+            "latest": "4,618.48",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-07-24",
@@ -955,8 +955,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "163.8070",
-            "change": "+0.45%",
+            "latest": "163.7980",
+            "change": "+0.44%",
             "changeDirection": "up",
             "asOfDate": "2026-07-24",
             "source": {
@@ -979,10 +979,10 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,034.90",
-            "change": "−0.29%",
+            "latest": "$4,046.60",
+            "change": "−2.42%",
             "changeDirection": "down",
-            "asOfDate": "2026-07-24",
+            "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (GC=F)",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -991,10 +991,10 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$100.82",
-            "change": "+0.13%",
+            "latest": "$100.69",
+            "change": "+7.04%",
             "changeDirection": "up",
-            "asOfDate": "2026-07-24",
+            "asOfDate": "2026-07-23",
             "source": {
               "label": "Yahoo Finance (BZ=F)",
               "href": "https://finance.yahoo.com/quote/BZ%3DF/"
@@ -1003,8 +1003,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$65,393",
-            "change": "−0.35%",
+            "latest": "$65,408",
+            "change": "−0.29%",
             "changeDirection": "down",
             "asOfDate": "2026-07-24",
             "source": {
