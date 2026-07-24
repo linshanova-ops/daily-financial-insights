@@ -1,20 +1,20 @@
 {
-  "at": "2026-07-24T00:01:17.491Z",
+  "at": "2026-07-24T12:01:18.809Z",
   "briefingDate": "2026-07-24",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-24.md",
-      "subject": "彭博财经早茶：美国宣布强迫劳动关税；美伊冲突升级推动油价大涨",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5426,
-      "mailbox": "INBOX",
-      "chartImage": "/inbox-charts/bloomberg-2026-07-24.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-24.png"
+      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美国宣布强迫劳动关税；美伊冲突升级推动油价大涨",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-24.md"
+    },
     {
       "reason": "date-mismatch",
       "subject": "彭博财经早茶：油轮红海遇袭；Alphabet上调支出预估",
