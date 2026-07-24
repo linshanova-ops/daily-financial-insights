@@ -14,7 +14,8 @@
     "theblockbeats.info/flash/303615",
     "theblockbeats.info/news/59062",
     "theblockbeats.info/news/59103",
-    "theblockbeats.info/news/63149"
+    "theblockbeats.info/news/63149",
+    "cls.cn/detail/2436193"
   ],
   "notes": [
     "3751205 — 2025 A/H wrap (Shanghai −0.03% / Hang Seng −0.29%) reused for Jul 16 2026",
@@ -28,6 +29,7 @@
     "303615 — BlockBeats James Wynn BTC $118,078 short flash inconsistent with Jul 2026 tape",
     "59062 — BlockBeats Polymarket QCEX article page dates only 2025 on Jul 2026 sweep",
     "59103 — BlockBeats ETH unstaking article page dates only 2023–2024 on Jul 2026 sweep",
-    "63149 — BlockBeats Korea/Changxin article page dates only 2025 on Jul 2026 sweep (use Seoul Economic Daily + 新浪财经)"
+    "63149 — BlockBeats Korea/Changxin article page dates only 2025 on Jul 2026 sweep (use Seoul Economic Daily + 新浪财经)",
+    "2436193 — cls.cn A-share收评 fetch fails in CI (use 新浪财经 Jul 24 close)"
   ]
 }
