@@ -2,11 +2,35 @@
   "date": "2026-07-24",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 23–24, 2026",
-  "publishedAt": "2026-07-24T04:01:10.000Z",
+  "publishedAt": "2026-07-24T12:20:08.373Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 24)",
       "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "新浪财经 — Jul 24 A-share close",
+      "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniiwvke9315830.shtml"
+    },
+    {
+      "label": "The Standard — Jul 24 HSI close",
+      "href": "https://www.thestandard.com.hk/finance/article/338160/HSI-closes-below-25000-points-Alibaba-down-4pc"
+    },
+    {
+      "label": "Japan Times — Jul 24 June CPI",
+      "href": "https://www.japantimes.co.jp/business/2026/07/24/economy/japan-inflation-picks-up-june/"
+    },
+    {
+      "label": "第一财经 — Jul 24 盘前必读",
+      "href": "https://www.yicai.com/news/103290226.html"
+    },
+    {
+      "label": "财新 — Jul 24 T早报",
+      "href": "https://www.caixin.com/2026-07-24/102467446.html"
+    },
+    {
+      "label": "BlockBeats — Jul 24 Celestia TIA (304390)",
+      "href": "https://www.theblockbeats.info/flash/304390"
     },
     {
       "label": "STL.News — Jul 23 US closes",
@@ -163,10 +187,54 @@
           "value": -2.2
         }
       ]
+    },
+    {
+      "id": "asia-bars",
+      "title": "Jul 24 Asia session % change",
+      "kind": "bars",
+      "unit": "%",
+      "note": "Official closes — 新浪财经 Jul 24; HSI via The Standard Jul 24",
+      "source": {
+        "label": "新浪财经 Jul 24",
+        "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniiwvke9315830.shtml"
+      },
+      "sources": [
+        {
+          "label": "新浪财经 Jul 24",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniiwvke9315830.shtml"
+        },
+        {
+          "label": "The Standard Jul 24 HSI",
+          "href": "https://www.thestandard.com.hk/finance/article/338160/HSI-closes-below-25000-points-Alibaba-down-4pc"
+        }
+      ],
+      "points": [
+        {
+          "label": "Shanghai",
+          "value": -1.61
+        },
+        {
+          "label": "HSI",
+          "value": -0.98
+        }
+      ]
     }
   ],
-  "marketTone": "Jul 23 US session: S&P −1.2% to 7,408.30 and Nasdaq −2.2% to 25,137.69 — worst day since Jun 23 — as Brent settled $100.69 (+7%) on Red Sea tanker hits and Trump Iran escalation, Mag 7 AI capex fears (Alphabet −7%, Tesla −15%), and claims 187k (miss estimate vs ~212k, lowest since 1969). ECB held 2.25% with Sep hike door open; forced-labor tariffs 10–12.5% hit Jul 24 (China 12.5%). Intel Q2 beat (+25% rev) AMC +9%.",
+  "marketTone": "Jul 24 Asia: Shanghai −1.61% to 3,814.20 and HSI −0.98% to 24,963 as Brent $100+ and Jul 24 forced-labor tariffs (China 12.5%) hit onshore/HK — >4,900 A-share decliners, turnover below CNY2tn (新浪财经 Jul 24). Jul 23 US: S&P −1.2% to 7,408.30, Nasdaq −2.2%, Brent settled $100.69 (+7%), claims 187k (1969 low), Mag 7 −$800bn capex scare; Japan Jun core CPI 1.6% in line (Jul 24).",
   "summary": [
+    {
+      "text": "Jul 24 A-share close (新浪财经): 沪指报3814.20点，跌1.61%；深成指跌2.47%至13774.68点，创业板指跌2.65%；成交额约1.93万亿元，较上日缩量，全市场超4900只个股下跌（新浪财经 Jul 24 收评）。Hang Seng −0.98% to 24,963, Hang Seng Tech −1.47% to 4,629 (The Standard Jul 24); Alibaba −4%拖累中概情绪，与Jul 23 US risk-off及Brent $100+共振。",
+      "sources": [
+        {
+          "label": "新浪财经 Jul 24",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniiwvke9315830.shtml"
+        },
+        {
+          "label": "The Standard Jul 24",
+          "href": "https://www.thestandard.com.hk/finance/article/338160/HSI-closes-below-25000-points-Alibaba-down-4pc"
+        }
+      ]
+    },
     {
       "text": "Jul 23 US official close (STL.News): S&P −1.2% to 7,408.30, Nasdaq −2.2% to 25,137.69, Dow −1.0% to 51,711.65 — worst one-day drop since Jun 23. Brent settled $100.69 (+7%) and WTI $92.19 (+6%) after Houthi Red Sea tanker attacks and Trump 'massive attack' Iran threats (CNBC oil Jul 23).",
       "sources": [
@@ -229,21 +297,34 @@
       ]
     },
     {
-      "text": "China Jul 23–24: CSRC党建暨监管工作座谈会强调加强应对全球市场波动和风险跨境传导的政策储备（第一财经 Jul 23）；PBOC Jul 24 MLF CNY500bn（5000亿元）1年期，Jul maturity CNY400bn → net +CNY100bn（新华网 Jul 23）。",
+      "text": "China Jul 23–24: CSRC党建暨监管工作座谈会强调加强应对全球市场波动和风险跨境传导的政策储备（第一财经 Jul 23）；PBOC Jul 24 MLF CNY500bn（5000亿元）1年期，Jul maturity CNY400bn → net +CNY100bn（新华网/第一财经 Jul 24）；Jul 24 forced-labor tariffs生效叠加Brent $100，A股/HK同步承压。",
       "sources": [
         {
           "label": "第一财经 Jul 23",
           "href": "https://www.yicai.com/news/103289885.html"
         },
         {
+          "label": "第一财经 Jul 24 MLF",
+          "href": "https://www.yicai.com/news/103290226.html"
+        },
+        {
           "label": "新华网 Jul 23 MLF",
           "href": "https://www.news.cn/20260723/1eebaf8374824ac2aa44cc8c74ec3c01/c.html"
         }
       ]
+    },
+    {
+      "text": "Japan Jun CPI (Jul 24, Japan Times): core CPI ex fresh food +1.6% y/y (in line with forecast, up from 1.4% in May); headline and core-core both +1.7% y/y — first pickup in three months, keeping BOJ on gradual hike path ahead of Jul 30–31 meeting.",
+      "sources": [
+        {
+          "label": "Japan Times Jul 24",
+          "href": "https://www.japantimes.co.jp/business/2026/07/24/economy/japan-inflation-picks-up-june/"
+        }
+      ]
     }
   ],
-  "signal": "Brent $100.69 settle + Mag 7 −$800bn capex scare vs claims 187k (1969 low) — oil→rates inflation chain fights tight-labor 'no layoffs' print; Intel beat is the lone AI demand confirmation amid Alphabet/Tesla guide-down.",
-  "watch": "Does Brent holding >$100 after Jul 23 settle keep Sep Fed/ECB hike odds elevated even with claims 187k — and does Jul 24 forced-labor tariff go-live (China 12.5%) add a second inflation leg before Asia reopens?",
+  "signal": "Brent $100.69 + Jul 24 tariff go-live (China 12.5%) transmitted to Jul 24 Shanghai −1.61%/HSI −0.98% — oil→trade inflation chain now visible in Asia beta; Mag 7 −$800bn capex scare and claims 187k (1969 low) still frame US policy tension.",
+  "watch": "Can CSRC稳市 rhetoric + MLF net +CNY100bn cushion A-shares if Brent holds >$100 through Jul 24 US PMI (21:45 HKT) — or does Shanghai break 3800 on tariff + oil dual shock?",
   "globalRegime": "Fed holds 3.50%–3.75% while Jul 23 Brent $100.69 (+7%) and Mag 7 AI capex de-risking re-price forward inflation. ECB paused at 2.25% deposit Jul 23 but Lagarde kept Sep hike live. Jul 24 forced-labor tariffs (10–12.5%, China 12.5%) replace expiring 10% global levies. Claims 187k (miss estimate vs ~212k) show labor tightness but have not yet offset oil shock.",
   "globalChanged": [
     {
@@ -278,11 +359,24 @@
       ]
     },
     {
-      "text": "ECB (Jul 23): unanimous hold — deposit 2.25%, main refi 2.40%, marginal lending 2.65%; Lagarde said energy shock impact not fully played out and Sep hike remains data-dependent (ECB Jul 23).",
+      "text": "ECB (Jul 23): unanimous hold — deposit 2.25%, main refi 2.40%, marginal lending 2.65%; Lagarde said energy shock impact not fully played out and Sep hike remains data-dependent; 拉加德承诺至少2027年前不会卸任，围绕新行长遴选或很快启动（ECB Jul 23；彭博 Jul 24 inbox）。",
       "sources": [
         {
           "label": "ECB Jul 23",
           "href": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Japan Jun CPI (Jul 24): core CPI ex fresh food +1.6% y/y (in line, up from 1.4% in May); headline +1.7% y/y; core-core (ex food & energy) +1.7% y/y (Japan Times Jul 24) — first three-month pickup, supports BOJ gradual tightening narrative with Brent >$100 pass-through risk.",
+      "sources": [
+        {
+          "label": "Japan Times Jul 24",
+          "href": "https://www.japantimes.co.jp/business/2026/07/24/economy/japan-inflation-picks-up-june/"
         }
       ]
     },
@@ -322,19 +416,28 @@
       ]
     },
     {
-      "text": "Mag 7 / AI capex (Jul 23): Alphabet −7% after raising FY26 capex; Tesla −15% on Q2 EPS miss; 彭博财经早茶称科技七巨头周四市值蒸发近8000亿美元（desk color）。Alphabet FY26 capex guide raised to $195–205bn (BlockBeats Jul 22).",
+      "text": "Mag 7 / AI capex (Jul 23): Alphabet −7% after raising FY26 capex; Tesla −15% on Q2 EPS miss; 彭博财经早茶称科技七巨头周四市值蒸发近8000亿美元。Alphabet Q2自由现金流首次转负，AI资本支出持续高企（财新 T早报 Jul 24）。",
       "sources": [
         {
           "label": "CNBC Jul 23 US close",
           "href": "https://www.cnbc.com/2026/07/23/stock-market-today-live-updates.html"
         },
         {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "财新 T早报 Jul 24",
+          "href": "https://www.caixin.com/2026-07-24/102467446.html"
         },
         {
-          "label": "BlockBeats Alphabet Jul 22",
-          "href": "https://www.theblockbeats.info/news/63137"
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "英国财政大臣希利承诺审慎管控公共财政，向伦敦金融城表达亲商立场（彭博 Jul 24 inbox）。Trump表示美国与沙特民用核协议能否获批取决于沙特是否和以色列关系正常化（彭博 inbox）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
@@ -369,8 +472,26 @@
     }
   ],
   "globalTensions": "Claims 187k (1969 low) vs Brent $100.69; ECB hold vs Lagarde Sep-hike hints; Intel demand beat vs Mag 7 capex de-risk; forced-labor tariffs vs energy exemptions.",
-  "chinaStance": "CSRC Jul 23 reaffirms稳市底线 and cross-border risk policy reserves; PBOC Jul 24 MLF net +CNY100bn continues quantity easing without price cut; no Jul 24 A-share close yet at morning publish — Jul 23 onshore tape was micro-up on breadth but semis lagged (prior session).",
+  "chinaStance": "CSRC Jul 23 reaffirms稳市底线 and cross-border risk policy reserves; PBOC Jul 24 MLF net +CNY100bn continues quantity easing without price cut. Jul 24 A-share close: Shanghai −1.61% to 3,814.20 with >4,900 decliners and sub-CNY2tn turnover (新浪财经) — tariff + oil shock transmitted despite policy put rhetoric.",
   "chinaChanged": [
+    {
+      "text": "Jul 24 A-share close (新浪财经): 沪指3814.20点，跌1.61%；深成指13774.68点，跌2.47%；创业板指3480.87点，跌2.65%；成交额约1.93万亿元，较上日缩量2642亿元，超4900股下跌。电力、贵金属、有色金属、煤炭、创新药等板块领跌；半导体设备、军工相对强势。",
+      "sources": [
+        {
+          "label": "新浪财经 Jul 24",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniiwvke9315830.shtml"
+        }
+      ]
+    },
+    {
+      "text": "Jul 24 HK close (The Standard): Hang Seng −0.98% to 24,963; Hang Seng Tech −1.47% to 4,629; turnover HK$209.8bn; Alibaba −4%, Tencent −2.3%; gold miners weak as spot gold fell.",
+      "sources": [
+        {
+          "label": "The Standard Jul 24",
+          "href": "https://www.thestandard.com.hk/finance/article/338160/HSI-closes-below-25000-points-Alibaba-down-4pc"
+        }
+      ]
+    },
     {
       "text": "7月23日，中国证监会召开党的建设暨监管工作座谈会，强调综合施策全力维护市场平稳运行，加强应对全球市场波动和风险跨境传导的政策储备，推动中长期资金稳步提升入市规模（第一财经 Jul 23）。",
       "sources": [
@@ -443,7 +564,7 @@
       ]
     },
     {
-      "text": "中国工信部：将与APEC各经济体共同搭建人工智能创新平台（彭博 Jul 24 inbox）。国家新闻出版署7月批准193款国产网络游戏、4款进口游戏（彭博 inbox）。",
+      "text": "中国工信部：将与APEC各经济体共同搭建人工智能创新平台（彭博 Jul 24 inbox）。国家新闻出版署7月批准一批国产及进口网络游戏（彭博 inbox）。中国市场监管总局部署专项行动，提升企业海外反垄断合规能力（彭博 inbox）。台湾6月份M2增速加快，出口商推升外汇存款至新高（彭博 inbox）。",
       "sources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -454,16 +575,16 @@
   ],
   "chinaImplies": [
     {
-      "text": "CSRC policy-reserve language + MLF net +CNY100bn show Beijing pre-positioning for Jul 23 US/oil shock transmission — quantity tools active, LPR pivot still not signaled with Brent >$100."
+      "text": "Jul 24 Shanghai −1.61% with >4,900 decliners confirms Jul 23 US/oil/tariff shock transmission — CSRC policy-reserve language + MLF net +CNY100bn have not yet stabilized onshore beta."
     },
     {
-      "text": "US-China $30bn reciprocal tariff framework talk (彭博) vs Jul 24 12.5% forced-labor tariff creates a two-track trade narrative — watch whether framework offsets new Section 301 layer."
+      "text": "US-China $30bn reciprocal tariff framework talk (彭博/第一财经 Jul 24) vs Jul 24 12.5% forced-labor tariff creates a two-track trade narrative — watch whether framework offsets new Section 301 layer."
     },
     {
-      "text": "Caixin EU e-commerce pushback parallels US-EU Google fine — external regulatory pressure on Chinese platforms rising alongside tariff stack."
+      "text": "Caixin Jul 24: H1 trade-in program sales CNY1.1tn vs CNY1.6tn y/y — stimulus fade aligns with 乘联会 Jul retail −16.8% y/y estimate, reinforcing domestic demand softness."
     }
   ],
-  "chinaDivergences": "Jul 23 US/Nasdaq −2.2% vs Jul 23 onshore micro-up (prior briefing); H-shares/ADR pressure expected at Asia open on oil + Mag 7; CSRC稳市 rhetoric vs semis/STAR50 weakness persisting from Jul 22–23 sessions.",
+  "chinaDivergences": "Jul 23 US/Nasdaq −2.2% vs Jul 24 Shanghai −1.61%/HSI −0.98% — Asia caught tariff-go-live + Brent $100 dual shock; HK Tech −1.47% with Alibaba −4% vs Jul 23 onshore micro-up now reversed; CSRC稳市 rhetoric vs broad A-share decline.",
   "assetFramework": [
     {
       "asset": "US equities (S&P 500 / Nasdaq)",
@@ -556,20 +677,24 @@
     },
     {
       "asset": "China equities (Shanghai / ChiNext)",
-      "regime": "CSRC稳市 + quantity easing vs global risk-off and semis weakness",
-      "driver": "CSRC Jul 23 policy reserves (Yicai); MLF net +CNY100bn Jul 24; Jul 23 onshore micro-up but semis lag (prior session)",
+      "regime": "CSRC稳市 + quantity easing vs tariff/oil shock transmission",
+      "driver": "Jul 24 Shanghai −1.61% to 3,814.20, >4,900 decliners, turnover <CNY2tn; CSRC Jul 23 policy reserves; MLF net +CNY100bn Jul 24; forced-labor tariff 12.5% go-live",
       "driverSources": [
+        {
+          "label": "新浪财经 Jul 24",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniiwvke9315830.shtml"
+        },
         {
           "label": "第一财经 Jul 23",
           "href": "https://www.yicai.com/news/103289885.html"
         },
         {
-          "label": "新华网 Jul 23 MLF",
-          "href": "https://www.news.cn/20260723/1eebaf8374824ac2aa44cc8c74ec3c01/c.html"
+          "label": "第一财经 Jul 24 MLF",
+          "href": "https://www.yicai.com/news/103290226.html"
         }
       ],
-      "read": "Policy put active but Jul 23 US −1.2%/oil $100 likely pressures ADRs/H-shares at open — A-share beta still semis-sensitive",
-      "invalidator": "Shanghai holds 3850+ on rising volume with northbound inflows after MLF net injection"
+      "read": "Jul 24 broad decline confirms Jul 23 US/oil shock landed — policy put rhetoric has not offset tariff + energy dual leg; semis/defense pockets relatively resilient",
+      "invalidator": "Shanghai holds 3850+ on rising volume with northbound inflows for two sessions post-MLF"
     },
     {
       "asset": "CNY",
@@ -591,18 +716,18 @@
     {
       "asset": "Bitcoin",
       "regime": "High-beta risk asset — oil/Fed chain dominates",
-      "driver": "Jul 23 risk-off (S&P −1.2%); Brent $100.69; 彭博全球市况 BTC ~65,129 (+0.05% at 07:14pm EST Jul 23 — lagging oil shock)",
+      "driver": "Jul 23 risk-off (S&P −1.2%); Brent $100.69; Jul 24 Asia selloff; BlockBeats Jul 24 Celestia TIA $62.5mn Polychain deal — sector-specific, not macro hedge",
       "driverSources": [
         {
           "label": "CNBC Jul 23 US close",
           "href": "https://www.cnbc.com/2026/07/23/stock-market-today-live-updates.html"
         },
         {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "BlockBeats Jul 24",
+          "href": "https://www.theblockbeats.info/flash/304390"
         }
       ],
-      "read": "Flat BTC vs sharp equity/oil moves suggests crypto not decoupling as inflation hedge — still liquidity/risk-beta",
+      "read": "Flat-to-down BTC vs sharp equity/oil moves suggests crypto still liquidity/risk-beta, not inflation hedge — Celestia OTC is idiosyncratic",
       "invalidator": "BTC +5% while S&P −1% and Brent >$100 — would signal safe-haven re-rating"
     }
   ],
@@ -742,21 +867,31 @@
     {
       "priority": "MEDIUM",
       "headline": "Japan CPI + PMI cluster (Jul 24 morning)",
-      "why": "Calendar cluster from 彭博 inbox — Japan Jun CPI 07:30, Jul PMI 08:30.",
-      "watch": "CPI core vs 1.6% est; manufacturing PMI vs 54.8 prior.",
+      "why": "Jun core CPI 1.6% in line (Japan Times Jul 24); Jul flash PMI still pending.",
+      "watch": "CPI core 1.6% confirmed; Jul manufacturing PMI vs 54.8 prior (08:30 JST).",
       "trigger": "Core CPI >1.7% with PMI >55 reinforces Asia rate-hike pressure alongside oil.",
       "invalidator": "Core CPI ≤1.5% and both PMIs below 50.",
       "horizon": "days",
-      "status": "new"
+      "status": "monitoring"
     },
     {
       "priority": "LOW",
-      "headline": "PBOC Jul 24 MLF net +CNY100bn vs A-share open",
-      "why": "WEAK liquidity signal — quantity easing without LPR move.",
-      "watch": "MLF rate print; DR007; Shanghai open vs Jul 23 close.",
-      "trigger": "Shanghai −1%+ at open despite MLF net injection.",
+      "headline": "PBOC Jul 24 MLF net +CNY100bn vs A-share close",
+      "why": "WEAK liquidity signal — quantity easing without LPR move; Shanghai still −1.61%.",
+      "watch": "MLF rate print; DR007; whether Shanghai holds 3800.",
+      "trigger": "Shanghai breaks 3800 despite MLF net injection.",
       "invalidator": "Shanghai flat/up with DR007 ≤1.40% post-MLF.",
       "horizon": "days",
+      "status": "monitoring"
+    },
+    {
+      "priority": "LOW",
+      "headline": "US Jul flash PMI (Jul 24 21:45 HKT)",
+      "why": "Calendar item from 彭博 inbox — manufacturing est 54.4, services 51.5.",
+      "watch": "S&P Global flash PMI vs est after 21:45 HKT release.",
+      "trigger": "Manufacturing PMI <50 with services >55 — stagflationary split.",
+      "invalidator": "Both PMIs within 0.5pt of consensus.",
+      "horizon": "hours",
       "status": "new"
     }
   ],
@@ -798,10 +933,10 @@
       }
     ]
   },
-  "sources": "CNBC (Jul 23 Brent/WTI settle, Intel earnings), AP (Jul 23 jobless claims), ECB (Jul 23 decision), CBS/华尔街见闻 (Jul 23 forced-labor tariffs), US Treasury (July 2026 FX report PDF), Intel IR (Q2 2026), STL.News (Jul 23 US closes), 彭博 Markets Daily China / 财经早茶 (Jul 24 inbox), 第一财经 (Jul 23 CSRC), 新华网 (Jul 23 PBOC MLF), Caixin Global (Jul 23 EU e-commerce), 华尔街见闻 (3777821 tariffs, 3777421 CSRC), BlockBeats (63137 Alphabet Q2), 新浪财经 (Jul 23 乘联会).",
-  "singleSource": "Jul 24 华尔街见闻 breakfast not yet indexed at publish time — used Jul 23 articles 3777821/3777421 plus 第一财经/Caixin/新浪财经 for China desk triangulation. Mag 7 −$800bn cited via 彭博 inbox (stable bloomberg.com/asia href) as Chinese desk color only. Gold Jul 23 move from 彭博市场一览 desk color only — no COMEX settle verified this run. Morning slot refresh: marketDashboard re-injected at 2026-07-24T04:01:10Z; publishedAt updated to match.",
+  "sources": "新浪财经/The Standard (Jul 24 A/HK closes), Japan Times (Jul 24 CPI), CNBC (Jul 23 Brent/WTI settle, Intel earnings), AP (Jul 23 jobless claims), ECB (Jul 23 decision), CBS/华尔街见闻 (Jul 23 forced-labor tariffs), US Treasury (July 2026 FX report PDF), Intel IR (Q2 2026), STL.News (Jul 23 US closes), 彭博 Markets Daily China / 财经早茶 (Jul 24 inbox), 第一财经 (Jul 23–24 CSRC/MLF), 新华网 (Jul 23 PBOC MLF), Caixin (Jul 23–24), BlockBeats (Jul 24 flash 304390).",
+  "singleSource": "Jul 24 evening refresh: marketDashboard re-injected at publish time; publishedAt updated to match. Gold Jul 23 move from 彭博市场一览 desk color only — no separate COMEX settle verified beyond Yahoo GC=F dashboard row. Mag 7 −$800bn cited via 彭博 inbox (stable bloomberg.com/asia href) as Chinese desk color. US Jul flash PMI (21:45 HKT) not yet released at evening publish — watch item only. Caixin trade-in H1 CNY1.1tn from Jul 24 T早报 headline cross-check.",
   "marketDashboard": {
-    "asOf": "2026-07-24T04:01:10.204Z",
+    "asOf": "2026-07-24T12:20:08.373Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -835,10 +970,10 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "18.70",
-            "change": "+12.38%",
+            "latest": "18.73",
+            "change": "+0.16%",
             "changeDirection": "up",
-            "asOfDate": "2026-07-23",
+            "asOfDate": "2026-07-24",
             "source": {
               "label": "Yahoo Finance (^VIX)",
               "href": "https://finance.yahoo.com/quote/%5EVIX/"
@@ -847,8 +982,8 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "64,354.40",
-            "change": "−3.11%",
+            "latest": "64,611.15",
+            "change": "−2.73%",
             "changeDirection": "down",
             "asOfDate": "2026-07-24",
             "source": {
@@ -859,8 +994,8 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "24,895.84",
-            "change": "−1.25%",
+            "latest": "24,963.23",
+            "change": "−0.98%",
             "changeDirection": "down",
             "asOfDate": "2026-07-24",
             "source": {
@@ -871,7 +1006,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,618.48",
+            "latest": "4,629.51",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-07-24",
@@ -883,8 +1018,8 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,830.19",
-            "change": "−1.20%",
+            "latest": "3,814.20",
+            "change": "−1.61%",
             "changeDirection": "down",
             "asOfDate": "2026-07-24",
             "source": {
@@ -955,8 +1090,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "163.7980",
-            "change": "+0.44%",
+            "latest": "163.8240",
+            "change": "+0.46%",
             "changeDirection": "up",
             "asOfDate": "2026-07-24",
             "source": {
@@ -967,9 +1102,9 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7750",
-            "change": "+0.04%",
-            "changeDirection": "up",
+            "latest": "6.7610",
+            "change": "−0.17%",
+            "changeDirection": "down",
             "asOfDate": "2026-07-24",
             "source": {
               "label": "Yahoo Finance (CNY=X)",
@@ -979,10 +1114,10 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,046.60",
-            "change": "−2.42%",
-            "changeDirection": "down",
-            "asOfDate": "2026-07-23",
+            "latest": "$4,058.60",
+            "change": "+0.30%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-24",
             "source": {
               "label": "Yahoo Finance (GC=F)",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -991,10 +1126,10 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$100.69",
-            "change": "+7.04%",
-            "changeDirection": "up",
-            "asOfDate": "2026-07-23",
+            "latest": "$91.98",
+            "change": "−8.65%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-24",
             "source": {
               "label": "Yahoo Finance (BZ=F)",
               "href": "https://finance.yahoo.com/quote/BZ%3DF/"
@@ -1003,8 +1138,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$65,408",
-            "change": "−0.29%",
+            "latest": "$65,013",
+            "change": "−0.63%",
             "changeDirection": "down",
             "asOfDate": "2026-07-24",
             "source": {
@@ -1015,8 +1150,8 @@
           {
             "id": "btc-funding",
             "asset": "BTC funding rate",
-            "latest": "0.0000%",
-            "change": "−0.308 bp",
+            "latest": "-0.0008%",
+            "change": "−0.085 bp",
             "changeDirection": "down",
             "asOfDate": "2026-07-24",
             "source": {
