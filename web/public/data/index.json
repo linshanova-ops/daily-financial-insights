@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-23T12:20:57.457Z",
-  "latest": "2026-07-23",
+  "generatedAt": "2026-07-24T00:09:50.238Z",
+  "latest": "2026-07-24",
   "briefings": [
+    {
+      "date": "2026-07-24",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Jul 23 US session: S&P −1.2% to 7,408.30 and Nasdaq −2.2% to 25,137.69 — worst day since Jun 23 — as Brent settled $100.69 (+7%) on Red Sea tanker hits and Trump Iran escalation, Mag 7 AI capex fears (Alphabet −7%, Tesla −15%), and claims 187k (miss estimate vs ~212k, lowest since 1969). ECB held 2.25% with Sep hike door open; forced-labor tariffs 10–12.5% hit Jul 24 (China 12.5%). Intel Q2 beat (+25% rev) AMC +9%.",
+      "coverageWindow": "July 23–24, 2026"
+    },
     {
       "date": "2026-07-23",
       "title": "Daily Financial Briefing",
