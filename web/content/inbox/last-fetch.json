@@ -1,19 +1,28 @@
 {
-  "at": "2026-07-23T12:18:39.942Z",
-  "briefingDate": "2026-07-23",
+  "at": "2026-07-24T00:01:17.491Z",
+  "briefingDate": "2026-07-24",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-23.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-24.md",
+      "subject": "彭博财经早茶：美国宣布强迫劳动关税；美伊冲突升级推动油价大涨",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5426,
+      "mailbox": "INBOX",
+      "chartImage": "/inbox-charts/bloomberg-2026-07-24.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-24.png"
     }
   ],
   "skipped": [
     {
-      "reason": "exists-keep",
+      "reason": "date-mismatch",
       "subject": "彭博财经早茶：油轮红海遇袭；Alphabet上调支出预估",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-23.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-07-22",
+      "bjDay": "2026-07-23",
+      "briefingDate": "2026-07-24"
     },
     {
       "reason": "unmatched",
@@ -32,7 +41,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-21",
       "bjDay": "2026-07-22",
-      "briefingDate": "2026-07-23"
+      "briefingDate": "2026-07-24"
     },
     {
       "reason": "date-mismatch",
@@ -41,7 +50,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-20",
       "bjDay": "2026-07-21",
-      "briefingDate": "2026-07-23"
+      "briefingDate": "2026-07-24"
     },
     {
       "reason": "unmatched",
