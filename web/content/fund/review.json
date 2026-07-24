@@ -1,13 +1,5 @@
 [
   {
-    "id": "rev-sig-20260723-8nx4cs",
-    "title": "ExodusPoint gives senior roles to former Ovata traders",
-    "reason": "中等置信度命中「ExodusPoint」，待人工复核。",
-    "confidence": "66%",
-    "status": "review",
-    "href": "https://www.hedgeweek.com/exoduspoint-gives-senior-roles-to-former-ovata-traders/"
-  },
-  {
     "id": "rev-sig-20260722-cgae3a",
     "title": "Traders at Hong Kong hedge fund swallowed by ExodusPoint are being given some big roles",
     "reason": "中等置信度命中「ExodusPoint」，待人工复核。",
@@ -24,14 +16,6 @@
     "href": "https://www.cnbc.com/2026/07/21/goldman-sachs-private-markets-platform.html"
   },
   {
-    "id": "rev-sig-20260723-xwdvvy",
-    "title": "Aureus Asset Management LLC Boosts Position in The Goldman Sachs Group, Inc. $GS",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-aureus-asset-management-llc-boosts-position-in-the-goldman-sachs-group-inc-gs-2026-07-23/"
-  },
-  {
     "id": "rev-sig-20260722-rdmkzw",
     "title": "AEGIS Hedging to Be Acquired by Private Equity at Goldman Sachs Alternatives",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -40,12 +24,36 @@
     "href": "https://www.businesswire.com/news/home/20260722140805/en/AEGIS-Hedging-to-Be-Acquired-by-Private-Equity-at-Goldman-Sachs-Alternatives"
   },
   {
-    "id": "rev-sig-20260722-1g9739",
-    "title": "Goldman Sachs (NYSE:GS) Notes S&P 500 Tech Selling Pace",
+    "id": "rev-sig-20260722-kh6jym",
+    "title": "Goldman Sachs (GS) Says Hedge Funds Are Selling US Tech Stocks At A Record Pace",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://kalkinemedia.com/us/stocks/financial/goldman-sachs-nysegs-notes-sp-500-tech-selling-pace"
+    "href": "https://www.sahmcapital.com/news/content/goldman-sachs-gs-says-hedge-funds-are-selling-us-tech-stocks-at-a-record-pace-2026-07-22"
+  },
+  {
+    "id": "rev-sig-20260723-xwdvvy",
+    "title": "Aureus Asset Management LLC Boosts Position in The Goldman Sachs Group, Inc. $GS",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-aureus-asset-management-llc-boosts-position-in-the-goldman-sachs-group-inc-gs-2026-07-23/"
+  },
+  {
+    "id": "rev-sig-20260724-qpmrib",
+    "title": "Goldman Sachs stock trades steady as investment banking revenue rebounds and asset management fees g - Ad-hoc-news.de",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/goldman-sachs-stock-trades-steady-as-investment-banking-revenue-rebounds/69858658"
+  },
+  {
+    "id": "rev-sig-20260724-hyj4x6",
+    "title": "Goldman Sachs stock steadies as trading revenue offsets weaker investment banking - Ad-hoc-news.de",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/goldman-sachs-stock-steadies-as-trading-revenue-offsets-weaker-investment/69859697"
   },
   {
     "id": "rev-sig-20260723-h4wya6",
@@ -78,21 +86,5 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/XA+Investments+Urges+XFLT+Shareholders+to+Vote+White+Proxy+Card+for+King+Street+Sub-Advisory+Agreement+Ahead+of+July+30+Special+Meeting"
-  },
-  {
-    "id": "rev-sig-20260721-l0u7ua",
-    "title": "XA Investments Details Octagon Underperformance at XAI Floating Rate & Alternative Income Trust and Seeks Shareholder Approval of King Street Sub-Adviser",
-    "reason": "中等置信度命中「King Street」，待人工复核。",
-    "confidence": "66%",
-    "status": "review",
-    "href": "https://www.quiverquant.com/news/XA+Investments+Details+Octagon+Underperformance+at+XAI+Floating+Rate+%26+Alternative+Income+Trust+and+Seeks+Shareholder+Approval+of+King+Street+Sub-Adviser"
-  },
-  {
-    "id": "rev-sig-20260721-ljdp4l",
-    "title": "Pershing Square Holdings adds Twelve Securis board member Ranjani Kearsley as INED",
-    "reason": "中等置信度命中「Pershing Square」，待人工复核。",
-    "confidence": "70%",
-    "status": "review",
-    "href": "https://www.artemis.bm/news/pershing-square-holdings-adds-twelve-securis-board-member-ranjani-kearsley-as-ined/"
   }
 ]
