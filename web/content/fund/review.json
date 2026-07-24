@@ -16,6 +16,14 @@
     "href": "https://www.efinancialcareers.com/news/traders-at-hong-kong-hedge-fund-swallowed-by-exodus-point-are-being-given-some-big-roles"
   },
   {
+    "id": "rev-sig-20260722-axc3tg",
+    "title": "Goldman Sachs creates private markets platform as rich investors seek the next SpaceX and Stripe",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.cnbc.com/2026/07/21/goldman-sachs-private-markets-platform.html"
+  },
+  {
     "id": "rev-sig-20260723-xwdvvy",
     "title": "Aureus Asset Management LLC Boosts Position in The Goldman Sachs Group, Inc. $GS",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -38,6 +46,22 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://kalkinemedia.com/us/stocks/financial/goldman-sachs-nysegs-notes-sp-500-tech-selling-pace"
+  },
+  {
+    "id": "rev-sig-20260723-h4wya6",
+    "title": "Ousted Davidson Kempner Partner Claims He’s Owed $80 Million",
+    "reason": "中等置信度命中「Davidson Kempner」，待人工复核。",
+    "confidence": "71%",
+    "status": "review",
+    "href": "https://www.bloomberg.com/news/articles/2026-07-23/davidson-kempner-ousted-ex-partner-claims-he-s-owed-80-million"
+  },
+  {
+    "id": "rev-sig-20260724-lttokl",
+    "title": "Former Davidson Kempner partner claims $80M in unpaid exit proceeds, alleges forced ouster",
+    "reason": "中等置信度命中「Davidson Kempner」，待人工复核。",
+    "confidence": "71%",
+    "status": "review",
+    "href": "https://cryptobriefing.com/davidson-kempner-partner-80m-exit-dispute/"
   },
   {
     "id": "rev-sig-20260722-yt0fyk",
