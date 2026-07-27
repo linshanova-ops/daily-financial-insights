@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-24T12:20:13.444Z",
-  "latest": "2026-07-24",
+  "generatedAt": "2026-07-27T00:11:36.845Z",
+  "latest": "2026-07-27",
   "briefings": [
+    {
+      "date": "2026-07-27",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Post-weekend reopen: US-Iran strike pause and Monday Asia oil −5%+ cut the Hormuz premium after Jul 24 Brent settled $96.78, but Jul 24 US flash PMI 53.6 (8-month high) and ~40% Fed hike odds frame a tense FOMC week; Changxin (688825) lists on STAR today while Ctrip CNY51.79bn fine and CATL +42% H1 reshape China beta.",
+      "coverageWindow": "July 24–27, 2026"
+    },
     {
       "date": "2026-07-24",
       "title": "Daily Financial Briefing",
