@@ -6,6 +6,7 @@ import {
   fetchBriefingIndex,
   fetchLatestBriefing,
 } from "@/lib/content-feed";
+import { formatPublishedAt } from "@/lib/format-published";
 import { BriefingView } from "./BriefingView";
 import { LiveStatus } from "./LiveStatus";
 
@@ -68,7 +69,7 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
           time). This page shows the latest published edition.
           {publishedAt ? (
             <span className="mt-1 block text-xs text-ink/45">
-              Latest published {new Date(publishedAt).toLocaleString()}
+              Latest published {formatPublishedAt(publishedAt)}
             </span>
           ) : null}
         </p>
