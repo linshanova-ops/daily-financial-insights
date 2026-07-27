@@ -161,7 +161,10 @@ FAIL-CLOSED PUBLISH (critical):
    - 彭博 Markets Daily China / 财经早茶 (daily): this is a **full global + China** digest —
      merge **all** labeled sections into China / Global / Assets / Watch / Figures.
      Do NOT treat it as a China-only source or drop 国际要闻 / 市场一览 / 日程 / 央行动态.
-     Section map: 国际要闻→globalChanged (every bullet); 大中华新闻→chinaChanged (every
+     Section map: 国际要闻→globalChanged (every bullet — prefer one
+     globalChanged entry per inbox bullet; keep Chinese text Chinese when this
+     newsletter is the primary cite; do not compress 14 bullets into 3–4 English
+     paraphrases); 大中华新闻→chinaChanged (every
      bullet); 市场一览→marketOverview.items[] (structured label/text above Market closes —
      never dump as a Global/China prose blob); 经济数据日程+央行和政府动态→watchItems;
      今日图表→figures insight; 全球市况→cross-check only (never replace marketDashboard).
