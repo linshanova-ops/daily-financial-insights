@@ -202,18 +202,6 @@ function FeedTab({
                   <span className="mx-2">·</span>
                   {sig.tag}
                 </p>
-                {sig.href ? (
-                  <p className="mt-1 text-xs text-ink/40">
-                    <a
-                      href={sig.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="focus-ring underline-offset-2 hover:text-forest hover:underline"
-                    >
-                      打开原文
-                    </a>
-                  </p>
-                ) : null}
               </div>
             </li>
           ))}
