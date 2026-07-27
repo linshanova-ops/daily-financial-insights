@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { findBnYiMismatches } from "./currency-unit-check.mjs";
+import {
+  findBnYiMismatches,
+  pageHasCnyBnEvidence,
+} from "./currency-unit-check.mjs";
 
 describe("findBnYiMismatches", () => {
   it("flags copied 亿 numerals mislabeled as bn", () => {
@@ -28,5 +31,20 @@ describe("findBnYiMismatches", () => {
       "Samsung–Broadcom $200bn MOU",
     ].join("\n");
     assert.deepEqual(findBnYiMismatches(text), []);
+  });
+
+  it("matches CNY bn claims against equivalent Chinese 亿 evidence", () => {
+    assert.equal(
+      pageHasCnyBnEvidence("罚没携程51.79亿元", "5.179"),
+      true,
+    );
+    assert.equal(
+      pageHasCnyBnEvidence("The penalty was CNY5.179bn.", "5.179"),
+      true,
+    );
+    assert.equal(
+      pageHasCnyBnEvidence("罚没携程5.179亿元", "5.179"),
+      false,
+    );
   });
 });

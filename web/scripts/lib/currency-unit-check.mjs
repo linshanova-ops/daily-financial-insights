@@ -36,3 +36,21 @@ export function yiToBn(amount) {
     .map((part) => String(Number(part) / 10))
     .join("–");
 }
+
+function escapeRegex(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/** Verify `CNY Xbn` against either English bn or equivalent Chinese 亿 text. */
+export function pageHasCnyBnEvidence(pageText, bnAmount) {
+  const text = String(pageText || "").replace(/,/g, "");
+  const bn = Number(bnAmount);
+  if (!Number.isFinite(bn)) return false;
+  const yi = String(Number((bn * 10).toFixed(10)));
+  const bnRe = new RegExp(
+    `(?:CNY|RMB|￥)?\\s*${escapeRegex(bnAmount)}\\s*(?:bn|billion)\\b`,
+    "i",
+  );
+  const yiRe = new RegExp(`${escapeRegex(yi)}\\s*亿(?:元)?`, "i");
+  return bnRe.test(text) || yiRe.test(text);
+}

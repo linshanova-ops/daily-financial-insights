@@ -16,6 +16,7 @@ import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import {
   findBnYiMismatches,
+  pageHasCnyBnEvidence,
   yiToBn,
 } from "./lib/currency-unit-check.mjs";
 
@@ -723,9 +724,9 @@ function extractAnchors(claimText) {
     push(m[1]);
   }
   for (const m of t.matchAll(
-    /(?:CNY|RMB|￥)\s*(\d+(?:\.\d+)?)\s*(?:bn|tn|亿)?/gi,
+    /(?:CNY|RMB|￥)\s*(\d+(?:\.\d+)?)\s*(bn|tn|亿)?/gi,
   )) {
-    push(m[1]);
+    push(String(m[2] || "").toLowerCase() === "bn" ? `cnybn:${m[1]}` : m[1]);
   }
   for (const m of t.matchAll(/([−\-]?\d+(?:\.\d+)?)%/g)) {
     push(m[1].replace(/^[−\-]/, "-").replace(/^-/, "-"));
@@ -755,6 +756,9 @@ const DECIMAL_TO_FRACTION = {
 
 function pageHasAnchor(pageText, anchor) {
   if (!pageText) return false;
+  if (anchor.startsWith("cnybn:")) {
+    return pageHasCnyBnEvidence(pageText, anchor.slice("cnybn:".length));
+  }
   const variants = new Set([
     anchor,
     anchor.replace(/^-/, ""),
