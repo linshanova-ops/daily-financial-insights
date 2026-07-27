@@ -1,24 +1,27 @@
 {
-  "at": "2026-07-27T00:02:08.017Z",
+  "at": "2026-07-27T13:10:37.101Z",
   "briefingDate": "2026-07-27",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-27.md",
-      "subject": "彭博财经早茶：美伊互袭暂歇推动油价大跌；中国监管机构重罚携程",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-weekend-tea",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W30.md",
+      "subject": "彭博周末茶歇：中国迅速出招托市",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5598,
-      "mailbox": "INBOX",
-      "chartImage": "/inbox-charts/bloomberg-2026-07-27.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-27.png"
+      "chars": 4998,
+      "mailbox": "INBOX"
     }
   ],
   "skipped": [
     {
-      "reason": "unmatched",
-      "subject": "彭博周末茶歇：中国迅速出招托市",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美伊互袭暂歇推动油价大跌；中国监管机构重罚携程",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-27.md"
     },
     {
       "reason": "date-mismatch",
