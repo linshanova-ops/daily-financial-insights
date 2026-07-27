@@ -389,6 +389,20 @@ async function main() {
     },
   };
 
+  const existingReview = readJson("review.json");
+  const existingStripped = existingSignals.map(({ confidence, ...rest }) => rest);
+  const signalsChanged =
+    JSON.stringify(signalsOut) !== JSON.stringify(existingStripped);
+  const reviewChanged =
+    JSON.stringify(reviewOut) !== JSON.stringify(existingReview);
+
+  if (!signalsChanged && !reviewChanged) {
+    console.log(
+      `[fund-scan] no signal/review changes (+${added}) — skip write/commit`,
+    );
+    return;
+  }
+
   writeJson("signals.json", signalsOut);
   writeJson("review.json", reviewOut);
   writeJson("meta.json", nextMeta);
