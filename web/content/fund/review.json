@@ -1,90 +1,50 @@
 [
   {
-    "id": "rev-sig-20260722-cgae3a",
-    "title": "Traders at Hong Kong hedge fund swallowed by ExodusPoint are being given some big roles",
-    "reason": "中等置信度命中「ExodusPoint」，待人工复核。",
-    "confidence": "66%",
-    "status": "review",
-    "href": "https://www.efinancialcareers.com/news/traders-at-hong-kong-hedge-fund-swallowed-by-exodus-point-are-being-given-some-big-roles"
-  },
-  {
-    "id": "rev-sig-20260722-axc3tg",
-    "title": "Goldman Sachs creates private markets platform as rich investors seek the next SpaceX and Stripe",
+    "id": "rev-sig-20260726-r4tfxh",
+    "title": "Goldman Sachs (GS) Launches Private Markets Platform And Buys AEGIS Hedging Solutions",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.cnbc.com/2026/07/21/goldman-sachs-private-markets-platform.html"
+    "href": "https://au.finance.yahoo.com/news/goldman-sachs-gs-launches-private-160856683.html"
   },
   {
-    "id": "rev-sig-20260722-rdmkzw",
-    "title": "AEGIS Hedging to Be Acquired by Private Equity at Goldman Sachs Alternatives",
+    "id": "rev-sig-20260726-83fgcn",
+    "title": "Goldman Sachs stock trades steady as investment banking recovers and buybacks support earnings",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.businesswire.com/news/home/20260722140805/en/AEGIS-Hedging-to-Be-Acquired-by-Private-Equity-at-Goldman-Sachs-Alternatives"
+    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/goldman-sachs-stock-trades-steady-as-investment-banking-recovers-and/69874381"
   },
   {
-    "id": "rev-sig-20260722-kh6jym",
-    "title": "Goldman Sachs (GS) Says Hedge Funds Are Selling US Tech Stocks At A Record Pace",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "id": "rev-sig-20260727-rkeq8n",
+    "title": "Brevan Howard Digital eyes turnaround after heavy losses",
+    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.sahmcapital.com/news/content/goldman-sachs-gs-says-hedge-funds-are-selling-us-tech-stocks-at-a-record-pace-2026-07-22"
+    "href": "https://www.fnlondon.com/articles/brevan-howard-digital-eyes-turnaround-after-heavy-losses-cbb4b477"
   },
   {
-    "id": "rev-sig-20260723-xwdvvy",
-    "title": "Aureus Asset Management LLC Boosts Position in The Goldman Sachs Group, Inc. $GS",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-aureus-asset-management-llc-boosts-position-in-the-goldman-sachs-group-inc-gs-2026-07-23/"
-  },
-  {
-    "id": "rev-sig-20260724-qpmrib",
-    "title": "Goldman Sachs stock trades steady as investment banking revenue rebounds and asset management fees g - Ad-hoc-news.de",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/goldman-sachs-stock-trades-steady-as-investment-banking-revenue-rebounds/69858658"
-  },
-  {
-    "id": "rev-sig-20260724-hyj4x6",
-    "title": "Goldman Sachs stock steadies as trading revenue offsets weaker investment banking - Ad-hoc-news.de",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/goldman-sachs-stock-steadies-as-trading-revenue-offsets-weaker-investment/69859697"
-  },
-  {
-    "id": "rev-sig-20260723-h4wya6",
-    "title": "Ousted Davidson Kempner Partner Claims He’s Owed $80 Million",
-    "reason": "中等置信度命中「Davidson Kempner」，待人工复核。",
-    "confidence": "71%",
-    "status": "review",
-    "href": "https://www.bloomberg.com/news/articles/2026-07-23/davidson-kempner-ousted-ex-partner-claims-he-s-owed-80-million"
-  },
-  {
-    "id": "rev-sig-20260724-lttokl",
-    "title": "Former Davidson Kempner partner claims $80M in unpaid exit proceeds, alleges forced ouster",
-    "reason": "中等置信度命中「Davidson Kempner」，待人工复核。",
-    "confidence": "71%",
-    "status": "review",
-    "href": "https://cryptobriefing.com/davidson-kempner-partner-80m-exit-dispute/"
-  },
-  {
-    "id": "rev-sig-20260722-yt0fyk",
-    "title": "SEB Asset Management AB Makes New $9.59 Million Investment in Apollo Global Management Inc. $APO",
-    "reason": "中等置信度命中「Apollo」，待人工复核。",
-    "confidence": "61%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-seb-asset-management-ab-makes-new-959-million-investment-in-apollo-global-management-inc-apo-2026-07-22/"
-  },
-  {
-    "id": "rev-sig-20260723-sb16va",
-    "title": "XA Investments Urges XFLT Shareholders to Vote White Proxy Card for King Street Sub-Advisory Agreement Ahead of July 30 Special Meeting",
+    "id": "rev-sig-20260725-b23j55",
+    "title": "XA Investments Urges XFLT Shareholders to Approve King Street as Sub-Adviser on WHITE Proxy Card",
     "reason": "中等置信度命中「King Street」，待人工复核。",
     "confidence": "66%",
     "status": "review",
-    "href": "https://www.quiverquant.com/news/XA+Investments+Urges+XFLT+Shareholders+to+Vote+White+Proxy+Card+for+King+Street+Sub-Advisory+Agreement+Ahead+of+July+30+Special+Meeting"
+    "href": "https://www.quiverquant.com/news/XA+Investments+Urges+XFLT+Shareholders+to+Approve+King+Street+as+Sub-Adviser+on+WHITE+Proxy+Card"
+  },
+  {
+    "id": "rev-sig-20260724-l2c8uy",
+    "title": "M3 Brigade Acquisition VI Ord Shs Class A (MBVI) Shareholder Structure: Major Shareholders & Institutional Holdings",
+    "reason": "中等置信度命中「Brigade」，待人工复核。",
+    "confidence": "62%",
+    "status": "review",
+    "href": "https://www.tradingkey.com/markets/stocks/mbvi/ownership"
+  },
+  {
+    "id": "rev-sig-20260726-72yfmt",
+    "title": "Inflection Point Acquisition III Corp (IPCX) Shareholder Structure: Major Shareholders & Institutional Holdings",
+    "reason": "中等置信度命中「III」，待人工复核。",
+    "confidence": "58%",
+    "status": "review",
+    "href": "https://www.tradingkey.com/markets/stocks/ipcx/ownership"
   }
 ]
