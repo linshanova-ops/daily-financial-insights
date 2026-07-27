@@ -5,6 +5,7 @@
 /** Stable public landing pages — never use email tracking links in cites. */
 export const INBOX_CITE_HREFS = {
   "bloomberg-markets-daily-china": "https://www.bloomberg.com/asia",
+  "bloomberg-weekend-tea": "https://www.bloomberg.com/asia",
   "glassnode-insights": "https://insights.glassnode.com/tag/newsletter/",
 };
 
@@ -20,6 +21,24 @@ export function isWelcomeNewsletter(subject = "", text = "") {
 }
 
 export const INBOX_SOURCES = [
+  {
+    id: "bloomberg-weekend-tea",
+    label: "彭博周末茶歇",
+    cadence: "weekly",
+    mondayOnly: true,
+    keepLanguage: "zh",
+    citeHref: INBOX_CITE_HREFS["bloomberg-weekend-tea"],
+    match({ from = "", subject = "" }) {
+      if (isWelcomeNewsletter(subject)) return false;
+      const f = from.toLowerCase();
+      const fromOk =
+        f.includes("bloomberg") ||
+        f.includes("newschinese@bloomberg") ||
+        f.includes("@bloomberg.net") ||
+        f.includes("@news.bloomberg.com");
+      return fromOk && subject.includes("周末茶歇");
+    },
+  },
   {
     id: "bloomberg-markets-daily-china",
     label: "彭博 Markets Daily China / 财经早茶",

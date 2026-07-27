@@ -204,8 +204,10 @@ FAIL-CLOSED PUBLISH (critical):
    (a) each index move is that index's official close;
    (b) beat|miss is vs estimate only — cooler/less than estimate = "miss estimate";
        hotter/more than estimate = "beat estimate" (CPI, jobs, GDP, claims — never swap tone for label);
-   (c) PBOC OMO net injection = ops − maturity with 亿元 correctly converted
-       (100亿元 = CNY10bn);
+   (c) ALL CNY/RMB amounts must convert 亿元 correctly: **10亿元 = CNY1bn**
+       and **100亿元 = CNY10bn**. Never copy the 亿 numeral unchanged into
+       a `bn` label (e.g. 51.79亿元 = CNY5.179bn, not CNY51.79bn).
+       PBOC OMO net injection = ops − maturity;
    (d) gold/oil levels are settles or explicitly labeled spot;
    (e) every hard quote's source page year matches the coverage window — reject stale
        aggregator flashes (e.g. BlockBeats "7月15日" BTC $116k in a 2026 briefing);

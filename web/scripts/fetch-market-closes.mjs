@@ -18,6 +18,7 @@ import {
   formatSignedPct,
   parseUsDate,
   unixToDateString,
+  withYahooMetaFallback,
 } from "./lib/market-closes-format.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -50,12 +51,13 @@ async function yahooPair(symbol) {
   if (!result) throw new Error(`Yahoo: no result for ${symbol}`);
   const timestamps = result.timestamp || [];
   const closes = result.indicators?.quote?.[0]?.close || [];
-  const pairs = [];
+  let pairs = [];
   for (let i = 0; i < timestamps.length; i++) {
     if (closes[i] != null && !Number.isNaN(closes[i])) {
       pairs.push({ t: timestamps[i], c: closes[i] });
     }
   }
+  pairs = withYahooMetaFallback(pairs, result.meta);
   if (pairs.length < 1) throw new Error(`Yahoo: no closes for ${symbol}`);
   const last = pairs[pairs.length - 1];
   const prev = pairs.length >= 2 ? pairs[pairs.length - 2] : null;

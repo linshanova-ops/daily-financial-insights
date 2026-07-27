@@ -5,6 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { formatBloombergForPrompt } from "./inbox-bloomberg-sections.mjs";
+import { isBeijingPostWeekendOpen } from "./briefing-slot-gate.mjs";
 import {
   INBOX_CITE_HREFS,
   INBOX_SOURCES,
@@ -31,6 +32,7 @@ function readIfExists(rel) {
 export function loadInboxForBriefing(briefingDate) {
   const out = [];
   for (const source of INBOX_SOURCES) {
+    if (source.mondayOnly && !isBeijingPostWeekendOpen(briefingDate)) continue;
     let rel;
     if (source.cadence === "daily") {
       rel = `web/content/inbox/${source.id}/${briefingDate}.md`;
@@ -102,13 +104,13 @@ function formatOneInboxItem(item, index) {
   const chartAlt = readFrontmatterField(item.body, "chartAlt");
   const chartRule = chartImage
     ? `今日图表 IMAGE (REQUIRED): file \`${chartImage}\` is already in the repo (also under web/public/inbox-charts/). Add figures[] entry id=bloomberg-chart-of-day, kind=insight with imageSrc: "${chartImage}", title, and required analysis. Open/read the image first — title+analysis must match the chart content (not a neighboring news bullet). Keep Chinese OK. Keep the image file in the PR commit.`
-    : item.sourceId === "bloomberg-markets-daily-china"
+    : item.sourceId.startsWith("bloomberg-")
       ? "今日图表: if section header exists but no chartImage frontmatter, still add insight analysis from section text when possible."
       : "";
 
   const rawBody = stripInboxFrontmatter(item.body);
   let prepared;
-  if (item.sourceId === "bloomberg-markets-daily-china") {
+  if (item.sourceId.startsWith("bloomberg-")) {
     prepared = formatBloombergForPrompt(rawBody);
   } else if (item.sourceId === "glassnode-insights") {
     prepared = summarizeInboxBody(rawBody, { maxChars: 5500 });
