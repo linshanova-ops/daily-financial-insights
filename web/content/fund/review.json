@@ -1,5 +1,13 @@
 [
   {
+    "id": "rev-sig-20260727-s5tazs",
+    "title": "Donerail, Blackstone, and Centerbridge among final bidders for MarineMax",
+    "reason": "中等置信度命中「Centerbridge」，待人工复核。",
+    "confidence": "67%",
+    "status": "review",
+    "href": "https://www.hedgeweek.com/donerail-blackstone-and-centerbridge-among-final-bidders-for-marinemax/"
+  },
+  {
     "id": "rev-sig-20260726-r4tfxh",
     "title": "Goldman Sachs (GS) Launches Private Markets Platform And Buys AEGIS Hedging Solutions",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -8,12 +16,20 @@
     "href": "https://au.finance.yahoo.com/news/goldman-sachs-gs-launches-private-160856683.html"
   },
   {
-    "id": "rev-sig-20260726-83fgcn",
-    "title": "Goldman Sachs stock trades steady as investment banking recovers and buybacks support earnings",
+    "id": "rev-sig-20260727-vo8ad8",
+    "title": "Goldman Sachs stock trades steady as investment banking revenue recovers and asset management fees g - Ad-hoc-news.de",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/goldman-sachs-stock-trades-steady-as-investment-banking-recovers-and/69874381"
+    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/goldman-sachs-stock-trades-steady-as-investment-banking-revenue-recovers/69882494"
+  },
+  {
+    "id": "rev-sig-20260727-ph8ang",
+    "title": "Dynamix III Ord Shs Class A (DNMX) Shareholder Structure: Major Shareholders & Institutional Holdings",
+    "reason": "中等置信度命中「III」，待人工复核。",
+    "confidence": "58%",
+    "status": "review",
+    "href": "https://www.tradingkey.com/markets/stocks/dnmx/ownership"
   },
   {
     "id": "rev-sig-20260727-rkeq8n",
@@ -22,6 +38,14 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.fnlondon.com/articles/brevan-howard-digital-eyes-turnaround-after-heavy-losses-cbb4b477"
+  },
+  {
+    "id": "rev-sig-20260727-k0ovkz",
+    "title": "Cornerstone Strategic Investment Fund, Inc. $CLM Position Lifted by Sculptor Capital LP",
+    "reason": "中等置信度命中「Sculptor」，待人工复核。",
+    "confidence": "63%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-cornerstone-strategic-investment-fund-inc-clm-position-lifted-by-sculptor-capital-lp-2026-07-27/"
   },
   {
     "id": "rev-sig-20260725-b23j55",
