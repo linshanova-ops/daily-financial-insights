@@ -1,3 +1,6 @@
+/** Beijing schedule for twice-daily briefings (08:00 / 20:00 China time). */
+export const BRIEFING_PUBLISH_TIMEZONE = "Asia/Shanghai";
+
 /** Format a briefing publishedAt / feed generatedAt for the homepage. */
 export function formatPublishedAt(iso?: string | null): string | null {
   if (!iso) return null;
@@ -9,6 +12,7 @@ export function formatPublishedAt(iso?: string | null): string | null {
     year: "numeric",
     hour: "2-digit",
     minute: "2-digit",
+    timeZone: BRIEFING_PUBLISH_TIMEZONE,
     timeZoneName: "short",
   });
 }
