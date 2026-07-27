@@ -164,8 +164,11 @@ FAIL-CLOSED PUBLISH (critical):
      Section map: 国际要闻→globalChanged (every bullet — prefer one
      globalChanged entry per inbox bullet; keep Chinese text Chinese when this
      newsletter is the primary cite; do not compress 14 bullets into 3–4 English
-     paraphrases); 大中华新闻→chinaChanged (every
-     bullet); 市场一览→marketOverview.items[] (structured label/text above Market closes —
+     paraphrases); 大中华新闻→chinaChanged (every bullet — prefer one
+     chinaChanged entry per inbox bullet; keep Chinese text Chinese when this
+     newsletter is the primary cite; do not compress 9 bullets into 1–2 English
+     paraphrases; when a stronger primary cite exists, lead with Chinese inbox
+     wording and attach the primary href); 市场一览→marketOverview.items[] (structured label/text above Market closes —
      never dump as a Global/China prose blob); 经济数据日程+央行和政府动态→watchItems;
      今日图表→figures insight; 全球市况→cross-check only (never replace marketDashboard).
      **Keep Chinese text Chinese** for bullets whose primary cite is this newsletter.
