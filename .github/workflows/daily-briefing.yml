@@ -82,7 +82,32 @@ jobs:
         id: fund
         if: steps.gate.outputs.should_run == 'true'
         continue-on-error: true
-        run: node scripts/scan-fund-signals.mjs --commit
+        run: |
+          set +e
+          node scripts/scan-fund-signals.mjs --commit
+          code=$?
+          set -e
+          if [ "$code" -ne 0 ]; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            exit "$code"
+          fi
+          # GITHUB_TOKEN pushes do not trigger the Pages push workflow — dispatch
+          # only when this run actually committed new fund content.
+          if git log -1 --pretty=%s | grep -q '^chore: refresh Fund signals'; then
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy Pages after Fund content refresh
+        if: steps.gate.outputs.should_run == 'true' && steps.fund.outputs.committed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api "repos/${{ github.repository }}/dispatches" \
+            -f event_type=deploy-pages \
+            || echo "::notice::Could not dispatch deploy-pages."
 
       - name: Generate briefing PR, wait for CI, auto-merge when green
         if: steps.gate.outputs.should_run == 'true' && steps.key.outputs.present == 'true'
