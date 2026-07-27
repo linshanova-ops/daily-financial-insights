@@ -44,6 +44,23 @@ export function unixToDateString(unixSeconds) {
   return new Date(Number(unixSeconds) * 1000).toISOString().slice(0, 10);
 }
 
+/**
+ * Yahoo sometimes publishes a session timestamp with `close: null` while
+ * exposing the completed official close in chart.meta. Append that quote only
+ * when it belongs to a newer UTC session date than the last usable chart close.
+ */
+export function withYahooMetaFallback(pairs, meta = {}) {
+  const out = [...pairs];
+  const price = Number(meta.regularMarketPrice);
+  const time = Number(meta.regularMarketTime);
+  if (!Number.isFinite(price) || !Number.isFinite(time)) return out;
+  const last = out[out.length - 1];
+  if (!last || unixToDateString(time) > unixToDateString(last.t)) {
+    out.push({ t: time, c: price });
+  }
+  return out;
+}
+
 /** Parse MM/DD/YYYY treasury CSV date → YYYY-MM-DD */
 export function parseUsDate(mdy) {
   const m = String(mdy).trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);

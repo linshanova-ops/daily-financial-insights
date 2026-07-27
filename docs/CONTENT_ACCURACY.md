@@ -10,7 +10,7 @@
 4. **Primary sources for official prints** — BLS, Fed, Treasury, PBOC, NBS, company IR. Secondary desks for color only.
 5. **Index closes, not mix-ups** — quote the named index’s official close/settle; never swap Kospi/Nikkei/Kosdaq or open vs close without labels. Prefer exchange/official media for Shanghai/Hang Seng/Kospi over aggregator day wraps.
 6. **Beat/miss vs estimate**, not vs prior. **Cooler / less than estimate = miss estimate**; **hotter / more than estimate = beat estimate** (CPI, PPI, GDP, payrolls, claims, etc.). Do not swap market tone for the print label.
-7. **PBOC 亿元 conversion** — `100亿元` = **CNY10bn**. Net OMO = ops − maturity.
+7. **All CNY/RMB 亿元 conversions** — `10亿元` = **CNY1bn**; `100亿元` = **CNY10bn**. Never copy an `亿元` numeral unchanged into a `bn` label (`51.79亿元` = **CNY5.179bn**, not CNY51.79bn). PBOC net OMO = ops − maturity.
 8. **Crypto triangulation** — BlockBeats alone is not enough for a published BTC/ETH print; pair with a dated Cointelegraph / CoinDesk / Yahoo (or similar) quote.
 9. **Href integrity** — if the linked page does not support the number, replace the source; do not keep a convenient wrong link. **Aggregator pages (BlockBeats, etc.):** omit embed-only figures that do not appear in CI-fetchable HTML.
 10. **Reject rather than invent** — if a figure cannot be verified, omit it or mark `single-source` in caveats. Never invent.
@@ -27,6 +27,7 @@
   3. Runs `scan-links` (fetch + evidence on every cited claim)
   - Walks **every** `href` in all briefing YAML fields (any section) and every `https?://` URL under `web/src`
   - For each sourced claim (summary / global / China / figures / asset framework / signals): fetches the cited page(s) and checks (1) source year/validity and (2) that distinctive claim numbers appear in the page text (union across multi-source facts)
+  - Fails if a briefing copies the same `亿元` numeral into a `bn` label; this catches the common 10× translation error before publish
   - Host adapters: 华尔街见闻 article API, Yahoo chart API, BOK `menuNo` fix; **BLS/SEC** via declared bot User-Agent (`syravocado-link-audit/2.0 research@…`); **TSMC IR** Cloudflare blocks are resolved through the matching SEC EDGAR 6-K exhibit (same prints)
   - CI soft-fallback: if a dated article URL (`/YYYY/MM/DD/`) is IP-blocked (e.g. SED from GitHub Actions) but embeds the briefing year, treat as year-trusted with a warning — do not block Pages deploy
   - Fails on denylisted IDs, wrong publication years (e.g. wallstreetcn `3751205` = 2025), unreachable non-hub articles, or claims whose numbers are missing from cited pages

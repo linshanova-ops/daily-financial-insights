@@ -37,6 +37,15 @@ describe("pickSource", () => {
     assert.equal(src?.id, "bloomberg-markets-daily-china");
   });
 
+  it("matches 彭博周末茶歇 for Monday post-weekend coverage", () => {
+    const src = pickSource(
+      "Bloomberg <noreply@news.bloomberg.com>",
+      "彭博周末茶歇：中国迅速出招托市",
+    );
+    assert.equal(src?.id, "bloomberg-weekend-tea");
+    assert.equal(src?.mondayOnly, true);
+  });
+
   it("matches Glassnode Insights / Week on Chain", () => {
     const src = pickSource(
       "Glassnode <insights@glassnode.com>",

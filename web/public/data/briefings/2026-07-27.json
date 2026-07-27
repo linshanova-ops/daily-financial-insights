@@ -90,7 +90,7 @@
       "id": "ctrip-fine",
       "title": "携程反垄断罚没",
       "kind": "stat",
-      "display": "CNY51.79bn",
+      "display": "51.79亿元（CNY5.179bn）",
       "delta": "Jul 25 SAMR decision",
       "note": "Caixin Jul 25",
       "source": {
@@ -145,7 +145,7 @@
       ]
     }
   ],
-  "marketTone": "Post-weekend reopen: US-Iran strike pause and Monday Asia oil −5%+ cut the Hormuz premium after Jul 24 Brent settled $96.78, but Jul 24 US flash PMI 53.6 (8-month high) and ~40% Fed hike odds frame a tense FOMC week; Changxin (688825) lists on STAR today while Ctrip CNY51.79bn fine and CATL +42% H1 reshape China beta.",
+  "marketTone": "Post-weekend reopen: US-Iran strike pause and Monday Asia oil −5%+ cut the Hormuz premium after Jul 24 Brent settled $96.78, but Jul 24 US flash PMI 53.6 (8-month high) and ~40% Fed hike odds frame a tense FOMC week; Changxin (688825) lists on STAR today while Ctrip CNY5.179bn fine and CATL +42% H1 reshape China beta.",
   "summary": [
     {
       "text": "Jul 27 Asia open: Brent briefly slipped below $90 (−5% to −7% intraday) and WTI toward ~$80 as the US paused strikes after 13 nights and Iran signalled reciprocal restraint (CNBC TV18 Jul 27; NBC/Reuters Jul 26) — partial unwind of Jul 23 Brent >$100 shock, though Houthis hit Saudi Red Sea ports over the weekend (NBC Jul 26; 彭博 Jul 27 inbox).",
@@ -361,7 +361,7 @@
     }
   ],
   "globalTensions": "US-Iran pause vs Red Sea escalation; PMI 53.6 beat vs ~40% hike odds; Jul 24 Brent −4% settle vs +20% MTD; Dow +0.5% Friday vs Nasdaq −0.64% and second weekly loss.",
-  "chinaStance": "Anti-monopoly enforcement (Ctrip CNY51.79bn) and export-control countermeasures (14 EU entities) run alongside STAR liquidity event (Changxin listing) and shareholder-return wave (CATL CNY200–400bn buyback) — regulation and hard-tech IPO coexist.",
+  "chinaStance": "Anti-monopoly enforcement (Ctrip CNY5.179bn) and export-control countermeasures (14 EU entities) run alongside STAR liquidity event (Changxin listing) and shareholder-return wave (CATL CNY20–40bn buyback) — regulation and hard-tech IPO coexist.",
   "chinaChanged": [
     {
       "text": "Jul 27: 长鑫科技（688825）科创板挂牌 — 发行价8.66元/股，募资总额约579亿元（超额配售前），科创板最大IPO（新浪财经/华尔街见闻 Jul 27）；前5交易日无涨跌幅限制，存储周期波动大（华尔街见闻 3777825）。",
@@ -634,7 +634,7 @@
     {
       "grade": "STRONG",
       "name": "Changxin STAR listing + Ctrip mega-fine reshape China tape",
-      "evidence": "688825 lists Jul 27 (579bn+ IPO); SAMR CNY51.79bn Ctrip penalty Jul 25 (Caixin/华尔街见闻).",
+      "evidence": "688825 lists Jul 27 (579亿元 / CNY57.9bn IPO); SAMR CNY5.179bn Ctrip penalty Jul 25 (Caixin/华尔街见闻).",
       "evidenceSources": [
         {
           "label": "新浪财经 Jul 27",
@@ -646,7 +646,7 @@
         }
       ],
       "mechanism": "Hard-tech IPO liquidity drain vs platform antitrust — splits STAR semis from consumer internet in a single session.",
-      "disprovedIf": "Changxin first-day turnover <CNY50bn with STAR 50 flat and Ctrip HK ADR stable."
+      "disprovedIf": "Changxin first-day turnover <CNY50bn（500亿元） with STAR 50 flat and Ctrip HK ADR stable."
     },
     {
       "grade": "MODERATE",
@@ -750,7 +750,7 @@
     {
       "priority": "LOW",
       "headline": "Ctrip fine execution / platform sentiment",
-      "why": "CNY51.79bn SAMR penalty — policy signal beyond single name.",
+      "why": "CNY5.179bn（51.79亿元） SAMR penalty — policy signal beyond single name.",
       "watch": "Ctrip HK listing reaction; peer OTA/platform multiples.",
       "trigger": "Sector-wide guidance cuts citing compliance costs.",
       "invalidator": "Ctrip announces full remedy with no material Q3 guide cut.",

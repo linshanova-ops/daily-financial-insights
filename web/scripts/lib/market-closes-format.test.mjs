@@ -7,6 +7,7 @@ import {
   formatPctChange,
   formatSignedPct,
   parseUsDate,
+  withYahooMetaFallback,
   unixToDateString,
 } from "./market-closes-format.mjs";
 
@@ -28,5 +29,30 @@ describe("market-closes-format", () => {
   it("parses dates", () => {
     assert.equal(parseUsDate("07/16/2026"), "2026-07-16");
     assert.equal(unixToDateString(1784208600), "2026-07-16");
+  });
+
+  it("uses Yahoo meta when the latest session timestamp has a null close", () => {
+    const pairs = [
+      { t: 1784832600, c: 7408.3 },
+    ];
+    const result = withYahooMetaFallback(pairs, {
+      regularMarketPrice: 7411.98,
+      regularMarketTime: 1784928395,
+    });
+    assert.deepEqual(result, [
+      { t: 1784832600, c: 7408.3 },
+      { t: 1784928395, c: 7411.98 },
+    ]);
+  });
+
+  it("does not duplicate a Yahoo meta quote already represented by chart data", () => {
+    const pairs = [{ t: 1784928395, c: 7411.98 }];
+    assert.deepEqual(
+      withYahooMetaFallback(pairs, {
+        regularMarketPrice: 7411.98,
+        regularMarketTime: 1784928400,
+      }),
+      pairs,
+    );
   });
 });

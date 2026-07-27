@@ -14,6 +14,10 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
+import {
+  findBnYiMismatches,
+  yiToBn,
+} from "./lib/currency-unit-check.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const webRoot = path.join(__dirname, "..");
@@ -995,6 +999,11 @@ async function main() {
       collectLabelPathDateMismatches(data, file, mismatches);
       for (const m of mismatches) {
         failures.push(`${m.where}\n    ${m.href}\n    · ${m.mismatch}`);
+      }
+      for (const issue of findBnYiMismatches(raw)) {
+        failures.push(
+          `${file}\n    ${issue.claim}\n    · bn/亿元 unit mismatch: ${issue.amount}亿元 = CNY${yiToBn(issue.amount)}bn, not ${issue.amount}bn`,
+        );
       }
     }
   }
