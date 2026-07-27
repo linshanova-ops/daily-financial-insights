@@ -2,7 +2,7 @@
   "date": "2026-07-27",
   "title": "Daily Financial Briefing",
   "coverageWindow": "July 24–27, 2026",
-  "publishedAt": "2026-07-27T00:09:22.836Z",
+  "publishedAt": "2026-07-27T09:00:32.509Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Jul 27)",
@@ -797,9 +797,9 @@
     ]
   },
   "sources": "AP (Jul 24 US closes/Brent settle), S&P Global (Jul 24 flash PMI), CNBC TV18 (Jul 27 oil Asia), NBC/Reuters (Jul 26 US-Iran pause/Red Sea), Samsung IR (Jul 25 Broadcom MOU), Caixin/华尔街见闻/新浪财经 (Jul 25–27 China), CNINFO (CATL Jul 24), 第一财经 (方星海 Jul 24), BlockBeats (Jul 27 weekend oil/crypto), Yahoo/Coinpaper (BTC Jul 26), 彭博 Markets Daily China / 财经早茶 (Jul 27 inbox).",
-  "singleSource": "Jul 27 morning slot: post-weekend coverage Jul 24–27; no Jul 27 A/H official close at publish time (cash markets still opening). EU tariff threat / Kyodo cabinet reshuffle / DeepSeek fundraising / EU export-control list / HKEX confidential listing / offshore-trust tax from 彭博 Jul 27 inbox without separate primary URLs — kept with stable Bloomberg cite. Fed ~40% hike odds from 彭博 inbox only. Goldman/Morgan Stanley single-analyst items omitted. marketDashboard re-injected at publish; publishedAt updated to match.",
+  "singleSource": "Jul 27 morning slot: post-weekend coverage Jul 24–27; no Jul 27 A/H official close at publish time (cash markets still opening). EU tariff threat / Kyodo cabinet reshuffle / DeepSeek fundraising / EU export-control list / HKEX confidential listing / offshore-trust tax from 彭博 Jul 27 inbox without separate primary URLs — kept with stable Bloomberg cite. Fed ~40% hike odds from 彭博 inbox only. Goldman/Morgan Stanley single-analyst items omitted. marketDashboard re-injected 2026-07-27T09:00:32Z (Jul 24 US closes + Jul 27 Asia); publishedAt updated to match.",
   "marketDashboard": {
-    "asOf": "2026-07-27T00:09:22.836Z",
+    "asOf": "2026-07-27T09:00:32.509Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -809,10 +809,10 @@
           {
             "id": "spx",
             "asset": "S&P 500",
-            "latest": "7,408.30",
-            "change": "−1.21%",
-            "changeDirection": "down",
-            "asOfDate": "2026-07-23",
+            "latest": "7,411.98",
+            "change": "+0.05%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-24",
             "source": {
               "label": "Yahoo Finance (^GSPC)",
               "href": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -821,10 +821,10 @@
           {
             "id": "nasdaq",
             "asset": "Nasdaq Composite",
-            "latest": "25,137.69",
-            "change": "−2.15%",
+            "latest": "24,975.82",
+            "change": "−0.64%",
             "changeDirection": "down",
-            "asOfDate": "2026-07-23",
+            "asOfDate": "2026-07-24",
             "source": {
               "label": "Yahoo Finance (^IXIC)",
               "href": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -833,10 +833,10 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "18.70",
-            "change": "+12.38%",
-            "changeDirection": "up",
-            "asOfDate": "2026-07-23",
+            "latest": "17.63",
+            "change": "−5.72%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
             "source": {
               "label": "Yahoo Finance (^VIX)",
               "href": "https://finance.yahoo.com/quote/%5EVIX/"
@@ -845,10 +845,10 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "66,422.60",
-            "change": "+0.46%",
-            "changeDirection": "up",
-            "asOfDate": "2026-07-23",
+            "latest": "64,931.19",
+            "change": "−2.25%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
             "source": {
               "label": "Yahoo Finance (^N225)",
               "href": "https://finance.yahoo.com/quote/%5EN225/"
@@ -857,10 +857,10 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,210.81",
-            "change": "+1.28%",
-            "changeDirection": "up",
-            "asOfDate": "2026-07-23",
+            "latest": "25,207.18",
+            "change": "−0.01%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
             "source": {
               "label": "Yahoo Finance (^HSI)",
               "href": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -869,10 +869,10 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,629.51",
+            "latest": "4,702.05",
             "change": null,
             "changeDirection": "flat",
-            "asOfDate": "2026-07-24",
+            "asOfDate": "2026-07-27",
             "source": {
               "label": "Yahoo Finance (HSTECH.HK)",
               "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
@@ -881,10 +881,10 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,876.78",
-            "change": "+0.25%",
-            "changeDirection": "up",
-            "asOfDate": "2026-07-23",
+            "latest": "3,858.25",
+            "change": "−0.48%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
             "source": {
               "label": "Yahoo Finance (000001.SS)",
               "href": "https://finance.yahoo.com/quote/000001.SS/"
@@ -953,8 +953,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "163.5700",
-            "change": "−0.16%",
+            "latest": "163.5850",
+            "change": "−0.15%",
             "changeDirection": "down",
             "asOfDate": "2026-07-27",
             "source": {
@@ -965,10 +965,10 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7617",
-            "change": "−0.16%",
+            "latest": "6.7656",
+            "change": "−0.10%",
             "changeDirection": "down",
-            "asOfDate": "2026-07-26",
+            "asOfDate": "2026-07-27",
             "source": {
               "label": "Yahoo Finance (CNY=X)",
               "href": "https://finance.yahoo.com/quote/CNY%3DX/"
@@ -977,10 +977,10 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,098.30",
-            "change": "+0.75%",
+            "latest": "$4,098.40",
+            "change": "+0.76%",
             "changeDirection": "up",
-            "asOfDate": "2026-07-26",
+            "asOfDate": "2026-07-27",
             "source": {
               "label": "Yahoo Finance (GC=F)",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -989,10 +989,10 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$91.99",
-            "change": "−4.95%",
+            "latest": "$89.21",
+            "change": "−7.82%",
             "changeDirection": "down",
-            "asOfDate": "2026-07-26",
+            "asOfDate": "2026-07-27",
             "source": {
               "label": "Yahoo Finance (BZ=F)",
               "href": "https://finance.yahoo.com/quote/BZ%3DF/"
@@ -1001,8 +1001,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$65,225",
-            "change": "+1.33%",
+            "latest": "$65,068",
+            "change": "+0.92%",
             "changeDirection": "up",
             "asOfDate": "2026-07-27",
             "source": {
@@ -1013,9 +1013,9 @@
           {
             "id": "btc-funding",
             "asset": "BTC funding rate",
-            "latest": "0.0076%",
-            "change": "+0.649 bp",
-            "changeDirection": "up",
+            "latest": "0.0053%",
+            "change": "−0.231 bp",
+            "changeDirection": "down",
             "asOfDate": "2026-07-27",
             "source": {
               "label": "OKX funding API",
