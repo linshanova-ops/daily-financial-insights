@@ -3,18 +3,6 @@ import path from "path";
 
 const FUND_DIR = path.join(process.cwd(), "content", "fund");
 
-export type FundUniverseItem = {
-  rank: number;
-  name: string;
-  country: string;
-  city: string;
-  aum: number;
-  strategy: string;
-  change: string;
-};
-
-export type MonitoredFundRef = { rank: number; name: string };
-
 export type FundSignal = {
   id: string;
   date: string;
@@ -23,6 +11,8 @@ export type FundSignal = {
   summaryEn?: string;
   fund: string;
   source: string;
+  sourceTier?: string;
+  sourceTierLabel?: string;
   tag: string;
   status: string;
   href?: string | null;
@@ -35,7 +25,23 @@ export type FundReviewItem = {
   confidence: string;
   status: string;
   href?: string | null;
+  source?: string | null;
+  sourceTier?: string;
+  sourceTierLabel?: string;
 };
+
+export type FundUniverseItem = {
+  rank: number;
+  name: string;
+  country: string;
+  city: string;
+  aum: number;
+  strategy: string;
+  change: string;
+  aumNote?: string;
+};
+
+export type MonitoredFundRef = { rank: number; name: string };
 
 export type FundRule = {
   id: string;

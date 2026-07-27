@@ -18,6 +18,8 @@ export const KNOWN_FUND_BRANDS = {
   "Qube Research & Technologies": ["Qube", "QRT"],
   "Verition Fund Management": ["Verition"],
   "Jain Global": ["Jain Global"],
+  "III Capital": ["III Capital"],
+  "Man Group": ["Man Group"],
   "Oaktree Capital Management": ["Oaktree"],
   "HAO Capital": ["HAO Capital", "Hao Capital"],
   "Sona Asset Management": ["Sona"],
@@ -46,7 +48,9 @@ function buildAliasSet(name) {
     )
     .replace(/\s+/g, " ")
     .trim();
-  if (short.length >= 3) aliases.add(short);
+  // Require ≥4 chars for stripped stems so "III Capital" / "Man Group"
+  // do not create false matches on "III" SPACs or "Man" as a common word.
+  if (short.length >= 4) aliases.add(short);
 
   const knownForFund = KNOWN_FUND_BRANDS[base] || [];
   const knownShort = new Set(
@@ -131,6 +135,13 @@ export function scoreFundMention(text, fund) {
 
   for (const alias of aliases) {
     if (!alias) continue;
+    // Block ultra-short generic stems (except known ticker brands like LMR/QRT).
+    if (
+      alias.length < 4 &&
+      !built.knownShort.has(alias.toLowerCase())
+    ) {
+      continue;
+    }
     const escaped = alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const re = new RegExp(`\\b${escaped}\\b`, "i");
     if (!re.test(hay)) continue;

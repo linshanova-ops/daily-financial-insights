@@ -28,6 +28,11 @@ import {
   signalDedupKey,
   withinHours,
 } from "./lib/fund-signal-match.mjs";
+import {
+  classifySourceTier,
+  isConfirmableSource,
+  sourceTierLabel,
+} from "./lib/fund-sources.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -203,6 +208,11 @@ function matchItems(items, monitored) {
     const title = cleanHeadline(item.title);
     const tag = guessTag(title);
     const { summaryEn, summary } = bilingualSummary(title, best.fund.name, tag);
+    const sourceTier = classifySourceTier({
+      source: item.source,
+      title,
+      href: item.link,
+    });
     const row = {
       id: `sig-${toSignalDate(item.pubDate).replaceAll(".", "")}-${Math.abs(
         hash(title + best.fund.name),
@@ -215,11 +225,29 @@ function matchItems(items, monitored) {
       summaryEn,
       fund: best.fund.name,
       source: item.source,
+      sourceTier,
+      sourceTierLabel: sourceTierLabel(sourceTier),
+      matchedAs: best.matchedAs,
       tag,
       status: tier === "confirmed" ? "confirmed" : "review",
       href: item.link || null,
       confidence: best.score,
     };
+
+    // Weak aggregators / 13F spam never enter confirmed feed.
+    if (tier === "confirmed" && !isConfirmableSource(row)) {
+      review.push({
+        id: `rev-${row.id}`,
+        title: row.title,
+        reason: `弱信源「${row.source}」命中「${best.matchedAs || best.fund.name}」— 不进入确定命中，待人工复核。`,
+        confidence: `${best.score}%`,
+        status: "review",
+        href: row.href,
+        source: row.source,
+        sourceTier: "weak",
+      });
+      continue;
+    }
 
     if (tier === "confirmed") confirmed.push(row);
     else {
@@ -230,6 +258,8 @@ function matchItems(items, monitored) {
         confidence: `${best.score}%`,
         status: "review",
         href: row.href,
+        source: row.source,
+        sourceTier,
       });
     }
   }
@@ -345,7 +375,7 @@ async function main() {
   const { merged, added } = mergeConfirmed(existingSignals, confirmed);
 
   // Drop ephemeral confidence field from persisted confirmed rows
-  const signalsOut = merged.map(({ confidence, ...rest }) => rest);
+  const signalsOut = merged.map(({ confidence, matchedAs, ...rest }) => rest);
 
   // Dedupe review by title
   const reviewMap = new Map();
@@ -378,7 +408,7 @@ async function main() {
           : `每日扫描过去 ${WINDOW_HOURS} 小时 · 命中永久归档`,
     phase: 2,
     phaseNote:
-      "Live RSS scan on briefing windows (Hedgeweek + Google News + HedgeCo). Confirmed hits are permanent. Google News uses one dedicated query per monitored alias (no OR-batch dilution).",
+      "Live RSS on briefing windows. Designated: Hedgeweek + HedgeCo. Google News only promotes Bloomberg/Reuters/FT/FN London-class desks; MarketBeat 13F / ownership stubs are weak and never auto-confirm. Confirmed hits are permanent. One Google News query per monitored alias.",
     lastScan: {
       at: now.toISOString(),
       fetched: items.length,

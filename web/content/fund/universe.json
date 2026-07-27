@@ -904,107 +904,119 @@
     "name": "HAO Capital",
     "country": "中国香港",
     "city": "Hong Kong",
-    "aum": 0,
+    "aum": 0.7,
     "strategy": "Long / Short",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "HAO Advisors ~$0.7bn"
   },
   {
     "rank": 102,
     "name": "Sona Asset Management",
     "country": "英国",
     "city": "London",
-    "aum": 0,
+    "aum": 16.6,
     "strategy": "Relative Value / Credit",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "Bloomberg Jan 2026"
   },
   {
     "rank": 103,
     "name": "Elliott Investment Management",
     "country": "美国",
     "city": "New York",
-    "aum": 0,
+    "aum": 79.8,
     "strategy": "Activist / Multi Strategy",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "Elliott YE 2025"
   },
   {
     "rank": 104,
     "name": "LMR Partners",
     "country": "英国",
     "city": "London",
-    "aum": 0,
+    "aum": 14.0,
     "strategy": "Multi Strategy",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "LMR firm site"
   },
   {
     "rank": 105,
     "name": "Caxton Associates",
     "country": "美国",
     "city": "New York",
-    "aum": 0,
+    "aum": 4.6,
     "strategy": "Global Macro",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "Form ADV Dec 2025"
   },
   {
     "rank": 106,
     "name": "Linden Advisors",
     "country": "美国",
     "city": "New York",
-    "aum": 0,
+    "aum": 11.0,
     "strategy": "Convertible Arbitrage",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "trade-press estimate"
   },
   {
     "rank": 107,
     "name": "Waha Investments",
     "country": "阿联酋",
     "city": "Abu Dhabi",
-    "aum": 0,
+    "aum": 3.0,
     "strategy": "Multi Strategy",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "Waha Capital FY2025"
   },
   {
     "rank": 108,
     "name": "PIMCO",
     "country": "美国",
     "city": "Newport Beach",
-    "aum": 0,
+    "aum": 2270.0,
     "strategy": "Fixed Income",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "PIMCO Mar 2026"
   },
   {
     "rank": 109,
     "name": "Barings",
     "country": "美国",
     "city": "Charlotte",
-    "aum": 0,
+    "aum": 391.0,
     "strategy": "Credit / Multi Asset",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "Barings public AUM"
   },
   {
     "rank": 110,
     "name": "Neuberger Berman",
     "country": "美国",
     "city": "New York",
-    "aum": 0,
+    "aum": 463.0,
     "strategy": "Multi Asset",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "NB firm AUM public"
   },
   {
     "rank": 111,
     "name": "Brookfield",
     "country": "加拿大",
     "city": "Toronto",
-    "aum": 0,
+    "aum": 1000.0,
     "strategy": "Alternatives",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "Brookfield ~$1tn"
   },
   {
     "rank": 112,
     "name": "Schroders",
     "country": "英国",
     "city": "London",
-    "aum": 0,
+    "aum": 974.0,
     "strategy": "Multi Asset",
-    "change": "ADD"
+    "change": "ADD",
+    "aumNote": "Schroders public AUM"
   }
 ]
