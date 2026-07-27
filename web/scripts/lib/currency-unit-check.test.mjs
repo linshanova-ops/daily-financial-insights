@@ -46,5 +46,13 @@ describe("findBnYiMismatches", () => {
       pageHasCnyBnEvidence("罚没携程5.179亿元", "5.179"),
       false,
     );
+    assert.equal(
+      pageHasCnyBnEvidence("预计募集资金总额为666.07亿元", "66.6"),
+      true,
+    );
+    assert.equal(
+      pageHasCnyBnEvidence("本月MLF加量续作1000亿元", "100"),
+      true,
+    );
   });
 });
