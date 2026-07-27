@@ -5,7 +5,10 @@
     "reason": "中等置信度命中「Centerbridge」，待人工复核。",
     "confidence": "67%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/donerail-blackstone-and-centerbridge-among-final-bidders-for-marinemax/"
+    "href": "https://www.hedgeweek.com/donerail-blackstone-and-centerbridge-among-final-bidders-for-marinemax/",
+    "source": null,
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源"
   },
   {
     "id": "rev-sig-20260726-r4tfxh",
@@ -13,7 +16,10 @@
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://au.finance.yahoo.com/news/goldman-sachs-gs-launches-private-160856683.html"
+    "href": "https://au.finance.yahoo.com/news/goldman-sachs-gs-launches-private-160856683.html",
+    "source": null,
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载"
   },
   {
     "id": "rev-sig-20260727-vo8ad8",
@@ -21,15 +27,10 @@
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/goldman-sachs-stock-trades-steady-as-investment-banking-revenue-recovers/69882494"
-  },
-  {
-    "id": "rev-sig-20260727-ph8ang",
-    "title": "Dynamix III Ord Shs Class A (DNMX) Shareholder Structure: Major Shareholders & Institutional Holdings",
-    "reason": "中等置信度命中「III」，待人工复核。",
-    "confidence": "58%",
-    "status": "review",
-    "href": "https://www.tradingkey.com/markets/stocks/dnmx/ownership"
+    "href": "https://www.ad-hoc-news.de/boerse/news/ueberblick/goldman-sachs-stock-trades-steady-as-investment-banking-revenue-recovers/69882494",
+    "source": null,
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260727-rkeq8n",
@@ -37,7 +38,10 @@
     "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.fnlondon.com/articles/brevan-howard-digital-eyes-turnaround-after-heavy-losses-cbb4b477"
+    "href": "https://www.fnlondon.com/articles/brevan-howard-digital-eyes-turnaround-after-heavy-losses-cbb4b477",
+    "source": null,
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载"
   },
   {
     "id": "rev-sig-20260727-k0ovkz",
@@ -45,7 +49,10 @@
     "reason": "中等置信度命中「Sculptor」，待人工复核。",
     "confidence": "63%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-cornerstone-strategic-investment-fund-inc-clm-position-lifted-by-sculptor-capital-lp-2026-07-27/"
+    "href": "https://www.marketbeat.com/instant-alerts/filing-cornerstone-strategic-investment-fund-inc-clm-position-lifted-by-sculptor-capital-lp-2026-07-27/",
+    "source": null,
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260725-b23j55",
@@ -53,22 +60,9 @@
     "reason": "中等置信度命中「King Street」，待人工复核。",
     "confidence": "66%",
     "status": "review",
-    "href": "https://www.quiverquant.com/news/XA+Investments+Urges+XFLT+Shareholders+to+Approve+King+Street+as+Sub-Adviser+on+WHITE+Proxy+Card"
-  },
-  {
-    "id": "rev-sig-20260726-72yfmt",
-    "title": "Inflection Point Acquisition III Corp (IPCX) Shareholder Structure: Major Shareholders & Institutional Holdings",
-    "reason": "中等置信度命中「III」，待人工复核。",
-    "confidence": "58%",
-    "status": "review",
-    "href": "https://www.tradingkey.com/markets/stocks/ipcx/ownership"
-  },
-  {
-    "id": "rev-sig-20260727-4gj5pt",
-    "title": "HCM III Acquisition Ord Shs Class A (HCMA) Shareholder Structure: Major Shareholders & Institutional Holdings",
-    "reason": "中等置信度命中「III」，待人工复核。",
-    "confidence": "58%",
-    "status": "review",
-    "href": "https://www.tradingkey.com/markets/stocks/hcma/ownership"
+    "href": "https://www.quiverquant.com/news/XA+Investments+Urges+XFLT+Shareholders+to+Approve+King+Street+as+Sub-Adviser+on+WHITE+Proxy+Card",
+    "source": null,
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   }
 ]

@@ -13,6 +13,9 @@ const tabs: { id: TabId; label: string; en: string }[] = [
 
 function formatAum(aum: number): string {
   if (!aum || aum <= 0) return "—";
+  if (aum >= 1000) return `$${(aum / 1000).toFixed(2)}T`;
+  if (aum >= 100) return `$${aum.toFixed(0)}B`;
+  if (aum < 1) return `$${(aum * 1000).toFixed(0)}M`;
   return `$${aum.toFixed(1)}B`;
 }
 
@@ -193,10 +196,24 @@ function FeedTab({
                 <p className="mt-2 text-xs tracking-wide text-ink/45">
                   <span className="text-forest">{sig.fund}</span>
                   <span className="mx-2">·</span>
-                  {sig.source}
+                  <span className="text-ink/55">
+                    {sig.sourceTierLabel || "信源"} · {sig.source}
+                  </span>
                   <span className="mx-2">·</span>
                   {sig.tag}
                 </p>
+                {sig.href ? (
+                  <p className="mt-1 text-xs text-ink/40">
+                    <a
+                      href={sig.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="focus-ring underline-offset-2 hover:text-forest hover:underline"
+                    >
+                      打开原文
+                    </a>
+                  </p>
+                ) : null}
               </div>
             </li>
           ))}
@@ -240,6 +257,12 @@ function FeedTab({
                   {item.reason}
                 </p>
                 <p className="mt-1 text-xs text-copper">置信度 {item.confidence}</p>
+                {item.source ? (
+                  <p className="mt-1 text-xs text-ink/40">
+                    {(item as { sourceTierLabel?: string }).sourceTierLabel || "信源"} ·{" "}
+                    {item.source}
+                  </p>
+                ) : null}
               </li>
             ))}
           </ul>
@@ -275,7 +298,8 @@ function FundsTab({
         </p>
       </div>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-soft">
-        当前监控 {total} 家管理机构（Top 100 + 指定增补）。
+        当前监控 {total} 家管理机构（Top 100 + 指定增补）。AUM
+        为公开可核验的管理机构规模（美元）；悬停数值可看备注。
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -324,7 +348,12 @@ function FundsTab({
                 <td className="py-3 pr-3 text-ink-soft">
                   {f.city}, {f.country}
                 </td>
-                <td className="py-3 font-medium text-ink">{formatAum(f.aum)}</td>
+                <td
+                  className="py-3 font-medium text-ink"
+                  title={f.aumNote || undefined}
+                >
+                  {formatAum(f.aum)}
+                </td>
               </tr>
             ))}
           </tbody>

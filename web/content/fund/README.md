@@ -18,10 +18,19 @@ Edit `monitored.json`:
 
 Use ranks from `universe.json`. Commit and deploy (or wait for the next briefing-window Fund scan deploy).
 
+## Sources (accuracy)
+
+| Tier | Examples | Feed behavior |
+|------|----------|---------------|
+| **指定信源** | Hedgeweek RSS, HedgeCo RSS | May auto-confirm |
+| **公开转载** | Bloomberg, Reuters, FT, FN London, With Intelligence | May auto-confirm |
+| **弱信源** | MarketBeat 13F alerts, TradingKey ownership stubs, Ad-hoc aggregators | Never auto-confirm; usually dropped |
+
+Cleanup: `node scripts/lib/fund-queue-clean.mjs`
+
 ## Live scan
 
 `node scripts/scan-fund-signals.mjs` runs on Beijing briefing slots via `daily-briefing.yml`.
-Sources: Hedgeweek, Google News, HedgeCo.
 
 Google News runs **one dedicated query per monitored alias** (not OR-batched),
 so quieter names are not drowned out by megafunds in the same RSS page.

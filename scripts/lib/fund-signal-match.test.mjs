@@ -112,6 +112,24 @@ describe("scoreFundMention", () => {
     });
     assert.equal(confidenceTier(score), "exclude");
   });
+
+  it("does not match III Capital on SPAC 'III' tokens", () => {
+    const { score, matchedAs } = scoreFundMention(
+      "Dynamix III Ord Shs Class A Shareholder Structure",
+      { name: "III Capital" },
+    );
+    assert.equal(matchedAs, null);
+    assert.equal(score, 0);
+  });
+
+  it("still matches Millennium on Meridiem exit headline", () => {
+    const { score, matchedAs } = scoreFundMention(
+      "Meridiem Capital rebuilds with Schonfeld backing after Millennium Exit",
+      { name: "Millennium Capital Partners" },
+    );
+    assert.equal(matchedAs, "Millennium");
+    assert.ok(score >= 75);
+  });
 });
 
 describe("parseRssItems", () => {
