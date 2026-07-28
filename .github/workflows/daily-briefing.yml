@@ -115,19 +115,32 @@ jobs:
 
       # After a Cursor spend/usage limit hit, skip Agent.create for the rest of
       # this slot so catch-up ticks stay green (marker written by generate script).
+      # Manual force / workflow_dispatch bypasses the skip so restored spend can
+      # publish immediately without waiting for cache expiry.
       - name: Restore Cursor usage-limit skip marker
         id: usage_skip
-        if: steps.gate.outputs.should_run == 'true' && steps.key.outputs.present == 'true'
+        if: >-
+          steps.gate.outputs.should_run == 'true' &&
+          steps.key.outputs.present == 'true' &&
+          github.event_name != 'workflow_dispatch' &&
+          github.event.client_payload.force != true &&
+          github.event.client_payload.force != 'true'
         uses: actions/cache@v4
         with:
           path: .cache/cursor-usage-skip
-          key: cursor-usage-skip-${{ steps.gate.outputs.briefing_date }}-${{ steps.gate.outputs.slot_id }}
+          # bump key version when intentionally clearing a stuck skip marker
+          key: cursor-usage-skip-v2-${{ steps.gate.outputs.briefing_date }}-${{ steps.gate.outputs.slot_id }}
 
       - name: Generate briefing PR, wait for CI, auto-merge when green
         if: >-
           steps.gate.outputs.should_run == 'true' &&
           steps.key.outputs.present == 'true' &&
-          steps.usage_skip.outputs.cache-hit != 'true'
+          (
+            github.event_name == 'workflow_dispatch' ||
+            github.event.client_payload.force == true ||
+            github.event.client_payload.force == 'true' ||
+            steps.usage_skip.outputs.cache-hit != 'true'
+          )
         timeout-minutes: 90
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
@@ -142,6 +155,9 @@ jobs:
         if: >-
           steps.gate.outputs.should_run == 'true' &&
           steps.key.outputs.present == 'true' &&
+          github.event_name != 'workflow_dispatch' &&
+          github.event.client_payload.force != true &&
+          github.event.client_payload.force != 'true' &&
           steps.usage_skip.outputs.cache-hit == 'true'
         run: |
-          echo "::warning::Skipping Cursor generate — usage-limit skip marker is armed for ${{ steps.gate.outputs.briefing_date }} ${{ steps.gate.outputs.slot_id }}. Raise Spend Limit, then re-run with force or wait for the next slot."
+          echo "::warning::Skipping Cursor generate — usage-limit skip marker is armed for ${{ steps.gate.outputs.briefing_date }} ${{ steps.gate.outputs.slot_id }}. If spend is restored, dispatch refresh-briefing with client_payload.force=true (or workflow_dispatch)."
