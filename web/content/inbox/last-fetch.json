@@ -1,24 +1,38 @@
 {
-  "at": "2026-07-27T00:02:08.017Z",
-  "briefingDate": "2026-07-27",
+  "at": "2026-07-28T02:55:27.298Z",
+  "briefingDate": "2026-07-28",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-27.md",
-      "subject": "彭博财经早茶：美伊互袭暂歇推动油价大跌；中国监管机构重罚携程",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-28.md",
+      "subject": "彭博财经早茶：AI循环融资担忧重创芯片股；美国和伊朗恢复谈判",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5598,
+      "chars": 4874,
       "mailbox": "INBOX",
-      "chartImage": "/inbox-charts/bloomberg-2026-07-27.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-27.png"
+      "chartImage": "/inbox-charts/bloomberg-2026-07-28.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-28.png"
+    },
+    {
+      "sourceId": "bloomberg-weekend-tea",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W30.md",
+      "skipped": true
     }
   ],
   "skipped": [
     {
-      "reason": "unmatched",
+      "reason": "date-mismatch",
+      "subject": "彭博财经早茶：美伊互袭暂歇推动油价大跌；中国监管机构重罚携程",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-07-26",
+      "bjDay": "2026-07-27",
+      "briefingDate": "2026-07-28"
+    },
+    {
+      "reason": "weekly-exists",
       "subject": "彭博周末茶歇：中国迅速出招托市",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W30.md"
     },
     {
       "reason": "date-mismatch",
@@ -27,7 +41,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-23",
       "bjDay": "2026-07-24",
-      "briefingDate": "2026-07-27"
+      "briefingDate": "2026-07-28"
     },
     {
       "reason": "date-mismatch",
@@ -36,7 +50,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-22",
       "bjDay": "2026-07-23",
-      "briefingDate": "2026-07-27"
+      "briefingDate": "2026-07-28"
     },
     {
       "reason": "unmatched",
@@ -55,7 +69,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-21",
       "bjDay": "2026-07-22",
-      "briefingDate": "2026-07-27"
+      "briefingDate": "2026-07-28"
     },
     {
       "reason": "date-mismatch",
@@ -64,7 +78,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-20",
       "bjDay": "2026-07-21",
-      "briefingDate": "2026-07-27"
+      "briefingDate": "2026-07-28"
     },
     {
       "reason": "unmatched",
