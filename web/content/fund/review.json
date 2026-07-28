@@ -20,6 +20,16 @@
     "sourceTier": "designated"
   },
   {
+    "id": "rev-sig-20260728-dt2h3x",
+    "title": "T. Rowe Price Goldman Sachs Private Markets Fund Launches",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketsmedia.com/t-rowe-price-goldman-sachs-private-markets-fund-launches/",
+    "source": "Markets Media",
+    "sourceTier": "secondary"
+  },
+  {
     "id": "rev-sig-20260727-4thiid",
     "title": "T. ROWE PRICE GOLDMAN SACHS PRIVATE MARKETS FUND DEBUTS",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
