@@ -76,24 +76,28 @@ jobs:
           BRIEFING_DATE: ${{ steps.gate.outputs.briefing_date }}
         run: node scripts/fetch-inbox-sources.mjs
 
-      # Fund module phase 2: live RSS scan on the same Beijing windows.
+      # Fund module phase 2: live RSS scan on primary Beijing windows only.
+      # Skip during missed-slot catch-up — otherwise every 5m cron tick can churn
+      # review.json + false-positive deploy dispatches and cancel Pages builds.
       # Sources: Hedgeweek + Google News + HedgeCo. No CURSOR_API_KEY required.
       - name: Scan Fund signals (Hedgeweek + Google News)
         id: fund
-        if: steps.gate.outputs.should_run == 'true'
+        if: steps.gate.outputs.should_run == 'true' && steps.gate.outputs.is_catchup != 'true'
         continue-on-error: true
         run: |
           set +e
+          before=$(git rev-parse HEAD)
           node scripts/scan-fund-signals.mjs --commit
           code=$?
+          after=$(git rev-parse HEAD)
           set -e
           if [ "$code" -ne 0 ]; then
             echo "committed=false" >> "$GITHUB_OUTPUT"
             exit "$code"
           fi
-          # GITHUB_TOKEN pushes do not trigger the Pages push workflow — dispatch
-          # only when this run actually committed new fund content.
-          if git log -1 --pretty=%s | grep -q '^chore: refresh Fund signals'; then
+          # Detect a commit made by THIS run only — do not use `git log -1`
+          # message match (HEAD may still be yesterday's Fund commit after a no-op).
+          if [ "$before" != "$after" ]; then
             echo "committed=true" >> "$GITHUB_OUTPUT"
           else
             echo "committed=false" >> "$GITHUB_OUTPUT"
@@ -109,8 +113,21 @@ jobs:
             -f event_type=deploy-pages \
             || echo "::notice::Could not dispatch deploy-pages."
 
-      - name: Generate briefing PR, wait for CI, auto-merge when green
+      # After a Cursor spend/usage limit hit, skip Agent.create for the rest of
+      # this slot so catch-up ticks stay green (marker written by generate script).
+      - name: Restore Cursor usage-limit skip marker
+        id: usage_skip
         if: steps.gate.outputs.should_run == 'true' && steps.key.outputs.present == 'true'
+        uses: actions/cache@v4
+        with:
+          path: .cache/cursor-usage-skip
+          key: cursor-usage-skip-${{ steps.gate.outputs.briefing_date }}-${{ steps.gate.outputs.slot_id }}
+
+      - name: Generate briefing PR, wait for CI, auto-merge when green
+        if: >-
+          steps.gate.outputs.should_run == 'true' &&
+          steps.key.outputs.present == 'true' &&
+          steps.usage_skip.outputs.cache-hit != 'true'
         timeout-minutes: 90
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
@@ -118,4 +135,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRIEFING_DATE: ${{ steps.gate.outputs.briefing_date }}
           BRIEFING_SLOT_ID: ${{ steps.gate.outputs.slot_id }}
+          CURSOR_USAGE_SKIP_DIR: ${{ github.workspace }}/.cache/cursor-usage-skip
         run: node scripts/generate-daily-briefing.mjs
+
+      - name: Notice when generate skipped due to usage-limit cooldown
+        if: >-
+          steps.gate.outputs.should_run == 'true' &&
+          steps.key.outputs.present == 'true' &&
+          steps.usage_skip.outputs.cache-hit == 'true'
+        run: |
+          echo "::warning::Skipping Cursor generate — usage-limit skip marker is armed for ${{ steps.gate.outputs.briefing_date }} ${{ steps.gate.outputs.slot_id }}. Raise Spend Limit, then re-run with force or wait for the next slot."

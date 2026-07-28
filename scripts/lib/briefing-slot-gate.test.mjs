@@ -155,7 +155,18 @@ describe("evaluateScheduleGate", () => {
     });
     assert.equal(r.shouldRun, true);
     assert.equal(r.slot?.id, "evening");
+    assert.equal(r.isCatchup, true);
     assert.match(r.reason, /missed-slot catch-up/);
+  });
+
+  it("primary window is not catch-up", () => {
+    const r = evaluateScheduleGate({
+      eventName: "schedule",
+      now: new Date("2026-07-20T00:10:00.000Z"),
+      latest: { date: "2026-07-19", publishedAt: "2026-07-19T12:10:00.000Z" },
+    });
+    assert.equal(r.shouldRun, true);
+    assert.equal(r.isCatchup, false);
   });
 
   it("missed-slot catch-up skips when evening already published", () => {

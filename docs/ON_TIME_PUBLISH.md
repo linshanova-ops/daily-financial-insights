@@ -64,6 +64,17 @@ From GitHub docs: repository_dispatch requires authentication with `repo` scope 
 
 Without `"force":true`, the gate still prevents duplicate Cursor runs after a slot has published.
 
+### If Actions shows a flood of red `refresh-briefing` jobs
+
+Usually **Cursor spend/usage limit**, not a content bug. The generator soft-skips
+(`exit 0` + warning) and arms a per-slot skip marker so catch-up ticks stay green.
+**Fix:** enable usage-based pricing / raise Spend Limit at
+https://www.cursor.com/dashboard?tab=settings — then the next slot (or a force
+dispatch) can publish again.
+
+Fund RSS scans only run in the **primary** 0–45m window (not every catch-up tick),
+and Pages is dispatched only when this run’s `git` HEAD actually moved.
+
 ## Optional: GitHub email on overdue
 
 1. GitHub → Settings → Notifications → Actions → enable failed workflow emails  

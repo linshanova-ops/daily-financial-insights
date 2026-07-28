@@ -22,11 +22,17 @@ import {
 import { beijingDateString, isBeijingPostWeekendOpen } from "./lib/briefing-slot-gate.mjs";
 import { commitInboxCapturesToBriefingBranch } from "./lib/commit-inbox-for-briefing.mjs";
 import {
+  isCursorUsageLimitError,
+  markUsageLimitSkip,
+} from "./lib/cursor-usage-limit.mjs";
+import {
   formatInboxPromptBlock,
   loadInboxFetchStatus,
   loadInboxForBriefing,
 } from "./lib/load-inbox-context.mjs";
 import { hasBloombergChartOfDay } from "./lib/inbox-bloomberg-sections.mjs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const apiKey = process.env.CURSOR_API_KEY;
 const repoUrl =
@@ -814,6 +820,31 @@ async function main() {
   } catch (err) {
     console.error(`[briefing] error name=${err?.name}`);
     console.error(`[briefing] error message=${err?.message}`);
+    // Spend-limit / usage-limit is an account billing state, not a content bug.
+    // Soft-skip (exit 0) so external cron catch-up every 5m does not paint the
+    // Actions UI red for hours. A skip marker arms the workflow cache so later
+    // ticks in this slot do not keep calling Agent.create.
+    if (isCursorUsageLimitError(err)) {
+      const skipDir =
+        process.env.CURSOR_USAGE_SKIP_DIR ||
+        path.join(
+          path.dirname(fileURLToPath(import.meta.url)),
+          "..",
+          ".cache",
+          "cursor-usage-skip",
+        );
+      try {
+        markUsageLimitSkip(skipDir, String(err?.message || "usage_limit_exceeded"));
+      } catch (markErr) {
+        console.warn(
+          `[briefing] could not write usage-limit skip marker: ${markErr?.message || markErr}`,
+        );
+      }
+      console.warn(
+        "::warning::Cursor usage limit exceeded — skipping generate (soft). Enable usage-based pricing / raise Spend Limit at https://www.cursor.com/dashboard?tab=settings. Catch-up ticks will no-op for this slot until the limit is restored and the skip cache expires.",
+      );
+      process.exit(0);
+    }
     if (err instanceof CursorAgentError) {
       process.exit(err.isRetryable ? 75 : 1);
     }

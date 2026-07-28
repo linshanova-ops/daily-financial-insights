@@ -232,6 +232,7 @@ export function evaluateScheduleGate(opts) {
           ? "repository_dispatch force=true (manual catch-up — always run)"
           : `event=${eventName} (manual — always run)`,
       slot: null,
+      isCatchup: false,
     };
   }
 
@@ -242,6 +243,7 @@ export function evaluateScheduleGate(opts) {
         shouldRun: false,
         reason: `weekend skip — Beijing ${primary.date} is ${beijingWeekdayShort(primary.date)} (no scheduled Cursor generate; cash markets closed)`,
         slot: primary,
+        isCatchup: false,
       };
     }
     if (slotAlreadyPublished(latest, primary, earlyMinutes)) {
@@ -249,6 +251,7 @@ export function evaluateScheduleGate(opts) {
         shouldRun: false,
         reason: `${primary.id} slot already published (date=${latest.date} publishedAt=${latest.publishedAt})`,
         slot: primary,
+        isCatchup: false,
       };
     }
     const when =
@@ -259,6 +262,7 @@ export function evaluateScheduleGate(opts) {
       shouldRun: true,
       reason: `${primary.id} slot open (${when} ${String(primary.utcHour).padStart(2, "0")}:00 UTC / Beijing hour; briefing date ${primary.date})`,
       slot: primary,
+      isCatchup: false,
     };
   }
 
@@ -273,12 +277,14 @@ export function evaluateScheduleGate(opts) {
         shouldRun: false,
         reason: `weekend skip — Beijing ${missed.date} is ${beijingWeekdayShort(missed.date)} (no scheduled catch-up generate)`,
         slot: missed,
+        isCatchup: true,
       };
     }
     return {
       shouldRun: true,
       reason: `${missed.id} missed-slot catch-up (${Math.round(missed.minutesFromStart)}m after ${String(missed.utcHour).padStart(2, "0")}:00 UTC; briefing date ${missed.date})`,
       slot: missed,
+      isCatchup: true,
     };
   }
 
@@ -286,5 +292,6 @@ export function evaluateScheduleGate(opts) {
     shouldRun: false,
     reason: `outside Beijing 08:00/20:00 windows (0–${lateMinutes}m) and no unpublished slot within ${catchupHours}h catch-up`,
     slot: null,
+    isCatchup: false,
   };
 }
