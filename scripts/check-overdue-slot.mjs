@@ -9,6 +9,7 @@ import {
   isBeijingWeekendDate,
   slotStartUtc,
 } from "./lib/briefing-slot-gate.mjs";
+import { loadBriefingOps } from "./lib/briefing-ops.mjs";
 
 const repo =
   process.env.GITHUB_REPOSITORY || "linshanova-ops/daily-financial-insights";
@@ -30,6 +31,14 @@ async function loadLatest() {
 
 async function main() {
   const now = new Date();
+  const ops = loadBriefingOps(undefined, now);
+  if (!ops.cursorAutoGenerate) {
+    console.log(
+      `[overdue] ok — manual briefing mode (${ops.reason}); not failing Actions for unpublished auto slots`,
+    );
+    return;
+  }
+
   const latest = await loadLatest();
   const bj = beijingDateString(now);
 

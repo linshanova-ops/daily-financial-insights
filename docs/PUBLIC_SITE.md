@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | **08:00 / 20:00 Beijing, Mon–Fri.** Sat/Sun scheduled generates are skipped (cash markets closed; saves Cursor tokens). Monday covers **since Friday close**, including weekend crypto/news. In-repo: light ticks + **hourly heartbeat** (recovers misses up to 6h). **Required for true on-time:** free external cron → `repository_dispatch` — see [ON_TIME_PUBLISH.md](./ON_TIME_PUBLISH.md). Accuracy CI → auto-merge → Pages. |
+| **Twice-daily schedule** | **08:00 / 20:00 Beijing, Mon–Fri.** When `web/content/briefing-ops.json` sets `cursorAutoGenerate: false`, Cursor Agent.create is skipped (manual publish — see [MANUAL_BRIEFING.md](./MANUAL_BRIEFING.md)); Fund RSS still runs on primary windows. Sat/Sun scheduled generates are skipped. **Required for true on-time auto:** external cron → `repository_dispatch` — see [ON_TIME_PUBLISH.md](./ON_TIME_PUBLISH.md). |
 | **Manual** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge the orchestrator dispatches Pages (with retries). Safety-net cron at `:50` UTC also redeploys. |

@@ -7,6 +7,10 @@ on:
   #   2) Hourly heartbeat at :05 every hour — recovers missed slots for 6h
   #   3) External cron-job.org repository_dispatch (REQUIRED for true on-time)
   #      — see docs/ON_TIME_PUBLISH.md
+  #
+  # Cursor Agent.create is controlled by web/content/briefing-ops.json
+  # (manual mode until cursorAutoResumeOn). Fund RSS + optional inbox fetch
+  # can still run without Cursor tokens.
   schedule:
     - cron: "0,15,30,45 0 * * *"
     - cron: "0,15,30,45 12 * * *"
@@ -46,9 +50,17 @@ jobs:
           DISPATCH_FORCE: ${{ github.event.client_payload.force }}
         run: node scripts/briefing-slot-gate.mjs
 
+      - name: Cursor auto-generate ops gate
+        id: ops
+        if: steps.gate.outputs.should_run == 'true'
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_FORCE_CURSOR: ${{ github.event.client_payload.force_cursor }}
+        run: node scripts/briefing-ops-gate.mjs
+
       - name: Check for CURSOR_API_KEY
         id: key
-        if: steps.gate.outputs.should_run == 'true'
+        if: steps.gate.outputs.should_run == 'true' && steps.ops.outputs.cursor_auto == 'true'
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
         run: |
@@ -61,13 +73,13 @@ jobs:
           fi
 
       - name: Install script deps (IMAP + Cursor SDK)
-        if: steps.gate.outputs.should_run == 'true' && steps.key.outputs.present == 'true'
+        if: steps.gate.outputs.should_run == 'true' && steps.ops.outputs.cursor_auto == 'true' && steps.key.outputs.present == 'true'
         run: |
           npm install @cursor/sdk@latest
           npm install --prefix scripts
 
       - name: Fetch inbox newsletters (Bloomberg daily + Glassnode weekly)
-        if: steps.gate.outputs.should_run == 'true' && steps.key.outputs.present == 'true'
+        if: steps.gate.outputs.should_run == 'true' && steps.ops.outputs.cursor_auto == 'true' && steps.key.outputs.present == 'true'
         env:
           INBOX_IMAP_HOST: ${{ secrets.INBOX_IMAP_HOST }}
           INBOX_IMAP_USER: ${{ secrets.INBOX_IMAP_USER }}
@@ -76,10 +88,7 @@ jobs:
           BRIEFING_DATE: ${{ steps.gate.outputs.briefing_date }}
         run: node scripts/fetch-inbox-sources.mjs
 
-      # Fund module phase 2: live RSS scan on primary Beijing windows only.
-      # Skip during missed-slot catch-up — otherwise every 5m cron tick can churn
-      # review.json + false-positive deploy dispatches and cancel Pages builds.
-      # Sources: Hedgeweek + Google News + HedgeCo. No CURSOR_API_KEY required.
+      # Fund module: no Cursor tokens. Primary Beijing window only.
       - name: Scan Fund signals (Hedgeweek + Google News)
         id: fund
         if: steps.gate.outputs.should_run == 'true' && steps.gate.outputs.is_catchup != 'true'
@@ -95,8 +104,6 @@ jobs:
             echo "committed=false" >> "$GITHUB_OUTPUT"
             exit "$code"
           fi
-          # Detect a commit made by THIS run only — do not use `git log -1`
-          # message match (HEAD may still be yesterday's Fund commit after a no-op).
           if [ "$before" != "$after" ]; then
             echo "committed=true" >> "$GITHUB_OUTPUT"
           else
@@ -113,14 +120,11 @@ jobs:
             -f event_type=deploy-pages \
             || echo "::notice::Could not dispatch deploy-pages."
 
-      # After a Cursor spend/usage limit hit, skip Agent.create for the rest of
-      # this slot so catch-up ticks stay green (marker written by generate script).
-      # Manual force / workflow_dispatch bypasses the skip so restored spend can
-      # publish immediately without waiting for cache expiry.
       - name: Restore Cursor usage-limit skip marker
         id: usage_skip
         if: >-
           steps.gate.outputs.should_run == 'true' &&
+          steps.ops.outputs.cursor_auto == 'true' &&
           steps.key.outputs.present == 'true' &&
           github.event_name != 'workflow_dispatch' &&
           github.event.client_payload.force != true &&
@@ -128,12 +132,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .cache/cursor-usage-skip
-          # bump key version when intentionally clearing a stuck skip marker
           key: cursor-usage-skip-v2-${{ steps.gate.outputs.briefing_date }}-${{ steps.gate.outputs.slot_id }}
 
       - name: Generate briefing PR, wait for CI, auto-merge when green
         if: >-
           steps.gate.outputs.should_run == 'true' &&
+          steps.ops.outputs.cursor_auto == 'true' &&
           steps.key.outputs.present == 'true' &&
           (
             github.event_name == 'workflow_dispatch' ||
@@ -148,16 +152,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRIEFING_DATE: ${{ steps.gate.outputs.briefing_date }}
           BRIEFING_SLOT_ID: ${{ steps.gate.outputs.slot_id }}
+          BRIEFING_FORCE_CURSOR: ${{ github.event.client_payload.force_cursor }}
           CURSOR_USAGE_SKIP_DIR: ${{ github.workspace }}/.cache/cursor-usage-skip
         run: node scripts/generate-daily-briefing.mjs
 
-      - name: Notice when generate skipped due to usage-limit cooldown
+      - name: Notice when Cursor generate skipped (manual mode or cooldown)
         if: >-
           steps.gate.outputs.should_run == 'true' &&
-          steps.key.outputs.present == 'true' &&
-          github.event_name != 'workflow_dispatch' &&
-          github.event.client_payload.force != true &&
-          github.event.client_payload.force != 'true' &&
-          steps.usage_skip.outputs.cache-hit == 'true'
+          (
+            steps.ops.outputs.cursor_auto != 'true' ||
+            steps.usage_skip.outputs.cache-hit == 'true'
+          )
         run: |
-          echo "::warning::Skipping Cursor generate — usage-limit skip marker is armed for ${{ steps.gate.outputs.briefing_date }} ${{ steps.gate.outputs.slot_id }}. If spend is restored, dispatch refresh-briefing with client_payload.force=true (or workflow_dispatch)."
+          if [ "${{ steps.ops.outputs.cursor_auto }}" != "true" ]; then
+            echo "::notice::Manual briefing mode — Cursor Agent.create skipped (${{ steps.ops.outputs.cursor_auto_reason }}). Resume on ${{ steps.ops.outputs.resume_on }}. Website Fund scans still run on primary windows."
+          else
+            echo "::warning::Usage-limit skip marker armed — raise Spend Limit or force_cursor=true."
+          fi

@@ -175,7 +175,7 @@ export function parseBloombergSections(text) {
 /**
  * Build prompt-ready Bloomberg text: labeled sections; tape fenced separately.
  */
-export function formatBloombergForPrompt(text, { maxSectionChars = 3500 } = {}) {
+export function formatBloombergForPrompt(text, { maxSectionChars = 1600 } = {}) {
   const sections = parseBloombergSections(text);
   if (!sections.length) {
     const fallback = String(text || "").trim();
@@ -201,19 +201,15 @@ export function formatBloombergForPrompt(text, { maxSectionChars = 3500 } = {}) 
   const parts = [];
   parts.push(
     "## FULL EMAIL COVERAGE (REQUIRED)\n" +
-      "This newsletter is a **global + China** daily — do NOT keep only China bullets.\n" +
-      "Merge every labeled section below into the briefing modules:\n" +
-      "- 国际要闻 → globalChanged (cover **all** bullets: geopolitics, UK/US/Canada, M&A, tech/AI corporate, not just China-adjacent)\n" +
-      "- 大中华新闻 → chinaChanged (cover **all** bullets)\n" +
-      "- 市场一览 → marketOverview.items[] (label + Chinese text; place above Market closes — do NOT dump into Global/China)\n" +
-      "- 经济数据日程 + 央行和政府动态 → watch / watchItems\n" +
-      "- 今日图表 → figures[] insight (imageSrc when present)\n" +
-      "- 全球市况 → CROSS-CHECK ONLY (never overwrite marketDashboard)\n" +
-      "If a bullet is already covered by a stronger primary cite, still keep a short Chinese paraphrase citing 彭博 when it adds color. Prefer omit only true duplicates of the same fact.",
+      "Merge every labeled section: 国际要闻→globalChanged (all bullets, Chinese); " +
+      "大中华新闻→chinaChanged (all bullets, Chinese); 市场一览→marketOverview; " +
+      "日程+央行动态→watchItems; 今日图表→figures insight; 全球市况=cross-check only.",
   );
   if (chartDay.length) {
     parts.push(
-      "## 今日图表 → Figures (REQUIRED)\nAdd ONE figures[] entry with kind: insight, id: bloomberg-chart-of-day.\n- title: short chart theme (Chinese OK); if body empty, infer from surrounding bullets + the chart IMAGE file\n- analysis: one clear so-what sentence (required) — what the chart implies for today's risk/policy/tape\n- imageSrc: use inbox chartImage path when present (e.g. /inbox-charts/bloomberg-YYYY-MM-DD.jpg)\n- display/delta: only if a hard number is stated in the section (do not invent)\n- source: 彭博 Markets Daily China / 财经早茶 stable citeHref\nKeep analysis Chinese if the section is Chinese.\n\n" +
+      "## 今日图表 → Figures (REQUIRED)\n" +
+        "Add figures[] id=bloomberg-chart-of-day kind=insight; open chartImage; " +
+        "title+analysis must match the image.\n\n" +
         chartDay.join("\n\n"),
     );
   }
@@ -222,7 +218,7 @@ export function formatBloombergForPrompt(text, { maxSectionChars = 3500 } = {}) 
   }
   if (tape.length) {
     parts.push(
-      "## 全球市况 tape (CROSS-CHECK ONLY)\nDo NOT copy these levels into marketDashboard. Market Dashboard comes only from fetch-market-closes.\n\n" +
+      "## 全球市况 (CROSS-CHECK ONLY — never overwrite marketDashboard)\n\n" +
         tape.join("\n\n"),
     );
   }

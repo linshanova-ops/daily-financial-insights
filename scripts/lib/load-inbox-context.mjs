@@ -113,16 +113,16 @@ function formatOneInboxItem(item, index) {
   if (item.sourceId.startsWith("bloomberg-")) {
     prepared = formatBloombergForPrompt(rawBody);
   } else if (item.sourceId === "glassnode-insights") {
-    prepared = summarizeInboxBody(rawBody, { maxChars: 5500 });
+    prepared = summarizeInboxBody(rawBody, { maxChars: 2500 });
   } else {
-    prepared = summarizeInboxBody(rawBody, { maxChars: 8000 });
+    prepared = summarizeInboxBody(rawBody, { maxChars: 3500 });
   }
 
   return `### Inbox ${index + 1}: ${item.label} (\`${item.path}\`)
 ${langRule}
 ${citeRule}
 ${chartRule}
-FULL COVERAGE: merge **all** newsletter sections — 国际要闻→Global, 大中华→China, 市场一览→marketOverview (above closes, not Global/China dump), 日程/央行动态→Watch, 今日图表→Figures. Add this source to keySources when used.
+Merge all sections: 国际要闻→globalChanged, 大中华→chinaChanged, 市场一览→marketOverview, 日程/政策→watchItems, 今日图表→figures.
 
 \`\`\`newsletter
 ${prepared}
