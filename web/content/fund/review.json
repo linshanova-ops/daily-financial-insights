@@ -1,22 +1,32 @@
 [
   {
-    "id": "rev-sig-20260727-s5tazs",
-    "title": "Donerail, Blackstone, and Centerbridge among final bidders for MarineMax",
-    "reason": "中等置信度命中「Centerbridge」，待人工复核。",
-    "confidence": "67%",
+    "id": "rev-sig-20260728-phw0ka",
+    "title": "Hedge funds up exposure to US healthcare stocks to five-year high",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/donerail-blackstone-and-centerbridge-among-final-bidders-for-marinemax/",
+    "href": "https://www.hedgeweek.com/hedge-funds-up-exposure-to-us-healthcare-stocks-to-five-year-high/",
     "source": "Hedgeweek",
     "sourceTier": "designated"
   },
   {
-    "id": "rev-sig-20260725-v1ib5i",
-    "title": "Goldman Sachs Group, Inc.",
+    "id": "rev-sig-20260728-e28gdi",
+    "title": "Senior departures reshape Brevan Howard&#8217;s commodities investment team",
+    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.hedgeweek.com/senior-departures-reshape-brevan-howards-commodities-investment-team/",
+    "source": "Hedgeweek",
+    "sourceTier": "designated"
+  },
+  {
+    "id": "rev-sig-20260728-dt2h3x",
+    "title": "T. Rowe Price Goldman Sachs Private Markets Fund Launches",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.britannica.com/money/Goldman-Sachs-Group-Inc",
-    "source": "Encyclopedia Britannica",
+    "href": "https://www.marketsmedia.com/t-rowe-price-goldman-sachs-private-markets-fund-launches/",
+    "source": "Markets Media",
     "sourceTier": "secondary"
   },
   {
@@ -25,9 +35,29 @@
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.tradingview.com/news/prnewswire:2e1043c0b2891:0-t-rowe-price-goldman-sachs-private-markets-fund-debuts/",
-    "source": "TradingView",
+    "href": "https://www.prnewswire.com/news-releases/t-rowe-price-goldman-sachs-private-markets-fund-debuts-302835304.html",
+    "source": "PR Newswire",
     "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260728-xfi4c2",
+    "title": "Evelyn Partners Asset Management Ltd Decreases Holdings in The Goldman Sachs Group, Inc. $GS",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-evelyn-partners-asset-management-ltd-decreases-holdings-in-the-goldman-sachs-group-inc-gs-2026-07-28/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260728-9hk151",
+    "title": "Lazard Asset Management LLC Sells 174,798 Shares of The Goldman Sachs Group, Inc. $GS",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-lazard-asset-management-llc-sells-174798-shares-of-the-goldman-sachs-group-inc-gs-2026-07-28/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260728-1o4lzo",
@@ -70,6 +100,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260727-d9z9ve",
+    "title": "Polar Asset Management Partners Inc. Makes New $5.40 Million Investment in XPEL, Inc. $XPEL",
+    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-540-million-investment-in-xpel-inc-xpel-2026-07-27/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260727-mx9gbw",
     "title": "Polar Asset Management Partners Inc. Makes New Investment in Arthur J. Gallagher & Co. $AJG",
     "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
@@ -90,12 +130,22 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260727-d9z9ve",
-    "title": "Polar Asset Management Partners Inc. Makes New $5.40 Million Investment in XPEL, Inc. $XPEL",
+    "id": "rev-sig-20260728-e3gcze",
+    "title": "Polar Asset Management Partners Inc. Makes New $2.15 Million Investment in Lazard, Inc. $LAZ",
     "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-540-million-investment-in-xpel-inc-xpel-2026-07-27/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-215-million-investment-in-lazard-inc-laz-2026-07-28/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260728-fct1qv",
+    "title": "Polar Asset Management Partners Inc. Makes New Investment in LPL Financial Holdings Inc. $LPLA",
+    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-investment-in-lpl-financial-holdings-inc-lpla-2026-07-28/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -140,12 +190,22 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260727-9c6b34",
-    "title": "Arrowstreet Capital Limited Partnership Makes New Investment in ExxonMobil Corporation $XOM",
+    "id": "rev-sig-20260728-5454p8",
+    "title": "Lombard Odier Asset Management Switzerland SA Makes New $1.19 Million Investment in Marathon Petroleum Corporation $MPC",
+    "reason": "中等置信度命中「Marathon」，待人工复核。",
+    "confidence": "63%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-lombard-odier-asset-management-switzerland-sa-makes-new-119-million-investment-in-marathon-petroleum-corporation-mpc-2026-07-28/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260728-c72yyl",
+    "title": "Arrowstreet Capital Limited Partnership Cuts Holdings in Federated Hermes, Inc. $FHI",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-exxonmobil-corporation-xom-2026-07-27/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-cuts-holdings-in-federated-hermes-inc-fhi-2026-07-28/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -186,6 +246,16 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-sona-asset-management-us-llc-makes-new-investment-in-btc-development-corp-bdci-2026-07-27/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260727-dkseh3",
+    "title": "Sona Asset Management US LLC Invests $1.13 Million in Agriculture & Natural Solutions Acquisition Corporation $ANSC",
+    "reason": "弱信源「MarketBeat」命中「Sona Asset Management」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-sona-asset-management-us-llc-invests-113-million-in-agriculture-natural-solutions-acquisition-corporation-ansc-2026-07-27/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
