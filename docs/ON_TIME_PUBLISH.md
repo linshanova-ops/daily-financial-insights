@@ -69,8 +69,10 @@ Without `"force":true`, the gate still prevents duplicate Cursor runs after a sl
 Usually **Cursor spend/usage limit**, not a content bug. The generator soft-skips
 (`exit 0` + warning) and arms a per-slot skip marker so catch-up ticks stay green.
 **Fix:** enable usage-based pricing / raise Spend Limit at
-https://www.cursor.com/dashboard?tab=settings — then the next slot (or a force
-dispatch) can publish again.
+https://www.cursor.com/dashboard?tab=settings — then dispatch with
+`{"event_type":"refresh-briefing","client_payload":{"force":true}}` (or
+**workflow_dispatch**) so generate bypasses the skip marker immediately.
+Catch-up ticks alone stay soft-green until force/manual.
 
 Fund RSS scans only run in the **primary** 0–45m window (not every catch-up tick),
 and Pages is dispatched only when this run’s `git` HEAD actually moved.
