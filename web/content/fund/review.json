@@ -20,6 +20,16 @@
     "sourceTier": "designated"
   },
   {
+    "id": "rev-sig-20260728-dt2h3x",
+    "title": "T. Rowe Price Goldman Sachs Private Markets Fund Launches",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketsmedia.com/t-rowe-price-goldman-sachs-private-markets-fund-launches/",
+    "source": "Markets Media",
+    "sourceTier": "secondary"
+  },
+  {
     "id": "rev-sig-20260727-4thiid",
     "title": "T. ROWE PRICE GOLDMAN SACHS PRIVATE MARKETS FUND DEBUTS",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -168,6 +178,16 @@
     "href": "https://www.tradingkey.com/markets/stocks/bfam/ownership",
     "source": "TradingKey",
     "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260728-6215cs",
+    "title": "Why Baupost’s Seth Klarman sees opportunity in what AI gold rushers have left behind",
+    "reason": "中等置信度命中「Baupost」，待人工复核。",
+    "confidence": "62%",
+    "status": "review",
+    "href": "https://www.pionline.com/alternative-investments/hedge-funds/pi-baupost-seth-klarman-hedge-funds-ai-investing-spacex/",
+    "source": "Pensions & Investments",
+    "sourceTier": "secondary"
   },
   {
     "id": "rev-sig-20260727-bhd9wg",
