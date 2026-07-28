@@ -199,10 +199,10 @@ A股反弹
   it("fences tape and requires figures mapping for 今日图表", () => {
     const out = formatBloombergForPrompt(sample);
     assert.match(out, /FULL EMAIL COVERAGE/);
-    assert.match(out, /国际要闻 → globalChanged/);
-    assert.match(out, /市场一览 → marketOverview/);
+    assert.match(out, /国际要闻→globalChanged/);
+    assert.match(out, /市场一览→marketOverview/);
     assert.match(out, /今日图表 → Figures/);
-    assert.match(out, /kind: insight/);
+    assert.match(out, /bloomberg-chart-of-day/);
     assert.match(out, /高盛对冲基金/);
     assert.match(out, /Mergeable sections/);
     assert.match(out, /国际要闻/);
@@ -292,7 +292,7 @@ sourceId: bloomberg-markets-daily-china
       },
     ]);
     assert.match(block, /bloomberg\.com\/asia/);
-    assert.match(block, /keySources/);
     assert.match(block, /国际要闻/);
+    assert.match(block, /globalChanged|chinaChanged/);
   });
 });

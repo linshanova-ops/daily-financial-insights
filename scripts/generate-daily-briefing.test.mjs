@@ -105,10 +105,12 @@ describe("workflow wiring", () => {
       join(root, ".github/workflows/daily-briefing.yml"),
       "utf8",
     );
-    assert.match(yml, /0-19 0 \* \* \*/);
-    assert.match(yml, /0-19 12 \* \* \*/);
+    assert.match(yml, /0,15,30,45 0 \* \* \*/);
+    assert.match(yml, /0,15,30,45 12 \* \* \*/);
     assert.match(yml, /briefing-slot-gate\.mjs/);
     assert.match(yml, /should_run/);
     assert.match(yml, /DISPATCH_FORCE/);
+    assert.match(yml, /briefing-ops-gate\.mjs/);
+    assert.match(yml, /cursor_auto/);
   });
 });

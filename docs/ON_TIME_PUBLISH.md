@@ -64,6 +64,13 @@ From GitHub docs: repository_dispatch requires authentication with `repo` scope 
 
 Without `"force":true`, the gate still prevents duplicate Cursor runs after a slot has published.
 
+### Manual mode (token save)
+
+When `web/content/briefing-ops.json` has `"cursorAutoGenerate": false`, Actions **never**
+calls Cursor `Agent.create`. Fund RSS still runs on primary windows. See
+[MANUAL_BRIEFING.md](./MANUAL_BRIEFING.md). Auto resumes on `cursorAutoResumeOn`
+(Beijing date). Emergency override: `client_payload.force_cursor=true`.
+
 ### If Actions shows a flood of red `refresh-briefing` jobs
 
 Usually **Cursor spend/usage limit**, not a content bug. The generator soft-skips

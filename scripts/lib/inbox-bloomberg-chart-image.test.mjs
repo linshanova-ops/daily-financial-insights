@@ -53,6 +53,6 @@ describe("empty 今日图表 section still required", () => {
     assert.ok(sections.some((s) => s.id === "chartOfDay"));
     const out = formatBloombergForPrompt(text);
     assert.match(out, /今日图表 → Figures/);
-    assert.match(out, /imageSrc/);
+    assert.match(out, /bloomberg-chart-of-day|chartImage/);
   });
 });

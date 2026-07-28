@@ -9,11 +9,13 @@
  *   5) If red → agent rewrites (up to MAX_FIX_ATTEMPTS) → re-check → merge
  *   6) If PR is already MERGED (overlapping run won) → treat as success
  *
- * Requires: CURSOR_API_KEY
+ * Requires: CURSOR_API_KEY (when auto generate is enabled)
  * Optional: GITHUB_TOKEN / GH_TOKEN (Actions provides GITHUB_TOKEN) for PR merge
+ *
+ * Token budget: prompt is inbox-first + short checklist. Ops file can disable
+ * Agent.create entirely (manual publish mode).
  */
 import { spawnSync } from "node:child_process";
-import { Agent, CursorAgentError } from "@cursor/sdk";
 import {
   evaluatePrPublishState,
   filterActionableChecks,
@@ -25,6 +27,7 @@ import {
   isCursorUsageLimitError,
   markUsageLimitSkip,
 } from "./lib/cursor-usage-limit.mjs";
+import { loadBriefingOps } from "./lib/briefing-ops.mjs";
 import {
   formatInboxPromptBlock,
   loadInboxFetchStatus,
@@ -34,12 +37,29 @@ import { hasBloombergChartOfDay } from "./lib/inbox-bloomberg-sections.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+const forceCursor =
+  process.env.BRIEFING_FORCE_CURSOR === "true" ||
+  process.env.BRIEFING_FORCE_CURSOR === "1";
+
+// Hard stop when ops say manual-only (saves Cursor tokens) — before SDK import.
+{
+  const ops = loadBriefingOps();
+  if (!ops.cursorAutoGenerate && !forceCursor) {
+    console.warn(
+      `::warning::Skipping Agent.create — ${ops.reason}. Set BRIEFING_FORCE_CURSOR=1 to override.`,
+    );
+    process.exit(0);
+  }
+}
+
+const { Agent, CursorAgentError } = await import("@cursor/sdk");
+
 const apiKey = process.env.CURSOR_API_KEY;
 const repoUrl =
   process.env.REPO_URL ??
   "https://github.com/linshanova-ops/daily-financial-insights";
 const githubToken = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
-const MAX_FIX_ATTEMPTS = 3;
+const MAX_FIX_ATTEMPTS = 1;
 const CHECK_POLL_MS = 20_000;
 const CHECK_TIMEOUT_MS = 20 * 60_000;
 /** Fail faster when CI never queues (usually still-draft / workflow skip). */
@@ -98,203 +118,43 @@ function gh(args, { allowFail = false } = {}) {
 function buildPublishPrompt() {
   const slotLabel =
     slotId === "morning"
-      ? "MORNING slot (Beijing 08:00) — first publish of the day when possible"
+      ? "MORNING (Beijing 08:00)"
       : slotId === "evening"
-        ? "EVENING slot (Beijing 20:00) — REQUIRED same-day refresh even if morning already published"
-        : "MANUAL / catch-up run";
-
+        ? "EVENING (Beijing 20:00) — update same-day file if morning exists"
+        : "MANUAL / catch-up";
   const postWeekend = isBeijingPostWeekendOpen(today);
-  const coverageRule = postWeekend
-    ? "Coverage: **since Friday US cash close through now** (~72h). Scheduled Sat/Sun generates are skipped — Monday must reopen the tape."
-    : "Coverage: last 24h (use ~72h only when this is explicitly a post-weekend / Monday open).";
+  const coverage = postWeekend
+    ? "Coverage: since Friday US cash close (~72h), include weekend crypto/geo."
+    : "Coverage: last ~24–36h.";
 
-  const postWeekendBlock = postWeekend
-    ? `
-POST-WEEKEND OPEN (Monday — cash markets were closed Sat/Sun):
-- Explicitly cover **since Friday US cash close** (do not treat Friday as stale background).
-- Cash equities/bonds may be thin over the weekend, but **crypto and news still matter**:
-  sweep weekend BTC/ETH tape, ETF flows, and any material geopolitics / policy prints
-  dated Sat–Sun; fold them into Global / Assets / Signals / Watch.
-- Set coverageWindow to span Friday→Monday (e.g. July 17–20), not "last 24h only".
-- Lead with Monday Asia prints + Friday US official closes; weekend crypto/geo as the bridge.
-`
-    : "";
+  // Token-light: inbox-first merge. Do NOT run the full gather skill unless inbox missing.
+  return `Draft syravocado briefing for ${today}. Slot: ${slotLabel}. ${coverage}
 
-  return `You are drafting syravocado's daily financial briefing for ${today}.
+TOKEN BUDGET (critical): Prefer inbox merge + a few primary corroborations. Do NOT run the full daily-financial-briefing gather skill unless inbox is empty. Do NOT re-read long prior briefings end-to-end — clone YAML keys from the latest file under web/content/briefings/ and rewrite content.
 
-STANDING POLICY (docs/CONTENT_ACCURACY.md): website content must be VALID and ACCURATE.
-Wrong figures, wrong-year sources, or hrefs that do not support the claimed number are
-worse than a shorter briefing. Prefer omit over invent.
+Standing accuracy (docs/CONTENT_ACCURACY.md): omit unverifiable numbers; 10亿元=CNY1bn; beat/miss vs estimate only; label dates must match URL /YYYY/MM/DD/; crypto needs ≥2 dated sources; never invent tape (inject marketDashboard).
 
-PUBLISH SLOT: ${slotLabel}
-- Always set publishedAt to ISO UTC now.
-- Re-run Market Dashboard inject every time (fresh closes).
-- If web/content/briefings/${today}.md already exists: UPDATE it (do not skip).
-  Evening runs must merge any new inbox mail and refresh narrative for the China session.
-- Accuracy gate must pass before you finish.
-${postWeekendBlock}
-FAIL-CLOSED PUBLISH (critical):
-- Work on git branch \`${branchName}\` (create/reset from latest main).
-- Open a pull request INTO main. Do NOT push to main. Do NOT merge the PR.
-- PR title MUST be exactly: ${prTitle}
-- The GitHub Action "Briefing accuracy gate" runs \`npm run verify-briefing\` (sync-data + JSON sync check + scan-links).
-  An orchestrator will auto-merge only when CI is green, or ask you to rewrite if red.
+Fail-closed: branch \`${branchName}\`, PR title exactly \`${prTitle}\`, never push/merge main. CI runs verify-briefing.
 
-1. Run the full daily-financial-briefing skill pipeline under .cursor/skills/financial-research/
-   (gather → global → China → signals → suggestions → report). ${coverageRule}
-   Use dated sources only — verify **calendar year**, not just
-   month-day. Prefer primary sources for official data (BLS, Fed, US Treasury yield curve,
-   PBOC, NBS, company IR). Use Yahoo Finance for US index/quote checks only (secondary).
-   For China, always sweep 华尔街见闻 (wallstreetcn.com), Caixin/财新 or 第一财经/Yicai,
-   and BlockBeats/律动 (theblockbeats.info) and cite at least one item from each desk
-   family in the China section when they have coverage-window news.
+Steps:
+1) Merge IMAP inbox on this branch (already fetched). Section map — 国际要闻→globalChanged (1 Chinese bullet each); 大中华新闻→chinaChanged (1 Chinese bullet each); 市场一览→marketOverview.items; 日程+央行动态→watchItems; 今日图表→figures id=bloomberg-chart-of-day kind=insight (open chartImage first). Cite stable Bloomberg Asia href only for newsletter. Attach stronger primaries when available.
+2) Light web corroboration only for hard US closes / oil settles / China official prints missing from inbox.
+3) Write web/content/briefings/${today}.md (all schema keys; sourced summary/globalChanged/chinaChanged; assetFramework×8; publishedAt=now UTC). Keep inbox/** bytes unchanged; keep inbox-charts/**.
+4) From web/: node scripts/fetch-market-closes.mjs --inject content/briefings/${today}.md
+5) From web/: npm ci && npm run verify-briefing — fix until green; commit md+JSON together.
+6) Push \`${branchName}\`, open/update PR. Reply: DONE ${today} BRANCH=${branchName} PR=<url>
 
-   FRESHNESS (critical for ${today}):
-   - Lead with sources dated **${today}** (Asia desks / same-day prints) and the prior
-     US cash session when this is the morning slot${postWeekend ? " — and keep Friday US cash close in the spine after the weekend skip" : " — not last Friday as the spine unless this is Monday open"}.
-   - At least ~70% of keySources must be dated inside the last ~${postWeekend ? "72" : "36"}h of the coverage
-     window${postWeekend ? " (Monday post-weekend open)" : ""}. Older cites are background only.
-   - Every keySources label must include an explicit calendar date in-window.
-   - Do not recycle prior-briefing narratives unless re-confirmed with a fresh href today.
-   - ALWAYS cite the **accurate and latest** source for each fact: if a newer same-topic
-     print exists (same desk or stronger primary), replace the older href — do not keep
-     yesterday's URL after relabeling the date.
-   - Source label date MUST match the article URL path date when the URL embeds
-     /YYYY/MM/DD/ (e.g. label "CNBC — Jul 21" must not point at /2026/07/20/).
-     scan-links fails on this mismatch.
-
-   INBOX NEWSLETTERS (Gmail IMAP — already fetched when present):
-   - 彭博 Markets Daily China / 财经早茶 (daily): this is a **full global + China** digest —
-     merge **all** labeled sections into China / Global / Assets / Watch / Figures.
-     Do NOT treat it as a China-only source or drop 国际要闻 / 市场一览 / 日程 / 央行动态.
-     Section map: 国际要闻→globalChanged (every bullet — prefer one
-     globalChanged entry per inbox bullet; keep Chinese text Chinese when this
-     newsletter is the primary cite; do not compress 14 bullets into 3–4 English
-     paraphrases); 大中华新闻→chinaChanged (every bullet — prefer one
-     chinaChanged entry per inbox bullet; keep Chinese text Chinese when this
-     newsletter is the primary cite; do not compress 9 bullets into 1–2 English
-     paraphrases; when a stronger primary cite exists, lead with Chinese inbox
-     wording and attach the primary href); 市场一览→marketOverview.items[] (structured label/text above Market closes —
-     never dump as a Global/China prose blob); 经济数据日程+央行和政府动态→watchItems;
-     今日图表→figures insight; 全球市况→cross-check only (never replace marketDashboard).
-     **Keep Chinese text Chinese** for bullets whose primary cite is this newsletter.
-     **今日图表 (REQUIRED when present in inbox):** add a figures[] entry
-     \`id: bloomberg-chart-of-day\`, \`kind: insight\`, with \`title\` + required
-     \`analysis\` (one clear so-what). Keep Chinese if the section is Chinese.
-     When inbox frontmatter has \`chartImage\`, set \`imageSrc\` to that path
-     (e.g. /inbox-charts/bloomberg-${today}.jpg) and KEEP the image file in the
-     commit under web/public/inbox-charts/. Open/read the image file first —
-     title + analysis MUST describe what the chart actually shows (axes, series,
-     caption). Do NOT invent a theme from the bullet above/below 今日图表 if it
-     contradicts the image (common failure: pairing the wrong 国际要闻 bullet).
-     Do not omit just because the text section body is empty (chart is often image-only).
-     Optional \`display\`/\`delta\` only when a hard number is stated — never invent.
-     If the newsletter fence below contains "## 今日图表 → Figures (REQUIRED)", you MUST
-     add that insight figure — do not skip it.
-     Coverage self-check before finishing: every 国际要闻 and 大中华新闻 bullet appears
-     (or is explicitly noted as duplicate of a stronger primary cite); 市场一览 is in
-     marketOverview (not Global/China); calendar/policy items appear in watchItems.
-   - Glassnode Insights / Week on Chain (weekly, usually Tuesday): merge into crypto
-     assetFramework / signals / watch when on-chain color is relevant.
-     Ignore webinar / "Now live" promos (fetcher already drops them).
-   - Cite policy: use ONLY the stable href given for each inbox source (never tracking
-     links from the email). When an inbox source is used, also list it in keySources.
-   - Evening backfill: if web/content/briefings/${today}.md already exists AND inbox
-     captures are new/updated this run, UPDATE that briefing to merge the new inbox
-     material — do not skip just because the file exists.
-   - If inbox fetch failed, note briefly in caveats/singleSource; do not invent mail.
-   - Inbox files on this branch were synced from IMAP before you started. Keep
-     web/content/inbox/** EXACTLY as on the branch (raw IMAP). Do NOT rewrite them
-     into "## Mergeable sections" summaries.
-   ${formatInboxPromptBlock(inboxItems, inboxFetchStatus)}
-   If inbox files exist under web/content/inbox/ (including last-fetch.json), include
-   them in the PR commit for audit (already present on branch — do not delete).
-   Do NOT rewrite or reformat web/content/inbox/** bodies — commit the IMAP capture
-   bytes as fetched (so 今日图表 and other sections stay intact for the next run).
-
-2. Pre-publish accuracy gate (ALL required):
-   (a) each index move is that index's official close;
-   (b) beat|miss is vs estimate only — cooler/less than estimate = "miss estimate";
-       hotter/more than estimate = "beat estimate" (CPI, jobs, GDP, claims — never swap tone for label);
-   (c) ALL CNY/RMB amounts must convert 亿元 correctly: **10亿元 = CNY1bn**
-       and **100亿元 = CNY10bn**. Never copy the 亿 numeral unchanged into
-       a "bn" label (e.g. 51.79亿元 = CNY5.179bn, not CNY51.79bn).
-       PBOC OMO net injection = ops − maturity;
-   (d) gold/oil levels are settles or explicitly labeled spot;
-   (e) every hard quote's source page year matches the coverage window — reject stale
-       aggregator flashes (e.g. BlockBeats "7月15日" BTC $116k in a 2026 briefing);
-   (f) 华尔街见闻 / wallstreetcn.com: do not cite month-day-only A/H or Fed wraps for
-       index closes or speeches — require explicit calendar year on the page or confirm
-       vs primary/tier-2 same-day tape; treat IDs near rejected 2025 wraps (3751205,
-       3751275) as suspect; prefer 京报网 / The Standard / SED / NY Fed / BLS for closes;
-   (g) crypto prints triangulated: BlockBeats alone is not enough for BTC/ETH levels —
-       pair with dated Cointelegraph/CoinDesk/Yahoo (or similar);
-   (h) every sourced-fact href opens to a page that supports the claimed number;
-   (i) optional figures[] values must match sourced facts in the same briefing;
-   (j) cite the latest accurate print for the coverage window — do not leave a
-       newer fact behind an older article URL; when dashboard asOfDate and a
-       narrative cite disagree, refresh the stale side (re-run market closes
-       inject and/or retarget the cite);
-   (k) English month-day in a source label (e.g. "Jul 21") must match /YYYY/MM/DD/
-       in that href when present.
-
-3. Write web/content/briefings/${today}.md using the exact YAML frontmatter schema in
-   web/content/briefings/2026-07-16.md when present (else 2026-07-15.md). All keys required,
-   INCLUDING assetFramework, publishedAt as ISO UTC now, keySources, AND per-fact source
-   buttons: summary/globalChanged/chinaChanged entries should be objects
-   { text, sources: [{ label, href }] } pointing at the original primary post.
-   assetFramework covers all eight canonical assets. If a figure cannot be verified, omit
-   it and note rejected bad cites in singleSource/caveats.
-   figures[] may include kind: stat | bars | insight. When inbox has 今日图表 / chartImage,
-   include kind: insight (id bloomberg-chart-of-day) with analysis and imageSrc.
-   When inbox has 市场一览, populate marketOverview { asOfDate, items[{label,text}], source }
-   with Chinese desk color — shown above Market closes. Do not invent prints.
-   Include web/public/inbox-charts/** in the commit when those files exist.
-   If today's file already exists, update it with the latest developments instead of skipping.
-
-4. Market Dashboard (required): from web/, run
-   \`node scripts/fetch-market-closes.mjs --inject content/briefings/${today}.md\`
-   This fetches real closes (Yahoo / U.S. Treasury / CoinGecko / OKX) into frontmatter
-   \`marketDashboard\`. Do NOT invent tape levels by hand. Do NOT delete the injected block.
-   If a single row fails, the script omits it — that is OK.
-
-5. From web/, run: npm ci && npm run verify-briefing
-   This runs sync-data, fails if web/public/data/briefings/*.json or latest.json are not
-   committed with the markdown (same check as CI), then scan-links. Fix until green.
-   Append newly discovered bad IDs to web/scripts/rejected-source-ids.json when needed.
-   **Never commit markdown without verify-briefing in the same commit** — a markdown-only
-   push always fails CI with "JSON out of sync".
-
-6. Commit on \`${branchName}\` with message: content: publish ${today} daily briefing
-   Include web/content/briefings/${today}.md, web/public/data/briefings/${today}.json,
-   web/public/data/latest.json, web/public/data/index.json, any new
-   web/content/inbox/** captures, web/public/inbox-charts/** chart images, and any
-   rejected-source-ids.json updates.
-   Push the branch and open/update the PR to main
-   with title: ${prTitle}
-
-7. Reply with: DONE ${today} BRANCH=${branchName} PR=<url-or-number>
-   Do not merge. Do not push to main.`;
+${formatInboxPromptBlock(inboxItems, inboxFetchStatus)}`;
 }
 
 function buildFixPrompt(ciLog) {
-  return `The pull request for ${today} failed the Briefing accuracy gate CI.
+  return `CI failed for ${today} on \`${branchName}\`. Fix cites/claims so verify-briefing passes; push same branch; do not merge main.
 
-Branch: ${branchName}
-You must REWRITE the briefing/cites so \`npm run scan-links\` passes, then push to the SAME branch (update the existing PR). Do NOT push to main. Do NOT merge.
-
-CI failure output:
+CI log:
 \`\`\`
-${ciLog.slice(0, 12000)}
+${ciLog.slice(0, 4000)}
 \`\`\`
-
-Requirements:
-1. From web/: npm ci && npm run verify-briefing — must be green (not sync-data + scan-links separately).
-2. Prefer omit unverifiable figures over inventing. Fix wrong-year / unsupported hrefs.
-   Do not cite hard numbers (e.g. BlockBeats pre-IPO prices) unless they appear in fetchable
-   page text at the cited href — CI fetches HTML and rejects JS-only embeds.
-3. Commit and push to \`${branchName}\` — stage web/public/data/briefings and latest.json with markdown.
-4. Reply with: FIXED ${today} BRANCH=${branchName} PR=<url-or-number>`;
+Omit unverifiable numbers. Reply: FIXED ${today} BRANCH=${branchName} PR=<url>`;
 }
 
 async function disposeAgent(agent) {
