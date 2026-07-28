@@ -81,10 +81,11 @@ async function main() {
     `should_run=${decision.shouldRun ? "true" : "false"}`,
     slot ? `slot_id=${slot.id}` : "slot_id=",
     `briefing_date=${briefingDate}`,
+    `is_catchup=${decision.isCatchup ? "true" : "false"}`,
   ]);
 
   console.log(
-    `[slot-gate] should_run=${decision.shouldRun ? "true" : "false"} briefing_date=${briefingDate}`,
+    `[slot-gate] should_run=${decision.shouldRun ? "true" : "false"} is_catchup=${decision.isCatchup ? "true" : "false"} briefing_date=${briefingDate}`,
   );
 
   if (!decision.shouldRun) {

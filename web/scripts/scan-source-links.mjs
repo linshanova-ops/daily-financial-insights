@@ -179,10 +179,28 @@ function urlYearTrust(href, briefingYear) {
  * reachability failures so Pages deploy is not flaky; claims still need
  * co-sources when evidence is required.
  */
-const FLAKY_OFFICIAL_HOSTS = [/bok\.or\.kr/i];
+const FLAKY_OFFICIAL_HOSTS = [/bok\.or\.kr/i, /news\.cnyes\.com/i];
 
 function flakyOfficialHost(href) {
   return FLAKY_OFFICIAL_HOSTS.some((re) => re.test(href));
+}
+
+/** Latest YYYY-MM-DD briefing markdown stem under content/briefings. */
+function latestBriefingDateStem() {
+  if (!fs.existsSync(contentDir)) return null;
+  const dates = fs
+    .readdirSync(contentDir)
+    .map((f) => f.match(/^(\d{4}-\d{2}-\d{2})\.md$/))
+    .filter(Boolean)
+    .map((m) => m[1])
+    .sort();
+  return dates.length ? dates[dates.length - 1] : null;
+}
+
+/** @param {string} where e.g. 2026-07-22.md.chinaChanged[0] */
+function briefingDateFromWhere(where) {
+  const m = String(where).match(/^(\d{4}-\d{2}-\d{2})\.md/);
+  return m?.[1] || null;
 }
 
 function staticProblems(href, briefingYear) {
@@ -1035,6 +1053,21 @@ async function main() {
       .filter((h) => h.briefingYear != null)
       .map((h) => [h.href, h.briefingYear]),
   );
+  const latestStem = latestBriefingDateStem();
+  /** @type {Map<string, Set<string>>} */
+  const hrefBriefingDates = new Map();
+  for (const hit of linkHits) {
+    const d = briefingDateFromWhere(hit.where);
+    if (!d) continue;
+    if (!hrefBriefingDates.has(hit.href)) hrefBriefingDates.set(hit.href, new Set());
+    hrefBriefingDates.get(hit.href).add(d);
+  }
+  function isArchivedOnlyHref(href) {
+    if (!latestStem) return false;
+    const dates = hrefBriefingDates.get(href);
+    if (!dates || !dates.size) return false;
+    return [...dates].every((d) => d < latestStem);
+  }
 
   console.log(`[scan-links] Fetching ${uniqueHrefs.length} unique source URL(s)…`);
   let i = 0;
@@ -1088,6 +1121,14 @@ async function main() {
     if (flakyOfficialHost(href)) {
       warnings.push(
         `flaky official host soft-trusted: ${href} (${fetched?.error || fetched?.status || "unknown"}; via ${fetched?.via})`,
+      );
+      continue;
+    }
+    // Historical briefings: intermittent 5xx/bot-blocks must not fail every
+    // Pages deploy. Latest briefing cites stay hard-fail for accuracy.
+    if (isArchivedOnlyHref(href)) {
+      warnings.push(
+        `archived briefing soft-trusted unreachable: ${href} (${fetched?.error || fetched?.status || "unknown"}; via ${fetched?.via})`,
       );
       continue;
     }

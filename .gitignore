@@ -3,6 +3,7 @@ test-output/
 __pycache__/
 .DS_Store
 node_modules/
+.cache/
 
 .superpowers/
 .worktrees/
