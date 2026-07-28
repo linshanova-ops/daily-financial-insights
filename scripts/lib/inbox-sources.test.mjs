@@ -59,6 +59,22 @@ describe("pickSource", () => {
     );
   });
 
+  it("matches editorial-headline Glassnode weekly (Read full report format)", () => {
+    const src = pickSource(
+      "Glassnode <insights@glassnode.com>",
+      "Optimism Meets Overhead",
+    );
+    assert.equal(src?.id, "glassnode-insights");
+    assert.equal(src?.cadence, "weekly");
+  });
+
+  it("still rejects Glassnode security notices", () => {
+    assert.equal(
+      pickSource("Glassnode <noreply@glassnode.com>", "Security Notice"),
+      null,
+    );
+  });
+
   it("ignores Glassnode welcome and webinar promos", () => {
     assert.equal(
       pickSource(
@@ -294,5 +310,29 @@ sourceId: bloomberg-markets-daily-china
     assert.match(block, /bloomberg\.com\/asia/);
     assert.match(block, /国际要闻/);
     assert.match(block, /globalChanged|chinaChanged/);
+  });
+
+  it("adds Glassnode merge guidance without full-report scraping", () => {
+    const block = formatInboxPromptBlock([
+      {
+        path: "web/content/inbox/glassnode-insights/2026-W30.md",
+        body: `---
+sourceId: glassnode-insights
+---
+
+Realized cap rose 2.1% WoW while exchange netflows stayed negative; read full report at https://insights.glassnode.com/…
+`,
+        sourceId: "glassnode-insights",
+        label: "Glassnode Insights",
+        keepLanguage: "en",
+        citeHref: "https://insights.glassnode.com/tag/newsletter/",
+      },
+    ]);
+    assert.match(block, /GLASSNODE WEEKLY/);
+    assert.match(block, /Read full report/);
+    assert.match(block, /globalChanged/);
+    assert.match(block, /signals\[\]/);
+    assert.match(block, /glassnode-weekly/);
+    assert.match(block, /insights\.glassnode\.com\/tag\/newsletter/);
   });
 });

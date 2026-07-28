@@ -96,6 +96,9 @@ export const INBOX_SOURCES = [
       ) {
         return false;
       }
+      // Reject transactional / non-report mail (seen: "Security Notice").
+      if (s.includes("security notice")) return false;
+
       const subjectOk =
         s.includes("week on chain") ||
         s.includes("week-on-chain") ||
@@ -105,7 +108,10 @@ export const INBOX_SOURCES = [
             s.includes("on-chain") ||
             s.includes("onchain") ||
             s.includes("newsletter") ||
-            /^glassnode insights\b/.test(s)));
+            /^glassnode insights\b/.test(s))) ||
+        // Current weekly subject format: editorial headline only (e.g. "Optimism
+        // Meets Overhead") — full analysis sits behind "Read full report".
+        fromOk;
       return fromOk && subjectOk;
     },
   },

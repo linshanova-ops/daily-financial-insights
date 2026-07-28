@@ -102,6 +102,11 @@ function formatOneInboxItem(item, index) {
 
   const chartImage = readFrontmatterField(item.body, "chartImage");
   const chartAlt = readFrontmatterField(item.body, "chartAlt");
+  const glassnodeRule =
+    item.sourceId === "glassnode-insights"
+      ? `GLASSNODE WEEKLY (smooth merge): The email often only shows a summary + "Read full report" button; do NOT scrape or fetch that link from Actions. Use ONLY what is in this email body: extract 1–3 concrete on-chain themes/metrics (keep numbers exactly as written). Merge into: (1) globalChanged as ONE sourced line (on-chain / crypto regime), (2) signals[] when the email clearly supports a graded signal (evidence from email text; otherwise omit), (3) watchItems or globalImplies only if the email states a trigger. Cite Glassnode Insights (stable newsletter href — never tracking links). Optional figures[] entry id=glassnode-weekly kind=insight with analysis + 1–2 takeaway sentences — NO chart image unless one was saved under inbox-charts/.`
+      : "";
+
   const chartRule = chartImage
     ? `今日图表 IMAGE (REQUIRED): file \`${chartImage}\` is already in the repo (also under web/public/inbox-charts/). Add figures[] entry id=bloomberg-chart-of-day, kind=insight with imageSrc: "${chartImage}", title, and required analysis. Open/read the image first — title+analysis must match the chart content (not a neighboring news bullet). Keep Chinese OK. Keep the image file in the PR commit.`
     : item.sourceId.startsWith("bloomberg-")
@@ -113,7 +118,7 @@ function formatOneInboxItem(item, index) {
   if (item.sourceId.startsWith("bloomberg-")) {
     prepared = formatBloombergForPrompt(rawBody);
   } else if (item.sourceId === "glassnode-insights") {
-    prepared = summarizeInboxBody(rawBody, { maxChars: 2500 });
+    prepared = summarizeInboxBody(rawBody, { maxChars: 3200 });
   } else {
     prepared = summarizeInboxBody(rawBody, { maxChars: 3500 });
   }
@@ -121,6 +126,7 @@ function formatOneInboxItem(item, index) {
   return `### Inbox ${index + 1}: ${item.label} (\`${item.path}\`)
 ${langRule}
 ${citeRule}
+${glassnodeRule}
 ${chartRule}
 Merge all sections: 国际要闻→globalChanged, 大中华→chinaChanged, 市场一览→marketOverview, 日程/政策→watchItems, 今日图表→figures.
 
