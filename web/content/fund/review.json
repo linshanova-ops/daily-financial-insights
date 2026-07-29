@@ -20,16 +20,6 @@
     "sourceTier": "designated"
   },
   {
-    "id": "rev-sig-20260728-dt2h3x",
-    "title": "T. Rowe Price Goldman Sachs Private Markets Fund Launches",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.marketsmedia.com/t-rowe-price-goldman-sachs-private-markets-fund-launches/",
-    "source": "Markets Media",
-    "sourceTier": "secondary"
-  },
-  {
     "id": "rev-sig-20260727-4thiid",
     "title": "T. ROWE PRICE GOLDMAN SACHS PRIVATE MARKETS FUND DEBUTS",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -60,16 +50,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-1o4lzo",
-    "title": "Some senior people slipped away from Brevan Howard's commodities business",
-    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.efinancialcareers.com/news/brevan-howard-commodities",
-    "source": "eFinancialCareers",
-    "sourceTier": "secondary"
-  },
-  {
     "id": "rev-sig-20260727-rkeq8n",
     "title": "Brevan Howard Digital eyes turnaround after heavy losses",
     "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
@@ -77,6 +57,16 @@
     "status": "review",
     "href": "https://www.fnlondon.com/articles/brevan-howard-digital-eyes-turnaround-after-heavy-losses-cbb4b477",
     "source": "Financial News London",
+    "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260728-1o4lzo",
+    "title": "Some senior people slipped away from Brevan Howard's commodities business",
+    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.efinancialcareers.com/news/brevan-howard-commodities",
+    "source": "eFinancialCareers",
     "sourceTier": "secondary"
   },
   {
@@ -236,16 +226,6 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-sells-285654-shares-of-jpmorgan-chase-co-jpm-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260726-4bcfse",
-    "title": "Arrowstreet Capital Limited Partnership Makes New $150.70 Million Investment in SAP SE $SAP",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-15070-million-investment-in-sap-se-sap-2026-07-26/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },

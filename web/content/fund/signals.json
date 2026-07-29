@@ -1,5 +1,19 @@
 [
   {
+    "id": "sig-20260729-eltoni",
+    "date": "2026.07.29",
+    "title": "CCI Approves Brookfield's Acquisition of Oaktree Investment Units",
+    "summary": "Brookfield：CCI Approves Brookfield's Acquisition of Oaktree Investment Units（动态）。",
+    "summaryEn": "Brookfield: CCI Approves Brookfield's Acquisition of Oaktree Investment Units.",
+    "fund": "Brookfield",
+    "source": "Devdiscourse",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.devdiscourse.com/article/law-order/3956442-cci-approves-brookfields-acquisition-of-oaktree-investment-units?amp"
+  },
+  {
     "id": "sig-20260728-r4v4jc",
     "date": "2026.07.28",
     "title": "Man Group assets hit record $253.6bn after strong H1 inflows and performance",
@@ -82,6 +96,48 @@
     "tag": "动态",
     "status": "confirmed",
     "href": "https://www.theedgesingapore.com/amp/news/funds/man-group-assets-hit-all-time-high-after-bumper-first-half"
+  },
+  {
+    "id": "sig-20260728-1wh0fm",
+    "date": "2026.07.28",
+    "title": "Bridgewater Sounds Alarm: Government AI Intervention Poses Investment Risk",
+    "summary": "Bridgewater Associates：Bridgewater Sounds Alarm: Government AI Intervention Poses Investment Risk（动态）。",
+    "summaryEn": "Bridgewater Associates: Bridgewater Sounds Alarm: Government AI Intervention Poses Investment Risk.",
+    "fund": "Bridgewater Associates",
+    "source": "finance.biggo.com",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://finance.biggo.com/news/736938e2-3c3f-49c5-a850-75c908ad3ca2"
+  },
+  {
+    "id": "sig-20260728-ppnjh1",
+    "date": "2026.07.28",
+    "title": "Man Group Hit Record AUM As Volatility Drove Fresh Cash",
+    "summary": "Man Group：Man Group Hit Record AUM As Volatility Drove Fresh Cash（动态）。",
+    "summaryEn": "Man Group: Man Group Hit Record AUM As Volatility Drove Fresh Cash.",
+    "fund": "Man Group",
+    "source": "Finimize",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://finimize.com/content/man-group-hit-a-record-2536-billion-in-aum"
+  },
+  {
+    "id": "sig-20260728-gmnf9j",
+    "date": "2026.07.28",
+    "title": "Brookfield raises $2 billion for Middle East investment fund backed by PIF",
+    "summary": "Brookfield 募资/扩容信号：Brookfield raises $2 billion for Middle East investment fund backed by PIF。",
+    "summaryEn": "Brookfield: capital / fundraising signal — Brookfield raises $2 billion for Middle East investment fund backed by PIF.",
+    "fund": "Brookfield",
+    "source": "Fast Company Middle East",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "募资",
+    "status": "confirmed",
+    "href": "https://fastcompanyme.com/news/brookfield-raises-2-billion-for-middle-east-investment-fund-backed-by-pif/"
   },
   {
     "id": "sig-20260727-d4eoii",
