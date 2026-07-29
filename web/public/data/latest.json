@@ -623,24 +623,54 @@
   ],
   "watchItems": [
     {
-      "when": "09:30",
-      "text": "澳大利亚6月消费者价格指数同比（预估为4%，前值为4%）"
+      "priority": "HIGH",
+      "headline": "FOMC statement and Warsh presser (30日02:00 BJT)",
+      "why": "Bloomberg inbox: traders are hedging hike risk with record fed-funds futures positioning; CNBC says markets mostly price a hold at 3.50–3.75%.",
+      "watch": "Statement language on energy disinflation vs core inflation; presser tone; front-end yields and USD immediately after.",
+      "trigger": "Hawkish hold or surprise hike with 2y yield jumping and Nasdaq extending losses.",
+      "invalidator": "Dovish hold that validates oil relief; 2y yield falls and SOX stabilizes.",
+      "horizon": "days",
+      "status": "escalated"
     },
     {
-      "when": "09:30",
-      "text": "澳大利亚第二季度消费者价格指数环比（预估为0.7%，前值为1.4%）"
+      "priority": "HIGH",
+      "headline": "WTI after Iran missile interception vs Fed-week risk",
+      "why": "Bloomberg lede: WTI jumped after US forces intercepted an Iranian missile attack on Middle East US positions; OPEC+ may pause quota hikes after September.",
+      "watch": "Brent/WTI settle into FOMC; Hormuz and Red Sea headlines; China-Houthi tanker talks from email.",
+      "trigger": "Brent settles back above $95 on verified supply disruption.",
+      "invalidator": "Brent stays below $90 through the Fed statement with no new Gulf strikes.",
+      "horizon": "days",
+      "status": "new"
     },
     {
-      "when": "10:00",
-      "text": "中国国家知识产权局就“十五五”时期知识产权保护和运用有关情况举行新闻发布会"
+      "priority": "HIGH",
+      "headline": "SOX 11,035 close and AI hardware follow-through",
+      "why": "SOX −4.49% broke 11,200 narrative support; SK hynix profit miss (below consensus) adds fundamental worry to the chip repricing.",
+      "watch": "SOX vs 11,035; Nasdaq100 vs correction threshold cited in inbox; US mega-cap earnings.",
+      "trigger": "Another SOX down day with Nasdaq underperforming >1%.",
+      "invalidator": "SOX reclaims 11,200+ and Nasdaq leads for two sessions.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
-      "when": "30日02:00",
-      "text": "美国联邦公开市场委员会利率决策"
+      "priority": "MEDIUM",
+      "headline": "China PMI (Fri) and A-share growth stabilization",
+      "why": "ChiNext −7.35% / STAR50 −6.33% on Jul 28 while HSI rose; weekend inbox flagged Friday official PMI.",
+      "watch": "Shanghai vs 3,813; STAR50 breadth; Friday NBS PMI headline vs expectations.",
+      "trigger": "Shanghai closes below 3,800 with weak PMI.",
+      "invalidator": "Shanghai reclaims 3,860 with improving breadth before PMI.",
+      "horizon": "days",
+      "status": "new"
     },
     {
-      "when": "30日02:30",
-      "text": "美联储主席沃什记者会"
+      "priority": "MEDIUM",
+      "headline": "Changxin follow-through vs domestic chip sentiment",
+      "why": "Day-2 close held 49.00 / ~CNY3.28tn; Goldman and NY Post headlines keep policy/geopolitical noise high.",
+      "watch": "Changxin turnover vs 存储 sector breadth; any US security-review headlines.",
+      "trigger": "Changxin breaks first-day low with STAR semis still falling.",
+      "invalidator": "Changxin holds above 45 with sector stabilization.",
+      "horizon": "days",
+      "status": "continuing"
     }
   ],
   "suggestions": [
