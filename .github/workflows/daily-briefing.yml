@@ -78,8 +78,19 @@ jobs:
           npm install @cursor/sdk@latest
           npm install --prefix scripts
 
+      # Inbox fetch must NOT require Cursor: manual briefing mode still needs
+      # Bloomberg / Glassnode email committed for human/agent merge.
+      - name: Install IMAP deps only (manual mode)
+        if: steps.gate.outputs.should_run == 'true' && steps.ops.outputs.cursor_auto != 'true'
+        run: npm install --prefix scripts
+
       - name: Fetch inbox newsletters (Bloomberg daily + Glassnode weekly)
-        if: steps.gate.outputs.should_run == 'true' && steps.ops.outputs.cursor_auto == 'true' && steps.key.outputs.present == 'true'
+        if: >-
+          steps.gate.outputs.should_run == 'true' &&
+          (
+            steps.ops.outputs.cursor_auto != 'true' ||
+            (steps.ops.outputs.cursor_auto == 'true' && steps.key.outputs.present == 'true')
+          )
         env:
           INBOX_IMAP_HOST: ${{ secrets.INBOX_IMAP_HOST }}
           INBOX_IMAP_USER: ${{ secrets.INBOX_IMAP_USER }}
@@ -87,6 +98,18 @@ jobs:
           INBOX_IMAP_PORT: ${{ secrets.INBOX_IMAP_PORT }}
           BRIEFING_DATE: ${{ steps.gate.outputs.briefing_date }}
         run: node scripts/fetch-inbox-sources.mjs
+
+      - name: Commit inbox captures (no Cursor tokens)
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          if [ -n "$(git status --porcelain -- web/content/inbox web/public/inbox-charts)" ]; then
+            git config user.name "syravocado"
+            git config user.email "linshanova-ops@users.noreply.github.com"
+            git add web/content/inbox web/public/inbox-charts
+            git commit -m "chore: sync IMAP inbox captures for ${{ steps.gate.outputs.briefing_date }}"
+          else
+            echo "No inbox changes to commit."
+          fi
 
       # Fund module: no Cursor tokens. Primary Beijing window only.
       - name: Scan Fund signals (Hedgeweek + Google News)
