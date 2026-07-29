@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-28T03:06:09.413Z",
-  "latest": "2026-07-28",
+  "generatedAt": "2026-07-29T03:39:58.692Z",
+  "latest": "2026-07-29",
   "briefings": [
+    {
+      "date": "2026-07-29",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Value beats AI beta for a second session: Jul 28 Dow +1.03% while SOX −4.49% and Nasdaq slipped; oil fell again (WTI settle $79.26, Brent $84.09) into Wednesday's Fed decision, while China growth indexes sold off hard even as Changxin held ~CNY3.28tn.",
+      "coverageWindow": "July 28–29, 2026"
+    },
     {
       "date": "2026-07-28",
       "title": "Daily Financial Briefing",
