@@ -1,25 +1,42 @@
 {
-  "at": "2026-07-28T02:55:27.298Z",
-  "briefingDate": "2026-07-28",
+  "at": "2026-07-29T04:05:44.702Z",
+  "briefingDate": "2026-07-29",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-28.md",
-      "subject": "彭博财经早茶：AI循环融资担忧重创芯片股；美国和伊朗恢复谈判",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-29.md",
+      "subject": "彭博财经早茶：伊朗突袭中东美军；SK海力士业绩逊预期",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 4874,
+      "chars": 4936,
       "mailbox": "INBOX",
-      "chartImage": "/inbox-charts/bloomberg-2026-07-28.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-28.png"
+      "chartImage": "/inbox-charts/bloomberg-2026-07-29.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-29.png"
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W30.md",
       "skipped": true
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W30.md",
+      "subject": "Optimism Meets Overhead",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 3332,
+      "mailbox": "INBOX"
     }
   ],
   "skipped": [
+    {
+      "reason": "date-mismatch",
+      "subject": "彭博财经早茶：AI循环融资担忧重创芯片股；美国和伊朗恢复谈判",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-07-27",
+      "bjDay": "2026-07-28",
+      "briefingDate": "2026-07-29"
+    },
     {
       "reason": "date-mismatch",
       "subject": "彭博财经早茶：美伊互袭暂歇推动油价大跌；中国监管机构重罚携程",
@@ -27,7 +44,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-26",
       "bjDay": "2026-07-27",
-      "briefingDate": "2026-07-28"
+      "briefingDate": "2026-07-29"
     },
     {
       "reason": "weekly-exists",
@@ -41,7 +58,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-23",
       "bjDay": "2026-07-24",
-      "briefingDate": "2026-07-28"
+      "briefingDate": "2026-07-29"
     },
     {
       "reason": "date-mismatch",
@@ -50,12 +67,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-22",
       "bjDay": "2026-07-23",
-      "briefingDate": "2026-07-28"
-    },
-    {
-      "reason": "unmatched",
-      "subject": "Optimism Meets Overhead",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
+      "briefingDate": "2026-07-29"
     },
     {
       "reason": "unmatched",
@@ -69,7 +81,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-21",
       "bjDay": "2026-07-22",
-      "briefingDate": "2026-07-28"
+      "briefingDate": "2026-07-29"
     },
     {
       "reason": "date-mismatch",
@@ -78,7 +90,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-20",
       "bjDay": "2026-07-21",
-      "briefingDate": "2026-07-28"
+      "briefingDate": "2026-07-29"
     },
     {
       "reason": "unmatched",
