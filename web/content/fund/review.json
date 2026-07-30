@@ -76,7 +76,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.fnlondon.com/articles/former-brevan-howard-middle-east-ceo-joins-vitruvian-partners-53802f04",
-    "source": "Financial News London",
+    "source": "fnlondon.com",
     "sourceTier": "secondary"
   },
   {
@@ -240,16 +240,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260729-2ptxdz",
-    "title": "Arrowstreet Capital Limited Partnership Buys 121,052 Shares of Xenia Hotels & Resorts, Inc. $XHR",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-buys-121052-shares-of-xenia-hotels-resorts-inc-xhr-2026-07-29/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260728-mfvjz8",
     "title": "Coca-Cola Europacific Partners $CCEP Stock Position Lifted by Arrowstreet Capital Limited Partnership",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
@@ -297,6 +287,16 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-alphabet-inc-googl-shares-acquired-by-linden-rose-investment-llc-2026-07-27/",
     "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260727-n8rzj",
+    "title": "Barings BDC Inc (BBDC) Shareholder Structure: Major Shareholders & Institutional Holdings",
+    "reason": "弱信源「TradingKey」命中「Barings」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.tradingkey.com/markets/stocks/bbdc/ownership",
+    "source": "TradingKey",
     "sourceTier": "weak"
   }
 ]
