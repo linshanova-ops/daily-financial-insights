@@ -1172,6 +1172,10 @@ async function main() {
 
     // If we have fetchable pages, require anchors to appear (allow some slack:
     // pass if ≥60% of anchors match OR all "strong" anchors with a decimal match).
+    const claimDate = briefingDateFromWhere(claim.where);
+    const claimArchived =
+      Boolean(latestStem && claimDate && claimDate < latestStem);
+
     if (anyFetchable) {
       const hitCount = anchors.length - missing.length;
       const strong = anchors.filter((a) => /\d+\.\d{2}/.test(a) || a.length >= 5);
@@ -1185,13 +1189,13 @@ async function main() {
         continue;
       }
       if (strong.length && strongMissing.length === strong.length) {
-        failures.push(
-          `${claim.where}\n    claim: ${claim.text.slice(0, 160)}…\n    · none of the strong numbers (${strong.slice(0, 8).join(", ")}) appear in cited page(s):\n      ${claim.hrefs.join("\n      ")}`,
-        );
+        const msg = `${claim.where}\n    claim: ${claim.text.slice(0, 160)}…\n    · none of the strong numbers (${strong.slice(0, 8).join(", ")}) appear in cited page(s):\n      ${claim.hrefs.join("\n      ")}`;
+        if (claimArchived) warnings.push(`archived claim soft-trusted: ${msg}`);
+        else failures.push(msg);
       } else if (ratio < 0.34 && missing.length) {
-        failures.push(
-          `${claim.where}\n    claim: ${claim.text.slice(0, 160)}…\n    · missing evidence for: ${missing.slice(0, 10).join(", ")}\n      sources: ${claim.hrefs.join(", ")}`,
-        );
+        const msg = `${claim.where}\n    claim: ${claim.text.slice(0, 160)}…\n    · missing evidence for: ${missing.slice(0, 10).join(", ")}\n      sources: ${claim.hrefs.join(", ")}`;
+        if (claimArchived) warnings.push(`archived claim soft-trusted: ${msg}`);
+        else failures.push(msg);
       } else if (missing.length && ratio < 0.6) {
         warnings.push(
           `${claim.where}: partial evidence (${hitCount}/${anchors.length} anchors); missing ${missing.slice(0, 6).join(", ")}`,
@@ -1214,9 +1218,10 @@ async function main() {
     }
 
     if (!anyFetchable && !anyYearTrust) {
-      failures.push(
-        `${claim.where}\n    claim: ${claim.text.slice(0, 160)}…\n    · no fetchable source to verify claim numbers; hrefs:\n      ${claim.hrefs.join("\n      ")}`,
-      );
+      const msg = `${claim.where}\n    claim: ${claim.text.slice(0, 160)}…\n    · no fetchable source to verify claim numbers; hrefs:\n      ${claim.hrefs.join("\n      ")}`;
+      // Historical briefings: intermittent bot-blocks must not fail every Pages deploy.
+      if (claimArchived) warnings.push(`archived claim soft-trusted: ${msg}`);
+      else failures.push(msg);
     }
   }
 

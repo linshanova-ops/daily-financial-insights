@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-29T04:41:35.797Z",
-  "latest": "2026-07-29",
+  "generatedAt": "2026-07-30T01:05:12.500Z",
+  "latest": "2026-07-30",
   "briefings": [
+    {
+      "date": "2026-07-30",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Hawkish hold meets war premium: Fed voted 9–3 to keep 3.50–3.75% while three regional presidents wanted a hike; Jul 29 S&P −1.52% to 7,316.15 with Nasdaq −1.7% and Brent settling $90.74 as Trump vowed hard retaliation after Iran’s missile attack was intercepted.",
+      "coverageWindow": "July 29–30, 2026"
+    },
     {
       "date": "2026-07-29",
       "title": "Daily Financial Briefing",
