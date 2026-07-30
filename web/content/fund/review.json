@@ -66,7 +66,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://finance.yahoo.com/markets/crypto/articles/crypto-hedge-fund-brevan-howard-104550850.html",
-    "source": "Yahoo Finance",
+    "source": "finance.yahoo.com",
     "sourceTier": "secondary"
   },
   {
@@ -180,16 +180,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-6215cs",
-    "title": "Why Baupost’s Seth Klarman sees opportunity in what AI gold rushers have left behind",
-    "reason": "中等置信度命中「Baupost」，待人工复核。",
-    "confidence": "62%",
-    "status": "review",
-    "href": "https://www.pionline.com/alternative-investments/hedge-funds/pi-baupost-seth-klarman-hedge-funds-ai-investing-spacex/",
-    "source": "Pensions & Investments",
-    "sourceTier": "secondary"
-  },
-  {
     "id": "rev-sig-20260728-5454p8",
     "title": "Lombard Odier Asset Management Switzerland SA Makes New $1.19 Million Investment in Marathon Petroleum Corporation $MPC",
     "reason": "中等置信度命中「Marathon」，待人工复核。",
@@ -200,22 +190,22 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260729-skp17v",
-    "title": "Arrowstreet Capital Limited Partnership Makes New Investment in Alexandria Real Estate Equities, Inc. $ARE",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-alexandria-real-estate-equities-inc-are-2026-07-29/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260728-c72yyl",
     "title": "Arrowstreet Capital Limited Partnership Cuts Holdings in Federated Hermes, Inc. $FHI",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-cuts-holdings-in-federated-hermes-inc-fhi-2026-07-28/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260729-skp17v",
+    "title": "Arrowstreet Capital Limited Partnership Makes New Investment in Alexandria Real Estate Equities, Inc. $ARE",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-alexandria-real-estate-equities-inc-are-2026-07-29/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -246,6 +236,16 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-sells-285654-shares-of-jpmorgan-chase-co-jpm-2026-07-27/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260729-2ptxdz",
+    "title": "Arrowstreet Capital Limited Partnership Buys 121,052 Shares of Xenia Hotels & Resorts, Inc. $XHR",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-buys-121052-shares-of-xenia-hotels-resorts-inc-xhr-2026-07-29/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
