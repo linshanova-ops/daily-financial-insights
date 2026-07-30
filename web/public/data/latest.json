@@ -734,7 +734,7 @@
       }
     ]
   },
-  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 30 inbox) for 国际要闻→globalChanged 1:1, 大中华新闻→chinaChanged 1:1, 市场一览, calendar/government watch context and chart; Glassnode W31 email body for on-chain carry/volume signal; Federal Reserve and CNBC for FOMC 9–3 hold; AP/TradingKey for Jul 29 US closes; CNBC for Brent/WTI settle; 21财经 for Innolight H-share pricing.",
+  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 30 inbox) for 国际要闻→globalChanged 1:1, 大中华新闻→chinaChanged 1:1, 市场一览, calendar/government watch context and chart; Glassnode W31 email body for on-chain carry/volume signal; Federal Reserve and CNBC for FOMC 9–3 hold; AP/TradingKey for Jul 29 US closes; CNBC for Brent/WTI settle; 界面新闻 for Innolight H-share pricing.",
   "caveats": "Bloomberg newsletter items without public article URLs use the stable Bloomberg Asia cite. Hard closes/settles/FOMC vote attached to primaries. Glassnode uses email body only (no “Read full report” scrape). This report is research synthesis, not investment advice.",
   "singleSource": "Holistic 彭博 Jul 30 财经早茶 merge: 国际要闻→globalChanged Chinese 1:1 (12/12); 大中华新闻→chinaChanged Chinese 1:1 (8/8); 市场一览 (7); calendar lines folded into watchItems; 今日图表 image saved. Glassnode W31 “Paid to Wait” merged as globalChanged + glassnode-weekly figure + watch/signal. Primaries for FOMC, US closes, oil, Innolight. marketDashboard injected; publishedAt updated.",
   "marketDashboard": {
