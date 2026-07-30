@@ -190,22 +190,22 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-c72yyl",
-    "title": "Arrowstreet Capital Limited Partnership Cuts Holdings in Federated Hermes, Inc. $FHI",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-cuts-holdings-in-federated-hermes-inc-fhi-2026-07-28/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260729-skp17v",
     "title": "Arrowstreet Capital Limited Partnership Makes New Investment in Alexandria Real Estate Equities, Inc. $ARE",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-alexandria-real-estate-equities-inc-are-2026-07-29/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260728-c72yyl",
+    "title": "Arrowstreet Capital Limited Partnership Cuts Holdings in Federated Hermes, Inc. $FHI",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-cuts-holdings-in-federated-hermes-inc-fhi-2026-07-28/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
