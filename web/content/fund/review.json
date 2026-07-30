@@ -1,21 +1,31 @@
 [
   {
-    "id": "rev-sig-20260728-phw0ka",
-    "title": "Hedge funds up exposure to US healthcare stocks to five-year high",
+    "id": "rev-sig-20260729-t2xi77",
+    "title": "Hedge funds face margin calls amid AI stock sell-off",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/hedge-funds-up-exposure-to-us-healthcare-stocks-to-five-year-high/",
+    "href": "https://www.hedgeweek.com/hedge-funds-face-margin-calls-amid-ai-stock-sell-off/",
     "source": "Hedgeweek",
     "sourceTier": "designated"
   },
   {
-    "id": "rev-sig-20260728-e28gdi",
-    "title": "Senior departures reshape Brevan Howard&#8217;s commodities investment team",
-    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
+    "id": "rev-sig-20260729-uvupb4",
+    "title": "Goldman sees pullback in Japan AI stocks as hedge fund buying opportunity",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/senior-departures-reshape-brevan-howards-commodities-investment-team/",
+    "href": "https://www.hedgeweek.com/goldman-sees-pullback-in-japan-ai-stocks-as-hedge-fund-buying-opportunity/",
+    "source": "Hedgeweek",
+    "sourceTier": "designated"
+  },
+  {
+    "id": "rev-sig-20260729-9h5h4q",
+    "title": "AI-fuelled rally puts hedge funds on course for another strong year, says Goldman",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.hedgeweek.com/ai-fuelled-rally-puts-hedge-funds-on-course-for-another-strong-year-says-goldman/",
     "source": "Hedgeweek",
     "sourceTier": "designated"
   },
@@ -50,12 +60,22 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260727-rkeq8n",
-    "title": "Brevan Howard Digital eyes turnaround after heavy losses",
+    "id": "rev-sig-20260727-jqo711",
+    "title": "Crypto Hedge Fund Brevan Howard Digital Is Now Chasing Stablecoins Instead of Bitcoin",
     "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.fnlondon.com/articles/brevan-howard-digital-eyes-turnaround-after-heavy-losses-cbb4b477",
+    "href": "https://finance.yahoo.com/markets/crypto/articles/crypto-hedge-fund-brevan-howard-104550850.html",
+    "source": "Yahoo Finance",
+    "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260729-v082wx",
+    "title": "Former Brevan Howard Middle East CEO joins Vitruvian Partners",
+    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.fnlondon.com/articles/former-brevan-howard-middle-east-ceo-joins-vitruvian-partners-53802f04",
     "source": "Financial News London",
     "sourceTier": "secondary"
   },
@@ -70,32 +90,12 @@
     "sourceTier": "secondary"
   },
   {
-    "id": "rev-sig-20260727-jqo711",
-    "title": "Crypto Hedge Fund Brevan Howard Digital Is Now Chasing Stablecoins Instead of Bitcoin",
-    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://coingape.com/block-of-fame/pulse/crypto-hedge-fund-brevan-howard-digital-is-now-chasing-stablecoins-instead-of-bitcoin/",
-    "source": "CoinGape",
-    "sourceTier": "secondary"
-  },
-  {
     "id": "rev-sig-20260727-k0ovkz",
     "title": "Cornerstone Strategic Investment Fund, Inc. $CLM Position Lifted by Sculptor Capital LP",
     "reason": "中等置信度命中「Sculptor」，待人工复核。",
     "confidence": "63%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-cornerstone-strategic-investment-fund-inc-clm-position-lifted-by-sculptor-capital-lp-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260727-d9z9ve",
-    "title": "Polar Asset Management Partners Inc. Makes New $5.40 Million Investment in XPEL, Inc. $XPEL",
-    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-540-million-investment-in-xpel-inc-xpel-2026-07-27/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -126,6 +126,16 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-215-million-investment-in-lazard-inc-laz-2026-07-28/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260727-d9z9ve",
+    "title": "Polar Asset Management Partners Inc. Makes New $5.40 Million Investment in XPEL, Inc. $XPEL",
+    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-540-million-investment-in-xpel-inc-xpel-2026-07-27/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -170,14 +180,14 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260727-bhd9wg",
-    "title": "Polar Asset Management Partners Inc. Grows Stock Position in M3-Brigade Acquisition V Corp. $MBAV",
-    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
+    "id": "rev-sig-20260728-6215cs",
+    "title": "Why Baupost’s Seth Klarman sees opportunity in what AI gold rushers have left behind",
+    "reason": "中等置信度命中「Baupost」，待人工复核。",
+    "confidence": "62%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-grows-stock-position-in-m3-brigade-acquisition-v-corp-mbav-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
+    "href": "https://www.pionline.com/alternative-investments/hedge-funds/pi-baupost-seth-klarman-hedge-funds-ai-investing-spacex/",
+    "source": "Pensions & Investments",
+    "sourceTier": "secondary"
   },
   {
     "id": "rev-sig-20260728-5454p8",
@@ -186,6 +196,16 @@
     "confidence": "63%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-lombard-odier-asset-management-switzerland-sa-makes-new-119-million-investment-in-marathon-petroleum-corporation-mpc-2026-07-28/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260729-skp17v",
+    "title": "Arrowstreet Capital Limited Partnership Makes New Investment in Alexandria Real Estate Equities, Inc. $ARE",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-alexandria-real-estate-equities-inc-are-2026-07-29/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -210,6 +230,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260729-xehu5f",
+    "title": "KB Financial Group Inc $KB Shares Sold by Arrowstreet Capital Limited Partnership",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-kb-financial-group-inc-kb-shares-sold-by-arrowstreet-capital-limited-partnership-2026-07-29/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260727-sq1o0t",
     "title": "Arrowstreet Capital Limited Partnership Sells 285,654 Shares of JPMorgan Chase & Co. $JPM",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
@@ -220,12 +250,12 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260727-673ed0",
-    "title": "Sona Asset Management US LLC Makes New Investment in BTC Development Corp. $BDCI",
-    "reason": "弱信源「MarketBeat」命中「Sona Asset Management」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260728-mfvjz8",
+    "title": "Coca-Cola Europacific Partners $CCEP Stock Position Lifted by Arrowstreet Capital Limited Partnership",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-sona-asset-management-us-llc-makes-new-investment-in-btc-development-corp-bdci-2026-07-27/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-coca-cola-europacific-partners-ccep-stock-position-lifted-by-arrowstreet-capital-limited-partnership-2026-07-28/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -236,6 +266,16 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-sona-asset-management-us-llc-invests-113-million-in-agriculture-natural-solutions-acquisition-corporation-ansc-2026-07-27/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260727-673ed0",
+    "title": "Sona Asset Management US LLC Makes New Investment in BTC Development Corp. $BDCI",
+    "reason": "弱信源「MarketBeat」命中「Sona Asset Management」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-sona-asset-management-us-llc-makes-new-investment-in-btc-development-corp-bdci-2026-07-27/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
