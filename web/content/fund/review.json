@@ -170,6 +170,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260730-50jn85",
+    "title": "Arrowstreet Capital Limited Partnership Lowers Holdings in Camden Property Trust $CPT",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-lowers-holdings-in-camden-property-trust-cpt-2026-07-30/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260729-2ptxdz",
     "title": "Arrowstreet Capital Limited Partnership Buys 121,052 Shares of Xenia Hotels & Resorts, Inc. $XHR",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
