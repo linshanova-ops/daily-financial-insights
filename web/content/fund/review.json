@@ -1,33 +1,13 @@
 [
   {
-    "id": "rev-sig-20260729-t2xi77",
-    "title": "Hedge funds face margin calls amid AI stock sell-off",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
+    "id": "rev-sig-20260730-rz8y4l",
+    "title": "Hedge fund Squarepoint is still ramping up its commodities trading business",
+    "reason": "中等置信度命中「Squarepoint」，待人工复核。",
+    "confidence": "66%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/hedge-funds-face-margin-calls-amid-ai-stock-sell-off/",
-    "source": "Hedgeweek",
-    "sourceTier": "designated"
-  },
-  {
-    "id": "rev-sig-20260729-uvupb4",
-    "title": "Goldman sees pullback in Japan AI stocks as hedge fund buying opportunity",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.hedgeweek.com/goldman-sees-pullback-in-japan-ai-stocks-as-hedge-fund-buying-opportunity/",
-    "source": "Hedgeweek",
-    "sourceTier": "designated"
-  },
-  {
-    "id": "rev-sig-20260729-9h5h4q",
-    "title": "AI-fuelled rally puts hedge funds on course for another strong year, says Goldman",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.hedgeweek.com/ai-fuelled-rally-puts-hedge-funds-on-course-for-another-strong-year-says-goldman/",
-    "source": "Hedgeweek",
-    "sourceTier": "designated"
+    "href": "https://www.efinancialcareers.com/news/hedge-fund-squarepoint-is-quietly-ramping-up-its-commodities-trading-business",
+    "source": "eFinancialCareers",
+    "sourceTier": "secondary"
   },
   {
     "id": "rev-sig-20260727-4thiid",
@@ -38,6 +18,16 @@
     "href": "https://www.prnewswire.com/news-releases/t-rowe-price-goldman-sachs-private-markets-fund-debuts-302835304.html",
     "source": "PR Newswire",
     "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260730-4xscru",
+    "title": "Royal Fund Management LLC Sells 3,183 Shares of The Goldman Sachs Group, Inc. $GS",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-royal-fund-management-llc-sells-3183-shares-of-the-goldman-sachs-group-inc-gs-2026-07-30/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260728-xfi4c2",
@@ -60,13 +50,13 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260727-jqo711",
-    "title": "Crypto Hedge Fund Brevan Howard Digital Is Now Chasing Stablecoins Instead of Bitcoin",
+    "id": "rev-sig-20260728-1o4lzo",
+    "title": "Some senior people slipped away from Brevan Howard's commodities business",
     "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://finance.yahoo.com/markets/crypto/articles/crypto-hedge-fund-brevan-howard-104550850.html",
-    "source": "Yahoo Finance",
+    "href": "https://www.efinancialcareers.com/news/brevan-howard-commodities",
+    "source": "eFinancialCareers",
     "sourceTier": "secondary"
   },
   {
@@ -80,62 +70,12 @@
     "sourceTier": "secondary"
   },
   {
-    "id": "rev-sig-20260728-1o4lzo",
-    "title": "Some senior people slipped away from Brevan Howard's commodities business",
-    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.efinancialcareers.com/news/brevan-howard-commodities",
-    "source": "eFinancialCareers",
-    "sourceTier": "secondary"
-  },
-  {
-    "id": "rev-sig-20260727-k0ovkz",
-    "title": "Cornerstone Strategic Investment Fund, Inc. $CLM Position Lifted by Sculptor Capital LP",
-    "reason": "中等置信度命中「Sculptor」，待人工复核。",
-    "confidence": "63%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-cornerstone-strategic-investment-fund-inc-clm-position-lifted-by-sculptor-capital-lp-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260727-mx9gbw",
-    "title": "Polar Asset Management Partners Inc. Makes New Investment in Arthur J. Gallagher & Co. $AJG",
-    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-investment-in-arthur-j-gallagher-co-ajg-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260727-i2ilax",
-    "title": "Polar Asset Management Partners Inc. Makes New $8.07 Million Investment in Analog Devices, Inc. $ADI",
-    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-807-million-investment-in-analog-devices-inc-adi-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260728-e3gcze",
     "title": "Polar Asset Management Partners Inc. Makes New $2.15 Million Investment in Lazard, Inc. $LAZ",
     "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-215-million-investment-in-lazard-inc-laz-2026-07-28/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260727-d9z9ve",
-    "title": "Polar Asset Management Partners Inc. Makes New $5.40 Million Investment in XPEL, Inc. $XPEL",
-    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-540-million-investment-in-xpel-inc-xpel-2026-07-27/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -160,6 +100,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260730-fs628l",
+    "title": "Keppel Offshore Fund: Apollo’s $1.5B Rig Investment Explained",
+    "reason": "中等置信度命中「Apollo」，待人工复核。",
+    "confidence": "61%",
+    "status": "review",
+    "href": "https://discoveryalert.com.au/keppel-offshore-fund-apollo-rig-market-recovery-2026/",
+    "source": "Discovery Alert",
+    "sourceTier": "secondary"
+  },
+  {
     "id": "rev-sig-20260728-j6211y",
     "title": "XFLT Announces Liquidity Plan With Tender Offers Pending Approval of King Street Sub-Advisory Agreement",
     "reason": "中等置信度命中「King Street」，待人工复核。",
@@ -180,12 +130,32 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260728-6215cs",
+    "title": "Why Baupost’s Seth Klarman sees opportunity in what AI gold rushers have left behind",
+    "reason": "中等置信度命中「Baupost」，待人工复核。",
+    "confidence": "62%",
+    "status": "review",
+    "href": "https://www.pionline.com/alternative-investments/hedge-funds/pi-baupost-seth-klarman-hedge-funds-ai-investing-spacex/",
+    "source": "Pensions & Investments",
+    "sourceTier": "secondary"
+  },
+  {
     "id": "rev-sig-20260728-5454p8",
     "title": "Lombard Odier Asset Management Switzerland SA Makes New $1.19 Million Investment in Marathon Petroleum Corporation $MPC",
     "reason": "中等置信度命中「Marathon」，待人工复核。",
     "confidence": "63%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-lombard-odier-asset-management-switzerland-sa-makes-new-119-million-investment-in-marathon-petroleum-corporation-mpc-2026-07-28/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260730-cwe8ic",
+    "title": "Shinhan Financial Group Co Ltd $SHG Shares Sold by Arrowstreet Capital Limited Partnership",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-shinhan-financial-group-co-ltd-shg-shares-sold-by-arrowstreet-capital-limited-partnership-2026-07-30/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -210,32 +180,12 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260727-4ul2gf",
-    "title": "KKR & Co. Inc. $KKR Stock Holdings Increased by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-kkr-co-inc-kkr-stock-holdings-increased-by-arrowstreet-capital-limited-partnership-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260729-xehu5f",
     "title": "KB Financial Group Inc $KB Shares Sold by Arrowstreet Capital Limited Partnership",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-kb-financial-group-inc-kb-shares-sold-by-arrowstreet-capital-limited-partnership-2026-07-29/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260727-sq1o0t",
-    "title": "Arrowstreet Capital Limited Partnership Sells 285,654 Shares of JPMorgan Chase & Co. $JPM",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-sells-285654-shares-of-jpmorgan-chase-co-jpm-2026-07-27/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -256,46 +206,6 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-coca-cola-europacific-partners-ccep-stock-position-lifted-by-arrowstreet-capital-limited-partnership-2026-07-28/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260727-dkseh3",
-    "title": "Sona Asset Management US LLC Invests $1.13 Million in Agriculture & Natural Solutions Acquisition Corporation $ANSC",
-    "reason": "弱信源「MarketBeat」命中「Sona Asset Management」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-sona-asset-management-us-llc-invests-113-million-in-agriculture-natural-solutions-acquisition-corporation-ansc-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260727-673ed0",
-    "title": "Sona Asset Management US LLC Makes New Investment in BTC Development Corp. $BDCI",
-    "reason": "弱信源「MarketBeat」命中「Sona Asset Management」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-sona-asset-management-us-llc-makes-new-investment-in-btc-development-corp-bdci-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260727-60rgi2",
-    "title": "292,000 Shares in NewHold Investment Corp III $NHIC Bought by Sona Asset Management US LLC",
-    "reason": "弱信源「MarketBeat」命中「Sona Asset Management」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-292000-shares-in-newhold-investment-corp-iii-nhic-bought-by-sona-asset-management-us-llc-2026-07-27/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260727-m4g0yu",
-    "title": "Alphabet Inc. $GOOGL Shares Acquired by Linden Rose Investment LLC",
-    "reason": "弱信源「MarketBeat」命中「Linden」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-alphabet-inc-googl-shares-acquired-by-linden-rose-investment-llc-2026-07-27/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   }
