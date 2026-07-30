@@ -1,25 +1,17 @@
 {
-  "at": "2026-07-30T00:01:11.323Z",
+  "at": "2026-07-30T00:05:27.184Z",
   "briefingDate": "2026-07-30",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-30.md",
-      "subject": "彭博财经早茶：中际旭创H股上市；美联储加息呼声渐高",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5262,
-      "mailbox": "INBOX",
-      "chartImage": "/inbox-charts/bloomberg-2026-07-30.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-30.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W31.md",
-      "subject": "Paid to Wait",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2114,
-      "mailbox": "INBOX"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
@@ -28,6 +20,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：中际旭创H股上市；美联储加息呼声渐高",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-30.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "Paid to Wait",
+      "path": "web/content/inbox/glassnode-insights/2026-W31.md"
+    },
     {
       "reason": "date-mismatch",
       "subject": "彭博财经早茶：伊朗突袭中东美军；SK海力士业绩逊预期",
