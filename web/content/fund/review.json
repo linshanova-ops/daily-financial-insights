@@ -40,16 +40,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-9hk151",
-    "title": "Lazard Asset Management LLC Sells 174,798 Shares of The Goldman Sachs Group, Inc. $GS",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-lazard-asset-management-llc-sells-174798-shares-of-the-goldman-sachs-group-inc-gs-2026-07-28/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260728-1o4lzo",
     "title": "Some senior people slipped away from Brevan Howard's commodities business",
     "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
