@@ -1,5 +1,15 @@
 [
   {
+    "id": "rev-sig-20260730-p4jwhg",
+    "title": "Ares’ Joel Holsinger thinks charity can be a part of fund management and performance. More managers are signing on.",
+    "reason": "中等置信度命中「Ares」，待人工复核。",
+    "confidence": "59%",
+    "status": "review",
+    "href": "https://www.pionline.com/alternative-investments/pi-ares-promote-giving-charity-carry-private-credit/",
+    "source": "Pensions & Investments",
+    "sourceTier": "secondary"
+  },
+  {
     "id": "rev-sig-20260730-rz8y4l",
     "title": "Hedge fund Squarepoint is still ramping up its commodities trading business",
     "reason": "中等置信度命中「Squarepoint」，待人工复核。",
@@ -10,13 +20,23 @@
     "sourceTier": "secondary"
   },
   {
-    "id": "rev-sig-20260727-4thiid",
-    "title": "T. ROWE PRICE GOLDMAN SACHS PRIVATE MARKETS FUND DEBUTS",
+    "id": "rev-sig-20260731-87u05y",
+    "title": "Goldman Sachs Launches AlphaAI, New AI Investing Platform",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.prnewswire.com/news-releases/t-rowe-price-goldman-sachs-private-markets-fund-debuts-302835304.html",
-    "source": "PR Newswire",
+    "href": "https://www.globalbankingandfinance.com/goldman-sachs-asset-arm-forms-ai-investing-platform-memo/",
+    "source": "Global Banking & Finance Review",
+    "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260731-kqbpud",
+    "title": "Goldman Sachs Stock Rises 3.2% as AlphaAI Platform Launches",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.tradingview.com/news/gurufocus:7312742d2094b:0-goldman-sachs-stock-rises-3-2-as-alphaai-platform-launches/",
+    "source": "TradingView",
     "sourceTier": "secondary"
   },
   {
@@ -40,14 +60,14 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-1o4lzo",
-    "title": "Some senior people slipped away from Brevan Howard's commodities business",
-    "reason": "中等置信度命中「Brevan Howard」，待人工复核。",
+    "id": "rev-sig-20260728-9hk151",
+    "title": "Lazard Asset Management LLC Sells 174,798 Shares of The Goldman Sachs Group, Inc. $GS",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.efinancialcareers.com/news/brevan-howard-commodities",
-    "source": "eFinancialCareers",
-    "sourceTier": "secondary"
+    "href": "https://www.marketbeat.com/instant-alerts/filing-lazard-asset-management-llc-sells-174798-shares-of-the-goldman-sachs-group-inc-gs-2026-07-28/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260729-v082wx",
@@ -80,23 +100,13 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260727-vi2smh",
-    "title": "Element Solutions Inc (ESI) Shareholder Structure: Major Shareholders & Institutional Holdings",
-    "reason": "中等置信度命中「Element」，待人工复核。",
-    "confidence": "62%",
-    "status": "review",
-    "href": "https://www.tradingkey.com/markets/stocks/esi/ownership",
-    "source": "TradingKey",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260730-fs628l",
     "title": "Keppel Offshore Fund: Apollo’s $1.5B Rig Investment Explained",
     "reason": "中等置信度命中「Apollo」，待人工复核。",
     "confidence": "61%",
     "status": "review",
     "href": "https://discoveryalert.com.au/keppel-offshore-fund-apollo-rig-market-recovery-2026/",
-    "source": "Discovery Alert",
+    "source": "discoveryalert.com.au",
     "sourceTier": "secondary"
   },
   {
@@ -108,16 +118,6 @@
     "href": "https://www.quiverquant.com/news/XFLT+Announces+Liquidity+Plan+With+Tender+Offers+Pending+Approval+of+King+Street+Sub-Advisory+Agreement",
     "source": "Quiver Quantitative",
     "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260728-6215cs",
-    "title": "Why Baupost’s Seth Klarman sees opportunity in what AI gold rushers have left behind",
-    "reason": "中等置信度命中「Baupost」，待人工复核。",
-    "confidence": "62%",
-    "status": "review",
-    "href": "https://www.pionline.com/alternative-investments/hedge-funds/pi-baupost-seth-klarman-hedge-funds-ai-investing-spacex/",
-    "source": "Pensions & Investments",
-    "sourceTier": "secondary"
   },
   {
     "id": "rev-sig-20260728-5454p8",
@@ -170,12 +170,12 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260730-50jn85",
-    "title": "Arrowstreet Capital Limited Partnership Lowers Holdings in Camden Property Trust $CPT",
+    "id": "rev-sig-20260728-mfvjz8",
+    "title": "Coca-Cola Europacific Partners $CCEP Stock Position Lifted by Arrowstreet Capital Limited Partnership",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-lowers-holdings-in-camden-property-trust-cpt-2026-07-30/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-coca-cola-europacific-partners-ccep-stock-position-lifted-by-arrowstreet-capital-limited-partnership-2026-07-28/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -186,16 +186,6 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-buys-121052-shares-of-xenia-hotels-resorts-inc-xhr-2026-07-29/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260728-mfvjz8",
-    "title": "Coca-Cola Europacific Partners $CCEP Stock Position Lifted by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-coca-cola-europacific-partners-ccep-stock-position-lifted-by-arrowstreet-capital-limited-partnership-2026-07-28/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   }
