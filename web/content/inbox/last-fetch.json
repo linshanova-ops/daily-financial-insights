@@ -1,12 +1,17 @@
 {
-  "at": "2026-07-30T17:55:29.510Z",
-  "briefingDate": "2026-07-30",
+  "at": "2026-07-31T00:01:09.498Z",
+  "briefingDate": "2026-07-31",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-30.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-31.md",
+      "subject": "彭博财经早茶：日本当局据悉干预日元；苹果展望逊预估",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5704,
+      "mailbox": "INBOX",
+      "chartImage": "/inbox-charts/bloomberg-2026-07-31.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-31.png"
     },
     {
       "sourceId": "glassnode-insights",
@@ -21,9 +26,13 @@
   ],
   "skipped": [
     {
-      "reason": "exists-keep",
+      "reason": "date-mismatch",
       "subject": "彭博财经早茶：中际旭创H股上市；美联储加息呼声渐高",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-30.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-07-29",
+      "bjDay": "2026-07-30",
+      "briefingDate": "2026-07-31"
     },
     {
       "reason": "weekly-exists",
@@ -37,7 +46,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-28",
       "bjDay": "2026-07-29",
-      "briefingDate": "2026-07-30"
+      "briefingDate": "2026-07-31"
     },
     {
       "reason": "date-mismatch",
@@ -46,7 +55,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-27",
       "bjDay": "2026-07-28",
-      "briefingDate": "2026-07-30"
+      "briefingDate": "2026-07-31"
     },
     {
       "reason": "date-mismatch",
@@ -55,7 +64,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-26",
       "bjDay": "2026-07-27",
-      "briefingDate": "2026-07-30"
+      "briefingDate": "2026-07-31"
     },
     {
       "reason": "weekly-exists",
@@ -69,7 +78,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-23",
       "bjDay": "2026-07-24",
-      "briefingDate": "2026-07-30"
+      "briefingDate": "2026-07-31"
     },
     {
       "reason": "date-mismatch",
@@ -78,7 +87,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-22",
       "bjDay": "2026-07-23",
-      "briefingDate": "2026-07-30"
+      "briefingDate": "2026-07-31"
     },
     {
       "reason": "weekly-duplicate",
@@ -97,7 +106,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-21",
       "bjDay": "2026-07-22",
-      "briefingDate": "2026-07-30"
+      "briefingDate": "2026-07-31"
     },
     {
       "reason": "date-mismatch",
@@ -106,7 +115,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-20",
       "bjDay": "2026-07-21",
-      "briefingDate": "2026-07-30"
+      "briefingDate": "2026-07-31"
     },
     {
       "reason": "unmatched",
