@@ -56,7 +56,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-liontrust-investment-partners-llp-buys-8735-shares-of-the-goldman-sachs-group-inc-gs-2026-07-31/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
@@ -76,7 +76,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-orographic-financial-advisors-llc-purchases-shares-of-1816-the-goldman-sachs-group-inc-gs-2026-07-31/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
@@ -86,7 +86,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arkadios-wealth-advisors-acquires-1555-shares-of-the-goldman-sachs-group-inc-gs-2026-07-31/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
@@ -122,71 +122,71 @@
   {
     "id": "rev-sig-20260731-tnuyod",
     "title": "Arrowstreet Capital Limited Partnership Makes New $15.62 Million Investment in Moelis & Company $MC",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-1562-million-investment-in-moelis-company-mc-2026-07-31/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260729-skp17v",
     "title": "Arrowstreet Capital Limited Partnership Makes New Investment in Alexandria Real Estate Equities, Inc. $ARE",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-alexandria-real-estate-equities-inc-are-2026-07-29/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260730-cwe8ic",
     "title": "Shinhan Financial Group Co Ltd $SHG Shares Sold by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-shinhan-financial-group-co-ltd-shg-shares-sold-by-arrowstreet-capital-limited-partnership-2026-07-30/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260731-s8ap0a",
     "title": "Arrowstreet Capital Limited Partnership Invests $15.24 Million in Cousins Properties Incorporated $CUZ",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-invests-1524-million-in-cousins-properties-incorporated-cuz-2026-07-31/",
-    "source": "marketbeat.com",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260729-2ptxdz",
-    "title": "Arrowstreet Capital Limited Partnership Buys 121,052 Shares of Xenia Hotels & Resorts, Inc. $XHR",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-buys-121052-shares-of-xenia-hotels-resorts-inc-xhr-2026-07-29/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260731-tf69q0",
     "title": "Nomad Foods Limited $NOMD Shares Purchased by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-nomad-foods-limited-nomd-shares-purchased-by-arrowstreet-capital-limited-partnership-2026-07-31/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260729-2ptxdz",
+    "title": "Arrowstreet Capital Limited Partnership Buys 121,052 Shares of Xenia Hotels & Resorts, Inc. $XHR",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-buys-121052-shares-of-xenia-hotels-resorts-inc-xhr-2026-07-29/",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260731-a3vapf",
     "title": "Liontrust Investment Partners LLP Purchases Shares of 251,090 Brookfield Asset Management Ltd. $BAM",
-    "reason": "弱信源「marketbeat.com」命中「Brookfield」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Brookfield」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-liontrust-investment-partners-llp-purchases-shares-of-251090-brookfield-asset-management-ltd-bam-2026-07-31/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   }
 ]
