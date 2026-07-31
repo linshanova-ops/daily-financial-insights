@@ -1,17 +1,12 @@
 {
-  "at": "2026-07-31T00:01:09.498Z",
+  "at": "2026-07-31T00:05:24.228Z",
   "briefingDate": "2026-07-31",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-31.md",
-      "subject": "彭博财经早茶：日本当局据悉干预日元；苹果展望逊预估",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5704,
-      "mailbox": "INBOX",
-      "chartImage": "/inbox-charts/bloomberg-2026-07-31.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-07-31.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -25,6 +20,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：日本当局据悉干预日元；苹果展望逊预估",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-31.md"
+    },
     {
       "reason": "date-mismatch",
       "subject": "彭博财经早茶：中际旭创H股上市；美联储加息呼声渐高",
