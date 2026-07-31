@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-07-30T01:42:44.286Z",
-  "latest": "2026-07-30",
+  "generatedAt": "2026-07-31T06:24:54.567Z",
+  "latest": "2026-07-31",
   "briefings": [
+    {
+      "date": "2026-07-31",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Tech rebound meets FX and China PMI stress: Jul 30 S&P +1.66% to 7,437.63 with Microsoft +15.51% and SOX +8.19%, while Jul 31 China manufacturing PMI fell to 49.2 and the BOJ held 1% on an 8–1 vote after reported yen intervention.",
+      "coverageWindow": "July 30–31, 2026"
+    },
     {
       "date": "2026-07-30",
       "title": "Daily Financial Briefing",
