@@ -6,7 +6,7 @@
     "confidence": "59%",
     "status": "review",
     "href": "https://www.pionline.com/alternative-investments/pi-ares-promote-giving-charity-carry-private-credit/",
-    "source": "Pensions & Investments",
+    "source": "pionline.com",
     "sourceTier": "secondary"
   },
   {
@@ -20,13 +20,13 @@
     "sourceTier": "secondary"
   },
   {
-    "id": "rev-sig-20260731-87u05y",
-    "title": "Goldman Sachs Launches AlphaAI, New AI Investing Platform",
+    "id": "rev-sig-20260731-537guo",
+    "title": "Goldman Sachs asset arm forms AI investing platform, memo shows",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.globalbankingandfinance.com/goldman-sachs-asset-arm-forms-ai-investing-platform-memo/",
-    "source": "Global Banking & Finance Review",
+    "href": "https://www.reuters.com/legal/transactional/goldman-sachs-asset-arm-forms-an-ai-investing-platform-memo-shows-2026-07-30/",
+    "source": "Reuters",
     "sourceTier": "secondary"
   },
   {
@@ -46,7 +46,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-royal-fund-management-llc-sells-3183-shares-of-the-goldman-sachs-group-inc-gs-2026-07-30/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
@@ -56,7 +56,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-evelyn-partners-asset-management-ltd-decreases-holdings-in-the-goldman-sachs-group-inc-gs-2026-07-28/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
@@ -66,7 +66,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-lazard-asset-management-llc-sells-174798-shares-of-the-goldman-sachs-group-inc-gs-2026-07-28/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
@@ -76,27 +76,27 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.fnlondon.com/articles/former-brevan-howard-middle-east-ceo-joins-vitruvian-partners-53802f04",
-    "source": "Financial News London",
+    "source": "fnlondon.com",
     "sourceTier": "secondary"
   },
   {
     "id": "rev-sig-20260728-e3gcze",
     "title": "Polar Asset Management Partners Inc. Makes New $2.15 Million Investment in Lazard, Inc. $LAZ",
-    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-215-million-investment-in-lazard-inc-laz-2026-07-28/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260728-fct1qv",
     "title": "Polar Asset Management Partners Inc. Makes New Investment in LPL Financial Holdings Inc. $LPLA",
-    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-investment-in-lpl-financial-holdings-inc-lpla-2026-07-28/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
@@ -106,7 +106,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://discoveryalert.com.au/keppel-offshore-fund-apollo-rig-market-recovery-2026/",
-    "source": "Discovery Alert",
+    "source": "discoveryalert.com.au",
     "sourceTier": "secondary"
   },
   {
@@ -120,14 +120,14 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-6215cs",
-    "title": "Why Baupost’s Seth Klarman sees opportunity in what AI gold rushers have left behind",
-    "reason": "中等置信度命中「Baupost」，待人工复核。",
-    "confidence": "62%",
+    "id": "rev-sig-20260731-lus6je",
+    "title": "Kayne Anderson Energy Infrastructure Fund Completes $50 Million Private Placement of Senior Unsecured Notes",
+    "reason": "中等置信度命中「Kayne Anderson」，待人工复核。",
+    "confidence": "69%",
     "status": "review",
-    "href": "https://www.pionline.com/alternative-investments/hedge-funds/pi-baupost-seth-klarman-hedge-funds-ai-investing-spacex/",
-    "source": "Pensions & Investments",
-    "sourceTier": "secondary"
+    "href": "https://www.quiverquant.com/news/Kayne+Anderson+Energy+Infrastructure+Fund+Completes+%2450+Million+Private+Placement+of+Senior+Unsecured+Notes",
+    "source": "quiverquant.com",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260728-5454p8",
@@ -136,67 +136,67 @@
     "confidence": "63%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-lombard-odier-asset-management-switzerland-sa-makes-new-119-million-investment-in-marathon-petroleum-corporation-mpc-2026-07-28/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260730-cwe8ic",
     "title": "Shinhan Financial Group Co Ltd $SHG Shares Sold by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-shinhan-financial-group-co-ltd-shg-shares-sold-by-arrowstreet-capital-limited-partnership-2026-07-30/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260729-skp17v",
     "title": "Arrowstreet Capital Limited Partnership Makes New Investment in Alexandria Real Estate Equities, Inc. $ARE",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-alexandria-real-estate-equities-inc-are-2026-07-29/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260728-c72yyl",
     "title": "Arrowstreet Capital Limited Partnership Cuts Holdings in Federated Hermes, Inc. $FHI",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-cuts-holdings-in-federated-hermes-inc-fhi-2026-07-28/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260729-xehu5f",
     "title": "KB Financial Group Inc $KB Shares Sold by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-kb-financial-group-inc-kb-shares-sold-by-arrowstreet-capital-limited-partnership-2026-07-29/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260728-mfvjz8",
     "title": "Coca-Cola Europacific Partners $CCEP Stock Position Lifted by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-coca-cola-europacific-partners-ccep-stock-position-lifted-by-arrowstreet-capital-limited-partnership-2026-07-28/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260729-2ptxdz",
     "title": "Arrowstreet Capital Limited Partnership Buys 121,052 Shares of Xenia Hotels & Resorts, Inc. $XHR",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-buys-121052-shares-of-xenia-hotels-resorts-inc-xhr-2026-07-29/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   }
 ]
