@@ -1,5 +1,25 @@
 [
   {
+    "id": "rev-sig-20260731-n55127",
+    "title": "Asia long-short hedge funds on course for worst monthly losses, says Goldman",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.hedgeweek.com/asia-long-short-hedge-funds-on-course-for-worst-monthly-losses-says-goldman/",
+    "source": "Hedgeweek",
+    "sourceTier": "designated"
+  },
+  {
+    "id": "rev-sig-20260731-y4zqty",
+    "title": "ARES MANAGEMENT ($ARES) Releases Q2 2026 Earnings",
+    "reason": "弱信源「Quiver Quantitative」命中「Ares Management」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.quiverquant.com/news/ARES+MANAGEMENT+%28%24ARES%29+Releases+Q2+2026+Earnings",
+    "source": "Quiver Quantitative",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260730-p4jwhg",
     "title": "Ares’ Joel Holsinger thinks charity can be a part of fund management and performance. More managers are signing on.",
     "reason": "中等置信度命中「Ares」，待人工复核。",
@@ -30,6 +50,16 @@
     "sourceTier": "secondary"
   },
   {
+    "id": "rev-sig-20260731-a57tjs",
+    "title": "Liontrust Investment Partners LLP Buys 8,735 Shares of The Goldman Sachs Group, Inc. $GS",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-liontrust-investment-partners-llp-buys-8735-shares-of-the-goldman-sachs-group-inc-gs-2026-07-31/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260731-kqbpud",
     "title": "Goldman Sachs Stock Rises 3.2% as AlphaAI Platform Launches",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -40,32 +70,22 @@
     "sourceTier": "secondary"
   },
   {
-    "id": "rev-sig-20260730-4xscru",
-    "title": "Royal Fund Management LLC Sells 3,183 Shares of The Goldman Sachs Group, Inc. $GS",
+    "id": "rev-sig-20260731-lchko1",
+    "title": "Orographic Financial Advisors LLC Purchases Shares of 1,816 The Goldman Sachs Group, Inc. $GS",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-royal-fund-management-llc-sells-3183-shares-of-the-goldman-sachs-group-inc-gs-2026-07-30/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-orographic-financial-advisors-llc-purchases-shares-of-1816-the-goldman-sachs-group-inc-gs-2026-07-31/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-xfi4c2",
-    "title": "Evelyn Partners Asset Management Ltd Decreases Holdings in The Goldman Sachs Group, Inc. $GS",
+    "id": "rev-sig-20260731-lu0va3",
+    "title": "Arkadios Wealth Advisors Acquires 1,555 Shares of The Goldman Sachs Group, Inc. $GS",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-evelyn-partners-asset-management-ltd-decreases-holdings-in-the-goldman-sachs-group-inc-gs-2026-07-28/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260728-9hk151",
-    "title": "Lazard Asset Management LLC Sells 174,798 Shares of The Goldman Sachs Group, Inc. $GS",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-lazard-asset-management-llc-sells-174798-shares-of-the-goldman-sachs-group-inc-gs-2026-07-28/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arkadios-wealth-advisors-acquires-1555-shares-of-the-goldman-sachs-group-inc-gs-2026-07-31/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -76,28 +96,8 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.fnlondon.com/articles/former-brevan-howard-middle-east-ceo-joins-vitruvian-partners-53802f04",
-    "source": "fnlondon.com",
+    "source": "Financial News London",
     "sourceTier": "secondary"
-  },
-  {
-    "id": "rev-sig-20260728-e3gcze",
-    "title": "Polar Asset Management Partners Inc. Makes New $2.15 Million Investment in Lazard, Inc. $LAZ",
-    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-215-million-investment-in-lazard-inc-laz-2026-07-28/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260728-fct1qv",
-    "title": "Polar Asset Management Partners Inc. Makes New Investment in LPL Financial Holdings Inc. $LPLA",
-    "reason": "弱信源「MarketBeat」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-polar-asset-management-partners-inc-makes-new-investment-in-lpl-financial-holdings-inc-lpla-2026-07-28/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260730-fs628l",
@@ -130,22 +130,12 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-5454p8",
-    "title": "Lombard Odier Asset Management Switzerland SA Makes New $1.19 Million Investment in Marathon Petroleum Corporation $MPC",
-    "reason": "中等置信度命中「Marathon」，待人工复核。",
-    "confidence": "63%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-lombard-odier-asset-management-switzerland-sa-makes-new-119-million-investment-in-marathon-petroleum-corporation-mpc-2026-07-28/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260730-cwe8ic",
-    "title": "Shinhan Financial Group Co Ltd $SHG Shares Sold by Arrowstreet Capital Limited Partnership",
+    "id": "rev-sig-20260731-tnuyod",
+    "title": "Arrowstreet Capital Limited Partnership Makes New $15.62 Million Investment in Moelis & Company $MC",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-shinhan-financial-group-co-ltd-shg-shares-sold-by-arrowstreet-capital-limited-partnership-2026-07-30/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-1562-million-investment-in-moelis-company-mc-2026-07-31/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -160,32 +150,32 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-c72yyl",
-    "title": "Arrowstreet Capital Limited Partnership Cuts Holdings in Federated Hermes, Inc. $FHI",
+    "id": "rev-sig-20260730-cwe8ic",
+    "title": "Shinhan Financial Group Co Ltd $SHG Shares Sold by Arrowstreet Capital Limited Partnership",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-cuts-holdings-in-federated-hermes-inc-fhi-2026-07-28/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-shinhan-financial-group-co-ltd-shg-shares-sold-by-arrowstreet-capital-limited-partnership-2026-07-30/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260729-xehu5f",
-    "title": "KB Financial Group Inc $KB Shares Sold by Arrowstreet Capital Limited Partnership",
+    "id": "rev-sig-20260731-s8ap0a",
+    "title": "Arrowstreet Capital Limited Partnership Invests $15.24 Million in Cousins Properties Incorporated $CUZ",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-kb-financial-group-inc-kb-shares-sold-by-arrowstreet-capital-limited-partnership-2026-07-29/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-invests-1524-million-in-cousins-properties-incorporated-cuz-2026-07-31/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260728-mfvjz8",
-    "title": "Coca-Cola Europacific Partners $CCEP Stock Position Lifted by Arrowstreet Capital Limited Partnership",
+    "id": "rev-sig-20260731-tf69q0",
+    "title": "Nomad Foods Limited $NOMD Shares Purchased by Arrowstreet Capital Limited Partnership",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-coca-cola-europacific-partners-ccep-stock-position-lifted-by-arrowstreet-capital-limited-partnership-2026-07-28/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-nomad-foods-limited-nomd-shares-purchased-by-arrowstreet-capital-limited-partnership-2026-07-31/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -196,6 +186,16 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-buys-121052-shares-of-xenia-hotels-resorts-inc-xhr-2026-07-29/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260731-a3vapf",
+    "title": "Liontrust Investment Partners LLP Purchases Shares of 251,090 Brookfield Asset Management Ltd. $BAM",
+    "reason": "弱信源「MarketBeat」命中「Brookfield」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-liontrust-investment-partners-llp-purchases-shares-of-251090-brookfield-asset-management-ltd-bam-2026-07-31/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   }
