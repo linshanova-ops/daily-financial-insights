@@ -1,29 +1,41 @@
 {
-  "at": "2026-07-31T17:55:45.699Z",
-  "briefingDate": "2026-07-31",
+  "at": "2026-08-03T00:01:03.792Z",
+  "briefingDate": "2026-08-03",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-31.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-03.md",
+      "subject": "彭博财经早茶：特朗普暂缓打击伊朗；美日承诺更多联合干预日元",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5359,
+      "mailbox": "INBOX",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-03.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-03.png"
+    },
+    {
+      "sourceId": "bloomberg-weekend-tea",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W31.md",
+      "subject": "彭博周末茶歇：AI投资热遇考验",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5632,
+      "mailbox": "INBOX"
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W31.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-weekend-tea",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W30.md",
-      "skipped": true
     }
   ],
   "skipped": [
     {
-      "reason": "exists-keep",
+      "reason": "date-mismatch",
       "subject": "彭博财经早茶：日本当局据悉干预日元；苹果展望逊预估",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-07-31.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-07-30",
+      "bjDay": "2026-07-31",
+      "briefingDate": "2026-08-03"
     },
     {
       "reason": "date-mismatch",
@@ -32,7 +44,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-29",
       "bjDay": "2026-07-30",
-      "briefingDate": "2026-07-31"
+      "briefingDate": "2026-08-03"
     },
     {
       "reason": "weekly-exists",
@@ -46,7 +58,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-28",
       "bjDay": "2026-07-29",
-      "briefingDate": "2026-07-31"
+      "briefingDate": "2026-08-03"
     },
     {
       "reason": "date-mismatch",
@@ -55,7 +67,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-27",
       "bjDay": "2026-07-28",
-      "briefingDate": "2026-07-31"
+      "briefingDate": "2026-08-03"
     },
     {
       "reason": "date-mismatch",
@@ -64,12 +76,12 @@
       "subjectDay": null,
       "emailDay": "2026-07-26",
       "bjDay": "2026-07-27",
-      "briefingDate": "2026-07-31"
+      "briefingDate": "2026-08-03"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "彭博周末茶歇：中国迅速出招托市",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W30.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
     },
     {
       "reason": "date-mismatch",
@@ -78,7 +90,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-23",
       "bjDay": "2026-07-24",
-      "briefingDate": "2026-07-31"
+      "briefingDate": "2026-08-03"
     },
     {
       "reason": "date-mismatch",
@@ -87,7 +99,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-22",
       "bjDay": "2026-07-23",
-      "briefingDate": "2026-07-31"
+      "briefingDate": "2026-08-03"
     },
     {
       "reason": "weekly-duplicate",
@@ -106,7 +118,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-21",
       "bjDay": "2026-07-22",
-      "briefingDate": "2026-07-31"
+      "briefingDate": "2026-08-03"
     },
     {
       "reason": "date-mismatch",
@@ -115,7 +127,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-20",
       "bjDay": "2026-07-21",
-      "briefingDate": "2026-07-31"
+      "briefingDate": "2026-08-03"
     },
     {
       "reason": "unmatched",
