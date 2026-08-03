@@ -202,6 +202,28 @@ function FeedTab({
                   <span className="mx-2">·</span>
                   {sig.tag}
                 </p>
+                {sig.relatedSources?.length ? (
+                  <p className="mt-1.5 text-xs tracking-wide text-ink/40">
+                    Also{" "}
+                    {sig.relatedSources.map((rel, i) => (
+                      <span key={`${rel.source}-${i}`}>
+                        {i > 0 ? " · " : null}
+                        {rel.href ? (
+                          <a
+                            href={rel.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="focus-ring underline-offset-2 hover:text-forest hover:underline"
+                          >
+                            {rel.source}
+                          </a>
+                        ) : (
+                          rel.source
+                        )}
+                      </span>
+                    ))}
+                  </p>
+                ) : null}
               </div>
             </li>
           ))}

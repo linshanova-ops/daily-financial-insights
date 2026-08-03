@@ -3,6 +3,8 @@
  * Used by scan-fund-signals.mjs and unit tests.
  */
 
+import { sourcePrestigeRank } from "./fund-sources.mjs";
+
 /** Known short brands keyed by official universe name. */
 export const KNOWN_FUND_BRANDS = {
   "Citadel Investment Group": ["Citadel"],
@@ -392,6 +394,186 @@ export function signalDedupKey(title, fund) {
     .trim()}::${String(fund || "")
     .toLowerCase()
     .trim()}`;
+}
+
+const STORY_STOPWORDS = new Set([
+  "about",
+  "after",
+  "again",
+  "against",
+  "among",
+  "being",
+  "could",
+  "deal",
+  "deals",
+  "exclusive",
+  "following",
+  "from",
+  "fund",
+  "funds",
+  "helped",
+  "into",
+  "most",
+  "over",
+  "says",
+  "sources",
+  "stock",
+  "stocks",
+  "their",
+  "there",
+  "these",
+  "those",
+  "through",
+  "under",
+  "until",
+  "were",
+  "what",
+  "when",
+  "where",
+  "which",
+  "while",
+  "with",
+  "would",
+]);
+
+/**
+ * Distinctive title tokens for same-story clustering (fund name stripped).
+ * @param {string} title
+ * @param {string} fund
+ */
+export function storyFingerprintTokens(title, fund) {
+  let t = cleanHeadline(title).toLowerCase();
+  for (const alias of fundAliases(fund)) {
+    if (!alias || alias.length < 2) continue;
+    const escaped = alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    t = t.replace(new RegExp(`\\b${escaped}\\b`, "gi"), " ");
+  }
+  return [
+    ...new Set(
+      t
+        .replace(/[^a-z0-9\u4e00-\u9fff]+/g, " ")
+        .split(/\s+/)
+        .filter((w) => w.length >= 5 && !STORY_STOPWORDS.has(w)),
+    ),
+  ];
+}
+
+const STORY_THEME_TOKENS = new Set([
+  "awareness",
+  "equity",
+  "holdings",
+  "losses",
+  "portfolio",
+  "rescue",
+  "rescued",
+  "rout",
+  "swoop",
+  "unwind",
+]);
+
+function stemToken(tok) {
+  return String(tok || "").replace(/'s$/i, "").replace(/s$/i, "");
+}
+
+/**
+ * Whether two headlines are the same underlying story for one fund.
+ * @param {string} titleA
+ * @param {string} titleB
+ * @param {string} fund
+ */
+export function isSameFundStory(titleA, titleB, fund) {
+  const a = storyFingerprintTokens(titleA, fund);
+  const b = storyFingerprintTokens(titleB, fund);
+  if (!a.length || !b.length) return false;
+  const stemmedA = [...new Set(a.map(stemToken))];
+  const stemmedB = new Set(b.map(stemToken));
+  const shared = stemmedA.filter((tok) => stemmedB.has(tok));
+  const union = stemmedA.length + stemmedB.size - shared.length;
+  const jaccard = shared.length / Math.max(union, 1);
+  const weight = shared.reduce((sum, tok) => sum + tok.length, 0);
+  if (shared.length >= 2 && (jaccard >= 0.28 || weight >= 16)) return true;
+
+  // Soft path: one rare long entity (e.g. "situational") + deal-theme overlap
+  // covers "Situational's holdings" vs "Situational Awareness portfolio".
+  const longShared = shared.filter((tok) => tok.length >= 10);
+  if (!longShared.length) return false;
+  const themesA = a.filter(
+    (tok) => STORY_THEME_TOKENS.has(tok) || STORY_THEME_TOKENS.has(stemToken(tok)),
+  );
+  const themesB = b.filter(
+    (tok) => STORY_THEME_TOKENS.has(tok) || STORY_THEME_TOKENS.has(stemToken(tok)),
+  );
+  return themesA.length > 0 && themesB.length > 0;
+}
+
+/**
+ * Collapse same-story duplicates for one fund; keep best prestige cite.
+ * Related outlets are attached on the canonical row.
+ * @param {object[]} signals
+ */
+export function dedupeStoryClusters(signals) {
+  const rows = Array.isArray(signals) ? [...signals] : [];
+  const byFund = new Map();
+  for (const row of rows) {
+    const fund = String(row?.fund || "").trim() || "(unknown)";
+    if (!byFund.has(fund)) byFund.set(fund, []);
+    byFund.get(fund).push(row);
+  }
+
+  const out = [];
+  for (const [, group] of byFund) {
+    const clusters = [];
+    for (const row of group) {
+      let placed = false;
+      for (const cluster of clusters) {
+        if (isSameFundStory(cluster[0].title, row.title, row.fund)) {
+          cluster.push(row);
+          placed = true;
+          break;
+        }
+      }
+      if (!placed) clusters.push([row]);
+    }
+
+    for (const cluster of clusters) {
+      cluster.sort((a, b) => {
+        const pr =
+          sourcePrestigeRank(a) - sourcePrestigeRank(b) ||
+          String(b.date || "").localeCompare(String(a.date || ""));
+        return pr;
+      });
+      const [canonical, ...rest] = cluster;
+      if (!rest.length) {
+        out.push(canonical);
+        continue;
+      }
+      const related = [];
+      const seenSource = new Set([
+        String(canonical.source || "")
+          .toLowerCase()
+          .trim(),
+      ]);
+      for (const row of rest) {
+        const srcKey = String(row.source || "Related")
+          .toLowerCase()
+          .trim();
+        if (seenSource.has(srcKey)) continue;
+        seenSource.add(srcKey);
+        related.push({
+          source: row.source || "Related",
+          href: row.href || null,
+          title: row.title || null,
+        });
+        if (related.length >= 6) break;
+      }
+      out.push({
+        ...canonical,
+        relatedSources: related.length ? related : undefined,
+      });
+    }
+  }
+
+  return out.sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
 }
 
 export function formatShanghaiLabel(date = new Date()) {

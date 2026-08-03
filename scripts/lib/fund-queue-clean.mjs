@@ -10,6 +10,7 @@ import {
   isConfirmableSource,
   sourceTierLabel,
 } from "./fund-sources.mjs";
+import { dedupeStoryClusters } from "./fund-signal-match.mjs";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const fundDir = path.join(root, "web/content/fund");
@@ -71,11 +72,15 @@ export function cleanFundQueues(signals, review) {
     });
   }
 
+  const dedupedSignals = dedupeStoryClusters(cleanedSignals);
+  const collapsedStories = cleanedSignals.length - dedupedSignals.length;
+
   return {
-    signals: cleanedSignals,
+    signals: dedupedSignals,
     review: cleanedReview,
     droppedSignals,
     droppedReview,
+    collapsedStories,
   };
 }
 
@@ -90,6 +95,6 @@ if (isMain) {
   write("signals.json", result.signals);
   write("review.json", result.review);
   console.log(
-    `[fund-clean] signals ${signals.length}→${result.signals.length} (−${result.droppedSignals}); review ${review.length}→${result.review.length} (−${result.droppedReview})`,
+    `[fund-clean] signals ${signals.length}→${result.signals.length} (−${result.droppedSignals} weak/false, −${result.collapsedStories} story dupes); review ${review.length}→${result.review.length} (−${result.droppedReview})`,
   );
 }

@@ -3,6 +3,12 @@ import path from "path";
 
 const FUND_DIR = path.join(process.cwd(), "content", "fund");
 
+export type FundRelatedSource = {
+  source: string;
+  href?: string | null;
+  title?: string | null;
+};
+
 export type FundSignal = {
   id: string;
   date: string;
@@ -16,6 +22,7 @@ export type FundSignal = {
   tag: string;
   status: string;
   href?: string | null;
+  relatedSources?: FundRelatedSource[];
 };
 
 export type FundReviewItem = {

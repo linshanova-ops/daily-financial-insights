@@ -876,13 +876,13 @@ function loadClaimGroups() {
     if (!data?.date) continue;
     const briefingYear = Number(String(data.date).slice(0, 4));
 
-    const addGroup = (where, text, sources) => {
+    const addGroup = (where, text, sources, extra = {}) => {
       if (!text || !Array.isArray(sources) || !sources.length) return;
       const hrefs = sources
         .map((s) => (s && typeof s.href === "string" ? s.href.trim() : ""))
         .filter(Boolean);
       if (!hrefs.length) return;
-      groups.push({ file, where, text, hrefs, briefingYear });
+      groups.push({ file, where, text, hrefs, briefingYear, ...extra });
     };
 
     const factArrays = [
@@ -908,12 +908,18 @@ function loadClaimGroups() {
         if (Array.isArray(fig.points)) {
           text += ` ${fig.points.map((p) => `${p.label} ${p.value}`).join(" ")}`;
         }
+        const chartImageSrc =
+          typeof fig.imageSrc === "string" &&
+          /\/inbox-charts\//.test(fig.imageSrc)
+            ? fig.imageSrc
+            : null;
         addGroup(
           `${file}.figures[${i}]`,
           text,
           Array.isArray(fig.sources) && fig.sources.length
             ? fig.sources
             : [fig.source],
+          chartImageSrc ? { chartImageSrc } : {},
         );
       });
     }
@@ -1149,6 +1155,17 @@ async function main() {
 
     const anchors = extractAnchors(claim.text);
     if (!anchors.length) continue;
+
+    // 今日图表 numbers live on the saved PNG (inbox-charts), not the newsletter hub.
+    if (
+      typeof claim.chartImageSrc === "string" &&
+      /\/inbox-charts\//.test(claim.chartImageSrc)
+    ) {
+      warnings.push(
+        `${claim.where}: chart PNG evidence (${claim.chartImageSrc}); web number check skipped`,
+      );
+      continue;
+    }
 
     const pageTexts = [];
     let anyFetchable = false;

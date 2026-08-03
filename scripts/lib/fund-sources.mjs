@@ -22,13 +22,20 @@ export const DESIGNATED_SOURCES = [
   },
 ];
 
-/** Credible publishers allowed when discovered via Google News. */
+/**
+ * Credible publishers allowed when discovered via Google News.
+ * Unknown publishers fall through to "weak" (not auto-confirmed).
+ */
 export const SECONDARY_SOURCE_PATTERNS = [
   /hedgeweek/i,
   /hedgeco/i,
   /\bbloomberg\b/i,
   /\breuters\b/i,
   /financial times|\bft\.com\b/i,
+  /wall street journal|\bwsj\b/i,
+  /new york times|\bnytimes\b|\bnyt\b/i,
+  /business insider|\binsider\.com\b/i,
+  /seeking alpha/i,
   /financial news|fnlondon/i,
   /with intelligence|withintelligence/i,
   /funds global/i,
@@ -38,6 +45,19 @@ export const SECONDARY_SOURCE_PATTERNS = [
   /alternative fund insight/i,
   /\bafr\b|australian financial review/i,
   /citywire/i,
+];
+
+/** Lower rank = preferred when collapsing same-story duplicates. */
+const SOURCE_PRESTIGE = [
+  { rank: 10, re: /hedgeweek|hedgeco/i },
+  { rank: 20, re: /\bbloomberg\b/i },
+  { rank: 30, re: /wall street journal|\bwsj\b/i },
+  { rank: 40, re: /financial times|\bft\.com\b/i },
+  { rank: 50, re: /\breuters\b/i },
+  { rank: 60, re: /new york times|\bnytimes\b|\bnyt\b/i },
+  { rank: 70, re: /business insider|\binsider\.com\b/i },
+  { rank: 80, re: /seeking alpha/i },
+  { rank: 90, re: /financial news|fnlondon|with intelligence|institutional investor|citywire|\bafr\b|australian financial review|pionline|funds global|absolute return/i },
 ];
 
 /** Titles / hosts that create false or non-actionable “hits”. */
@@ -74,14 +94,26 @@ export function classifySourceTier(row) {
     return "designated";
   }
   if (SECONDARY_SOURCE_PATTERNS.some((re) => re.test(blob))) return "secondary";
-  // Unknown Google News publisher — treat as secondary only if not weak
-  return "secondary";
+  // Unknown Google News publisher — not on the allowlist
+  return "weak";
 }
 
 export function sourceTierLabel(tier) {
   if (tier === "designated") return "指定信源";
   if (tier === "secondary") return "公开转载";
   return "弱信源";
+}
+
+/** Prestige score for picking a canonical cite within a story cluster (lower = better). */
+export function sourcePrestigeRank(row) {
+  const tier = classifySourceTier(row);
+  if (tier === "weak") return 1000;
+  const blob = [row?.source, row?.title, row?.href].filter(Boolean).join("\n");
+  if (tier === "designated") return 5;
+  for (const entry of SOURCE_PRESTIGE) {
+    if (entry.re.test(blob)) return entry.rank;
+  }
+  return 200;
 }
 
 /** Whether a row may enter the confirmed feed. */

@@ -12,7 +12,7 @@
   {
     "id": "sources",
     "title": "信源分层",
-    "body": "指定信源：Hedgeweek、HedgeCo RSS。公开转载：Bloomberg / Reuters / FT / FN London 等专业桌。弱信源（MarketBeat 13F、持股结构页、Ad-hoc 聚合）不得进入确定命中，仅可进复核或排除。"
+    "body": "指定信源：Hedgeweek、HedgeCo RSS。公开转载白名单：Bloomberg、WSJ、NYT、Reuters、FT、Business Insider、Seeking Alpha，以及 FN London / Citywire 等专业桌。未列入白名单的 Google News 发布者视为弱信源，不得自动进入确定命中。"
   },
   {
     "id": "freshness",
@@ -22,7 +22,7 @@
   {
     "id": "dedupe",
     "title": "交叉去重",
-    "body": "相同事件只保留一条主记录，其余来源挂接为补充信源。"
+    "body": "同一基金下的相同事件只保留一条主记录（优先指定信源与高可信公开桌），其余来源挂接为 relatedSources 补充信源。"
   },
   {
     "id": "confidence",
