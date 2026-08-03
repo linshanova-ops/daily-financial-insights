@@ -93,7 +93,7 @@
       ]
     },
     {
-      "text": "Jul 31 oil: Brent settled $90.12 and WTI $84.67. Aug 3 Asia: Brent fell about 5% to around $83.26 after Trump paused new Iran strikes pending a Hormuz deal.",
+      "text": "Jul 31 oil: Brent settled $90.12 and WTI $84.67. Aug 3 Asia: Brent sold off hard after Trump paused new Iran strikes pending a Hormuz deal.",
       "sources": [
         {
           "label": "CNBC Jul 31 oil",
@@ -490,7 +490,7 @@
     {
       "asset": "Oil (Brent)",
       "regime": "War-premium unwind",
-      "driver": "Jul 31 settle $90.12; Aug 3 Asia Brent ~$83.26 (−5.31%) after Trump paused new Iran strikes.",
+      "driver": "Jul 31 settle $90.12; Aug 3 Asia Brent sold off hard after Trump paused new Iran strikes (CNBC live tape).",
       "driverSources": [
         {
           "label": "CNBC Jul 31 oil",
@@ -560,7 +560,7 @@
     {
       "grade": "STRONG",
       "name": "Iran pause unwinds oil war premium into Monday Asia",
-      "evidence": "Brent from Jul 31 settle $90.12 to about $83.26 (−5.31%) on Aug 3 after Trump paused new strikes pending a Hormuz deal.",
+      "evidence": "Brent left Jul 31 settle $90.12 and sold off hard in the Aug 3 Asia session after Trump paused new strikes pending a Hormuz deal.",
       "evidenceSources": [
         {
           "label": "CNBC Jul 31 oil",
