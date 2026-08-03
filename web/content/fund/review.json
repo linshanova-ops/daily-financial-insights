@@ -36,8 +36,8 @@
     "confidence": "63%",
     "status": "review",
     "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
-    "source": "fundsglobalmena.com",
-    "sourceTier": "weak"
+    "source": "Funds Global MENA",
+    "sourceTier": "secondary"
   },
   {
     "id": "rev-sig-20260801-tstbl8",
@@ -66,7 +66,7 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Back+King+Street+Sub-Adviser+and+Liquidity+Plan+Ahead+of+August+6+Meeting",
-    "source": "quiverquant.com",
+    "source": "Quiver Quantitative",
     "sourceTier": "weak"
   },
   {
@@ -76,7 +76,7 @@
     "confidence": "69%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/Kayne+Anderson+Energy+Infrastructure+Fund+Declares+August+2026+Monthly+Distribution+of+%240.09+per+Share",
-    "source": "quiverquant.com",
+    "source": "Quiver Quantitative",
     "sourceTier": "weak"
   },
   {
@@ -142,11 +142,11 @@
   {
     "id": "rev-sig-20260801-iauq6k",
     "title": "Neuberger Fund's $0.0905 Payout May Include Return of Capital",
-    "reason": "弱信源「Stock Titan」命中「Neuberger」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「stocktitan.net」命中「Neuberger」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://www.stocktitan.net/news/NHS/neuberger-high-yield-strategies-fund-announces-monthly-9ai6tqy524xm.html",
-    "source": "Stock Titan",
+    "source": "stocktitan.net",
     "sourceTier": "weak"
   },
   {
