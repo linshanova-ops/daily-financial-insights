@@ -25,6 +25,7 @@ import {
   parseRssItems,
   resolvePublisherUrl,
   scoreFundMention,
+  dedupeStoryClusters,
   signalDedupKey,
   withinHours,
 } from "./lib/fund-signal-match.mjs";
@@ -306,9 +307,8 @@ function mergeConfirmed(existing, incoming) {
     map.set(key, row);
     added += 1;
   }
-  const merged = [...map.values()].sort((a, b) =>
-    String(b.date).localeCompare(String(a.date)),
-  );
+  // Exact-title merge first, then collapse multi-outlet same-story floods.
+  const merged = dedupeStoryClusters([...map.values()]);
   return { merged, added };
 }
 
@@ -408,7 +408,7 @@ async function main() {
           : `每日扫描过去 ${WINDOW_HOURS} 小时 · 命中永久归档`,
     phase: 2,
     phaseNote:
-      "Live RSS on briefing windows. Designated: Hedgeweek + HedgeCo. Google News only promotes Bloomberg/Reuters/FT/FN London-class desks; MarketBeat 13F / ownership stubs are weak and never auto-confirm. Confirmed hits are permanent. One Google News query per monitored alias.",
+      "Live RSS on briefing windows. Designated: Hedgeweek + HedgeCo. Google News allowlist: Bloomberg / WSJ / NYT / Reuters / FT / Business Insider / Seeking Alpha (+ trade desks). Unknown publishers are weak. Same-story multi-outlet floods collapse to one canonical cite. Confirmed hits are permanent. One Google News query per monitored alias.",
     lastScan: {
       at: now.toISOString(),
       fetched: items.length,

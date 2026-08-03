@@ -48,24 +48,14 @@
   "figures": [
     {
       "id": "bloomberg-chart-of-day",
-      "title": "今日图表（彭博 Aug 3）",
+      "title": "今日图表（彭博 Aug 3）— 长鑫目标价分歧",
       "kind": "insight",
       "imageSrc": "/inbox-charts/bloomberg-2026-08-03.png",
-      "analysis": "彭博 Aug 3 邮件保存了今日图表图像（inbox-charts），正文未附可读图注。同日主线是：特朗普暂缓对伊新一轮打击、油价亚洲盘初重挫；美日承诺进一步联合干预日元；中国央行下半年工作会议措辞淡化汇率超调与降准降息表述。So what：地缘缓和与汇市干预同时压低油价/提振日元，周一开盘先定价“战争溢价回吐”。",
+      "analysis": "彭博「今日图表」以横向柱状图比较亚洲市值超1000亿美元公司的分析师目标价分歧（彭博追踪最高与最低目标价之差）：中际旭创 1,027%、SK海力士 779%、长鑫科技 720%、软银 709%、联发科 571%、中芯国际 548%、铠侠 500%；标题点出长鑫目标价分歧在亚洲超大市值中位居前列。So what：长鑫IPO后定价共识仍极分散，与光模块/存储链路一起放大半导体估值不确定性——在周一战争溢价回吐的风险偏好窗口里，高分歧名字更像高beta表达，而非一致预期兑现。",
       "source": {
         "label": "彭博 Markets Daily China / 财经早茶",
         "href": "https://www.bloomberg.com/asia"
-      },
-      "sources": [
-        {
-          "label": "CNBC oil Aug 3",
-          "href": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
-        },
-        {
-          "label": "CNBC yen Aug 3",
-          "href": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
-        }
-      ]
+      }
     },
     {
       "id": "glassnode-weekly",
@@ -799,7 +789,7 @@
   },
   "sources": "彭博 Markets Daily China / 财经早茶 (Aug 3 inbox) for 国际要闻→globalChanged Chinese 1:1 and 大中华新闻→chinaChanged Chinese 1:1, 市场一览, chart; 彭博周末茶歇 W31 for weekly AI/Fed/China tape color; Glassnode W31 email body; AP/TradingKey Jul 31 closes; CNBC oil/yen; China.org.cn A-shares; CoinDesk BTC; Fund RSS rescanned 2026-08-03.",
   "caveats": "Bloomberg newsletter items without public article URLs use the stable Bloomberg Asia cite. Hard closes/settles/JPY prints attached to primaries. Glassnode uses email body only (no full-report scrape). Fund section updated via content/fund scan (Citadel/Situational cluster). This report is research synthesis, not investment advice.",
-  "singleSource": "Monday holistic merge: 彭博 Aug 3 财经早茶 国际要闻→globalChanged Chinese 1:1 (10/10) + Jul 31 US tape + weekend tea + Glassnode; 大中华新闻→chinaChanged Chinese 1:1 (12/12) + Jul 31 A-share close; 市场一览 (7); calendar folded into watchItems; 今日图表 image saved. Glassnode W31 retained as latest weekly. Fund signals rescanned (Citadel/Situational). marketDashboard injected; publishedAt set at publish.",
+  "singleSource": "Monday holistic merge: 彭博 Aug 3 财经早茶 国际要闻→globalChanged Chinese 1:1 (10/10) + Jul 31 US tape + weekend tea + Glassnode; 大中华新闻→chinaChanged Chinese 1:1 (12/12) + Jul 31 A-share close; 市场一览 (7); calendar folded into watchItems; 今日图表 annotated from PNG (长鑫/亚洲超大市值目标价分歧). Glassnode W31 retained as latest weekly. Fund signals rescanned (Citadel/Situational). marketDashboard injected; publishedAt set at publish.",
   "marketDashboard": {
     "asOf": "2026-08-03T04:50:30.421Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",

@@ -12,7 +12,10 @@ import {
   parseRssItems,
   primarySearchAlias,
   scoreFundMention,
+  dedupeStoryClusters,
+  isSameFundStory,
   signalDedupKey,
+  storyFingerprintTokens,
   withinHours,
 } from "./fund-signal-match.mjs";
 
@@ -187,5 +190,55 @@ describe("withinHours / dedupe", () => {
       signalDedupKey("Hello World", "Citadel"),
       signalDedupKey("hello   world", "citadel"),
     );
+  });
+
+  it("clusters Situational Awareness wire variants for Citadel", () => {
+    const fund = "Citadel Investment Group";
+    assert.equal(
+      isSameFundStory(
+        "Citadel buys most of Situational's stock holdings after AI share rout, sources say",
+        "Exclusive | Citadel Buys Situational Awareness’s Stock Portfolio After Big Losses in AI",
+        fund,
+      ),
+      true,
+    );
+    assert.equal(
+      isSameFundStory(
+        "Citadel buys most of Situational's stock holdings after AI share rout, sources say",
+        "Point72 expands quantitative hiring in London credit",
+        fund,
+      ),
+      false,
+    );
+    assert.ok(
+      storyFingerprintTokens(
+        "Citadel Buys Situational Awareness’s Stock Portfolio",
+        fund,
+      ).includes("situational"),
+    );
+  });
+
+  it("keeps Bloomberg/WSJ as canonical and attaches relatedSources", () => {
+    const out = dedupeStoryClusters([
+      {
+        id: "1",
+        date: "2026.08.02",
+        title: "Citadel rescues Situational Awareness after AI losses",
+        fund: "Citadel Investment Group",
+        source: "Seeking Alpha",
+        href: "https://seekingalpha.com/1",
+      },
+      {
+        id: "2",
+        date: "2026.08.02",
+        title: "Citadel buys Situational Awareness stock portfolio",
+        fund: "Citadel Investment Group",
+        source: "Bloomberg.com",
+        href: "https://www.bloomberg.com/2",
+      },
+    ]);
+    assert.equal(out.length, 1);
+    assert.equal(out[0].source, "Bloomberg.com");
+    assert.equal(out[0].relatedSources?.[0]?.source, "Seeking Alpha");
   });
 });

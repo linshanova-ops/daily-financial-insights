@@ -108,9 +108,9 @@ function formatOneInboxItem(item, index) {
       : "";
 
   const chartRule = chartImage
-    ? `今日图表 IMAGE (REQUIRED): file \`${chartImage}\` is already in the repo (also under web/public/inbox-charts/). Add figures[] entry id=bloomberg-chart-of-day, kind=insight with imageSrc: "${chartImage}", title, and required analysis. Open/read the image first — title+analysis must match the chart content (not a neighboring news bullet). Keep Chinese OK. Keep the image file in the PR commit.`
+    ? `今日图表 IMAGE (REQUIRED): file \`${chartImage}\` is already in the repo (also under web/public/inbox-charts/). Add figures[] entry id=bloomberg-chart-of-day, kind=insight with imageSrc: "${chartImage}", title, and required analysis. Open/read the PNG first and describe what the chart actually shows (series, units, standout levels, footnote). Forbidden placeholders: "邮件保存了今日图表" / "image saved" / "正文未附可读图注" without chart content. Tie 1 short so-what to today's tape only after the chart itself is explained. Keep Chinese OK. Keep the image file in the PR commit.${chartAlt ? ` chartAlt hint: ${chartAlt}` : ""}`
     : item.sourceId.startsWith("bloomberg-")
-      ? "今日图表: if section header exists but no chartImage frontmatter, still add insight analysis from section text when possible."
+      ? "今日图表: if section header exists but no chartImage frontmatter, still add insight analysis from section text when possible — never invent a generic geopolitics blurb in place of the chart."
       : "";
 
   const rawBody = stripInboxFrontmatter(item.body);

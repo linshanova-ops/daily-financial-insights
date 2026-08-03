@@ -7,7 +7,8 @@
     "status": "review",
     "href": "https://www.hedgeweek.com/asia-long-short-hedge-funds-on-course-for-worst-monthly-losses-says-goldman/",
     "source": "Hedgeweek",
-    "sourceTier": "designated"
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源"
   },
   {
     "id": "rev-sig-20260731-y4zqty",
@@ -17,7 +18,8 @@
     "status": "review",
     "href": "https://www.quiverquant.com/news/ARES+MANAGEMENT+%28%24ARES%29+Releases+Q2+2026+Earnings",
     "source": "Quiver Quantitative",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260801-tstbl8",
@@ -27,7 +29,8 @@
     "status": "review",
     "href": "https://pulse2.com/t-rowe-price-goldman-sachs-private-markets-fund-launched/",
     "source": "Pulse 2.0",
-    "sourceTier": "secondary"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260731-a57tjs",
@@ -37,7 +40,8 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-liontrust-investment-partners-llp-buys-8735-shares-of-the-goldman-sachs-group-inc-gs-2026-07-31/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260731-lchko1",
@@ -47,7 +51,8 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-orographic-financial-advisors-llc-purchases-shares-of-1816-the-goldman-sachs-group-inc-gs-2026-07-31/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260731-lu0va3",
@@ -57,7 +62,8 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arkadios-wealth-advisors-acquires-1555-shares-of-the-goldman-sachs-group-inc-gs-2026-07-31/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260803-tnu6ja",
@@ -67,7 +73,8 @@
     "status": "review",
     "href": "https://finance.biggo.com/news/4a72b69d-3ee9-4d2d-bb53-2187525da620",
     "source": "finance.biggo.com",
-    "sourceTier": "secondary"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260802-ccdq64",
@@ -77,7 +84,8 @@
     "status": "review",
     "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Back+King+Street+Sub-Adviser+and+Liquidity+Plan+Ahead+of+August+6+Meeting",
     "source": "Quiver Quantitative",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260801-whjwjr",
@@ -87,7 +95,8 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-acadian-asset-management-inc-aami-shares-sold-by-arrowstreet-capital-limited-partnership-2026-08-01/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260731-tnuyod",
@@ -97,7 +106,8 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-1562-million-investment-in-moelis-company-mc-2026-07-31/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260731-s8ap0a",
@@ -107,7 +117,8 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-invests-1524-million-in-cousins-properties-incorporated-cuz-2026-07-31/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260802-633m08",
@@ -117,7 +128,8 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-invests-862-million-in-summit-hotel-properties-inc-inn-2026-08-02/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260731-tf69q0",
@@ -127,7 +139,8 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-nomad-foods-limited-nomd-shares-purchased-by-arrowstreet-capital-limited-partnership-2026-07-31/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   },
   {
     "id": "rev-sig-20260731-a3vapf",
@@ -137,6 +150,7 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-liontrust-investment-partners-llp-purchases-shares-of-251090-brookfield-asset-management-ltd-bam-2026-07-31/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
+    "sourceTier": "weak",
+    "sourceTierLabel": "弱信源"
   }
 ]

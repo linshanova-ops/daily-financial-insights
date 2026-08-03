@@ -208,8 +208,9 @@ export function formatBloombergForPrompt(text, { maxSectionChars = 1600 } = {}) 
   if (chartDay.length) {
     parts.push(
       "## 今日图表 → Figures (REQUIRED)\n" +
-        "Add figures[] id=bloomberg-chart-of-day kind=insight; open chartImage; " +
-        "title+analysis must match the image.\n\n" +
+        "Add figures[] id=bloomberg-chart-of-day kind=insight; open chartImage PNG; " +
+        "title+analysis must describe the chart itself (metric, standout levels, footnote). " +
+        "Do not substitute a neighboring geopolitics bullet or write 'image saved / no caption'.\n\n" +
         chartDay.join("\n\n"),
     );
   }
