@@ -106,6 +106,33 @@ describe("cleanFundQueues", () => {
     assert.equal(signals[0].sourceTierLabel, "指定信源");
   });
 
+  it("decodes HTML entities left in archived titles", () => {
+    const { signals } = cleanFundQueues(
+      [
+        {
+          id: "entity",
+          date: "2026.07.31",
+          title: "Millennium backs macro trader&#8217;s $1bn hedge fund launch",
+          summary:
+            "Millennium Capital Partners 组织/产品动向：Millennium backs macro trader&#8217;s $1bn hedge fund launch。",
+          summaryEn:
+            "Millennium Capital Partners: product / organization update — Millennium backs macro trader&#8217;s $1bn hedge fund launch.",
+          fund: "Millennium Capital Partners",
+          source: "Hedgeweek",
+          href: "https://www.hedgeweek.com/x",
+        },
+      ],
+      [],
+    );
+    assert.equal(signals.length, 1);
+    assert.equal(
+      signals[0].title,
+      "Millennium backs macro trader’s $1bn hedge fund launch",
+    );
+    assert.ok(!/&#\d+;/.test(signals[0].summary));
+    assert.ok(!/&#\d+;/.test(signals[0].summaryEn));
+  });
+
   it("collapses same-story multi-outlet floods to one canonical cite", () => {
     const { signals, collapsedStories } = cleanFundQueues(
       [

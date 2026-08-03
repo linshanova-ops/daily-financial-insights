@@ -10,7 +10,22 @@ import {
   isConfirmableSource,
   sourceTierLabel,
 } from "./fund-sources.mjs";
-import { dedupeStoryClusters } from "./fund-signal-match.mjs";
+import {
+  decodeHtmlEntities,
+  dedupeStoryClusters,
+} from "./fund-signal-match.mjs";
+
+/** Decode leftover HTML entities in persisted Fund text fields. */
+function decodeRowText(row) {
+  if (!row || typeof row !== "object") return row;
+  const next = { ...row };
+  for (const key of ["title", "summary", "summaryEn", "reason", "source"]) {
+    if (typeof next[key] === "string") {
+      next[key] = decodeHtmlEntities(next[key]);
+    }
+  }
+  return next;
+}
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const fundDir = path.join(root, "web/content/fund");
@@ -38,9 +53,10 @@ export function cleanFundQueues(signals, review) {
   const cleanedSignals = [];
   let droppedSignals = 0;
   for (const row of signals) {
-    const tier = classifySourceTier(row);
+    const decoded = decodeRowText(row);
+    const tier = classifySourceTier(decoded);
     const next = {
-      ...row,
+      ...decoded,
       sourceTier: tier,
       sourceTierLabel: sourceTierLabel(tier),
     };
@@ -63,10 +79,11 @@ export function cleanFundQueues(signals, review) {
       droppedReview += 1;
       continue;
     }
-    const tier = classifySourceTier(row);
+    const decoded = decodeRowText(row);
+    const tier = classifySourceTier(decoded);
     cleanedReview.push({
-      ...row,
-      source: row.source || null,
+      ...decoded,
+      source: decoded.source || null,
       sourceTier: tier,
       sourceTierLabel: sourceTierLabel(tier),
     });

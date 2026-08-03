@@ -201,11 +201,13 @@ export function parseRssItems(xml, sourceLabel = "RSS") {
     const publisherName = textBetween(block, "source");
     if (!title) continue;
     items.push({
-      title: decodeXml(stripTags(title)),
-      link: decodeXml(stripTags(link)),
+      title: decodeHtmlEntities(stripTags(title)),
+      link: decodeHtmlEntities(stripTags(link)),
       pubDate,
-      summary: decodeXml(stripTags(summary)).slice(0, 400),
-      source: publisherName ? decodeXml(stripTags(publisherName)) : sourceLabel,
+      summary: decodeHtmlEntities(stripTags(summary)).slice(0, 400),
+      source: publisherName
+        ? decodeHtmlEntities(stripTags(publisherName))
+        : sourceLabel,
       publisherUrl,
     });
   }
@@ -378,13 +380,27 @@ function stripTags(s) {
   return String(s || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 }
 
-function decodeXml(s) {
+/**
+ * Decode HTML/XML entities in RSS titles (named + numeric).
+ * Fixes feeds that emit `trader&#8217;s` instead of `trader's`.
+ * @param {string} s
+ */
+export function decodeHtmlEntities(s) {
   return String(s || "")
-    .replace(/&amp;/g, "&")
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => {
+      const code = Number.parseInt(hex, 16);
+      return Number.isFinite(code) ? String.fromCodePoint(code) : _;
+    })
+    .replace(/&#(\d+);/g, (_, dec) => {
+      const code = Number.parseInt(dec, 10);
+      return Number.isFinite(code) ? String.fromCodePoint(code) : _;
+    })
+    .replace(/&apos;/g, "'")
+    .replace(/&quot;/g, '"')
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'");
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&");
 }
 
 export function signalDedupKey(title, fund) {

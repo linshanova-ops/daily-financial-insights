@@ -9,6 +9,7 @@ import {
   confidenceTier,
   fundAliases,
   googleNewsSearchAliases,
+  decodeHtmlEntities,
   parseRssItems,
   primarySearchAlias,
   scoreFundMention,
@@ -148,6 +149,29 @@ describe("parseRssItems", () => {
     assert.match(items[0].title, /Millennium/);
     assert.equal(items[0].source, "Example Pub");
     assert.equal(items[0].publisherUrl, "https://example.com/");
+  });
+
+  it("decodes numeric HTML entities in RSS titles", () => {
+    const xml = `<?xml version="1.0"?><rss><channel>
+      <item><title>Millennium backs macro trader&#8217;s $1bn hedge fund launch</title>
+      <link>https://example.com/b</link>
+      <pubDate>Mon, 31 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Launch</description></item>
+    </channel></rss>`;
+    const items = parseRssItems(xml, "Test");
+    assert.equal(
+      items[0].title,
+      "Millennium backs macro trader’s $1bn hedge fund launch",
+    );
+  });
+});
+
+describe("decodeHtmlEntities", () => {
+  it("decodes decimal, hex, and named entities", () => {
+    assert.equal(decodeHtmlEntities("trader&#8217;s"), "trader’s");
+    assert.equal(decodeHtmlEntities("trader&#x2019;s"), "trader’s");
+    assert.equal(decodeHtmlEntities("A &amp; B"), "A & B");
+    assert.equal(decodeHtmlEntities("say &quot;hi&quot;"), 'say "hi"');
   });
 });
 
