@@ -1,25 +1,43 @@
 [
   {
-    "id": "rev-sig-20260731-n55127",
-    "title": "Asia long-short hedge funds on course for worst monthly losses, says Goldman",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
+    "id": "rev-sig-20260801-ecc14j",
+    "title": "Citadel buys $16B SA portfolio as leverage crushes AI fund, rattles Wall Street - CHOSUNBIZ",
+    "reason": "弱信源「Chosunbiz」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/asia-long-short-hedge-funds-on-course-for-worst-monthly-losses-says-goldman/",
-    "source": "Hedgeweek",
-    "sourceTier": "designated",
-    "sourceTierLabel": "指定信源"
+    "href": "https://biz.chosun.com/en/en-international/2026/08/01/DS7TKQPKN5GLHLUJXMXVMSCJ4A/",
+    "source": "Chosunbiz",
+    "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260731-y4zqty",
-    "title": "ARES MANAGEMENT ($ARES) Releases Q2 2026 Earnings",
-    "reason": "弱信源「Quiver Quantitative」命中「Ares Management」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
+    "id": "rev-sig-20260801-xjmuqz",
+    "title": "Citadel Rescues Leopold Aschenbrenner's AI Hedge Fu…",
+    "reason": "弱信源「StartupHub.ai」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
     "status": "review",
-    "href": "https://www.quiverquant.com/news/ARES+MANAGEMENT+%28%24ARES%29+Releases+Q2+2026+Earnings",
-    "source": "Quiver Quantitative",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "href": "https://www.startuphub.ai/ai-news/investors-news/2026/citadel-rescues-leopold-aschenbrenner-s-ai-hedge-fund",
+    "source": "StartupHub.ai",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260801-e3rvac",
+    "title": "Griffin’s Citadel rescues AI fund Situational Awareness | Gulf Times",
+    "reason": "弱信源「Gulf Times」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.gulf-times.com/article/730305/business/griffins-citadel-rescues-ai-fund-situational-awareness/amp",
+    "source": "Gulf Times",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260803-upz4tl",
+    "title": "Symmetry secures Dubai licence as hedge fund expansion continues",
+    "reason": "中等置信度命中「Symmetry」，待人工复核。",
+    "confidence": "63%",
+    "status": "review",
+    "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
+    "source": "Funds Global MENA",
+    "sourceTier": "secondary"
   },
   {
     "id": "rev-sig-20260801-tstbl8",
@@ -29,41 +47,7 @@
     "status": "review",
     "href": "https://pulse2.com/t-rowe-price-goldman-sachs-private-markets-fund-launched/",
     "source": "Pulse 2.0",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
-  },
-  {
-    "id": "rev-sig-20260731-a57tjs",
-    "title": "Liontrust Investment Partners LLP Buys 8,735 Shares of The Goldman Sachs Group, Inc. $GS",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-liontrust-investment-partners-llp-buys-8735-shares-of-the-goldman-sachs-group-inc-gs-2026-07-31/",
-    "source": "MarketBeat",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
-  },
-  {
-    "id": "rev-sig-20260731-lchko1",
-    "title": "Orographic Financial Advisors LLC Purchases Shares of 1,816 The Goldman Sachs Group, Inc. $GS",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-orographic-financial-advisors-llc-purchases-shares-of-1816-the-goldman-sachs-group-inc-gs-2026-07-31/",
-    "source": "MarketBeat",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
-  },
-  {
-    "id": "rev-sig-20260731-lu0va3",
-    "title": "Arkadios Wealth Advisors Acquires 1,555 Shares of The Goldman Sachs Group, Inc. $GS",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arkadios-wealth-advisors-acquires-1555-shares-of-the-goldman-sachs-group-inc-gs-2026-07-31/",
-    "source": "MarketBeat",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260803-tnu6ja",
@@ -73,8 +57,7 @@
     "status": "review",
     "href": "https://finance.biggo.com/news/4a72b69d-3ee9-4d2d-bb53-2187525da620",
     "source": "finance.biggo.com",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260802-ccdq64",
@@ -84,73 +67,86 @@
     "status": "review",
     "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Back+King+Street+Sub-Adviser+and+Liquidity+Plan+Ahead+of+August+6+Meeting",
     "source": "Quiver Quantitative",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260801-whjwjr",
     "title": "Acadian Asset Management Inc. $AAMI Shares Sold by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-acadian-asset-management-inc-aami-shares-sold-by-arrowstreet-capital-limited-partnership-2026-08-01/",
-    "source": "MarketBeat",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "source": "marketbeat.com",
+    "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260731-tnuyod",
-    "title": "Arrowstreet Capital Limited Partnership Makes New $15.62 Million Investment in Moelis & Company $MC",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260803-2a59f2",
+    "title": "Arrowstreet Capital Limited Partnership Makes New $6.71 Million Investment in Trinity Industries, Inc. $TRN",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-1562-million-investment-in-moelis-company-mc-2026-07-31/",
-    "source": "MarketBeat",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-671-million-investment-in-trinity-industries-inc-trn-2026-08-03/",
+    "source": "marketbeat.com",
+    "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260731-s8ap0a",
-    "title": "Arrowstreet Capital Limited Partnership Invests $15.24 Million in Cousins Properties Incorporated $CUZ",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260803-814yzt",
+    "title": "Corebridge Financial, Inc. $CRBG Position Increased by Arrowstreet Capital Limited Partnership",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-invests-1524-million-in-cousins-properties-incorporated-cuz-2026-07-31/",
-    "source": "MarketBeat",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "href": "https://www.marketbeat.com/instant-alerts/filing-corebridge-financial-inc-crbg-position-increased-by-arrowstreet-capital-limited-partnership-2026-08-03/",
+    "source": "marketbeat.com",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260802-633m08",
     "title": "Arrowstreet Capital Limited Partnership Invests $8.62 Million in Summit Hotel Properties, Inc. $INN",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-invests-862-million-in-summit-hotel-properties-inc-inn-2026-08-02/",
-    "source": "MarketBeat",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "source": "marketbeat.com",
+    "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260731-tf69q0",
-    "title": "Nomad Foods Limited $NOMD Shares Purchased by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260803-jzsvqn",
+    "title": "PIMCO: Nordic interest in asset-based finance, hedge funds and real estate on the up",
+    "reason": "弱信源「AMWatch」命中「PIMCO」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-nomad-foods-limited-nomd-shares-purchased-by-arrowstreet-capital-limited-partnership-2026-07-31/",
-    "source": "MarketBeat",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "href": "https://amwatch.com/AMNews/Fund_Management/article19431058.ece",
+    "source": "AMWatch",
+    "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260731-a3vapf",
-    "title": "Liontrust Investment Partners LLP Purchases Shares of 251,090 Brookfield Asset Management Ltd. $BAM",
-    "reason": "弱信源「MarketBeat」命中「Brookfield」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
+    "id": "rev-sig-20260801-532h10",
+    "title": "NEUBERGER REAL ESTATE SECURITIES INCOME FUND ANNOUNCES MONTHLY DISTRIBUTION",
+    "reason": "弱信源「TradingView」命中「Neuberger」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-liontrust-investment-partners-llp-purchases-shares-of-251090-brookfield-asset-management-ltd-bam-2026-07-31/",
-    "source": "MarketBeat",
-    "sourceTier": "weak",
-    "sourceTierLabel": "弱信源"
+    "href": "https://www.tradingview.com/news/prnewswire:bbfcf0424ff2a:0-neuberger-real-estate-securities-income-fund-announces-monthly-distribution/",
+    "source": "TradingView",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260801-iauq6k",
+    "title": "Neuberger Fund's $0.0905 Payout May Include Return of Capital",
+    "reason": "弱信源「Stock Titan」命中「Neuberger」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.stocktitan.net/news/NHS/neuberger-high-yield-strategies-fund-announces-monthly-9ai6tqy524xm.html",
+    "source": "Stock Titan",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260801-8is83g",
+    "title": "NEUBERGER ENERGY INFRASTRUCTURE AND INCOME FUND ANNOUNCES MONTHLY DISTRIBUTION",
+    "reason": "弱信源「TradingView」命中「Neuberger」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.tradingview.com/news/prnewswire:4145e196be659:0-neuberger-energy-infrastructure-and-income-fund-announces-monthly-distribution/",
+    "source": "TradingView",
+    "sourceTier": "weak"
   }
 ]
