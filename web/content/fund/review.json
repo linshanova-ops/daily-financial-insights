@@ -96,37 +96,37 @@
     "confidence": "69%",
     "status": "review",
     "href": "https://www.stocktitan.net/news/KYN/kayne-anderson-energy-infrastructure-fund-announces-distribution-of-272t62ij8nkw.html",
-    "source": "stocktitan.net",
+    "source": "Stock Titan",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260801-whjwjr",
     "title": "Acadian Asset Management Inc. $AAMI Shares Sold by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-acadian-asset-management-inc-aami-shares-sold-by-arrowstreet-capital-limited-partnership-2026-08-01/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260803-2a59f2",
     "title": "Arrowstreet Capital Limited Partnership Makes New $6.71 Million Investment in Trinity Industries, Inc. $TRN",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-671-million-investment-in-trinity-industries-inc-trn-2026-08-03/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260802-633m08",
     "title": "Arrowstreet Capital Limited Partnership Invests $8.62 Million in Summit Hotel Properties, Inc. $INN",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-invests-862-million-in-summit-hotel-properties-inc-inn-2026-08-02/",
-    "source": "MarketBeat",
+    "source": "marketbeat.com",
     "sourceTier": "weak"
   },
   {
