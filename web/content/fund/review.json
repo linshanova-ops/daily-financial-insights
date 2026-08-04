@@ -10,16 +10,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260804-txgq5s",
-    "title": "Millennium Management Fund posted a 2.1% loss in July, as volatility in AI stocks dealt a heavy blow to hedge funds.",
-    "reason": "弱信源「富途牛牛」命中「Millennium」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://news.futunn.com/en/post/77045616/millennium-management-fund-posted-a-2-1-loss-in-july",
-    "source": "富途牛牛",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260804-rfqgc3",
     "title": "AI Stock Turmoil Hits Hedge Funds! Millennium Loses 2.1% in July, Quant Strategies Buck the Trend",
     "reason": "弱信源「finance.biggo.com」命中「Millennium」— 不进入确定命中，待人工复核。",
@@ -76,7 +66,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/articles/2026-08-03/coatue-s-hedge-fund-sinks-8-in-worst-drop-in-more-than-a-year",
-    "source": "bloomberg.com",
+    "source": "Bloomberg.com",
     "sourceTier": "secondary"
   },
   {
@@ -86,7 +76,7 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/XFLT+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+as+Board+Liquidity+Plan+Gains+Support",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
     "sourceTier": "weak"
   },
   {
@@ -96,7 +86,7 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Back+King+Street+Sub-Adviser+and+Liquidity+Plan+Ahead+of+August+6+Meeting",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
     "sourceTier": "weak"
   },
   {
@@ -106,7 +96,7 @@
     "confidence": "69%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/Kayne+Anderson+Energy+Infrastructure+Fund+Declares+August+2026+Monthly+Distribution+of+%240.09+per+Share",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
     "sourceTier": "weak"
   },
   {
@@ -122,21 +112,21 @@
   {
     "id": "rev-sig-20260804-7hb8q4",
     "title": "Arrowstreet Capital Limited Partnership Makes New Investment in Ultra Clean Holdings, Inc. $UCTT",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-ultra-clean-holdings-inc-uctt-2026-08-04/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260803-2a59f2",
     "title": "Arrowstreet Capital Limited Partnership Makes New $6.71 Million Investment in Trinity Industries, Inc. $TRN",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-671-million-investment-in-trinity-industries-inc-trn-2026-08-03/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
