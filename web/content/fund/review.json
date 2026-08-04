@@ -80,6 +80,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260801-b8a4be",
+    "title": "Renaissance Technologies LLC Lowers Stock Position in Fastly, Inc. $FSLY",
+    "reason": "弱信源「MarketBeat」命中「Renaissance Technologies」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-renaissance-technologies-llc-lowers-stock-position-in-fastly-inc-fsly-2026-08-01/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260803-olq63m",
     "title": "Kayne Anderson Energy Infrastructure Fund Declares August 2026 Monthly Distribution of $0.09 per Share",
     "reason": "中等置信度命中「Kayne Anderson」，待人工复核。",
@@ -96,7 +106,7 @@
     "confidence": "69%",
     "status": "review",
     "href": "https://www.stocktitan.net/news/KYN/kayne-anderson-energy-infrastructure-fund-announces-distribution-of-272t62ij8nkw.html",
-    "source": "stocktitan.net",
+    "source": "Stock Titan",
     "sourceTier": "weak"
   },
   {
