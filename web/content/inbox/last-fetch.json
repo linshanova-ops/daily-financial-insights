@@ -1,12 +1,17 @@
 {
-  "at": "2026-08-03T17:55:52.697Z",
-  "briefingDate": "2026-08-03",
+  "at": "2026-08-04T00:01:12.673Z",
+  "briefingDate": "2026-08-04",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-03.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-04.md",
+      "subject": "彭博财经早茶：特朗普对伊发出最后通牒；亚洲AI交易吸引资金大举回流",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5188,
+      "mailbox": "INBOX",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-04.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-04.png"
     },
     {
       "sourceId": "bloomberg-weekend-tea",
@@ -21,9 +26,13 @@
   ],
   "skipped": [
     {
-      "reason": "exists-keep",
+      "reason": "date-mismatch",
       "subject": "彭博财经早茶：特朗普暂缓打击伊朗；美日承诺更多联合干预日元",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-03.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-08-02",
+      "bjDay": "2026-08-03",
+      "briefingDate": "2026-08-04"
     },
     {
       "reason": "weekly-exists",
@@ -37,7 +46,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-30",
       "bjDay": "2026-07-31",
-      "briefingDate": "2026-08-03"
+      "briefingDate": "2026-08-04"
     },
     {
       "reason": "date-mismatch",
@@ -46,7 +55,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-29",
       "bjDay": "2026-07-30",
-      "briefingDate": "2026-08-03"
+      "briefingDate": "2026-08-04"
     },
     {
       "reason": "weekly-exists",
@@ -60,7 +69,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-28",
       "bjDay": "2026-07-29",
-      "briefingDate": "2026-08-03"
+      "briefingDate": "2026-08-04"
     },
     {
       "reason": "date-mismatch",
@@ -69,7 +78,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-27",
       "bjDay": "2026-07-28",
-      "briefingDate": "2026-08-03"
+      "briefingDate": "2026-08-04"
     },
     {
       "reason": "date-mismatch",
@@ -78,7 +87,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-26",
       "bjDay": "2026-07-27",
-      "briefingDate": "2026-08-03"
+      "briefingDate": "2026-08-04"
     },
     {
       "reason": "weekly-duplicate",
@@ -92,7 +101,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-23",
       "bjDay": "2026-07-24",
-      "briefingDate": "2026-08-03"
+      "briefingDate": "2026-08-04"
     },
     {
       "reason": "date-mismatch",
@@ -101,7 +110,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-22",
       "bjDay": "2026-07-23",
-      "briefingDate": "2026-08-03"
+      "briefingDate": "2026-08-04"
     },
     {
       "reason": "weekly-duplicate",
@@ -120,7 +129,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-21",
       "bjDay": "2026-07-22",
-      "briefingDate": "2026-08-03"
+      "briefingDate": "2026-08-04"
     },
     {
       "reason": "date-mismatch",
@@ -129,22 +138,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-20",
       "bjDay": "2026-07-21",
-      "briefingDate": "2026-08-03"
-    },
-    {
-      "reason": "unmatched",
-      "subject": "Now live: Charting Crypto with Coinbase Institutional",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "welcome",
-      "subject": "Welcome to Glassnode Insights",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "unmatched",
-      "subject": "You've subscribed!",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
+      "briefingDate": "2026-08-04"
     }
   ]
 }
