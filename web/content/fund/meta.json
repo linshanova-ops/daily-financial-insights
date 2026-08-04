@@ -1,17 +1,17 @@
 {
   "title": "对冲基金信息监控",
   "subtitle": "指定信源（Hedgeweek / HedgeCo）+ 公开转载白名单，对 112 家监控管理机构做语境匹配、信源分层、同事件去重与人工可复核的置信度过滤。",
-  "updatedAt": "2026-08-04T12:10:48.439Z",
-  "updatedAtLabel": "2026.08.04 20:10",
+  "updatedAt": "2026-08-04T12:16:13.003Z",
+  "updatedAtLabel": "2026.08.04 20:16",
   "timezone": "Asia / Shanghai",
   "sourcesChecked": "3/3",
-  "sourcesNote": "hedgeweek:10 · google-news:6132 · hedgeco:40",
+  "sourcesNote": "hedgeweek:10 · google-news:6135 · hedgeco:40",
   "scanWindow": "每日扫描过去 72 小时 · 命中永久归档",
   "phase": 2,
   "phaseNote": "Live RSS on briefing windows. Designated: Hedgeweek + HedgeCo. Google News allowlist: Bloomberg / WSJ / NYT / Reuters / FT / Business Insider / Seeking Alpha (+ trade desks). Unknown publishers are weak. Same-story multi-outlet floods collapse to one canonical cite. Confirmed hits are permanent. One Google News query per monitored alias.",
   "lastScan": {
-    "at": "2026-08-04T12:10:48.439Z",
-    "fetched": 6182,
+    "at": "2026-08-04T12:16:13.003Z",
+    "fetched": 6185,
     "newConfirmed": 0,
     "review": 15,
     "windowHours": 72,
@@ -24,7 +24,7 @@
       {
         "id": "google-news",
         "ok": true,
-        "count": 6132,
+        "count": 6135,
         "note": "110/110 alias queries ok · 112 monitored",
         "coverage": {
           "monitored": 112,
