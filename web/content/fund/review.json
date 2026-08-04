@@ -1,15 +1,5 @@
 [
   {
-    "id": "rev-sig-20260804-9jf5ui",
-    "title": "Millennium Management Fund lost 2.1% in July, AI stock volatility severely impacted hedge funds",
-    "reason": "弱信源「Bitget」命中「Millennium」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.bitget.com/asia/amp/news/detail/12560605598916",
-    "source": "Bitget",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260804-rfqgc3",
     "title": "AI Stock Turmoil Hits Hedge Funds! Millennium Loses 2.1% in July, Quant Strategies Buck the Trend",
     "reason": "弱信源「finance.biggo.com」命中「Millennium」— 不进入确定命中，待人工复核。",
@@ -26,8 +16,8 @@
     "confidence": "63%",
     "status": "review",
     "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
-    "source": "fundsglobalmena.com",
-    "sourceTier": "weak"
+    "source": "Funds Global MENA",
+    "sourceTier": "secondary"
   },
   {
     "id": "rev-sig-20260804-umjem1",
