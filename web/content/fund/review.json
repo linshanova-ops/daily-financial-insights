@@ -1,12 +1,22 @@
 [
   {
-    "id": "rev-sig-20260801-ecc14j",
-    "title": "Citadel buys $16B SA portfolio as leverage crushes AI fund, rattles Wall Street - CHOSUNBIZ",
-    "reason": "弱信源「Chosunbiz」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260804-9jf5ui",
+    "title": "Millennium Management Fund lost 2.1% in July, AI stock volatility severely impacted hedge funds",
+    "reason": "弱信源「Bitget」命中「Millennium」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
-    "href": "https://biz.chosun.com/en/en-international/2026/08/01/DS7TKQPKN5GLHLUJXMXVMSCJ4A/",
-    "source": "Chosunbiz",
+    "href": "https://www.bitget.com/asia/amp/news/detail/12560605598916",
+    "source": "Bitget",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260804-rfqgc3",
+    "title": "AI Stock Turmoil Hits Hedge Funds! Millennium Loses 2.1% in July, Quant Strategies Buck the Trend",
+    "reason": "弱信源「finance.biggo.com」命中「Millennium」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://finance.biggo.com/news/ae535cf6-9996-4834-abef-77b9ddd90077",
+    "source": "finance.biggo.com",
     "sourceTier": "weak"
   },
   {
@@ -16,8 +26,8 @@
     "confidence": "63%",
     "status": "review",
     "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
-    "source": "Funds Global MENA",
-    "sourceTier": "secondary"
+    "source": "fundsglobalmena.com",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260804-umjem1",
@@ -30,13 +40,13 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260801-tstbl8",
-    "title": "T. Rowe Price Goldman Sachs Private Markets Fund Launched",
+    "id": "rev-sig-20260804-bt3qym",
+    "title": "Goldman Sachs Clear Position: This Is the Largest Capital Demand Cycle in Human History – The Federal Reserve Is Merely a Spectator",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://pulse2.com/t-rowe-price-goldman-sachs-private-markets-fund-launched/",
-    "source": "Pulse 2.0",
+    "href": "https://eu.36kr.com/en/p/3924662408231047",
+    "source": "36 Kr",
     "sourceTier": "weak"
   },
   {
@@ -100,33 +110,23 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260801-whjwjr",
-    "title": "Acadian Asset Management Inc. $AAMI Shares Sold by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260804-7hb8q4",
+    "title": "Arrowstreet Capital Limited Partnership Makes New Investment in Ultra Clean Holdings, Inc. $UCTT",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-acadian-asset-management-inc-aami-shares-sold-by-arrowstreet-capital-limited-partnership-2026-08-01/",
-    "source": "marketbeat.com",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-ultra-clean-holdings-inc-uctt-2026-08-04/",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260803-2a59f2",
     "title": "Arrowstreet Capital Limited Partnership Makes New $6.71 Million Investment in Trinity Industries, Inc. $TRN",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-671-million-investment-in-trinity-industries-inc-trn-2026-08-03/",
-    "source": "marketbeat.com",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260802-633m08",
-    "title": "Arrowstreet Capital Limited Partnership Invests $8.62 Million in Summit Hotel Properties, Inc. $INN",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-invests-862-million-in-summit-hotel-properties-inc-inn-2026-08-02/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
