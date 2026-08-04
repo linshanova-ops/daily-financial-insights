@@ -1,5 +1,15 @@
 [
   {
+    "id": "rev-sig-20260804-9jf5ui",
+    "title": "Millennium Management Fund lost 2.1% in July, AI stock volatility severely impacted hedge funds",
+    "reason": "弱信源「Bitget」命中「Millennium」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.bitget.com/asia/amp/news/detail/12560605598916",
+    "source": "Bitget",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260804-rfqgc3",
     "title": "AI Stock Turmoil Hits Hedge Funds! Millennium Loses 2.1% in July, Quant Strategies Buck the Trend",
     "reason": "弱信源「finance.biggo.com」命中「Millennium」— 不进入确定命中，待人工复核。",
@@ -66,7 +76,7 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/XFLT+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+as+Board+Liquidity+Plan+Gains+Support",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
     "sourceTier": "weak"
   },
   {
@@ -76,7 +86,7 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Back+King+Street+Sub-Adviser+and+Liquidity+Plan+Ahead+of+August+6+Meeting",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
     "sourceTier": "weak"
   },
   {
@@ -86,7 +96,7 @@
     "confidence": "69%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/Kayne+Anderson+Energy+Infrastructure+Fund+Declares+August+2026+Monthly+Distribution+of+%240.09+per+Share",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
     "sourceTier": "weak"
   },
   {
@@ -96,7 +106,7 @@
     "confidence": "69%",
     "status": "review",
     "href": "https://www.stocktitan.net/news/KYN/kayne-anderson-energy-infrastructure-fund-announces-distribution-of-272t62ij8nkw.html",
-    "source": "Stock Titan",
+    "source": "stocktitan.net",
     "sourceTier": "weak"
   },
   {
@@ -116,6 +126,16 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-671-million-investment-in-trinity-industries-inc-trn-2026-08-03/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260802-633m08",
+    "title": "Arrowstreet Capital Limited Partnership Invests $8.62 Million in Summit Hotel Properties, Inc. $INN",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-invests-862-million-in-summit-hotel-properties-inc-inn-2026-08-02/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
