@@ -183,20 +183,6 @@
     ]
   },
   {
-    "id": "sig-20260730-nyyeju",
-    "date": "2026.07.30",
-    "title": "Squarepoint expands commodities trading team",
-    "summary": "Squarepoint Capital 组织/产品动向：Squarepoint expands commodities trading team。",
-    "summaryEn": "Squarepoint Capital: product / organization update — Squarepoint expands commodities trading team.",
-    "fund": "Squarepoint Capital",
-    "source": "Hedgeweek",
-    "sourceTier": "designated",
-    "sourceTierLabel": "指定信源",
-    "tag": "组织 / 产品",
-    "status": "confirmed",
-    "href": "https://www.hedgeweek.com/squarepoint-expands-commodities-trading-team/"
-  },
-  {
     "id": "sig-20260730-wpnoly",
     "date": "2026.07.30",
     "title": "Elliott secures board seats at Align Technology as part of activist settlement",
@@ -209,6 +195,20 @@
     "tag": "动态",
     "status": "confirmed",
     "href": "https://www.hedgeweek.com/elliott-secures-board-seats-at-align-technology-as-part-of-activist-settlement/"
+  },
+  {
+    "id": "sig-20260730-nyyeju",
+    "date": "2026.07.30",
+    "title": "Squarepoint expands commodities trading team",
+    "summary": "Squarepoint Capital 组织/产品动向：Squarepoint expands commodities trading team。",
+    "summaryEn": "Squarepoint Capital: product / organization update — Squarepoint expands commodities trading team.",
+    "fund": "Squarepoint Capital",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "组织 / 产品",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/squarepoint-expands-commodities-trading-team/"
   },
   {
     "id": "sig-20260728-ntpg3d",
