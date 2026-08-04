@@ -1,5 +1,5 @@
 {
-  "at": "2026-08-04T02:05:26.757Z",
+  "at": "2026-08-04T02:10:39.215Z",
   "briefingDate": "2026-08-04",
   "ok": true,
   "saved": [
@@ -129,15 +129,6 @@
       "subjectDay": null,
       "emailDay": "2026-07-21",
       "bjDay": "2026-07-22",
-      "briefingDate": "2026-08-04"
-    },
-    {
-      "reason": "date-mismatch",
-      "subject": "彭博财经早茶：智谱数据中心；特朗普对伊施压",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-07-20",
-      "bjDay": "2026-07-21",
       "briefingDate": "2026-08-04"
     }
   ]
