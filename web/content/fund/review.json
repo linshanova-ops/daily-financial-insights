@@ -10,33 +10,23 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260801-xjmuqz",
-    "title": "Citadel Rescues Leopold Aschenbrenner's AI Hedge Fu…",
-    "reason": "弱信源「StartupHub.ai」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.startuphub.ai/ai-news/investors-news/2026/citadel-rescues-leopold-aschenbrenner-s-ai-hedge-fund",
-    "source": "StartupHub.ai",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260801-e3rvac",
-    "title": "Griffin’s Citadel rescues AI fund Situational Awareness | Gulf Times",
-    "reason": "弱信源「Gulf Times」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.gulf-times.com/article/730305/business/griffins-citadel-rescues-ai-fund-situational-awareness/amp",
-    "source": "Gulf Times",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260803-upz4tl",
     "title": "Symmetry secures Dubai licence as hedge fund expansion continues",
     "reason": "中等置信度命中「Symmetry」，待人工复核。",
     "confidence": "63%",
     "status": "review",
     "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
-    "source": "fundsglobalmena.com",
+    "source": "Funds Global MENA",
+    "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260804-umjem1",
+    "title": "Goldman Sachs Asset Management Launches AlphaAI Investment Platform",
+    "reason": "弱信源「Hubbis」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.hubbis.com/news/goldman-sachs-asset-management-launches-alphaai-investment-platform",
+    "source": "Hubbis",
     "sourceTier": "weak"
   },
   {
@@ -60,6 +50,26 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260804-knhzng",
+    "title": "Coatue’s Hedge Fund Sinks 8% in Worst Drop in More Than a Year",
+    "reason": "中等置信度命中「Coatue」，待人工复核。",
+    "confidence": "61%",
+    "status": "review",
+    "href": "https://www.bloomberg.com/news/articles/2026-08-03/coatue-s-hedge-fund-sinks-8-in-worst-drop-in-more-than-a-year",
+    "source": "Bloomberg.com",
+    "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260803-dzsj43",
+    "title": "XFLT Urges Shareholders to Vote for King Street Sub-Advisory Agreement as Board Liquidity Plan Gains Support",
+    "reason": "中等置信度命中「King Street」，待人工复核。",
+    "confidence": "66%",
+    "status": "review",
+    "href": "https://www.quiverquant.com/news/XFLT+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+as+Board+Liquidity+Plan+Gains+Support",
+    "source": "Quiver Quantitative",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260802-ccdq64",
     "title": "XAI Floating Rate & Alternative Income Trust Urges Shareholders to Back King Street Sub-Adviser and Liquidity Plan Ahead of August 6 Meeting",
     "reason": "中等置信度命中「King Street」，待人工复核。",
@@ -77,6 +87,16 @@
     "status": "review",
     "href": "https://www.quiverquant.com/news/Kayne+Anderson+Energy+Infrastructure+Fund+Declares+August+2026+Monthly+Distribution+of+%240.09+per+Share",
     "source": "Quiver Quantitative",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260803-8zf9mb",
+    "title": "Kayne Anderson sets Aug. 31 date for $0.09 stockholder payment",
+    "reason": "中等置信度命中「Kayne Anderson」，待人工复核。",
+    "confidence": "69%",
+    "status": "review",
+    "href": "https://www.stocktitan.net/news/KYN/kayne-anderson-energy-infrastructure-fund-announces-distribution-of-272t62ij8nkw.html",
+    "source": "stocktitan.net",
     "sourceTier": "weak"
   },
   {
@@ -100,16 +120,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260803-814yzt",
-    "title": "Corebridge Financial, Inc. $CRBG Position Increased by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-corebridge-financial-inc-crbg-position-increased-by-arrowstreet-capital-limited-partnership-2026-08-03/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260802-633m08",
     "title": "Arrowstreet Capital Limited Partnership Invests $8.62 Million in Summit Hotel Properties, Inc. $INN",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
@@ -120,6 +130,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260804-4vwqsh",
+    "title": "Bill Ackman's Pershing Square Owns Amazon, Microsoft, and Meta Platforms. Here's the Best Buy of the Bunch in August.",
+    "reason": "中等置信度命中「Pershing Square」，待人工复核。",
+    "confidence": "70%",
+    "status": "review",
+    "href": "https://www.fool.com/investing/2026/08/03/bill-ackmans-pershing-square-owns-amazon-microsoft/",
+    "source": "The Motley Fool",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260803-jzsvqn",
     "title": "PIMCO: Nordic interest in asset-based finance, hedge funds and real estate on the up",
     "reason": "弱信源「AMWatch」命中「PIMCO」— 不进入确定命中，待人工复核。",
@@ -127,36 +147,6 @@
     "status": "review",
     "href": "https://amwatch.com/AMNews/Fund_Management/article19431058.ece",
     "source": "AMWatch",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260801-532h10",
-    "title": "NEUBERGER REAL ESTATE SECURITIES INCOME FUND ANNOUNCES MONTHLY DISTRIBUTION",
-    "reason": "弱信源「TradingView」命中「Neuberger」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.tradingview.com/news/prnewswire:bbfcf0424ff2a:0-neuberger-real-estate-securities-income-fund-announces-monthly-distribution/",
-    "source": "TradingView",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260801-iauq6k",
-    "title": "Neuberger Fund's $0.0905 Payout May Include Return of Capital",
-    "reason": "弱信源「Stock Titan」命中「Neuberger」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.stocktitan.net/news/NHS/neuberger-high-yield-strategies-fund-announces-monthly-9ai6tqy524xm.html",
-    "source": "Stock Titan",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260801-8is83g",
-    "title": "NEUBERGER ENERGY INFRASTRUCTURE AND INCOME FUND ANNOUNCES MONTHLY DISTRIBUTION",
-    "reason": "弱信源「TradingView」命中「Neuberger」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.tradingview.com/news/prnewswire:4145e196be659:0-neuberger-energy-infrastructure-and-income-fund-announces-monthly-distribution/",
-    "source": "TradingView",
     "sourceTier": "weak"
   }
 ]
