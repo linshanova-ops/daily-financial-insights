@@ -12,11 +12,11 @@
   {
     "id": "rev-sig-20260805-qs9ctj",
     "title": "Citadel returns jump after Situational Awareness deal",
-    "reason": "弱信源「capitalbrief.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「Capital Brief」命中「Citadel」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://www.capitalbrief.com/briefing/citadel-returns-jump-after-situational-awareness-deal-c277ada5-2fda-443b-a439-5e7c9a196340/",
-    "source": "capitalbrief.com",
+    "source": "Capital Brief",
     "sourceTier": "weak"
   },
   {
@@ -67,16 +67,6 @@
     "status": "review",
     "href": "https://finance.biggo.com/news/ae535cf6-9996-4834-abef-77b9ddd90077",
     "source": "finance.biggo.com",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-a0q4xv",
-    "title": "D.E. Shaw’s Latest Offering",
-    "reason": "弱信源「institutionalinvestor.com」命中「D.E. Shaw」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.institutionalinvestor.com/article/de-shaws-latest-offering",
-    "source": "institutionalinvestor.com",
     "sourceTier": "weak"
   },
   {
