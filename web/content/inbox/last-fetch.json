@@ -1,12 +1,17 @@
 {
-  "at": "2026-08-04T17:55:37.635Z",
-  "briefingDate": "2026-08-04",
+  "at": "2026-08-05T00:01:12.496Z",
+  "briefingDate": "2026-08-05",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-04.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-05.md",
+      "subject": "彭博财经早茶：霍尔木兹海峡重开渐现曙光；长鑫科技有望取得芯片突破",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5368,
+      "mailbox": "INBOX",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-05.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-05.png"
     },
     {
       "sourceId": "bloomberg-weekend-tea",
@@ -21,9 +26,13 @@
   ],
   "skipped": [
     {
-      "reason": "exists-keep",
+      "reason": "date-mismatch",
       "subject": "彭博财经早茶：特朗普对伊发出最后通牒；亚洲AI交易吸引资金大举回流",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-04.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-08-03",
+      "bjDay": "2026-08-04",
+      "briefingDate": "2026-08-05"
     },
     {
       "reason": "date-mismatch",
@@ -32,7 +41,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-02",
       "bjDay": "2026-08-03",
-      "briefingDate": "2026-08-04"
+      "briefingDate": "2026-08-05"
     },
     {
       "reason": "weekly-exists",
@@ -46,7 +55,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-30",
       "bjDay": "2026-07-31",
-      "briefingDate": "2026-08-04"
+      "briefingDate": "2026-08-05"
     },
     {
       "reason": "date-mismatch",
@@ -55,7 +64,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-29",
       "bjDay": "2026-07-30",
-      "briefingDate": "2026-08-04"
+      "briefingDate": "2026-08-05"
     },
     {
       "reason": "weekly-exists",
@@ -69,7 +78,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-28",
       "bjDay": "2026-07-29",
-      "briefingDate": "2026-08-04"
+      "briefingDate": "2026-08-05"
     },
     {
       "reason": "date-mismatch",
@@ -78,7 +87,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-27",
       "bjDay": "2026-07-28",
-      "briefingDate": "2026-08-04"
+      "briefingDate": "2026-08-05"
     },
     {
       "reason": "date-mismatch",
@@ -87,7 +96,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-26",
       "bjDay": "2026-07-27",
-      "briefingDate": "2026-08-04"
+      "briefingDate": "2026-08-05"
     },
     {
       "reason": "weekly-duplicate",
@@ -101,7 +110,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-23",
       "bjDay": "2026-07-24",
-      "briefingDate": "2026-08-04"
+      "briefingDate": "2026-08-05"
     },
     {
       "reason": "date-mismatch",
@@ -110,26 +119,12 @@
       "subjectDay": null,
       "emailDay": "2026-07-22",
       "bjDay": "2026-07-23",
-      "briefingDate": "2026-08-04"
+      "briefingDate": "2026-08-05"
     },
     {
       "reason": "weekly-duplicate",
       "subject": "Optimism Meets Overhead",
       "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "unmatched",
-      "subject": "Security Notice",
-      "from": "\"Glassnode\" <noreply@glassnode.com>"
-    },
-    {
-      "reason": "date-mismatch",
-      "subject": "彭博财经早茶：月之暗面估值或猛升；日元创40年新低",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-07-21",
-      "bjDay": "2026-07-22",
-      "briefingDate": "2026-08-04"
     }
   ]
 }
