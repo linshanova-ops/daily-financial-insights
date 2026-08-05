@@ -12,11 +12,11 @@
   {
     "id": "rev-sig-20260805-qs9ctj",
     "title": "Citadel returns jump after Situational Awareness deal",
-    "reason": "弱信源「capitalbrief.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「Capital Brief」命中「Citadel」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://www.capitalbrief.com/briefing/citadel-returns-jump-after-situational-awareness-deal-c277ada5-2fda-443b-a439-5e7c9a196340/",
-    "source": "capitalbrief.com",
+    "source": "Capital Brief",
     "sourceTier": "weak"
   },
   {
@@ -60,23 +60,13 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260805-a0q4xv",
-    "title": "D.E. Shaw’s Latest Offering",
-    "reason": "弱信源「institutionalinvestor.com」命中「D.E. Shaw」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.institutionalinvestor.com/article/de-shaws-latest-offering",
-    "source": "institutionalinvestor.com",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260804-umjem1",
     "title": "Goldman Sachs Asset Management Launches AlphaAI Investment Platform",
-    "reason": "弱信源「Hubbis」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「hubbis.com」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.hubbis.com/news/goldman-sachs-asset-management-launches-alphaai-investment-platform",
-    "source": "Hubbis",
+    "source": "hubbis.com",
     "sourceTier": "weak"
   },
   {
@@ -96,7 +86,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://eu.36kr.com/en/p/3924662408231047",
-    "source": "36 Kr",
+    "source": "eu.36kr.com",
     "sourceTier": "weak"
   },
   {
