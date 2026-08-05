@@ -1,5 +1,35 @@
 [
   {
+    "id": "rev-sig-20260805-dtyxp8",
+    "title": "Asia hedge funds hit by AI sell-off as regional stock-pickers endure record July losses",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.hedgeweek.com/asia-hedge-funds-hit-by-ai-sell-off-as-regional-stock-pickers-endure-record-july-losses/",
+    "source": "Hedgeweek",
+    "sourceTier": "designated"
+  },
+  {
+    "id": "rev-sig-20260805-qs9ctj",
+    "title": "Citadel returns jump after Situational Awareness deal",
+    "reason": "弱信源「capitalbrief.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.capitalbrief.com/briefing/citadel-returns-jump-after-situational-awareness-deal-c277ada5-2fda-443b-a439-5e7c9a196340/",
+    "source": "capitalbrief.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260804-6b3t3a",
+    "title": "Billionaire Ken Griffin Just Saved Situational Awareness, But Here’s What a Rescue Call From Citadel Really Sounds Like — ‘I… Heard the Grim Reaper’s Scythe’",
+    "reason": "弱信源「Barchart.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.barchart.com/story/news/3619493/billionaire-ken-griffin-just-saved-situational-awareness-but-heres-what-a-rescue-call-from-citadel-really-sounds-like-i-heard-the-grim-reapers-scythe",
+    "source": "Barchart.com",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260804-9jf5ui",
     "title": "Millennium Management Fund lost 2.1% in July, AI stock volatility severely impacted hedge funds",
     "reason": "弱信源「Bitget」命中「Millennium」— 不进入确定命中，待人工复核。",
@@ -30,14 +60,14 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260803-upz4tl",
-    "title": "Symmetry secures Dubai licence as hedge fund expansion continues",
-    "reason": "中等置信度命中「Symmetry」，待人工复核。",
-    "confidence": "63%",
+    "id": "rev-sig-20260804-umjem1",
+    "title": "Goldman Sachs Asset Management Launches AlphaAI Investment Platform",
+    "reason": "弱信源「Hubbis」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
     "status": "review",
-    "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
-    "source": "Funds Global MENA",
-    "sourceTier": "secondary"
+    "href": "https://www.hubbis.com/news/goldman-sachs-asset-management-launches-alphaai-investment-platform",
+    "source": "Hubbis",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260804-hm5xyn",
@@ -50,16 +80,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260804-umjem1",
-    "title": "Goldman Sachs Asset Management Launches AlphaAI Investment Platform",
-    "reason": "弱信源「Hubbis」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.hubbis.com/news/goldman-sachs-asset-management-launches-alphaai-investment-platform",
-    "source": "Hubbis",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260804-bt3qym",
     "title": "Goldman Sachs Clear Position: This Is the Largest Capital Demand Cycle in Human History – The Federal Reserve Is Merely a Spectator",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -67,6 +87,16 @@
     "status": "review",
     "href": "https://eu.36kr.com/en/p/3924662408231047",
     "source": "36 Kr",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260805-54272k",
+    "title": "Michael Patchen, Former Partner & Chief Risk Officer at AQR Capital Management, Joins Star Mountain Capital as Senior Advisor",
+    "reason": "弱信源「Business Wire」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.businesswire.com/news/home/20260804283873/en/Michael-Patchen-Former-Partner-Chief-Risk-Officer-at-AQR-Capital-Management-Joins-Star-Mountain-Capital-as-Senior-Advisor",
+    "source": "Business Wire",
     "sourceTier": "weak"
   },
   {
@@ -86,7 +116,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/articles/2026-08-03/coatue-s-hedge-fund-sinks-8-in-worst-drop-in-more-than-a-year",
-    "source": "bloomberg.com",
+    "source": "Bloomberg.com",
     "sourceTier": "secondary"
   },
   {
@@ -96,7 +126,17 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/videos/2026-08-04/coatue-s-hedge-fund-sees-worst-drop-in-more-than-a-year-video",
-    "source": "bloomberg.com",
+    "source": "Bloomberg.com",
+    "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260803-upz4tl",
+    "title": "Symmetry secures Dubai licence as hedge fund expansion continues",
+    "reason": "中等置信度命中「Symmetry」，待人工复核。",
+    "confidence": "63%",
+    "status": "review",
+    "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
+    "source": "Funds Global MENA",
     "sourceTier": "secondary"
   },
   {
@@ -127,6 +167,16 @@
     "status": "review",
     "href": "https://www.stocktitan.net/news/KYN/kayne-anderson-energy-infrastructure-fund-announces-distribution-of-272t62ij8nkw.html",
     "source": "Stock Titan",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260803-t7hcqz",
+    "title": "Kayne Anderson Energy Infrastructure Fund Announces Distribution of $0.09 Per Share for August 2026",
+    "reason": "中等置信度命中「Kayne Anderson」，待人工复核。",
+    "confidence": "69%",
+    "status": "review",
+    "href": "https://www.manilatimes.net/2026/08/03/tmt-newswire/globenewswire/kayne-anderson-energy-infrastructure-fund-announces-distribution-of-009-per-share-for-august-2026/2396974/amp",
+    "source": "The Manila Times",
     "sourceTier": "weak"
   },
   {
