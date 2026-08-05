@@ -1,5 +1,19 @@
 [
   {
+    "id": "sig-20260805-a0q4xv",
+    "date": "2026.08.05",
+    "title": "D.E. Shaw’s Latest Offering",
+    "summary": "D. E. Shaw：D.E. Shaw’s Latest Offering（动态）。",
+    "summaryEn": "D. E. Shaw: D.E. Shaw’s Latest Offering.",
+    "fund": "D. E. Shaw",
+    "source": "Institutional Investor",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.institutionalinvestor.com/article/de-shaws-latest-offering"
+  },
+  {
     "id": "sig-20260804-v9i9cv",
     "date": "2026.08.04",
     "title": "Millennium Lost 2% Last Month as AI Trade Whipsawed Hedge Funds",
@@ -579,7 +593,14 @@
     "status": "confirmed",
     "href": "https://www.ft.com/content/c223f704-57c7-4962-9b4e-a30496aee6fa?syn-25a6b1a6=1",
     "sourceTier": "secondary",
-    "sourceTierLabel": "公开转载"
+    "sourceTierLabel": "公开转载",
+    "relatedSources": [
+      {
+        "source": "Business Insider",
+        "href": "https://www.businessinsider.com/july-multistrategy-hedge-fund-performance-2026-8",
+        "title": "Hedge fund scorecard: Millennium, Point72, and Asia funds caught up in a chaotic July"
+      }
+    ]
   },
   {
     "id": "sig-20260629-fwpa33",
