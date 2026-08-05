@@ -1,15 +1,12 @@
 {
-  "at": "2026-08-05T14:30:54.705Z",
+  "at": "2026-08-05T14:35:29.244Z",
   "briefingDate": "2026-08-05",
   "ok": true,
   "saved": [
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W32.md",
-      "subject": "Priced For Nothing, Reacting To Everything",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2038,
-      "mailbox": "INBOX"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -23,6 +20,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "weekly-exists",
+      "subject": "Priced For Nothing, Reacting To Everything",
+      "path": "web/content/inbox/glassnode-insights/2026-W32.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：霍尔木兹海峡重开渐现曙光；长鑫科技有望取得芯片突破",
