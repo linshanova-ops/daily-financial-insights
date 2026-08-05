@@ -5,7 +5,7 @@
     "reason": "弱信源「Bitget」命中「Millennium」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
-    "href": "https://www.bitget.com/asia/amp/news/detail/12560605598916",
+    "href": "https://www.bitget.com/amp/news/detail/12560605598916",
     "source": "Bitget",
     "sourceTier": "weak"
   },
@@ -66,7 +66,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://eu.36kr.com/en/p/3924662408231047",
-    "source": "eu.36kr.com",
+    "source": "36 Kr",
     "sourceTier": "weak"
   },
   {
