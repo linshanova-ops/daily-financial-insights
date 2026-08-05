@@ -5,7 +5,7 @@
     "reason": "弱信源「Bitget」命中「Millennium」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
-    "href": "https://www.bitget.com/asia/amp/news/detail/12560605598916",
+    "href": "https://www.bitget.com/amp/news/detail/12560605598916",
     "source": "Bitget",
     "sourceTier": "weak"
   },
@@ -38,6 +38,16 @@
     "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
     "source": "Funds Global MENA",
     "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260805-a0q4xv",
+    "title": "D.E. Shaw’s Latest Offering",
+    "reason": "弱信源「institutionalinvestor.com」命中「D.E. Shaw」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.institutionalinvestor.com/article/de-shaws-latest-offering",
+    "source": "institutionalinvestor.com",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260804-hm5xyn",
