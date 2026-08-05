@@ -40,16 +40,6 @@
     "sourceTier": "secondary"
   },
   {
-    "id": "rev-sig-20260805-a0q4xv",
-    "title": "D.E. Shaw’s Latest Offering",
-    "reason": "弱信源「institutionalinvestor.com」命中「D.E. Shaw」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.institutionalinvestor.com/article/de-shaws-latest-offering",
-    "source": "institutionalinvestor.com",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260804-hm5xyn",
     "title": "Talcott Financial Group Launches West Grove Re in Partnership with Goldman Sachs",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -76,7 +66,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://eu.36kr.com/en/p/3924662408231047",
-    "source": "36 Kr",
+    "source": "eu.36kr.com",
     "sourceTier": "weak"
   },
   {
