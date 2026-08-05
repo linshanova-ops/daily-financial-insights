@@ -52,11 +52,11 @@
   {
     "id": "rev-sig-20260804-txgq5s",
     "title": "Millennium Management Fund posted a 2.1% loss in July, as volatility in AI stocks dealt a heavy blow to hedge funds.",
-    "reason": "弱信源「富途牛牛」命中「Millennium」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「news.futunn.com」命中「Millennium」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://news.futunn.com/en/post/77045616/millennium-management-fund-posted-a-2-1-loss-in-july",
-    "source": "富途牛牛",
+    "source": "news.futunn.com",
     "sourceTier": "weak"
   },
   {
@@ -72,11 +72,11 @@
   {
     "id": "rev-sig-20260804-umjem1",
     "title": "Goldman Sachs Asset Management Launches AlphaAI Investment Platform",
-    "reason": "弱信源「Hubbis」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「hubbis.com」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.hubbis.com/news/goldman-sachs-asset-management-launches-alphaai-investment-platform",
-    "source": "Hubbis",
+    "source": "hubbis.com",
     "sourceTier": "weak"
   },
   {
@@ -96,7 +96,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://eu.36kr.com/en/p/3924662408231047",
-    "source": "36 Kr",
+    "source": "eu.36kr.com",
     "sourceTier": "weak"
   },
   {
