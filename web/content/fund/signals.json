@@ -140,6 +140,32 @@
     "href": "https://www.hedgeweek.com/citadels-crisis-investing-playbook-back-in-focus-after-ai-hedge-fund-rescue/"
   },
   {
+    "id": "sig-20260731-ayf5ja",
+    "date": "2026.07.31",
+    "title": "Citadel acquires majority of Situational Awareness equity book after big losses",
+    "summary": "Citadel Investment Group：Citadel acquires majority of Situational Awareness equity book after big losses（动态）。",
+    "summaryEn": "Citadel Investment Group: Citadel acquires majority of Situational Awareness equity book after big losses.",
+    "fund": "Citadel Investment Group",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/citadel-acquires-majority-of-situational-awareness-equity-book-after-big-losses/",
+    "relatedSources": [
+      {
+        "source": "Financial Times",
+        "href": "https://www.ft.com/content/4f00bd97-c3da-41af-9b92-410ebaa6ad2d?syn-25a6b1a6=1",
+        "title": "Citadel’s swoop on Situational Awareness helped stem a $3tn AI rout"
+      },
+      {
+        "source": "Reuters",
+        "href": "https://www.reuters.com/legal/legalindustry/with-situational-awareness-ai-deal-citadels-griffin-rides-rescue-again-2026-07-31/",
+        "title": "With Situational Awareness AI deal, Citadel's Griffin rides to the rescue again"
+      }
+    ]
+  },
+  {
     "id": "sig-20260731-vn2isr",
     "date": "2026.07.31",
     "title": "Hedge Fund Trader Kassam Readies a Billion-Dollar Millennium Cub",
@@ -166,32 +192,6 @@
     "tag": "组织 / 产品",
     "status": "confirmed",
     "href": "https://www.hedgeweek.com/millennium-backs-macro-traders-1bn-hedge-fund-launch/"
-  },
-  {
-    "id": "sig-20260731-ayf5ja",
-    "date": "2026.07.31",
-    "title": "Citadel acquires majority of Situational Awareness equity book after big losses",
-    "summary": "Citadel Investment Group：Citadel acquires majority of Situational Awareness equity book after big losses（动态）。",
-    "summaryEn": "Citadel Investment Group: Citadel acquires majority of Situational Awareness equity book after big losses.",
-    "fund": "Citadel Investment Group",
-    "source": "Hedgeweek",
-    "sourceTier": "designated",
-    "sourceTierLabel": "指定信源",
-    "tag": "动态",
-    "status": "confirmed",
-    "href": "https://www.hedgeweek.com/citadel-acquires-majority-of-situational-awareness-equity-book-after-big-losses/",
-    "relatedSources": [
-      {
-        "source": "Financial Times",
-        "href": "https://www.ft.com/content/4f00bd97-c3da-41af-9b92-410ebaa6ad2d?syn-25a6b1a6=1",
-        "title": "Citadel’s swoop on Situational Awareness helped stem a $3tn AI rout"
-      },
-      {
-        "source": "Reuters",
-        "href": "https://www.reuters.com/legal/legalindustry/with-situational-awareness-ai-deal-citadels-griffin-rides-rescue-again-2026-07-31/",
-        "title": "With Situational Awareness AI deal, Citadel's Griffin rides to the rescue again"
-      }
-    ]
   },
   {
     "id": "sig-20260730-uvek4i",
