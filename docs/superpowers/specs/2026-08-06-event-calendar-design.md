@@ -33,7 +33,9 @@ After theme cards shipped, Detail **Watch** still reads like a second Themes lis
 
 **US extras:** monthly **TIC**; quarterly **refunding**  
 
-**UK / EU:** economic data; CB meetings/actions/speeches  
+**UK / EU:** **central-bank only** (meetings / actions / speeches) — do **not** list UK/EU economic data.
+
+**Greater China:** Taiwan (and HK SAR) prints sit under region **China**, not Other.
 
 Prefer Bloomberg IMAP **日程** + **央行和政府动态**; fill gaps with dated verifiable calendars. **Never invent a print date or consensus.**
 
@@ -64,7 +66,7 @@ export interface CalendarEvent {
 
 export interface EventCalendar {
   windowStart: string; // = briefing date
-  windowEnd: string; // = next Friday on/after start (see below)
+  windowEnd: string; // = Friday after Friday-on-or-after start (see below)
   note?: string;
   events: CalendarEvent[];
 }
@@ -79,15 +81,18 @@ On `BriefingFrontmatter`:
 
 Given briefing date `D` (Beijing):
 1. `windowStart = D`
-2. `windowEnd` = Friday on or after `D`; if `D` is Fri, end = `D`; if Sat/Sun, next Friday.
+2. Let `thisFriday` = Friday on or after `D` (if `D` is Friday, `thisFriday = D`).
+3. `windowEnd` = `thisFriday + 7 days` (**next** Friday — always looks past the coming weekend).
 
-Header: `Event window: {windowStart} → {windowEnd} (Beijing)`.
+Examples: Thu 2026-08-06 → end 2026-08-14; Fri 2026-08-07 → end 2026-08-14.
+
+Header: `{windowStart} → {windowEnd} (Beijing)`.
 
 ## UI
 
 - Tab **Calendar**; hashes `["calendar", "watch"]`; section `#calendar`.
-- Day-grouped list (not cards): time · region · category · event · consensus/prior · theme chip.
-- Kind: Fact. Omit empty days. Prefer filling fixtures over an empty section.
+- Compact chronological rows (not cards / not tall day blocks): date · time · region · event · consensus/prior · theme chip.
+- Kind: Fact. Prefer filling fixtures over an empty section; keep density tight.
 
 ## Generate / accuracy
 

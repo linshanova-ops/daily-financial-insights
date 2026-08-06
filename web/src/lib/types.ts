@@ -250,7 +250,8 @@ export interface BriefingFrontmatter {
    */
   themeCards?: ThemeCard[];
   /**
-   * Event Calendar — dated prints from briefing day through next Friday.
+   * Event Calendar — dated prints from briefing day through next Friday
+   * (Friday after the Friday-on-or-after publish day).
    * Preferred over narrative watchItems for new briefings.
    */
   eventCalendar?: EventCalendar;
