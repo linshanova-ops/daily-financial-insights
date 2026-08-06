@@ -3,8 +3,10 @@ import { BriefingHero } from "./BriefingHero";
 import { ExecutiveSummary } from "./ExecutiveSummary";
 import { SituationBlock } from "./SituationBlock";
 import { AssetFramework } from "./AssetFramework";
+import { AssetClasses } from "./AssetClasses";
 import { SignalList } from "./SignalList";
 import { WatchList } from "./WatchList";
+import { EventCalendarView } from "./EventCalendarView";
 import { ThemeCards } from "./ThemeCards";
 import { SourcesCaveats } from "./SourcesCaveats";
 import { KeySources } from "./KeySources";
@@ -32,11 +34,16 @@ export function BriefingView({
 }: BriefingViewProps) {
   const figures = briefing.figures ?? [];
   const themeCards: ThemeCard[] = briefing.themeCards ?? [];
+  const themeTitles = Object.fromEntries(
+    themeCards.map((t) => [t.id, t.title]),
+  );
   const marketOverview = briefing.marketOverview;
   const marketDashboard = briefing.marketDashboard;
   const hasMarketOverview = Boolean(marketOverview?.items?.length);
   const hasMarketDashboard = Boolean(marketDashboard?.groups?.length);
   const hasThemes = themeCards.length > 0;
+  const eventCalendar = briefing.eventCalendar;
+  const assetClasses = briefing.assetClasses;
 
   return (
     <>
@@ -108,11 +115,20 @@ export function BriefingView({
               accent="crimson"
             />
           ),
-          assets: briefing.assetFramework?.length ? (
+          assets: assetClasses?.length ? (
+            <AssetClasses classes={assetClasses} themeTitles={themeTitles} />
+          ) : briefing.assetFramework?.length ? (
             <AssetFramework assets={briefing.assetFramework} />
           ) : null,
           signals: <SignalList signals={briefing.signals} />,
-          watch: <WatchList items={briefing.watchItems} />,
+          calendar: eventCalendar?.events ? (
+            <EventCalendarView
+              calendar={eventCalendar}
+              themeTitles={themeTitles}
+            />
+          ) : (
+            <WatchList items={briefing.watchItems} />
+          ),
           sources: (
             <SourcesCaveats
               sources={briefing.sources}

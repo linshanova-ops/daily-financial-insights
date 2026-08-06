@@ -4,7 +4,7 @@ export type DetailTabId =
   | "china"
   | "assets"
   | "signals"
-  | "watch"
+  | "calendar"
   | "sources";
 
 export const DETAIL_TABS: ReadonlyArray<{
@@ -16,7 +16,7 @@ export const DETAIL_TABS: ReadonlyArray<{
   { id: "china", label: "China", hashes: ["china-situation"] },
   { id: "assets", label: "Assets", hashes: ["asset-framework"] },
   { id: "signals", label: "Signals", hashes: ["signals", "detail"] },
-  { id: "watch", label: "Watch", hashes: ["watch"] },
+  { id: "calendar", label: "Calendar", hashes: ["calendar", "watch"] },
   { id: "sources", label: "Sources", hashes: ["sources", "sources-caveats"] },
 ];
 
