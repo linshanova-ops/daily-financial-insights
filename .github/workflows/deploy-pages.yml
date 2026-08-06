@@ -13,19 +13,16 @@ on:
     types: [deploy-pages]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
-  id-token: write
-  deployments: write
 
-# Do not cancel in-progress deploys: cancelled deploy-pages runs leave
-# GitHub Pages requests stuck in deployment_queued and block later publishes.
+# Avoid cancel thrash; one publish at a time.
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -33,11 +30,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-
-      # Required so Actions-sourced Pages actually processes deploy-pages
-      # requests (otherwise they sit forever at deployment_queued).
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Setup Node
         uses: actions/setup-node@v5
@@ -60,39 +52,29 @@ jobs:
         env:
           GITHUB_PAGES: "true"
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      # Bypass stuck actions/deploy-pages (deployment_queued timeouts) by
+      # publishing the static export to the gh-pages branch.
+      - name: Publish to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: web/out
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./web/out
+          force_orphan: true
+          user_name: syravocado
+          user_email: linshanova-ops@users.noreply.github.com
+          commit_message: "deploy: publish site"
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Clear stale Pages deployment statuses
+      - name: Point GitHub Pages at gh-pages branch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          # Release environment lock if prior deploy-pages timed out while queued.
-          ids=$(gh api "repos/${{ github.repository }}/deployments?environment=github-pages&per_page=15" \
-            --jq '.[].id')
-          for id in $ids; do
-            state=$(gh api "repos/${{ github.repository }}/deployments/${id}/statuses" \
-              --jq '.[0].state // "none"')
-            echo "deployment ${id}: ${state}"
-            if [ "$state" = "queued" ] || [ "$state" = "in_progress" ] || [ "$state" = "pending" ]; then
-              echo "Marking ${id} inactive"
-              gh api -X POST "repos/${{ github.repository }}/deployments/${id}/statuses" \
-                -f state=inactive \
-                -f description="cleared before republish" \
-                >/dev/null || true
-            fi
-          done
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          # legacy = branch-sourced Pages (avoids broken Actions deploy queue)
+          gh api -X PUT "repos/${{ github.repository }}/pages" --input - <<'EOF'
+          {
+            "build_type": "legacy",
+            "source": { "branch": "gh-pages", "path": "/" }
+          }
+          EOF
+          echo "Pages source:"
+          gh api "repos/${{ github.repository }}/pages" --jq '{build_type, html_url, source}'
