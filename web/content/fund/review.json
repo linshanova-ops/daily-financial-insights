@@ -1,22 +1,22 @@
 [
   {
-    "id": "rev-sig-20260805-dtyxp8",
-    "title": "Asia hedge funds hit by AI sell-off as regional stock-pickers endure record July losses",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.hedgeweek.com/asia-hedge-funds-hit-by-ai-sell-off-as-regional-stock-pickers-endure-record-july-losses/",
-    "source": "Hedgeweek",
-    "sourceTier": "designated"
-  },
-  {
-    "id": "rev-sig-20260805-qs9ctj",
-    "title": "Citadel returns jump after Situational Awareness deal",
-    "reason": "弱信源「Capital Brief」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260805-xnsk04",
+    "title": "Citadel funds gain in July as many hedge funds nurse AI selloff related losses",
+    "reason": "弱信源「kfgo.com」命中「Citadel」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
-    "href": "https://www.capitalbrief.com/briefing/citadel-returns-jump-after-situational-awareness-deal-c277ada5-2fda-443b-a439-5e7c9a196340/",
-    "source": "Capital Brief",
+    "href": "https://kfgo.com/2026/08/05/citadel-funds-gain-in-july-as-many-hedge-funds-nurse-ai-sell-off-related-losses/",
+    "source": "kfgo.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260806-oe1f4l",
+    "title": "Point72, Citadel among hedge funds hit by AI vishing attacks",
+    "reason": "弱信源「InvestmentNews」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708",
+    "source": "InvestmentNews",
     "sourceTier": "weak"
   },
   {
@@ -27,6 +27,16 @@
     "status": "review",
     "href": "https://www.barchart.com/story/news/3619493/billionaire-ken-griffin-just-saved-situational-awareness-but-heres-what-a-rescue-call-from-citadel-really-sounds-like-i-heard-the-grim-reapers-scythe",
     "source": "Barchart.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260806-3ylcy7",
+    "title": "Balyasny and Verition report losses as AI stock selloff rattles hedge fund giants",
+    "reason": "弱信源「Bitget」命中「Balyasny」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.bitget.com/asia/amp/news/detail/12560605617664",
+    "source": "Bitget",
     "sourceTier": "weak"
   },
   {
@@ -52,11 +62,11 @@
   {
     "id": "rev-sig-20260804-txgq5s",
     "title": "Millennium Management Fund posted a 2.1% loss in July, as volatility in AI stocks dealt a heavy blow to hedge funds.",
-    "reason": "弱信源「news.futunn.com」命中「Millennium」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「富途牛牛」命中「Millennium」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://news.futunn.com/en/post/77045616/millennium-management-fund-posted-a-2-1-loss-in-july",
-    "source": "news.futunn.com",
+    "source": "富途牛牛",
     "sourceTier": "weak"
   },
   {
@@ -72,11 +82,11 @@
   {
     "id": "rev-sig-20260804-umjem1",
     "title": "Goldman Sachs Asset Management Launches AlphaAI Investment Platform",
-    "reason": "弱信源「hubbis.com」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「Hubbis」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.hubbis.com/news/goldman-sachs-asset-management-launches-alphaai-investment-platform",
-    "source": "hubbis.com",
+    "source": "Hubbis",
     "sourceTier": "weak"
   },
   {
@@ -96,7 +106,7 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://eu.36kr.com/en/p/3924662408231047",
-    "source": "eu.36kr.com",
+    "source": "36 Kr",
     "sourceTier": "weak"
   },
   {
@@ -107,16 +117,6 @@
     "status": "review",
     "href": "https://www.businesswire.com/news/home/20260804283873/en/Michael-Patchen-Former-Partner-Chief-Risk-Officer-at-AQR-Capital-Management-Joins-Star-Mountain-Capital-as-Senior-Advisor",
     "source": "Business Wire",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260803-tnu6ja",
-    "title": "Tiger Global Names TSMC Top Pick Among Five Core AI Infrastructure Holdings",
-    "reason": "中等置信度命中「Tiger Global」，待人工复核。",
-    "confidence": "67%",
-    "status": "review",
-    "href": "https://finance.biggo.com/news/4a72b69d-3ee9-4d2d-bb53-2187525da620",
-    "source": "finance.biggo.com",
     "sourceTier": "weak"
   },
   {
@@ -148,6 +148,16 @@
     "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
     "source": "Funds Global MENA",
     "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260805-vfcaxq",
+    "title": "XAI Floating Rate & Alternative Income Trust Urges Shareholders to Vote for King Street Sub-Advisory Agreement Before August 5 Deadline",
+    "reason": "中等置信度命中「King Street」，待人工复核。",
+    "confidence": "66%",
+    "status": "review",
+    "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+Before+August+5+Deadline",
+    "source": "Quiver Quantitative",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260803-dzsj43",
@@ -210,6 +220,26 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260805-xm9khk",
+    "title": "Arrowstreet Capital Limited Partnership Makes New $2.35 Million Investment in Hallador Energy Company $HNRG",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-235-million-investment-in-hallador-energy-company-hnrg-2026-08-05/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260805-z0ow1f",
+    "title": "Arrowstreet Capital Limited Partnership Purchases Shares of 72,287 Jefferies Financial Group Inc. $JEF",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-purchases-shares-of-72287-jefferies-financial-group-inc-jef-2026-08-05/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260804-4vwqsh",
     "title": "Bill Ackman's Pershing Square Owns Amazon, Microsoft, and Meta Platforms. Here's the Best Buy of the Bunch in August.",
     "reason": "中等置信度命中「Pershing Square」，待人工复核。",
@@ -222,11 +252,21 @@
   {
     "id": "rev-sig-20260803-jzsvqn",
     "title": "PIMCO: Nordic interest in asset-based finance, hedge funds and real estate on the up",
-    "reason": "弱信源「AMWatch」命中「PIMCO」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「amwatch.com」命中「PIMCO」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://amwatch.com/AMNews/Fund_Management/article19431058.ece",
-    "source": "AMWatch",
+    "source": "amwatch.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260805-ubb2v2",
+    "title": "BROOKFIELD ASSET MANAGEMENT ($BAM) Releases Q2 2026 Earnings",
+    "reason": "弱信源「Quiver Quantitative」命中「Brookfield」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.quiverquant.com/news/BROOKFIELD+ASSET+MANAGEMENT+%28%24BAM%29+Releases+Q2+2026+Earnings",
+    "source": "Quiver Quantitative",
     "sourceTier": "weak"
   }
 ]

@@ -42,6 +42,48 @@
     "href": "https://www.hedgeweek.com/ex-citadel-managers-fifthdelta-rebounds-with-8-6-gain-in-volatile-july/"
   },
   {
+    "id": "sig-20260805-s228s0",
+    "date": "2026.08.05",
+    "title": "Citadel posts strong July gains following acquisition of Situational Awareness equity portfolio",
+    "summary": "Citadel Investment Group 业绩相关：Citadel posts strong July gains following acquisition of Situational Awareness equity portfolio。",
+    "summaryEn": "Citadel Investment Group: performance update — Citadel posts strong July gains following acquisition of Situational Awareness equity portfolio.",
+    "fund": "Citadel Investment Group",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "业绩",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/citadel-posts-strong-july-gains-following-acquisition-of-situational-awareness-equity-portfolio/"
+  },
+  {
+    "id": "sig-20260805-um1zyl",
+    "date": "2026.08.05",
+    "title": "Balyasny, Verition Join Hedge Funds Losing in Brutal July",
+    "summary": "Balyasny Asset Management：Balyasny, Verition Join Hedge Funds Losing in Brutal July（动态）。",
+    "summaryEn": "Balyasny Asset Management: Balyasny, Verition Join Hedge Funds Losing in Brutal July.",
+    "fund": "Balyasny Asset Management",
+    "source": "Bloomberg.com",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.bloomberg.com/news/articles/2026-08-05/balyasny-verition-join-hedge-funds-losing-money-in-brutal-july"
+  },
+  {
+    "id": "sig-20260804-41n5gq",
+    "date": "2026.08.04",
+    "title": "Hedge fund scorecard: Citadel soars, while Millennium, Point72, and Asia funds slip in a chaotic July",
+    "summary": "Citadel Investment Group：Hedge fund scorecard: Citadel soars, while Millennium, Point72, and Asia funds slip in a chaotic July（动态）。",
+    "summaryEn": "Citadel Investment Group: Hedge fund scorecard: Citadel soars, while Millennium, Point72, and Asia funds slip in a chaotic July.",
+    "fund": "Citadel Investment Group",
+    "source": "Business Insider",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.businessinsider.com/july-multistrategy-hedge-fund-performance-2026-8"
+  },
+  {
     "id": "sig-20260804-v9i9cv",
     "date": "2026.08.04",
     "title": "Millennium Lost 2% Last Month as AI Trade Whipsawed Hedge Funds",
@@ -126,6 +168,20 @@
     "href": "https://www.hedgeweek.com/aqrs-tax-aware-strategy-fuels-growth/"
   },
   {
+    "id": "sig-20260804-k5syy7",
+    "date": "2026.08.04",
+    "title": "Third Point Q2 2026 Investor Letter",
+    "summary": "Third Point：Third Point Q2 2026 Investor Letter（动态）。",
+    "summaryEn": "Third Point: Third Point Q2 2026 Investor Letter.",
+    "fund": "Third Point",
+    "source": "Seeking Alpha",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://seekingalpha.com/article/4929706-third-point-q2-2026-investor-letter"
+  },
+  {
     "id": "sig-20260803-68csn0",
     "date": "2026.08.03",
     "title": "Citadel’s crisis investing playbook back in focus after AI hedge fund rescue",
@@ -138,32 +194,6 @@
     "tag": "动态",
     "status": "confirmed",
     "href": "https://www.hedgeweek.com/citadels-crisis-investing-playbook-back-in-focus-after-ai-hedge-fund-rescue/"
-  },
-  {
-    "id": "sig-20260731-ayf5ja",
-    "date": "2026.07.31",
-    "title": "Citadel acquires majority of Situational Awareness equity book after big losses",
-    "summary": "Citadel Investment Group：Citadel acquires majority of Situational Awareness equity book after big losses（动态）。",
-    "summaryEn": "Citadel Investment Group: Citadel acquires majority of Situational Awareness equity book after big losses.",
-    "fund": "Citadel Investment Group",
-    "source": "Hedgeweek",
-    "sourceTier": "designated",
-    "sourceTierLabel": "指定信源",
-    "tag": "动态",
-    "status": "confirmed",
-    "href": "https://www.hedgeweek.com/citadel-acquires-majority-of-situational-awareness-equity-book-after-big-losses/",
-    "relatedSources": [
-      {
-        "source": "Financial Times",
-        "href": "https://www.ft.com/content/4f00bd97-c3da-41af-9b92-410ebaa6ad2d?syn-25a6b1a6=1",
-        "title": "Citadel’s swoop on Situational Awareness helped stem a $3tn AI rout"
-      },
-      {
-        "source": "Reuters",
-        "href": "https://www.reuters.com/legal/legalindustry/with-situational-awareness-ai-deal-citadels-griffin-rides-rescue-again-2026-07-31/",
-        "title": "With Situational Awareness AI deal, Citadel's Griffin rides to the rescue again"
-      }
-    ]
   },
   {
     "id": "sig-20260731-vn2isr",
