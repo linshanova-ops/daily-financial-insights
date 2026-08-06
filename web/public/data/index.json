@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-06T07:29:26.309Z",
-  "latest": "2026-08-03",
+  "generatedAt": "2026-08-06T07:55:09.143Z",
+  "latest": "2026-08-06",
   "briefings": [
+    {
+      "date": "2026-08-06",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Hormuz diplomacy keeps oil soft while US equities digest record highs: Aug 5 S&P slipped 0.17% to 7,723.55 with Alphabet −4.05%, soft ADP +44k, and hedge-fund AI vishing headlines hitting Point72/Citadel/Millennium/Two Sigma.",
+      "coverageWindow": "August 3–6, 2026"
+    },
     {
       "date": "2026-08-03",
       "title": "Daily Financial Briefing",
