@@ -1,5 +1,5 @@
 {
-  "at": "2026-08-06T05:25:28.198Z",
+  "at": "2026-08-06T05:30:49.590Z",
   "briefingDate": "2026-08-06",
   "ok": true,
   "saved": [
@@ -125,20 +125,6 @@
       "emailDay": "2026-07-23",
       "bjDay": "2026-07-24",
       "briefingDate": "2026-08-06"
-    },
-    {
-      "reason": "date-mismatch",
-      "subject": "彭博财经早茶：油轮红海遇袭；Alphabet上调支出预估",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-07-22",
-      "bjDay": "2026-07-23",
-      "briefingDate": "2026-08-06"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Optimism Meets Overhead",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
     }
   ]
 }
