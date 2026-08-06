@@ -32,11 +32,11 @@
   {
     "id": "rev-sig-20260805-xnsk04",
     "title": "Citadel funds gain in July as many hedge funds nurse AI selloff related losses",
-    "reason": "弱信源「streetinsider.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「StreetInsider」命中「Citadel」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://www.streetinsider.com/Reuters/Citadel+funds+gain+in+July+as+many+hedge+funds+nurse+AI+selloff+related+losses/26870466.html",
-    "source": "streetinsider.com",
+    "source": "StreetInsider",
     "sourceTier": "weak"
   },
   {
@@ -136,7 +136,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/articles/2026-08-03/coatue-s-hedge-fund-sinks-8-in-worst-drop-in-more-than-a-year",
-    "source": "bloomberg.com",
+    "source": "Bloomberg.com",
     "sourceTier": "secondary"
   },
   {
@@ -146,7 +146,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/videos/2026-08-04/coatue-s-hedge-fund-sees-worst-drop-in-more-than-a-year-video",
-    "source": "bloomberg.com",
+    "source": "Bloomberg.com",
     "sourceTier": "secondary"
   },
   {
@@ -226,17 +226,7 @@
     "confidence": "70%",
     "status": "review",
     "href": "https://www.fool.com/investing/2026/08/03/bill-ackmans-pershing-square-owns-amazon-microsoft/",
-    "source": "The Motley Fool",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260806-4ydqve",
-    "title": "Al Waha Capital PJSC (ADX:WAHA) (Q2 2026) Earnings Call Highlights: Net Profit Surges 62% on ... By GuruFocus",
-    "reason": "弱信源「Investing.com Canada」命中「Waha」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://ca.investing.com/news/company-news/al-waha-capital-pjsc-adxwaha-q2-2026-earnings-call-highlights-net-profit-surges-62-on--4779832",
-    "source": "Investing.com Canada",
+    "source": "fool.com",
     "sourceTier": "weak"
   },
   {
