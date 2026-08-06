@@ -30,6 +30,26 @@ Supporting modules unchanged in role:
 - Global/China are **not** the dumping ground for WS/BlockBeats/ChainCatcher/CICC headlines.
 - Those four sources deepen **asset** and **signals**; Watch is the forward radar.
 
+## Smart reuse (same fact → different insights; no copy-paste)
+
+The same underlying information **may** appear across modules — that is how a desk works.
+What must **not** appear is the **same sentence / same framing** repeated in Global, Assets, Signals, and Watch.
+
+| Lane | Transform of the same fact |
+|------|----------------------------|
+| **Global / China** | *What happened* (Bloomberg spine fact) |
+| **By asset** | *How it changes the hold* (regime / driver / read / invalidator) |
+| **Signals** | *Multi-day theme* (evidence → mechanism → disprovedIf) |
+| **Watch** | *Next check* (dated event or trigger level — forward only) |
+| **Skim** | *Stance change in one line* (no restating the full fact list) |
+
+**Rules for generate / UI**
+
+1. **Reuse the fact, rewrite the job.** One ETF-flow print can become a Global crypto-macro clause, a BTC asset driver, a liquidity Signal, and a Watch trigger at 6.7万 — four insights, four wordings.
+2. **No verbatim doubles.** If two modules would show near-identical text, keep the best lane and turn the other into a distinct analytic angle (or a short pointer).
+3. **Cluster at capture.** Same story from 华尔街见闻 + ChainCatcher + BlockBeats → one cluster → multiple *derived* insights, not three pasted headlines.
+4. **Density caps stay.** Depth comes from better transforms, not longer duplicate lists (~5 skim · Global/China bounded · 8 assets · ≤6 signals · ≤2–3 Watch items/desk).
+
 ## Source roles
 
 | Source | Capture | Allowed use |
@@ -188,4 +208,5 @@ Fail-closed: scan-links, denylists, no invented levels, crypto triangulation.
 - Asset rows cite WS/BB/CC/CICC where they actually drive the read.  
 - Signals read as multi-day themes with clear invalidators.  
 - Watch shows dated calendar + desk boards, not an unread RSS feed.  
+- Same underlying facts may power multiple modules, but the site must not show near-verbatim repetitive copy across modules.  
 - CI `scan-links` / verify-briefing stay green.
