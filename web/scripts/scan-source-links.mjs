@@ -943,6 +943,39 @@ function loadClaimGroups() {
       });
     }
 
+    if (Array.isArray(data.assetClasses)) {
+      data.assetClasses.forEach((block, bi) => {
+        const instruments = Array.isArray(block?.instruments)
+          ? block.instruments
+          : [];
+        instruments.forEach((inst, ii) => {
+          if (inst?.driver && Array.isArray(inst.driverSources)) {
+            addGroup(
+              `${file}.assetClasses[${bi}].instruments[${ii}].driver`,
+              inst.driver,
+              inst.driverSources,
+            );
+          }
+        });
+      });
+    }
+
+    if (data.eventCalendar && Array.isArray(data.eventCalendar.events)) {
+      data.eventCalendar.events.forEach((ev, i) => {
+        const text = [ev?.event, ev?.consensus, ev?.prior]
+          .filter(Boolean)
+          .join(" ");
+        const sources = Array.isArray(ev?.sources) && ev.sources.length
+          ? ev.sources
+          : ev?.source
+            ? [ev.source]
+            : [];
+        if (text && sources.length) {
+          addGroup(`${file}.eventCalendar.events[${i}]`, text, sources);
+        }
+      });
+    }
+
     if (Array.isArray(data.signals)) {
       data.signals.forEach((row, i) => {
         if (row?.evidence && Array.isArray(row.evidenceSources)) {

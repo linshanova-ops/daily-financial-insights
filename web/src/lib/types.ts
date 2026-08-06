@@ -71,6 +71,61 @@ export interface AssetView {
   invalidator: string;
 }
 
+export type EventRegion = "US" | "China" | "Japan" | "UK" | "EU" | "Other";
+export type EventCategory =
+  | "data"
+  | "central-bank"
+  | "earnings"
+  | "ipo"
+  | "fiscal-flow";
+
+/** Dated release / speech in the Event Calendar (replaces narrative Watch). */
+export interface CalendarEvent {
+  id: string;
+  date: string;
+  timeBeijing?: string;
+  region: EventRegion;
+  category: EventCategory;
+  event: string;
+  consensus?: string;
+  prior?: string;
+  themeId?: string;
+  source: FactSource;
+  sources?: FactSource[];
+}
+
+export interface EventCalendar {
+  windowStart: string;
+  windowEnd: string;
+  note?: string;
+  events: CalendarEvent[];
+}
+
+export type AssetClassId =
+  | "us-equities"
+  | "china-hk-equities"
+  | "rates"
+  | "fx"
+  | "commodities"
+  | "crypto";
+
+export interface AssetInstrument {
+  name: string;
+  driver: string;
+  driverSources?: FactSource[];
+  read: string;
+  invalidator?: string;
+  themeId?: string;
+}
+
+/** Asset Framework grouped by class (currencies nest under FX). */
+export interface AssetClassBlock {
+  id: AssetClassId;
+  title: string;
+  regime: string;
+  instruments: AssetInstrument[];
+}
+
 /** A fact line with optional click-through to the original source post. */
 export interface SourcedFact {
   text: string;
@@ -194,6 +249,16 @@ export interface BriefingFrontmatter {
    * trigger → invalidation). Optional for older briefings.
    */
   themeCards?: ThemeCard[];
+  /**
+   * Event Calendar — dated prints from briefing day through next Friday.
+   * Preferred over narrative watchItems for new briefings.
+   */
+  eventCalendar?: EventCalendar;
+  /**
+   * Assets by class (US equities · China/HK · Rates · FX · Commodities · Crypto).
+   * Preferred over flat assetFramework for new briefings.
+   */
+  assetClasses?: AssetClassBlock[];
   signals: Signal[];
   watchItems: WatchItem[];
   sources: string;

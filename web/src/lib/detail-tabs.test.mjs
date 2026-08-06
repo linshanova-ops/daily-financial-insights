@@ -19,7 +19,8 @@ describe("detailTabFromHash", () => {
     assert.equal(detailTabFromHash("#china-situation"), "china");
     assert.equal(detailTabFromHash("#asset-framework"), "assets");
     assert.equal(detailTabFromHash("#signals"), "signals");
-    assert.equal(detailTabFromHash("#watch"), "watch");
+    assert.equal(detailTabFromHash("#watch"), "calendar");
+    assert.equal(detailTabFromHash("#calendar"), "calendar");
     assert.equal(detailTabFromHash("#sources"), "sources");
     assert.equal(detailTabFromHash("#sources-caveats"), "sources");
     assert.equal(detailTabFromHash("#detail"), "signals");
@@ -32,6 +33,8 @@ describe("detailTabFromHash", () => {
     assert.equal(isKnownDetailHash("#china-situation"), true);
     assert.equal(isKnownDetailHash("#detail"), true);
     assert.equal(isKnownDetailHash("#sources-caveats"), true);
+    assert.equal(isKnownDetailHash("#calendar"), true);
+    assert.equal(isKnownDetailHash("#watch"), true);
   });
 
   it("accepts bare ids without hash", () => {
@@ -41,7 +44,7 @@ describe("detailTabFromHash", () => {
   it("exposes six tabs in order", () => {
     assert.deepEqual(
       DETAIL_TABS.map((t) => t.id),
-      ["global", "china", "assets", "signals", "watch", "sources"],
+      ["global", "china", "assets", "signals", "calendar", "sources"],
     );
   });
 });
