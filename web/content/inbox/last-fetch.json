@@ -1,17 +1,12 @@
 {
-  "at": "2026-08-06T00:01:08.774Z",
+  "at": "2026-08-06T00:05:27.299Z",
   "briefingDate": "2026-08-06",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-06.md",
-      "subject": "彭博财经早茶：伊朗或开辟海峡临时航道；黑客攻击大型对冲基金",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5212,
-      "mailbox": "INBOX",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-06.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-06.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -25,6 +20,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：伊朗或开辟海峡临时航道；黑客攻击大型对冲基金",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-06.md"
+    },
     {
       "reason": "weekly-exists",
       "subject": "Priced For Nothing, Reacting To Everything",
