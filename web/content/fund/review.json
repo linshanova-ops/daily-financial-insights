@@ -30,16 +30,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260804-41n5gq",
-    "title": "Hedge fund scorecard: Citadel soars, while Millennium, Point72, and Asia funds slip in a chaotic July",
-    "reason": "弱信源「businessinsider.com」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.businessinsider.com/july-multistrategy-hedge-fund-performance-2026-8",
-    "source": "businessinsider.com",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260804-6b3t3a",
     "title": "Billionaire Ken Griffin Just Saved Situational Awareness, But Here’s What a Rescue Call From Citadel Really Sounds Like — ‘I… Heard the Grim Reaper’s Scythe’",
     "reason": "弱信源「Barchart.com」命中「Citadel」— 不进入确定命中，待人工复核。",
@@ -206,6 +196,16 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-ultra-clean-holdings-inc-uctt-2026-08-04/",
+    "source": "marketbeat.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260805-xm9khk",
+    "title": "Arrowstreet Capital Limited Partnership Makes New $2.35 Million Investment in Hallador Energy Company $HNRG",
+    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-235-million-investment-in-hallador-energy-company-hnrg-2026-08-05/",
     "source": "marketbeat.com",
     "sourceTier": "weak"
   },
