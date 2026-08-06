@@ -30,6 +30,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260804-41n5gq",
+    "title": "Hedge fund scorecard: Citadel soars, while Millennium, Point72, and Asia funds slip in a chaotic July",
+    "reason": "弱信源「businessinsider.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.businessinsider.com/july-multistrategy-hedge-fund-performance-2026-8",
+    "source": "businessinsider.com",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260804-6b3t3a",
     "title": "Billionaire Ken Griffin Just Saved Situational Awareness, But Here’s What a Rescue Call From Citadel Really Sounds Like — ‘I… Heard the Grim Reaper’s Scythe’",
     "reason": "弱信源「Barchart.com」命中「Citadel」— 不进入确定命中，待人工复核。",
@@ -40,12 +50,12 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260805-b06hy5",
-    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
-    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260806-3ylcy7",
+    "title": "Balyasny and Verition report losses as AI stock selloff rattles hedge fund giants",
+    "reason": "弱信源「Bitget」命中「Balyasny」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
-    "href": "https://www.bitget.com/asia/news/detail/12560605615264",
+    "href": "https://www.bitget.com/asia/amp/news/detail/12560605617664",
     "source": "Bitget",
     "sourceTier": "weak"
   },
@@ -136,7 +146,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/articles/2026-08-03/coatue-s-hedge-fund-sinks-8-in-worst-drop-in-more-than-a-year",
-    "source": "Bloomberg.com",
+    "source": "bloomberg.com",
     "sourceTier": "secondary"
   },
   {
@@ -146,7 +156,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/videos/2026-08-04/coatue-s-hedge-fund-sees-worst-drop-in-more-than-a-year-video",
-    "source": "Bloomberg.com",
+    "source": "bloomberg.com",
     "sourceTier": "secondary"
   },
   {
@@ -226,7 +236,7 @@
     "confidence": "70%",
     "status": "review",
     "href": "https://www.fool.com/investing/2026/08/03/bill-ackmans-pershing-square-owns-amazon-microsoft/",
-    "source": "fool.com",
+    "source": "The Motley Fool",
     "sourceTier": "weak"
   },
   {
