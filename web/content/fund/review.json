@@ -2,11 +2,11 @@
   {
     "id": "rev-sig-20260805-xnsk04",
     "title": "Citadel funds gain in July as many hedge funds nurse AI selloff related losses",
-    "reason": "弱信源「kfgo.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「The Mighty 790 KFGO」命中「Citadel」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://kfgo.com/2026/08/05/citadel-funds-gain-in-july-as-many-hedge-funds-nurse-ai-sell-off-related-losses/",
-    "source": "kfgo.com",
+    "source": "The Mighty 790 KFGO",
     "sourceTier": "weak"
   },
   {
@@ -246,17 +246,17 @@
     "confidence": "70%",
     "status": "review",
     "href": "https://www.fool.com/investing/2026/08/03/bill-ackmans-pershing-square-owns-amazon-microsoft/",
-    "source": "The Motley Fool",
+    "source": "fool.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260803-jzsvqn",
     "title": "PIMCO: Nordic interest in asset-based finance, hedge funds and real estate on the up",
-    "reason": "弱信源「amwatch.com」命中「PIMCO」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「AMWatch」命中「PIMCO」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://amwatch.com/AMNews/Fund_Management/article19431058.ece",
-    "source": "amwatch.com",
+    "source": "AMWatch",
     "sourceTier": "weak"
   },
   {
