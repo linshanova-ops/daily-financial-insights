@@ -179,7 +179,11 @@ function urlYearTrust(href, briefingYear) {
  * reachability failures so Pages deploy is not flaky; claims still need
  * co-sources when evidence is required.
  */
-const FLAKY_OFFICIAL_HOSTS = [/bok\.or\.kr/i, /news\.cnyes\.com/i];
+const FLAKY_OFFICIAL_HOSTS = [
+  /bok\.or\.kr/i,
+  /news\.cnyes\.com/i,
+  /ismworld\.org/i,
+];
 
 function flakyOfficialHost(href) {
   return FLAKY_OFFICIAL_HOSTS.some((re) => re.test(href));
