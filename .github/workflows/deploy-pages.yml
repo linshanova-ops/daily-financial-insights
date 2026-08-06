@@ -16,10 +16,13 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  deployments: write
 
+# Do not cancel in-progress deploys: cancelled deploy-pages runs leave
+# GitHub Pages requests stuck in deployment_queued and block later publishes.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -30,6 +33,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
+      # Required so Actions-sourced Pages actually processes deploy-pages
+      # requests (otherwise they sit forever at deployment_queued).
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Setup Node
         uses: actions/setup-node@v5
@@ -64,6 +72,27 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Clear stale Pages deployment statuses
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          # Release environment lock if prior deploy-pages timed out while queued.
+          ids=$(gh api "repos/${{ github.repository }}/deployments?environment=github-pages&per_page=15" \
+            --jq '.[].id')
+          for id in $ids; do
+            state=$(gh api "repos/${{ github.repository }}/deployments/${id}/statuses" \
+              --jq '.[0].state // "none"')
+            echo "deployment ${id}: ${state}"
+            if [ "$state" = "queued" ] || [ "$state" = "in_progress" ] || [ "$state" = "pending" ]; then
+              echo "Marking ${id} inactive"
+              gh api -X POST "repos/${{ github.repository }}/deployments/${id}/statuses" \
+                -f state=inactive \
+                -f description="cleared before republish" \
+                >/dev/null || true
+            fi
+          done
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
