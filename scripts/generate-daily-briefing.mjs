@@ -134,12 +134,14 @@ TOKEN BUDGET (critical): Prefer inbox merge + a few primary corroborations. Do N
 
 Standing accuracy (docs/CONTENT_ACCURACY.md): omit unverifiable numbers; 10亿元=CNY1bn; beat/miss vs estimate only; label dates must match URL /YYYY/MM/DD/; crypto needs ≥2 dated sources; never invent tape (inject marketDashboard).
 
+Theme cards (required — docs/superpowers/specs/2026-08-06-module-source-depth-design.md): themeCards[] of 3–5 is the ONLY full narrative of each core story (fact → mechanism → trigger → invalidator → horizon → status → grade → optional assets/factSources). One event → one theme card. Skim/summary may list short titles that match theme titles (UI anchors to #theme-{id}); Global/China stay spine facts (Bloomberg); Signals stay compact grade/evidence pointers; Watch stays forward calendar/triggers — NEVER paste the same wording across modules. Assets may cite themes as different insights, not verbatim doubles.
+
 Fail-closed: branch \`${branchName}\`, PR title exactly \`${prTitle}\`, never push/merge main. CI runs verify-briefing.
 
 Steps:
 1) Merge IMAP inbox on this branch (already fetched). Section map — 国际要闻→globalChanged (1 Chinese bullet each); 大中华新闻→chinaChanged (1 Chinese bullet each); 市场一览→marketOverview.items; 日程+央行动态→watchItems; 今日图表→figures id=bloomberg-chart-of-day kind=insight (open chartImage PNG first; analysis must describe the chart metric/levels — never "image saved / no caption"). Glassnode Insights (weekly, when captured): use email body only (never fetch "Read full report"); add 1 sourced globalChanged on-chain line + signals/watch when clearly supported; optional figures[] id=glassnode-weekly. Cite stable Bloomberg Asia href only for newsletter; Glassnode newsletter landing for weekly. Attach stronger primaries when available.
 2) Light web corroboration only for hard US closes / oil settles / China official prints missing from inbox.
-3) Write web/content/briefings/${today}.md (all schema keys; sourced summary/globalChanged/chinaChanged; assetFramework×8; publishedAt=now UTC). Keep inbox/** bytes unchanged; keep inbox-charts/**.
+3) Write web/content/briefings/${today}.md (all schema keys; themeCards×3–5; sourced summary/globalChanged/chinaChanged; assetFramework×8; publishedAt=now UTC). Keep inbox/** bytes unchanged; keep inbox-charts/**.
 4) From web/: node scripts/fetch-market-closes.mjs --inject content/briefings/${today}.md
 5) From web/: npm ci && npm run verify-briefing — fix until green; commit md+JSON together.
 6) Push \`${branchName}\`, open/update PR. Reply: DONE ${today} BRANCH=${branchName} PR=<url>

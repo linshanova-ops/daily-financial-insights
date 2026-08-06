@@ -20,10 +20,18 @@ interface DetailTabsProps {
   panels: DetailTabPanels;
 }
 
+function scrollDetailIntoView() {
+  document.getElementById("detail")?.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
+}
+
 export function DetailTabs({ panels }: DetailTabsProps) {
   const baseId = useId();
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<DetailTabId>("signals");
+  const [pendingScroll, setPendingScroll] = useState(false);
 
   useEffect(() => {
     const sync = () => {
@@ -31,18 +39,27 @@ export function DetailTabs({ panels }: DetailTabsProps) {
       if (!isKnownDetailHash(hash)) return;
       setOpen(true);
       setActive(detailTabFromHash(hash));
-      requestAnimationFrame(() => {
-        document.getElementById("detail")?.scrollIntoView({ block: "start" });
-      });
+      setPendingScroll(true);
     };
     sync();
     window.addEventListener("hashchange", sync);
     return () => window.removeEventListener("hashchange", sync);
   }, []);
 
+  // Scroll only after Detail is open so the tab panel has layout height.
+  useEffect(() => {
+    if (!open || !pendingScroll) return;
+    const id = window.requestAnimationFrame(() => {
+      scrollDetailIntoView();
+      setPendingScroll(false);
+    });
+    return () => window.cancelAnimationFrame(id);
+  }, [open, pendingScroll, active]);
+
   function openModules(id: DetailTabId = "signals", syncHash = true) {
     setOpen(true);
     setActive(id);
+    setPendingScroll(true);
     if (!syncHash) return;
     const hash = DETAIL_TABS.find((t) => t.id === id)?.hashes[0] ?? "detail";
     const next = `#${hash}`;
@@ -54,6 +71,7 @@ export function DetailTabs({ panels }: DetailTabsProps) {
 
   function selectTab(id: DetailTabId, syncHash: boolean) {
     setActive(id);
+    setPendingScroll(true);
     if (!syncHash) return;
     const hash = DETAIL_TABS.find((t) => t.id === id)?.hashes[0];
     if (hash) {
@@ -142,7 +160,6 @@ export function DetailTabs({ panels }: DetailTabsProps) {
             );
           })
         : null}
-      {/* Keep module content mounted for static completeness when closed */}
       {!open
         ? DETAIL_TABS.map((tab) => (
             <div key={`closed-${tab.id}`} hidden>

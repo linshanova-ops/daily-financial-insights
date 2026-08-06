@@ -1,10 +1,11 @@
-import type { Briefing } from "@/lib/types";
+import type { Briefing, ThemeCard } from "@/lib/types";
 import { BriefingHero } from "./BriefingHero";
 import { ExecutiveSummary } from "./ExecutiveSummary";
 import { SituationBlock } from "./SituationBlock";
 import { AssetFramework } from "./AssetFramework";
 import { SignalList } from "./SignalList";
 import { WatchList } from "./WatchList";
+import { ThemeCards } from "./ThemeCards";
 import { SourcesCaveats } from "./SourcesCaveats";
 import { KeySources } from "./KeySources";
 import { KeyFigures } from "./KeyFigures";
@@ -30,10 +31,12 @@ export function BriefingView({
   publishedAtFallback = null,
 }: BriefingViewProps) {
   const figures = briefing.figures ?? [];
+  const themeCards: ThemeCard[] = briefing.themeCards ?? [];
   const marketOverview = briefing.marketOverview;
   const marketDashboard = briefing.marketDashboard;
   const hasMarketOverview = Boolean(marketOverview?.items?.length);
   const hasMarketDashboard = Boolean(marketDashboard?.groups?.length);
+  const hasThemes = themeCards.length > 0;
 
   return (
     <>
@@ -51,14 +54,17 @@ export function BriefingView({
         hasFigures={figures.length > 0}
         hasMarketOverview={hasMarketOverview}
         hasMarketDashboard={hasMarketDashboard}
+        hasThemes={hasThemes}
       />
       <div id="skim" className="scroll-mt-28">
         <ExecutiveSummary
           summary={briefing.summary}
           signal={briefing.signal}
           watch={briefing.watch}
+          themes={themeCards}
         />
       </div>
+      {hasThemes ? <ThemeCards themes={themeCards} /> : null}
       <PreviousBriefingLink previousDate={previousDate} />
       <div className="mx-auto mb-2 w-full max-w-6xl px-5 pt-4 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
         Coverage window: {briefing.coverageWindow}
