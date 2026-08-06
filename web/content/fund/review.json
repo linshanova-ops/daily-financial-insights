@@ -1,13 +1,13 @@
 [
   {
-    "id": "rev-sig-20260805-xnsk04",
-    "title": "Citadel funds gain in July as many hedge funds nurse AI selloff related losses",
-    "reason": "弱信源「The Mighty 790 KFGO」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
+    "id": "rev-sig-20260806-sq13fb",
+    "title": "Making the case for hedge funds as next-generation diversifiers",
+    "reason": "中等置信度命中「Wellington」，待人工复核。",
+    "confidence": "65%",
     "status": "review",
-    "href": "https://kfgo.com/2026/08/05/citadel-funds-gain-in-july-as-many-hedge-funds-nurse-ai-sell-off-related-losses/",
-    "source": "The Mighty 790 KFGO",
-    "sourceTier": "weak"
+    "href": "https://www.hedgeweek.com/making-the-case-for-hedge-funds-as-next-generation-diversifiers/",
+    "source": "Hedgeweek",
+    "sourceTier": "designated"
   },
   {
     "id": "rev-sig-20260806-oe1f4l",
@@ -20,6 +20,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260805-xnsk04",
+    "title": "Citadel funds gain in July as many hedge funds nurse AI selloff related losses",
+    "reason": "弱信源「The Mighty 790 KFGO」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://kfgo.com/2026/08/05/citadel-funds-gain-in-july-as-many-hedge-funds-nurse-ai-sell-off-related-losses/",
+    "source": "The Mighty 790 KFGO",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260804-6b3t3a",
     "title": "Billionaire Ken Griffin Just Saved Situational Awareness, But Here’s What a Rescue Call From Citadel Really Sounds Like — ‘I… Heard the Grim Reaper’s Scythe’",
     "reason": "弱信源「Barchart.com」命中「Citadel」— 不进入确定命中，待人工复核。",
@@ -27,6 +37,16 @@
     "status": "review",
     "href": "https://www.barchart.com/story/news/3619493/billionaire-ken-griffin-just-saved-situational-awareness-but-heres-what-a-rescue-call-from-citadel-really-sounds-like-i-heard-the-grim-reapers-scythe",
     "source": "Barchart.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260805-b06hy5",
+    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
+    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.bitget.com/asia/news/detail/12560605615264",
+    "source": "Bitget",
     "sourceTier": "weak"
   },
   {
@@ -47,6 +67,16 @@
     "status": "review",
     "href": "https://www.efinancialcareers.com/news/point72-hired-a-discretionary-macro-trading-head-from-a-quant-hedge-fund",
     "source": "eFinancialCareers",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260806-5983lf",
+    "title": "Wall Street giants Citadel, Two Sigma, Point72 targeted in wave of AI vishing attacks",
+    "reason": "弱信源「Cybernews」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://cybernews.com/security/wall-street-ai-vishing-citadel-two-sigma-point72/",
+    "source": "Cybernews",
     "sourceTier": "weak"
   },
   {
@@ -96,17 +126,17 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.businesswire.com/news/home/20260803466906/en/Talcott-Financial-Group-Launches-West-Grove-Re-in-Partnership-with-Goldman-Sachs",
-    "source": "businesswire.com",
+    "source": "Business Wire",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260805-54272k",
     "title": "Michael Patchen, Former Partner & Chief Risk Officer at AQR Capital Management, Joins Star Mountain Capital as Senior Advisor",
-    "reason": "弱信源「businesswire.com」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「Business Wire」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.businesswire.com/news/home/20260804283873/en/Michael-Patchen-Former-Partner-Chief-Risk-Officer-at-AQR-Capital-Management-Joins-Star-Mountain-Capital-as-Senior-Advisor",
-    "source": "businesswire.com",
+    "source": "Business Wire",
     "sourceTier": "weak"
   },
   {
@@ -116,7 +146,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/articles/2026-08-03/coatue-s-hedge-fund-sinks-8-in-worst-drop-in-more-than-a-year",
-    "source": "bloomberg.com",
+    "source": "Bloomberg.com",
     "sourceTier": "secondary"
   },
   {
@@ -126,8 +156,28 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/videos/2026-08-04/coatue-s-hedge-fund-sees-worst-drop-in-more-than-a-year-video",
-    "source": "bloomberg.com",
+    "source": "Bloomberg.com",
     "sourceTier": "secondary"
+  },
+  {
+    "id": "rev-sig-20260806-kzjkh0",
+    "title": "Omnivore bets big on deep science, agrifood consumer brands with remaining Fund III capital",
+    "reason": "弱信源「livemint.com」命中「III Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.livemint.com/companies/omnivore-venture-capital-agrifood-deeptech-consumer-brands-physical-ai-robotics-fund-iii-mark-kahn-11785986724498.html",
+    "source": "livemint.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260806-1p66ol",
+    "title": "Omnivore To Deploy Remaining ₹1,800 Crore Fund III Capital",
+    "reason": "弱信源「Whalesbook」命中「III Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.whalesbook.com/news/English/bankingfinance/Omnivore-To-Deploy-Remaining-indian-rupee1800-Crore-Fund-III-Capital/6a744a14699b085e86f5262b",
+    "source": "Whalesbook",
+    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260805-vfcaxq",
@@ -147,36 +197,6 @@
     "status": "review",
     "href": "https://www.quiverquant.com/news/XFLT+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+as+Board+Liquidity+Plan+Gains+Support",
     "source": "Quiver Quantitative",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260803-olq63m",
-    "title": "Kayne Anderson Energy Infrastructure Fund Declares August 2026 Monthly Distribution of $0.09 per Share",
-    "reason": "中等置信度命中「Kayne Anderson」，待人工复核。",
-    "confidence": "69%",
-    "status": "review",
-    "href": "https://www.quiverquant.com/news/Kayne+Anderson+Energy+Infrastructure+Fund+Declares+August+2026+Monthly+Distribution+of+%240.09+per+Share",
-    "source": "Quiver Quantitative",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260803-8zf9mb",
-    "title": "Kayne Anderson sets Aug. 31 date for $0.09 stockholder payment",
-    "reason": "中等置信度命中「Kayne Anderson」，待人工复核。",
-    "confidence": "69%",
-    "status": "review",
-    "href": "https://www.stocktitan.net/news/KYN/kayne-anderson-energy-infrastructure-fund-announces-distribution-of-272t62ij8nkw.html",
-    "source": "Stock Titan",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260803-t7hcqz",
-    "title": "Kayne Anderson Energy Infrastructure Fund Announces Distribution of $0.09 Per Share for August 2026",
-    "reason": "中等置信度命中「Kayne Anderson」，待人工复核。",
-    "confidence": "69%",
-    "status": "review",
-    "href": "https://www.manilatimes.net/2026/08/03/tmt-newswire/globenewswire/kayne-anderson-energy-infrastructure-fund-announces-distribution-of-009-per-share-for-august-2026/2396974/amp",
-    "source": "The Manila Times",
     "sourceTier": "weak"
   },
   {
@@ -217,6 +237,16 @@
     "status": "review",
     "href": "https://www.fool.com/investing/2026/08/03/bill-ackmans-pershing-square-owns-amazon-microsoft/",
     "source": "The Motley Fool",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260806-4ydqve",
+    "title": "Al Waha Capital PJSC (ADX:WAHA) (Q2 2026) Earnings Call Highlights: Net Profit Surges 62% on ... By GuruFocus",
+    "reason": "弱信源「Investing.com Canada」命中「Waha」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://ca.investing.com/news/company-news/al-waha-capital-pjsc-adxwaha-q2-2026-earnings-call-highlights-net-profit-surges-62-on--4779832",
+    "source": "Investing.com Canada",
     "sourceTier": "weak"
   },
   {

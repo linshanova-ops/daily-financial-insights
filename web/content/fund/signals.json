@@ -1,5 +1,47 @@
 [
   {
+    "id": "sig-20260806-peb0cq",
+    "date": "2026.08.06",
+    "title": "Citadel quant developer joins Kalshi",
+    "summary": "Citadel Investment Group 人事/招聘动向：Citadel quant developer joins Kalshi。",
+    "summaryEn": "Citadel Investment Group: hiring / personnel move — Citadel quant developer joins Kalshi.",
+    "fund": "Citadel Investment Group",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "人员 / 招聘",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/citadel-quant-developer-joins-kalshi/"
+  },
+  {
+    "id": "sig-20260806-6cj2ub",
+    "date": "2026.08.06",
+    "title": "Point72 recruits senior macro trading executive from AQR Capital Management",
+    "summary": "AQR Capital Management 募资/扩容信号：Point72 recruits senior macro trading executive from AQR Capital Management。",
+    "summaryEn": "AQR Capital Management: capital / fundraising signal — Point72 recruits senior macro trading executive from AQR Capital Management.",
+    "fund": "AQR Capital Management",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "募资",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/point72-recruits-senior-macro-trading-executive-from-aqr-capital-management/"
+  },
+  {
+    "id": "sig-20260806-yms5b1",
+    "date": "2026.08.06",
+    "title": "Millennium lands natural gas trader ahead of Point72",
+    "summary": "Point72 Asset Management：Millennium lands natural gas trader ahead of Point72（动态）。",
+    "summaryEn": "Point72 Asset Management: Millennium lands natural gas trader ahead of Point72.",
+    "fund": "Point72 Asset Management",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/millennium-lands-natural-gas-trader-ahead-of-point72/"
+  },
+  {
     "id": "sig-20260805-a0q4xv",
     "date": "2026.08.05",
     "title": "D.E. Shaw’s Latest Offering",
