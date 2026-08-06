@@ -1,212 +1,242 @@
-# Module source depth + Watch radar design
+# Module source depth + theme-card site design
+
+> Merged from:
+> - locked module/source framework (2026-08-06 conversation)
+> - `syravocado-网站改进建议.md`
+> - `daily-financial-insights-source-integration-plan.md`
+>
+> Status: **design frame for approval** — do not implement until approved.
 
 ## Goal
 
-Upgrade syravocado so modules are fed by the right sources and publish **in-depth analysis**, not raw news dumps. Capture expands (ChainCatcher, BlockBeats, 华尔街见闻, CICC); Global/China stay Bloomberg-email-native; Asset / Signals / Watch get clearer jobs.
+Make syravocado a **smarter judgment site**: more sources, **less repetition**, deeper insight.
 
-## Locked framework (approved direction)
+- Capture: Bloomberg + Glassnode + 华尔街见闻 + BlockBeats + ChainCatcher + CICC  
+- Publish: **one event → one theme card** (full story once); other modules **reuse as different insights**, never paste the same wording  
+- Fix today’s failure mode: the same story rewritten 5–7 times across Skim / Tape / Global / Assets / Signals / Watch  
+
+---
+
+## Design frame (approve this)
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│ STATUS BAR                                                   │
+│ as-of time · data口径 (上一收盘 / 今日亚洲 / 滚动24h) · freshness │
+└──────────────────────────────────────────────────────────────┘
+
+1  THEME CARDS ×3–5          ← ONLY place that fully expands a story
+   fact · mechanism · trigger · invalidation · source drawer
+   (absorbs today’s Skim + Signals + Watch narrative duplication)
+
+2  COMPACT CLOSES            ← levels live here (full table foldable)
+   optional later: 关键位/距离 tied to invalidators
+
+3  PRIOR SCORECARD           ← holding / triggered / invalidated / faded
+
+4  CLAIM DESK (观点台)        ← 中金 & institution views (L2)
+   must attach: 印证主线 / 冲突主线 / 开新线
+
+5  DETAIL SPINE
+   Global  = Bloomberg email facts (+ grouped / fold)
+   China   = Bloomberg email facts (+ 见闻 only for China resolution)
+   Assets  = FILTER / reuse of theme cards (hold lens), not a 2nd news wire
+   Crypto  = conditional tab if enough items; else under Assets
+
+6  WATCH (forward only)
+   A. Event calendar (dated)
+   B. Ongoing risks / desk triggers (no re-telling theme cards)
+
+7  SOURCES & METHOD (drawer / fold)
+   coverage matrix · not pipeline logs
+```
+
+### One-line ownership rules
+
+| Content | Belongs to |
+|---------|------------|
+| Prices / levels | Closes panel only |
+| Final narrative of an event | **Theme card only** |
+| “What Bloomberg said happened” list | Global / China spine |
+| Portfolio hold lens | Assets (points at theme cards) |
+| Multi-day theme mechanics | Inside theme card (signal fields) |
+| Next dated check / forward trigger | Watch |
+| Signed third-party view | CLAIM desk |
+| Full URLs / multi-source evidence | Source drawer |
+
+**Smart reuse:** same underlying fact may power theme + asset filter + Watch trigger + CLAIM link — **four wordings, one cluster**. Near-verbatim copy across modules is forbidden.
+
+---
+
+## Information layers (L1 / L2 / L3)
+
+```text
+L1 FACT       prices, official prints, hard news
+              → multi-source = one fact + N source chips (cross-check)
+              → 华尔街见闻 / BlockBeats / ChainCatcher primarily here
+
+L2 CLAIM      signed third-party interpretation
+              → 中金点睛 / Glassnode takes / desk color / sell-side
+              → badge CLAIM · 第三方 (not FACT, not our JUDGMENT)
+
+L3 JUDGMENT   our theme cards only
+              → only place allowed to “tell the story”
+```
+
+Rule: **L1/L2 supply inputs; only L3 narrates.**
+
+---
+
+## Module × source map
 
 | Module | Primary sources | Job |
 |--------|-----------------|-----|
-| **Global** | Bloomberg daily email (国际要闻 + related) | Chinese 1:1 changed facts + implies / tensions |
-| **China** | Bloomberg daily email (大中华新闻 + related) | Chinese 1:1 changed facts + implies / divergences |
-| **By asset** (`assetFramework`) | After fetch: **华尔街见闻**, **BlockBeats**, **ChainCatcher**, **CICC** (+ closes / Glassnode where relevant) | In-depth per-asset regime → driver → read → invalidator |
-| **Signals** | Multi-source synthesis | **Ongoing risks** + **current signals** — multi-day themes with trigger / invalidation |
-| **Watch** | Calendar from Bloomberg + desk items from asset-source radar | **Event calendar** + **by desk** boards |
+| **Global** | Bloomberg email | What changed (国际) — BBG spine |
+| **China** | Bloomberg email (+ 见闻 for A-share/policy resolution) | What changed (大中华) — not a second global wire |
+| **Theme cards** | All sources after cluster | Full insight once: fact → mechanism → trigger → invalidation |
+| **Assets** | WS / BB / CC / CICC deepen the *read* | Hold lens over the same theme cards (filter, don’t rewrite) |
+| **CLAIM desk** | CICC (theme-then-search); other institutions | Compact view + change vs prior + link to theme |
+| **Watch** | BBG calendar + forward triggers from themes | Event calendar + ongoing risks / desk checks |
+| **Tape / Closes / Figures** | BBG 市场一览 / closes inject / 今日图表 | Color · levels · one chart so-what |
+| **Fund** | Unchanged separate RSS product | `/fund` |
 
-Supporting modules unchanged in role:
+### Source roles & daily quotas
 
-| Module | Role |
-|--------|------|
-| Tape (`marketOverview`) | Bloomberg 市场一览 qualitative color |
-| Closes (`marketDashboard`) | Snapshot prints at generate time |
-| Figures | 今日图表 / Glassnode insight |
-| Fund | Separate RSS universe (Hedgeweek / HedgeCo / allowlist) |
+| Source | Role | Must not | Daily budget |
+|--------|------|----------|--------------|
+| Bloomberg IMAP | Global/China/Tape/calendar spine | — | as today |
+| Glassnode | BTC regime evidence / CLAIM-ish research | Paste same weekly blurb unchanged for days | weekly |
+| 华尔街见闻 | China resolution + cross-check | Rebuild Global (60–70% BBG overlap) | ≤6 into pool |
+| BlockBeats | Narrow crypto (BTC/ETF/MSTR/stables/exchanges/reg) | Alt spam, duplicate CC flashes | BB+CC ≤5 crypto themes |
+| ChainCatcher RSS | Crypto incremental / depth | Duplicate BB price flashes | (shared crypto budget) |
+| CICC | L2 research depth | Live news wire; dump into What changed | ≤2–3; theme-then-search only |
 
-## Product thesis
+**CICC:** after today’s theme keys exist, search CICC; include only on incremental framework / changed view / verifiable assumption / portfolio-relevant conclusion. Public site: title + date + short paraphrase + link (`publication_mode`). No long reprint.
 
-- syravocado remains a **judgment product**.
-- Every promoted item needs **fact → mechanism → watch** (trigger + invalidator).
-- Global/China are **not** the dumping ground for WS/BlockBeats/ChainCatcher/CICC headlines.
-- Those four sources deepen **asset** and **signals**; Watch is the forward radar.
+---
 
-## Smart reuse (same fact → different insights; no copy-paste)
+## Theme card (canonical unit)
 
-The same underlying information **may** appear across modules — that is how a desk works.
-What must **not** appear is the **same sentence / same framing** repeated in Global, Assets, Signals, and Watch.
+```yaml
+id: theme-oil-war-premium-2026-08-03
+title: 油价战争溢价回吐
+grade: STRONG | MODERATE | WEAK
+assets: [Oil, Gold, US equities]    # filter tags — one card, many assets
+fact: ...                           # once; multi-source chips
+mechanism: ...                      # JUDGMENT
+trigger: ...
+invalidator: ...
+horizon: 数日
+status: new | continuing | escalated | retired
+sources: [{label, href, contribution}]  # drawer
+claims: [{institution, stance, vs_prior, relation}]  # 印证|冲突|开新线
+```
 
-| Lane | Transform of the same fact |
-|------|----------------------------|
-| **Global / China** | *What happened* (Bloomberg spine fact) |
-| **By asset** | *How it changes the hold* (regime / driver / read / invalidator) |
-| **Signals** | *Multi-day theme* (evidence → mechanism → disprovedIf) |
-| **Watch** | *Next check* (dated event or trigger level — forward only) |
-| **Skim** | *Stance change in one line* (no restating the full fact list) |
+UI: one card expands the story. Executive skim = **titles + anchors** into these cards (not a fifth rewrite). Assets tab filters the same cards by asset tag. Watch only keeps **forward** checks that point at a card.
 
-**Rules for generate / UI**
+---
 
-1. **Reuse the fact, rewrite the job.** One ETF-flow print can become a Global crypto-macro clause, a BTC asset driver, a liquidity Signal, and a Watch trigger at 6.7万 — four insights, four wordings.
-2. **No verbatim doubles.** If two modules would show near-identical text, keep the best lane and turn the other into a distinct analytic angle (or a short pointer).
-3. **Cluster at capture.** Same story from 华尔街见闻 + ChainCatcher + BlockBeats → one cluster → multiple *derived* insights, not three pasted headlines.
-4. **Density caps stay.** Depth comes from better transforms, not longer duplicate lists (~5 skim · Global/China bounded · 8 assets · ≤6 signals · ≤2–3 Watch items/desk).
+## Dedupe (pipeline, not UI)
 
-## Source roles
+1. **Normalize** each capture → structured item (`source`, `entities`, `asset_tags`, `event_type`, `published_at`, `url`, …).  
+2. **`event_key`** ≈ `(entity, action, value?, date window)` + title similarity fallback.  
+3. **Domain merge first** (BB ↔ CC crypto), then global pool.  
+4. **Priority of wording:** exchange/official > primary wire > 见闻 paraphrase; Glassnode > media for on-chain; CICC original > any paraphrase for views.  
+5. **Incremental admit:** same event later only if new number / better primary / new mechanism / new claim / new trigger-invalidator. Else add source chip only.  
+6. **Cross-day:** `first_seen` / `repeat_count` → demote to scorecard “延续”, don’t occupy today’s new slots.  
+7. **Conflicts:** show both (“BB A vs CC B — awaiting primary”), don’t hide.
 
-| Source | Capture | Allowed use |
-|--------|---------|-------------|
-| Bloomberg IMAP | Existing inbox fetch | Global, China, Tape, calendar → Watch events, 今日图表 |
-| Glassnode IMAP | Existing weekly | BTC regime evidence; optional crypto Watch / signals |
-| ChainCatcher RSS | New: `https://www.chaincatcher.com/rss/clist` → `web/content/inbox/chaincatcher/` | Crypto / Web3 inputs to **asset (BTC)** + crypto desk Watch + signal evidence |
-| BlockBeats | Structured sweep / gather (existing cite + denylist) | Narrow crypto desk: BTC, ETF, MSTR/Strategy, stables, exchanges, regulation |
-| 华尔街见闻 | Structured fetch/gather (existing hub + year/denylist gates) | Cross-asset tape color and drivers for **assetFramework** (not Global/China spine) |
-| CICC skill | Daily research queries via `APP_ID`/`APP_SECRET` → inbox capture | China / industry / macro **research depth** for asset rows + signal mechanisms |
+---
 
-## Module designs
+## Watch (forward only)
 
-### Global / China
+**A. Event calendar** — dated Bloomberg 日程/政策 (+ major known prints).  
+**B. Ongoing risks / desk triggers** — undated multi-day checks; each line points at a theme card where possible.
 
-- **Spine = Bloomberg email only** (current section map).
-- Do not replace 国际要闻 / 大中华新闻 bullets with WS/CC/BB/CICC rewrites.
-- Optional: one sourced crypto-macro line in Global **only** when it changes the global regime and is triangulated; still not a crypto wire.
+Desks (optional labels on forward items): US/global equities · China/HK · Rates · FX · Commodities · Crypto.  
+Cap ~2–3 forward items/desk. Not an RSS wall.
 
-### By asset (in-depth after fetch)
+---
 
-Keep the eight-asset framework. After capture, the generate step must rewrite each row with depth from WS / BlockBeats / ChainCatcher / CICC (plus closes):
+## Site UX fixes (bundled with redesign)
+
+| Item | Change |
+|------|--------|
+| `#signals` / detail hash | `scrollIntoView` after tab select (bug) |
+| Nav | Group “速览 / 深读”; don’t present 11 flat anchors |
+| Source chrome | Superscript / small chips → drawer (kill 39× `SOURCE ·`) |
+| As-of bar | One口径; relative labels (上一收盘 / 今日亚洲 / 滚动24h) |
+| Freshness copy | “最近一期” or explicit “发布于 N 天前” when stale |
+| Sources block | Reader-facing matrix; pipeline logs → Pipeline page |
+| Language | Pick conclusion language (prefer **中文结论** + EN tickers); evidence may keep 原文 |
+| CLAIM badge | FACT / CLAIM / JUDGMENT triad before CICC volume arrives |
+| Crypto tab | Conditional if enough items; else Assets sub-block |
+| Closes | Full board foldable; compact strip on skim |
+
+---
+
+## Capture pipeline (high level)
 
 ```text
-regime → driver (sourced) → read → invalidator
+fetch Bloomberg + Glassnode (existing IMAP)
+fetch ChainCatcher RSS → inbox/chaincatcher/
+sweep BlockBeats (narrow) → inbox/blockbeats/
+sweep 华尔街见闻 (quota) → inbox/wallstreetcn/
+form theme keys from BBG + closes
+CICC theme-then-search → inbox/cicc/ (public-safe fields only)
+cluster by event_key → theme candidates
+generate briefing:
+  themeCards[] + global/china (BBG) + claims[] + watch + closes/tape/figures
+verify scan-links → PR
 ```
 
-Mapping guidance:
+Fund RSS path unchanged.
 
-| Asset | Prefer |
-|-------|--------|
-| US equities / Treasuries / USDJPY / Gold / Oil | 华尔街见闻 + closes; CICC when macro-linked |
-| China equities / CNY | CICC research + 华尔街见闻; Bloomberg China for hard prints only via China module |
-| BTC | ChainCatcher + BlockBeats (+ Glassnode weekly); triangulate hard numbers |
-
-UI: existing Asset Framework tab; stronger driverSources; no new card layout.
-
-### Signals (in-depth)
-
-Signals become explicitly two families (same `signals[]` array, distinguished by naming/status conventions or a light `kind` field if needed):
-
-1. **Current signal** — active tape theme (graded STRONG/MODERATE/WEAK).
-2. **Ongoing risk** — multi-day theme carried across briefings until invalidated.
-
-Required shape (existing fields, enforced harder):
-
-- `evidence` (sourced)
-- `mechanism`
-- `disprovedIf` (= invalidation)
-
-Rules:
-
-- Prefer multi-day continuity (`continuing` language in name/evidence when carried).
-- No single-headline signals without a cross-asset mechanism.
-- Cap roughly 4–6 total (current + ongoing).
-
-### Watch (event calendar + by desk)
-
-Two blocks inside `#watch`:
-
-**A. Event calendar** (table)
-
-| Field | Source |
-|-------|--------|
-| date / time (Beijing when known) | Bloomberg 日程 / 央行动态 |
-| event | same |
-| focus | agent one-liner |
-| desk | tag |
-
-**B. By desk** (lists, not cards)
-
-Desks (fixed order):
-
-1. US / global equities  
-2. China / HK equities  
-3. Rates / credit  
-4. FX  
-5. Commodities  
-6. Crypto  
-
-Each desk item: headline, why, watch, **trigger**, **invalidator**, horizon, status, source chip.  
-Cap ~2–3 items per desk. Fed by asset-source radar (WS/BB/CC/CICC) + Bloomberg calendar themes — not a raw RSS list.
-
-#### Schema (minimal)
-
-```ts
-type WatchDesk =
-  | "us-global-equities"
-  | "china-hk-equities"
-  | "rates-credit"
-  | "fx"
-  | "commodities"
-  | "crypto";
-
-interface WatchItem {
-  // existing fields…
-  desk?: WatchDesk;          // required for new briefings
-  kind?: "calendar" | "desk"; // calendar rows vs desk radar
-  sources?: FactSource[];    // optional cite chips
-}
-```
-
-Older briefings without `desk`/`kind` still render as today’s flat list (backward compatible).
-
-## Capture pipeline
-
-```text
-fetch-inbox (Bloomberg, Glassnode)
-fetch-chaincatcher-rss          → inbox/chaincatcher/YYYY-MM-DD.md
-fetch/sweep wallstreetcn        → inbox/wallstreetcn/… (or structured bundle)
-fetch/sweep blockbeats (narrow) → inbox/blockbeats/…
-run-cicc-research (1–2 queries) → inbox/cicc/…
-scan-fund-signals (unchanged)
-generate-daily-briefing (prompt map below)
-```
-
-### Generate prompt map
-
-1. 国际要闻 → `globalChanged` / implies / tensions (**Bloomberg only**)  
-2. 大中华新闻 → `chinaChanged` / implies / divergences (**Bloomberg only**)  
-3. WS + BlockBeats + ChainCatcher + CICC → deepen `assetFramework×8`  
-4. Same pool → `signals[]` as ongoing risks + current signals (trigger/invalidation)  
-5. Bloomberg 日程/政策 → Watch **calendar**; desk boards from asset-source radar  
-6. 市场一览 → Tape; closes inject; 今日图表 → figures  
-
-Fail-closed: scan-links, denylists, no invented levels, crypto triangulation.
-
-## Website UX
-
-- **Watch tab**: calendar table on top; desk sections below; source chips; keep priority colors.  
-- **Signals tab**: subtle grouping or labels for “Current” vs “Ongoing risk” (minimal chrome).  
-- **Assets tab**: unchanged layout; richer sourced drivers.  
-- **Global / China**: unchanged structure.  
-- **Sources / Pipeline**: document the framework table above.  
-- No hero clutter; no card grids; Fund untouched.
-
-## Non-goals
-
-- Replacing Bloomberg Global/China with aggregator wires  
-- Full reference-site clone (no three-column archive redesign in this spec)  
-- Committing API secrets  
-- Live visitor-side fetching of WS/CC/BB/CICC  
+---
 
 ## Phases
 
-| Phase | Deliverable |
-|-------|-------------|
-| **P1** | ChainCatcher RSS capture + Watch schema/UI (calendar + desks) + generate prompt map |
-| **P2** | BlockBeats narrow sweep + 华尔街见闻 bundle into asset/signals depth |
-| **P3** | CICC daily research capture → China-linked assets + signal mechanisms |
-| **P4** | Signals UI “current vs ongoing” polish + Sources/Pipeline docs |
+| Phase | Ship |
+|-------|------|
+| **P0** | `#detail` / Signals hash scroll fix; as-of / freshness copy clarity |
+| **P1** | Theme-card content model + UI (merge narrative duplication); compact source drawer; generate prompt “one event one card” |
+| **P2** | CLAIM badge + 观点台; CICC theme-then-search (public paraphrase only) |
+| **P3** | ChainCatcher RSS + BlockBeats narrow sweep + crypto-domain merge |
+| **P4** | Event-key clustering pipeline + cross-day demote |
+| **P5** | 华尔街见闻 (after P4); China resolution quota |
+| **P6** | Prior scorecard + archive theme tags; optional closes 关键位/距离 |
+
+---
+
+## Non-goals (this design)
+
+- Four new source-named sections on the homepage  
+- Cloning the full reference three-column archive site in P1  
+- Pasting CICC / 见闻 VIP full text on the public site  
+- Replacing Bloomberg Global/China spine with aggregator wires  
+- Secrets in git  
+
+---
 
 ## Success criteria
 
-- Global/China bullets remain Bloomberg-faithful.  
-- Asset rows cite WS/BB/CC/CICC where they actually drive the read.  
-- Signals read as multi-day themes with clear invalidators.  
-- Watch shows dated calendar + desk boards, not an unread RSS feed.  
-- Same underlying facts may power multiple modules, but the site must not show near-verbatim repetitive copy across modules.  
-- CI `scan-links` / verify-briefing stay green.
+- One underlying story → one theme card full expansion; other modules show **different** insight angles or pointers.  
+- Global/China remain Bloomberg-faithful lists (grouped/folded), not WS mirrors.  
+- CICC appears as CLAIM attached to themes, not as “what changed”.  
+- Watch is forward-only.  
+- Adding sources does not lengthen the page with duplicate paragraphs.  
+- CI accuracy gates remain fail-closed.
+
+---
+
+## Approval checkpoint
+
+Please confirm or amend:
+
+1. **Theme cards as the only full narrative** (Skim becomes titles+anchors)  
+2. **CLAIM desk** for 中金 (印证 / 冲突 / 开新线)  
+3. **Assets = filter over theme cards**, not a second news rewrite  
+4. **Watch = calendar + forward risks only**  
+5. **Phase order** P0→P6 (见闻 after dedupe; CICC before 见闻)
+
+After approval → implementation plan starting at **P0 + P1**.
