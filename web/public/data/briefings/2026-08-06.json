@@ -163,7 +163,7 @@
     }
   ],
   "signal": "Diplomacy-first oil + soft ADP still leave hawkish Fed speakers live — while mega-cap AI talent/cyber risk is the equity idiosyncratic layer, not a broad risk-off.",
-  "watch": "Calendar window Aug 6–7 (Beijing): US claims, Daly/Musalem Fed speeches, Eurozone retail sales, Taiwan CPI.",
+  "watch": "Calendar through Aug 14 (Beijing): US claims + Fed speakers; Taiwan CPI under China.",
   "globalRegime": "Geopolitics is still leading the commodity complex via Hormuz diplomacy, while US growth data softens at the margin and AI mega-caps digest talent and capex scrutiny after the record run.",
   "globalChanged": [
     {
@@ -935,8 +935,8 @@
   ],
   "eventCalendar": {
     "windowStart": "2026-08-06",
-    "windowEnd": "2026-08-07",
-    "note": "From Aug 6 彭博 日程/央行动态; consensus/prior only where inbox-stated.",
+    "windowEnd": "2026-08-14",
+    "note": "Through next Friday (Aug 14). Taiwan prints under China; UK/EU = CB only.",
     "events": [
       {
         "id": "us-sf-fed-daly-2026-08-06",
@@ -955,21 +955,9 @@
         "id": "tw-cpi-jul-2026-08-06",
         "date": "2026-08-06",
         "timeBeijing": "16:00",
-        "region": "Other",
+        "region": "China",
         "category": "data",
         "event": "Taiwan July CPI y/y (inbox est. vs prior)",
-        "source": {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "eu-retail-jun-2026-08-06",
-        "date": "2026-08-06",
-        "timeBeijing": "17:00",
-        "region": "EU",
-        "category": "data",
-        "event": "Eurozone June retail sales m/m (inbox est. vs prior)",
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
