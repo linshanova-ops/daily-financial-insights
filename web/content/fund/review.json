@@ -80,16 +80,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260805-a0q4xv",
-    "title": "D.E. Shaw’s Latest Offering",
-    "reason": "弱信源「institutionalinvestor.com」命中「D.E. Shaw」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.institutionalinvestor.com/article/de-shaws-latest-offering",
-    "source": "institutionalinvestor.com",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260804-umjem1",
     "title": "Goldman Sachs Asset Management Launches AlphaAI Investment Platform",
     "reason": "弱信源「Hubbis」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
@@ -106,27 +96,17 @@
     "confidence": "68%",
     "status": "review",
     "href": "https://www.businesswire.com/news/home/20260803466906/en/Talcott-Financial-Group-Launches-West-Grove-Re-in-Partnership-with-Goldman-Sachs",
-    "source": "Business Wire",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260804-bt3qym",
-    "title": "Goldman Sachs Clear Position: This Is the Largest Capital Demand Cycle in Human History – The Federal Reserve Is Merely a Spectator",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://eu.36kr.com/en/p/3924662408231047",
-    "source": "36 Kr",
+    "source": "businesswire.com",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260805-54272k",
     "title": "Michael Patchen, Former Partner & Chief Risk Officer at AQR Capital Management, Joins Star Mountain Capital as Senior Advisor",
-    "reason": "弱信源「Business Wire」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「businesswire.com」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.businesswire.com/news/home/20260804283873/en/Michael-Patchen-Former-Partner-Chief-Risk-Officer-at-AQR-Capital-Management-Joins-Star-Mountain-Capital-as-Senior-Advisor",
-    "source": "Business Wire",
+    "source": "businesswire.com",
     "sourceTier": "weak"
   },
   {
@@ -136,7 +116,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/articles/2026-08-03/coatue-s-hedge-fund-sinks-8-in-worst-drop-in-more-than-a-year",
-    "source": "Bloomberg.com",
+    "source": "bloomberg.com",
     "sourceTier": "secondary"
   },
   {
@@ -146,17 +126,7 @@
     "confidence": "61%",
     "status": "review",
     "href": "https://www.bloomberg.com/news/videos/2026-08-04/coatue-s-hedge-fund-sees-worst-drop-in-more-than-a-year-video",
-    "source": "Bloomberg.com",
-    "sourceTier": "secondary"
-  },
-  {
-    "id": "rev-sig-20260803-upz4tl",
-    "title": "Symmetry secures Dubai licence as hedge fund expansion continues",
-    "reason": "中等置信度命中「Symmetry」，待人工复核。",
-    "confidence": "63%",
-    "status": "review",
-    "href": "https://www.fundsglobalmena.com/symmetry-secures-dubai-licence-as-hedge-fund-expansion-continues/",
-    "source": "Funds Global MENA",
+    "source": "bloomberg.com",
     "sourceTier": "secondary"
   },
   {
@@ -220,16 +190,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260803-2a59f2",
-    "title": "Arrowstreet Capital Limited Partnership Makes New $6.71 Million Investment in Trinity Industries, Inc. $TRN",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-671-million-investment-in-trinity-industries-inc-trn-2026-08-03/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260805-xm9khk",
     "title": "Arrowstreet Capital Limited Partnership Makes New $2.35 Million Investment in Hallador Energy Company $HNRG",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
@@ -257,16 +217,6 @@
     "status": "review",
     "href": "https://www.fool.com/investing/2026/08/03/bill-ackmans-pershing-square-owns-amazon-microsoft/",
     "source": "The Motley Fool",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260803-jzsvqn",
-    "title": "PIMCO: Nordic interest in asset-based finance, hedge funds and real estate on the up",
-    "reason": "弱信源「AMWatch」命中「PIMCO」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://amwatch.com/AMNews/Fund_Management/article19431058.ece",
-    "source": "AMWatch",
     "sourceTier": "weak"
   },
   {
