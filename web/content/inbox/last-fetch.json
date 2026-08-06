@@ -1,5 +1,5 @@
 {
-  "at": "2026-08-06T05:55:33.756Z",
+  "at": "2026-08-06T12:01:12.390Z",
   "briefingDate": "2026-08-06",
   "ok": true,
   "saved": [
@@ -20,6 +20,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "welcome",
+      "subject": "Confirm your subscription",
+      "from": "\"In Context from J.P. Morgan\" <in.context.newsletter@jpmcib.jpmorgan.com>"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：伊朗或开辟海峡临时航道；黑客攻击大型对冲基金",
@@ -125,6 +130,20 @@
       "emailDay": "2026-07-23",
       "bjDay": "2026-07-24",
       "briefingDate": "2026-08-06"
+    },
+    {
+      "reason": "date-mismatch",
+      "subject": "彭博财经早茶：油轮红海遇袭；Alphabet上调支出预估",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-07-22",
+      "bjDay": "2026-07-23",
+      "briefingDate": "2026-08-06"
+    },
+    {
+      "reason": "weekly-duplicate",
+      "subject": "Optimism Meets Overhead",
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     }
   ]
 }
