@@ -15,14 +15,16 @@ on:
 permissions:
   contents: write
   pages: write
+  id-token: write
+  deployments: write
 
-# Avoid cancel thrash; one publish at a time.
+# Do not cancel in-progress deploys (cancel thrash left Pages stuck queued).
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  build-and-publish:
+  build:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -30,6 +32,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          # Re-assert Actions as the Pages deployment source (unsticks some queues).
+          enablement: true
 
       - name: Setup Node
         uses: actions/setup-node@v5
@@ -52,9 +60,14 @@ jobs:
         env:
           GITHUB_PAGES: "true"
 
-      # Bypass stuck actions/deploy-pages (deployment_queued timeouts) by
-      # publishing the static export to the gh-pages branch.
-      - name: Publish to gh-pages branch
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/out
+
+      # Mirror export to gh-pages so a manual Pages source switch can go live
+      # if the Actions deploy queue is still wedged.
+      - name: Mirror to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -62,19 +75,35 @@ jobs:
           force_orphan: true
           user_name: syravocado
           user_email: linshanova-ops@users.noreply.github.com
-          commit_message: "deploy: publish site"
+          commit_message: "deploy: mirror site"
 
-      - name: Point GitHub Pages at gh-pages branch
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Clear stale Pages deployment statuses
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          # legacy = branch-sourced Pages (avoids broken Actions deploy queue)
-          gh api -X PUT "repos/${{ github.repository }}/pages" --input - <<'EOF'
-          {
-            "build_type": "legacy",
-            "source": { "branch": "gh-pages", "path": "/" }
-          }
-          EOF
-          echo "Pages source:"
-          gh api "repos/${{ github.repository }}/pages" --jq '{build_type, html_url, source}'
+          ids=$(gh api "repos/${{ github.repository }}/deployments?environment=github-pages&per_page=20" \
+            --jq '.[].id')
+          for id in $ids; do
+            state=$(gh api "repos/${{ github.repository }}/deployments/${id}/statuses" \
+              --jq '.[0].state // "none"')
+            echo "deployment ${id}: ${state}"
+            if [ "$state" = "queued" ] || [ "$state" = "in_progress" ] || [ "$state" = "pending" ]; then
+              echo "Marking ${id} inactive"
+              gh api -X POST "repos/${{ github.repository }}/deployments/${id}/statuses" \
+                -f state=inactive \
+                -f description="cleared before republish" \
+                >/dev/null || true
+            fi
+          done
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
