@@ -34,22 +34,22 @@
 
 **Files:** Modify `web/src/components/DetailTabs.tsx`
 
-- [ ] Scroll only after `open === true` (useEffect on `[open, active]` when hash is a detail hash)
-- [ ] On tab click `selectTab`, also scroll `#detail` into view
-- [ ] Avoid double-scroll races with closed panel mount
+- [x] Scroll only after `open === true` (useEffect on `[open, active]` when hash is a detail hash)
+- [x] On tab click `selectTab`, also scroll `#detail` into view
+- [x] Avoid double-scroll races with closed panel mount
 
 ### Task 2: P0 — Freshness copy
 
 **Files:** `LiveHome.tsx`, optionally `BriefingHero.tsx`
 
-- [ ] Soften “publishes twice daily” to “最近一期 / latest published” when stale
-- [ ] If `publishedAt` older than 36h, show explicit “Published N days ago”
+- [x] Soften “publishes twice daily” to “最近一期 / latest published” when stale
+- [x] If `publishedAt` older than 36h, show explicit “Published N days ago”
 
 ### Task 3: ThemeCard types
 
 **Files:** `web/src/lib/types.ts`
 
-- [ ] Add:
+- [x] Add:
 
 ```ts
 export interface ThemeCard {
@@ -67,32 +67,32 @@ export interface ThemeCard {
 }
 ```
 
-- [ ] `themeCards?: ThemeCard[]` on `BriefingFrontmatter`
+- [x] `themeCards?: ThemeCard[]` on `BriefingFrontmatter`
 
 ### Task 4: ThemeCards UI + nav
 
 **Files:** Create `ThemeCards.tsx`; modify `BriefingView`, `SectionNav`, `ExecutiveSummary`
 
-- [ ] List/section layout (no cards-in-hero chrome; section list is fine per design — avoid heavy card chrome)
-- [ ] Each theme: grade, title, fact (+ compact source chips), mechanism, trigger, invalidator, horizon, status
-- [ ] `id={`theme-${id}`}` for anchors
-- [ ] SectionNav: add `#themes` under 速览 when `hasThemes`
-- [ ] ExecutiveSummary: if themes present, render title links to `#theme-…` instead of duplicating long bullets when possible
+- [x] List/section layout (no cards-in-hero chrome; section list is fine per design — avoid heavy card chrome)
+- [x] Each theme: grade, title, fact (+ compact source chips), mechanism, trigger, invalidator, horizon, status
+- [x] `id={`theme-${id}`}` for anchors
+- [x] SectionNav: add `#themes` under 速览 when `hasThemes`
+- [x] ExecutiveSummary: if themes present, render title links to `#theme-…` instead of duplicating long bullets when possible
 
 ### Task 5: Sample content on latest briefing
 
 **Files:** `web/content/briefings/2026-08-03.md` + sync JSON
 
-- [ ] Derive 3–5 `themeCards` from existing strong signals / watch (oil, yen, China, BTC/Glassnode as fits)
-- [ ] Slim skim bullets to point at themes where they currently restate the same story
-- [ ] Keep Global/China/signals/watch data for now (compat); themes are the narrative home
+- [x] Derive 3–5 `themeCards` from existing strong signals / watch (oil, yen, China, BTC/Glassnode as fits)
+- [x] Slim skim bullets to point at themes where they currently restate the same story
+- [x] Keep Global/China/signals/watch data for now (compat); themes are the narrative home
 
 ### Task 6: Generate prompt
 
 **Files:** `scripts/generate-daily-briefing.mjs`
 
-- [ ] Require `themeCards` (3–5) as the only full narrative
-- [ ] Skim = titles/anchors; Watch = forward calendar/triggers; Assets cite themes; no verbatim doubles
+- [x] Require `themeCards` (3–5) as the only full narrative
+- [x] Skim = titles/anchors; Watch = forward calendar/triggers; Assets cite themes; no verbatim doubles
 
 ### Task 7: Verify + PR
 

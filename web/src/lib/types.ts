@@ -21,6 +21,25 @@ export interface Signal {
   disprovedIf: string;
 }
 
+/**
+ * Canonical narrative unit: one event → one full expansion.
+ * Other modules reuse as different insights — not verbatim copies.
+ */
+export interface ThemeCard {
+  id: string;
+  title: string;
+  grade: SignalGrade;
+  /** Asset filter tags (e.g. Oil, BTC) — one card, many assets. */
+  assets?: string[];
+  fact: string;
+  factSources?: FactSource[];
+  mechanism: string;
+  trigger: string;
+  invalidator: string;
+  horizon: string;
+  status: "new" | "continuing" | "escalated" | "retired";
+}
+
 export interface WatchItem {
   priority: WatchPriority;
   headline: string;
@@ -30,6 +49,16 @@ export interface WatchItem {
   invalidator: string;
   horizon: string;
   status: "new" | "continuing" | "escalated" | "retired";
+  /** Forward desk label when present (calendar vs desk boards). */
+  desk?:
+    | "us-global-equities"
+    | "china-hk-equities"
+    | "rates-credit"
+    | "fx"
+    | "commodities"
+    | "crypto";
+  kind?: "calendar" | "desk";
+  sources?: FactSource[];
 }
 
 export interface AssetView {
@@ -160,6 +189,11 @@ export interface BriefingFrontmatter {
   chinaDivergences: string;
   /** Stable per-asset regime lens (alpha/beta framework); optional for older briefings. */
   assetFramework?: AssetView[];
+  /**
+   * Theme cards — only full narrative of each core story (fact → mechanism →
+   * trigger → invalidation). Optional for older briefings.
+   */
+  themeCards?: ThemeCard[];
   signals: Signal[];
   watchItems: WatchItem[];
   sources: string;

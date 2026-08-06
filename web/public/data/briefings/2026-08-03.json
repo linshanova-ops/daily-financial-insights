@@ -556,6 +556,137 @@
       "invalidator": "Carry clearly outpays 2y Treasuries with rising spot volume"
     }
   ],
+  "themeCards": [
+    {
+      "id": "hormuz-oil-pause",
+      "title": "Iran pause unwinds the oil war premium",
+      "grade": "STRONG",
+      "assets": [
+        "Oil",
+        "Risk"
+      ],
+      "fact": "Brent left the Jul 31 settle at $90.12 and sold off hard in the Aug 3 Asia session after Trump paused new Iran strikes pending a Hormuz reopening deal.",
+      "factSources": [
+        {
+          "label": "CNBC Jul 31 oil",
+          "href": "https://www.cnbc.com/2026/07/31/oil-prices-today-brent-wti-hormuz-trump-iran-.html"
+        },
+        {
+          "label": "CNBC Aug 3 oil",
+          "href": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Diplomacy headlines can reverse supply-risk pricing faster than OPEC quota math can catch up — Monday Asia is pricing a war-premium unwind, not a sudden surplus.",
+      "trigger": "Hormuz talks slip and Brent reclaims $90 with renewed strike risk.",
+      "invalidator": "Verified Hormuz reopening progress keeps Brent below $85.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "yen-joint-intervention",
+      "title": "US–Japan yen support is a confirmed regime",
+      "grade": "STRONG",
+      "assets": [
+        "FX",
+        "Rates"
+      ],
+      "fact": "USD/JPY moved from 163.73 Thursday to 157.57 Friday; Bessent and Japan’s MOF said they will not hesitate to intervene again.",
+      "factSources": [
+        {
+          "label": "CNBC Aug 3 yen",
+          "href": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Official joint action changes the USD/JPY reaction function near weak extremes — further moves are event-driven, not pure carry.",
+      "trigger": "Fresh MOF/US action while USD/JPY remains above 157.",
+      "invalidator": "Quiet FX tape through 160 with no further official follow-up.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "megacap-earnings-split",
+      "title": "Mega-cap earnings still bifurcate US beta",
+      "grade": "STRONG",
+      "assets": [
+        "Equities",
+        "Tech"
+      ],
+      "fact": "Jul 31 S&P closed 7,489.72 (+0.7%) with Amazon strength; Apple fell 7.35% to $308.91 on soft guidance.",
+      "factSources": [
+        {
+          "label": "AP Jul 31",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-37d8d182f02f0fcdcf9f7db67e6dfadd"
+        },
+        {
+          "label": "TradingKey Jul 31",
+          "href": "https://www.tradingkey.com/analysis/stocks/us-stocks/262068187-us-stock-rally-amazon-15-percent-aws-record-apple-7-percent-drop-memory-pullback-tradingkey"
+        }
+      ],
+      "mechanism": "Cloud demand is rewarded; hardware guide misses are punished even in up tapes — Mag7 is not one beta.",
+      "trigger": "Another Apple down day with Nasdaq leadership narrowing.",
+      "invalidator": "Apple reclaims the Jul 30 close while Nasdaq holds Jul 31 gains.",
+      "horizon": "days",
+      "status": "continuing"
+    },
+    {
+      "id": "fund-ai-unwind",
+      "title": "Fund-desk AI unwind aftershocks",
+      "grade": "MODERATE",
+      "assets": [
+        "Tech",
+        "Equities"
+      ],
+      "fact": "Fund feed still clusters Citadel’s purchase of Situational Awareness public AI holdings after the July rout; weekend tea framed AI capex vs profit scrutiny.",
+      "factSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "彭博周末茶歇 W31",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Hedge-fund deleveraging can keep secondary AI supply elevated after a rescue — flow stress is separate from mega-cap index beta.",
+      "trigger": "More forced-sale headlines with SOX giving back Friday gains.",
+      "invalidator": "No new unwind headlines and SOX holds for a week.",
+      "horizon": "days/weeks",
+      "status": "continuing"
+    },
+    {
+      "id": "crypto-carry-wait",
+      "title": "Crypto carry still loses to Treasuries",
+      "grade": "WEAK",
+      "assets": [
+        "Crypto",
+        "Rates"
+      ],
+      "fact": "Glassnode weekly (“Paid to Wait”): Treasuries out-yield crypto carry for only the second time on record; spot volume is at its lowest since 2019.",
+      "factSources": [
+        {
+          "label": "Glassnode Insights",
+          "href": "https://research.glassnode.com/the-week-onchain-week-30-2026/"
+        },
+        {
+          "label": "CoinDesk Aug 2",
+          "href": "https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges"
+        }
+      ],
+      "mechanism": "Rate advantage keeps capital from chasing levered crypto carry — weekend low-$60k BTC chop does not overturn the wait regime.",
+      "trigger": "BTC rallies with equities while the carry gap stays negative.",
+      "invalidator": "Futures basis clearly outpays 2y Treasuries with rising spot volume.",
+      "horizon": "weeks",
+      "status": "continuing"
+    }
+  ],
   "signals": [
     {
       "grade": "STRONG",
