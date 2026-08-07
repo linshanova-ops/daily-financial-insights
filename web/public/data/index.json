@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-07T05:50:49.101Z",
-  "latest": "2026-08-06",
+  "generatedAt": "2026-08-07T05:58:39.388Z",
+  "latest": "2026-08-07",
   "briefings": [
+    {
+      "date": "2026-08-07",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Hormuz draft terms reprice oil higher while US equities digest hike/geo risk: Aug 6 S&P slipped 0.18% to 7,709.96, claims printed 199k (third week under 200k), and China July exports held +23.9% y/y into Friday’s NFP.",
+      "coverageWindow": "August 6–7, 2026"
+    },
     {
       "date": "2026-08-06",
       "title": "Daily Financial Briefing",
