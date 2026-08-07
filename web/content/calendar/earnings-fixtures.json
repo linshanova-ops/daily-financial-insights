@@ -1,15 +1,15 @@
 {
-  "fetchedAt": "2026-08-07T12:31:25.854Z",
+  "fetchedAt": "2026-08-07T12:33:24.442Z",
   "windowStart": "2026-08-07",
   "windowEnd": "2026-08-14",
   "events": [],
   "errors": [
     {
-      "name": "amzn",
+      "name": "meta",
       "message": "fetch 403"
     },
     {
-      "name": "meta",
+      "name": "amzn",
       "message": "fetch 403"
     },
     {
@@ -39,6 +39,10 @@
     {
       "name": "coin",
       "message": "fetch 403"
+    },
+    {
+      "name": "zhipu",
+      "message": "fetch failed"
     },
     {
       "name": "avgo",
