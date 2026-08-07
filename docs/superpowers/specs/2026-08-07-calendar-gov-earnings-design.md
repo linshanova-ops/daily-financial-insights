@@ -28,7 +28,7 @@ Never invent a print date or consensus. Omit silently when no dated official sou
 | Missing earnings date | **A** — keep company on watchlist; emit calendar row only when a dated official print exists |
 | Gov calendar geography | **A** — US + China + Japan data/CB; UK/EU **CB-only**; **no** dedicated Taiwan/HK scrapers |
 | Pipeline shape | **1** — one fetch script → fixture JSON → merge into `eventCalendar` |
-| TW/HK rows | Allowed only if IMAP (or another verified cite) already has a dated print; region stays `China` |
+| TW/HK rows | **Out of Event Calendar** — mainland China only; TW/HK may still appear in chinaChanged prose |
 
 ### Listing check (2026-08-07) — why omit ≠ drop from watchlist
 
@@ -157,7 +157,7 @@ Earnings: company `irUrl` (or well-known IR earnings calendar URL stored on the 
 3. **Dedupe** key: normalized `(date, region, category, event-title slug)` — prefer IMAP row if both exist (keeps inbox consensus/prior when present).
 4. Density: aim **~8–20** vital rows once fixtures exist (update generate prompt; prior “4–12” was inbox-starved).
 5. UK/EU economic data still **banned**; drop if a scraper accidentally emits them.
-6. Taiwan/HK: only from IMAP/verified cite; `region: "China"`.
+6. Taiwan/HK: **omit from eventCalendar** (mainland China only).
 7. `scan-links` must accept new official host hrefs (add flaky-host soft-trust only if CI fetch is chronically blocked, same pattern as `ismworld.org`).
 
 ---

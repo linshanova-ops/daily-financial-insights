@@ -167,7 +167,7 @@
     }
   ],
   "signal": "Draft Hormuz terms can re-arm the oil premium even as labor stays resilient into NFP — while China trade held export double-digits and Greater China AI / humanoid financing stayed the idiosyncratic equity layer.",
-  "watch": "Calendar through Aug 14 (Beijing): US NFP + Barkin today; Taiwan trade under China; HK FX reserves.",
+  "watch": "Calendar through Aug 14 (Beijing): NFP + Barkin today; Fed Bowman Sat; BLS CPI Aug 12 / PPI Aug 13; China FX reserves.",
   "globalRegime": "Geopolitics is back leading the oil complex via Hormuz draft terms, while US labor data stay resilient into NFP and Fed-path politics (Trump–Warsh) keep hike odds live.",
   "globalChanged": [
     {
@@ -995,56 +995,8 @@
   "eventCalendar": {
     "windowStart": "2026-08-07",
     "windowEnd": "2026-08-14",
-    "note": "IMAP 日程 + official gov fixtures through next Friday (Aug 14). Taiwan/HK under China; UK/EU = CB only. BLS schedule: CPI Aug 12 and PPI Aug 13 (mirror cite). Fed Bowman discussion Aug 8. Earnings watchlist: no labeled IR print in window. China July trade already released — omitted.",
+    "note": "IMAP 日程 + official gov fixtures through next Friday (Aug 14). China = mainland only (no Taiwan/HK calendar rows); UK/EU = CB only. BLS schedule: CPI Aug 12 and PPI Aug 13 (mirror cite). Fed Bowman discussion Aug 8. Earnings watchlist: no labeled IR print in window. China July trade already released — omitted.",
     "events": [
-      {
-        "id": "tw-imports-jul-2026-08-07",
-        "date": "2026-08-07",
-        "timeBeijing": "16:00",
-        "region": "China",
-        "category": "data",
-        "event": "Taiwan July imports y/y (inbox est. vs prior)",
-        "source": {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "tw-exports-jul-2026-08-07",
-        "date": "2026-08-07",
-        "timeBeijing": "16:00",
-        "region": "China",
-        "category": "data",
-        "event": "Taiwan July exports y/y (inbox est. vs prior)",
-        "source": {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "tw-trade-balance-jul-2026-08-07",
-        "date": "2026-08-07",
-        "timeBeijing": "16:00",
-        "region": "China",
-        "category": "data",
-        "event": "Taiwan July trade balance (inbox est. vs prior)",
-        "source": {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "hk-fx-reserves-jul-2026-08-07",
-        "date": "2026-08-07",
-        "timeBeijing": "16:30",
-        "region": "China",
-        "category": "data",
-        "event": "Hong Kong July FX reserves (inbox est. vs prior)",
-        "source": {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
       {
         "id": "us-nfp-jul-2026-08-07",
         "date": "2026-08-07",
@@ -1210,7 +1162,7 @@
   },
   "sources": "彭博 Markets Daily China / 财经早茶 (Aug 7 inbox) for 国际要闻→globalChanged and 大中华新闻→chinaChanged Chinese 1:1, 市场一览, chart, calendar; AP/DOL claims; SCMP China July trade; Focus Taiwan CPI; Global Times Unitree IPO; Yahoo closes (US Aug 6 / Asia Aug 7); Treasury yields; CoinGecko/Yahoo BTC. China July trade estimates from inbox calendar where used for beat/miss.",
   "caveats": "Bloomberg newsletter items without public article URLs use the stable Bloomberg Asia cite. Hard closes/prints attached to primaries. Claims ~202k estimate and China import/surplus inbox estimates are from the Aug 7 财经早茶 framing/calendar, not always printed on the primary agency page. Chart 2026 bar is YTD through Jul 13 per IT桔子 footnote. marketDashboard reinjected from Yahoo/CoinGecko/Treasury.",
-  "singleSource": "Aug 7 merge since Aug 6 briefing: 彭博 Aug 7 财经早茶 国际要闻→globalChanged Chinese 1:1; 大中华新闻→chinaChanged Chinese 1:1 (Palo Alto line split from concatenated 市场一览 fragment in raw email); 市场一览 (7) asOf 2026-08-06; calendar spine from inbox (Canada skipped; China trade omitted as already printed). 今日图表 annotated from PNG (人形机器人融资；2026=YTD to Jul 13 ~CNY100bn). Primary corroboration on claims (AP/DOL), S&P/Nasdaq (Yahoo), China trade (SCMP), Taiwan CPI (Focus Taiwan), BTC (CoinGecko/Yahoo). publishedAt placeholder 2026-08-07T05:55:00Z pending refresh; marketDashboard left out for inject.",
+  "singleSource": "Aug 7 merge since Aug 6 briefing: 彭博 Aug 7 财经早茶 国际要闻→globalChanged Chinese 1:1; 大中华新闻→chinaChanged Chinese 1:1 (Palo Alto line split from concatenated 市场一览 fragment in raw email); 市场一览 (7) asOf 2026-08-06; eventCalendar = IMAP 日程 ∪ gov fixtures (BLS CPI/PPI + Fed Bowman via schedule mirror; Canada skipped; China trade omitted as already printed). 今日图表 annotated from PNG (人形机器人融资；2026=YTD to Jul 13 ~CNY100bn). Primary corroboration on claims (AP/DOL), S&P/Nasdaq (Yahoo), China trade (SCMP), Taiwan CPI (Focus Taiwan), BTC (CoinGecko/Yahoo). publishedAt placeholder 2026-08-07T05:55:00Z pending refresh; marketDashboard left out for inject.",
   "marketDashboard": {
     "asOf": "2026-08-07T06:21:12.023Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
