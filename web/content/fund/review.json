@@ -12,11 +12,11 @@
   {
     "id": "rev-sig-20260806-oe1f4l",
     "title": "Point72, Citadel among hedge funds hit by AI vishing attacks",
-    "reason": "弱信源「investmentnews.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「InvestmentNews」命中「Citadel」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708",
-    "source": "investmentnews.com",
+    "source": "InvestmentNews",
     "sourceTier": "weak"
   },
   {
@@ -30,16 +30,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260806-b06hy5",
-    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
-    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.bitget.com/amp/news/detail/12560605615264",
-    "source": "Bitget",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260806-5983lf",
     "title": "Wall Street giants Citadel, Two Sigma, Point72 targeted in wave of AI vishing attacks",
     "reason": "弱信源「Cybernews」命中「Citadel」— 不进入确定命中，待人工复核。",
@@ -47,6 +37,16 @@
     "status": "review",
     "href": "https://cybernews.com/security/wall-street-ai-vishing-citadel-two-sigma-point72/",
     "source": "Cybernews",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260805-b06hy5",
+    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
+    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.bitget.com/asia/news/detail/12560605615264",
+    "source": "Bitget",
     "sourceTier": "weak"
   },
   {
@@ -112,11 +112,11 @@
   {
     "id": "rev-sig-20260805-54272k",
     "title": "Michael Patchen, Former Partner & Chief Risk Officer at AQR Capital Management, Joins Star Mountain Capital as Senior Advisor",
-    "reason": "弱信源「businesswire.com」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「Business Wire」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.businesswire.com/news/home/20260804283873/en/Michael-Patchen-Former-Partner-Chief-Risk-Officer-at-AQR-Capital-Management-Joins-Star-Mountain-Capital-as-Senior-Advisor",
-    "source": "businesswire.com",
+    "source": "Business Wire",
     "sourceTier": "weak"
   },
   {
@@ -156,7 +156,7 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+Before+August+5+Deadline",
-    "source": "quiverquant.com",
+    "source": "Quiver Quantitative",
     "sourceTier": "weak"
   },
   {
@@ -176,16 +176,6 @@
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-235-million-investment-in-hallador-energy-company-hnrg-2026-08-05/",
-    "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260806-5vs4r8",
-    "title": "Arrowstreet Capital Limited Partnership Acquires New Stake in Brandywine Realty Trust $BDN",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-acquires-new-stake-in-brandywine-realty-trust-bdn-2026-08-06/",
     "source": "MarketBeat",
     "sourceTier": "weak"
   },
@@ -212,11 +202,11 @@
   {
     "id": "rev-sig-20260805-ubb2v2",
     "title": "BROOKFIELD ASSET MANAGEMENT ($BAM) Releases Q2 2026 Earnings",
-    "reason": "弱信源「quiverquant.com」命中「Brookfield」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「Quiver Quantitative」命中「Brookfield」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/BROOKFIELD+ASSET+MANAGEMENT+%28%24BAM%29+Releases+Q2+2026+Earnings",
-    "source": "quiverquant.com",
+    "source": "Quiver Quantitative",
     "sourceTier": "weak"
   }
 ]
