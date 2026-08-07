@@ -10,7 +10,7 @@ interface AssetClassesProps {
 
 const CLASS_ORDER = [
   "us-equities",
-  "china-hk-equities",
+  "asia-equities",
   "rates",
   "fx",
   "commodities",

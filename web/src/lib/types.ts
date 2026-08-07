@@ -103,7 +103,7 @@ export interface EventCalendar {
 
 export type AssetClassId =
   | "us-equities"
-  | "china-hk-equities"
+  | "asia-equities"
   | "rates"
   | "fx"
   | "commodities"

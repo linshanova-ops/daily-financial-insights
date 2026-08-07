@@ -136,7 +136,7 @@ async function fetchTreasuryRows() {
       asOfDate: latest.date,
       source: {
         label: "U.S. Treasury",
-        href: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve",
+        href: `https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=${year}`,
       },
     };
   };

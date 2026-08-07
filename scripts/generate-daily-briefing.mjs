@@ -138,7 +138,7 @@ Theme cards (required — docs/superpowers/specs/2026-08-06-module-source-depth-
 
 Event Calendar (required — docs/superpowers/specs/2026-08-06-event-calendar-design.md): eventCalendar with windowStart=briefing date and windowEnd=next Friday after the Friday-on-or-after that date (Beijing; e.g. Thu Aug 6 → Aug 14). Keep ~4–12 vital dated rows (compact). Coverage spine when in-window: US/China/Japan data+CB+key tech/AI earnings+IPOs; US TIC + quarterly refunding; UK/EU = central-bank only (no UK/EU economic data). Taiwan/HK prints → region China (not Other). Prefer IMAP 日程/央行动态 then standing fixtures — never invent dates/consensus. Optional themeId chip only (no why/trigger/invalidator). Do NOT emit narrative watchItems for new briefings (legacy field may stay empty array if schema requires).
 
-Assets by class (required): assetClasses in order us-equities · china-hk-equities · rates · fx · commodities · crypto. Currencies are FX instrument rows, not top-level peers. Prefer themeId chips over rewriting Themes.
+Assets by class (required): assetClasses in order us-equities · asia-equities · rates · fx · commodities · crypto. asia-equities title "Asia equities" with parallel instruments Golden Dragon / HK-linked and Japan/Korea (not China-only). Currencies are FX instrument rows, not top-level peers. Prefer themeId chips over rewriting Themes.
 
 Fail-closed: branch \`${branchName}\`, PR title exactly \`${prTitle}\`, never push/merge main. CI runs verify-briefing.
 
