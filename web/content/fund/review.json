@@ -62,11 +62,11 @@
   {
     "id": "rev-sig-20260806-3ylcy7",
     "title": "Balyasny and Verition report losses as AI stock selloff rattles hedge fund giants",
-    "reason": "弱信源「Bitget」命中「Balyasny」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「Crypto Briefing」命中「Balyasny」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
-    "href": "https://www.bitget.com/asia/amp/news/detail/12560605617664",
-    "source": "Bitget",
+    "href": "https://cryptobriefing.com/balyasny-verition-losses-ai-stock-selloff/",
+    "source": "Crypto Briefing",
     "sourceTier": "weak"
   },
   {
@@ -167,16 +167,6 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-purchases-shares-of-72287-jefferies-financial-group-inc-jef-2026-08-05/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260806-4ydqve",
-    "title": "Al Waha Capital PJSC (ADX:WAHA) (Q2 2026) Earnings Call Highlights: Net Profit Surges 62% on ... By GuruFocus",
-    "reason": "弱信源「Investing.com Canada」命中「Waha」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://ca.investing.com/news/company-news/al-waha-capital-pjsc-adxwaha-q2-2026-earnings-call-highlights-net-profit-surges-62-on--4779832",
-    "source": "Investing.com Canada",
     "sourceTier": "weak"
   },
   {
