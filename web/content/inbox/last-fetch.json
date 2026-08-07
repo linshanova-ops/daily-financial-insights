@@ -1,5 +1,5 @@
 {
-  "at": "2026-08-07T05:55:32.013Z",
+  "at": "2026-08-07T12:01:05.959Z",
   "briefingDate": "2026-08-07",
   "ok": true,
   "saved": [
@@ -130,15 +130,6 @@
       "reason": "weekly-duplicate",
       "subject": "彭博周末茶歇：中国迅速出招托市",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
-    },
-    {
-      "reason": "date-mismatch",
-      "subject": "彭博财经早茶：美国宣布强迫劳动关税；美伊冲突升级推动油价大涨",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-07-23",
-      "bjDay": "2026-07-24",
-      "briefingDate": "2026-08-07"
     }
   ]
 }
