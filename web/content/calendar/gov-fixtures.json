@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-07T08:13:11.455Z",
+  "fetchedAt": "2026-08-07T12:01:36.416Z",
   "windowStart": "2026-08-07",
   "windowEnd": "2026-08-14",
   "events": [
@@ -12,7 +12,7 @@
       "event": "Employment Situation for July 2026",
       "source": {
         "label": "BLS release calendar",
-        "href": "https://blsmon1.bls.gov/schedule/2026/home.htm"
+        "href": "https://www.bls.gov/schedule/2026/"
       }
     },
     {
@@ -24,7 +24,7 @@
       "event": "Consumer Price Index for July 2026",
       "source": {
         "label": "BLS release calendar",
-        "href": "https://blsmon1.bls.gov/schedule/2026/home.htm"
+        "href": "https://www.bls.gov/schedule/2026/"
       }
     },
     {
@@ -36,7 +36,7 @@
       "event": "Producer Price Index for July 2026",
       "source": {
         "label": "BLS release calendar",
-        "href": "https://blsmon1.bls.gov/schedule/2026/home.htm"
+        "href": "https://www.bls.gov/schedule/2026/"
       }
     },
     {
