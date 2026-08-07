@@ -995,7 +995,7 @@
   "eventCalendar": {
     "windowStart": "2026-08-07",
     "windowEnd": "2026-08-14",
-    "note": "Through next Friday (Aug 14). Taiwan prints under China; UK/EU = CB only. China July trade already released (see chinaChanged / themeCards) — omitted from calendar rows. Canada unemployment skipped (off spine).",
+    "note": "IMAP 日程 + official gov fixtures through next Friday (Aug 14). Taiwan/HK under China; UK/EU = CB only. BLS schedule: CPI Aug 12 and PPI Aug 13 (mirror cite). Fed Bowman discussion Aug 8. Earnings watchlist: no labeled IR print in window. China July trade already released — omitted.",
     "events": [
       {
         "id": "tw-imports-jul-2026-08-07",
@@ -1046,17 +1046,6 @@
         }
       },
       {
-        "id": "cn-fx-reserves-jul-2026-08-07",
-        "date": "2026-08-07",
-        "region": "China",
-        "category": "data",
-        "event": "China July FX reserves (inbox est. vs prior)",
-        "source": {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
         "id": "us-nfp-jul-2026-08-07",
         "date": "2026-08-07",
         "timeBeijing": "20:30",
@@ -1093,6 +1082,53 @@
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "cn-fx-reserves-jul-2026-08-07",
+        "date": "2026-08-07",
+        "region": "China",
+        "category": "data",
+        "event": "China July FX reserves (inbox est. vs prior)",
+        "source": {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "fed-discussion-vice-chair-for-supervision-michelle-w-bowman-2026-08-08",
+        "date": "2026-08-08",
+        "timeBeijing": "00:45",
+        "region": "US",
+        "category": "central-bank",
+        "event": "Discussion - Vice Chair for Supervision Michelle W. Bowman",
+        "source": {
+          "label": "Federal Reserve calendar",
+          "href": "https://www.federalreserve.gov/json/calendar.json"
+        }
+      },
+      {
+        "id": "bls-consumer-price-index-for-july-2026-2026-08-12",
+        "date": "2026-08-12",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "Consumer Price Index for July 2026",
+        "source": {
+          "label": "BLS release calendar",
+          "href": "https://blsmon1.bls.gov/schedule/2026/home.htm"
+        }
+      },
+      {
+        "id": "bls-producer-price-index-for-july-2026-2026-08-13",
+        "date": "2026-08-13",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "Producer Price Index for July 2026",
+        "source": {
+          "label": "BLS release calendar",
+          "href": "https://blsmon1.bls.gov/schedule/2026/home.htm"
         }
       }
     ]

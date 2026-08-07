@@ -1,0 +1,44 @@
+{
+  "fetchedAt": "2026-08-07T08:13:11.455Z",
+  "windowStart": "2026-08-07",
+  "windowEnd": "2026-08-14",
+  "events": [],
+  "errors": [
+    {
+      "name": "meta",
+      "message": "fetch 403"
+    },
+    {
+      "name": "aapl",
+      "message": "fetch 403"
+    },
+    {
+      "name": "orcl",
+      "message": "fetch 403"
+    },
+    {
+      "name": "spcx",
+      "message": "fetch 403"
+    },
+    {
+      "name": "nvda",
+      "message": "fetch 403"
+    },
+    {
+      "name": "sk-hynix",
+      "message": "fetch 404"
+    },
+    {
+      "name": "crcl",
+      "message": "fetch 403"
+    },
+    {
+      "name": "coin",
+      "message": "fetch 403"
+    },
+    {
+      "name": "avgo",
+      "message": "The operation was aborted due to timeout"
+    }
+  ]
+}
