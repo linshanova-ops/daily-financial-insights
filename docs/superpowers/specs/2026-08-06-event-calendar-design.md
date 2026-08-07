@@ -35,7 +35,7 @@ After theme cards shipped, Detail **Watch** still reads like a second Themes lis
 
 **UK / EU:** **central-bank only** (meetings / actions / speeches) — do **not** list UK/EU economic data.
 
-**Greater China:** Taiwan (and HK SAR) prints sit under region **China**, not Other.
+**China:** mainland data/CB only in Event Calendar. Do **not** list Taiwan or Hong Kong SAR prints on the calendar (region remains `China` for mainland rows).
 
 Prefer Bloomberg IMAP **日程** + **央行和政府动态**; fill gaps with dated verifiable calendars. **Never invent a print date or consensus.**
 
