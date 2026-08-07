@@ -1,17 +1,12 @@
 {
-  "at": "2026-08-07T00:01:11.522Z",
+  "at": "2026-08-07T00:05:27.670Z",
   "briefingDate": "2026-08-07",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-07.md",
-      "subject": "彭博财经早茶：霍尔木兹海峡重开添变数；DeepSeek重启融资",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5448,
-      "mailbox": "INBOX",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-07.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-07.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -25,6 +20,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：霍尔木兹海峡重开添变数；DeepSeek重启融资",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-07.md"
+    },
     {
       "reason": "welcome",
       "subject": "Confirm your subscription",
