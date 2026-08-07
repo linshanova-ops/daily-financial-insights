@@ -12,21 +12,11 @@
   {
     "id": "rev-sig-20260806-oe1f4l",
     "title": "Point72, Citadel among hedge funds hit by AI vishing attacks",
-    "reason": "弱信源「InvestmentNews」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「investmentnews.com」命中「Citadel」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708",
-    "source": "InvestmentNews",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-xnsk04",
-    "title": "Citadel funds gain in July as many hedge funds nurse AI selloff related losses",
-    "reason": "弱信源「StreetInsider」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.streetinsider.com/Reuters/Citadel+funds+gain+in+July+as+many+hedge+funds+nurse+AI+selloff+related+losses/26870466.html",
-    "source": "StreetInsider",
+    "source": "investmentnews.com",
     "sourceTier": "weak"
   },
   {
@@ -40,6 +30,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260806-b06hy5",
+    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
+    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.bitget.com/amp/news/detail/12560605615264",
+    "source": "Bitget",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260806-5983lf",
     "title": "Wall Street giants Citadel, Two Sigma, Point72 targeted in wave of AI vishing attacks",
     "reason": "弱信源「Cybernews」命中「Citadel」— 不进入确定命中，待人工复核。",
@@ -47,16 +47,6 @@
     "status": "review",
     "href": "https://cybernews.com/security/wall-street-ai-vishing-citadel-two-sigma-point72/",
     "source": "Cybernews",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-b06hy5",
-    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
-    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.bitget.com/asia/news/detail/12560605615264",
-    "source": "Bitget",
     "sourceTier": "weak"
   },
   {
@@ -80,33 +70,53 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260804-9jf5ui",
-    "title": "Millennium Management Fund lost 2.1% in July, AI stock volatility severely impacted hedge funds",
-    "reason": "弱信源「Bitget」命中「Millennium」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260807-1qdwgk",
+    "title": "Point72 Among Hedge Funds Hit Wall Street Cyberattacks",
+    "reason": "弱信源「The Cyber Express」命中「Point72」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
-    "href": "https://www.bitget.com/amp/news/detail/12560605598916",
-    "source": "Bitget",
+    "href": "https://thecyberexpress.com/point72-cyberattack-on-wall-street/",
+    "source": "The Cyber Express",
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260804-hm5xyn",
-    "title": "Talcott Financial Group Launches West Grove Re in Partnership with Goldman Sachs",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
+    "id": "rev-sig-20260807-moczqi",
+    "title": "Millennium Taps Anthropic Engineers for New AI Risk Desk",
+    "reason": "弱信源「Briefs Finance」命中「Millennium」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
     "status": "review",
-    "href": "https://www.businesswire.com/news/home/20260803466906/en/Talcott-Financial-Group-Launches-West-Grove-Re-in-Partnership-with-Goldman-Sachs",
-    "source": "Business Wire",
+    "href": "https://www.briefs.co/news/millennium-taps-anthropic-engineers-for-new-ai-risk-desk/",
+    "source": "Briefs Finance",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260807-wtllsz",
+    "title": "Quant hedge fund Two Sigma raised average pay to £500k in one of its London entities",
+    "reason": "弱信源「eFinancialCareers」命中「Two Sigma」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.efinancialcareers.com/news/two-sigma-pay-in-london",
+    "source": "eFinancialCareers",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260807-q7fvdd",
+    "title": "Hackers Used AI Voice Cloning to Target Citadel, Point72 and Two Sigma",
+    "reason": "弱信源「Startup Fortune」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://startupfortune.com/hackers-used-ai-voice-cloning-to-target-citadel-point72-and-two-sigma/",
+    "source": "Startup Fortune",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260805-54272k",
     "title": "Michael Patchen, Former Partner & Chief Risk Officer at AQR Capital Management, Joins Star Mountain Capital as Senior Advisor",
-    "reason": "弱信源「Business Wire」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「businesswire.com」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.businesswire.com/news/home/20260804283873/en/Michael-Patchen-Former-Partner-Chief-Risk-Officer-at-AQR-Capital-Management-Joins-Star-Mountain-Capital-as-Senior-Advisor",
-    "source": "Business Wire",
+    "source": "businesswire.com",
     "sourceTier": "weak"
   },
   {
@@ -146,7 +156,17 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+Before+August+5+Deadline",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260807-jzojl6",
+    "title": "Arrowstreet Capital Limited Partnership Purchases Shares of 18,165 First Industrial Realty Trust, Inc. $FR",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-purchases-shares-of-18165-first-industrial-realty-trust-inc-fr-2026-08-07/",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
@@ -160,23 +180,33 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260805-z0ow1f",
-    "title": "Arrowstreet Capital Limited Partnership Purchases Shares of 72,287 Jefferies Financial Group Inc. $JEF",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
+    "id": "rev-sig-20260806-i0ejkq",
+    "title": "Al Waha Capital PJSC (ADX:WAHA) (Q2 2026) Earnings Call Highlights: Net Profit Surges 62% on ...",
+    "reason": "弱信源「Yahoo Finance UK」命中「Waha」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-purchases-shares-of-72287-jefferies-financial-group-inc-jef-2026-08-05/",
-    "source": "MarketBeat",
+    "href": "https://uk.finance.yahoo.com/news/al-waha-capital-pjsc-adx-010026949.html",
+    "source": "Yahoo Finance UK",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260806-4ydqve",
+    "title": "Al Waha Capital PJSC (ADX:WAHA) (Q2 2026) Earnings Call Highlights: Net Profit Surges 62% on ... By GuruFocus",
+    "reason": "弱信源「Investing.com Canada」命中「Waha」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://ca.investing.com/news/company-news/al-waha-capital-pjsc-adxwaha-q2-2026-earnings-call-highlights-net-profit-surges-62-on--4779832",
+    "source": "Investing.com Canada",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260805-ubb2v2",
     "title": "BROOKFIELD ASSET MANAGEMENT ($BAM) Releases Q2 2026 Earnings",
-    "reason": "弱信源「Quiver Quantitative」命中「Brookfield」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「quiverquant.com」命中「Brookfield」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/BROOKFIELD+ASSET+MANAGEMENT+%28%24BAM%29+Releases+Q2+2026+Earnings",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
     "sourceTier": "weak"
   }
 ]

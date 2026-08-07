@@ -1,5 +1,40 @@
 [
   {
+    "id": "sig-20260807-1zw5h7",
+    "date": "2026.08.07",
+    "title": "Albar to run Millennium money after returning outside cash",
+    "summary": "Millennium Capital Partners 业绩相关：Albar to run Millennium money after returning outside cash。",
+    "summaryEn": "Millennium Capital Partners: performance update — Albar to run Millennium money after returning outside cash.",
+    "fund": "Millennium Capital Partners",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "业绩",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/albar-to-run-millennium-money-after-returning-outside-cash/",
+    "relatedSources": [
+      {
+        "source": "Bloomberg.com",
+        "href": "https://www.bloomberg.com/news/articles/2026-08-06/hedge-fund-albar-is-returning-cash-to-run-only-millennium-money",
+        "title": "Hedge Fund Albar Is Returning Cash to Run Only Millennium Money"
+      }
+    ]
+  },
+  {
+    "id": "sig-20260807-qdx21g",
+    "date": "2026.08.07",
+    "title": "Balyasny hires former Deutsche Bank Apac equities head",
+    "summary": "Balyasny Asset Management 人事/招聘动向：Balyasny hires former Deutsche Bank Apac equities head。",
+    "summaryEn": "Balyasny Asset Management: hiring / personnel move — Balyasny hires former Deutsche Bank Apac equities head.",
+    "fund": "Balyasny Asset Management",
+    "source": "Financial News London",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "人员 / 招聘",
+    "status": "confirmed",
+    "href": "https://www.fnlondon.com/articles/balyasny-hires-former-deutsche-bank-apac-equities-head-8682ad8b"
+  },
+  {
     "id": "sig-20260806-peb0cq",
     "date": "2026.08.06",
     "title": "Citadel quant developer joins Kalshi",
@@ -40,20 +75,6 @@
     "tag": "动态",
     "status": "confirmed",
     "href": "https://www.hedgeweek.com/millennium-lands-natural-gas-trader-ahead-of-point72/"
-  },
-  {
-    "id": "sig-20260806-sedu60",
-    "date": "2026.08.06",
-    "title": "Hedge Fund Albar Is Returning Cash to Run Only Millennium Money",
-    "summary": "Millennium Capital Partners 业绩相关：Hedge Fund Albar Is Returning Cash to Run Only Millennium Money。",
-    "summaryEn": "Millennium Capital Partners: performance update — Hedge Fund Albar Is Returning Cash to Run Only Millennium Money.",
-    "fund": "Millennium Capital Partners",
-    "source": "Bloomberg.com",
-    "sourceTier": "secondary",
-    "sourceTierLabel": "公开转载",
-    "tag": "业绩",
-    "status": "confirmed",
-    "href": "https://www.bloomberg.com/news/articles/2026-08-06/hedge-fund-albar-is-returning-cash-to-run-only-millennium-money"
   },
   {
     "id": "sig-20260806-3j0c53",
@@ -103,6 +124,20 @@
         "title": "Citadel’s flagship fund surges 6% after Situational Awareness swoop"
       }
     ]
+  },
+  {
+    "id": "sig-20260805-xnsk04",
+    "date": "2026.08.05",
+    "title": "Citadel funds gain in July as many hedge funds nurse AI selloff related losses",
+    "summary": "Citadel Investment Group：Citadel funds gain in July as many hedge funds nurse AI selloff related losses（动态）。",
+    "summaryEn": "Citadel Investment Group: Citadel funds gain in July as many hedge funds nurse AI selloff related losses.",
+    "fund": "Citadel Investment Group",
+    "source": "Reuters",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.reuters.com/business/citadel-funds-gain-july-many-hedge-funds-nurse-ai-sell-off-related-losses-2026-08-05/"
   },
   {
     "id": "sig-20260805-a0q4xv",
