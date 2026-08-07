@@ -117,7 +117,7 @@ Assets is a flat eight-item grid where **USD** and **JPY** sit as peers of Oil/E
 
 ## Goal
 
-Regroup Detail **Assets** by **asset class**, with equities split **US vs China/HK**. Currencies live **under FX**, not as top-level peers.
+Regroup Detail **Assets** by **asset class**, with equities split **US vs Asia** (Greater China + Japan/Korea). Currencies live **under FX**, not as top-level peers.
 
 ## Decision (locked)
 
