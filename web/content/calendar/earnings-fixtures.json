@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-07T12:21:12.113Z",
+  "fetchedAt": "2026-08-07T12:25:53.297Z",
   "windowStart": "2026-08-07",
   "windowEnd": "2026-08-14",
   "events": [],
@@ -29,16 +29,16 @@
       "message": "fetch 403"
     },
     {
-      "name": "sk-hynix",
-      "message": "fetch 404"
-    },
-    {
       "name": "crcl",
       "message": "fetch 403"
     },
     {
       "name": "coin",
       "message": "fetch 403"
+    },
+    {
+      "name": "sk-hynix",
+      "message": "fetch failed"
     },
     {
       "name": "avgo",
