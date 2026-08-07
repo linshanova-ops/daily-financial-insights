@@ -90,8 +90,9 @@ function preferEarningsLabeledDates(text, candidates) {
       if (month) labeled.add(ymd(Number(m[6]), month, Number(m[5])));
     }
   }
-  const preferred = candidates.filter((d) => labeled.has(d));
-  return preferred.length ? preferred : candidates;
+  // Never fall back to unlabeled page dates (e.g. "Updated August 11") —
+  // that invents fake earnings days.
+  return candidates.filter((d) => labeled.has(d));
 }
 
 function buildEarningsEvent(company, date) {
@@ -127,7 +128,8 @@ export function parseEarningsFromIrHtml(html, company, { windowStart, windowEnd 
   if (!inWin.length) return [];
 
   const ranked = preferEarningsLabeledDates(text, inWin);
-  const date = ranked[0]; // earliest (candidates sorted)
+  if (!ranked.length) return [];
+  const date = ranked[0]; // earliest among labeled
   return [buildEarningsEvent(company, date)];
 }
 

@@ -53,11 +53,11 @@ describe("parseEarningsFromIrHtml", () => {
     assert.ok(ev.id);
   });
 
-  it("picks earliest date in window when several match", () => {
+  it("picks earliest labeled earnings date in window when several match", () => {
     const html = `
-      <p>Earnings on August 15, 2026</p>
-      <p>Also scheduled August 10, 2026</p>
-      <p>And 2026-08-12</p>
+      <p>Will announce earnings on August 15, 2026</p>
+      <p>Earnings on August 10, 2026</p>
+      <p>Earnings date 2026-08-12</p>
     `;
     const events = parseEarningsFromIrHtml(html, msft, {
       windowStart: "2026-08-07",
@@ -65,6 +65,19 @@ describe("parseEarningsFromIrHtml", () => {
     });
     assert.equal(events.length, 1);
     assert.equal(events[0].date, "2026-08-10");
+  });
+
+  it("returns [] for unlabeled page dates (e.g. Updated August 11)", () => {
+    const html = `
+      <p>Last Updated August 11, 2026</p>
+      <p>Investor Relations homepage</p>
+      <p>Press release dated 2026-08-10</p>
+    `;
+    const events = parseEarningsFromIrHtml(html, msft, {
+      windowStart: "2026-08-07",
+      windowEnd: "2026-08-14",
+    });
+    assert.deepEqual(events, []);
   });
 
   it("returns [] when no date falls in window", () => {

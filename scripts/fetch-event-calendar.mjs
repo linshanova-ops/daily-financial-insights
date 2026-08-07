@@ -115,7 +115,12 @@ function commitFixtures(briefingDate) {
     console.error(commit.stderr || commit.stdout);
     throw new Error("event calendar fixture commit failed");
   }
-  console.log(`[event-calendar] committed fixtures: ${msg}`);
+  const push = git(["push", "origin", "HEAD"]);
+  if (push.status !== 0) {
+    console.error(push.stderr || push.stdout);
+    throw new Error("event calendar fixture push failed");
+  }
+  console.log(`[event-calendar] committed and pushed fixtures: ${msg}`);
   return true;
 }
 
