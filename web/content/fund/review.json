@@ -30,6 +30,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260806-b06hy5",
+    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
+    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.bitget.com/amp/news/detail/12560605615264",
+    "source": "Bitget",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260806-5983lf",
     "title": "Wall Street giants Citadel, Two Sigma, Point72 targeted in wave of AI vishing attacks",
     "reason": "弱信源「Cybernews」命中「Citadel」— 不进入确定命中，待人工复核。",
@@ -37,16 +47,6 @@
     "status": "review",
     "href": "https://cybernews.com/security/wall-street-ai-vishing-citadel-two-sigma-point72/",
     "source": "Cybernews",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-b06hy5",
-    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
-    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.bitget.com/asia/news/detail/12560605615264",
-    "source": "Bitget",
     "sourceTier": "weak"
   },
   {
