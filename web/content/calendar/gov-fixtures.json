@@ -1,0 +1,25 @@
+{
+  "fetchedAt": "2026-08-07T05:12:52.676Z",
+  "windowStart": "2026-08-07",
+  "windowEnd": "2026-08-14",
+  "events": [
+    {
+      "id": "fed-discussion-vice-chair-for-supervision-michelle-w-bowman-2026-08-08",
+      "date": "2026-08-08",
+      "timeBeijing": "00:45",
+      "region": "US",
+      "category": "central-bank",
+      "event": "Discussion - Vice Chair for Supervision Michelle W. Bowman",
+      "source": {
+        "label": "Federal Reserve calendar",
+        "href": "https://www.federalreserve.gov/json/calendar.json"
+      }
+    }
+  ],
+  "errors": [
+    {
+      "name": "bls",
+      "message": "BLS schedule fetch failed: 403 https://www.bls.gov/schedule/2026/"
+    }
+  ]
+}

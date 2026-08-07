@@ -112,6 +112,27 @@ jobs:
             echo "No inbox changes to commit."
           fi
 
+      - name: Fetch Event Calendar fixtures (gov + earnings)
+        id: calendar
+        if: steps.gate.outputs.should_run == 'true' && steps.gate.outputs.is_catchup != 'true'
+        continue-on-error: true
+        run: |
+          set +e
+          before=$(git rev-parse HEAD)
+          node scripts/fetch-event-calendar.mjs --date "${{ steps.gate.outputs.briefing_date }}" --commit
+          code=$?
+          after=$(git rev-parse HEAD)
+          set -e
+          if [ "$code" -ne 0 ]; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            exit "$code"
+          fi
+          if [ "$before" != "$after" ]; then
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+          fi
+
       # Fund module: no Cursor tokens. Primary Beijing window only.
       - name: Scan Fund signals (Hedgeweek + Google News)
         id: fund

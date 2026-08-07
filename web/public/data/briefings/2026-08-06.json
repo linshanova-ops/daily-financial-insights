@@ -936,7 +936,7 @@
   "eventCalendar": {
     "windowStart": "2026-08-06",
     "windowEnd": "2026-08-14",
-    "note": "Through next Friday (Aug 14). Taiwan prints under China; UK/EU = CB only.",
+    "note": "Fixtures + IMAP through 2026-08-14. Taiwan prints under China; UK/EU = CB only.",
     "events": [
       {
         "id": "us-sf-fed-daly-2026-08-06",
@@ -987,6 +987,18 @@
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "fed-discussion-vice-chair-for-supervision-michelle-w-bowman-2026-08-08",
+        "date": "2026-08-08",
+        "timeBeijing": "00:45",
+        "region": "US",
+        "category": "central-bank",
+        "event": "Discussion - Vice Chair for Supervision Michelle W. Bowman",
+        "source": {
+          "label": "Federal Reserve calendar",
+          "href": "https://www.federalreserve.gov/json/calendar.json"
         }
       }
     ]

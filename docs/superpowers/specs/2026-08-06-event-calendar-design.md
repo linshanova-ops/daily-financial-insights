@@ -96,8 +96,10 @@ Header: `{windowStart} → {windowEnd} (Beijing)`.
 
 ## Generate / accuracy
 
-1. Every new briefing: `eventCalendar` (~8–20 rows typical).
+1. Every new briefing: `eventCalendar` (~8–20 rows typical when fixtures exist).
 2. Inbox first; then standing fixtures from coverage spine.
+
+Committed gov/earnings fixture JSON (`web/content/calendar/gov-fixtures.json`, `web/content/calendar/earnings-fixtures.json`) is fetched before generate via `scripts/fetch-event-calendar.mjs` — see `docs/superpowers/specs/2026-08-07-calendar-gov-earnings-design.md`. Merge fixtures after IMAP to fill the window through `windowEnd`; target ~8–20 dated rows when fixtures are in-window.
 3. Theme chips only when mapped to an existing `themeCards[].id`.
 4. Ban why/trigger/invalidator/desk-risk essays here.
 5. Consensus/prior must pass scan-links evidence.
