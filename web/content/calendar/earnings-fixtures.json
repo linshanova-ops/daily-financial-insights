@@ -1,13 +1,9 @@
 {
-  "fetchedAt": "2026-08-07T12:33:24.442Z",
+  "fetchedAt": "2026-08-07T12:35:54.412Z",
   "windowStart": "2026-08-07",
   "windowEnd": "2026-08-14",
   "events": [],
   "errors": [
-    {
-      "name": "meta",
-      "message": "fetch 403"
-    },
     {
       "name": "amzn",
       "message": "fetch 403"
@@ -21,6 +17,10 @@
       "message": "fetch 403"
     },
     {
+      "name": "meta",
+      "message": "fetch 403"
+    },
+    {
       "name": "spcx",
       "message": "fetch 403"
     },
@@ -29,16 +29,16 @@
       "message": "fetch 403"
     },
     {
-      "name": "sk-hynix",
-      "message": "fetch 404"
-    },
-    {
       "name": "crcl",
       "message": "fetch 403"
     },
     {
       "name": "coin",
       "message": "fetch 403"
+    },
+    {
+      "name": "sk-hynix",
+      "message": "fetch failed"
     },
     {
       "name": "zhipu",
