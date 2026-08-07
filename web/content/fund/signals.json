@@ -56,6 +56,20 @@
     "href": "https://www.bloomberg.com/news/articles/2026-08-06/hedge-fund-albar-is-returning-cash-to-run-only-millennium-money"
   },
   {
+    "id": "sig-20260806-3j0c53",
+    "date": "2026.08.06",
+    "title": "Millennium Partners With Anthropic to Develop AI Risk Analyst",
+    "summary": "Millennium Capital Partners：Millennium Partners With Anthropic to Develop AI Risk Analyst（动态）。",
+    "summaryEn": "Millennium Capital Partners: Millennium Partners With Anthropic to Develop AI Risk Analyst.",
+    "fund": "Millennium Capital Partners",
+    "source": "Bloomberg.com",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.bloomberg.com/news/articles/2026-08-06/millennium-partners-with-anthropic-to-develop-ai-risk-analyst"
+  },
+  {
     "id": "sig-20260805-gu2e8j",
     "date": "2026.08.05",
     "title": "Ex-Citadel managers’ FIFTHDELTA rebounds with 8.6% gain in volatile July",
@@ -81,7 +95,14 @@
     "sourceTierLabel": "指定信源",
     "tag": "业绩",
     "status": "confirmed",
-    "href": "https://www.hedgeweek.com/citadel-posts-strong-july-gains-following-acquisition-of-situational-awareness-equity-portfolio/"
+    "href": "https://www.hedgeweek.com/citadel-posts-strong-july-gains-following-acquisition-of-situational-awareness-equity-portfolio/",
+    "relatedSources": [
+      {
+        "source": "Financial Times",
+        "href": "https://www.ft.com/content/ae7acfa8-32d6-496a-a1df-28206fa1661d?syn-25a6b1a6=1",
+        "title": "Citadel’s flagship fund surges 6% after Situational Awareness swoop"
+      }
+    ]
   },
   {
     "id": "sig-20260805-a0q4xv",

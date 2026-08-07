@@ -10,16 +10,6 @@
     "sourceTier": "designated"
   },
   {
-    "id": "rev-sig-20260806-oe1f4l",
-    "title": "Point72, Citadel among hedge funds hit by AI vishing attacks",
-    "reason": "弱信源「InvestmentNews」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708",
-    "source": "InvestmentNews",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260805-xnsk04",
     "title": "Citadel funds gain in July as many hedge funds nurse AI selloff related losses",
     "reason": "弱信源「The Mighty 790 KFGO」命中「Citadel」— 不进入确定命中，待人工复核。",
@@ -30,13 +20,43 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260804-6b3t3a",
-    "title": "Billionaire Ken Griffin Just Saved Situational Awareness, But Here’s What a Rescue Call From Citadel Really Sounds Like — ‘I… Heard the Grim Reaper’s Scythe’",
-    "reason": "弱信源「Barchart.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260806-oe1f4l",
+    "title": "Point72, Citadel among hedge funds hit by AI vishing attacks",
+    "reason": "弱信源「InvestmentNews」命中「Citadel」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
-    "href": "https://www.barchart.com/story/news/3619493/billionaire-ken-griffin-just-saved-situational-awareness-but-heres-what-a-rescue-call-from-citadel-really-sounds-like-i-heard-the-grim-reapers-scythe",
-    "source": "Barchart.com",
+    "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708",
+    "source": "InvestmentNews",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260805-qs9ctj",
+    "title": "Citadel returns jump after Situational Awareness deal",
+    "reason": "弱信源「Capital Brief」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.capitalbrief.com/briefing/citadel-returns-jump-after-situational-awareness-deal-c277ada5-2fda-443b-a439-5e7c9a196340/",
+    "source": "Capital Brief",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260806-5983lf",
+    "title": "Wall Street giants Citadel, Two Sigma, Point72 targeted in wave of AI vishing attacks",
+    "reason": "弱信源「Cybernews」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://cybernews.com/security/wall-street-ai-vishing-citadel-two-sigma-point72/",
+    "source": "Cybernews",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260805-b06hy5",
+    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
+    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.bitget.com/asia/news/detail/12560605615264",
+    "source": "Bitget",
     "sourceTier": "weak"
   },
   {
@@ -60,16 +80,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260806-5983lf",
-    "title": "Wall Street giants Citadel, Two Sigma, Point72 targeted in wave of AI vishing attacks",
-    "reason": "弱信源「Cybernews」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://cybernews.com/security/wall-street-ai-vishing-citadel-two-sigma-point72/",
-    "source": "Cybernews",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260804-9jf5ui",
     "title": "Millennium Management Fund lost 2.1% in July, AI stock volatility severely impacted hedge funds",
     "reason": "弱信源「Bitget」命中「Millennium」— 不进入确定命中，待人工复核。",
@@ -77,36 +87,6 @@
     "status": "review",
     "href": "https://www.bitget.com/amp/news/detail/12560605598916",
     "source": "Bitget",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260804-txgq5s",
-    "title": "Millennium Management Fund posted a 2.1% loss in July, as volatility in AI stocks dealt a heavy blow to hedge funds.",
-    "reason": "弱信源「富途牛牛」命中「Millennium」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://news.futunn.com/en/post/77045616/millennium-management-fund-posted-a-2-1-loss-in-july",
-    "source": "富途牛牛",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260804-rfqgc3",
-    "title": "AI Stock Turmoil Hits Hedge Funds! Millennium Loses 2.1% in July, Quant Strategies Buck the Trend",
-    "reason": "弱信源「finance.biggo.com」命中「Millennium」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://finance.biggo.com/news/ae535cf6-9996-4834-abef-77b9ddd90077",
-    "source": "finance.biggo.com",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260804-umjem1",
-    "title": "Goldman Sachs Asset Management Launches AlphaAI Investment Platform",
-    "reason": "弱信源「Hubbis」命中「Goldman Sachs Asset Management」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.hubbis.com/news/goldman-sachs-asset-management-launches-alphaai-investment-platform",
-    "source": "Hubbis",
     "sourceTier": "weak"
   },
   {
@@ -130,26 +110,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260804-knhzng",
-    "title": "Coatue’s Hedge Fund Sinks 8% in Worst Drop in More Than a Year",
-    "reason": "中等置信度命中「Coatue」，待人工复核。",
-    "confidence": "61%",
-    "status": "review",
-    "href": "https://www.bloomberg.com/news/articles/2026-08-03/coatue-s-hedge-fund-sinks-8-in-worst-drop-in-more-than-a-year",
-    "source": "Bloomberg.com",
-    "sourceTier": "secondary"
-  },
-  {
-    "id": "rev-sig-20260804-hfao81",
-    "title": "Watch Coatue's Hedge Fund Sees Worst Drop in More Than a Year",
-    "reason": "中等置信度命中「Coatue」，待人工复核。",
-    "confidence": "61%",
-    "status": "review",
-    "href": "https://www.bloomberg.com/news/videos/2026-08-04/coatue-s-hedge-fund-sees-worst-drop-in-more-than-a-year-video",
-    "source": "Bloomberg.com",
-    "sourceTier": "secondary"
-  },
-  {
     "id": "rev-sig-20260806-kzjkh0",
     "title": "Omnivore bets big on deep science, agrifood consumer brands with remaining Fund III capital",
     "reason": "弱信源「livemint.com」命中「III Capital」— 不进入确定命中，待人工复核。",
@@ -170,6 +130,16 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260806-ez7foi",
+    "title": "EasyJet board accepts US investment fund Apollo’s takeover bid - Travel Weekly",
+    "reason": "中等置信度命中「Apollo」，待人工复核。",
+    "confidence": "61%",
+    "status": "review",
+    "href": "https://travelweekly.co.uk/news/easyjet-board-accepts-us-investment-fund-apollos-takeover-bid",
+    "source": "Travel Weekly - Home",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260805-vfcaxq",
     "title": "XAI Floating Rate & Alternative Income Trust Urges Shareholders to Vote for King Street Sub-Advisory Agreement Before August 5 Deadline",
     "reason": "中等置信度命中「King Street」，待人工复核。",
@@ -177,26 +147,6 @@
     "status": "review",
     "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+Before+August+5+Deadline",
     "source": "Quiver Quantitative",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260803-dzsj43",
-    "title": "XFLT Urges Shareholders to Vote for King Street Sub-Advisory Agreement as Board Liquidity Plan Gains Support",
-    "reason": "中等置信度命中「King Street」，待人工复核。",
-    "confidence": "66%",
-    "status": "review",
-    "href": "https://www.quiverquant.com/news/XFLT+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+as+Board+Liquidity+Plan+Gains+Support",
-    "source": "Quiver Quantitative",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260804-7hb8q4",
-    "title": "Arrowstreet Capital Limited Partnership Makes New Investment in Ultra Clean Holdings, Inc. $UCTT",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-investment-in-ultra-clean-holdings-inc-uctt-2026-08-04/",
-    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
@@ -217,16 +167,6 @@
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-purchases-shares-of-72287-jefferies-financial-group-inc-jef-2026-08-05/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260804-4vwqsh",
-    "title": "Bill Ackman's Pershing Square Owns Amazon, Microsoft, and Meta Platforms. Here's the Best Buy of the Bunch in August.",
-    "reason": "中等置信度命中「Pershing Square」，待人工复核。",
-    "confidence": "70%",
-    "status": "review",
-    "href": "https://www.fool.com/investing/2026/08/03/bill-ackmans-pershing-square-owns-amazon-microsoft/",
-    "source": "The Motley Fool",
     "sourceTier": "weak"
   },
   {
