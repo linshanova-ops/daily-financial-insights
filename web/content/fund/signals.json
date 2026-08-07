@@ -14,7 +14,7 @@
     "href": "https://www.hedgeweek.com/albar-to-run-millennium-money-after-returning-outside-cash/",
     "relatedSources": [
       {
-        "source": "Bloomberg.com",
+        "source": "bloomberg.com",
         "href": "https://www.bloomberg.com/news/articles/2026-08-06/hedge-fund-albar-is-returning-cash-to-run-only-millennium-money",
         "title": "Hedge Fund Albar Is Returning Cash to Run Only Millennium Money"
       }
@@ -33,6 +33,20 @@
     "tag": "人员 / 招聘",
     "status": "confirmed",
     "href": "https://www.fnlondon.com/articles/balyasny-hires-former-deutsche-bank-apac-equities-head-8682ad8b"
+  },
+  {
+    "id": "sig-20260806-3j0c53",
+    "date": "2026.08.06",
+    "title": "Millennium Partners With Anthropic to Develop AI Risk Analyst",
+    "summary": "Millennium Capital Partners：Millennium Partners With Anthropic to Develop AI Risk Analyst（动态）。",
+    "summaryEn": "Millennium Capital Partners: Millennium Partners With Anthropic to Develop AI Risk Analyst.",
+    "fund": "Millennium Capital Partners",
+    "source": "Bloomberg.com",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.bloomberg.com/news/articles/2026-08-06/millennium-partners-with-anthropic-to-develop-ai-risk-analyst"
   },
   {
     "id": "sig-20260806-peb0cq",
@@ -77,18 +91,18 @@
     "href": "https://www.hedgeweek.com/millennium-lands-natural-gas-trader-ahead-of-point72/"
   },
   {
-    "id": "sig-20260806-3j0c53",
-    "date": "2026.08.06",
-    "title": "Millennium Partners With Anthropic to Develop AI Risk Analyst",
-    "summary": "Millennium Capital Partners：Millennium Partners With Anthropic to Develop AI Risk Analyst（动态）。",
-    "summaryEn": "Millennium Capital Partners: Millennium Partners With Anthropic to Develop AI Risk Analyst.",
-    "fund": "Millennium Capital Partners",
+    "id": "sig-20260805-um1zyl",
+    "date": "2026.08.05",
+    "title": "Balyasny, Verition Join Hedge Funds Losing in Brutal July",
+    "summary": "Balyasny Asset Management：Balyasny, Verition Join Hedge Funds Losing in Brutal July（动态）。",
+    "summaryEn": "Balyasny Asset Management: Balyasny, Verition Join Hedge Funds Losing in Brutal July.",
+    "fund": "Balyasny Asset Management",
     "source": "Bloomberg.com",
     "sourceTier": "secondary",
     "sourceTierLabel": "公开转载",
     "tag": "动态",
     "status": "confirmed",
-    "href": "https://www.bloomberg.com/news/articles/2026-08-06/millennium-partners-with-anthropic-to-develop-ai-risk-analyst"
+    "href": "https://www.bloomberg.com/news/articles/2026-08-05/balyasny-verition-join-hedge-funds-losing-money-in-brutal-july"
   },
   {
     "id": "sig-20260805-gu2e8j",
@@ -168,18 +182,32 @@
     "href": "https://www.hedgeweek.com/de-shaw-expands-private-markets-push-with-launch-of-second-voltaic-fund/"
   },
   {
-    "id": "sig-20260805-um1zyl",
-    "date": "2026.08.05",
-    "title": "Balyasny, Verition Join Hedge Funds Losing in Brutal July",
-    "summary": "Balyasny Asset Management：Balyasny, Verition Join Hedge Funds Losing in Brutal July（动态）。",
-    "summaryEn": "Balyasny Asset Management: Balyasny, Verition Join Hedge Funds Losing in Brutal July.",
-    "fund": "Balyasny Asset Management",
+    "id": "sig-20260804-v9i9cv",
+    "date": "2026.08.04",
+    "title": "Millennium Lost 2% Last Month as AI Trade Whipsawed Hedge Funds",
+    "summary": "Millennium Capital Partners：Millennium Lost 2% Last Month as AI Trade Whipsawed Hedge Funds（动态）。",
+    "summaryEn": "Millennium Capital Partners: Millennium Lost 2% Last Month as AI Trade Whipsawed Hedge Funds.",
+    "fund": "Millennium Capital Partners",
     "source": "Bloomberg.com",
     "sourceTier": "secondary",
     "sourceTierLabel": "公开转载",
     "tag": "动态",
     "status": "confirmed",
-    "href": "https://www.bloomberg.com/news/articles/2026-08-05/balyasny-verition-join-hedge-funds-losing-money-in-brutal-july"
+    "href": "https://www.bloomberg.com/news/articles/2026-08-03/millennium-lost-2-last-month-as-ai-trade-whipsawed-hedge-funds"
+  },
+  {
+    "id": "sig-20260804-g6z2ca",
+    "date": "2026.08.04",
+    "title": "Millennium slips 2.1% in July as AI sell-off weighs on multi-strat hedge funds",
+    "summary": "Millennium Capital Partners：Millennium slips 2.1% in July as AI sell-off weighs on multi-strat hedge funds（动态）。",
+    "summaryEn": "Millennium Capital Partners: Millennium slips 2.1% in July as AI sell-off weighs on multi-strat hedge funds.",
+    "fund": "Millennium Capital Partners",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/millennium-slips-2-1-in-july-as-ai-sell-off-weighs-on-multi-strat-hedge-funds/"
   },
   {
     "id": "sig-20260804-41n5gq",
@@ -208,34 +236,6 @@
     "tag": "组织 / 产品",
     "status": "confirmed",
     "href": "https://www.hedgeweek.com/aqrs-tax-aware-strategy-fuels-growth/"
-  },
-  {
-    "id": "sig-20260804-v9i9cv",
-    "date": "2026.08.04",
-    "title": "Millennium Lost 2% Last Month as AI Trade Whipsawed Hedge Funds",
-    "summary": "Millennium Capital Partners：Millennium Lost 2% Last Month as AI Trade Whipsawed Hedge Funds（动态）。",
-    "summaryEn": "Millennium Capital Partners: Millennium Lost 2% Last Month as AI Trade Whipsawed Hedge Funds.",
-    "fund": "Millennium Capital Partners",
-    "source": "Bloomberg.com",
-    "sourceTier": "secondary",
-    "sourceTierLabel": "公开转载",
-    "tag": "动态",
-    "status": "confirmed",
-    "href": "https://www.bloomberg.com/news/articles/2026-08-03/millennium-lost-2-last-month-as-ai-trade-whipsawed-hedge-funds"
-  },
-  {
-    "id": "sig-20260804-g6z2ca",
-    "date": "2026.08.04",
-    "title": "Millennium slips 2.1% in July as AI sell-off weighs on multi-strat hedge funds",
-    "summary": "Millennium Capital Partners：Millennium slips 2.1% in July as AI sell-off weighs on multi-strat hedge funds（动态）。",
-    "summaryEn": "Millennium Capital Partners: Millennium slips 2.1% in July as AI sell-off weighs on multi-strat hedge funds.",
-    "fund": "Millennium Capital Partners",
-    "source": "Hedgeweek",
-    "sourceTier": "designated",
-    "sourceTierLabel": "指定信源",
-    "tag": "动态",
-    "status": "confirmed",
-    "href": "https://www.hedgeweek.com/millennium-slips-2-1-in-july-as-ai-sell-off-weighs-on-multi-strat-hedge-funds/"
   },
   {
     "id": "sig-20260804-s2dgtg",
@@ -437,20 +437,6 @@
     "href": "https://www.fnlondon.com/articles/man-group-results-three-things-you-need-to-know-25072933"
   },
   {
-    "id": "sig-20260727-qqtjv1",
-    "date": "2026.07.27",
-    "title": "Big-name hedge funds investing in outside managers are turning to a proven pool of talent: Former Citadel PMs",
-    "summary": "Citadel Investment Group：Big-name hedge funds investing in outside managers are turning to a proven pool of talent: Former Citadel PMs（动态）。",
-    "summaryEn": "Citadel Investment Group: Big-name hedge funds investing in outside managers are turning to a proven pool of talent: Former Citadel PMs.",
-    "fund": "Citadel Investment Group",
-    "source": "Business Insider",
-    "tag": "动态",
-    "status": "confirmed",
-    "href": "https://www.businessinsider.com/citadel-spin-offs-favorite-for-hedge-funds-investing-externally-2026-7",
-    "sourceTier": "secondary",
-    "sourceTierLabel": "公开转载"
-  },
-  {
     "id": "sig-20260727-5epxev",
     "date": "2026.07.27",
     "title": "Balyasny gets green light to expand in Abu Dhabi",
@@ -461,6 +447,20 @@
     "tag": "动态",
     "status": "confirmed",
     "href": "https://www.fundsglobalmena.com/balyasny-gets-green-light-to-expand-in-abu-dhabi/",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载"
+  },
+  {
+    "id": "sig-20260727-qqtjv1",
+    "date": "2026.07.27",
+    "title": "Big-name hedge funds investing in outside managers are turning to a proven pool of talent: Former Citadel PMs",
+    "summary": "Citadel Investment Group：Big-name hedge funds investing in outside managers are turning to a proven pool of talent: Former Citadel PMs（动态）。",
+    "summaryEn": "Citadel Investment Group: Big-name hedge funds investing in outside managers are turning to a proven pool of talent: Former Citadel PMs.",
+    "fund": "Citadel Investment Group",
+    "source": "Business Insider",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.businessinsider.com/citadel-spin-offs-favorite-for-hedge-funds-investing-externally-2026-7",
     "sourceTier": "secondary",
     "sourceTierLabel": "公开转载"
   },
@@ -724,6 +724,20 @@
     "sourceTierLabel": "指定信源"
   },
   {
+    "id": "sig-20260701-vs4ie",
+    "date": "2026.07.01",
+    "title": "Millennium hires ex-BNP Paribas trader to boost Zug office",
+    "summary": "Millennium Capital Partners 人事/招聘动向：Millennium hires ex-BNP Paribas trader to boost Zug office。",
+    "summaryEn": "Millennium Capital Partners: hiring / personnel move — Millennium hires ex-BNP Paribas trader to boost Zug office.",
+    "fund": "Millennium Capital Partners",
+    "source": "Financial News London",
+    "tag": "人员 / 招聘",
+    "status": "confirmed",
+    "href": "https://www.fnlondon.com/articles/millennium-hires-ex-bnp-paribas-trader-to-boost-zug-office-623fe084",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载"
+  },
+  {
     "id": "sig-20260701-nllbx5",
     "date": "2026.07.01",
     "title": "Millennium and Point72 gain as hedge funds rebound from Iran war",
@@ -743,20 +757,6 @@
         "title": "Hedge fund scorecard: Millennium, Point72, and Asia funds caught up in a chaotic July"
       }
     ]
-  },
-  {
-    "id": "sig-20260701-vs4ie",
-    "date": "2026.07.01",
-    "title": "Millennium hires ex-BNP Paribas trader to boost Zug office",
-    "summary": "Millennium Capital Partners 人事/招聘动向：Millennium hires ex-BNP Paribas trader to boost Zug office。",
-    "summaryEn": "Millennium Capital Partners: hiring / personnel move — Millennium hires ex-BNP Paribas trader to boost Zug office.",
-    "fund": "Millennium Capital Partners",
-    "source": "Financial News London",
-    "tag": "人员 / 招聘",
-    "status": "confirmed",
-    "href": "https://www.fnlondon.com/articles/millennium-hires-ex-bnp-paribas-trader-to-boost-zug-office-623fe084",
-    "sourceTier": "secondary",
-    "sourceTierLabel": "公开转载"
   },
   {
     "id": "sig-20260701-j77gy7",
