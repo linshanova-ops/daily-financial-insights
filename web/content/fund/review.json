@@ -12,11 +12,11 @@
   {
     "id": "rev-sig-20260806-oe1f4l",
     "title": "Point72, Citadel among hedge funds hit by AI vishing attacks",
-    "reason": "弱信源「investmentnews.com」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「InvestmentNews」命中「Citadel」— 不进入确定命中，待人工复核。",
     "confidence": "82%",
     "status": "review",
     "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708",
-    "source": "investmentnews.com",
+    "source": "InvestmentNews",
     "sourceTier": "weak"
   },
   {
@@ -30,16 +30,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260806-b06hy5",
-    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
-    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.bitget.com/amp/news/detail/12560605615264",
-    "source": "Bitget",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260806-5983lf",
     "title": "Wall Street giants Citadel, Two Sigma, Point72 targeted in wave of AI vishing attacks",
     "reason": "弱信源「Cybernews」命中「Citadel」— 不进入确定命中，待人工复核。",
@@ -47,6 +37,16 @@
     "status": "review",
     "href": "https://cybernews.com/security/wall-street-ai-vishing-citadel-two-sigma-point72/",
     "source": "Cybernews",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260805-b06hy5",
+    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
+    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.bitget.com/asia/news/detail/12560605615264",
+    "source": "Bitget",
     "sourceTier": "weak"
   },
   {
@@ -112,11 +112,11 @@
   {
     "id": "rev-sig-20260805-54272k",
     "title": "Michael Patchen, Former Partner & Chief Risk Officer at AQR Capital Management, Joins Star Mountain Capital as Senior Advisor",
-    "reason": "弱信源「businesswire.com」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「Business Wire」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.businesswire.com/news/home/20260804283873/en/Michael-Patchen-Former-Partner-Chief-Risk-Officer-at-AQR-Capital-Management-Joins-Star-Mountain-Capital-as-Senior-Advisor",
-    "source": "businesswire.com",
+    "source": "Business Wire",
     "sourceTier": "weak"
   },
   {
@@ -132,11 +132,11 @@
   {
     "id": "rev-sig-20260806-1p66ol",
     "title": "Omnivore To Deploy Remaining ₹1,800 Crore Fund III Capital",
-    "reason": "弱信源「Whalesbook」命中「III Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「whalesbook.com」命中「III Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.whalesbook.com/news/English/bankingfinance/Omnivore-To-Deploy-Remaining-indian-rupee1800-Crore-Fund-III-Capital/6a744a14699b085e86f5262b",
-    "source": "Whalesbook",
+    "source": "whalesbook.com",
     "sourceTier": "weak"
   },
   {
