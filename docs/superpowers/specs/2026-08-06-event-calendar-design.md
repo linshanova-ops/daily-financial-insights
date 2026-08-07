@@ -3,7 +3,7 @@
 > Status: **approved frame** (2026-08-06) — ready for implementation plan after spec review.  
 > Related: `docs/superpowers/specs/2026-08-06-module-source-depth-design.md`.  
 > Part A narrows Watch → **Event Calendar only**.  
-> Part B regroups Assets by **asset class** (equities split US vs China/HK; FX as a class, not currency peers).
+> Part B regroups Assets by **asset class** (equities split US vs Asia — Greater China + Japan/Korea; FX as a class, not currency peers).
 
 ---
 
@@ -126,7 +126,7 @@ Regroup Detail **Assets** by **asset class**, with equities split **US vs China/
 ## Class order (fixed)
 
 1. **US equities**  
-2. **China / HK equities**  
+2. **Asia equities** (instruments: Golden Dragon / HK-linked · Japan/Korea in parallel)  
 3. **Rates** (UST; China rates only if sourced)  
 4. **FX** (USD / JPY / CNY as instrument rows)  
 5. **Commodities** (oil, gold, …)  
@@ -139,7 +139,7 @@ Prefer evolving to class-grouped structure (new briefings); keep flat `AssetView
 ```ts
 export type AssetClassId =
   | "us-equities"
-  | "china-hk-equities"
+  | "asia-equities"
   | "rates"
   | "fx"
   | "commodities"
@@ -197,7 +197,7 @@ Prompt: emit `assetClasses` ×6 in fixed order; stop treating currencies as peer
 # Shared success criteria
 
 - Calendar ≠ Themes; answers “what prints before next Friday?”
-- Assets scannable by class; FX nested; US vs China equities separated.
+- Assets scannable by class; FX nested; US vs Asia equities separated (Greater China + Japan/Korea).
 - Theme chips are pointers only.
 - CI accuracy gate remains fail-closed.
 

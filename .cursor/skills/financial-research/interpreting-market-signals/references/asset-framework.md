@@ -13,7 +13,7 @@ Legacy flat `assetFramework[]` remains for older briefings only.
 | Class id | Title | Instrument examples |
 |---|---|---|
 | `us-equities` | US equities | S&P / Nasdaq |
-| `china-hk-equities` | China / HK equities | SHCOMP, Hang Seng, ADRs |
+| `asia-equities` | Asia equities | Golden Dragon / HK-linked; Japan/Korea (Nikkei, Kospi) |
 | `rates` | Rates | UST 2y/10y; China rates only if sourced |
 | `fx` | FX | USD (DXY), USD/JPY, USD/CNY — **rows under FX, never top-level peers** |
 | `commodities` | Commodities | Oil (Brent/WTI), Gold |
