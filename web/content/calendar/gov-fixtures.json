@@ -1,0 +1,55 @@
+{
+  "fetchedAt": "2026-08-07T08:13:11.455Z",
+  "windowStart": "2026-08-07",
+  "windowEnd": "2026-08-14",
+  "events": [
+    {
+      "id": "bls-employment-situation-for-july-2026-2026-08-07",
+      "date": "2026-08-07",
+      "timeBeijing": "20:30",
+      "region": "US",
+      "category": "data",
+      "event": "Employment Situation for July 2026",
+      "source": {
+        "label": "BLS release calendar",
+        "href": "https://blsmon1.bls.gov/schedule/2026/home.htm"
+      }
+    },
+    {
+      "id": "bls-consumer-price-index-for-july-2026-2026-08-12",
+      "date": "2026-08-12",
+      "timeBeijing": "20:30",
+      "region": "US",
+      "category": "data",
+      "event": "Consumer Price Index for July 2026",
+      "source": {
+        "label": "BLS release calendar",
+        "href": "https://blsmon1.bls.gov/schedule/2026/home.htm"
+      }
+    },
+    {
+      "id": "bls-producer-price-index-for-july-2026-2026-08-13",
+      "date": "2026-08-13",
+      "timeBeijing": "20:30",
+      "region": "US",
+      "category": "data",
+      "event": "Producer Price Index for July 2026",
+      "source": {
+        "label": "BLS release calendar",
+        "href": "https://blsmon1.bls.gov/schedule/2026/home.htm"
+      }
+    },
+    {
+      "id": "fed-discussion-vice-chair-for-supervision-michelle-w-bowman-2026-08-08",
+      "date": "2026-08-08",
+      "timeBeijing": "00:45",
+      "region": "US",
+      "category": "central-bank",
+      "event": "Discussion - Vice Chair for Supervision Michelle W. Bowman",
+      "source": {
+        "label": "Federal Reserve calendar",
+        "href": "https://www.federalreserve.gov/json/calendar.json"
+      }
+    }
+  ]
+}

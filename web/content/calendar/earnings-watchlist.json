@@ -1,0 +1,213 @@
+{
+  "note": "Admin: add/remove companies here. Deploy via PR. Visitors cannot edit.",
+  "companies": [
+    {
+      "id": "msft",
+      "name": "Microsoft",
+      "ticker": "MSFT",
+      "region": "US",
+      "irUrl": "https://www.microsoft.com/en-us/investor/earnings/",
+      "status": "public"
+    },
+    {
+      "id": "googl",
+      "name": "Google",
+      "ticker": "GOOGL",
+      "region": "US",
+      "irUrl": "https://abc.xyz/investor/",
+      "status": "public"
+    },
+    {
+      "id": "amzn",
+      "name": "Amazon",
+      "ticker": "AMZN",
+      "region": "US",
+      "irUrl": "https://ir.aboutamazon.com/",
+      "status": "public"
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "ticker": "META",
+      "region": "US",
+      "irUrl": "https://investor.atmeta.com/",
+      "status": "public"
+    },
+    {
+      "id": "aapl",
+      "name": "Apple",
+      "ticker": "AAPL",
+      "region": "US",
+      "irUrl": "https://investor.apple.com/",
+      "status": "public"
+    },
+    {
+      "id": "orcl",
+      "name": "Oracle",
+      "ticker": "ORCL",
+      "region": "US",
+      "irUrl": "https://investor.oracle.com/",
+      "status": "public"
+    },
+    {
+      "id": "spcx",
+      "name": "SpaceX",
+      "ticker": "SPCX",
+      "region": "US",
+      "irUrl": "https://ir.spacex.com/",
+      "status": "public"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "ticker": null,
+      "region": "US",
+      "irUrl": null,
+      "status": "pre-ipo"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "ticker": null,
+      "region": "US",
+      "irUrl": null,
+      "status": "pre-ipo"
+    },
+    {
+      "id": "nvda",
+      "name": "Nvidia",
+      "ticker": "NVDA",
+      "region": "US",
+      "irUrl": "https://investor.nvidia.com/",
+      "status": "public"
+    },
+    {
+      "id": "avgo",
+      "name": "Broadcom",
+      "ticker": "AVGO",
+      "region": "US",
+      "irUrl": "https://investors.broadcom.com/",
+      "status": "public"
+    },
+    {
+      "id": "amd",
+      "name": "AMD",
+      "ticker": "AMD",
+      "region": "US",
+      "irUrl": "https://ir.amd.com/",
+      "status": "public"
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "ticker": "005930.KS",
+      "region": "Other",
+      "irUrl": "https://www.samsung.com/global/ir/",
+      "status": "public"
+    },
+    {
+      "id": "sk-hynix",
+      "name": "SK Hynix",
+      "ticker": "000660.KS",
+      "region": "Other",
+      "irUrl": "https://www.skhynix.com/eng/",
+      "status": "public"
+    },
+    {
+      "id": "mu",
+      "name": "Micron",
+      "ticker": "MU",
+      "region": "US",
+      "irUrl": "https://investors.micron.com/",
+      "status": "public"
+    },
+    {
+      "id": "tcehy",
+      "name": "Tencent",
+      "ticker": "0700.HK",
+      "region": "China",
+      "irUrl": "https://www.tencent.com/en-us/investors.html",
+      "status": "public"
+    },
+    {
+      "id": "baba",
+      "name": "Alibaba",
+      "ticker": "9988.HK",
+      "region": "China",
+      "irUrl": "https://www.alibabagroup.com/en-US/investor-relations",
+      "status": "public"
+    },
+    {
+      "id": "moonshot",
+      "name": "Moonshot",
+      "ticker": null,
+      "region": "China",
+      "irUrl": null,
+      "status": "pre-ipo"
+    },
+    {
+      "id": "zhipu",
+      "name": "Zhipu",
+      "ticker": "2513.HK",
+      "region": "China",
+      "irUrl": "https://www.zhipuai.cn/",
+      "status": "public"
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "ticker": "0100.HK",
+      "region": "China",
+      "irUrl": "https://www.minimaxi.com/",
+      "status": "public"
+    },
+    {
+      "id": "deepseek",
+      "name": "Deepseek",
+      "ticker": null,
+      "region": "China",
+      "irUrl": null,
+      "status": "pre-ipo"
+    },
+    {
+      "id": "changxin",
+      "name": "Changxin",
+      "ticker": "688825",
+      "region": "China",
+      "irUrl": "https://www.cxmt.com/en/",
+      "status": "public"
+    },
+    {
+      "id": "zhongji",
+      "name": "Zhongji",
+      "ticker": "300308",
+      "region": "China",
+      "irUrl": "https://www.zj-innolight.com/",
+      "status": "public"
+    },
+    {
+      "id": "mstr",
+      "name": "Strategy",
+      "ticker": "MSTR",
+      "region": "US",
+      "irUrl": "https://www.strategy.com/investor-relations",
+      "status": "public"
+    },
+    {
+      "id": "crcl",
+      "name": "Circle",
+      "ticker": "CRCL",
+      "region": "US",
+      "irUrl": "https://investor.circle.com/",
+      "status": "public"
+    },
+    {
+      "id": "coin",
+      "name": "Coinbase",
+      "ticker": "COIN",
+      "region": "US",
+      "irUrl": "https://investor.coinbase.com/",
+      "status": "public"
+    }
+  ]
+}
