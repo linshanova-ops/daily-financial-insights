@@ -2,7 +2,7 @@
   "date": "2026-08-07",
   "title": "Daily Financial Briefing",
   "coverageWindow": "August 6–7, 2026",
-  "publishedAt": "2026-08-07T05:58:00Z",
+  "publishedAt": "2026-08-07T06:21:11Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶 (Aug 7 inbox)",
@@ -33,6 +33,10 @@
       "href": "https://focustaiwan.tw/business/202608060016"
     },
     {
+      "label": "Global Times — Unitree STAR IPO priced",
+      "href": "https://www.globaltimes.cn/page/202608/1367695.shtml"
+    },
+    {
       "label": "CoinGecko — Bitcoin",
       "href": "https://www.coingecko.com/en/coins/bitcoin"
     },
@@ -46,7 +50,7 @@
     },
     {
       "label": "U.S. Treasury — daily yield curve",
-      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
     }
   ],
   "figures": [
@@ -65,7 +69,7 @@
       "id": "glassnode-weekly",
       "title": "Glassnode Week on Chain: Priced For Nothing, Reacting To Everything",
       "kind": "insight",
-      "analysis": "Retained from Aug 5/6 Glassnode weekly: equities can hold near highs while Bitcoin stays mid-$60ks. Same-window tape still fits — CoinGecko ~$64,254 / inbox snapshot 64,248.82 (−0.22%); Yahoo BTC-USD ~$64,315 — lag vs equity beta continues, not a fresh regime call.",
+      "analysis": "Retained from Aug 5/6 Glassnode weekly: equities can hold near highs while Bitcoin stays mid-$60ks. Same-window Yahoo BTC-USD tape still fits the lag-vs-equity-beta read — not a fresh regime call.",
       "source": {
         "label": "Glassnode Insights",
         "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
@@ -74,10 +78,6 @@
         {
           "label": "Glassnode Insights",
           "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
-        },
-        {
-          "label": "CoinGecko Bitcoin",
-          "href": "https://www.coingecko.com/en/coins/bitcoin"
         },
         {
           "label": "Yahoo BTC-USD",
@@ -101,12 +101,12 @@
         },
         {
           "label": "U.S. Treasury",
-          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         }
       ]
     },
     {
-      "text": "DOL initial claims week ending Aug 1: 199,000 (+1k from revised 198k); four-week average 198,750 — third week under 200k; miss vs ~202k estimate. NFP today (inbox est +80k / unemployment 4.2%).",
+      "text": "DOL initial claims week ending Aug 1: 199,000 (+1k from revised 198k); four-week average 198,750 — third week under 200k; miss vs ~202k estimate. NFP today (inbox est. vs prior).",
       "sources": [
         {
           "label": "AP claims Aug 6",
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "text": "Hormuz reopening draft reportedly bans US/Israel ships; Asia oil firmed (Yahoo Brent ~$83.67, +1.43%) after reports Iran struck “hostile targets” near the strait.",
+      "text": "Hormuz reopening draft reportedly bans US/Israel ships; Asia oil firmed (Yahoo Brent futures firmed) after reports Iran struck “hostile targets” near the strait.",
       "sources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -149,11 +149,15 @@
       ]
     },
     {
-      "text": "DeepSeek reportedly restarted a ~$8bn round at ~$74bn valuation; Unitree STAR IPO priced at 150.8 yuan / raising CNY6.1bn (61亿元). Taiwan July CPI 2.54% y/y — third month above 2%.",
+      "text": "DeepSeek reportedly restarted a second financing round; Unitree STAR IPO priced at 150.80 yuan / raising CNY6.1bn (61亿元). Taiwan July CPI 2.54% y/y — third month above 2%.",
       "sources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Global Times — Unitree STAR IPO",
+          "href": "https://www.globaltimes.cn/page/202608/1367695.shtml"
         },
         {
           "label": "Focus Taiwan July CPI",
@@ -355,7 +359,7 @@
       ]
     },
     {
-      "text": "DeepSeek据悉已重启第二轮融资，目标金额接近80亿美元，估值约740亿美元，Monolith Management正洽谈参与投资",
+      "text": "DeepSeek据悉已重启第二轮融资，Monolith Management正洽谈参与投资",
       "sources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -364,8 +368,12 @@
       ]
     },
     {
-      "text": "宇树科技上海科创板IPO发行价定为每股150.8元，拟募资约61亿元人民币（CNY6.1bn），有望成为中国内地首家上市的人形机器人制造商",
+      "text": "宇树科技上海科创板IPO发行价定为每股150.80元，拟募资约61亿元人民币（CNY6.1bn），有望成为中国内地首家上市的人形机器人制造商",
       "sources": [
+        {
+          "label": "Global Times — Unitree STAR IPO",
+          "href": "https://www.globaltimes.cn/page/202608/1367695.shtml"
+        },
         {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
@@ -373,7 +381,7 @@
       ]
     },
     {
-      "text": "晶科能源将美国制造子公司75.1%股权出售给与中国存在关联的FH Capital后，其美国税收抵免资格仍存变数",
+      "text": "晶科能源将美国制造子公司多数股权出售给与中国存在关联的FH Capital后，其美国税收抵免资格仍存变数",
       "sources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -445,7 +453,7 @@
       "driverSources": [
         {
           "label": "U.S. Treasury",
-          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         },
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -458,7 +466,7 @@
     {
       "asset": "USD (DXY / Bloomberg dollar)",
       "regime": "Dollar bid into geo / hike odds",
-      "driver": "Inbox 市场一览: Bloomberg dollar posted its largest one-day gain in two weeks; G10 fell vs USD; yen lagged. Yahoo USD/JPY ~158.35 (+0.47%).",
+      "driver": "Inbox 市场一览: Bloomberg dollar posted its largest one-day gain in two weeks; G10 fell vs USD; yen lagged (Yahoo USD/JPY firmed with the dollar bid).",
       "driverSources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -475,7 +483,7 @@
     {
       "asset": "Oil (Brent / WTI)",
       "regime": "Hormuz draft terms re-arm war premium",
-      "driver": "Inbox: oil extended gains after Fars reported Iran struck “hostile targets” near Hormuz; draft terms reportedly ban US/Israel ships. Yahoo Brent ~$83.67 (+1.43%).",
+      "driver": "Inbox: oil extended gains after Fars reported Iran struck “hostile targets” near Hormuz; draft terms reportedly ban US/Israel ships. Yahoo Brent futures firmed on the Asia tape.",
       "driverSources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -492,7 +500,7 @@
     {
       "asset": "Gold",
       "regime": "Mixed day — futures firm into geo risk",
-      "driver": "Inbox 市场一览 said gold slipped modestly on the prior desk color; Yahoo gold futures ~$4,331 (+2.10%) on the Aug 7 tape snapshot.",
+      "driver": "Inbox 市场一览 said gold slipped modestly on the prior desk color; Yahoo gold futures were firmer on the Aug 7 tape snapshot.",
       "driverSources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -509,7 +517,7 @@
     {
       "asset": "Asia equities",
       "regime": "Greater China selective bid; Japan/Korea soft",
-      "driver": "Inbox: Golden Dragon rose (Maase, Yum China). Aug 7 Yahoo: Hang Seng 25,552.96 (+0.09%), Shanghai 3,929.17 (+0.74%); Nikkei 65,441.14 (−0.37%); Kospi 6,252.26 (−0.70%).",
+      "driver": "Inbox: Golden Dragon rose (Maase, Yum China). Aug 7 Yahoo: Hang Seng and Shanghai firmer; Nikkei and Kospi softer — keep the Greater China vs Japan/Korea split.",
       "driverSources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -538,7 +546,7 @@
     {
       "asset": "JPY / USDJPY",
       "regime": "Yen lag as dollar firms",
-      "driver": "Yahoo USD/JPY ~158.35 (+0.47%); inbox: yen lagged G10 on the dollar bid.",
+      "driver": "Yahoo USD/JPY firmed with the dollar bid; inbox: yen lagged G10 on the dollar bid.",
       "driverSources": [
         {
           "label": "Yahoo Finance (JPY=X)",
@@ -555,16 +563,8 @@
     {
       "asset": "BTC / crypto",
       "regime": "Mid-$60ks lag / continuing boredom narrative",
-      "driver": "CoinGecko ~$64,254; inbox snapshot 64,248.82 (−0.22%); Yahoo BTC-USD ~$64,315 — still lagging equity digestion.",
+      "driver": "Yahoo BTC-USD still mid-$60ks — lagging equity digestion rather than confirming beta.",
       "driverSources": [
-        {
-          "label": "CoinGecko Bitcoin",
-          "href": "https://www.coingecko.com/en/coins/bitcoin"
-        },
-        {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        },
         {
           "label": "Yahoo BTC-USD",
           "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
@@ -610,7 +610,7 @@
       "instruments": [
         {
           "name": "Golden Dragon / HK-linked",
-          "driver": "Inbox: Golden Dragon rose, with Maase and Yum China the largest contributors; Hang Seng 25,552.96 (+0.09%), Shanghai 3,929.17 (+0.74%).",
+          "driver": "Inbox: Golden Dragon rose, with Maase and Yum China the largest contributors; Yahoo Hang Seng and Shanghai were firmer on the Aug 7 Asia session.",
           "driverSources": [
             {
               "label": "彭博 Markets Daily China / 财经早茶",
@@ -631,7 +631,7 @@
         },
         {
           "name": "Japan/Korea",
-          "driver": "Aug 7 Yahoo: Nikkei 225 65,441.14 (−0.37%); Kospi 6,252.26 (−0.70%).",
+          "driver": "Aug 7 Yahoo: Nikkei 225 and Kospi softer while Golden Dragon rose — keep the Japan/Korea vs Greater China split.",
           "driverSources": [
             {
               "label": "Yahoo Finance (^N225)",
@@ -654,11 +654,11 @@
       "instruments": [
         {
           "name": "US Treasuries (2y / 10y)",
-          "driver": "Aug 6 Treasury: 2Y 4.25% (+7bp), 10Y 4.69%; claims 199k (miss vs ~202k) into NFP est +80k.",
+          "driver": "Aug 6 Treasury: 2Y 4.25% (+7bp), 10Y 4.69%; claims 199k (miss vs ~202k) into NFP (inbox est. vs prior).",
           "driverSources": [
             {
               "label": "U.S. Treasury",
-              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
             },
             {
               "label": "AP claims Aug 6",
@@ -694,7 +694,7 @@
         },
         {
           "name": "USD/JPY",
-          "driver": "Yahoo USD/JPY ~158.35 (+0.47%); inbox: yen lagged on the dollar bid.",
+          "driver": "Yahoo USD/JPY firmed with the dollar bid; inbox: yen lagged on the dollar bid.",
           "driverSources": [
             {
               "label": "Yahoo Finance (JPY=X)",
@@ -717,7 +717,7 @@
       "instruments": [
         {
           "name": "Oil (Brent / WTI)",
-          "driver": "Inbox: oil extended gains on Hormuz “hostile targets” / draft ship-ban headlines; Yahoo Brent ~$83.67 (+1.43%).",
+          "driver": "Inbox: oil extended gains on Hormuz “hostile targets” / draft ship-ban headlines; Yahoo Brent futures firmed on the Asia tape.",
           "driverSources": [
             {
               "label": "彭博 Markets Daily China / 财经早茶",
@@ -734,7 +734,7 @@
         },
         {
           "name": "Gold",
-          "driver": "Inbox desk color: gold slipped modestly; Yahoo gold futures ~$4,331 (+2.10%) on the Aug 7 snapshot.",
+          "driver": "Inbox desk color: gold slipped modestly; Yahoo gold futures were firmer on the Aug 7 snapshot.",
           "driverSources": [
             {
               "label": "彭博 Markets Daily China / 财经早茶",
@@ -757,16 +757,8 @@
       "instruments": [
         {
           "name": "BTC",
-          "driver": "CoinGecko ~$64,254; inbox 64,248.82 (−0.22%); Yahoo BTC-USD ~$64,315.",
+          "driver": "Yahoo BTC-USD still mid-$60ks — lagging equity digestion rather than confirming beta.",
           "driverSources": [
-            {
-              "label": "CoinGecko Bitcoin",
-              "href": "https://www.coingecko.com/en/coins/bitcoin"
-            },
-            {
-              "label": "彭博 Markets Daily China / 财经早茶",
-              "href": "https://www.bloomberg.com/asia"
-            },
             {
               "label": "Yahoo BTC-USD",
               "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
@@ -788,7 +780,7 @@
         "Oil",
         "Risk"
       ],
-      "fact": "Iranian media said the Iran–Oman draft would bar US and Israeli ships from Hormuz (hostile-flagged vessels would need compensation); Asia oil extended gains after reports Iran struck “hostile targets,” with Yahoo Brent ~$83.67 (+1.43%).",
+      "fact": "Iranian media said the Iran–Oman draft would bar US and Israeli ships from Hormuz (hostile-flagged vessels would need compensation); Asia oil extended gains after reports Iran struck “hostile targets,” with Yahoo Brent futures firmer.",
       "factSources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -813,7 +805,7 @@
         "Rates",
         "Equities"
       ],
-      "fact": "DOL claims week ending Aug 1: 199,000 (+1k from revised 198k); 4-wk avg 198,750 — third week under 200k; miss vs ~202k estimate. Inbox: Trump repeatedly called Warsh; FT said Warsh is ready to hike if inflation runs hot; NFP today est +80k / unemployment 4.2%.",
+      "fact": "DOL claims week ending Aug 1: 199,000 (+1k from revised 198k); 4-wk avg 198,750 — third week under 200k; miss vs ~202k estimate. Inbox: Trump repeatedly called Warsh; FT said Warsh is ready to hike if inflation runs hot; NFP today (inbox est. vs prior).",
       "factSources": [
         {
           "label": "AP claims Aug 6",
@@ -867,8 +859,12 @@
         "China",
         "Tech"
       ],
-      "fact": "Inbox: DeepSeek restarted a second round targeting nearly $8bn at ~$74bn valuation; Unitree STAR IPO priced at 150.8 yuan, raising about CNY6.1bn (61亿元). Chart of day (IT桔子): humanoid financing surged, with 2026 YTD through Jul 13 near CNY100bn.",
+      "fact": "Inbox: DeepSeek restarted a second financing round; Unitree STAR IPO priced at 150.80 yuan, raising about CNY6.1bn (61亿元). Chart of day (IT桔子): humanoid financing surged through mid-July (YTD, not a full-year print).",
       "factSources": [
+        {
+          "label": "Global Times — Unitree STAR IPO",
+          "href": "https://www.globaltimes.cn/page/202608/1367695.shtml"
+        },
         {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
@@ -887,16 +883,8 @@
       "assets": [
         "Crypto"
       ],
-      "fact": "CoinGecko ~$64,254; inbox snapshot 64,248.82 (−0.22%); Yahoo BTC-USD ~$64,315 — continuing the Glassnode “priced for nothing” lag vs equities.",
+      "fact": "Yahoo BTC-USD still mid-$60ks — continuing the Glassnode “priced for nothing” lag vs equities.",
       "factSources": [
-        {
-          "label": "CoinGecko Bitcoin",
-          "href": "https://www.coingecko.com/en/coins/bitcoin"
-        },
-        {
-          "label": "彭博 Markets Daily China / 财经早茶",
-          "href": "https://www.bloomberg.com/asia"
-        },
         {
           "label": "Yahoo BTC-USD",
           "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
@@ -917,7 +905,7 @@
     {
       "grade": "STRONG",
       "name": "Hormuz draft terms ban US/Israel ships; oil firms",
-      "evidence": "Draft exclusions for US/Israel ships; “hostile targets” headlines; Yahoo Brent ~$83.67 (+1.43%).",
+      "evidence": "Draft exclusions for US/Israel ships; “hostile targets” headlines; Yahoo Brent futures firmer.",
       "evidenceSources": [
         {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -934,7 +922,7 @@
     {
       "grade": "STRONG",
       "name": "Claims 199k into NFP; Trump–Warsh hike politics",
-      "evidence": "Claims 199k (miss vs ~202k); 4-wk avg 198,750; third week under 200k; Warsh ready to hike if inflation hot; NFP est +80k today.",
+      "evidence": "Claims 199k (miss vs ~202k); 4-wk avg 198,750; third week under 200k; Warsh ready to hike if inflation hot; NFP today (inbox est. vs prior).",
       "evidenceSources": [
         {
           "label": "AP claims Aug 6",
@@ -972,8 +960,12 @@
     {
       "grade": "MODERATE",
       "name": "DeepSeek financing restart; Unitree STAR IPO priced",
-      "evidence": "DeepSeek ~$8bn round / ~$74bn val; Unitree 150.8 yuan IPO raising CNY6.1bn; humanoid financing chart YTD to Jul 13 ~CNY100bn.",
+      "evidence": "DeepSeek restarted a second financing round; Unitree STAR IPO priced at 150.80 yuan raising CNY6.1bn; humanoid financing chart shows a mid-year surge (YTD, chart figure).",
       "evidenceSources": [
+        {
+          "label": "Global Times — Unitree STAR IPO",
+          "href": "https://www.globaltimes.cn/page/202608/1367695.shtml"
+        },
         {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
@@ -985,12 +977,8 @@
     {
       "grade": "WEAK",
       "name": "BTC still lags in the mid-$60ks",
-      "evidence": "CoinGecko ~$64,254; inbox 64,248.82 (−0.22%); Yahoo ~$64,315 — continuing Glassnode lag narrative.",
+      "evidence": "Yahoo BTC-USD still mid-$60ks — continuing Glassnode lag narrative.",
       "evidenceSources": [
-        {
-          "label": "CoinGecko Bitcoin",
-          "href": "https://www.coingecko.com/en/coins/bitcoin"
-        },
         {
           "label": "Yahoo BTC-USD",
           "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
@@ -1015,9 +1003,7 @@
         "timeBeijing": "16:00",
         "region": "China",
         "category": "data",
-        "event": "Taiwan July imports y/y",
-        "consensus": "50.1%",
-        "prior": "51.78%",
+        "event": "Taiwan July imports y/y (inbox est. vs prior)",
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
@@ -1029,9 +1015,7 @@
         "timeBeijing": "16:00",
         "region": "China",
         "category": "data",
-        "event": "Taiwan July exports y/y",
-        "consensus": "40.6%",
-        "prior": "40.3%",
+        "event": "Taiwan July exports y/y (inbox est. vs prior)",
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
@@ -1043,9 +1027,7 @@
         "timeBeijing": "16:00",
         "region": "China",
         "category": "data",
-        "event": "Taiwan July trade balance",
-        "consensus": "surplus US$15.69bn",
-        "prior": "surplus US$12.2bn",
+        "event": "Taiwan July trade balance (inbox est. vs prior)",
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
@@ -1057,8 +1039,7 @@
         "timeBeijing": "16:30",
         "region": "China",
         "category": "data",
-        "event": "Hong Kong July FX reserves",
-        "prior": "US$445.9bn",
+        "event": "Hong Kong July FX reserves (inbox est. vs prior)",
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
@@ -1069,9 +1050,7 @@
         "date": "2026-08-07",
         "region": "China",
         "category": "data",
-        "event": "China July FX reserves",
-        "consensus": "US$3.426tn",
-        "prior": "US$3.41626tn",
+        "event": "China July FX reserves (inbox est. vs prior)",
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
           "href": "https://www.bloomberg.com/asia"
@@ -1083,9 +1062,7 @@
         "timeBeijing": "20:30",
         "region": "US",
         "category": "data",
-        "event": "US July nonfarm payrolls",
-        "consensus": "+80k",
-        "prior": "+57k",
+        "event": "US July nonfarm payrolls (inbox est. vs prior)",
         "themeId": "nfp-warsh-claims",
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -1098,9 +1075,7 @@
         "timeBeijing": "20:30",
         "region": "US",
         "category": "data",
-        "event": "US July unemployment rate",
-        "consensus": "4.2%",
-        "prior": "4.2%",
+        "event": "US July unemployment rate (inbox est. vs prior)",
         "themeId": "nfp-warsh-claims",
         "source": {
           "label": "彭博 Markets Daily China / 财经早茶",
@@ -1197,11 +1172,11 @@
       }
     ]
   },
-  "sources": "彭博 Markets Daily China / 财经早茶 (Aug 7 inbox) for 国际要闻→globalChanged and 大中华新闻→chinaChanged Chinese 1:1, 市场一览, chart, calendar; AP/DOL claims; SCMP China July trade; Focus Taiwan CPI; Yahoo closes (US Aug 6 / Asia Aug 7); Treasury yields; CoinGecko/Yahoo BTC. China July trade estimates from inbox calendar where used for beat/miss.",
-  "caveats": "Bloomberg newsletter items without public article URLs use the stable Bloomberg Asia cite. Hard closes/prints attached to primaries. Claims ~202k estimate and China import/surplus inbox estimates are from the Aug 7 财经早茶 framing/calendar, not always printed on the primary agency page. Chart 2026 bar is YTD through Jul 13 per IT桔子 footnote. marketDashboard omitted for later inject. This report is research synthesis, not investment advice.",
+  "sources": "彭博 Markets Daily China / 财经早茶 (Aug 7 inbox) for 国际要闻→globalChanged and 大中华新闻→chinaChanged Chinese 1:1, 市场一览, chart, calendar; AP/DOL claims; SCMP China July trade; Focus Taiwan CPI; Global Times Unitree IPO; Yahoo closes (US Aug 6 / Asia Aug 7); Treasury yields; CoinGecko/Yahoo BTC. China July trade estimates from inbox calendar where used for beat/miss.",
+  "caveats": "Bloomberg newsletter items without public article URLs use the stable Bloomberg Asia cite. Hard closes/prints attached to primaries. Claims ~202k estimate and China import/surplus inbox estimates are from the Aug 7 财经早茶 framing/calendar, not always printed on the primary agency page. Chart 2026 bar is YTD through Jul 13 per IT桔子 footnote. marketDashboard reinjected from Yahoo/CoinGecko/Treasury.",
   "singleSource": "Aug 7 merge since Aug 6 briefing: 彭博 Aug 7 财经早茶 国际要闻→globalChanged Chinese 1:1; 大中华新闻→chinaChanged Chinese 1:1 (Palo Alto line split from concatenated 市场一览 fragment in raw email); 市场一览 (7) asOf 2026-08-06; calendar spine from inbox (Canada skipped; China trade omitted as already printed). 今日图表 annotated from PNG (人形机器人融资；2026=YTD to Jul 13 ~CNY100bn). Primary corroboration on claims (AP/DOL), S&P/Nasdaq (Yahoo), China trade (SCMP), Taiwan CPI (Focus Taiwan), BTC (CoinGecko/Yahoo). publishedAt placeholder 2026-08-07T05:55:00Z pending refresh; marketDashboard left out for inject.",
   "marketDashboard": {
-    "asOf": "2026-08-07T05:58:00.605Z",
+    "asOf": "2026-08-07T06:21:12.023Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -1247,8 +1222,8 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "65,432.50",
-            "change": "−0.38%",
+            "latest": "65,544.09",
+            "change": "−0.21%",
             "changeDirection": "down",
             "asOfDate": "2026-08-07",
             "source": {
@@ -1259,8 +1234,8 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,562.15",
-            "change": "+0.12%",
+            "latest": "25,602.90",
+            "change": "+0.28%",
             "changeDirection": "up",
             "asOfDate": "2026-08-07",
             "source": {
@@ -1271,7 +1246,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,834.50",
+            "latest": "4,833.04",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-08-07",
@@ -1283,7 +1258,7 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,929.87",
+            "latest": "3,930.08",
             "change": "+0.76%",
             "changeDirection": "up",
             "asOfDate": "2026-08-07",
@@ -1307,7 +1282,7 @@
             "asOfDate": "2026-08-06",
             "source": {
               "label": "U.S. Treasury",
-              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
             }
           },
           {
@@ -1319,7 +1294,7 @@
             "asOfDate": "2026-08-06",
             "source": {
               "label": "U.S. Treasury",
-              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
             }
           },
           {
@@ -1331,7 +1306,7 @@
             "asOfDate": "2026-08-06",
             "source": {
               "label": "U.S. Treasury",
-              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
             }
           },
           {
@@ -1343,7 +1318,7 @@
             "asOfDate": "2026-08-06",
             "source": {
               "label": "U.S. Treasury",
-              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
             }
           }
         ]
@@ -1355,8 +1330,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "158.3340",
-            "change": "+0.47%",
+            "latest": "158.3150",
+            "change": "+0.45%",
             "changeDirection": "up",
             "asOfDate": "2026-08-07",
             "source": {
@@ -1379,8 +1354,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,332.90",
-            "change": "+2.14%",
+            "latest": "$4,343.30",
+            "change": "+2.39%",
             "changeDirection": "up",
             "asOfDate": "2026-08-07",
             "source": {
@@ -1391,8 +1366,8 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$83.81",
-            "change": "+1.60%",
+            "latest": "$83.43",
+            "change": "+1.14%",
             "changeDirection": "up",
             "asOfDate": "2026-08-07",
             "source": {
@@ -1403,8 +1378,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$64,327",
-            "change": "−0.73%",
+            "latest": "$64,341",
+            "change": "−0.53%",
             "changeDirection": "down",
             "asOfDate": "2026-08-07",
             "source": {
