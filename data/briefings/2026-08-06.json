@@ -1,0 +1,1329 @@
+{
+  "date": "2026-08-06",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "August 3–6, 2026",
+  "publishedAt": "2026-08-06T07:47:38Z",
+  "keySources": [
+    {
+      "label": "彭博 Markets Daily China / 财经早茶 (Aug 6 inbox)",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "彭博 Markets Daily China / 财经早茶 (Aug 5 inbox)",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "ADP — Jul 2026 National Employment Report",
+      "href": "https://mediacenter.adp.com/2026-08-05-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-44,000-Jobs-in-July-Annual-Pay-was-Up-4-4"
+    },
+    {
+      "label": "ISM — July 2026 Services PMI",
+      "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+    },
+    {
+      "label": "Yahoo Finance — S&P 500 (^GSPC)",
+      "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "label": "Yahoo Finance — Alphabet (GOOG)",
+      "href": "https://finance.yahoo.com/quote/GOOG/history/"
+    },
+    {
+      "label": "CNBC — Hormuz talks / Iran deal window",
+      "href": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html"
+    },
+    {
+      "label": "InvestmentNews — hedge-fund AI vishing",
+      "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708"
+    },
+    {
+      "label": "Glassnode — Week on Chain (Priced For Nothing)",
+      "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+    },
+    {
+      "label": "CoinDesk — Aug 5 BTC / equities divergence",
+      "href": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs"
+    },
+    {
+      "label": "Yahoo Finance — BTC-USD",
+      "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": "今日图表（彭博 Aug 6）— 中国光模块对美出口占比下滑",
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-08-06.png",
+      "analysis": "彭博「今日图表」追踪中国光模块分目的地出口额：对美出口在2024年末峰值后持续回落，2026年6月对美出口仅占全球出口额的8.7%；同期马来西亚线路大幅抬升并成为主导目的地，台湾与泰国亦稳步抬升。So what：在FCC/贸易限制与AI算力链重构背景下，光模块贸易正从直连美国转向东南亚转口路径——与Alphabet/AMD等AI硬件叙事叠加时，供应链地理比单一“对美出口崩塌”叙事更准确。",
+      "source": {
+        "label": "彭博 Markets Daily China / 财经早茶",
+        "href": "https://www.bloomberg.com/asia"
+      }
+    },
+    {
+      "id": "glassnode-weekly",
+      "title": "Glassnode Week on Chain: Priced For Nothing, Reacting To Everything",
+      "kind": "insight",
+      "analysis": "Latest weekly Glassnode email (Aug 5, “Priced For Nothing, Reacting To Everything”): global markets broke to records while Bitcoin stood still — bottom signals arriving through boredom. So what: mid-$60ks BTC chop (Yahoo BTC-USD Aug 5 close $64,597.50; CoinDesk same-day lag vs equity highs) does not confirm the equity melt-up as broad risk-on.",
+      "source": {
+        "label": "Glassnode Insights",
+        "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+      },
+      "sources": [
+        {
+          "label": "Glassnode Insights",
+          "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+        },
+        {
+          "label": "Yahoo BTC-USD",
+          "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
+        },
+        {
+          "label": "CoinDesk Aug 5",
+          "href": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs"
+        }
+      ]
+    }
+  ],
+  "marketTone": "Hormuz diplomacy keeps oil soft while US equities digest record highs: Aug 5 S&P slipped 0.17% to 7,723.55 with Alphabet −4.05%, soft ADP +44k, and hedge-fund AI vishing headlines hitting Point72/Citadel/Millennium/Two Sigma.",
+  "summary": [
+    {
+      "text": "Aug 5 US close: S&P 500 −0.17% to 7,723.55 after Tuesday’s record 7,736.52; Alphabet (GOOG) fell 4.05% to $360.13 as Jeff Dean exit headlines hit AI talent risk.",
+      "sources": [
+        {
+          "label": "Yahoo Finance (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance GOOG",
+          "href": "https://finance.yahoo.com/quote/GOOG/history/"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "ADP July private payrolls +44,000 (miss vs ~75k survey); ISM Services PMI 54.1 with Employment back in contraction at 47.4.",
+      "sources": [
+        {
+          "label": "ADP Jul 2026",
+          "href": "https://mediacenter.adp.com/2026-08-05-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-44,000-Jobs-in-July-Annual-Pay-was-Up-4-4"
+        },
+        {
+          "label": "ISM Services Jul 2026",
+          "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+        }
+      ]
+    },
+    {
+      "text": "Iran–Oman temporary Hormuz shipping-route talks entered final drafting; WTI extended losses as diplomacy headlines kept war premium unwinding.",
+      "sources": [
+        {
+          "label": "CNBC Aug 5 Hormuz",
+          "href": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Coordinated AI vishing hit Point72, Millennium, Two Sigma and Citadel; Two Sigma said it blocked the attempt with no data impact.",
+      "sources": [
+        {
+          "label": "InvestmentNews Aug 5",
+          "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Glassnode weekly (“Priced For Nothing”): equities hit records while Bitcoin stood still; Yahoo BTC-USD Aug 5 close $64,597.50 as CoinDesk noted the lag vs equity highs.",
+      "sources": [
+        {
+          "label": "Glassnode Insights",
+          "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+        },
+        {
+          "label": "Yahoo BTC-USD",
+          "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
+        },
+        {
+          "label": "CoinDesk Aug 5",
+          "href": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs"
+        }
+      ]
+    }
+  ],
+  "signal": "Diplomacy-first oil + soft ADP still leave hawkish Fed speakers live — while mega-cap AI talent/cyber risk is the equity idiosyncratic layer, not a broad risk-off.",
+  "watch": "Calendar through Aug 14 (Beijing): US claims + Fed speakers; Taiwan CPI under China.",
+  "globalRegime": "Geopolitics is still leading the commodity complex via Hormuz diplomacy, while US growth data softens at the margin and AI mega-caps digest talent and capex scrutiny after the record run.",
+  "globalChanged": [
+    {
+      "text": "德黑兰表示，伊朗与阿曼就霍尔木兹海峡开辟为期两到四个月的临时航道达成共识，两国联合声明进入最后起草阶段，如果“某些第三方不阻挠这一进程”，双方将达成协议",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC Aug 5 Hormuz",
+          "href": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html"
+        }
+      ]
+    },
+    {
+      "text": "伊朗支持的也门胡塞武装扩大袭击范围，称将打击改道至红海北部的沙特油轮",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "明尼阿波利斯联储行长表示，美联储应立即开始渐进式加息以遏制过高通胀，若行动过迟，日后或需更激进地加息。美联储理事库克也警告通胀固化风险，并称必要时将支持加息",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "素有“小非农”之称的ADP报告显示7月美国企业就业人数增加4.4万，为年初以来最少，显示招聘动能放缓",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "ADP Jul 2026",
+          "href": "https://mediacenter.adp.com/2026-08-05-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-44,000-Jobs-in-July-Annual-Pay-was-Up-4-4"
+        }
+      ]
+    },
+    {
+      "text": "美国供应管理协会7月数据显示服务业活动稳步扩张，新订单和商业活动回升支撑需求韧性，但成本上涨压力导致服务业就业出现3月以来最大幅度收缩",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "ISM Services Jul 2026",
+          "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+        }
+      ]
+    },
+    {
+      "text": "美国财政部维持季度发债指引不变，暗示即使联邦政府融资需求上升，中期和长期国债的标售规模至少在未来几个季度不会调整",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "知情人士透露，华尔街多家头部对冲基金及私募股权公司近日遭遇了一波精密的网络攻击，Point72、Millennium、Two Sigma以及城堡等行业巨头均成为袭击目标",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "InvestmentNews Aug 5",
+          "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708"
+        }
+      ]
+    },
+    {
+      "text": "美国政府最高级别的信息安全官员警告，面对人工智能驱动的网络攻击威胁，全美计算机系统亟须进一步提升防御能力",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "谷歌AI业务迎重大人事变动，长期参与制定谷歌AI战略的资深员工Jeff Dean将离职创办初创企业，并带走多名核心员工。Alphabet股价应声重挫逾4%",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Yahoo Finance GOOG",
+          "href": "https://finance.yahoo.com/quote/GOOG/history/"
+        }
+      ]
+    },
+    {
+      "text": "微软最新披露显示，截至6月的财年中，OpenAI贡献了其AI业务至少一半的收入，金额达241亿美元，凸显微软对这一合作伙伴的高度依赖",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "日本内阁批准下调消费税。财务大臣片山皋月表示，美国财长贝森特认为日本财政状况正在改善，并驳斥了外界关于美国借汇市干预向日本施压的说法",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Glassnode weekly (“Priced For Nothing”): equities hit records while Bitcoin stood still; Yahoo BTC-USD Aug 5 close $64,597.50 as CoinDesk noted BTC lag vs equity highs.",
+      "sources": [
+        {
+          "label": "Glassnode Insights",
+          "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+        },
+        {
+          "label": "Yahoo BTC-USD",
+          "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
+        },
+        {
+          "label": "CoinDesk Aug 5",
+          "href": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "A temporary Hormuz corridor can keep oil in a diplomacy-led unwind — until Houthi tanker risk or a failed joint statement reprices supply fear."
+    },
+    {
+      "text": "Soft ADP does not retire hawkish Fed speakers; markets must price both cooler hiring and “hike sooner” rhetoric."
+    },
+    {
+      "text": "AI mega-cap risk is idiosyncratic (talent exits, partner concentration, cyber) even as indexes sit near records."
+    }
+  ],
+  "globalTensions": "Hormuz deal optimism vs Houthi escalation; soft ADP vs hike-now Fed speakers; Alphabet talent shock vs still-high AI capex; BTC lag vs equity melt-up.",
+  "chinaStance": "Beijing is tightening dual-use export controls and tax reach on offshore insurance gains while Greater China AI/hardware IPO pipelines stay active — against a US tariff/entity-list escalation track.",
+  "chinaChanged": [
+    {
+      "text": "知情人士透露，特朗普最快周四宣布对进口多晶硅征收关税，并设定最低价格，以推动这一基础原材料以及相关半导体和光伏产品在美国本土生产。据悉官员们近期讨论的关税税率至少为15%",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国商务部宣布对无人机相关两用物项对美出口实施逐案从严审核，并将6家美国实体列入反制清单，以回应美国联邦通信委员会的进口限制措施及将中国实体列入“维吾尔强迫劳动预防法实体清单”等行动",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "财新报道称，中国正在扩大个人所得税征收范围，将境外保险产生的收益纳入其中，一些征管案例显示税务部门已开始对香港保险的分红和利息收益征收20%的税款。保诚、汇丰股价隔夜在英国市场重挫",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国领先的人形机器人生产商宇树科技周五下午举行科创板IPO路演。快时尚电商Shein据悉计划最快本周开始评估投资者对香港IPO的需求",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "印尼央行表示，人民币占本币交易逾八成，月均交易规模已从2025年约21亿美元增至2026年迄今约70亿美元，并计划进一步扩大与中国内地及香港的本币交易合作",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中亚最大产油国哈萨克斯坦计划今年再次发行熊猫债，以利用中国市场较低的融资成本。据悉发债规模约合5亿美元，最快可能于下月启动",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "台湾央行数据显示，截至7月底外汇储备降至5942.7亿美元，创逾一年新低，主因包括央行卖出美元调节汇市及外资净汇出约280亿美元股利",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "鸿海7月营收劲增约54%，显示全球人工智能基础设施建设需求持续旺盛",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "The Information报道称，字节跳动创始人张一鸣在上月的一次会议上表示，不会把模型蒸馏作为推动人工智能模型发展的捷径，即便这意味着暂且可能落后于国内竞争对手",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "Polysilicon tariffs plus China drone dual-use controls raise the bilateral tech-trade friction floor into the week."
+    },
+    {
+      "text": "Taxing offshore insurance gains is a capital-flow / HK wealth-channel story — not just a single-name Prudential/HSBC print."
+    },
+    {
+      "text": "Optical-module rerouting (chart of day) and Hon Hai revenue strength keep Greater China AI hardware as a supply-chain geography trade."
+    }
+  ],
+  "chinaDivergences": "US entity-list / tariff escalation vs China counter-lists; AI IPO pipeline vs distillation restraint rhetoric; CNY local-currency expansion abroad vs Taiwan FX reserve drawdown.",
+  "assetFramework": [
+    {
+      "asset": "US equities (S&P / Nasdaq)",
+      "regime": "Record digestion / idiosyncratic AI shocks",
+      "driver": "Aug 5: S&P −0.17% to 7,723.55 after Aug 4 record 7,736.52; GOOG −4.05% to $360.13.",
+      "driverSources": [
+        {
+          "label": "Yahoo Finance (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance GOOG",
+          "href": "https://finance.yahoo.com/quote/GOOG/history/"
+        }
+      ],
+      "read": "Index near highs can still host large single-name AI talent and guidance shocks without a broad risk-off.",
+      "invalidator": "S&P loses the Aug 4 high with breadth collapsing across Mag7"
+    },
+    {
+      "asset": "US Treasuries (10y / 30y)",
+      "regime": "Soft labor vs hawkish speakers",
+      "driver": "Inbox: Treasuries relatively steady after soft ADP; Treasury kept quarterly refunding guidance unchanged.",
+      "driverSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "ADP Jul 2026",
+          "href": "https://mediacenter.adp.com/2026-08-05-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-44,000-Jobs-in-July-Annual-Pay-was-Up-4-4"
+        }
+      ],
+      "read": "Curve still listens to Fed speakers even when private payrolls miss estimate.",
+      "invalidator": "Hot claims/NFP with front-end yields ripping higher"
+    },
+    {
+      "asset": "USD (DXY / Bloomberg dollar)",
+      "regime": "Soft dollar into Hormuz optimism",
+      "driver": "Inbox 市场一览: Bloomberg dollar index fell; CAD led G10; yen held steady.",
+      "driverSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "read": "Dollar softens when oil war premium unwinds and risk stays near highs.",
+      "invalidator": "Fresh USD bid with oil spike and equity drawdown"
+    },
+    {
+      "asset": "Oil (Brent / WTI)",
+      "regime": "Diplomacy-led war-premium unwind",
+      "driver": "Inbox: WTI fell a third straight session on Hormuz reopening-deal signs; Iran–Oman temporary corridor talks in final draft.",
+      "driverSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC Aug 5 Hormuz",
+          "href": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html"
+        }
+      ],
+      "read": "Oil remains headline-first until a verified corridor or strike reopening.",
+      "invalidator": "Failed talks with Brent reclaiming recent war-premium highs"
+    },
+    {
+      "asset": "Gold",
+      "regime": "Technical break + softer hike odds narrative",
+      "driver": "Inbox: gold posted its largest one-day gain since February after clearing technical resistance as Iran-deal hopes cut hike expectations.",
+      "driverSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "read": "Gold can rally on diplomacy even while hawkish Fed speakers stay live.",
+      "invalidator": "Gold fails the breakout with USD and real yields rising together"
+    },
+    {
+      "asset": "Asia equities",
+      "regime": "Greater China policy friction; Japan/Korea risk-off digest",
+      "driver": "Inbox: Golden Dragon fell a second day on dual-use/tax headlines; Nikkei Aug 6 65,683.26 (−0.93%); Kospi Aug 6 6,296.38 (−4.58%).",
+      "driverSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Yahoo Finance (^N225)",
+          "href": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo Finance (^KS11)",
+          "href": "https://finance.yahoo.com/quote/%5EKS11/"
+        }
+      ],
+      "read": "Scan Greater China ADRs separately from Japan/Korea index beta — same Asia sleeve, different drivers.",
+      "invalidator": "ADRs and Nikkei/Kospi rebound together on clear de-escalation"
+    },
+    {
+      "asset": "JPY / USDJPY",
+      "regime": "Post-intervention digest",
+      "driver": "Inbox: yen steady; Japan cabinet approved consumption-tax cut; Katayama said Bessent sees improving Japanese fiscal conditions.",
+      "driverSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "read": "Intervention regime still frames the tape even on quiet JPY days.",
+      "invalidator": "USD/JPY re-weakens through 160 without official follow-up"
+    },
+    {
+      "asset": "BTC / crypto",
+      "regime": "Lagging equities / boredom bottoming narrative",
+      "driver": "Glassnode: equities hit records while Bitcoin stood still; Yahoo BTC-USD Aug 5 close $64,597.50; CoinDesk noted the same-day lag vs equity highs.",
+      "driverSources": [
+        {
+          "label": "Glassnode Insights",
+          "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+        },
+        {
+          "label": "Yahoo BTC-USD",
+          "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
+        },
+        {
+          "label": "CoinDesk Aug 5",
+          "href": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs"
+        }
+      ],
+      "read": "BTC can grind mid-$60ks without confirming the equity risk-on.",
+      "invalidator": "BTC breaks higher with rising spot volume alongside equities"
+    }
+  ],
+  "assetClasses": [
+    {
+      "id": "us-equities",
+      "title": "US equities",
+      "regime": "Record digestion / idiosyncratic AI shocks",
+      "instruments": [
+        {
+          "name": "S&P 500 / Nasdaq",
+          "driver": "Aug 5: S&P −0.17% to 7,723.55 after Aug 4 record 7,736.52; GOOG −4.05% to $360.13.",
+          "driverSources": [
+            {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            },
+            {
+              "label": "Yahoo Finance GOOG",
+              "href": "https://finance.yahoo.com/quote/GOOG/history/"
+            }
+          ],
+          "read": "Index near highs can still host large single-name AI talent shocks without a broad risk-off.",
+          "invalidator": "S&P loses the Aug 4 high with Mag7 breadth collapsing",
+          "themeId": "alphabet-ai-talent"
+        }
+      ]
+    },
+    {
+      "id": "asia-equities",
+      "title": "Asia equities",
+      "regime": "Greater China policy friction; Japan/Korea risk-off digest",
+      "instruments": [
+        {
+          "name": "Golden Dragon / HK-linked",
+          "driver": "Inbox: Golden Dragon fell a second day; China drone export controls and offshore-insurance tax headlines hit HK-linked names.",
+          "driverSources": [
+            {
+              "label": "彭博 Markets Daily China / 财经早茶",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Policy friction can outweigh AI hardware demand on ADR days.",
+          "invalidator": "ADRs rebound with clear de-escalation on entity-list/tariff news"
+        },
+        {
+          "name": "Japan/Korea",
+          "driver": "Nikkei 225 Aug 6 close 65,683.26 (−0.93%); Kospi Aug 6 close 6,296.38 (−4.58%). Inbox: Japan cabinet approved a consumption-tax cut; Katayama said Bessent sees improving Japanese fiscal conditions.",
+          "driverSources": [
+            {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            },
+            {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            },
+            {
+              "label": "彭博 Markets Daily China / 财经早茶",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Japan fiscal/tax headlines and Korea index beta can diverge from Golden Dragon ADR days — keep the sleeve split.",
+          "invalidator": "Nikkei and Kospi reclaim prior-session highs with USD/JPY calm"
+        }
+      ]
+    },
+    {
+      "id": "rates",
+      "title": "Rates",
+      "regime": "Soft labor vs hawkish speakers",
+      "instruments": [
+        {
+          "name": "US Treasuries (2y / 10y)",
+          "driver": "Inbox: Treasuries relatively steady after soft ADP; Treasury kept quarterly refunding guidance unchanged.",
+          "driverSources": [
+            {
+              "label": "彭博 Markets Daily China / 财经早茶",
+              "href": "https://www.bloomberg.com/asia"
+            },
+            {
+              "label": "ADP Jul 2026",
+              "href": "https://mediacenter.adp.com/2026-08-05-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-44,000-Jobs-in-July-Annual-Pay-was-Up-4-4"
+            }
+          ],
+          "read": "Curve still listens to Fed speakers when private payrolls miss estimate.",
+          "invalidator": "Hot claims/NFP with front-end yields ripping higher",
+          "themeId": "adp-soft-vs-hawks"
+        }
+      ]
+    },
+    {
+      "id": "fx",
+      "title": "FX",
+      "regime": "Soft dollar into Hormuz optimism; JPY post-intervention digest",
+      "instruments": [
+        {
+          "name": "USD (Bloomberg dollar)",
+          "driver": "Inbox 市场一览: Bloomberg dollar index fell; CAD led G10; yen held steady.",
+          "driverSources": [
+            {
+              "label": "彭博 Markets Daily China / 财经早茶",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Dollar softens when oil war premium unwinds and risk stays near highs.",
+          "invalidator": "Fresh USD bid with oil spike and equity drawdown"
+        },
+        {
+          "name": "USD/JPY",
+          "driver": "Inbox: yen steady; Japan cabinet approved consumption-tax cut; Katayama said Bessent sees improving Japanese fiscal conditions.",
+          "driverSources": [
+            {
+              "label": "彭博 Markets Daily China / 财经早茶",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Intervention regime still frames the tape even on quiet JPY days.",
+          "invalidator": "USD/JPY re-weakens through 160 without official follow-up"
+        }
+      ]
+    },
+    {
+      "id": "commodities",
+      "title": "Commodities",
+      "regime": "Diplomacy-led oil war-premium unwind; gold technical break",
+      "instruments": [
+        {
+          "name": "Oil (Brent / WTI)",
+          "driver": "Inbox: WTI fell a third straight session on Hormuz reopening-deal signs; Iran–Oman temporary corridor talks in final draft.",
+          "driverSources": [
+            {
+              "label": "彭博 Markets Daily China / 财经早茶",
+              "href": "https://www.bloomberg.com/asia"
+            },
+            {
+              "label": "CNBC Aug 5 Hormuz",
+              "href": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html"
+            }
+          ],
+          "read": "Oil remains headline-first until a verified corridor or strike reopening.",
+          "invalidator": "Failed talks with Brent reclaiming recent war-premium highs",
+          "themeId": "hormuz-temp-corridor"
+        },
+        {
+          "name": "Gold",
+          "driver": "Inbox: gold posted its largest one-day gain since February after clearing technical resistance as Iran-deal hopes cut hike expectations.",
+          "driverSources": [
+            {
+              "label": "彭博 Markets Daily China / 财经早茶",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Gold can rally on diplomacy even while hawkish Fed speakers stay live.",
+          "invalidator": "Gold fails the breakout with USD and real yields rising together"
+        }
+      ]
+    },
+    {
+      "id": "crypto",
+      "title": "Crypto",
+      "regime": "Lagging equities / boredom bottoming narrative",
+      "instruments": [
+        {
+          "name": "BTC",
+          "driver": "Glassnode: equities hit records while Bitcoin stood still; Yahoo BTC-USD Aug 5 close $64,597.50; CoinDesk noted the same-day lag vs equity highs.",
+          "driverSources": [
+            {
+              "label": "Glassnode Insights",
+              "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+            },
+            {
+              "label": "Yahoo BTC-USD",
+              "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
+            },
+            {
+              "label": "CoinDesk Aug 5",
+              "href": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs"
+            }
+          ],
+          "read": "BTC can grind mid-$60ks without confirming the equity risk-on.",
+          "invalidator": "BTC breaks higher with rising spot volume alongside equities",
+          "themeId": "btc-priced-for-nothing"
+        }
+      ]
+    }
+  ],
+  "themeCards": [
+    {
+      "id": "hormuz-temp-corridor",
+      "title": "Hormuz temporary corridor keeps oil diplomacy-first",
+      "grade": "STRONG",
+      "assets": [
+        "Oil",
+        "Risk"
+      ],
+      "fact": "Iran said it reached consensus with Oman on a 2–4 month temporary Hormuz shipping channel, with a joint statement in final drafting — if “third parties” do not obstruct; WTI extended losses on reopening-deal signs.",
+      "factSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC Aug 5 Hormuz",
+          "href": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html"
+        }
+      ],
+      "mechanism": "Diplomacy headlines can unwind war premium faster than physical barrels normalize — but a temporary corridor is not a full strait reopen.",
+      "trigger": "Joint statement slips or Houthi tanker attacks reprice supply fear.",
+      "invalidator": "Verified corridor traffic keeps oil soft through the week.",
+      "horizon": "days",
+      "status": "continuing"
+    },
+    {
+      "id": "adp-soft-vs-hawks",
+      "title": "Soft ADP vs hike-now Fed speakers",
+      "grade": "STRONG",
+      "assets": [
+        "Rates",
+        "Equities"
+      ],
+      "fact": "ADP July private payrolls +44,000 (miss vs ~75k survey); ISM Services PMI 54.1 with Employment at 47.4; Minneapolis Fed and Cook flagged hike risk.",
+      "factSources": [
+        {
+          "label": "ADP Jul 2026",
+          "href": "https://mediacenter.adp.com/2026-08-05-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-44,000-Jobs-in-July-Annual-Pay-was-Up-4-4"
+        },
+        {
+          "label": "ISM Services Jul 2026",
+          "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Softer hiring can lower growth odds without retiring inflation-hawk rhetoric — claims/NFP still arbitrate the path.",
+      "trigger": "Hot initial claims today with hawkish Fed follow-through.",
+      "invalidator": "Soft claims and cooler speakers cut near-term hike odds.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "hf-ai-vishing",
+      "title": "AI vishing hits Wall Street mega-funds",
+      "grade": "STRONG",
+      "assets": [
+        "Equities"
+      ],
+      "fact": "Point72, Millennium, Two Sigma and Citadel were targeted in a coordinated AI voice-phishing wave; Two Sigma said it blocked the attempt with no data impact.",
+      "factSources": [
+        {
+          "label": "InvestmentNews Aug 5",
+          "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Operational cyber risk is now a Fund-desk story with market color — credential theft can matter even without confirmed client-data loss.",
+      "trigger": "Confirmed data loss or forced trading-desk disruption headlines.",
+      "invalidator": "No follow-through breaches and desks treat it as contained.",
+      "horizon": "days/weeks",
+      "status": "new"
+    },
+    {
+      "id": "alphabet-ai-talent",
+      "title": "Alphabet AI talent shock into record digestion",
+      "grade": "MODERATE",
+      "assets": [
+        "Tech",
+        "Equities"
+      ],
+      "fact": "Jeff Dean exit headlines hit Google AI strategy continuity; GOOG closed Aug 5 at $360.13 (−4.05%) while S&P slipped only 0.17% from records.",
+      "factSources": [
+        {
+          "label": "Yahoo Finance GOOG",
+          "href": "https://finance.yahoo.com/quote/GOOG/history/"
+        },
+        {
+          "label": "Yahoo Finance (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Near-record indexes can still reprice single-name AI execution risk — talent and partner concentration (MSFT/OpenAI) stay idiosyncratic.",
+      "trigger": "Further Mag7 talent/capex shocks with Nasdaq leadership narrowing.",
+      "invalidator": "Alphabet stabilizes and Nasdaq holds the Aug 4 high.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "btc-priced-for-nothing",
+      "title": "BTC lags the equity melt-up",
+      "grade": "WEAK",
+      "assets": [
+        "Crypto"
+      ],
+      "fact": "Glassnode weekly “Priced For Nothing”: equities hit records while Bitcoin stood still; Yahoo BTC-USD Aug 5 close $64,597.50; CoinDesk same-day noted BTC lag vs equity highs.",
+      "factSources": [
+        {
+          "label": "Glassnode Insights",
+          "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+        },
+        {
+          "label": "Yahoo BTC-USD",
+          "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
+        },
+        {
+          "label": "CoinDesk Aug 5",
+          "href": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs"
+        }
+      ],
+      "mechanism": "Equities can melt up on AI/Hormuz while crypto stays boredom-bound — mid-$60ks is lag, not confirmation of broad risk-on.",
+      "trigger": "BTC fails to follow another equity up-day with rising spot volume.",
+      "invalidator": "BTC breaks higher with volume as equities hold records.",
+      "horizon": "weeks",
+      "status": "continuing"
+    }
+  ],
+  "signals": [
+    {
+      "grade": "STRONG",
+      "name": "Hormuz temporary corridor keeps oil diplomacy-first",
+      "evidence": "Iran–Oman 2–4 month temporary channel in final drafting; WTI down a third session on reopening-deal signs.",
+      "evidenceSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC Aug 5 Hormuz",
+          "href": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html"
+        }
+      ],
+      "mechanism": "Diplomacy headlines reverse supply-risk pricing faster than OPEC can.",
+      "disprovedIf": "Failed joint statement with oil reclaiming war-premium highs"
+    },
+    {
+      "grade": "STRONG",
+      "name": "Soft ADP vs hike-now Fed speakers",
+      "evidence": "ADP +44k miss vs ~75k; ISM Services 54.1 with Employment 47.4; Minneapolis Fed and Cook flagged hike risk.",
+      "evidenceSources": [
+        {
+          "label": "ADP Jul 2026",
+          "href": "https://mediacenter.adp.com/2026-08-05-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-44,000-Jobs-in-July-Annual-Pay-was-Up-4-4"
+        },
+        {
+          "label": "ISM Services Jul 2026",
+          "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Cooler hiring does not automatically retire inflation-hawk rhetoric.",
+      "disprovedIf": "Soft claims and cooler speakers cut near-term hike odds"
+    },
+    {
+      "grade": "STRONG",
+      "name": "AI vishing hits Point72 / Citadel / Millennium / Two Sigma",
+      "evidence": "Coordinated voice-phishing wave; Two Sigma said it blocked the attempt with no data impact.",
+      "evidenceSources": [
+        {
+          "label": "InvestmentNews Aug 5",
+          "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Cyber operational risk can matter even without confirmed data loss.",
+      "disprovedIf": "No follow-through breach headlines for a week"
+    },
+    {
+      "grade": "MODERATE",
+      "name": "Alphabet AI talent shock into record digestion",
+      "evidence": "GOOG −4.05% to $360.13 on Jeff Dean exit headlines; S&P only −0.17% from records.",
+      "evidenceSources": [
+        {
+          "label": "Yahoo Finance GOOG",
+          "href": "https://finance.yahoo.com/quote/GOOG/history/"
+        },
+        {
+          "label": "Yahoo Finance (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        }
+      ],
+      "mechanism": "Near-record indexes still reprice single-name AI execution risk.",
+      "disprovedIf": "Alphabet stabilizes and Nasdaq holds the Aug 4 high"
+    },
+    {
+      "grade": "WEAK",
+      "name": "BTC lags equity melt-up (Glassnode)",
+      "evidence": "Glassnode: equities hit records while Bitcoin stood still; Yahoo BTC-USD Aug 5 close $64,597.50; CoinDesk noted the lag vs equity highs.",
+      "evidenceSources": [
+        {
+          "label": "Glassnode Insights",
+          "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+        },
+        {
+          "label": "Yahoo BTC-USD",
+          "href": "https://finance.yahoo.com/quote/BTC-USD/history/"
+        },
+        {
+          "label": "CoinDesk Aug 5",
+          "href": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs"
+        }
+      ],
+      "mechanism": "Crypto boredom can persist while equities price AI/Hormuz optimism.",
+      "disprovedIf": "BTC breaks higher with rising spot volume alongside equities"
+    }
+  ],
+  "eventCalendar": {
+    "windowStart": "2026-08-06",
+    "windowEnd": "2026-08-14",
+    "note": "Through next Friday (Aug 14). Taiwan prints under China; UK/EU = CB only.",
+    "events": [
+      {
+        "id": "us-sf-fed-daly-2026-08-06",
+        "date": "2026-08-06",
+        "timeBeijing": "08:35",
+        "region": "US",
+        "category": "central-bank",
+        "event": "San Francisco Fed President Mary Daly speaks",
+        "themeId": "adp-soft-vs-hawks",
+        "source": {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "tw-cpi-jul-2026-08-06",
+        "date": "2026-08-06",
+        "timeBeijing": "16:00",
+        "region": "China",
+        "category": "data",
+        "event": "Taiwan July CPI y/y (inbox est. vs prior)",
+        "source": {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "us-claims-2026-08-06",
+        "date": "2026-08-06",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "US initial jobless claims (week; inbox est. vs prior)",
+        "themeId": "adp-soft-vs-hawks",
+        "source": {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "us-stlouis-fed-musalem-2026-08-07",
+        "date": "2026-08-07",
+        "timeBeijing": "05:30",
+        "region": "US",
+        "category": "central-bank",
+        "event": "St. Louis Fed President Alberto Musalem speaks",
+        "themeId": "adp-soft-vs-hawks",
+        "source": {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      }
+    ]
+  },
+  "watchItems": [],
+  "suggestions": [
+    {
+      "priority": "HIGH",
+      "headline": "Treat oil as diplomacy-first until corridor is verified",
+      "trigger": "Hormuz headlines swing WTI more than OPEC quota math.",
+      "invalidator": "Oil stops reacting to Iran talk headlines for two sessions.",
+      "rationale": "Temporary corridor talk is not the same as full strait reopen."
+    },
+    {
+      "priority": "HIGH",
+      "headline": "Keep claims as the ADP follow-through check",
+      "trigger": "Hot claims with hike-now Fed speakers.",
+      "invalidator": "Soft claims and cooler rhetoric.",
+      "rationale": "Private payrolls already missed; weekly claims arbitrate."
+    },
+    {
+      "priority": "HIGH",
+      "headline": "Separate Fund cyber risk from index beta",
+      "trigger": "Confirmed data-loss headlines at mega-funds.",
+      "invalidator": "Contained incident language for a week.",
+      "rationale": "Vishing is operational risk, not automatically a beta sell signal."
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Fade BTC strength that only copies equities",
+      "trigger": "BTC rallies with equities while Glassnode lag narrative holds.",
+      "invalidator": "Rising spot volume with sustained BTC breakout.",
+      "rationale": "Weekly on-chain still frames boredom vs equity melt-up."
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Watch China dual-use / tax friction separately from AI hardware demand",
+      "trigger": "More entity-list or offshore-insurance tax headlines hit ADRs.",
+      "invalidator": "De-escalation headlines with ADR breadth improving.",
+      "rationale": "Policy friction can dominate even when Hon Hai/AI demand is strong."
+    }
+  ],
+  "marketOverview": {
+    "asOfDate": "2026-08-05",
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    "items": [
+      {
+        "label": "美国股市",
+        "text": "标普500指数从纪录高位回落，谷歌母公司Alphabet、SpaceX和AMD重挫"
+      },
+      {
+        "label": "中概股",
+        "text": "金龙中国指数连续第二天下跌，Maase和网易对指数拖累最大"
+      },
+      {
+        "label": "美国债市",
+        "text": "美国国债走势相对平稳，短债小幅跑赢"
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数下跌，加元领涨G10货币，日元持稳"
+      },
+      {
+        "label": "欧洲股债",
+        "text": "欧洲政府债券持稳，市场等待美国与伊朗和平谈判进展的消息。欧洲股市在纪录高位附近徘徊"
+      },
+      {
+        "label": "能源",
+        "text": "WTI原油期货连续第三天下跌，有迹象显示美国与伊朗接近达成重开霍尔木兹海峡的协议"
+      },
+      {
+        "label": "金属",
+        "text": "黄金在突破关键技术阻力位后，创下2月以来最大单日涨幅，美伊协议前景削弱对央行加息的预期"
+      }
+    ]
+  },
+  "sources": "彭博 Markets Daily China / 财经早茶 (Aug 6 + Aug 5 inbox) for 国际要闻→globalChanged and 大中华新闻→chinaChanged Chinese 1:1, 市场一览, chart; Glassnode weekly email body; ADP/ISM primaries; Yahoo closes; CNBC Hormuz; InvestmentNews cyber; CoinDesk BTC. Fund RSS rescanned 2026-08-06.",
+  "caveats": "Bloomberg newsletter items without public article URLs use the stable Bloomberg Asia cite. Hard closes/prints attached to primaries. Glassnode uses email body only (no full-report scrape). Fund section updated via content/fund scan (cyber/vishing cluster). This report is research synthesis, not investment advice.",
+  "singleSource": "Aug 6 merge after Aug 3 gap: 彭博 Aug 6 财经早茶 国际要闻→globalChanged Chinese 1:1 + Aug 5 color where needed; 大中华新闻→chinaChanged Chinese 1:1; 市场一览 (7); calendar into watchItems; 今日图表 annotated from PNG (光模块对美出口占比/马来西亚转口). Glassnode W32 email (research week-31 URL). Fund signals rescanned (vishing cluster). marketDashboard injected; publishedAt set at publish.",
+  "marketDashboard": {
+    "asOf": "2026-08-06T07:47:35.239Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,723.55",
+            "change": "−0.17%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-05",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "26,363.44",
+            "change": "−0.83%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-05",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "15.85",
+            "change": "+0.25%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "65,683.26",
+            "change": "−0.93%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "25,498.01",
+            "change": "−1.61%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,818.00",
+            "change": null,
+            "changeDirection": "flat",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,900.35",
+            "change": "+0.57%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.18%",
+            "change": "−2.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-05",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.33%",
+            "change": "0.0 bp",
+            "changeDirection": "flat",
+            "asOfDate": "2026-08-05",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.63%",
+            "change": "0.0 bp",
+            "changeDirection": "flat",
+            "asOfDate": "2026-08-05",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.17%",
+            "change": "−1.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-05",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "157.8410",
+            "change": "+0.09%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.7497",
+            "change": "−0.05%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,320.70",
+            "change": "+1.76%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$79.64",
+            "change": "+0.24%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$64,745",
+            "change": "+1.21%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0068%",
+            "change": "+0.805 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-06",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-08-06"
+}
