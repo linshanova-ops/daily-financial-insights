@@ -1,29 +1,41 @@
 {
-  "at": "2026-08-07T17:55:42.904Z",
-  "briefingDate": "2026-08-07",
+  "at": "2026-08-10T00:01:08.573Z",
+  "briefingDate": "2026-08-10",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-07.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md",
+      "subject": "彭博财经早茶：伊朗拒绝直接与华府谈判；美疲软就业削弱加息预期",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5350,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-10.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-10.png"
+    },
+    {
+      "sourceId": "bloomberg-weekend-tea",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W32.md",
+      "subject": "彭博周末茶歇：日元保卫战",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5192,
+      "mailbox": "INBOX"
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W32.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-weekend-tea",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W31.md",
-      "skipped": true
     }
   ],
   "skipped": [
     {
-      "reason": "exists-keep",
+      "reason": "date-mismatch",
       "subject": "彭博财经早茶：霍尔木兹海峡重开添变数；DeepSeek重启融资",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-07.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-08-06",
+      "bjDay": "2026-08-07",
+      "briefingDate": "2026-08-10"
     },
     {
       "reason": "welcome",
@@ -37,7 +49,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-05",
       "bjDay": "2026-08-06",
-      "briefingDate": "2026-08-07"
+      "briefingDate": "2026-08-10"
     },
     {
       "reason": "weekly-exists",
@@ -51,7 +63,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-04",
       "bjDay": "2026-08-05",
-      "briefingDate": "2026-08-07"
+      "briefingDate": "2026-08-10"
     },
     {
       "reason": "date-mismatch",
@@ -60,7 +72,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-03",
       "bjDay": "2026-08-04",
-      "briefingDate": "2026-08-07"
+      "briefingDate": "2026-08-10"
     },
     {
       "reason": "date-mismatch",
@@ -69,12 +81,12 @@
       "subjectDay": null,
       "emailDay": "2026-08-02",
       "bjDay": "2026-08-03",
-      "briefingDate": "2026-08-07"
+      "briefingDate": "2026-08-10"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "彭博周末茶歇：AI投资热遇考验",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W31.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
     },
     {
       "reason": "date-mismatch",
@@ -83,7 +95,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-30",
       "bjDay": "2026-07-31",
-      "briefingDate": "2026-08-07"
+      "briefingDate": "2026-08-10"
     },
     {
       "reason": "date-mismatch",
@@ -92,7 +104,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-29",
       "bjDay": "2026-07-30",
-      "briefingDate": "2026-08-07"
+      "briefingDate": "2026-08-10"
     },
     {
       "reason": "weekly-duplicate",
@@ -106,7 +118,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-28",
       "bjDay": "2026-07-29",
-      "briefingDate": "2026-08-07"
+      "briefingDate": "2026-08-10"
     },
     {
       "reason": "date-mismatch",
@@ -115,21 +127,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-27",
       "bjDay": "2026-07-28",
-      "briefingDate": "2026-08-07"
-    },
-    {
-      "reason": "date-mismatch",
-      "subject": "彭博财经早茶：美伊互袭暂歇推动油价大跌；中国监管机构重罚携程",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-07-26",
-      "bjDay": "2026-07-27",
-      "briefingDate": "2026-08-07"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "彭博周末茶歇：中国迅速出招托市",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
+      "briefingDate": "2026-08-10"
     }
   ]
 }
