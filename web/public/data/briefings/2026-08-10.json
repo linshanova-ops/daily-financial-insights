@@ -974,8 +974,8 @@
   ],
   "eventCalendar": {
     "windowStart": "2026-08-10",
-    "windowEnd": "2026-08-14",
-    "note": "Briefing day through next Friday. Mainland China only on calendar (no TW/HK). UK/EU data omitted. Inbox: no major China data this window; BOJ minutes + Fed speaker + BLS CPI/PPI.",
+    "windowEnd": "2026-08-21",
+    "note": "Briefing day through next Friday (Aug 21) — this week + next. Mainland China only on calendar (no TW/HK). UK/EU data omitted. Inbox: BOJ minutes + Fed speaker + BLS CPI/PPI; fixtures fill Import/Export prices + FOMC minutes.",
     "events": [
       {
         "id": "boj-minutes-2026-08-10",
@@ -1006,6 +1006,7 @@
       {
         "id": "bls-cpi-2026-08-12",
         "date": "2026-08-12",
+        "timeBeijing": "20:30",
         "region": "US",
         "category": "data",
         "event": "Consumer Price Index for July 2026",
@@ -1018,6 +1019,7 @@
       {
         "id": "bls-ppi-2026-08-13",
         "date": "2026-08-13",
+        "timeBeijing": "20:30",
         "region": "US",
         "category": "data",
         "event": "Producer Price Index for July 2026",
@@ -1025,6 +1027,31 @@
         "source": {
           "label": "BLS schedule",
           "href": "https://www.bls.gov/schedule/2026/"
+        }
+      },
+      {
+        "id": "bls-import-export-2026-08-18",
+        "date": "2026-08-18",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "U.S. Import and Export Price Indexes for July 2026",
+        "source": {
+          "label": "BLS schedule",
+          "href": "https://www.bls.gov/schedule/2026/"
+        }
+      },
+      {
+        "id": "fed-fomc-minutes-2026-08-19",
+        "date": "2026-08-19",
+        "timeBeijing": "02:00",
+        "region": "US",
+        "category": "central-bank",
+        "event": "FOMC Minutes",
+        "themeId": "nfp-hike-odds",
+        "source": {
+          "label": "Federal Reserve calendar",
+          "href": "https://www.federalreserve.gov/json/calendar.json"
         }
       }
     ]

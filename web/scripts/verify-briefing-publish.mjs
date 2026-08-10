@@ -15,6 +15,7 @@ import {
   BRIEFING_JSON_SYNC_PATHS,
   checkBriefingJsonSync,
 } from "./lib/briefing-json-sync-check.mjs";
+import { checkLatestEventCalendarWindow } from "./lib/event-calendar-window-check.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const webRoot = path.join(__dirname, "..");
@@ -66,6 +67,15 @@ function main() {
   console.log(
     `[verify-briefing] JSON sync OK (${BRIEFING_JSON_SYNC_PATHS.join(", ")})`,
   );
+
+  const calCheck = checkLatestEventCalendarWindow(webRoot);
+  if (!calCheck.ok) {
+    console.error(`\n[verify-briefing] FAIL — ${calCheck.message}\n`);
+    process.exit(1);
+  }
+  if (!calCheck.skipped) {
+    console.log("[verify-briefing] eventCalendar window OK");
+  }
 
   runStep("scan-links", "npm", ["run", "scan-links"], webRoot);
 

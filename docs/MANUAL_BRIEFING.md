@@ -30,6 +30,10 @@ Controlled by `web/content/briefing-ops.json`:
 cross-checks only (contradictions, non-confirmations, second-order) — never
 re-tell a theme card.
 
+**Event Calendar window:** `windowEnd` = Friday after the Friday-on-or-after
+briefing date (this week + next). Helper:
+`eventWindowForBriefingDate` — Aug 10 → Aug 21, not Aug 14.
+
 Optional: Actions → **Generate daily briefing** → Run workflow (inbox/Fund
 helpers). Cursor `Agent.create` stays off unless `force_cursor` /
 `BRIEFING_FORCE_CURSOR=1`.
