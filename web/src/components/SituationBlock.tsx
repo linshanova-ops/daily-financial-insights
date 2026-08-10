@@ -4,7 +4,6 @@ import type { FactLine } from "@/lib/types";
 import { asSourcedFacts, factKey } from "@/lib/sourced-facts";
 import { accents, type ModuleAccent } from "@/lib/module-accents";
 import { Bullet } from "./Bullet";
-import { CollapseToggle, useCollapsedList } from "./CollapsibleList";
 import { KindLabel } from "./KindLabel";
 
 interface SituationBlockProps {
@@ -20,8 +19,6 @@ interface SituationBlockProps {
   accent?: ModuleAccent;
   band?: boolean;
 }
-
-const CHANGED_PREVIEW = 3;
 
 export function SituationBlock({
   id,
@@ -39,7 +36,6 @@ export function SituationBlock({
   const a = accents[accent];
   const changedFacts = asSourcedFacts(changed);
   const implyFacts = asSourcedFacts(implies);
-  const changedList = useCollapsedList(changedFacts, CHANGED_PREVIEW);
 
   return (
     <section
@@ -79,7 +75,7 @@ export function SituationBlock({
               <KindLabel kind="fact" />
             </div>
             <ul className="mt-4 space-y-4 text-base leading-relaxed text-ink-soft">
-              {changedList.visible.map((item, index) => (
+              {changedFacts.map((item, index) => (
                 <Bullet
                   key={factKey(item, index)}
                   dotClass={a.bulletDot}
@@ -89,13 +85,6 @@ export function SituationBlock({
                 </Bullet>
               ))}
             </ul>
-            {changedList.needsCollapse ? (
-              <CollapseToggle
-                expanded={changedList.expanded}
-                hiddenCount={changedList.hiddenCount}
-                onToggle={changedList.toggle}
-              />
-            ) : null}
           </div>
           <div>
             <div className="flex flex-wrap items-center gap-2">

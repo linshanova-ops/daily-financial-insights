@@ -1,7 +1,6 @@
 "use client";
 
 import type { Signal, SignalGrade } from "@/lib/types";
-import { CollapseToggle, useCollapsedList } from "./CollapsibleList";
 import { KindLabel } from "./KindLabel";
 import { SourceButton } from "./SourceButton";
 
@@ -15,9 +14,9 @@ interface SignalListProps {
   signals: Signal[];
 }
 
+/** Cross-checks only — Themes own the full narrative; do not re-tell them here. */
 export function SignalList({ signals }: SignalListProps) {
-  const { visible, needsCollapse, expanded, hiddenCount, toggle } =
-    useCollapsedList(signals, 4);
+  if (!signals.length) return null;
 
   return (
     <section id="signals" className="scroll-mt-24">
@@ -25,19 +24,20 @@ export function SignalList({ signals }: SignalListProps) {
         <div className="flex flex-wrap items-center gap-3">
           <span className="h-6 w-1 rounded-full bg-amber" aria-hidden />
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber">
-            Signals
+            Cross-checks
           </p>
           <KindLabel kind="judgment" />
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          What the day reveals
+          What themes leave out
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          Evidence rows are facts from the day&apos;s tape. Mechanism and
-          &ldquo;disproved if&rdquo; are interpretive judgments.
+          Contradictions, non-confirmations, and second-order reads — not a
+          second copy of Today&apos;s themes. If it already has a theme card,
+          it does not belong here.
         </p>
         <ol className="mt-10 space-y-8">
-          {visible.map((signal) => (
+          {signals.map((signal) => (
             <li
               key={signal.name}
               className="grade-pulse border-b border-line pb-8 last:border-b-0"
@@ -78,14 +78,6 @@ export function SignalList({ signals }: SignalListProps) {
             </li>
           ))}
         </ol>
-        {needsCollapse ? (
-          <CollapseToggle
-            expanded={expanded}
-            hiddenCount={hiddenCount}
-            onToggle={toggle}
-            moreLabel="Show more signals"
-          />
-        ) : null}
       </div>
     </section>
   );

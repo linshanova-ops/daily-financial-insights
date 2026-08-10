@@ -246,6 +246,15 @@ export async function buildMarketDashboard() {
           sourceLabel: "Yahoo Finance (^N225)",
         }),
       ),
+      safeRow("kospi", () =>
+        rowFromYahoo({
+          id: "kospi",
+          asset: "Kospi",
+          symbol: "^KS11",
+          decimals: 2,
+          sourceLabel: "Yahoo Finance (^KS11)",
+        }),
+      ),
       safeRow("hsi", () =>
         rowFromYahoo({
           id: "hsi",

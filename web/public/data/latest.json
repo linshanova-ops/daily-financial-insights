@@ -193,7 +193,7 @@
     }
   },
   "marketDashboard": {
-    "asOf": "2026-08-10T06:36:38.803Z",
+    "asOf": "2026-08-10T07:29:55.289Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -239,8 +239,8 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "66,947.51",
-            "change": "+2.04%",
+            "latest": "66,970.22",
+            "change": "+2.08%",
             "changeDirection": "up",
             "asOfDate": "2026-08-10",
             "source": {
@@ -249,10 +249,22 @@
             }
           },
           {
+            "id": "kospi",
+            "asset": "Kospi",
+            "latest": "6,299.66",
+            "change": "+0.65%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-10",
+            "source": {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          },
+          {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,852.69",
-            "change": "+0.72%",
+            "latest": "25,900.16",
+            "change": "+0.90%",
             "changeDirection": "up",
             "asOfDate": "2026-08-10",
             "source": {
@@ -263,7 +275,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,887.41",
+            "latest": "4,900.19",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-08-10",
@@ -275,8 +287,8 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,956.97",
-            "change": "+0.43%",
+            "latest": "3,966.59",
+            "change": "+0.67%",
             "changeDirection": "up",
             "asOfDate": "2026-08-10",
             "source": {
@@ -347,8 +359,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "158.4170",
-            "change": "+0.01%",
+            "latest": "158.4530",
+            "change": "+0.03%",
             "changeDirection": "up",
             "asOfDate": "2026-08-10",
             "source": {
@@ -359,8 +371,8 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7336",
-            "change": "−0.23%",
+            "latest": "6.7442",
+            "change": "−0.07%",
             "changeDirection": "down",
             "asOfDate": "2026-08-10",
             "source": {
@@ -371,8 +383,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,403.90",
-            "change": "+1.46%",
+            "latest": "$4,413.60",
+            "change": "+1.68%",
             "changeDirection": "up",
             "asOfDate": "2026-08-10",
             "source": {
@@ -383,8 +395,8 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$83.59",
-            "change": "+0.05%",
+            "latest": "$84.09",
+            "change": "+0.65%",
             "changeDirection": "up",
             "asOfDate": "2026-08-10",
             "source": {
@@ -395,8 +407,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$65,142",
-            "change": "+0.51%",
+            "latest": "$65,254",
+            "change": "+0.71%",
             "changeDirection": "up",
             "asOfDate": "2026-08-10",
             "source": {
@@ -747,7 +759,7 @@
           "themeId": "china-quant-ai-stress"
         },
         {
-          "name": "Japan/Korea",
+          "name": "Japan equities",
           "driver": "Nikkei 66,947.51 (+2.04%); USD/JPY ~158.42 after yen-defense fade.",
           "driverSources": [
             {
@@ -761,6 +773,17 @@
           ],
           "read": "Equity beta to softer USD path; FX still intervention-headline sensitive.",
           "themeId": "yen-defense-fade"
+        },
+        {
+          "name": "Korea equities",
+          "driver": "Kospi (see Market closes ^KS11); semi/memory beta still the cross-check vs Japan/HK — not a China onshore proxy.",
+          "driverSources": [
+            {
+              "label": "Yahoo (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          ],
+          "read": "Read Kospi as Asia chip sentiment, separate from Nikkei FX/intervention beta."
         }
       ]
     },
@@ -882,8 +905,8 @@
   "signals": [
     {
       "grade": "STRONG",
-      "name": "Labor miss → lower near-term hike odds",
-      "evidence": "BLS July NFP −23k; U-rate 4.1%; −103k combined revisions (NBC). Inbox Sept hike odds ~60%→~40%.",
+      "name": "Soft labor vs live Hormuz oil premium",
+      "evidence": "BLS July NFP −23k / U-rate 4.1% cut near-term hike odds, while Iran still refuses direct talks and Houthis hit Jazan — Brent stays in the low-$80s (see Market closes). Themes cover each event; the cross-check is the joint regime.",
       "evidenceSources": [
         {
           "label": "BLS",
@@ -892,74 +915,61 @@
         {
           "label": "NBC",
           "href": "https://www.nbcnews.com/business/economy/july-2026-jobs-report-rcna591138"
-        }
-      ],
-      "mechanism": "Soft labor reduces urgency for restrictive path into Sept.",
-      "disprovedIf": "Hot Aug CPI or upside claims/payrolls restore hike odds >55%."
-    },
-    {
-      "grade": "STRONG",
-      "name": "China factory inflation slowing",
-      "evidence": "PPI +3.5% y/y (−0.6 pp); CPI +0.5% y/y (Xinhua/CGTN).",
-      "evidenceSources": [
-        {
-          "label": "Xinhua",
-          "href": "https://english.news.cn/20260809/0f8d54e5f8634769a5eeb4d0c88ef5cd/c.html"
-        },
-        {
-          "label": "CGTN",
-          "href": "https://news.cgtn.com/news/2026-08-09/China-s-CPI-and-PPI-maintain-upward-trend-in-July-1PsKq8Nf3cQ/p.html"
-        }
-      ],
-      "mechanism": "Imported energy disinflation hits PPI first.",
-      "disprovedIf": "PPI re-accelerates with oil while CPI sticks above 1%."
-    },
-    {
-      "grade": "MODERATE",
-      "name": "Hormuz/talks keep oil option premium",
-      "evidence": "Iran refuses direct talks; Houthi–Jazan strike (inbox); Brent still in the low-$80s on Yahoo futures tape (see Market closes).",
-      "evidenceSources": [
-        {
-          "label": "彭博",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ],
-      "mechanism": "Diplomacy and Strait logistics headlines reprice supply risk.",
-      "disprovedIf": "Verified commercial Hormuz channel with falling freight/war risk."
-    },
-    {
-      "grade": "MODERATE",
-      "name": "Yen intervention fade",
-      "evidence": "USD/JPY ~158.4 after US–Japan support narrative; MS FX claim temporary.",
-      "evidenceSources": [
-        {
-          "label": "Yahoo USDJPY",
-          "href": "https://finance.yahoo.com/quote/USDJPY%3DX/"
         },
         {
           "label": "彭博",
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "One-off support without follow-through lets carry reassert.",
-      "disprovedIf": "Confirmed repeat joint intervention or sustained break <155."
+      "mechanism": "Path-odds relief and geo supply risk can both be true — equities bid the former while oil keeps the latter as optionality.",
+      "disprovedIf": "Hot Aug CPI restores hike odds and Brent drops together on a verified Hormuz channel — or soft CPI with Brent >$90 on confirmed blockade."
     },
     {
-      "grade": "WEAK",
-      "name": "BTC still lagging equities",
-      "evidence": "Glassnode W31 frame; BTC ~$65k vs Friday equity surge.",
+      "grade": "MODERATE",
+      "name": "AI vendor sales vs quant fund smash",
+      "evidence": "Inbox — Cambricon/Moore Threads strong H1 revenue vs 朝阳永续 July pure-long quant drawdowns (High-Flyer/幻方 products deep red). Theme owns the fund stress; this row is the flow≠fundamentals split.",
       "evidenceSources": [
         {
-          "label": "Glassnode",
-          "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Chip-vendor prints do not clear crowded-factor unwind in quant P&L — stock-picking and fund-flow risk stay separate books.",
+      "disprovedIf": "Quant/AI factor indices stabilize with rising A-share breadth while vendor guides hold."
+    },
+    {
+      "grade": "MODERATE",
+      "name": "Friday equity risk-on vs BTC lag",
+      "evidence": "Aug 7 S&P +0.62% / Nasdaq +1.30% after soft NFP; BTC still mid-$60ks (CoinGecko) under Glassnode’s lag-vs-equities frame — no theme card for this non-confirmation.",
+      "evidenceSources": [
+        {
+          "label": "Yahoo (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
           "label": "CoinGecko",
           "href": "https://www.coingecko.com/en/coins/bitcoin"
+        },
+        {
+          "label": "Glassnode",
+          "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
         }
       ],
-      "mechanism": "Crypto beta not confirming equity risk-on one-for-one.",
+      "mechanism": "Crypto beta is not confirming the equity path-odds bid one-for-one.",
       "disprovedIf": "BTC reclaims prior range highs with rising funding and spot lead."
+    },
+    {
+      "grade": "WEAK",
+      "name": "HK/ADR firm vs onshore quant stress",
+      "evidence": "Inbox Golden Dragon up a second day (Alibaba, Nio) while mainland quant/AI products posted July smash — tape strength is not the same as onshore fund health.",
+      "evidenceSources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "ADR/HK beta can firm on US path-odds even as domestic factor unwind hits local P&L.",
+      "disprovedIf": "Golden Dragon and onshore quant indices sell off together for a week on shared risk-off."
     }
   ],
   "eventCalendar": {
