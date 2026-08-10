@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-10T12:36:06.317Z",
+  "fetchedAt": "2026-08-10T12:41:11.175Z",
   "windowStart": "2026-08-10",
   "windowEnd": "2026-08-21",
   "events": [
@@ -50,28 +50,12 @@
         "label": "Federal Reserve calendar",
         "href": "https://www.federalreserve.gov/json/calendar.json"
       }
-    },
+    }
+  ],
+  "errors": [
     {
-      "id": "nbs-1-consumer-price-index-in-july-2026-2026-08-10",
-      "date": "2026-08-10",
-      "region": "China",
-      "category": "data",
-      "event": "1.Consumer Price Index in July 2026",
-      "source": {
-        "label": "NBS English press release",
-        "href": "https://www.stats.gov.cn/english/PressRelease/202608/t20260810_1965018.html"
-      }
-    },
-    {
-      "id": "nbs-2-industrial-producer-price-indexes-in-july-2026-2026-08-10",
-      "date": "2026-08-10",
-      "region": "China",
-      "category": "data",
-      "event": "2.Industrial Producer Price Indexes in July 2026",
-      "source": {
-        "label": "NBS English press release",
-        "href": "https://www.stats.gov.cn/english/PressRelease/202608/t20260810_1965017.html"
-      }
+      "name": "nbs",
+      "message": "fetch failed"
     }
   ]
 }
