@@ -437,20 +437,6 @@
     "href": "https://www.hedgeweek.com/squarepoint-expands-commodities-trading-team/"
   },
   {
-    "id": "sig-20260728-ntpg3d",
-    "date": "2026.07.28",
-    "title": "Former Citadel PMs emerge as preferred picks for hedge fund seeding capital",
-    "summary": "Citadel Investment Group 募资/扩容信号：Former Citadel PMs emerge as preferred picks for hedge fund seeding capital。",
-    "summaryEn": "Citadel Investment Group: capital / fundraising signal — Former Citadel PMs emerge as preferred picks for hedge fund seeding capital.",
-    "fund": "Citadel Investment Group",
-    "source": "Hedgeweek",
-    "sourceTier": "designated",
-    "sourceTierLabel": "指定信源",
-    "tag": "募资",
-    "status": "confirmed",
-    "href": "https://www.hedgeweek.com/former-citadel-pms-emerge-as-preferred-picks-for-hedge-fund-seeding-capital/"
-  },
-  {
     "id": "sig-20260728-r4v4jc",
     "date": "2026.07.28",
     "title": "Man Group assets hit record $253.6bn after strong H1 inflows and performance",
@@ -477,6 +463,20 @@
     "tag": "动态",
     "status": "confirmed",
     "href": "https://www.fnlondon.com/articles/man-group-results-three-things-you-need-to-know-25072933"
+  },
+  {
+    "id": "sig-20260728-ntpg3d",
+    "date": "2026.07.28",
+    "title": "Former Citadel PMs emerge as preferred picks for hedge fund seeding capital",
+    "summary": "Citadel Investment Group 募资/扩容信号：Former Citadel PMs emerge as preferred picks for hedge fund seeding capital。",
+    "summaryEn": "Citadel Investment Group: capital / fundraising signal — Former Citadel PMs emerge as preferred picks for hedge fund seeding capital.",
+    "fund": "Citadel Investment Group",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "募资",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/former-citadel-pms-emerge-as-preferred-picks-for-hedge-fund-seeding-capital/"
   },
   {
     "id": "sig-20260727-5epxev",
@@ -591,20 +591,6 @@
     "sourceTierLabel": "指定信源"
   },
   {
-    "id": "sig-20260723-erkij8",
-    "date": "2026.07.23",
-    "title": "Citadel Securities sets up Amsterdam equity options hub",
-    "summary": "Citadel Investment Group：Citadel Securities sets up Amsterdam equity options hub（动态）。",
-    "summaryEn": "Citadel Investment Group: Citadel Securities sets up Amsterdam equity options hub.",
-    "fund": "Citadel Investment Group",
-    "source": "Hedgeweek",
-    "tag": "动态",
-    "status": "confirmed",
-    "href": "https://www.hedgeweek.com/citadel-securities-sets-up-amsterdam-equity-options-hub/",
-    "sourceTier": "designated",
-    "sourceTierLabel": "指定信源"
-  },
-  {
     "id": "sig-20260723-csxa0o",
     "date": "2026.07.23",
     "title": "Fasanara hires ex-Man Group exec to lead firm-wide AI push",
@@ -615,6 +601,20 @@
     "tag": "人员 / 招聘",
     "status": "confirmed",
     "href": "https://www.hedgeweek.com/fasanara-hires-ex-man-group-exec-to-lead-firm-wide-ai-push/",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源"
+  },
+  {
+    "id": "sig-20260723-erkij8",
+    "date": "2026.07.23",
+    "title": "Citadel Securities sets up Amsterdam equity options hub",
+    "summary": "Citadel Investment Group：Citadel Securities sets up Amsterdam equity options hub（动态）。",
+    "summaryEn": "Citadel Investment Group: Citadel Securities sets up Amsterdam equity options hub.",
+    "fund": "Citadel Investment Group",
+    "source": "Hedgeweek",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/citadel-securities-sets-up-amsterdam-equity-options-hub/",
     "sourceTier": "designated",
     "sourceTierLabel": "指定信源"
   },
