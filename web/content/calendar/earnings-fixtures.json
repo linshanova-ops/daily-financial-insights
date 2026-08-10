@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-10T12:05:58.556Z",
+  "fetchedAt": "2026-08-10T12:11:03.108Z",
   "windowStart": "2026-08-10",
   "windowEnd": "2026-08-21",
   "events": [],
@@ -9,11 +9,11 @@
       "message": "fetch 403"
     },
     {
-      "name": "aapl",
+      "name": "meta",
       "message": "fetch 403"
     },
     {
-      "name": "meta",
+      "name": "aapl",
       "message": "fetch 403"
     },
     {
@@ -29,6 +29,10 @@
       "message": "fetch 403"
     },
     {
+      "name": "sk-hynix",
+      "message": "fetch 404"
+    },
+    {
       "name": "crcl",
       "message": "fetch 403"
     },
@@ -37,7 +41,7 @@
       "message": "fetch 403"
     },
     {
-      "name": "sk-hynix",
+      "name": "zhipu",
       "message": "fetch failed"
     },
     {
