@@ -20,8 +20,11 @@ interface DetailTabsProps {
   panels: DetailTabPanels;
 }
 
-function scrollDetailIntoView() {
-  document.getElementById("detail")?.scrollIntoView({
+function scrollDetailIntoView(panelDomId?: string) {
+  const target =
+    (panelDomId && document.getElementById(panelDomId)) ||
+    document.getElementById("detail");
+  target?.scrollIntoView({
     block: "start",
     behavior: "smooth",
   });
@@ -30,7 +33,7 @@ function scrollDetailIntoView() {
 export function DetailTabs({ panels }: DetailTabsProps) {
   const baseId = useId();
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState<DetailTabId>("signals");
+  const [active, setActive] = useState<DetailTabId>("global");
   const [pendingScroll, setPendingScroll] = useState(false);
 
   useEffect(() => {
@@ -49,14 +52,17 @@ export function DetailTabs({ panels }: DetailTabsProps) {
   // Scroll only after Detail is open so the tab panel has layout height.
   useEffect(() => {
     if (!open || !pendingScroll) return;
+    const panelDomId = `${baseId}-panel-${active}`;
     const id = window.requestAnimationFrame(() => {
-      scrollDetailIntoView();
-      setPendingScroll(false);
+      window.requestAnimationFrame(() => {
+        scrollDetailIntoView(panelDomId);
+        setPendingScroll(false);
+      });
     });
     return () => window.cancelAnimationFrame(id);
-  }, [open, pendingScroll, active]);
+  }, [open, pendingScroll, active, baseId]);
 
-  function openModules(id: DetailTabId = "signals", syncHash = true) {
+  function openModules(id: DetailTabId = "global", syncHash = true) {
     setOpen(true);
     setActive(id);
     setPendingScroll(true);
@@ -107,7 +113,7 @@ export function DetailTabs({ panels }: DetailTabsProps) {
               type="button"
               className="focus-ring inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
               aria-expanded={false}
-              onClick={() => openModules("signals", true)}
+              onClick={() => openModules("global", true)}
             >
               Open Detail modules
             </button>

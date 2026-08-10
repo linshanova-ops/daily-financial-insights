@@ -1,5 +1,6 @@
 import type { MarketOverview as MarketOverviewData } from "@/lib/types";
 import { accents } from "@/lib/module-accents";
+import { KindLabel } from "./KindLabel";
 import { SourceButton } from "./SourceButton";
 
 interface MarketOverviewProps {
@@ -15,7 +16,7 @@ export function MarketOverview({ data }: MarketOverviewProps) {
   return (
     <section id="market-overview" className="scroll-mt-24">
       <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           <span
             className={`h-6 w-1 rounded-full ${accent.headerBar}`}
             aria-hidden
@@ -25,6 +26,7 @@ export function MarketOverview({ data }: MarketOverviewProps) {
           >
             Market color
           </p>
+          <KindLabel kind="claim" />
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
           Morning desk tape

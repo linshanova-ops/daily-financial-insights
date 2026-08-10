@@ -33,7 +33,7 @@ export function ExecutiveSummary({
         >
           Executive summary
         </p>
-        <KindLabel kind="fact" />
+        <KindLabel kind={hasThemes ? "judgment" : "fact"} />
       </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
         {hasThemes ? "Jump to today’s themes" : "The day in five minutes"}
@@ -58,38 +58,40 @@ export function ExecutiveSummary({
           ))}
         </ol>
       ) : (
-        <ul className="mt-8 space-y-4 text-base leading-relaxed text-ink-soft sm:text-lg">
-          {facts.map((item, index) => (
-            <Bullet
-              key={factKey(item, index)}
-              dotClass={a.bulletDot}
-              sources={item.sources}
-            >
-              {item.text}
-            </Bullet>
-          ))}
-        </ul>
+        <>
+          <ul className="mt-8 space-y-4 text-base leading-relaxed text-ink-soft sm:text-lg">
+            {facts.map((item, index) => (
+              <Bullet
+                key={factKey(item, index)}
+                dotClass={a.bulletDot}
+                sources={item.sources}
+              >
+                {item.text}
+              </Bullet>
+            ))}
+          </ul>
+          <div className="mt-10 grid gap-6 border-t border-line pt-8 md:grid-cols-2">
+            <div className="border-l-2 border-forest/30 bg-forest/5 p-4">
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+                  Signal
+                </p>
+                <KindLabel kind="judgment" />
+              </div>
+              <p className="mt-2 text-base leading-relaxed text-ink">{signal}</p>
+            </div>
+            <div className="border-l-2 border-copper/40 bg-copper/5 p-4">
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-copper">
+                  Watch
+                </p>
+                <KindLabel kind="judgment" />
+              </div>
+              <p className="mt-2 text-base leading-relaxed text-ink">{watch}</p>
+            </div>
+          </div>
+        </>
       )}
-      <div className="mt-10 grid gap-6 border-t border-line pt-8 md:grid-cols-2">
-        <div className="border-l-2 border-forest/30 bg-forest/5 p-4">
-          <div className="flex flex-wrap items-center gap-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-forest">
-              Signal
-            </p>
-            <KindLabel kind="judgment" />
-          </div>
-          <p className="mt-2 text-base leading-relaxed text-ink">{signal}</p>
-        </div>
-        <div className="border-l-2 border-copper/40 bg-copper/5 p-4">
-          <div className="flex flex-wrap items-center gap-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-copper">
-              Watch
-            </p>
-            <KindLabel kind="judgment" />
-          </div>
-          <p className="mt-2 text-base leading-relaxed text-ink">{watch}</p>
-        </div>
-      </div>
     </section>
   );
 }
