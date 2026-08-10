@@ -18,8 +18,8 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Twice-daily schedule** | **08:00 / 20:00 Beijing, Mon–Fri.** When `web/content/briefing-ops.json` sets `cursorAutoGenerate: false`, Cursor Agent.create is skipped (manual publish — see [MANUAL_BRIEFING.md](./MANUAL_BRIEFING.md)); Fund RSS still runs on primary windows. Sat/Sun scheduled generates are skipped. **Required for true on-time auto:** external cron → `repository_dispatch` — see [ON_TIME_PUBLISH.md](./ON_TIME_PUBLISH.md). |
-| **Manual** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
+| **Publish mode** | **Manual only.** Twice-daily Cursor auto-generate is off (`briefing-ops.json` + no cron on Generate workflow). See [MANUAL_BRIEFING.md](./MANUAL_BRIEFING.md). Fund / inbox helpers run only when you trigger **Generate daily briefing** (or `repository_dispatch`). |
+| **Manual workflow** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge the orchestrator dispatches Pages (with retries). Safety-net cron at `:50` UTC also redeploys. |
 

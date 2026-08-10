@@ -1,20 +1,10 @@
 name: Generate daily briefing
 
 on:
-  # GitHub schedule is BEST-EFFORT and has skipped entire publish windows.
-  # Strategy:
-  #   1) Light primary ticks at :00/:15/:30/:45 of Beijing hours (UTC 0 and 12)
-  #   2) Hourly heartbeat at :05 every hour — recovers missed slots for 6h
-  #   3) External cron-job.org repository_dispatch (REQUIRED for true on-time)
-  #      — see docs/ON_TIME_PUBLISH.md
-  #
-  # Cursor Agent.create is controlled by web/content/briefing-ops.json
-  # (manual mode until cursorAutoResumeOn). Fund RSS + optional inbox fetch
-  # can still run without Cursor tokens.
-  schedule:
-    - cron: "0,15,30,45 0 * * *"
-    - cron: "0,15,30,45 12 * * *"
-    - cron: "5 * * * *"
+  # Manual only — no twice-daily schedule.
+  # Run: Actions → Generate daily briefing → Run workflow
+  # Or: repository_dispatch refresh-briefing (optional force / force_cursor)
+  # Cursor Agent.create also gated by web/content/briefing-ops.json
   workflow_dispatch:
   repository_dispatch:
     types: [refresh-briefing]

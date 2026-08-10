@@ -1,5 +1,5 @@
 {
   "cursorAutoGenerate": false,
-  "cursorAutoResumeOn": "2026-08-15",
-  "note": "Manual briefing updates only until Cursor usage renews (~18 days from 2026-07-28). Fund RSS still runs on primary windows; IMAP inbox fetch + Agent.create are off until resume."
+  "cursorAutoResumeOn": null,
+  "note": "Permanent manual briefing updates only. No twice-daily Cursor auto-generate. Publish when asked; set cursorAutoGenerate true only if auto is wanted again."
 }
