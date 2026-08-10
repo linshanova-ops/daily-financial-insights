@@ -1,25 +1,17 @@
 {
-  "at": "2026-08-10T00:01:08.573Z",
+  "at": "2026-08-10T00:06:26.137Z",
   "briefingDate": "2026-08-10",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md",
-      "subject": "彭博财经早茶：伊朗拒绝直接与华府谈判；美疲软就业削弱加息预期",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5350,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-10.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-10.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W32.md",
-      "subject": "彭博周末茶歇：日元保卫战",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5192,
-      "mailbox": "INBOX"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -28,6 +20,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：伊朗拒绝直接与华府谈判；美疲软就业削弱加息预期",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：日元保卫战",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W32.md"
+    },
     {
       "reason": "date-mismatch",
       "subject": "彭博财经早茶：霍尔木兹海峡重开添变数；DeepSeek重启融资",
