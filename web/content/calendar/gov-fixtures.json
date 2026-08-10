@@ -1,20 +1,8 @@
 {
-  "fetchedAt": "2026-08-07T12:40:56.175Z",
-  "windowStart": "2026-08-07",
-  "windowEnd": "2026-08-14",
+  "fetchedAt": "2026-08-10T00:01:37.088Z",
+  "windowStart": "2026-08-10",
+  "windowEnd": "2026-08-21",
   "events": [
-    {
-      "id": "bls-employment-situation-for-july-2026-2026-08-07",
-      "date": "2026-08-07",
-      "timeBeijing": "20:30",
-      "region": "US",
-      "category": "data",
-      "event": "Employment Situation for July 2026",
-      "source": {
-        "label": "BLS release calendar",
-        "href": "https://www.bls.gov/schedule/2026/"
-      }
-    },
     {
       "id": "bls-consumer-price-index-for-july-2026-2026-08-12",
       "date": "2026-08-12",
@@ -40,22 +28,28 @@
       }
     },
     {
-      "id": "fed-discussion-vice-chair-for-supervision-michelle-w-bowman-2026-08-08",
-      "date": "2026-08-08",
-      "timeBeijing": "00:45",
+      "id": "bls-u-s-import-and-export-price-indexes-for-july-2026-2026-08-18",
+      "date": "2026-08-18",
+      "timeBeijing": "20:30",
+      "region": "US",
+      "category": "data",
+      "event": "U.S. Import and Export Price Indexes for July 2026",
+      "source": {
+        "label": "BLS release calendar",
+        "href": "https://www.bls.gov/schedule/2026/"
+      }
+    },
+    {
+      "id": "fed-fomc-minutes-2026-08-19",
+      "date": "2026-08-19",
+      "timeBeijing": "02:00",
       "region": "US",
       "category": "central-bank",
-      "event": "Discussion - Vice Chair for Supervision Michelle W. Bowman",
+      "event": "FOMC Minutes",
       "source": {
         "label": "Federal Reserve calendar",
         "href": "https://www.federalreserve.gov/json/calendar.json"
       }
-    }
-  ],
-  "errors": [
-    {
-      "name": "nbs",
-      "message": "fetch failed"
     }
   ]
 }
