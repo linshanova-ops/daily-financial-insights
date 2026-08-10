@@ -1,13 +1,9 @@
 {
-  "fetchedAt": "2026-08-10T12:25:57.874Z",
+  "fetchedAt": "2026-08-10T12:31:25.036Z",
   "windowStart": "2026-08-10",
   "windowEnd": "2026-08-21",
   "events": [],
   "errors": [
-    {
-      "name": "meta",
-      "message": "fetch 403"
-    },
     {
       "name": "amzn",
       "message": "fetch 403"
@@ -17,7 +13,15 @@
       "message": "fetch 403"
     },
     {
+      "name": "meta",
+      "message": "fetch 403"
+    },
+    {
       "name": "orcl",
+      "message": "fetch 403"
+    },
+    {
+      "name": "nvda",
       "message": "fetch 403"
     },
     {
@@ -25,8 +29,8 @@
       "message": "fetch 403"
     },
     {
-      "name": "nvda",
-      "message": "fetch 403"
+      "name": "sk-hynix",
+      "message": "fetch 404"
     },
     {
       "name": "crcl",
@@ -37,7 +41,7 @@
       "message": "fetch 403"
     },
     {
-      "name": "sk-hynix",
+      "name": "zhipu",
       "message": "fetch failed"
     },
     {
