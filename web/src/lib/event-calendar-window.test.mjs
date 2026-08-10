@@ -32,6 +32,10 @@ describe("nextWeekFridayAfter", () => {
   it("from Monday ends next Friday (week-ahead)", () => {
     assert.equal(nextWeekFridayAfter("2026-08-03"), "2026-08-14");
   });
+
+  it("from mid-week Monday spans this Friday + next (two weeks)", () => {
+    assert.equal(nextWeekFridayAfter("2026-08-10"), "2026-08-21");
+  });
 });
 
 describe("eventWindowForBriefingDate", () => {

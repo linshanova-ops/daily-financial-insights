@@ -4,7 +4,6 @@ import { ExecutiveSummary } from "./ExecutiveSummary";
 import { SituationBlock } from "./SituationBlock";
 import { AssetFramework } from "./AssetFramework";
 import { AssetClasses } from "./AssetClasses";
-import { SignalList } from "./SignalList";
 import { WatchList } from "./WatchList";
 import { EventCalendarView } from "./EventCalendarView";
 import { ThemeCards } from "./ThemeCards";
@@ -44,7 +43,6 @@ export function BriefingView({
   const hasThemes = themeCards.length > 0;
   const eventCalendar = briefing.eventCalendar;
   const assetClasses = briefing.assetClasses;
-  const hasSignals = Boolean(briefing.signals?.length);
   const hasCalendar = Boolean(eventCalendar?.events?.length);
   const hasWatchFallback = Boolean(briefing.watchItems?.length);
 
@@ -65,7 +63,6 @@ export function BriefingView({
         hasMarketOverview={hasMarketOverview}
         hasMarketDashboard={hasMarketDashboard}
         hasThemes={hasThemes}
-        hasSignals={hasSignals}
         hasCalendar={hasCalendar || hasWatchFallback}
       />
       <div id="skim" className="scroll-mt-28">
@@ -89,7 +86,6 @@ export function BriefingView({
       ) : null}
       {figures.length ? <KeyFigures figures={figures} /> : null}
       <KeySources sources={briefing.keySources} />
-      {hasSignals ? <SignalList signals={briefing.signals} /> : null}
       {hasCalendar && eventCalendar?.events ? (
         <EventCalendarView
           calendar={eventCalendar}
