@@ -25,7 +25,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 3. **Global situation** — from `analyzing-global-macro` output, tightened
 4. **China situation** — from `analyzing-china-macro` output, tightened
 5. **Asset framework** — stable per-asset regime lens (see `interpreting-market-signals/references/asset-framework.md`): for each of the eight canonical assets, name the dominant regime (beta), today's driver reading with a number, how the asset traded vs the regime, and the regime invalidator. Website key: `assetFramework`.
-6. **Signals** — the graded list, strongest first
+6. **Signals (cross-checks)** — contradictions / non-confirmations / second-order reads that are *not* a Theme card. Never re-tell a theme.
 7. **What to watch (suggestions)** — the prioritized watch-list with triggers/invalidators
 8. **Sources & caveats** — key sources consulted; flag any single-source items relied on; standing disclaimer
 

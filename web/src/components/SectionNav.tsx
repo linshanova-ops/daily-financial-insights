@@ -43,7 +43,7 @@ export function SectionNav({
       ? [{ href: "#market-dashboard", label: "Closes" }]
       : []),
     ...(hasFigures ? [{ href: "#key-figures", label: "Figures" }] : []),
-    ...(hasSignals ? [{ href: "#signals", label: "Signals" }] : []),
+    ...(hasSignals ? [{ href: "#signals", label: "Cross-checks" }] : []),
     ...(hasCalendar ? [{ href: "#calendar", label: "Calendar" }] : []),
   ];
 

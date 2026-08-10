@@ -26,6 +26,10 @@ Controlled by `web/content/briefing-ops.json`:
 3. Commit markdown **and** `web/public/data/briefings/*.json` + `latest.json` together.
 4. Open a PR → merge when Briefing accuracy gate is green.
 
+**Signals vs Themes:** Themes own the full narrative. `signals[]` is
+cross-checks only (contradictions, non-confirmations, second-order) — never
+re-tell a theme card.
+
 Optional: Actions → **Generate daily briefing** → Run workflow (inbox/Fund
 helpers). Cursor `Agent.create` stays off unless `force_cursor` /
 `BRIEFING_FORCE_CURSOR=1`.
