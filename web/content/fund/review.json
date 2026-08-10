@@ -1,73 +1,13 @@
 [
   {
-    "id": "rev-sig-20260806-sq13fb",
+    "id": "rev-sig-20260807-sq13fb",
     "title": "Making the case for hedge funds as next-generation diversifiers",
     "reason": "中等置信度命中「Wellington」，待人工复核。",
     "confidence": "65%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/making-the-case-for-hedge-funds-as-next-generation-diversifiers/",
+    "href": "https://www.hedgeweek.com/making-the-case-for-hedge-funds-as-next-generation-diversifiers-2/",
     "source": "Hedgeweek",
     "sourceTier": "designated"
-  },
-  {
-    "id": "rev-sig-20260806-oe1f4l",
-    "title": "Point72, Citadel among hedge funds hit by AI vishing attacks",
-    "reason": "弱信源「InvestmentNews」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.investmentnews.com/fintech/point72-citadel-among-hedge-funds-hit-by-ai-vishing-attacks/267708",
-    "source": "InvestmentNews",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-qs9ctj",
-    "title": "Citadel returns jump after Situational Awareness deal",
-    "reason": "弱信源「Capital Brief」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.capitalbrief.com/briefing/citadel-returns-jump-after-situational-awareness-deal-c277ada5-2fda-443b-a439-5e7c9a196340/",
-    "source": "Capital Brief",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260806-5983lf",
-    "title": "Wall Street giants Citadel, Two Sigma, Point72 targeted in wave of AI vishing attacks",
-    "reason": "弱信源「Cybernews」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://cybernews.com/security/wall-street-ai-vishing-citadel-two-sigma-point72/",
-    "source": "Cybernews",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-b06hy5",
-    "title": "After bottom-fishing Situational Awareness, Citadel flagship fund surges 6% in a single month",
-    "reason": "弱信源「Bitget」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.bitget.com/asia/news/detail/12560605615264",
-    "source": "Bitget",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260806-3ylcy7",
-    "title": "Balyasny and Verition report losses as AI stock selloff rattles hedge fund giants",
-    "reason": "弱信源「Bitget」命中「Balyasny」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.bitget.com/asia/amp/news/detail/12560605617664",
-    "source": "Bitget",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-4lntqz",
-    "title": "Point72 hired a discretionary macro trading head from a quant hedge fund",
-    "reason": "弱信源「eFinancialCareers」命中「Point72」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.efinancialcareers.com/news/point72-hired-a-discretionary-macro-trading-head-from-a-quant-hedge-fund",
-    "source": "eFinancialCareers",
-    "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260807-1qdwgk",
@@ -77,16 +17,6 @@
     "status": "review",
     "href": "https://thecyberexpress.com/point72-cyberattack-on-wall-street/",
     "source": "The Cyber Express",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260807-moczqi",
-    "title": "Millennium Taps Anthropic Engineers for New AI Risk Desk",
-    "reason": "弱信源「Briefs Finance」命中「Millennium」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.briefs.co/news/millennium-taps-anthropic-engineers-for-new-ai-risk-desk/",
-    "source": "Briefs Finance",
     "sourceTier": "weak"
   },
   {
@@ -100,63 +30,33 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260807-q7fvdd",
-    "title": "Hackers Used AI Voice Cloning to Target Citadel, Point72 and Two Sigma",
-    "reason": "弱信源「Startup Fortune」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://startupfortune.com/hackers-used-ai-voice-cloning-to-target-citadel-point72-and-two-sigma/",
-    "source": "Startup Fortune",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-54272k",
-    "title": "Michael Patchen, Former Partner & Chief Risk Officer at AQR Capital Management, Joins Star Mountain Capital as Senior Advisor",
-    "reason": "弱信源「Business Wire」命中「AQR Capital Management」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260808-srvc1x",
+    "title": "C-IV Capital Partners Acquires NAI Global from C-III Capital Partners",
+    "reason": "弱信源「citybiz」命中「III Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.businesswire.com/news/home/20260804283873/en/Michael-Patchen-Former-Partner-Chief-Risk-Officer-at-AQR-Capital-Management-Joins-Star-Mountain-Capital-as-Senior-Advisor",
-    "source": "Business Wire",
+    "href": "https://www.citybiz.co/article/886182/c-iv-capital-partners-acquires-nai-global-from-c-iii-capital-partners/",
+    "source": "citybiz",
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260806-kzjkh0",
-    "title": "Omnivore bets big on deep science, agrifood consumer brands with remaining Fund III capital",
-    "reason": "弱信源「livemint.com」命中「III Capital」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260807-d599j2",
+    "title": "Arrowstreet Capital Limited Partnership Acquires New Holdings in Coda Octopus Group Inc. $CODA",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.livemint.com/companies/omnivore-venture-capital-agrifood-deeptech-consumer-brands-physical-ai-robotics-fund-iii-mark-kahn-11785986724498.html",
-    "source": "livemint.com",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-acquires-new-holdings-in-coda-octopus-group-inc-coda-2026-08-07/",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260806-1p66ol",
-    "title": "Omnivore To Deploy Remaining ₹1,800 Crore Fund III Capital",
-    "reason": "弱信源「whalesbook.com」命中「III Capital」— 不进入确定命中，待人工复核。",
+    "id": "rev-sig-20260808-g5zoiv",
+    "title": "Urban Edge Properties $UE Shares Sold by Arrowstreet Capital Limited Partnership",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.whalesbook.com/news/English/bankingfinance/Omnivore-To-Deploy-Remaining-indian-rupee1800-Crore-Fund-III-Capital/6a744a14699b085e86f5262b",
-    "source": "whalesbook.com",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260806-ez7foi",
-    "title": "EasyJet board accepts US investment fund Apollo’s takeover bid - Travel Weekly",
-    "reason": "中等置信度命中「Apollo」，待人工复核。",
-    "confidence": "61%",
-    "status": "review",
-    "href": "https://travelweekly.co.uk/news/easyjet-board-accepts-us-investment-fund-apollos-takeover-bid",
-    "source": "Travel Weekly - Home",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-vfcaxq",
-    "title": "XAI Floating Rate & Alternative Income Trust Urges Shareholders to Vote for King Street Sub-Advisory Agreement Before August 5 Deadline",
-    "reason": "中等置信度命中「King Street」，待人工复核。",
-    "confidence": "66%",
-    "status": "review",
-    "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Urges+Shareholders+to+Vote+for+King+Street+Sub-Advisory+Agreement+Before+August+5+Deadline",
-    "source": "Quiver Quantitative",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-urban-edge-properties-ue-shares-sold-by-arrowstreet-capital-limited-partnership-2026-08-08/",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
@@ -170,43 +70,13 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260805-xm9khk",
-    "title": "Arrowstreet Capital Limited Partnership Makes New $2.35 Million Investment in Hallador Energy Company $HNRG",
+    "id": "rev-sig-20260807-hhr1an",
+    "title": "Arrowstreet Capital Limited Partnership Cuts Position in Lamar Advertising Company $LAMR",
     "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-makes-new-235-million-investment-in-hallador-energy-company-hnrg-2026-08-05/",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-cuts-position-in-lamar-advertising-company-lamr-2026-08-07/",
     "source": "MarketBeat",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260806-i0ejkq",
-    "title": "Al Waha Capital PJSC (ADX:WAHA) (Q2 2026) Earnings Call Highlights: Net Profit Surges 62% on ...",
-    "reason": "弱信源「Yahoo Finance UK」命中「Waha」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://uk.finance.yahoo.com/news/al-waha-capital-pjsc-adx-010026949.html",
-    "source": "Yahoo Finance UK",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260806-4ydqve",
-    "title": "Al Waha Capital PJSC (ADX:WAHA) (Q2 2026) Earnings Call Highlights: Net Profit Surges 62% on ... By GuruFocus",
-    "reason": "弱信源「Investing.com Canada」命中「Waha」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://ca.investing.com/news/company-news/al-waha-capital-pjsc-adxwaha-q2-2026-earnings-call-highlights-net-profit-surges-62-on--4779832",
-    "source": "Investing.com Canada",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260805-ubb2v2",
-    "title": "BROOKFIELD ASSET MANAGEMENT ($BAM) Releases Q2 2026 Earnings",
-    "reason": "弱信源「Quiver Quantitative」命中「Brookfield」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.quiverquant.com/news/BROOKFIELD+ASSET+MANAGEMENT+%28%24BAM%29+Releases+Q2+2026+Earnings",
-    "source": "Quiver Quantitative",
     "sourceTier": "weak"
   }
 ]
