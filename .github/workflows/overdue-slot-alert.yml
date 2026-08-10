@@ -1,13 +1,8 @@
 name: Overdue Beijing slot alert
 
-# Fails loudly if morning/evening never published ~50m after the hour.
-# Enable "Send notifications for failed workflows" in GitHub so you get email.
+# Manual-only publish mode: no scheduled overdue checks.
+# Optional: Actions → Run workflow to check a slot by hand.
 on:
-  schedule:
-    - cron: "50 0 * * *"
-    - cron: "50 12 * * *"
-    # Also mid catch-up window
-    - cron: "5 1,2,13,14 * * *"
   workflow_dispatch:
 
 permissions:
