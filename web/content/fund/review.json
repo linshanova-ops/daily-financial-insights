@@ -42,51 +42,51 @@
   {
     "id": "rev-sig-20260808-srvc1x",
     "title": "C-IV Capital Partners Acquires NAI Global from C-III Capital Partners",
-    "reason": "弱信源「citybiz」命中「III Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「citybiz.co」命中「III Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.citybiz.co/article/886182/c-iv-capital-partners-acquires-nai-global-from-c-iii-capital-partners/",
-    "source": "citybiz",
+    "source": "citybiz.co",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260807-d599j2",
     "title": "Arrowstreet Capital Limited Partnership Acquires New Holdings in Coda Octopus Group Inc. $CODA",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-acquires-new-holdings-in-coda-octopus-group-inc-coda-2026-08-07/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260808-g5zoiv",
     "title": "Urban Edge Properties $UE Shares Sold by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-urban-edge-properties-ue-shares-sold-by-arrowstreet-capital-limited-partnership-2026-08-08/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260807-jzojl6",
     "title": "Arrowstreet Capital Limited Partnership Purchases Shares of 18,165 First Industrial Realty Trust, Inc. $FR",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-purchases-shares-of-18165-first-industrial-realty-trust-inc-fr-2026-08-07/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   },
   {
     "id": "rev-sig-20260807-hhr1an",
     "title": "Arrowstreet Capital Limited Partnership Cuts Position in Lamar Advertising Company $LAMR",
-    "reason": "弱信源「marketbeat.com」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.marketbeat.com/instant-alerts/filing-arrowstreet-capital-limited-partnership-cuts-position-in-lamar-advertising-company-lamr-2026-08-07/",
-    "source": "marketbeat.com",
+    "source": "MarketBeat",
     "sourceTier": "weak"
   }
 ]
