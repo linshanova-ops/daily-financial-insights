@@ -1,19 +1,19 @@
 {
-  "fetchedAt": "2026-08-10T12:21:10.706Z",
+  "fetchedAt": "2026-08-10T12:25:57.874Z",
   "windowStart": "2026-08-10",
   "windowEnd": "2026-08-21",
   "events": [],
   "errors": [
+    {
+      "name": "meta",
+      "message": "fetch 403"
+    },
     {
       "name": "amzn",
       "message": "fetch 403"
     },
     {
       "name": "aapl",
-      "message": "fetch 403"
-    },
-    {
-      "name": "meta",
       "message": "fetch 403"
     },
     {
@@ -29,16 +29,16 @@
       "message": "fetch 403"
     },
     {
-      "name": "sk-hynix",
-      "message": "fetch 404"
-    },
-    {
       "name": "crcl",
       "message": "fetch 403"
     },
     {
       "name": "coin",
       "message": "fetch 403"
+    },
+    {
+      "name": "sk-hynix",
+      "message": "fetch failed"
     },
     {
       "name": "avgo",
