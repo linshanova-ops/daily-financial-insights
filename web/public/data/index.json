@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-07T09:59:52.197Z",
-  "latest": "2026-08-07",
+  "generatedAt": "2026-08-10T06:47:22.353Z",
+  "latest": "2026-08-10",
   "briefings": [
+    {
+      "date": "2026-08-10",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Soft July NFP (−23k) cuts Sept hike odds while Iran refuses direct US talks: Friday S&P closed 7,757.64 (+0.62%), 2Y yield eased to 4.19%, and China July CPI cooled to +0.5% y/y with PPI +3.5% (slowest since the Iran war shock).",
+      "coverageWindow": "August 7–10, 2026"
+    },
     {
       "date": "2026-08-07",
       "title": "Daily Financial Briefing",
