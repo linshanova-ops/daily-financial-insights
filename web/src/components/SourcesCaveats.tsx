@@ -1,8 +1,11 @@
+import type { KeySource } from "@/lib/types";
 import { linkifySources } from "@/lib/source-links";
+import Link from "next/link";
 
 interface SourcesCaveatsProps {
   sources: string;
   singleSource: string;
+  keySources?: KeySource[];
 }
 
 function LinkedSourceText({ text }: { text: string }) {
@@ -31,9 +34,13 @@ function LinkedSourceText({ text }: { text: string }) {
 export function SourcesCaveats({
   sources,
   singleSource,
+  keySources = [],
 }: SourcesCaveatsProps) {
   return (
-    <section id="sources" className="scroll-mt-24 mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
+    <section
+      id="sources"
+      className="scroll-mt-24 mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
+    >
       <div className="flex items-center gap-3">
         <span className="h-6 w-1 rounded-full bg-ink/50" aria-hidden />
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-ink/60">
@@ -41,15 +48,44 @@ export function SourcesCaveats({
         </p>
       </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-        Traceability
+        Where the numbers came from
       </h2>
+      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
+        Clickable sources for this edition. Pipeline / publish mechanics live on
+        the{" "}
+        <Link
+          href="/pipeline/"
+          className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4"
+        >
+          Pipeline
+        </Link>{" "}
+        page.
+      </p>
+
+      {keySources.length ? (
+        <ul className="mt-8 flex flex-wrap gap-2">
+          {keySources.map((s) => (
+            <li key={`${s.label}-${s.href}`}>
+              <a
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="focus-ring inline-flex rounded-sm border border-line bg-paper/80 px-2.5 py-1 text-xs font-medium text-ink-soft transition hover:border-forest/40 hover:text-forest"
+              >
+                {s.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+
       <div className="mt-8 space-y-4 text-base leading-relaxed text-ink-soft">
         <p>
-          <span className="font-semibold text-ink">Primary sources consulted: </span>
+          <span className="font-semibold text-ink">Also consulted: </span>
           <LinkedSourceText text={sources} />
         </p>
         <p>
-          <span className="font-semibold text-ink">Single-source items relied on: </span>
+          <span className="font-semibold text-ink">Single-source risk: </span>
           {singleSource}
         </p>
       </div>

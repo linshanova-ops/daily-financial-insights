@@ -1,12 +1,6 @@
-// web/src/lib/detail-tabs.ts
-export type DetailTabId =
-  | "global"
-  | "china"
-  | "assets"
-  | "signals"
-  | "calendar"
-  | "sources";
+export type DetailTabId = "global" | "china" | "assets" | "sources";
 
+/** Detail accordion tabs — Signals / Calendar are first-class skim sections. */
 export const DETAIL_TABS: ReadonlyArray<{
   id: DetailTabId;
   label: string;
@@ -15,8 +9,6 @@ export const DETAIL_TABS: ReadonlyArray<{
   { id: "global", label: "Global", hashes: ["global-situation"] },
   { id: "china", label: "China", hashes: ["china-situation"] },
   { id: "assets", label: "Assets", hashes: ["asset-framework"] },
-  { id: "signals", label: "Signals", hashes: ["signals", "detail"] },
-  { id: "calendar", label: "Calendar", hashes: ["calendar", "watch"] },
   { id: "sources", label: "Sources", hashes: ["sources", "sources-caveats"] },
 ];
 
@@ -31,12 +23,12 @@ function hashId(hash: string): string {
 /** True when hash (after stripping `#`) matches a known detail tab alias. */
 export function isKnownDetailHash(hash: string): boolean {
   const id = hashId(hash);
-  return id !== "" && id in HASH_TO_TAB;
+  return id === "detail" || (id !== "" && id in HASH_TO_TAB);
 }
 
-/** Map location.hash or bare id to a Detail tab. Unknown → signals (morning default). */
+/** Map location.hash or bare id to a Detail tab. Unknown / #detail → global. */
 export function detailTabFromHash(hash: string): DetailTabId {
   const id = hashId(hash);
-  if (!id) return "signals";
-  return HASH_TO_TAB[id] ?? "signals";
+  if (!id || id === "detail") return "global";
+  return HASH_TO_TAB[id] ?? "global";
 }

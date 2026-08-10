@@ -35,8 +35,8 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
           One story, fully told
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          Each theme is the only full narrative of that event. Other modules
-          reuse the same fact as a different insight — not a second paste.
+          Each theme is the only full narrative of that event (fact → mechanism →
+          watch → invalidate). Other modules link here — they do not re-tell it.
         </p>
         <ol className="mt-10 space-y-10">
           {themes.map((theme, index) => (
@@ -87,11 +87,11 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                   <dd className="mt-1">{theme.horizon}</dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-ink">Trigger</dt>
+                  <dt className="font-semibold text-ink">Watch for</dt>
                   <dd className="mt-1">{theme.trigger}</dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-ink">Invalidator</dt>
+                  <dt className="font-semibold text-ink">Invalidated if</dt>
                   <dd className="mt-1">{theme.invalidator}</dd>
                 </div>
               </dl>

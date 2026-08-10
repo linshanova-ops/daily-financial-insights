@@ -44,6 +44,9 @@ export function BriefingView({
   const hasThemes = themeCards.length > 0;
   const eventCalendar = briefing.eventCalendar;
   const assetClasses = briefing.assetClasses;
+  const hasSignals = Boolean(briefing.signals?.length);
+  const hasCalendar = Boolean(eventCalendar?.events?.length);
+  const hasWatchFallback = Boolean(briefing.watchItems?.length);
 
   return (
     <>
@@ -62,6 +65,8 @@ export function BriefingView({
         hasMarketOverview={hasMarketOverview}
         hasMarketDashboard={hasMarketDashboard}
         hasThemes={hasThemes}
+        hasSignals={hasSignals}
+        hasCalendar={hasCalendar || hasWatchFallback}
       />
       <div id="skim" className="scroll-mt-28">
         <ExecutiveSummary
@@ -84,6 +89,15 @@ export function BriefingView({
       ) : null}
       {figures.length ? <KeyFigures figures={figures} /> : null}
       <KeySources sources={briefing.keySources} />
+      {hasSignals ? <SignalList signals={briefing.signals} /> : null}
+      {hasCalendar && eventCalendar?.events ? (
+        <EventCalendarView
+          calendar={eventCalendar}
+          themeTitles={themeTitles}
+        />
+      ) : hasWatchFallback ? (
+        <WatchList items={briefing.watchItems} />
+      ) : null}
       <DetailTabs
         panels={{
           global: (
@@ -120,19 +134,11 @@ export function BriefingView({
           ) : briefing.assetFramework?.length ? (
             <AssetFramework assets={briefing.assetFramework} />
           ) : null,
-          signals: <SignalList signals={briefing.signals} />,
-          calendar: eventCalendar?.events ? (
-            <EventCalendarView
-              calendar={eventCalendar}
-              themeTitles={themeTitles}
-            />
-          ) : (
-            <WatchList items={briefing.watchItems} />
-          ),
           sources: (
             <SourcesCaveats
               sources={briefing.sources}
               singleSource={briefing.singleSource}
+              keySources={briefing.keySources}
             />
           ),
         }}

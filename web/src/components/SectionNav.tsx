@@ -8,6 +8,8 @@ interface SectionNavProps {
   hasMarketOverview?: boolean;
   hasMarketDashboard?: boolean;
   hasThemes?: boolean;
+  hasSignals?: boolean;
+  hasCalendar?: boolean;
 }
 
 export function SectionNav({
@@ -15,6 +17,8 @@ export function SectionNav({
   hasMarketOverview = false,
   hasMarketDashboard = false,
   hasThemes = false,
+  hasSignals = false,
+  hasCalendar = false,
 }: SectionNavProps) {
   const [modulesOpen, setModulesOpen] = useState(false);
 
@@ -39,6 +43,8 @@ export function SectionNav({
       ? [{ href: "#market-dashboard", label: "Closes" }]
       : []),
     ...(hasFigures ? [{ href: "#key-figures", label: "Figures" }] : []),
+    ...(hasSignals ? [{ href: "#signals", label: "Signals" }] : []),
+    ...(hasCalendar ? [{ href: "#calendar", label: "Calendar" }] : []),
   ];
 
   function onDetailClick(event: MouseEvent<HTMLAnchorElement>) {

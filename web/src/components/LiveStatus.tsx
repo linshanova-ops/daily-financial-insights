@@ -15,7 +15,7 @@ export function LiveStatus({ updatedAt, live }: LiveStatusProps) {
         aria-hidden
       />
       <span className="font-semibold uppercase tracking-[0.18em] text-ink/50">
-        {live ? "Live feed" : "Cached"}
+        {live ? "Live feed" : "Static copy"}
       </span>
       {updatedAt ? (
         <span className="text-ink/45">
