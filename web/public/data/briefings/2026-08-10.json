@@ -776,7 +776,7 @@
         },
         {
           "name": "Korea equities",
-          "driver": "Kospi (see Market closes ^KS11); semi/memory beta still the cross-check vs Japan/HK — not a China onshore proxy.",
+          "driver": "Kospi 6,299.66 (+0.65%) as of Aug 10; semi/memory beta still the cross-check vs Japan/HK — not a China onshore proxy.",
           "driverSources": [
             {
               "label": "Yahoo (^KS11)",
