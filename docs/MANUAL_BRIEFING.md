@@ -26,9 +26,8 @@ Controlled by `web/content/briefing-ops.json`:
 3. Commit markdown **and** `web/public/data/briefings/*.json` + `latest.json` together.
 4. Open a PR → merge when Briefing accuracy gate is green.
 
-**Signals vs Themes:** Themes own the full narrative. `signals[]` is
-cross-checks only (contradictions, non-confirmations, second-order) — never
-re-tell a theme card.
+**Themes only:** site no longer shows a Signals / Cross-checks section.
+Put the narrative in `themeCards`; keep `signals: []` on new briefings.
 
 **Event Calendar window:** `windowEnd` = Friday after the Friday-on-or-after
 briefing date (this week + next). Helper:

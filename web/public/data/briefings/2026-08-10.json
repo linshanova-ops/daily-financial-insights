@@ -902,76 +902,7 @@
       ]
     }
   ],
-  "signals": [
-    {
-      "grade": "STRONG",
-      "name": "Soft labor vs live Hormuz oil premium",
-      "evidence": "BLS July NFP −23k / U-rate 4.1% cut near-term hike odds, while Iran still refuses direct talks and Houthis hit Jazan — Brent stays in the low-$80s (see Market closes). Themes cover each event; the cross-check is the joint regime.",
-      "evidenceSources": [
-        {
-          "label": "BLS",
-          "href": "https://www.bls.gov/news.release/empsit.nr0.htm"
-        },
-        {
-          "label": "NBC",
-          "href": "https://www.nbcnews.com/business/economy/july-2026-jobs-report-rcna591138"
-        },
-        {
-          "label": "彭博",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ],
-      "mechanism": "Path-odds relief and geo supply risk can both be true — equities bid the former while oil keeps the latter as optionality.",
-      "disprovedIf": "Hot Aug CPI restores hike odds and Brent drops together on a verified Hormuz channel — or soft CPI with Brent >$90 on confirmed blockade."
-    },
-    {
-      "grade": "MODERATE",
-      "name": "AI vendor sales vs quant fund smash",
-      "evidence": "Inbox — Cambricon/Moore Threads strong H1 revenue vs 朝阳永续 July pure-long quant drawdowns (High-Flyer/幻方 products deep red). Theme owns the fund stress; this row is the flow≠fundamentals split.",
-      "evidenceSources": [
-        {
-          "label": "彭博 Markets Daily China",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ],
-      "mechanism": "Chip-vendor prints do not clear crowded-factor unwind in quant P&L — stock-picking and fund-flow risk stay separate books.",
-      "disprovedIf": "Quant/AI factor indices stabilize with rising A-share breadth while vendor guides hold."
-    },
-    {
-      "grade": "MODERATE",
-      "name": "Friday equity risk-on vs BTC lag",
-      "evidence": "Aug 7 S&P +0.62% / Nasdaq +1.30% after soft NFP; BTC still mid-$60ks (CoinGecko) under Glassnode’s lag-vs-equities frame — no theme card for this non-confirmation.",
-      "evidenceSources": [
-        {
-          "label": "Yahoo (^GSPC)",
-          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "label": "CoinGecko",
-          "href": "https://www.coingecko.com/en/coins/bitcoin"
-        },
-        {
-          "label": "Glassnode",
-          "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
-        }
-      ],
-      "mechanism": "Crypto beta is not confirming the equity path-odds bid one-for-one.",
-      "disprovedIf": "BTC reclaims prior range highs with rising funding and spot lead."
-    },
-    {
-      "grade": "WEAK",
-      "name": "HK/ADR firm vs onshore quant stress",
-      "evidence": "Inbox Golden Dragon up a second day (Alibaba, Nio) while mainland quant/AI products posted July smash — tape strength is not the same as onshore fund health.",
-      "evidenceSources": [
-        {
-          "label": "彭博 Markets Daily China",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ],
-      "mechanism": "ADR/HK beta can firm on US path-odds even as domestic factor unwind hits local P&L.",
-      "disprovedIf": "Golden Dragon and onshore quant indices sell off together for a week on shared risk-off."
-    }
-  ],
+  "signals": [],
   "eventCalendar": {
     "windowStart": "2026-08-10",
     "windowEnd": "2026-08-21",
