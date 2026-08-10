@@ -1,6 +1,7 @@
 name: Overdue Beijing slot alert
 
 # Manual-only publish mode: no scheduled overdue checks.
+# Optional: Actions → Run workflow to check a slot by hand.
 on:
   workflow_dispatch:
 

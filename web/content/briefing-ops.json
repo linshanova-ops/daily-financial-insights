@@ -1,5 +1,5 @@
 {
   "cursorAutoGenerate": false,
   "cursorAutoResumeOn": null,
-  "note": "Permanent manual briefing updates only. No twice-daily Cursor auto-generate. Publish when asked."
+  "note": "Permanent manual briefing updates only. No twice-daily Cursor auto-generate. Publish when asked; set cursorAutoGenerate true only if auto is wanted again."
 }

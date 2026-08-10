@@ -1,7 +1,25 @@
 {
-  "wallstreetcnArticleIds": ["3751205", "3751275", "3751638", "3751515", "3751711", "3751602"],
-  "blockbeatsFlashIds": ["302924", "303605", "303615"],
-  "blockbeatsNewsIds": ["59062", "59103", "63149"],
+  "wallstreetcnArticleIds": [
+    "3751205",
+    "3751275",
+    "3751638",
+    "3751515",
+    "3751711",
+    "3751602"
+  ],
+  "blockbeatsFlashIds": [
+    "302924",
+    "303605",
+    "303615",
+    "257292",
+    "304390"
+  ],
+  "blockbeatsNewsIds": [
+    "59062",
+    "59103",
+    "63149",
+    "59069"
+  ],
   "exactUrlSubstrings": [
     "wallstreetcn.com/articles/3751205",
     "wallstreetcn.com/articles/3751275",
@@ -15,7 +33,10 @@
     "theblockbeats.info/news/59062",
     "theblockbeats.info/news/59103",
     "theblockbeats.info/news/63149",
-    "cls.cn/detail/2436193"
+    "cls.cn/detail/2436193",
+    "theblockbeats.info/flash/257292",
+    "theblockbeats.info/news/59069",
+    "theblockbeats.info/flash/304390"
   ],
   "notes": [
     "3751205 — 2025 A/H wrap (Shanghai −0.03% / Hang Seng −0.29%) reused for Jul 16 2026",
@@ -30,6 +51,7 @@
     "59062 — BlockBeats Polymarket QCEX article page dates only 2025 on Jul 2026 sweep",
     "59103 — BlockBeats ETH unstaking article page dates only 2023–2024 on Jul 2026 sweep",
     "63149 — BlockBeats Korea/Changxin article page dates only 2025 on Jul 2026 sweep (use Seoul Economic Daily + 新浪财经)",
-    "2436193 — cls.cn A-share收评 fetch fails in CI (use 新浪财经 Jul 24 close)"
+    "2436193 — cls.cn A-share收评 fetch fails in CI (use 新浪财经 Jul 24 close)",
+    "257292/59069/304390 — wrong-year BlockBeats pages failing Aug 10 scan; replaced with CoinDesk hub in Jul 22/24 archives"
   ]
 }

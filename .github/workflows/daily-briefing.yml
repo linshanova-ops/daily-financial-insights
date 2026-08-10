@@ -3,6 +3,8 @@ name: Generate daily briefing
 on:
   # Manual only — no twice-daily schedule.
   # Run: Actions → Generate daily briefing → Run workflow
+  # Or: repository_dispatch refresh-briefing (optional force / force_cursor)
+  # Cursor Agent.create also gated by web/content/briefing-ops.json
   workflow_dispatch:
   repository_dispatch:
     types: [refresh-briefing]
