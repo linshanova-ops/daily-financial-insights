@@ -1,5 +1,47 @@
 [
   {
+    "id": "sig-20260810-s34std",
+    "date": "2026.08.10",
+    "title": "Man Group CFO sells £1.5m of shares as firm reports record assets",
+    "summary": "Man Group：Man Group CFO sells £1.5m of shares as firm reports record assets（动态）。",
+    "summaryEn": "Man Group: Man Group CFO sells £1.5m of shares as firm reports record assets.",
+    "fund": "Man Group",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/man-group-cfo-sells-1-5m-of-shares-as-firm-reports-record-assets/"
+  },
+  {
+    "id": "sig-20260810-4geg9r",
+    "date": "2026.08.10",
+    "title": "Man Group hires DWS ETF specialist ahead of European launch",
+    "summary": "Man Group 人事/招聘动向：Man Group hires DWS ETF specialist ahead of European launch。",
+    "summaryEn": "Man Group: hiring / personnel move — Man Group hires DWS ETF specialist ahead of European launch.",
+    "fund": "Man Group",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "人员 / 招聘",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/man-group-hires-dws-etf-specialist-ahead-of-european-launch/"
+  },
+  {
+    "id": "sig-20260810-wxsa1q",
+    "date": "2026.08.10",
+    "title": "Two Sigma’s London pay hits £500k average",
+    "summary": "Two Sigma International：Two Sigma’s London pay hits £500k average（动态）。",
+    "summaryEn": "Two Sigma International: Two Sigma’s London pay hits £500k average.",
+    "fund": "Two Sigma International",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/two-sigmas-london-pay-hits-500k-average/"
+  },
+  {
     "id": "sig-20260807-1zw5h7",
     "date": "2026.08.07",
     "title": "Albar to run Millennium money after returning outside cash",
