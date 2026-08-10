@@ -42,11 +42,11 @@
   {
     "id": "rev-sig-20260808-srvc1x",
     "title": "C-IV Capital Partners Acquires NAI Global from C-III Capital Partners",
-    "reason": "弱信源「citybiz」命中「III Capital」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「citybiz.co」命中「III Capital」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.citybiz.co/article/886182/c-iv-capital-partners-acquires-nai-global-from-c-iii-capital-partners/",
-    "source": "citybiz",
+    "source": "citybiz.co",
     "sourceTier": "weak"
   },
   {
