@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-11T00:11:04.595Z",
+  "fetchedAt": "2026-08-11T00:16:08.138Z",
   "windowStart": "2026-08-11",
   "windowEnd": "2026-08-21",
   "events": [],
@@ -29,11 +29,11 @@
       "message": "fetch 403"
     },
     {
-      "name": "coin",
+      "name": "crcl",
       "message": "fetch 403"
     },
     {
-      "name": "crcl",
+      "name": "coin",
       "message": "fetch 403"
     },
     {
