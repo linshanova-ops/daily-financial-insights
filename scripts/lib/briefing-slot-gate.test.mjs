@@ -107,6 +107,37 @@ describe("evaluateScheduleGate", () => {
     assert.equal(r.shouldRun, false);
   });
 
+  it("manual mode ignores idle repository_dispatch even inside slot window", () => {
+    const r = evaluateScheduleGate({
+      eventName: "repository_dispatch",
+      forceDispatch: false,
+      cursorAutoGenerate: false,
+      now: new Date("2026-07-15T00:05:00.000Z"),
+      latest: { date: "2026-07-14", publishedAt: "2026-07-14T12:00:00.000Z" },
+    });
+    assert.equal(r.shouldRun, false);
+    assert.match(r.reason, /manual mode/);
+  });
+
+  it("manual mode still runs workflow_dispatch", () => {
+    const r = evaluateScheduleGate({
+      eventName: "workflow_dispatch",
+      cursorAutoGenerate: false,
+      now: new Date("2026-07-15T00:05:00.000Z"),
+    });
+    assert.equal(r.shouldRun, true);
+  });
+
+  it("manual mode still runs repository_dispatch force=true", () => {
+    const r = evaluateScheduleGate({
+      eventName: "repository_dispatch",
+      forceDispatch: true,
+      cursorAutoGenerate: false,
+      now: new Date("2026-07-15T03:00:00.000Z"),
+    });
+    assert.equal(r.shouldRun, true);
+  });
+
   it("repository_dispatch force=true always runs", () => {
     const r = evaluateScheduleGate({
       eventName: "repository_dispatch",

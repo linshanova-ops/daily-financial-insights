@@ -200,7 +200,7 @@ jobs:
           )
         run: |
           if [ "${{ steps.ops.outputs.cursor_auto }}" != "true" ]; then
-            echo "::notice::Manual briefing mode — Cursor Agent.create skipped (${{ steps.ops.outputs.cursor_auto_reason }}). Resume on ${{ steps.ops.outputs.resume_on }}. Website Fund scans still run on primary windows."
+            echo "::notice::Manual briefing mode — Cursor Agent.create skipped (${{ steps.ops.outputs.cursor_auto_reason }}). Idle refresh-briefing pings are ignored; use Actions → Run workflow for inbox/Fund helpers."
           else
             echo "::warning::Usage-limit skip marker armed — raise Spend Limit or force_cursor=true."
           fi

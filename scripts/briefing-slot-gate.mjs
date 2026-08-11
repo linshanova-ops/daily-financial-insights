@@ -3,8 +3,10 @@
  *
  * schedule / external repository_dispatch → Beijing slot gate
  * workflow_dispatch / repository_dispatch+force → always run
+ * manual mode → idle repository_dispatch ignored (no Fund/IMAP/Cursor)
  */
 import fs from "node:fs";
+import { loadBriefingOps } from "./lib/briefing-ops.mjs";
 import {
   activeSlot,
   beijingDateString,
@@ -50,6 +52,7 @@ function appendOutput(lines) {
 
 async function main() {
   const now = new Date();
+  const ops = loadBriefingOps(undefined, now);
   const gated = usesSlotGate(eventName, forceDispatch);
   const latest = await loadLatestFromMain();
   const decision = evaluateScheduleGate({
@@ -57,6 +60,7 @@ async function main() {
     now,
     latest: gated ? latest : latest,
     forceDispatch,
+    cursorAutoGenerate: ops.cursorAutoGenerate,
   });
 
   // On force/manual, still infer slot + date so generate gets evening/morning context.
@@ -70,6 +74,9 @@ async function main() {
   const briefingDate = slot?.date || beijingDateString(now);
 
   console.log(`[slot-gate] event=${eventName} force=${forceDispatch}`);
+  console.log(
+    `[slot-gate] ops cursorAutoGenerate=${ops.cursorAutoGenerate} (${ops.reason})`,
+  );
   console.log(`[slot-gate] ${decision.reason}`);
   if (slot) {
     console.log(
@@ -89,9 +96,7 @@ async function main() {
   );
 
   if (!decision.shouldRun) {
-    console.log(
-      "::notice::Skipping generate — outside Beijing weekday publish window, weekend skip, or slot already done.",
-    );
+    console.log(`::notice::Skipping generate — ${decision.reason}`);
   }
 }
 

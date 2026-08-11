@@ -15,6 +15,12 @@ Controlled by `web/content/briefing-ops.json`:
 `.github/workflows/daily-briefing.yml` has **no cron** — only
 `workflow_dispatch` / `repository_dispatch`.
 
+In manual mode, **idle** `refresh-briefing` pings (e.g. cron-job.org every
+5 minutes) are **ignored** — no IMAP/Fund/Cursor/Pages work. Disable that
+external cron while manual mode is on (see `docs/ON_TIME_PUBLISH.md`).
+
+Pages deploys only on **push to main** (or manual/dispatch) — no schedule.
+
 ## How to publish
 
 1. Ask an agent (or edit yourself) to update

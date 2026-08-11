@@ -66,10 +66,16 @@ Without `"force":true`, the gate still prevents duplicate Cursor runs after a sl
 
 ### Manual mode (token save)
 
-When `web/content/briefing-ops.json` has `"cursorAutoGenerate": false`, Actions **never**
-calls Cursor `Agent.create`. Fund RSS still runs on primary windows. See
-[MANUAL_BRIEFING.md](./MANUAL_BRIEFING.md). Auto resumes on `cursorAutoResumeOn`
-(Beijing date). Emergency override: `client_payload.force_cursor=true`.
+When `web/content/briefing-ops.json` has `"cursorAutoGenerate": false`:
+
+1. Actions **never** calls Cursor `Agent.create`.
+2. Idle `refresh-briefing` pings are **ignored** (no Fund/IMAP/Pages).
+3. **Disable cron-job.org** (or pause the job) so GitHub is not woken every
+   5 minutes for a no-op. Re-enable only when turning auto generate back on.
+4. Inbox/Fund helpers: Actions → **Generate daily briefing** → Run workflow
+   (or `client_payload.force=true`).
+
+Emergency Cursor override: `client_payload.force_cursor=true`.
 
 ### If Actions shows a flood of red `refresh-briefing` jobs
 
