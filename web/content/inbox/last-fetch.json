@@ -1,12 +1,17 @@
 {
-  "at": "2026-08-10T17:55:48.685Z",
-  "briefingDate": "2026-08-10",
+  "at": "2026-08-11T00:01:14.344Z",
+  "briefingDate": "2026-08-11",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md",
+      "subject": "彭博财经早茶：日元或再迎干预窗口；英伟达联手华尔街筹划巨额AI投资",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5225,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-11.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-11.png"
     },
     {
       "sourceId": "bloomberg-weekend-tea",
@@ -21,9 +26,13 @@
   ],
   "skipped": [
     {
-      "reason": "exists-keep",
+      "reason": "date-mismatch",
       "subject": "彭博财经早茶：伊朗拒绝直接与华府谈判；美疲软就业削弱加息预期",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-08-09",
+      "bjDay": "2026-08-10",
+      "briefingDate": "2026-08-11"
     },
     {
       "reason": "weekly-exists",
@@ -37,7 +46,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-06",
       "bjDay": "2026-08-07",
-      "briefingDate": "2026-08-10"
+      "briefingDate": "2026-08-11"
     },
     {
       "reason": "welcome",
@@ -51,7 +60,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-05",
       "bjDay": "2026-08-06",
-      "briefingDate": "2026-08-10"
+      "briefingDate": "2026-08-11"
     },
     {
       "reason": "weekly-exists",
@@ -65,7 +74,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-04",
       "bjDay": "2026-08-05",
-      "briefingDate": "2026-08-10"
+      "briefingDate": "2026-08-11"
     },
     {
       "reason": "date-mismatch",
@@ -74,7 +83,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-03",
       "bjDay": "2026-08-04",
-      "briefingDate": "2026-08-10"
+      "briefingDate": "2026-08-11"
     },
     {
       "reason": "date-mismatch",
@@ -83,7 +92,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-02",
       "bjDay": "2026-08-03",
-      "briefingDate": "2026-08-10"
+      "briefingDate": "2026-08-11"
     },
     {
       "reason": "weekly-duplicate",
@@ -97,7 +106,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-30",
       "bjDay": "2026-07-31",
-      "briefingDate": "2026-08-10"
+      "briefingDate": "2026-08-11"
     },
     {
       "reason": "date-mismatch",
@@ -106,7 +115,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-29",
       "bjDay": "2026-07-30",
-      "briefingDate": "2026-08-10"
+      "briefingDate": "2026-08-11"
     },
     {
       "reason": "weekly-duplicate",
@@ -120,16 +129,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-28",
       "bjDay": "2026-07-29",
-      "briefingDate": "2026-08-10"
-    },
-    {
-      "reason": "date-mismatch",
-      "subject": "彭博财经早茶：AI循环融资担忧重创芯片股；美国和伊朗恢复谈判",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-07-27",
-      "bjDay": "2026-07-28",
-      "briefingDate": "2026-08-10"
+      "briefingDate": "2026-08-11"
     }
   ]
 }
