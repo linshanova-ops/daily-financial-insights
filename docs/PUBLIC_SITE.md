@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Publish mode** | **Manual only.** Twice-daily Cursor auto-generate is off (`briefing-ops.json` + no cron on Generate workflow). See [MANUAL_BRIEFING.md](./MANUAL_BRIEFING.md). Fund / inbox helpers run only when you trigger **Generate daily briefing** (or `repository_dispatch`). |
+| **Publish mode** | **Manual only.** Twice-daily Cursor auto-generate is off (`briefing-ops.json` + no Generate cron). Idle `refresh-briefing` pings are ignored. Pause cron-job.org while manual. Fund/inbox helpers: **Actions → Run workflow** (or `force=true`). Pages: push to main only (no schedule). See [MANUAL_BRIEFING.md](./MANUAL_BRIEFING.md). |
 | **Manual workflow** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge the orchestrator dispatches Pages (with retries). Safety-net cron at `:50` UTC also redeploys. |
