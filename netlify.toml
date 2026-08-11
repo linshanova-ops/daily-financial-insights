@@ -1,14 +1,10 @@
-# DISABLED — public site is GitHub Pages only.
-# https://linshanova-ops.github.io/daily-financial-insights/
-#
-# Do NOT reconnect this repo to Netlify for a full Next build (burns credits).
-# If a Netlify site is still linked: Site settings → stop builds / delete site,
-# and remove env GITHUB_PAT. Manual briefing updates never need Netlify.
+# Site deleted. Public site = GitHub Pages only.
+# Keep this file so a future Netlify reconnect cannot run a Next build.
+# Do not add functions or `npm run build` here.
 
 [build]
-  command = "mkdir -p netlify-stub && printf '%s\\n' '<!doctype html><meta charset=utf-8><title>disabled</title><p>Netlify disabled. Use <a href=\"https://linshanova-ops.github.io/daily-financial-insights/\">GitHub Pages</a>.</p>' > netlify-stub/index.html"
+  command = "mkdir -p netlify-stub && echo disabled > netlify-stub/index.html"
   publish = "netlify-stub"
-  # Always skip — exit 0 cancels the build (0 credits).
   ignore = "true"
 
 [context.deploy-preview]

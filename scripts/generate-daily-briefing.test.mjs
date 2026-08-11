@@ -100,13 +100,14 @@ describe("workflow wiring", () => {
     assert.match(yml, /cancel-in-progress:\s*false/);
   });
 
-  it("generate workflow densifies cron inside Beijing windows", () => {
+  it("generate workflow is manual-only (no schedule) with slot/ops gates", () => {
     const yml = readFileSync(
       join(root, ".github/workflows/daily-briefing.yml"),
       "utf8",
     );
-    assert.match(yml, /0,15,30,45 0 \* \* \*/);
-    assert.match(yml, /0,15,30,45 12 \* \* \*/);
+    assert.doesNotMatch(yml, /^\s*schedule\s*:/m);
+    assert.doesNotMatch(yml, /^\s*-\s*cron\s*:/m);
+    assert.match(yml, /workflow_dispatch/);
     assert.match(yml, /briefing-slot-gate\.mjs/);
     assert.match(yml, /should_run/);
     assert.match(yml, /DISPATCH_FORCE/);

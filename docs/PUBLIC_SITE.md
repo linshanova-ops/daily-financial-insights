@@ -74,18 +74,12 @@ curl -X POST \
 
 Without `"force":true`, the slot gate no-ops after a slot has already published.
 
-### Netlify — disable it
+### Netlify — gone
 
-**Yes, disable/disconnect Netlify** while publishing manually. Public site is
-**GitHub Pages only**; Netlify is not required and can still burn credits.
-
-1. Open https://app.netlify.com → site `syravocado` (or whatever is linked)
-2. **Deactivate** or **delete** the site (or Site configuration → Build & deploy → stop builds)
-3. Remove Netlify env `GITHUB_PAT` if present
-
-Repo safeguards: root `netlify.toml` always skips builds; refresh function
-returns **410**; Deploy Previews ignored. Briefing PRs stay titled
-`[skip netlify]`. Do **not** reconnect for a full Next build.
+Public site is **GitHub Pages only**. The Netlify project, refresh function,
+and `web/netlify/` are removed. Root `netlify.toml` is an always-skip stub so
+a future reconnect cannot run a Next build. Do not link this repo to Netlify
+again. Briefing PRs may still say `[skip netlify]` (harmless).
 
 ### Enable briefing generation (CURSOR_API_KEY)
 

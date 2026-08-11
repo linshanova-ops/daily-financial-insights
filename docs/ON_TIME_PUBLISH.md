@@ -72,10 +72,10 @@ When `web/content/briefing-ops.json` has `"cursorAutoGenerate": false`:
 2. Idle `refresh-briefing` pings are **ignored** (no Fund/IMAP/Pages).
 3. **Disable cron-job.org** (or pause the job) so GitHub is not woken every
    5 minutes for a no-op. Re-enable only when turning auto generate back on.
-4. **Disable Netlify** (deactivate/delete `syravocado.netlify.app`) — not
-   used by Pages; refresh API returns 410. Stops leftover credit burn.
-5. Inbox/Fund helpers: Actions → **Generate daily briefing** → Run workflow
+4. Inbox/Fund helpers: Actions → **Generate daily briefing** → Run workflow
    (or `client_payload.force=true`).
+
+Netlify is deleted from this project (not used by Pages).
 
 Emergency Cursor override: `client_payload.force_cursor=true`.
 
