@@ -1,17 +1,12 @@
 {
-  "at": "2026-08-11T00:01:14.344Z",
+  "at": "2026-08-11T00:05:36.508Z",
   "briefingDate": "2026-08-11",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md",
-      "subject": "彭博财经早茶：日元或再迎干预窗口；英伟达联手华尔街筹划巨额AI投资",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5225,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-11.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-11.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
@@ -25,6 +20,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：日元或再迎干预窗口；英伟达联手华尔街筹划巨额AI投资",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md"
+    },
     {
       "reason": "date-mismatch",
       "subject": "彭博财经早茶：伊朗拒绝直接与华府谈判；美疲软就业削弱加息预期",
