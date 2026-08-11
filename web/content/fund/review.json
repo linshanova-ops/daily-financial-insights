@@ -8,5 +8,75 @@
     "href": "https://www.hedgeweek.com/pershing-squares-48-employees-share-in-millions/",
     "source": "Hedgeweek",
     "sourceTier": "designated"
+  },
+  {
+    "id": "rev-sig-20260810-2lnc5l",
+    "title": "Hedge Fund Intrigue: Situational Awareness’s Pain was Citadel’s Gain",
+    "reason": "弱信源「Cabot Wealth Network」命中「Citadel」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.cabotwealth.com/daily/stock-market/hedge-fund-intrigue-situational-awarenesss-pain-citadels-gain",
+    "source": "Cabot Wealth Network",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260808-w7dp4c",
+    "title": "Israel Englander's Millennium Manages $240 Billion Across Thousands of Positions. Here's the Strategy Behind His Success.",
+    "reason": "弱信源「The Motley Fool」命中「Millennium」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.fool.com/investing/2026/08/08/israel-englanders-millennium-manages-240-billion-a/",
+    "source": "The Motley Fool",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260811-hwiwau",
+    "title": "NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
+    "reason": "弱信源「NVIDIA Newsroom」命中「Brookfield」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+    "source": "NVIDIA Newsroom",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260810-htdtun",
+    "title": "Morning Coffee: Ex-Goldman Sachs private equity associate embodies most desirable date. Fine times at the hedge fund that wants you in the office 5 days a week",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.efinancialcareers.com/news/dating-private-equity-professional",
+    "source": "eFinancialCareers",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260810-q8deel",
+    "title": "Man Group poaches DWS capital markets specialist for Europe ETF debut",
+    "reason": "弱信源「ETF Stream」命中「Man Group」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.etfstream.com/articles/man-group-poaches-dws-capital-markets-specialist-for-europe-etf-debut",
+    "source": "ETF Stream",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260811-mgbqir",
+    "title": "XFLT Shareholders Approve the King Street Sub-Advisory Agreement",
+    "reason": "中等置信度命中「King Street」，待人工复核。",
+    "confidence": "66%",
+    "status": "review",
+    "href": "https://www.manilatimes.net/2026/08/11/tmt-newswire/globenewswire/xflt-shareholders-approve-the-king-street-sub-advisory-agreement/2402431",
+    "source": "The Manila Times",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260808-g5zoiv",
+    "title": "Urban Edge Properties $UE Shares Sold by Arrowstreet Capital Limited Partnership",
+    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-urban-edge-properties-ue-shares-sold-by-arrowstreet-capital-limited-partnership-2026-08-08/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
   }
 ]
