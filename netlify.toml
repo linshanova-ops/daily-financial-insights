@@ -1,20 +1,18 @@
-# Root config so Netlify can connect directly to this public GitHub repo.
-# Connect at https://app.netlify.com/start → pick linshanova-ops/daily-financial-insights
+# DISABLED — public site is GitHub Pages only.
+# https://linshanova-ops.github.io/daily-financial-insights/
 #
-# Required for on-demand "Refresh now":
-#   Netlify env GITHUB_PAT = fine-grained PAT with Actions: Read and write on this repo
-#   GitHub Actions variable NEXT_PUBLIC_REFRESH_API =
-#     https://<your-site>.netlify.app/.netlify/functions/refresh-briefing
+# Do NOT reconnect this repo to Netlify for a full Next build (burns credits).
+# If a Netlify site is still linked: Site settings → stop builds / delete site,
+# and remove env GITHUB_PAT. Manual briefing updates never need Netlify.
 
 [build]
-  base = "web"
-  command = "npm run build"
-  publish = "out"
-  functions = "netlify/functions"
+  command = "mkdir -p netlify-stub && printf '%s\\n' '<!doctype html><meta charset=utf-8><title>disabled</title><p>Netlify disabled. Use <a href=\"https://linshanova-ops.github.io/daily-financial-insights/\">GitHub Pages</a>.</p>' > netlify-stub/index.html"
+  publish = "netlify-stub"
+  # Always skip — exit 0 cancels the build (0 credits).
+  ignore = "true"
 
-[build.environment]
-  NODE_VERSION = "22"
+[context.deploy-preview]
+  ignore = "true"
 
-[functions]
-  directory = "netlify/functions"
-  node_bundler = "esbuild"
+[context.branch-deploy]
+  ignore = "true"
