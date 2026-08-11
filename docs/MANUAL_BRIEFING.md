@@ -19,6 +19,10 @@ In manual mode, **idle** `refresh-briefing` pings (e.g. cron-job.org every
 5 minutes) are **ignored** — no IMAP/Fund/Cursor/Pages work. Disable that
 external cron while manual mode is on (see `docs/ON_TIME_PUBLISH.md`).
 
+**Also disable Netlify** (app.netlify.com → deactivate/delete the linked
+site). The Pages site does not use it; the old refresh function returns 410.
+Leaving it linked can still spend Netlify credits on accidental builds.
+
 Pages deploys only on **push to main** (or manual/dispatch) — no schedule.
 
 ## How to publish

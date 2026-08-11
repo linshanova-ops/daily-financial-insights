@@ -74,13 +74,18 @@ curl -X POST \
 
 Without `"force":true`, the slot gate no-ops after a slot has already published.
 
-### Netlify credits
+### Netlify — disable it
 
-Scheduled generate / dispatch polls **do not use Netlify credits**. Briefing PRs are titled `[skip netlify]`, Deploy Previews are ignored, and production Netlify builds skip unless `web/netlify.toml` / `web/netlify/` change. Public site deploys are **GitHub Pages**.
+**Yes, disable/disconnect Netlify** while publishing manually. Public site is
+**GitHub Pages only**; Netlify is not required and can still burn credits.
 
-### Netlify (optional / legacy)
+1. Open https://app.netlify.com → site `syravocado` (or whatever is linked)
+2. **Deactivate** or **delete** the site (or Site configuration → Build & deploy → stop builds)
+3. Remove Netlify env `GITHUB_PAT` if present
 
-Netlify is **not required** for the public site. An old refresh-bridge function may still exist under `web/netlify/`; the Pages site no longer calls it. Avoid promoting `*.netlify.app`. Do not re-enable a full Next build on Netlify. Leave `web/netlify/` untouched unless you intentionally want a Netlify production deploy (15 credits).
+Repo safeguards: root `netlify.toml` always skips builds; refresh function
+returns **410**; Deploy Previews ignored. Briefing PRs stay titled
+`[skip netlify]`. Do **not** reconnect for a full Next build.
 
 ### Enable briefing generation (CURSOR_API_KEY)
 
