@@ -211,7 +211,24 @@ export function usesSlotGate(eventName, forceDispatch = false) {
 }
 
 /**
- * @param {{ eventName: string, now?: Date, latest?: { date?: string, publishedAt?: string } | null, earlyMinutes?: number, lateMinutes?: number, catchupHours?: number, forceDispatch?: boolean }} opts
+ * Manual mode (`cursorAutoGenerate: false`): drop idle external
+ * `refresh-briefing` pings (e.g. cron-job.org every 5m). Still allow
+ * workflow_dispatch and repository_dispatch+force.
+ */
+export function ignoreIdleRefreshInManualMode({
+  eventName,
+  forceDispatch = false,
+  cursorAutoGenerate = true,
+} = {}) {
+  return (
+    cursorAutoGenerate === false &&
+    eventName === "repository_dispatch" &&
+    !forceDispatch
+  );
+}
+
+/**
+ * @param {{ eventName: string, now?: Date, latest?: { date?: string, publishedAt?: string } | null, earlyMinutes?: number, lateMinutes?: number, catchupHours?: number, forceDispatch?: boolean, cursorAutoGenerate?: boolean }} opts
  */
 export function evaluateScheduleGate(opts) {
   const {
@@ -222,7 +239,24 @@ export function evaluateScheduleGate(opts) {
     lateMinutes = LATE_MINUTES,
     catchupHours = MISSED_CATCHUP_HOURS,
     forceDispatch = false,
+    cursorAutoGenerate = true,
   } = opts;
+
+  if (
+    ignoreIdleRefreshInManualMode({
+      eventName,
+      forceDispatch,
+      cursorAutoGenerate,
+    })
+  ) {
+    return {
+      shouldRun: false,
+      reason:
+        "manual mode — ignore idle refresh-briefing (no Fund/IMAP/Pages); use Actions → Run workflow or force=true",
+      slot: null,
+      isCatchup: false,
+    };
+  }
 
   if (!usesSlotGate(eventName, forceDispatch)) {
     return {

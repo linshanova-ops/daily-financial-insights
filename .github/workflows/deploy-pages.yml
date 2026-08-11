@@ -3,9 +3,7 @@ name: Deploy syravocado to GitHub Pages
 on:
   push:
     branches: [main]
-  schedule:
-    # Safety-net redeploy after each Beijing publish window (incl. catch-up).
-    - cron: "50 0,12 * * *"
+  # No schedule — manual publish mode. Pages deploys on push to main only.
   workflow_dispatch:
   # Orchestrator dispatches this after GITHUB_TOKEN merges (push from that
   # token does not start other workflows).
