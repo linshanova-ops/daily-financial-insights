@@ -73,6 +73,10 @@ const HUB_HOSTS = new Set([
   "www.caixinglobal.com",
   "www.yicai.com",
   "www.theblockbeats.info",
+  "www.research.cicc.com",
+  "research.cicc.com",
+  "insights.glassnode.com",
+  "research.glassnode.com",
   "www.sec.gov",
   "www.asml.com",
   "www.pbc.gov.cn",
@@ -183,6 +187,7 @@ const FLAKY_OFFICIAL_HOSTS = [
   /bok\.or\.kr/i,
   /news\.cnyes\.com/i,
   /ismworld\.org/i,
+  /mp\.weixin\.qq\.com/i, // CICC public paraphrase links (WeChat challenge page in CI)
 ];
 
 function flakyOfficialHost(href) {
