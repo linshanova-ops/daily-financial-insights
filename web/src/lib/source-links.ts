@@ -63,6 +63,22 @@ export const SOURCE_CATALOG: SourceLink[] = [
     href: "https://www.theblockbeats.info/",
   },
   {
+    label: "律动",
+    href: "https://www.theblockbeats.info/",
+  },
+  {
+    label: "中金点睛",
+    href: "https://www.research.cicc.com/",
+  },
+  {
+    label: "CICC",
+    href: "https://www.research.cicc.com/",
+  },
+  {
+    label: "CoinDesk",
+    href: "https://www.coindesk.com/",
+  },
+  {
     label: "ASML IR",
     href: "https://www.asml.com/en/investors",
   },
@@ -129,6 +145,14 @@ export const DEFAULT_KEY_SOURCES: SourceLink[] = [
   {
     label: "第一财经 (Yicai)",
     href: "https://www.yicai.com/",
+  },
+  {
+    label: "华尔街见闻",
+    href: "https://wallstreetcn.com/",
+  },
+  {
+    label: "BlockBeats",
+    href: "https://www.theblockbeats.info/",
   },
 ];
 

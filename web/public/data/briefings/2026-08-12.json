@@ -55,6 +55,38 @@
     {
       "label": "Federal Reserve calendar",
       "href": "https://www.federalreserve.gov/json/calendar.json"
+    },
+    {
+      "label": "华尔街见闻 — 决战CPI之夜 / CTA空头",
+      "href": "https://wallstreetcn.com/articles/3779267"
+    },
+    {
+      "label": "华尔街见闻 — 中汽协汽车出口",
+      "href": "https://wallstreetcn.com/articles/3779270"
+    },
+    {
+      "label": "Caixin — China auto exports overseas",
+      "href": "https://www.caixinglobal.com/2026-08-12/chinas-car-sales-slump-pushes-automakers-deeper-overseas-102473386.html"
+    },
+    {
+      "label": "Caixin — Manus / Tencent",
+      "href": "https://www.caixinglobal.com/2026-08-12/manus-cuts-ties-with-meta-as-tencent-emerges-as-top-backer-102473415.html"
+    },
+    {
+      "label": "第一财经 — 英伟达5000亿美元融资平台",
+      "href": "https://www.yicai.com/news/103314189.html"
+    },
+    {
+      "label": "BlockBeats — 黄金重返4350",
+      "href": "https://www.theblockbeats.info/news/63341"
+    },
+    {
+      "label": "BlockBeats — Arthur Hayes 日元",
+      "href": "https://www.theblockbeats.info/news/63348"
+    },
+    {
+      "label": "CoinDesk — BTC / Hormuz stalemate",
+      "href": "https://www.coindesk.com/markets/2026/08/11/bitcoin-stuck-below-usd65-000-as-the-strait-of-hormuz-stalemate-and-strategy-s-selling-squeeze-the-market"
     }
   ],
   "figures": [
@@ -99,6 +131,10 @@
         {
           "label": "彭博 Markets Daily China",
           "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻 — CTA创纪录空头",
+          "href": "https://wallstreetcn.com/articles/3779267"
         }
       ]
     },
@@ -225,6 +261,10 @@
         {
           "label": "财联社/新浪",
           "href": "https://finance.sina.com.cn/jjxw/2026-08-12/doc-inimzqcr3678528.shtml"
+        },
+        {
+          "label": "CoinDesk — BTC / Hormuz",
+          "href": "https://www.coindesk.com/markets/2026/08/11/bitcoin-stuck-below-usd65-000-as-the-strait-of-hormuz-stalemate-and-strategy-s-selling-squeeze-the-market"
         }
       ],
       "mechanism": "Diplomacy headlines and commercial-flow reality can diverge for weeks — energy inflation risk stays in the bond path even when equities drift into CPI.",
@@ -258,6 +298,10 @@
         {
           "label": "U.S. Treasury",
           "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "华尔街见闻 — CTA创纪录空头",
+          "href": "https://wallstreetcn.com/articles/3779267"
         }
       ],
       "mechanism": "Crowded bond shorts amplify a soft CPI squeeze; a hot print re-opens hike odds despite Tuesday’s yield ease.",
@@ -287,6 +331,10 @@
         {
           "label": "Yahoo Finance (^N225)",
           "href": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "BlockBeats — Arthur Hayes 日元",
+          "href": "https://www.theblockbeats.info/news/63348"
         }
       ],
       "mechanism": "Round-number FX thresholds raise the option value of official response — cash reopen and FX headlines can diverge.",
@@ -312,6 +360,14 @@
         {
           "label": "香港文汇报（腾讯放榜预期）",
           "href": "https://www.wenweipo.com/a/202608/12/AP6a7b80a5e4b0c1e50024781e.html"
+        },
+        {
+          "label": "Caixin — Manus / Tencent",
+          "href": "https://www.caixinglobal.com/2026-08-12/manus-cuts-ties-with-meta-as-tencent-emerges-as-top-backer-102473415.html"
+        },
+        {
+          "label": "华尔街见闻 — 港股科网 / 腾讯音乐",
+          "href": "https://wallstreetcn.com/articles/3779247"
         }
       ],
       "mechanism": "Mega-cap China tech print can reset HK/ADR beta independently of US CPI — AI product KPIs matter more than one-quarter revenue alone.",
@@ -337,6 +393,10 @@
         {
           "label": "CNBC (Wall Street AI financing concept)",
           "href": "https://www.cnbc.com/2026/08/11/wall-street-endorsed-jensen-huangs-big-concept-for-ai-what-now.html"
+        },
+        {
+          "label": "第一财经 — 英伟达5000亿美元融资平台",
+          "href": "https://www.yicai.com/news/103314189.html"
         }
       ],
       "mechanism": "Clarifying Nvidia’s residual/backstop share reduces circular-finance fear — keeps AI-capex demand narrative alive without treating $500bn as NVDA cash outlay.",
@@ -362,6 +422,14 @@
         {
           "label": "彭博 Markets Daily China",
           "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Caixin — automakers deeper overseas",
+          "href": "https://www.caixinglobal.com/2026-08-12/chinas-car-sales-slump-pushes-automakers-deeper-overseas-102473386.html"
+        },
+        {
+          "label": "华尔街见闻 — 中汽协汽车出口",
+          "href": "https://wallstreetcn.com/articles/3779270"
         }
       ],
       "mechanism": "Export share rising while domestic retail soft is a China auto regime split — overseas demand carries makers even when local seasonality bites.",
@@ -406,6 +474,10 @@
         {
           "label": "彭博 Markets Daily China",
           "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻 — CTA创纪录空头",
+          "href": "https://wallstreetcn.com/articles/3779267"
         }
       ]
     },
@@ -478,6 +550,10 @@
         {
           "label": "彭博 Markets Daily China",
           "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "第一财经 — 英伟达5000亿美元融资平台",
+          "href": "https://www.yicai.com/news/103314189.html"
         }
       ]
     },
@@ -557,6 +633,14 @@
         {
           "label": "彭博 Markets Daily China",
           "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Caixin — automakers deeper overseas",
+          "href": "https://www.caixinglobal.com/2026-08-12/chinas-car-sales-slump-pushes-automakers-deeper-overseas-102473386.html"
+        },
+        {
+          "label": "华尔街见闻 — 中汽协汽车出口",
+          "href": "https://wallstreetcn.com/articles/3779270"
         }
       ]
     },
@@ -566,6 +650,14 @@
         {
           "label": "彭博 Markets Daily China",
           "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Caixin — Manus / Tencent",
+          "href": "https://www.caixinglobal.com/2026-08-12/manus-cuts-ties-with-meta-as-tencent-emerges-as-top-backer-102473415.html"
+        },
+        {
+          "label": "BlockBeats — Manus回归",
+          "href": "https://www.theblockbeats.info/news/63354"
         }
       ]
     },
@@ -775,11 +867,15 @@
         },
         {
           "name": "Gold",
-          "driver": "Yahoo GC=F — see Market Dashboard (off two-month highs per desk).",
+          "driver": "BlockBeats: gold reclaimed $4,350 (Aug 7 print in piece); desk says off two-month highs into CPI — confirm vs Yahoo GC=F dashboard row.",
           "driverSources": [
             {
               "label": "Yahoo GC=F",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            },
+            {
+              "label": "BlockBeats — 黄金重返4350",
+              "href": "https://www.theblockbeats.info/news/63341"
             }
           ],
           "read": "CPI/geo hedge — confirm vs closes row."
@@ -789,18 +885,26 @@
     {
       "id": "crypto",
       "title": "Crypto",
-      "regime": "Mid-$60ks; soft vs equity high-hold.",
+      "regime": "Mid-$60ks; soft vs equity high-hold; Hormuz keeps risk appetite muted.",
       "instruments": [
         {
           "name": "BTC",
-          "driver": "CoinGecko spot — see Market Dashboard BTC row.",
+          "driver": "CoinDesk: BTC stuck below $65k / near $63k as Hormuz stalemate + CPI loom; confirm spot on CoinGecko dashboard row.",
           "driverSources": [
             {
               "label": "CoinGecko",
               "href": "https://www.coingecko.com/en/coins/bitcoin"
+            },
+            {
+              "label": "CoinDesk — BTC / Hormuz",
+              "href": "https://www.coindesk.com/markets/2026/08/11/bitcoin-stuck-below-usd65-000-as-the-strait-of-hormuz-stalemate-and-strategy-s-selling-squeeze-the-market"
+            },
+            {
+              "label": "BlockBeats — Arthur Hayes 日元",
+              "href": "https://www.theblockbeats.info/news/63348"
             }
           ],
-          "read": "Lag-vs-equities until spot leads."
+          "read": "Lag-vs-equities until spot leads; geo/CPI still the macro tape."
         }
       ]
     }
@@ -889,12 +993,12 @@
     ]
   },
   "watchItems": [],
-  "sources": "彭博财经早茶 Aug 12 (desk/calendar/chart); AP Tue equity/oil wrap; Yahoo equities/FX/Brent; U.S. Treasury; RBA Aug 11; 乘联分会 via Sina; BLS/Fed calendars; CoinGecko BTC.",
-  "singleSource": "Hormuz advisor wording, EIA end-2027 disruption, CTA record shorts, Goolsbee phrasing, SEC tokenization, existing-home “three-month low”, small-business optimism, WorkBuddy metrics expectation, Manus/Meta, SK Hynix Dalian, and Nvidia residual-cap wording rely on Bloomberg inbox (asia hub often 403 in CI) — treated as desk/CLAIM unless second-sourced above.",
-  "caveats": "Published before 8:30 a.m. ET July CPI. Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Chart-of-day is SNB 13F US-equity holdings scale, not a spot FX print. Glassnode W33 mail is a product Compass promo — omitted as a hard market print.",
+  "sources": "彭博财经早茶 Aug 12 (desk/calendar/chart); AP Tue equity/oil wrap; Yahoo equities/FX/Brent; U.S. Treasury; RBA Aug 11; 乘联分会 via Sina; BLS/Fed calendars; CoinGecko BTC; 华尔街见闻 (CPI/CTA, autos, HK tech); Caixin Global (autos, Manus/Tencent); 第一财经 (Nvidia $500bn financing); BlockBeats (gold, yen/Hayes, Manus); CoinDesk (BTC/Hormuz).",
+  "singleSource": "Hormuz advisor wording, EIA end-2027 disruption, Goolsbee phrasing, SEC tokenization, existing-home “three-month low”, small-business optimism, WorkBuddy metrics expectation, and SK Hynix Dalian still lean on Bloomberg inbox (asia hub often 403 in CI) — treated as desk/CLAIM unless second-sourced above. CTA record shorts now also cited via 华尔街见闻 3779267. Manus/Meta second-sourced via Caixin + BlockBeats. Nvidia $500bn financing second-sourced via 第一财经 + CNBC. CICC 中金点睛: no dated public note reachable this run (research.cicc.com paywalled SPA) — omitted, not invented.",
+  "caveats": "Published before 8:30 a.m. ET July CPI. Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Chart-of-day is SNB 13F US-equity holdings scale, not a spot FX print. Glassnode W33 mail is a product Compass promo — omitted as a hard market print. China corroboration desks (见闻/Caixin/Yicai/BlockBeats) restored for this edition; CICC CLAIM desk empty.",
   "suggestions": "Into CPI: watch CTA squeeze vs hot-print hike odds. Into Hormuz: conditions language > Pakistan optimism. Into China: Tencent WorkBuddy disclosure and auto-export share, not one ADR day.",
   "marketDashboard": {
-    "asOf": "2026-08-12T07:19:35.517Z",
+    "asOf": "2026-08-12T08:34:38.527Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -928,10 +1032,10 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "15.28",
-            "change": "−1.16%",
-            "changeDirection": "down",
-            "asOfDate": "2026-08-11",
+            "latest": "15.29",
+            "change": "+0.07%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-12",
             "source": {
               "label": "Yahoo Finance (^VIX)",
               "href": "https://finance.yahoo.com/quote/%5EVIX/"
@@ -964,8 +1068,8 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,411.53",
-            "change": "−0.94%",
+            "latest": "25,440.17",
+            "change": "−0.83%",
             "changeDirection": "down",
             "asOfDate": "2026-08-12",
             "source": {
@@ -976,7 +1080,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,774.06",
+            "latest": "4,776.44",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-08-12",
@@ -1060,8 +1164,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "159.3790",
-            "change": "+0.14%",
+            "latest": "159.3540",
+            "change": "+0.12%",
             "changeDirection": "up",
             "asOfDate": "2026-08-12",
             "source": {
@@ -1072,7 +1176,7 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7450",
+            "latest": "6.7445",
             "change": "−0.04%",
             "changeDirection": "down",
             "asOfDate": "2026-08-12",
@@ -1084,8 +1188,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,460.50",
-            "change": "+1.77%",
+            "latest": "$4,468.00",
+            "change": "+1.94%",
             "changeDirection": "up",
             "asOfDate": "2026-08-12",
             "source": {
@@ -1096,8 +1200,8 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$89.71",
-            "change": "+0.90%",
+            "latest": "$89.39",
+            "change": "+0.54%",
             "changeDirection": "up",
             "asOfDate": "2026-08-12",
             "source": {
@@ -1108,8 +1212,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$63,698",
-            "change": "−0.28%",
+            "latest": "$63,725",
+            "change": "−0.44%",
             "changeDirection": "down",
             "asOfDate": "2026-08-12",
             "source": {
@@ -1120,9 +1224,9 @@
           {
             "id": "btc-funding",
             "asset": "BTC funding rate",
-            "latest": "0.0050%",
-            "change": "−0.505 bp",
-            "changeDirection": "down",
+            "latest": "0.0067%",
+            "change": "+0.170 bp",
+            "changeDirection": "up",
             "asOfDate": "2026-08-12",
             "source": {
               "label": "OKX funding API",
