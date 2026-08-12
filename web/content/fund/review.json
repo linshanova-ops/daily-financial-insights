@@ -1,11 +1,11 @@
 [
   {
-    "id": "rev-sig-20260810-60o94f",
-    "title": "Pershing Square’s 48 employees share in millions",
-    "reason": "中等置信度命中「Pershing Square」，待人工复核。",
-    "confidence": "70%",
+    "id": "rev-sig-20260811-tni8o7",
+    "title": "Hedge funds return to equities as risk appetite rebounds",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
     "status": "review",
-    "href": "https://www.hedgeweek.com/pershing-squares-48-employees-share-in-millions/",
+    "href": "https://www.hedgeweek.com/hedge-funds-return-to-equities-as-risk-appetite-rebounds/",
     "source": "Hedgeweek",
     "sourceTier": "designated"
   },
@@ -20,13 +20,13 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260808-w7dp4c",
-    "title": "Israel Englander's Millennium Manages $240 Billion Across Thousands of Positions. Here's the Strategy Behind His Success.",
-    "reason": "弱信源「The Motley Fool」命中「Millennium」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
+    "id": "rev-sig-20260812-15q327",
+    "title": "Ares Management Gains as Investors Digest Strong Q2 Fundraising and Asset Growth",
+    "reason": "弱信源「Quiver Quantitative」命中「Ares Management」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
     "status": "review",
-    "href": "https://www.fool.com/investing/2026/08/08/israel-englanders-millennium-manages-240-billion-a/",
-    "source": "The Motley Fool",
+    "href": "https://www.quiverquant.com/news/Ares+Management+Gains+as+Investors+Digest+Strong+Q2+Fundraising+and+Asset+Growth",
+    "source": "Quiver Quantitative",
     "sourceTier": "weak"
   },
   {
@@ -40,43 +40,63 @@
     "sourceTier": "weak"
   },
   {
+    "id": "rev-sig-20260811-itpqp",
+    "title": "Blackstone hired a Goldman Sachs MD from the team schmoozing private credit firms",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.efinancialcareers.com/news/blackstone-hired-a-goldman-sachs-md-from-the-team-schmoozing-private-credit-firms",
+    "source": "efinancialcareers.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260811-12umuo",
+    "title": "Assenagon Asset Management S.A. Sells 1,062 Shares of The Goldman Sachs Group, Inc. $GS",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.marketbeat.com/instant-alerts/filing-assenagon-asset-management-sa-sells-1062-shares-of-the-goldman-sachs-group-inc-gs-2026-08-11/",
+    "source": "MarketBeat",
+    "sourceTier": "weak"
+  },
+  {
     "id": "rev-sig-20260810-htdtun",
     "title": "Morning Coffee: Ex-Goldman Sachs private equity associate embodies most desirable date. Fine times at the hedge fund that wants you in the office 5 days a week",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
     "href": "https://www.efinancialcareers.com/news/dating-private-equity-professional",
-    "source": "eFinancialCareers",
+    "source": "efinancialcareers.com",
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260810-q8deel",
-    "title": "Man Group poaches DWS capital markets specialist for Europe ETF debut",
-    "reason": "弱信源「ETF Stream」命中「Man Group」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
-    "status": "review",
-    "href": "https://www.etfstream.com/articles/man-group-poaches-dws-capital-markets-specialist-for-europe-etf-debut",
-    "source": "ETF Stream",
-    "sourceTier": "weak"
-  },
-  {
-    "id": "rev-sig-20260811-mgbqir",
-    "title": "XFLT Shareholders Approve the King Street Sub-Advisory Agreement",
+    "id": "rev-sig-20260811-v0kyoi",
+    "title": "XAI Floating Rate & Alternative Income Trust Shareholders Approve King Street Sub-Advisory Agreement",
     "reason": "中等置信度命中「King Street」，待人工复核。",
     "confidence": "66%",
     "status": "review",
-    "href": "https://www.manilatimes.net/2026/08/11/tmt-newswire/globenewswire/xflt-shareholders-approve-the-king-street-sub-advisory-agreement/2402431",
-    "source": "The Manila Times",
+    "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Shareholders+Approve+King+Street+Sub-Advisory+Agreement",
+    "source": "Quiver Quantitative",
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260808-g5zoiv",
-    "title": "Urban Edge Properties $UE Shares Sold by Arrowstreet Capital Limited Partnership",
-    "reason": "弱信源「MarketBeat」命中「Arrowstreet Capital」— 不进入确定命中，待人工复核。",
-    "confidence": "92%",
+    "id": "rev-sig-20260811-iulggf",
+    "title": "KAYNE ANDERSON BDC ($KBDC) Releases Q2 2026 Earnings",
+    "reason": "中等置信度命中「Kayne Anderson」，待人工复核。",
+    "confidence": "69%",
     "status": "review",
-    "href": "https://www.marketbeat.com/instant-alerts/filing-urban-edge-properties-ue-shares-sold-by-arrowstreet-capital-limited-partnership-2026-08-08/",
-    "source": "MarketBeat",
+    "href": "https://www.quiverquant.com/news/KAYNE+ANDERSON+BDC+%28%24KBDC%29+Releases+Q2+2026+Earnings",
+    "source": "Quiver Quantitative",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260811-6dia06",
+    "title": "US Fund Wellington Becomes KT's No. 2 Shareholder with 7.65% Stake, Raising Dividend Pressure Prospects",
+    "reason": "中等置信度命中「Wellington」，待人工复核。",
+    "confidence": "65%",
+    "status": "review",
+    "href": "https://finance.biggo.com/news/629f8efd-13de-4b64-add7-3e2e06b6fc50",
+    "source": "finance.biggo.com",
     "sourceTier": "weak"
   }
 ]
