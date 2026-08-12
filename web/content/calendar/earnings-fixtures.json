@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-08-11T00:41:05.024Z",
-  "windowStart": "2026-08-11",
+  "fetchedAt": "2026-08-12T07:15:34.164Z",
+  "windowStart": "2026-08-12",
   "windowEnd": "2026-08-21",
   "events": [],
   "errors": [
@@ -21,11 +21,11 @@
       "message": "fetch 403"
     },
     {
-      "name": "spcx",
+      "name": "nvda",
       "message": "fetch 403"
     },
     {
-      "name": "nvda",
+      "name": "spcx",
       "message": "fetch 403"
     },
     {
@@ -39,6 +39,10 @@
     {
       "name": "coin",
       "message": "fetch 403"
+    },
+    {
+      "name": "zhipu",
+      "message": "fetch failed"
     },
     {
       "name": "avgo",

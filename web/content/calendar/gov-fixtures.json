@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-08-11T00:41:05.024Z",
-  "windowStart": "2026-08-11",
+  "fetchedAt": "2026-08-12T07:15:34.164Z",
+  "windowStart": "2026-08-12",
   "windowEnd": "2026-08-21",
   "events": [
     {
@@ -50,6 +50,12 @@
         "label": "Federal Reserve calendar",
         "href": "https://www.federalreserve.gov/json/calendar.json"
       }
+    }
+  ],
+  "errors": [
+    {
+      "name": "nbs",
+      "message": "fetch failed"
     }
   ]
 }
