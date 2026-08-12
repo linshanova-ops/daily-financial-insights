@@ -7,6 +7,7 @@ before each generate run.
 |--------|--------|---------|
 | `bloomberg-markets-daily-china/` | 彭博 Markets Daily China 中文版 | Daily (before Beijing 08:00) |
 | `glassnode-insights/` | Glassnode Insights | Weekly (usually Tuesday) |
+| `cicc/` | 中金点睛 (skill theme-then-search) | On demand — CLAIM paraphrase only |
 
 Files are markdown with YAML frontmatter (`sourceId`, `subject`, `receivedAt`, `citeHref`, …).
 The generate agent merges them into existing briefing modules:

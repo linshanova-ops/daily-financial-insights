@@ -78,7 +78,7 @@ const claimSources = [
     name: "中金点睛 (CICC)",
     english: "CLAIM desk",
     href: "https://www.research.cicc.com/",
-    role: "Sell-side framework only when a dated public note is reachable — never invent. Attach as CLAIM on themes, not as What-changed fact. Omit and caveat when paywalled or empty.",
+    role: "Sell-side CLAIM only via cicc-research-article-search (theme-then-search). Public paraphrase + WeChat/research link — never invent, never VIP reprint. Attach to Themes, not What-changed.",
   },
 ];
 

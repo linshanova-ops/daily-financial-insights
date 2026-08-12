@@ -87,6 +87,14 @@
     {
       "label": "CoinDesk — BTC / Hormuz stalemate",
       "href": "https://www.coindesk.com/markets/2026/08/11/bitcoin-stuck-below-usd65-000-as-the-strait-of-hormuz-stalemate-and-strategy-s-selling-squeeze-the-market"
+    },
+    {
+      "label": "中金点睛 — 全球流动性到拐点了吗？（CLAIM）",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247853175&idx=1&sn=ea119b7e6d2981914ba059a48e8e430e&chksm=ebc7717f96ab1d6bca470a23886b03db4c4f0f487d7438156351eb6e5e5df7a0e2f11d86e495&scene=0&xtrack=1#rd"
+    },
+    {
+      "label": "中金点睛 — 美日汇率干预 / FIMA（CLAIM）",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247852493&idx=1&sn=9b8060f2b89b8f1b093524cd6517d0eb&chksm=ebf1e9e3e8d66fe82959728872257fe1f114b1c41d07a4248ead0ad42ed50b9f769e8a3a1fd7&scene=0&xtrack=1#rd"
     }
   ],
   "figures": [
@@ -302,9 +310,13 @@
         {
           "label": "华尔街见闻 — CTA创纪录空头",
           "href": "https://wallstreetcn.com/articles/3779267"
+        },
+        {
+          "label": "中金点睛 — 全球流动性到拐点了吗？（CLAIM）",
+          "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247853175&idx=1&sn=ea119b7e6d2981914ba059a48e8e430e&chksm=ebc7717f96ab1d6bca470a23886b03db4c4f0f487d7438156351eb6e5e5df7a0e2f11d86e495&scene=0&xtrack=1#rd"
         }
       ],
-      "mechanism": "Crowded bond shorts amplify a soft CPI squeeze; a hot print re-opens hike odds despite Tuesday’s yield ease.",
+      "mechanism": "Crowded bond shorts amplify a soft CPI squeeze; a hot print re-opens hike odds despite Tuesday’s yield ease. CICC CLAIM (Aug 12): liquidity cooled but not a confirmed tightening inflection; if July CPI cools as expected, Fed tightening narrative may reverse further — equities/bonds/gold can keep an easing-trade bid.",
       "trigger": "Hot July CPI that lifts front-end yields and softens equities.",
       "invalidator": "Soft CPI that squeezes CTA shorts and extends the yield ease.",
       "horizon": "hours–days",
@@ -335,9 +347,13 @@
         {
           "label": "BlockBeats — Arthur Hayes 日元",
           "href": "https://www.theblockbeats.info/news/63348"
+        },
+        {
+          "label": "中金点睛 — 美日汇率干预 / FIMA（CLAIM）",
+          "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247852493&idx=1&sn=9b8060f2b89b8f1b093524cd6517d0eb&chksm=ebf1e9e3e8d66fe82959728872257fe1f114b1c41d07a4248ead0ad42ed50b9f769e8a3a1fd7&scene=0&xtrack=1#rd"
         }
       ],
-      "mechanism": "Round-number FX thresholds raise the option value of official response — cash reopen and FX headlines can diverge.",
+      "mechanism": "Round-number FX thresholds raise the option value of official response — cash reopen and FX headlines can diverge. CICC CLAIM (Aug 7): Standing FIMA can fund yen support without dumping USTs — dual stabilizer for JPY and Treasury demand; if normalized, liquidity into equities/metals can improve, with yen-carry unwind still a risk.",
       "trigger": "Confirmed official yen support or sustained break back below 155.",
       "invalidator": "Clean grind through 160 with no official response.",
       "horizon": "days",
@@ -397,9 +413,13 @@
         {
           "label": "第一财经 — 英伟达5000亿美元融资平台",
           "href": "https://www.yicai.com/news/103314189.html"
+        },
+        {
+          "label": "中金点睛 — AI的金融时刻（CLAIM）",
+          "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247850559&idx=1&sn=0765aae2f85fed48ecab6425d90a02bc&chksm=ebe747bd9a885373a49c7fae8b0ecfdcd66b5b60a57604bb000f30e1b0e72e1a06b9a6639b42&scene=0&xtrack=1#rd"
         }
       ],
-      "mechanism": "Clarifying Nvidia’s residual/backstop share reduces circular-finance fear — keeps AI-capex demand narrative alive without treating $500bn as NVDA cash outlay.",
+      "mechanism": "Clarifying Nvidia’s residual/backstop share reduces circular-finance fear — keeps AI-capex demand narrative alive without treating $500bn as NVDA cash outlay. CICC CLAIM (Jul 24): AI capex implies a large external financing need beyond cash flow, with IG credit as a main channel — framework color for today’s residual-cap tape, not a print.",
       "trigger": "Filings that show larger-than-signaled Nvidia residual guarantees.",
       "invalidator": "Confirmed third-party underwriting with limited Nvidia balance-sheet risk.",
       "horizon": "weeks",
@@ -582,6 +602,9 @@
     },
     {
       "text": "Record CTA bond shorts raise soft-CPI squeeze risk; do not treat Tuesday’s yield ease as regime change before the print."
+    },
+    {
+      "text": "CICC CLAIM (Aug 12): if July CPI cools as expected, Fed tightening narrative may keep reversing — easing-trade lens for equities/bonds/gold, not a substitute for the BLS print."
     }
   ],
   "globalTensions": "Soft US equities vs still-elevated oil; easier Treasuries vs Goolsbee hawkish color; USD/JPY near 160 vs Japan cash reopen.",
@@ -993,9 +1016,9 @@
     ]
   },
   "watchItems": [],
-  "sources": "彭博财经早茶 Aug 12 (desk/calendar/chart); AP Tue equity/oil wrap; Yahoo equities/FX/Brent; U.S. Treasury; RBA Aug 11; 乘联分会 via Sina; BLS/Fed calendars; CoinGecko BTC; 华尔街见闻 (CPI/CTA, autos, HK tech); Caixin Global (autos, Manus/Tencent); 第一财经 (Nvidia $500bn financing); BlockBeats (gold, yen/Hayes, Manus); CoinDesk (BTC/Hormuz).",
-  "singleSource": "Hormuz advisor wording, EIA end-2027 disruption, Goolsbee phrasing, SEC tokenization, existing-home “three-month low”, small-business optimism, WorkBuddy metrics expectation, and SK Hynix Dalian still lean on Bloomberg inbox (asia hub often 403 in CI) — treated as desk/CLAIM unless second-sourced above. CTA record shorts now also cited via 华尔街见闻 3779267. Manus/Meta second-sourced via Caixin + BlockBeats. Nvidia $500bn financing second-sourced via 第一财经 + CNBC. CICC 中金点睛: no dated public note reachable this run (research.cicc.com paywalled SPA) — omitted, not invented.",
-  "caveats": "Published before 8:30 a.m. ET July CPI. Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Chart-of-day is SNB 13F US-equity holdings scale, not a spot FX print. Glassnode W33 mail is a product Compass promo — omitted as a hard market print. China corroboration desks (见闻/Caixin/Yicai/BlockBeats) restored for this edition; CICC CLAIM desk empty.",
+  "sources": "彭博财经早茶 Aug 12 (desk/calendar/chart); AP Tue equity/oil wrap; Yahoo equities/FX/Brent; U.S. Treasury; RBA Aug 11; 乘联分会 via Sina; BLS/Fed calendars; CoinGecko BTC; 华尔街见闻 (CPI/CTA, autos, HK tech); Caixin Global (autos, Manus/Tencent); 第一财经 (Nvidia $500bn financing); BlockBeats (gold, yen/Hayes, Manus); CoinDesk (BTC/Hormuz); 中金点睛 CLAIM via cicc-research-article-search (流动性 Aug 12, 美日FIMA Aug 7, AI金融 Jul 24).",
+  "singleSource": "Hormuz advisor wording, EIA end-2027 disruption, Goolsbee phrasing, SEC tokenization, existing-home “three-month low”, small-business optimism, WorkBuddy metrics expectation, and SK Hynix Dalian still lean on Bloomberg inbox (asia hub often 403 in CI) — treated as desk/CLAIM unless second-sourced above. CTA record shorts now also cited via 华尔街见闻 3779267. Manus/Meta second-sourced via Caixin + BlockBeats. Nvidia $500bn financing second-sourced via 第一财经 + CNBC. CICC views are CLAIM paraphrases from skill search (WeChat links often challenge-page in CI) — not FACT prints.",
+  "caveats": "Published before 8:30 a.m. ET July CPI. Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Chart-of-day is SNB 13F US-equity holdings scale, not a spot FX print. Glassnode W33 mail is a product Compass promo — omitted as a hard market print. China corroboration desks restored. CICC CLAIM attached to CPI / yen / Nvidia themes only; no fresh CICC on Hormuz, Tencent, or autos.",
   "suggestions": "Into CPI: watch CTA squeeze vs hot-print hike odds. Into Hormuz: conditions language > Pakistan optimism. Into China: Tencent WorkBuddy disclosure and auto-export share, not one ADR day.",
   "marketDashboard": {
     "asOf": "2026-08-12T08:34:38.527Z",
