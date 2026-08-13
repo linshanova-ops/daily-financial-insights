@@ -120,8 +120,8 @@ export default function PipelinePage() {
         syravocado is powered by Cursor Agent skills. Each stage only consumes
         what the previous stage verified — analysis cites the news log,
         suggestions cite graded signals, and the published report stays
-        traceable. New editions publish when an editor asks — not on a fixed
-        twice-daily clock.
+        traceable. New editions publish weekdays at 09:00 China time via a
+        Cursor Automation.
       </p>
       <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
         <span className="font-semibold text-ink">Accuracy policy:</span> every

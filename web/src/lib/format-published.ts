@@ -1,4 +1,4 @@
-/** Beijing schedule for twice-daily briefings (08:00 / 20:00 China time). */
+/** Beijing timezone for weekday 09:00 briefing publishes. */
 export const BRIEFING_PUBLISH_TIMEZONE = "Asia/Shanghai";
 
 /** Format a briefing publishedAt / feed generatedAt for the homepage. */

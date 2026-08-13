@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Publish mode** | **Manual only.** Twice-daily Cursor auto-generate is off (`briefing-ops.json` + no Generate cron). Idle `refresh-briefing` pings are ignored. Pause cron-job.org while manual. Fund/inbox helpers: **Actions → Run workflow** (or `force=true`). Pages: push to main only (no schedule). See [MANUAL_BRIEFING.md](./MANUAL_BRIEFING.md). |
+| **Publish mode** | **Cursor Automation, weekdays 09:00 China time.** Dashboard: [cursor.com/automations](https://cursor.com/automations) — spec in `.cursor/automations/weekday-0900-beijing.md`. GitHub `cursorAutoGenerate` stays **false** (no Actions `Agent.create`, no cron-job.org, no Netlify). |
 | **Manual workflow** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge to main, Pages deploys on push. Manual/dispatch also available. No schedule in manual mode. |
@@ -38,41 +38,19 @@ Generation does **not** push straight to `main`. Flow:
 
 Only one generate job runs at a time (`concurrency` group); overlapping dispatches queue instead of racing.
 
-### Coverage of the two China-time slots
+### Coverage of the weekday China-time slot
 
 | China time | UTC | Mainly captures |
 |------------|-----|-----------------|
-| 08:00 | 00:00 | Prior **US** cash session (already closed) + overnight Asia |
-| 20:00 | 12:00 | Same-day **China** session (closed 15:00); US cash not yet open |
+| 09:00 weekdays | 01:00 | Prior **US** cash session + overnight Asia. Sat/Sun skipped. |
 
-Generate starts **at/after** 08:00 / 20:00 Beijing **on weekdays** so Market Dashboard and news reflect that clock; max start delay **45 minutes** (on-time target still the top of the hour). **Beijing Sat/Sun scheduled slots are skipped** (no Cursor agent run). Monday’s briefing must cover **since Friday US cash close**, including weekend crypto and material news. Manual **Run workflow** / `force=true` bypasses the gate (including weekends). External `repository_dispatch` without `force` uses the same gate; `client_payload.force=true` forces a run (catch-up).
-
-Evening runs always refresh the same Beijing date even when morning already published (new inbox + fresh Market Dashboard).
+Monday’s briefing must cover **since Friday US cash close**, including weekend crypto and material news. Manual **Run workflow** / `force=true` still bypasses the Actions gate if you need an extra inbox fetch.
 
 ### Schedule reliability (and cost)
 
-**GitHub `schedule` alone cannot guarantee on-time publishes** (it skipped both 2026-07-20 Beijing windows). Full setup: **[ON_TIME_PUBLISH.md](./ON_TIME_PUBLISH.md)** (external cron-job.org ping — free, ~5 minutes).
+The clock is a **Cursor Automation** (one cloud agent per weekday). Do not turn GitHub Generate cron or cron-job.org back on — those burn tokens on empty ticks. Spec: `.cursor/automations/weekday-0900-beijing.md`.
 
-In-repo mitigations (recovery, not a substitute for external cron):
-
-1. Light primary ticks at `:00/:15/:30/:45` UTC 0 and 12  
-2. **Hourly heartbeat** at `:05` — publishes if a slot is still missing (up to **6h**)  
-3. **Overdue alert** workflow fails ~50m after the hour if still unpublished  
-4. Pages deploy retries after merge  
-
-**Cost:** Public-repo Actions minutes are free. cron-job.org free tier is **$0**. No Netlify. Cursor API only when a generate actually runs.
-
-Example ping body (details in ON_TIME_PUBLISH.md):
-
-```bash
-curl -X POST \
-  -H "Accept: application/vnd.github+json" \
-  -H "Authorization: Bearer $GITHUB_PAT" \
-  https://api.github.com/repos/linshanova-ops/daily-financial-insights/dispatches \
-  -d '{"event_type":"refresh-briefing"}'
-```
-
-Without `"force":true`, the slot gate no-ops after a slot has already published.
+**Cost:** one Cursor cloud-agent run on weekdays. Public-repo Actions minutes only for accuracy CI + Pages after the PR merges. No Netlify.
 
 ### Netlify — gone
 

@@ -1,5 +1,5 @@
 {
   "cursorAutoGenerate": false,
   "cursorAutoResumeOn": null,
-  "note": "Permanent manual briefing updates only. No twice-daily Cursor auto-generate. Idle refresh-briefing pings are ignored. Cron-job.org and Netlify are off. Publish when asked; set cursorAutoGenerate true only if auto is wanted again."
+  "note": "Weekday 09:00 Beijing publishes via Cursor Automation (cursor.com/automations), not GitHub/cron-job.org/Netlify. Keep cursorAutoGenerate false so Actions never Agent.create. Idle refresh-briefing pings stay ignored."
 }
