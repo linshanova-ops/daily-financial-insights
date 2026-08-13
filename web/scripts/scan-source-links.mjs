@@ -183,6 +183,7 @@ const FLAKY_OFFICIAL_HOSTS = [
   /bok\.or\.kr/i,
   /news\.cnyes\.com/i,
   /ismworld\.org/i,
+  /mp\.weixin\.qq\.com/i, // CICC public paraphrase links (WeChat challenge page in CI)
 ];
 
 function flakyOfficialHost(href) {

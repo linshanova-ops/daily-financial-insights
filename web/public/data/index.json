@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-12T07:23:17.738Z",
-  "latest": "2026-08-12",
+  "generatedAt": "2026-08-13T09:05:24.690Z",
+  "latest": "2026-08-13",
   "briefings": [
+    {
+      "date": "2026-08-13",
+      "title": "Daily Financial Briefing",
+      "marketTone": "In-line July CPI lets S&P/Nasdaq grind higher while Tencent’s AI capex/FCF print hits HK/ADRs, USD/JPY still hugs 160, and tonight’s PPI is the next inflation gate.",
+      "coverageWindow": "August 12–13, 2026"
+    },
     {
       "date": "2026-08-12",
       "title": "Daily Financial Briefing",
