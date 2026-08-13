@@ -1,5 +1,33 @@
 [
   {
+    "id": "sig-20260813-pduhvr",
+    "date": "2026.08.13",
+    "title": "Elliott escalates Northern Star campaign with six board nominees",
+    "summary": "Elliott Investment Management：Elliott escalates Northern Star campaign with six board nominees（动态）。",
+    "summaryEn": "Elliott Investment Management: Elliott escalates Northern Star campaign with six board nominees.",
+    "fund": "Elliott Investment Management",
+    "source": "Hedgeweek",
+    "sourceTier": "designated",
+    "sourceTierLabel": "指定信源",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.hedgeweek.com/elliott-escalates-northern-star-campaign-with-six-board-nominees/"
+  },
+  {
+    "id": "sig-20260813-87ohcy",
+    "date": "2026.08.13",
+    "title": "Northern Star chair fires back at Elliott in escalating board stoush",
+    "summary": "Elliott Investment Management：Northern Star chair fires back at Elliott in escalating board stoush（动态）。",
+    "summaryEn": "Elliott Investment Management: Northern Star chair fires back at Elliott in escalating board stoush.",
+    "fund": "Elliott Investment Management",
+    "source": "AFR",
+    "sourceTier": "secondary",
+    "sourceTierLabel": "公开转载",
+    "tag": "动态",
+    "status": "confirmed",
+    "href": "https://www.afr.com/companies/mining/northern-star-snubs-us-activist-fund-with-new-board-appointment-20260812-p60ntt"
+  },
+  {
     "id": "sig-20260810-s34std",
     "date": "2026.08.10",
     "title": "Man Group CFO sells £1.5m of shares as firm reports record assets",

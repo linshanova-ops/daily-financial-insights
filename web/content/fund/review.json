@@ -1,32 +1,22 @@
 [
   {
-    "id": "rev-sig-20260811-tni8o7",
-    "title": "Hedge funds return to equities as risk appetite rebounds",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.hedgeweek.com/hedge-funds-return-to-equities-as-risk-appetite-rebounds/",
-    "source": "Hedgeweek",
-    "sourceTier": "designated"
-  },
-  {
-    "id": "rev-sig-20260810-2lnc5l",
-    "title": "Hedge Fund Intrigue: Situational Awareness’s Pain was Citadel’s Gain",
-    "reason": "弱信源「Cabot Wealth Network」命中「Citadel」— 不进入确定命中，待人工复核。",
-    "confidence": "82%",
-    "status": "review",
-    "href": "https://www.cabotwealth.com/daily/stock-market/hedge-fund-intrigue-situational-awarenesss-pain-citadels-gain",
-    "source": "Cabot Wealth Network",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260812-15q327",
     "title": "Ares Management Gains as Investors Digest Strong Q2 Fundraising and Asset Growth",
-    "reason": "弱信源「Quiver Quantitative」命中「Ares Management」— 不进入确定命中，待人工复核。",
+    "reason": "弱信源「quiverquant.com」命中「Ares Management」— 不进入确定命中，待人工复核。",
     "confidence": "92%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/Ares+Management+Gains+as+Investors+Digest+Strong+Q2+Fundraising+and+Asset+Growth",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260813-64x02l",
+    "title": "Goldman Sachs to Add $30B in Assets Through NEOS Acquisition - ai-cio.com",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.ai-cio.com/news/goldman-sachs-to-add-30b-in-assets-through-neos-acquisition/",
+    "source": "ai-cio.com",
     "sourceTier": "weak"
   },
   {
@@ -40,16 +30,6 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260811-itpqp",
-    "title": "Blackstone hired a Goldman Sachs MD from the team schmoozing private credit firms",
-    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
-    "confidence": "68%",
-    "status": "review",
-    "href": "https://www.efinancialcareers.com/news/blackstone-hired-a-goldman-sachs-md-from-the-team-schmoozing-private-credit-firms",
-    "source": "efinancialcareers.com",
-    "sourceTier": "weak"
-  },
-  {
     "id": "rev-sig-20260811-12umuo",
     "title": "Assenagon Asset Management S.A. Sells 1,062 Shares of The Goldman Sachs Group, Inc. $GS",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
@@ -60,13 +40,53 @@
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260810-htdtun",
-    "title": "Morning Coffee: Ex-Goldman Sachs private equity associate embodies most desirable date. Fine times at the hedge fund that wants you in the office 5 days a week",
+    "id": "rev-sig-20260812-xl3vzk",
+    "title": "Goldman Sachs Strikes Up to $2.25 Billion Deal for ETF Provider Neos",
     "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
     "confidence": "68%",
     "status": "review",
-    "href": "https://www.efinancialcareers.com/news/dating-private-equity-professional",
-    "source": "efinancialcareers.com",
+    "href": "https://finance.biggo.com/news/95db4524-5924-40be-af69-dc570576a520",
+    "source": "finance.biggo.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260811-itpqp",
+    "title": "Blackstone hired a Goldman Sachs MD from the team schmoozing private credit firms",
+    "reason": "中等置信度命中「Goldman Sachs」，待人工复核。",
+    "confidence": "68%",
+    "status": "review",
+    "href": "https://www.efinancialcareers.com/news/blackstone-hired-a-goldman-sachs-md-from-the-team-schmoozing-private-credit-firms",
+    "source": "eFinancialCareers",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260813-6vy5lx",
+    "title": "Brevan Howard hired itself a senior network engineer from Bridgewater",
+    "reason": "弱信源「eFinancialCareers」命中「Bridgewater」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.efinancialcareers.com/news/brevan-howard-hired-itself-a-senior-network-engineer-from-bridgewater",
+    "source": "eFinancialCareers",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260813-kzjkh0",
+    "title": "Omnivore bets big on deep science, agrifood consumer brands with remaining Fund III capital",
+    "reason": "弱信源「livemint.com」命中「III Capital」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://www.livemint.com/companies/omnivore-venture-capital-agrifood-deeptech-consumer-brands-physical-ai-robotics-fund-iii-mark-kahn-11785986724498.html",
+    "source": "livemint.com",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260813-gg1dqq",
+    "title": "Polar Asset Management Partners Holds $215 Million First Close For CRS Fund II",
+    "reason": "弱信源「Pulse 2.0」命中「Polar Asset Management Partners」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://pulse2.com/polar-asset-management-partners-holds-215-million-first-close-for-crs-fund-ii/",
+    "source": "Pulse 2.0",
     "sourceTier": "weak"
   },
   {
@@ -76,7 +96,7 @@
     "confidence": "66%",
     "status": "review",
     "href": "https://www.quiverquant.com/news/XAI+Floating+Rate+%26+Alternative+Income+Trust+Shareholders+Approve+King+Street+Sub-Advisory+Agreement",
-    "source": "Quiver Quantitative",
+    "source": "quiverquant.com",
     "sourceTier": "weak"
   },
   {
@@ -85,18 +105,38 @@
     "reason": "中等置信度命中「Kayne Anderson」，待人工复核。",
     "confidence": "69%",
     "status": "review",
-    "href": "https://www.quiverquant.com/news/KAYNE+ANDERSON+BDC+%28%24KBDC%29+Releases+Q2+2026+Earnings",
-    "source": "Quiver Quantitative",
+    "href": "https://www.quiverquant.com/news/KAYNE+ANDERSON+BDC+($KBDC)+Releases+Q2+2026+Earnings",
+    "source": "quiverquant.com",
     "sourceTier": "weak"
   },
   {
-    "id": "rev-sig-20260811-6dia06",
-    "title": "US Fund Wellington Becomes KT's No. 2 Shareholder with 7.65% Stake, Raising Dividend Pressure Prospects",
-    "reason": "中等置信度命中「Wellington」，待人工复核。",
-    "confidence": "65%",
+    "id": "rev-sig-20260813-ols9x2",
+    "title": "Watch: WAM Strategic Value (ASX: WAR) | Value FY2026 Full Year Results Q&A Webinar",
+    "reason": "中等置信度命中「Strategic Value」，待人工复核。",
+    "confidence": "70%",
     "status": "review",
-    "href": "https://finance.biggo.com/news/629f8efd-13de-4b64-add7-3e2e06b6fc50",
-    "source": "finance.biggo.com",
+    "href": "https://wilsonassetmanagement.com.au/watch-wam-strategic-value-asx-war-value-fy2026-full-year-results-qa-webinar/",
+    "source": "Wilson Asset Management",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260812-cg8eg",
+    "title": "How Elliott wants to ‘fortify’ Northern Star’s board",
+    "reason": "弱信源「The Australian」命中「Elliott」— 不进入确定命中，待人工复核。",
+    "confidence": "82%",
+    "status": "review",
+    "href": "https://www.theaustralian.com.au/business/elliott-recruits-exanglo-chief-mark-cutifani-for-northern-star-board-shakeup/news-story/4e1d691f14092d8ed747a9ff7001583c",
+    "source": "The Australian",
+    "sourceTier": "weak"
+  },
+  {
+    "id": "rev-sig-20260812-hnog2h",
+    "title": "Rathbones names former Schroders investment director as multi-asset specialist",
+    "reason": "弱信源「Portfolio Adviser」命中「Schroders」— 不进入确定命中，待人工复核。",
+    "confidence": "92%",
+    "status": "review",
+    "href": "https://portfolio-adviser.com/rathbones-names-former-schroders-investment-director-as-multi-asset-specialist/",
+    "source": "Portfolio Adviser",
     "sourceTier": "weak"
   }
 ]
