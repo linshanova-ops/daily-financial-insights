@@ -1,19 +1,23 @@
 {
-  "fetchedAt": "2026-08-12T07:15:34.164Z",
-  "windowStart": "2026-08-12",
+  "fetchedAt": "2026-08-13T08:51:49.194Z",
+  "windowStart": "2026-08-13",
   "windowEnd": "2026-08-21",
   "events": [],
   "errors": [
-    {
-      "name": "meta",
-      "message": "fetch 403"
-    },
     {
       "name": "amzn",
       "message": "fetch 403"
     },
     {
+      "name": "meta",
+      "message": "fetch 403"
+    },
+    {
       "name": "aapl",
+      "message": "fetch 403"
+    },
+    {
+      "name": "spcx",
       "message": "fetch 403"
     },
     {
@@ -22,10 +26,6 @@
     },
     {
       "name": "nvda",
-      "message": "fetch 403"
-    },
-    {
-      "name": "spcx",
       "message": "fetch 403"
     },
     {
@@ -39,10 +39,6 @@
     {
       "name": "coin",
       "message": "fetch 403"
-    },
-    {
-      "name": "zhipu",
-      "message": "fetch failed"
     },
     {
       "name": "avgo",

@@ -1,20 +1,8 @@
 {
-  "fetchedAt": "2026-08-12T07:15:34.164Z",
-  "windowStart": "2026-08-12",
+  "fetchedAt": "2026-08-13T08:51:49.194Z",
+  "windowStart": "2026-08-13",
   "windowEnd": "2026-08-21",
   "events": [
-    {
-      "id": "bls-consumer-price-index-for-july-2026-2026-08-12",
-      "date": "2026-08-12",
-      "timeBeijing": "20:30",
-      "region": "US",
-      "category": "data",
-      "event": "Consumer Price Index for July 2026",
-      "source": {
-        "label": "BLS release calendar",
-        "href": "https://www.bls.gov/schedule/2026/"
-      }
-    },
     {
       "id": "bls-producer-price-index-for-july-2026-2026-08-13",
       "date": "2026-08-13",
@@ -50,12 +38,6 @@
         "label": "Federal Reserve calendar",
         "href": "https://www.federalreserve.gov/json/calendar.json"
       }
-    }
-  ],
-  "errors": [
-    {
-      "name": "nbs",
-      "message": "fetch failed"
     }
   ]
 }
