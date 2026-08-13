@@ -1,7 +1,8 @@
-# Manual briefing updates
+# Manual briefing / Actions kill-switch
 
-Twice-daily auto generate is **off**. Briefings publish only when you ask
-(or run the workflow by hand).
+GitHub **does not** spawn Cursor agents (`cursorAutoGenerate: false`).
+Weekday 09:00 publishes are a **Cursor Automation** — see
+`.cursor/automations/weekday-0900-beijing.md`.
 
 Controlled by `web/content/briefing-ops.json`:
 
