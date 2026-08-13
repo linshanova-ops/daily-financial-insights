@@ -1,25 +1,22 @@
 {
-  "at": "2026-08-12T07:15:08.957Z",
-  "briefingDate": "2026-08-12",
+  "at": "2026-08-13T08:51:21.139Z",
+  "briefingDate": "2026-08-13",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-12.md",
-      "subject": "彭博财经早茶：霍尔木兹通航前景存疑；腾讯财报发布在即",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-13.md",
+      "subject": "彭博财经早茶：腾讯资本支出激增；美国通胀温和",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5038,
+      "chars": 5028,
       "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-12.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-12.png"
+      "chartImage": "/inbox-charts/bloomberg-2026-08-13.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-13.png"
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W33.md",
-      "subject": "Our Best Metrics, in a Single Dashboard: The Market Compass",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2625,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
@@ -29,13 +26,32 @@
   ],
   "skipped": [
     {
+      "reason": "weekly-exists",
+      "subject": "Trigger Happy",
+      "path": "web/content/inbox/glassnode-insights/2026-W33.md"
+    },
+    {
+      "reason": "date-mismatch",
+      "subject": "彭博财经早茶：霍尔木兹通航前景存疑；腾讯财报发布在即",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "subjectDay": null,
+      "emailDay": "2026-08-11",
+      "bjDay": "2026-08-12",
+      "briefingDate": "2026-08-13"
+    },
+    {
+      "reason": "weekly-duplicate",
+      "subject": "Our Best Metrics, in a Single Dashboard: The Market Compass",
+      "from": "\"Glassnode\" <insights@glassnode.com>"
+    },
+    {
       "reason": "date-mismatch",
       "subject": "彭博财经早茶：日元或再迎干预窗口；英伟达联手华尔街筹划巨额AI投资",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
       "subjectDay": null,
       "emailDay": "2026-08-10",
       "bjDay": "2026-08-11",
-      "briefingDate": "2026-08-12"
+      "briefingDate": "2026-08-13"
     },
     {
       "reason": "date-mismatch",
@@ -44,7 +60,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-09",
       "bjDay": "2026-08-10",
-      "briefingDate": "2026-08-12"
+      "briefingDate": "2026-08-13"
     },
     {
       "reason": "weekly-exists",
@@ -58,7 +74,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-06",
       "bjDay": "2026-08-07",
-      "briefingDate": "2026-08-12"
+      "briefingDate": "2026-08-13"
     },
     {
       "reason": "welcome",
@@ -72,7 +88,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-05",
       "bjDay": "2026-08-06",
-      "briefingDate": "2026-08-12"
+      "briefingDate": "2026-08-13"
     },
     {
       "reason": "weekly-duplicate",
@@ -86,7 +102,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-04",
       "bjDay": "2026-08-05",
-      "briefingDate": "2026-08-12"
+      "briefingDate": "2026-08-13"
     },
     {
       "reason": "date-mismatch",
@@ -95,7 +111,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-03",
       "bjDay": "2026-08-04",
-      "briefingDate": "2026-08-12"
+      "briefingDate": "2026-08-13"
     },
     {
       "reason": "date-mismatch",
@@ -104,7 +120,7 @@
       "subjectDay": null,
       "emailDay": "2026-08-02",
       "bjDay": "2026-08-03",
-      "briefingDate": "2026-08-12"
+      "briefingDate": "2026-08-13"
     },
     {
       "reason": "weekly-duplicate",
@@ -118,21 +134,7 @@
       "subjectDay": null,
       "emailDay": "2026-07-30",
       "bjDay": "2026-07-31",
-      "briefingDate": "2026-08-12"
-    },
-    {
-      "reason": "date-mismatch",
-      "subject": "彭博财经早茶：中际旭创H股上市；美联储加息呼声渐高",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-07-29",
-      "bjDay": "2026-07-30",
-      "briefingDate": "2026-08-12"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Paid to Wait",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
+      "briefingDate": "2026-08-13"
     }
   ]
 }
