@@ -133,27 +133,11 @@
       ]
     },
     {
-      "text": "Thursday Asia (见闻/Yahoo): Hang Seng −0.17% to 25,396.51; Shanghai −0.50% to 3,926.96; HK Tencent −4%+; Lenovo +20%. Friday live (Yahoo inject): Nikkei 68,889.01; Kospi 6,897.92; Hang Seng 25,200.74; Shanghai 3,911.13.",
+      "text": "Thursday Asia (见闻): Hang Seng −0.17%; Shanghai −0.50%; HK Tencent −4%+; Lenovo +20%. Friday Nikkei/Kospi/HSI/Shanghai — see Market Dashboard.",
       "sources": [
         {
           "label": "华尔街见闻",
           "href": "https://wallstreetcn.com/articles/3779335"
-        },
-        {
-          "label": "Yahoo Finance (^HSI)",
-          "href": "https://finance.yahoo.com/quote/%5EHSI/"
-        },
-        {
-          "label": "Yahoo Finance (^N225)",
-          "href": "https://finance.yahoo.com/quote/%5EN225/"
-        },
-        {
-          "label": "Yahoo Finance (^KS11)",
-          "href": "https://finance.yahoo.com/quote/%5EKS11/"
-        },
-        {
-          "label": "Yahoo Finance (000001.SS)",
-          "href": "https://finance.yahoo.com/quote/000001.SS/"
         }
       ]
     }
@@ -298,7 +282,7 @@
         "USD/JPY",
         "Asia equities"
       ],
-      "fact": "Yahoo USD/JPY Friday — see Market Dashboard. Japan Times: July CGPI +7.2% y/y (June revised +7.3%); +0.1% m/m. Nikkei Friday live 68,889.01 vs Thursday close 68,308.59.",
+      "fact": "Yahoo USD/JPY Friday — see Market Dashboard. Japan Times: July CGPI +7.2% y/y (June revised +7.3%); +0.1% m/m. Nikkei Friday — see Market Dashboard.",
       "factSources": [
         {
           "label": "Yahoo USDJPY",
@@ -307,10 +291,6 @@
         {
           "label": "Japan Times",
           "href": "https://www.japantimes.co.jp/business/2026/08/13/economy/japan-producer-price-july/"
-        },
-        {
-          "label": "Yahoo (^N225)",
-          "href": "https://finance.yahoo.com/quote/%5EN225/"
         }
       ],
       "mechanism": "Soft US PPI eases dollar-hike pressure but does not remove the 160 intervention option while Japan wholesale prices stay elevated.",
@@ -505,7 +485,7 @@
       "instruments": [
         {
           "name": "Japan equities",
-          "driver": "Nikkei Thursday 68,308.59; Friday live 68,889.01 (Yahoo inject).",
+          "driver": "Friday Nikkei — see Market Dashboard.",
           "driverSources": [
             {
               "label": "Yahoo (^N225)",
@@ -517,7 +497,7 @@
         },
         {
           "name": "Korea equities",
-          "driver": "Kospi Thursday 6,813.34; Friday live 6,897.92 (Yahoo inject).",
+          "driver": "Friday Kospi — see Market Dashboard.",
           "driverSources": [
             {
               "label": "Yahoo (^KS11)",
@@ -528,16 +508,8 @@
         },
         {
           "name": "Greater China equities",
-          "driver": "Thursday Hang Seng 25,396.51 (−0.17%); Shanghai 3,926.96 (−0.50%). 见闻: HK Tencent −4%+; Lenovo +20%. Friday live HSI 25,200.74 / Shanghai 3,911.13 (Yahoo inject).",
+          "driver": "见闻 Thursday: Hang Seng −0.17%; Shanghai −0.50%; HK Tencent −4%+; Lenovo +20%. Friday HSI/Shanghai — see Market Dashboard.",
           "driverSources": [
-            {
-              "label": "Yahoo (^HSI)",
-              "href": "https://finance.yahoo.com/quote/%5EHSI/"
-            },
-            {
-              "label": "Yahoo (000001.SS)",
-              "href": "https://finance.yahoo.com/quote/000001.SS/"
-            },
             {
               "label": "华尔街见闻",
               "href": "https://wallstreetcn.com/articles/3779335"
@@ -796,7 +768,7 @@
   "watchItems": [],
   "sources": "BLS July PPI + CNBC consensus/close; AP claims; U.S. Treasury Aug 13 curve; Yahoo equities/FX/Brent; 第一财经 overnight OMO; 财新 Q2 MPR; 华尔街见闻 Tencent/Lenovo; JD IR; Tencent PR; Japan Times CGPI; Cointelegraph + CoinGecko BTC; BLS/Fed calendars; 中金点睛 CLAIM (Aug 11 HK rebound note). No Bloomberg 财经早茶 inbox this run.",
   "singleSource": "Bloomberg 财经早茶 / 今日图表 / 市场一览 missing (no IMAP in this VM; gh workflow_dispatch 403). BlockBeats in-window flash not second-sourced — crypto uses Cointelegraph+CoinGecko. PBOC overnight allotment size not confirmed on pbc.gov.cn (do not treat desk 3490亿元 flashes as FACT). July credit still unpublished; Caixin Aug 7 survey is a window note, not a print. CICC is CLAIM paraphrase (WeChat often challenge-page in CI). CNBC close URL path is /2026/08/12/ but body is the Aug 13 session. Dashboard re-injected 2026-08-14T03:13:46.749Z.",
-  "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Friday Asia equities in the prose may be live/intraday until dashboard inject. Claims estimate uses AP 205,000 (CNBC cited 204,000). No chart-of-day PNG without inbox.",
+  "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Friday Asia index levels live only in Market Dashboard (Yahoo quote HTML is not a print). Claims estimate uses AP 205,000 (CNBC cited 204,000). No chart-of-day PNG without inbox.",
   "suggestions": "Into China: overnight OMO quantity vs the tax window, not a rate-cut. Into HK: Tencent FCF/capex conversion vs JD profit inflect. Into US: import prices Aug 18 and FOMC minutes Aug 19 vs the PPI pause bid. Into FX: 160 needs confirmed ops.",
   "marketDashboard": {
     "asOf": "2026-08-14T03:13:46.749Z",
