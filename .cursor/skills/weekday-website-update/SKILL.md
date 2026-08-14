@@ -5,9 +5,13 @@ description: Weekday 09:00 Asia/Shanghai website briefing. Same quality as a man
 
 # Weekday website update
 
-One cloud-agent run. Do **not** call `scripts/generate-daily-briefing.mjs` or spawn extra agents. If this run was rate-limited because another agent is RUNNING: publish in that session; do not Retry.
+One cloud-agent run. Do **not** call `scripts/generate-daily-briefing.mjs` or spawn extra agents.
 
 If Asia/Shanghai is Sat/Sun: stop.
+
+**Preflight (before gather):** `git fetch origin main`. If `web/content/briefings/$TODAY.md` is already on `origin/main`, stop. Concurrent cap is 1 — if another agent is already RUNNING, that session publishes; do not Retry. After merge, stop (do not leave this run open into the next weekday 09:00 Beijing).
+
+Yahoo `finance.yahoo.com/quote/` HTML is not a close print. Inject levels belong only in `marketDashboard`. Do not copy them into sourced summary/drivers.
 
 Quality bar = a manual morning publish (e.g. `web/content/briefings/2026-08-13.md`). Clone **keys** from the latest briefing; rewrite **content**. Ponytail applies to code diffs only — do **not** skip gather, CICC, or China desks.
 
