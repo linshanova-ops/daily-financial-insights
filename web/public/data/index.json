@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-13T09:05:24.690Z",
-  "latest": "2026-08-13",
+  "generatedAt": "2026-08-14T03:36:02.376Z",
+  "latest": "2026-08-14",
   "briefings": [
+    {
+      "date": "2026-08-14",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Soft July PPI (miss vs 0.2% m/m estimate) lifts S&P to a record close while PBOC starts mid-month overnight OMO plumbing, HK still prices Tencent’s capex/FCF hole, and USD/JPY stays glued near 160.",
+      "coverageWindow": "August 13–14, 2026"
+    },
     {
       "date": "2026-08-13",
       "title": "Daily Financial Briefing",
