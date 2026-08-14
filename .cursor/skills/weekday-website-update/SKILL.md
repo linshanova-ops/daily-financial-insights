@@ -5,7 +5,7 @@ description: Weekday 09:00 Asia/Shanghai website briefing. Same quality as a man
 
 # Weekday website update
 
-One cloud-agent run. Do **not** call `scripts/generate-daily-briefing.mjs` or spawn extra agents.
+One cloud-agent run. Do **not** call `scripts/generate-daily-briefing.mjs` or spawn extra agents. If this run was rate-limited because another agent is RUNNING: publish in that session; do not Retry.
 
 If Asia/Shanghai is Sat/Sun: stop.
 

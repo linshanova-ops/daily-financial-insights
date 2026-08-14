@@ -10,6 +10,8 @@ Cursor has no create-automation API and no repo YAML sync. Save this in the dash
 | Tools | Pull request creation on |
 | Model | same as this briefing agent, or Auto |
 
+**Concurrent cap:** if another cloud agent is already RUNNING, cron dies in &lt;1 min (`rate-limited due to too many concurrent runs`). Archive/end other agents before 09:00 Beijing. Do not Retry while that session is open — publish in the running agent instead.
+
 **Prompt (paste into the existing automation — replace the old short one):**
 
 ```
