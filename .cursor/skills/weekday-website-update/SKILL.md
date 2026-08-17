@@ -27,8 +27,8 @@ Read and execute these skills; do not jump to YAML:
 ## Inputs
 
 1. Beijing date `YYYY-MM-DD` = today `Asia/Shanghai`.
-2. Inbox: `web/content/inbox/` (Bloomberg 财经早茶 + Glassnode if present). If IMAP secrets exist, fetch. Else `gh workflow run "Generate daily briefing"` (`cursorAutoGenerate` stays false — inbox/calendar/Fund only), wait, `git pull origin main`.
-3. Inbox map: 国际要闻 → `globalChanged` (Chinese, one bullet each); 大中华 → `chinaChanged`; 市场一览 → `marketOverview.items` (never invent levels); 日程/央行动态 → `eventCalendar`; 今日图表 → `figures` id `bloomberg-chart-of-day` (open the PNG; analysis must name the metric/levels).
+2. Inbox: `git pull origin main` then `web/content/inbox/`. GH `inbox-sync.yml` fetches IMAP at 08:00 Beijing onto `main` (this VM has no IMAP secrets; `gh workflow run` is 403 — do not use it). If IMAP env exists, also run `node scripts/fetch-inbox-sources.mjs`. Merge **latest** `bloomberg-markets-daily-china/*.md` on or before `$TODAY` (Monday: also `bloomberg-weekend-tea`). Missing today's file ≠ no Bloomberg.
+3. Inbox map: 国际要闻 → `globalChanged` (Chinese, one bullet each); 大中华 → `chinaChanged`; 市场一览 → `marketOverview.items` (desk copy, never invent from Yahoo); 日程/央行动态 → `eventCalendar`; 今日图表 → `figures` id `bloomberg-chart-of-day` (open the PNG; analysis must name the metric/levels). Do not ship a public-tape 市场一览 in place of the desk.
 4. China minimum: in-window cite from **华尔街见闻**, **Caixin or 第一财经**, and **BlockBeats** — or name the miss in `singleSource`.
 5. **CICC (required attempt):** theme-then-search via `cicc-research-article-search` (`APP_ID`/`APP_SECRET`; `python3 .cursor/skills/cicc-research-article-search/scripts/get_data.py "<theme>" --no-save`). Paraphrase only. Label **CLAIM**, never FACT. Put on matching `themeCards` / `globalImplies` — not as a What-changed print. Public cite = WeChat if that is what the skill returns. No VIP reprint. No invented notes. If env/search fails: say so in `singleSource`.
 

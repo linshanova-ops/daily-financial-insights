@@ -41,9 +41,8 @@ Put the narrative in `themeCards`; keep `signals: []` on new briefings.
 briefing date (this week + next). Helper:
 `eventWindowForBriefingDate` — Aug 10 → Aug 21, not Aug 14.
 
-Optional: Actions → **Generate daily briefing** → Run workflow (inbox/Fund
-helpers). Cursor `Agent.create` stays off unless `force_cursor` /
-`BRIEFING_FORCE_CURSOR=1`.
+Optional: Actions → **Sync IMAP inbox** → Run workflow (Bloomberg/Glassnode onto git). Cursor `Agent.create` stays off unless `force_cursor` /
+`BRIEFING_FORCE_CURSOR=1`. The weekday 09:00 agent `git pull`s those captures — it cannot dispatch workflows.
 
 ## Re-enable twice-daily auto later
 

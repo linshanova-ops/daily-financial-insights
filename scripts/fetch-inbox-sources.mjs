@@ -33,6 +33,7 @@ import {
   pickBloombergChartAttachment,
 } from "./lib/inbox-bloomberg-chart-image.mjs";
 import {
+  dailyCaptureDateKey,
   extractBloombergDateKey,
   formatInboxMarkdown,
   inboxRelPath,
@@ -341,31 +342,23 @@ async function main() {
       }
 
       const when = parsed.date || new Date();
+      let captureDate = briefingDate;
       if (source.cadence === "daily") {
         const subjectDay =
           source.id === "bloomberg-markets-daily-china"
             ? extractBloombergDateKey(subject)
             : null;
-        const emailDay = when.toISOString().slice(0, 10);
         const bjDay = beijingDateString(when);
-        const matchesBriefing =
-          subjectDay === briefingDate ||
-          (!subjectDay &&
-            (emailDay === briefingDate || bjDay === briefingDate));
-        if (!matchesBriefing) {
-          console.log(
-            `[inbox] skip date-mismatch: ${subject} (subjectDay=${subjectDay || "n/a"} emailDay=${emailDay} bjDay=${bjDay} want=${briefingDate})`,
-          );
-          skipped.push({
-            reason: "date-mismatch",
-            subject,
-            from,
-            subjectDay,
-            emailDay,
-            bjDay,
-            briefingDate,
-          });
+        captureDate = dailyCaptureDateKey(subjectDay, bjDay);
+        if (!captureDate) {
+          console.log(`[inbox] skip no-date: ${subject}`);
+          skipped.push({ reason: "no-date", subject, from });
           continue;
+        }
+        if (captureDate !== briefingDate) {
+          console.log(
+            `[inbox] save other-day ${captureDate}: ${subject} (want=${briefingDate})`,
+          );
         }
       }
 
@@ -380,16 +373,14 @@ async function main() {
 
       const rel = inboxRelPath(
         source,
-        source.cadence === "daily"
-          ? new Date(`${briefingDate}T12:00:00.000Z`)
-          : when,
+        source.cadence === "daily" ? captureDate : when,
       );
       const abs = path.join(root, rel);
 
       if (source.cadence === "daily" && fs.existsSync(abs)) {
         const existingMd = fs.readFileSync(abs, "utf8");
         const chartRelCandidates = ["jpg", "png", "webp", "gif"].map((ext) =>
-          path.join(root, bloombergChartRelPath(briefingDate, ext)),
+          path.join(root, bloombergChartRelPath(captureDate, ext)),
         );
         const hasChartFile = chartRelCandidates.some((p) => fs.existsSync(p));
         if (
@@ -453,7 +444,7 @@ async function main() {
       let chartAlt = "";
       let chartRel = null;
       if (source.id === "bloomberg-markets-daily-china") {
-        const chart = await saveBloombergChartImage(parsed, briefingDate);
+        const chart = await saveBloombergChartImage(parsed, captureDate);
         if (chart) {
           chartImage = chart.publicPath;
           chartAlt = chart.alt || "";

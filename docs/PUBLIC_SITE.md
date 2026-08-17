@@ -76,7 +76,7 @@ git add web/content web/public/data && git commit -m "content: YYYY-MM-DD briefi
 
 ### Inbox newsletters (Gmail IMAP)
 
-Before each generate run, Actions fetches subscribed mail into `web/content/inbox/` and the agent merges it into existing modules (not a new page). Chinese Bloomberg text stays Chinese.
+Before each generate run, **inbox-sync** (08:00 Beijing weekdays) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. The 09:00 Cursor agent merges whatever is already on `main`. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env.
 
 Repo → Settings → Secrets and variables → Actions — set:
 

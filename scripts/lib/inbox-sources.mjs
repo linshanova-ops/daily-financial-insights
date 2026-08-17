@@ -143,11 +143,21 @@ export function isoWeekKey(date = new Date()) {
   return `${d.getUTCFullYear()}-W${String(weekNo).padStart(2, "0")}`;
 }
 
+/** Beijing calendar day for a daily capture. Subject 年月日 wins over IMAP Date. */
+export function dailyCaptureDateKey(subjectDay, bjDay) {
+  return subjectDay || bjDay || null;
+}
+
 export function inboxRelPath(source, when = new Date()) {
   if (source.cadence === "weekly") {
-    return `web/content/inbox/${source.id}/${isoWeekKey(when)}.md`;
+    const d =
+      when instanceof Date ? when : new Date(`${when}T12:00:00.000Z`);
+    return `web/content/inbox/${source.id}/${isoWeekKey(d)}.md`;
   }
-  const day = when.toISOString().slice(0, 10);
+  const day =
+    typeof when === "string" && /^\d{4}-\d{2}-\d{2}$/.test(when)
+      ? when
+      : when.toISOString().slice(0, 10);
   return `web/content/inbox/${source.id}/${day}.md`;
 }
 

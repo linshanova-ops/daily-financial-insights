@@ -26,16 +26,32 @@ function readIfExists(rel) {
 }
 
 /**
- * @param {string} briefingDate YYYY-MM-DD (Beijing)
- * @returns {{ path: string, body: string, sourceId: string, label: string, keepLanguage: string, citeHref: string }[]}
+ * Newest YYYY-MM-DD.md on or before briefingDate, or null.
+ * @param {string} sourceId
+ * @param {string} briefingDate
  */
+export function latestDailyInboxRel(sourceId, briefingDate) {
+  const exact = `web/content/inbox/${sourceId}/${briefingDate}.md`;
+  if (fs.existsSync(path.join(root, exact))) return exact;
+  const dir = path.join(root, "web/content/inbox", sourceId);
+  if (!fs.existsSync(dir)) return null;
+  const days = fs
+    .readdirSync(dir)
+    .filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f))
+    .map((f) => f.slice(0, 10))
+    .filter((d) => d <= briefingDate)
+    .sort()
+    .reverse();
+  return days[0] ? `web/content/inbox/${sourceId}/${days[0]}.md` : null;
+}
+
 export function loadInboxForBriefing(briefingDate) {
   const out = [];
   for (const source of INBOX_SOURCES) {
     if (source.mondayOnly && !isBeijingPostWeekendOpen(briefingDate)) continue;
     let rel;
     if (source.cadence === "daily") {
-      rel = `web/content/inbox/${source.id}/${briefingDate}.md`;
+      rel = latestDailyInboxRel(source.id, briefingDate);
     } else {
       const week = isoWeekKey(new Date(`${briefingDate}T12:00:00.000Z`));
       rel = `web/content/inbox/${source.id}/${week}.md`;
@@ -51,7 +67,7 @@ export function loadInboxForBriefing(briefingDate) {
         }
       }
     }
-    const hit = readIfExists(rel);
+    const hit = rel ? readIfExists(rel) : null;
     if (hit) {
       out.push({
         ...hit,
@@ -140,7 +156,7 @@ export function formatInboxPromptBlock(items, fetchStatus = null) {
   if (fetchStatus) {
     if (fetchStatus.ok === false) {
       statusLines.push(
-        `INBOX FETCH STATUS: FAILED (${fetchStatus.reason || "unknown"}). Add a short caveats/singleSource note that inbox newsletters were unavailable this run. Do not invent newsletter content.`,
+        `INBOX FETCH STATUS: FAILED (${fetchStatus.reason || "unknown"}). Merge any captures listed below — do not invent newsletter content. If none listed, add a short caveats/singleSource note.`,
       );
     } else {
       const n = Array.isArray(fetchStatus.saved) ? fetchStatus.saved.length : 0;

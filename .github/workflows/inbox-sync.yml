@@ -1,0 +1,59 @@
+name: Sync IMAP inbox
+
+# Lands Bloomberg/Glassnode on git before the weekday 09:00 Cursor agent.
+# Cloud agents have no IMAP secrets and cannot `gh workflow run` (403).
+on:
+  schedule:
+    - cron: "0 0 * * 1-5" # 08:00 Beijing Mon–Fri
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/inbox-sync.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: inbox-sync
+  cancel-in-progress: false
+
+jobs:
+  inbox:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Install IMAP deps
+        run: npm install --prefix scripts
+
+      - name: Fetch inbox newsletters
+        env:
+          INBOX_IMAP_HOST: ${{ secrets.INBOX_IMAP_HOST }}
+          INBOX_IMAP_USER: ${{ secrets.INBOX_IMAP_USER }}
+          INBOX_IMAP_PASSWORD: ${{ secrets.INBOX_IMAP_PASSWORD }}
+          INBOX_IMAP_PORT: ${{ secrets.INBOX_IMAP_PORT }}
+        run: |
+          export BRIEFING_DATE
+          BRIEFING_DATE=$(TZ=Asia/Shanghai date +%F)
+          echo "BRIEFING_DATE=$BRIEFING_DATE"
+          node scripts/fetch-inbox-sources.mjs
+
+      - name: Commit inbox captures
+        run: |
+          if [ -n "$(git status --porcelain -- web/content/inbox web/public/inbox-charts)" ]; then
+            git config user.name "syravocado"
+            git config user.email "linshanova-ops@users.noreply.github.com"
+            git add web/content/inbox web/public/inbox-charts
+            git commit -m "chore: sync IMAP inbox captures"
+            git push origin HEAD:${{ github.ref_name }}
+          else
+            echo "No inbox changes to commit."
+          fi

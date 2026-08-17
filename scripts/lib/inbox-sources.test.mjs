@@ -7,6 +7,7 @@ import {
   parseBloombergSections,
 } from "./inbox-bloomberg-sections.mjs";
 import {
+  dailyCaptureDateKey,
   extractBloombergDateKey,
   formatInboxMarkdown,
   inboxRelPath,
@@ -17,7 +18,7 @@ import {
   pickSource,
   summarizeInboxBody,
 } from "./inbox-sources.mjs";
-import { formatInboxPromptBlock } from "./load-inbox-context.mjs";
+import { formatInboxPromptBlock, latestDailyInboxRel } from "./load-inbox-context.mjs";
 
 describe("pickSource", () => {
   it("matches Bloomberg Markets Daily China", () => {
@@ -134,6 +135,14 @@ describe("inbox paths", () => {
     );
   });
 
+  it("daily path accepts YYYY-MM-DD string (Beijing date, not UTC Date)", () => {
+    const src = pickSource("bloomberg@bloomberg.net", "Markets Daily China");
+    assert.equal(
+      inboxRelPath(src, "2026-08-14"),
+      "web/content/inbox/bloomberg-markets-daily-china/2026-08-14.md",
+    );
+  });
+
   it("weekly path uses ISO week", () => {
     const src = pickSource("team@glassnode.com", "Glassnode Insights");
     const key = isoWeekKey(new Date("2026-07-21T12:00:00.000Z"));
@@ -157,6 +166,30 @@ describe("formatInboxMarkdown", () => {
     assert.match(md, /keepLanguage: zh/);
     assert.match(md, /citeHref: "https:\/\/www\.bloomberg\.com\/asia"/);
     assert.match(md, /全球市况/);
+  });
+});
+
+describe("dailyCaptureDateKey", () => {
+  it("prefers subject 年月日 over IMAP Beijing day", () => {
+    assert.equal(dailyCaptureDateKey("2026-08-14", "2026-08-13"), "2026-08-14");
+    assert.equal(dailyCaptureDateKey(null, "2026-08-14"), "2026-08-14");
+    assert.equal(dailyCaptureDateKey(null, null), null);
+  });
+});
+
+describe("latestDailyInboxRel", () => {
+  it("returns null when nothing is on or before the date", () => {
+    assert.equal(
+      latestDailyInboxRel("bloomberg-markets-daily-china", "2020-01-01"),
+      null,
+    );
+  });
+
+  it("uses exact date when that capture exists", () => {
+    assert.equal(
+      latestDailyInboxRel("bloomberg-markets-daily-china", "2026-08-13"),
+      "web/content/inbox/bloomberg-markets-daily-china/2026-08-13.md",
+    );
   });
 });
 
@@ -286,7 +319,7 @@ describe("formatInboxPromptBlock", () => {
       reason: "auth failed",
     });
     assert.match(block, /FAILED/);
-    assert.match(block, /caveats/);
+    assert.match(block, /Merge any captures listed below/);
     assert.match(block, /none captured/);
   });
 

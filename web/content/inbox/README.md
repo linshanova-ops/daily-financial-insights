@@ -1,7 +1,8 @@
 # Newsletter inbox captures
 
-Automated Gmail IMAP fetch (GitHub Actions secrets) saves subscribed mail here
-before each generate run.
+Automated Gmail IMAP fetch saves subscribed mail here before each generate
+run. GitHub Actions `inbox-sync.yml` runs at 08:00 Beijing weekdays (IMAP
+secrets live in Actions, not in the Cursor 09:00 VM).
 
 | Folder | Source | Cadence |
 |--------|--------|---------|
