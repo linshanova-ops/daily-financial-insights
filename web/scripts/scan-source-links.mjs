@@ -184,6 +184,7 @@ const FLAKY_OFFICIAL_HOSTS = [
   /news\.cnyes\.com/i,
   /ismworld\.org/i,
   /mp\.weixin\.qq\.com/i, // CICC public paraphrase links (WeChat challenge page in CI)
+  /pbc\.gov\.cn/i, // July stats HTML often fetch-fails from Actions IPs
 ];
 
 function flakyOfficialHost(href) {
@@ -1033,6 +1034,13 @@ function selfCheck() {
     throw new Error(
       "[scan-links] self-check failed: aligned label/path date false positive",
     );
+  }
+  if (
+    !flakyOfficialHost(
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+    )
+  ) {
+    throw new Error("[scan-links] self-check failed: PBOC not flaky-trusted");
   }
 }
 
