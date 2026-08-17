@@ -1,17 +1,40 @@
 {
-  "at": "2026-08-13T08:51:21.139Z",
-  "briefingDate": "2026-08-13",
+  "at": "2026-08-17T05:52:51.996Z",
+  "briefingDate": "2026-08-17",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-13.md",
-      "subject": "彭博财经早茶：腾讯资本支出激增；美国通胀温和",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-17.md",
+      "subject": "彭博财经早茶：华府拟加大对伊经济孤立；特朗普下令缩减美韩军演",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5028,
+      "chars": 5384,
       "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-13.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-13.png"
+      "chartImage": "/inbox-charts/bloomberg-2026-08-17.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-17.png"
+    },
+    {
+      "sourceId": "bloomberg-weekend-tea",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W33.md",
+      "subject": "彭博周末茶歇：美国通胀降温",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 4974,
+      "mailbox": "[Gmail]/All Mail"
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-14.md",
+      "subject": "彭博财经早茶：美国征无人机关税；京东营收下滑",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5067,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-14.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-14.png"
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-13.md",
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -19,25 +42,56 @@
       "skipped": true
     },
     {
-      "sourceId": "bloomberg-weekend-tea",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W32.md",
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-12.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-07.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-06.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-05.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-04.md",
       "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：腾讯资本支出激增；美国通胀温和",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-13.md"
+    },
     {
       "reason": "weekly-exists",
       "subject": "Trigger Happy",
       "path": "web/content/inbox/glassnode-insights/2026-W33.md"
     },
     {
-      "reason": "date-mismatch",
+      "reason": "exists-keep",
       "subject": "彭博财经早茶：霍尔木兹通航前景存疑；腾讯财报发布在即",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-08-11",
-      "bjDay": "2026-08-12",
-      "briefingDate": "2026-08-13"
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-12.md"
     },
     {
       "reason": "weekly-duplicate",
@@ -45,36 +99,24 @@
       "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
-      "reason": "date-mismatch",
+      "reason": "exists-keep",
       "subject": "彭博财经早茶：日元或再迎干预窗口；英伟达联手华尔街筹划巨额AI投资",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-08-10",
-      "bjDay": "2026-08-11",
-      "briefingDate": "2026-08-13"
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md"
     },
     {
-      "reason": "date-mismatch",
+      "reason": "exists-keep",
       "subject": "彭博财经早茶：伊朗拒绝直接与华府谈判；美疲软就业削弱加息预期",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-08-09",
-      "bjDay": "2026-08-10",
-      "briefingDate": "2026-08-13"
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "彭博周末茶歇：日元保卫战",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W32.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
     },
     {
-      "reason": "date-mismatch",
+      "reason": "exists-keep",
       "subject": "彭博财经早茶：霍尔木兹海峡重开添变数；DeepSeek重启融资",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-08-06",
-      "bjDay": "2026-08-07",
-      "briefingDate": "2026-08-13"
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-07.md"
     },
     {
       "reason": "welcome",
@@ -82,13 +124,9 @@
       "from": "\"In Context from J.P. Morgan\" <in.context.newsletter@jpmcib.jpmorgan.com>"
     },
     {
-      "reason": "date-mismatch",
+      "reason": "exists-keep",
       "subject": "彭博财经早茶：伊朗或开辟海峡临时航道；黑客攻击大型对冲基金",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-08-05",
-      "bjDay": "2026-08-06",
-      "briefingDate": "2026-08-13"
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-06.md"
     },
     {
       "reason": "weekly-duplicate",
@@ -96,45 +134,14 @@
       "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
-      "reason": "date-mismatch",
+      "reason": "exists-keep",
       "subject": "彭博财经早茶：霍尔木兹海峡重开渐现曙光；长鑫科技有望取得芯片突破",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-08-04",
-      "bjDay": "2026-08-05",
-      "briefingDate": "2026-08-13"
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-05.md"
     },
     {
-      "reason": "date-mismatch",
+      "reason": "exists-keep",
       "subject": "彭博财经早茶：特朗普对伊发出最后通牒；亚洲AI交易吸引资金大举回流",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-08-03",
-      "bjDay": "2026-08-04",
-      "briefingDate": "2026-08-13"
-    },
-    {
-      "reason": "date-mismatch",
-      "subject": "彭博财经早茶：特朗普暂缓打击伊朗；美日承诺更多联合干预日元",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-08-02",
-      "bjDay": "2026-08-03",
-      "briefingDate": "2026-08-13"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "彭博周末茶歇：AI投资热遇考验",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
-    },
-    {
-      "reason": "date-mismatch",
-      "subject": "彭博财经早茶：日本当局据悉干预日元；苹果展望逊预估",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "subjectDay": null,
-      "emailDay": "2026-07-30",
-      "bjDay": "2026-07-31",
-      "briefingDate": "2026-08-13"
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-04.md"
     }
   ]
 }
