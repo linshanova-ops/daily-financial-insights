@@ -1,35 +1,22 @@
 {
-  "at": "2026-08-17T05:52:51.996Z",
+  "at": "2026-08-17T06:33:53.055Z",
   "briefingDate": "2026-08-17",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-17.md",
-      "subject": "彭博财经早茶：华府拟加大对伊经济孤立；特朗普下令缩减美韩军演",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5384,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-17.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-17.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W33.md",
-      "subject": "彭博周末茶歇：美国通胀降温",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 4974,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-14.md",
-      "subject": "彭博财经早茶：美国征无人机关税；京东营收下滑",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5067,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-14.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-14.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +65,21 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：华府拟加大对伊经济孤立；特朗普下令缩减美韩军演",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-17.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：美国通胀降温",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W33.md"
+    },
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美国征无人机关税；京东营收下滑",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-14.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：腾讯资本支出激增；美国通胀温和",
