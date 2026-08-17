@@ -66,7 +66,9 @@ node scripts/fetch-market-closes.mjs --inject content/briefings/YYYY-MM-DD.md
 npm run verify-briefing
 ```
 
-Commit md + JSON together. PR `[skip netlify] content: publish YYYY-MM-DD daily briefing`. Merge only when Briefing accuracy gate is green.
+Commit md + JSON together. PR `[skip netlify] content: publish YYYY-MM-DD daily briefing` — mark **ready**, not draft.
+
+Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` or `git checkout main && git merge && git push origin main` if `gh` is 403). Push to `main` fires Pages; if `latest.json` on Pages is still yesterday, dispatch **Deploy syravocado to GitHub Pages**. Confirm live `…/data/latest.json` `date` is `$TODAY`, then stop.
 
 Self-check before PR: every table row above is non-empty; CICC attempted; China three desks or caveat; chart analysis describes the PNG; no invented tape.
 ---

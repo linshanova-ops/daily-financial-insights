@@ -32,7 +32,7 @@ Generation does **not** push straight to `main`. Flow:
 1. Cursor agent drafts on branch `briefing/YYYY-MM-DD` and opens a PR (`[skip netlify] content: publish …`)
 2. Orchestrator marks the PR **ready** immediately (Cursor opens drafts; waiting on draft CI is what used to stall publishes)
 3. GitHub Action **Briefing accuracy gate** runs `npm run verify-briefing` (sync-data + JSON sync check + scan-links)
-4. If green → orchestrator auto-merges → explicitly dispatches **Deploy syravocado to GitHub Pages** (GITHUB_TOKEN merges do not fire `push` workflows)
+4. If green → merge to `main` (weekday Cursor agent does this; generator orchestrator does it when `cursorAutoGenerate` is on) → Pages on push, or dispatch **Deploy syravocado to GitHub Pages** if `latest.json` is still yesterday (GITHUB_TOKEN merges do not fire `push` workflows)
 5. If red → agent rewrites (up to 3 attempts) → re-check → merge  
 6. If still failing → PR left open; **live site stays on the last good briefing**
 
