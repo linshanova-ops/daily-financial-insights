@@ -1,8 +1,18 @@
 {
-  "at": "2026-08-17T06:33:53.055Z",
-  "briefingDate": "2026-08-17",
+  "at": "2026-08-18T01:27:38.006Z",
+  "briefingDate": "2026-08-18",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-18.md",
+      "subject": "彭博财经早茶：外国抛售美债；美国拒绝延长对伊临时停火",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 4998,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-18.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-18.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-17.md",
@@ -56,11 +66,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-05.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-04.md",
       "skipped": true
     }
   ],
@@ -139,11 +144,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：霍尔木兹海峡重开渐现曙光；长鑫科技有望取得芯片突破",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-05.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：特朗普对伊发出最后通牒；亚洲AI交易吸引资金大举回流",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-04.md"
     }
   ]
 }
