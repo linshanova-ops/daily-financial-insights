@@ -51,8 +51,8 @@ export function AssetClasses({
           By asset class
         </h2>
         <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink-soft">
-          Class-level regime first; instruments underneath. FX holds USD / JPY /
-          CNY as rows — not peer cards beside equities or oil.
+          Judgment by book. Market closes holds the prints; this tab is the
+          read — what is driving each market and what would invalidate it.
         </p>
 
         <div className="mt-10 space-y-10">

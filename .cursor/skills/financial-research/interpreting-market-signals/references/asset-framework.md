@@ -19,7 +19,7 @@ Legacy flat `assetFramework[]` remains for older briefings only.
 | `commodities` | Commodities | Oil (Brent/WTI), Gold |
 | `crypto` | Crypto | BTC |
 
-Per class: one **regime** line; 1–3 **instruments** with driver (number + source), read, optional invalidator, optional `themeId` chip.
+Per class: one **regime** line (current beta); 1–3 **instruments** with driver (sourced print or labeled CLAIM), **read** (the valuable view), optional invalidator, optional `themeId` chip. This tab is the book-by-book judgment — not a second news wire and not a pointer at Market Dashboard.
 
 ## Why regimes, not fixed rules
 
@@ -46,8 +46,9 @@ assetClasses:
 ```
 
 Rules:
-- Every `driver` needs a number (or clear dated print) and a source.
+- Every `driver` needs a sourced print or labeled CLAIM/desk — never “see Market Dashboard” as the whole story. Levels live in `marketDashboard`.
 - `regime` names a mechanism, not a mood.
-- Quiet class: one line regime unchanged + latest sourced level — don’t pad.
+- `read` is the perspective: what the print means for that book, and the next falsifier.
+- Quiet class: one honest line — don’t pad, don’t hide behind the dashboard.
 - Prefer `themeId` chips over rewriting Themes.
 - Never present USD / JPY / CNY as peer top-level assets beside Oil or Equities.

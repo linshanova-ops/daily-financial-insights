@@ -45,8 +45,8 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Site | YAML |
 |------|------|
 | Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject) |
-| Skim | `summary` (sourced), `signal`, `watch`; skim titles must match `themeCards[].title` |
-| Themes | `themeCards` × 3–5: `id`, `title`, `grade`, `fact`, `factSources`, `mechanism`, `trigger`, `invalidator`, `horizon`, `status` |
+| Skim | `summary` (sourced), `signal`, `watch`; skim titles = `themeCards[].title` |
+| Themes | `themeCards` × 3–5 **cross-asset forces** (not a news digest). Title names the books it hits. Required: `assets[]`, `fact`, `factSources`, `mechanism` (how it transmits to those classes), `trigger`, `invalidator`, `horizon`, `status` |
 | 市场一览 | `marketOverview` from inbox 市场一览 |
 | Market closes | `marketDashboard` via inject only |
 | Chart | `figures` (chart-of-day required if PNG exists) |
@@ -54,7 +54,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Event calendar | `eventCalendar` windowStart=briefing date, windowEnd=Friday after the Friday-on-or-after (this week + next); ~8–20 dated rows; mainland China only on calendar; `watchItems: []` |
 | Global tab | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions` |
 | China tab | `chinaStance`, `chinaChanged`, `chinaImplies`, `chinaDivergences` |
-| Assets tab | `assetClasses` × 6 in order `us-equities` · `asia-equities` · `rates` · `fx` · `commodities` · `crypto` (asia = Golden Dragon/HK **and** JP/KR) |
+| Assets tab | `assetClasses` × 6 in order `us-equities` · `asia-equities` · `rates` · `fx` · `commodities` · `crypto` (asia = Golden Dragon/HK **and** JP/KR). This is the valuable book-by-book view — not a pointer at the dashboard. |
 | Sources tab | `sources`, `singleSource` |
 | (not rendered) | `signals: []` |
 
@@ -70,5 +70,9 @@ Commit md + JSON together. PR `[skip netlify] content: publish YYYY-MM-DD daily 
 
 Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` or `git checkout main && git merge && git push origin main` if `gh` is 403). Push to `main` fires Pages; if `latest.json` on Pages is still yesterday, dispatch **Deploy syravocado to GitHub Pages**. Confirm live `…/data/latest.json` `date` is `$TODAY`, then stop.
 
-Self-check before PR: every table row above is non-empty; CICC attempted; China three desks or caveat; chart analysis describes the PNG; no invented tape.
+**Themes:** pick the 3–5 forces that actually move asset markets today. Mechanism answers “so what for which book.” Do not title cards as headline events if the value is the market transmission.
+
+**Assets:** `regime` names the current beta. `driver` = sourced print or labeled CLAIM/desk — never “see Market Dashboard” as the whole story. `read` = the perspective (what it means, next falsifier). `invalidator` when the book is live. Quiet class: one honest line, don’t pad. `themeId` chips to Themes. Levels/live tape stay in `marketDashboard` (Yahoo quote HTML is not a close).
+
+Self-check before PR: every table row above is non-empty; CICC attempted; China three desks or caveat; chart analysis describes the PNG; no invented tape; no Assets row whose only content is “see Market Dashboard”.
 ---
