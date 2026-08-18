@@ -1,9 +1,8 @@
 # Manual briefing / Actions kill-switch
 
-GitHub **does not** spawn Cursor agents on idle pings (`cursorAutoGenerate: false`).
+GitHub **does not** spawn Cursor agents (`cursorAutoGenerate: false`).
 Weekday 09:00 publishes are a **Cursor Automation** — see
-`.cursor/automations/weekday-0900-beijing.md`. If that cron misses,
-`missed-briefing-catchup.yml` may `Agent.create` once `$TODAY.md` is still missing.
+`.cursor/automations/weekday-0900-beijing.md`.
 
 Controlled by `web/content/briefing-ops.json`:
 

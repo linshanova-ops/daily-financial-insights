@@ -68,7 +68,7 @@ Without `"force":true`, the gate still prevents duplicate Cursor runs after a sl
 
 When `web/content/briefing-ops.json` has `"cursorAutoGenerate": false`:
 
-1. Idle `refresh-briefing` / Generate-daily ticks **never** call Cursor `Agent.create`. Weekday miss catch-up (`missed-briefing-catchup.yml`) may still `Agent.create` when `briefings/$TODAY.md` is missing.
+1. Actions **never** calls Cursor `Agent.create`.
 2. Idle `refresh-briefing` pings are **ignored** (no Fund/IMAP/Pages).
 3. **Disable cron-job.org** (or pause the job) so GitHub is not woken every
    5 minutes for a no-op. Re-enable only when turning auto generate back on.
