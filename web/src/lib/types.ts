@@ -9,6 +9,10 @@ export interface FactSource {
 export interface KeySource {
   label: string;
   href: string;
+  /** Asset-class ids this source actually moves. Omit on archives. */
+  books?: string[];
+  /** One line: the print or CLAIM, and which book it changes. */
+  influence?: string;
 }
 
 export interface Signal {

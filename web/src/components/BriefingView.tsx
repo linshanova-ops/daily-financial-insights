@@ -8,7 +8,6 @@ import { WatchList } from "./WatchList";
 import { EventCalendarView } from "./EventCalendarView";
 import { ThemeCards } from "./ThemeCards";
 import { SourcesCaveats } from "./SourcesCaveats";
-import { KeySources } from "./KeySources";
 import { KeyFigures } from "./KeyFigures";
 import { MarketDashboard } from "./MarketDashboard";
 import { MarketOverview } from "./MarketOverview";
@@ -85,7 +84,6 @@ export function BriefingView({
         <MarketDashboard data={marketDashboard} />
       ) : null}
       {figures.length ? <KeyFigures figures={figures} /> : null}
-      <KeySources sources={briefing.keySources} />
       {hasCalendar && eventCalendar?.events ? (
         <EventCalendarView
           calendar={eventCalendar}

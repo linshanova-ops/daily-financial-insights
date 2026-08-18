@@ -8,6 +8,15 @@ interface SourcesCaveatsProps {
   keySources?: KeySource[];
 }
 
+const BOOK_LABELS: Record<string, string> = {
+  "us-equities": "US equities",
+  "asia-equities": "Asia equities",
+  rates: "Rates",
+  fx: "FX",
+  commodities: "Commodities",
+  crypto: "Crypto",
+};
+
 function LinkedSourceText({ text }: { text: string }) {
   const parts = linkifySources(text);
   return (
@@ -31,11 +40,21 @@ function LinkedSourceText({ text }: { text: string }) {
   );
 }
 
+function bookLabel(id: string) {
+  return BOOK_LABELS[id] ?? id;
+}
+
+function isClassified(sources: KeySource[]) {
+  return sources.some((s) => s.books?.length || s.influence);
+}
+
 export function SourcesCaveats({
   sources,
   singleSource,
   keySources = [],
 }: SourcesCaveatsProps) {
+  const classified = isClassified(keySources);
+
   return (
     <section
       id="sources"
@@ -51,8 +70,10 @@ export function SourcesCaveats({
         Where the numbers came from
       </h2>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-        Clickable sources for this edition. Pipeline / publish mechanics live on
-        the{" "}
+        {classified
+          ? "Each source once. Tags are the books it actually moves — not a second copy of Themes or Assets."
+          : "Clickable sources for this edition."}{" "}
+        Pipeline / publish mechanics live on the{" "}
         <Link
           href="/pipeline/"
           className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4"
@@ -62,7 +83,35 @@ export function SourcesCaveats({
         page.
       </p>
 
-      {keySources.length ? (
+      {classified ? (
+        <ul className="mt-8 space-y-5">
+          {keySources.map((s) => (
+            <li
+              key={`${s.label}-${s.href}`}
+              className="border-t border-line/70 pt-4"
+            >
+              <a
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4 transition hover:text-forest-bright"
+              >
+                {s.label}
+              </a>
+              {s.books?.length ? (
+                <p className="mt-1 text-xs tracking-wide text-ink/45">
+                  {s.books.map(bookLabel).join(" · ")}
+                </p>
+              ) : null}
+              {s.influence ? (
+                <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-soft">
+                  {s.influence}
+                </p>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      ) : keySources.length ? (
         <ul className="mt-8 flex flex-wrap gap-2">
           {keySources.map((s) => (
             <li key={`${s.label}-${s.href}`}>
@@ -79,11 +128,16 @@ export function SourcesCaveats({
         </ul>
       ) : null}
 
-      <div className="mt-8 space-y-4 text-base leading-relaxed text-ink-soft">
-        <p>
-          <span className="font-semibold text-ink">Also consulted: </span>
+      {sources?.trim() ? (
+        <p className="mt-8 text-sm leading-relaxed text-ink-soft">
+          <span className="font-semibold text-ink">
+            {classified ? "Also on What-changed: " : "Also consulted: "}
+          </span>
           <LinkedSourceText text={sources} />
         </p>
+      ) : null}
+
+      <div className="mt-8 space-y-4 text-base leading-relaxed text-ink-soft">
         <p>
           <span className="font-semibold text-ink">Single-source risk: </span>
           {singleSource}

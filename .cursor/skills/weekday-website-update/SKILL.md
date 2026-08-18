@@ -50,12 +50,12 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | 市场一览 | `marketOverview` from inbox 市场一览 |
 | Market closes | `marketDashboard` via inject only |
 | Chart | `figures` (chart-of-day required if PNG exists) |
-| Key sources | `keySources` |
+| Key sources | `keySources` — **unique** prints/CLAIMs only. Each row: `label`, `href`, `books[]` (asset-class ids it actually moves), `influence` (one line: the print and which book it changes). One href once. No Yahoo quote HTML. No second chip for a desk already used as the primary. |
 | Event calendar | `eventCalendar` windowStart=briefing date, windowEnd=Friday after the Friday-on-or-after (this week + next); ~8–20 dated rows; mainland China only on calendar; `watchItems: []` |
 | Global tab | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions` |
 | China tab | `chinaStance`, `chinaChanged`, `chinaImplies`, `chinaDivergences` |
 | Assets tab | `assetClasses` × 6 in order `us-equities` · `asia-equities` · `rates` · `fx` · `commodities` · `crypto` (asia = Golden Dragon/HK **and** JP/KR). This is the valuable book-by-book view — not a pointer at the dashboard. |
-| Sources tab | `sources`, `singleSource` |
+| Sources tab | Renders `keySources` classified by book. `sources` = leftovers cited only on What-changed. `singleSource` = caveats. |
 | (not rendered) | `signals: []` |
 
 ## Publish
@@ -74,5 +74,9 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 **Assets:** `regime` names the current beta. `driver` = sourced print or labeled CLAIM/desk — never “see Market Dashboard” as the whole story. `read` = the perspective (what it means, next falsifier). `invalidator` when the book is live. Quiet class: one honest line, don’t pad. `themeId` chips to Themes. Levels/live tape stay in `marketDashboard` (Yahoo quote HTML is not a close).
 
-Self-check before PR: every table row above is non-empty; CICC attempted; China three desks or caveat; chart analysis describes the PNG; no invented tape; no Assets row whose only content is “see Market Dashboard”.
+**Sources:** curate, don’t dump. A source is valuable if it is the primary print, the estimate for a beat/miss, or a labeled CLAIM that actually moves a book. `factSources` / `driverSources` = that claim’s primary (plus estimate source if the sentence names a miss/beat). Do not clone `keySources` onto every card. Inbox hub once as a key source; per-bullet chips on What-changed are fine when that bullet is desk/CLAIM.
+
+Self-check before PR: every table row above is non-empty; CICC attempted; China three desks or caveat; chart analysis describes the PNG; no invented tape; no Assets row whose only content is “see Market Dashboard”; no duplicate `keySources` href; every key source has `books` + `influence`.
+
+Do not record a walkthrough video.
 ---

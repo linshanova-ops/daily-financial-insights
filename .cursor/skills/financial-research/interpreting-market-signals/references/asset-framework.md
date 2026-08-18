@@ -47,6 +47,7 @@ assetClasses:
 
 Rules:
 - Every `driver` needs a sourced print or labeled CLAIM/desk — never “see Market Dashboard” as the whole story. Levels live in `marketDashboard`.
+- `driverSources` = that instrument’s primary (plus estimate source if the sentence names a beat/miss). Do not clone the day’s `keySources` list onto every row.
 - `regime` names a mechanism, not a mood.
 - `read` is the perspective: what the print means for that book, and the next falsifier.
 - Quiet class: one honest line — don’t pad, don’t hide behind the dashboard.

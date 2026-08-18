@@ -27,7 +27,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 5. **Asset framework** — website `assetClasses` (six books: us-equities · asia-equities · rates · fx · commodities · crypto). Per class: regime (current beta), sourced driver or labeled CLAIM, read (what it means + falsifier). Never “see Market Dashboard” as the whole story; levels live in `marketDashboard`. Themes (`themeCards`) are the cross-asset forces those books map to. See `interpreting-market-signals/references/asset-framework.md`. Legacy `assetFramework` is archives only.
 6. **Signals** — for research pipeline / suggestions only. Website does **not** render `signals[]` (Themes carry the narrative). New briefings: `signals: []`.
 7. **What to watch (suggestions)** — the prioritized watch-list with triggers/invalidators
-8. **Sources & caveats** — key sources consulted; flag any single-source items relied on; standing disclaimer
+8. **Sources & caveats** — website `keySources`: each unique href once, with `books[]` (which asset class it moves) and `influence` (the print/CLAIM). Inline `factSources`/`driverSources` are the claim’s primary only — do not repeat the whole list. `sources` = leftovers; `singleSource` = caveats.
 
 ## Style Rules
 
