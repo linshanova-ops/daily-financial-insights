@@ -11,6 +11,8 @@ If Asia/Shanghai is Sat/Sun: stop.
 
 **Preflight (before gather):** `git fetch origin main`. If `web/content/briefings/$TODAY.md` is already on `origin/main`, stop. Concurrent cap is 1 — a leftover RUNNING desktop/chat agent **kills** the 09:00 cron (`rate-limited due to too many concurrent runs`). If this run is still open after 09:00 and `$TODAY.md` is missing, **this session publishes** (do not wait for a cron that already died). After live confirm, **stop/archive** so tomorrow’s 09:00 can fire.
 
+GH backup (`.github/workflows/missed-briefing-catchup.yml`): 09:20 / 09:50 / 10:30 Beijing. No-ops when `$TODAY.md` is on `main`. If a leftover is still occupying the cap at 10:30 with no briefing, catch-up **archives that leftover** and `Agent.create`s a weekday run. Publish or stop before 10:30.
+
 Yahoo `finance.yahoo.com/quote/` HTML is not a close print. Inject levels belong only in `marketDashboard`. Do not copy them into sourced summary/drivers.
 
 Quality bar = a manual morning publish (e.g. `web/content/briefings/2026-08-13.md`). Clone **keys** from the latest briefing; rewrite **content**. Ponytail applies to code diffs only — do **not** skip gather, CICC, or China desks.

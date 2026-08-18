@@ -1,5 +1,5 @@
 {
   "cursorAutoGenerate": false,
   "cursorAutoResumeOn": null,
-  "note": "Weekday 09:00 Beijing publishes via Cursor Automation (cursor.com/automations), not GitHub/cron-job.org/Netlify. Keep cursorAutoGenerate false so Actions never Agent.create. Idle refresh-briefing pings stay ignored."
+  "note": "Weekday 09:00 Beijing publishes via Cursor Automation (cursor.com/automations). Keep cursorAutoGenerate false so idle refresh-briefing pings never Agent.create. missed-briefing-catchup.yml may Agent.create only when $TODAY.md is missing."
 }

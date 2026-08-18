@@ -1,0 +1,54 @@
+name: Missed weekday briefing catch-up
+
+# Backup for Cursor 09:00 Asia/Shanghai. Cap = 1 RUNNING agent; leftover chats
+# kill the dashboard cron. This job no-ops when $TODAY.md is already on main.
+# Does not enable idle refresh-briefing Agent.create (cursorAutoGenerate stays false).
+on:
+  schedule:
+    # 09:20 / 09:50 / 10:30 Beijing Mon–Fri (CST, no DST)
+    - cron: "20,50 1 * * 1-5"
+    - cron: "30 2 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: missed-briefing-catchup
+  cancel-in-progress: false
+
+jobs:
+  catchup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Install Cursor SDK
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          if [ -z "$CURSOR_API_KEY" ]; then
+            echo "::notice::No CURSOR_API_KEY — catch-up cannot resume/create. Add the secret."
+            exit 0
+          fi
+          npm install @cursor/sdk@latest
+
+      - name: Nudge missed weekday briefing
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_URL: https://github.com/${{ github.repository }}
+        run: |
+          if [ -z "$CURSOR_API_KEY" ]; then
+            echo "skip — no API key"
+            exit 0
+          fi
+          node scripts/nudge-missed-briefing.mjs

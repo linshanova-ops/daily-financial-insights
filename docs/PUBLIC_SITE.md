@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Publish mode** | **Cursor Automation, weekdays 09:00 China time.** Dashboard: [cursor.com/automations](https://cursor.com/automations) — spec in `.cursor/automations/weekday-0900-beijing.md`. GitHub `cursorAutoGenerate` stays **false** (no Actions `Agent.create`, no cron-job.org, no Netlify). |
+| **Publish mode** | **Cursor Automation, weekdays 09:00 China time.** Dashboard: [cursor.com/automations](https://cursor.com/automations) — spec in `.cursor/automations/weekday-0900-beijing.md`. GitHub `cursorAutoGenerate` stays **false** (idle `refresh-briefing` pings never `Agent.create`). **Catch-up:** Actions `missed-briefing-catchup.yml` at 09:20 / 09:50 / 10:30 Beijing if `briefings/$TODAY.md` is missing — archives a leftover occupying the concurrent cap, then starts one weekday agent. |
 | **Manual workflow** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge to main, Pages deploys on push. Manual/dispatch also available. No schedule in manual mode. |
@@ -76,7 +76,7 @@ git add web/content web/public/data && git commit -m "content: YYYY-MM-DD briefi
 
 ### Inbox newsletters (Gmail IMAP)
 
-Before each generate run, **inbox-sync** (06:00 Beijing weekdays) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. The 09:00 Cursor agent merges whatever is already on `main`. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. A leftover RUNNING desktop/chat agent blocks the 09:00 cron — archive after live confirm.
+Before each generate run, **inbox-sync** (06:00 Beijing weekdays) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. The 09:00 Cursor agent merges whatever is already on `main`. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. A leftover RUNNING desktop/chat agent blocks the 09:00 cron — archive after live confirm. If you don’t, GH catch-up archives that leftover at 10:30 Beijing and publishes.
 
 Repo → Settings → Secrets and variables → Actions — set:
 
