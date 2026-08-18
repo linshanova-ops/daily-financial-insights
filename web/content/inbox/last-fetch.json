@@ -1,17 +1,12 @@
 {
-  "at": "2026-08-18T01:27:38.006Z",
+  "at": "2026-08-18T08:03:39.719Z",
   "briefingDate": "2026-08-18",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-18.md",
-      "subject": "彭博财经早茶：外国抛售美债；美国拒绝延长对伊临时停火",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 4998,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-18.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-18.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -70,6 +65,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：外国抛售美债；美国拒绝延长对伊临时停火",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-18.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：华府拟加大对伊经济孤立；特朗普下令缩减美韩军演",
