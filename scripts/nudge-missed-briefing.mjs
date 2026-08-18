@@ -6,7 +6,7 @@ import {
   beijingDateString,
   isBeijingWeekendDate,
 } from "./lib/briefing-slot-gate.mjs";
-import { catchupAction } from "./lib/pick-catchup-action.mjs";
+import { agentId, catchupAction } from "./lib/pick-catchup-action.mjs";
 
 const repoUrl =
   process.env.REPO_URL ??
@@ -48,7 +48,7 @@ async function main() {
   const { Agent } = await import("@cursor/sdk");
   const listed = await Agent.list({ runtime: "cloud", apiKey, limit: 50 });
   const decision = catchupAction(listed.items || [], slotStartMs);
-  const id = decision.agent?.agentId || decision.agent?.id || "";
+  const id = agentId(decision.agent);
   console.log(`[catchup] action=${decision.action} agent=${id || "-"} beijing=${today}`);
 
   if (decision.action === "skip") return;
