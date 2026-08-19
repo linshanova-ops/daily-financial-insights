@@ -4,9 +4,10 @@ name: Sync IMAP inbox
 # Cloud agents have no IMAP secrets and cannot `gh workflow run` (403).
 on:
   schedule:
-    # 06:00 Beijing Mon–Fri. GitHub cron slipped to 09:27 on 2026-08-18
-    # (scheduled 08:00); buffer so a delay still lands before 09:00 Cursor.
-    - cron: "0 22 * * 0-4"
+    # 07:20 Beijing Mon–Fri. 财经早茶 lands ~07:06 Beijing; 06:00 always missed
+    # $TODAY and the site reused yesterday’s PNG as 今日图表. Keep this after
+    # arrival and before 09:00 (GH cron can slip ~1h).
+    - cron: "20 23 * * 0-4"
   workflow_dispatch:
   push:
     paths:
