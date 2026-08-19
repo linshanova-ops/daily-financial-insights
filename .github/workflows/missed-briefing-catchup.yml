@@ -1,6 +1,6 @@
 name: Missed weekday briefing catch-up
 
-# If 09:00 Cursor Automation missed: archive leftover holding the cap, start one weekday agent.
+# If 09:00 missed: send weekday prompt to leftover holding the cap, or create if cap is free.
 # No-op when $TODAY.md is already on main. Idle refresh-briefing still never Agent.create.
 on:
   schedule:

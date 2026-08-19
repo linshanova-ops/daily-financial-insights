@@ -76,7 +76,7 @@ git add web/content web/public/data && git commit -m "content: YYYY-MM-DD briefi
 
 ### Inbox newsletters (Gmail IMAP)
 
-Before each generate run, **inbox-sync** (06:00 Beijing weekdays) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. The 09:00 Cursor agent merges whatever is already on `main`. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. A leftover RUNNING desktop/chat agent blocks the 09:00 cron — archive after live confirm.
+Before each generate run, **inbox-sync** (06:00 Beijing weekdays) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. The 09:00 Cursor agent merges whatever is already on `main`. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. A leftover RUNNING desktop/chat agent blocks the 09:00 cron — catch-up **sends** the weekday prompt to that leftover instead of creating a second agent.
 
 Repo → Settings → Secrets and variables → Actions — set:
 

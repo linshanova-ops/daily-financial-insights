@@ -10,7 +10,7 @@ Cursor has no create-automation API and no repo YAML sync. Save this in the dash
 | Tools | Pull request creation **and merge / push to main** on |
 | Model | same as this briefing agent, or Auto |
 
-**Concurrent cap:** Cursor allows one RUNNING cloud agent. Cron dies in &lt;1 min (`rate-limited due to too many concurrent runs`) if a mobile/desktop chat is still RUNNING. **2026-08-18:** leftover Monday desktop agent blocked Tuesday 09:00 — inbox-sync ran, site stayed on Aug 17. Archive/end other agents **before** 09:00 Beijing. If a chat is still open after 09:00 and `$TODAY.md` is missing, that session publishes. After live confirm, **stop**. Do not add a second Cursor catch-up automation (same cap). GitHub `missed-briefing-catchup.yml` at 09:30 Beijing archives a leftover if `$TODAY.md` is still missing.
+**Concurrent cap:** Cursor allows one RUNNING cloud agent. Cron dies in &lt;1 min (`rate-limited due to too many concurrent runs`) if a mobile/desktop chat is still RUNNING. **2026-08-18:** leftover Monday desktop agent blocked Tuesday 09:00 — inbox-sync ran, site stayed on Aug 17. Archive/end other agents **before** 09:00 Beijing. If a chat is still open after 09:00 and `$TODAY.md` is missing, that session publishes. After live confirm, **stop**. Do not add a second Cursor catch-up automation (same cap). GitHub `missed-briefing-catchup.yml` at 09:30 Beijing **sends** the weekday prompt to the leftover occupying the cap (does not `Agent.create` a second run).
 
 **Prompt (paste into the existing automation — replace the old short one):**
 
