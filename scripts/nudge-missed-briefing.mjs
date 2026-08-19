@@ -1,7 +1,7 @@
 /**
  * If $TODAY.md is missing: send the weekday prompt to the leftover holding
- * the cap, or create if the cap is free. Called from inbox-sync.yml at 09:00
- * Beijing and missed-briefing-catchup.yml at 09:30.
+ * the cap, or create if the cap is free. 09:00 inbox-sync sets
+ * CATCHUP_CREATE=0 (dashboard automation is the clock). 09:30 catch-up may create.
  */
 import { spawnSync } from "node:child_process";
 import {
@@ -89,6 +89,11 @@ async function main() {
 
   if (decision.action === "send") {
     await sendTo(id, "sent");
+    return;
+  }
+
+  if (process.env.CATCHUP_CREATE === "0") {
+    console.log("[catchup] create skipped (Cursor 09:00 automation is the clock)");
     return;
   }
 

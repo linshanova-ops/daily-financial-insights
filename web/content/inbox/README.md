@@ -1,8 +1,9 @@
 # Newsletter inbox captures
 
 Automated Gmail IMAP fetch saves subscribed mail here at weekday 09:00
-Beijing, then starts the briefing agent. GitHub Actions `inbox-sync.yml`
-(IMAP secrets live in Actions, not in the Cursor VM). 财经早茶 arrives ~07:06.
+Beijing, the same minute as the Cursor 09:00 automation. GitHub Actions
+`inbox-sync.yml` (IMAP secrets live in Actions, not in the Cursor VM).
+财经早茶 arrives ~07:06 — do not fetch at 06:00.
 
 | Folder | Source | Cadence |
 |--------|--------|---------|

@@ -1,6 +1,6 @@
 name: Missed weekday briefing catch-up
 
-# Slip backup if 09:00 inbox-sync (IMAP then nudge) missed: send weekday prompt
+# Slip backup if the 09:00 Cursor automation missed: send weekday prompt
 # to leftover holding the cap, or create if cap is free.
 # No-op when $TODAY.md is already on main. Idle refresh-briefing still never Agent.create.
 on:

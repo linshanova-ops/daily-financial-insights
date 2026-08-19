@@ -1,13 +1,14 @@
-name: Weekday 09:00 Beijing
+name: Weekday 09:00 Beijing IMAP
 
-# IMAP fetch, then start the weekday briefing. Cloud VMs have no IMAP secrets
-# and cannot `gh workflow run` (403). This workflow is the 09:00 clock —
-# turn the Cursor dashboard 09:00 automation off (it races this fetch).
+# Fetch Bloomberg/Glassnode at 09:00 Beijing so the Cursor dashboard
+# automation has $TODAY mail. Do not Agent.create here — that races the
+# dashboard and is why the 09:00 automation looked "stopped"/rate-limited.
+# Cloud VMs have no IMAP secrets and cannot `gh workflow run` (403).
 on:
   schedule:
-    # 09:00 Beijing Mon–Fri. 财经早茶 lands ~07:06; fetch at publish time so
-    # $TODAY is on main when the agent starts. GH cron can slip ~1h;
-    # missed-briefing-catchup.yml at 09:30 is the backup.
+    # 09:00 Beijing Mon–Fri. 财经早茶 lands ~07:06; 06:00/07:20 fetch was
+    # too early for overnight tape the 09:00 agent should see. GH cron can
+    # slip ~1h; missed-briefing-catchup.yml at 09:30 is the leftover backup.
     - cron: "0 1 * * 1-5"
   workflow_dispatch:
   push:
@@ -62,7 +63,7 @@ jobs:
             echo "No inbox changes to commit."
           fi
 
-  briefing:
+  leftover:
     needs: inbox
     if: always() && !cancelled() && github.event_name != 'push'
     runs-on: ubuntu-latest
@@ -73,11 +74,12 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: "22"
-      - name: Start weekday briefing
+      - name: Wake leftover if it blocked the 09:00 automation
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO_URL: https://github.com/${{ github.repository }}
+          CATCHUP_CREATE: "0"
         run: |
           if [ -z "$CURSOR_API_KEY" ]; then
             echo "::notice::No CURSOR_API_KEY — add the secret."
