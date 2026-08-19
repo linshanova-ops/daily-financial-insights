@@ -2,7 +2,7 @@
   "date": "2026-08-19",
   "title": "Daily Financial Briefing",
   "coverageWindow": "August 18–19, 2026",
-  "publishedAt": "2026-08-19T04:19:26.892Z",
+  "publishedAt": "2026-08-19T09:57:54.000Z",
   "keySources": [
     {
       "label": "BLS — July import and export prices",
@@ -140,7 +140,7 @@
       }
     }
   ],
-  "marketTone": "Tuesday close sold chips on duration (S&P −0.7%, Nasdaq −1.3%). BLS import −0.4% is fuel, not a broad deflator. China still 4.5/0.6/−6.7. Oil is Iran-CLAIM. Dashboard holds the prints.",
+  "marketTone": "Tuesday close sold chips (S&P −0.7%, Nasdaq −1.3%) next to BofA/NVDA 今日图表 (CLAIM). Sovereign long-end still near 2007; desk 国债扭转跌势. China still 4.5/0.6/−6.7. Oil is Iran-CLAIM.",
   "summary": [
     {
       "text": "BLS (Aug 18 8:30 ET): July import prices −0.4% m/m (fuel −7.2%; petroleum −7.5%; nonfuel +0.4%). Imports +5.9% y/y. Export prices −1.3% m/m (nonag −1.5%; ag +1.0%); +8.2% y/y.",
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "text": "NBS (Aug 17) still the China demand FACT: IP +4.5% / retail +0.6% / FAI −6.7%. Aug 19 财经早茶 今日图表 is BofA/NVDA (desk). PBOC overnight OMO window last day Aug 19. FOMC minutes 02:00 ET — not in this file.",
+      "text": "NBS (Aug 17) still the China demand FACT: IP +4.5% / retail +0.6% / FAI −6.7%. Aug 19 财经早茶 今日图表 is BofA/NVDA (desk). PBOC overnight OMO window last day Aug 19. FOMC minutes 14:00 ET Aug 19 / 02:00 Beijing Aug 20 — not printed at this noon.",
       "sources": [
         {
           "label": "NBS English",
@@ -174,7 +174,7 @@
       ]
     }
   ],
-  "signal": "Read US equities off the three-day duration sell, not off last Thursday’s record. Import −0.4% does not clear the 30Y two-decade line. A-shares still 4.5/0.6/−6.7. Oil is CLAIM. Minutes are the next US falsifier.",
+  "signal": "Read chips off BofA/NVDA CLAIM vs Tuesday’s sell, not off the 1y chart. Long-end is sovereign-sell, not that PNG. A-shares still 4.5/0.6/−6.7. Oil is CLAIM. Minutes 02:00 Beijing Aug 20.",
   "watch": "FOMC minutes 14:00 ET Aug 19 (02:00 Beijing Aug 20) · UK CPI 14:00 Beijing · Lagarde 15:10 · PBOC overnight last day of 6,000亿元 window · USD/JPY vs 160 · August NBS retail/FAI.",
   "marketOverview": {
     "asOfDate": "2026-08-18",
@@ -216,15 +216,40 @@
   },
   "themeCards": [
     {
+      "id": "bofa-nvda-claim",
+      "title": "BofA/NVDA CLAIM vs Tuesday chip sell is the US equity sleeve",
+      "grade": "STRONG",
+      "assets": [
+        "US equities",
+        "Asia chips"
+      ],
+      "fact": "今日图表 (Aug 19 PNG): BofA 称英伟达股价「极具吸引力」、折价深达50% (desk/CLAIM). AP Tuesday: Nasdaq −1.3%; Nvidia −2.3%; Micron −7%; Broadcom −3.2%. Desk 国际要闻: 美银调查净56% 基金经理超配股票、近五年最高 (CLAIM). The plotted line is a 1y NVDA path (~160–240), not a close print.",
+      "factSources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "AP Tuesday wrap",
+          "href": "https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9"
+        }
+      ],
+      "mechanism": "Trade the AP chip sleeve, not the BofA adjective. 56% overweight is positioning CLAIM next to a three-day Nasdaq slide — not confirmation of the 50% discount. Kospi −1.5% is the same AI beta, not an NBS print.",
+      "trigger": "Dated BofA note or a chip rebound that recoups the three-day slide.",
+      "invalidator": "Further Nasdaq/chip extension that makes the 50% CLAIM dead.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
       "id": "long-end-two-decade",
-      "title": "30Y at a two-decade high is the US rates / equity / USD test",
+      "title": "Sovereign long-end sell is the US rates / equity / USD test",
       "grade": "STRONG",
       "assets": [
         "USTs",
         "US equities",
         "USD"
       ],
-      "fact": "AP Tuesday: S&P 7,691.76 (−0.7%), Nasdaq −1.3%; 10Y 4.70% (from 4.72%); 30Y ticked lower but still near highest since 2007. BLS: import −0.4% (fuel −7.2%; nonfuel +0.4%). Census: July starts 1,239,000 SAAR (−12.4% m/m). 今日图表 is BofA/NVDA, not the 30Y frame. Desk 国际要闻: 多国长期主权债抛售, 10Y触及去年年初以来新高 (CLAIM).",
+      "fact": "Desk 国际要闻: 多国长期主权债抛售，收益率升至十余年高位，10Y一度触及去年年初以来新高 (CLAIM). AP Tuesday: 10Y 4.70% (from 4.72%); 30Y ticked lower, still near highest since 2007. 市场一览: 国债扭转跌势，曲线陡化势头受阻，周三供给仍在 (CLAIM). BLS: import −0.4% (fuel −7.2%; nonfuel +0.4%). Census: July starts 1,239,000 SAAR (−12.4% m/m).",
       "factSources": [
         {
           "label": "AP Tuesday wrap",
@@ -243,7 +268,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Chips sold on duration, not on a trend-break print. Headline import −0.4% is fuel; nonfuel +0.4% does not clear the 30Y two-decade line. Housing starts −12.4% is the mortgage/duration echo. Minutes today split pause-odds vs long-end supply.",
+      "mechanism": "Long-end is the sovereign-sell book, not 今日图表. Headline import −0.4% is fuel; nonfuel +0.4% does not clear the 2007 30Y line. Housing −12.4% is the mortgage echo. Minutes 02:00 Beijing Aug 20 split pause-odds vs supply.",
       "trigger": "Hawkish FOMC minutes that extend the 30Y high.",
       "invalidator": "Soft pipeline that fades hike odds without a 30Y extension.",
       "horizon": "days",
@@ -258,7 +283,7 @@
         "CNY",
         "China rates"
       ],
-      "fact": "NBS: July IP +4.5% y/y (miss vs +4.8%); retail +0.6% (miss vs 1.5%); Jan–Jul FAI −6.7% (miss vs −6.2%); jobless 5.2%. 财新: IP also +0.11% m/m. Inbox: 金龙中国指数下跌 (Aug 19 市场一览, CLAIM). 见闻 year-dated: 上证 +0.19% to 3,990.30.",
+      "fact": "NBS: July IP +4.5% y/y (miss vs +4.8%); retail +0.6% (miss vs 1.5%); Jan–Jul FAI −6.7% (miss vs −6.2%); jobless 5.2%. Inbox: 金龙下跌 (市场一览); 超长债牛平; 公积金提取范围拓宽 (大中华, CLAIM). 见闻 year-dated: 上证 +0.19% to 3,990.30.",
       "factSources": [
         {
           "label": "NBS English",
@@ -281,7 +306,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Retail/FAI are the weak leg — that is the A-share domestic beta and the reason not to read overnight OMO as easing. CNY stays a second-order book. CICC CLAIM (Aug 8): 7月中国PMI回落 vs 发达扩张; 中国利率或加快下行、海外高位运行 — not a new July NBS note.",
+      "mechanism": "Retail/FAI are the weak leg — A-share domestic beta, and why overnight OMO is not easing. 超长债牛平 is duration CLAIM on that miss, not a new print. 公积金 is policy CLAIM, not demand. CNY is second-order. CICC CLAIM (Aug 8): 7月中国PMI回落 vs 发达扩张; 中国利率或加快下行、海外高位运行.",
       "trigger": "August NBS that re-accelerates retail/FAI, or a credit rebound that shows up in FAI.",
       "invalidator": "August prints that reverse the 0.6/−6.7 miss.",
       "horizon": "weeks",
@@ -661,7 +686,7 @@
     {
       "id": "us-equities",
       "title": "US equities",
-      "regime": "Third-day duration sell (S&P −0.7%, Nasdaq −1.3%) off Thursday’s record — chips led, not a trend-break print.",
+      "regime": "Third-day duration sell (S&P −0.7%, Nasdaq −1.3%) off Thursday’s record — chips led. BofA/NVDA 今日图表 is CLAIM, not the close.",
       "instruments": [
         {
           "name": "S&P 500 / Nasdaq",
@@ -672,9 +697,26 @@
               "href": "https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9"
             }
           ],
-          "read": "Trade the S&P off 30Y, housing starts, and minutes — not off last Thursday’s record. Micron −7% / Nvidia −2.3% is the AI-duration sleeve.",
-          "invalidator": "Minutes that fade hike odds without a 30Y extension, or a chip rebound that recoups the three-day slide.",
+          "read": "Trade the S&P off sovereign long-end, housing starts, and minutes — not off last Thursday’s record.",
+          "invalidator": "Minutes that fade hike odds without a 30Y extension.",
           "themeId": "long-end-two-decade"
+        },
+        {
+          "name": "Nvidia / chips",
+          "driver": "今日图表: BofA 称英伟达「极具吸引力」、折价深达50% (CLAIM). AP: Nvidia −2.3%; Micron −7%; Broadcom −3.2%.",
+          "driverSources": [
+            {
+              "label": "彭博 Markets Daily China",
+              "href": "https://www.bloomberg.com/asia"
+            },
+            {
+              "label": "AP Tuesday wrap",
+              "href": "https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9"
+            }
+          ],
+          "read": "AP sleeve vs BofA adjective. Do not trade the 1y PNG as a close. Kospi −1.5% is the same beta.",
+          "invalidator": "Chip rebound that recoups the three-day Nasdaq slide.",
+          "themeId": "bofa-nvda-claim"
         }
       ]
     },
@@ -704,7 +746,8 @@
               "href": "https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9"
             }
           ],
-          "read": "Keep Kospi on the AI/chip sleeve that sold in the US. Live level in Market closes."
+          "read": "Keep Kospi on the AI/chip sleeve that sold in the US (same beta as BofA/NVDA CLAIM). Live level in Market closes.",
+          "themeId": "bofa-nvda-claim"
         },
         {
           "name": "Greater China equities",
@@ -732,7 +775,7 @@
       "instruments": [
         {
           "name": "US 2Y / 10Y / 30Y",
-          "driver": "AP: 10Y 4.70% (from 4.72%); 30Y ticked lower, still near highest since 2007. 今日图表 is BofA/NVDA, not a 30Y PNG. Desk 国际要闻: 10Y触及去年年初以来新高 (CLAIM). Official daily curve is the print in Market closes.",
+          "driver": "AP: 10Y 4.70% (from 4.72%); 30Y ticked lower, still near highest since 2007. Desk 国际要闻: 多国长期主权债抛售; 市场一览 国债扭转跌势 (CLAIM). Official daily curve is the print in Market closes.",
           "driverSources": [
             {
               "label": "AP Tuesday wrap",
@@ -1015,11 +1058,11 @@
   },
   "watchItems": [],
   "sources": "华尔街见闻 工业/固投/社零 and 第一财经 新动能 stay on China What-changed; 财新 July IP is triangulation for NBS, not a second key-source chip.",
-  "singleSource": "Iran/Hormuz, BofA NVDA 50%, Anthropic credit, ByteDance loan, Unitree, and Mexico/China tariffs lean on Bloomberg inbox or 见闻 (asia hub often 403 in CI) — desk/CLAIM unless second-sourced. NBS FACT is 4.5/0.6/−6.7. BlockBeats in-window cite missed — crypto uses CoinGecko + 见闻 CLAIM. CICC is the Aug 8 PMI/rates note (CLAIM), not a July activity reprint.",
+  "singleSource": "Iran/Hormuz, BofA NVDA 50%, Anthropic credit, ByteDance loan, Unitree, and Mexico/China tariffs lean on Bloomberg inbox or 见闻 (asia hub often 403 in CI) — desk/CLAIM unless second-sourced. NBS FACT is 4.5/0.6/−6.7. BlockBeats in-window cite missed — crypto uses CoinGecko + 见闻 CLAIM. CICC is the Aug 8 PMI/rates note (CLAIM), not a July activity reprint. Dashboard re-injected 2026-08-19T09:57:54.000Z.",
   "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Asia Wednesday levels live only in Market Dashboard (Yahoo quote HTML is not a print). 今日图表 is Aug 19 财经早茶 PNG (BofA/NVDA). 市场一览 is Aug 19 inbox covering ~Aug 18 tape.",
   "suggestions": "Into FOMC minutes 02:00 Beijing Aug 20 (14:00 ET Aug 19): whether hike-odds extend the long end. Into China: last overnight OMO print vs the 6,000亿元 cap, then August retail/FAI. This report is research and information synthesis, not investment advice.",
   "marketDashboard": {
-    "asOf": "2026-08-19T04:19:26.892Z",
+    "asOf": "2026-08-19T09:57:54.000Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -1053,10 +1096,10 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "15.84",
-            "change": "+4.28%",
+            "latest": "15.86",
+            "change": "+0.13%",
             "changeDirection": "up",
-            "asOfDate": "2026-08-18",
+            "asOfDate": "2026-08-19",
             "source": {
               "label": "Yahoo Finance (^VIX)",
               "href": "https://finance.yahoo.com/quote/%5EVIX/"
@@ -1065,8 +1108,8 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "65,625.82",
-            "change": "−2.72%",
+            "latest": "65,326.42",
+            "change": "−3.16%",
             "changeDirection": "down",
             "asOfDate": "2026-08-19",
             "source": {
@@ -1077,8 +1120,8 @@
           {
             "id": "kospi",
             "asset": "Kospi",
-            "latest": "6,484.24",
-            "change": "−5.61%",
+            "latest": "6,471.17",
+            "change": "−5.80%",
             "changeDirection": "down",
             "asOfDate": "2026-08-19",
             "source": {
@@ -1089,8 +1132,8 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,533.38",
-            "change": "+0.24%",
+            "latest": "25,495.07",
+            "change": "+0.09%",
             "changeDirection": "up",
             "asOfDate": "2026-08-19",
             "source": {
@@ -1101,7 +1144,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,700.55",
+            "latest": "4,682.05",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-08-19",
@@ -1113,8 +1156,8 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,912.17",
-            "change": "−1.96%",
+            "latest": "3,894.42",
+            "change": "−2.40%",
             "changeDirection": "down",
             "asOfDate": "2026-08-19",
             "source": {
@@ -1132,9 +1175,9 @@
             "id": "us02y",
             "asset": "US 2Y yield",
             "latest": "4.19%",
-            "change": "+2.0 bp",
-            "changeDirection": "up",
-            "asOfDate": "2026-08-17",
+            "change": "0.0 bp",
+            "changeDirection": "flat",
+            "asOfDate": "2026-08-18",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -1143,10 +1186,10 @@
           {
             "id": "us05y",
             "asset": "US 5Y yield",
-            "latest": "4.38%",
-            "change": "+2.0 bp",
-            "changeDirection": "up",
-            "asOfDate": "2026-08-17",
+            "latest": "4.37%",
+            "change": "−1.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-18",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -1155,10 +1198,10 @@
           {
             "id": "us10y",
             "asset": "US 10Y yield",
-            "latest": "4.72%",
-            "change": "+4.0 bp",
-            "changeDirection": "up",
-            "asOfDate": "2026-08-17",
+            "latest": "4.71%",
+            "change": "−1.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-18",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -1167,10 +1210,10 @@
           {
             "id": "us30y",
             "asset": "US 30Y yield",
-            "latest": "5.31%",
-            "change": "+6.0 bp",
-            "changeDirection": "up",
-            "asOfDate": "2026-08-17",
+            "latest": "5.28%",
+            "change": "−3.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-18",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -1185,9 +1228,9 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "159.3900",
-            "change": "+0.03%",
-            "changeDirection": "up",
+            "latest": "159.0760",
+            "change": "−0.17%",
+            "changeDirection": "down",
             "asOfDate": "2026-08-19",
             "source": {
               "label": "Yahoo Finance (JPY=X)",
@@ -1197,9 +1240,9 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7404",
-            "change": "+0.01%",
-            "changeDirection": "up",
+            "latest": "6.7372",
+            "change": "−0.04%",
+            "changeDirection": "down",
             "asOfDate": "2026-08-19",
             "source": {
               "label": "Yahoo Finance (CNY=X)",
@@ -1209,8 +1252,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,407.90",
-            "change": "+0.96%",
+            "latest": "$4,413.70",
+            "change": "+1.09%",
             "changeDirection": "up",
             "asOfDate": "2026-08-19",
             "source": {
@@ -1221,8 +1264,8 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$91.71",
-            "change": "+0.76%",
+            "latest": "$91.88",
+            "change": "+0.94%",
             "changeDirection": "up",
             "asOfDate": "2026-08-19",
             "source": {
@@ -1233,8 +1276,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$64,290",
-            "change": "+0.31%",
+            "latest": "$64,357",
+            "change": "+0.39%",
             "changeDirection": "up",
             "asOfDate": "2026-08-19",
             "source": {
@@ -1245,8 +1288,8 @@
           {
             "id": "btc-funding",
             "asset": "BTC funding rate",
-            "latest": "0.0059%",
-            "change": "+0.395 bp",
+            "latest": "0.0096%",
+            "change": "+0.367 bp",
             "changeDirection": "up",
             "asOfDate": "2026-08-19",
             "source": {
