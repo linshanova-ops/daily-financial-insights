@@ -1,6 +1,7 @@
 /**
- * If 09:00 missed and $TODAY.md is missing: send the weekday prompt to the
- * leftover holding the cap, or create if the cap is free.
+ * If $TODAY.md is missing: send the weekday prompt to the leftover holding
+ * the cap, or create if the cap is free. 09:00 inbox-sync sets
+ * CATCHUP_CREATE=0 (dashboard automation is the clock). 09:30 catch-up may create.
  */
 import { spawnSync } from "node:child_process";
 import {
@@ -19,7 +20,7 @@ const repoUrl =
   "https://github.com/linshanova-ops/daily-financial-insights";
 const today = process.env.BRIEFING_DATE || beijingDateString();
 const slotStartMs = Date.parse(`${today}T01:00:00.000Z`); // Beijing 09:00
-const weekdayPrompt = `Follow \`.cursor/skills/weekday-website-update/SKILL.md\`. Beijing date ${today}. If web/content/briefings/${today}.md is already on origin/main, stop. Publish ${today}, merge when Briefing accuracy gate is green, confirm live Pages data/latest.json date, then stop. Do not call generate-daily-briefing.mjs.`;
+const weekdayPrompt = `Follow \`.cursor/skills/weekday-website-update/SKILL.md\`. Beijing date ${today}. $TODAY.md on main is not done: if 今日图表 / 市场一览 / Themes still yesterday, patch and rewrite Themes from today’s 财经早茶. Stop only when those sections match that mail. Publish ${today}, merge when Briefing accuracy gate is green, confirm live Pages data/latest.json date, then stop. Do not call generate-daily-briefing.mjs.`;
 
 function briefingExistsOnMain() {
   const repoPath = repoUrl.replace(/^https?:\/\/github\.com\//, "").replace(/\.git$/, "");
@@ -88,6 +89,11 @@ async function main() {
 
   if (decision.action === "send") {
     await sendTo(id, "sent");
+    return;
+  }
+
+  if (process.env.CATCHUP_CREATE === "0") {
+    console.log("[catchup] create skipped (Cursor 09:00 automation is the clock)");
     return;
   }
 

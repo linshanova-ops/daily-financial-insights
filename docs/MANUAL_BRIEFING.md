@@ -36,6 +36,7 @@ Netlify is removed (no refresh bridge). Pages deploys only on **push to main**
 
 **Themes only:** site no longer shows a Signals / Cross-checks section.
 Put the narrative in `themeCards`; keep `signals: []` on new briefings.
+Rewrite Themes from **today’s** 财经早茶 in the same pass as 今日图表 / 市场一览 / 国际要闻 / 大中华.
 
 **Event Calendar window:** `windowEnd` = Friday after the Friday-on-or-after
 briefing date (this week + next). Helper:

@@ -51,5 +51,5 @@ Rules:
 - `regime` names a mechanism, not a mood.
 - `read` is the perspective: what the print means for that book, and the next falsifier.
 - Quiet class: one honest line — don’t pad, don’t hide behind the dashboard.
-- Prefer `themeId` chips over rewriting Themes.
+- Chip `themeId` to **today’s** Themes. Rewrite `themeCards` from today’s 今日图表 + 市场一览 + 国际要闻/大中华; do not keep yesterday’s Theme titles because the chips already exist.
 - Never present USD / JPY / CNY as peer top-level assets beside Oil or Equities.
