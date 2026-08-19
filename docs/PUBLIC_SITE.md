@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Publish mode** | **Cursor Automation, weekdays 09:00 China time.** Dashboard: [cursor.com/automations](https://cursor.com/automations) — spec in `.cursor/automations/weekday-0900-beijing.md`. GitHub `cursorAutoGenerate` stays **false** (no idle `Agent.create`). If 09:00 misses, `missed-briefing-catchup.yml` at 09:30 Beijing starts one weekday agent. |
+| **Publish mode** | **Cursor Automation, weekdays 09:00 China time.** Keep it **on**. Dashboard: [cursor.com/automations](https://cursor.com/automations) — spec in `.cursor/automations/weekday-0900-beijing.md`. GitHub `inbox-sync.yml` fetches IMAP at the same 09:00 (do not `Agent.create` there). `cursorAutoGenerate` stays **false**. If 09:00 misses, `missed-briefing-catchup.yml` at 09:30 Beijing sends/creates one weekday agent. |
 | **Manual workflow** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge to main, Pages deploys on push. Manual/dispatch also available. No schedule in manual mode. |
@@ -48,7 +48,7 @@ Monday’s briefing must cover **since Friday US cash close**, including weekend
 
 ### Schedule reliability (and cost)
 
-The clock is a **Cursor Automation** (one cloud agent per weekday). Do not turn GitHub Generate cron or cron-job.org back on — those burn tokens on empty ticks. Spec: `.cursor/automations/weekday-0900-beijing.md`.
+The clock is a **Cursor Automation** (one cloud agent per weekday). Keep it on. GitHub `inbox-sync.yml` only fetches IMAP at 09:00 Beijing — it must not `Agent.create` or the dashboard cron dies on the concurrent cap. Do not turn GitHub Generate cron or cron-job.org back on. Spec: `.cursor/automations/weekday-0900-beijing.md`.
 
 **Cost:** one Cursor cloud-agent run on weekdays. Public-repo Actions minutes only for accuracy CI + Pages after the PR merges. No Netlify.
 
@@ -76,7 +76,7 @@ git add web/content web/public/data && git commit -m "content: YYYY-MM-DD briefi
 
 ### Inbox newsletters (Gmail IMAP)
 
-Before each generate run, **inbox-sync** (07:20 Beijing weekdays) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. 财经早茶 lands ~07:06 Beijing — a 06:00 fetch misses `$TODAY` and must not be reused as 今日图表. The 09:00 Cursor agent merges whatever is already on `main`. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. A leftover RUNNING desktop/chat agent blocks the 09:00 cron — catch-up **sends** the weekday prompt to that leftover instead of creating a second agent.
+**inbox-sync** (09:00 Beijing weekdays) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets at the same minute as the Cursor 09:00 automation. Fetching at 06:00/07:20 left the 09:00 agent without overnight tape. Do not reuse yesterday’s PNG as 今日图表. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. A leftover RUNNING desktop/chat agent blocks the dashboard cron — GH **sends** the weekday prompt to that leftover (09:00 after IMAP, 09:30 backup) instead of creating a second agent.
 
 Repo → Settings → Secrets and variables → Actions — set:
 

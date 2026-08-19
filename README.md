@@ -12,7 +12,7 @@ See **[docs/PUBLIC_SITE.md](./docs/PUBLIC_SITE.md)** for GitHub Pages and the we
 
 - Permanent URL: https://linshanova-ops.github.io/daily-financial-insights/
 - Auto-deploy: push to `main`
-- Updates: Cursor Automation weekdays 09:00 China time (fail-closed PR + accuracy CI)
+- Updates: Cursor Automation weekdays 09:00 China time (IMAP at 09:00, fail-closed PR + accuracy CI)
 
 | Skill | Stage | Purpose |
 |-------|-------|---------|
