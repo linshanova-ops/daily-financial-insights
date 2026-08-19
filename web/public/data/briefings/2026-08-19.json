@@ -115,7 +115,7 @@
         "rates",
         "us-equities"
       ],
-      "influence": "FOMC minutes 14:00 Beijing today (not printed at this noon)."
+      "influence": "FOMC minutes 14:00 ET Aug 19 / 02:00 Beijing Aug 20 (not printed at this noon)."
     },
     {
       "label": "中金固收 — 中外PMI分化下的债券利率背离（CLAIM，8月8日）",
@@ -175,7 +175,7 @@
     }
   ],
   "signal": "Read US equities off the three-day duration sell, not off last Thursday’s record. Import −0.4% does not clear the 30Y two-decade line. A-shares still 4.5/0.6/−6.7. Oil is CLAIM. Minutes are the next US falsifier.",
-  "watch": "FOMC minutes 02:00 ET Aug 19 · PBOC overnight last day of 6,000亿元 window · USD/JPY vs 160 · August NBS retail/FAI.",
+  "watch": "FOMC minutes 14:00 ET Aug 19 (02:00 Beijing Aug 20) · UK CPI 14:00 Beijing · Lagarde 15:10 · PBOC overnight last day of 6,000亿元 window · USD/JPY vs 160 · August NBS retail/FAI.",
   "marketOverview": {
     "asOfDate": "2026-08-18",
     "note": "市场一览 from 彭博财经早茶 Aug 19 inbox (desk/CLAIM). Tape as of ~07:04 pm EST Aug 18. Do not treat 全球市况 as Market Dashboard.",
@@ -224,7 +224,7 @@
         "US equities",
         "USD"
       ],
-      "fact": "AP Tuesday: S&P 7,691.76 (−0.7%), Nasdaq −1.3%; 10Y 4.70% (from 4.72%); 30Y ticked lower but still near highest since 2007. BLS: import −0.4% (fuel −7.2%; nonfuel +0.4%). Census: July starts 1,239,000 SAAR (−12.4% m/m). Inbox chart is still the two-decade 30Y frame (Aug 18 PNG).",
+      "fact": "AP Tuesday: S&P 7,691.76 (−0.7%), Nasdaq −1.3%; 10Y 4.70% (from 4.72%); 30Y ticked lower but still near highest since 2007. BLS: import −0.4% (fuel −7.2%; nonfuel +0.4%). Census: July starts 1,239,000 SAAR (−12.4% m/m). 今日图表 is BofA/NVDA, not the 30Y frame. Desk 国际要闻: 多国长期主权债抛售, 10Y触及去年年初以来新高 (CLAIM).",
       "factSources": [
         {
           "label": "AP Tuesday wrap",
@@ -258,7 +258,7 @@
         "CNY",
         "China rates"
       ],
-      "fact": "NBS: July IP +4.5% y/y (miss vs +4.8%); retail +0.6% (miss vs 1.5%); Jan–Jul FAI −6.7% (miss vs −6.2%); jobless 5.2%. 财新: IP also +0.11% m/m. Inbox: 金龙中国指数连续第二天上涨 is Aug 17 tape (CLAIM). 见闻 year-dated: 上证 +0.19% to 3,990.30.",
+      "fact": "NBS: July IP +4.5% y/y (miss vs +4.8%); retail +0.6% (miss vs 1.5%); Jan–Jul FAI −6.7% (miss vs −6.2%); jobless 5.2%. 财新: IP also +0.11% m/m. Inbox: 金龙中国指数下跌 (Aug 19 市场一览, CLAIM). 见闻 year-dated: 上证 +0.19% to 3,990.30.",
       "factSources": [
         {
           "label": "NBS English",
@@ -295,7 +295,7 @@
         "Oil",
         "USDJPY"
       ],
-      "fact": "AP: Brent $91.02 (+0.2%); oil still swinging on whether tankers can exit the Gulf. 见闻 (year-dated): Trump said no talks now or later; Hormuz as “US territory” CLAIM; Iran says the strait stays closed until conditions are met. Inbox Aug 18: same ceasefire-refusal CLAIM.",
+      "fact": "AP: Brent $91.02 (+0.2%); oil still swinging on whether tankers can exit the Gulf. 见闻 (year-dated): Trump said no talks now or later; Hormuz as “US territory” CLAIM; Iran says the strait stays closed until conditions are met. Inbox Aug 19: 霍尔木兹对峙持续，特朗普称没有与德黑兰会谈；阿联酋暂停对伊商业往来 (CLAIM).",
       "factSources": [
         {
           "label": "AP Tuesday wrap",
@@ -310,7 +310,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Isolation/ceasefire CLAIM is not a Hormuz closure. It is an oil-beta headline and a USD/JPY twitch until a dated flow shock. Pair with the Brent row in Market closes; do not promote desk “攀升” to a settle.",
+      "mechanism": "Isolation/ceasefire CLAIM is not a Hormuz closure. It is an oil-beta headline and a USD/JPY twitch until a dated flow shock. Pair with the Brent row in Market closes; do not promote desk “微涨” to a settle.",
       "trigger": "Confirmed strike on flows or a dated ceasefire extension.",
       "invalidator": "Quiet oil with no flow disruption.",
       "horizon": "days",
@@ -338,7 +338,7 @@
       "status": "continuing"
     }
   ],
-  "globalRegime": "Third-day US slide (S&P −0.7%, Nasdaq −1.3%) next to a 30Y two-decade chart; import −0.4% is fuel, not a deflator clear. China still 4.5/0.6/−6.7. Oil is Iran-CLAIM beta.",
+  "globalRegime": "Third-day US slide (S&P −0.7%, Nasdaq −1.3%) next to BofA/NVDA 今日图表; desk 主权债抛售. Import −0.4% is fuel, not a deflator clear. China still 4.5/0.6/−6.7. Oil is Iran-CLAIM beta.",
   "globalChanged": [
     {
       "text": "受通胀、财政赤字与AI融资潮推动，全球多国长期主权债遭到抛售，收益率升至十余年高位，10年期美债收益率一度触及去年年初以来新高（CLAIM — inbox）",
@@ -681,7 +681,7 @@
     {
       "id": "asia-equities",
       "title": "Asia equities",
-      "regime": "China book is NBS demand, not the Golden Dragon desk bounce. Japan/Korea are USD/JPY and chip beta — separate from 4.5/0.6/−6.7.",
+      "regime": "China book is NBS demand, not the Golden Dragon 下跌 (Aug 19 desk). Japan/Korea are USD/JPY and chip beta — separate from 4.5/0.6/−6.7.",
       "instruments": [
         {
           "name": "Japan equities",
@@ -728,11 +728,11 @@
     {
       "id": "rates",
       "title": "Rates",
-      "regime": "US long-end is the lead (two-decade 30Y chart + 长期国债领跌). China rates are overnight plumbing, not an easing cycle.",
+      "regime": "US long-end is the lead (AP 30Y near 2007 high; desk 国债扭转跌势). China rates are overnight plumbing, not an easing cycle.",
       "instruments": [
         {
           "name": "US 2Y / 10Y / 30Y",
-          "driver": "AP: 10Y 4.70% (from 4.72%); 30Y ticked lower, still near highest since 2007. Inbox chart: two-decade 30Y frame (Aug 18 PNG). Official daily curve is the print in Market closes.",
+          "driver": "AP: 10Y 4.70% (from 4.72%); 30Y ticked lower, still near highest since 2007. 今日图表 is BofA/NVDA, not a 30Y PNG. Desk 国际要闻: 10Y触及去年年初以来新高 (CLAIM). Official daily curve is the print in Market closes.",
           "driverSources": [
             {
               "label": "AP Tuesday wrap",
@@ -863,7 +863,7 @@
   "eventCalendar": {
     "windowStart": "2026-08-19",
     "windowEnd": "2026-08-28",
-    "note": "Briefing day through next Friday (Aug 28). Mainland China only on calendar (no TW/HK). From inbox 日程 + BLS/Fed fixtures. UK ILO skipped (not in US/China/Japan spine).",
+    "note": "Briefing day through next Friday (Aug 28). Mainland China only on China rows (no TW/HK). Inbox 日程: UK/EZ CPI, Lagarde, 王毅访韩, FOMC minutes 20日02:00. Plus BLS/Fed fixtures.",
     "events": [
       {
         "id": "pboc-overnight-omo-2026-08-19",
@@ -879,16 +879,68 @@
         }
       },
       {
-        "id": "fed-fomc-minutes-2026-08-19",
-        "date": "2026-08-19",
-        "timeBeijing": "14:00",
+        "id": "fed-fomc-minutes-2026-08-20",
+        "date": "2026-08-20",
+        "timeBeijing": "02:00",
         "region": "US",
         "category": "central-bank",
-        "event": "FOMC Minutes",
+        "event": "FOMC Minutes (14:00 ET Aug 19)",
         "themeId": "long-end-two-decade",
         "source": {
           "label": "Federal Reserve calendar",
           "href": "https://www.federalreserve.gov/json/calendar.json"
+        }
+      },
+      {
+        "id": "uk-cpi-2026-08-19",
+        "date": "2026-08-19",
+        "timeBeijing": "14:00",
+        "region": "UK",
+        "category": "data",
+        "event": "UK July CPI y/y",
+        "consensus": "2.9%",
+        "prior": "2.6%",
+        "source": {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "lagarde-2026-08-19",
+        "date": "2026-08-19",
+        "timeBeijing": "15:10",
+        "region": "EU",
+        "category": "central-bank",
+        "event": "ECB President Lagarde speaks",
+        "source": {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "ez-cpi-2026-08-19",
+        "date": "2026-08-19",
+        "timeBeijing": "17:00",
+        "region": "EU",
+        "category": "data",
+        "event": "Euro area July CPI y/y final",
+        "consensus": "2.9%",
+        "prior": "2.9%",
+        "source": {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "wang-yi-korea-2026-08-19",
+        "date": "2026-08-19",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "other",
+        "event": "王毅访韩 (19–20日)",
+        "source": {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
         }
       },
       {
@@ -969,7 +1021,7 @@
   "sources": "华尔街见闻 工业/固投/社零 and 第一财经 新动能 stay on China What-changed; 财新 July IP is triangulation for NBS, not a second key-source chip.",
   "singleSource": "Iran/Hormuz, BofA NVDA 50%, Anthropic credit, ByteDance loan, Unitree, and Mexico/China tariffs lean on Bloomberg inbox or 见闻 (asia hub often 403 in CI) — desk/CLAIM unless second-sourced. NBS FACT is 4.5/0.6/−6.7. BlockBeats in-window cite missed — crypto uses CoinGecko + 见闻 CLAIM. CICC is the Aug 8 PMI/rates note (CLAIM), not a July activity reprint.",
   "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Asia Wednesday levels live only in Market Dashboard (Yahoo quote HTML is not a print). 今日图表 is Aug 19 财经早茶 PNG (BofA/NVDA). 市场一览 is Aug 19 inbox covering ~Aug 18 tape.",
-  "suggestions": "Into FOMC minutes 14:00 Beijing: whether hike-odds extend the 30Y two-decade line. Into China: last overnight OMO print vs the 6,000亿元 cap, then August retail/FAI. This report is research and information synthesis, not investment advice.",
+  "suggestions": "Into FOMC minutes 02:00 Beijing Aug 20 (14:00 ET Aug 19): whether hike-odds extend the long end. Into China: last overnight OMO print vs the 6,000亿元 cap, then August retail/FAI. This report is research and information synthesis, not investment advice.",
   "marketDashboard": {
     "asOf": "2026-08-19T04:19:26.892Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
