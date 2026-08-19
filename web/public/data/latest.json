@@ -177,36 +177,36 @@
   "signal": "Read US equities off the three-day duration sell, not off last Thursday’s record. Import −0.4% does not clear the 30Y two-decade line. A-shares still 4.5/0.6/−6.7. Oil is CLAIM. Minutes are the next US falsifier.",
   "watch": "FOMC minutes 02:00 ET Aug 19 · PBOC overnight last day of 6,000亿元 window · USD/JPY vs 160 · August NBS retail/FAI.",
   "marketOverview": {
-    "asOfDate": "2026-08-17",
-    "note": "市场一览 from 彭博财经早茶 Aug 18 inbox (desk/CLAIM). Tape as of ~07:04 pm EST Aug 17. Do not treat 全球市况 as Market Dashboard.",
+    "asOfDate": "2026-08-18",
+    "note": "市场一览 from 彭博财经早茶 Aug 19 inbox (desk/CLAIM). Tape as of ~07:04 pm EST Aug 18. Do not treat 全球市况 as Market Dashboard.",
     "items": [
       {
         "label": "美国股市",
-        "text": "主要股指普跌，芯片股逆势上涨，Anthropic营收激增的消息提振对于人工智能的乐观情绪"
+        "text": "科技股下挫拖累大盘收低，长债收益率高企打压风险偏好"
       },
       {
         "label": "中概股",
-        "text": "金龙中国指数连续第二天上涨，华住和小鹏对指数贡献最大"
+        "text": "金龙中国指数下跌，百度公布营收连续第五个季度下降后，其ADR重挫"
       },
       {
         "label": "美国债市",
-        "text": "长期国债领跌债市，企业发债潮和油价上涨令市场承压"
+        "text": "国债扭转跌势，收益率曲线陡化势头受阻，但周三供给压力仍将持续"
       },
       {
         "label": "外汇市场",
-        "text": "彭博美元指数触及三个月新低，经济数据促使交易员下调对美联储加息的预期"
+        "text": "美伊僵持不下之际彭博美元指数走高，日元兑美元接近160关口"
       },
       {
         "label": "欧洲股债",
-        "text": "欧洲超长期国债续跌，财政风险担忧挥之不去。欧洲股市在交投清淡中下挫，消费品和食品饮料股领跌"
+        "text": "欧洲政府债券连续第三个交易日下跌，长债承压。欧洲股市录得去年年末以来最长连跌，成交量接近年内最低"
       },
       {
         "label": "能源",
-        "text": "油价攀升，有迹象显示中东冲突短期内仍难以平息"
+        "text": "油价微涨至三周高位，美伊在霍尔木兹海峡控制权问题上仍陷僵局"
       },
       {
         "label": "金属",
-        "text": "随着美联储加息预期降温，金价走高。铜价基本持平，市场供应吃紧"
+        "text": "全球政府债券下挫以及美元走强给金价造成双重压力。铜价走低，随着伦敦金属交易所铜库存增加，供应紧张局面有所缓解"
       }
     ],
     "source": {
@@ -963,7 +963,7 @@
   "watchItems": [],
   "sources": "华尔街见闻 工业/固投/社零 and 第一财经 新动能 stay on China What-changed; 财新 July IP is triangulation for NBS, not a second key-source chip.",
   "singleSource": "Iran/Hormuz, foreign UST selling, Anthropic/Nvidia/Shein/Unitree, SAFE 售汇, Li Qiang targets, and NDRC policy-tool talk lean on Bloomberg inbox or 见闻 (asia hub often 403 in CI) — desk/CLAIM unless second-sourced. NBS FACT is 4.5/0.6/−6.7. BlockBeats in-window cite missed — crypto uses CoinGecko + 见闻 CLAIM. CICC is the Aug 8 PMI/rates note (CLAIM), not a July activity reprint.",
-  "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Asia Wednesday levels live only in Market Dashboard (Yahoo quote HTML is not a print). 今日图表 is Aug 19 财经早茶 PNG (BofA/NVDA). 市场一览 is still Aug 18 inbox covering ~Aug 17 tape.",
+  "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Asia Wednesday levels live only in Market Dashboard (Yahoo quote HTML is not a print). 今日图表 is Aug 19 财经早茶 PNG (BofA/NVDA). 市场一览 is Aug 19 inbox covering ~Aug 18 tape.",
   "suggestions": "Into FOMC minutes 14:00 Beijing: whether hike-odds extend the 30Y two-decade line. Into China: last overnight OMO print vs the 6,000亿元 cap, then August retail/FAI. This report is research and information synthesis, not investment advice.",
   "marketDashboard": {
     "asOf": "2026-08-19T04:19:26.892Z",
