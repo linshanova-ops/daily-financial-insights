@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-18T11:05:16.123Z",
-  "latest": "2026-08-18",
+  "generatedAt": "2026-08-19T04:19:44.077Z",
+  "latest": "2026-08-19",
   "briefings": [
+    {
+      "date": "2026-08-19",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Tuesday close sold chips on duration (S&P −0.7%, Nasdaq −1.3%). BLS import −0.4% is fuel, not a broad deflator. China still 4.5/0.6/−6.7. Oil is Iran-CLAIM. Dashboard holds the prints.",
+      "coverageWindow": "August 18–19, 2026"
+    },
     {
       "date": "2026-08-18",
       "title": "Daily Financial Briefing",
