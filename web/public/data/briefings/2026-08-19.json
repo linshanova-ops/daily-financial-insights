@@ -126,19 +126,6 @@
       "influence": "CLAIM: 7月中国PMI回落 vs 发达扩张; 中国利率或加快下行、海外高位运行. Not a new July NBS note."
     }
   ],
-  "figures": [
-    {
-      "id": "bloomberg-chart-of-day",
-      "title": "今日图表（彭博 Aug 18）— 长期美债收益率升至近二十年最高",
-      "kind": "insight",
-      "imageSrc": "/inbox-charts/bloomberg-2026-08-18.png",
-      "analysis": "Same Aug 18 inbox chart — still the two-decade 30Y picture. Title: 长期美国国债收益率升至近二十年最高水平；副题：近年来美国借贷成本飙升。橙线30年期美债，纵轴约0–6%，横轴约2007–2026。右端仍在金融危机前高位附近。This is not the Aug 18 cash close (AP: 10Y 4.70% from 4.72%; 30Y ticked lower). Use it as the long-history frame next to Tuesday’s import-price print (−0.4% headline, nonfuel +0.4%).",
-      "source": {
-        "label": "彭博 Markets Daily China / 财经早茶",
-        "href": "https://www.bloomberg.com/asia"
-      }
-    }
-  ],
   "marketTone": "Tuesday close sold chips on duration (S&P −0.7%, Nasdaq −1.3%). BLS import −0.4% is fuel, not a broad deflator. China still 4.5/0.6/−6.7. Oil is Iran-CLAIM. Dashboard holds the prints.",
   "summary": [
     {
@@ -961,8 +948,8 @@
   },
   "watchItems": [],
   "sources": "华尔街见闻 工业/固投/社零 and 第一财经 新动能 stay on China What-changed; 财新 July IP is triangulation for NBS, not a second key-source chip.",
-  "singleSource": "Iran/Hormuz, foreign UST selling, Anthropic/Nvidia/Shein/Unitree, SAFE 售汇, Li Qiang targets, and NDRC policy-tool talk lean on Bloomberg inbox or 见闻 (asia hub often 403 in CI) — desk/CLAIM unless second-sourced. NBS FACT is 4.5/0.6/−6.7. BlockBeats in-window cite missed — crypto uses CoinGecko + 见闻 CLAIM. CICC is the Aug 8 PMI/rates note (CLAIM), not a July activity reprint. 09:00 Cursor cron died on the leftover RUNNING cap; this session publishes.",
-  "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Asia Wednesday levels live only in Market Dashboard (Yahoo quote HTML is not a print). Chart-of-day is the Aug 18 inbox 30Y history line, not a second close. 市场一览 is Aug 18 inbox covering ~Aug 17 tape.",
+  "singleSource": "Iran/Hormuz, foreign UST selling, Anthropic/Nvidia/Shein/Unitree, SAFE 售汇, Li Qiang targets, and NDRC policy-tool talk lean on Bloomberg inbox or 见闻 (asia hub often 403 in CI) — desk/CLAIM unless second-sourced. NBS FACT is 4.5/0.6/−6.7. BlockBeats in-window cite missed — crypto uses CoinGecko + 见闻 CLAIM. CICC is the Aug 8 PMI/rates note (CLAIM), not a July activity reprint. Aug 19 财经早茶 was not in IMAP at 06:00 (mail lands ~07:06 Beijing) — omitted 今日图表 rather than reuse the Aug 18 PNG as today’s figure.",
+  "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Asia Wednesday levels live only in Market Dashboard (Yahoo quote HTML is not a print). Chart-of-day omitted: Aug 19 财经早茶 PNG was not captured (06:00 sync is before ~07:06 arrival). 市场一览 is Aug 18 inbox covering ~Aug 17 tape.",
   "suggestions": "Into FOMC minutes 14:00 Beijing: whether hike-odds extend the 30Y two-decade line. Into China: last overnight OMO print vs the 6,000亿元 cap, then August retail/FAI. This report is research and information synthesis, not investment advice.",
   "marketDashboard": {
     "asOf": "2026-08-19T04:19:26.892Z",

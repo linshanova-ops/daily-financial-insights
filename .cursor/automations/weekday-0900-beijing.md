@@ -17,7 +17,7 @@ Cursor has no create-automation API and no repo YAML sync. Save this in the dash
 ```
 Follow `.cursor/skills/weekday-website-update/SKILL.md` (full pipeline, not inbox-only) and `/ponytail` for code.
 Preflight: git fetch origin main; if web/content/briefings/$TODAY.md is already on origin/main, stop. If another agent is RUNNING, that session publishes — do not Retry.
-git pull origin main first so GH inbox-sync (06:00 Beijing) Bloomberg/Glassnode captures are on disk. No IMAP in this VM; do not `gh workflow run` (403). Merge latest bloomberg-markets-daily-china on or before $TODAY — never invent 市场一览 from Yahoo. After live $TODAY, stop/archive this agent so tomorrow’s 09:00 can fire.
+git pull origin main first so GH inbox-sync (07:20 Beijing) Bloomberg/Glassnode captures are on disk. No IMAP in this VM; do not `gh workflow run` (403). Merge latest bloomberg-markets-daily-china on or before $TODAY for desk copy — never invent 市场一览 from Yahoo. 今日图表 only if bloomberg-$TODAY.png exists. After live $TODAY, stop/archive this agent so tomorrow’s 09:00 can fire.
 Yahoo quote HTML is not a close print: inject levels stay in marketDashboard only.
 Same quality as a manual publish: gather → world/China → CICC CLAIM (theme-then-search) → 见闻+Caixin/Yicai+BlockBeats → every website YAML section (Themes, 市场一览, dashboard inject, chart, calendar, Global/China/Assets/Sources).
 FACT vs CLAIM. verify-briefing then PR (ready, not draft). Wait for Briefing accuracy gate; merge to main when green (`gh pr merge`, or git merge + push main if gh is 403). Confirm live Pages `data/latest.json` date is $TODAY (dispatch Deploy syravocado to GitHub Pages if still yesterday). Then stop. Do not call generate-daily-briefing.mjs. Sat/Sun: stop.

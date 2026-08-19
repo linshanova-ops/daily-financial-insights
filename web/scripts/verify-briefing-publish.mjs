@@ -9,6 +9,7 @@
  * Run from web/: npm run verify-briefing
  */
 import { spawnSync } from "node:child_process";
+import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -16,6 +17,7 @@ import {
   checkBriefingJsonSync,
 } from "./lib/briefing-json-sync-check.mjs";
 import { checkLatestEventCalendarWindow } from "./lib/event-calendar-window-check.mjs";
+import { checkBloombergChartDate } from "./lib/bloomberg-chart-date-check.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const webRoot = path.join(__dirname, "..");
@@ -75,6 +77,18 @@ function main() {
   }
   if (!calCheck.skipped) {
     console.log("[verify-briefing] eventCalendar window OK");
+  }
+
+  const latestPath = path.join(webRoot, "public/data/latest.json");
+  if (fs.existsSync(latestPath)) {
+    const chartCheck = checkBloombergChartDate(
+      JSON.parse(fs.readFileSync(latestPath, "utf8")),
+    );
+    if (!chartCheck.ok) {
+      console.error(`\n[verify-briefing] FAIL — ${chartCheck.message}\n`);
+      process.exit(1);
+    }
+    console.log("[verify-briefing] bloomberg-chart-of-day date OK");
   }
 
   runStep("scan-links", "npm", ["run", "scan-links"], webRoot);

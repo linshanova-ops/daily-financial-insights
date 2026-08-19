@@ -27,8 +27,8 @@ Read and execute these skills; do not jump to YAML:
 ## Inputs
 
 1. Beijing date `YYYY-MM-DD` = today `Asia/Shanghai`.
-2. Inbox: `git pull origin main` then `web/content/inbox/`. GH `inbox-sync.yml` fetches IMAP at **06:00 Beijing** onto `main` (this VM has no IMAP secrets; `gh workflow run` is 403 — do not use it). If IMAP env exists, also run `node scripts/fetch-inbox-sources.mjs`. Merge **latest** `bloomberg-markets-daily-china/*.md` on or before `$TODAY` (Monday: also `bloomberg-weekend-tea`). Missing today's file ≠ no Bloomberg.
-3. Inbox map: 国际要闻 → `globalChanged` (Chinese, one bullet each); 大中华 → `chinaChanged`; 市场一览 → `marketOverview.items` (desk copy, never invent from Yahoo); 日程/央行动态 → `eventCalendar`; 今日图表 → `figures` id `bloomberg-chart-of-day` (open the PNG; analysis must name the metric/levels). Do not ship a public-tape 市场一览 in place of the desk.
+2. Inbox: `git pull origin main` then `web/content/inbox/`. GH `inbox-sync.yml` fetches IMAP at **07:20 Beijing** onto `main` (this VM has no IMAP secrets; `gh workflow run` is 403 — do not use it). If IMAP env exists, also run `node scripts/fetch-inbox-sources.mjs`. Merge **latest** `bloomberg-markets-daily-china/*.md` on or before `$TODAY` for desk copy (Monday: also `bloomberg-weekend-tea`). Missing today's file ≠ no Bloomberg for 市场一览. **今日图表** (`figures` id `bloomberg-chart-of-day`) only if `inbox-charts/bloomberg-$TODAY.*` exists — never reuse yesterday’s PNG as today’s figure; omit and name the miss.
+3. Inbox map: 国际要闻 → `globalChanged` (Chinese, one bullet each); 大中华 → `chinaChanged`; 市场一览 → `marketOverview.items` (desk copy, never invent from Yahoo); 日程/央行动态 → `eventCalendar`; 今日图表 → `figures` id `bloomberg-chart-of-day` **only** with `$TODAY` PNG (open it; analysis names the metric/levels). Omit the figure if that file is missing. Do not ship a public-tape 市场一览 in place of the desk.
 4. China minimum: in-window cite from **华尔街见闻**, **Caixin or 第一财经**, and **BlockBeats** — or name the miss in `singleSource`.
 5. **CICC (required attempt):** theme-then-search via `cicc-research-article-search` (`APP_ID`/`APP_SECRET`; `python3 .cursor/skills/cicc-research-article-search/scripts/get_data.py "<theme>" --no-save`). Paraphrase only. Label **CLAIM**, never FACT. Put on matching `themeCards` / `globalImplies` — not as a What-changed print. Public cite = WeChat if that is what the skill returns. No VIP reprint. No invented notes. If env/search fails: say so in `singleSource`.
 
@@ -49,7 +49,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Themes | `themeCards` × 3–5 **cross-asset forces** (not a news digest). Title names the books it hits. Required: `assets[]`, `fact`, `factSources`, `mechanism` (how it transmits to those classes), `trigger`, `invalidator`, `horizon`, `status` |
 | 市场一览 | `marketOverview` from inbox 市场一览 |
 | Market closes | `marketDashboard` via inject only |
-| Chart | `figures` (chart-of-day required if PNG exists) |
+| Chart | `figures` (chart-of-day **only** if `bloomberg-$TODAY` PNG exists) |
 | Key sources | `keySources` — **unique** prints/CLAIMs only. Each row: `label`, `href`, `books[]` (asset-class ids it actually moves), `influence` (one line: the print and which book it changes). One href once. No Yahoo quote HTML. No second chip for a desk already used as the primary. |
 | Event calendar | `eventCalendar` windowStart=briefing date, windowEnd=Friday after the Friday-on-or-after (this week + next); ~8–20 dated rows; mainland China only on calendar; `watchItems: []` |
 | Global tab | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions` |
@@ -76,7 +76,7 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 **Sources:** curate, don’t dump. A source is valuable if it is the primary print, the estimate for a beat/miss, or a labeled CLAIM that actually moves a book. `factSources` / `driverSources` = that claim’s primary (plus estimate source if the sentence names a miss/beat). Do not clone `keySources` onto every card. Inbox hub once as a key source; per-bullet chips on What-changed are fine when that bullet is desk/CLAIM.
 
-Self-check before PR: every table row above is non-empty; CICC attempted; China three desks or caveat; chart analysis describes the PNG; no invented tape; no Assets row whose only content is “see Market Dashboard”; no duplicate `keySources` href; every key source has `books` + `influence`.
+Self-check before PR: every table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; if a chart is present its PNG date is `$TODAY`; no invented tape; no Assets row whose only content is “see Market Dashboard”; no duplicate `keySources` href; every key source has `books` + `influence`.
 
 Do not record a walkthrough video.
 ---
