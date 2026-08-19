@@ -46,4 +46,19 @@ describe("catchupAction", () => {
     assert.equal(listRows({ items: [leftoverLive] })[0].bcId, leftoverLive.bcId);
     assert.equal(listRows({ agents: [leftoverLive] })[0].bcId, leftoverLive.bcId);
   });
+  it("sends when repos is [{ url }] not a string", () => {
+    const r = catchupAction(
+      [
+        {
+          agentId: "bc-obj",
+          status: "running",
+          createdAt: Date.parse("2026-08-17T05:26:00.000Z"),
+          repos: [{ url: "https://github.com/linshanova-ops/daily-financial-insights" }],
+        },
+      ],
+      slot,
+    );
+    assert.equal(r.action, "send");
+    assert.equal(agentId(r.agent), "bc-obj");
+  });
 });

@@ -16,7 +16,8 @@ export function createdMs(row) {
 
 function repoHaystack(row) {
   const repos = Array.isArray(row?.repos) ? row.repos : [];
-  return [...repos, row?.repoUrl, row?.url].filter(Boolean).join(" ").toLowerCase();
+  const bits = repos.map((r) => (typeof r === "string" ? r : r?.url || r?.repoUrl || ""));
+  return [...bits, row?.repoUrl, row?.url].filter(Boolean).join(" ").toLowerCase();
 }
 
 export function ours(items, repoNeedle = REPO) {

@@ -42,6 +42,11 @@ function isCapError(err) {
   return /resource_exhausted|rate-limited|too many concurrent/i.test(s);
 }
 
+function isBusyError(err) {
+  const s = `${err?.code || ""} ${err?.name || ""} ${err?.message || err}`;
+  return /agent_busy|agentbusy|agent is busy/i.test(s);
+}
+
 async function main() {
   if (isBeijingWeekendDate(today)) {
     console.log(`[catchup] weekend skip beijing=${today}`);
@@ -66,10 +71,23 @@ async function main() {
 
   if (decision.action === "skip") return;
 
+  async function sendTo(lid, why) {
+    const agent = Agent.resume(lid, { apiKey, model: { id: "composer-2" } });
+    try {
+      const run = await agent.send(weekdayPrompt);
+      console.log(`[catchup] ${why} leftover ${lid} run=${run.id} https://cursor.com/agents/${lid}`);
+    } catch (err) {
+      // Leftover is mid-turn (occupying the cap). It publishes; do not fail the job.
+      if (isBusyError(err)) {
+        console.log(`[catchup] leftover busy — already working ${lid}`);
+        return;
+      }
+      throw err;
+    }
+  }
+
   if (decision.action === "send") {
-    const agent = Agent.resume(id, { apiKey, model: { id: "composer-2" } });
-    const run = await agent.send(weekdayPrompt);
-    console.log(`[catchup] sent leftover ${id} run=${run.id} https://cursor.com/agents/${id}`);
+    await sendTo(id, "sent");
     return;
   }
 
@@ -91,9 +109,7 @@ async function main() {
     const lid = agentId(leftover);
     if (!lid) throw err;
     console.warn(`[catchup] create cap-full; sending to leftover ${lid}`);
-    const agent = Agent.resume(lid, { apiKey, model: { id: "composer-2" } });
-    const run = await agent.send(weekdayPrompt);
-    console.log(`[catchup] sent leftover ${lid} run=${run.id} https://cursor.com/agents/${lid}`);
+    await sendTo(lid, "sent");
   }
 }
 
