@@ -898,8 +898,6 @@
         "region": "UK",
         "category": "data",
         "event": "UK July CPI y/y",
-        "consensus": "2.9%",
-        "prior": "2.6%",
         "source": {
           "label": "彭博 Markets Daily China",
           "href": "https://www.bloomberg.com/asia"
@@ -924,8 +922,6 @@
         "region": "EU",
         "category": "data",
         "event": "Euro area July CPI y/y final",
-        "consensus": "2.9%",
-        "prior": "2.9%",
         "source": {
           "label": "彭博 Markets Daily China",
           "href": "https://www.bloomberg.com/asia"
