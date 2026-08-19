@@ -1,17 +1,12 @@
 {
-  "at": "2026-08-19T04:56:39.209Z",
+  "at": "2026-08-19T10:04:11.755Z",
   "briefingDate": "2026-08-19",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-19.md",
-      "subject": "彭博财经早茶：宇树科技上市；多国主权债遭抛售",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5059,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-19.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-19.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -70,6 +65,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：宇树科技上市；多国主权债遭抛售",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-19.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：外国抛售美债；美国拒绝延长对伊临时停火",
