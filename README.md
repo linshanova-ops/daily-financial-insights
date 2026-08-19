@@ -8,11 +8,11 @@ Cursor Agent Skills for the full daily financial research pipeline — from gath
 
 ## Public website (permanent)
 
-See **[docs/PUBLIC_SITE.md](./docs/PUBLIC_SITE.md)** for GitHub Pages and the weekday 09:00 China-time Cursor Automation.
+See **[docs/PUBLIC_SITE.md](./docs/PUBLIC_SITE.md)** for GitHub Pages and the weekday 09:00 China-time GitHub clock (IMAP then one Cursor agent).
 
 - Permanent URL: https://linshanova-ops.github.io/daily-financial-insights/
 - Auto-deploy: push to `main`
-- Updates: Cursor Automation weekdays 09:00 China time (fail-closed PR + accuracy CI)
+- Updates: weekdays 09:00 China time (IMAP fetch, then fail-closed PR + accuracy CI)
 
 | Skill | Stage | Purpose |
 |-------|-------|---------|

@@ -1,13 +1,14 @@
-name: Sync IMAP inbox
+name: Weekday 09:00 Beijing
 
-# Lands Bloomberg/Glassnode on git before the weekday 09:00 Cursor agent.
-# Cloud agents have no IMAP secrets and cannot `gh workflow run` (403).
+# IMAP fetch, then start the weekday briefing. Cloud VMs have no IMAP secrets
+# and cannot `gh workflow run` (403). This workflow is the 09:00 clock —
+# turn the Cursor dashboard 09:00 automation off (it races this fetch).
 on:
   schedule:
-    # 07:20 Beijing Mon–Fri. 财经早茶 lands ~07:06 Beijing; 06:00 always missed
-    # $TODAY and the site reused yesterday’s PNG as 今日图表. Keep this after
-    # arrival and before 09:00 (GH cron can slip ~1h).
-    - cron: "20 23 * * 0-4"
+    # 09:00 Beijing Mon–Fri. 财经早茶 lands ~07:06; fetch at publish time so
+    # $TODAY is on main when the agent starts. GH cron can slip ~1h;
+    # missed-briefing-catchup.yml at 09:30 is the backup.
+    - cron: "0 1 * * 1-5"
   workflow_dispatch:
   push:
     paths:
@@ -60,3 +61,27 @@ jobs:
           else
             echo "No inbox changes to commit."
           fi
+
+  briefing:
+    needs: inbox
+    if: always() && !cancelled() && github.event_name != 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+      - name: Start weekday briefing
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_URL: https://github.com/${{ github.repository }}
+        run: |
+          if [ -z "$CURSOR_API_KEY" ]; then
+            echo "::notice::No CURSOR_API_KEY — add the secret."
+            exit 0
+          fi
+          npm install @cursor/sdk@latest
+          node scripts/nudge-missed-briefing.mjs

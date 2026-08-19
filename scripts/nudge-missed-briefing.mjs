@@ -1,6 +1,7 @@
 /**
- * If 09:00 missed and $TODAY.md is missing: send the weekday prompt to the
- * leftover holding the cap, or create if the cap is free.
+ * If $TODAY.md is missing: send the weekday prompt to the leftover holding
+ * the cap, or create if the cap is free. Called from inbox-sync.yml at 09:00
+ * Beijing and missed-briefing-catchup.yml at 09:30.
  */
 import { spawnSync } from "node:child_process";
 import {

@@ -1,12 +1,12 @@
 # Newsletter inbox captures
 
-Automated Gmail IMAP fetch saves subscribed mail here before each generate
-run. GitHub Actions `inbox-sync.yml` runs at 07:20 Beijing weekdays (IMAP
-secrets live in Actions, not in the Cursor 09:00 VM). 财经早茶 arrives ~07:06.
+Automated Gmail IMAP fetch saves subscribed mail here at weekday 09:00
+Beijing, then starts the briefing agent. GitHub Actions `inbox-sync.yml`
+(IMAP secrets live in Actions, not in the Cursor VM). 财经早茶 arrives ~07:06.
 
 | Folder | Source | Cadence |
 |--------|--------|---------|
-| `bloomberg-markets-daily-china/` | 彭博 Markets Daily China 中文版 | Daily (before Beijing 09:00) |
+| `bloomberg-markets-daily-china/` | 彭博 Markets Daily China 中文版 | Daily (09:00 Beijing IMAP) |
 | `glassnode-insights/` | Glassnode Insights | Weekly (usually Tuesday) |
 
 Files are markdown with YAML frontmatter (`sourceId`, `subject`, `receivedAt`, `citeHref`, …).

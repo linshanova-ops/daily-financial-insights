@@ -1,7 +1,8 @@
 # Manual briefing / Actions kill-switch
 
 GitHub **does not** spawn Cursor agents (`cursorAutoGenerate: false`).
-Weekday 09:00 publishes are a **Cursor Automation** — see
+Weekday 09:00 publishes are GitHub **`inbox-sync.yml`** (IMAP then one
+Cursor agent). Leave the dashboard cron off — see
 `.cursor/automations/weekday-0900-beijing.md`.
 
 Controlled by `web/content/briefing-ops.json`:
@@ -41,8 +42,8 @@ Put the narrative in `themeCards`; keep `signals: []` on new briefings.
 briefing date (this week + next). Helper:
 `eventWindowForBriefingDate` — Aug 10 → Aug 21, not Aug 14.
 
-Optional: Actions → **Sync IMAP inbox** → Run workflow (Bloomberg/Glassnode onto git). Cursor `Agent.create` stays off unless `force_cursor` /
-`BRIEFING_FORCE_CURSOR=1`. The weekday 09:00 agent `git pull`s those captures — it cannot dispatch workflows.
+Optional: Actions → **Weekday 09:00 Beijing** → Run workflow (IMAP then briefing nudge). Cursor idle `Agent.create` stays off unless `force_cursor` /
+`BRIEFING_FORCE_CURSOR=1`. The weekday agent `git pull`s those captures — it cannot dispatch workflows.
 
 ## Re-enable twice-daily auto later
 
