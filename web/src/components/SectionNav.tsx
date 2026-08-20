@@ -16,11 +16,11 @@ export function SectionNav({
   const items = [
     { href: "#skim", label: "Summary" },
     ...(hasThemes ? [{ href: "#themes", label: "Themes" }] : []),
-    ...(hasMarketOverview
-      ? [{ href: "#market-overview", label: "Books" }]
-      : []),
     ...(hasMarketDashboard
       ? [{ href: "#market-dashboard", label: "Closes" }]
+      : []),
+    ...(hasMarketOverview
+      ? [{ href: "#market-overview", label: "Books" }]
       : []),
     ...(hasFigures ? [{ href: "#key-figures", label: "Figures" }] : []),
     ...(hasCalendar ? [{ href: "#calendar", label: "Calendar" }] : []),

@@ -47,8 +47,8 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject) |
 | Skim | `summary` (sourced bullets), `signal`, `watch` — this is what the homepage shows first |
 | Themes | `themeCards` — **one card per independent market force** from **today’s** 今日图表 + 市场一览 + 国际要闻/大中华 (plus FACT prints). Count follows the tape (quiet day can be 2; a busy 市场一览 can be 6+). Not a news digest, not a 3–5 quota, and not yesterday’s cards with one fact line patched. Title names the books it hits. Required: `assets[]`, `fact`, `factSources`, `mechanism`, `trigger`, `invalidator`, `horizon`, `status` |
-| By book | `marketOverview` — one English line per book (what moved and why) with row `sources`. Dated prints + labeled 财经早茶 CLAIM. This is the asset read; do **not** fill `assetClasses`. |
-| Market closes | `marketDashboard` via inject only |
+| Market closes | `marketDashboard` via inject only. Renders **before** Books. |
+| By book | `marketOverview` — one English line per book (what moved and why) with row `sources`. Dated prints + labeled 财经早茶 CLAIM. **Asia equities must name Japan and Korea** (Nikkei/Kospi) with a dated print, or name the miss — do not leave the row as Greater China only. Do not copy Yahoo inject levels into this paragraph. This is the asset read; do **not** fill `assetClasses`. |
 | Chart | `figures` (chart-of-day **only** if `bloomberg-$TODAY` PNG exists) |
 | Key sources | `keySources` — **unique** prints/CLAIMs only. Each row: `label`, `href`, `books[]` (asset-class ids it actually moves), `influence` (one line: the print and which book it changes). One href once. No Yahoo quote HTML. No second chip for a desk already used as the primary. |
 | Event calendar | `eventCalendar` windowStart=briefing date, windowEnd=Friday after the Friday-on-or-after (this week + next); ~8–20 dated rows; mainland China only on calendar; `watchItems: []` |

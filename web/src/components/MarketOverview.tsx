@@ -31,7 +31,7 @@ export function MarketOverview({ data }: MarketOverviewProps) {
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           One line per book: what moved and why. Dated prints first; desk color
-          is labeled CLAIM. The closes table below is a later snapshot — do not
+          is labeled CLAIM. The closes table above is a later snapshot — do not
           mix the two.
           {data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}
         </p>
