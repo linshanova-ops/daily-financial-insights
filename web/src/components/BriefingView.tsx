@@ -89,8 +89,8 @@ export function BriefingView({
       ) : null}
       <SituationBlock
         id="global-situation"
-        eyebrow="Global situation"
-        title="World regime and today's delta"
+        eyebrow="财经早茶"
+        title="国际要闻"
         stanceLabel="Regime"
         stance={briefing.globalRegime}
         changed={briefing.globalChanged}
@@ -102,8 +102,8 @@ export function BriefingView({
       />
       <SituationBlock
         id="china-situation"
-        eyebrow="China situation"
-        title="Policy stance and domestic pulse"
+        eyebrow="财经早茶"
+        title="大中华新闻"
         stanceLabel="Policy stance"
         stance={briefing.chinaStance}
         changed={briefing.chinaChanged}

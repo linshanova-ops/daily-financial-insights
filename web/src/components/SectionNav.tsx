@@ -24,8 +24,8 @@ export function SectionNav({
       : []),
     ...(hasFigures ? [{ href: "#key-figures", label: "Figures" }] : []),
     ...(hasCalendar ? [{ href: "#calendar", label: "Calendar" }] : []),
-    { href: "#global-situation", label: "Global" },
-    { href: "#china-situation", label: "China" },
+    { href: "#global-situation", label: "国际要闻" },
+    { href: "#china-situation", label: "大中华" },
     { href: "#sources", label: "Sources" },
   ];
 
