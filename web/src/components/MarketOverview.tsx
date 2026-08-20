@@ -1,6 +1,5 @@
 import type { MarketOverview as MarketOverviewData } from "@/lib/types";
 import { accents } from "@/lib/module-accents";
-import { KindLabel } from "./KindLabel";
 import { SourceButton } from "./SourceButton";
 
 interface MarketOverviewProps {
@@ -24,17 +23,17 @@ export function MarketOverview({ data }: MarketOverviewProps) {
           <p
             className={`text-xs font-semibold uppercase tracking-[0.24em] ${accent.eyebrow}`}
           >
-            Market color
+            By book
           </p>
-          <KindLabel kind="claim" />
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          Morning desk tape
+          How the books traded
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          Qualitative color from 彭博 Markets Daily China / 财经早茶
-          {data.asOfDate ? ` (${data.asOfDate})` : ""}. Desk narrative only —
-          official closes are in Market closes below.
+          One line per book: what moved and why. Dated prints first; desk color
+          is labeled CLAIM. The closes table below is a later snapshot — do not
+          mix the two.
+          {data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}
         </p>
 
         <ul className="mt-8 divide-y divide-line/70 border-y border-line/70">
@@ -46,9 +45,12 @@ export function MarketOverview({ data }: MarketOverviewProps) {
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/55">
                 {item.label}
               </p>
-              <p className="text-sm leading-relaxed text-ink sm:text-base">
-                {item.text}
-              </p>
+              <div>
+                <p className="text-sm leading-relaxed text-ink sm:text-base">
+                  {item.text}
+                </p>
+                <SourceButton sources={item.sources} />
+              </div>
             </li>
           ))}
         </ul>

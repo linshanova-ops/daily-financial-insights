@@ -17,7 +17,7 @@ export function SectionNav({
     { href: "#skim", label: "Summary" },
     ...(hasThemes ? [{ href: "#themes", label: "Themes" }] : []),
     ...(hasMarketOverview
-      ? [{ href: "#market-overview", label: "Tape" }]
+      ? [{ href: "#market-overview", label: "Books" }]
       : []),
     ...(hasMarketDashboard
       ? [{ href: "#market-dashboard", label: "Closes" }]

@@ -194,17 +194,18 @@ export interface MarketDashboard {
   groups: MarketDashboardGroup[];
 }
 
-/** One desk-color line from Bloomberg 市场一览 (qualitative tape, not closes). */
+/** One book line: what moved and why (prints + labeled desk/CLAIM). */
 export interface MarketOverviewItem {
-  /** Short sleeve label, e.g. 美国股市 / 外汇市场. */
+  /** Book label, e.g. US equities / Rates. */
   label: string;
-  /** Chinese desk color from the email — keep as sourced. */
+  /** One or two sentences: the move, then the mechanism. */
   text: string;
+  sources?: FactSource[];
 }
 
 /**
- * Morning desk tape from 彭博 市场一览 — qualitative color above Market closes.
- * Values must come from the inbox newsletter (never invent levels).
+ * By-book tape — the site’s asset read (not a six-regime matrix).
+ * Prints from dated sources; 彭博 市场一览 only as labeled CLAIM.
  */
 export interface MarketOverview {
   /** Briefing / email calendar day (YYYY-MM-DD). */

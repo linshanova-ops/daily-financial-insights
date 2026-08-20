@@ -47,7 +47,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject) |
 | Skim | `summary` (sourced bullets), `signal`, `watch` — this is what the homepage shows first |
 | Themes | `themeCards` × 3–5 **cross-asset forces** from **today’s** 今日图表 + 市场一览 + 国际要闻/大中华 (plus FACT prints). Not a news digest and not yesterday’s cards with one fact line patched. Title names the books it hits. Required: `assets[]`, `fact`, `factSources`, `mechanism`, `trigger`, `invalidator`, `horizon`, `status` |
-| 市场一览 | `marketOverview` from inbox 市场一览 |
+| By book | `marketOverview` — one English line per book (what moved and why) with row `sources`. Dated prints + labeled 财经早茶 CLAIM. This is the asset read; do **not** fill `assetClasses`. |
 | Market closes | `marketDashboard` via inject only |
 | Chart | `figures` (chart-of-day **only** if `bloomberg-$TODAY` PNG exists) |
 | Key sources | `keySources` — **unique** prints/CLAIMs only. Each row: `label`, `href`, `books[]` (asset-class ids it actually moves), `influence` (one line: the print and which book it changes). One href once. No Yahoo quote HTML. No second chip for a desk already used as the primary. |

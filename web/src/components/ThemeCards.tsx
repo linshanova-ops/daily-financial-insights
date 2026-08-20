@@ -1,7 +1,6 @@
 "use client";
 
 import type { SignalGrade, ThemeCard } from "@/lib/types";
-import { KindLabel } from "./KindLabel";
 import { SourceButton } from "./SourceButton";
 
 const gradeStyles: Record<SignalGrade, string> = {
@@ -14,7 +13,7 @@ interface ThemeCardsProps {
   themes: ThemeCard[];
 }
 
-/** Primary narrative home: one event → one full expansion. */
+/** Cross-asset forces: fact, then the so-what. */
 export function ThemeCards({ themes }: ThemeCardsProps) {
   if (!themes.length) return null;
 
@@ -29,14 +28,13 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber">
             Today&apos;s themes
           </p>
-          <KindLabel kind="judgment" />
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
           What moves markets today
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          Each theme is a cross-asset force: the fact, how it transmits, and
-          what would change it.
+          Each theme is one force: the print, then what it means for which
+          books.
         </p>
         <ol className="mt-10 space-y-10">
           {themes.map((theme, index) => (
@@ -54,9 +52,6 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                 >
                   {theme.grade}
                 </span>
-                <span className="text-xs uppercase tracking-[0.16em] text-ink/40">
-                  {theme.status}
-                </span>
                 {theme.assets?.length ? (
                   <span className="text-xs tracking-wide text-ink/45">
                     {theme.assets.join(" · ")}
@@ -66,33 +61,17 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
               <h3 className="display mt-2 text-2xl tracking-tight text-ink sm:text-3xl">
                 {theme.title}
               </h3>
-              <dl className="mt-5 grid gap-4 text-sm leading-relaxed text-ink-soft sm:grid-cols-2">
-                <div className="sm:col-span-2">
-                  <dt className="flex flex-wrap items-center gap-2 font-semibold text-ink">
-                    Fact <KindLabel kind="fact" />
-                  </dt>
+              <dl className="mt-5 space-y-4 text-sm leading-relaxed text-ink-soft sm:text-base">
+                <div>
+                  <dt className="font-semibold text-ink">Fact</dt>
                   <dd className="mt-1">
                     {theme.fact}
                     <SourceButton sources={theme.factSources} />
                   </dd>
                 </div>
                 <div>
-                  <dt className="flex flex-wrap items-center gap-2 font-semibold text-ink">
-                    Mechanism <KindLabel kind="judgment" />
-                  </dt>
+                  <dt className="font-semibold text-ink">So what</dt>
                   <dd className="mt-1">{theme.mechanism}</dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-ink">Horizon</dt>
-                  <dd className="mt-1">{theme.horizon}</dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-ink">Watch for</dt>
-                  <dd className="mt-1">{theme.trigger}</dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-ink">Invalidated if</dt>
-                  <dd className="mt-1">{theme.invalidator}</dd>
                 </div>
               </dl>
             </li>
