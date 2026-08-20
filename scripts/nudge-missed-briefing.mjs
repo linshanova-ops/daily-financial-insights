@@ -20,7 +20,7 @@ const repoUrl =
   "https://github.com/linshanova-ops/daily-financial-insights";
 const today = process.env.BRIEFING_DATE || beijingDateString();
 const slotStartMs = Date.parse(`${today}T01:00:00.000Z`); // Beijing 09:00
-const weekdayPrompt = `Follow \`.cursor/skills/weekday-website-update/SKILL.md\`. Beijing date ${today}. $TODAY.md on main is not done: if 今日图表 / 市场一览 / Themes still yesterday, patch and rewrite Themes from today’s 财经早茶. Stop only when those sections match that mail. Publish ${today}, merge when Briefing accuracy gate is green, confirm live Pages data/latest.json date, then stop. Do not call generate-daily-briefing.mjs.`;
+const weekdayPrompt = `Follow \`.cursor/skills/weekday-website-update/SKILL.md\`. Beijing date ${today}. $TODAY.md on main is not done: if 今日图表 PNG / 市场一览 / Themes still yesterday, pull IMAP again, patch, and rewrite Themes in complete sentences from today’s 财经早茶. Empty 今日图表 body is not no-chart when bloomberg-$TODAY.png exists. Stop only when those sections match that mail. Publish ${today}, merge when Briefing accuracy gate is green, confirm live Pages data/latest.json date, then stop. Do not call generate-daily-briefing.mjs.`;
 
 function briefingExistsOnMain() {
   const repoPath = repoUrl.replace(/^https?:\/\/github\.com\//, "").replace(/\.git$/, "");

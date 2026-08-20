@@ -38,6 +38,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 - **Confidence language is calibrated:** *is/did* for confirmed facts; *appears/suggests* for graded inference; *possible/worth watching* for weak signals. Never present a WEAK signal in *is* language.
 - **Facts before interpretation** within each section — reader should be able to see where reporting ends and judgment begins
 - **Length:** ~1,000–1,500 words total. Executive summary ≤ 120 words.
+- **Complete sentences on the website.** `marketTone`, `signal`, Theme `title`/`fact`/`mechanism`, Assets `regime`/`driver`/`read`, and Global/China stance must read as prose a busy person can follow. Do not stitch source keywords into a headline (“Treasury ≥$4bn long-end buybacks are the US rates / equity / USD sleeve”, “hike-if-inflation”, “NBS 4.5/0.6/−6.7”). Name who did what, with the number, then what it means.
 - **Quiet days:** say "little regime-relevant news today" in one line rather than inflating minor items. A short honest report beats a padded one.
 - **Language:** match the user's request language (Chinese request → Chinese report, keeping key terms/tickers in original form)
 
@@ -72,3 +73,4 @@ End every report with:
 - **Losing traceability while editing** — tightening prose must not detach claims from their sources; keep at least outlet names on key facts.
 - **Pushing markdown without JSON** — always run `npm run verify-briefing` immediately before commit; CI fails if `latest.json` drifted from markdown.
 - **Leaving yesterday’s Themes** — after merging today’s 财经早茶, rewrite `themeCards` (and skim `signal`) from that tape. A Theme whose title or fact still names yesterday’s PNG or yesterday’s desk color is unpublished work.
+- **Keyword-stitch copy** — grabbing three tokens from a source and joining them with slashes or hyphens is not a sentence. If a reader cannot say the line aloud, rewrite it.
