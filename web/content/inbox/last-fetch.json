@@ -1,8 +1,26 @@
 {
-  "at": "2026-08-19T10:07:31.030Z",
-  "briefingDate": "2026-08-19",
+  "at": "2026-08-20T02:13:53.435Z",
+  "briefingDate": "2026-08-20",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-20.md",
+      "subject": "彭博财经早茶：美国财政部加码回购长债；阿里巴巴将发布财报",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5515,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-20.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-20.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W34.md",
+      "subject": "Yields Anchor, Capitulation Grinds",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 3401,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-19.md",
@@ -34,11 +52,6 @@
       "skipped": true
     },
     {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W33.md",
-      "skipped": true
-    },
-    {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-12.md",
       "skipped": true
@@ -56,11 +69,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-07.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-06.md",
       "skipped": true
     }
   ],
@@ -96,9 +104,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-13.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Trigger Happy",
-      "path": "web/content/inbox/glassnode-insights/2026-W33.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -134,16 +142,6 @@
       "reason": "welcome",
       "subject": "Confirm your subscription",
       "from": "\"In Context from J.P. Morgan\" <in.context.newsletter@jpmcib.jpmorgan.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：伊朗或开辟海峡临时航道；黑客攻击大型对冲基金",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-06.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Priced For Nothing, Reacting To Everything",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
     }
   ]
 }
