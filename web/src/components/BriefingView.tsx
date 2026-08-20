@@ -50,7 +50,7 @@ export function BriefingView({
         showCta={showHeroCta}
         variant={heroVariant}
         marketsHref={
-          hasMarketDashboard ? "#market-dashboard" : "#market-overview"
+          hasMarketOverview ? "#market-overview" : "#market-dashboard"
         }
       />
       <SectionNav
