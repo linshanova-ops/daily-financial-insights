@@ -5,8 +5,7 @@ alpha/beta decomposition (资产收益 = 贝塔收益 + 阿尔法收益) and reg
 asset pricing: most of a day's move is **beta to an identifiable macro driver**;
 alpha claims need evidence.
 
-Website schema: `assetClasses[]` (see `docs/superpowers/specs/2026-08-06-event-calendar-design.md`).
-Legacy flat `assetFramework[]` remains for older briefings only.
+The website does **not** render `assetClasses[]` (or legacy `assetFramework[]`). Do not spend a publish run filling six books. This note is only if you still author the YAML for archives.
 
 ## Class order (fixed)
 

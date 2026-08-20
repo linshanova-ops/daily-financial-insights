@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s · syravocado",
   },
   description:
-    "syravocado — daily global and China financial briefings from the gather → analyze → signal → suggest research pipeline.",
+    "syravocado — weekday global and China financial briefings from sourced desks.",
 };
 
 export default function RootLayout({

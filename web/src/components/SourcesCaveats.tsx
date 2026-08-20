@@ -71,7 +71,7 @@ export function SourcesCaveats({
       </h2>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
         {classified
-          ? "Each source once. Tags are the books it actually moves — not a second copy of Themes or Assets."
+          ? "Each source once. Tags are the books the print actually moves."
           : "Clickable sources for this edition."}{" "}
         Pipeline / publish mechanics live on the{" "}
         <Link

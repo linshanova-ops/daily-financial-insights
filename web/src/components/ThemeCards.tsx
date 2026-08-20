@@ -35,8 +35,8 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
           What moves markets today
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          Each theme is a cross-asset force: which books it hits, the fact, how
-          it transmits, what would change it. Assets is the per-market read.
+          Each theme is a cross-asset force: the fact, how it transmits, and
+          what would change it.
         </p>
         <ol className="mt-10 space-y-10">
           {themes.map((theme, index) => (

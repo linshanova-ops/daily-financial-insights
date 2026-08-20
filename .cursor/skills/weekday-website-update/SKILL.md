@@ -45,18 +45,17 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Site | YAML |
 |------|------|
 | Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject) |
-| Skim | `summary` (sourced), `signal`, `watch`; skim titles = `themeCards[].title` |
+| Skim | `summary` (sourced bullets), `signal`, `watch` — this is what the homepage shows first |
 | Themes | `themeCards` × 3–5 **cross-asset forces** from **today’s** 今日图表 + 市场一览 + 国际要闻/大中华 (plus FACT prints). Not a news digest and not yesterday’s cards with one fact line patched. Title names the books it hits. Required: `assets[]`, `fact`, `factSources`, `mechanism`, `trigger`, `invalidator`, `horizon`, `status` |
 | 市场一览 | `marketOverview` from inbox 市场一览 |
 | Market closes | `marketDashboard` via inject only |
 | Chart | `figures` (chart-of-day **only** if `bloomberg-$TODAY` PNG exists) |
 | Key sources | `keySources` — **unique** prints/CLAIMs only. Each row: `label`, `href`, `books[]` (asset-class ids it actually moves), `influence` (one line: the print and which book it changes). One href once. No Yahoo quote HTML. No second chip for a desk already used as the primary. |
 | Event calendar | `eventCalendar` windowStart=briefing date, windowEnd=Friday after the Friday-on-or-after (this week + next); ~8–20 dated rows; mainland China only on calendar; `watchItems: []` |
-| Global tab | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions` |
-| China tab | `chinaStance`, `chinaChanged`, `chinaImplies`, `chinaDivergences` |
-| Assets tab | `assetClasses` × 6 in order `us-equities` · `asia-equities` · `rates` · `fx` · `commodities` · `crypto` (asia = Golden Dragon/HK **and** JP/KR). This is the valuable book-by-book view — not a pointer at the dashboard. |
-| Sources tab | Renders `keySources` classified by book. `sources` = leftovers cited only on What-changed. `singleSource` = caveats. |
-| (not rendered) | `signals: []` |
+| Global | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions` |
+| China | `chinaStance`, `chinaChanged`, `chinaImplies`, `chinaDivergences` |
+| Sources | Renders `keySources` classified by book. `sources` = leftovers cited only on What-changed. `singleSource` = caveats. |
+| (not rendered) | `signals: []`. `assetClasses` / `assetFramework` — do **not** spend the run filling six books; the site does not show them. |
 
 ## Publish
 
@@ -70,13 +69,11 @@ Commit md + JSON together. PR `[skip netlify] content: publish YYYY-MM-DD daily 
 
 Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` or `git checkout main && git merge && git push origin main` if `gh` is 403). Push to `main` fires Pages; if `latest.json` on Pages is still yesterday, dispatch **Deploy syravocado to GitHub Pages**. Confirm live `…/data/latest.json` `date` is `$TODAY`, then stop.
 
-**Themes:** pick the 3–5 forces that actually move asset markets **today**. Rewrite from this morning’s 财经早茶 — if 今日图表 is Hong Kong births, a Theme still titled as yesterday’s duration PNG is unpublished work. Mechanism answers “so what for which book.” Do not title cards as headline events if the value is the market transmission. Chip `themeId` on Assets to those new ids. **Write complete sentences.** A busy reader must follow `marketTone`, `signal`, Theme `title`/`fact`/`mechanism`, and Assets `regime`/`driver`/`read` without decoding keyword stitches such as “buyback-duration bounce” or “hike-if-inflation.” Name the actor, the action, and the number.
-
-**Assets:** `regime` names the current beta. `driver` = sourced print or labeled CLAIM/desk — never “see Market Dashboard” as the whole story. `read` = the perspective (what it means, next falsifier). `invalidator` when the book is live. Quiet class: one honest line, don’t pad. `themeId` chips to Themes. Levels/live tape stay in `marketDashboard` (Yahoo quote HTML is not a close).
+**Themes:** pick the 3–5 forces that actually move asset markets **today**. Rewrite from this morning’s 财经早茶 — if 今日图表 is Hong Kong births, a Theme still titled as yesterday’s duration PNG is unpublished work. Mechanism answers “so what for which book.” Do not title cards as headline events if the value is the market transmission. Chip `themeId` on calendar rows to those new ids. **Write complete sentences.** A busy reader must follow `marketTone`, `summary`, `signal`, and Theme `title`/`fact`/`mechanism` without decoding keyword stitches such as “buyback-duration bounce” or “hike-if-inflation.” Name the actor, the action, and the number.
 
 **Sources:** curate, don’t dump. A source is valuable if it is the primary print, the estimate for a beat/miss, or a labeled CLAIM that actually moves a book. `factSources` / `driverSources` = that claim’s primary (plus estimate source if the sentence names a miss/beat). Do not clone `keySources` onto every card. Inbox hub once as a key source; per-bullet chips on What-changed are fine when that bullet is desk/CLAIM.
 
-Self-check before PR: every table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; if a chart is present its PNG date is `$TODAY`; Themes titles/facts match that chart and today’s desk (no Theme citing yesterday’s PNG as 今日图表); 市场一览 is today’s mail, not yesterday’s; prose is complete sentences (not keyword stitches); no invented tape; no Assets row whose only content is “see Market Dashboard”; no duplicate `keySources` href; every key source has `books` + `influence`.
+Self-check before PR: every **rendered** table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; if a chart is present its PNG date is `$TODAY`; Themes titles/facts match that chart and today’s desk (no Theme citing yesterday’s PNG as 今日图表); 市场一览 is today’s mail, not yesterday’s; prose is complete sentences (not keyword stitches); no invented tape; no duplicate `keySources` href; every key source has `books` + `influence`.
 
 Do not record a walkthrough video.
 ---
