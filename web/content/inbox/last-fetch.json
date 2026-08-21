@@ -1,25 +1,27 @@
 {
-  "at": "2026-08-20T02:13:53.435Z",
-  "briefingDate": "2026-08-20",
+  "at": "2026-08-21T02:20:43.190Z",
+  "briefingDate": "2026-08-21",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-20.md",
-      "subject": "彭博财经早茶：美国财政部加码回购长债；阿里巴巴将发布财报",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-21.md",
+      "subject": "彭博财经早茶：美国或再扩国债回购；阿里AI商业化加速",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5515,
+      "chars": 5366,
       "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-20.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-20.png"
+      "chartImage": "/inbox-charts/bloomberg-2026-08-21.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-21.png"
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-20.md",
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W34.md",
-      "subject": "Yields Anchor, Capitulation Grinds",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 3401,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -73,6 +75,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美国财政部加码回购长债；阿里巴巴将发布财报",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-20.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "Yields Anchor, Capitulation Grinds",
+      "path": "web/content/inbox/glassnode-insights/2026-W34.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：宇树科技上市；多国主权债遭抛售",
@@ -137,11 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：霍尔木兹海峡重开添变数；DeepSeek重启融资",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-07.md"
-    },
-    {
-      "reason": "welcome",
-      "subject": "Confirm your subscription",
-      "from": "\"In Context from J.P. Morgan\" <in.context.newsletter@jpmcib.jpmorgan.com>"
     }
   ]
 }
