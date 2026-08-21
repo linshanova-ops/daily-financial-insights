@@ -67,11 +67,6 @@ export function BriefingView({
           watch={briefing.watch}
         />
       </div>
-      {hasThemes ? <ThemeCards themes={themeCards} /> : null}
-      <PreviousBriefingLink previousDate={previousDate} />
-      <div className="mx-auto mb-2 w-full max-w-6xl px-5 pt-4 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
-        Coverage window: {briefing.coverageWindow}
-      </div>
       {hasMarketDashboard && marketDashboard ? (
         <MarketDashboard data={marketDashboard} />
       ) : null}
@@ -79,6 +74,11 @@ export function BriefingView({
         <MarketOverview data={marketOverview} />
       ) : null}
       {figures.length ? <KeyFigures figures={figures} /> : null}
+      {hasThemes ? <ThemeCards themes={themeCards} /> : null}
+      <PreviousBriefingLink previousDate={previousDate} />
+      <div className="mx-auto mb-2 w-full max-w-6xl px-5 pt-4 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
+        Coverage window: {briefing.coverageWindow}
+      </div>
       {hasCalendar && eventCalendar?.events ? (
         <EventCalendarView
           calendar={eventCalendar}

@@ -15,7 +15,6 @@ export function SectionNav({
 }: SectionNavProps) {
   const items = [
     { href: "#skim", label: "Summary" },
-    ...(hasThemes ? [{ href: "#themes", label: "Themes" }] : []),
     ...(hasMarketDashboard
       ? [{ href: "#market-dashboard", label: "Closes" }]
       : []),
@@ -23,6 +22,7 @@ export function SectionNav({
       ? [{ href: "#market-overview", label: "Books" }]
       : []),
     ...(hasFigures ? [{ href: "#key-figures", label: "Figures" }] : []),
+    ...(hasThemes ? [{ href: "#themes", label: "Themes" }] : []),
     ...(hasCalendar ? [{ href: "#calendar", label: "Calendar" }] : []),
     { href: "#global-situation", label: "Global" },
     { href: "#china-situation", label: "China" },
