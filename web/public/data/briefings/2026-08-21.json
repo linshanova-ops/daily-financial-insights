@@ -86,8 +86,8 @@
       "influence": "Unitree 687 yuan (−18.70%); 市值约 2778.67亿元."
     },
     {
-      "label": "Bank of China — LPR table",
-      "href": "https://www.bankofchina.com/fimarkets/lilv/fd32/201310/t20131031_2591219.html",
+      "label": "中新网 — 8月 LPR",
+      "href": "https://www.chinanews.com.cn/cj/2026/08-20/10680938.shtml",
       "books": [
         "rates",
         "asia-equities"
@@ -267,8 +267,8 @@
           "href": "https://www.stocktitan.net/sec-filings/NTES/6-k-net-ease-inc-current-report-foreign-issuer-63f5f31b0880.html"
         },
         {
-          "label": "Bank of China LPR",
-          "href": "https://www.bankofchina.com/fimarkets/lilv/fd32/201310/t20131031_2591219.html"
+          "label": "中新网 — 8月 LPR",
+          "href": "https://www.chinanews.com.cn/cj/2026/08-20/10680938.shtml"
         },
         {
           "label": "财新 沪八条",
@@ -520,11 +520,11 @@
         "A/H shares",
         "CNY"
       ],
-      "fact": "20 August LPR: 1-year 3.00%, 5-year-plus 3.50%, both unchanged (Bank of China table). 财新: Shanghai 沪八条 takes effect 21 August; first-home commercial downpayment ≥15%; second-home outside the outer ring ≥15% (including Baoshan and Jiading). NBS July retail +0.6% and Jan–Jul FAI −6.7% are still the demand FACT. This is not an easing cycle.",
+      "fact": "20 August LPR: 1-year 3.00%, 5-year-plus 3.50%, both unchanged (中新网). 财新: Shanghai 沪八条 takes effect 21 August; first-home commercial downpayment ≥15%; second-home outside the outer ring ≥15% (including Baoshan and Jiading). NBS July retail +0.6% and Jan–Jul FAI −6.7% are still the demand FACT. This is not an easing cycle.",
       "factSources": [
         {
-          "label": "Bank of China LPR",
-          "href": "https://www.bankofchina.com/fimarkets/lilv/fd32/201310/t20131031_2591219.html"
+          "label": "中新网 — 8月 LPR",
+          "href": "https://www.chinanews.com.cn/cj/2026/08-20/10680938.shtml"
         },
         {
           "label": "财新 沪八条",
@@ -717,8 +717,8 @@
       "text": "中国8月LPR：1年期3.00%，5年期以上3.50%，连续第15个月不变。",
       "sources": [
         {
-          "label": "Bank of China LPR",
-          "href": "https://www.bankofchina.com/fimarkets/lilv/fd32/201310/t20131031_2591219.html"
+          "label": "中新网 — 8月 LPR",
+          "href": "https://www.chinanews.com.cn/cj/2026/08-20/10680938.shtml"
         },
         {
           "label": "华尔街见闻早餐",
