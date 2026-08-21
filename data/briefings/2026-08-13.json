@@ -1,0 +1,1015 @@
+{
+  "date": "2026-08-13",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "August 12–13, 2026",
+  "publishedAt": "2026-08-13T09:00:09.097Z",
+  "keySources": [
+    {
+      "label": "彭博 Markets Daily China / 财经早茶 (Aug 13 inbox)",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "BLS — CPI July 2026 (released Aug 12)",
+      "href": "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+    },
+    {
+      "label": "AP — Inflation cools (July CPI)",
+      "href": "https://apnews.com/article/consumer-prices-inflation-fed-interest-rates-150e179a6c6b3182ba05cedf0188394b"
+    },
+    {
+      "label": "AP — How major US stock indexes fared Wednesday 8/12/2026",
+      "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c2b9200bd737220ef848a37ffea21f95"
+    },
+    {
+      "label": "Yahoo Finance — S&P 500 (^GSPC)",
+      "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "label": "U.S. Treasury — daily yield curve",
+      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+    },
+    {
+      "label": "Tencent — 2Q2026 results (PR Newswire)",
+      "href": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-second-quarter-results-302849608.html"
+    },
+    {
+      "label": "第一财经 — 央行隔夜逆回购",
+      "href": "https://www.yicai.com/news/103315760.html"
+    },
+    {
+      "label": "华尔街见闻 — 港股腾讯",
+      "href": "https://wallstreetcn.com/articles/3779335"
+    },
+    {
+      "label": "BLS — PPI schedule (July 2026, Aug 13)",
+      "href": "https://www.bls.gov/schedule/2026/"
+    },
+    {
+      "label": "CoinGecko — Bitcoin",
+      "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+      "label": "Federal Reserve calendar",
+      "href": "https://www.federalreserve.gov/json/calendar.json"
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": "今日图表（彭博 Aug 13）— 投资者对日元干预风险仍心存警惕",
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-08-13.png",
+      "analysis": "彭博「今日图表」标题：投资者对日元干预风险仍心存警惕。折线为美元/日元，纵轴约156–164，横轴2026年7月至8月中旬；160标为「重要关口」。7月下旬一度靠近164后急跌至约157附近，8月中旬回升至159–160一带。So what：这是干预记忆下的关口图，不是已确认的官方操作打印；对大类资产，读的是USD/JPY仍贴着160、政策回应期权仍在，不能单独当成今日PPI路径交易信号。",
+      "source": {
+        "label": "彭博 Markets Daily China / 财经早茶",
+        "href": "https://www.bloomberg.com/asia"
+      }
+    }
+  ],
+  "marketTone": "In-line July CPI lets S&P/Nasdaq grind higher while Tencent’s AI capex/FCF print hits HK/ADRs, USD/JPY still hugs 160, and tonight’s PPI is the next inflation gate.",
+  "summary": [
+    {
+      "text": "July CPI (BLS/AP): headline +0.1% m/m, +3.4% y/y (June +3.5%); core +0.2% m/m, +2.5% y/y (June +2.6%). In line with estimates.",
+      "sources": [
+        {
+          "label": "BLS CPI July 2026",
+          "href": "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+        },
+        {
+          "label": "AP News",
+          "href": "https://apnews.com/article/consumer-prices-inflation-fed-interest-rates-150e179a6c6b3182ba05cedf0188394b"
+        }
+      ]
+    },
+    {
+      "text": "Aug 12 US close (AP): S&P 500 7,748.50 (+0.3% / +20.30); Nasdaq 26,588.49 (+0.5%); Dow 53,770.27 (−0.1%).",
+      "sources": [
+        {
+          "label": "AP News",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c2b9200bd737220ef848a37ffea21f95"
+        }
+      ]
+    },
+    {
+      "text": "Aug 12 Treasury curve: US 2Y 4.20% (−2 bp); 10Y 4.68% (−2 bp). Inbox: 10Y auction stop was the highest since the GFC (desk).",
+      "sources": [
+        {
+          "label": "U.S. Treasury",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Tencent 2Q: revenue RMB204.8bn (+11% y/y); capex RMB52.8bn (+176% y/y); FCF −RMB13.8bn. WorkBuddy called a China AI-office leader. HK Tencent −4%+ (见闻); inbox: ADR −5%+ overnight.",
+      "sources": [
+        {
+          "label": "Tencent 2Q2026 (PR Newswire)",
+          "href": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-second-quarter-results-302849608.html"
+        },
+        {
+          "label": "华尔街见闻",
+          "href": "https://wallstreetcn.com/articles/3779335"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "PBOC: 7-day OMO zero two sessions; overnight reverse-repo scheduled mid-month (Yicai: 14/17/18/19 Aug, daily cap 6,000亿元). Inbox: first mid-month overnight op Friday.",
+      "sources": [
+        {
+          "label": "第一财经",
+          "href": "https://www.yicai.com/news/103315760.html"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Thursday Asia (Yahoo): Nikkei 68,308.59 (+1.16%); Kospi 6,813.34 (+3.56%); Hang Seng 25,396.51 (−0.17%); Shanghai 3,926.96 (−0.50%).",
+      "sources": [
+        {
+          "label": "Yahoo Finance (^N225)",
+          "href": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo Finance (^KS11)",
+          "href": "https://finance.yahoo.com/quote/%5EKS11/"
+        },
+        {
+          "label": "Yahoo Finance (^HSI)",
+          "href": "https://finance.yahoo.com/quote/%5EHSI/"
+        }
+      ]
+    }
+  ],
+  "signal": "In-line CPI bought a pause-odds bid in US tech, but Tencent’s capex/FCF print split China tech from Korea chips — PPI tonight and USD/JPY vs 160 still two-sided.",
+  "watch": "BLS PPI (Aug 13 20:30 BJ) · US jobless claims · PBOC overnight OMO (Aug 14) · PBOC July credit (possible) · USD/JPY vs 160 · FOMC minutes (Aug 19).",
+  "marketOverview": {
+    "asOfDate": "2026-08-13",
+    "note": "From 彭博 市场一览 — qualitative desk color only.",
+    "items": [
+      {
+        "label": "美国股市",
+        "text": "标普500指数逼近纪录高位，温和的通胀数据缓解市场加息担忧"
+      },
+      {
+        "label": "中概股",
+        "text": "金龙中国指数连续第二天大跌，Maase和网易对指数拖累最大"
+      },
+      {
+        "label": "美国债市",
+        "text": "国债涨跌互现，收益率曲线趋陡，温和的CPI数据缓解美联储加息压力"
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数小幅走高，日元逼近160关口加剧干预风险"
+      },
+      {
+        "label": "欧洲股债",
+        "text": "德国和英国国债持稳，长端表现略逊。欧洲股市小幅下跌，市场聚焦中东紧张局势"
+      },
+      {
+        "label": "能源",
+        "text": "原油期货基本持平，美国原油库存大增之际市场聚焦霍尔木兹海峡谈判"
+      },
+      {
+        "label": "金属",
+        "text": "铜价续跌，中东局势不明加剧市场对经济和需求前景的担忧。金价上涨，温和的美国通胀数据缓解加息担忧"
+      }
+    ],
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    }
+  },
+  "themeCards": [
+    {
+      "id": "july-cpi-in-line",
+      "title": "July CPI in line — hike odds ease into PPI",
+      "grade": "STRONG",
+      "assets": [
+        "USTs",
+        "US equities"
+      ],
+      "fact": "BLS July CPI: +0.1% m/m, +3.4% y/y (from 3.5%); core +0.2% m/m, +2.5% y/y (from 2.6%). AP: in line; energy still the Iran-war hangover. S&P 7,748.50 (+0.3%), 10Y 4.68% (−2 bp). PPI due 8:30 a.m. ET today.",
+      "factSources": [
+        {
+          "label": "BLS CPI July 2026",
+          "href": "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+        },
+        {
+          "label": "AP News",
+          "href": "https://apnews.com/article/consumer-prices-inflation-fed-interest-rates-150e179a6c6b3182ba05cedf0188394b"
+        },
+        {
+          "label": "AP stock wrap",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c2b9200bd737220ef848a37ffea21f95"
+        },
+        {
+          "label": "U.S. Treasury",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "中金点睛 — 全球流动性到拐点了吗？（CLAIM）",
+          "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247853175&idx=1&sn=ea119b7e6d2981914ba059a48e8e430e&chksm=ebc7717f96ab1d6bca470a23886b03db4c4f0f487d7438156351eb6e5e5df7a0e2f11d86e495&scene=0&xtrack=1#rd"
+        }
+      ],
+      "mechanism": "An in-line/slightly cooler y/y print cuts the near hike argument without proving 2% is back — energy/Hormuz can still re-accelerate next month. CICC CLAIM (Aug 12): if July CPI cools as expected, Fed tightening narrative may reverse further (easing-trade lens for stocks/bonds/gold).",
+      "trigger": "Hot July PPI that re-opens September hike odds.",
+      "invalidator": "Soft PPI that extends the pause-odds bid.",
+      "horizon": "hours–days",
+      "status": "new"
+    },
+    {
+      "id": "tencent-capex-fcf",
+      "title": "Tencent beats sales — capex/FCF is the print",
+      "grade": "STRONG",
+      "assets": [
+        "Asia equities",
+        "AI"
+      ],
+      "fact": "Tencent 2Q revenue RMB204.8bn (+11% y/y); capex RMB52.8bn (+176%); FCF −RMB13.8bn on compute prepayments. WorkBuddy/CodeBuddy cited as China leaders. 见闻: HK Tencent −4%+ Thursday; inbox ADR −5%+; Golden Dragon second down day (desk).",
+      "factSources": [
+        {
+          "label": "Tencent 2Q2026 (PR Newswire)",
+          "href": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-second-quarter-results-302849608.html"
+        },
+        {
+          "label": "华尔街见闻",
+          "href": "https://wallstreetcn.com/articles/3779335"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "AI-office KPIs can be a catch-up narrative even while FCF goes negative — the market is pricing the cash conversion lag, not just the revenue beat.",
+      "trigger": "Guidance that capex stays this high without WorkBuddy monetization detail.",
+      "invalidator": "FCF recovery / concrete WorkBuddy paid-user metrics that stabilize HK tech.",
+      "horizon": "days–weeks",
+      "status": "new"
+    },
+    {
+      "id": "hormuz-stalemate",
+      "title": "Hormuz talks stuck — oil premium stays",
+      "grade": "MODERATE",
+      "assets": [
+        "Oil",
+        "USTs"
+      ],
+      "fact": "Inbox: US–Iran talks stalled; Tehran military reshuffle read as preparing for a longer regional conflict. IEA (desk) flags a 1.8 million b/d supply gap. Yahoo Brent ~$87.6 Thursday vs AP oil “slip” color Wednesday.",
+      "factSources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Yahoo Finance (BZ=F)",
+          "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+        },
+        {
+          "label": "AP News",
+          "href": "https://apnews.com/article/stock-markets-ai-semiconductors-fed-energy-3a23f22469cd0e0062f711096906525c"
+        }
+      ],
+      "mechanism": "Diplomacy stall keeps an energy channel in the inflation path even after an in-line CPI — PPI tonight still has to clear that residual.",
+      "trigger": "Verified sustained commercial Hormuz flow with falling freight/war risk.",
+      "invalidator": "Soft oil drop that pulls inflation-path anxiety lower with soft PPI.",
+      "horizon": "days–weeks",
+      "status": "continuing"
+    },
+    {
+      "id": "yen-near-160",
+      "title": "USD/JPY still hugs 160",
+      "grade": "MODERATE",
+      "assets": [
+        "USD/JPY",
+        "Asia equities"
+      ],
+      "fact": "Inbox: yen still sliding toward 160 with intervention watch. Chart-of-day is that 160 threshold after the late-July plunge/rebound. Yahoo USD/JPY ~159.4; Nikkei +1.16% Thursday. Japan July PPI was on the 07:50 BJ slot (inbox preview 7.4% y/y).",
+      "factSources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Yahoo Finance (USDJPY)",
+          "href": "https://finance.yahoo.com/quote/USDJPY%3DX/"
+        },
+        {
+          "label": "Yahoo Finance (^N225)",
+          "href": "https://finance.yahoo.com/quote/%5EN225/"
+        }
+      ],
+      "mechanism": "Round-number FX plus a hot Japan PPI tape raise official-response option value — cash beta and FX headlines can diverge.",
+      "trigger": "Confirmed official yen support or sustained break back below 155.",
+      "invalidator": "Clean grind through 160 with no official response.",
+      "horizon": "days",
+      "status": "continuing"
+    },
+    {
+      "id": "pboc-overnight-omo",
+      "title": "PBOC mid-month overnight OMO",
+      "grade": "MODERATE",
+      "assets": [
+        "Asia equities",
+        "FX"
+      ],
+      "fact": "Yicai: 7-day reverse repo zero on Aug 11–12 (net drain 465亿元 / 50亿元); overnight reverse-repo ops pre-announced for Aug 14/17/18/19, daily cap 6,000亿元, quantity not rate. Inbox: first mid-month overnight op Friday; Q2 MPR said overnight frequency will rise.",
+      "factSources": [
+        {
+          "label": "第一财经",
+          "href": "https://www.yicai.com/news/103315760.html"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "More overnight liquidity plumbing is “fill the gap,” not a rate-cut signal — 给量不给价. Watch tax/reserve dates next week, not a broad easing regime.",
+      "trigger": "Overnight ops that fail to cap repo spikes into the tax window.",
+      "invalidator": "Smooth mid-month funding with no extra easing language.",
+      "horizon": "days",
+      "status": "new"
+    }
+  ],
+  "globalRegime": "Post-CPI pause-odds bid in US tech vs a still-disputed Hormuz premium and USD/JPY on 160: risk assets can grind until PPI re-opens the energy-inflation channel.",
+  "globalChanged": [
+    {
+      "text": "美国7月通胀数据符合预期，核心CPI同比升幅处于五年低位，互换市场定价显示美联储9月加息概率有所下降",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "AP News",
+          "href": "https://apnews.com/article/consumer-prices-inflation-fed-interest-rates-150e179a6c6b3182ba05cedf0188394b"
+        },
+        {
+          "label": "BLS CPI July 2026",
+          "href": "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+        }
+      ]
+    },
+    {
+      "text": "Pimco认为美联储今年料维持利率不变，当前美债收益率具有吸引力。摩根资产管理也预计随着通胀逐步回落，美联储无需提高利率",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美伊谈判陷入僵局，伊朗高层军职调整显示德黑兰正为地区冲突长期化做准备。国际能源署称石油市场面临每日180万桶的供应缺口",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "日元兑美元进一步逼近160大关，交易员密切关注东京当局是否会再次干预。日本周四将公布7月PPI，经济学家预计同比升幅将创三年来最高",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国7月预算赤字创下历年同期最高纪录，联邦支出加速增长。周三标售的美国10年期国债中标收益率创出金融危机以来新高",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "因适逢驾车出行旺季，8月第二周美国的汽油与柴油价格均升至历年同期最高水平",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国银行称，对冲基金客户上周继续大举买入美股，规模创2008年以来单周之最",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "思科上季度营收和利润超出华尔街预期，但未能满足投资者的更高期待，芯片制造商Cerebras硬件销售下滑。两家公司股价盘后均下跌",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "Treat the CPI as in-line, not a regime change — PPI tonight is the next falsifier for September hike odds."
+    },
+    {
+      "text": "CICC CLAIM (Aug 12 liquidity note) still maps: cooler CPI supports an easing-trade lens, but Hormuz/energy can still spoil it."
+    }
+  ],
+  "globalTensions": "S&P near record vs still-stuck Hormuz; easier front-end vs GFC-high 10Y auction stop (desk); USD/JPY at 160 vs Nikkei bid.",
+  "chinaStance": "Tencent’s AI capex/FCF print split HK tech from Korea chips; PBOC is building overnight OMO plumbing, not cutting the policy rate. July credit still possible.",
+  "chinaChanged": [
+    {
+      "text": "腾讯上季度营收高于分析师预期，在人工智能项目和算力方面的投入增加一倍以上，资本支出激增导致自由现金流转负。腾讯ADR隔夜重挫逾5%",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Tencent 2Q2026 (PR Newswire)",
+          "href": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-second-quarter-results-302849608.html"
+        },
+        {
+          "label": "华尔街见闻",
+          "href": "https://wallstreetcn.com/articles/3779335"
+        }
+      ]
+    },
+    {
+      "text": "中国央行发布第二季度货币政策执行报告，称将灵活精准开展各项操作，逐步增加隔夜逆回购频率。央行本周五将首度在月中进行隔夜逆回购操作",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "第一财经",
+          "href": "https://www.yicai.com/news/103315760.html"
+        }
+      ]
+    },
+    {
+      "text": "鸿海精密上季度利润增长35%，高于分析师预期，表明全球人工智能硬件需求旺盛",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国进口铜溢价跌至近一个月低点，全球铜价上涨削弱了这一全球最大铜消费国的采购意愿",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "DeepSeek设立名为“DeepSeek Harness团队”的公众号，并为新团队招兵买马，试图打造挑战Claude Code等AI智能体服务的产品",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "Tencent’s FCF hole is the near falsifier — WorkBuddy leadership language does not automatically repair Golden Dragon."
+    },
+    {
+      "text": "Overnight OMO is liquidity plumbing into tax dates, not a PBOC easing cycle."
+    }
+  ],
+  "chinaDivergences": "Kospi chip bid vs Hang Seng/Tencent fade; US pause-odds bid vs China ADR capex shock.",
+  "assetClasses": [
+    {
+      "id": "us-equities",
+      "title": "US equities",
+      "regime": "Post-CPI grind toward the record; AI infra bid, China ADRs soft.",
+      "instruments": [
+        {
+          "name": "S&P 500 / Nasdaq",
+          "driver": "Aug 12 close S&P 7,748.50 (+0.3%), Nasdaq 26,588.49 (+0.5%) (AP).",
+          "driverSources": [
+            {
+              "label": "AP News",
+              "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c2b9200bd737220ef848a37ffea21f95"
+            },
+            {
+              "label": "Yahoo (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          ],
+          "read": "Pause-odds bid until PPI.",
+          "themeId": "july-cpi-in-line"
+        }
+      ]
+    },
+    {
+      "id": "asia-equities",
+      "title": "Asia equities",
+      "regime": "Korea/Japan AI bid; HK/Tencent FCF shock.",
+      "instruments": [
+        {
+          "name": "Japan equities",
+          "driver": "Nikkei 68,308.59 (+1.16%) Thursday (Yahoo).",
+          "driverSources": [
+            {
+              "label": "Yahoo (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          ],
+          "read": "Parallel live beta is USD/JPY near 160.",
+          "themeId": "yen-near-160"
+        },
+        {
+          "name": "Korea equities",
+          "driver": "Kospi 6,813.34 (+3.56%) Thursday (Yahoo).",
+          "driverSources": [
+            {
+              "label": "Yahoo (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          ],
+          "read": "Chip/AI beta — separate from Tencent."
+        },
+        {
+          "name": "Greater China equities",
+          "driver": "Hang Seng 25,396.51 (−0.17%); Shanghai 3,926.96 (−0.50%). 见闻: HK Tencent −4%+.",
+          "driverSources": [
+            {
+              "label": "Yahoo (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            },
+            {
+              "label": "Yahoo (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            },
+            {
+              "label": "华尔街见闻",
+              "href": "https://wallstreetcn.com/articles/3779335"
+            }
+          ],
+          "read": "Capex/FCF is the near catalyst, not the revenue beat.",
+          "themeId": "tencent-capex-fcf"
+        }
+      ]
+    },
+    {
+      "id": "rates",
+      "title": "Rates",
+      "regime": "Front-end eases on in-line CPI; curve a bit steeper (desk).",
+      "instruments": [
+        {
+          "name": "US 2Y / 10Y",
+          "driver": "Aug 12 — 2Y 4.20% (−2 bp); 10Y 4.68% (−2 bp).",
+          "driverSources": [
+            {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          ],
+          "read": "Soft PPI extends pause odds; hot PPI re-steepens hike odds.",
+          "themeId": "july-cpi-in-line"
+        }
+      ]
+    },
+    {
+      "id": "fx",
+      "title": "FX",
+      "regime": "USD steady; USD/JPY still a 160 event.",
+      "instruments": [
+        {
+          "name": "USD/JPY",
+          "driver": "~159.4 Yahoo; inbox/chart still flag 160 intervention anxiety.",
+          "driverSources": [
+            {
+              "label": "Yahoo USDJPY",
+              "href": "https://finance.yahoo.com/quote/USDJPY%3DX/"
+            },
+            {
+              "label": "彭博 Markets Daily China",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Wait for confirmed ops, not round-number chatter.",
+          "themeId": "yen-near-160"
+        },
+        {
+          "name": "USD/CNY",
+          "driver": "See Market Dashboard Yahoo CNY row.",
+          "driverSources": [
+            {
+              "label": "Yahoo USDCNY",
+              "href": "https://finance.yahoo.com/quote/USDCNY%3DX/"
+            }
+          ],
+          "read": "Quiet vs louder JPY and Tencent stories."
+        }
+      ]
+    },
+    {
+      "id": "commodities",
+      "title": "Commodities",
+      "regime": "Oil still geo-bid; gold bid on cooler CPI.",
+      "instruments": [
+        {
+          "name": "Brent / WTI",
+          "driver": "Yahoo BZ=F Thursday — see Market Dashboard; inbox oil flat into Hormuz talks.",
+          "driverSources": [
+            {
+              "label": "Yahoo BZ=F",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            },
+            {
+              "label": "彭博 Markets Daily China",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Diplomacy stall ≠ commercial flow.",
+          "themeId": "hormuz-stalemate"
+        },
+        {
+          "name": "Gold",
+          "driver": "Yahoo GC=F — see Market Dashboard (inbox gold up on milder inflation).",
+          "driverSources": [
+            {
+              "label": "Yahoo GC=F",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          ],
+          "read": "CPI/geo hedge — confirm vs closes row."
+        }
+      ]
+    },
+    {
+      "id": "crypto",
+      "title": "Crypto",
+      "regime": "Mid-$60ks; still lag vs equity high-hold.",
+      "instruments": [
+        {
+          "name": "BTC",
+          "driver": "CoinGecko spot — see Market Dashboard BTC row.",
+          "driverSources": [
+            {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          ],
+          "read": "Lag-vs-equities until spot leads."
+        }
+      ]
+    }
+  ],
+  "signals": [],
+  "eventCalendar": {
+    "windowStart": "2026-08-13",
+    "windowEnd": "2026-08-21",
+    "note": "Briefing day through next Friday (Aug 21). Mainland China only on calendar (no TW/HK). From inbox 日程 + BLS/Fed fixtures.",
+    "events": [
+      {
+        "id": "bls-ppi-2026-08-13",
+        "date": "2026-08-13",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "Producer Price Index for July 2026",
+        "themeId": "july-cpi-in-line",
+        "source": {
+          "label": "BLS schedule",
+          "href": "https://www.bls.gov/schedule/2026/"
+        }
+      },
+      {
+        "id": "us-claims-2026-08-13",
+        "date": "2026-08-13",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "US initial jobless claims (prior week)",
+        "source": {
+          "label": "彭博 日程",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "pboc-july-credit-2026-08-13",
+        "date": "2026-08-13",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "data",
+        "event": "PBOC may release July credit data",
+        "source": {
+          "label": "彭博 日程",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "pboc-overnight-omo-2026-08-14",
+        "date": "2026-08-14",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "central-bank",
+        "event": "PBOC mid-month overnight reverse-repo operations (first of the series)",
+        "themeId": "pboc-overnight-omo",
+        "source": {
+          "label": "第一财经",
+          "href": "https://www.yicai.com/news/103315760.html"
+        }
+      },
+      {
+        "id": "bls-import-export-2026-08-18",
+        "date": "2026-08-18",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "U.S. Import and Export Price Indexes for July 2026",
+        "source": {
+          "label": "BLS schedule",
+          "href": "https://www.bls.gov/schedule/2026/"
+        }
+      },
+      {
+        "id": "fed-fomc-minutes-2026-08-19",
+        "date": "2026-08-19",
+        "timeBeijing": "02:00",
+        "region": "US",
+        "category": "central-bank",
+        "event": "FOMC Minutes",
+        "themeId": "july-cpi-in-line",
+        "source": {
+          "label": "Federal Reserve calendar",
+          "href": "https://www.federalreserve.gov/json/calendar.json"
+        }
+      }
+    ]
+  },
+  "watchItems": [],
+  "sources": "彭博财经早茶 Aug 13 (desk/calendar/chart); BLS July CPI + AP wrap; AP Wed equity wrap; Yahoo equities/FX/Brent; U.S. Treasury; Tencent 2Q PR; 第一财经 overnight OMO;   华尔街见闻 HK Tencent; CoinGecko BTC; BLS/Fed calendars; 中金点睛 CLAIM (Aug 12 流动性 note).",
+  "singleSource": "IEA 1.8 million b/d gap, Iran military reshuffle, GFC-high 10Y auction stop, Pimco/MSIM on-hold views, BofA HF buying, Foxconn +35% profit, and Tencent ADR “−5%+” lean on Bloomberg inbox (asia hub often 403 in CI) — treated as desk/CLAIM unless second-sourced above. CPI/core prints triangulated via BLS+AP. Tencent revenue/capex/FCF via PR Newswire. CICC is CLAIM paraphrase (WeChat often challenge-page in CI). Zhu Rongji age skipped (inbox 97 vs Caixin 98).",
+  "caveats": "Published before 8:30 a.m. ET July PPI. Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Chart-of-day is USD/JPY vs 160, not a confirmed intervention print. Glassnode W33 mail is still a Compass promo — omitted. Japan July PPI actual not second-sourced here (inbox was preview).",
+  "suggestions": "Into PPI: watch hike-odds vs the CPI pause bid. Into China: Tencent FCF/capex conversion, not the revenue beat. Into FX: 160 needs confirmed ops. Into PBOC: overnight quantity vs tax-week repo, not a rate signal.",
+  "marketDashboard": {
+    "asOf": "2026-08-13T09:00:09.097Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,748.50",
+            "change": "+0.26%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "26,588.49",
+            "change": "+0.54%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "14.69",
+            "change": "+0.96%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "68,308.59",
+            "change": "+1.16%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "kospi",
+            "asset": "Kospi",
+            "latest": "6,813.34",
+            "change": "+3.56%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "25,396.51",
+            "change": "−0.17%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,792.39",
+            "change": null,
+            "changeDirection": "flat",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,926.96",
+            "change": "−0.50%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.20%",
+            "change": "−2.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.38%",
+            "change": "−1.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.68%",
+            "change": "−2.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.24%",
+            "change": "0.0 bp",
+            "changeDirection": "flat",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "159.4150",
+            "change": "+0.09%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.7433",
+            "change": "−0.03%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,434.50",
+            "change": "+0.58%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$87.56",
+            "change": "−1.60%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$63,706",
+            "change": "−0.04%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0069%",
+            "change": "−0.309 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-13",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-08-13"
+}

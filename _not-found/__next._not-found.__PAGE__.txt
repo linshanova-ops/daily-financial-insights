@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/daily-financial-insights/_next/static/chunks/1f98ch6sjixx-.js","/daily-financial-insights/_next/static/chunks/14mrh2-p_w84d.js"],""]
+3:I[97367,["/daily-financial-insights/_next/static/chunks/1f98ch6sjixx-.js","/daily-financial-insights/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","section",null,{"className":"mx-auto flex min-h-[60vh] w-full max-w-3xl flex-col justify-center px-5 py-20 sm:px-8","children":[["$","h1",null,{"className":"display text-4xl tracking-tight text-ink","children":"Briefing not found"}],["$","p",null,{"className":"mt-4 text-lg text-ink-soft","children":"That date is not in the archive."}],["$","$L2",null,{"href":"/briefings","className":"mt-8 inline-flex w-fit bg-forest px-5 py-3 text-sm font-semibold text-paper","children":"Browse archive"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"nEimICVknv-PQCc8cC8c3"}
+5:null

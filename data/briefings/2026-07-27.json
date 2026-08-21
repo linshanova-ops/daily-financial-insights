@@ -1,0 +1,1175 @@
+{
+  "date": "2026-07-27",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "July 24–27, 2026",
+  "publishedAt": "2026-07-27T13:34:13.275Z",
+  "keySources": [
+    {
+      "label": "彭博 Markets Daily China / 财经早茶 (Jul 27)",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "彭博周末茶歇 (W30 / Jul 25)",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "AP — Jul 24 US closes",
+      "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+    },
+    {
+      "label": "S&P Global — Jul 24 US flash PMI",
+      "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/04dad02019414e5ebc89ec6a04b300bd"
+    },
+    {
+      "label": "CNBC TV18 — Jul 27 oil Asia open",
+      "href": "https://www.cnbctv18.com/market/commodities/crude-oil-prices-brent-wti-us-iran-tensions-strikes-strait-of-hormuz-red-sea-ukraine-europe-19954226.htm"
+    },
+    {
+      "label": "NBC News — Jul 26 US-Iran pause / Red Sea",
+      "href": "https://www.nbcnews.com/world/iran/us-forgoes-strikes-iran-conflict-escalates-red-sea-rcna589285"
+    },
+    {
+      "label": "Samsung IR — Jul 25 Broadcom MOU",
+      "href": "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies"
+    },
+    {
+      "label": "Caixin — Jul 25 Ctrip fine",
+      "href": "https://www.caixin.com/2026-07-25/102468045.html"
+    },
+    {
+      "label": "第一财经 — Jul 24 方星海被查",
+      "href": "https://www.yicai.com/news/103291579.html"
+    },
+    {
+      "label": "华尔街见闻 — Jul 27 长鑫挂牌",
+      "href": "https://wallstreetcn.com/articles/3777825"
+    },
+    {
+      "label": "新浪财经 — Jul 27 长鑫上市",
+      "href": "https://finance.sina.com.cn/jjxw/2026-07-27/doc-inikerit0054532.shtml"
+    },
+    {
+      "label": "新华财经 — Jul 24 CATL H1",
+      "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniixfxy9307422.shtml"
+    },
+    {
+      "label": "BlockBeats — Jul 27 weekend oil/crypto",
+      "href": "https://www.theblockbeats.info/news/62175"
+    },
+    {
+      "label": "Coinpaper — Jul 26 BTC weekend",
+      "href": "https://coinpaper.com/33476/bitcoin-price-recovers-above-64000-as-donald-trump-delays-us-strikes-on-iran"
+    },
+    {
+      "label": "news.bitcoin.com — Jul 26 BTC",
+      "href": "https://news.bitcoin.com/bitcoin-enters-volatility-trap-as-fed-decision-clarity-act-and-fork-drama-converge/"
+    }
+  ],
+  "figures": [
+    {
+      "id": "brent-friday-settle",
+      "title": "Brent settle (Jul 24)",
+      "kind": "stat",
+      "display": "$96.78",
+      "delta": "−~4% · first weekly oil drop",
+      "note": "AP Jul 24 official settle",
+      "source": {
+        "label": "AP Jul 24",
+        "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+      }
+    },
+    {
+      "id": "us-pmi-composite",
+      "title": "Jul flash US composite PMI",
+      "kind": "stat",
+      "display": "53.6",
+      "delta": "8-month high · beat 52.2 est.",
+      "note": "S&P Global Jul 24 release",
+      "source": {
+        "label": "S&P Global PMI",
+        "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/04dad02019414e5ebc89ec6a04b300bd"
+      }
+    },
+    {
+      "id": "ctrip-fine",
+      "title": "携程反垄断罚没",
+      "kind": "stat",
+      "display": "51.79亿元（CNY5.179bn）",
+      "delta": "Jul 25 SAMR decision",
+      "note": "Caixin Jul 25",
+      "source": {
+        "label": "Caixin Jul 25",
+        "href": "https://www.caixin.com/2026-07-25/102468045.html"
+      }
+    },
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": "服务业需求推动美国企业活动扩张加快",
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-07-27.png",
+      "analysis": "彭博「今日图表」以2023–2026年月度折线对比美国综合PMI、服务业PMI与制造业PMI（纵轴46–58，高于50为扩张）；7月服务业PMI与综合PMI均升至八个月高位（S&P Global Jul 24 flash：综合/服务业均为53.6），但同期出厂/服务收费通胀接近近四年最快——在Fed本周会议与中东供应风险仍存的背景下，图表暗示「增长回暖」与「再通胀压力」并行，限制市场对单纯降息交易的定价空间。",
+      "source": {
+        "label": "彭博 Markets Daily China / 财经早茶",
+        "href": "https://www.bloomberg.com/asia"
+      },
+      "sources": [
+        {
+          "label": "S&P Global PMI Jul 24",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/04dad02019414e5ebc89ec6a04b300bd"
+        }
+      ]
+    },
+    {
+      "id": "us-close-bars",
+      "title": "Jul 24 US session % change",
+      "kind": "bars",
+      "unit": "%",
+      "note": "Official closes — AP Jul 24",
+      "source": {
+        "label": "AP Jul 24",
+        "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+      },
+      "points": [
+        {
+          "label": "Dow",
+          "value": 0.5
+        },
+        {
+          "label": "S&P",
+          "value": 0.05
+        },
+        {
+          "label": "Nasdaq",
+          "value": -0.64
+        },
+        {
+          "label": "Russell",
+          "value": -0.3
+        }
+      ]
+    }
+  ],
+  "marketTone": "Post-weekend reopen: US-Iran strike pause and Monday Asia oil −5%+ cut the Hormuz premium after Jul 24 Brent settled $96.78, but Jul 24 US flash PMI 53.6 (8-month high) and ~40% Fed hike odds frame a tense FOMC week; Changxin (688825) lists on STAR today while Ctrip CNY5.179bn fine and CATL +42% H1 reshape China beta.",
+  "summary": [
+    {
+      "text": "Jul 27 Asia open: Brent briefly slipped below $90 (−5% to −7% intraday) and WTI toward ~$80 as the US paused strikes after 13 nights and Iran signalled reciprocal restraint (CNBC TV18 Jul 27; NBC/Reuters Jul 26) — partial unwind of Jul 23 Brent >$100 shock, though Houthis hit Saudi Red Sea ports over the weekend (NBC Jul 26; 彭博 Jul 27 inbox).",
+      "sources": [
+        {
+          "label": "CNBC TV18 Jul 27",
+          "href": "https://www.cnbctv18.com/market/commodities/crude-oil-prices-brent-wti-us-iran-tensions-strikes-strait-of-hormuz-red-sea-ukraine-europe-19954226.htm"
+        },
+        {
+          "label": "NBC News Jul 26",
+          "href": "https://www.nbcnews.com/world/iran/us-forgoes-strikes-iran-conflict-escalates-red-sea-rcna589285"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Jul 24 US official close (AP): S&P +0.05% to 7,411.98, Dow +0.5% to 51,947.25, Nasdaq −0.64% to 24,975.82 — tech lagged (Nasdaq −2.1% on the week) while Brent settled $96.78 (−~4%) after Jul 23 >$102 intraday; all three majors finished the week lower.",
+      "sources": [
+        {
+          "label": "AP Jul 24",
+          "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+        }
+      ]
+    },
+    {
+      "text": "Jul 24 S&P Global flash PMI: composite 53.6 (Jun 51.9, est. 52.2) — 8-month high led by services 53.6; manufacturing output slowed to 53.6 (4-month low). Selling-price inflation near a 4-year peak; data collected Jul 9–23 ahead of Fed Jul 28–29.",
+      "sources": [
+        {
+          "label": "S&P Global PMI Jul 24",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/04dad02019414e5ebc89ec6a04b300bd"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Jul 27 China tape anchor: 长鑫科技（688825）科创板挂牌（发行价8.66元/股，募资规模创科创板纪录；新浪财经/华尔街见闻 Jul 27）。SAMR Jul 25罚没携程51.79亿元；宁德时代H1净利润432.84亿元（+41.98%）并拟回购200–400亿元A股（新华财经 Jul 24）；证监会原副主席方星海Jul 24被查（第一财经）。",
+      "sources": [
+        {
+          "label": "新浪财经 Jul 27",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-27/doc-inikerit0054532.shtml"
+        },
+        {
+          "label": "华尔街见闻 Jul 27",
+          "href": "https://wallstreetcn.com/articles/3777825"
+        },
+        {
+          "label": "Caixin Jul 25",
+          "href": "https://www.caixin.com/2026-07-25/102468045.html"
+        },
+        {
+          "label": "新华财经 Jul 24",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniixfxy9307422.shtml"
+        },
+        {
+          "label": "第一财经 Jul 24",
+          "href": "https://www.yicai.com/news/103291579.html"
+        }
+      ]
+    },
+    {
+      "text": "Weekend crypto (Coinpaper Jul 26 ~$64,150; news.bitcoin.com Jul 26 ~$64,466): BTC held mid-$64k as US-Iran pause eased tail risk; BlockBeats Jul 27 flags TradeXYZ oil repricing on diplomacy swings — triangulated, not a single-desk flash.",
+      "sources": [
+        {
+          "label": "Coinpaper Jul 26",
+          "href": "https://coinpaper.com/33476/bitcoin-price-recovers-above-64000-as-donald-trump-delays-us-strikes-on-iran"
+        },
+        {
+          "label": "news.bitcoin.com Jul 26",
+          "href": "https://news.bitcoin.com/bitcoin-enters-volatility-trap-as-fed-decision-clarity-act-and-fork-drama-converge/"
+        },
+        {
+          "label": "BlockBeats Jul 27",
+          "href": "https://www.theblockbeats.info/news/62175"
+        }
+      ]
+    }
+  ],
+  "signal": "Oil premium partial unwind (Mon Asia −5%+) vs Jul 24 PMI 53.6 beat and ~40% Fed hike pricing (彭博 Jul 27) — growth-reflation mix into FOMC; Changxin IPO + Ctrip fine redefine China semis/platform risk on listing day.",
+  "watch": "Does Monday oil relief hold through Trump’s Jul 27 war-room Iran review (BlockBeats/Axios weekend thread) — or do Red Sea Houthis re-tighten Brent above $95 before Jul 28 FOMC?",
+  "globalRegime": "Fed holds 3.50%–3.75% into Jul 28–29 with swaps pricing ~40% hike odds (彭博 Jul 27 inbox) as Jul 24 flash PMI 53.6 beat collides with Middle East supply risk. US paused Iran strikes late Jul 24 after 13 nights; Tehran reciprocated Jul 26–27 while Red Sea/Houthi front widened. Jul 24 Brent settled $96.78 (−~4%) — first weekly oil drop — but remains >20% MTD (CNBC TV18 Jul 27).",
+  "globalChanged": [
+    {
+      "text": "Jul 24 US official close (AP): S&P +0.05% to 7,411.98, Dow +0.5% to 51,947.25, Nasdaq −0.64% to 24,975.82, Russell 2000 −0.3% to 2,930.00; weekly: S&P −0.6%, Nasdaq −2.1%, Dow −0.4%.",
+      "sources": [
+        {
+          "label": "AP Jul 24",
+          "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+        }
+      ]
+    },
+    {
+      "text": "Jul 24 Brent settled $96.78 (−~4%) after Jul 23 spike above $102; Treasury yields moved lower Friday (AP Jul 24).",
+      "sources": [
+        {
+          "label": "AP Jul 24",
+          "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+        }
+      ]
+    },
+    {
+      "text": "Jul 27 Asia oil: Brent briefly below $90 (−5% to −7% early) and WTI toward ~$80 as US-Iran mutual pause cooled supply-risk premium; Brent still +>20% MTD (CNBC TV18 Jul 27).",
+      "sources": [
+        {
+          "label": "CNBC TV18 Jul 27",
+          "href": "https://www.cnbctv18.com/market/commodities/crude-oil-prices-brent-wti-us-iran-tensions-strikes-strait-of-hormuz-red-sea-ukraine-europe-19954226.htm"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国在连续13天打击伊朗后自上周五晚间按下暂停键；德黑兰暗示克制报复，并与阿曼就霍尔木兹海峡举行会谈；美伊互袭暂歇推动原油期货周一亚洲早盘重挫（彭博 Jul 27 国际要闻；NBC/Reuters triangulate pause）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "NBC News Jul 26",
+          "href": "https://www.nbcnews.com/world/iran/us-forgoes-strikes-iran-conflict-escalates-red-sea-rcna589285"
+        },
+        {
+          "label": "WHBL/Reuters Jul 26",
+          "href": "https://whbl.com/2026/07/26/iran-will-halt-attacks-as-long-as-us-maintains-pause-iranian-source-says-after-trump-calls-off-strikes/"
+        }
+      ]
+    },
+    {
+      "text": "红海紧张局势升级：伊朗支持的也门胡塞武装对沙特红海港口城市发射导弹，沙特领导的联军随后空袭胡塞武装军事阵地（彭博 Jul 27 国际要闻；NBC Jul 26）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "NBC News Jul 26",
+          "href": "https://www.nbcnews.com/world/iran/us-forgoes-strikes-iran-conflict-escalates-red-sea-rcna589285"
+        }
+      ]
+    },
+    {
+      "text": "中国外长王毅在上合组织外长会期间会见伊朗外长阿拉格齐，敦促伊朗和美国回归落实谅解备忘录共识，并表示中国将继续支持各方斡旋努力以恢复对话谈判（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "随着中东能源供应受阻、人工智能投资热潮以及华府新关税令美国通胀风险重新抬头，美联储本周利率决策可能面临分歧；互换市场定价显示加息概率接近40%（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "标普全球7月PMI初值：美国企业活动扩张创八个月来最快（综合53.6，服务业53.6，制造业53.8；S&P Global Jul 24），得益于世界杯和独立日假期支出；欧元区私营部门活动也意外升至五个月高点（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "S&P Global PMI Jul 24",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/04dad02019414e5ebc89ec6a04b300bd"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国总统特朗普威胁对欧盟产品加征新关税，以报复欧盟对谷歌处以约10亿美元罚款（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "两家小企业向美国国际贸易法院提起诉讼，指控特朗普政府违法援引1974年贸易法第301条，以强迫劳动为由对大多数主要贸易伙伴征收新关税（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "日本共同社援引未具名政府消息源报道，首相高市早苗将考虑内阁改组和自民党领导层变动（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "三星电子宣布与博通签订价值逾2000亿美元、持续至2030年的五年期芯片供应合同，将采用2纳米及更先进制程生产博通产品，并深化存储芯片、晶圆代工及先进封装合作（Samsung IR Jul 25；彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "Samsung IR Jul 25",
+          "href": "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "英伟达将向韩国互联网巨头Naver投资10亿美元支持扩建AI数据中心；还将与SK集团在韩国建设容量超2吉瓦的AI数据中心，双方整体AI合作规模将超过5000亿美元（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "由英伟达和微软牵头，包括Palantir和Meta在内的科技企业联盟呼吁监管当局推动开放权重AI模型发展，强调这对确保美国维持AI技术领先地位至关重要（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Anthropic发布Claude Opus 5模型，性能接近旗舰产品Fable 5但价格约为后者一半，旨在以更低成本满足企业日常办公需求（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "高通向客户发函，宣布因成本上升将于9月1日起上调产品价格，涨幅将达到两位数百分比（彭博 Jul 27 国际要闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "Oil’s Monday drop is a pause premium unwind, not a supply normalisation — Red Sea/Houthi front and Hormuz diplomacy remain live, so Jul 24 PMI reflation can still collide with energy pass-through into FOMC."
+    },
+    {
+      "text": "Samsung–Broadcom $200bn MOU validates AI infrastructure demand but reinforces the Mag 7 capex/overbuild debate that hit Nasdaq −2.1% on the week."
+    },
+    {
+      "text": "Weekend BTC stability near $65k with oil relief suggests macro beta dominates; BlockBeats flags TradeXYZ oil repricing as the weekend risk tell for crypto liquidity."
+    }
+  ],
+  "globalTensions": "US-Iran pause vs Red Sea escalation; PMI 53.6 beat vs ~40% hike odds; Jul 24 Brent −4% settle vs +20% MTD; Dow +0.5% Friday vs Nasdaq −0.64% and second weekly loss.",
+  "chinaStance": "Anti-monopoly enforcement (Ctrip CNY5.179bn) and export-control countermeasures (14 EU entities) run alongside STAR liquidity event (Changxin listing) and shareholder-return wave (CATL CNY20–40bn buyback) — regulation and hard-tech IPO coexist.",
+  "chinaChanged": [
+    {
+      "text": "中国存储芯片巨头长鑫科技（688825）周一登陆上海科创板 — 全球第四大DRAM生产商，IPO发行价对应估值倍数较竞争对手大幅折让，或为上市首日股价留下较大想象空间（彭博 Jul 27 大中华新闻）。发行价8.66元/股，绿鞋全额行使后募资约666.07亿元（CNY66.607bn），科创板最大IPO；前5交易日无涨跌幅限制（新浪财经/华尔街见闻 Jul 27）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "新浪财经 Jul 27",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-27/doc-inikerit0054532.shtml"
+        },
+        {
+          "label": "华尔街见闻 Jul 27",
+          "href": "https://wallstreetcn.com/articles/3777825"
+        }
+      ]
+    },
+    {
+      "text": "中国监管机构对携程处以51.79亿元人民币罚没款（没收16.58亿+罚款35.21亿），责令退还酒店储备金1.22亿元，认定其滥用在线酒店预订市场支配地位、限制跨平台经营并侵害消费者利益。《人民日报》称查处释放反垄断反内卷强烈信号（彭博 Jul 27 大中华新闻；Caixin/华尔街见闻 Jul 25）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Caixin Jul 25",
+          "href": "https://www.caixin.com/2026-07-25/102468045.html"
+        },
+        {
+          "label": "华尔街见闻 Jul 25",
+          "href": "https://wallstreetcn.com/articles/3777920"
+        }
+      ]
+    },
+    {
+      "text": "知情人士称，DeepSeek已告知部分潜在投资者暂缓第二轮融资，原因之一是创始人梁文锋对其投资者讲话在网上流传感到不满，但公司日后仍可能重启交易（彭博 Jul 27 大中华新闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国将包括德国防务巨头莱茵金属公司在内的14家欧盟实体列入出口管制管控名单，称此举是对欧盟制裁中国内地和香港企业的反制（彭博 Jul 27 大中华新闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "欧盟委员会依据《数字服务法》升级对TikTok的调查，指责该平台未能充分保护青少年用户安全与隐私；若成立，TikTok最高可面临全球年度销售额6%的罚款（彭博 Jul 27 大中华新闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "香港交易所将允许所有公司以保密形式递交上市申请，并放宽对采用不同投票权架构公司的上市要求，以提升对全球拟上市企业的吸引力（彭博 Jul 27 大中华新闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国将正式开始对本国公民设立的离岸信托征税，堵住富裕家庭长期用于资产保护和财富传承的一项税务漏洞（彭博 Jul 27 大中华新闻）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "宁德时代上半年净利润增长约42%（净利432.84亿元，+41.98%；营收2769.17亿元，+54.80%），受益于储能系统需求强劲；计划回购200亿至400亿元人民币A股并拟派发中期股息64.93亿元（彭博 Jul 27 大中华新闻；新华财经/CNINFO Jul 24–25）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "新华财经 Jul 24",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniixfxy9307422.shtml"
+        },
+        {
+          "label": "CNINFO Jul 24",
+          "href": "https://static.cninfo.com.cn/finalpage/2026-07-25/1225441582.PDF"
+        }
+      ]
+    },
+    {
+      "text": "中国证监会原副主席方星海涉嫌严重违纪违法，接受中央纪委国家监委纪律审查和监察调查（彭博 Jul 27 大中华新闻；第一财经 Jul 24）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "第一财经 Jul 24",
+          "href": "https://www.yicai.com/news/103291579.html"
+        }
+      ]
+    },
+    {
+      "text": "彭博周末茶歇 (Jul 25 W30): 国新/诚通周日深夜宣布增持中国股票资产，证监会与投资者座谈、保险资金表态托市后科创50周二大涨近11%；中际旭创港股招股计划最多募资约550亿港元；月之暗面准备以约500亿美元估值做上市前最后一轮融资；港交所据悉研究延长交易时间并考虑取消一小时午休。",
+      "sources": [
+        {
+          "label": "彭博周末茶歇 W30",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "Changxin listing absorbs liquidity on a day when oil relief helps global beta — STAR semis vs platform fines (Ctrip) split China risk appetite."
+    },
+    {
+      "text": "CATL mega-buyback signals confidence but H2 margin/sodium-ion pivot (Caixin Jul 17 context) keeps battery complex idiosyncratic vs DRAM IPO."
+    },
+    {
+      "text": "Fang Xinghai probe adds regulatory-politics overhang alongside SAMR platform enforcement — watch CSRC stability rhetoric vs Jul 24 Shanghai −1.61% backdrop."
+    }
+  ],
+  "chinaDivergences": "Global oil relief vs Red Sea escalation; US Nasdaq weekly −2.1% vs Changxin domestic IPO euphoria; Ctrip fine vs CATL shareholder returns — platform regulation vs hard-tech capital markets.",
+  "assetFramework": [
+    {
+      "asset": "US equities (S&P 500 / Nasdaq)",
+      "regime": "Fed path via real yields — oil relief vs PMI reflation vs Mag 7 capex fatigue",
+      "driver": "Jul 24 close S&P +0.05% / Nasdaq −0.64%; flash PMI 53.6 beat; ~40% hike odds (彭博 Jul 27)",
+      "driverSources": [
+        {
+          "label": "AP Jul 24",
+          "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+        },
+        {
+          "label": "S&P Global PMI Jul 24",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/04dad02019414e5ebc89ec6a04b300bd"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "read": "Friday rotation favored Dow (+0.5%) over Nasdaq (−0.64%); PMI beat supports cyclicals but FOMC hike pricing caps multiple expansion",
+      "invalidator": "S&P breaks below 7,350 with 10y yields falling — growth scare replacing inflation trade"
+    },
+    {
+      "asset": "US Treasuries (10y)",
+      "regime": "Inflation prints + Fed communication + oil pass-through",
+      "driver": "Jul 24 yields moved lower with Brent −~4% settle $96.78; PMI selling-price inflation near 4-year peak",
+      "driverSources": [
+        {
+          "label": "AP Jul 24",
+          "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+        },
+        {
+          "label": "S&P Global PMI Jul 24",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/04dad02019414e5ebc89ec6a04b300bd"
+        }
+      ],
+      "read": "Oil relief pulled yields down Jul 24 close; PMI reflation and ~40% hike odds argue for range-bound front-end into FOMC",
+      "invalidator": "10y breaks above Jul 23 highs without a hot print — term premium / fiscal shock"
+    },
+    {
+      "asset": "US dollar (DXY)",
+      "regime": "Rate differentials with intermittent safe-haven bid",
+      "driver": "彭博 Jul 27: DXY roughly flat Jul 24 — best week since Jun Fed hawkish signal; oil pause trims haven bid Monday",
+      "driverSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC TV18 Jul 27",
+          "href": "https://www.cnbctv18.com/market/commodities/crude-oil-prices-brent-wti-us-iran-tensions-strikes-strait-of-hormuz-red-sea-ukraine-europe-19954226.htm"
+        }
+      ],
+      "read": "Dollar firm on the week but Monday oil drop eases extreme haven flows — FOMC is the pivot",
+      "invalidator": "DXY sells off >1% while hike odds rise — inconsistent risk regime"
+    },
+    {
+      "asset": "Gold (COMEX)",
+      "regime": "Real-yield beta with geopolitical floor",
+      "driver": "彭博 Jul 27 inbox: gold edged up Jul 24 as traders weighed Middle East conflict vs rates; Monday oil drop may ease inflation hedge bid",
+      "driverSources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "read": "Gold held modest bid into weekend; oil relief + steady USD can cap near-term upside unless Red Sea re-escalates",
+      "invalidator": "Gold falls >2% while Brent rebounds >$100 — hedge bid failing"
+    },
+    {
+      "asset": "Oil (Brent)",
+      "regime": "Geopolitical supply risk with diplomacy-driven mean reversion",
+      "driver": "Jul 24 settle $96.78 (AP); Jul 27 Asia −5%+ toward sub-$90; Houthis/Red Sea vs US-Iran pause (CNBC TV18/NBC Jul 26–27)",
+      "driverSources": [
+        {
+          "label": "AP Jul 24",
+          "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+        },
+        {
+          "label": "CNBC TV18 Jul 27",
+          "href": "https://www.cnbctv18.com/market/commodities/crude-oil-prices-brent-wti-us-iran-tensions-strikes-strait-of-hormuz-red-sea-ukraine-europe-19954226.htm"
+        },
+        {
+          "label": "NBC News Jul 26",
+          "href": "https://www.nbcnews.com/world/iran/us-forgoes-strikes-iran-conflict-escalates-red-sea-rcna589285"
+        }
+      ],
+      "read": "Two-speed oil: Hormuz pause drives Monday drop but Red Sea keeps tail risk; +20% MTD per CNBC TV18",
+      "invalidator": "Brent reclaims $100 on confirmed Hormuz disruption despite diplomacy headlines"
+    },
+    {
+      "asset": "China equities (Shanghai / ChiNext)",
+      "regime": "Domestic policy/regulation vs global oil-Fed beta — IPO liquidity event",
+      "driver": "Jul 24 Shanghai −1.61% (prior session); Jul 27 Changxin listing + Ctrip fine + CATL buyback",
+      "driverSources": [
+        {
+          "label": "新浪财经 Jul 24",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-24/doc-iniiwvke9315830.shtml"
+        },
+        {
+          "label": "华尔街见闻 Jul 27",
+          "href": "https://wallstreetcn.com/articles/3777825"
+        },
+        {
+          "label": "Caixin Jul 25",
+          "href": "https://www.caixin.com/2026-07-25/102468045.html"
+        }
+      ],
+      "read": "Listing-day STAR focus (Changxin) vs platform overhang (Ctrip); global oil relief helps but FOMC hike pricing caps H-shares beta",
+      "invalidator": "Shanghai breaks below 3,800 on rising volume with Brent >$95"
+    },
+    {
+      "asset": "CNY",
+      "regime": "PBOC fix anchor; oil and Fed as external pressures",
+      "driver": "Oil Monday drop eases import-inflation pressure; Jul 24 MLF net +CNY100bn （1000亿元） backdrop (prior session)",
+      "driverSources": [
+        {
+          "label": "CNBC TV18 Jul 27",
+          "href": "https://www.cnbctv18.com/market/commodities/crude-oil-prices-brent-wti-us-iran-tensions-strikes-strait-of-hormuz-red-sea-ukraine-europe-19954226.htm"
+        },
+        {
+          "label": "新华网 Jul 23 MLF",
+          "href": "https://www.news.cn/20260723/1eebaf8374824ac2aa44cc8c74ec3c01/c.html"
+        }
+      ],
+      "read": "CNH benefits from oil relief but export-control EU countermeasures add geopolitical noise — fix likely stable",
+      "invalidator": "Fix weakens >0.3%/day for a week alongside Brent >$100"
+    },
+    {
+      "asset": "Bitcoin",
+      "regime": "High-beta macro/oil→Fed chain with weekend thin liquidity",
+      "driver": "Coinpaper Jul 26 ~$64,150; news.bitcoin.com Jul 26 ~$64,466; BlockBeats Jul 27 TradeXYZ oil/crypto linkage",
+      "driverSources": [
+        {
+          "label": "Coinpaper Jul 26",
+          "href": "https://coinpaper.com/33476/bitcoin-price-recovers-above-64000-as-donald-trump-delays-us-strikes-on-iran"
+        },
+        {
+          "label": "news.bitcoin.com Jul 26",
+          "href": "https://news.bitcoin.com/bitcoin-enters-volatility-trap-as-fed-decision-clarity-act-and-fork-drama-converge/"
+        },
+        {
+          "label": "BlockBeats Jul 27",
+          "href": "https://www.theblockbeats.info/news/62175"
+        }
+      ],
+      "read": "Weekend hold mid-$64k–$65k as Iran pause trimmed tail risk; FOMC and ETF flows remain the invalidators — triangulated, not BlockBeats-only",
+      "invalidator": "BTC breaks below $62,500 while Brent falls and hike odds also fall — decouples from macro beta frame"
+    }
+  ],
+  "signals": [
+    {
+      "grade": "STRONG",
+      "name": "US-Iran pause drives Monday oil unwind",
+      "evidence": "Jul 24 Brent settle $96.78; Jul 27 Asia Brent −5%+ toward sub-$90 after 13-night US pause and Iranian reciprocal halt (AP/CNBC TV18/NBC Jul 26–27).",
+      "evidenceSources": [
+        {
+          "label": "AP Jul 24",
+          "href": "https://apnews.com/article/stocks-dow-nasdaq-iran-oil-02d01b8f38ccd51f605c4414cdd4fa9b"
+        },
+        {
+          "label": "CNBC TV18 Jul 27",
+          "href": "https://www.cnbctv18.com/market/commodities/crude-oil-prices-brent-wti-us-iran-tensions-strikes-strait-of-hormuz-red-sea-ukraine-europe-19954226.htm"
+        }
+      ],
+      "mechanism": "Diplomacy premium mean-reverts faster than Red Sea supply risk rebuilds — lowers near-term inflation impulse into FOMC unless Houthis re-ignite Brent.",
+      "disprovedIf": "Brent daily settle back above $100 within three sessions with no new US strikes."
+    },
+    {
+      "grade": "STRONG",
+      "name": "Jul 24 PMI beat collides with ~40% Fed hike pricing",
+      "evidence": "Flash composite 53.6 vs 52.2 est. (8-month high); 彭博 Jul 27 cites ~40% hike probability into Jul 28–29.",
+      "evidenceSources": [
+        {
+          "label": "S&P Global PMI Jul 24",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/04dad02019414e5ebc89ec6a04b300bd"
+        },
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Services-led growth plus near 4-year peak selling-price inflation revives hawkish tail even as oil pauses — stagflation-lite risk for rates and multiples.",
+      "disprovedIf": "September hike probability falls below 25% post-FOMC with core PCE ≤0.2% m/m."
+    },
+    {
+      "grade": "STRONG",
+      "name": "Changxin STAR listing + Ctrip mega-fine reshape China tape",
+      "evidence": "688825 lists Jul 27 (666.07亿元 / CNY66.607bn IPO with full greenshoe); SAMR CNY5.179bn（51.79亿元） Ctrip penalty Jul 25 (新浪财经/Caixin).",
+      "evidenceSources": [
+        {
+          "label": "新浪财经 Jul 27",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-27/doc-inikerit0054532.shtml"
+        },
+        {
+          "label": "Caixin Jul 25",
+          "href": "https://www.caixin.com/2026-07-25/102468045.html"
+        }
+      ],
+      "mechanism": "Hard-tech IPO liquidity drain vs platform antitrust — splits STAR semis from consumer internet in a single session.",
+      "disprovedIf": "Changxin first-day turnover <CNY50bn（500亿元） with STAR 50 flat and Ctrip HK ADR stable."
+    },
+    {
+      "grade": "MODERATE",
+      "name": "Red Sea front widens despite US-Iran lull",
+      "evidence": "NBC Jul 26: Houthis hit Saudi Red Sea ports; Saudi coalition retaliated — while US-Iran strikes paused.",
+      "evidenceSources": [
+        {
+          "label": "NBC News Jul 26",
+          "href": "https://www.nbcnews.com/world/iran/us-forgoes-strikes-iran-conflict-escalates-red-sea-rcna589285"
+        }
+      ],
+      "mechanism": "Secondary supply route risk caps oil downside and keeps shipping/insurance premia elevated.",
+      "disprovedIf": "No verified Red Sea tanker/port attacks for 7 days and Brent settles below $85."
+    },
+    {
+      "grade": "MODERATE",
+      "name": "Samsung–Broadcom $200bn AI supply chain anchor",
+      "evidence": "Jul 25 MOU >$200bn through 2030 across HBM, 2nm foundry, advanced packaging (Samsung IR).",
+      "evidenceSources": [
+        {
+          "label": "Samsung IR Jul 25",
+          "href": "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies"
+        }
+      ],
+      "mechanism": "Validates AI infra demand but reinforces capex/overbuild narrative that pressured Nasdaq weekly −2.1%.",
+      "disprovedIf": "SOX reclaims prior-week highs with Mag 7 guiding down AI spend."
+    },
+    {
+      "grade": "WEAK",
+      "name": "Weekend BTC stability on geopolitical de-escalation",
+      "evidence": "Coinpaper Jul 26 ~$64,150; news.bitcoin.com Jul 26 ~$64,466; BlockBeats Jul 27 notes TradeXYZ oil-beta.",
+      "evidenceSources": [
+        {
+          "label": "Coinpaper Jul 26",
+          "href": "https://coinpaper.com/33476/bitcoin-price-recovers-above-64000-as-donald-trump-delays-us-strikes-on-iran"
+        },
+        {
+          "label": "news.bitcoin.com Jul 26",
+          "href": "https://news.bitcoin.com/bitcoin-enters-volatility-trap-as-fed-decision-clarity-act-and-fork-drama-converge/"
+        },
+        {
+          "label": "BlockBeats Jul 27",
+          "href": "https://www.theblockbeats.info/news/62175"
+        }
+      ],
+      "mechanism": "Oil relief + strike pause support risk assets in thin weekend liquidity; FOMC is the real test.",
+      "disprovedIf": "BTC falls >5% Mon–Tue while Brent also falls and hike odds decline."
+    }
+  ],
+  "watchItems": [
+    {
+      "priority": "HIGH",
+      "headline": "FOMC Jul 28–29 with ~40% hike odds",
+      "why": "STRONG PMI + oil pause tension — policy surprise risk.",
+      "watch": "Dot plot / statement vs Jul 24 PMI 53.6 and Monday oil drop; front-end OIS.",
+      "trigger": "Hawkish hold or dot shift pushes September hike odds >60% and 2y yield +10bp.",
+      "invalidator": "Dovish hold with hike odds <30% and core PCE path unchanged.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "HIGH",
+      "headline": "Oil pause vs Red Sea/Hormuz durability",
+      "why": "STRONG oil unwind signal — verify if tactical.",
+      "watch": "Brent sub-$90 hold; Trump Jul 27 Iran war-room; Houthis/Saudi headlines.",
+      "trigger": "Brent reclaims $95 on Red Sea attack despite US-Iran pause.",
+      "invalidator": "Brent settles below $88 for 3 sessions with diplomacy progress.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "HIGH",
+      "headline": "Changxin 688825 listing-day liquidity",
+      "why": "STRONG China semis/platform split.",
+      "watch": "Opening turnover vs STAR 50; comparison to Jul 24 Shanghai −1.61% baseline.",
+      "trigger": "STAR 50 −3%+ on listing day with northbound outflows.",
+      "invalidator": "Orderly listing with sector breadth positive and turnover <CNY3tn market-wide.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "China Jun industrial profits (09:30)",
+      "why": "Scheduled print in 彭博 Jul 27 calendar — prior +21.1% y/y.",
+      "watch": "NBS release vs consensus; SOE vs private split.",
+      "trigger": "Print misses <15% y/y with Shanghai already weak.",
+      "invalidator": "Beat >25% y/y with upstream commodity strength.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Taiwan Jun composite indicator (16:00)",
+      "why": "彭博 Jul 27 calendar — prior 39.",
+      "watch": "景气对策信号 vs prior; electronics cycle read-through to STAR semis.",
+      "trigger": "Print falls below 35 with TSMC/tech beta weak.",
+      "invalidator": "Hold ≥39 with export orders firm.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Germany Jul Ifo business climate (16:00)",
+      "why": "彭博 Jul 27 calendar — est. 86 vs prior 85.6.",
+      "watch": "Expectations vs current conditions; EUR/oil sensitivity.",
+      "trigger": "Miss ≤85.0 with European equities fading.",
+      "invalidator": "Beat ≥86.5 confirming Eurozone PMI five-month high.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Hong Kong Jun exports/imports (16:30)",
+      "why": "彭博 Jul 27 calendar — exports est. +43.4% y/y (prior +40.8%); imports est. +44.9% (prior +42%).",
+      "watch": "Trade rebound durability vs re-export/tech demand.",
+      "trigger": "Export miss <35% y/y with HSI underperforming.",
+      "invalidator": "Both prints beat with China re-export strength.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "US Jun durable goods orders (20:30 HKT)",
+      "why": "彭博 calendar Jul 27 — est. +1.8% m/m vs prior −4.5%.",
+      "watch": "Core capex orders ex-aircraft; triangulate with PMI manufacturing slowdown.",
+      "trigger": "Headline beat >3% m/m with defense/aircraft skew.",
+      "invalidator": "Miss below 0% m/m confirming manufacturing output fade.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "US Jul Dallas Fed manufacturing (22:30 HKT)",
+      "why": "彭博 Jul 27 calendar — est. 1.1 vs prior 0.",
+      "watch": "General business activity vs Jul flash PMI manufacturing 53.8.",
+      "trigger": "Print ≤−5 with regional weakness broadening.",
+      "invalidator": "Print ≥5 confirming manufacturing still expanding.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "LOW",
+      "headline": "Ctrip fine execution / platform sentiment",
+      "why": "CNY5.179bn（51.79亿元） SAMR penalty — policy signal beyond single name.",
+      "watch": "Ctrip HK listing reaction; peer OTA/platform multiples.",
+      "trigger": "Sector-wide guidance cuts citing compliance costs.",
+      "invalidator": "Ctrip announces full remedy with no material Q3 guide cut.",
+      "horizon": "weeks",
+      "status": "new"
+    }
+  ],
+  "marketOverview": {
+    "asOfDate": "2026-07-24",
+    "note": "Qualitative desk color from 彭博财经早茶 Jul 27 — not official closes.",
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    "items": [
+      {
+        "label": "美国股市",
+        "text": "科技股抛售拖累纳斯达克100指数上周五下跌，自3月底以来首次连续两周下挫"
+      },
+      {
+        "label": "中概股",
+        "text": "金龙中国指数连续第四天下跌，阿里巴巴和百度对指数拖累最大"
+      },
+      {
+        "label": "美国债市",
+        "text": "美国国债四连跌后反弹，持续一周的抛售潮暂歇"
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数上周五基本持平，创下美联储6月释放鹰派信号以来的最佳单周表现"
+      },
+      {
+        "label": "欧洲股债",
+        "text": "欧洲主权债收益率跟随油价回落。欧洲股市上涨，乐观的企业财报以及强于预期的欧元区私营部门活动数据提振了市场情绪"
+      },
+      {
+        "label": "能源",
+        "text": "原油期货周一亚洲早盘重挫，随着美伊互袭暂歇，中东地区能源供应风险有所缓解"
+      },
+      {
+        "label": "金属",
+        "text": "金价上周五微升，交易员权衡中东冲突和利率前景。伦敦市场工业金属涨跌不一"
+      }
+    ]
+  },
+  "sources": "AP (Jul 24 US closes/Brent settle), S&P Global (Jul 24 flash PMI), CNBC TV18 (Jul 27 oil Asia), NBC/Reuters (Jul 26 US-Iran pause/Red Sea), Samsung IR (Jul 25 Broadcom MOU), Caixin/华尔街见闻/新浪财经 (Jul 25–27 China), CNINFO (CATL Jul 24), 第一财经 (方星海 Jul 24), BlockBeats (Jul 27 weekend oil/crypto), Yahoo/Coinpaper (BTC Jul 26), 彭博 Markets Daily China / 财经早茶 (Jul 27 inbox), 彭博周末茶歇 W30 (Jul 25).",
+  "singleSource": "Holistic 彭博 Jul 27 财经早茶 merge: 国际要闻→globalChanged Chinese 1:1 (13/14; Morgan Stanley SpaceX single-analyst item omitted); 大中华新闻→chinaChanged Chinese 1:1 (9/9 — 长鑫/携程/DeepSeek/莱茵金属/TikTok/港交所不同投票权/离岸信托/宁德回购/方星海; no English packed paraphrase); 市场一览 / 今日图表 / full 经济数据日程 watchItems. Nvidia–SK overall AI cooperation >5000亿美元 (not $50bn mistranslation). 彭博周末茶歇 W30 (国新/诚通托市、 中际旭创、月之暗面、港交所延长交易) folded into China. Fed ~40% hike odds and inbox-only items kept with stable Bloomberg cite. publishedAt updated.",
+  "marketDashboard": {
+    "asOf": "2026-07-27T13:34:13.275Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,463.93",
+            "change": "+0.75%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "25,167.52",
+            "change": "+0.12%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "17.73",
+            "change": "−5.19%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "64,931.19",
+            "change": "−2.25%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "25,207.18",
+            "change": "−0.01%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,702.05",
+            "change": null,
+            "changeDirection": "flat",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,858.25",
+            "change": "−0.48%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.33%",
+            "change": "−4.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-24",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.43%",
+            "change": "−3.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-24",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.69%",
+            "change": "−2.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-24",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.16%",
+            "change": "−1.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-24",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "163.7040",
+            "change": "−0.08%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.7545",
+            "change": "−0.27%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,086.90",
+            "change": "+0.47%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$90.94",
+            "change": "−6.03%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$64,957",
+            "change": "+0.82%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0053%",
+            "change": "−0.231 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-27",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-07-27"
+}
