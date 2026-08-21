@@ -107,7 +107,7 @@ export function BriefingHero({
                   href={marketsHref}
                   className="focus-ring inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
                 >
-                  市场一览
+                  Markets at a glance
                 </a>
               ) : (
                 <a

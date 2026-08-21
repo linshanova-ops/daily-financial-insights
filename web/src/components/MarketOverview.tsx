@@ -27,7 +27,7 @@ export function MarketOverview({ data }: MarketOverviewProps) {
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          市场一览
+          Markets at a glance
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           Desk copy from the morning mail, labeled CLAIM. Dated prints sit in

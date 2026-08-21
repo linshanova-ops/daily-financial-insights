@@ -231,7 +231,8 @@ export interface BriefingFrontmatter {
   figures?: BriefingFigure[];
   /**
    * Qualitative 市场一览 desk color from 彭博 daily email.
-   * Shown above Market closes — not a substitute for marketDashboard prints.
+   * Site chrome: Markets at a glance, after Market closes — not a substitute
+   * for marketDashboard prints.
    */
   marketOverview?: MarketOverview;
   /**

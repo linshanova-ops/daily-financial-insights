@@ -18,7 +18,7 @@ The generate agent merges them into existing briefing modules:
 - Glassnode matchers require Week on Chain / Insights — webinar “Now live” promos are ignored
 - Bloomberg is **section-parsed** when headers exist; HTML/collapsed bodies are normalized so headers like 今日图表 stay detectable; 全球市况 is cross-check only
 - Generate must merge **all** sections (国际要闻 + 大中华 + 市场一览 + 日程/央行动态 + 今日图表) then **rewrite Themes** from that same mail — not China-only cherry-picks and not yesterday’s Theme titles with a patched fact line
-- **市场一览** maps to frontmatter `marketOverview` (UI above Market closes) — never dump into Global/China prose
+- **市场一览** maps to frontmatter `marketOverview` (UI title **Markets at a glance**, after Closes) — never dump into Global/China prose; do not put the Chinese mail header on the page
 - Agent must **not** rewrite raw IMAP captures into “Mergeable sections” (that drops 今日图表); fetch replaces such reformatted files on the next run
 - Chinese Bloomberg text must stay Chinese
 - Cites use stable landing pages (never email tracking links) and appear in `keySources`

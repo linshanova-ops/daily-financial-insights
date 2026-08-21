@@ -19,7 +19,7 @@ export function SectionNav({
       ? [{ href: "#market-dashboard", label: "Closes" }]
       : []),
     ...(hasMarketOverview
-      ? [{ href: "#market-overview", label: "市场一览" }]
+      ? [{ href: "#market-overview", label: "Markets at a glance" }]
       : []),
     ...(hasFigures ? [{ href: "#key-figures", label: "Figures" }] : []),
     ...(hasThemes ? [{ href: "#themes", label: "Themes" }] : []),
