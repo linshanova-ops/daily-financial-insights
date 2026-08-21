@@ -280,117 +280,83 @@
   "signal": "Wednesday’s long-end buyback cut the 30-year yield 9 bp. Thursday the 30-year yield was back at 5.248% and the S&P 500 gave the bounce back. Oil rose on Iran isolation talk, which is a different book from duration. Bitcoin stayed bid above $70,000 while US stocks fell. Korea’s chip buybacks lifted Kospi 5.89% in the Asia session that still traded Wednesday’s relief, not Thursday’s US close.",
   "watch": "US, euro-area, UK, and Japan flash PMI later Friday · 国新办 10:00 Beijing on fiscal policy · Japan July CPI if not yet in hand · whether the 30-year yield holds above 5.25% into Jackson Hole · first ≥$4bn buyback on 9 September · August NBS retail and FAI · 7-day OMO after eight zero sessions.",
   "marketOverview": {
-    "asOfDate": "2026-08-20",
-    "note": "Thursday 20 Aug close (US) plus Asia’s Thursday session. 今日财经早茶 IMAP is missing; 市场一览 is 华尔街见闻 21 August breakfast plus dated prints — not Yahoo inject, and not the 20 August 财经早茶 Wednesday tape. Market closes below is a later inject.",
+    "asOfDate": "2026-08-21",
+    "note": "财经早茶 市场一览, CLAIM. Dated prints sit in Closes and Themes. Do not mix the Yahoo inject into these lines.",
     "items": [
       {
-        "label": "US equities",
-        "text": "The S&P 500 closed 7,641.16 (−0.87%), the Nasdaq 26,067.17 (−1%), and the Dow 52,759.21 (−1.32% / −703.84) (CNBC). Walmart fell about 9% after a 2.6% US comps print and led the Dow. 见闻: Amazon fell more than 2% and led the Magnificent Seven lower; Moderna fell more than 23% the day after a 177% jump; memory and optical names rose, with Micron +3.97% and Marvell +5.8% (desk/CLAIM).",
+        "label": "美国股市",
+        "text": "标普500指数重拾跌势，国债回购提振效应消退，沃尔玛令人失望的业绩拖累零售股表现（CLAIM — inbox）",
         "sources": [
           {
-            "label": "CNBC Thursday wrap",
-            "href": "https://www.cnbc.com/2026/08/19/stock-market-today-live-updates.html"
-          },
-          {
-            "label": "Walmart IR",
-            "href": "https://corporate.walmart.com/news/2026/08/20/walmart-releases-q2-fy27-earnings.html"
-          },
-          {
-            "label": "华尔街见闻早餐",
-            "href": "https://wallstreetcn.com/articles/3779948"
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
           }
         ]
       },
       {
-        "label": "Asia equities",
-        "text": "Nikkei closed 66,216.79 (+1.36%) after two down days (Nikkei Indexes). Kospi 6,852.58 (+5.89%) with a buy-side sidecar after SK hynix’s 40 trillion-won buyback plan (Yonhap). 见闻: Shanghai 3,903.72 (+0.24%); ChiNext 3,495.59 (+0.64%). 财新: Unitree 687 yuan (−18.70%). Alibaba’s cloud print and NetEase’s 7.9% revenue growth are the named Greater China earnings, not the Kospi sidecar.",
+        "label": "中概股",
+        "text": "金龙中国指数下跌，网易和好未来教育对指数拖累最大（CLAIM — inbox）",
         "sources": [
           {
-            "label": "Nikkei Indexes",
-            "href": "https://indexes.nikkei.co.jp/en/nkave/archives/data"
-          },
-          {
-            "label": "Yonhap",
-            "href": "https://en.yna.co.kr/view/AEN20260820006152320"
-          },
-          {
-            "label": "华尔街见闻早餐",
-            "href": "https://wallstreetcn.com/articles/3779948"
-          },
-          {
-            "label": "财新 宇树",
-            "href": "https://finance.caixin.com/2026-08-20/102476076.html"
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
           }
         ]
       },
       {
-        "label": "Rates",
-        "text": "CNBC: the 10-year yield rose to 4.704% and the 30-year to 5.248%, back through the pre-buyback print. Philadelphia Fed 47.4 beat the 25 estimate. Claims 206,000 missed the 21万 estimate (less than the survey). China left both LPRs at 3.00% and 3.50%. That is one day of duration give-back, not a cancelled 9 September operation.",
+        "label": "美国债市",
+        "text": "国债收益率重返高位，在贝森特表示单次国债回购规模可能再扩大后，抛售压力一度有所缓解（CLAIM — inbox）",
         "sources": [
           {
-            "label": "CNBC Thursday wrap",
-            "href": "https://www.cnbc.com/2026/08/19/stock-market-today-live-updates.html"
-          },
-          {
-            "label": "Philadelphia Fed",
-            "href": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/mbos-2026-08"
-          },
-          {
-            "label": "AP claims",
-            "href": "https://abcnews.com/Business/wireStory/us-unemployment-claims-dropped-206000-week-layoffs-sparse-135802946"
-          },
-          {
-            "label": "Bank of China LPR",
-            "href": "https://www.bankofchina.com/fimarkets/lilv/fd32/201310/t20131031_2591219.html"
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
           }
         ]
       },
       {
-        "label": "FX",
-        "text": "见闻: the dollar traced a V and recovered as much as 0.38% from the session low; the yen fell about 0.6% on the day (intraday, CLAIM). That is the yield reversal, not a BoJ print. Live USD/JPY sits in Market closes.",
+        "label": "外汇市场",
+        "text": "彭博美元指数从三个月低点反弹，部分收复财政部宣布加码回购国债后出现的跌幅。日元走弱（CLAIM — inbox）",
         "sources": [
           {
-            "label": "华尔街见闻早餐",
-            "href": "https://wallstreetcn.com/articles/3779948"
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
           }
         ]
       },
       {
-        "label": "Commodities",
-        "text": "CNBC: Brent rose more than 2% to $93.78. 见闻: WTI September +2.33% to $87.83; spot gold +0.08% to $4,519.36 after an intraday break of $4,500 (desk). Oil is the Iran-isolation tape. Gold did not keep Wednesday’s duration spike.",
+        "label": "欧洲股债",
+        "text": "德国国债回吐涨幅，英国国债与美国国债同步下跌。欧洲股市小幅收低，延续2023年以来最长连跌走势（CLAIM — inbox）",
         "sources": [
           {
-            "label": "CNBC Thursday wrap",
-            "href": "https://www.cnbc.com/2026/08/19/stock-market-today-live-updates.html"
-          },
-          {
-            "label": "华尔街见闻早餐",
-            "href": "https://wallstreetcn.com/articles/3779948"
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
           }
         ]
       },
       {
-        "label": "Crypto",
-        "text": "CoinDesk: bitcoin touched $70,000 for the first time since 2 June. 见闻: it broke $72,000 on Thursday, up about 5% on the day, while US stocks fell (desk/CLAIM). BlockBeats is color on the squeeze. This is not the equity close.",
+        "label": "能源",
+        "text": "油价升至近一个月来最高水平，美国加大对伊朗经济施压（CLAIM — inbox）",
         "sources": [
           {
-            "label": "CoinDesk",
-            "href": "https://www.coindesk.com/markets/2026/08/19/bitcoin-briefly-hits-usd70-000-for-the-first-time-since-june-here-is-why"
-          },
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          }
+        ]
+      },
+      {
+        "label": "金属",
+        "text": "黄金价格基本持稳。伦敦期铜微跌，LME铜库存料创出近年最大周增幅（CLAIM — inbox）",
+        "sources": [
           {
-            "label": "华尔街见闻早餐",
-            "href": "https://wallstreetcn.com/articles/3779948"
-          },
-          {
-            "label": "BlockBeats",
-            "href": "https://tw.theblockbeats.news/flash/362469"
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
           }
         ]
       }
     ],
     "source": {
-      "label": "华尔街见闻早餐 — 2026年8月21日",
-      "href": "https://wallstreetcn.com/articles/3779948"
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
     }
   },
   "themeCards": [

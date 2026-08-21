@@ -23,16 +23,15 @@ export function MarketOverview({ data }: MarketOverviewProps) {
           <p
             className={`text-xs font-semibold uppercase tracking-[0.24em] ${accent.eyebrow}`}
           >
-            By book
+            财经早茶
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          How the books traded
+          市场一览
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          One line per book: what moved and why. Dated prints first; desk color
-          is labeled CLAIM. The closes table above is a later snapshot — do not
-          mix the two.
+          Desk copy from the morning mail, labeled CLAIM. Dated prints sit in
+          Closes and Themes — do not mix the two.
           {data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}
         </p>
 
