@@ -1,25 +1,17 @@
 {
-  "at": "2026-08-24T02:20:13.410Z",
+  "at": "2026-08-24T04:12:52.052Z",
   "briefingDate": "2026-08-24",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-24.md",
-      "subject": "彭博财经早茶：美加贸易谈判破裂；英伟达AI服务器据悉涨价",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5072,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-24.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-24.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W34.md",
-      "subject": "彭博周末茶歇：农产品涨价潮",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5251,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -70,9 +62,24 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md",
       "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md",
+      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美加贸易谈判破裂；英伟达AI服务器据悉涨价",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-24.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：农产品涨价潮",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W34.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美国或再扩国债回购；阿里AI商业化加速",
@@ -137,6 +144,11 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：日元或再迎干预窗口；英伟达联手华尔街筹划巨额AI投资",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md"
+    },
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：伊朗拒绝直接与华府谈判；美疲软就业削弱加息预期",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md"
     }
   ]
 }
