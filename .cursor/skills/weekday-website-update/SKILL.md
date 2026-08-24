@@ -9,20 +9,32 @@ One cloud-agent run. Do **not** call `scripts/generate-daily-briefing.mjs` or sp
 
 If Asia/Shanghai is Sat/Sun: stop.
 
-**Preflight (before gather):** `git fetch origin main && git pull origin main`.
+**09:00 is one publish from every source together.** Do not ship a 见闻-only tape and patch Bloomberg later. 财经早茶 is already in Gmail (~07:00–07:40). GH `inbox-sync.yml` fetches it at this same 09:00. This VM has no IMAP secrets; do not `gh workflow run`. If `INBOX_IMAP_USER` is set, fetch in this run (`node scripts/fetch-inbox-sources.mjs` — exists-keep, not a second copy).
 
-财经早茶 is in Gmail ~07:00–07:40. GH `inbox-sync.yml` fetches it at **08:00 Beijing** (one fetch — not also at 09:00). This VM has no IMAP secrets; do not `gh workflow run`.
-
-**Block on `$TODAY` mail — then publish once.** Do not gather/YAML until `web/content/inbox/bloomberg-markets-daily-china/$TODAY.md` exists:
+Put `$TODAY` mail on disk **before YAML**, then gather the other desks in **this same run**:
 
 ```bash
+git fetch origin main && git pull origin main
 TODAY=$(TZ=Asia/Shanghai date +%F)
 MAIL=web/content/inbox/bloomberg-markets-daily-china/$TODAY.md
-for i in $(seq 1 40); do git pull origin main; test -f "$MAIL" && break; sleep 30; done
+# GH cron on 09:00 has been ~80 min late — wait so this run still unites, don't publish 见闻 and come back.
+if [ -n "${INBOX_IMAP_USER:-}" ]; then (cd "$(git rev-parse --show-toplevel)" && node scripts/fetch-inbox-sources.mjs); fi
+for i in $(seq 1 180); do test -f "$MAIL" && break; git pull origin main; sleep 30; done
 test -f "$MAIL"
 ```
 
-Do **not** fill `marketOverview` from 见闻「市场收报」or from yesterday’s 财经早茶. Do **not** start a second agent, second briefing date, or second PR for `$TODAY`. Fetch-inbox already skips an existing daily file — do not re-fetch. Empty 今日图表 body ≠ no chart: if `inbox-charts/bloomberg-$TODAY.png` exists, add `figures`. `$TODAY.md` on main is **not** done unless that mail is mapped (PNG date = `$TODAY` or miss named; 市场一览 labels/lines in mail order; 国际要闻/大中华/日程; Themes rewritten from that mail). If this leftover already wrote a 见闻 tape, **patch the same file**. Concurrent cap is 1 — leftover RUNNING kills the 09:00 cron; this session then publishes. After live confirm, **stop/archive**. Keep the dashboard 09:00 automation **on**. Do not add a second Cursor cron. `missed-briefing-catchup.yml` (09:30) may create only when `$TODAY.md` is absent.
+Capture at this updating time (miss → name it in `singleSource`, do not substitute):
+
+| Source | On the page |
+|--------|-------------|
+| 财经早茶 `$TODAY.md` + PNG | 市场一览, 今日图表, 国际要闻, 大中华, 日程 → Themes |
+| 华尔街见闻 | China three-desk; extra prints **after** mail bullets |
+| Caixin or 第一财经 | same |
+| BlockBeats | crypto/China color |
+| CICC | CLAIM on matching Themes, not as a What-changed print |
+| CNBC/AP + inject | closes in `marketDashboard` / summary FACT |
+
+见闻「市场收报」is not 市场一览. Yesterday’s 财经早茶 is not today’s. Do not start a second agent/PR for `$TODAY`. Empty 今日图表 body ≠ no chart when the PNG exists. `$TODAY.md` on main is **not** done unless that whole set is mapped. If this leftover wrote a 见闻-only tape, **patch the same file**. Concurrent cap is 1. After live confirm, **stop/archive**. Keep the dashboard 09:00 automation **on**. `missed-briefing-catchup.yml` (09:30) may create only when `$TODAY.md` is absent.
 
 Yahoo `finance.yahoo.com/quote/` HTML is not a close print. Inject levels belong only in `marketDashboard`. Do not copy them into sourced summary/drivers.
 
@@ -40,7 +52,7 @@ Read and execute these skills; do not jump to YAML:
 ## Inputs
 
 1. Beijing date `YYYY-MM-DD` = today `Asia/Shanghai`.
-2. Inbox: the preflight wait must have `$TODAY` 财经早茶 on disk. Map **that file** (Monday: also `bloomberg-weekend-tea` if present). Do not merge yesterday’s 财经早茶 as today’s 市场一览. **今日图表** (`figures` id `bloomberg-chart-of-day`) only if `inbox-charts/bloomberg-$TODAY.*` exists — never reuse yesterday’s PNG; omit and name the miss. If IMAP env exists (Actions only), `node scripts/fetch-inbox-sources.mjs` is idempotent (exists-keep).
+2. Inbox: `$TODAY` 财经早茶 is on disk from the 09:00 wait (Monday: also `bloomberg-weekend-tea` if present). Map **that file** in the same pass as 见闻/CICC/prints. Do not merge yesterday’s 财经早茶 as today’s 市场一览. **今日图表** only if `inbox-charts/bloomberg-$TODAY.*` exists — never reuse yesterday’s PNG.
 3. Inbox map (one pass — do not ship the figure then leave Themes/calendar on yesterday): 国际要闻 → `globalChanged` **Chinese, one bullet each, in mail order** (do not replace the mail with English primaries; extra prints can follow). 大中华 → `chinaChanged`; 市场一览 → `marketOverview.items` **Chinese, one bullet each, in mail order** (do not replace the mail with English books **or with 见闻「市场收报」**; do not add 加密/A股/欧洲股市 unless those labels are in the mail; do not retitle the site section 市场一览 — chrome is **Markets at a glance**). 日程/央行动态 → `eventCalendar`; 今日图表 → `figures` id `bloomberg-chart-of-day` **only** with `$TODAY` PNG. Then **rewrite `themeCards` from that same mail + prints**: one card per **independent** market force (count follows the tape — not a 3–5 cap). Include each large 市场一览 move that has its own mechanism (gold/bitcoin with duration is a Theme; oil on geopolitics is another). Merge cards that share a mechanism. Skip headlines that do not change a book. Bloomberg `www.bloomberg.com/asia` is a hub (403 in CI) — put distinctive sizes on a second source (见闻 / Treasury / AP) or drop the digit.
 4. China minimum: in-window cite from **华尔街见闻**, **Caixin or 第一财经**, and **BlockBeats** — or name the miss in `singleSource`.
 5. **CICC (required attempt):** theme-then-search via `cicc-research-article-search` (`APP_ID`/`APP_SECRET`; `python3 .cursor/skills/cicc-research-article-search/scripts/get_data.py "<theme>" --no-save`). Paraphrase only. Label **CLAIM**, never FACT. Put on matching `themeCards` / `globalImplies` — not as a What-changed print. Public cite = WeChat if that is what the skill returns. No VIP reprint. No invented notes. If env/search fails: say so in `singleSource`.

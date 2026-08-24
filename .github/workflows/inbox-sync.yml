@@ -1,15 +1,14 @@
-name: Weekday 08:00 Beijing IMAP
+name: Weekday 09:00 Beijing IMAP
 
-# 财经早茶 hits Gmail ~07:00–07:40. Fetch at 08:00 so the 09:00 Cursor
-# agent already has $TODAY on main. Do not also fetch at 09:00 (duplicate
-# + race). Do not Agent.create here (09:00 dashboard is the clock; 09:30
-# catch-up may create). Cloud VMs have no IMAP secrets and cannot
-# `gh workflow run` (403).
+# 财经早茶 is in Gmail by ~07:40. Fetch at the same 09:00 as the Cursor
+# publish so one run maps mail + 见闻 + CICC + prints. Do not Agent.create
+# here (dashboard is the clock; 09:30 catch-up may create). Cloud VMs have
+# no IMAP secrets and cannot `gh workflow run` (403).
 on:
   schedule:
-    # 08:00 Beijing Mon–Fri. After the 7am mail, before the 9am agent.
-    # GH cron on `0 1` was landing ~10:20; 09:00 waits up to 20 min if this slips.
-    - cron: "0 0 * * 1-5"
+    # 09:00 Beijing Mon–Fri — same clock as the briefing agent.
+    # GH cron on this slot has been landing ~10:20; the agent waits.
+    - cron: "0 1 * * 1-5"
   workflow_dispatch:
   push:
     paths:

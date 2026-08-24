@@ -76,7 +76,7 @@ git add web/content web/public/data && git commit -m "content: YYYY-MM-DD briefi
 
 ### Inbox newsletters (Gmail IMAP)
 
-**inbox-sync** (08:00 Beijing weekdays) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. 财经早茶 lands ~07:00–07:40 — one fetch, not also at 09:00. The 09:00 Cursor agent waits for `$TODAY` 财经早茶 then merges **all** of that mail in one pass (figures, 市场一览, 国际要闻, 大中华, 日程, **Themes rewritten from the same tape**). Do not substitute 见闻「市场收报」. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. Keep the dashboard 09:00 automation **on**. A leftover RUNNING desktop/chat agent blocks that cron — that session publishes the same `$TODAY.md`; 09:30 catch-up may create only if the file is absent.
+**inbox-sync** (09:00 Beijing weekdays, same clock as the Cursor publish) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. 财经早茶 lands ~07:00–07:40, so it is already in Gmail. The 09:00 agent waits for `$TODAY` 财经早茶, then in **the same run** gathers 见闻 + Caixin/Yicai + BlockBeats + CICC + closes and writes one YAML (figures, 市场一览, 国际要闻, 大中华, 日程, **Themes rewritten from that mail**). Do not substitute 见闻「市场收报」and do not ship a 见闻-only briefing to patch later. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. Keep the dashboard 09:00 automation **on**. A leftover RUNNING desktop/chat agent blocks that cron — that session publishes the same `$TODAY.md`; 09:30 catch-up may create only if the file is absent.
 
 Repo → Settings → Secrets and variables → Actions — set:
 
