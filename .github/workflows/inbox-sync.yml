@@ -1,15 +1,15 @@
-name: Weekday 09:00 Beijing IMAP
+name: Weekday 08:00 Beijing IMAP
 
-# Fetch Bloomberg/Glassnode at 09:00 Beijing so the Cursor dashboard
-# automation has $TODAY mail. Do not Agent.create here — that races the
-# dashboard and is why the 09:00 automation looked "stopped"/rate-limited.
-# Cloud VMs have no IMAP secrets and cannot `gh workflow run` (403).
+# 财经早茶 hits Gmail ~07:00–07:40. Fetch at 08:00 so the 09:00 Cursor
+# agent already has $TODAY on main. Do not also fetch at 09:00 (duplicate
+# + race). Do not Agent.create here (09:00 dashboard is the clock; 09:30
+# catch-up may create). Cloud VMs have no IMAP secrets and cannot
+# `gh workflow run` (403).
 on:
   schedule:
-    # 09:00 Beijing Mon–Fri. 财经早茶 lands ~07:06; 06:00/07:20 fetch was
-    # too early for overnight tape the 09:00 agent should see. GH cron can
-    # slip ~1h; missed-briefing-catchup.yml at 09:30 is the leftover backup.
-    - cron: "0 1 * * 1-5"
+    # 08:00 Beijing Mon–Fri. After the 7am mail, before the 9am agent.
+    # GH cron on `0 1` was landing ~10:20; 09:00 waits up to 20 min if this slips.
+    - cron: "0 0 * * 1-5"
   workflow_dispatch:
   push:
     paths:
@@ -62,28 +62,3 @@ jobs:
           else
             echo "No inbox changes to commit."
           fi
-
-  leftover:
-    needs: inbox
-    if: always() && !cancelled() && github.event_name != 'push'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
-        with:
-          node-version: "22"
-      - name: Wake leftover if it blocked the 09:00 automation
-        env:
-          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO_URL: https://github.com/${{ github.repository }}
-          CATCHUP_CREATE: "0"
-        run: |
-          if [ -z "$CURSOR_API_KEY" ]; then
-            echo "::notice::No CURSOR_API_KEY — add the secret."
-            exit 0
-          fi
-          npm install @cursor/sdk@latest
-          node scripts/nudge-missed-briefing.mjs
