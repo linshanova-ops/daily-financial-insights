@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-21T03:06:37.848Z",
-  "latest": "2026-08-21",
+  "generatedAt": "2026-08-24T01:29:51.133Z",
+  "latest": "2026-08-24",
   "briefings": [
+    {
+      "date": "2026-08-24",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Friday’s bounce did not repair the week. The S&P 500 rose 0.43% and still fell 1.4% for the five sessions. The 30-year yield climbed to 5.273%. Services PMI printed a four-year high. Manufacturing PMI missed. Brent ended at $94.39. Bitcoin and gold rose while yields rose. Shanghai barely moved. Samsung named a KRW90tn–110tn return. Jackson Hole is this week.",
+      "coverageWindow": "August 21–24, 2026"
+    },
     {
       "date": "2026-08-21",
       "title": "Daily Financial Briefing",
