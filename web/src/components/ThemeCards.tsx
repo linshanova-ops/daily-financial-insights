@@ -48,7 +48,7 @@ function CopyBlock({
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink">
         {label}
       </p>
-      <ul className="mt-3 space-y-3 text-base leading-relaxed text-ink">
+      <ul className="mt-3 space-y-4 text-base leading-relaxed text-ink sm:text-lg">
         {lines(text).map((line, i) => (
           <CiteLine key={i} line={line} />
         ))}
@@ -110,7 +110,7 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
               <h3 className="display mt-2 text-2xl tracking-tight text-ink sm:text-3xl">
                 {theme.title}
               </h3>
-              <div className="mt-6 grid gap-8 lg:grid-cols-2 lg:gap-12">
+              <div className="mt-6 flex flex-col gap-8">
                 <CopyBlock
                   label="Fact"
                   text={theme.fact}
