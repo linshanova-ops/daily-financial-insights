@@ -185,10 +185,20 @@ const FLAKY_OFFICIAL_HOSTS = [
   /ismworld\.org/i,
   /mp\.weixin\.qq\.com/i, // CICC public paraphrase links (WeChat challenge page in CI)
   /pbc\.gov\.cn/i, // July stats HTML often fetch-fails from Actions IPs
+  /theblockbeats\.(info|news)/i, // flash/news pages intermittently drop from Actions IPs
 ];
 
 function flakyOfficialHost(href) {
   return FLAKY_OFFICIAL_HOSTS.some((re) => re.test(href));
+}
+
+/** Same flash/news on the TW host when www.theblockbeats.info flakes from CI. */
+function blockbeatsMirrorUrl(href) {
+  const m = String(href).match(
+    /(?:www\.)?theblockbeats\.info\/(flash|news)\/(\d+)/i,
+  );
+  if (!m) return null;
+  return `https://tw.theblockbeats.news/${m[1]}/${m[2]}`;
 }
 
 /** Latest YYYY-MM-DD briefing markdown stem under content/briefings. */
@@ -664,66 +674,84 @@ async function fetchSource(href) {
   const preferDeclared =
     /bls\.gov/i.test(href) || /sec\.gov/i.test(href);
 
-  try {
-    let res;
-    let raw;
-    let via;
-    if (preferDeclared) {
-      ({ res, raw } = await httpGet(url, DECLARED_UA));
-      via = "http-declared-ua";
-      if (!res.ok) {
-        const second = await httpGet(url, BROWSER_UA);
-        res = second.res;
-        raw = second.raw;
-        via = "http";
-      }
-    } else {
-      ({ res, raw, via } = await httpGetWithUaFallback(url));
-    }
+  const urls = [url];
+  const bbMirror = blockbeatsMirrorUrl(href);
+  if (bbMirror) urls.push(bbMirror);
 
-    const spa =
-      res.ok &&
-      raw.length < 5000 &&
-      /id=["']app["']/.test(raw) &&
-      !/<article/i.test(raw);
-    if (!res.ok) {
-      return {
+  let lastFail = {
+    ok: false,
+    text: "",
+    years: yearsInUrl(href),
+    via: "http",
+    error: "fetch failed",
+  };
+
+  for (const tryUrl of urls) {
+    try {
+      let res;
+      let raw;
+      let via;
+      if (preferDeclared) {
+        ({ res, raw } = await httpGet(tryUrl, DECLARED_UA));
+        via = "http-declared-ua";
+        if (!res.ok) {
+          const second = await httpGet(tryUrl, BROWSER_UA);
+          res = second.res;
+          raw = second.raw;
+          via = "http";
+        }
+      } else {
+        ({ res, raw, via } = await httpGetWithUaFallback(tryUrl));
+      }
+      if (tryUrl !== url) via = `${via}-blockbeats-mirror`;
+
+      const spa =
+        res.ok &&
+        raw.length < 5000 &&
+        /id=["']app["']/.test(raw) &&
+        !/<article/i.test(raw);
+      if (!res.ok) {
+        lastFail = {
+          ok: false,
+          status: res.status,
+          text: "",
+          years: yearsInUrl(href),
+          via,
+          error: `HTTP ${res.status}`,
+        };
+        continue;
+      }
+      if (spa) {
+        lastFail = {
+          ok: false,
+          status: res.status,
+          text: "",
+          years: yearsInUrl(href),
+          via: `${via}-spa`,
+          error: "SPA shell without article body",
+        };
+        continue;
+      }
+      const { text, dates } = htmlToPlain(raw);
+      const years = [
+        ...new Set([
+          ...yearsInUrl(href),
+          ...yearsFromDateStrings(dates),
+          ...yearsFromBody(text),
+        ]),
+      ];
+      return { ok: true, status: res.status, text, years, via };
+    } catch (e) {
+      lastFail = {
         ok: false,
-        status: res.status,
         text: "",
         years: yearsInUrl(href),
-        via,
-        error: `HTTP ${res.status}`,
+        via: tryUrl !== url ? "http-blockbeats-mirror" : "http",
+        error: String(e.message || e),
       };
     }
-    if (spa) {
-      return {
-        ok: false,
-        status: res.status,
-        text: "",
-        years: yearsInUrl(href),
-        via: `${via}-spa`,
-        error: "SPA shell without article body",
-      };
-    }
-    const { text, dates } = htmlToPlain(raw);
-    const years = [
-      ...new Set([
-        ...yearsInUrl(href),
-        ...yearsFromDateStrings(dates),
-        ...yearsFromBody(text),
-      ]),
-    ];
-    return { ok: true, status: res.status, text, years, via };
-  } catch (e) {
-    return {
-      ok: false,
-      text: "",
-      years: yearsInUrl(href),
-      via: "http",
-      error: String(e.message || e),
-    };
   }
+  return lastFail;
 }
 
 /** Distinctive hard numbers from a claim that must be evidenced. */
