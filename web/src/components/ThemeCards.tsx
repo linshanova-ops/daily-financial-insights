@@ -12,8 +12,9 @@ interface ThemeCardsProps {
 }
 
 /** Split folded YAML into one line per sentence so cites aren't a wall. */
+// ponytail: period + space; skip U.S./U.K. so "U.S. Treasury" stays one line.
 function lines(text: string): string[] {
-  return text.trim().split(/(?<=[.。])\s+/).filter(Boolean);
+  return text.trim().split(/(?<!U\.S)(?<!U\.K)(?<=[.。])\s+/).filter(Boolean);
 }
 
 /** First ": " is the cite; rest is the print. Skip if the head looks like a clock. */
