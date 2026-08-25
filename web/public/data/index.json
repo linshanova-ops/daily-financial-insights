@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-24T03:58:38.355Z",
-  "latest": "2026-08-24",
+  "generatedAt": "2026-08-25T02:40:49.183Z",
+  "latest": "2026-08-25",
   "briefings": [
+    {
+      "date": "2026-08-25",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Monday was a TGA-and-chips session, not a buyback-bounce session. CNBC said Treasury may fund long-end buybacks from a cash balance the 财经早茶 chart shows above $900bn. The 10-year yield fell to 4.70%. The S&P 500 still fell 0.28%, and Nvidia dropped for a seventh day. Bessent rolled out the Iran isolation plan, and oil fell. Trump threatened 50% tariffs on Canadian cars from 2027. PBOC is shrinking August MLF. Alibaba’s HK$80bn placing hit the stock.",
+      "coverageWindow": "August 24–25, 2026"
+    },
     {
       "date": "2026-08-24",
       "title": "Daily Financial Briefing",
