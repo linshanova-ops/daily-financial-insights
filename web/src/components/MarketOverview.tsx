@@ -30,8 +30,8 @@ export function MarketOverview({ data }: MarketOverviewProps) {
           Markets at a glance
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          Desk copy from the morning mail, labeled CLAIM. Dated prints sit in
-          Closes and Themes — do not mix the two.
+          Desk copy from the morning mail. Dated prints sit in Closes and
+          Themes — do not mix the two.
           {data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}
         </p>
 
