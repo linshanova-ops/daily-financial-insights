@@ -387,7 +387,7 @@
         "BTC",
         "USD"
       ],
-      "fact": "财经早茶 今日图表: the US Treasury General Account cash balance is above $900bn on the May–August 2026 line, sourced to Treasury. CNBC, citing two officials: the department could use its $1 trillion General Account to fund larger bond buybacks, without saying how much. CNBC: the 10-year yield was 4.704% and the 30-year was 5.234% after that report. US Treasury: the official 24 August curve printed 4.70% on the 10-year and 5.23% on the 30-year. 财经早茶 市场一览: yields eased on oil and the TGA report; copper hit a record and gold a more-than-three-month high on fiscal-and-dollar worry (desk/CLAIM). 华尔街见闻: spot gold printed $4,651.24. CoinDesk: bitcoin steadied around $77,800 after a 24% week.",
+      "fact": "财经早茶 今日图表: the US Treasury General Account cash balance is above $900bn on the May–August 2026 line, sourced to Treasury. CNBC, citing two officials: the department could use its $1 trillion General Account to fund larger bond buybacks, without saying how much. US Treasury: the official 24 August curve printed 4.70% on the 10-year and 5.23% on the 30-year. 财经早茶 市场一览: copper hit a record as yields eased on oil and the TGA report (desk/CLAIM). 华尔街见闻: spot gold printed $4,651.24, a more-than-three-month high. CoinDesk: bitcoin steadied around $77,800 after a 24% week.",
       "factSources": [
         {
           "label": "彭博财经早茶 Aug 25",
@@ -420,7 +420,7 @@
         "US equities",
         "Asia equities"
       ],
-      "fact": "AP: the S&P 500 closed at 7,652.86, down 0.3%; the Nasdaq closed at 25,980.19, down 0.8%; the Dow closed at 53,417.16, up 0.3%. AP: Nvidia fell 2.9% and was the heaviest weight on the S&P 500; Micron fell 5.8% and Broadcom fell 2.6%. 财经早茶 市场一览: the S&P 500 fell as chips sold again, and Nvidia logged a seventh down day (desk/CLAIM). Straits Times: Nvidia customers were told that many AI servers shipping in early 2027 will cost more than 15% extra on memory (CLAIM). Nvidia reports Wednesday after the US close.",
+      "fact": "AP: the S&P 500 closed at 7,652.86, down 0.3%; the Nasdaq closed at 25,980.19, down 0.8%; the Dow closed at 53,417.16, up 0.3%. AP: Nvidia fell 2.9% and was the heaviest weight on the S&P 500; Micron fell 5.8% and Broadcom fell 2.6%. 财经早茶 市场一览: Nvidia logged a seventh down day (desk/CLAIM). Straits Times: Nvidia customers were told that many AI servers shipping in early 2027 will cost more than 15% extra on memory (CLAIM). Nvidia reports Wednesday after the US close.",
       "factSources": [
         {
           "label": "AP Monday close",
@@ -449,7 +449,7 @@
         "Oil",
         "USD"
       ],
-      "fact": "CNBC: WTI fell about 2.5% to $84.89 and Brent fell about 2.5% to $92.06. CNBC: the administration rolled out a global sanctions plan focused on Iran, dubbed Operation Economic Outcast; China was not described as exempt. 财经早茶 市场一览: crude futures fell as traders weighed the isolation step (desk/CLAIM). 财经早茶 国际要闻: Bessent told counterparties to cut commercial ties with Tehran or face unilateral sanctions (desk/CLAIM).",
+      "fact": "CNBC: WTI fell about 2.5% to $84.89 and Brent fell about 2.5% to $92.06. CNBC: the administration rolled out a global sanctions plan focused on Iran, dubbed Operation Economic Outcast; China was not described as exempt. 财经早茶 国际要闻: Bessent told counterparties to cut commercial ties with Tehran or face unilateral sanctions (desk/CLAIM).",
       "factSources": [
         {
           "label": "CNBC oil",
