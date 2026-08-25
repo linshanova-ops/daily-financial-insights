@@ -25,9 +25,7 @@ function CiteLine({ line }: { line: string }) {
   if (cut > 0 && cut <= 48 && !/^\d{1,2}$/.test(head)) {
     return (
       <li>
-        <span className="mb-1 block text-xs font-semibold text-ink/45">
-          {head}
-        </span>
+        <span className="font-semibold text-ink">{head}：</span>
         {line.slice(cut + 2)}
       </li>
     );
