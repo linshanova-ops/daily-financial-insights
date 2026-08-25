@@ -30,7 +30,7 @@ Capture at this updating time (miss → name it in `singleSource`, do not substi
 | 财经早茶 `$TODAY.md` + PNG | 市场一览, 今日图表, 国际要闻, 大中华, 日程 → Themes |
 | 华尔街见闻 | China three-desk; extra prints **after** mail bullets |
 | Caixin or 第一财经 | same |
-| BlockBeats | crypto/China color |
+| BlockBeats | 解读 / news CLAIM on matching Themes — not a price-color checkbox |
 | CICC | CLAIM on matching Themes, not as a What-changed print |
 | CNBC/AP + inject | closes in `marketDashboard` / summary FACT |
 
