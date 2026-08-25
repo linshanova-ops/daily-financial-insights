@@ -1,8 +1,18 @@
 {
-  "at": "2026-08-24T04:18:09.330Z",
-  "briefingDate": "2026-08-24",
+  "at": "2026-08-25T02:14:46.217Z",
+  "briefingDate": "2026-08-25",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-25.md",
+      "subject": "彭博财经早茶：美国或加征对华关税；特朗普孤立伊朗计划",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5468,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-25.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-25.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-24.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md",
       "skipped": true
     }
   ],
@@ -144,11 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：日元或再迎干预窗口；英伟达联手华尔街筹划巨额AI投资",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：伊朗拒绝直接与华府谈判；美疲软就业削弱加息预期",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-10.md"
     }
   ]
 }
