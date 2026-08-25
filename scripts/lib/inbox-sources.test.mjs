@@ -91,6 +91,20 @@ describe("pickSource", () => {
       ),
       null,
     );
+    assert.equal(
+      pickSource(
+        "Glassnode <insights@glassnode.com>",
+        "Using Glassnode With Agents",
+      ),
+      null,
+    );
+    assert.equal(
+      pickSource(
+        "Glassnode <insights@glassnode.com>",
+        "Our Best Metrics, in a Single Dashboard: The Market Compass",
+      ),
+      null,
+    );
   });
 
   it("ignores unrelated mail", () => {

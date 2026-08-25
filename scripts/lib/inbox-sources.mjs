@@ -92,7 +92,10 @@ export const INBOX_SOURCES = [
         s.includes("intro video") ||
         s.includes("get to know") ||
         s.includes("register now") ||
-        s.includes("you are invited")
+        s.includes("you are invited") ||
+        s.includes("with agents") ||
+        s.includes("market compass") ||
+        s.includes("best metrics")
       ) {
         return false;
       }

@@ -93,6 +93,16 @@
       "influence": "Bitcoin around $77,800 Monday morning after a 24% week, the best since March 2023."
     },
     {
+      "label": "Glassnode — Week on Chain W34",
+      "href": "https://research.glassnode.com/the-week-onchain-week-33-2026/",
+      "books": [
+        "crypto",
+        "rates",
+        "commodities"
+      ],
+      "influence": "19 August CLAIM: 10-year toward 4.7% anchored BTC near $60–65k while gold and oil bid; STH cost $68.5k below True Market Mean $75.8k; realized P/L 0.75 vs exhaustion below 0.5."
+    },
+    {
       "label": "BlockBeats — TGA / BTC",
       "href": "https://www.theblockbeats.info/flash/363235",
       "books": [
@@ -387,7 +397,7 @@
         "BTC",
         "USD"
       ],
-      "fact": "财经早茶 今日图表: the US Treasury General Account cash balance is above $900bn on the May–August 2026 line, sourced to Treasury. CNBC, citing two officials: the department could use its $1 trillion General Account to fund larger bond buybacks, without saying how much. US Treasury: the official 24 August curve printed 4.70% on the 10-year and 5.23% on the 30-year. 财经早茶 市场一览: copper hit a record as yields eased on oil and the TGA report (desk/CLAIM). 华尔街见闻: spot gold printed $4,651.24, a more-than-three-month high. CoinDesk: bitcoin steadied around $77,800 after a 24% week.",
+      "fact": "财经早茶 今日图表: the US Treasury General Account cash balance is above $900bn on the May–August 2026 line, sourced to Treasury. CNBC, citing two officials: the department could use its $1 trillion General Account to fund larger bond buybacks, without saying how much. US Treasury: the official 24 August curve printed 4.70% on the 10-year and 5.23% on the 30-year. 财经早茶 市场一览: copper hit a record as yields eased on oil and the TGA report (desk/CLAIM). 华尔街见闻: spot gold printed $4,651.24, a more-than-three-month high. CoinDesk: bitcoin steadied around $77,800 after a 24% week. Glassnode Week on Chain (19 August CLAIM): that week's spot was still $60–65k, with short-term-holder cost near $68.5k below True Market Mean near $75.8k, and realized P/L near 0.75 versus exhaustion below 0.5.",
       "factSources": [
         {
           "label": "彭博财经早茶 Aug 25",
@@ -402,11 +412,19 @@
           "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         },
         {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780189"
+        },
+        {
           "label": "CoinDesk",
           "href": "https://www.coindesk.com/markets/2026/08/24/bitcoin-steadies-near-usd78-000-as-gold-rallies-altcoins-consolidate-after-best-week-in-3-years"
+        },
+        {
+          "label": "Glassnode Week on Chain W34",
+          "href": "https://research.glassnode.com/the-week-onchain-week-33-2026/"
         }
       ],
-      "mechanism": "The 今日图表 is TGA cash stock, not the S&P close. If gold were only a duration trade, it should have fallen with a 4 bp drop in the 30-year yield, but it did not. CICC CLAIM (24 August): a $4bn long-end buyback is a signal, not the outstanding stock, and Treasury cannot drain the TGA without limit — it is not QE. Keep the chip selloff on the Nvidia card and oil on the Iran card.",
+      "mechanism": "The 今日图表 is TGA cash stock, not the S&P close. If gold were only a duration trade, it should have fallen with a 4 bp drop in the 30-year yield, but it did not. CICC CLAIM (24 August): a $4bn long-end buyback is a signal, not the outstanding stock, and Treasury cannot drain the TGA without limit — it is not QE. Monday’s CoinDesk print near $77,800 sits above that 19 August True Market Mean near $75.8k, so the gold bid is still a dollar-fiscal book, and the 24% week is a local bounce until realized P/L reclaims 2 (Glassnode W34 CLAIM).",
       "trigger": "A dated TGA draw, or the 9 September ≥$4bn operation.",
       "invalidator": "Yields back up with gold and bitcoin giving back Monday’s bid.",
       "horizon": "days",
@@ -435,7 +453,7 @@
           "href": "https://www.straitstimes.com/business/nvidia-customers-notified-about-ai-related-price-hikes-above-15-bloomberg"
         }
       ],
-      "mechanism": "Yields fell and chips still sold, so this is not the TGA duration book. Read it as AI-capex and memory beta into Wednesday’s print, not as a rates rally.",
+      "mechanism": "Yields fell and chips still sold. Read it as AI-capex and memory beta into Wednesday’s print, not as a rates rally.",
       "trigger": "Nvidia’s Wednesday report, or a session where SOXX holds a bounce.",
       "invalidator": "Chips rallying through PCE with no earnings follow-through.",
       "horizon": "days",
@@ -460,7 +478,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A sanctions headline that does not tighten barrels can be sold. This is not the TGA duration book and not the Canada auto list. A Navy-escorted tanker count is still not a confirmed Strait closure.",
+      "mechanism": "A sanctions headline that does not tighten barrels can be sold. A Navy-escorted tanker count is still not a confirmed Strait closure.",
       "trigger": "A dated secondary list that hits Chinese refiners, or a flow shutdown.",
       "invalidator": "Quiet oil with no new isolation step.",
       "horizon": "days",
@@ -485,7 +503,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "This is the auto-and-CAD book, not oil and not Alibaba’s placing. A 2027 start is a political tape into midterms more than a same-week growth shock. Keep Saturday’s $20bn list on the same Canada fight, not as a second Theme.",
+      "mechanism": "A 2027 start is a political tape into midterms more than a same-week growth shock. Saturday’s $20bn list is the same Canada fight.",
       "trigger": "Canada’s Tuesday response, or a dated restart of talks.",
       "invalidator": "The 2027 auto tariff walked back with no new list.",
       "horizon": "days",
@@ -514,7 +532,7 @@
           "href": "https://wallstreetcn.com/articles/3780189"
         }
       ],
-      "mechanism": "第一财经: this is 缩长增短 (shrink long-term cash, add overnight), not a tightening cycle. Do not read Alibaba’s placing or People’s Daily commentary as this book. ChiNext’s 3.21% drop is chips, not MLF.",
+      "mechanism": "第一财经: this is 缩长增短 (shrink long-term cash, add overnight), not a tightening cycle. ChiNext’s 3.21% drop is chips, not MLF.",
       "trigger": "A dated incremental fiscal package, or DR007 holding above 1.4%.",
       "invalidator": "MLF rerolled large with no month-end overnight ops.",
       "horizon": "days",
@@ -543,7 +561,7 @@
           "href": "https://wallstreetcn.com/articles/3780189"
         }
       ],
-      "mechanism": "This is dilution for AI capex, not a China demand print and not MLF. Hang Seng can fall on the placing while CSI 300 does something else.",
+      "mechanism": "This is dilution for AI capex, not a China demand print. Hang Seng can fall on the placing while CSI 300 does something else.",
       "trigger": "The 26 August close, or a session where 9988 gives back the placing gap.",
       "invalidator": "The placing cancelled or resized with no AI spend follow-through.",
       "horizon": "days",
@@ -1143,7 +1161,7 @@
   },
   "watchItems": [],
   "sources": "25 August 财经早茶 IMAP landed 02:15 UTC. 市场一览 is that mail in Chinese, mail order — not 见闻 市场收报. 今日图表 is the TGA cash PNG. CICC is the 24 August 美债 note (CLAIM). Yicai is the MLF FACT. Caixin is the Alibaba placing. BlockBeats 363235 is color; CoinDesk is the bitcoin print.",
-  "singleSource": "Distinctive inbox sizes without a second source were dropped (7.5% / 20% China overcapacity tariff, Iran entity count, quant 2.9pp, Junzheng deal size, hypersonic glider). Yicai is the MLF print. Caixin is the Alibaba placing. BlockBeats 363235 is color; CoinDesk is the $77,800 print. Yahoo quote HTML is not used in summary or drivers. Dashboard re-injected at 2026-08-25T02:30:14.271Z. CICC Alibaba query hit the restricted list; the 24 August 美债 note is the matching CLAIM.",
+  "singleSource": "Distinctive inbox sizes without a second source were dropped (7.5% / 20% China overcapacity tariff, Iran entity count, quant 2.9pp, Junzheng deal size, hypersonic glider). Yicai is the MLF print. Caixin is the Alibaba placing. BlockBeats 363235 is color; CoinDesk is the $77,800 print. Glassnode W34 (19 August CLAIM) is the on-chain frame; live `gn` metrics were not pulled (no GLASSNODE_API_KEY in this VM). Yahoo quote HTML is not used in summary or drivers. Dashboard re-injected at 2026-08-25T02:30:14.271Z. CICC Alibaba query hit the restricted list; the 24 August 美债 note is the matching CLAIM.",
   "caveats": "Event Calendar mainland China only (Taiwan industrial production and Hong Kong trade from the mail 日程 are omitted). Brent Yahoo BZ=F in Market closes is futures, not the CNBC $92.06 print. Tuesday Asia levels live only in Market Dashboard. 30-year 5.234% is CNBC; 5.23% is the Treasury daily curve.",
   "suggestions": "Today: IFO and US housing/confidence. Into Wednesday: whether chips can hold a bounce through PCE into Nvidia. Into Friday: Warsh at 10:00 ET. Into China: Alibaba’s 26 August close, then overnight OMO. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September. This report is research and information synthesis, not investment advice.",
   "marketDashboard": {

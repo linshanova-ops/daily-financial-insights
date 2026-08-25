@@ -39,6 +39,7 @@ Chinese-language (use when accessible; often faster and more detailed):
 - **第一财经 (Yicai, yicai.com)** — required for PBOC OMO detail, onshore policy color, and same-day China macro/market reporting
 - **财新 (Caixin, caixin.com / caixinglobal.com)** — required for deeper China policy and financial-system reporting (pair with Wallstreetcn)
 - **BlockBeats / 律动 (theblockbeats.info)** — required for China-facing crypto–macro and risk-asset transmission (BTC/ETH vs oil, Fed path, Asia risk-off); treat as tier 3 — verify hard macro **and crypto price** prints against tier 1–2. Never publish a BlockBeats BTC/ETH level without confirming the flash's calendar year and an independent dated quote in the coverage window (stale "7月15日 / $116k" flashes have already polluted a 2026 briefing).
+- **Glassnode** — Week on Chain inbox (`glassnode-insights/`) is CLAIM, window-date the email. When `GLASSNODE_API_KEY` is set, `gn metric get` for BTC (see `.cursor/skills/glassnode-cli`). Do not invent on-chain sizes. Product/CLI how-to mail is not a briefing source.
 - **财联社 (CLS, cls.cn)** — fastest A-share/policy flashes; **东方财富 (Eastmoney)** — quotes, turnover, sector flows
 - **新华财经 (Xinhua Finance)** — official market wrap
 - **中国人民银行官网 (pbc.gov.cn)**, **国家外汇管理局 (safe.gov.cn)**, **中国证监会 (csrc.gov.cn)**, **国家统计局 (stats.gov.cn)**, **财政部 (mof.gov.cn)**, **21世纪经济报道**, **证券时报**
