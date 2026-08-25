@@ -47,7 +47,7 @@ function CopyBlock({
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink">
         {label}
       </p>
-      <ul className="mt-3 space-y-4 text-base leading-relaxed text-ink sm:text-lg">
+      <ul className="mt-3 space-y-4 text-base leading-relaxed text-ink">
         {lines(text).map((line, i) => (
           <CiteLine key={i} line={line} />
         ))}
