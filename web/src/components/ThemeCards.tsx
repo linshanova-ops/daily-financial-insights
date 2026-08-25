@@ -1,5 +1,3 @@
-"use client";
-
 import type { SignalGrade, ThemeCard } from "@/lib/types";
 import { SourceButton } from "./SourceButton";
 
@@ -13,7 +11,40 @@ interface ThemeCardsProps {
   themes: ThemeCard[];
 }
 
-/** Cross-asset forces: fact, then the so-what. */
+/** Split folded YAML into one line per sentence so cites aren't a wall. */
+function lines(text: string): string[] {
+  return text.trim().split(/(?<=[.。])\s+/).filter(Boolean);
+}
+
+function CopyBlock({
+  label,
+  text,
+  sources,
+}: {
+  label: string;
+  text: string;
+  sources?: ThemeCard["factSources"];
+}) {
+  return (
+    <div>
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink">
+        {label}
+      </p>
+      <ul className="mt-3 space-y-3 text-base leading-relaxed text-ink">
+        {lines(text).map((line, i) => (
+          <li key={i}>{line}</li>
+        ))}
+      </ul>
+      {sources?.length ? (
+        <div className="mt-3">
+          <SourceButton sources={sources} />
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+/** Cross-asset forces: fact, then the so-what — copy first, cites after. */
 export function ThemeCards({ themes }: ThemeCardsProps) {
   if (!themes.length) return null;
 
@@ -61,19 +92,14 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
               <h3 className="display mt-2 text-2xl tracking-tight text-ink sm:text-3xl">
                 {theme.title}
               </h3>
-              <dl className="mt-5 space-y-4 text-sm leading-relaxed text-ink-soft sm:text-base">
-                <div>
-                  <dt className="font-semibold text-ink">Fact</dt>
-                  <dd className="mt-1">
-                    {theme.fact}
-                    <SourceButton sources={theme.factSources} />
-                  </dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-ink">So what</dt>
-                  <dd className="mt-1">{theme.mechanism}</dd>
-                </div>
-              </dl>
+              <div className="mt-6 grid gap-8 lg:grid-cols-2 lg:gap-12">
+                <CopyBlock
+                  label="Fact"
+                  text={theme.fact}
+                  sources={theme.factSources}
+                />
+                <CopyBlock label="So what" text={theme.mechanism} />
+              </div>
             </li>
           ))}
         </ol>
