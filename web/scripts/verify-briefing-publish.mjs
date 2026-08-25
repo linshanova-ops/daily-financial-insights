@@ -81,14 +81,21 @@ function main() {
 
   const latestPath = path.join(webRoot, "public/data/latest.json");
   if (fs.existsSync(latestPath)) {
-    const chartCheck = checkBloombergChartDate(
-      JSON.parse(fs.readFileSync(latestPath, "utf8")),
-    );
+    const latest = JSON.parse(fs.readFileSync(latestPath, "utf8"));
+    const chartCheck = checkBloombergChartDate(latest);
     if (!chartCheck.ok) {
       console.error(`\n[verify-briefing] FAIL — ${chartCheck.message}\n`);
       process.exit(1);
     }
     console.log("[verify-briefing] bloomberg-chart-of-day date OK");
+
+    if (/\bCLAIM\b/.test(JSON.stringify(latest))) {
+      console.error(
+        "\n[verify-briefing] FAIL — latest.json contains CLAIM. That word is an agent gate, not a reader label. Name the desk (财经早茶, 律动, CICC).\n",
+      );
+      process.exit(1);
+    }
+    console.log("[verify-briefing] no CLAIM on the page");
   }
 
   runStep("scan-links", "npm", ["run", "scan-links"], webRoot);

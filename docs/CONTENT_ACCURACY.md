@@ -11,9 +11,10 @@
 5. **Index closes, not mix-ups** — quote the named index’s official close/settle; never swap Kospi/Nikkei/Kosdaq or open vs close without labels. Prefer exchange/official media for Shanghai/Hang Seng/Kospi over aggregator day wraps.
 6. **Beat/miss vs estimate**, not vs prior. **Cooler / less than estimate = miss estimate**; **hotter / more than estimate = beat estimate** (CPI, PPI, GDP, payrolls, claims, etc.). Do not swap market tone for the print label.
 7. **All CNY/RMB 亿元 conversions** — `10亿元` = **CNY1bn**; `100亿元` = **CNY10bn**. Never copy an `亿元` numeral unchanged into a `bn` label (`51.79亿元` = **CNY5.179bn**, not CNY51.79bn). PBOC net OMO = ops − maturity.
-8. **Crypto triangulation** — BlockBeats alone is not enough for a published BTC/ETH print; pair with a dated Cointelegraph / CoinDesk / Yahoo (or similar) quote.
+8. **Crypto triangulation** — BlockBeats alone is not enough for a published BTC/ETH print; pair with a dated Cointelegraph / CoinDesk / Yahoo (or similar) quote. Cover 律动 four books when the tape has them (BTC/ETF/MSTR/stables/exchanges/reg; tech/AI chain; street ratings/targets; macro/CB/rates/FX/commodities) on matching Themes.
 9. **Href integrity** — if the linked page does not support the number, replace the source; do not keep a convenient wrong link. **Aggregator pages (BlockBeats, etc.):** omit embed-only figures that do not appear in CI-fetchable HTML.
 10. **Reject rather than invent** — if a figure cannot be verified, omit it or mark `single-source` in caveats. Never invent.
+11. **Never write CLAIM on the website.** FACT vs CLAIM is an agent gate. Name the desk (`财经早茶`, `律动`, `CICC`).
 
 ## Pipeline enforcement
 
