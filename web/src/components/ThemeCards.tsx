@@ -16,6 +16,24 @@ function lines(text: string): string[] {
   return text.trim().split(/(?<=[.。])\s+/).filter(Boolean);
 }
 
+/** First ": " is the cite; rest is the print. Skip if the head looks like a clock. */
+// ponytail: first ": " within 48 chars; FactLine[] per bullet if prefixes stop matching.
+function CiteLine({ line }: { line: string }) {
+  const cut = line.indexOf(": ");
+  const head = cut > 0 ? line.slice(0, cut) : "";
+  if (cut > 0 && cut <= 48 && !/^\d{1,2}$/.test(head)) {
+    return (
+      <li>
+        <span className="mb-1 block text-xs font-semibold text-ink/45">
+          {head}
+        </span>
+        {line.slice(cut + 2)}
+      </li>
+    );
+  }
+  return <li>{line}</li>;
+}
+
 function CopyBlock({
   label,
   text,
@@ -32,7 +50,7 @@ function CopyBlock({
       </p>
       <ul className="mt-3 space-y-3 text-base leading-relaxed text-ink">
         {lines(text).map((line, i) => (
-          <li key={i}>{line}</li>
+          <CiteLine key={i} line={line} />
         ))}
       </ul>
       {sources?.length ? (
