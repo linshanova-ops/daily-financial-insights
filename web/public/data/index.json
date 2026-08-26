@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-25T09:48:26.666Z",
-  "latest": "2026-08-25",
+  "generatedAt": "2026-08-26T02:46:05.415Z",
+  "latest": "2026-08-26",
   "briefings": [
+    {
+      "date": "2026-08-26",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Tuesday was an oil-and-chips session, not a buyback-delivered session. Hormuz diplomacy pulled Brent to $88.58 and WTI to $82.36. The 10-year yield fell to 4.64%. The S&P 500 rose 0.32%, and Nvidia gained 2.2% to end a seven-day drop. Canada matched 50% steel and aluminum tariffs. The 财经早茶 chart is A-share IPO fundraising through 25 August, not TGA cash. Jack Ma bought more than HK$600m of Alibaba after the placing.",
+      "coverageWindow": "August 25–26, 2026"
+    },
     {
       "date": "2026-08-25",
       "title": "Daily Financial Briefing",
