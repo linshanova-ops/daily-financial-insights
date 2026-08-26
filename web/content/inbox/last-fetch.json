@@ -1,17 +1,22 @@
 {
-  "at": "2026-08-25T02:14:46.217Z",
-  "briefingDate": "2026-08-25",
+  "at": "2026-08-26T02:21:23.883Z",
+  "briefingDate": "2026-08-26",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-25.md",
-      "subject": "彭博财经早茶：美国或加征对华关税；特朗普孤立伊朗计划",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-26.md",
+      "subject": "彭博财经早茶：马云增持阿里巴巴；美加关税战升级",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5468,
+      "chars": 5166,
       "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-25.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-25.png"
+      "chartImage": "/inbox-charts/bloomberg-2026-08-26.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-26.png"
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-25.md",
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -62,19 +67,19 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-13.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-12.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md",
-      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "unmatched",
+      "subject": "Using Glassnode With Agents",
+      "from": "\"Glassnode\" <insights@glassnode.com>"
+    },
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美国或加征对华关税；特朗普孤立伊朗计划",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-25.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美加贸易谈判破裂；英伟达AI服务器据悉涨价",
@@ -134,21 +139,6 @@
       "reason": "weekly-duplicate",
       "subject": "Trigger Happy",
       "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：霍尔木兹通航前景存疑；腾讯财报发布在即",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-12.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Our Best Metrics, in a Single Dashboard: The Market Compass",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：日元或再迎干预窗口；英伟达联手华尔街筹划巨额AI投资",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-11.md"
     }
   ]
 }
