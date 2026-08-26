@@ -49,7 +49,7 @@
         "asia-equities",
         "rates"
       ],
-      "influence": "Aug 26 People's Daily recap: upgraded fiscal-financial domestic-demand tools from 1 August; CNY100bn central budget; more policies due in H2 2026."
+      "influence": "Aug 26 People's Daily recap: upgraded fiscal-financial domestic-demand tools from 1 August; CNY100bn central budget (1000亿元); more policies due in H2 2026."
     },
     {
       "label": "BlockBeats — Jack Ma Alibaba buying",
@@ -153,7 +153,7 @@
       }
     }
   ],
-  "marketTone": "Tuesday was a Hormuz-diplomacy and oil-plunge session that pulled Treasury yields to 4.63% and let chips bounce into Nvidia's Wednesday print. The 财经早茶 chart shows A-share Q3 IPO fundraising surging toward CNY110bn through 25 August. Canada doubled steel and aluminum tariffs to 50% while Trump threatened to rename Lake Ontario. Jack Ma and Cai Chongxin kept buying Alibaba after the HK$80bn placing. Copper closed at a record and gold extended as inflation worry eased with Brent below $90 intraday.",
+  "marketTone": "Tuesday was a Hormuz-diplomacy and oil-plunge session that pulled Treasury yields to 4.63% and let chips bounce into Nvidia's Wednesday print. The 财经早茶 chart shows A-share Q3 IPO fundraising surging toward 1100亿元 through 25 August. Canada doubled steel and aluminum tariffs to 50% while Trump threatened to rename Lake Ontario. Jack Ma and Cai Chongxin kept buying Alibaba after the HK$80bn placing. Copper closed at a record and gold extended as inflation worry eased with Brent below $90 intraday.",
   "summary": [
     {
       "text": "Tuesday's US close (AP): S&P 500 7,677.28 (+0.3% / +24.42); Nasdaq 26,151.30 (+0.7% / +171.11); Dow 53,577.40 (+0.3% / +160.24). Nvidia rose 2.2% and ended a seven-day losing streak ahead of Wednesday's report.",
@@ -195,7 +195,7 @@
       ]
     },
     {
-      "text": "财经早茶 今日图表: A-share IPO fundraising since Q3 2026 has surged to about CNY110bn through 25 August on the Bloomberg bar chart. 人民网 Aug 26: fiscal-financial domestic-demand tools were upgraded from 1 August, with more measures promised in H2. BlockBeats (25 August): Jack Ma bought more than HK$600m of Alibaba; Cai Chongxin bought for a second day.",
+      "text": "财经早茶 今日图表: A-share Q3 IPO fundraising has surged on the Bloomberg bar chart through 25 August (desk — see Chart section). 人民网 Aug 26: fiscal-financial domestic-demand tools were upgraded from 1 August, with more measures promised in H2.",
       "sources": [
         {
           "label": "彭博财经早茶 Aug 26",
@@ -204,7 +204,12 @@
         {
           "label": "人民网财政金融协同",
           "href": "http://finance.people.com.cn/n1/2026/0826/c1004-40786100.html"
-        },
+        }
+      ]
+    },
+    {
+      "text": "BlockBeats (25 August): Jack Ma bought more than HK$600m of Alibaba; Cai Chongxin bought for a second day.",
+      "sources": [
         {
           "label": "BlockBeats Jack Ma",
           "href": "https://www.theblockbeats.info/flash/363429"
@@ -428,7 +433,7 @@
         "A/H shares",
         "China rates"
       ],
-      "fact": "财经早茶 今日图表: the Bloomberg bar chart titled \"A-share IPO fundraising has surged since Q3\" shows Q3 2026 fundraising at about CNY110bn through 25 August, up from roughly CNY450bn in Q2 and CNY250bn in Q1; 2024–2025 quarters mostly stayed below CNY500bn. 财经早茶 大中华: MOF plans a more active fiscal stance and the NDRC vice chair said H2 should release domestic demand more forcefully. 人民网 Aug 26: fiscal-financial domestic-demand tools were upgraded from 1 August with more policies due in H2.",
+      "fact": "财经早茶 今日图表: the Bloomberg bar chart titled \"A-share IPO fundraising has surged since Q3\" shows Q3 2026 fundraising at about 1100亿元 through 25 August, up from roughly 450亿元 in Q2 and 250亿元 in Q1; 2024–2025 quarters mostly stayed below 500亿元. 财经早茶 大中华: MOF plans a more active fiscal stance and the NDRC vice chair said H2 should release domestic demand more forcefully. 人民网 Aug 26: fiscal-financial domestic-demand tools were upgraded from 1 August with more policies due in H2.",
       "factSources": [
         {
           "label": "彭博财经早茶 Aug 26",
@@ -828,7 +833,7 @@
         "timeBeijing": "09:30",
         "region": "Other",
         "category": "data",
-        "event": "Australia July CPI y/y (est 3.3%, prior 3.8%)",
+        "event": "Australia July CPI y/y",
         "source": {
           "label": "彭博财经早茶 Aug 26",
           "href": "https://www.bloomberg.com/asia"
@@ -970,7 +975,7 @@
   "caveats": "Event Calendar mainland China only (Taiwan FSC and India border rows from the mail are omitted). AP Brent $87.27 and 见闻 Brent $88.58 are different contract/session prints — both dated Tuesday. Wednesday Asia levels live only in Market Dashboard after inject.",
   "suggestions": "Today: PCE at 20:30 Beijing and Nvidia after the close. Into Friday: Warsh at 10:00 ET. Into China: Alibaba placing close and MIIT on industrial policy. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September. This report is research and information synthesis, not investment advice.",
   "marketDashboard": {
-    "asOf": "2026-08-26T02:52:24.198Z",
+    "asOf": "2026-08-26T02:57:48.274Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -1028,8 +1033,8 @@
           {
             "id": "kospi",
             "asset": "Kospi",
-            "latest": "6,826.91",
-            "change": "+1.25%",
+            "latest": "6,841.57",
+            "change": "+1.47%",
             "changeDirection": "up",
             "asOfDate": "2026-08-26",
             "source": {
@@ -1040,8 +1045,8 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "25,751.09",
-            "change": "+0.94%",
+            "latest": "25,758.70",
+            "change": "+0.97%",
             "changeDirection": "up",
             "asOfDate": "2026-08-26",
             "source": {
@@ -1052,7 +1057,7 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,658.79",
+            "latest": "4,664.63",
             "change": null,
             "changeDirection": "flat",
             "asOfDate": "2026-08-26",
@@ -1064,8 +1069,8 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,919.06",
-            "change": "+0.76%",
+            "latest": "3,923.52",
+            "change": "+0.88%",
             "changeDirection": "up",
             "asOfDate": "2026-08-26",
             "source": {
@@ -1136,8 +1141,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "159.0150",
-            "change": "−0.08%",
+            "latest": "159.0300",
+            "change": "−0.07%",
             "changeDirection": "down",
             "asOfDate": "2026-08-26",
             "source": {
@@ -1148,8 +1153,8 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.7201",
-            "change": "−0.03%",
+            "latest": "6.7203",
+            "change": "−0.02%",
             "changeDirection": "down",
             "asOfDate": "2026-08-26",
             "source": {
@@ -1160,8 +1165,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,724.80",
-            "change": "+1.87%",
+            "latest": "$4,724.30",
+            "change": "+1.86%",
             "changeDirection": "up",
             "asOfDate": "2026-08-26",
             "source": {
@@ -1172,8 +1177,8 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$85.33",
-            "change": "−3.67%",
+            "latest": "$85.27",
+            "change": "−3.74%",
             "changeDirection": "down",
             "asOfDate": "2026-08-26",
             "source": {
@@ -1184,8 +1189,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$79,099",
-            "change": "−1.71%",
+            "latest": "$79,054",
+            "change": "−2.01%",
             "changeDirection": "down",
             "asOfDate": "2026-08-26",
             "source": {
