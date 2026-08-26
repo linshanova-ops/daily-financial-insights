@@ -1,4 +1,5 @@
 import type { SignalGrade, ThemeCard } from "@/lib/types";
+import { themesByGrade } from "@/lib/theme-grade-order";
 import { SourceButton } from "./SourceButton";
 
 const gradeStyles: Record<SignalGrade, string> = {
@@ -64,6 +65,7 @@ function CopyBlock({
 /** Cross-asset forces: fact, then the so-what — copy first, cites after. */
 export function ThemeCards({ themes }: ThemeCardsProps) {
   if (!themes.length) return null;
+  const ordered = themesByGrade(themes);
 
   return (
     <section
@@ -85,7 +87,7 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
           books.
         </p>
         <ol className="mt-10 space-y-10">
-          {themes.map((theme, index) => (
+          {ordered.map((theme, index) => (
             <li
               key={theme.id}
               id={`theme-${theme.id}`}
