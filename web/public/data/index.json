@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-26T02:46:05.415Z",
-  "latest": "2026-08-26",
+  "generatedAt": "2026-08-27T04:59:22.679Z",
+  "latest": "2026-08-27",
   "briefings": [
+    {
+      "date": "2026-08-27",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Wednesday was a PCE-and-Nvidia session, not a buyback-delivered session. Core PCE matched the estimate at 3.3%, headline 3.7% beat the FactSet 3.6% estimate, and the 10-year yield rose to 4.66%. The S&P 500 slipped 1.58 points. Nvidia printed $96.2bn and guided $108.0bn, with no China data-center compute in the outlook. The 财经早茶 chart is Iranian oil flowing to China, not TGA cash.",
+      "coverageWindow": "August 26–27, 2026"
+    },
     {
       "date": "2026-08-26",
       "title": "Daily Financial Briefing",
