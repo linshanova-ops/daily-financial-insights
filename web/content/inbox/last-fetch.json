@@ -1,17 +1,30 @@
 {
-  "at": "2026-08-26T02:21:23.883Z",
-  "briefingDate": "2026-08-26",
+  "at": "2026-08-27T04:48:00.489Z",
+  "briefingDate": "2026-08-27",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-26.md",
-      "subject": "彭博财经早茶：马云增持阿里巴巴；美加关税战升级",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-27.md",
+      "subject": "彭博财经早茶：英伟达营收展望远超预期；智谱神秘AI模型",
       "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5166,
+      "chars": 5041,
       "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-26.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-26.png"
+      "chartImage": "/inbox-charts/bloomberg-2026-08-27.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-27.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W35.md",
+      "subject": "Squeeze into Supply",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 2768,
+      "mailbox": "[Gmail]/All Mail"
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-26.md",
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -36,11 +49,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-20.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W34.md",
       "skipped": true
     },
     {
@@ -70,6 +78,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：马云增持阿里巴巴；美加关税战升级",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-26.md"
+    },
     {
       "reason": "unmatched",
       "subject": "Using Glassnode With Agents",
@@ -101,9 +114,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-20.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Yields Anchor, Capitulation Grinds",
-      "path": "web/content/inbox/glassnode-insights/2026-W34.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
