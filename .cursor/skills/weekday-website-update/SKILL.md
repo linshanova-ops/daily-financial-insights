@@ -9,7 +9,7 @@ One cloud-agent run. Do **not** call `scripts/generate-daily-briefing.mjs` or sp
 
 If Asia/Shanghai is Sat/Sun: stop.
 
-**09:00 is one publish from every source together.** Do not ship a 见闻-only tape and patch Bloomberg later. 财经早茶 is already in Gmail (~07:00–07:40). GH `inbox-sync.yml` fetches it at this same 09:00. This VM has no IMAP secrets; do not `gh workflow run`. If `INBOX_IMAP_USER` is set, fetch in this run (`node scripts/fetch-inbox-sources.mjs` — exists-keep, not a second copy).
+**09:00 is one publish from every source together.** Do not ship a 见闻-only tape and patch Bloomberg later. 财经早茶 is already in Gmail (~07:00–07:40). GH `inbox-sync.yml` fetches it at this same 09:00 (**one cron**; `on.push` of that file is the same job, not a second slot). This VM has no IMAP secrets; do not `gh workflow run`. Do not add a 09:20/backup IMAP cron. If `INBOX_IMAP_USER` is set, fetch in this run (`node scripts/fetch-inbox-sources.mjs` — exists-keep, not a second copy).
 
 Put `$TODAY` mail on disk **before YAML**, then gather the other desks in **this same run**:
 
@@ -20,8 +20,15 @@ MAIL=web/content/inbox/bloomberg-markets-daily-china/$TODAY.md
 # GH cron on 09:00 has been ~80 min late — wait so this run still unites, don't publish 见闻 and come back.
 if [ -n "${INBOX_IMAP_USER:-}" ]; then (cd "$(git rev-parse --show-toplevel)" && node scripts/fetch-inbox-sources.mjs); fi
 for i in $(seq 1 180); do test -f "$MAIL" && break; git pull origin main; sleep 30; done
-# One wait. If still missing, name IMAP miss in singleSource — do not start another loop.
-test -f "$MAIL"
+# One wait. Never a second 180. Never a backup cron.
+if [ ! -f "$MAIL" ]; then
+  sed -i "s/^# last-kick:.*/# last-kick: $(date -u +%Y-%m-%dT%H:%M:%SZ)/" .github/workflows/inbox-sync.yml
+  git add .github/workflows/inbox-sync.yml
+  git commit -m "chore: kick the usual 09:00 IMAP job"
+  git push
+  for i in $(seq 1 20); do git pull; test -f "$MAIL" && break; sleep 15; done
+fi
+# Still missing → name IMAP miss in singleSource and publish. Do not sit RUNNING.
 ```
 
 Capture at this updating time (miss → name it in `singleSource`, do not substitute):
