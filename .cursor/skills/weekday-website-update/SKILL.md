@@ -20,6 +20,7 @@ MAIL=web/content/inbox/bloomberg-markets-daily-china/$TODAY.md
 # GH cron on 09:00 has been ~80 min late — wait so this run still unites, don't publish 见闻 and come back.
 if [ -n "${INBOX_IMAP_USER:-}" ]; then (cd "$(git rev-parse --show-toplevel)" && node scripts/fetch-inbox-sources.mjs); fi
 for i in $(seq 1 180); do test -f "$MAIL" && break; git pull origin main; sleep 30; done
+# One wait. If still missing, name IMAP miss in singleSource — do not start another loop.
 test -f "$MAIL"
 ```
 
