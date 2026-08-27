@@ -1,25 +1,17 @@
 {
-  "at": "2026-08-27T04:48:00.489Z",
+  "at": "2026-08-27T05:12:21.006Z",
   "briefingDate": "2026-08-27",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-27.md",
-      "subject": "彭博财经早茶：英伟达营收展望远超预期；智谱神秘AI模型",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5041,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-27.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-27.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W35.md",
-      "subject": "Squeeze into Supply",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2768,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：英伟达营收展望远超预期；智谱神秘AI模型",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-27.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "Squeeze into Supply",
+      "path": "web/content/inbox/glassnode-insights/2026-W35.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：马云增持阿里巴巴；美加关税战升级",
