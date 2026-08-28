@@ -1,8 +1,18 @@
 {
-  "at": "2026-08-27T10:48:53.593Z",
-  "briefingDate": "2026-08-27",
+  "at": "2026-08-28T02:56:13.027Z",
+  "briefingDate": "2026-08-28",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-28.md",
+      "subject": "彭博财经早茶：聚焦杰克逊霍尔年会；委内瑞拉考虑退出OPEC",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5084,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-08-28.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-28.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-27.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-14.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-13.md",
       "skipped": true
     }
   ],
@@ -144,16 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美国征无人机关税；京东营收下滑",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-14.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：腾讯资本支出激增；美国通胀温和",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-13.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Trigger Happy",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
     }
   ]
 }
