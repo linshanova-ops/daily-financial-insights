@@ -1,17 +1,12 @@
 {
-  "at": "2026-08-28T02:56:13.027Z",
+  "at": "2026-08-28T03:32:16.646Z",
   "briefingDate": "2026-08-28",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-28.md",
-      "subject": "彭博财经早茶：聚焦杰克逊霍尔年会；委内瑞拉考虑退出OPEC",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5084,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-28.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-28.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：聚焦杰克逊霍尔年会；委内瑞拉考虑退出OPEC",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-28.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：英伟达营收展望远超预期；智谱神秘AI模型",
