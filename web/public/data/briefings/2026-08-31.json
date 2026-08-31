@@ -38,12 +38,12 @@
       "influence": "Sentiment 51.7 (July 55.2). Year-ahead inflation 4.0%; long-run 3.3%."
     },
     {
-      "label": "Reuters — BLS preliminary benchmark",
-      "href": "https://www.reuters.com/business/world-at-work/us-added-79000-fewer-jobs-12-months-through-march-bls-says-2026-08-28/",
+      "label": "BLS — preliminary CES benchmark",
+      "href": "https://www.bls.gov/news.release/prebmk.nr0.htm",
       "books": [
         "rates"
       ],
-      "influence": "Preliminary benchmark: total nonfarm employment through March 79,000 lower (0.1%). Private −178,000."
+      "influence": "March 2026 preliminary benchmark: total nonfarm −79,000 (−0.1%). Private −178,000."
     },
     {
       "label": "CNBC — Friday Warsh / FedWatch",
@@ -193,7 +193,7 @@
       "books": [
         "asia-equities"
       ],
-      "influence": "Monday open: Shanghai −0.65%; Shenzhen −1.35%; ChiNext −1.68%. Property names gapped up."
+      "influence": "Monday: Shanghai opened −0.65%; ChiNext −1.67% at that stamp. Property names gapped up."
     },
     {
       "label": "新浪财经 — 比亚迪半年报",
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "text": "财经早茶 今日图表: US consumer sentiment fell for the first time in three months, and inflation expectations are the lowest since March. UMich: the August final is 51.7, down from 55.2 in July, with year-ahead inflation at 4.0% and long-run at 3.3%. Reuters: the BLS preliminary benchmark takes 79,000 jobs off the 12 months through March.",
+      "text": "财经早茶 今日图表: US consumer sentiment fell for the first time in three months, and inflation expectations are the lowest since March. UMich: the August final is 51.7, down from 55.2 in July, with year-ahead inflation at 4.0% and long-run at 3.3%. BLS: the preliminary March 2026 CES benchmark takes 79,000 jobs off total nonfarm (−0.1%).",
       "sources": [
         {
           "label": "彭博财经早茶 Aug 31",
@@ -361,8 +361,8 @@
           "href": "https://www.sca.isr.umich.edu/"
         },
         {
-          "label": "Reuters BLS benchmark",
-          "href": "https://www.reuters.com/business/world-at-work/us-added-79000-fewer-jobs-12-months-through-march-bls-says-2026-08-28/"
+          "label": "BLS CES benchmark",
+          "href": "https://www.bls.gov/news.release/prebmk.nr0.htm"
         }
       ]
     },
@@ -521,7 +521,7 @@
         "USD",
         "US equities"
       ],
-      "fact": "财经早茶 今日图表：US consumer sentiment fell for the first time in three months, and inflation expectations are the lowest since March, with the orange confidence line ending in the low-50s and the black one-year inflation line down into 2026. UMich：the August final is 51.7 from 55.2 in July, year-ahead inflation expectations are 4.0%, and long-run expectations held at 3.3%. Federal Reserve：Warsh printed 12-month PCE at 3.7% and six-month PCE at 4.1%, said 54% of the PCE basket rose more than 3% over 12 months, and said that unless underlying inflation is moving to 2% clearly and at sufficient speed, the Fed has work to do. CNBC：CME FedWatch priced a September hike at 55.7%. US Treasury：the official 28 August curve printed 4.34% on the 2-year, 4.73% on the 10-year, and 5.22% on the 30-year. 财经早茶 市场一览：short-end yields jumped after the speech, the dollar was at a more-than-one-week high, and the yen broke back through 160. 华尔街见闻：the 2-year/30-year spread narrowed more than 9bp. Reuters：the BLS preliminary benchmark takes 79,000 jobs off the year through March. CICC (31 August)：they read CME from 35% to 58% and a 2-year jump of more than 10bp, and they saw the 30-year down.",
+      "fact": "财经早茶 今日图表：US consumer sentiment fell for the first time in three months, and inflation expectations are the lowest since March, with the orange confidence line ending in the low-50s and the black one-year inflation line down into 2026. UMich：the August final is 51.7 from 55.2 in July, year-ahead inflation expectations are 4.0%, and long-run expectations held at 3.3%. Federal Reserve：Warsh printed 12-month PCE at 3.7% and six-month PCE at 4.1%, said 54% of the PCE basket rose more than 3% over 12 months, and said that unless underlying inflation is moving to 2% clearly and at sufficient speed, the Fed has work to do. CNBC：CME FedWatch priced a September hike at 55.7%. US Treasury：the official 28 August curve printed 4.34% on the 2-year, 4.73% on the 10-year, and 5.22% on the 30-year. 财经早茶 市场一览：short-end yields jumped after the speech, the dollar was at a more-than-one-week high, and the yen broke back through 160. 华尔街见闻：the 2-year/30-year spread narrowed more than 9bp. BLS：the preliminary March 2026 CES benchmark takes 79,000 jobs off total nonfarm. CICC (31 August)：they read CME from 35% to 58% and a 2-year jump of more than 10bp, and they saw the 30-year down.",
       "factSources": [
         {
           "label": "彭博财经早茶 Aug 31",
@@ -548,8 +548,8 @@
           "href": "https://wallstreetcn.com/articles/3780603"
         },
         {
-          "label": "Reuters BLS benchmark",
-          "href": "https://www.reuters.com/business/world-at-work/us-added-79000-fewer-jobs-12-months-through-march-bls-says-2026-08-28/"
+          "label": "BLS CES benchmark",
+          "href": "https://www.bls.gov/news.release/prebmk.nr0.htm"
         },
         {
           "label": "中金沃什转鹰",
@@ -639,7 +639,7 @@
       "assets": [
         "A/H shares"
       ],
-      "fact": "财经早茶 大中华：China extended personal housing loans from 30 years to 40 years, pushed developers toward existing-home sales, and said it would tidy developer financing. 京报网：the 28 August PBOC/NFRA opinion caps personal housing loans at 40 years, pays existing-home loans after sale filing, and pays presale loans after completion filing. 第一财经：NDRC told the NPC that H1 GDP was +4.7%, July retail +0.6%, and January–July FAI −6.7%, and that incremental counter-cyclical policy is still the second-half job. 证券时报：Friday Shanghai closed 3952.18, down 0.11%, and Shenzhen 13953.07, down 0.68%. 华尔街见闻：Monday’s open was Shanghai −0.65%, Shenzhen −1.35%, and ChiNext −1.68%. 每日经济新闻：31 August ops were 50亿元 (CNY5bn) of 7-day and 4470亿元 (CNY447bn) overnight. 第一财经：overnight reverse repos still run through 1 September with a daily cap of CNY600bn. 第一财经：SAFE added $6.84bn of QDII quota. 新浪财经：BYD’s second-quarter net profit was 82.41亿元 (CNY8.241bn), up 30%.",
+      "fact": "财经早茶 大中华：China extended personal housing loans from 30 years to 40 years, pushed developers toward existing-home sales, and said it would tidy developer financing. 京报网：the 28 August PBOC/NFRA opinion caps personal housing loans at 40 years, pays existing-home loans after sale filing, and pays presale loans after completion filing. 第一财经：NDRC told the NPC that H1 GDP was +4.7%, July retail +0.6%, and January–July FAI −6.7%, and that incremental counter-cyclical policy is still the second-half job. 证券时报：Friday Shanghai closed 3952.18, down 0.11%, and Shenzhen 13953.07, down 0.68%. 华尔街见闻：Monday Shanghai opened −0.65%, and ChiNext was −1.67% at that stamp. 每日经济新闻：31 August ops were 50亿元 (CNY5bn) of 7-day and 4470亿元 (CNY447bn) overnight. 第一财经：overnight reverse repos still run through 1 September with a daily cap of CNY600bn. 第一财经：SAFE added $6.84bn of QDII quota. 新浪财经：BYD’s second-quarter net profit was 82.41亿元 (CNY8.241bn), up 30%.",
       "factSources": [
         {
           "label": "彭博财经早茶 Aug 31",
@@ -712,8 +712,8 @@
           "href": "https://www.sca.isr.umich.edu/"
         },
         {
-          "label": "Reuters BLS benchmark",
-          "href": "https://www.reuters.com/business/world-at-work/us-added-79000-fewer-jobs-12-months-through-march-bls-says-2026-08-28/"
+          "label": "BLS CES benchmark",
+          "href": "https://www.bls.gov/news.release/prebmk.nr0.htm"
         }
       ]
     },
@@ -966,7 +966,7 @@
       ]
     },
     {
-      "text": "华尔街见闻：周一沪指低开0.65%，深成指低开1.35%，创业板指低开1.68%。",
+      "text": "华尔街见闻：周一沪指低开0.65%，创业板指跌1.67%。",
       "sources": [
         {
           "label": "华尔街见闻低开",
@@ -1036,7 +1036,7 @@
         "timeBeijing": "07:50",
         "region": "Other",
         "category": "data",
-        "event": "Japan July industrial production (prelim; est. −0.7%)",
+        "event": "Japan July industrial production (prelim)",
         "source": {
           "label": "彭博财经早茶 Aug 31",
           "href": "https://www.bloomberg.com/asia"
@@ -1099,7 +1099,7 @@
         "timeBeijing": "20:00",
         "region": "EU",
         "category": "data",
-        "event": "Germany August CPI flash (est. 3.0%)",
+        "event": "Germany August CPI flash",
         "source": {
           "label": "彭博财经早茶 Aug 31",
           "href": "https://www.bloomberg.com/asia"
