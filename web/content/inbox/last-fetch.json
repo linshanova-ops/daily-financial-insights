@@ -1,25 +1,17 @@
 {
-  "at": "2026-08-31T02:33:22.765Z",
+  "at": "2026-08-31T03:14:04.220Z",
   "briefingDate": "2026-08-31",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-31.md",
-      "subject": "彭博财经早茶：沃什鹰派信号提振加息预期；中国加码楼市支持",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5323,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-08-31.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-08-31.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W35.md",
-      "subject": "彭博周末茶歇：美加贸易战",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5412,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：沃什鹰派信号提振加息预期；中国加码楼市支持",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-31.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：美加贸易战",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W35.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：聚焦杰克逊霍尔年会；委内瑞拉考虑退出OPEC",
