@@ -1,8 +1,18 @@
 {
-  "at": "2026-08-31T06:29:59.274Z",
-  "briefingDate": "2026-08-31",
+  "at": "2026-09-01T02:36:29.769Z",
+  "briefingDate": "2026-09-01",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-01.md",
+      "subject": "彭博财经早茶：希音登陆港股；中东局势升级",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5333,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-01.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-01.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-31.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-18.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-17.md",
       "skipped": true
     }
   ],
@@ -144,11 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：外国抛售美债；美国拒绝延长对伊临时停火",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-18.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：华府拟加大对伊经济孤立；特朗普下令缩减美韩军演",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-17.md"
     }
   ]
 }

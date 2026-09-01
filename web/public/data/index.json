@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-08-31T02:57:14.413Z",
-  "latest": "2026-08-31",
+  "generatedAt": "2026-09-01T02:53:55.561Z",
+  "latest": "2026-09-01",
   "briefings": [
+    {
+      "date": "2026-09-01",
+      "title": "Daily Financial Briefing",
+      "marketTone": "The 财经早茶 chart is Germany: August CPI flashed 2.9%. Destatis printed energy at +10.5%. The S&P 500 closed at 7,686.14. The 10-year yield printed 4.75%. WTI settled at $85.76. Gold settled at $4,431.39. Official China manufacturing PMI is 49.8, and RatingDog printed 51.5 this morning.",
+      "coverageWindow": "August 31–September 1, 2026"
+    },
     {
       "date": "2026-08-31",
       "title": "Daily Financial Briefing",
