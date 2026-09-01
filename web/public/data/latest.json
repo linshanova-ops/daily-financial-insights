@@ -77,7 +77,7 @@
       "books": [
         "asia-equities"
       ],
-      "influence": "CICC: official manufacturing PMI 49.8 versus Bloomberg 49.6; supply-shock fade."
+      "influence": "CICC: official manufacturing PMI 49.8; supply-shock fade."
     },
     {
       "label": "中证 — 8月统计局PMI",
@@ -112,16 +112,8 @@
       "influence": "Shanghai 3986.30 (+0.86%); Shenzhen 14015.00 (+0.44%); ChiNext 3438.68 (+0.42%)."
     },
     {
-      "label": "新京报 — Monday A-share turnover",
-      "href": "https://www.bjnews.com.cn/detail/1788161089129245.html",
-      "books": [
-        "asia-equities"
-      ],
-      "influence": "Combined three-exchange turnover 21453亿元 (CNY2.1453tn)."
-    },
-    {
-      "label": "新京报 — 商品消费扩容升级",
-      "href": "https://www.bjnews.com.cn/detail/1788166849129325.html",
+      "label": "中新网 — 商品消费扩容升级",
+      "href": "https://www.chinanews.com.cn/gn/2026/08-31/10687342.shtml",
       "books": [
         "asia-equities"
       ],
@@ -399,7 +391,7 @@
       ]
     },
     {
-      "text": "中证: official August manufacturing PMI 49.8, non-manufacturing 49.0, composite 49.5. 华尔街见闻: RatingDog manufacturing PMI 51.5 versus the 财经早茶 estimate of 51. 证券时报: Monday Shanghai closed 3986.30, up 0.86%. 新京报: seven ministries want retail sales around 60万亿元 (CNY60tn) by 2030.",
+      "text": "中证: official August manufacturing PMI 49.8, non-manufacturing 49.0, composite 49.5. 华尔街见闻: RatingDog manufacturing PMI 51.5. 证券时报: Monday Shanghai closed 3986.30, up 0.86%. 中新网: seven ministries want retail sales around 60万亿元 (CNY60tn) by 2030.",
       "sources": [
         {
           "label": "中证 PMI",
@@ -414,8 +406,8 @@
           "href": "https://www.stcn.com/article/detail/4165517.html"
         },
         {
-          "label": "新京报消费",
-          "href": "https://www.bjnews.com.cn/detail/1788166849129325.html"
+          "label": "中新网消费",
+          "href": "https://www.chinanews.com.cn/gn/2026/08-31/10687342.shtml"
         }
       ]
     }
@@ -680,7 +672,7 @@
       "assets": [
         "A/H shares"
       ],
-      "fact": "中证：August manufacturing PMI is 49.8 after 49.2 in July, non-manufacturing held 49.0, and the composite is 49.5. 华尔街见闻：RatingDog manufacturing PMI printed 51.5 versus the 财经早茶 estimate of 51, a ninth month above 50. CICC (31 August)：they read 49.8 versus Bloomberg 49.6 as a fading supply shock. 新京报：seven ministries want social retail sales around 60万亿元 (CNY60tn) by 2030. 证券时报：Monday Shanghai closed 3986.30, up 0.86%, Shenzhen 14015.00, up 0.44%, and ChiNext 3438.68, up 0.42%. 新浪财经：SHEIN listed at HK$48.56, and the grey market closed about 12% below. 华尔街见闻：Nvidia is putting $3.5bn into MediaTek convertibles, and MediaTek hit the 10% limit. 新浪财经：Huawei’s first-half parent net profit was 234.28亿元 (CNY23.428bn), down 36.77%. 每日经济新闻：31 August ops were 50亿元 (CNY5bn) of 7-day and 4470亿元 (CNY447bn) overnight, a net drain of 2210亿元 (CNY221bn). 第一财经：overnight reverse repos still run through 1 September with a daily cap of CNY600bn; the 1 September take-up was not printed at gather.",
+      "fact": "中证：August manufacturing PMI is 49.8 after 49.2 in July, non-manufacturing held 49.0, and the composite is 49.5. 华尔街见闻：RatingDog manufacturing PMI printed 51.5, a ninth month above 50. CICC (31 August)：they read the 49.8 print as a fading supply shock. 中新网：seven ministries want social retail sales around 60万亿元 (CNY60tn) by 2030. 证券时报：Monday Shanghai closed 3986.30, up 0.86%, Shenzhen 14015.00, up 0.44%, and ChiNext 3438.68, up 0.42%. 新浪财经：SHEIN listed at HK$48.56, and the grey market closed about 12% below. 华尔街见闻：Nvidia is putting $3.5bn into MediaTek convertibles, and MediaTek hit the 10% limit. 新浪财经：Huawei’s first-half parent net profit was 234.28亿元 (CNY23.428bn), down 36.77%. 每日经济新闻：31 August ops were 50亿元 (CNY5bn) of 7-day and 4470亿元 (CNY447bn) overnight, a net drain of 2210亿元 (CNY221bn). 第一财经：overnight reverse repos still run through 1 September with a daily cap of CNY600bn; the 1 September take-up was not printed at gather.",
       "factSources": [
         {
           "label": "中证 PMI",
@@ -695,8 +687,8 @@
           "href": "https://mp.weixin.qq.com/s?__biz=MzU0MTkwMTczOQ==&mid=2247515049&idx=1&sn=9192ebd0fbb1f31ca4a94d0c7f65807f"
         },
         {
-          "label": "新京报消费",
-          "href": "https://www.bjnews.com.cn/detail/1788166849129325.html"
+          "label": "中新网消费",
+          "href": "https://www.chinanews.com.cn/gn/2026/08-31/10687342.shtml"
         },
         {
           "label": "证券时报 A股",
@@ -902,8 +894,8 @@
           "href": "https://www.bloomberg.com/asia"
         },
         {
-          "label": "新京报消费",
-          "href": "https://www.bjnews.com.cn/detail/1788166849129325.html"
+          "label": "中新网消费",
+          "href": "https://www.chinanews.com.cn/gn/2026/08-31/10687342.shtml"
         }
       ]
     },
@@ -921,7 +913,7 @@
       ]
     },
     {
-      "text": "中国AI芯片四小龙之一的燧原科技科创板上市发行价定为每股142.18元，预计募资总额逾61亿元",
+      "text": "中国AI芯片四小龙之一的燧原科技科创板上市",
       "sources": [
         {
           "label": "彭博财经早茶 Sep 1",
@@ -1001,7 +993,7 @@
       ]
     },
     {
-      "text": "中证：8月制造业PMI 49.8，非制造业49.0，综合49.5。华尔街见闻：RatingDog制造业PMI 51.5，高于财经早茶预估51。",
+      "text": "中证：8月制造业PMI 49.8，非制造业49.0，综合49.5。华尔街见闻：RatingDog制造业PMI 51.5。",
       "sources": [
         {
           "label": "中证 PMI",
@@ -1079,7 +1071,7 @@
         "timeBeijing": "07:50",
         "region": "Other",
         "category": "data",
-        "event": "Japan Q2 capital expenditure y/y (est. −0.3%, prior 0%)",
+        "event": "Japan Q2 capital expenditure y/y",
         "source": {
           "label": "彭博财经早茶 Sep 1",
           "href": "https://www.bloomberg.com/asia"
@@ -1091,7 +1083,7 @@
         "timeBeijing": "08:30",
         "region": "Other",
         "category": "data",
-        "event": "Japan August manufacturing PMI final (flash 55.1)",
+        "event": "Japan August manufacturing PMI final",
         "source": {
           "label": "彭博财经早茶 Sep 1",
           "href": "https://www.bloomberg.com/asia"
@@ -1116,7 +1108,7 @@
         "timeBeijing": "09:45",
         "region": "China",
         "category": "data",
-        "event": "China August RatingDog manufacturing PMI (est. 51, prior 50.9)",
+        "event": "China August RatingDog manufacturing PMI",
         "themeId": "china-pmi-consumption",
         "source": {
           "label": "彭博财经早茶 Sep 1",
@@ -1129,7 +1121,7 @@
         "timeBeijing": "14:00",
         "region": "Other",
         "category": "data",
-        "event": "UK August Nationwide house prices m/m (est. 0.1%)",
+        "event": "UK August Nationwide house prices m/m",
         "source": {
           "label": "彭博财经早茶 Sep 1",
           "href": "https://www.bloomberg.com/asia"
@@ -1141,7 +1133,7 @@
         "timeBeijing": "16:00",
         "region": "EU",
         "category": "data",
-        "event": "Euro-area August manufacturing PMI final (est. 52.8)",
+        "event": "Euro-area August manufacturing PMI final",
         "themeId": "germany-cpi",
         "source": {
           "label": "彭博财经早茶 Sep 1",
@@ -1154,7 +1146,7 @@
         "timeBeijing": "16:30",
         "region": "Other",
         "category": "data",
-        "event": "UK August manufacturing PMI final (est. 51.5)",
+        "event": "UK August manufacturing PMI final",
         "source": {
           "label": "彭博财经早茶 Sep 1",
           "href": "https://www.bloomberg.com/asia"
@@ -1166,7 +1158,7 @@
         "timeBeijing": "17:00",
         "region": "EU",
         "category": "data",
-        "event": "Euro-area August CPI flash y/y (est. 3.3%, prior 2.9%)",
+        "event": "Euro-area August CPI flash",
         "themeId": "germany-cpi",
         "source": {
           "label": "彭博财经早茶 Sep 1",
@@ -1179,7 +1171,7 @@
         "timeBeijing": "17:00",
         "region": "EU",
         "category": "data",
-        "event": "Euro-area July unemployment (est. 6.3%)",
+        "event": "Euro-area July unemployment",
         "source": {
           "label": "彭博财经早茶 Sep 1",
           "href": "https://www.bloomberg.com/asia"
@@ -1204,7 +1196,7 @@
         "timeBeijing": "21:30",
         "region": "Other",
         "category": "data",
-        "event": "Canada August manufacturing PMI (prior 53.5)",
+        "event": "Canada August manufacturing PMI",
         "source": {
           "label": "彭博财经早茶 Sep 1",
           "href": "https://www.bloomberg.com/asia"
@@ -1229,7 +1221,7 @@
         "timeBeijing": "21:45",
         "region": "US",
         "category": "data",
-        "event": "US August manufacturing PMI final (est. 53.3, flash 53.2)",
+        "event": "US August manufacturing PMI final",
         "themeId": "warsh-steepener",
         "source": {
           "label": "彭博财经早茶 Sep 1",
@@ -1242,7 +1234,7 @@
         "timeBeijing": "22:00",
         "region": "US",
         "category": "data",
-        "event": "US August ISM manufacturing (est. 55.2, prior 55.6)",
+        "event": "US August ISM manufacturing",
         "themeId": "warsh-steepener",
         "source": {
           "label": "彭博财经早茶 Sep 1",
@@ -1255,7 +1247,7 @@
         "timeBeijing": "22:00",
         "region": "US",
         "category": "data",
-        "event": "July JOLTS (est. 7.332m, prior 7.359m)",
+        "event": "July JOLTS",
         "themeId": "warsh-steepener",
         "source": {
           "label": "BLS JOLTS",
@@ -1343,7 +1335,7 @@
     ]
   },
   "watchItems": [],
-  "sources": "1 September 财经早茶 IMAP landed after today’s 01:00 schedule skipped; the usual inbox-sync job ran on this branch via the existing push trigger after one 180×30s wait. 市场一览 is that mail in Chinese, mail order — not 见闻 市场收报. 今日图表 is Germany CPI 2.9%, not Michigan. CICC is the 1 September 缪延亮 note and the 31 August PMI note. Yicai is the overnight-cap window. 新京报 is the 60万亿元 retail target. BlockBeats 364370 is the $3.2bn weekly inflow. Decrypt is still the Friday ETF print.",
+  "sources": "1 September 财经早茶 IMAP landed after today’s 01:00 schedule skipped; the usual inbox-sync job ran on this branch via the existing push trigger after one 180×30s wait. 市场一览 is that mail in Chinese, mail order — not 见闻 市场收报. 今日图表 is Germany CPI 2.9%, not Michigan. CICC is the 1 September 缪延亮 note and the 31 August PMI note. Yicai is the overnight-cap window. 中新网 is the 60万亿元 retail target. BlockBeats 364370 is the $3.2bn weekly inflow. Decrypt is still the Friday ETF print.",
   "singleSource": "Inbox 14% SHEIN grey-market low, Enflame 142.18/61亿元, Changxin HBM generation gap, Zhipu $1.6bn annualised, Nepal 955/4471, Beigene Medicaid discounts, Brampton/BYD Stellantis plant, Saudi $8bn loan, Driscoll resignation, Druckenmiller/Bessent, Bessent-Japan yen push, and JPM dropping the equity stance were not given a second source. 1 September PBOC overnight take-up was not printed at gather. Monday US bitcoin ETF flows were not out. BlockBeats had no in-window street-target book beyond BofA flows. Glassnode W35 (26 August) is the on-chain frame; live gn metrics were not pulled (no GLASSNODE_API_KEY in this VM). Yahoo quote HTML is not used in summary or drivers. Dashboard re-injected at 2026-09-01T02:43:43.235Z. 华尔街见闻 3780681 has the wrong ChiNext sign; STCN is the close.",
   "caveats": "Event Calendar mainland China only (Taiwan PMI and Macao gaming from the mail 日程 are omitted). Brent Yahoo BZ=F in Market closes is futures, not the CNBC $90.49 print. Asia levels live only in Market Dashboard. 10-year 4.75% is the Treasury daily curve. 华尔街见闻’s 4.77% Asia screen is not that close. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September, outside this calendar window.",
   "suggestions": "Today: euro-area CPI at 17:00 Beijing; ISM and JOLTS at 22:00. Into China: the last overnight OMO window. Friday: August payrolls at 20:30 Beijing on 4 September. PPI is 10 September and CPI is 11 September. The next ≥$4bn buyback is 9 September. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September. This report is research and information synthesis, not investment advice.",
