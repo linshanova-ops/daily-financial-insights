@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-02T02:44:03.318Z",
+  "at": "2026-09-02T03:32:34.388Z",
   "briefingDate": "2026-09-02",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-02.md",
-      "subject": "彭博财经早茶：美伊互袭升级；中国封堵税务漏洞",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5015,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-02.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-02.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美伊互袭升级；中国封堵税务漏洞",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-02.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：希音登陆港股；中东局势升级",
