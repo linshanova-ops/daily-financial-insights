@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-01T02:53:55.561Z",
-  "latest": "2026-09-01",
+  "generatedAt": "2026-09-02T03:11:09.782Z",
+  "latest": "2026-09-02",
   "briefings": [
+    {
+      "date": "2026-09-02",
+      "title": "Daily Financial Briefing",
+      "marketTone": "The 财经早茶 chart is the euro area: August headline inflation is the highest since 2023. Eurostat printed 3.3%. The S&P 500 closed at 7,631.47. The official 10-year yield printed 4.79%, and the 2-year printed 4.39%, so shorts led and the curve flattened. WTI settled at $90.22. Spot gold printed $4,329.47. Shanghai closed at 3979.89.",
+      "coverageWindow": "September 1–2, 2026"
+    },
     {
       "date": "2026-09-01",
       "title": "Daily Financial Briefing",
