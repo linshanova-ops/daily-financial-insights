@@ -1,8 +1,18 @@
 {
-  "at": "2026-09-01T05:56:11.322Z",
-  "briefingDate": "2026-09-01",
+  "at": "2026-09-02T02:44:03.318Z",
+  "briefingDate": "2026-09-02",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-02.md",
+      "subject": "彭博财经早茶：美伊互袭升级；中国封堵税务漏洞",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5015,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-02.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-02.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-01.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-19.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-18.md",
       "skipped": true
     }
   ],
@@ -144,11 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：宇树科技上市；多国主权债遭抛售",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-19.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：外国抛售美债；美国拒绝延长对伊临时停火",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-18.md"
     }
   ]
 }
