@@ -18,6 +18,7 @@ import {
 } from "./lib/briefing-json-sync-check.mjs";
 import { checkLatestEventCalendarWindow } from "./lib/event-calendar-window-check.mjs";
 import { checkBloombergChartDate } from "./lib/bloomberg-chart-date-check.mjs";
+import { checkThemeCards } from "./lib/theme-card-check.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const webRoot = path.join(__dirname, "..");
@@ -88,6 +89,13 @@ function main() {
       process.exit(1);
     }
     console.log("[verify-briefing] bloomberg-chart-of-day date OK");
+
+    const themeCheck = checkThemeCards(latest);
+    if (!themeCheck.ok) {
+      console.error(`\n[verify-briefing] FAIL — themeCards:\n  ${themeCheck.message}\n`);
+      process.exit(1);
+    }
+    console.log("[verify-briefing] themeCards shape OK");
 
     if (/\bCLAIM\b/.test(JSON.stringify(latest))) {
       console.error(
