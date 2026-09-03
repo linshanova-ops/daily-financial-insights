@@ -1,8 +1,26 @@
 {
-  "at": "2026-09-02T05:18:25.593Z",
-  "briefingDate": "2026-09-02",
+  "at": "2026-09-03T02:39:54.048Z",
+  "briefingDate": "2026-09-03",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-03.md",
+      "subject": "彭博财经早茶：日元急涨引发干预猜测；潘功胜称中国无意让人民币贬值",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5270,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-03.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-03.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W36.md",
+      "subject": "Doubt at the Boundaries",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 1958,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-02.md",
@@ -34,11 +52,6 @@
       "skipped": true
     },
     {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W35.md",
-      "skipped": true
-    },
-    {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-26.md",
       "skipped": true
@@ -61,11 +74,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-20.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-19.md",
       "skipped": true
     }
   ],
@@ -101,9 +109,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-27.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Squeeze into Supply",
-      "path": "web/content/inbox/glassnode-insights/2026-W35.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -144,11 +152,6 @@
       "reason": "weekly-duplicate",
       "subject": "Yields Anchor, Capitulation Grinds",
       "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：宇树科技上市；多国主权债遭抛售",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-19.md"
     }
   ]
 }
