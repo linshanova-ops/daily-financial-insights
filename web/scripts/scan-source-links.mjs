@@ -933,6 +933,12 @@ function loadClaimGroups() {
       });
     }
 
+    if (Array.isArray(data.themeCards)) {
+      data.themeCards.forEach((card, i) => {
+        addGroup(`${file}.themeCards[${i}].fact`, card?.fact, card?.factSources);
+      });
+    }
+
     if (Array.isArray(data.figures)) {
       data.figures.forEach((fig, i) => {
         if (!fig?.source?.href) return;
@@ -1277,6 +1283,14 @@ async function main() {
         warnings.push(
           `${claim.where}: partial evidence (${hitCount}/${anchors.length}); dated co-source blocked in this environment (${softBlocked.length})`,
         );
+        continue;
+      }
+      // Theme facts carry 3–4 numbers and each is the card: no slack on strong anchors.
+      // ponytail: weak anchors (0.5, 64) still ride the 60% rule below; tighten if a wrong one ships.
+      if (claim.where.includes(".themeCards[") && strongMissing.length) {
+        const msg = `${claim.where}\n    claim: ${claim.text.slice(0, 160)}…\n    · Theme fact numbers not on any chip page: ${strongMissing.join(", ")}\n      ${claim.hrefs.join("\n      ")}`;
+        if (claimArchived) warnings.push(`archived claim soft-trusted: ${msg}`);
+        else failures.push(msg);
         continue;
       }
       if (strong.length && strongMissing.length === strong.length) {

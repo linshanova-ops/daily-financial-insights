@@ -26,6 +26,14 @@ describe("checkThemeCards", () => {
     const b = { ...good, id: "gold", fact: "Kitco: gold rose as WTI held $91.01." };
     assert.match(checkThemeCards({ themeCards: [good, b] }).message, /91.01 already/);
   });
+  it("fails a so-what number the fact never printed", () => {
+    const mechanism = "Brent at $95.63 says the premium is holding. OPEC+ meets this weekend.";
+    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /95.63 that is not/);
+  });
+  it("fails Yahoo quote HTML as a chip", () => {
+    const factSources = [{ label: "Yahoo", href: "https://finance.yahoo.com/quote/CL%3DF/" }];
+    assert.match(checkThemeCards({ themeCards: [{ ...good, factSources }] }).message, /Yahoo/);
+  });
   it("fails when every card is the same grade", () => {
     const cards = ["a", "b", "c"].map((id, i) => ({ ...good, id, fact: `AP: print ${i}.` }));
     assert.match(checkThemeCards({ themeCards: cards }).message, /grade the tape/);
