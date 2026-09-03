@@ -38,10 +38,11 @@ export interface ThemeCard {
   fact: string;
   factSources?: FactSource[];
   mechanism: string;
-  trigger: string;
-  invalidator: string;
-  horizon: string;
-  status: "new" | "continuing" | "escalated" | "retired";
+  /** Not rendered; legacy briefings only. New cards end `mechanism` with the dated next print. */
+  trigger?: string;
+  invalidator?: string;
+  horizon?: string;
+  status?: "new" | "continuing" | "escalated" | "retired";
 }
 
 export interface WatchItem {
