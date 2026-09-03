@@ -1,7 +1,9 @@
 /**
  * Theme card shape: one force, a short fact, a so-what that is judgment.
  * Fails the dump pattern: 10-print facts, sourcing caveats as so-what,
- * every card STRONG, the same close restated on two cards.
+ * every card STRONG, the same close restated on two cards, a so-what number
+ * the fact never printed, Yahoo quote HTML as a chip. Fact numbers themselves
+ * are evidence-checked against chip pages by scan-source-links.
  */
 // ponytail: same sentence split as ThemeCards.tsx; "a.m. EDT" style clocks miscount, drop the clock.
 const sentences = (text) =>
@@ -30,12 +32,25 @@ export function checkThemeCards(briefing) {
     if (chips < 1 || chips > 4) problems.push(`${id}: ${chips} factSources (1–4)`);
     const m = META.exec(String(c?.mechanism || ""));
     if (m) problems.push(`${id}: so-what is a sourcing caveat, not judgment: "${m[0]}"`);
+    for (const s of c?.factSources || []) {
+      if (/finance\.yahoo\.com\/quote/.test(String(s?.href || ""))) {
+        problems.push(`${id}: Yahoo quote HTML is not a print; inject levels stay in marketDashboard`);
+      }
+    }
+    const factNums = new Set();
     for (const raw of String(c?.fact || "").match(NUMBER) || []) {
       const n = raw.replace(/[,%]/g, "");
       if (n.length < 3) continue;
+      factNums.add(n);
       const prev = seen.get(n);
       if (prev && prev !== id) problems.push(`${id}: ${raw} already printed on ${prev}`);
       else seen.set(n, id);
+    }
+    for (const raw of String(c?.mechanism || "").match(NUMBER) || []) {
+      const n = raw.replace(/[,%]/g, "");
+      if (n.length >= 3 && !factNums.has(n)) {
+        problems.push(`${id}: so-what cites ${raw} that is not in this card's fact`);
+      }
     }
   }
   if (cards.length >= 3 && new Set(cards.map((c) => c?.grade)).size === 1) {
