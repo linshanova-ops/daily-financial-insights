@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-04T02:39:10.925Z",
+  "at": "2026-09-04T03:26:09.355Z",
   "briefingDate": "2026-09-04",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-04.md",
-      "subject": "彭博财经早茶：大摩下调中港股指目标；美联储加息担忧缓解",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5078,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-04.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-04.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：大摩下调中港股指目标；美联储加息担忧缓解",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-04.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：日元急涨引发干预猜测；潘功胜称中国无意让人民币贬值",
