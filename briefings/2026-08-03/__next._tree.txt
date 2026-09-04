@@ -1,0 +1,5 @@
+:HL["/daily-financial-insights/_next/static/chunks/1krjuzpjuvu3n.css","style"]
+:HL["/daily-financial-insights/_next/static/media/a343f882a40d2cc9-s.p.1sj6eobyi31rd.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/daily-financial-insights/_next/static/media/b67966e0b83b2cd0-s.p.0fuf3937kiol3.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/daily-financial-insights/inbox-charts/bloomberg-2026-08-03.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"briefings","param":null,"prefetchHints":0,"slots":{"children":{"name":"date","param":{"type":"d","key":"2026-08-03","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"y00P0Zvtg_hWVirZ8fTJz"}
