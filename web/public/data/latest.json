@@ -152,7 +152,7 @@
       "books": [
         "crypto"
       ],
-      "influence": "律动: resistance 83,000–86,000; STH cost about 71,000; ETF 7-day average inflow peaked at $290 million vs about $3 billion secondary volume."
+      "influence": "律动 / Glassnode (2 September): resistance 83,000–86,000; spot boxed between short-term-holder supply below and long-term-holder supply above."
     },
     {
       "label": "BlockBeats — KEPCO prepaid power",
@@ -273,14 +273,6 @@
         "fx"
       ],
       "influence": "Desk view on the gold card: keep gold overweight; Treasury buybacks weaken dollar and Treasury credibility."
-    },
-    {
-      "label": "Glassnode — Week On Chain (2 September)",
-      "href": "https://insights.glassnode.com/tag/newsletter/",
-      "books": [
-        "crypto"
-      ],
-      "influence": "Desk view on the bitcoin card: price boxed between short-term-holder supply below and long-term-holder overhead supply above."
     }
   ],
   "figures": [
@@ -588,7 +580,7 @@
           "href": "https://www.theblockbeats.info/flash/364980"
         }
       ],
-      "mechanism": "Both assets trade the same Waller duration and dollar beta, so gold and bitcoin rose together when hike odds fell, but bitcoin still sits under a 83,000–86,000 supply zone that ETF inflows have not cleared. CICC (21 August): stay overweight gold because Treasury long-bond buybacks weaken dollar and Treasury credibility, a bid bitcoin does not get while Glassnode (2 September) has it boxed between short-term-holder supply below and long-term-holder supply above. That is why gold holds a late-afternoon bid while bitcoin remains a range trade. Payrolls tonight, through the dollar, are the next print."
+      "mechanism": "Both assets trade the same Waller duration and dollar beta, so gold and bitcoin rose together when hike odds fell, but bitcoin still sits under a 83,000–86,000 supply zone that ETF inflows have not cleared. CICC (21 August): stay overweight gold because Treasury long-bond buybacks weaken dollar and Treasury credibility, a bid bitcoin does not get; Glassnode (2 September): spot is boxed between short-term-holder supply below and long-term-holder supply above. Payrolls tonight, through the dollar, are the next print."
     },
     {
       "id": "china-liquidity-longsys",
@@ -617,7 +609,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A second straight zero-ops day is a tighter onshore mix than the SME-fund headline, which is why Shanghai could only add 0.02% while the chart tells a one-name story rather than an index one. Morgan Stanley (4 September) cut its China and Hong Kong index targets on worsening macro data and tightening liquidity, while CICC (2 September) says swap-implied rate-cut expectations already sit at a historically strong level, so the drain lands between a street that has lowered its targets and a rates market still paying for a cut. Until the PBOC restarts reverse repos, the SME fund is industrial policy rather than liquidity, and the street’s read is the one to hold. The next PBOC take-up and tonight’s US payrolls, through risk appetite, are the dated prints."
+      "mechanism": "A second straight zero-ops day is a tighter onshore mix than the SME-fund headline, which is why Shanghai could only add 0.02% while the chart tells a one-name story rather than an index one. Morgan Stanley (4 September): it cut China and Hong Kong index targets on worsening macro data and tightening liquidity, while CICC (2 September): swap-implied rate-cut expectations already sit at a historically strong level, so the drain lands between a street that has lowered its targets and a rates market still paying for a cut. The next PBOC take-up and tonight’s US payrolls, through risk appetite, are the dated prints."
     }
   ],
   "globalRegime": "The new tape is Waller opening a hold path against ISM prices at 72.6 and WTI at $91.30. The S&P 500 closed at 7,747.71. The official 10-year printed 4.77%. The yen extended to about 155.4 with Mimura unsatisfied. Gold bounced in late-afternoon trade. September is still a coin-flip into payrolls tonight and CPI on 11 September.",
