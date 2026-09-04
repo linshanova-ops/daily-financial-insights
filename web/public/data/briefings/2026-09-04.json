@@ -246,6 +246,41 @@
         "crypto"
       ],
       "influence": "Dated BTC 24h for the dashboard row."
+    },
+    {
+      "label": "中金 — 行业首选（2026年9月）",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzA3NjU1NTQwMA==&mid=2649792283&idx=1&sn=92e2382e1dbfd764f7afc4d32a843dcb&chksm=86a20ce4563c3180997b62d9689b7312b8370742fc2e5fb70fbce9e822ca1cc9b42715fe2806&scene=0&xtrack=1#rd",
+      "books": [
+        "rates",
+        "us-equities"
+      ],
+      "influence": "Desk view on the Waller card: the September hike is two-sided on the data; a hike can still be the credibility path."
+    },
+    {
+      "label": "中金 — 中国的降息预期如何演化？",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247857353&idx=3&sn=72b484b6446c121d273476607ee96cbf&chksm=eb6ad97bc0b2328540cda3f48bf57c4f71e2a5a550f03ab5299422cfda39720e061a8309d21b&scene=0&xtrack=1#rd",
+      "books": [
+        "asia-equities",
+        "rates"
+      ],
+      "influence": "Desk view on the PBOC card: swap-implied rate-cut expectations are at a historically strong level while the 7-day rate has not been cut this year."
+    },
+    {
+      "label": "中金 — 资产配置：被误读的“美债风暴”",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247854368&idx=1&sn=2619e5dab4f36ad95a20091b578f74c5&chksm=eb7d25b71c929bb873548cbce32d418fe446f8d4c44c7366ed1446bd99e777ce5cbdd0c63956&scene=0&xtrack=1#rd",
+      "books": [
+        "commodities",
+        "fx"
+      ],
+      "influence": "Desk view on the gold card: keep gold overweight; Treasury buybacks weaken dollar and Treasury credibility."
+    },
+    {
+      "label": "Glassnode — Week On Chain (2 September)",
+      "href": "https://insights.glassnode.com/tag/newsletter/",
+      "books": [
+        "crypto"
+      ],
+      "influence": "Desk view on the bitcoin card: price boxed between short-term-holder supply below and long-term-holder overhead supply above."
     }
   ],
   "figures": [
@@ -553,7 +588,7 @@
           "href": "https://www.theblockbeats.info/flash/364980"
         }
       ],
-      "mechanism": "Both assets are trading the same Waller duration and dollar beta, so gold and bitcoin rose together when hike odds fell, but bitcoin still sits under a 83,000–86,000 supply zone that ETF inflows have not cleared. That gap is why gold can hold a late-afternoon bid while bitcoin remains a range trade under supply. Payrolls tonight, through the dollar, are the next print that decides whether the two stay on the same tape."
+      "mechanism": "Both assets trade the same Waller duration and dollar beta, so gold and bitcoin rose together when hike odds fell, but bitcoin still sits under a 83,000–86,000 supply zone that ETF inflows have not cleared. CICC (21 August): stay overweight gold because Treasury long-bond buybacks weaken dollar and Treasury credibility, a bid bitcoin does not get while Glassnode (2 September) has it boxed between short-term-holder supply below and long-term-holder supply above. That is why gold holds a late-afternoon bid while bitcoin remains a range trade. Payrolls tonight, through the dollar, are the next print."
     },
     {
       "id": "china-liquidity-longsys",
@@ -582,7 +617,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A second straight zero-ops day is a tighter onshore mix than the SME-fund headline, which is why Shanghai could only add 0.02% while the chart tells a one-name story rather than an index one. The STAR 50 staying flat on that chart is the book the listing does not move. Tonight’s US payrolls, through risk appetite, and the next PBOC take-up are the dated prints that show whether the drain is a stance."
+      "mechanism": "A second straight zero-ops day is a tighter onshore mix than the SME-fund headline, which is why Shanghai could only add 0.02% while the chart tells a one-name story rather than an index one. Morgan Stanley (4 September) cut its China and Hong Kong index targets on worsening macro data and tightening liquidity, while CICC (2 September) says swap-implied rate-cut expectations already sit at a historically strong level, so the drain lands between a street that has lowered its targets and a rates market still paying for a cut. Until the PBOC restarts reverse repos, the SME fund is industrial policy rather than liquidity, and the street’s read is the one to hold. The next PBOC take-up and tonight’s US payrolls, through risk appetite, are the dated prints."
     }
   ],
   "globalRegime": "The new tape is Waller opening a hold path against ISM prices at 72.6 and WTI at $91.30. The S&P 500 closed at 7,747.71. The official 10-year printed 4.77%. The yen extended to about 155.4 with Mimura unsatisfied. Gold bounced in late-afternoon trade. September is still a coin-flip into payrolls tonight and CPI on 11 September.",
