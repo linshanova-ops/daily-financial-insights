@@ -18,6 +18,8 @@ const META =
 
 const NUMBER = /\d[\d,]*\.\d+%?|\d+%|\d{1,3}(?:,\d{3})+/g;
 
+const DESK_VIEW = /\(\d{1,2} [A-Z][a-z]+\)[:：] /;
+
 export function checkThemeCards(briefing) {
   const cards = Array.isArray(briefing.themeCards) ? briefing.themeCards : [];
   const problems = [];
@@ -55,6 +57,10 @@ export function checkThemeCards(briefing) {
   }
   if (cards.length >= 3 && new Set(cards.map((c) => c?.grade)).size === 1) {
     problems.push(`all ${cards.length} cards are ${cards[0].grade}; grade the tape`);
+  }
+  // ponytail: presence only — `House (4 September): …` somewhere; the filter itself is judgment in the skill.
+  if (cards.length && !cards.some((c) => DESK_VIEW.test(String(c?.mechanism || "")))) {
+    problems.push("no card carries a dated desk view (`House (d Month): …`); CICC / house views were skipped");
   }
   return problems.length ? { ok: false, message: problems.join("\n  ") } : { ok: true };
 }
