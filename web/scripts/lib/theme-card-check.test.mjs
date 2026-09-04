@@ -7,7 +7,8 @@ const good = {
   grade: "STRONG",
   fact: "CNBC: WTI settled at $91.01. Wright: 17 million b/d moved through Hormuz on Monday.",
   factSources: [{ label: "CNBC", href: "https://x" }],
-  mechanism: "Oil holds a war premium while flows stay below 20 million. OPEC+ meets this weekend.",
+  mechanism:
+    "Oil holds a war premium while flows stay below 20 million. CICC (2 September): the strait, not OPEC, sets the price. OPEC+ meets this weekend.",
 };
 
 describe("checkThemeCards", () => {
@@ -33,6 +34,10 @@ describe("checkThemeCards", () => {
   it("fails Yahoo quote HTML as a chip", () => {
     const factSources = [{ label: "Yahoo", href: "https://finance.yahoo.com/quote/CL%3DF/" }];
     assert.match(checkThemeCards({ themeCards: [{ ...good, factSources }] }).message, /Yahoo/);
+  });
+  it("fails a day with no dated desk view on any card", () => {
+    const mechanism = "Oil holds a war premium. OPEC+ meets this weekend.";
+    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /desk view/);
   });
   it("fails when every card is the same grade", () => {
     const cards = ["a", "b", "c"].map((id, i) => ({ ...good, id, fact: `AP: print ${i}.` }));
