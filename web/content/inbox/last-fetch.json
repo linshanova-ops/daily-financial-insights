@@ -1,8 +1,18 @@
 {
-  "at": "2026-09-03T05:23:18.453Z",
-  "briefingDate": "2026-09-03",
+  "at": "2026-09-04T02:39:10.925Z",
+  "briefingDate": "2026-09-04",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-04.md",
+      "subject": "彭博财经早茶：大摩下调中港股指目标；美联储加息担忧缓解",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5078,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-04.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-04.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-03.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-21.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-20.md",
       "skipped": true
     }
   ],
@@ -144,16 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美国或再扩国债回购；阿里AI商业化加速",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-21.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：美国财政部加码回购长债；阿里巴巴将发布财报",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-20.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Yields Anchor, Capitulation Grinds",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
     }
   ]
 }
