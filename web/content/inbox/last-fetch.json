@@ -1,8 +1,26 @@
 {
-  "at": "2026-09-04T05:20:13.181Z",
-  "briefingDate": "2026-09-04",
+  "at": "2026-09-07T02:38:02.973Z",
+  "briefingDate": "2026-09-07",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-07.md",
+      "subject": "彭博财经早茶：特朗普突然向沃什施压降息；中国大举补充金融机构资本",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5040,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-07.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-07.png"
+    },
+    {
+      "sourceId": "bloomberg-weekend-tea",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W36.md",
+      "subject": "彭博周末茶歇：中美角力",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5488,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-04.md",
@@ -34,11 +52,6 @@
       "skipped": true
     },
     {
-      "sourceId": "bloomberg-weekend-tea",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W35.md",
-      "skipped": true
-    },
-    {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-28.md",
       "skipped": true
@@ -61,11 +74,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-24.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-21.md",
       "skipped": true
     }
   ],
@@ -101,9 +109,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-31.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "彭博周末茶歇：美加贸易战",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W35.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
     },
     {
       "reason": "exists-keep",
@@ -139,16 +147,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美加贸易谈判破裂；英伟达AI服务器据悉涨价",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-24.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "彭博周末茶歇：农产品涨价潮",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：美国或再扩国债回购；阿里AI商业化加速",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-21.md"
     }
   ]
 }

@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-04T06:41:36.293Z",
-  "latest": "2026-09-04",
+  "generatedAt": "2026-09-07T03:29:06.917Z",
+  "latest": "2026-09-07",
   "briefings": [
+    {
+      "date": "2026-09-07",
+      "title": "Daily Financial Briefing",
+      "marketTone": "August payrolls rose 162,000 versus an estimate of 53,000. The S&P 500 closed at 7,718.60. The official 2-year printed 4.37%. WTI settled at $91.48. Spot gold was near $4,429.40 late Friday. The 财经早茶 chart is Jan–Aug Chinese government-bond issuance, the slowest same-period progress in four years.",
+      "coverageWindow": "September 4–7, 2026"
+    },
     {
       "date": "2026-09-04",
       "title": "Daily Financial Briefing",
