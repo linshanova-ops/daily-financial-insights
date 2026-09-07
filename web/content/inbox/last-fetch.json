@@ -1,25 +1,17 @@
 {
-  "at": "2026-09-07T02:38:02.973Z",
+  "at": "2026-09-07T03:38:26.721Z",
   "briefingDate": "2026-09-07",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-07.md",
-      "subject": "彭博财经早茶：特朗普突然向沃什施压降息；中国大举补充金融机构资本",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5040,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-07.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-07.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W36.md",
-      "subject": "彭博周末茶歇：中美角力",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5488,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：特朗普突然向沃什施压降息；中国大举补充金融机构资本",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-07.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：中美角力",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W36.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：大摩下调中港股指目标；美联储加息担忧缓解",
