@@ -53,7 +53,7 @@
       "books": [
         "commodities"
       ],
-      "influence": "WTI $91.48 (+18c); Brent $96.28 (+76c). Diesel $5.85. Four Hormuz vessels Thursday versus a 10-day average of about 15."
+      "influence": "WTI $91.48 (+18c); Brent $96.28 (+76c). Four Hormuz vessels Thursday versus a 10-day average of about 15."
     },
     {
       "label": "CNN — Saturday tanker strikes",
@@ -88,12 +88,12 @@
       "influence": "Friday US spot bitcoin ETF inflows $174.6 million. Week $986.9 million."
     },
     {
-      "label": "Reuters — Japan August FX reserves",
-      "href": "https://www.reuters.com/world/asia-pacific/japans-august-foreign-reserves-post-largest-ever-drop-after-record-intervention-2026-09-07/",
+      "label": "Japan Times — August FX reserves",
+      "href": "https://www.japantimes.co.jp/business/2026/09/07/markets/japan-treasuries-sell-for-yen/",
       "books": [
         "fx"
       ],
-      "influence": "Reserves $1.208 trillion, down a record $79.6 billion. Intervention ¥15.4 trillion July 30–August 26."
+      "influence": "Foreign-currency reserves fell $94.6 billion to $995 billion at end-August. Foreign securities fell $87.8 billion. Intervention ¥15.4 trillion through Aug. 26."
     },
     {
       "label": "第一财经 — 3-month buyout reverse repo",
@@ -102,7 +102,7 @@
         "asia-equities",
         "rates"
       ],
-      "influence": "7 September 5000亿元 (CNY500bn) 89-day buyout reverse repo, equal rollover versus 5000亿元 maturing. Week of 31 August–4 September net drain 14115亿元 (CNY1,411.5bn)."
+      "influence": "7 September 5000亿元 (CNY500bn) 89-day buyout reverse repo, equal rollover versus 5000亿元 maturing. Week of 31 August–4 September net drain 14115亿元."
     },
     {
       "label": "第一财经 — 八家金融央企增资",
@@ -497,7 +497,7 @@
       "assets": [
         "Oil"
       ],
-      "fact": "CNBC: WTI settled at $91.48, up 18 cents, and Brent at $96.28, up 76 cents, with US diesel at a record $5.85; four commodity vessels transited Hormuz on Thursday versus a 10-day average of about 15. CNN: CENTCOM struck three IRGC tankers on Saturday after IRGC missiles at two US Navy ships. 财经早茶: Tehran said it hit three tankers on unauthorized Hormuz routes, and hopes of reopening look more remote.",
+      "fact": "CNBC: WTI settled at $91.48, up 18 cents, and Brent at $96.28, up 76 cents; four commodity vessels transited Hormuz on Thursday versus a 10-day average of about 15. CNN: CENTCOM struck three IRGC tankers on Saturday after IRGC missiles at two US Navy ships. 财经早茶: Tehran said it hit three tankers on unauthorized Hormuz routes, and hopes of reopening look more remote.",
       "factSources": [
         {
           "label": "CNBC Friday oil",
@@ -547,7 +547,7 @@
         "A/H shares",
         "CNY"
       ],
-      "fact": "第一财经: eight central financial firms plan to raise 3600亿元 (CNY360bn), and the Ministry of Finance will issue 3000亿元 (CNY300bn) of special treasury bonds. 第一财经: the PBOC will do 5000亿元 (CNY500bn) of 3-month buyout reverse repo on 7 September, an equal rollover versus 5000亿元 maturing, ending two months of 2000亿元 (CNY200bn) add, after the week of 31 August–4 September drained 14115亿元 (CNY1,411.5bn). 新华财经: Shanghai closed at 3930.12, down 0.30%. 财经早茶 今日图表: Jan–Aug government-bond issuance progress is the slowest for the same period in four years.",
+      "fact": "第一财经: eight central financial firms plan to raise 3600亿元 (CNY360bn), and the Ministry of Finance will issue 3000亿元 (CNY300bn) of special treasury bonds. 第一财经: the PBOC will do 5000亿元 (CNY500bn) of 3-month buyout reverse repo on 7 September, an equal rollover versus 5000亿元 maturing, ending two months of 2000亿元 (CNY200bn) add, after the week of 31 August–4 September drained 14115亿元. 新华财经: Shanghai closed at 3930.12, down 0.30%. 财经早茶 今日图表: Jan–Aug government-bond issuance progress is the slowest for the same period in four years.",
       "factSources": [
         {
           "label": "第一财经 注资",
@@ -566,7 +566,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A CNY360bn recap tops up core tier-one capital, and an equal CNY500bn three-month rollover after a CNY1,411.5bn weekly drain leaves the 7-day rate uncut, which is why Shanghai closed at 3930.12. CICC (2 September): swap-implied cut expectations sit at a historically strong level while the 7-day rate has gone uncut this year. The next PBOC take-up and US CPI on 11 September, through risk appetite, are the dated prints."
+      "mechanism": "A CNY360bn recap tops up core tier-one capital, and an equal CNY500bn three-month rollover after a 14115亿元 weekly drain leaves the 7-day rate uncut, which is why Shanghai closed at 3930.12. CICC (2 September): swap-implied cut expectations sit at a historically strong level while the 7-day rate has gone uncut this year. The next PBOC take-up and US CPI on 11 September, through risk appetite, are the dated prints."
     },
     {
       "id": "yen-reserves",
@@ -575,18 +575,18 @@
       "assets": [
         "JPY"
       ],
-      "fact": "Reuters: Japan’s August foreign reserves fell a record $79.6 billion after the July 30–August 26 yen-buying operation. 华尔街见闻: USD/JPY rose from 155.50 to 156.22 on Friday.",
+      "fact": "Japan Times: Japan’s August foreign-currency reserves fell $94.6 billion to $995 billion. 华尔街见闻: USD/JPY rose from 155.50 to 156.22 on Friday.",
       "factSources": [
         {
-          "label": "Reuters Japan reserves",
-          "href": "https://www.reuters.com/world/asia-pacific/japans-august-foreign-reserves-post-largest-ever-drop-after-record-intervention-2026-09-07/"
+          "label": "Japan Times reserves",
+          "href": "https://www.japantimes.co.jp/business/2026/09/07/markets/japan-treasuries-sell-for-yen/"
         },
         {
           "label": "华尔街见闻早餐",
           "href": "https://wallstreetcn.com/articles/3781126"
         }
       ],
-      "mechanism": "The $79.6 billion drop is the August yen-buying operation hitting the reserve tape, which is why USD/JPY can sit at 156.22 after Friday’s bounce from 155.50. The BOJ decision on 17–18 September is the settle."
+      "mechanism": "The $94.6 billion drop is the August yen-buying operation hitting the reserve tape, which is why USD/JPY can sit at 156.22 after Friday’s bounce from 155.50. The BOJ decision on 17–18 September is the settle."
     }
   ],
   "globalRegime": "The new tape is a 162,000 payrolls beat that put September hike odds back near 60%. The S&P 500 closed at 7,718.60. The official 2-year printed 4.37%. WTI held $91.48 after Saturday’s tanker strikes. Gold sold to about $4,429.40. CPI on 11 September still settles the FOMC at 02:00 Beijing on 17 September.",
@@ -746,16 +746,20 @@
       ]
     },
     {
-      "text": "CNBC：WTI收报91.48美元，涨18美分；布伦特收报96.28美元，涨76美分；美国柴油零售均价5.85美元/加仑。周四霍尔木兹通行4艘，10日均值约15艘。",
+      "text": "CNBC：WTI收报91.48美元，涨18美分；布伦特收报96.28美元，涨76美分。周四霍尔木兹通行4艘，10日均值约15艘。Kitco：美国柴油零售均价5.85美元/加仑。",
       "sources": [
         {
           "label": "CNBC Friday oil",
           "href": "https://www.cnbc.com/2026/09/04/oil-set-for-steepest-weekly-gain-over-renewed-us-iran-tensions.html"
+        },
+        {
+          "label": "Kitco PM",
+          "href": "https://www.kitco.com/news/article/2026-09-04/gold-silver-prices-slide-strong-payrolls-revive-fed-hike-trade-kitco-pm"
         }
       ]
     },
     {
-      "text": "Kitco：晚盘现货黄金约4429.40美元，跌0.96%，盘中低见约4365美元，不是COMEX结算价。",
+      "text": "Kitco：晚盘现货黄金约4429.40美元，跌0.96%，盘中低见约4365美元。",
       "sources": [
         {
           "label": "Kitco PM",
@@ -795,11 +799,11 @@
       ]
     },
     {
-      "text": "Reuters：日本8月末外汇储备1.208万亿美元，减少796亿美元，为有记录最大降幅；7月30日至8月26日干预15.4万亿日元。",
+      "text": "Japan Times: August foreign-currency reserves fell $94.6 billion to $995 billion. Foreign securities fell $87.8 billion. Intervention ¥15.4 trillion through Aug. 26.",
       "sources": [
         {
-          "label": "Reuters Japan reserves",
-          "href": "https://www.reuters.com/world/asia-pacific/japans-august-foreign-reserves-post-largest-ever-drop-after-record-intervention-2026-09-07/"
+          "label": "Japan Times reserves",
+          "href": "https://www.japantimes.co.jp/business/2026/09/07/markets/japan-treasuries-sell-for-yen/"
         }
       ]
     },
@@ -822,7 +826,7 @@
     }
   ],
   "globalTensions": "A 162,000 beat versus unemployment still at 4.1%. Equities fell while oil held a war premium. Gold and bitcoin sold duration while Friday bitcoin ETF inflows stayed positive. Trump told the Fed to cut after the same print that lifted hike odds to about 60%. Goldman’s Hormuz two-thirds recovery versus Saturday’s tanker strikes.",
-  "chinaStance": "Eight central financial firms plan to raise CNY360bn, with CNY300bn of special treasury bonds. Today’s 3-month buyout reverse repo is an equal CNY500bn rollover after a CNY1,411.5bn drain last week. Shanghai closed 3930.12, down 0.30%. Hang Seng rose 1.74%. The 财经早茶 chart is Jan–Aug government-bond issuance, the slowest same-period progress in four years.",
+  "chinaStance": "Eight central financial firms plan to raise CNY360bn, with CNY300bn of special treasury bonds. Today’s 3-month buyout reverse repo is an equal CNY500bn rollover after a 14115亿元 drain last week. Shanghai closed 3930.12, down 0.30%. Hang Seng rose 1.74%. The 财经早茶 chart is Jan–Aug government-bond issuance, the slowest same-period progress in four years.",
   "chinaChanged": [
     {
       "text": "中国工商银行、农业银行等至少八家大型银行和保险公司寻求合计补充3600亿元人民币资本，其中财政部将通过发行3000亿元特别国债提供逾八成资金，以增强这些金融机构的资产负债表实力",
@@ -1082,8 +1086,8 @@
         "event": "BOJ policy decision",
         "themeId": "yen-reserves",
         "source": {
-          "label": "Reuters Japan reserves",
-          "href": "https://www.reuters.com/world/asia-pacific/japans-august-foreign-reserves-post-largest-ever-drop-after-record-intervention-2026-09-07/"
+          "label": "Japan Times reserves",
+          "href": "https://www.japantimes.co.jp/business/2026/09/07/markets/japan-treasuries-sell-for-yen/"
         }
       }
     ]
