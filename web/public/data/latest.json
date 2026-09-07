@@ -129,14 +129,6 @@
       "influence": "Hang Seng 25,650.87 (+437.56 / +1.74%). Turnover HK$2768.57bn."
     },
     {
-      "label": "财经新闻 — Friday Nikkei",
-      "href": "https://www.zaikei.co.jp/article/20260904/868687.html",
-      "books": [
-        "asia-equities"
-      ],
-      "influence": "Nikkei 65,020.94 (+806.46 / +1.26%). TOPIX 4,103.23 (+0.03%)."
-    },
-    {
       "label": "华尔街见闻早餐",
       "href": "https://wallstreetcn.com/articles/3781126",
       "books": [
@@ -790,15 +782,6 @@
       ]
     },
     {
-      "text": "财经新闻：日经225涨806.46点报65,020.94，涨1.26%；TOPIX涨0.03%报4103.23。",
-      "sources": [
-        {
-          "label": "财经新闻 Nikkei",
-          "href": "https://www.zaikei.co.jp/article/20260904/868687.html"
-        }
-      ]
-    },
-    {
       "text": "Japan Times: Tokyo’s holdings of foreign securities fell by $87.8 billion at end-August. Authorities spent ¥15.4 trillion ($98.6 billion) through Aug. 26.",
       "sources": [
         {
@@ -1093,7 +1076,7 @@
     ]
   },
   "watchItems": [],
-  "sources": "7 September 财经早茶 IMAP landed after today’s 01:00 schedule skipped; the usual inbox-sync job ran on this branch via the existing push trigger after one 180×30s wait. 市场一览 is that mail in Chinese, mail order — not 见闻 市场收报. 今日图表 is Jan–Aug CGB issuance progress, not payrolls. CICC is the 6 September FX weekly and the 2 September China-cuts note, paraphrased without distinctive WeChat-only digits. Yicai is the recap and the equal-rollover OMO. BlockBeats 365468 is the BTC book; 365372 is the tech/AI book; 365524 is the macro book. Street ratings in the Friday-to-Monday window were not on the 律动 tape.",
+  "sources": "7 September 财经早茶 IMAP landed after today’s 01:00 schedule skipped; the usual inbox-sync job ran on this branch via the existing push trigger after one 180×30s wait. 市场一览 is that mail in Chinese, mail order — not 见闻 市场收报. 今日图表 is Jan–Aug CGB issuance progress, not payrolls. CICC is the 6 September FX weekly and the 2 September China-cuts note, paraphrased without distinctive WeChat-only digits. Yicai is the recap and the equal-rollover OMO. BlockBeats 365468 is the BTC book; 365372 is the tech/AI book; 365524 is the macro book. Street ratings in the Friday-to-Monday window were not on the 律动 tape. Friday Nikkei via 财经新闻 was dropped because zaikei was unreachable in CI.",
   "singleSource": "Inbox Golden Dragon / Baidu / JD sizes, Nscale dollars, Moonshot and Huazhu dollars, DeepSeek chip counts, CICC 26% / CSI 300 9% from the mail, and the 07:07 pm EST snapshot (S&P 7,718.6, FXI 35.88, BBDXY 1,190.54, BTC 80,166.92) were not given a second fetchable chip — snapshot is not 市场一览. Chart distinctive issuance percentages are omitted (Bloomberg hub 403). Cointelegraph 56,000 jobs estimate is not mixed with CNBC’s Dow Jones 53,000. 见闻 FedWatch 58% is not mixed with CNBC’s about 60%. Kitco gold is late-afternoon spot, not a COMEX settle. No GLASSNODE_API_KEY; on-chain color is 律动 364980, not research.glassnode.com. Monday 7-day OMO take-up was not on the tape at publish. Yahoo quote HTML is not used in summary. US cash is closed for Labor Day. Dashboard re-injected at 2026-09-07T02:50:45.541Z.",
   "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F in Market closes is futures, not the CNBC $96.28 print. Asia levels live only in Market Dashboard. 10-year 4.78% is the Treasury daily curve. FedWatch about 60% is CNBC. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September. Convert 3600亿元 as CNY360bn. Convert 3000亿元 as CNY300bn. Convert 5000亿元 as CNY500bn. Convert 14115亿元 as CNY1,411.5bn. Convert 2000亿元 as CNY200bn.",
   "suggestions": "Today: US Labor Day, cash closed; China FX reserves; PBOC 5000亿元 3-month buyout reverse repo; euro-area Q2 GDP final at 17:00; Hong Kong FX reserves at 16:30. Destatis finals and the ECB are 10 September. PPI is 10 September; CPI is 11 September. BOJ is 17–18 September. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September. This report is research and information synthesis, not investment advice.",
