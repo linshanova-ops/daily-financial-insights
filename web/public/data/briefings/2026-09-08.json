@@ -536,7 +536,7 @@
           "href": "https://m.cnfin.com/yw-lb/zixun/20260907/4466317_1.html"
         }
       ],
-      "mechanism": "A CNY360bn core-tier-one top-up sits next to NIM at 1.41%, and a CNY4.5bn net drain after an equal three-month rollover leaves the 7-day rate uncut. CICC (2 September): swap-implied cut expectations sit at a historically strong level while the 7-day rate has gone uncut this year. China August trade on 8 September is the next print."
+      "mechanism": "A CNY360bn core-tier-one top-up sits next to NIM at 1.41%, and a 45亿元 net drain after an equal three-month rollover leaves the 7-day rate uncut. CICC (2 September): swap-implied cut expectations sit at a historically strong level while the 7-day rate has gone uncut this year. China August trade on 8 September is the next print."
     },
     {
       "id": "ainext-hsi",
@@ -588,7 +588,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Official buying is still adding in a 22nd month, so 7673万盎司 is a reserve allocation print, not the Friday duration dump. CPI on 11 September, through real yields, is the next print."
+      "mechanism": "Official buying is still adding in a 22nd month, so 7673万盎司 is a reserve allocation print while Monday gold sold in the Asia session. CPI on 11 September, through real yields, is the next print."
     },
     {
       "id": "btc-liquid",
@@ -1066,7 +1066,7 @@
       "text": "CICC (2 September): swap-implied cut expectations already sit at a historically strong level while the 7-day rate has gone uncut this year."
     }
   ],
-  "chinaDivergences": "ChiNext +3.41% versus Hang Seng −0.93%. A recap headline versus NIM at 1.41% and a CNY4.5bn net drain. Official gold buying in a 22nd month versus Monday gold selling in the Asia session.",
+  "chinaDivergences": "ChiNext +3.41% versus Hang Seng −0.93%. A recap headline versus NIM at 1.41% and a 45亿元 net drain. Official gold buying in a 22nd month versus Monday gold selling in the Asia session.",
   "signals": [],
   "eventCalendar": {
     "windowStart": "2026-09-08",
