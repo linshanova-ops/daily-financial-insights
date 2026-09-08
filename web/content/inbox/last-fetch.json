@@ -1,8 +1,18 @@
 {
-  "at": "2026-09-07T05:31:46.290Z",
-  "briefingDate": "2026-09-07",
+  "at": "2026-09-08T02:39:27.580Z",
+  "briefingDate": "2026-09-08",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-08.md",
+      "subject": "彭博财经早茶：美加贸易战恐升级；马来西亚拟采用华为AI芯片",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5065,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-08.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-08.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-07.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-25.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-24.md",
       "skipped": true
     }
   ],
@@ -144,11 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美国或加征对华关税；特朗普孤立伊朗计划",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-25.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：美加贸易谈判破裂；英伟达AI服务器据悉涨价",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-24.md"
     }
   ]
 }
