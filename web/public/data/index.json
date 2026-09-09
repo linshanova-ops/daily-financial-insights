@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-08T02:58:37.317Z",
-  "latest": "2026-09-08",
+  "generatedAt": "2026-09-09T03:02:35.045Z",
+  "latest": "2026-09-09",
   "briefings": [
+    {
+      "date": "2026-09-09",
+      "title": "Daily Financial Briefing",
+      "marketTone": "US cash reopened and sold. The S&P 500 fell 0.6%. Brent settled at $97.92. WTI printed a more-than-three-month high after Kharg. NBS printed August CPI at 0.8% and PPI at 3.8%. USD exports were 4014.4亿美元, up 25%. The 财经早茶 chart is Hong Kong versus Singapore finance pay. ChiNext closed at 3359.72, down 1.15%.",
+      "coverageWindow": "September 8–9, 2026"
+    },
     {
       "date": "2026-09-08",
       "title": "Daily Financial Briefing",
