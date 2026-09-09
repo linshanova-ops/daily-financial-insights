@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-09T02:36:03.970Z",
+  "at": "2026-09-09T03:22:01.149Z",
   "briefingDate": "2026-09-09",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-09.md",
-      "subject": "彭博财经早茶：美国袭击伊朗油轮；中国通胀料升温",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5066,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-09.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-09.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美国袭击伊朗油轮；中国通胀料升温",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-09.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美加贸易战恐升级；马来西亚拟采用华为AI芯片",
