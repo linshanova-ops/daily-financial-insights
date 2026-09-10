@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-09T03:02:35.045Z",
-  "latest": "2026-09-09",
+  "generatedAt": "2026-09-10T02:53:52.526Z",
+  "latest": "2026-09-10",
   "briefings": [
+    {
+      "date": "2026-09-10",
+      "title": "Daily Financial Briefing",
+      "marketTone": "US cash sold a third session. The S&P 500 closed at 7636.36, down 0.48%. Brent settled at $101.21. The official 10-year yield was 4.83% after a $6bn Treasury buyback. NBS has August CPI at 0.8% and PPI at 3.8%. The 财经早茶 chart is that 10-year yield at a 2023 high.",
+      "coverageWindow": "September 9–10, 2026"
+    },
     {
       "date": "2026-09-09",
       "title": "Daily Financial Briefing",
