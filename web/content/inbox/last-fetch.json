@@ -1,25 +1,17 @@
 {
-  "at": "2026-09-10T02:38:22.669Z",
+  "at": "2026-09-10T03:15:49.824Z",
   "briefingDate": "2026-09-10",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-10.md",
-      "subject": "彭博财经早茶：苹果折叠屏手机亮相；美债回购力度逊预期",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 4756,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-10.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-10.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W37.md",
-      "subject": "The Ceiling Everyone Can See",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 15078,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：苹果折叠屏手机亮相；美债回购力度逊预期",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-10.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "The Ceiling Everyone Can See",
+      "path": "web/content/inbox/glassnode-insights/2026-W37.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美国袭击伊朗油轮；中国通胀料升温",
