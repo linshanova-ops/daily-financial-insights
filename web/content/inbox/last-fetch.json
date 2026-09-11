@@ -1,8 +1,18 @@
 {
-  "at": "2026-09-10T05:28:24.410Z",
-  "briefingDate": "2026-09-10",
+  "at": "2026-09-11T02:38:05.213Z",
+  "briefingDate": "2026-09-11",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-11.md",
+      "subject": "彭博财经早茶：美债回购未满上限；月之暗面被指蒸馏",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5086,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-11.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-11.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-10.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-28.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-27.md",
       "skipped": true
     }
   ],
@@ -139,11 +144,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：聚焦杰克逊霍尔年会；委内瑞拉考虑退出OPEC",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-28.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：英伟达营收展望远超预期；智谱神秘AI模型",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-27.md"
     }
   ]
 }
