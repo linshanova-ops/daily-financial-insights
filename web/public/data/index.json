@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-10T02:53:52.526Z",
-  "latest": "2026-09-10",
+  "generatedAt": "2026-09-11T02:57:21.930Z",
+  "latest": "2026-09-11",
   "briefings": [
+    {
+      "date": "2026-09-11",
+      "title": "Daily Financial Briefing",
+      "marketTone": "US cash sold a fourth session. The S&P 500 closed at 7,591.70, down 0.6%. Brent settled at 107.63. The official 10-year yield was 4.95% after a 51.87亿美元 Treasury buyback. The ECB raised the deposit rate to 2.50%. The 财经早茶 chart is US benchmark borrowing costs with that 10-year at a 2023 high.",
+      "coverageWindow": "September 10–11, 2026"
+    },
     {
       "date": "2026-09-10",
       "title": "Daily Financial Briefing",
