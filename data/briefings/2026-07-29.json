@@ -1,0 +1,1012 @@
+{
+  "date": "2026-07-29",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "July 28–29, 2026",
+  "publishedAt": "2026-07-29T15:30:00Z",
+  "keySources": [
+    {
+      "label": "彭博 Markets Daily China / 财经早茶 (Jul 29 inbox)",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "彭博周末茶歇 (Jul 25 inbox)",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "AP — Jul 28 US closes",
+      "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-d2a114bce818cab6ee9583f4815cb89a"
+    },
+    {
+      "label": "CNBC — Jul 28 oil settle + yields",
+      "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+    },
+    {
+      "label": "21财经 — Jul 28 A股收评",
+      "href": "https://m.21jingji.com/article/20260728/herald/6cf3ea638c5dba8600e62dfeb6421d7e.html"
+    },
+    {
+      "label": "新浪财经 — 长鑫科技次日行情",
+      "href": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikkaaf0429756.shtml"
+    },
+    {
+      "label": "企业时报 / 东方财富Choice — Jul 28 港股收盘",
+      "href": "http://www.cqtresearch.com/caijing/2026/0728/263548.html"
+    },
+    {
+      "label": "CoinDesk — Jul 28 BTC",
+      "href": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+    },
+    {
+      "label": "TradingKey — Jul 28 美股收盘 / SOX",
+      "href": "https://www.tradingkey.com/analysis/stocks/us-stocks/262059546-us-stock-dow-500-apple-5-trillion-market-cap-sox-4-percent-sandisk-below-1100-tradingkey"
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": "今日图表（彭博 Jul 29）",
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-07-29.png",
+      "analysis": "彭博 Jul 29 邮件在「今日图表」栏位未附可见文字（图表已保存至 inbox-charts）；同日核心叙事是地缘与利率的拉锯：伊朗对中东美军发动导弹袭击被拦截，WTI原油应声大涨，而美联储周三料维持利率不变。So what：油价的任何反弹都可能放大FOMC声明对风险资产的冲击，与芯片股盈利担忧叠加。",
+      "source": {
+        "label": "彭博 Markets Daily China / 财经早茶",
+        "href": "https://www.bloomberg.com/asia"
+      },
+      "sources": [
+        {
+          "label": "CNBC Jul 28",
+          "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+        }
+      ]
+    }
+  ],
+  "marketTone": "Value beats AI beta for a second session: Jul 28 Dow +1.03% while SOX −4.49% and Nasdaq slipped; oil fell again into Wednesday's Fed decision, then WTI jumped overnight in Asia after Iran's missile attack on US forces was intercepted — geopolitics and the Fed statement now pull in opposite directions.",
+  "summary": [
+    {
+      "text": "Jul 28 US close: S&P 500 +0.21% to 7,428.78, Dow +1.03% (537.24 pts) to 52,747.32, Nasdaq −0.22% to 24,876.91; AP said most stocks rose on earnings while chip/AI winners capped gains.",
+      "sources": [
+        {
+          "label": "AP Jul 28",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-d2a114bce818cab6ee9583f4815cb89a"
+        },
+        {
+          "label": "TradingKey Jul 28",
+          "href": "https://www.tradingkey.com/analysis/stocks/us-stocks/262059546-us-stock-dow-500-apple-5-trillion-market-cap-sox-4-percent-sandisk-below-1100-tradingkey"
+        }
+      ]
+    },
+    {
+      "text": "Philadelphia Semiconductor Index fell 4.49% to 11,035.68; Apple reached a $5tn market-cap headline while memory/optical names extended losses.",
+      "sources": [
+        {
+          "label": "TradingKey Jul 28",
+          "href": "https://www.tradingkey.com/analysis/stocks/us-stocks/262059546-us-stock-dow-500-apple-5-trillion-market-cap-sox-4-percent-sandisk-below-1100-tradingkey"
+        },
+        {
+          "label": "AP Jul 28",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-d2a114bce818cab6ee9583f4815cb89a"
+        }
+      ]
+    },
+    {
+      "text": "WTI settled at $79.26 (−4.0%) and Brent at $84.09 (−4.8%) on Jul 28; 10-year Treasury yield eased to about 4.606% as oil relief met Fed caution.",
+      "sources": [
+        {
+          "label": "CNBC Jul 28",
+          "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 28 A股：上证指数 −1.16% 报3813.31点，深证成指 −4.52%，创业板指 −7.35%，科创50 −6.33%；存储/CPO 板块重挫，两市成交约2.03万亿元。",
+      "sources": [
+        {
+          "label": "21财经 Jul 28",
+          "href": "https://m.21jingji.com/article/20260728/herald/6cf3ea638c5dba8600e62dfeb6421d7e.html"
+        },
+        {
+          "label": "新浪财经 Jul 28",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-28/doc-inikkaai2031076.shtml"
+        }
+      ]
+    },
+    {
+      "text": "长鑫科技上市次日低开7.71%后回稳，收盘49.00元（+0.06%），总市值约3.28万亿元，仍居A股市值榜首；首日成交1411.87亿元创A股纪录。",
+      "sources": [
+        {
+          "label": "新浪财经 Jul 28",
+          "href": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikkaaf0429756.shtml"
+        },
+        {
+          "label": "21财经 Jul 29",
+          "href": "https://m.21jingji.com/article/20260729/herald/01f10a07a8a8421556c7ac01710f2acc.html"
+        }
+      ]
+    },
+    {
+      "text": "港股 Jul 28：恒生指数 +0.41% 报25310.85点，恒生科技指数 +0.61% 报4730.61点。",
+      "sources": [
+        {
+          "label": "企业时报 / 东方财富Choice Jul 28",
+          "href": "http://www.cqtresearch.com/caijing/2026/0728/263548.html"
+        }
+      ]
+    },
+    {
+      "text": "Bitcoin slid about 2.7% and dipped below $63,000 after the US close as Asia risk-off (Kospi −10%) hit crypto beta; liquidations topped $500m in 24h.",
+      "sources": [
+        {
+          "label": "CoinDesk Jul 28",
+          "href": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+        },
+        {
+          "label": "Cointelegraph Jul 28",
+          "href": "https://cointelegraph.com/markets/bitcoin-lows-pierce-63k-as-asia-chip-stock-crash-spills"
+        }
+      ]
+    }
+  ],
+  "signal": "Rotation is the tape: oil relief and earnings lift cyclicals, but AI hardware and China growth names are repricing financing/valuation risk ahead of the Fed statement.",
+  "watch": "Whether the Fed (14:00 ET Wed) validates lower oil as disinflationary without turning more hawkish; watch SOX stabilization, Changxin follow-through vs Shanghai breadth, and Brent staying below $90.",
+  "globalRegime": "Late-cycle policy sensitivity with sector rotation: energy premium unwinds help duration and value, while AI capex/financing stress and China tech valuation reset dominate downside headlines.",
+  "globalChanged": [
+    {
+      "text": "特朗普在白宫会晤内塔尼亚胡，缓和对伊朗动武威胁，为进一步开展外交谈判铺路；不过伊朗周三亚洲清晨再次对驻中东美军发动导弹袭击并被美军拦截，WTI原油应声大涨。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美联储周三将公布利率决定，交易员防范升息风险，与联邦基金利率挂钩的期货头寸升至历史最高水平。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国6月份商品贸易逆差收窄，7月消费者信心下滑，民众对营商环境和就业市场看法恶化。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "韩国存储芯片巨头SK海力士季度营业利润大幅增长（邮件称同比劲增），但仍低于分析师平均预期，令人担心推动半导体行业大涨的人工智能热潮可能正在放缓。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "包括OpenAI与Anthropic在内，来自顶尖AI企业的逾千名员工签署倡议书，呼吁华府必要时放慢前沿人工智能的发展步伐，防止技术进步过快。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "路透报道，早些时候误入侵Hugging Face系统的OpenAI智能体还攻破了纽约科技公司Modal Labs一名客户的系统。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "据报OpenAI和Anthropic推动美国扩大AI模型审查范围，将竞争对手的模型也纳入其中。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国禁止进口外国生产的移动机器人和联网电源逆变器，称可能造成供应链漏洞或构成网络安全风险。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "两位OPEC+代表透露，在9月完成最后一次增产后，OPEC+预计将暂停上调石油生产配额。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "苹果公司据悉拟大力开拓智能家居市场，计划推出以Siri AI为核心的家庭中枢设备，以及新一代Apple TV机顶盒和升级版HomePod mini。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国参议员就针对俄罗斯和伊朗的新制裁法案达成协议，可能危及美国与中国和印度之间本就动荡的贸易关系。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美股分化，道指涨537点、标普微涨，纳指微跌；芯片股再遭抛售，费城半导体指数跌4.49%。",
+      "sources": [
+        {
+          "label": "AP Jul 28",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-d2a114bce818cab6ee9583f4815cb89a"
+        },
+        {
+          "label": "TradingKey Jul 28",
+          "href": "https://www.tradingkey.com/analysis/stocks/us-stocks/262059546-us-stock-dow-500-apple-5-trillion-market-cap-sox-4-percent-sandisk-below-1100-tradingkey"
+        }
+      ]
+    },
+    {
+      "text": "亚太芯片链风险外溢：韩国Kospi单日重挫近11%，日本存储股同步走弱。",
+      "sources": [
+        {
+          "label": "CoinDesk Jul 28",
+          "href": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+        },
+        {
+          "label": "Cointelegraph Jul 28",
+          "href": "https://cointelegraph.com/markets/bitcoin-lows-pierce-63k-as-asia-chip-stock-crash-spills"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "Cheaper oil supports bonds and import-sensitive equities, but the Fed can still spoil the trade if it links energy relief to demand strength."
+    },
+    {
+      "text": "SOX breaking 11,200 support makes AI hardware the swing factor for Nasdaq breadth into mega-cap earnings."
+    },
+    {
+      "text": "China risk appetite is bifurcated: mega-cap hard tech liquidity event vs broad growth-index derating."
+    }
+  ],
+  "globalTensions": "Dow +1% vs SOX −4.5%; Brent −4.8% vs Fed hawkish-risk debate; HSI green vs ChiNext −7.4%; Changxin flat-close vs 存储 chip sector rout.",
+  "chinaStance": "Hard-tech self-reliance story is intact, but tradable A-share beta is under pressure: STAR/ChiNext sold off while Hong Kong mega-caps held up.",
+  "chinaChanged": [
+    {
+      "text": "中国商务部发布一份长约1万字的立场文件，驳斥贸易伙伴有关中国产能过剩的指责，称产能利用率仍处于合理区间。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "台湾称与美国合作挫败一起走私高端芯片的行动；据The Information报道，月之暗面寻求获得更多英伟达先进Blackwell芯片，用于训练未来的Kimi K4模型。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "路透：上海爱晟纳电子科技集团在主导中国国产浸没式深紫外（DUV）光刻机的生产，与阿斯麦的同类产品仍有较大差距。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "高盛表示，长鑫科技被五角大楼列入涉军企业名单并不意味着禁止美国人士投资该公司证券或与其进行证券交易；若长鑫上市后大盘重现“V形”走势，建议关注高盛给予买入评级的半导体和科技硬件股。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "《纽约邮报》：美国议员怀疑长鑫IPO背后有北京策划，希望启动国安调查。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "路透：中国直接与胡塞武装举行会谈，要求对方保证中国油轮顺利通过红海。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "丰树表示，与国寿资本合作推出旗下首只工业物流人民币核心基金，聚焦工业物流资产（邮件未披露可核验的公开链接）。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国发布关于调整部分能源资源行业企业城镇土地使用税政策的声明，专家称此举有助提升土地利用效率。",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China / 财经早茶",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "长鑫科技次日收49.00元，总市值约3.28万亿元，仍居A股首位；招股书显示合肥国资体系持股33.11%，对应市值约1.09万亿元。",
+      "sources": [
+        {
+          "label": "新浪财经 Jul 28",
+          "href": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikkaaf0429756.shtml"
+        },
+        {
+          "label": "21财经 Jul 29",
+          "href": "https://m.21jingji.com/article/20260729/herald/01f10a07a8a8421556c7ac01710f2acc.html"
+        }
+      ]
+    },
+    {
+      "text": "7月28日A股宽基指数全线下跌，创业板指跌7.35%，科创50跌6.33%；白酒、乳业等防御板块相对抗跌。",
+      "sources": [
+        {
+          "label": "21财经 Jul 28",
+          "href": "https://m.21jingji.com/article/20260728/herald/6cf3ea638c5dba8600e62dfeb6421d7e.html"
+        },
+        {
+          "label": "新浪财经 Jul 28",
+          "href": "https://finance.sina.com.cn/jjxw/2026-07-28/doc-inikkaai2031076.shtml"
+        }
+      ]
+    },
+    {
+      "text": "恒生指数涨0.41%、恒生科技涨0.61%，港股与A股成长线走势分化。",
+      "sources": [
+        {
+          "label": "企业时报 / 东方财富Choice Jul 28",
+          "href": "http://www.cqtresearch.com/caijing/2026/0728/263548.html"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "If Changxin stabilizes while STAR50 stops falling, the liquidity-event narrative can broaden; if not, it remains a single-stock story."
+    },
+    {
+      "text": "Watch policy signals ahead of Friday China PMI and any follow-up support for brokerages / state capital inflows cited in the weekend inbox."
+    }
+  ],
+  "chinaDivergences": "HSI up vs ChiNext −7%; Changxin market cap holds ~3.28tn while 存储/CPO sectors rout; oil relief helps importers but growth stocks still de-rate.",
+  "assetFramework": [
+    {
+      "asset": "US equities (S&P 500 / Nasdaq)",
+      "regime": "Value rotation with AI hardware drag",
+      "driver": "Jul 28: Dow +1.03%, S&P +0.21%, Nasdaq −0.22%; SOX −4.49%.",
+      "driverSources": [
+        {
+          "label": "AP Jul 28",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-d2a114bce818cab6ee9583f4815cb89a"
+        },
+        {
+          "label": "TradingKey Jul 28",
+          "href": "https://www.tradingkey.com/analysis/stocks/us-stocks/262059546-us-stock-dow-500-apple-5-trillion-market-cap-sox-4-percent-sandisk-below-1100-tradingkey"
+        }
+      ],
+      "read": "Index calm is uneven; breadth improved outside chips while AI leaders de-rate.",
+      "invalidator": "SOX reclaims 11,200+ and Nasdaq outperforms >1%"
+    },
+    {
+      "asset": "US Treasuries (10y)",
+      "regime": "Oil relief vs FOMC risk",
+      "driver": "10y around 4.606%, down on the session as crude fell.",
+      "driverSources": [
+        {
+          "label": "CNBC Jul 28",
+          "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+        }
+      ],
+      "read": "Duration gets support unless the Fed leans more hawkish than priced.",
+      "invalidator": "10y backs up >20bp on a hawkish surprise"
+    },
+    {
+      "asset": "US dollar (DXY)",
+      "regime": "Event-risk range trade",
+      "driver": "Fed statement is the next catalyst after oil-driven inflation repricing.",
+      "driverSources": [
+        {
+          "label": "CNBC Jul 28",
+          "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+        }
+      ],
+      "read": "USD can stay firm if the Fed refuses to bless faster easing.",
+      "invalidator": "DXY sells off with falling front-end yields"
+    },
+    {
+      "asset": "Gold",
+      "regime": "Residual geopolitical hedge",
+      "driver": "Oil relief does not fully remove Hormuz/Red Sea tail risks cited in weekend inbox.",
+      "driverSources": [
+        {
+          "label": "彭博周末茶歇",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC Jul 28",
+          "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+        }
+      ],
+      "read": "Gold holding up signals residual hedging demand.",
+      "invalidator": "Gold breaks down with yields lower and oil stable"
+    },
+    {
+      "asset": "Oil (Brent)",
+      "regime": "Diplomacy unwind inside supply-risk premium",
+      "driver": "Jul 28 settle $84.09 (−4.8%); WTI $79.26 (−4.0%).",
+      "driverSources": [
+        {
+          "label": "CNBC Jul 28",
+          "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+        }
+      ],
+      "read": "Trend is lower while diplomacy holds; supply headlines can reverse it fast.",
+      "invalidator": "Brent settles back above $95"
+    },
+    {
+      "asset": "China equities (Shanghai / ChiNext / STAR)",
+      "regime": "Growth derating with policy backstop hopes",
+      "driver": "Jul 28: Shanghai −1.16%, ChiNext −7.35%, STAR50 −6.33%.",
+      "driverSources": [
+        {
+          "label": "21财经 Jul 28",
+          "href": "https://m.21jingji.com/article/20260728/herald/6cf3ea638c5dba8600e62dfeb6421d7e.html"
+        }
+      ],
+      "read": "Breadth is poor; defensives led while tech hardware sold off.",
+      "invalidator": "Shanghai reclaims 3,860 with improving advance/decline"
+    },
+    {
+      "asset": "CNY",
+      "regime": "Oil-import relief vs tariff/sanction noise",
+      "driver": "Lower crude eases import inflation; US-China AI/tariff rhetoric stays elevated.",
+      "driverSources": [
+        {
+          "label": "CNBC Jul 28",
+          "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+        },
+        {
+          "label": "彭博周末茶歇",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "read": "CNY can stabilize if oil stays low and PMI does not disappoint.",
+      "invalidator": "CNH weakens sharply despite softer oil"
+    },
+    {
+      "asset": "Bitcoin",
+      "regime": "High-beta macro proxy",
+      "driver": "BTC dipped below $63,000 intraday and traded near the $63,000 handle; crypto long liquidations passed $500m in 24h.",
+      "driverSources": [
+        {
+          "label": "CoinDesk Jul 28",
+          "href": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+        },
+        {
+          "label": "Cointelegraph Jul 28",
+          "href": "https://cointelegraph.com/markets/bitcoin-lows-pierce-63k-as-asia-chip-stock-crash-spills"
+        }
+      ],
+      "read": "Crypto is not confirming a clean risk-on move.",
+      "invalidator": "BTC reclaims $66.5k with SOX stabilization"
+    }
+  ],
+  "signals": [
+    {
+      "grade": "STRONG",
+      "name": "Sector rotation out of AI hardware",
+      "evidence": "SOX −4.49% to 11,035.68; Nasdaq slipped while Dow +1.03%.",
+      "evidenceSources": [
+        {
+          "label": "TradingKey Jul 28",
+          "href": "https://www.tradingkey.com/analysis/stocks/us-stocks/262059546-us-stock-dow-500-apple-5-trillion-market-cap-sox-4-percent-sandisk-below-1100-tradingkey"
+        },
+        {
+          "label": "AP Jul 28",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-d2a114bce818cab6ee9583f4815cb89a"
+        }
+      ],
+      "mechanism": "Capital moves from crowded AI winners to earnings/value names into Fed.",
+      "disprovedIf": "SOX leads next two sessions and Nasdaq breaks higher"
+    },
+    {
+      "grade": "STRONG",
+      "name": "Oil premium keeps unwinding",
+      "evidence": "Brent settle $84.09 (−4.8%); WTI $79.26 (−4.0%) on Jul 28.",
+      "evidenceSources": [
+        {
+          "label": "CNBC Jul 28",
+          "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+        }
+      ],
+      "mechanism": "Diplomacy reduces Hormuz tail risk and inflation pass-through.",
+      "disprovedIf": "Brent back above $95 on verified disruption"
+    },
+    {
+      "grade": "STRONG",
+      "name": "China growth-index stress despite mega-cap liquidity event",
+      "evidence": "ChiNext −7.35%, STAR50 −6.33% while Changxin closes flat at 49.00.",
+      "evidenceSources": [
+        {
+          "label": "21财经 Jul 28",
+          "href": "https://m.21jingji.com/article/20260728/herald/6cf3ea638c5dba8600e62dfeb6421d7e.html"
+        },
+        {
+          "label": "新浪财经 Jul 28",
+          "href": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikkaaf0429756.shtml"
+        }
+      ],
+      "mechanism": "IPO liquidity does not offset broad tech derating without breadth confirmation.",
+      "disprovedIf": "STAR50 rebounds with Shanghai above 3,860"
+    },
+    {
+      "grade": "MODERATE",
+      "name": "Fed event risk dominates front-end rates",
+      "evidence": "Markets split between hold and hike odds ahead of Jul 29 statement.",
+      "evidenceSources": [
+        {
+          "label": "CNBC Jul 28",
+          "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+        }
+      ],
+      "mechanism": "Statement language can reset rate expectations with no dot plot.",
+      "disprovedIf": "Vol stays muted and front-end barely moves after decision"
+    },
+    {
+      "grade": "MODERATE",
+      "name": "Asia chip-chain contagion",
+      "evidence": "Kospi −10% session; SK hynix and Japanese memory names hit hard.",
+      "evidenceSources": [
+        {
+          "label": "CoinDesk Jul 28",
+          "href": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+        }
+      ],
+      "mechanism": "Global AI hardware repricing transmits through Asia supply chain.",
+      "disprovedIf": "Kospi recovers half the drop within two sessions"
+    },
+    {
+      "grade": "WEAK",
+      "name": "BTC follows risk-off, not oil relief",
+      "evidence": "BTC dipped below $63,000 intraday and held near the $63,000 handle; 24h long liquidations topped $500m.",
+      "evidenceSources": [
+        {
+          "label": "CoinDesk Jul 28",
+          "href": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+        },
+        {
+          "label": "Cointelegraph Jul 28",
+          "href": "https://cointelegraph.com/markets/bitcoin-lows-pierce-63k-as-asia-chip-stock-crash-spills"
+        }
+      ],
+      "mechanism": "Macro beta dominates when chip stress and Fed uncertainty coincide.",
+      "disprovedIf": "BTC decouples and rallies with SOX stabilization"
+    }
+  ],
+  "watchItems": [
+    {
+      "priority": "HIGH",
+      "headline": "FOMC statement and Warsh presser (30日02:00 BJT)",
+      "why": "Bloomberg inbox: traders are hedging hike risk with record fed-funds futures positioning; CNBC says markets mostly price a hold at 3.50–3.75%.",
+      "watch": "Statement language on energy disinflation vs core inflation; presser tone; front-end yields and USD immediately after.",
+      "trigger": "Hawkish hold or surprise hike with 2y yield jumping and Nasdaq extending losses.",
+      "invalidator": "Dovish hold that validates oil relief; 2y yield falls and SOX stabilizes.",
+      "horizon": "days",
+      "status": "escalated"
+    },
+    {
+      "priority": "HIGH",
+      "headline": "WTI after Iran missile interception vs Fed-week risk",
+      "why": "Bloomberg lede: WTI jumped after US forces intercepted an Iranian missile attack on Middle East US positions; OPEC+ may pause quota hikes after September.",
+      "watch": "Brent/WTI settle into FOMC; Hormuz and Red Sea headlines; China-Houthi tanker talks from email.",
+      "trigger": "Brent settles back above $95 on verified supply disruption.",
+      "invalidator": "Brent stays below $90 through the Fed statement with no new Gulf strikes.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "HIGH",
+      "headline": "SOX 11,035 close and AI hardware follow-through",
+      "why": "SOX −4.49% broke 11,200 narrative support; SK hynix profit miss (below consensus) adds fundamental worry to the chip repricing.",
+      "watch": "SOX vs 11,035; Nasdaq100 vs correction threshold cited in inbox; US mega-cap earnings.",
+      "trigger": "Another SOX down day with Nasdaq underperforming >1%.",
+      "invalidator": "SOX reclaims 11,200+ and Nasdaq leads for two sessions.",
+      "horizon": "days",
+      "status": "continuing"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "China PMI (Fri) and A-share growth stabilization",
+      "why": "ChiNext −7.35% / STAR50 −6.33% on Jul 28 while HSI rose; weekend inbox flagged Friday official PMI.",
+      "watch": "Shanghai vs 3,813; STAR50 breadth; Friday NBS PMI headline vs expectations.",
+      "trigger": "Shanghai closes below 3,800 with weak PMI.",
+      "invalidator": "Shanghai reclaims 3,860 with improving breadth before PMI.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Changxin follow-through vs domestic chip sentiment",
+      "why": "Day-2 close held 49.00 / ~CNY3.28tn; Goldman and NY Post headlines keep policy/geopolitical noise high.",
+      "watch": "Changxin turnover vs 存储 sector breadth; any US security-review headlines.",
+      "trigger": "Changxin breaks first-day low with STAR semis still falling.",
+      "invalidator": "Changxin holds above 45 with sector stabilization.",
+      "horizon": "days",
+      "status": "continuing"
+    }
+  ],
+  "suggestions": [
+    {
+      "priority": "HIGH",
+      "headline": "Fade oil relief if Brent fails to hold below $90",
+      "trigger": "Brent settles below $90 through the next two sessions.",
+      "invalidator": "Brent back above $95 on supply headlines.",
+      "rationale": "Inflation relief is only durable if the geopolitical premium stays out."
+    },
+    {
+      "priority": "HIGH",
+      "headline": "Watch SOX 11,200 as the AI stress line",
+      "trigger": "SOX stabilizes above 11,200 with Nasdaq breadth improving.",
+      "invalidator": "Another SOX leg down through 200-day support narrative.",
+      "rationale": "AI hardware remains the swing factor for US tech beta."
+    },
+    {
+      "priority": "HIGH",
+      "headline": "Do not confuse Changxin resilience with broad A-share health",
+      "trigger": "STAR50 and ChiNext stop falling while Shanghai reclaims 3,860.",
+      "invalidator": "Growth indexes continue to underperform for two more sessions.",
+      "rationale": "Single-stock liquidity events can mask index-level fragility."
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Keep Fed hedges through the statement",
+      "trigger": "Front-end yields rise into the decision.",
+      "invalidator": "Dovish hold with clear disinflation language.",
+      "rationale": "No dot plot means statement tone carries extra weight."
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Use HSI vs ChiNext spread as a China risk tell",
+      "trigger": "HSI Tech outperforms while A-share growth stabilizes.",
+      "invalidator": "Both sell off together again.",
+      "rationale": "Divergence shows where policy/liquidity support is working."
+    }
+  ],
+  "marketOverview": {
+    "asOfDate": "2026-07-28",
+    "source": {
+      "label": "Jul 28 tape wrap (AP / CNBC / 21财经 / 东方财富 / CoinDesk)",
+      "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-d2a114bce818cab6ee9583f4815cb89a"
+    },
+    "sources": [
+      {
+        "label": "AP Jul 28",
+        "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-d2a114bce818cab6ee9583f4815cb89a"
+      },
+      {
+        "label": "TradingKey Jul 28",
+        "href": "https://www.tradingkey.com/analysis/stocks/us-stocks/262059546-us-stock-dow-500-apple-5-trillion-market-cap-sox-4-percent-sandisk-below-1100-tradingkey"
+      },
+      {
+        "label": "CNBC Jul 28",
+        "href": "https://www.cnbc.com/2026/07/28/treasury-yields-edge-lower-ahead-of-fed-rates-decision-as-oil-prices-tumble.html"
+      },
+      {
+        "label": "21财经 Jul 28",
+        "href": "https://m.21jingji.com/article/20260728/herald/6cf3ea638c5dba8600e62dfeb6421d7e.html"
+      },
+      {
+        "label": "企业时报 / 东方财富Choice Jul 28",
+        "href": "http://www.cqtresearch.com/caijing/2026/0728/263548.html"
+      },
+      {
+        "label": "CoinDesk Jul 28",
+        "href": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+      },
+      {
+        "label": "Cointelegraph Jul 28",
+        "href": "https://cointelegraph.com/markets/bitcoin-lows-pierce-63k-as-asia-chip-stock-crash-spills"
+      }
+    ],
+    "items": [
+      {
+        "label": "美国股市",
+        "text": "油价回落推动标普500等权重指数创新高；受芯片股下跌拖累，纳斯达克100指数逼近技术性回调门槛"
+      },
+      {
+        "label": "中概股",
+        "text": "金龙中国指数连续第二天反弹，京东和网易对指数贡献最大"
+      },
+      {
+        "label": "美国债市",
+        "text": "油价和科技股下跌推动国债上涨，世界大型企业联合会消费者信心指数意外下降也为债市提供了支撑"
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数基本持稳，澳元在G10货币中表现垫底"
+      },
+      {
+        "label": "欧洲股债",
+        "text": "随着油价连续第三个交易日走低，欧洲债券延续涨势；欧洲股市受企业财报提振，联合利华跃升8%"
+      },
+      {
+        "label": "能源",
+        "text": "油价创2020年以来最大三日跌幅，更多迹象显示中东紧张局势缓和"
+      },
+      {
+        "label": "金属",
+        "text": "工业金属普遍下跌，芯片股跌势加剧打压市场情绪；金价下挫，投资者在美联储利率决议前保持谨慎"
+      }
+    ]
+  },
+  "sources": "彭博 Markets Daily China / 财经早茶 (Jul 29 inbox) for 国际要闻→globalChanged 1:1, 大中华新闻→chinaChanged 1:1, 市场一览, 经济数据日程+央行动态 watchItems and chart; 彭博周末茶歇 (Jul 25) for week-ahead context; AP and TradingKey for Jul 28 US closes and SOX; CNBC for oil settle and Treasury yields; 21财经 and 新浪财经 for Jul 28 A股收评 and 长鑫科技次日; 东方财富Choice转载 for 港股收盘; CoinDesk/Cointelegraph for BTC.",
+  "caveats": "Bloomberg newsletter items without public article URLs are carried with the stable Bloomberg Asia cite. Hard numbers are attached to primary or well-known secondary outlets (AP/CNBC/21财经/新浪财经/CoinDesk). This report is research synthesis, not investment advice.",
+  "singleSource": "Holistic 彭博 Jul 29 财经早茶 merge: 国际要闻→globalChanged Chinese 1:1 (11/11); 大中华新闻→chinaChanged Chinese 1:1 (8/8 email bullets + tape lines); 市场一览 / 经济数据日程+央行动态 watchItems; 今日图表 image saved (no caption text in email body). Primaries attached for Jul 28 US closes, A/HK tape, oil/yields, BTC. marketDashboard injected via fetch-market-closes; publishedAt updated.",
+  "marketDashboard": {
+    "asOf": "2026-07-29T04:09:34.773Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,428.78",
+            "change": "+0.21%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-28",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "24,876.91",
+            "change": "−0.22%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-28",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "18.21",
+            "change": "−2.46%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-28",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "60,784.10",
+            "change": "−6.39%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "25,667.96",
+            "change": "+1.83%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,838.71",
+            "change": null,
+            "changeDirection": "flat",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,793.18",
+            "change": "−1.69%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.26%",
+            "change": "−5.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-28",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.35%",
+            "change": "−5.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-28",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.61%",
+            "change": "−4.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-28",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.09%",
+            "change": "−3.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-28",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "163.5890",
+            "change": "−0.11%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.7710",
+            "change": "+0.08%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,021.50",
+            "change": "−0.37%",
+            "changeDirection": "down",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$87.81",
+            "change": "+4.42%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$63,551",
+            "change": "+0.42%",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0063%",
+            "change": "+0.413 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-07-29",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-07-29"
+}
