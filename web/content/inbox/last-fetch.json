@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-11T02:38:05.213Z",
+  "at": "2026-09-11T03:19:11.560Z",
   "briefingDate": "2026-09-11",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-11.md",
-      "subject": "彭博财经早茶：美债回购未满上限；月之暗面被指蒸馏",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5086,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-11.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-11.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美债回购未满上限；月之暗面被指蒸馏",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-11.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：苹果折叠屏手机亮相；美债回购力度逊预期",
