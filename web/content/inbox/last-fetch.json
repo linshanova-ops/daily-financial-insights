@@ -1,25 +1,17 @@
 {
-  "at": "2026-09-14T02:35:27.325Z",
+  "at": "2026-09-14T03:29:14.704Z",
   "briefingDate": "2026-09-14",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-14.md",
-      "subject": "彭博财经早茶：火热CPI扫清美联储加息障碍；AI巨头齐声呼吁放慢开发",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5218,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-14.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-14.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W37.md",
-      "subject": "彭博周末茶歇：苹果折叠屏时刻",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5572,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：火热CPI扫清美联储加息障碍；AI巨头齐声呼吁放慢开发",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-14.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：苹果折叠屏时刻",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W37.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美债回购未满上限；月之暗面被指蒸馏",
