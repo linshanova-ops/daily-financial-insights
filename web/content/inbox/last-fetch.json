@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-15T02:38:00.395Z",
+  "at": "2026-09-15T03:27:01.373Z",
   "briefingDate": "2026-09-15",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-15.md",
-      "subject": "彭博财经早茶：特朗普反对AI减速；中国新增人民币贷款逊预期",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5263,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-15.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-15.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：特朗普反对AI减速；中国新增人民币贷款逊预期",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-15.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：火热CPI扫清美联储加息障碍；AI巨头齐声呼吁放慢开发",
