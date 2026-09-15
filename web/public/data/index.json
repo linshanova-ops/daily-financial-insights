@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-14T02:59:28.363Z",
-  "latest": "2026-09-14",
+  "generatedAt": "2026-09-15T03:04:05.871Z",
+  "latest": "2026-09-15",
   "briefings": [
+    {
+      "date": "2026-09-15",
+      "title": "Daily Financial Briefing",
+      "marketTone": "US cash fell. The S&P 500 closed at 7,619.98, down 0.5%. The official 10-year yield was 4.97% after trading through 5% in the session. Brent settled at 105.68. The 财经早茶 chart is the ECB’s September staff inflation and GDP forecasts versus June. PBOC rolled 5000亿元 of 6-month reverse repos as an equal amount matured. August industrial production rose 5.2%.",
+      "coverageWindow": "September 14–15, 2026"
+    },
     {
       "date": "2026-09-14",
       "title": "Daily Financial Briefing",

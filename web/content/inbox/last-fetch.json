@@ -1,8 +1,18 @@
 {
-  "at": "2026-09-14T05:36:30.536Z",
-  "briefingDate": "2026-09-14",
+  "at": "2026-09-15T02:38:00.395Z",
+  "briefingDate": "2026-09-15",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-15.md",
+      "subject": "彭博财经早茶：特朗普反对AI减速；中国新增人民币贷款逊预期",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5263,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-15.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-15.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-14.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-01.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-31.md",
       "skipped": true
     }
   ],
@@ -139,11 +144,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：希音登陆港股；中东局势升级",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-01.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：沃什鹰派信号提振加息预期；中国加码楼市支持",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-08-31.md"
     }
   ]
 }
