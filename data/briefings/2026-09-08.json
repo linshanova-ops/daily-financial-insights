@@ -1,0 +1,1464 @@
+{
+  "date": "2026-09-08",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "September 4–8, 2026",
+  "publishedAt": "2026-09-08T02:47:59.558Z",
+  "keySources": [
+    {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia",
+      "books": [
+        "fx",
+        "commodities",
+        "rates",
+        "asia-equities"
+      ],
+      "influence": "8 September 财经早茶. Chart is China bank net interest margin at a record low. 市场一览 is that mail in Chinese, mail order. US cash was closed for Labor Day. Yen through the post-intervention high. Brent near a seven-week high after another Jizan strike."
+    },
+    {
+      "label": "Japan MOF — August reserve assets",
+      "href": "https://www.mof.go.jp/english/policy/international_policy/reference/official_reserve_assets/e0808.html",
+      "books": [
+        "fx"
+      ],
+      "influence": "Official reserve assets $1,207,524 million, down $79,575 million."
+    },
+    {
+      "label": "CNBC — Japan reserves",
+      "href": "https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html",
+      "books": [
+        "fx",
+        "asia-equities"
+      ],
+      "influence": "Reserves $1.207 trillion from $1.287 trillion. Nikkei 66,399.84 (+2.12%). Kospi 6,995.39 (+4.61%). Stoxx 600 just below flat. Brent last $97.68 during the European session."
+    },
+    {
+      "label": "华尔街见闻 — 日元 154.06",
+      "href": "https://wallstreetcn.com/articles/3781237",
+      "books": [
+        "fx"
+      ],
+      "influence": "USD/JPY 154.06 on 7 September, through 155."
+    },
+    {
+      "label": "华尔街见闻早餐",
+      "href": "https://wallstreetcn.com/articles/3781261",
+      "books": [
+        "fx",
+        "commodities",
+        "asia-equities"
+      ],
+      "influence": "8 September wrap. Brent settled $97, up 0.75%. Stoxx 600 649.90. Bitcoin through $79,000. ChiNext hardware versus Hang Seng −0.93%."
+    },
+    {
+      "label": "华尔街见闻 — 霍尔木兹通航",
+      "href": "https://wallstreetcn.com/articles/3781222",
+      "books": [
+        "commodities"
+      ],
+      "influence": "About 10 commercial ships a day through Hormuz in the 10 days to 6 September."
+    },
+    {
+      "label": "华尔街见闻 — 吉赞遇袭",
+      "href": "https://wallstreetcn.com/articles/3781235",
+      "books": [
+        "commodities"
+      ],
+      "influence": "Aramco’s Jizan site was hit again on Monday. The 40万桶/day refinery has been shut since July. Kpler: August product loadings were zero."
+    },
+    {
+      "label": "CNBC Daily Open — Iran / diesel",
+      "href": "https://www.cnbc.com/2026/09/07/cnbc-daily-open-trump-iran-war-oil-prices-nuclear-deal.html",
+      "books": [
+        "commodities",
+        "rates"
+      ],
+      "influence": "Energy Secretary Wright said there may be no nuclear deal. US diesel averaged $5.85 a gallon."
+    },
+    {
+      "label": "华尔街见闻 — 美国汽油",
+      "href": "https://wallstreetcn.com/articles/3781250",
+      "books": [
+        "commodities"
+      ],
+      "influence": "AAA regular gasoline about $4.15 a gallon as of 5 September."
+    },
+    {
+      "label": "Eurostat — euro-area Q2 GDP final",
+      "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap",
+      "books": [
+        "rates"
+      ],
+      "influence": "Q2 GDP +0.6% q/q in the euro area after a 0.4% flash. Employment +0.1%."
+    },
+    {
+      "label": "第一财经 — 八家金融央企增资",
+      "href": "https://www.yicai.com/news/103353417.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "Eight central financial firms plan to raise 3600亿元 (CNY360bn). Ministry of Finance will issue 3000亿元 (CNY300bn) of special treasury bonds."
+    },
+    {
+      "label": "第一财经 — 二季度净息差",
+      "href": "https://www.yicai.com/news/103319405.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "NFRA: commercial-bank NIM 1.41% in Q2 after 1.40% in Q1."
+    },
+    {
+      "label": "新华财经 — Monday OMO",
+      "href": "https://m.cnfin.com/yw-lb/zixun/20260907/4466317_1.html",
+      "books": [
+        "rates",
+        "asia-equities"
+      ],
+      "influence": "5亿元 7-day reverse repo plus 5000亿元 buyout reverse repo versus 50亿元 and 5000亿元 maturing. Net drain 45亿元."
+    },
+    {
+      "label": "新华财经 — Monday A-share close",
+      "href": "https://www.cnfin.com/yw-lb/detail/20260907/4466142_1.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "Shanghai 3932.70 (+0.07%). Shenzhen 13774.91 (+1.91%). ChiNext 3398.68 (+3.41%). Turnover 19644亿元."
+    },
+    {
+      "label": "香港中通社 — Monday Hang Seng",
+      "href": "https://hkcna.hk/docDetail.jsp?channel=2812&id=101415130",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "Hang Seng 25,413.12 (−237.75 / −0.93%). Turnover HK$2096.73bn."
+    },
+    {
+      "label": "华尔街见闻 — 中际旭创 / 高盛",
+      "href": "https://wallstreetcn.com/articles/3781200",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "中际旭创 A rose more than 10%. Goldman Sachs initiated the H share at Buy."
+    },
+    {
+      "label": "SAFE — August FX reserves",
+      "href": "https://www.safe.gov.cn/safe/2026/0907/27859.html",
+      "books": [
+        "fx",
+        "commodities"
+      ],
+      "influence": "August FX reserves 34383亿美元, up 195亿美元."
+    },
+    {
+      "label": "财新 — 央行购金",
+      "href": "https://finance.caixin.com/2026-09-07/102482624.html",
+      "books": [
+        "commodities"
+      ],
+      "influence": "Gold reserves 7673万盎司, up 65万盎司, a 22nd month. Largest monthly add since November 2023."
+    },
+    {
+      "label": "HKMA — August FX reserves",
+      "href": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/09/20260907-6/",
+      "books": [
+        "fx"
+      ],
+      "influence": "Hong Kong FX reserves $442.9bn at end-August, from $447.9bn in July."
+    },
+    {
+      "label": "Cointelegraph — Liquid 4,000 BTC",
+      "href": "https://cointelegraph.com/news/liquid-network-pauses-320m-bitcoin-withdrawal",
+      "books": [
+        "crypto"
+      ],
+      "influence": "About 4,000 BTC worth $320 million left Liquid’s federation wallet. About 3,998.5 BTC was still unreturned in the evening update."
+    },
+    {
+      "label": "Cointelegraph — Hodler's Digest ETF",
+      "href": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest",
+      "books": [
+        "crypto"
+      ],
+      "influence": "US spot bitcoin ETF inflows $986.9 million in the week ending Friday."
+    },
+    {
+      "label": "BlockBeats — bitcoin ETF week",
+      "href": "https://www.theblockbeats.info/flash/365522",
+      "books": [
+        "crypto"
+      ],
+      "influence": "律动 — Farside: US spot bitcoin ETF week net inflow $986.7 million as of 5 September."
+    },
+    {
+      "label": "BlockBeats — Liquid white-hat",
+      "href": "https://www.theblockbeats.info/flash/365763",
+      "books": [
+        "crypto"
+      ],
+      "influence": "律动 — Blockstream said bridge nodes are patched. About 3,998.5 BTC still held."
+    },
+    {
+      "label": "BlockBeats — Warsh pressure",
+      "href": "https://www.theblockbeats.info/flash/365524",
+      "books": [
+        "rates"
+      ],
+      "influence": "律动 — Trump, Vance, Bessent, and Navarro pressed Warsh into the September FOMC."
+    },
+    {
+      "label": "AP — Friday US close",
+      "href": "https://apnews.com/article/stock-market-dow-nasdaq-jobs-ebc11cfa2cf8baf4491bf3d4199c1d74",
+      "books": [
+        "us-equities",
+        "rates"
+      ],
+      "influence": "Last US cash close: S&P 500 7,718.60 (−0.4%). Dow 53,414.25. Nasdaq 26,506.99."
+    },
+    {
+      "label": "CNBC — August jobs",
+      "href": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
+      "books": [
+        "rates",
+        "us-equities"
+      ],
+      "influence": "Nonfarm payrolls +162,000 versus the Dow Jones estimate of 53,000. Unemployment 4.1%."
+    },
+    {
+      "label": "U.S. Treasury — daily yield curve",
+      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+      "books": [
+        "rates"
+      ],
+      "influence": "Official 9/4 curve: 2Y 4.37%; 5Y 4.54%; 10Y 4.78%; 30Y 5.24%."
+    },
+    {
+      "label": "中金 — 美元走弱仍待通胀确认",
+      "href": "http://mp.weixin.qq.com/s?__biz=Mzg4OTY5NzE3Ng==&mid=2247512124&idx=1&sn=604676b652a9d7b3b883fb8b42b10595&chksm=ce10f8cf628d06caba1fcdd84a35aa6797f49d91849056f86efed345430cb20a2be97c1eb491&scene=0&xtrack=1#rd",
+      "books": [
+        "rates"
+      ],
+      "influence": "Desk view: the jobs beat lowered the employment constraint on a hike, and September still needs the inflation prints."
+    },
+    {
+      "label": "中金 — 美国为何参与日元干预",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247852493&idx=2&sn=3256563ab315f0e4da4e4a82dc9241bf&chksm=eb0f957c457533756c218fdc48e6a238a1a2650276b4baede59e9df23faa15f492804303944c&scene=0&xtrack=1#rd",
+      "books": [
+        "fx"
+      ],
+      "influence": "Desk view on the yen card: Washington joined yen-buying so Tokyo would not have to dump Treasuries; FIMA is the path that does not sell UST."
+    },
+    {
+      "label": "中金 — 中国的降息预期如何演化？",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247857353&idx=3&sn=72b484b6446c121d273476607ee96cbf&chksm=eb6ad97bc0b2328540cda3f48bf57c4f71e2a5a550f03ab5299422cfda39720e061a8309d21b&scene=0&xtrack=1#rd",
+      "books": [
+        "asia-equities",
+        "rates"
+      ],
+      "influence": "Desk view on the NIM card: swap-implied cut expectations sit at a historically strong level while the 7-day rate has gone uncut this year."
+    },
+    {
+      "label": "BLS PPI",
+      "href": "https://www.bls.gov/ppi/",
+      "books": [
+        "rates"
+      ],
+      "influence": "August PPI 10 September 8:30 a.m. ET / 20:30 Beijing."
+    },
+    {
+      "label": "BLS CPI",
+      "href": "https://www.bls.gov/cpi/",
+      "books": [
+        "rates"
+      ],
+      "influence": "August CPI 11 September 8:30 a.m. ET / 20:30 Beijing."
+    },
+    {
+      "label": "Federal Reserve calendar",
+      "href": "https://www.federalreserve.gov/json/calendar.json",
+      "books": [
+        "rates"
+      ],
+      "influence": "FOMC 16 September 14:00 ET is 02:00 Beijing on 17 September."
+    },
+    {
+      "label": "ECB Governing Council calendar",
+      "href": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "books": [
+        "rates"
+      ],
+      "influence": "Monetary-policy meeting and press conference in Berlin on 10 September."
+    },
+    {
+      "label": "Destatis — Germany August CPI flash",
+      "href": "https://www.destatis.de/EN/Press/2026/08/PE26_311_611.html",
+      "books": [
+        "rates"
+      ],
+      "influence": "Finals due 10 September."
+    },
+    {
+      "label": "CoinGecko — Bitcoin",
+      "href": "https://www.coingecko.com/en/coins/bitcoin",
+      "books": [
+        "crypto"
+      ],
+      "influence": "Dated BTC 24h for the dashboard row."
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": "今日图表（彭博 Sep 8）— 中国银行业净息差降至纪录低点",
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-09-08.png",
+      "analysis": "彭博「今日图表」标题写的是中国银行业净息差降至纪录低点。橙色线从2012年高位一路下到序列最低，末端有一次微幅回升。这是商业银行净息差，不是上证综指，也不是非农。",
+      "source": {
+        "label": "彭博 Markets Daily China / 财经早茶",
+        "href": "https://www.bloomberg.com/asia"
+      }
+    }
+  ],
+  "marketTone": "US cash was closed for Labor Day. The yen printed 154.06 against the dollar. Official Japanese reserves fell to $1,207,524 million. Brent settled at $97. The 财经早茶 chart is China bank net interest margin at a record low. ChiNext closed at 3398.68, up 3.41%, while Hang Seng fell 0.93%.",
+  "summary": [
+    {
+      "text": "财经早茶 市场一览: US cash was closed for Labor Day. AP’s last close is still Friday: S&P 500 7,718.60, down 0.4%.",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "AP Friday close",
+          "href": "https://apnews.com/article/stock-market-dow-nasdaq-jobs-ebc11cfa2cf8baf4491bf3d4199c1d74"
+        }
+      ]
+    },
+    {
+      "text": "Japan MOF: official reserve assets were $1,207,524 million at end-August, down $79,575 million. 华尔街见闻: USD/JPY printed 154.06, through 155. 财经早茶 外汇市场: the yen is the strongest since February and through the post-joint-intervention high.",
+      "sources": [
+        {
+          "label": "Japan MOF reserves",
+          "href": "https://www.mof.go.jp/english/policy/international_policy/reference/official_reserve_assets/e0808.html"
+        },
+        {
+          "label": "华尔街见闻 日元",
+          "href": "https://wallstreetcn.com/articles/3781237"
+        },
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻: Brent settled at $97, up 0.75%, and Aramco’s Jizan site was hit again on Monday. 财经早茶 大宗商品: Brent was near a seven-week high.",
+      "sources": [
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781261"
+        },
+        {
+          "label": "华尔街见闻 吉赞",
+          "href": "https://wallstreetcn.com/articles/3781235"
+        },
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "新华财经: ChiNext closed at 3398.68, up 3.41%. 香港中通社: Hang Seng closed at 25,413.12, down 0.93%. 财经早茶 今日图表: China bank net interest margin is at a record low.",
+      "sources": [
+        {
+          "label": "新华财经 A股",
+          "href": "https://www.cnfin.com/yw-lb/detail/20260907/4466142_1.html"
+        },
+        {
+          "label": "香港中通社",
+          "href": "https://hkcna.hk/docDetail.jsp?channel=2812&id=101415130"
+        },
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "signal": "A holiday-thin break of 155 took USD/JPY to 154.06 after Tokyo’s reserve tape confirmed the August yen-buying, and another Jizan strike left Brent at $97. Beijing recapped lenders while the chart is bank NIM at a record low, and ChiNext ripped optics while Hang Seng sold. CPI on 11 September still settles the FOMC at 02:00 Beijing on 17 September.",
+  "watch": "China August trade is dated for 8 September. Japan’s Q2 GDP final was 07:50 Beijing. Canada’s retaliatory tariffs take effect Tuesday. Destatis finals and the ECB in Berlin are 10 September. PPI is 10 September; CPI is 11 September. BOJ is 17–18 September. FOMC is 16 September at 14:00 ET, which is 02:00 Beijing on 17 September.",
+  "marketOverview": {
+    "asOfDate": "2026-09-08",
+    "note": "财经早茶 市场一览. Dated prints sit in Closes and Themes. Do not mix the Yahoo inject into these lines.",
+    "items": [
+      {
+        "label": "美国金融市场",
+        "text": "美国金融市场周一逢假日休市",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "AP Friday close",
+            "href": "https://apnews.com/article/stock-market-dow-nasdaq-jobs-ebc11cfa2cf8baf4491bf3d4199c1d74"
+          }
+        ]
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数下跌，日元兑美元升至2月以来最强水平，突破了此前美日联手干预汇市后触及的高点",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "Japan MOF reserves",
+            "href": "https://www.mof.go.jp/english/policy/international_policy/reference/official_reserve_assets/e0808.html"
+          }
+        ]
+      },
+      {
+        "label": "欧洲股债",
+        "text": "德国国债连续第五天下跌，油价居高不下加剧通胀担忧。欧洲股市基本持平",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "Eurostat Q2 GDP",
+            "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap"
+          }
+        ]
+      },
+      {
+        "label": "大宗商品",
+        "text": "布伦特原油期货逼近七周高点，据悉沙特阿美位于吉赞的石油设施周一再次遭袭。特朗普拟对精炼铜加征关税的猜测推动伦敦期铜触及纪录新高",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "华尔街见闻 吉赞",
+            "href": "https://wallstreetcn.com/articles/3781235"
+          }
+        ]
+      }
+    ],
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    }
+  },
+  "themeCards": [
+    {
+      "id": "yen-155",
+      "title": "The yen broke through the post-intervention high",
+      "grade": "STRONG",
+      "assets": [
+        "JPY"
+      ],
+      "fact": "Japan MOF: official reserve assets were $1,207,524 million at end-August, down $79,575 million. 华尔街见闻: USD/JPY printed 154.06 on Monday, through 155. 财经早茶 外汇市场: the yen is the strongest since February and through the high set after the US-Japan joint intervention. CNBC: reserves were $1.207 trillion, from $1.287 trillion.",
+      "factSources": [
+        {
+          "label": "Japan MOF reserves",
+          "href": "https://www.mof.go.jp/english/policy/international_policy/reference/official_reserve_assets/e0808.html"
+        },
+        {
+          "label": "华尔街见闻 日元",
+          "href": "https://wallstreetcn.com/articles/3781237"
+        },
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC Asia",
+          "href": "https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html"
+        }
+      ],
+      "mechanism": "The $79,575 million reserve drop is the August yen-buying hitting the official tape, and a Labor Day-thin break of 155 is why USD/JPY printed 154.06. CICC (7 August): Washington joined the yen-buying so Tokyo would not have to dump Treasuries, and FIMA is the path that does not sell UST. The BOJ decision on 17–18 September is the settle."
+    },
+    {
+      "id": "oil-jizan",
+      "title": "Another Jizan strike left Brent near a seven-week high",
+      "grade": "STRONG",
+      "assets": [
+        "Oil"
+      ],
+      "fact": "财经早茶 大宗商品: Brent was near a seven-week high after Aramco’s Jizan site was hit again on Monday. 华尔街见闻: Brent settled at $97, up 0.75%; the 40万桶/day Jizan refinery has been shut since July, and Kpler had August product loadings at zero. 华尔街见闻: about 10 commercial ships a day transited Hormuz in the 10 days to 6 September. CNBC: Energy Secretary Wright said there may be no nuclear deal, and US diesel averaged $5.85 a gallon.",
+      "factSources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781261"
+        },
+        {
+          "label": "华尔街见闻 吉赞",
+          "href": "https://wallstreetcn.com/articles/3781235"
+        },
+        {
+          "label": "CNBC Daily Open",
+          "href": "https://www.cnbc.com/2026/09/07/cnbc-daily-open-trump-iran-war-oil-prices-nuclear-deal.html"
+        }
+      ],
+      "mechanism": "A second Jizan hit with the refinery still shut is why Brent can settle at $97 beside a 10-ship Hormuz tape, and diesel at $5.85 is the same war premium in US pump prices. CPI on 11 September, through the energy line, is the next print."
+    },
+    {
+      "id": "china-nim-recap",
+      "title": "Beijing recapped lenders while bank NIM sits at a record low",
+      "grade": "MODERATE",
+      "assets": [
+        "A/H shares"
+      ],
+      "fact": "财经早茶 今日图表: China bank net interest margin is at a record low. 第一财经: NFRA printed commercial-bank NIM at 1.41% in the second quarter after 1.40% in the first. 第一财经: eight central financial firms plan to raise 3600亿元 (CNY360bn), with 3000亿元 (CNY300bn) of special treasury bonds. 新华财经: Monday’s open-market operations drained a net 45亿元 after a 5亿元 7-day reverse repo and a 5000亿元 buyout reverse repo versus 50亿元 and 5000亿元 maturing.",
+      "factSources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "第一财经 净息差",
+          "href": "https://www.yicai.com/news/103319405.html"
+        },
+        {
+          "label": "第一财经 注资",
+          "href": "https://www.yicai.com/news/103353417.html"
+        },
+        {
+          "label": "新华财经 OMO",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260907/4466317_1.html"
+        }
+      ],
+      "mechanism": "A CNY360bn core-tier-one top-up sits next to NIM at 1.41%, and a 45亿元 net drain after an equal three-month rollover leaves the 7-day rate uncut. CICC (2 September): swap-implied cut expectations sit at a historically strong level while the 7-day rate has gone uncut this year. China August trade on 8 September is the next print."
+    },
+    {
+      "id": "ainext-hsi",
+      "title": "ChiNext ripped on optics while Hang Seng sold",
+      "grade": "MODERATE",
+      "assets": [
+        "A/H shares"
+      ],
+      "fact": "新华财经: ChiNext closed at 3398.68, up 3.41%, Shanghai at 3932.70, up 0.07%, and Shenzhen at 13774.91, up 1.91%. 香港中通社: Hang Seng closed at 25,413.12, down 0.93%. 华尔街见闻: 中际旭创 A rose more than 10%. CNBC: Kospi closed at 6,995.39, up 4.61%, with SK Hynix up 8.26%.",
+      "factSources": [
+        {
+          "label": "新华财经 A股",
+          "href": "https://www.cnfin.com/yw-lb/detail/20260907/4466142_1.html"
+        },
+        {
+          "label": "香港中通社",
+          "href": "https://hkcna.hk/docDetail.jsp?channel=2812&id=101415130"
+        },
+        {
+          "label": "华尔街见闻 中际旭创",
+          "href": "https://wallstreetcn.com/articles/3781200"
+        },
+        {
+          "label": "CNBC Asia",
+          "href": "https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html"
+        }
+      ],
+      "mechanism": "Optics and memory were the Monday AI-hardware bid, which is why ChiNext closed at 3398.68 while Hang Seng sold to 25,413.12. Goldman Sachs (7 September): first cover of 中际旭创 H at Buy, citing silicon-photonics leadership. China August exports on 8 September are the next print."
+    },
+    {
+      "id": "pboc-gold",
+      "title": "The PBOC added a 22nd month of gold",
+      "grade": "MODERATE",
+      "assets": [
+        "Gold"
+      ],
+      "fact": "SAFE: August FX reserves were 34383亿美元, up 195亿美元. 财新: gold reserves rose to 7673万盎司, up 65万盎司, a 22nd straight month and the largest monthly add since November 2023. 财经早茶 大中华: the PBOC kept adding even after August gold prices rose.",
+      "factSources": [
+        {
+          "label": "SAFE FX reserves",
+          "href": "https://www.safe.gov.cn/safe/2026/0907/27859.html"
+        },
+        {
+          "label": "财新 购金",
+          "href": "https://finance.caixin.com/2026-09-07/102482624.html"
+        },
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Official buying is still adding in a 22nd month, so 7673万盎司 is a reserve allocation print while Monday gold sold in the Asia session. CPI on 11 September, through real yields, is the next print."
+    },
+    {
+      "id": "btc-liquid",
+      "title": "Liquid’s 4,000 BTC hole sat beside another week of ETF inflows",
+      "grade": "MODERATE",
+      "assets": [
+        "BTC"
+      ],
+      "fact": "Cointelegraph: purported white hats withdrew about 4,000 BTC worth $320 million from Liquid’s federation wallet, and about 3,998.5 BTC was still unreturned in the evening update. 律动: Blockstream said bridge nodes are patched. Cointelegraph: US spot bitcoin ETF inflows were $986.9 million in the week ending Friday.",
+      "factSources": [
+        {
+          "label": "Cointelegraph Liquid",
+          "href": "https://cointelegraph.com/news/liquid-network-pauses-320m-bitcoin-withdrawal"
+        },
+        {
+          "label": "BlockBeats Liquid",
+          "href": "https://www.theblockbeats.info/flash/365763"
+        },
+        {
+          "label": "Cointelegraph Hodler's Digest",
+          "href": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest"
+        }
+      ],
+      "mechanism": "A 4,000 BTC federation hole is a sidechain-credit event, and $986.9 million of weekly ETF inflows show allocators still added into the same week. Glassnode (2 September): spot is boxed between short-term-holder supply below and long-term-holder supply above. CPI on 11 September, through the dollar, is the next print."
+    },
+    {
+      "id": "euro-gdp",
+      "title": "Euro-area GDP was revised up as Bunds sold a fifth session",
+      "grade": "WEAK",
+      "assets": [
+        "Bunds",
+        "EUR"
+      ],
+      "fact": "Eurostat: euro-area Q2 GDP rose 0.6% q/q after a 0.4% flash, a beat versus that flash. 财经早茶 欧洲股债: Bunds fell for a fifth session as high oil fed inflation worry, and European stocks were basically flat. 华尔街见闻: the Stoxx 600 closed at 649.90.",
+      "factSources": [
+        {
+          "label": "Eurostat Q2 GDP",
+          "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap"
+        },
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781261"
+        }
+      ],
+      "mechanism": "A 0.6% final versus a 0.4% flash is a growth beat, but Bunds sold a fifth session on oil, so the print did not buy duration. Deutsche Bank (7 September): markets underestimate how much the Fed and the ECB still need to hike to contain inflation. The ECB decision on 10 September is the settle."
+    }
+  ],
+  "globalRegime": "US cash was closed for Labor Day. The new tape is a yen break through 155 to 154.06 after Tokyo’s reserve drop, and Brent at $97 after another Jizan strike. Payrolls are still Friday’s 162,000 beat. CPI on 11 September still settles the FOMC at 02:00 Beijing on 17 September.",
+  "globalChanged": [
+    {
+      "text": "加拿大周二将对数百种美国商品加征15%到50%的关税，特朗普威胁禁售庞巴迪飞机，两国贸易战面临进一步升级的风险",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781261"
+        }
+      ]
+    },
+    {
+      "text": "伊朗称与阿曼即将就霍尔木兹海峡航运管理达成协议。伊朗伊斯兰革命卫队警告称，霍尔木兹海峡南部的美国通道安全通行实际上已不可能，抵达阿曼Khasab一带的船只将面临遭到袭击的风险",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻 霍尔木兹",
+          "href": "https://wallstreetcn.com/articles/3781222"
+        }
+      ]
+    },
+    {
+      "text": "知情人士称，沙特阿美位于吉赞的石油设施周一再次遭袭，但未造成重大损失，当地日产能40万桶的炼油厂自7月遇袭后至今仍处于停产状态",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻 吉赞",
+          "href": "https://wallstreetcn.com/articles/3781235"
+        }
+      ]
+    },
+    {
+      "text": "美国加大对伊朗的外交施压，提议因德黑兰阻挠铀库存核查，将伊朗问题提交联合国安理会",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "日元兑美元汇率升至2月以来最强水平，突破了此前美日联手干预汇市后触及的高点。交易员认为升破155关键阻力位推动日元进一步走强，并且美国周一假期清淡的交投放大了汇率波动",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻 日元",
+          "href": "https://wallstreetcn.com/articles/3781237"
+        }
+      ]
+    },
+    {
+      "text": "德意志银行策略师警告称，市场低估了美联储和欧洲央行遏制通胀所需的加息幅度。法兴银行认为10年期美债收益率达到5.5%，将是股市开始受冲击的临界点",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781261"
+        }
+      ]
+    },
+    {
+      "text": "OpenAI首席科学家预计AI或很快迈入自我进化阶段，呼吁业界在建立共同安全护栏之前主动放缓开发速度",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781261"
+        }
+      ]
+    },
+    {
+      "text": "知情人士透露，俄罗斯总统普京在与美国特使会晤后，仍决意继续对乌克兰的战争，相信俄军六个月内可控制整个顿涅茨克",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "德国选择党周日在萨克森-安哈尔特州取得空前选举胜利，这不仅是极右翼的一座里程碑，也凸显出欧洲政治版图向亲俄方向偏移",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC Asia",
+          "href": "https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html"
+        }
+      ]
+    },
+    {
+      "text": "俄罗斯下令关闭德国驻圣彼得堡总领事馆，进一步加剧两国外交争端。这场争端始于德国指责莫斯科对一起未遂无人机袭击事件负有责任",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "欧盟委员会主席冯德莱恩访问格陵兰首府努克时宣布，欧盟将向格陵兰投资2亿欧元，用于发展关键矿产、可再生能源和卫星通信，以加强与这一丹麦半自治领土的联系",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "AP：标普500上周五跌29.11点报7,718.60，跌0.4%；道指报53,414.25；纳指报26,506.99。美股周一劳动节休市。",
+      "sources": [
+        {
+          "label": "AP Friday close",
+          "href": "https://apnews.com/article/stock-market-dow-nasdaq-jobs-ebc11cfa2cf8baf4491bf3d4199c1d74"
+        }
+      ]
+    },
+    {
+      "text": "CNBC：8月非农增加162,000，Dow Jones预估53,000；失业率4.1%。",
+      "sources": [
+        {
+          "label": "CNBC August jobs",
+          "href": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html"
+        }
+      ]
+    },
+    {
+      "text": "US Treasury：官方9月4日曲线2年4.37%、5年4.54%、10年4.78%、30年5.24%。",
+      "sources": [
+        {
+          "label": "U.S. Treasury curve",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
+    {
+      "text": "Japan MOF：8月末官方储备资产1,207,524百万美元，较7月末下降79,575百万美元。",
+      "sources": [
+        {
+          "label": "Japan MOF reserves",
+          "href": "https://www.mof.go.jp/english/policy/international_policy/reference/official_reserve_assets/e0808.html"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻：美元兑日元一度报154.06，升破155。",
+      "sources": [
+        {
+          "label": "华尔街见闻 日元",
+          "href": "https://wallstreetcn.com/articles/3781237"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻：布伦特收涨0.75%报97美元/桶。截至6日的10天内霍尔木兹日均约10艘商船。",
+      "sources": [
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781261"
+        },
+        {
+          "label": "华尔街见闻 霍尔木兹",
+          "href": "https://wallstreetcn.com/articles/3781222"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻：美国普通汽油均价约4.15美元/加仑（截至9月5日）。CNBC：美国柴油零售均价5.85美元/加仑。",
+      "sources": [
+        {
+          "label": "华尔街见闻 汽油",
+          "href": "https://wallstreetcn.com/articles/3781250"
+        },
+        {
+          "label": "CNBC Daily Open",
+          "href": "https://www.cnbc.com/2026/09/07/cnbc-daily-open-trump-iran-war-oil-prices-nuclear-deal.html"
+        }
+      ]
+    },
+    {
+      "text": "Eurostat：欧元区二季度GDP终值环比增长0.6%，快报为0.4%；就业环比增长0.1%。",
+      "sources": [
+        {
+          "label": "Eurostat Q2 GDP",
+          "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap"
+        }
+      ]
+    },
+    {
+      "text": "CNBC：日经225涨2.12%报66,399.84；韩国综合指数涨4.61%报6,995.39；欧洲斯托克600接近平盘。",
+      "sources": [
+        {
+          "label": "CNBC Asia",
+          "href": "https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html"
+        }
+      ]
+    },
+    {
+      "text": "Cointelegraph：Liquid侧链被提走约4000枚比特币、价值约3.20亿美元；晚间更新时约3998.5枚仍未归还。Hodler Digest：当周美国现货比特币ETF净流入9.869亿美元。",
+      "sources": [
+        {
+          "label": "Cointelegraph Liquid",
+          "href": "https://cointelegraph.com/news/liquid-network-pauses-320m-bitcoin-withdrawal"
+        },
+        {
+          "label": "Cointelegraph Hodler's Digest",
+          "href": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest"
+        },
+        {
+          "label": "BlockBeats Liquid",
+          "href": "https://www.theblockbeats.info/flash/365763"
+        }
+      ]
+    },
+    {
+      "text": "律动：特朗普、万斯、贝森特和纳瓦罗在9月议息前向沃什施压，要求避免加息甚至降息。",
+      "sources": [
+        {
+          "label": "BlockBeats Warsh",
+          "href": "https://www.theblockbeats.info/flash/365524"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "Do not read 154.06 as a finished BOJ hike. The reserve tape is August, and Monday’s break of 155 was a US holiday tape."
+    },
+    {
+      "text": "CICC (6 September): the jobs beat lowered the employment constraint on a hike, and September still needs CPI to settle the decision."
+    }
+  ],
+  "globalTensions": "US cash closed while the yen, Brent, ChiNext, and Hang Seng all printed. A 0.6% euro GDP beat versus Bunds on a fifth down day. Official gold buying in a 22nd month versus bitcoin’s Liquid hole and another week of ETF inflows. Canada’s tariffs take effect with the NYSE still shut.",
+  "chinaStance": "Eight central financial firms plan to raise CNY360bn. Monday’s open-market operations drained a net 45亿元. The 财经早茶 chart is bank net interest margin at a record low. ChiNext closed 3398.68, up 3.41%. Hang Seng fell 0.93%. The PBOC added a 22nd month of gold.",
+  "chinaChanged": [
+    {
+      "text": "中国周二将公布8月贸易数据，出口料维持强劲增长势头，受全球人工智能硬件需求推动",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国目标到2030年全面建成覆盖完善、性能领先的新一代通信网，将有序部署万卡、十万卡及以上智算集群，适时启动6G商用",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国工信部和市场监管总局发布通知，要求汽车企业规范供应商账款支付并优化账期管理",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "不顾美国警告，马来西亚据悉在其主权人工智能项目中倾向于采用华为AI芯片",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "在苹果首款折叠屏iPhone上市前夕，华为与小米分别发布最新折叠屏旗舰手机，抢占中国高端智能手机市场先机",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781261"
+        }
+      ]
+    },
+    {
+      "text": "字节跳动据悉准备推出面向实时空间场景视频生成的AI模型，创始人张一鸣亲自督导开发，最快可能下月发布，以与Meta和Alphabet在这一可应用于机器人和自主系统的领域展开竞争",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "尽管8月金价大涨，中国央行仍增持黄金65万盎司，创2023年以来最大单月增持规模，并为连续22个月增持黄金",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "财新 购金",
+          "href": "https://finance.caixin.com/2026-09-07/102482624.html"
+        }
+      ]
+    },
+    {
+      "text": "中国自9月8日对原产于日本的进口二氯二氢硅实施临时反倾销措施，要求进口经营者向海关提供保证金",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "巴基斯坦空军宣传视频中出现疑似中国红旗-17A近程地空导弹系统，中国军方官方账号随后确认了该装备型号，显示中巴防务合作在2025年印巴冲突后进一步深化",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "新华财经：沪指涨0.07%报3932.70；深成指涨1.91%报13774.91；创业板指涨3.41%报3398.68；沪深京成交19644亿元。",
+      "sources": [
+        {
+          "label": "新华财经 A股",
+          "href": "https://www.cnfin.com/yw-lb/detail/20260907/4466142_1.html"
+        }
+      ]
+    },
+    {
+      "text": "香港中通社：恒指跌237.75点报25,413.12，跌0.93%；主板成交2096.73亿港元。",
+      "sources": [
+        {
+          "label": "香港中通社",
+          "href": "https://hkcna.hk/docDetail.jsp?channel=2812&id=101415130"
+        }
+      ]
+    },
+    {
+      "text": "新华财经：7日开展5亿元7天期逆回购和5000亿元买断式逆回购，到期50亿元加5000亿元，净回笼45亿元。",
+      "sources": [
+        {
+          "label": "新华财经 OMO",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260907/4466317_1.html"
+        }
+      ]
+    },
+    {
+      "text": "SAFE：8月末外汇储备34383亿美元，较7月末上升195亿美元。",
+      "sources": [
+        {
+          "label": "SAFE FX reserves",
+          "href": "https://www.safe.gov.cn/safe/2026/0907/27859.html"
+        }
+      ]
+    },
+    {
+      "text": "财新：8月末黄金储备7673万盎司，单月增加65万盎司，连续第22个月增持。",
+      "sources": [
+        {
+          "label": "财新 购金",
+          "href": "https://finance.caixin.com/2026-09-07/102482624.html"
+        }
+      ]
+    },
+    {
+      "text": "HKMA：香港8月末官方外汇储备4429亿美元，7月末为4479亿美元。",
+      "sources": [
+        {
+          "label": "HKMA FX reserves",
+          "href": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/09/20260907-6/"
+        }
+      ]
+    },
+    {
+      "text": "第一财经：八家中央金融企业计划增资3600亿元，财政部出资3000亿元特别国债。",
+      "sources": [
+        {
+          "label": "第一财经 注资",
+          "href": "https://www.yicai.com/news/103353417.html"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻：中际旭创A股涨超10%；高盛首次覆盖中际旭创H股给予买入。摩尔线程解禁后20%跌停。",
+      "sources": [
+        {
+          "label": "华尔街见闻 中际旭创",
+          "href": "https://wallstreetcn.com/articles/3781200"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "A CNY360bn recap is core tier-one capital. Monday’s net drain is the liquidity print. The chart is bank NIM, not Shanghai’s 3932.70 close."
+    },
+    {
+      "text": "CICC (2 September): swap-implied cut expectations already sit at a historically strong level while the 7-day rate has gone uncut this year."
+    }
+  ],
+  "chinaDivergences": "ChiNext +3.41% versus Hang Seng −0.93%. A recap headline versus NIM at 1.41% and a 45亿元 net drain. Official gold buying in a 22nd month versus Monday gold selling in the Asia session.",
+  "signals": [],
+  "eventCalendar": {
+    "windowStart": "2026-09-08",
+    "windowEnd": "2026-09-18",
+    "note": "Briefing day through next Friday (Sep 18). Mainland China only on China rows (no TW/HK/Macao). Calendar from 8 September 财经早茶 日程 plus BLS, the Fed calendar, and the ECB. Bloomberg estimate digits are omitted (hub 403). FOMC 16 September 14:00 ET is 02:00 Beijing on 17 September.",
+    "events": [
+      {
+        "id": "japan-gdp-2026-09-08",
+        "date": "2026-09-08",
+        "timeBeijing": "07:50",
+        "region": "Other",
+        "category": "data",
+        "event": "Japan Q2 GDP final",
+        "themeId": "yen-155",
+        "source": {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "china-exports-2026-09-08",
+        "date": "2026-09-08",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "data",
+        "event": "China August exports",
+        "themeId": "ainext-hsi",
+        "source": {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "china-imports-2026-09-08",
+        "date": "2026-09-08",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "data",
+        "event": "China August imports",
+        "source": {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "china-trade-balance-2026-09-08",
+        "date": "2026-09-08",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "data",
+        "event": "China August trade balance",
+        "themeId": "china-nim-recap",
+        "source": {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "qatar-pm-china-2026-09-08",
+        "date": "2026-09-08",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "other",
+        "event": "Qatar prime minister visits China",
+        "source": {
+          "label": "彭博财经早茶 Sep 8",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "destatis-final-2026-09-10",
+        "date": "2026-09-10",
+        "timeBeijing": "",
+        "region": "EU",
+        "category": "data",
+        "event": "Destatis August CPI final",
+        "themeId": "euro-gdp",
+        "source": {
+          "label": "Destatis",
+          "href": "https://www.destatis.de/EN/Press/2026/08/PE26_311_611.html"
+        }
+      },
+      {
+        "id": "ecb-2026-09-10",
+        "date": "2026-09-10",
+        "timeBeijing": "",
+        "region": "EU",
+        "category": "central-bank",
+        "event": "ECB monetary-policy decision, Berlin",
+        "themeId": "euro-gdp",
+        "source": {
+          "label": "ECB calendar",
+          "href": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+        }
+      },
+      {
+        "id": "ppi-2026-09-10",
+        "date": "2026-09-10",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "August US PPI",
+        "source": {
+          "label": "BLS PPI",
+          "href": "https://www.bls.gov/ppi/"
+        }
+      },
+      {
+        "id": "cpi-2026-09-11",
+        "date": "2026-09-11",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "August US CPI",
+        "themeId": "oil-jizan",
+        "source": {
+          "label": "BLS CPI",
+          "href": "https://www.bls.gov/cpi/"
+        }
+      },
+      {
+        "id": "fomc-2026-09-17",
+        "date": "2026-09-17",
+        "timeBeijing": "02:00",
+        "region": "US",
+        "category": "central-bank",
+        "event": "FOMC decision and statement",
+        "source": {
+          "label": "Federal Reserve calendar",
+          "href": "https://www.federalreserve.gov/json/calendar.json"
+        }
+      },
+      {
+        "id": "boj-2026-09-18",
+        "date": "2026-09-18",
+        "timeBeijing": "",
+        "region": "Other",
+        "category": "central-bank",
+        "event": "BOJ policy decision",
+        "themeId": "yen-155",
+        "source": {
+          "label": "Japan MOF reserves",
+          "href": "https://www.mof.go.jp/english/policy/international_policy/reference/official_reserve_assets/e0808.html"
+        }
+      }
+    ]
+  },
+  "watchItems": [],
+  "sources": "8 September 财经早茶 IMAP landed after today’s 01:00 schedule skipped; the usual inbox-sync job ran on this branch via the existing push trigger after one 180×30s wait. 市场一览 is that mail in Chinese, mail order — not 见闻 市场收报. 今日图表 is China bank NIM at a record low, not payrolls. CICC is the 6 September FX weekly, the 7 August yen-intervention note, and the 2 September China-cuts note, paraphrased without distinctive WeChat-only digits. Yicai is the recap and the Q2 NIM print. Caixin is the gold add. BlockBeats 365522 and 365763 are the BTC book; 365524 is the macro book. Street ratings were on 见闻 (Goldman Sachs 中际旭创), not on the 律动 tape. Tech/AI OpenAI-scientist color is 见闻, not a fetchable 律动 chip.",
+  "singleSource": "Inbox 07:18 pm EST snapshot (S&P 7,718.6, FXI 35.88, BBDXY 1,187.31, BTC 79,093.57) is not 市场一览. Chart distinctive NIM percentages are taken from 第一财经 1.41% / 1.40%, not from the Bloomberg hub (403). Mail 近10% August gold rally and calendar estimate digits (Japan GDP 1.8%/1.1%, China export 25.9% / import 31% / surplus $119.1bn, Taiwan CPI) are omitted. 见闻 3781200 ChiNext +3.64% is not mixed with 新华财经 +3.41%. 见闻 FedWatch 58% is not mixed with leftover CNBC about 60%. BlockBeats 365522 $986.7 million is not mixed with Cointelegraph $986.9 million on the same card. No GLASSNODE_API_KEY; on-chain color is the 2 September Week on Chain inbox body. Yahoo quote HTML is not used in summary. US cash was closed for Labor Day. Dashboard re-injected at 2026-09-08T02:47:59.558Z.",
+  "caveats": "Event Calendar mainland China only. Taiwan CPI from the mail is omitted. Brent Yahoo BZ=F in Market closes is futures, not the 见闻 $97 print. Asia levels live only in Market Dashboard. 10-year 4.78% is the Treasury daily curve from Friday. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September. Convert 3600亿元 as CNY360bn. Convert 3000亿元 as CNY300bn. Convert 5000亿元 as CNY500bn. Convert 45亿元 as CNY4.5bn. Convert 19644亿元 as CNY1,964.4bn.",
+  "suggestions": "Today: China August trade; Japan Q2 GDP final at 07:50; Canada retaliatory tariffs. Destatis finals and the ECB are 10 September. PPI is 10 September; CPI is 11 September. BOJ is 17–18 September. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September. This report is research and information synthesis, not investment advice.",
+  "disclaimer": "This report is research and information synthesis, not investment advice. Verify figures against primary sources before acting on them.",
+  "marketDashboard": {
+    "asOf": "2026-09-08T02:47:59.558Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,718.60",
+            "change": "−0.38%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-04",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "26,506.99",
+            "change": "−0.29%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-04",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "15.30",
+            "change": "+5.30%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-07",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "66,445.13",
+            "change": "+0.07%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "kospi",
+            "asset": "Kospi",
+            "latest": "7,130.93",
+            "change": "+1.94%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "25,273.52",
+            "change": "−0.55%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,481.53",
+            "change": null,
+            "changeDirection": "flat",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,946.64",
+            "change": "+0.35%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.37%",
+            "change": "+3.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-04",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.54%",
+            "change": "+2.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-04",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.78%",
+            "change": "+1.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-04",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.24%",
+            "change": "−1.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-04",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "153.1760",
+            "change": "−1.93%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.7099",
+            "change": "−0.01%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,466.80",
+            "change": "+0.84%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$97.18",
+            "change": "+0.93%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$79,125",
+            "change": "−1.40%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0030%",
+            "change": "−0.010 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-08",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-09-08"
+}

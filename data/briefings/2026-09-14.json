@@ -1,0 +1,1329 @@
+{
+  "date": "2026-09-14",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "September 11–14, 2026",
+  "publishedAt": "2026-09-14T02:48:23.039Z",
+  "keySources": [
+    {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia",
+      "books": [
+        "us-equities",
+        "commodities",
+        "rates",
+        "fx",
+        "asia-equities"
+      ],
+      "influence": "14 September 财经早茶. Chart is August core CPI above the estimate. 市场一览 is that mail in Chinese, mail order."
+    },
+    {
+      "label": "WTOP — AP Friday close",
+      "href": "https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-11-2026/",
+      "books": [
+        "us-equities"
+      ],
+      "influence": "S&P 7,656.98 +0.9%, broke a four-day losing streak. Dow 52,573.29 +1%. Nasdaq 26,333.04 +1%. Week S&P −0.8%."
+    },
+    {
+      "label": "BLS August CPI",
+      "href": "https://www.bls.gov/news.release/archives/cpi_09112026.htm",
+      "books": [
+        "rates",
+        "us-equities"
+      ],
+      "influence": "August CPI 0.4% m/m and 3.4% y/y. Core 0.3% m/m and 2.4% y/y. Energy +16.3% y/y. Gasoline +3.9% m/m."
+    },
+    {
+      "label": "CNBC August CPI",
+      "href": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html",
+      "books": [
+        "rates"
+      ],
+      "influence": "Headline in line with estimates. Core 0.3% m/m was 0.1 percentage point above forecast. Hike odds jumped to nearly 90%."
+    },
+    {
+      "label": "U.S. Treasury curve",
+      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+      "books": [
+        "rates"
+      ],
+      "influence": "Official 11 September curve: 2-year 4.63%, 10-year 4.96%, 30-year 5.35%."
+    },
+    {
+      "label": "华尔街见闻早餐",
+      "href": "https://wallstreetcn.com/articles/3781660",
+      "books": [
+        "us-equities",
+        "commodities",
+        "rates",
+        "fx",
+        "asia-equities",
+        "crypto"
+      ],
+      "influence": "14 September wrap. S&P 7656.98. Brent November 104.61. Shanghai 3888.11. Hang Seng 24805.63. COMEX gold 4408.90. Bitcoin 77439.13."
+    },
+    {
+      "label": "华尔街见闻 — 高盛改口加息",
+      "href": "https://wallstreetcn.com/articles/3781616",
+      "books": [
+        "rates"
+      ],
+      "influence": "Goldman Sachs (11 September): Mericle switched to a 25bp hike on 16 September on credibility after Warsh, not because the inflation thesis changed."
+    },
+    {
+      "label": "华尔街见闻 — 智谱融资",
+      "href": "https://wallstreetcn.com/articles/3781656",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "智谱 placed H-shares at 714港元 for about 156.64亿港元 and issued 201.4亿元 of 2027 zero-coupon convertibles."
+    },
+    {
+      "label": "PBOC overnight reverse repos",
+      "href": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026091409061795132/index.html",
+      "books": [
+        "rates",
+        "asia-equities"
+      ],
+      "influence": "14 September: 7-day reverse repos 0亿元; overnight reverse repos 5040亿元."
+    },
+    {
+      "label": "新华财经 A股",
+      "href": "https://m.cnfin.com/yw-lb/zixun/20260911/4468708_1.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "Shanghai 3888.11 −1.18%. Shenzhen 13471.26 −1.08%. ChiNext 3322.04 −0.49%."
+    },
+    {
+      "label": "新华财经 OMO",
+      "href": "https://www.cnfin.com/yw-lb/detail/20260911/4468917_1.html",
+      "books": [
+        "rates"
+      ],
+      "influence": "Friday 7-day OMO 40亿元 at 1.40%, net 40亿元."
+    },
+    {
+      "label": "东方财富 恒指",
+      "href": "https://finance.eastmoney.com/a/202609113872064063.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "Hang Seng closed Friday at 24805.63, down 0.6%."
+    },
+    {
+      "label": "第一财经 税期",
+      "href": "https://www.yicai.com/news/103362401.html",
+      "books": [
+        "rates"
+      ],
+      "influence": "Overnight reverse repos 14–17 September, daily cap 6000亿元. Scheduled government-bond payments 5780亿元 on 14–18 September."
+    },
+    {
+      "label": "财新 金砖AI",
+      "href": "https://international.caixin.com/2026-09-13/102484530.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "Xi said China will lead a BRICS open-source AI zone."
+    },
+    {
+      "label": "财新 国常会算力",
+      "href": "https://finance.caixin.com/2026-09-14/102484568.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "State Council called for a multi-layer compute network."
+    },
+    {
+      "label": "CNBC East-West pipeline",
+      "href": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
+      "books": [
+        "commodities"
+      ],
+      "influence": "Sunday Brent futures 107.87 and WTI 102.87 after the East-West shut and the Oman Hormuz meeting delay. Not Friday's settle."
+    },
+    {
+      "label": "Xinhua Michigan",
+      "href": "https://english.news.cn/20260912/0e716c8b65e2430298d5f8d25f7cb762/c.html",
+      "books": [
+        "rates"
+      ],
+      "influence": "Michigan preliminary 47.8 vs 51.7. Year-ahead inflation 4.6%. Long-run 3.4%."
+    },
+    {
+      "label": "CICC 如果加息会发生什么",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247859894&idx=2&sn=202d99ffd22b9360e045d23772998bcd",
+      "books": [
+        "rates"
+      ],
+      "influence": "CICC (14 September): a September hike is about Fed credibility after Warsh’s Jackson Hole commitment; the 10-year problem is still term premium."
+    },
+    {
+      "label": "CICC 石油供应底与需求顶",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247859894&idx=4&sn=b45ccb227fed927729f68269f4190617",
+      "books": [
+        "commodities"
+      ],
+      "influence": "CICC (14 September): the East-West line is the Hormuz bypass, so a shut is a supply-floor constraint while diesel stays the tight product."
+    },
+    {
+      "label": "BlockBeats East-West",
+      "href": "https://www.theblockbeats.info/flash/366728",
+      "books": [
+        "commodities"
+      ],
+      "influence": "Saudi shut the East-West Hormuz-bypass line after attacks."
+    },
+    {
+      "label": "BlockBeats Oman meeting",
+      "href": "https://www.theblockbeats.info/flash/366872",
+      "books": [
+        "commodities"
+      ],
+      "influence": "Oman postponed the Iran–Gulf Hormuz meeting that had been set for Monday."
+    },
+    {
+      "label": "BlockBeats BTC Monday",
+      "href": "https://www.theblockbeats.info/flash/366876",
+      "books": [
+        "crypto"
+      ],
+      "influence": "Monday HTX: bitcoin 7.672万美元, below 7.7万美元."
+    },
+    {
+      "label": "BlockBeats US close",
+      "href": "https://www.theblockbeats.info/flash/366700",
+      "books": [
+        "us-equities",
+        "crypto"
+      ],
+      "influence": "Friday S&P +0.86%, Nasdaq +0.96%; MSTR and COIN rose; storage names fell."
+    },
+    {
+      "label": "BlockBeats Clarity Act",
+      "href": "https://www.theblockbeats.info/flash/366764",
+      "books": [
+        "crypto"
+      ],
+      "influence": "Senate procedural vote on the CLARITY Act is 15 September."
+    },
+    {
+      "label": "Federal Reserve calendar",
+      "href": "https://www.federalreserve.gov/json/calendar.json",
+      "books": [
+        "rates"
+      ],
+      "influence": "FOMC 16 September 14:00 ET is 02:00 Beijing on 17 September."
+    },
+    {
+      "label": "Bank of England MPC dates",
+      "href": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "books": [
+        "rates"
+      ],
+      "influence": "BOE decision 17 September at 12:00 London, 19:00 Beijing."
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": "今日图表（彭博 Sep 14）— 美国8月份核心通胀率高于预期",
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-09-14.png",
+      "analysis": "彭博「今日图表」标题写的是美国8月份核心通胀率高于预期，副题是移动电话服务费创纪录上涨助推通胀升温。这是CPI环比与核心CPI环比的双图，不是上证综指，也不是非农。Distinctive Bloomberg-hub-only ticks are omitted.",
+      "source": {
+        "label": "彭博 Markets Daily China / 财经早茶",
+        "href": "https://www.bloomberg.com/asia"
+      }
+    }
+  ],
+  "marketTone": "US cash broke a four-day losing streak. The S&P 500 closed at 7,656.98, up 0.9%. August core CPI rose 0.3% m/m, 0.1 percentage point above forecast. Brent settled Friday at 104.61, then jumped Monday after Saudi shut the East-West Hormuz bypass. The official 10-year yield was 4.96%. PBOC printed 5040亿元 of overnight reverse repos and a zero 7-day. The 财经早茶 chart is August core CPI above the estimate.",
+  "summary": [
+    {
+      "text": "财经早茶 美国股市: the S&P 500 rebounded after four down days as Friday oil eased. WTOP AP: the S&P closed at 7,656.98, up 0.9%, the Dow at 52,573.29, up 1%, and the Nasdaq at 26,333.04, up 1%.",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "WTOP AP Friday close",
+          "href": "https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-11-2026/"
+        }
+      ]
+    },
+    {
+      "text": "BLS: August CPI rose 0.4% m/m and 3.4% y/y. CNBC: headline was in line; core 0.3% m/m was 0.1 percentage point above forecast. U.S. Treasury: the official 11 September curve printed 4.96% on the 10-year and 4.63% on the 2-year.",
+      "sources": [
+        {
+          "label": "BLS August CPI",
+          "href": "https://www.bls.gov/news.release/archives/cpi_09112026.htm"
+        },
+        {
+          "label": "CNBC August CPI",
+          "href": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html"
+        },
+        {
+          "label": "U.S. Treasury curve",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻: Brent’s November contract settled Friday at 104.61. 财经早茶 能源: crude eased Friday then jumped more than 3% in Monday Asia after Saudi closed the Hormuz-bypass pipeline. 财经早茶 今日图表: August core CPI printed above the estimate.",
+      "sources": [
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781660"
+        },
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "PBOC: Monday’s 7-day reverse repos were 0亿元 and overnight reverse repos were 5040亿元. 新华财经: Shanghai closed Friday at 3888.11, down 1.18%. 东方财富: Hang Seng closed at 24805.63, down 0.6%.",
+      "sources": [
+        {
+          "label": "PBOC overnight reverse repos",
+          "href": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026091409061795132/index.html"
+        },
+        {
+          "label": "新华财经 A股",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260911/4468708_1.html"
+        },
+        {
+          "label": "东方财富 恒指",
+          "href": "https://finance.eastmoney.com/a/202609113872064063.html"
+        }
+      ]
+    }
+  ],
+  "signal": "A 0.3% core CPI that ran 0.1 percentage point above forecast left official 2-year yields at 4.63% and still let the S&P close at 7,656.98 after Brent eased to 104.61 Friday. Monday’s East-West shut put that energy line back under FOMC at 02:00 Beijing on 17 September. Overnight reverse repos through 17 September are the onshore liquidity print.",
+  "watch": "Japan July industrial production is 12:30 Beijing today. Canada August CPI is 20:30. Lagarde speaks at 23:15. The Senate CLARITY Act procedural vote is 02:15 Beijing on 16 September. Overnight reverse repos run through 17 September. FOMC is 16 September at 14:00 ET, which is 02:00 Beijing on 17 September. BOE is 19:00 Beijing on 17 September. BOJ is 17–18 September.",
+  "marketOverview": {
+    "asOfDate": "2026-09-14",
+    "note": "财经早茶 市场一览. Dated prints sit in Closes and Themes. Do not mix the Yahoo inject into these lines.",
+    "items": [
+      {
+        "label": "美国股市",
+        "text": "标普500指数四连跌后反弹，原油价格上周五回落缓解了投资者对通胀压力的担忧",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "WTOP AP Friday close",
+            "href": "https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-11-2026/"
+          }
+        ]
+      },
+      {
+        "label": "中概股",
+        "text": "金龙中国指数反弹，好未来和新东方对指数贡献最大",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          }
+        ]
+      },
+      {
+        "label": "美国债市",
+        "text": "加息预期推动短债收益率走高，美债收益率曲线明显趋平",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "U.S. Treasury curve",
+            "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+          }
+        ]
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数基本持平，日元领涨G10货币",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "华尔街见闻早餐",
+            "href": "https://wallstreetcn.com/articles/3781660"
+          }
+        ]
+      },
+      {
+        "label": "欧洲股债",
+        "text": "随着交易员削减对欧洲地区大幅度加息的押注，欧洲短期政府债券回升。欧洲股市反弹，给市场带来一丝喘息之机",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "华尔街见闻早餐",
+            "href": "https://wallstreetcn.com/articles/3781660"
+          }
+        ]
+      },
+      {
+        "label": "能源",
+        "text": "原油期货上周五回落，周一亚洲盘初跳涨。沙特在遭到多次袭击后关闭了用于绕开霍尔木兹海峡的一条重要输油管道",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "华尔街见闻早餐",
+            "href": "https://wallstreetcn.com/articles/3781660"
+          },
+          {
+            "label": "BlockBeats East-West",
+            "href": "https://www.theblockbeats.info/flash/366728"
+          }
+        ]
+      },
+      {
+        "label": "金属",
+        "text": "铜价企稳，基金逢低买入及中国制造商买盘提供支撑。黄金现货小幅上涨",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "华尔街见闻早餐",
+            "href": "https://wallstreetcn.com/articles/3781660"
+          }
+        ]
+      }
+    ],
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    }
+  },
+  "themeCards": [
+    {
+      "id": "cpi-core-hike",
+      "title": "Core CPI ran 0.1 percentage point above forecast into a September hike",
+      "grade": "STRONG",
+      "assets": [
+        "USTs",
+        "US equities"
+      ],
+      "fact": "BLS: August CPI rose 0.4% m/m and 3.4% y/y; core rose 0.3% m/m and 2.4% y/y; energy rose 16.3% y/y and gasoline rose 3.9% m/m. CNBC: headline CPI was in line with estimates, and the 0.3% core monthly gain was 0.1 percentage point higher than forecast. U.S. Treasury: the official 11 September curve printed 4.63% on the 2-year, 4.96% on the 10-year, and 5.35% on the 30-year. WTOP AP: the S&P 500 closed at 7,656.98, up 0.9%, and broke a four-day losing streak.",
+      "factSources": [
+        {
+          "label": "BLS August CPI",
+          "href": "https://www.bls.gov/news.release/archives/cpi_09112026.htm"
+        },
+        {
+          "label": "CNBC August CPI",
+          "href": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html"
+        },
+        {
+          "label": "U.S. Treasury curve",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "WTOP AP Friday close",
+          "href": "https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-11-2026/"
+        }
+      ],
+      "mechanism": "A 0.3% core m/m that ran 0.1 percentage point above forecast is why a 7,656.98 S&P close can sit next to a 4.63% 2-year and a September hike premium. Goldman Sachs (11 September): Mericle switched to a 25 basis-point hike on 16 September on credibility after Warsh, even though the inflation thesis barely moved. The FOMC decision at 02:00 Beijing on 17 September is the next print."
+    },
+    {
+      "id": "oil-east-west",
+      "title": "Saudi shut the East-West bypass and oil jumped Monday",
+      "grade": "STRONG",
+      "assets": [
+        "Oil"
+      ],
+      "fact": "华尔街见闻: Brent’s November contract settled Friday at 104.61. 财经早茶 能源: crude eased Friday then jumped more than 3% in Monday Asia after Saudi closed an important pipeline used to bypass Hormuz, and the Iran-Gulf meeting on a temporary Hormuz lane was postponed. 律动: Saudi shut the East-West line after attacks, calling it a precaution, with no restart timetable.",
+      "factSources": [
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781660"
+        },
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "BlockBeats East-West",
+          "href": "https://www.theblockbeats.info/flash/366728"
+        }
+      ],
+      "mechanism": "Friday’s 104.61 pullback still leaves Monday’s jump after the East-West shut as a bypass-capacity print under this week’s energy line. CICC (14 September): the East-West line is the Hormuz bypass Saudi has been using, so a shut is a supply-floor constraint while diesel stays the tight side of the product complex. The FOMC decision at 02:00 Beijing on 17 September is the next energy-policy print."
+    },
+    {
+      "id": "china-overnight-rr",
+      "title": "Overnight reverse repos started at 5040亿元 with the 7-day at zero",
+      "grade": "STRONG",
+      "assets": [
+        "A/H shares",
+        "CGBs"
+      ],
+      "fact": "PBOC: 14 September 7-day reverse repos were 0亿元 and overnight reverse repos were 5040亿元.       新华财经: Shanghai closed Friday at 3888.11, down 1.18%; Shenzhen at 13471.26, down 1.08%; ChiNext at 3322.04. 东方财富: Hang Seng closed Friday at 24805.63, down 0.6%. 第一财经: overnight reverse repos run 14–17 September with a daily cap of 6000亿元, and scheduled government-bond payments are 5780亿元 on 14–18 September.",
+      "factSources": [
+        {
+          "label": "PBOC overnight reverse repos",
+          "href": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026091409061795132/index.html"
+        },
+        {
+          "label": "新华财经 A股",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260911/4468708_1.html"
+        },
+        {
+          "label": "东方财富 恒指",
+          "href": "https://finance.eastmoney.com/a/202609113872064063.html"
+        },
+        {
+          "label": "第一财经 税期",
+          "href": "https://www.yicai.com/news/103362401.html"
+        }
+      ],
+      "mechanism": "A 5040亿元 overnight print against a 6000亿元 cap, with a zero 7-day, is a tax-period liquidity backstop rather than a new policy-rate impulse, and it sits under Shanghai’s 3888.11 close. 5780亿元 of scheduled government-bond payments through 18 September is the cash drain that print is matching. Overnight reverse repos through 17 September are the next prints."
+    },
+    {
+      "id": "europe-hike-bets",
+      "title": "Traders cut large euro-area hike bets and Stoxx bounced",
+      "grade": "MODERATE",
+      "assets": [
+        "EU equities",
+        "Bunds"
+      ],
+      "fact": "华尔街见闻: the Stoxx 600 closed at 639.10, up 0.49%, and the DAX closed at 25553.00, up 0.88%. 财经早茶 欧洲股债: traders cut large euro-area hike bets, short-end government bonds rose, and European stocks rebounded. 财经早茶: Lagarde said euro-area inflation will stay high for a while and AI asset valuations are very high.",
+      "factSources": [
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781660"
+        },
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "A 639.10 Stoxx bounce is traders cutting euro hike size while the Fed still prices a September move, so Bunds and Treasuries sit on different hike books. Lagarde at 23:15 Beijing today is the next print."
+    },
+    {
+      "id": "gold-btc-duration",
+      "title": "Gold held 4408.90 while bitcoin lost the 7.7万美元 handle",
+      "grade": "MODERATE",
+      "assets": [
+        "Gold",
+        "BTC"
+      ],
+      "fact": "华尔街见闻: COMEX gold closed at 4408.90 and spot gold at 4349.06. 华尔街见闻: bitcoin was 77439.13 on Friday. 律动: HTX printed 7.672万美元 on Monday, below 7.7万美元.",
+      "factSources": [
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781660"
+        },
+        {
+          "label": "BlockBeats BTC Monday",
+          "href": "https://www.theblockbeats.info/flash/366876"
+        }
+      ],
+      "mechanism": "Gold at 4408.90 beside Friday’s 77439.13, and Monday’s 7.672万美元 handle, is duration-beta into FOMC after the front of the curve cheapened, rather than a Hormuz gold bid. The FOMC decision at 02:00 Beijing on 17 September is the next print."
+    },
+    {
+      "id": "zhipu-ai-raise",
+      "title": "智谱 raised 156.64亿港元 of H-shares plus a 201.4亿元 convertible",
+      "grade": "MODERATE",
+      "assets": [
+        "A/H shares"
+      ],
+      "fact": "华尔街见闻: 智谱 placed new H-shares at 714港元 for about 156.64亿港元 and issued 201.4亿元 of 2027 zero-coupon convertibles. 财新: Xi said China will lead a BRICS open-source AI zone and support large-model cooperation.",
+      "factSources": [
+        {
+          "label": "华尔街见闻 — 智谱融资",
+          "href": "https://wallstreetcn.com/articles/3781656"
+        },
+        {
+          "label": "财新 金砖AI",
+          "href": "https://international.caixin.com/2026-09-13/102484530.html"
+        }
+      ],
+      "mechanism": "A 156.64亿港元 placing plus a 201.4亿元 2027 zero-coupon CB is listed-AI funding into Xi’s BRICS open-source zone, rather than a US frontier IPO. The FOMC decision at 02:00 Beijing on 17 September is the next risk-asset print."
+    }
+  ],
+  "globalRegime": "US cash broke a four-day losing streak into a 104.61 Brent settle and a 0.3% core CPI that ran 0.1 percentage point above forecast. The official 10-year yield was 4.96% and the 2-year was 4.63%. Monday oil jumped after Saudi shut the East-West Hormuz bypass. FOMC is still 02:00 Beijing on 17 September.",
+  "globalChanged": [
+    {
+      "text": "美国8月核心CPI环比涨幅超预期，互换市场押注美联储本周加息概率接近九成，并已完全计入年底前两次加息。特朗普再度施压沃什，重申美国应拥有全球最低的利率",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC August CPI",
+          "href": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html"
+        }
+      ]
+    },
+    {
+      "text": "密歇根大学9月初步调查显示，美国消费者信心下降，对于未来一年的通胀预期跃升至4.6%",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Xinhua Michigan",
+          "href": "https://english.news.cn/20260912/0e716c8b65e2430298d5f8d25f7cb762/c.html"
+        }
+      ]
+    },
+    {
+      "text": "沙特在遭到多次袭击后关闭了用于绕开霍尔木兹海峡的一条重要输油管道。伊朗与多个海湾国家原定周一就开辟霍尔木兹海峡临时航道举行的会议也已推迟。布伦特原油周一亚洲盘初应声上涨逾3%",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "BlockBeats East-West",
+          "href": "https://www.theblockbeats.info/flash/366728"
+        },
+        {
+          "label": "BlockBeats Oman meeting",
+          "href": "https://www.theblockbeats.info/flash/366872"
+        }
+      ]
+    },
+    {
+      "text": "资深大宗商品策略师Jeff Currie警告汽油和柴油价格在中选前还将大涨。特朗普敦促泽连斯基停止打击俄罗斯的柴油炼油厂",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "欧洲央行行长拉加德表示，欧元区通胀将在一段时间内维持高位，人工智能领域的资产估值非常高",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "金砖国家峰会联合声明呼吁中东各方保持克制，避免采取可能进一步加剧紧张局势的行动。伊朗总统在峰会期间发表强硬讲话，强调伊朗人民不会屈服，“如果美国逼迫我们，我们就会反击”",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "特朗普对解决与加拿大的贸易争端表示乐观，并淡化了退出北美贸易协定的可能性",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国联邦政府本财年前11个月预算赤字升至有记录以来最高水平之一，净利息支出超过国防支出等多数主要支出类别",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Anthropic首席执行官Amodei呼吁放慢先进模型开发速度，OpenAI首席执行官Altman和执掌xAI的马斯克随后也表示赞同。特朗普淡化AI威胁，强调美国必须保持对中国的人工智能领先优势",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Altman接受《财富》杂志采访时表示，OpenAI专注于解决围绕AI技术的安全问题，今年不会上市",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Anthropic据悉选择在纳斯达克上市，最快10月进行",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "WTOP AP：标普涨0.9%报7656.98，结束四连跌。道指涨1%报52573.29。纳指涨1%报26333.04。全周标普跌0.8%。",
+      "sources": [
+        {
+          "label": "WTOP AP Friday close",
+          "href": "https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-11-2026/"
+        }
+      ]
+    },
+    {
+      "text": "US Treasury：官方9月11日曲线2年4.63%、10年4.96%、30年5.35%。华尔街见闻盘中为2年4.63%、10年4.97%、30年5.36%。",
+      "sources": [
+        {
+          "label": "U.S. Treasury curve",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781660"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻：STOXX 600涨0.49%报639.10；DAX涨0.88%报25553.00；WTI 10月合约跌2.00%报100.44；COMEX期金涨0.04%报4408.90；现货黄金涨0.70%报4349.06；比特币涨0.3%报77439.13。",
+      "sources": [
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3781660"
+        }
+      ]
+    },
+    {
+      "text": "CNBC：周日布伦特期货报107.87、WTI报102.87，是周日盘而非周五结算。阿曼推迟原定周一的霍尔木兹会议。",
+      "sources": [
+        {
+          "label": "CNBC East-West pipeline",
+          "href": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html"
+        }
+      ]
+    },
+    {
+      "text": "Xinhua：密歇根大学9月初步消费者信心47.8，低于8月终值51.7；未来一年通胀预期4.6%；长期通胀预期3.4%。",
+      "sources": [
+        {
+          "label": "Xinhua Michigan",
+          "href": "https://english.news.cn/20260912/0e716c8b65e2430298d5f8d25f7cb762/c.html"
+        }
+      ]
+    },
+    {
+      "text": "律动：周一HTX比特币现报7.672万美元，跌破7.7万美元；亚洲早盘WTI与布伦特日内涨幅一度均扩大至超3%。",
+      "sources": [
+        {
+          "label": "BlockBeats BTC Monday",
+          "href": "https://www.theblockbeats.info/flash/366876"
+        }
+      ]
+    },
+    {
+      "text": "律动：美股周五标普涨0.86%、纳指涨0.96%；MSTR涨1.87%，COIN涨1.73%；存储股下跌。",
+      "sources": [
+        {
+          "label": "BlockBeats US close",
+          "href": "https://www.theblockbeats.info/flash/366700"
+        }
+      ]
+    },
+    {
+      "text": "律动：Clarity Act计划于9月15日进行程序性投票。",
+      "sources": [
+        {
+          "label": "BlockBeats Clarity Act",
+          "href": "https://www.theblockbeats.info/flash/366764"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "Do not read Friday’s 104.61 pullback as a finished Hormuz bypass. Monday’s jump after the East-West shut is the flow constraint still sitting under FOMC."
+    },
+    {
+      "text": "CICC (14 September): a September hike is about Fed credibility after Warsh’s Jackson Hole commitment, which is why a 0.3% core print can reprice the 2-year even as the S&P closed at 7,656.98."
+    }
+  ],
+  "globalTensions": "US cash rallied 0.9% Friday while Shanghai fell 1.18% and Hang Seng fell 0.6%. Copper stabilized while oil jumped Monday after the East-West shut. Trump pressed Warsh for the world’s lowest rates while swaps priced a September hike near 90%. Gold held 4408.90 while bitcoin lost the 7.7万美元 handle on Monday.",
+  "chinaStance": "Overnight reverse repos started, with 5040亿元 overnight and a zero 7-day. Shanghai closed Friday at 3888.11, down 1.18%. Hang Seng closed at 24805.63, down 0.6%. Xi proposed a BRICS open-source AI zone, and 智谱 placed H-shares at 714港元. Friday’s 7-day OMO was a net 40亿元 at 1.40%.",
+  "chinaChanged": [
+    {
+      "text": "习近平在金砖国家峰会上提出由中国率先建设金砖国家人工智能开源专区，支持大语言模型开发和应用合作，开展人工智能专题研修培训，构建人工智能开放生态",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "财新 金砖AI",
+          "href": "https://international.caixin.com/2026-09-13/102484530.html"
+        }
+      ]
+    },
+    {
+      "text": "中国总理李强上周五主持召开国务院常务会议，要求进一步完善算力基础设施，积极推进关键技术和装备研发应用，构建多层次、网络化算力体系",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "财新 国常会算力",
+          "href": "https://finance.caixin.com/2026-09-14/102484568.html"
+        }
+      ]
+    },
+    {
+      "text": "中国电信研究院发布报告称，中国人工智能产业发展重心正在从大模型和算力竞争转向智能体规模落地、应用变现",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国国家数据局表示，随着对高质量、多样化、大规模数据的需求持续增长，将适时推动具身智能数据标准建设",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "特朗普亲信、蒙大拿州共和党参议员戴恩斯访华后表示，美国低估了中国科技创新生态系统的质量和规模，并称中美在人工智能领域存在合作潜力",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "特朗普表示他对中国在美建厂造车持开放态度，前提是雇佣美国工人。他还重申与习近平的关系很好，并不担心中国会取消本月晚些时候的中美首脑峰会",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国九部门联合发布汽车业“十五五”规划，提出提高新能源乘用车新车销量占比，并推动具备自动驾驶功能的汽车实现规模应用",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "知情人士称，月之暗面近期向投资者更新了年化经常性收入进度",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "智谱同意以每股714港元的价格配售新H股，还同意同步发行逾200亿元人民币的2027年到期零息可换股债券",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻 — 智谱融资",
+          "href": "https://wallstreetcn.com/articles/3781656"
+        }
+      ]
+    },
+    {
+      "text": "京东据悉准备提出改进后的补救措施，以推进其对欧盟电子产品零售商Ceconomy的收购",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻：智谱配售净额约156.64亿港元，并发行本金201.4亿元人民币的2027年零息可转债。",
+      "sources": [
+        {
+          "label": "华尔街见闻 — 智谱融资",
+          "href": "https://wallstreetcn.com/articles/3781656"
+        }
+      ]
+    },
+    {
+      "text": "新华财经：沪指跌1.18%报3888.11；深成指跌1.08%报13471.26；创业板指跌0.49%报3322.04；科创综指跌1.45%报1817.68。",
+      "sources": [
+        {
+          "label": "新华财经 A股",
+          "href": "https://m.cnfin.com/yw-lb/zixun/20260911/4468708_1.html"
+        }
+      ]
+    },
+    {
+      "text": "东方财富：恒指跌0.6%报24805.63；恒生科技跌0.23%报4320.57。",
+      "sources": [
+        {
+          "label": "东方财富 恒指",
+          "href": "https://finance.eastmoney.com/a/202609113872064063.html"
+        }
+      ]
+    },
+    {
+      "text": "新华财经：11日开展40亿元7天逆回购，利率1.40%，当日无到期，净投放40亿元。",
+      "sources": [
+        {
+          "label": "新华财经 OMO",
+          "href": "https://www.cnfin.com/yw-lb/detail/20260911/4468917_1.html"
+        }
+      ]
+    },
+    {
+      "text": "PBOC：14日7天期逆回购操作量为零，同时开展5040亿元隔夜逆回购。",
+      "sources": [
+        {
+          "label": "PBOC overnight reverse repos",
+          "href": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026091409061795132/index.html"
+        }
+      ]
+    },
+    {
+      "text": "第一财经：9月14日至18日政府债缴款额计划为5780亿元；隔夜逆回购每日操作量不超过6000亿元。",
+      "sources": [
+        {
+          "label": "第一财经 税期",
+          "href": "https://www.yicai.com/news/103362401.html"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "A 5040亿元 overnight print against a 6000亿元 cap is a tax-period backstop, not a new policy-rate impulse at Friday’s 1.40% 7-day."
+    },
+    {
+      "text": "Xi’s BRICS open-source AI zone and 智谱’s 156.64亿港元 placing are capital-market and industrial-policy prints, not an onshore duration impulse."
+    }
+  ],
+  "chinaDivergences": "Shanghai −1.18% versus Hang Seng −0.6% and a 0.9% S&P rebound. Monday overnight 5040亿元 versus a zero 7-day and Friday’s net 40亿元 OMO. Copper stabilized versus Monday oil after the East-West shut.",
+  "signals": [],
+  "eventCalendar": {
+    "windowStart": "2026-09-14",
+    "windowEnd": "2026-09-25",
+    "note": "Briefing day through next Friday (Sep 25). Mainland China only on China rows (no TW/HK/Macao). Calendar from 14 September 财经早茶 日程 plus the Fed and BOE calendars. Bloomberg estimate digits are omitted (hub 403). FOMC 16 September 14:00 ET is 02:00 Beijing on 17 September.",
+    "events": [
+      {
+        "id": "japan-ip-2026-09-14",
+        "date": "2026-09-14",
+        "timeBeijing": "12:30",
+        "region": "Other",
+        "category": "data",
+        "event": "Japan July industrial production final",
+        "themeId": "cpi-core-hike",
+        "source": {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "canada-cpi-2026-09-14",
+        "date": "2026-09-14",
+        "timeBeijing": "20:30",
+        "region": "Other",
+        "category": "data",
+        "event": "Canada August CPI",
+        "themeId": "cpi-core-hike",
+        "source": {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "lagarde-2026-09-14",
+        "date": "2026-09-14",
+        "timeBeijing": "23:15",
+        "region": "EU",
+        "category": "central-bank",
+        "event": "ECB President Lagarde speech",
+        "themeId": "europe-hike-bets",
+        "source": {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "pboc-on-rr-2026-09-14",
+        "date": "2026-09-14",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "central-bank",
+        "event": "PBOC overnight reverse repos (daily cap 6000亿元 through 17 Sep)",
+        "themeId": "china-overnight-rr",
+        "source": {
+          "label": "PBOC overnight reverse repos",
+          "href": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026091409061795132/index.html"
+        }
+      },
+      {
+        "id": "pboc-on-rr-2026-09-15",
+        "date": "2026-09-15",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "central-bank",
+        "event": "PBOC overnight reverse repos continue",
+        "themeId": "china-overnight-rr",
+        "source": {
+          "label": "第一财经 税期",
+          "href": "https://www.yicai.com/news/103362401.html"
+        }
+      },
+      {
+        "id": "clarity-act-2026-09-16",
+        "date": "2026-09-16",
+        "timeBeijing": "02:15",
+        "region": "US",
+        "category": "other",
+        "event": "Senate CLARITY Act procedural vote (14:15 ET 15 Sep)",
+        "themeId": "gold-btc-duration",
+        "source": {
+          "label": "BlockBeats Clarity Act",
+          "href": "https://www.theblockbeats.info/flash/366764"
+        }
+      },
+      {
+        "id": "pboc-on-rr-2026-09-16",
+        "date": "2026-09-16",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "central-bank",
+        "event": "PBOC overnight reverse repos continue",
+        "themeId": "china-overnight-rr",
+        "source": {
+          "label": "第一财经 税期",
+          "href": "https://www.yicai.com/news/103362401.html"
+        }
+      },
+      {
+        "id": "fomc-2026-09-17",
+        "date": "2026-09-17",
+        "timeBeijing": "02:00",
+        "region": "US",
+        "category": "central-bank",
+        "event": "FOMC decision and statement",
+        "themeId": "cpi-core-hike",
+        "source": {
+          "label": "Federal Reserve calendar",
+          "href": "https://www.federalreserve.gov/json/calendar.json"
+        }
+      },
+      {
+        "id": "pboc-on-rr-2026-09-17",
+        "date": "2026-09-17",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "central-bank",
+        "event": "PBOC overnight reverse repos (window through 17 Sep)",
+        "themeId": "china-overnight-rr",
+        "source": {
+          "label": "第一财经 税期",
+          "href": "https://www.yicai.com/news/103362401.html"
+        }
+      },
+      {
+        "id": "boe-2026-09-17",
+        "date": "2026-09-17",
+        "timeBeijing": "19:00",
+        "region": "Other",
+        "category": "central-bank",
+        "event": "Bank of England rate decision",
+        "themeId": "europe-hike-bets",
+        "source": {
+          "label": "Bank of England MPC dates",
+          "href": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+        }
+      },
+      {
+        "id": "boj-2026-09-18",
+        "date": "2026-09-18",
+        "timeBeijing": "",
+        "region": "Other",
+        "category": "central-bank",
+        "event": "BOJ policy decision",
+        "themeId": "cpi-core-hike",
+        "source": {
+          "label": "彭博财经早茶 Sep 14",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      }
+    ]
+  },
+  "watchItems": [],
+  "sources": "14 September 财经早茶 IMAP landed after today’s 01:00 schedule skipped; the usual inbox-sync job ran on this branch via the existing push trigger after one 180×30s wait and a last-kick. 市场一览 is that mail in Chinese, mail order — not 见闻 市场收报. 今日图表 is August core CPI above the estimate. CICC is the 14 September hike-credibility note and the 14 September East-West oil note, paraphrased without distinctive WeChat-only digits. Yicai is the 5780亿元 / 6000亿元 tax-period print. Caixin is Xi’s BRICS AI zone and the State Council compute grid. BlockBeats 366876 is the BTC book; 366728 / 366872 are the commodities book; 366700 is the tech/crypto-stock book; street ratings/targets on 11–14 September were a miss on 律动, with Goldman via 见闻 3781616.",
+  "singleSource": "Inbox 07:09 pm EST snapshot (S&P 7,656.98, FXI 34.49, BBDXY 1,190.83, BTC 76,664.48) is not 市场一览.   Jeff Currie gasoline/diesel dollar digits, Anthropic IPO size, 月之暗面 ARR, the mail’s 157亿港元 智谱 rounding, and the mail’s 1.97万亿美元 deficit / 1万亿美元 net-interest sizes are omitted (Bloomberg hub 403 or unverified). AP 0.9% / 7,656.98 is not mixed unlabeled with 见闻 0.86% / 7656.98. 见闻 10-year 4.97% is not mixed unlabeled with Treasury 4.96%. BlockBeats Brent 104.56 is not mixed unlabeled with the 见闻 104.61 settle. CNBC Sunday Brent 107.87 / WTI 102.87 are Sunday futures, not Friday’s settle. Dashboard re-injected 2026-09-14T02:48:23.039Z. No GLASSNODE_API_KEY; Glassnode W37 distinctive $83–86k band omitted (research.glassnode.com 403). Yahoo quote HTML is not used in summary. Convert 5040亿元 as CNY504bn. Convert 40亿元 as CNY4bn. Convert 156.64亿港元 as HKD15.664bn. Convert 201.4亿元 as CNY20.14bn. Convert 5780亿元 as CNY578bn. Convert 6000亿元 as CNY600bn. BlockBeats street ratings/targets 11–14 September miss. Hong Kong IP/PPI from the mail are omitted from the calendar (mainland China only). BOJ 17–18 September is standing window color; today’s 财经早茶 日程 did not reprint the BOJ row.",
+  "caveats": "Event Calendar mainland China only. Hong Kong Q2 IP and PPI from the mail are omitted from the calendar. Brent Yahoo BZ=F in Market closes is futures, not the 见闻 104.61 settle. Asia levels live only in Market Dashboard. 10-year 4.96% is the Treasury daily curve from Friday; 见闻 session color is 4.97%. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September. Monday PBOC 7-day was zero; overnight was 5040亿元.",
+  "suggestions": "Today: Japan industrial production at 12:30 Beijing, Canada CPI at 20:30, Lagarde at 23:15. The CLARITY Act procedural vote is 02:15 Beijing on 16 September. Overnight reverse repos run through 17 September. BOE is 19:00 Beijing on 17 September. BOJ is 17–18 September. FOMC is 16 September, 14:00 ET / 02:00 Beijing on 17 September. This report is research and information synthesis, not investment advice.",
+  "disclaimer": "This report is research and information synthesis, not investment advice. Verify figures against primary sources before acting on them.",
+  "marketDashboard": {
+    "asOf": "2026-09-14T02:48:23.039Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,656.98",
+            "change": "+0.86%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-11",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "26,333.04",
+            "change": "+0.96%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-11",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "15.84",
+            "change": "−11.21%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-11",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "63,498.61",
+            "change": "−0.80%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "kospi",
+            "asset": "Kospi",
+            "latest": "6,761.44",
+            "change": "−2.15%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "24,834.28",
+            "change": "+0.12%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,319.94",
+            "change": null,
+            "changeDirection": "flat",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,893.37",
+            "change": "+0.14%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.63%",
+            "change": "+7.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-11",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.78%",
+            "change": "+3.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-11",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.96%",
+            "change": "+1.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-11",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.35%",
+            "change": "−2.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-11",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "153.9970",
+            "change": "−0.31%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.7060",
+            "change": "−0.00%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,391.70",
+            "change": "+0.58%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$107.20",
+            "change": "+2.48%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$77,505",
+            "change": "+0.28%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0047%",
+            "change": "−0.208 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-14",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-09-14"
+}

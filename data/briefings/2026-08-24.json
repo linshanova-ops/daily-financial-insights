@@ -1,0 +1,1311 @@
+{
+  "date": "2026-08-24",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "August 21–24, 2026",
+  "publishedAt": "2026-08-24T03:53:17.775Z",
+  "keySources": [
+    {
+      "label": "CNBC — Friday 8/21/2026 US close",
+      "href": "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html",
+      "books": [
+        "us-equities",
+        "rates",
+        "commodities"
+      ],
+      "influence": "S&P 7,674.37 (+0.43%); Nasdaq 26,180.45 (+0.43%); Dow 53,277.01 (+0.98% / +517.80). Week: S&P −1.4%; Nasdaq −2%; Dow −0.9%. 10-year 4.734%; 30-year 5.273%."
+    },
+    {
+      "label": "CNBC — Friday Treasury yields",
+      "href": "https://www.cnbc.com/2026/08/21/treasury-yields-bonds-inflation-rates.html",
+      "books": [
+        "rates",
+        "us-equities"
+      ],
+      "influence": "30-year 5.273% (more than +3 bp); 10-year 4.734%; 2-year 4.232%. Buyback bounce faded. Jackson Hole / Warsh is the next rates event."
+    },
+    {
+      "label": "CNBC — Friday oil / Iran",
+      "href": "https://www.cnbc.com/2026/08/21/oil-prices-us-iran.html",
+      "books": [
+        "commodities"
+      ],
+      "influence": "Brent +61 cents to $94.39; WTI +23 cents to $87.06. Week more than +5%. Bessent: “toughest sanctions in history”; US military: more than 660 million barrels through Hormuz since early May."
+    },
+    {
+      "label": "S&P Global — US flash PMI August",
+      "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/552d682e429640fcb8af7da17ad060c3",
+      "books": [
+        "rates",
+        "us-equities"
+      ],
+      "influence": "Composite 56.0 (July 54.5), 52-month high. Services 56.8 (July 54.6), 20-month high. Manufacturing PMI 53.2 (July 53.9), 5-month low."
+    },
+    {
+      "label": "S&P Global — Eurozone flash PMI August",
+      "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/96fc596680084e9b86502a39ca84c6b8",
+      "books": [
+        "rates"
+      ],
+      "influence": "Composite 52.1 (July 52.0), 9-month high. Services 51.7 unchanged. Manufacturing PMI 52.8 (July 51.9), 51-month high."
+    },
+    {
+      "label": "S&P Global — UK flash PMI August",
+      "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/cd324ddf91f64bdb8c119dad8bfe7912",
+      "books": [
+        "rates"
+      ],
+      "influence": "Composite 52.5 (July 52.2), 4-month high. Services 52.8 (July 52.1), 6-month high. Manufacturing PMI 51.5 (July 51.9), 5-month low."
+    },
+    {
+      "label": "华尔街见闻早餐 — 2026年8月24日",
+      "href": "https://wallstreetcn.com/articles/3780045",
+      "books": [
+        "us-equities",
+        "asia-equities",
+        "rates",
+        "commodities",
+        "crypto"
+      ],
+      "influence": "Year-dated Friday wrap: S&P 7,674.37 (+0.43%, week −1.43%); Shanghai 3,905.20 (+0.04%); ChiNext 3,545.58 (+1.43%); Brent $94.39; WTI $87.06; COMEX gold $4,624.1. Desk/CLAIM on dollar, bitcoin, and fiscal color."
+    },
+    {
+      "label": "财新 — 廖岷增量政策",
+      "href": "https://finance.caixin.com/2026-08-21/102476528.html",
+      "books": [
+        "asia-equities",
+        "rates"
+      ],
+      "influence": "Liao Min: H2 will timely plan practical incremental policy. 2026 budget spending first above CNY30tn; new government bonds CNY11.89tn; 3000亿元 special Treasury bonds for financial SOEs = CNY300bn."
+    },
+    {
+      "label": "第一财经 — 增量政策",
+      "href": "https://www.yicai.com/news/103328009.html",
+      "books": [
+        "asia-equities",
+        "rates"
+      ],
+      "influence": "Same SCIO line via Xinhua: H2 will timely plan practical incremental policy. In-window Yicai cite."
+    },
+    {
+      "label": "Yonhap — Samsung shareholder return",
+      "href": "https://en.yna.co.kr/view/AEN20260821010151315",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "Samsung: KRW90tn–110tn available for 2026 returns; about KRW30tn cash dividends in Q3; KRW15tn buyback for employee bonuses. Shares +3.87% Friday."
+    },
+    {
+      "label": "CoinDesk — BTC $77,000 / $79,400",
+      "href": "https://www.coindesk.com/markets/2026/08/21/bitcoin-tops-usd77-000-as-best-week-since-2023-pulls-altcoins-along-for-the-ride",
+      "books": [
+        "crypto"
+      ],
+      "influence": "Bitcoin as high as $79,400 Friday; about +24% since Monday. Strongest weekly advance since March 2023. Dated print."
+    },
+    {
+      "label": "BlockBeats — BTC $77,000",
+      "href": "https://www.theblockbeats.info/flash/363064",
+      "books": [
+        "crypto"
+      ],
+      "influence": "23 August HTX flash: bitcoin through $77,000, +0.46% 24h. Color; year 2026 on page."
+    },
+    {
+      "label": "Japan Times — July CPI",
+      "href": "https://www.japantimes.co.jp/business/2026/08/21/economy/cpi-july-rise/",
+      "books": [
+        "rates"
+      ],
+      "influence": "Core CPI ex fresh food +1.8% y/y (from +1.6%), matched the median estimate. Headline +1.9%; ex fresh food and energy +1.9%."
+    },
+    {
+      "label": "中金 — 美债的“问题”出在哪？（CLAIM，8月24日）",
+      "href": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247854761&idx=1&sn=e48bea4974db26854a547d61d97a814c",
+      "books": [
+        "rates",
+        "fx",
+        "crypto"
+      ],
+      "influence": "CLAIM: 10-year and 30-year touched 4.7% and 5.3%; buyback fade is term premium, not earnings. Dollar was the loser; gold and crypto rose as substitutes. Not a close."
+    },
+    {
+      "label": "U.S. Treasury — long-end buybacks",
+      "href": "https://home.treasury.gov/news/press-releases/sb0607",
+      "books": [
+        "rates",
+        "us-equities"
+      ],
+      "influence": "Still the 9 September size lift: 10–20Y and 20–30Y caps to at least $4bn through 4 November."
+    },
+    {
+      "label": "U.S. Treasury — daily yield curve",
+      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+      "books": [
+        "rates"
+      ],
+      "influence": "Official UST prints (dashboard)."
+    },
+    {
+      "label": "CoinGecko — Bitcoin",
+      "href": "https://www.coingecko.com/en/coins/bitcoin",
+      "books": [
+        "crypto"
+      ],
+      "influence": "Dated BTC 24h for the dashboard row."
+    },
+    {
+      "label": "彭博 Markets Daily China / 财经早茶 (Aug 24 inbox)",
+      "href": "https://www.bloomberg.com/asia",
+      "books": [
+        "us-equities",
+        "asia-equities",
+        "rates",
+        "fx",
+        "commodities"
+      ],
+      "influence": "Monday 市场一览 (desk/CLAIM): NDX ended a five-day drop; Golden Dragon up; dollar three-month low after buybacks; Europe bounced after seven down days; oil week two; gold three-month high. Hub often 403."
+    },
+    {
+      "label": "AP — US-Canada 50% tariffs",
+      "href": "https://apnews.com/article/canada-us-trade-tariffs-trump-857ef76b20a766e370d70176135b678e",
+      "books": [
+        "us-equities",
+        "asia-equities"
+      ],
+      "influence": "50% US tariffs on $20bn of Canadian goods from Saturday; Canada to retaliate 8 September."
+    },
+    {
+      "label": "Alibaba — HK$80bn placing",
+      "href": "https://www.alibabagroup.com/zh-HK/document-2028384807859257344",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "Priced HK$80bn (710 million shares at HK$112.70). 100% of net proceeds to full-stack AI. Close expected 26 August."
+    },
+    {
+      "label": "Straits Times — Nvidia AI server prices",
+      "href": "https://www.straitstimes.com/business/nvidia-customers-notified-about-ai-related-price-hikes-above-15-bloomberg",
+      "books": [
+        "us-equities",
+        "asia-equities"
+      ],
+      "influence": "CLAIM via Bloomberg: many AI servers shipping early 2027 more than +15% on memory costs."
+    },
+    {
+      "label": "财新 — 长存控股科创板",
+      "href": "https://www.caixin.com/2026-08-22/102476773.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "STAR IPO accepted; plans to raise 330亿元 for line upgrades and R&D."
+    },
+    {
+      "label": "工商时报 — 高盛中国约4%",
+      "href": "https://www.ctee.com.tw/news/20260823700618-430803",
+      "books": [
+        "asia-equities",
+        "rates"
+      ],
+      "influence": "CLAIM: Goldman Hui Shan, early-Q3 GDP about 4% y/y, demand-driven."
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": "今日图表（彭博 Aug 24）— 美国与加拿大双边贸易额接近9000亿美元",
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-08-24.png",
+      "analysis": "彭博「今日图表」标题：美国与加拿大双边贸易额接近9000亿美元。副题：2025年美国与主要贸易伙伴的货物和服务贸易。横向对比加拿大、墨西哥、中国；橙柱为从美国进口，黑柱为向美国出口。加拿大约426.3 / 453.6；墨西哥约390.4 / 580.6；中国约164.2 / 331.8（十亿美元）。来源标注美国经济分析局、国际收支口径。这是美加关税的贸易存量图，不是当日美股收盘；与市场一览「美国股市反弹」分开读。",
+      "source": {
+        "label": "彭博 Markets Daily China / 财经早茶",
+        "href": "https://www.bloomberg.com/asia"
+      }
+    }
+  ],
+  "marketTone": "The 财经早茶 is a US-Canada tariff morning, not a buyback morning. The United States put 50% duties on about $20bn of Canadian goods after talks broke. Friday the S&P 500 still rose 0.43% and lost 1.4% on the week. Services PMI printed a four-year high and the Nasdaq 100 ended a five-day drop. Alibaba priced an HK$80bn Hong Kong placing for AI. Gold is at a three-month high. Oil is waiting for the Iran isolation plan due today.",
+  "summary": [
+    {
+      "text": "Friday’s US close (CNBC): S&P 500 7,674.37 (+0.43%); Nasdaq 26,180.45 (+0.43%); Dow 53,277.01 (+0.98% / +517.80). For the week the S&P 500 fell 1.4%, the Nasdaq 2%, and the Dow 0.9%. The 10-year yield rose to 4.734% and the 30-year to 5.273%.",
+      "sources": [
+        {
+          "label": "CNBC Friday wrap",
+          "href": "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "CNBC yields",
+          "href": "https://www.cnbc.com/2026/08/21/treasury-yields-bonds-inflation-rates.html"
+        }
+      ]
+    },
+    {
+      "text": "S&P Global flash PMI: US composite 56.0, a 52-month high; services 56.8, a 20-month high; manufacturing PMI 53.2, a five-month low. Euro-area composite 52.1, a nine-month high. UK composite 52.5. Japan core CPI ex fresh food was 1.8% y/y, in line with the median estimate.",
+      "sources": [
+        {
+          "label": "S&P Global US flash PMI",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/552d682e429640fcb8af7da17ad060c3"
+        },
+        {
+          "label": "S&P Global Eurozone flash PMI",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/96fc596680084e9b86502a39ca84c6b8"
+        },
+        {
+          "label": "S&P Global UK flash PMI",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/cd324ddf91f64bdb8c119dad8bfe7912"
+        },
+        {
+          "label": "Japan Times",
+          "href": "https://www.japantimes.co.jp/business/2026/08/21/economy/cpi-july-rise/"
+        }
+      ]
+    },
+    {
+      "text": "Brent settled at $94.39 and WTI at $87.06 (CNBC). Crude finished the week more than 5% higher after Treasury Secretary Bessent told CNBC the United States will impose the toughest sanctions in history on Iran. The US military said it has helped tankers move more than 660 million barrels through Hormuz since early May. That is not a confirmed strait closure.",
+      "sources": [
+        {
+          "label": "CNBC oil",
+          "href": "https://www.cnbc.com/2026/08/21/oil-prices-us-iran.html"
+        }
+      ]
+    },
+    {
+      "text": "CoinDesk: bitcoin traded as high as $79,400 on Friday and was up about 24% since Monday, the strongest week since March 2023. BlockBeats (23 August): bitcoin through $77,000. 见闻 CLAIM: COMEX gold $4,624.1 (+2.39%). Those bids ran with higher yields, not against them.",
+      "sources": [
+        {
+          "label": "CoinDesk",
+          "href": "https://www.coindesk.com/markets/2026/08/21/bitcoin-tops-usd77-000-as-best-week-since-2023-pulls-altcoins-along-for-the-ride"
+        },
+        {
+          "label": "BlockBeats",
+          "href": "https://www.theblockbeats.info/flash/363064"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780045"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻早餐: Shanghai 3,905.2 (+0.04%); ChiNext 3,545.58 (+1.43%). 财新: Liao Min said H2 will timely plan practical incremental policy; new government bonds are CNY11.89tn this year; 3000亿元 special Treasury bonds for financial SOEs equals CNY300bn. Yonhap: Samsung expects KRW90tn–110tn for 2026 shareholder returns.",
+      "sources": [
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780045"
+        },
+        {
+          "label": "财新",
+          "href": "https://finance.caixin.com/2026-08-21/102476528.html"
+        },
+        {
+          "label": "Yonhap",
+          "href": "https://en.yna.co.kr/view/AEN20260821010151315"
+        }
+      ]
+    },
+    {
+      "text": "AP: the United States imposed 50% tariffs on $20bn of Canadian goods after weekend talks failed; Canada set 8 September for retaliation. Alibaba priced an HK$80bn Hong Kong placing, with all net proceeds for full-stack AI (company). 财经早茶 今日图表 is 2025 US goods-and-services trade with Canada, Mexico, and China (BEA bars on the PNG).",
+      "sources": [
+        {
+          "label": "AP tariffs",
+          "href": "https://apnews.com/article/canada-us-trade-tariffs-trump-857ef76b20a766e370d70176135b678e"
+        },
+        {
+          "label": "Alibaba placing",
+          "href": "https://www.alibabagroup.com/zh-HK/document-2028384807859257344"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "signal": "The new tape is tariffs and AI capex, not Friday’s 0.43% bounce. Services PMI at 56.8 is why the Nasdaq 100 stopped a five-day drop. The 30-year yield is still 5.273%. Oil is waiting for today’s Iran plan. Gold is a three-month high on the 贬值交易 desk, not a duration bid. Alibaba’s HK$80bn placing is dilution for AI, not a China demand print.",
+  "watch": "Today’s US Iran isolation plan · Jackson Hole Thursday–Friday; Warsh Friday 10:00 ET · Wednesday US PCE and Nvidia after the close · Alibaba placing close 26 August · first ≥$4bn buyback on 9 September · August NBS retail and FAI · Canada retaliation 8 September.",
+  "marketOverview": {
+    "asOfDate": "2026-08-24",
+    "note": "财经早茶 市场一览, CLAIM. Dated prints sit in Closes and Themes. Do not mix the Yahoo inject into these lines.",
+    "items": [
+      {
+        "label": "美国股市",
+        "text": "强劲的美国企业活动数据推动大盘反弹，纳斯达克100指数止步五连跌（CLAIM — inbox）",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "S&P Global US flash PMI",
+            "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/552d682e429640fcb8af7da17ad060c3"
+          }
+        ]
+      },
+      {
+        "label": "中概股",
+        "text": "金龙中国指数上涨，网易和百胜中国对指数贡献最大（CLAIM — inbox）",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          }
+        ]
+      },
+      {
+        "label": "美国债市",
+        "text": "美国国债收益率普涨，美国企业活动扩张步伐创2022年以来最快（CLAIM — inbox）",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "S&P Global US flash PMI",
+            "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/552d682e429640fcb8af7da17ad060c3"
+          }
+        ]
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数触及三个月新低，在美国财政部宣布扩大美债回购规模后，市场对美元的看空情绪升温（CLAIM — inbox）",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "华尔街见闻早餐",
+            "href": "https://wallstreetcn.com/articles/3780045"
+          }
+        ]
+      },
+      {
+        "label": "欧洲股债",
+        "text": "德国和英国国债企稳，结束动荡的一周。欧洲股市七连跌后反弹（CLAIM — inbox）",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          }
+        ]
+      },
+      {
+        "label": "能源",
+        "text": "原油价格连续第二周上涨，交易员等待美国公布旨在孤立伊朗经济的相关行动（CLAIM — inbox）",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "CNBC oil",
+            "href": "https://www.cnbc.com/2026/08/21/oil-prices-us-iran.html"
+          }
+        ]
+      },
+      {
+        "label": "金属",
+        "text": "锌价升至逾四年来最高水平，市场出现供应趋紧迹象。“贬值交易”回潮之际，黄金升至三个月高位（CLAIM — inbox）",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "华尔街见闻早餐",
+            "href": "https://wallstreetcn.com/articles/3780045"
+          }
+        ]
+      }
+    ],
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    }
+  },
+  "themeCards": [
+    {
+      "id": "us-canada-tariff",
+      "title": "Washington put 50% tariffs on $20bn of Canadian goods after talks broke",
+      "grade": "STRONG",
+      "assets": [
+        "US equities",
+        "CAD",
+        "Asia equities"
+      ],
+      "fact": "AP: 50% US tariffs on $20bn of Canadian goods after weekend talks failed; Canada set 8 September for retaliation. 财经早茶 今日图表: 2025 US goods and services trade with Canada, Mexico, and China (BEA). The PNG bars show Canada about $426.3bn from the US and $453.6bn to the US; Mexico $390.4bn / $580.6bn; China $164.2bn / $331.8bn. PBS/AP: the two countries sold each other about $880bn of goods and services last year.",
+      "factSources": [
+        {
+          "label": "AP tariffs",
+          "href": "https://apnews.com/article/canada-us-trade-tariffs-trump-857ef76b20a766e370d70176135b678e"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "A 50% duty on about 5% of Canada’s US shipments is a political tape more than a global growth shock, but it is the morning’s new book. Read the chart as the stock of US-Canada trade, not as Friday’s S&P bounce. Do not fold this into oil or into Alibaba’s placing.",
+      "trigger": "Canada’s 8 September retaliation list, or a dated restart of talks.",
+      "invalidator": "Duties walked back with no new list.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "us-pmi-ndx",
+      "title": "Services PMI hit a four-year high, and the Nasdaq 100 ended a five-day drop",
+      "grade": "STRONG",
+      "assets": [
+        "US equities",
+        "USTs",
+        "USD"
+      ],
+      "fact": "S&P Global: US composite 56.0, a 52-month high; services 56.8; manufacturing PMI 53.2, a five-month low. CNBC: S&P 500 7,674.37 (+0.43%), still −1.4% on the week; 10-year 4.734%; 30-year 5.273%. 财经早茶 市场一览: the Nasdaq 100 ended a five-day losing streak; Treasury yields rose with the fastest activity pace since 2022 (desk/CLAIM).",
+      "factSources": [
+        {
+          "label": "S&P Global US flash PMI",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/552d682e429640fcb8af7da17ad060c3"
+        },
+        {
+          "label": "CNBC Friday wrap",
+          "href": "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "CNBC yields",
+          "href": "https://www.cnbc.com/2026/08/21/treasury-yields-bonds-inflation-rates.html"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "A 56.8 services print is why the tape bounced, not the Treasury buyback. The 30-year yield at 5.273% is still the backup. 财经早茶 FX desk: the Bloomberg dollar index tagged a three-month low after the buyback size lift (CLAIM). Keep oil on the Iran card.",
+      "trigger": "Wednesday’s PCE matching the services-hot, goods-soft split, into Warsh.",
+      "invalidator": "A services flash that falls back toward 50 with yields down.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "nvidia-server-price",
+      "title": "Memory costs are lifting Nvidia AI server prices by more than 15%",
+      "grade": "STRONG",
+      "assets": [
+        "US equities",
+        "Asia equities"
+      ],
+      "fact": "Straits Times (Bloomberg sources): many Nvidia AI servers shipping early 2027 will cost more than 15% more as memory prices rise; the increase depends on chip generation and memory configuration. 财经早茶: the same desk/CLAIM. Nvidia reports Wednesday after the close.",
+      "factSources": [
+        {
+          "label": "Straits Times",
+          "href": "https://www.straitstimes.com/business/nvidia-customers-notified-about-ai-related-price-hikes-above-15-bloomberg"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "This is memory beta passing through Nvidia’s server ASP, not a China demand print and not Samsung’s return. Treat it as the AI-capex book into Wednesday’s earnings.",
+      "trigger": "Nvidia’s Wednesday print, or a dated HBM/DRAM price that walks the 15% back.",
+      "invalidator": "Memory prices rolling over with no server-price follow-through.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "iran-oil-week",
+      "title": "Oil is waiting for today’s Iran isolation plan, not for the buyback",
+      "grade": "STRONG",
+      "assets": [
+        "Oil",
+        "USTs"
+      ],
+      "fact": "CNBC: Brent $94.39; WTI $87.06; crude more than +5% on the week. 财经早茶 市场一览: oil rose a second week as traders wait for the US plan to isolate Iran’s economy (desk/CLAIM). Bessent told CNBC the United States will impose the toughest sanctions in history. 国际要闻: the plan is due Monday (desk/CLAIM).",
+      "factSources": [
+        {
+          "label": "CNBC oil",
+          "href": "https://www.cnbc.com/2026/08/21/oil-prices-us-iran.html"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Oil can lift the long end even when Treasury is buying 10- to 30-year notes. Keep this book separate from gold. A Navy-escorted barrel count is not a confirmed strait closure.",
+      "trigger": "A dated isolation list, a flow shutdown, or a dated ceasefire that drops Brent.",
+      "invalidator": "Quiet oil with no new isolation step.",
+      "horizon": "days",
+      "status": "continuing"
+    },
+    {
+      "id": "gold-debasement",
+      "title": "Gold is at a three-month high on the 贬值交易, not on falling yields",
+      "grade": "STRONG",
+      "assets": [
+        "Gold",
+        "BTC",
+        "USD"
+      ],
+      "fact": "财经早茶 市场一览: zinc at a more-than-four-year high on tightness; gold at a three-month high as the 贬值交易 returned (desk/CLAIM). 见闻: COMEX gold $4,624.1 (+2.39%). CoinDesk: bitcoin as high as $79,400 Friday, about +24% in the week. CNBC: 30-year yield 5.273%. Dalio (desk/CLAIM): hold about 10% to 15% in gold and a little bitcoin against a US debt-crisis risk.",
+      "factSources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780045"
+        },
+        {
+          "label": "CoinDesk",
+          "href": "https://www.coindesk.com/markets/2026/08/21/bitcoin-tops-usd77-000-as-best-week-since-2023-pulls-altcoins-along-for-the-ride"
+        },
+        {
+          "label": "CNBC yields",
+          "href": "https://www.cnbc.com/2026/08/21/treasury-yields-bonds-inflation-rates.html"
+        }
+      ],
+      "mechanism": "If gold were only duration, it should have fallen with Friday’s yield backup. It did not. CICC CLAIM (24 August): the buyback fade is term premium, the dollar is the damaged asset, and gold and crypto are substitutes. Keep oil on the Iran card.",
+      "trigger": "A session where gold and bitcoin fall with the 30-year yield.",
+      "invalidator": "Bitcoin giving back $77,000 as the 30-year yield also falls.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "alibaba-hk-placing",
+      "title": "Alibaba priced an HK$80bn Hong Kong placing to fund full-stack AI",
+      "grade": "STRONG",
+      "assets": [
+        "A/H shares",
+        "Asia equities"
+      ],
+      "fact": "Company: 710 million new shares at HK$112.70, HK$80bn in total; 100% of net proceeds to full-stack AI; expected close 26 August. 财经早茶 大中华: the same placing; Michael Burry said he would not reconsider until the stock was halved (desk/CLAIM).",
+      "factSources": [
+        {
+          "label": "Alibaba placing",
+          "href": "https://www.alibabagroup.com/zh-HK/document-2028384807859257344"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "This is dilution for AI capex, not a China consumption rebound and not Goldman’s 4% growth CLAIM. Hang Seng can bounce on the print while CSI does not.",
+      "trigger": "The 26 August close, or a session where 9988 gives back the placing gap.",
+      "invalidator": "The placing cancelled or resized with no AI spend follow-through.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "goldman-china-4pct",
+      "title": "Goldman says early-quarter China growth is about 4% on weak demand",
+      "grade": "MODERATE",
+      "assets": [
+        "A/H shares",
+        "China rates",
+        "CNY"
+      ],
+      "fact": "工商时报: Goldman Hui Shan, early-Q3 GDP about 4% y/y, below about 4.3% last quarter, demand-driven (CLAIM). 财经早茶: the same CLAIM, plus a People’s Daily line that China should not obsess over one quarter’s data, and July broad fiscal spending −4.4% y/y after June’s −11.9%. 财新: Liao Min still only promised to plan incremental policy. 见闻: Shanghai +0.04% to 3,905.2.",
+      "factSources": [
+        {
+          "label": "工商时报",
+          "href": "https://www.ctee.com.tw/news/20260823700618-430803"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "财新",
+          "href": "https://finance.caixin.com/2026-08-21/102476528.html"
+        },
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780045"
+        }
+      ],
+      "mechanism": "A 4% CLAIM is weak demand, not an easing cycle. July spending falling less hard than June is not a stimulus print. Do not read Alibaba’s placing as this book.",
+      "trigger": "August NBS retail and FAI, or a dated incremental package with a yuan size.",
+      "invalidator": "August NBS demand that beats the Goldman 4% CLAIM with no new fiscal print.",
+      "horizon": "weeks",
+      "status": "new"
+    }
+  ],
+  "globalRegime": "The new tape is US-Canada tariffs and AI capex. Friday the S&P 500 rose 0.43% and still lost 1.4% on the week. Services PMI printed 56.8 and the Nasdaq 100 ended a five-day drop. The 30-year yield is 5.273%. Oil is waiting for today’s Iran plan. Gold is a three-month high. Alibaba priced HK$80bn in Hong Kong.",
+  "globalChanged": [
+    {
+      "text": "美加贸易谈判在最后一刻破裂。AP：美方对约200亿美元加拿大商品征收50%关税，加方将从9月8日起对等反制（CLAIM — inbox；AP $20bn / 50%）。",
+      "sources": [
+        {
+          "label": "AP tariffs",
+          "href": "https://apnews.com/article/canada-us-trade-tariffs-trump-857ef76b20a766e370d70176135b678e"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国周一将公布经济孤立伊朗及其贸易伙伴的计划，对华关系或因石油问题再起波澜（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "达利欧建议降低债券仓位，增配黄金及少量比特币，对冲他认为数年尺度的美国债务危机风险（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "明尼阿波利斯联储行长称美债市场运作和流动性正常，近期收益率飙升不太可能影响货币政策讨论；对通胀短期内回到目标缺乏信心（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "S&P Global：美国8月综合PMI初值56.0，服务业56.8，为四年多来最快扩张。财经早茶：彭博调查称三季度GDP预测上调，美联储到明年7月都料按兵不动（CLAIM — inbox）。",
+      "sources": [
+        {
+          "label": "S&P Global US flash PMI",
+          "href": "https://www.pmi.spglobal.com/Public/Home/PressRelease/552d682e429640fcb8af7da17ad060c3"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "因存储芯片成本飙升，明年初出货的英伟达AI服务器很多将涨价逾15%（CLAIM — Straits Times / inbox）",
+      "sources": [
+        {
+          "label": "Straits Times",
+          "href": "https://www.straitstimes.com/business/nvidia-customers-notified-about-ai-related-price-hikes-above-15-bloomberg"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "英伟达据悉就Poolside AI模型使用许可及追加投资达成协议（CLAIM — inbox；size not on a second source）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Anthropic聘请谷歌定制芯片项目创始人Amir Salek，为其进军自研芯片做准备（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "伦敦AI云计算公司Nscale据悉寻求通过美国IPO融资，最快9月启动（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "苹果据悉裁减Siri及Vision Pro相关团队，资源转向人工智能与新设备（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "特朗普宣布短期免征部分配额外牛肉关税，牧场主警告可能损害美国畜牧业（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "CNBC：标普500收涨0.43%报7,674.37；道指涨0.98%报53,277.01；纳指涨0.43%报26,180.45。全周标普跌1.4%。",
+      "sources": [
+        {
+          "label": "CNBC Friday wrap",
+          "href": "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html"
+        }
+      ]
+    },
+    {
+      "text": "CNBC：10年期美债收益率升至4.734%；30年期升至5.273%；2年期升至4.232%。",
+      "sources": [
+        {
+          "label": "CNBC yields",
+          "href": "https://www.cnbc.com/2026/08/21/treasury-yields-bonds-inflation-rates.html"
+        }
+      ]
+    },
+    {
+      "text": "CoinDesk：比特币周五高见79,400美元，周内涨约24%。",
+      "sources": [
+        {
+          "label": "CoinDesk",
+          "href": "https://www.coindesk.com/markets/2026/08/21/bitcoin-tops-usd77-000-as-best-week-since-2023-pulls-altcoins-along-for-the-ride"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "Do not read Friday’s 0.43% S&P bounce as the buyback still working. The new book is 50% Canada tariffs and Nvidia server prices."
+    },
+    {
+      "text": "CICC CLAIM (24 August): buybacks did not fix term premium; gold and crypto are dollar substitutes on this tape."
+    }
+  ],
+  "globalTensions": "Gold is at a three-month high while the 30-year yield is 5.273%. Services PMI hit a four-year high while manufacturing PMI missed. US-Canada tariffs are not Alibaba’s placing.",
+  "chinaStance": "Goldman CLAIM: early-quarter growth is about 4% on weak demand. People’s Daily said not to obsess over one quarter. July fiscal spending fell less hard than June. Liao Min still only promised to plan incremental policy. Alibaba priced HK$80bn for AI. Shanghai closed +0.04%.",
+  "chinaChanged": [
+    {
+      "text": "高盛预计需求不足拖累中国经济增速本季度初进一步放缓至约4%，周期性疲弱恐固化成结构性损伤（CLAIM — 工商时报 / inbox）",
+      "sources": [
+        {
+          "label": "工商时报",
+          "href": "https://www.ctee.com.tw/news/20260823700618-430803"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "《人民日报》评论文章称，从质量效益和更长视角观察，不能纠结于个别季度、月份指标数据的高低（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国7月广义财政支出同比降幅较6月收窄，显示财政紧缩力度可能开始减弱（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "阿里巴巴宣布香港配售新股融资800亿港元（HK$80bn），净额全部用于全栈人工智能；预计8月26日交割（公司）。",
+      "sources": [
+        {
+          "label": "Alibaba placing",
+          "href": "https://www.alibabagroup.com/zh-HK/document-2028384807859257344"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "DeepSeek发布实验性多模态模型，称在智能体测试中接近Anthropic高阶模型（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "长江存储科创板上市申请获上交所受理，计划募资330亿元用于升级生产线及加强研发（财新）",
+      "sources": [
+        {
+          "label": "财新 — 长存控股",
+          "href": "https://www.caixin.com/2026-08-22/102476773.html"
+        },
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "TikTok及其中国母公司字节跳动同意了结美国司法部关于儿童隐私的诉讼（CLAIM — inbox；settlement size not on a second source）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "至少九家汽车制造商因车门把手安全隐患在中国召回电动汽车，其中特斯拉规模最大（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "恒生指数公司季度检讨后将华虹宏力和潍柴动力纳入恒生指数，成分股由93只增至95只，9月7日起生效（CLAIM — inbox）",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "财新：廖岷表示下半年将及时谋划出台务实管用的增量政策；今年财政支出预算首次超过30万亿元；新增政府债券11.89万亿元。",
+      "sources": [
+        {
+          "label": "财新",
+          "href": "https://finance.caixin.com/2026-08-21/102476528.html"
+        },
+        {
+          "label": "第一财经",
+          "href": "https://www.yicai.com/news/103328009.html"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻早餐：上证收涨0.04%报3905.2；创业板涨1.43%报3545.58。",
+      "sources": [
+        {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780045"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "Goldman’s 4% CLAIM is weak demand, not a cut. Wait for August retail and FAI."
+    },
+    {
+      "text": "Alibaba’s HK$80bn placing is AI capex dilution, not CSI beta."
+    }
+  ],
+  "chinaDivergences": "Shanghai +0.04% versus Alibaba’s placing. Gold at a three-month high versus a 5.273% 30-year yield. US-Canada tariffs versus Iran oil.",
+  "signals": [],
+  "eventCalendar": {
+    "windowStart": "2026-08-24",
+    "windowEnd": "2026-09-04",
+    "note": "Briefing day through next Friday (Sep 4). Mainland China only on China rows (no TW/HK). Calendar from 24 August 财经早茶 日程 plus 见闻前瞻 and BLS/CNBC.",
+    "events": [
+      {
+        "id": "pboc-omo-2026-08-24",
+        "date": "2026-08-24",
+        "timeBeijing": "09:20",
+        "region": "China",
+        "category": "central-bank",
+        "event": "PBOC open-market operations (MLF week; Friday restarted CNY95bn 7-day)",
+        "themeId": "goldman-china-4pct",
+        "source": {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780045"
+        }
+      },
+      {
+        "id": "us-iran-plan-2026-08-24",
+        "date": "2026-08-24",
+        "timeBeijing": "",
+        "region": "US",
+        "category": "policy",
+        "event": "US plan to isolate Iran and its trading partners (财经早茶 日程)",
+        "themeId": "iran-oil-week",
+        "source": {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "chicago-fed-2026-08-24",
+        "date": "2026-08-24",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "July Chicago Fed National Activity Index",
+        "themeId": "us-pmi-ndx",
+        "source": {
+          "label": "彭博财经早茶 Aug 24",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "sinopec-xpeng-2026-08-24",
+        "date": "2026-08-24",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "earnings",
+        "event": "Sinopec and XPeng results (见闻前瞻)",
+        "source": {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780045"
+        }
+      },
+      {
+        "id": "pdd-earnings-2026-08-24",
+        "date": "2026-08-24",
+        "timeBeijing": "",
+        "region": "US",
+        "category": "earnings",
+        "event": "PDD earnings (见闻前瞻)",
+        "source": {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780045"
+        }
+      },
+      {
+        "id": "us-pce-2026-08-26",
+        "date": "2026-08-26",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "US July PCE",
+        "themeId": "us-pmi-ndx",
+        "source": {
+          "label": "华尔街见闻早餐 8月22日",
+          "href": "https://wallstreetcn.com/articles/3780043"
+        }
+      },
+      {
+        "id": "nvidia-earnings-2026-08-26",
+        "date": "2026-08-26",
+        "timeBeijing": "",
+        "region": "US",
+        "category": "earnings",
+        "event": "Nvidia earnings (after the close)",
+        "themeId": "nvidia-server-price",
+        "source": {
+          "label": "华尔街见闻早餐",
+          "href": "https://wallstreetcn.com/articles/3780045"
+        }
+      },
+      {
+        "id": "bls-leave-2026-08-26",
+        "date": "2026-08-26",
+        "timeBeijing": "22:00",
+        "region": "US",
+        "category": "data",
+        "event": "Access to and Use of Leave 2024–2025",
+        "source": {
+          "label": "BLS August schedule",
+          "href": "https://www.bls.gov/schedule/2026/08_sched.htm"
+        }
+      },
+      {
+        "id": "jackson-hole-open-2026-08-27",
+        "date": "2026-08-27",
+        "timeBeijing": "",
+        "region": "US",
+        "category": "central-bank",
+        "event": "Jackson Hole symposium opens",
+        "themeId": "us-pmi-ndx",
+        "source": {
+          "label": "CNBC Friday wrap",
+          "href": "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html"
+        }
+      },
+      {
+        "id": "bls-projections-2026-08-27",
+        "date": "2026-08-27",
+        "timeBeijing": "22:00",
+        "region": "US",
+        "category": "data",
+        "event": "Employment Projections and Occupational Outlook Handbook 2025–2035",
+        "source": {
+          "label": "BLS August schedule",
+          "href": "https://www.bls.gov/schedule/2026/08_sched.htm"
+        }
+      },
+      {
+        "id": "jackson-hole-warsh-2026-08-28",
+        "date": "2026-08-28",
+        "timeBeijing": "22:00",
+        "region": "US",
+        "category": "central-bank",
+        "event": "Jackson Hole — Warsh keynote (about 10:00 ET)",
+        "themeId": "us-pmi-ndx",
+        "source": {
+          "label": "CNBC yields",
+          "href": "https://www.cnbc.com/2026/08/21/treasury-yields-bonds-inflation-rates.html"
+        }
+      },
+      {
+        "id": "bls-cew-2026-08-28",
+        "date": "2026-08-28",
+        "timeBeijing": "22:00",
+        "region": "US",
+        "category": "data",
+        "event": "County Employment and Wages (Q1 2026)",
+        "source": {
+          "label": "BLS August schedule",
+          "href": "https://www.bls.gov/schedule/2026/08_sched.htm"
+        }
+      }
+    ]
+  },
+  "watchItems": [],
+  "sources": "24 August 财经早茶 IMAP landed after first publish (PNG + md). 市场一览 is that mail in Chinese, mail order — not 见闻 市场收报. 今日图表 is the US-Canada trade PNG. CICC is the 24 August 美债 note (CLAIM). NBS English is still the demand FACT chip when it prints.",
+  "singleSource": "First 09:00 publish omitted the chart and used 见闻 市场收报 because IMAP had not landed; patched after 9537ac4. Distinctive inbox sizes without a second source were dropped (Poolside, Nscale IPO, Apple headcount, TikTok settlement, EV recall counts). Yicai and Caixin cover the 21 August SCIO. BlockBeats 363064 is color; CoinDesk is the $79,400 print. Yahoo quote HTML is not used in summary or drivers. Dashboard will be re-injected.",
+  "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F in Market closes is futures. Monday Asia levels live only in Market Dashboard. 30-year 5.273% is CNBC, not the Treasury daily curve until that print posts.",
+  "suggestions": "Today: the Iran isolation list. Into Jackson Hole: whether the 30-year yield holds above 5.25%. Into China: Alibaba’s 26 August placing close, then August retail and FAI. This report is research and information synthesis, not investment advice.",
+  "marketDashboard": {
+    "asOf": "2026-08-24T03:53:17.775Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,674.37",
+            "change": "+0.43%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-21",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "26,180.46",
+            "change": "+0.43%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-21",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "15.13",
+            "change": "−5.50%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-21",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "65,652.31",
+            "change": "−0.55%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "kospi",
+            "asset": "Kospi",
+            "latest": "6,672.51",
+            "change": "−3.48%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "25,465.52",
+            "change": "−2.09%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,582.75",
+            "change": null,
+            "changeDirection": "flat",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,877.30",
+            "change": "−0.71%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.24%",
+            "change": "+5.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-21",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.43%",
+            "change": "+4.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-21",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.74%",
+            "change": "+5.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-21",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.27%",
+            "change": "+4.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-21",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "158.9390",
+            "change": "+0.04%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.7223",
+            "change": "−0.00%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,702.40",
+            "change": "+1.69%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$93.18",
+            "change": "−1.28%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$77,105",
+            "change": "+0.22%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0100%",
+            "change": "0.000 bp",
+            "changeDirection": "flat",
+            "asOfDate": "2026-08-24",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-08-24"
+}

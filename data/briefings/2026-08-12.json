@@ -1,0 +1,1137 @@
+{
+  "date": "2026-08-12",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "August 11–12, 2026",
+  "publishedAt": "2026-08-12T07:20:00Z",
+  "keySources": [
+    {
+      "label": "彭博 Markets Daily China / 财经早茶 (Aug 12 inbox)",
+      "href": "https://www.bloomberg.com/asia"
+    },
+    {
+      "label": "AP — How major US stock indexes fared Tuesday 8/11/2026",
+      "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e5e8f3360f8d30714778761e3a483347"
+    },
+    {
+      "label": "Yahoo Finance — S&P 500 (^GSPC)",
+      "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "label": "Yahoo Finance — Nasdaq (^IXIC)",
+      "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+    },
+    {
+      "label": "U.S. Treasury — daily yield curve",
+      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+    },
+    {
+      "label": "RBA — Monetary Policy Decision (11 Aug 2026)",
+      "href": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html"
+    },
+    {
+      "label": "BLS — CPI schedule (July 2026 release Aug 12)",
+      "href": "https://www.bls.gov/schedule/news_release/cpi.htm"
+    },
+    {
+      "label": "乘联分会 — 7月乘用车出口（新浪转载）",
+      "href": "https://finance.sina.com.cn/jjxw/2026-08-11/doc-inimxrni0720663.shtml"
+    },
+    {
+      "label": "Yahoo Finance — Brent (BZ=F)",
+      "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+    },
+    {
+      "label": "Yahoo Finance — USD/JPY",
+      "href": "https://finance.yahoo.com/quote/USDJPY%3DX/"
+    },
+    {
+      "label": "Yahoo Finance — Kospi (^KS11)",
+      "href": "https://finance.yahoo.com/quote/%5EKS11/"
+    },
+    {
+      "label": "CoinGecko — Bitcoin",
+      "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+      "label": "Federal Reserve calendar",
+      "href": "https://www.federalreserve.gov/json/calendar.json"
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": "今日图表（彭博 Aug 12）— 瑞士央行美股持仓创纪录",
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-08-12.png",
+      "analysis": "彭博「今日图表」标题：第二季度瑞士央行的美股持仓规模创下纪录新高；来源标注为瑞士央行提交美国SEC的13F报告。面积图自2014年起上行，2021–22见回撤后再度抬升至图示峰值区间。So what：这是官方机构持仓规模的历史读数，不是当日美股beta信号；对大类资产，读的是「全球官方买家对美股敞口仍在扩张」的存量结构，不能单独用来交易今日CPI路径。",
+      "source": {
+        "label": "彭博 Markets Daily China / 财经早茶",
+        "href": "https://www.bloomberg.com/asia"
+      }
+    }
+  ],
+  "marketTone": "Hormuz reopen still disputed into CPI day: Tuesday S&P closed 7,728.20 (−0.32%), Nasdaq 26,445.45 (−0.60%), yields eased, while desks flag Iran conditions keeping the Strait closed, USD/JPY near 160, and Tencent results after the HK close.",
+  "summary": [
+    {
+      "text": "Aug 11 US close (AP/Yahoo): S&P 500 7,728.20 (−0.32%); Nasdaq Composite 26,445.45 (−0.60%); Dow 53,791.85 (−0.3%).",
+      "sources": [
+        {
+          "label": "AP News",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e5e8f3360f8d30714778761e3a483347"
+        },
+        {
+          "label": "Yahoo Finance (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        }
+      ]
+    },
+    {
+      "text": "Aug 11 Treasury curve: US 2Y 4.22% (−3 bp); 10Y 4.70% (−2 bp). Inbox: CTAs’ global-bond shorts at a record into today’s CPI (desk).",
+      "sources": [
+        {
+          "label": "U.S. Treasury",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Hormuz: Pakistan says US–Iran nearing an arrangement; Iran advisor (state media) says Strait stays closed until Tehran’s conditions are met; inbox also flags EIA supply disruption lasting into end-2027 (desk).",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "财联社/新浪 (赖特流量 vs 分析师质疑)",
+          "href": "https://finance.sina.com.cn/jjxw/2026-08-12/doc-inimzqcr3678528.shtml"
+        }
+      ]
+    },
+    {
+      "text": "July CPI due 8:30 a.m. ET today (BLS). Chicago Fed’s Goolsbee: inflation is the economy’s biggest problem; labor market “stable but not great” (inbox).",
+      "sources": [
+        {
+          "label": "BLS CPI schedule",
+          "href": "https://www.bls.gov/schedule/news_release/cpi.htm"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Wednesday Asia (Yahoo): Nikkei 67,524.06 (+0.83%); Kospi 6,579.04 (+3.68%); Hang Seng 25,379.47 (−1.07%); Shanghai Composite 3,946.59 (+0.32%). Inbox: Golden Dragon wiped prior three-day gains (JD / TME largest drags).",
+      "sources": [
+        {
+          "label": "Yahoo Finance (^KS11)",
+          "href": "https://finance.yahoo.com/quote/%5EKS11/"
+        },
+        {
+          "label": "Yahoo Finance (^HSI)",
+          "href": "https://finance.yahoo.com/quote/%5EHSI/"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Tencent reports Wednesday after HK close — desks watch WorkBuddy / AI-office metrics (inbox). RBA held cash rate at 4.35% (11 Aug, unanimous).",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "RBA media release 2026-19",
+          "href": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html"
+        }
+      ]
+    }
+  ],
+  "signal": "Disputed Hormuz reopen + record CTA bond shorts into CPI, with USD/JPY near 160 and Tencent AI metrics after the close — path-odds stay two-sided until the BLS print.",
+  "watch": "BLS CPI/core (Aug 12 20:30 BJ) · PPI (Aug 13) · Tencent WorkBuddy metrics · USD/JPY vs 160 · Hormuz conditions language · PBOC July credit (possible) · FOMC minutes (Aug 19).",
+  "marketOverview": {
+    "asOfDate": "2026-08-12",
+    "note": "From 彭博 市场一览 — qualitative desk color only.",
+    "items": [
+      {
+        "label": "美国股市",
+        "text": "大型科技股拖累标普500指数收跌，霍尔木兹海峡僵局推高油价之际投资者关注周三将公布的关键CPI数据"
+      },
+      {
+        "label": "中概股",
+        "text": "金龙中国指数大跌，抹去之前三个交易日的涨幅，京东和腾讯音乐娱乐对指数拖累最大"
+      },
+      {
+        "label": "美国债市",
+        "text": "国债全线上涨，美国3年期国债拍卖获得强劲需求"
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数在美国CPI数据公布前基本持稳。日元兑美元窄幅波动，距离160关口仅一步之遥"
+      },
+      {
+        "label": "欧洲股债",
+        "text": "德国和英国国债转涨。欧洲股市收盘基本持平，投资者继续关注中东局势发展"
+      },
+      {
+        "label": "能源",
+        "text": "WTI原油期货四连涨，霍尔木兹海峡通航前景存疑"
+      },
+      {
+        "label": "金属",
+        "text": "金价从两个月高位回落，市场关注焦点转向美国通胀数据。铜价基本持平"
+      }
+    ],
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    }
+  },
+  "themeCards": [
+    {
+      "id": "hormuz-reopen-disputed",
+      "title": "Hormuz reopen still disputed — oil premium holds",
+      "grade": "STRONG",
+      "assets": [
+        "Oil",
+        "USTs"
+      ],
+      "fact": "Inbox: Pakistan says US–Iran nearing an arrangement on Hormuz, but Iran’s supreme-leader advisor (state media) says the Strait stays closed until Tehran’s conditions are met; White House color that Trump sees no need to rush. EIA (desk) sees war-related oil supply disruption lasting into end-2027. Yahoo Brent ~$89; AP Brent +1.4% Tue to $88.91.",
+      "factSources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "AP News",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e5e8f3360f8d30714778761e3a483347"
+        },
+        {
+          "label": "Yahoo Finance (BZ=F)",
+          "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+        },
+        {
+          "label": "财联社/新浪",
+          "href": "https://finance.sina.com.cn/jjxw/2026-08-12/doc-inimzqcr3678528.shtml"
+        }
+      ],
+      "mechanism": "Diplomacy headlines and commercial-flow reality can diverge for weeks — energy inflation risk stays in the bond path even when equities drift into CPI.",
+      "trigger": "Verified sustained commercial Hormuz flow with falling freight/war risk.",
+      "invalidator": "Soft oil drop that pulls inflation-path anxiety lower with soft CPI.",
+      "horizon": "days–weeks",
+      "status": "continuing"
+    },
+    {
+      "id": "july-cpi-cta-shorts",
+      "title": "CPI day meets record CTA bond shorts",
+      "grade": "STRONG",
+      "assets": [
+        "USTs",
+        "US equities"
+      ],
+      "fact": "BLS July CPI at 8:30 a.m. ET today. Inbox: UBS data — CTA shorts on global bonds at a record into the print. Goolsbee: inflation is the biggest problem; labor “stable but not great.” Tuesday: S&P 7,728.20 (−0.32%), 10Y 4.70% (−2 bp). Pre-release at publish.",
+      "factSources": [
+        {
+          "label": "BLS CPI schedule",
+          "href": "https://www.bls.gov/schedule/news_release/cpi.htm"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "AP News",
+          "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e5e8f3360f8d30714778761e3a483347"
+        },
+        {
+          "label": "U.S. Treasury",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ],
+      "mechanism": "Crowded bond shorts amplify a soft CPI squeeze; a hot print re-opens hike odds despite Tuesday’s yield ease.",
+      "trigger": "Hot July CPI that lifts front-end yields and softens equities.",
+      "invalidator": "Soft CPI that squeezes CTA shorts and extends the yield ease.",
+      "horizon": "hours–days",
+      "status": "new"
+    },
+    {
+      "id": "yen-near-160",
+      "title": "USD/JPY near 160 — intervention watch",
+      "grade": "MODERATE",
+      "assets": [
+        "USD/JPY",
+        "Asia equities"
+      ],
+      "fact": "Inbox: yen sliding toward the 160 handle with rising intervention anxiety. Yahoo USD/JPY ~159.4; Japan cash reopened Wednesday (Nikkei +0.83%).",
+      "factSources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Yahoo Finance (USDJPY)",
+          "href": "https://finance.yahoo.com/quote/USDJPY%3DX/"
+        },
+        {
+          "label": "Yahoo Finance (^N225)",
+          "href": "https://finance.yahoo.com/quote/%5EN225/"
+        }
+      ],
+      "mechanism": "Round-number FX thresholds raise the option value of official response — cash reopen and FX headlines can diverge.",
+      "trigger": "Confirmed official yen support or sustained break back below 155.",
+      "invalidator": "Clean grind through 160 with no official response.",
+      "horizon": "days",
+      "status": "continuing"
+    },
+    {
+      "id": "tencent-workbuddy-print",
+      "title": "Tencent results — WorkBuddy / AI metrics in focus",
+      "grade": "MODERATE",
+      "assets": [
+        "Asia equities",
+        "AI"
+      ],
+      "fact": "Inbox: Tencent reports Wednesday after the HK close; investors watch WorkBuddy (AI office assistant) metrics as a potential catch-up signal. Golden Dragon wiped three prior up-days (JD / TME largest drags).",
+      "factSources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "香港文汇报（腾讯放榜预期）",
+          "href": "https://www.wenweipo.com/a/202608/12/AP6a7b80a5e4b0c1e50024781e.html"
+        }
+      ],
+      "mechanism": "Mega-cap China tech print can reset HK/ADR beta independently of US CPI — AI product KPIs matter more than one-quarter revenue alone.",
+      "trigger": "Soft guidance / thin WorkBuddy disclosure that extends Golden Dragon fade.",
+      "invalidator": "Clean beat + concrete AI-office metrics that stabilize HK tech.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "nvidia-financing-risk-cap",
+      "title": "Huang caps $500bn AI financing exposure",
+      "grade": "MODERATE",
+      "assets": [
+        "US equities",
+        "AI"
+      ],
+      "fact": "Inbox: after CEO Huang said Nvidia will limit risk exposure on the $500bn AI financing plan, Nvidia credit-risk indicators eased. Related tape: Super Micro and CoreWeave beat/guided hot; both jumped after hours (desk).",
+      "factSources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "CNBC (Wall Street AI financing concept)",
+          "href": "https://www.cnbc.com/2026/08/11/wall-street-endorsed-jensen-huangs-big-concept-for-ai-what-now.html"
+        }
+      ],
+      "mechanism": "Clarifying Nvidia’s residual/backstop share reduces circular-finance fear — keeps AI-capex demand narrative alive without treating $500bn as NVDA cash outlay.",
+      "trigger": "Filings that show larger-than-signaled Nvidia residual guarantees.",
+      "invalidator": "Confirmed third-party underwriting with limited Nvidia balance-sheet risk.",
+      "horizon": "weeks",
+      "status": "continuing"
+    },
+    {
+      "id": "china-auto-export-surge",
+      "title": "China passenger-car exports jump in July",
+      "grade": "MODERATE",
+      "assets": [
+        "Asia equities",
+        "FX"
+      ],
+      "fact": "乘联分会: July passenger-car exports 918k units, +87.8% y/y, ~41% of maker sales (vs ~21% a year earlier). Matches inbox “同比跃升近九成 / 41%销往海外”.",
+      "factSources": [
+        {
+          "label": "乘联分会（新浪转载）",
+          "href": "https://finance.sina.com.cn/jjxw/2026-08-11/doc-inimxrni0720663.shtml"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Export share rising while domestic retail soft is a China auto regime split — overseas demand carries makers even when local seasonality bites.",
+      "trigger": "Export growth fade with weaker EV overseas orders.",
+      "invalidator": "Sustained 40%+ export share with stable ASPs.",
+      "horizon": "weeks–months",
+      "status": "new"
+    }
+  ],
+  "globalRegime": "Pre-CPI consolidation with a disputed Hormuz reopen and USD/JPY near 160: risk assets slipped from records Tuesday while desks still price an energy inflation channel into today’s BLS print.",
+  "globalChanged": [
+    {
+      "text": "巴基斯坦表示美伊就霍尔木兹海峡问题接近达成某种安排，但据伊朗官媒报道，最高领袖顾问称海峡将保持关闭状态，直至德黑兰提出的条件得到满足。白宫官员透露，特朗普认为无需仓促达成协议",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国能源信息管理局预计，伊朗战争造成的石油供应受阻将持续到2027年底",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "彭博经济研究称，美国在对伊战争中使用的关键弹药的储备已低至“危险”程度，补充库存需要耗时数年",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "瑞银数据显示，商品交易顾问对全球债券的做空押注达到创纪录水平，周三美国将公布的CPI报告若刺激债券价格走高，恐导致此类交易发生巨亏",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "芝加哥联储行长表示，通胀是美国经济面临的最大问题，劳动力市场稳定，但谈不上好",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国证券交易委员会准备在未来几天推出两项重大举措，其中对代币化股票的创新豁免可能重塑美股市场格局，并为股票代币在区块链上进行全天候交易铺平道路",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国7月份二手房销售降至三个月低点，房价和抵押贷款利率高企持续拖累房地产市场",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "随着企业加快招聘且通胀压力有所缓解，美国小企业乐观情绪在7月升至近一年来最高水平",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "日元兑美元跌向160这一重要关口，市场对东京当局干预的忧虑进一步升温",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "苹果据悉仍将按计划在明年iPhone问世20周年之际推出采用全新玻璃质感设计的iPhone Pro机型",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "英伟达推出Nemotron 3.5 Lightning，称智能体的任务完成速度有望借此提升30%，据报开源模型Nemotron 4目前正在开发阶段",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "在CEO黄仁勋表示将限制5000亿美元AI融资计划的风险敞口后，英伟达信用风险指标有所回落",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "超微电脑本季度营收展望远超分析师预估，人工智能热潮持续推动其服务器需求增长。AI算力供应商CoreWeave季度营收亦超预期。两家公司股价盘后均大涨",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "RBA left the cash rate unchanged at 4.35% (unanimous, 11 Aug) and may hike further if upside inflation risks materialise.",
+      "sources": [
+        {
+          "label": "RBA media release 2026-19",
+          "href": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "Treat Pakistan “near deal” color as diplomatic, not commercial flow — Iran conditions language keeps the oil premium alive into CPI."
+    },
+    {
+      "text": "Record CTA bond shorts raise soft-CPI squeeze risk; do not treat Tuesday’s yield ease as regime change before the print."
+    }
+  ],
+  "globalTensions": "Soft US equities vs still-elevated oil; easier Treasuries vs Goolsbee hawkish color; USD/JPY near 160 vs Japan cash reopen.",
+  "chinaStance": "Export-led auto strength vs soft Golden Dragon into Tencent’s AI-metrics print; no fresh PBOC primary in this capture (July credit possible later today).",
+  "chinaChanged": [
+    {
+      "text": "腾讯周三将公布业绩，投资者热盼腾讯或随财报一同发布WorkBuddy的相关数据。这一AI办公助手走红有望逆转腾讯AI掉队局面",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国批评中国上月在太平洋进行洲际弹道导弹试射前未充分提前通报，中国官员对这一说法予以驳斥",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "印度警告称，与中国在争议边界发生的事件是“最严重”的问题，边境紧张局势可能影响对华关系",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国与印尼海军将在台湾以东海域开展通航演练，中方声明称此举旨在提升两国海军联合行动能力，共同维护地区和平稳定",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "乘联分会：7月乘用车出口91.8万辆，同比+87.8%，占厂商销量约41%（一年前约21%）。",
+      "sources": [
+        {
+          "label": "乘联分会（新浪转载）",
+          "href": "https://finance.sina.com.cn/jjxw/2026-08-11/doc-inimxrni0720663.shtml"
+        },
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "在与Meta的收购交易被中国当局叫停后，人工智能初创公司Manus表示，将很快恢复以独立公司身份运营",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "特朗普政府取消对在联邦机构设备上使用TikTok的限制，因其不再构成国安威胁",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "首尔经济日报：SK海力士将恢复在中国大连的NAND闪存生产基地第二座工厂的建设，此举将使当地产能提高约50%",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "受台风“白海豚”影响，北京市启动防汛二级应急响应，周三起倡导弹性工作方式或错峰上下班",
+      "sources": [
+        {
+          "label": "彭博 Markets Daily China",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "Auto export surge is a volume print — watch ASPs/margins before calling a broad China equity regime shift."
+    },
+    {
+      "text": "Tencent’s WorkBuddy disclosure is the near China-tech falsifier for Golden Dragon repair."
+    }
+  ],
+  "chinaDivergences": "Kospi chip strength vs Hang Seng/Golden Dragon fade; export autos hot vs domestic retail soft (乘联分会 context).",
+  "assetClasses": [
+    {
+      "id": "us-equities",
+      "title": "US equities",
+      "regime": "Soft Tuesday into CPI; mega-cap drag with oil/geo premium.",
+      "instruments": [
+        {
+          "name": "S&P 500 / Nasdaq",
+          "driver": "Aug 11 close S&P 7,728.20 (−0.32%), Nasdaq 26,445.45 (−0.60%) (AP/Yahoo).",
+          "driverSources": [
+            {
+              "label": "AP News",
+              "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e5e8f3360f8d30714778761e3a483347"
+            },
+            {
+              "label": "Yahoo (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            },
+            {
+              "label": "Yahoo (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          ],
+          "read": "Path-odds two-sided until CPI.",
+          "themeId": "july-cpi-cta-shorts"
+        }
+      ]
+    },
+    {
+      "id": "asia-equities",
+      "title": "Asia equities",
+      "regime": "Japan reopen; Korea chip bid; HK/ADR soft into Tencent.",
+      "instruments": [
+        {
+          "name": "Japan equities",
+          "driver": "Nikkei 67,524.06 (+0.83%) Wednesday reopen (Yahoo).",
+          "driverSources": [
+            {
+              "label": "Yahoo (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          ],
+          "read": "Parallel live beta is USD/JPY near 160.",
+          "themeId": "yen-near-160"
+        },
+        {
+          "name": "Korea equities",
+          "driver": "Kospi 6,579.04 (+3.68%) Wednesday (Yahoo).",
+          "driverSources": [
+            {
+              "label": "Yahoo (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          ],
+          "read": "Chip/AI beta — separate from HK."
+        },
+        {
+          "name": "Greater China equities",
+          "driver": "Hang Seng 25,379.47 (−1.07%); Shanghai 3,946.59 (+0.32%). Inbox: Golden Dragon wiped three-day gains.",
+          "driverSources": [
+            {
+              "label": "Yahoo (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            },
+            {
+              "label": "Yahoo (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            },
+            {
+              "label": "彭博 Markets Daily China",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Tencent after-close is the near catalyst.",
+          "themeId": "tencent-workbuddy-print"
+        }
+      ]
+    },
+    {
+      "id": "rates",
+      "title": "Rates",
+      "regime": "Treasury ease into CPI; CTA shorts extreme; RBA on hold.",
+      "instruments": [
+        {
+          "name": "US 2Y / 10Y",
+          "driver": "Aug 11 — 2Y 4.22% (−3 bp); 10Y 4.70% (−2 bp).",
+          "driverSources": [
+            {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          ],
+          "read": "Soft CPI risks a short squeeze; hot CPI re-steepens hike odds.",
+          "themeId": "july-cpi-cta-shorts"
+        },
+        {
+          "name": "RBA cash rate",
+          "driver": "Held at 4.35% (11 Aug); further hikes possible if upside risks hit.",
+          "driverSources": [
+            {
+              "label": "RBA media release 2026-19",
+              "href": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html"
+            }
+          ],
+          "read": "Hold ≠ dovish pivot."
+        }
+      ]
+    },
+    {
+      "id": "fx",
+      "title": "FX",
+      "regime": "USD steady into CPI; USD/JPY near 160.",
+      "instruments": [
+        {
+          "name": "USD/JPY",
+          "driver": "~159.4 Yahoo; inbox flags 160 intervention anxiety.",
+          "driverSources": [
+            {
+              "label": "Yahoo USDJPY",
+              "href": "https://finance.yahoo.com/quote/USDJPY%3DX/"
+            },
+            {
+              "label": "彭博 Markets Daily China",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Wait for confirmed ops, not round-number chatter.",
+          "themeId": "yen-near-160"
+        },
+        {
+          "name": "USD/CNY",
+          "driver": "See Market Dashboard Yahoo CNY row.",
+          "driverSources": [
+            {
+              "label": "Yahoo USDCNY",
+              "href": "https://finance.yahoo.com/quote/USDCNY%3DX/"
+            }
+          ],
+          "read": "Quiet vs louder JPY story."
+        }
+      ]
+    },
+    {
+      "id": "commodities",
+      "title": "Commodities",
+      "regime": "Oil premium on disputed Hormuz; gold off highs into CPI.",
+      "instruments": [
+        {
+          "name": "Brent / WTI",
+          "driver": "AP Brent Tue $88.91 (+1.4%); Yahoo BZ=F ~$89. Inbox: WTI four-day rise on Hormuz doubts.",
+          "driverSources": [
+            {
+              "label": "AP News",
+              "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e5e8f3360f8d30714778761e3a483347"
+            },
+            {
+              "label": "Yahoo BZ=F",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            },
+            {
+              "label": "彭博 Markets Daily China",
+              "href": "https://www.bloomberg.com/asia"
+            }
+          ],
+          "read": "Diplomacy ≠ commercial flow.",
+          "themeId": "hormuz-reopen-disputed"
+        },
+        {
+          "name": "Gold",
+          "driver": "Yahoo GC=F — see Market Dashboard (off two-month highs per desk).",
+          "driverSources": [
+            {
+              "label": "Yahoo GC=F",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          ],
+          "read": "CPI/geo hedge — confirm vs closes row."
+        }
+      ]
+    },
+    {
+      "id": "crypto",
+      "title": "Crypto",
+      "regime": "Mid-$60ks; soft vs equity high-hold.",
+      "instruments": [
+        {
+          "name": "BTC",
+          "driver": "CoinGecko spot — see Market Dashboard BTC row.",
+          "driverSources": [
+            {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          ],
+          "read": "Lag-vs-equities until spot leads."
+        }
+      ]
+    }
+  ],
+  "signals": [],
+  "eventCalendar": {
+    "windowStart": "2026-08-12",
+    "windowEnd": "2026-08-21",
+    "note": "Briefing day through next Friday (Aug 21). Mainland China only on calendar (no TW/HK). From inbox 日程 + BLS/Fed fixtures.",
+    "events": [
+      {
+        "id": "bls-cpi-2026-08-12",
+        "date": "2026-08-12",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "Consumer Price Index for July 2026 (headline + core)",
+        "themeId": "july-cpi-cta-shorts",
+        "source": {
+          "label": "BLS CPI schedule",
+          "href": "https://www.bls.gov/schedule/news_release/cpi.htm"
+        }
+      },
+      {
+        "id": "pboc-july-credit-2026-08-12",
+        "date": "2026-08-12",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "data",
+        "event": "PBOC may release July credit data",
+        "source": {
+          "label": "彭博 日程",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "us-budget-2026-08-13",
+        "date": "2026-08-13",
+        "timeBeijing": "02:00",
+        "region": "US",
+        "category": "data",
+        "event": "US July budget statement",
+        "source": {
+          "label": "彭博 日程",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "bls-ppi-2026-08-13",
+        "date": "2026-08-13",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "Producer Price Index for July 2026",
+        "themeId": "july-cpi-cta-shorts",
+        "source": {
+          "label": "BLS schedule",
+          "href": "https://www.bls.gov/schedule/2026/"
+        }
+      },
+      {
+        "id": "bls-import-export-2026-08-18",
+        "date": "2026-08-18",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "U.S. Import and Export Price Indexes for July 2026",
+        "source": {
+          "label": "BLS schedule",
+          "href": "https://www.bls.gov/schedule/2026/"
+        }
+      },
+      {
+        "id": "fed-fomc-minutes-2026-08-19",
+        "date": "2026-08-19",
+        "timeBeijing": "02:00",
+        "region": "US",
+        "category": "central-bank",
+        "event": "FOMC Minutes",
+        "themeId": "july-cpi-cta-shorts",
+        "source": {
+          "label": "Federal Reserve calendar",
+          "href": "https://www.federalreserve.gov/json/calendar.json"
+        }
+      }
+    ]
+  },
+  "watchItems": [],
+  "sources": "彭博财经早茶 Aug 12 (desk/calendar/chart); AP Tue equity/oil wrap; Yahoo equities/FX/Brent; U.S. Treasury; RBA Aug 11; 乘联分会 via Sina; BLS/Fed calendars; CoinGecko BTC.",
+  "singleSource": "Hormuz advisor wording, EIA end-2027 disruption, CTA record shorts, Goolsbee phrasing, SEC tokenization, existing-home “three-month low”, small-business optimism, WorkBuddy metrics expectation, Manus/Meta, SK Hynix Dalian, and Nvidia residual-cap wording rely on Bloomberg inbox (asia hub often 403 in CI) — treated as desk/CLAIM unless second-sourced above.",
+  "caveats": "Published before 8:30 a.m. ET July CPI. Event Calendar mainland China only. Brent Yahoo BZ=F is futures. Chart-of-day is SNB 13F US-equity holdings scale, not a spot FX print. Glassnode W33 mail is a product Compass promo — omitted as a hard market print.",
+  "suggestions": "Into CPI: watch CTA squeeze vs hot-print hike odds. Into Hormuz: conditions language > Pakistan optimism. Into China: Tencent WorkBuddy disclosure and auto-export share, not one ADR day.",
+  "marketDashboard": {
+    "asOf": "2026-08-12T07:19:35.517Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,728.20",
+            "change": "−0.32%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-11",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "26,445.45",
+            "change": "−0.60%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-11",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "15.28",
+            "change": "−1.16%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-11",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "67,524.06",
+            "change": "+0.83%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "kospi",
+            "asset": "Kospi",
+            "latest": "6,579.04",
+            "change": "+3.68%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "25,411.53",
+            "change": "−0.94%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,774.06",
+            "change": null,
+            "changeDirection": "flat",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,946.68",
+            "change": "+0.32%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.22%",
+            "change": "−3.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-11",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.39%",
+            "change": "−2.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-11",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.70%",
+            "change": "−2.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-11",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.24%",
+            "change": "−1.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-11",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "159.3790",
+            "change": "+0.14%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.7450",
+            "change": "−0.04%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,460.50",
+            "change": "+1.77%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$89.71",
+            "change": "+0.90%",
+            "changeDirection": "up",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$63,698",
+            "change": "−0.28%",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0050%",
+            "change": "−0.505 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-08-12",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-08-12"
+}
