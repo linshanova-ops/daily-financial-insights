@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-15T03:04:05.871Z",
-  "latest": "2026-09-15",
+  "generatedAt": "2026-09-16T02:59:18.758Z",
+  "latest": "2026-09-16",
   "briefings": [
+    {
+      "date": "2026-09-16",
+      "title": "Daily Financial Briefing",
+      "marketTone": "US cash fell. The S&P 500 closed at 7,585.73, down 0.4%. The official 10-year yield was 5.00% after the session traded through 5.04%. Brent settled at 108.75. The 财经早茶 chart is the US 10-year at a 2007 high. The Senate failed to advance the Clarity Act. PBOC printed 1100亿元 of 7-day reverse repos and 6000亿元 overnight.",
+      "coverageWindow": "September 15–16, 2026"
+    },
     {
       "date": "2026-09-15",
       "title": "Daily Financial Briefing",

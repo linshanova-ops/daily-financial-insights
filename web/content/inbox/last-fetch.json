@@ -1,8 +1,18 @@
 {
-  "at": "2026-09-15T05:37:31.751Z",
-  "briefingDate": "2026-09-15",
+  "at": "2026-09-16T02:36:12.697Z",
+  "briefingDate": "2026-09-16",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-16.md",
+      "subject": "彭博财经早茶：美联储料加息；贝森特将会晤何立峰",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5328,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-16.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-16.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-15.md",
@@ -62,14 +72,14 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-02.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-01.md",
-      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "unmatched",
+      "subject": "Our Best Metrics, in a Single Read",
+      "from": "\"Glassnode\" <insights@glassnode.com>"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：特朗普反对AI减速；中国新增人民币贷款逊预期",
@@ -139,11 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美伊互袭升级；中国封堵税务漏洞",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-02.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：希音登陆港股；中东局势升级",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-01.md"
     }
   ]
 }
