@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-16T02:36:12.697Z",
+  "at": "2026-09-16T03:25:33.595Z",
   "briefingDate": "2026-09-16",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-16.md",
-      "subject": "彭博财经早茶：美联储料加息；贝森特将会晤何立峰",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5328,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-16.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-16.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美联储料加息；贝森特将会晤何立峰",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-16.md"
+    },
     {
       "reason": "unmatched",
       "subject": "Our Best Metrics, in a Single Read",
