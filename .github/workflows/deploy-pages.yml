@@ -48,10 +48,12 @@ jobs:
         run: npm ci
 
       # prebuild already runs sync-data + scan-links — don't scan twice.
+      # Skip fetch here: Briefing accuracy gate already fetched on the PR.
       - name: Build static site
         run: npm run build
         env:
           GITHUB_PAGES: "true"
+          SCAN_LINKS_SKIP_FETCH: "1"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

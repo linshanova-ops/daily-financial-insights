@@ -11,7 +11,7 @@ If Asia/Shanghai is Sat/Sun: stop.
 
 **08:00 is one publish from every source together.** Do not ship a 见闻-only tape and patch Bloomberg later. 财经早茶 is already in Gmail (~07:00–07:40). Last-kick `inbox-sync.yml` now — that on.push is the IMAP clock. Do not wait for GH `schedule` (~13:30). This VM has no IMAP secrets; do not `gh workflow run`. If `INBOX_IMAP_USER` is set, fetch in this run (`node scripts/fetch-inbox-sources.mjs` — exists-keep, not a second copy).
 
-Put `$TODAY` mail on disk **before YAML**, then gather the other desks in **this same run**:
+Last-kick, then start 见闻/Caixin/BlockBeats/CICC **immediately** (IMAP is ~20s — do not serialize desks behind the mail wait). Put `$TODAY` mail on disk **before YAML**:
 
 ```bash
 git fetch origin main && git pull origin main
@@ -96,7 +96,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 ```bash
 cd web
 node scripts/fetch-market-closes.mjs --inject content/briefings/YYYY-MM-DD.md
-npm run verify-briefing
+SCAN_LINKS_SKIP_FETCH=1 npm run verify-briefing
 ```
 
 Commit md + JSON together. PR `[skip netlify] content: publish YYYY-MM-DD daily briefing` — mark **ready**, not draft.
