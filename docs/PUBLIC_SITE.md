@@ -18,7 +18,7 @@ Optional custom domain: Settings → Pages → Custom domain → `syravocado.com
 
 | Layer | What happens |
 |-------|----------------|
-| **Publish mode** | **Cursor Automation, weekdays 09:00 China time.** Dashboard: [cursor.com/automations](https://cursor.com/automations) — spec in `.cursor/automations/weekday-0900-beijing.md`. GitHub `cursorAutoGenerate` stays **false** (no idle `Agent.create`). If 09:00 misses, `missed-briefing-catchup.yml` at 09:30 Beijing starts one weekday agent. |
+| **Publish mode** | **Cursor Automation, weekdays 08:00 China time.** Dashboard: [cursor.com/automations](https://cursor.com/automations) — spec in `.cursor/automations/weekday-0900-beijing.md`. GitHub `cursorAutoGenerate` stays **false** (no idle `Agent.create`). If 08:00 misses, `missed-briefing-catchup.yml` at 09:30 Beijing starts one weekday agent. |
 | **Manual workflow** | Actions tab → **Generate daily briefing** → Run workflow (bypasses slot gate). |
 | **Content feed** | `web/public/data/*.json` is the live feed. The homepage polls every ~60s so open tabs pick up new publishes. |
 | **Deploy workflow** | After each merge to main, Pages deploys on push. Manual/dispatch also available. No schedule in manual mode. |
@@ -42,7 +42,7 @@ Only one generate job runs at a time (`concurrency` group); overlapping dispatch
 
 | China time | UTC | Mainly captures |
 |------------|-----|-----------------|
-| 09:00 weekdays | 01:00 | Prior **US** cash session + overnight Asia. Sat/Sun skipped. |
+| 08:00 weekdays | 00:00 | Prior **US** cash session + overnight Asia. Sat/Sun skipped. |
 
 Monday’s briefing must cover **since Friday US cash close**, including weekend crypto and material news. Manual **Run workflow** / `force=true` still bypasses the Actions gate if you need an extra inbox fetch.
 
@@ -76,7 +76,7 @@ git add web/content web/public/data && git commit -m "content: YYYY-MM-DD briefi
 
 ### Inbox newsletters (Gmail IMAP)
 
-**inbox-sync** (09:00 Beijing weekdays, same clock as the Cursor publish) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. 财经早茶 lands ~07:00–07:40, so it is already in Gmail. The 09:00 agent waits for `$TODAY` 财经早茶, then in **the same run** gathers 见闻 + Caixin/Yicai + BlockBeats + CICC + closes and writes one YAML (figures, 市场一览, 国际要闻, 大中华, 日程, **Themes rewritten from that mail**). Do not substitute 见闻「市场收报」and do not ship a 见闻-only briefing to patch later. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. Keep the dashboard 09:00 automation **on**. A leftover RUNNING desktop/chat agent blocks that cron — that session publishes the same `$TODAY.md`; 09:30 catch-up may create only if the file is absent.
+**inbox-sync** last-kick at 08:00 Beijing (same clock as the Cursor publish) fetches subscribed mail into `web/content/inbox/` using Actions IMAP secrets. GH `schedule` on that file still lands ~13:30 — do not wait for it. 财经早茶 lands ~07:00–07:40, so it is already in Gmail. The 08:00 agent last-kicks `inbox-sync.yml`, then in **the same run** gathers 见闻 + Caixin/Yicai + BlockBeats + CICC + closes and writes one YAML (figures, 市场一览, 国际要闻, 大中华, 日程, **Themes rewritten from that mail**). Do not substitute 见闻「市场收报」and do not ship a 见闻-only briefing to patch later. Cloud agents cannot `gh workflow run` (403) and do not have IMAP env. Keep the dashboard 08:00 automation **on**. A leftover RUNNING desktop/chat agent blocks that cron — that session publishes the same `$TODAY.md`; 09:30 catch-up may create only if the file is absent.
 
 Repo → Settings → Secrets and variables → Actions — set:
 

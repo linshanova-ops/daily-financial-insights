@@ -1,5 +1,5 @@
 {
   "cursorAutoGenerate": false,
   "cursorAutoResumeOn": null,
-  "note": "Weekday 09:00 Beijing publishes via Cursor Automation (cursor.com/automations), not GitHub/cron-job.org/Netlify. Keep cursorAutoGenerate false so Actions never Agent.create. Idle refresh-briefing pings stay ignored."
+  "note": "Weekday 08:00 Beijing publishes via Cursor Automation (cursor.com/automations), not GitHub/cron-job.org/Netlify. Keep cursorAutoGenerate false so Actions never Agent.create. Idle refresh-briefing pings stay ignored."
 }
