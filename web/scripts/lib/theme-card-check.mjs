@@ -29,8 +29,8 @@ export function checkThemeCards(briefing) {
     const factN = sentences(c?.fact).length;
     const soN = sentences(c?.mechanism).length;
     const chips = Array.isArray(c?.factSources) ? c.factSources.length : 0;
-    if (factN < 1 || factN > 5) problems.push(`${id}: fact has ${factN} sentences (1–5)`);
-    if (soN < 1 || soN > 4) problems.push(`${id}: so-what has ${soN} sentences (1–4)`);
+    if (factN < 1 || factN > 3) problems.push(`${id}: fact has ${factN} sentences (1–3)`);
+    if (soN < 1 || soN > 3) problems.push(`${id}: so-what has ${soN} sentences (1–3)`);
     if (chips < 1 || chips > 4) problems.push(`${id}: ${chips} factSources (1–4)`);
     const m = META.exec(String(c?.mechanism || ""));
     if (m) problems.push(`${id}: so-what is a sourcing caveat, not judgment: "${m[0]}"`);
