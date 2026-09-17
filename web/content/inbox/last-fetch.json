@@ -1,25 +1,17 @@
 {
-  "at": "2026-09-17T02:48:13.215Z",
+  "at": "2026-09-17T03:38:41.733Z",
   "briefingDate": "2026-09-17",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-17.md",
-      "subject": "彭博财经早茶：美联储三年来首次加息；华府获准对俄油买家征税",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5125,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-17.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-17.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W38.md",
-      "subject": "Breakdown into Thin Support",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2265,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美联储三年来首次加息；华府获准对俄油买家征税",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-17.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "Breakdown into Thin Support",
+      "path": "web/content/inbox/glassnode-insights/2026-W38.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美联储料加息；贝森特将会晤何立峰",
