@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-16T02:59:18.758Z",
-  "latest": "2026-09-16",
+  "generatedAt": "2026-09-17T03:03:23.053Z",
+  "latest": "2026-09-17",
   "briefings": [
+    {
+      "date": "2026-09-17",
+      "title": "Daily Financial Briefing",
+      "marketTone": "US cash fell after the first Fed hike since July 2023. The S&P 500 closed at 7,551.81, down 0.4%. The official 10-year yield was 5.01%. Brent settled at 105.83. The 财经早茶 chart is August retail sales, up 1.2%. PBOC printed 1620亿元 of 7-day reverse repos and 6000亿元 overnight.",
+      "coverageWindow": "September 16–17, 2026"
+    },
     {
       "date": "2026-09-16",
       "title": "Daily Financial Briefing",
