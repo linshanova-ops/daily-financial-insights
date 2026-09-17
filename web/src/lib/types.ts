@@ -26,8 +26,9 @@ export interface Signal {
 }
 
 /**
- * Canonical narrative unit: one event → one full expansion.
- * Other modules reuse as different insights — not verbatim copies.
+ * One force: `Cite:` prints the So what uses, then judgment (optional desk
+ * view; last sentence = dated settle, rendered as Next). Never write CLAIM.
+ * Yahoo quote HTML is not a theme.
  */
 export interface ThemeCard {
   id: string;
@@ -38,7 +39,7 @@ export interface ThemeCard {
   fact: string;
   factSources?: FactSource[];
   mechanism: string;
-  /** Not rendered; legacy briefings only. New cards end `mechanism` with the dated next print. */
+  /** Not rendered; last `mechanism` sentence is the dated settle. */
   trigger?: string;
   invalidator?: string;
   horizon?: string;
@@ -252,8 +253,8 @@ export interface BriefingFrontmatter {
   /** Stable per-asset regime lens (alpha/beta framework); optional for older briefings. */
   assetFramework?: AssetView[];
   /**
-   * Theme cards — only full narrative of each core story (fact → mechanism →
-   * trigger → invalidation). Optional for older briefings.
+   * Theme cards — one force each: Cite: facts → judgment so-what → dated settle.
+   * Optional for older briefings.
    */
   themeCards?: ThemeCard[];
   /**
