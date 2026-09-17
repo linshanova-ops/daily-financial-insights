@@ -213,6 +213,33 @@ function latestBriefingDateStem() {
   return dates.length ? dates[dates.length - 1] : null;
 }
 
+/** True when every briefing that cites href is older than today's file. */
+function isArchivedOnlyHref(href, hrefBriefingDates, latestStem) {
+  if (!latestStem) return false;
+  const dates = hrefBriefingDates.get(href);
+  if (!dates || !dates.size) return false;
+  return [...dates].every((d) => d < latestStem);
+}
+
+/** ponytail: pool 8; serial fetch of 49 days was ~11m. Drop if hosts 429. */
+const FETCH_POOL = 8;
+
+async function fetchHrefs(hrefs) {
+  /** @type {Map<string, Awaited<ReturnType<typeof fetchSource>>>} */
+  const out = new Map();
+  let next = 0;
+  async function worker() {
+    while (next < hrefs.length) {
+      const href = hrefs[next++];
+      out.set(href, await fetchSource(href));
+    }
+  }
+  await Promise.all(
+    Array.from({ length: Math.min(FETCH_POOL, hrefs.length) }, () => worker()),
+  );
+  return out;
+}
+
 /** @param {string} where e.g. 2026-07-22.md.chinaChanged[0] */
 function briefingDateFromWhere(where) {
   const m = String(where).match(/^(\d{4}-\d{2}-\d{2})\.md/);
@@ -1076,6 +1103,16 @@ function selfCheck() {
   ) {
     throw new Error("[scan-links] self-check failed: PBOC not flaky-trusted");
   }
+  const archivedMap = new Map([
+    ["https://example.test/old", new Set(["2026-01-02"])],
+    ["https://example.test/today", new Set(["2026-01-02", "2026-09-17"])],
+  ]);
+  if (!isArchivedOnlyHref("https://example.test/old", archivedMap, "2026-09-17")) {
+    throw new Error("[scan-links] self-check failed: archived-only href not skipped");
+  }
+  if (isArchivedOnlyHref("https://example.test/today", archivedMap, "2026-09-17")) {
+    throw new Error("[scan-links] self-check failed: live href treated as archived");
+  }
 }
 
 async function main() {
@@ -1148,22 +1185,16 @@ async function main() {
     if (!hrefBriefingDates.has(hit.href)) hrefBriefingDates.set(hit.href, new Set());
     hrefBriefingDates.get(hit.href).add(d);
   }
-  function isArchivedOnlyHref(href) {
-    if (!latestStem) return false;
-    const dates = hrefBriefingDates.get(href);
-    if (!dates || !dates.size) return false;
-    return [...dates].every((d) => d < latestStem);
+  function isArchived(href) {
+    return isArchivedOnlyHref(href, hrefBriefingDates, latestStem);
   }
 
-  console.log(`[scan-links] Fetching ${uniqueHrefs.length} unique source URL(s)…`);
-  let i = 0;
-  for (const href of uniqueHrefs) {
-    i += 1;
-    process.stdout.write(`  [${i}/${uniqueHrefs.length}] ${hostOf(href)}\r`);
-    // eslint-disable-next-line no-await-in-loop
-    cache.set(href, await fetchSource(href));
-  }
-  process.stdout.write("\n");
+  const toFetch = uniqueHrefs.filter((href) => !isArchived(href));
+  console.log(
+    `[scan-links] Fetching ${toFetch.length}/${uniqueHrefs.length} unique source URL(s) (${uniqueHrefs.length - toFetch.length} archived-only skipped)…`,
+  );
+  const fetchedMap = await fetchHrefs(toFetch);
+  for (const [href, fetched] of fetchedMap) cache.set(href, fetched);
 
   for (const href of uniqueHrefs) {
     const briefingYear = yearByHref.get(href);
@@ -1212,7 +1243,7 @@ async function main() {
     }
     // Historical briefings: intermittent 5xx/bot-blocks must not fail every
     // Pages deploy. Latest briefing cites stay hard-fail for accuracy.
-    if (isArchivedOnlyHref(href)) {
+    if (isArchived(href)) {
       warnings.push(
         `archived briefing soft-trusted unreachable: ${href} (${fetched?.error || fetched?.status || "unknown"}; via ${fetched?.via})`,
       );
