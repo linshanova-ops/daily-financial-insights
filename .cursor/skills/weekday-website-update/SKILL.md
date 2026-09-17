@@ -105,34 +105,32 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 ## Theme card
 
-One card = one force that moved a book today. Count follows the tape (2 on a quiet day, 6+ on a busy one). A reader should finish a card in 20 seconds and know what changed, why it matters for which books, and what dated print settles it.
+One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: what moved, why it matters for which books, which dated print settles it.
 
 ```yaml
 - id: german-cpi-energy
-  title: German inflation is re-accelerating on energy      # the force, plain words, no tape
-  grade: STRONG            # STRONG: primary print moved a named book today, dated next print inside the calendar window
-                           # MODERATE: desk view, intraday tick, or the move has no dated settle yet
+  title: German inflation is re-accelerating on energy   # the force, not the tape
+  grade: STRONG            # STRONG: primary print moved a named book, dated settle in the calendar window
+                           # MODERATE: desk view, tick, or no dated settle yet
                            # WEAK: headline the books did not trade
   assets: [Bunds, EUR]     # 1–3 books this force actually moved
-  fact: >-                 # 2–4 lines, `Cite: statement with the number.` Only prints this card's So what uses.
+  fact: >-                 # 1–3 lines, `Cite: statement`. Only prints this So what uses.
     Destatis: August flash CPI is +2.9% y/y after +2.8% in July, with energy +10.5%; finals are due 10 September.
     财经早茶 欧洲股债: Bunds fell for a sixth session as Middle East risk fed inflation worry.
-  factSources:             # exactly the cites used above, ≤ 4 chips
+  factSources:             # exactly those cites, ≤ 4 chips
     - { label: Destatis, href: ... }
     - { label: 彭博财经早茶 Sep 3, href: ... }
-  mechanism: >-            # So what, 2–4 sentences: (1) what the print means for the named books; (2) one desk view, `House (d Month): view` — only if it passes the filter below; (3) the dated next print.
+  mechanism: >-            # So what, 2–3 sentences: books; optional `House (d Month): view`; dated next print.
     A second month of rising German inflation with energy up double digits keeps the ECB from following any Fed pause, so Bunds carry a hike premium into Berlin.
     CICC (1 September): euro-area export orders are rising for the first time in four years, which is why the ECB can afford to stay restrictive while the Fed debates a hike.
     The ECB decision on 10 September is the settle.
 ```
 
-**Desk view filter.** One per card at most; none is fine — never pad. It earns the slot only if all hold: (a) an institution with a position or a mandate — a central-bank official, or a named house with a dated note (Goldman Sachs, Morgan Stanley, JPMorgan, Bank of America, Nomura, CICC, IEA, OPEC, Glassnode, IMF, BIS) — never a KOL, never “analysts say”; (b) dated, inside the coverage window, or the house’s latest standing position if nothing newer exists (say the date either way); (c) it adds a mechanism, a number, or a position the prints do not carry — a view that restates the tape is noise; (d) it changes the read of *this* card’s books. Two houses may share one sentence only when they disagree and that disagreement is the insight (Morgan Stanley cut China targets while CICC still sees swap-implied cuts). If a view contradicts the tape, the card says which side it takes. Where to look each morning: `cicc-research-article-search` per force; 财经早茶 house lines in 国际要闻/大中华 (Goldman Sachs / Morgan Stanley / JPMorgan by name); 见闻早餐 sell-side wrap; Glassnode Week on Chain (`web/content/inbox/glassnode-insights/`); Fed/ECB/BOJ/MOF speeches; IEA OMR / OPEC MOMR. The view’s source goes to `keySources`; the card names house and date in the sentence, not a chip.
+**Desk view.** One per card, optional — never pad. Named house or official with a date (GS, MS, JPM, BofA, Nomura, CICC, IEA, OPEC, Glassnode, IMF, BIS, a central banker). Adds a mechanism, number, or position the prints lack, for *this* card’s books. Search CICC per force; 财经早茶 GS/MS/JPM lines; 见闻 sell-side; Glassnode inbox. Source in `keySources`. Two houses in one sentence only when they disagree.
 
-Rules the check enforces: fact ≤ 5 sentences, So what ≤ 4, chips 1–4, one number on one card only, a So what number must already be in the fact, no Yahoo quote chips, grades not all identical. `scan-links` then evidence-checks every fact number against the chip pages (the Bloomberg hub is 403 and counts for nothing) — a size the mail alone gives needs a fetchable second chip or no digit. Rules the check cannot see: a print the So what does not use belongs in `globalChanged`/`chinaChanged`, not on the card (Bank of Canada is not on the yen card; Chevron Venezuela is not on the Hormuz card). So what is judgment for the reader — sourcing caveats (`not a settle`, `not the inject`, `not this card`) go to `singleSource`. No `trigger`/`invalidator`/`horizon`/`status` — the site does not render them; the dated next print is the last So what sentence. Merge cards that share one mechanism (gold and bitcoin on the same duration beta); keep oil separate when the desk names geopolitics. BlockBeats/CICC/house views land on a card only through the desk-view slot; otherwise `globalImplies`/`chinaImplies`. The check fails a day with no dated desk view on any card — CICC is a required attempt, so zero means the step was skipped. Chip `themeId` on calendar rows to the new ids. Never write CLAIM on the page. Complete sentences; name the actor, the action, and the number.
+`verify-briefing` fails dumps (fact or so-what >3, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, no `House (d Month):` on any card). Unused prints → What changed. Sourcing caveats → `singleSource`. No CLAIM. No `trigger`/`invalidator`/`horizon`/`status`. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
 
-**Bitcoin / Glassnode:** if `GLASSNODE_API_KEY` is set (or `gn` is logged in), `gn metric describe` then `gn metric get` for BTC before writing a gold/BTC theme (at least `market/price_usd_close`; add STH cost / realized P/L when credits allow). Date the print. Without the key, use the latest `web/content/inbox/glassnode-insights/` Week on Chain body only (desk view, window-date the email) — do not invent on-chain sizes. Product mail (“Using Glassnode With Agents”) is the CLI install (`gn` + `.cursor/skills/glassnode-cli`), not a Theme. If `gn` is missing: `curl -sSL https://raw.githubusercontent.com/glassnode/glassnode-cli/main/install.sh | bash`.
-
-**Sources:** curate, don’t dump. A source is valuable if it is the primary print, the estimate for a beat/miss, or a desk view that actually moves a book. `factSources` / `driverSources` = that claim’s primary (plus estimate source if the sentence names a miss/beat). Do not clone `keySources` onto every card. Inbox hub once as a key source; per-bullet chips on What-changed are fine when that bullet is desk copy.
+**Bitcoin:** `gn metric` if keyed; else inbox Week on Chain as desk view. Do not invent on-chain sizes.
 
 Self-check before PR: every **rendered** table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; BlockBeats four books on matching Themes or the miss named in `singleSource`; if a chart is present its PNG date is `$TODAY`; Themes titles/facts match that chart and today’s desk (no Theme citing yesterday’s PNG as 今日图表); every Theme fits the **Theme card** block above; `marketOverview` is today’s mail 市场一览 (Chinese, mail order — not 见闻 市场收报), and the page title is **Markets at a glance**; prose is complete sentences (not keyword stitches); the word CLAIM does not appear in the briefing YAML; no invented tape; no duplicate `keySources` href; every key source has `books` + `influence`.
 

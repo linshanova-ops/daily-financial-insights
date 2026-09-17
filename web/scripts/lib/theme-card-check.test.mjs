@@ -16,8 +16,12 @@ describe("checkThemeCards", () => {
     assert.equal(checkThemeCards({ themeCards: [good] }).ok, true);
   });
   it("fails a fact dump", () => {
-    const fact = Array(7).fill("AP: the S&P rose 0.5%.").join(" ");
-    assert.equal(checkThemeCards({ themeCards: [{ ...good, fact }] }).ok, false);
+    const fact = Array(4).fill("AP: the S&P rose 0.5%.").join(" ");
+    assert.match(checkThemeCards({ themeCards: [{ ...good, fact }] }).message, /1–3/);
+  });
+  it("fails a long so-what", () => {
+    const mechanism = Array(4).fill("Oil keeps a war premium.").join(" ");
+    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /1–3/);
   });
   it("fails sourcing caveats as so-what", () => {
     const mechanism = "That figure is 09:57 a.m. EDT, not a settle.";
