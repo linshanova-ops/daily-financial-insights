@@ -1,15 +1,15 @@
 name: Weekday 09:00 Beijing IMAP
 
-# 财经早茶 is in Gmail by ~07:40. Fetch at the same 09:00 as the Cursor
-# publish so one run maps mail + 见闻 + CICC + prints. Do not Agent.create
-# here (dashboard is the clock; 09:30 catch-up may create). Cloud VMs have
-# no IMAP secrets and cannot `gh workflow run` (403).
+# 财经早茶 is in Gmail by ~07:40. GH schedule on this file fires ~13:30;
+# do not wait for it. The 08:00 Cursor agent last-kicks this file (on.push
+# is the IMAP clock). Do not Agent.create here (dashboard is the clock;
+# 09:30 catch-up may create). Cloud VMs have no IMAP secrets and cannot
+# `gh workflow run` (403).
 # Pushing this file runs that same job (not a second slot).
 # last-kick: 2026-09-17T02:47Z GH schedule skipped after 180×30s wait
 on:
   schedule:
-    # 09:00 Beijing Mon–Fri — same clock as the briefing agent.
-    # GH cron on this slot has been landing ~10:20; the agent waits.
+    # 09:00 Beijing Mon–Fri in UTC. Left as-is: GH schedule lands ~13:30.
     - cron: "0 1 * * 1-5"
   workflow_dispatch:
   push:

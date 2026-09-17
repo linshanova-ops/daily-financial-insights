@@ -1,6 +1,6 @@
 ---
 name: weekday-website-update
-description: Weekday 09:00 Asia/Shanghai website briefing. Same quality as a manual publish — full pipeline, CICC, every site section.
+description: Weekday 08:00 Asia/Shanghai website briefing. Same quality as a manual publish — full pipeline, CICC, every site section.
 ---
 
 # Weekday website update
@@ -9,7 +9,7 @@ One cloud-agent run. Do **not** call `scripts/generate-daily-briefing.mjs` or sp
 
 If Asia/Shanghai is Sat/Sun: stop.
 
-**09:00 is one publish from every source together.** Do not ship a 见闻-only tape and patch Bloomberg later. 财经早茶 is already in Gmail (~07:00–07:40). GH `inbox-sync.yml` fetches it at this same 09:00. This VM has no IMAP secrets; do not `gh workflow run`. If `INBOX_IMAP_USER` is set, fetch in this run (`node scripts/fetch-inbox-sources.mjs` — exists-keep, not a second copy).
+**08:00 is one publish from every source together.** Do not ship a 见闻-only tape and patch Bloomberg later. 财经早茶 is already in Gmail (~07:00–07:40). Last-kick `inbox-sync.yml` now — that on.push is the IMAP clock. Do not wait for GH `schedule` (~13:30). This VM has no IMAP secrets; do not `gh workflow run`. If `INBOX_IMAP_USER` is set, fetch in this run (`node scripts/fetch-inbox-sources.mjs` — exists-keep, not a second copy).
 
 Put `$TODAY` mail on disk **before YAML**, then gather the other desks in **this same run**:
 
@@ -17,10 +17,17 @@ Put `$TODAY` mail on disk **before YAML**, then gather the other desks in **this
 git fetch origin main && git pull origin main
 TODAY=$(TZ=Asia/Shanghai date +%F)
 MAIL=web/content/inbox/bloomberg-markets-daily-china/$TODAY.md
-# GH cron on 09:00 has been ~80 min late — wait so this run still unites, don't publish 见闻 and come back.
 if [ -n "${INBOX_IMAP_USER:-}" ]; then (cd "$(git rev-parse --show-toplevel)" && node scripts/fetch-inbox-sources.mjs); fi
-for i in $(seq 1 180); do test -f "$MAIL" && break; git pull origin main; sleep 30; done
-# One wait. If still missing, name IMAP miss in singleSource — do not start another loop.
+# Last-kick is the 08:00 mail clock. Bump `# last-kick:` in inbox-sync.yml, commit, push (on.push = same job).
+# GH schedule fires ~13:30 — do not wait for it.
+if [ ! -f "$MAIL" ]; then
+  sed -i "s/^# last-kick:.*/# last-kick: $(date -u +%Y-%m-%dT%H:%MZ) 08:00 IMAP/" .github/workflows/inbox-sync.yml
+  git add .github/workflows/inbox-sync.yml
+  git commit -m "chore: last-kick IMAP at 08:00"
+  git push
+fi
+for i in $(seq 1 12); do test -f "$MAIL" && break; git pull; sleep 10; done
+# If still missing, name IMAP miss in singleSource — do not start a 90-min loop.
 test -f "$MAIL"
 ```
 
@@ -35,7 +42,7 @@ Capture at this updating time (miss → name it in `singleSource`, do not substi
 | CICC | Desk view on matching Themes (`CICC (date)：…`). Never write CLAIM. Not a What-changed print. |
 | CNBC/AP + inject | closes in `marketDashboard` / summary FACT |
 
-见闻「市场收报」is not 市场一览. Yesterday’s 财经早茶 is not today’s. Do not start a second agent/PR for `$TODAY`. Empty 今日图表 body ≠ no chart when the PNG exists. `$TODAY.md` on main is **not** done unless that whole set is mapped. If this leftover wrote a 见闻-only tape, **patch the same file**. Concurrent cap is 1. After live confirm, **stop/archive**. Keep the dashboard 09:00 automation **on**. `missed-briefing-catchup.yml` (09:30) may create only when `$TODAY.md` is absent.
+见闻「市场收报」is not 市场一览. Yesterday’s 财经早茶 is not today’s. Do not start a second agent/PR for `$TODAY`. Empty 今日图表 body ≠ no chart when the PNG exists. `$TODAY.md` on main is **not** done unless that whole set is mapped. If this leftover wrote a 见闻-only tape, **patch the same file**. Concurrent cap is 1. After live confirm, **stop/archive**. Keep the dashboard 08:00 automation **on**. `missed-briefing-catchup.yml` (09:30) may create only when `$TODAY.md` is absent.
 
 Yahoo `finance.yahoo.com/quote/` HTML is not a close print. Inject levels belong only in `marketDashboard`. Do not copy them into sourced summary/drivers.
 
@@ -53,7 +60,7 @@ Read and execute these skills; do not jump to YAML:
 ## Inputs
 
 1. Beijing date `YYYY-MM-DD` = today `Asia/Shanghai`.
-2. Inbox: `$TODAY` 财经早茶 is on disk from the 09:00 wait (Monday: also `bloomberg-weekend-tea` if present). Map **that file** in the same pass as 见闻/CICC/prints. Do not merge yesterday’s 财经早茶 as today’s 市场一览. **今日图表** only if `inbox-charts/bloomberg-$TODAY.*` exists — never reuse yesterday’s PNG.
+2. Inbox: `$TODAY` 财经早茶 is on disk from the 08:00 last-kick (Monday: also `bloomberg-weekend-tea` if present). Map **that file** in the same pass as 见闻/CICC/prints. Do not merge yesterday’s 财经早茶 as today’s 市场一览. **今日图表** only if `inbox-charts/bloomberg-$TODAY.*` exists — never reuse yesterday’s PNG.
 3. Inbox map (one pass — do not ship the figure then leave Themes/calendar on yesterday): 国际要闻 → `globalChanged` **Chinese, one bullet each, in mail order** (do not replace the mail with English primaries; extra prints can follow). 大中华 → `chinaChanged`; 市场一览 → `marketOverview.items` **Chinese, one bullet each, in mail order** (do not replace the mail with English books **or with 见闻「市场收报」**; do not add 加密/A股/欧洲股市 unless those labels are in the mail; do not retitle the site section 市场一览 — chrome is **Markets at a glance**). 日程/央行动态 → `eventCalendar`; 今日图表 → `figures` id `bloomberg-chart-of-day` **only** with `$TODAY` PNG. Then **rewrite `themeCards` from that same mail + prints**: one card per **independent** market force (count follows the tape — not a 3–5 cap). Include each large 市场一览 move that has its own mechanism (gold/bitcoin with duration is a Theme; oil on geopolitics is another). Merge cards that share a mechanism. Skip headlines that do not change a book. Bloomberg `www.bloomberg.com/asia` is a hub (403 in CI) — put distinctive sizes on a second source (见闻 / Treasury / AP) or drop the digit.
 4. China minimum: in-window cite from **华尔街见闻**, **Caixin or 第一财经**, and **BlockBeats** — or name the miss in `singleSource`.
 5. **CICC (required attempt):** theme-then-search via `cicc-research-article-search` (`APP_ID`/`APP_SECRET`; `python3 .cursor/skills/cicc-research-article-search/scripts/get_data.py "<theme>" --no-save`). Paraphrase only. Treat as a desk view, never a print. Write `CICC (date)：…` — do not write the word CLAIM. Put on matching `themeCards` / `globalImplies` — not as a What-changed print. Public cite = WeChat if that is what the skill returns. No VIP reprint. No invented notes. If env/search fails: say so in `singleSource`.
