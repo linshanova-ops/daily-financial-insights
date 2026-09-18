@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-18T01:15:47.280Z",
+  "at": "2026-09-18T01:35:41.737Z",
   "briefingDate": "2026-09-18",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-18.md",
-      "subject": "彭博财经早茶：日本央行料加息；美国或推迟产能过剩关税",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5007,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-18.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-18.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：日本央行料加息；美国或推迟产能过剩关税",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-18.md"
+    },
     {
       "reason": "weekly-exists",
       "subject": "Glassnode x Bybit: The State of Crypto Derivatives [New report]",
