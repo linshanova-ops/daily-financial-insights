@@ -1,16 +1,26 @@
 {
-  "at": "2026-09-17T06:00:50.490Z",
-  "briefingDate": "2026-09-17",
+  "at": "2026-09-18T01:15:47.280Z",
+  "briefingDate": "2026-09-18",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-17.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-18.md",
+      "subject": "彭博财经早茶：日本央行料加息；美国或推迟产能过剩关税",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 5007,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-18.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-18.png"
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W38.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-17.md",
       "skipped": true
     },
     {
@@ -62,23 +72,23 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-04.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-03.md",
-      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "weekly-exists",
+      "subject": "Glassnode x Bybit: The State of Crypto Derivatives [New report]",
+      "path": "web/content/inbox/glassnode-insights/2026-W38.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美联储三年来首次加息；华府获准对俄油买家征税",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-17.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Breakdown into Thin Support",
-      "path": "web/content/inbox/glassnode-insights/2026-W38.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -144,16 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：大摩下调中港股指目标；美联储加息担忧缓解",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-04.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：日元急涨引发干预猜测；潘功胜称中国无意让人民币贬值",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-03.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Doubt at the Boundaries",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
     }
   ]
 }
