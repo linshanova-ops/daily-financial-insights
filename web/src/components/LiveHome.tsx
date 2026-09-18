@@ -68,7 +68,7 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
           {publishedAt
             ? freshnessStatusLine(publishedAt)
             : "Showing the latest published edition."}{" "}
-          Weekday editions publish at 08:00 Beijing.
+          Weekday editions publish at 09:00 Beijing.
           {publishedAt ? (
             <span className="mt-1 block text-xs text-ink/45">
               Published {formatPublishedAt(publishedAt)}

@@ -1,6 +1,6 @@
 /**
  * If $TODAY.md is missing: send the weekday prompt to the leftover holding
- * the cap, or create if the cap is free. 08:00 inbox-sync is IMAP-only.
+ * the cap, or create if the cap is free. 09:00 inbox-sync is IMAP-only.
  * 09:30 catch-up may create. Never create a second agent when $TODAY.md exists.
  */
 import { spawnSync } from "node:child_process";
