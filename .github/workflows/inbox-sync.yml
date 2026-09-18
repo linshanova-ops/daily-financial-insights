@@ -6,7 +6,7 @@ name: Weekday 09:00 Beijing IMAP
 # 09:30 catch-up may create). Cloud VMs have no IMAP secrets and cannot
 # `gh workflow run` (403).
 # Pushing this file runs that same job (not a second slot).
-# last-kick: 2026-09-17T02:47Z GH schedule skipped after 180×30s wait
+# last-kick: 2026-09-18T01:14Z 08:00 IMAP
 on:
   schedule:
     # 09:00 Beijing Mon–Fri in UTC. Left as-is: GH schedule lands ~13:30.
