@@ -55,4 +55,18 @@ describe("market-closes-format", () => {
       pairs,
     );
   });
+
+  it("seeds prev from chartPreviousClose when Yahoo returns one daily bar", () => {
+    const pairs = [{ t: 1789709126, c: 4390.16 }];
+    const result = withYahooMetaFallback(pairs, {
+      regularMarketPrice: 4390.16,
+      regularMarketTime: 1789709126,
+      chartPreviousClose: 4310.74,
+    });
+    assert.deepEqual(result, [
+      { t: 1789709126 - 86400, c: 4310.74 },
+      { t: 1789709126, c: 4390.16 },
+    ]);
+    assert.equal(formatPctChange(result[0].c, result[1].c), "+1.84%");
+  });
 });
