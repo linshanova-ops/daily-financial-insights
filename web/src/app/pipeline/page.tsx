@@ -12,7 +12,7 @@ export default function PipelinePage() {
         Inbox, primaries, then a short read
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft">
-        Weekdays at 08:00 China time the site publishes from that morning’s 彭博
+        Weekdays at 09:00 China time the site publishes from that morning’s 彭博
         财经早茶 plus dated primary prints (Treasury, Fed, AP closes, PBOC/NBS,
         华尔街见闻 / 财新 / 第一财经). What you see is the sourced tape and a
         few themes — not a six-book asset matrix and not a live feed.

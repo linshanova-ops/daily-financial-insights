@@ -1,11 +1,11 @@
 # Newsletter inbox captures
 
 Automated Gmail IMAP fetch saves subscribed mail here. GitHub Actions
-`inbox-sync.yml` is last-kicked at **08:00 Beijing** weekdays — the same clock as the
+`inbox-sync.yml` is last-kicked at **09:00 Beijing** weekdays — the same clock as the
 Cursor publish (IMAP secrets live in Actions, not in the Cursor VM).
 GH `schedule` on that file lands ~13:30; do not wait for it.
-财经早茶 arrives ~07:00–07:40, so it is already in Gmail when 08:00 last-kicks.
-The 08:00 agent last-kicks that file, then maps it with 见闻/CICC/prints in
+财经早茶 arrives ~07:00–07:40, so it is already in Gmail when 09:00 last-kicks.
+The 09:00 agent last-kicks that file, then maps it with 见闻/CICC/prints in
 one YAML. Do not publish a 见闻-only tape and fetch the mail later.
 
 | Folder | Source | Cadence |
@@ -27,4 +27,4 @@ The generate agent merges them into existing briefing modules:
 - Chinese Bloomberg text must stay Chinese
 - Cites use stable landing pages (never email tracking links) and appear in `keySources`
 - `last-fetch.json` records ok/fail + skipped reasons for soft-fail caveats and debugging
-- Evening (20:00) runs refresh the same day’s briefing when new inbox mail arrived after 08:00
+- Evening (20:00) runs refresh the same day’s briefing when new inbox mail arrived after 09:00
