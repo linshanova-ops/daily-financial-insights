@@ -73,7 +73,7 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                 >
                   {theme.grade}
                 </span>
-                {theme.status ? (
+                {theme.status && theme.status !== "continuing" ? (
                   <span className="text-xs uppercase tracking-[0.16em] text-ink/40">
                     {theme.status}
                   </span>
@@ -108,23 +108,29 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                     {theme.mechanism}
                   </p>
                   {theme.trigger || theme.invalidator || theme.horizon ? (
-                    <dl className="mt-3 grid gap-3 text-sm leading-relaxed text-ink-soft sm:grid-cols-3">
+                    <dl className="mt-4 grid gap-3 text-sm leading-relaxed text-ink-soft md:grid-cols-3">
+                      {theme.horizon ? (
+                        <div>
+                          <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
+                            Horizon
+                          </dt>
+                          <dd className="mt-1">{theme.horizon}</dd>
+                        </div>
+                      ) : null}
                       {theme.trigger ? (
                         <div>
-                          <dt className="font-semibold text-ink">Trigger</dt>
+                          <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
+                            Trigger
+                          </dt>
                           <dd className="mt-1">{theme.trigger}</dd>
                         </div>
                       ) : null}
                       {theme.invalidator ? (
                         <div>
-                          <dt className="font-semibold text-ink">Invalidator</dt>
+                          <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
+                            Invalidator
+                          </dt>
                           <dd className="mt-1">{theme.invalidator}</dd>
-                        </div>
-                      ) : null}
-                      {theme.horizon ? (
-                        <div>
-                          <dt className="font-semibold text-ink">Horizon</dt>
-                          <dd className="mt-1">{theme.horizon}</dd>
                         </div>
                       ) : null}
                     </dl>
