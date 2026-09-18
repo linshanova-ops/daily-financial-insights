@@ -30,8 +30,12 @@ export function checkThemeCards(briefing) {
     const soN = sentences(c?.mechanism).length;
     const chips = Array.isArray(c?.factSources) ? c.factSources.length : 0;
     if (factN < 1 || factN > 3) problems.push(`${id}: fact has ${factN} sentences (1–3)`);
-    if (soN < 1 || soN > 3) problems.push(`${id}: so-what has ${soN} sentences (1–3)`);
+    if (soN < 3 || soN > 5) problems.push(`${id}: so-what has ${soN} sentences (3–5)`);
     if (chips < 1 || chips > 4) problems.push(`${id}: ${chips} factSources (1–4)`);
+    if (!String(c?.trigger || "").trim()) problems.push(`${id}: missing trigger`);
+    if (!String(c?.invalidator || "").trim()) problems.push(`${id}: missing invalidator`);
+    if (!String(c?.horizon || "").trim()) problems.push(`${id}: missing horizon`);
+    if (!String(c?.status || "").trim()) problems.push(`${id}: missing status`);
     const m = META.exec(String(c?.mechanism || ""));
     if (m) problems.push(`${id}: so-what is a sourcing caveat, not judgment: "${m[0]}"`);
     for (const s of c?.factSources || []) {

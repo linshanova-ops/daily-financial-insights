@@ -439,7 +439,11 @@
           "href": "https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-11-2026/"
         }
       ],
-      "mechanism": "A 0.3% core m/m that ran 0.1 percentage point above forecast is why a 7,656.98 S&P close can sit next to a 4.63% 2-year and a September hike premium. Goldman Sachs (11 September): Mericle switched to a 25 basis-point hike on 16 September on credibility after Warsh, even though the inflation thesis barely moved. The FOMC decision at 02:00 Beijing on 17 September is the next print."
+      "mechanism": "The 10-year is now pricing 4.96% against a 0.3% core CPI monthly gain that ran 0.1 percentage point above forecast, so the change is a core beat that marked the long end cheaper next to a 4.63% 2-year. A 0.3% core print, 0.1 above forecast, transmitted into the official 4.96% 10-year and from there into the 7,656.98 S&P close, up 0.9%, which is the UST and US equities sleeve. The read retires if BLS reprints core CPI below 0.3% m/m. Horizon is days, ending at the FOMC decision.",
+      "trigger": "BLS core CPI reprinting above 0.3% m/m.",
+      "invalidator": "BLS core CPI reprinting below 0.3% m/m.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "oil-east-west",
@@ -463,7 +467,11 @@
           "href": "https://www.theblockbeats.info/flash/366728"
         }
       ],
-      "mechanism": "Friday’s 104.61 pullback still leaves Monday’s jump after the East-West shut as a bypass-capacity print under this week’s energy line. CICC (14 September): the East-West line is the Hormuz bypass Saudi has been using, so a shut is a supply-floor constraint while diesel stays the tight side of the product complex. The FOMC decision at 02:00 Beijing on 17 September is the next energy-policy print."
+      "mechanism": "Brent is now pricing 104.61 as Friday's November settle against a Monday Asia jump of more than 3% after Saudi shut the East-West bypass, so the change is a supply-floor bid with no restart timetable. Friday's 104.61 settle transmitted into Monday's jump after the East- West shut, which is the Oil exposure. The read retires if 华尔街见闻 reprints Brent below 104.61 after an East- West restart. Horizon is weeks, ending when Saudi names a restart timetable for the East-West line.",
+      "trigger": "Brent reprinting above 104.61 while East-West stays shut.",
+      "invalidator": "Brent reprinting below 104.61 after an East-West restart.",
+      "horizon": "weeks",
+      "status": "new"
     },
     {
       "id": "china-overnight-rr",
@@ -492,7 +500,11 @@
           "href": "https://www.yicai.com/news/103362401.html"
         }
       ],
-      "mechanism": "A 5040亿元 overnight print against a 6000亿元 cap, with a zero 7-day, is a tax-period liquidity backstop rather than a new policy-rate impulse, and it sits under Shanghai’s 3888.11 close. 5780亿元 of scheduled government-bond payments through 18 September is the cash drain that print is matching. Overnight reverse repos through 17 September are the next prints."
+      "mechanism": "Shanghai is now pricing 3888.11, down 1.18%, against 5040亿元 of overnight reverse repos and 0亿元 of 7-day reverse repos, so the change is an A-share close that absorbed a tax-period liquidity backstop. A 5040亿元 overnight print against a 6000亿元 cap transmitted through 5780亿元 of scheduled government-bond payments into the 3888.11 Shanghai close, down 1.18%, and Hang Seng at 24805.63, down 0.6%, which is the A/H shares and CGBs exposure. The read retires if PBOC reprints overnight reverse repos at 0亿元 while Shanghai reprints below 3888.11. Horizon is days, ending when overnight reverse repos finish the 14–17 September window.",
+      "trigger": "PBOC overnight reverse repos reprinting at the 6000亿元 cap with Shanghai holding 3888.11.",
+      "invalidator": "PBOC overnight reverse repos reprinting at 0亿元, or Shanghai reprinting below 3888.11.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "europe-hike-bets",
@@ -513,7 +525,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 639.10 Stoxx bounce is traders cutting euro hike size while the Fed still prices a September move, so Bunds and Treasuries sit on different hike books. Lagarde at 23:15 Beijing today is the next print."
+      "mechanism": "The Stoxx 600 is now pricing 639.10, up 0.49%, against a DAX close at 25553.00, up 0.88%, so the change is a rebound as traders cut large euro-area hike bets. A 639.10 Stoxx bounce transmitted through rising short-end government bonds into the 25553.00 DAX close, which is the EU equities and Bunds exposure. The read retires if 华尔街见闻 reprints the Stoxx 600 below 639.10. Horizon is days, ending at the next Lagarde remarks on euro-area inflation.",
+      "trigger": "Stoxx 600 reprinting above 639.10.",
+      "invalidator": "Stoxx 600 reprinting below 639.10.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "gold-btc-duration",
@@ -534,7 +550,11 @@
           "href": "https://www.theblockbeats.info/flash/366876"
         }
       ],
-      "mechanism": "Gold at 4408.90 beside Friday’s 77439.13, and Monday’s 7.672万美元 handle, is duration-beta into FOMC after the front of the curve cheapened, rather than a Hormuz gold bid. The FOMC decision at 02:00 Beijing on 17 September is the next print."
+      "mechanism": "COMEX gold is now pricing 4408.90 against spot at 4349.06, with HTX bitcoin at 7.672万美元 below the 7.7万美元 handle, so the change is gold holding while BTC lost Friday's 77439.13 print. A 4408.90 COMEX close transmitted into the 7.672万美元 HTX print, which is the Gold and BTC exposure. The read retires if 律动 reprints HTX bitcoin back above 7.7万美元. Horizon is days, ending at the FOMC decision.",
+      "trigger": "HTX bitcoin reprinting above 7.7万美元.",
+      "invalidator": "HTX bitcoin reprinting below 7.672万美元, or COMEX gold reprinting below 4408.90.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "id": "zhipu-ai-raise",
@@ -554,7 +574,11 @@
           "href": "https://international.caixin.com/2026-09-13/102484530.html"
         }
       ],
-      "mechanism": "A 156.64亿港元 placing plus a 201.4亿元 2027 zero-coupon CB is listed-AI funding into Xi’s BRICS open-source zone, rather than a US frontier IPO. The FOMC decision at 02:00 Beijing on 17 September is the next risk-asset print."
+      "mechanism": "智谱 H-shares are now pricing a 156.64亿港元 placing at 714港元 against 201.4亿元 of 2027 zero-coupon convertibles, so the change is listed-AI funding into Xi's BRICS open-source zone. A 156.64亿港元 placing transmitted through the 201.4亿元 convertible into the A/H shares exposure. The read retires if 华尔街见闻 reprints the placing below 156.64亿港元. Horizon is weeks, ending as the 2027 convertibles are placed.",
+      "trigger": "智谱 placing reprinting above 156.64亿港元.",
+      "invalidator": "智谱 placing reprinting below 156.64亿港元.",
+      "horizon": "weeks",
+      "status": "new"
     }
   ],
   "globalRegime": "US cash broke a four-day losing streak into a 104.61 Brent settle and a 0.3% core CPI that ran 0.1 percentage point above forecast. The official 10-year yield was 4.96% and the 2-year was 4.63%. Monday oil jumped after Saudi shut the East-West Hormuz bypass. FOMC is still 02:00 Beijing on 17 September.",

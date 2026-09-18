@@ -791,11 +791,11 @@
           "href": "https://finance.yahoo.com/quote/BZ%3DF/"
         }
       ],
-      "mechanism": "Draft exclusions and “hostile target” headlines can re-arm war premium even while temporary-corridor diplomacy remains in the tape.",
-      "trigger": "Draft language hardens or another strait incident hits barrels harder.",
-      "invalidator": "Verified corridor traffic with oil giving back the Asia spike.",
+      "mechanism": "Oil is now pricing firmer Yahoo Brent futures against an Iran–Oman draft that would bar US and Israeli ships from Hormuz, so the change is an Asia oil extension after reports Iran struck hostile targets. Hostile-flagged-vessel compensation language transmitted into firmer Yahoo Brent and from there into the Oil sleeve. The read retires if verified corridor traffic prints and Yahoo Brent gives back the Asia spike in 1 session. Horizon is days, ending at the next Hormuz draft statement.",
+      "trigger": "Draft language hardens or 1 more strait incident hits barrels harder.",
+      "invalidator": "Verified corridor traffic with oil giving back the Asia spike for 1 session.",
       "horizon": "days",
-      "status": "escalated"
+      "status": "new"
     },
     {
       "id": "nfp-warsh-claims",
@@ -820,9 +820,9 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Resilient claims lower layoff fear without retiring hike rhetoric — NFP is the same-day arbiter for path odds.",
-      "trigger": "Hot NFP with Warsh/Barkin hike follow-through.",
-      "invalidator": "Soft NFP and cooler speaker tone cut near-term hike odds.",
+      "mechanism": "Initial claims are now pricing 199,000 for the week ending Aug 1 against a 202k estimate, with the 4-week average at 198,750, so the change is a third week under 200k that missed estimate. A 199,000 print versus 202k transmitted into the 198,750 four-week average and from there into the Rates sleeve. FT: Warsh is ready to hike if inflation runs hot, which is evidence inside that Rates chain. The read retires if DOL reprints claims back above 199,000 and the 4-week average leaves 198,750. Horizon is days, ending at the BLS NFP release.",
+      "trigger": "Hot NFP with Warsh/Barkin hike follow-through after 199,000 claims.",
+      "invalidator": "Soft NFP with claims staying at 199,000 and cooler speaker tone.",
       "horizon": "days",
       "status": "new"
     },
@@ -845,10 +845,10 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Export resilience supports the AI/tech-cycle narrative; import miss vs inbox est and a narrower surplus are the demand/second-order check.",
-      "trigger": "Follow-through weakness in August export leading indicators.",
-      "invalidator": "Next print keeps export double-digits with import catch-up.",
-      "horizon": "days/weeks",
+      "mechanism": "China exports are now pricing +23.9% y/y at $397.85bn against a Wind 22.88% estimate, so the change is a beat that held double-digits while imports at +27.5% / $285.35bn missed 29.5% and the surplus narrowed to $112.5bn from June $125.62bn. The 23.9% export beat versus 22.88% transmitted into the $112.5bn surplus, down from $125.62bn, and from there into the China sleeve. The read retires if the next Customs print leaves export growth at or below 22.88%. Horizon is weeks, ending at the next China Customs trade release.",
+      "trigger": "Follow-through weakness with exports reprinting below 23.9%.",
+      "invalidator": "Next print keeps exports at or above 23.9% with import catch-up toward 29.5%.",
+      "horizon": "weeks",
       "status": "new"
     },
     {
@@ -870,10 +870,10 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Financing/IPO headlines can lift Greater China AI/humanoid names without implying broad A-share beta.",
-      "trigger": "Deal terms slip or IPO aftermarket disappoints with ADR breadth fading.",
-      "invalidator": "Funding closes and Unitree aftermarket hold with ADR breadth improving.",
-      "horizon": "days/weeks",
+      "mechanism": "Unitree is now pricing a STAR IPO at 150.80 yuan, raising about CNY6.1bn, against DeepSeek restarting a second financing round, so the change is a China AI funding reopen. The 150.80 yuan IPO at CNY6.1bn transmitted into the IT桔子 humanoid- financing surge through mid-July and from there into the Tech sleeve. The read retires if Unitree aftermarket leaves 150.80 yuan or the DeepSeek round slips. Horizon is weeks, ending as Unitree aftermarket and DeepSeek terms clear.",
+      "trigger": "Deal terms slip or Unitree aftermarket leaves 150.80 yuan with ADR breadth fading.",
+      "invalidator": "Funding closes and Unitree holds 150.80 yuan with ADR breadth improving.",
+      "horizon": "weeks",
       "status": "new"
     },
     {
@@ -894,9 +894,9 @@
           "href": "https://research.glassnode.com/the-week-onchain-week-31-2026/"
         }
       ],
-      "mechanism": "Crypto can stay boredom-bound while oil/geo and NFP dominate macro beta — mid-$60ks is lag, not confirmation.",
-      "trigger": "BTC fails to follow any post-NFP equity bounce with rising spot volume.",
-      "invalidator": "BTC breaks higher with volume as equities stabilize.",
+      "mechanism": "Bitcoin is now pricing the mid-$60ks against equities, so the change is a continued Glassnode priced-for-nothing lag. The mid-$60ks Yahoo BTC-USD handle transmitted into the Glassnode lag versus equities and from there into the Crypto sleeve. Glassnode: bitcoin remains priced for nothing versus equities, which is evidence inside that Crypto chain. The read retires if Yahoo BTC-USD leaves the mid-$60ks with volume as equities stabilize. Horizon is weeks, ending at the next Glassnode weekly.",
+      "trigger": "BTC fails to follow any post-NFP equity bounce while stuck in the mid-$60ks.",
+      "invalidator": "BTC leaves the mid-$60ks with volume as equities stabilize.",
       "horizon": "weeks",
       "status": "continuing"
     }

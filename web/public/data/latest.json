@@ -2,7 +2,7 @@
   "date": "2026-09-18",
   "title": "Daily Financial Briefing",
   "coverageWindow": "September 17–18, 2026",
-  "publishedAt": "2026-09-18T01:29:07.187Z",
+  "publishedAt": "2026-09-18T06:03:36.267Z",
   "keySources": [
     {
       "label": "彭博 Markets Daily China / 财经早茶",
@@ -404,7 +404,11 @@
           "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202609"
         }
       ],
-      "mechanism": "A 196,000 claims print next to a 4.94% 10-year is the bond market treating rare layoffs as room for the post-hike bounce, not as a reason to retire another step. Morgan Stanley (17 September): the house added a March 2027 hike on top of December, which is why a labor miss still leaves a second move on the table. US industrial production at 21:15 Beijing is the next print."
+      "mechanism": "The 10-year is now pricing 4.94% against a 196,000 DOL initial-claims print that missed the 207,500 FactSet estimate from 206,000, so the change is a labor miss that marked the long end easier. A 196,000 miss versus 207,500 transmitted into the official 4.94% 10-year and from there into the US equities sleeve. Morgan Stanley (17 September): the house still layers another hike after this labor miss, which is evidence inside that UST chain. The read retires if DOL reprints initial claims at or above the 207,500 FactSet estimate. Horizon is days, ending at the next DOL weekly claims release.",
+      "trigger": "DOL initial claims reprinting below 196,000.",
+      "invalidator": "DOL initial claims at or above the 207,500 FactSet estimate.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "brent-oil-rally",
@@ -429,7 +433,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 104.82 Brent settle with a 7,637.76 S&P close is cash pricing some of the Middle East tightness back out, which is the same oil-to-inflation channel the 财经早茶 美国股市 line named. Lagarde at 18:30 Beijing is the next inflation-policy print that still carries that energy tape."
+      "mechanism": "Brent is now pricing 104.82 as a cash settle against the 财经早茶 能源 read that tightness would not last, so the change is a giveback while the S&P 500 printed 7,637.76 after an 85.95-point rise. A 104.82 Brent settle transmitted into that 7,637.76 S&P close, which is the Oil-to-US-equities chain. The read retires if the next AP Brent settle reprints above 104.82. Horizon is days, ending at the next AP Brent cash settle.",
+      "trigger": "AP Brent settle reprinting above 104.82.",
+      "invalidator": "AP Brent settle reprinting at or below 104.82 with the S&P 500 holding 7,637.76.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "boj-cpi",
@@ -450,7 +458,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 1.7% core miss still sits next to a 1.9% headline that keeps the BOJ’s second-hike case alive into this afternoon rather than retiring it. The BOJ policy statement on 18 September is the settle."
+      "mechanism": "Japan core CPI is now pricing 1.7% against the 1.8% Reuters estimate, with headline still at 1.9%, so the change is a miss on core that left the second-hike path standing. A 1.7% core miss versus 1.8% transmitted into the 财经早茶 second-hike-in- three-months read and from there into JPY and JGBs. The read retires if the BOJ holds and core reprints at or below 1.7%. Horizon is days, ending at the BOJ policy statement.",
+      "trigger": "Japan core CPI reprinting above the 1.8% Reuters estimate.",
+      "invalidator": "BOJ holds and core reprints at or below 1.7%.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "boe-gilt-qt",
@@ -471,7 +483,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Holding at 3.75% while rewriting gilt sales takes duration supply off the tape even as the Bank warns energy could still force a later hike. UK August retail sales at 14:00 Beijing are the next print."
+      "mechanism": "Bank Rate is now pricing 3.75% against a rewritten QT path of 20 billion pounds of annual sales to zero, so the change is a duration- supply cut that lifted UK gilts. Holding at 3.75% while cutting gilt sales to 20 billion pounds transmitted into the 财经早茶 欧洲股债 gilt bid, which is the Gilts exposure. The read retires if Bank Rate reprints above 3.75%. Horizon is weeks, ending as the APF gilt-sales rewrite is implemented.",
+      "trigger": "Bank Rate reprinting above 3.75%.",
+      "invalidator": "Bank Rate remaining at 3.75% with annual gilt sales staying at 20 billion pounds.",
+      "horizon": "weeks",
+      "status": "new"
     },
     {
       "id": "china-youth-unemp",
@@ -495,7 +511,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 3875.60 close next to an 18.9% youth rate is the A-share book trading domestic activity and the Xi visit rather than the 16 September funds-rate spillover. CICC (17 September): this Fed hike does not equal the start of a US hiking cycle for A-shares, which is why the housing briefing still sets the next tape. The State Council Information Office housing briefing at 10:00 Beijing is the next print."
+      "mechanism": "Shanghai is now pricing 3875.60, down 0.41%, against an 18.9% August 16–24 unemployment rate excluding students, so the change is an A-share close that absorbed a hotter youth print. An 18.9% youth rate transmitted into the 3875.60 Shanghai close, down 0.41%, which is the A/H exposure. CICC (17 September): this Fed hike does not equal the start of a US hiking cycle for A-shares, which is evidence inside that domestic chain. The read retires if NBS reprints 16–24 unemployment excluding students below 18.9%. Horizon is weeks, ending at the next NBS urban youth unemployment release.",
+      "trigger": "NBS 16–24 unemployment excluding students reprinting above 18.9%.",
+      "invalidator": "NBS 16–24 unemployment excluding students reprinting below 18.9%.",
+      "horizon": "weeks",
+      "status": "new"
     },
     {
       "id": "btc-etf",
@@ -511,7 +531,11 @@
           "href": "https://www.coindesk.com/markets/2026/09/17/crypto-rallies-through-the-fed-s-first-rate-increase-since-2023"
         }
       ],
-      "mechanism": "A 76,621 handle that rose with Nasdaq still sits on a 295.98 million Wednesday ETF outflow, so the bounce is risk-asset beta rather than new structural bids. Glassnode (16 September): bitcoin has slipped back under the True Market Mean and ETF, stablecoin and corporate demand has stalled. The Conference Board leading index at 22:00 Beijing is the next risk-asset print."
+      "mechanism": "Bitcoin is now pricing 76,621, up 0.88% over 24 hours, against a 295.98 million Wednesday US spot ETF outflow, so the change is a beta bounce on an outflow tape. A 295.98 million Wednesday ETF outflow transmitted into the 76,621 handle, which is the BTC exposure. Glassnode (16 September): bitcoin has slipped back under the True Market Mean and ETF, stablecoin and corporate demand has stalled. The read retires if CoinDesk reprints bitcoin below 76,621. Horizon is days, ending at the next US spot bitcoin ETF flow print.",
+      "trigger": "CoinDesk bitcoin reprinting above 76,621 on a fresh US spot ETF inflow.",
+      "invalidator": "CoinDesk bitcoin reprinting below 76,621, or another 295.98 million US spot ETF outflow.",
+      "horizon": "days",
+      "status": "new"
     }
   ],
   "globalRegime": "Jobless claims at 196,000 and Brent at 104.82 let US cash post its best day in six weeks, with the S&P 500 at 7,637.76. The official 10-year yield was 4.94%. The BOE held at 3.75% and rewrote gilt sales. Japan’s core CPI missed at 1.7% into the BOJ statement.",
@@ -1061,7 +1085,7 @@
   "suggestions": "Today: SCIO housing at 10:00 Beijing. UK retail sales are 14:00. Lagarde is 18:30. BOJ is due 18 September. US industrial production is 21:15. Bowman is 21:30. This report is research and information synthesis, not investment advice.",
   "disclaimer": "This report is research and information synthesis, not investment advice. Verify figures against primary sources before acting on them.",
   "marketDashboard": {
-    "asOf": "2026-09-18T01:29:07.187Z",
+    "asOf": "2026-09-18T06:03:36.267Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -1107,8 +1131,8 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "64,717.04",
-            "change": "+1.24%",
+            "latest": "65,116.37",
+            "change": "+1.53%",
             "changeDirection": "up",
             "asOfDate": "2026-09-18",
             "source": {
@@ -1119,8 +1143,8 @@
           {
             "id": "kospi",
             "asset": "Kospi",
-            "latest": "6,855.84",
-            "change": "+2.05%",
+            "latest": "6,902.73",
+            "change": "+2.79%",
             "changeDirection": "up",
             "asOfDate": "2026-09-18",
             "source": {
@@ -1131,10 +1155,10 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "24,604.29",
-            "change": "−0.44%",
-            "changeDirection": "down",
-            "asOfDate": "2026-09-17",
+            "latest": "24,812.94",
+            "change": "+0.85%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-18",
             "source": {
               "label": "Yahoo Finance (^HSI)",
               "href": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -1143,10 +1167,10 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,310.74",
-            "change": null,
-            "changeDirection": "flat",
-            "asOfDate": "2026-09-17",
+            "latest": "4,395.21",
+            "change": "+1.96%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-18",
             "source": {
               "label": "Yahoo Finance (HSTECH.HK)",
               "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
@@ -1155,10 +1179,10 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,875.60",
-            "change": "−0.41%",
-            "changeDirection": "down",
-            "asOfDate": "2026-09-17",
+            "latest": "3,909.26",
+            "change": "+0.87%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-18",
             "source": {
               "label": "Yahoo Finance (000001.SS)",
               "href": "https://finance.yahoo.com/quote/000001.SS/"
@@ -1227,8 +1251,8 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "156.2460",
-            "change": "+0.15%",
+            "latest": "157.2270",
+            "change": "+0.78%",
             "changeDirection": "up",
             "asOfDate": "2026-09-18",
             "source": {
@@ -1239,8 +1263,8 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.6961",
-            "change": "−0.15%",
+            "latest": "6.6976",
+            "change": "−0.13%",
             "changeDirection": "down",
             "asOfDate": "2026-09-18",
             "source": {
@@ -1251,8 +1275,8 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,397.20",
-            "change": "+0.22%",
+            "latest": "$4,411.80",
+            "change": "+0.28%",
             "changeDirection": "up",
             "asOfDate": "2026-09-18",
             "source": {
@@ -1263,8 +1287,8 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$104.18",
-            "change": "−1.56%",
+            "latest": "$103.48",
+            "change": "−1.28%",
             "changeDirection": "down",
             "asOfDate": "2026-09-18",
             "source": {
@@ -1275,8 +1299,8 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$76,519",
-            "change": "+0.02%",
+            "latest": "$77,465",
+            "change": "+1.58%",
             "changeDirection": "up",
             "asOfDate": "2026-09-18",
             "source": {

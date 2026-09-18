@@ -234,9 +234,9 @@
           "href": "https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9"
         }
       ],
-      "mechanism": "Trade the AP chip sleeve, not the BofA adjective. 56% overweight is positioning CLAIM next to a three-day Nasdaq slide — not confirmation of the 50% discount. Kospi −1.5% is the same AI beta, not an NBS print.",
-      "trigger": "Dated BofA note or a chip rebound that recoups the three-day slide.",
-      "invalidator": "Further Nasdaq/chip extension that makes the 50% CLAIM dead.",
+      "mechanism": "US equities are now pricing Nvidia at −2.3% and Nasdaq at −1.3% against a BofA 50% discount call, so the change is a chip sell that the 50% call has not recouped. A −2.3% Nvidia drop transmitted into the −1.3% Nasdaq close and from there into Asia chips via Broadcom −3.2%. The read retires if Nvidia reprints a bounce that erases the 2.3% Tuesday drop. Horizon is days, ending at a dated BofA note or the next cash chip close.",
+      "trigger": "Nvidia reprinting a bounce that recoups the 2.3% Tuesday drop.",
+      "invalidator": "Nvidia extending the 2.3% Tuesday drop, making the 50% BofA call dead.",
       "horizon": "days",
       "status": "new"
     },
@@ -268,11 +268,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Long-end is the sovereign-sell book, not 今日图表. Headline import −0.4% is fuel; nonfuel +0.4% does not clear the 2007 30Y line. Housing −12.4% is the mortgage echo. Minutes 02:00 Beijing Aug 20 split pause-odds vs supply.",
-      "trigger": "Hawkish FOMC minutes that extend the 30Y high.",
-      "invalidator": "Soft pipeline that fades hike odds without a 30Y extension.",
+      "mechanism": "The 10-year is now pricing 4.70% against 4.72% with the 30-year still near the highest since 2007, so the change is a small long-end pullback that has not cleared the two-decade high. BLS import prices −0.4% with fuel −7.2% transmitted into that 4.70% 10-year, and Census July starts 1,239,000 down 12.4% m/m landed on USTs, with US equities and USD the same long-end sleeve. The read retires if the 10-year reprints below 4.70% while the 30-year leaves the 2007 high. Horizon is days, ending at the FOMC minutes.",
+      "trigger": "Hawkish FOMC minutes that send the 10-year back above 4.72%.",
+      "invalidator": "The 10-year reprinting below 4.70% while the 30-year leaves the 2007 high.",
       "horizon": "days",
-      "status": "new"
+      "status": "continuing"
     },
     {
       "id": "nbs-july-miss",
@@ -306,11 +306,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Retail/FAI are the weak leg — A-share domestic beta, and why overnight OMO is not easing. 超长债牛平 is duration CLAIM on that miss, not a new print. 公积金 is policy CLAIM, not demand. CNY is second-order. CICC CLAIM (Aug 8): 7月中国PMI回落 vs 发达扩张; 中国利率或加快下行、海外高位运行.",
-      "trigger": "August NBS that re-accelerates retail/FAI, or a credit rebound that shows up in FAI.",
-      "invalidator": "August prints that reverse the 0.6/−6.7 miss.",
+      "mechanism": "A/H shares are now pricing Shanghai at 3,990.30, up 0.19%, against NBS July retail +0.6% versus 1.5% and FAI −6.7% versus −6.2%, so the change is a small index bounce on a demand miss. A 0.6% retail miss transmitted into the 3,990.30 Shanghai print and from there into CNY and China rates. The read retires if August NBS reprints retail at or above 1.5% and FAI better than −6.2%. Horizon is weeks, ending at the August NBS activity release.",
+      "trigger": "August NBS retail reprinting at or below 0.6% with FAI at or below −6.7%.",
+      "invalidator": "August NBS retail at or above 1.5% and FAI better than −6.2%.",
       "horizon": "weeks",
-      "status": "new"
+      "status": "continuing"
     },
     {
       "id": "iran-ceasefire-claim",
@@ -335,11 +335,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Isolation/ceasefire CLAIM is not a Hormuz closure. It is an oil-beta headline and a USD/JPY twitch until a dated flow shock. Pair with the Brent row in Market closes; do not promote desk “微涨” to a settle.",
-      "trigger": "Confirmed strike on flows or a dated ceasefire extension.",
-      "invalidator": "Quiet oil with no flow disruption.",
+      "mechanism": "Oil is now pricing Brent at 91.02, up 0.2%, against Trump's no-talks line and Iran's closed-strait stance, so the change is a 0.2% bounce on isolation talk. A 91.02 Brent print, up 0.2%, transmitted into the Oil book and from there into USDJPY. The read retires if the next AP Brent settle reprints below 91.02 with no flow disruption. Horizon is days, ending at the next AP Brent cash settle.",
+      "trigger": "AP Brent settle reprinting above 91.02 on a confirmed strike on flows.",
+      "invalidator": "AP Brent settle reprinting below 91.02 with no flow disruption.",
       "horizon": "days",
-      "status": "new"
+      "status": "continuing"
     },
     {
       "id": "pboc-overnight-omo",
@@ -356,9 +356,9 @@
           "href": "https://www.yicai.com/news/103315760.html"
         }
       ],
-      "mechanism": "Give-quantity cash, not a rate signal. It does not restart retail/FAI and should not be stacked on the NBS miss as “easing.” Watch allotment vs the cap into Aug 19; CNY is a side book.",
-      "trigger": "Allotment at the cap plus another weak activity print.",
-      "invalidator": "Tiny overnight prints and a firm August rebound.",
+      "mechanism": "China rates are now pricing overnight reverse-repos with a daily cap of 6,000亿元 on the last day of the Aug 17–19 window, so the change is tax-window cash that still has a 6,000亿元 ceiling. A 6,000亿元 cap transmitted into China rates plumbing and from there into CNY. The read retires if overnight allotment reprints well below the 6,000亿元 cap. Horizon is days, ending at today's close of that window.",
+      "trigger": "Overnight allotment at the 6,000亿元 cap plus another weak activity print.",
+      "invalidator": "Overnight allotment well below the 6,000亿元 cap.",
       "horizon": "days",
       "status": "continuing"
     }

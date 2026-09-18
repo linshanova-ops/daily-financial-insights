@@ -73,6 +73,11 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                 >
                   {theme.grade}
                 </span>
+                {theme.status ? (
+                  <span className="text-xs uppercase tracking-[0.16em] text-ink/40">
+                    {theme.status}
+                  </span>
+                ) : null}
                 {theme.assets?.length ? (
                   <span className="text-xs tracking-wide text-ink/45">
                     {theme.assets.join(" · ")}
@@ -102,6 +107,28 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                   <p className="mt-2 text-base leading-relaxed text-ink-soft">
                     {theme.mechanism}
                   </p>
+                  {theme.trigger || theme.invalidator || theme.horizon ? (
+                    <dl className="mt-3 grid gap-3 text-sm leading-relaxed text-ink-soft sm:grid-cols-3">
+                      {theme.trigger ? (
+                        <div>
+                          <dt className="font-semibold text-ink">Trigger</dt>
+                          <dd className="mt-1">{theme.trigger}</dd>
+                        </div>
+                      ) : null}
+                      {theme.invalidator ? (
+                        <div>
+                          <dt className="font-semibold text-ink">Invalidator</dt>
+                          <dd className="mt-1">{theme.invalidator}</dd>
+                        </div>
+                      ) : null}
+                      {theme.horizon ? (
+                        <div>
+                          <dt className="font-semibold text-ink">Horizon</dt>
+                          <dd className="mt-1">{theme.horizon}</dd>
+                        </div>
+                      ) : null}
+                    </dl>
+                  ) : null}
                 </div>
               </div>
             </li>

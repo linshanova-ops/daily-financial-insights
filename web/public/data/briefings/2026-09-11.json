@@ -470,7 +470,11 @@
           "href": "https://wallstreetcn.com/articles/3781506"
         }
       ],
-      "mechanism": "A 51.87亿美元 operation against a 60亿美元 cap left official 10-year yields at 4.95%, so a 5.4% PPI print is term-premium selling into CPI rather than a growth scare. CICC (24 August): the 10-year problem is term premium, meaning willingness to hold the bond rather than the policy-rate path. CPI at 20:30 Beijing today is the next print."
+      "mechanism": "The 10-year is now pricing 4.95% against a 51.87亿美元 10-to-20-year buyback that came in below the 60亿美元 cap, so the change is a long-end cheapening that a 5.4% PPI beat versus a 5.3% estimate helped lock in. A 5.4% PPI print versus 5.3%, with 0.4% m/m in line, transmitted into the official 4.95% 10-year and from there into the UST and US equities sleeve. The read retires if the official U.S. Treasury 10-year reprints below 4.95% after this PPI print. Horizon is days, ending at the next BLS CPI release that follows this PPI print.",
+      "trigger": "U.S. Treasury 10-year reprinting above 4.95% after the 5.4% PPI print.",
+      "invalidator": "U.S. Treasury 10-year reprinting below 4.95%.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "id": "oil-hormuz-107",
@@ -494,7 +498,11 @@
           "href": "https://wallstreetcn.com/articles/3781533"
         }
       ],
-      "mechanism": "A 107.63 settle up 6.3% is a Hormuz supply print sitting under Friday’s CPI energy line. CICC (20 July): demand destruction already caps how long a war premium can sit. CPI at 20:30 Beijing today, through that energy line, is the next print."
+      "mechanism": "Brent is now pricing 107.63, up 6.3%, against the 财经早茶 能源 break through 107, so the change is a four-month high that marked Hormuz supply risk into the oil book. A 107.63 settle up 6.3% transmitted through the Houthi move on Mocha and Bab el-Mandeb into the Oil exposure. The read retires if 华尔街见闻 reprints Brent below 107.63. Horizon is days, ending at the next Brent cash settle.",
+      "trigger": "Brent settle reprinting above 107.63.",
+      "invalidator": "Brent settle reprinting below 107.63.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "europe-ecb",
@@ -519,7 +527,11 @@
           "href": "https://wallstreetcn.com/articles/3781533"
         }
       ],
-      "mechanism": "A 2.50% deposit rate against Destatis 2.9% and energy at 10.5% keeps Bunds and European equities on a hike premium after Stoxx 635.97. CICC (1 September): a hike to 2.50% against 3.0% inflation still leaves real rates low. Lagarde at 22:00 Beijing today is the next print."
+      "mechanism": "The ECB deposit rate is now pricing 2.50% against Destatis August CPI at 2.9% and energy at 10.5%, so the change is a hike that sits under a 3.0% 2026 HICP staff path. A 2.50% deposit rate with the MRO at 2.65% and the MLF at 2.90% transmitted into the Stoxx 600 at 635.97, which is the EU equities and Bunds exposure. The read retires if Destatis reprints August CPI below 2.9%. Horizon is days, ending at the next Destatis CPI release.",
+      "trigger": "Destatis CPI reprinting above 2.9% after the 2.50% deposit-rate hike.",
+      "invalidator": "Destatis CPI reprinting below 2.9%.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "id": "china-jinrong",
@@ -548,7 +560,11 @@
           "href": "https://m.cnfin.com/yw-lb/zixun/20260910/4468222_1.html"
         }
       ],
-      "mechanism": "A 10.9% 五篇大文章 loan print and a 4.6万亿元 tool stock are the onshore policy tape under Shanghai’s 3934.40 close rather than a new easing impulse at 1.40%. CICC (11 September): RMB internationalization still needs asset supply, offshore liquidity, and payment rails. Overnight reverse repos from 14 September are the next print."
+      "mechanism": "Shanghai is now pricing 3934.40, down 0.43%, against a 4.6万亿元 structural-tool stock and a 10.9% 五篇大文章 loan print, so the change is an A-share close that absorbed the 金融强国 plan. A 10.9% loan print and a 4.6万亿元 tool stock transmitted through Thursday's 7-day OMO at 1.40% into the 3934.40 Shanghai close, which is the A/H shares and CGBs exposure. The read retires if 新华财经 reprints Shanghai below 3934.40 after 五篇大文章 loans reprint below 10.9%. Horizon is weeks, ending at the next PBOC structural-tool stock update.",
+      "trigger": "五篇大文章 loans reprinting above 10.9% with Shanghai holding 3934.40.",
+      "invalidator": "五篇大文章 loans reprinting below 10.9%.",
+      "horizon": "weeks",
+      "status": "new"
     },
     {
       "id": "copper-tariff-pause",
@@ -568,7 +584,11 @@
           "href": "https://wallstreetcn.com/articles/3781533"
         }
       ],
-      "mechanism": "A 14,234 dump from the record is the tariff squeeze pausing, a different mechanism from Hormuz oil. CICC (5 August): mine-supply growth is turning negative while a US refined-copper tariff remains in play. US CPI on 11 September is the next print."
+      "mechanism": "LME three-month copper is now pricing 14,234 a tonne against COMEX at 6.5475 a pound, so the change is a dump from the record while the White House has not decided on a refined-copper tariff. A 14,234 LME print transmitted into the 6.5475 COMEX print, which is the Copper exposure. The read retires if 华尔街见闻 reprints LME three-month copper above 14,234 after a refined-copper tariff decision. Horizon is weeks, ending at the White House refined-copper tariff decision.",
+      "trigger": "LME three-month copper reprinting above 14,234.",
+      "invalidator": "LME three-month copper reprinting below 14,234 with COMEX below 6.5475.",
+      "horizon": "weeks",
+      "status": "new"
     },
     {
       "id": "gold-btc-duration",
@@ -589,7 +609,11 @@
           "href": "https://www.theblockbeats.info/flash/366430"
         }
       ],
-      "mechanism": "Gold at 4358.50 beside bitcoin at 77,399 is duration-beta into Friday’s CPI after the 10-year jumped. CPI at 20:30 Beijing today is the next print."
+      "mechanism": "COMEX gold is now pricing 4358.50 against spot at 4316.76, with HTX bitcoin at 77,399 after the US claims print, so the change is a duration dump that also marked BTC easier. A 4358.50 COMEX close transmitted into the 77,399 HTX print beside the 7.79万美元 handle, which is the Gold and BTC exposure. The read retires if 华尔街见闻 reprints COMEX gold above 4358.50. Horizon is days, ending at the next BLS CPI release.",
+      "trigger": "COMEX gold reprinting above 4358.50.",
+      "invalidator": "COMEX gold reprinting below 4358.50, or HTX bitcoin reprinting below 77,399.",
+      "horizon": "days",
+      "status": "continuing"
     }
   ],
   "globalRegime": "US cash sold a fourth session into a 107.63 Brent settle and a 51.87亿美元 buyback miss. The official 10-year yield was 4.95%. The ECB hiked the deposit rate to 2.50%. FOMC is still 02:00 Beijing on 17 September.",

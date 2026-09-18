@@ -235,9 +235,9 @@
           "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247852961&idx=1&sn=f8bc3c6ac119ebe68b67ca79009bf965&chksm=eb7cfb4fb11b1f5c0ca48311fe69a0a7592c0c2d1e8934188fe20a62b19d97d95ffcf856d592&scene=0&xtrack=1#rd"
         }
       ],
-      "mechanism": "A cooler wholesale print cuts the near September-hike argument without proving 2% is back — energy/Hormuz can still re-accelerate, and claims ticked the other way. CICC CLAIM (Aug 11 HK note): only the funding-constraint leg of the HK rebound has eased; domestic-demand and AI-structure mismatch still bind — do not read a US pause-odds bid as automatic H-share beta.",
-      "trigger": "Hot import/export prices Aug 18 or hawkish FOMC minutes Aug 19.",
-      "invalidator": "Soft pipeline prints that keep September hike odds fading.",
+      "mechanism": "July PPI is now pricing unchanged m/m and +4.7% y/y against June −0.1% m/m and +5.5% y/y, so the change is a miss versus the +0.2% m/m Dow Jones estimate that marked the long end easier. The 4.7% y/y PPI miss transmitted into a 4.63% 10-year, down 5 bp, and from there into the S&P 7,798.99 record close, which is the UST-to-US- equities chain. CNBC: miss versus +0.2% m/m Dow Jones estimate, with core +0.2% versus +0.3%, which is evidence inside that UST chain. The read retires if import/export prices reprint hot and the 10-year leaves 4.63% higher. Horizon is days, ending at the Aug 18 import/export prices release.",
+      "trigger": "Hot import/export prices Aug 18 or hawkish FOMC minutes Aug 19 after the 4.7% PPI miss.",
+      "invalidator": "Soft pipeline prints that keep the 10-year at or below 4.63%.",
       "horizon": "days",
       "status": "new"
     },
@@ -260,9 +260,9 @@
           "href": "https://finance.caixin.com/2026-08-13/102473576.html"
         }
       ],
-      "mechanism": "Mid-month overnight is matching tax/reserve dates (Yicai: Aug 17 cutoff), not a policy-rate signal. Watch DR001 vs the 1.4% 7-day anchor, not the headline ops size.",
-      "trigger": "Overnight ops that fail to cap repo into the Aug 17–19 window.",
-      "invalidator": "Smooth funding with no extra easing language.",
+      "mechanism": "PBOC is now pricing quantity-bid overnight reverse-repo ops for Aug 14/17/18/19 with a daily cap of 6,000亿元 and no rate print, so the change is plumbing after 7-day reverse repo stayed at zero Aug 11–12. The 6,000亿元 overnight cap transmitted into the 465亿元 / 50亿元 7-day net drain and from there into Asia equities and FX. Caixin: Q2 MPR still 适度宽松, which is evidence inside that FX chain. The read retires if overnight ops fail to cap repo into the Aug 17–19 window after the 6,000亿元 cap. Horizon is days, ending at the Aug 17–19 overnight window.",
+      "trigger": "Overnight ops that fail to cap repo into the Aug 17–19 window despite the 6,000亿元 cap.",
+      "invalidator": "Smooth funding under the 6,000亿元 cap with no extra easing language.",
       "horizon": "days",
       "status": "continuing"
     },
@@ -289,11 +289,11 @@
           "href": "https://ir.jd.com/news-releases/news-release-details/jdcom-announces-second-quarter-and-interim-2026-results"
         }
       ],
-      "mechanism": "China tech is not one beta: Tencent is being priced on cash conversion of AI capex; JD is a high-base revenue miss with an operating-profit inflect. Korea chips can keep rallying without repairing Hang Seng.",
-      "trigger": "Another HK internet print that widens the FCF hole without KPI proof.",
-      "invalidator": "Tencent FCF recovery / JD returning to top-line growth that lifts HSI.",
-      "horizon": "days–weeks",
-      "status": "continuing"
+      "mechanism": "Tencent is now pricing a hangover after 2Q capex RMB52.8bn turned FCF negative, against JD revenue RMB346.4bn, −2.9% y/y, and income from operations RMB4.5bn versus a RMB0.9bn loss a year earlier, so the change is an HK internet split. The 52.8bn Tencent capex hangover transmitted into HK Tencent −4%+ while JD's RMB4.5bn operating profit versus a RMB0.9bn loss, and Lenovo +20% on AI-server orders, fed the Asia equities sleeve. The read retires if Tencent FCF recovers from the RMB52.8bn capex load or JD returns to top-line growth above RMB346.4bn. Horizon is days, ending as the next HK internet prints clear.",
+      "trigger": "Another HK internet print that widens the FCF hole after RMB52.8bn capex without KPI proof.",
+      "invalidator": "Tencent FCF recovery / JD revenue back above RMB346.4bn that lifts HSI.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "yen-near-160",
@@ -314,9 +314,9 @@
           "href": "https://www.japantimes.co.jp/business/2026/08/13/economy/japan-producer-price-july/"
         }
       ],
-      "mechanism": "Soft US PPI eases dollar-hike pressure but does not remove the 160 intervention option while Japan wholesale prices stay elevated.",
-      "trigger": "Confirmed official yen support or a clean break back below 155.",
-      "invalidator": "Grind through 160 with no official response.",
+      "mechanism": "Japan CGPI is now pricing +7.2% y/y against June revised +7.3% and +0.1% m/m, so the change is a still-hot pipeline while USD/JPY hugs the intervention watch. The 7.2% July CGPI print, from 7.3%, transmitted into the 0.1% m/m and from there into USD/JPY. The read retires if confirmed official yen support reprints after CGPI at 7.2%. Horizon is days, ending at the next MOF intervention statement.",
+      "trigger": "Confirmed official yen support after July CGPI at 7.2%.",
+      "invalidator": "Grind on with CGPI at 7.2% and no official response.",
       "horizon": "days",
       "status": "continuing"
     },
@@ -339,11 +339,11 @@
           "href": "https://finance.yahoo.com/quote/BZ%3DF/"
         }
       ],
-      "mechanism": "Yesterday’s CPI pause bid needed PPI to clear the energy channel — it did for July. A re-spike in crude still re-opens the hike argument.",
-      "trigger": "Sustained Brent rebound that puts energy back into the next CPI/PPI.",
-      "invalidator": "Crude that stays heavy with no new Hormuz disruption print.",
-      "horizon": "days–weeks",
-      "status": "continuing"
+      "mechanism": "Brent is now pricing $87.05 against Thursday's $87.56, so the change is an oil ease that BLS booked as final-demand energy −3.1% m/m and gasoline −5.7%. The 3.1% energy drop and 5.7% gasoline drop transmitted into the $87.05 Yahoo BZ=F Friday print from $87.56 and from there into USTs via the soft PPI. The read retires if Brent reclaims $87.56 and puts energy back into the next CPI/PPI. Horizon is days, ending at the next CPI/PPI energy component.",
+      "trigger": "Sustained Brent rebound above $87.56 that puts energy back into the next CPI/PPI.",
+      "invalidator": "Crude staying heavy at or below $87.05 with no new Hormuz disruption print.",
+      "horizon": "days",
+      "status": "new"
     }
   ],
   "globalRegime": "Two cool US inflation prints (in-line CPI, miss-estimate PPI) bought a record S&P and cheaper 10Y, while claims ticked up and USD/JPY still sits on 160: pause-odds, not a declared easing cycle.",
