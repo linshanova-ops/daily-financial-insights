@@ -480,7 +480,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 162,000 print versus 53,000 is why the 2-year went to 4.37% and the S&P 500 closed at 7,718.60, even with unemployment still at 4.1%. CICC (6 September): the jobs beat lowered the employment constraint on a hike, and September still needs the inflation prints to settle the decision. CPI on 11 September, then the FOMC at 02:00 Beijing on 17 September, are the settle."
+      "mechanism": "August nonfarm payrolls are now pricing 162,000 against the 53,000 Dow Jones estimate, with unemployment at 4.1%, so the change is a labor beat that marked the S&P 500 down 0.4% to 7,718.60. The 162,000 beat transmitted into swap-market September hike odds near 60% and from there into the official 4.37% 2-year and 4.78% 10-year, which is the USTs and US equities chain. The read retires if the official 10-year reprints below 4.78% while unemployment holds 4.1%. Horizon is days, ending at the September FOMC.",
+      "trigger": "September FOMC hiking after the 162,000 payroll beat, or the 10-year through 4.78%.",
+      "invalidator": "The 10-year back below 4.78% while unemployment holds 4.1%.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "oil-hormuz",
@@ -504,7 +508,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Saturday’s tanker strike keeps a war premium in WTI at $91.48 after a week that already settled Brent at $96.28. Goldman Sachs (5 September): Hormuz flow has recovered about two-thirds, with about five million barrels a day moving as dark ships the AIS count misses, which is why a modest Friday settle can sit beside another shooting day. The next dated Hormuz-flow print, and CPI on 11 September through the energy line, settle whether that premium sticks."
+      "mechanism": "WTI is now pricing 91.48 and Brent 96.28, so the change is a held war premium after Saturday tanker strikes. Saturday’s tanker strikes sat beside four commodity vessels through Hormuz on Thursday versus a 10-day average of about 15, and that flow gap transmitted into the 96.28 Brent settle, which is the Oil exposure. The read retires if the next CNBC Brent settle reprints below 96.28. Horizon is days, ending at the next dated Hormuz transit count.",
+      "trigger": "A dated Hormuz transit reprint above Thursday’s 4 versus 15, or Brent giving back 96.28.",
+      "invalidator": "Brent holding 96.28 while WTI stays at 91.48.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "id": "gold-btc",
@@ -529,7 +537,11 @@
           "href": "https://cointelegraph.com/markets/bitcoin-etf-inflows-3-8-billion-strongest-three-week-run-2026"
         }
       ],
-      "mechanism": "Gold and bitcoin sold the same hike-duration beta, so late-afternoon gold near $4,429.40 and a dip through $78,600 are one book, and Friday ETF inflows of $174.6 million show allocators still added. Glassnode (2 September): spot is boxed between short-term-holder supply below and long-term-holder supply above. CPI on 11 September, through the dollar, is the next print."
+      "mechanism": "Spot gold is now pricing 4,429.40, down 0.96%, against bitcoin selling from 81,300 to 78,600, so the change is a joint hike-duration dump after payrolls. Gold’s 0.96% drop transmitted into the 78,600 bitcoin print, then 79,500, after 174.6 million of Friday US spot bitcoin ETF inflows, which is the Gold-to-BTC chain. The read retires if Kitco reprints spot gold back through 4,429.40 while bitcoin holds 81,300. Horizon is days, ending at the next dated gold and bitcoin close.",
+      "trigger": "Bitcoin reclaiming 81,300, or gold reversing 4,429.40.",
+      "invalidator": "Spot gold holding below 4,429.40 while bitcoin stays under 81,300.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "id": "china-recap-omo",
@@ -558,7 +570,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A CNY360bn recap tops up core tier-one capital, and an equal CNY500bn three-month rollover after a 14115亿元 weekly drain leaves the 7-day rate uncut, which is why Shanghai closed at 3930.12. CICC (2 September): swap-implied cut expectations sit at a historically strong level while the 7-day rate has gone uncut this year. The next PBOC take-up and US CPI on 11 September, through risk appetite, are the dated prints."
+      "mechanism": "Shanghai is now pricing 3930.12, down 0.30%, against a 3600亿元 lender recap and a 5000亿元 equal rollover, so the change is an A-share close that absorbed a recap while the PBOC stopped adding. The 3600亿元 recap and 3000亿元 special treasury plan transmitted into that 3930.12 close after the week of 31 August–4 September drained 14115亿元, which is the A/H and CNY chain. The read retires if Shanghai reprints above 3930.12 while the 7 September operation stays an equal 5000亿元 rollover. Horizon is weeks, ending at the next dated PBOC add after the two- month 2000亿元 add ended.",
+      "trigger": "Shanghai reversing 3930.12 after the 3600亿元 recap.",
+      "invalidator": "Shanghai holding 3930.12 while the 7 September operation stays an equal 5000亿元 rollover.",
+      "horizon": "weeks",
+      "status": "new"
     },
     {
       "id": "yen-reserves",
@@ -578,7 +594,11 @@
           "href": "https://wallstreetcn.com/articles/3781126"
         }
       ],
-      "mechanism": "The $87.8 billion drop in foreign securities is the August yen-buying operation of ¥15.4 trillion hitting the reserve tape, which is why USD/JPY can sit at 156.22 after Friday’s bounce from 155.50. The BOJ decision on 17–18 September is the settle."
+      "mechanism": "USD/JPY is now pricing 156.22 after 155.50 on Friday, so the change is a yen giveback that confirmed the August buying operation. Foreign-securities holdings down 87.8 billion and ¥15.4 trillion spent through 26 August transmitted into that 156.22 print, which is the JPY exposure. The read retires if USD/JPY reprints back through 156.22 after the 87.8 billion reserve drop. Horizon is days, ending at the next official Tokyo reserve or USD/JPY close.",
+      "trigger": "USD/JPY reprinting back through 156.22.",
+      "invalidator": "USD/JPY holding 155.50 after the 87.8 billion reserve drop.",
+      "horizon": "days",
+      "status": "new"
     }
   ],
   "globalRegime": "The new tape is a 162,000 payrolls beat that put September hike odds back near 60%. The S&P 500 closed at 7,718.60. The official 2-year printed 4.37%. WTI held $91.48 after Saturday’s tanker strikes. Gold sold to about $4,429.40. CPI on 11 September still settles the FOMC at 02:00 Beijing on 17 September.",

@@ -393,9 +393,9 @@
           "href": "https://wallstreetcn.com/articles/3780385"
         }
       ],
-      "mechanism": "A China-bound flow drop is a blockade print, not a corridor. CICC (24 August)：the dollar, not the S&P tape, is where the Treasury argument showed up. $86.94 is still a war-premium oil price, not a confirmed Strait reopening.",
-      "trigger": "A dated tanker-count recovery into China, or a signed corridor.",
-      "invalidator": "Oil reversing higher with the China-flow bars still collapsing.",
+      "mechanism": "Brent is now pricing 86.94, down 0.4%, after a low of 84.56, with WTI at 82.23, so the change is a slight oil drop as the chart's last Iran- to-China bar is the lowest. A 86.94 Brent settle, down 0.4%, transmitted into WTI at 82.23 and into CNY via the collapsing China-flow bars. The read retires if oil reverses higher through 86.94 with the China- flow bars still collapsing. Horizon is days, ending at a dated tanker-count recovery into China or a signed corridor.",
+      "trigger": "A dated tanker-count recovery into China that holds Brent below 86.94, or a signed corridor.",
+      "invalidator": "Oil reversing higher through 86.94 with the China-flow bars still collapsing.",
       "horizon": "days",
       "status": "new"
     },
@@ -425,9 +425,9 @@
           "href": "https://apnews.com/article/stocks-markets-ai-oil-nvidia-7112fc458ebbf59dfa6172799e4e139d"
         }
       ],
-      "mechanism": "The $108.0bn guide is the capex print. The 70% next-year line is a desk, not the 10-Q. No China compute in the outlook is a supply constraint, not a US close. After-hours is not Wednesday’s cash tape.",
-      "trigger": "Thursday cash where SOXX holds the after-hours bid, or gives it back.",
-      "invalidator": "Guidance that holds $108.0bn ±2% with chips still bid.",
+      "mechanism": "Nvidia is now pricing Q2 FY27 revenue at 96.2bn, up 18% q/q and 106% y/y, against data-center revenue of 89.0bn and Q3 guidance of 108.0bn plus or minus 2%, so the change is an after-hours jump on a 70% next- year growth view. A 96.2bn revenue print transmitted into 108.0bn Q3 guidance with gross margin at 74.0% plus or minus 50 basis points, which is the US equities sleeve, as Meta rose 1.1%. The read retires if Thursday cash gives back the 108.0bn bid. Horizon is days, ending at Thursday's SOXX cash close.",
+      "trigger": "Thursday cash where SOXX holds the after-hours 108.0bn bid, or gives it back.",
+      "invalidator": "Guidance that holds 108.0bn plus or minus 2% with chips still bid.",
       "horizon": "days",
       "status": "new"
     },
@@ -462,9 +462,9 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "In-line core did not deliver duration. CICC (24 August)：a $4bn long-end operation is a signal, not QE, and the problem is term premium. The next ≥$4bn buyback is still 9 September. Warsh is Friday.",
-      "trigger": "Warsh on Friday, or the 10-year back below 4.64% with core still 3.3%.",
-      "invalidator": "The 10-year back below 4.64% while oil is still falling.",
+      "mechanism": "The 10-year is now pricing 4.66% against July core PCE at +3.3% y/y and +0.2% m/m in line, so the change is a long-end sell after a tailed 5-year even as core matched. Headline PCE at +3.7% versus the AP FactSet 3.6% estimate transmitted into durables orders +1.1% to 339.3bn and into the official 4.19% / 4.66% / 5.18% curve, which is the USTs exposure. The read retires if the 10-year reprints below 4.66% while oil is still falling. Horizon is days, ending at Warsh on Friday.",
+      "trigger": "Warsh on Friday, or the 10-year back below 4.66% with core still 3.3%.",
+      "invalidator": "The 10-year reprinting below 4.66% while oil is still falling.",
       "horizon": "days",
       "status": "new"
     },
@@ -504,11 +504,11 @@
           "href": "https://research.glassnode.com/the-week-onchain-week-34-2026/"
         }
       ],
-      "mechanism": "Gold giving back a three-month high while the 10-year is 4.66% is the dollar-fiscal book. CICC (24 August)：gold and crypto bid as dollar substitutes when the buyback argument showed up. Glassnode’s $81k–$86k band is this week’s overhead, not yesterday’s $80,000 tag.",
-      "trigger": "A dated gold hold with bitcoin closing above $81,000, or the reverse.",
-      "invalidator": "Both gold and bitcoin reversing as the 10-year stays above 4.66%.",
+      "mechanism": "Spot gold is now pricing about 4,591 after losing 4,600, so the change is a giveback from a three-month high as bitcoin tagged 81,000 then closed at 78,784. A drop through 4,600 transmitted into bitcoin's fade from 81,240.68 to 78,784, which is the Gold-to-BTC chain. Glassnode (26 August): overhead supply sits between $81k and $86k, with tests at 83.3k above and 70.0k below. The read retires if gold reprints below 4,591 while bitcoin stays under 81,000. Horizon is days, ending at the next spot-gold and bitcoin closes.",
+      "trigger": "A dated gold hold above 4,591 with bitcoin closing above 81,000, or the reverse.",
+      "invalidator": "Both gold and bitcoin reversing through 4,591 and 81,000.",
       "horizon": "days",
-      "status": "new"
+      "status": "continuing"
     },
     {
       "id": "copper-pause",
@@ -529,9 +529,9 @@
           "href": "https://wallstreetcn.com/articles/3780385"
         }
       ],
-      "mechanism": "A dollar bid can pause a squeeze without ending the tightness tape. This is not the same book as Iranian barrels to China.",
-      "trigger": "A dated COMEX-LME spread blowout, or copper giving back the record.",
-      "invalidator": "Copper making another record close with the dollar still bid.",
+      "mechanism": "COMEX copper is now pricing 6.62 a pound, up 0.40%, so the change is a COMEX bid that snapped a three-day London rally as the dollar strengthened. A 0.40% rise to 6.62 transmitted into the Copper book and into Commodities even as London made another record. The read retires if COMEX copper reprints below 6.62 with the dollar still bid. Horizon is days, ending at a dated COMEX-LME spread blowout or a giveback of the record.",
+      "trigger": "A dated COMEX-LME spread blowout through 6.62, or copper giving back the record.",
+      "invalidator": "Copper making another record close through 6.62 with the dollar still bid.",
       "horizon": "days",
       "status": "new"
     },
@@ -565,9 +565,9 @@
           "href": "https://companies.caixin.com/2026-08-26/102477870.html"
         }
       ],
-      "mechanism": "A 17.6% profit print is industrial prices and electronics, not a consumption package. Overnight cash is month-end plumbing. The grid order is a China-equipment tape, not CSI beta on its own.",
-      "trigger": "A dated incremental fiscal package with a yuan size, or ChiNext giving back.",
-      "invalidator": "Profits slowing with no overnight take-up.",
+      "mechanism": "A/H shares are now pricing Shanghai +0.59%, Shenzhen +0.69%, and ChiNext +0.51% on 1.81万亿元 of turnover against January–July industrial profits +17.6% y/y and July +11.2%, so the change is a profits print into overnight cash. A 17.6% profits print transmitted into the 0.59% Shanghai close and into A/H shares, with overnight reverse repos capped at CNY600bn from 27 August. The read retires if profits slow below 17.6% with no overnight take- up. Horizon is weeks, ending at the 1 September overnight window or a dated incremental fiscal package.",
+      "trigger": "A dated incremental fiscal package with a yuan size, or ChiNext giving back the 0.51% close.",
+      "invalidator": "Profits slowing below 17.6% with no overnight take-up.",
       "horizon": "weeks",
       "status": "new"
     }

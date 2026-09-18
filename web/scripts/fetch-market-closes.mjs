@@ -44,7 +44,7 @@ async function fetchText(url) {
 /** Last two non-null daily closes from Yahoo chart API. */
 async function yahooPair(symbol) {
   const encoded = encodeURIComponent(symbol);
-  // Prefer 1mo so thin symbols (e.g. HSTECH.HK) still yield two sessions.
+  // range=1mo; thin indexes still often yield one bar (HSTECH.HK) — prev is chartPreviousClose.
   const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encoded}?interval=1d&range=1mo`;
   const data = await fetchJson(url);
   const result = data?.chart?.result?.[0];

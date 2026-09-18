@@ -227,11 +227,11 @@
           "href": "https://finance.sina.com.cn/jjxw/2026-08-12/doc-inimzqcr3678528.shtml"
         }
       ],
-      "mechanism": "Diplomacy headlines and commercial-flow reality can diverge for weeks — energy inflation risk stays in the bond path even when equities drift into CPI.",
-      "trigger": "Verified sustained commercial Hormuz flow with falling freight/war risk.",
-      "invalidator": "Soft oil drop that pulls inflation-path anxiety lower with soft CPI.",
-      "horizon": "days–weeks",
-      "status": "continuing"
+      "mechanism": "Brent is now pricing $88.91, up 1.4% Tuesday, against a disputed Hormuz reopen, so the change is a premium that held while Pakistan said an arrangement was near and Tehran said the Strait stays closed. The $88.91 AP Brent print, up 1.4%, transmitted into White House color that Trump sees no need to rush and from there into Oil and USTs. EIA (desk): war-related oil supply disruption lasting into end-2027, which is evidence inside that Oil chain. The read retires if verified commercial Hormuz flow prints and Brent leaves $88.91. Horizon is days, ending as Hormuz freight and war-risk confirm or deny a channel.",
+      "trigger": "Verified sustained commercial Hormuz flow with Brent leaving $88.91.",
+      "invalidator": "Soft oil drop through $88.91 that pulls inflation-path anxiety lower.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "july-cpi-cta-shorts",
@@ -260,10 +260,10 @@
           "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         }
       ],
-      "mechanism": "Crowded bond shorts amplify a soft CPI squeeze; a hot print re-opens hike odds despite Tuesday’s yield ease.",
-      "trigger": "Hot July CPI that lifts front-end yields and softens equities.",
-      "invalidator": "Soft CPI that squeezes CTA shorts and extends the yield ease.",
-      "horizon": "hours–days",
+      "mechanism": "The 10-year is now pricing 4.70%, down 2 bp, against an S&P close of 7,728.20, down 0.32%, so the change is a pre-CPI backup with CTA bond shorts at a record. The 7,728.20 S&P close, down 0.32%, transmitted into the 4.70% 10-year and from there into USTs. UBS: CTA shorts on global bonds at a record into the BLS July CPI release, which is evidence inside that UST chain. The read retires if July CPI reprints soft and the 10-year leaves 4.70% lower. Horizon is days, ending at the BLS July CPI release.",
+      "trigger": "Hot July CPI that lifts the 4.70% 10-year and softens the 7,728.20 S&P.",
+      "invalidator": "Soft CPI that squeezes CTA shorts and extends the 4.70% yield ease.",
+      "horizon": "days",
       "status": "new"
     },
     {
@@ -289,11 +289,11 @@
           "href": "https://finance.yahoo.com/quote/%5EN225/"
         }
       ],
-      "mechanism": "Round-number FX thresholds raise the option value of official response — cash reopen and FX headlines can diverge.",
-      "trigger": "Confirmed official yen support or sustained break back below 155.",
-      "invalidator": "Clean grind through 160 with no official response.",
+      "mechanism": "USD/JPY is now pricing 159.4 toward the 160 handle, so the change is rising intervention anxiety as Japan cash reopened. The 159.4 Yahoo USD/JPY handle transmitted into a Nikkei +0.83% reopen and from there into Asia equities. The read retires if confirmed official yen support reprints USD/JPY back below 159.4. Horizon is days, ending at the next MOF intervention statement.",
+      "trigger": "Confirmed official yen support or USD/JPY break back below 159.4.",
+      "invalidator": "Clean grind through 159.4 toward 160 with no official response.",
       "horizon": "days",
-      "status": "continuing"
+      "status": "new"
     },
     {
       "id": "tencent-workbuddy-print",
@@ -314,9 +314,9 @@
           "href": "https://www.wenweipo.com/a/202608/12/AP6a7b80a5e4b0c1e50024781e.html"
         }
       ],
-      "mechanism": "Mega-cap China tech print can reset HK/ADR beta independently of US CPI — AI product KPIs matter more than one-quarter revenue alone.",
-      "trigger": "Soft guidance / thin WorkBuddy disclosure that extends Golden Dragon fade.",
-      "invalidator": "Clean beat + concrete AI-office metrics that stabilize HK tech.",
+      "mechanism": "Asia equities are now pricing Tencent's post-HK-close print against WorkBuddy AI-office metrics as a catch-up signal, so the change is Golden Dragon wiping three prior up-days with JD and TME the largest drags. WorkBuddy metric scrutiny transmitted into the Golden Dragon fade and from there into the AI sleeve. The read retires if a clean beat plus concrete WorkBuddy metrics stabilize HK tech after those three prior up-days. Horizon is days, ending at the Tencent results release.",
+      "trigger": "Soft guidance / thin WorkBuddy disclosure that extends the Golden Dragon fade for 1 more session.",
+      "invalidator": "Clean beat plus concrete AI-office metrics that stabilize HK tech for 1 session.",
       "horizon": "days",
       "status": "new"
     },
@@ -339,11 +339,11 @@
           "href": "https://www.cnbc.com/2026/08/11/wall-street-endorsed-jensen-huangs-big-concept-for-ai-what-now.html"
         }
       ],
-      "mechanism": "Clarifying Nvidia’s residual/backstop share reduces circular-finance fear — keeps AI-capex demand narrative alive without treating $500bn as NVDA cash outlay.",
-      "trigger": "Filings that show larger-than-signaled Nvidia residual guarantees.",
-      "invalidator": "Confirmed third-party underwriting with limited Nvidia balance-sheet risk.",
+      "mechanism": "Nvidia is now pricing a capped risk exposure on the $500bn AI financing plan, so the change is credit-risk indicators easing after Huang limited residual guarantees. The $500bn risk cap transmitted into easier Nvidia credit-risk indicators and from there into the AI sleeve as Super Micro and CoreWeave beat and guided hot after hours. The read retires if filings show larger-than-signaled residual guarantees on the $500bn plan. Horizon is weeks, ending as third-party underwriting filings confirm the residual.",
+      "trigger": "Filings that show larger-than-signaled Nvidia residual guarantees on the $500bn plan.",
+      "invalidator": "Confirmed third-party underwriting with limited Nvidia balance-sheet risk on the $500bn plan.",
       "horizon": "weeks",
-      "status": "continuing"
+      "status": "new"
     },
     {
       "id": "china-auto-export-surge",
@@ -364,10 +364,10 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Export share rising while domestic retail soft is a China auto regime split — overseas demand carries makers even when local seasonality bites.",
-      "trigger": "Export growth fade with weaker EV overseas orders.",
-      "invalidator": "Sustained 40%+ export share with stable ASPs.",
-      "horizon": "weeks–months",
+      "mechanism": "China passenger-car exports are now pricing 918k July units, +87.8% y/y, at 41% of maker sales against 21% a year earlier, so the change is an export jump that lifted overseas share. The 87.8% y/y jump transmitted into a 41% export share of maker sales and from there into Asia equities. The read retires if export share leaves the 41% handle with weaker EV overseas orders. Horizon is weeks, ending at the next 乘联分会 passenger-car export release.",
+      "trigger": "Export growth fade below 87.8% with weaker EV overseas orders.",
+      "invalidator": "Sustained 41% export share with stable ASPs after an 87.8% y/y jump.",
+      "horizon": "weeks",
       "status": "new"
     }
   ],

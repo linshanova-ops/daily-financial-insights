@@ -223,10 +223,10 @@
           "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247853175&idx=1&sn=ea119b7e6d2981914ba059a48e8e430e&chksm=ebc7717f96ab1d6bca470a23886b03db4c4f0f487d7438156351eb6e5e5df7a0e2f11d86e495&scene=0&xtrack=1#rd"
         }
       ],
-      "mechanism": "An in-line/slightly cooler y/y print cuts the near hike argument without proving 2% is back — energy/Hormuz can still re-accelerate next month. CICC CLAIM (Aug 12): if July CPI cools as expected, Fed tightening narrative may reverse further (easing-trade lens for stocks/bonds/gold).",
-      "trigger": "Hot July PPI that re-opens September hike odds.",
-      "invalidator": "Soft PPI that extends the pause-odds bid.",
-      "horizon": "hours–days",
+      "mechanism": "July CPI is now pricing +0.1% m/m and +3.4% y/y against 3.5% prior, with core +0.2% m/m and +2.5% y/y against 2.6%, so the change is an in-line print that eased hike odds into PPI. The 0.1% / 3.4% CPI print transmitted into S&P 7,748.50, up 0.3%, and a 4.68% 10-year, down 2 bp, which is the UST-to-US-equities chain. AP: in line, with energy still the Iran-war hangover, which is evidence inside that UST chain. The read retires if July PPI reprints hot and the 10-year leaves 4.68% higher. Horizon is days, ending at the BLS July PPI release.",
+      "trigger": "Hot July PPI that re-opens September hike odds after 0.1% CPI.",
+      "invalidator": "Soft PPI that extends the pause-odds bid with the 10-year at or below 4.68%.",
+      "horizon": "days",
       "status": "new"
     },
     {
@@ -252,10 +252,10 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "AI-office KPIs can be a catch-up narrative even while FCF goes negative — the market is pricing the cash conversion lag, not just the revenue beat.",
-      "trigger": "Guidance that capex stays this high without WorkBuddy monetization detail.",
-      "invalidator": "FCF recovery / concrete WorkBuddy paid-user metrics that stabilize HK tech.",
-      "horizon": "days–weeks",
+      "mechanism": "Tencent is now pricing 2Q revenue RMB204.8bn, +11% y/y, against capex RMB52.8bn, +176%, and FCF −RMB13.8bn on compute prepayments, so the change is a sales beat that still printed a cash drain. The 52.8bn capex, up 176%, transmitted into −RMB13.8bn FCF and from there into HK Tencent −4%+ and ADR −5%+ on a second Golden Dragon down day, which is the Asia equities sleeve. The read retires if FCF recovers from −RMB13.8bn or WorkBuddy paid- user metrics stabilize HK tech. Horizon is days, ending as Tencent guidance and WorkBuddy KPIs clear.",
+      "trigger": "Guidance that capex stays near RMB52.8bn without WorkBuddy monetization detail.",
+      "invalidator": "FCF recovery from −RMB13.8bn / concrete WorkBuddy paid-user metrics that stabilize HK tech.",
+      "horizon": "days",
       "status": "new"
     },
     {
@@ -281,11 +281,11 @@
           "href": "https://apnews.com/article/stock-markets-ai-semiconductors-fed-energy-3a23f22469cd0e0062f711096906525c"
         }
       ],
-      "mechanism": "Diplomacy stall keeps an energy channel in the inflation path even after an in-line CPI — PPI tonight still has to clear that residual.",
-      "trigger": "Verified sustained commercial Hormuz flow with falling freight/war risk.",
-      "invalidator": "Soft oil drop that pulls inflation-path anxiety lower with soft PPI.",
-      "horizon": "days–weeks",
-      "status": "continuing"
+      "mechanism": "Brent is now pricing $87.6 Thursday against stalled US–Iran talks, so the change is an oil premium that stayed on as Tehran's military reshuffle was read as preparing for a longer regional conflict. The $87.6 Yahoo Brent handle transmitted into UST inflation-path anxiety and from there into Oil and USTs. IEA (desk): a 1.8 million b/d supply gap, which is evidence inside that Oil chain. The read retires if verified commercial Hormuz flow prints and Brent leaves $87.6. Horizon is days, ending as Hormuz freight and war-risk confirm or deny a channel.",
+      "trigger": "Verified sustained commercial Hormuz flow with Brent leaving $87.6.",
+      "invalidator": "Soft oil drop through $87.6 that pulls inflation-path anxiety lower with soft PPI.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "yen-near-160",
@@ -310,9 +310,9 @@
           "href": "https://finance.yahoo.com/quote/%5EN225/"
         }
       ],
-      "mechanism": "Round-number FX plus a hot Japan PPI tape raise official-response option value — cash beta and FX headlines can diverge.",
-      "trigger": "Confirmed official yen support or sustained break back below 155.",
-      "invalidator": "Clean grind through 160 with no official response.",
+      "mechanism": "USD/JPY is now pricing 159.4 toward the 160 handle, so the change is a continued intervention watch after the late-July plunge/rebound. The 159.4 Yahoo USD/JPY handle transmitted into a Nikkei +1.16% Thursday session and from there into Asia equities, with Japan July PPI previewed at 7.4% y/y. The read retires if confirmed official yen support reprints USD/JPY back below 159.4. Horizon is days, ending at the next MOF intervention statement.",
+      "trigger": "Confirmed official yen support or USD/JPY break back below 159.4.",
+      "invalidator": "Clean grind through 159.4 toward 160 with no official response.",
       "horizon": "days",
       "status": "continuing"
     },
@@ -335,9 +335,9 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "More overnight liquidity plumbing is “fill the gap,” not a rate-cut signal — 给量不给价. Watch tax/reserve dates next week, not a broad easing regime.",
-      "trigger": "Overnight ops that fail to cap repo spikes into the tax window.",
-      "invalidator": "Smooth mid-month funding with no extra easing language.",
+      "mechanism": "PBOC is now pricing overnight reverse-repo ops for Aug 14/17/18/19 with a daily cap of 6,000亿元, quantity not rate, so the change is mid- month plumbing after 7-day reverse repo went to zero on Aug 11–12. The 6,000亿元 overnight cap transmitted into a net drain of 465亿元 / 50亿元 on the 7-day and from there into Asia equities and FX. The read retires if overnight ops fail to cap repo spikes into the tax window after the 6,000亿元 cap. Horizon is days, ending at the Aug 14 overnight operation.",
+      "trigger": "Overnight ops that fail to cap repo spikes into the tax window despite the 6,000亿元 cap.",
+      "invalidator": "Smooth mid-month funding under the 6,000亿元 cap with no extra easing language.",
       "horizon": "days",
       "status": "new"
     }

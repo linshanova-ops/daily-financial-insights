@@ -528,7 +528,11 @@
           "href": "https://www.theblockbeats.info/flash/366020"
         }
       ],
-      "mechanism": "A Kharg tanker hit on top of a still-shut Jizan plant is why Brent can settle at $97.92 beside a three-month WTI high. CICC (20 July): demand destruction already caps how long a war premium can sit. CPI on 11 September, through the energy line, is the next print."
+      "mechanism": "Brent is now pricing 97.92, up 0.9%, after a 99.46 high, so the change is a Kharg-and-Jizan war premium. Strikes near Kharg and Houthi hits on Abha, Khamis Mushait, Najran and Jizan transmitted into that 97.92 settle, which is the Oil exposure, with the 40万桶/day Jizan plant still shut. The read retires if the next AP Brent settle reprints below 97.92. Horizon is days, ending at the next dated strike or Hormuz flow print.",
+      "trigger": "Brent giving back 97.92, or reprinting through 99.46.",
+      "invalidator": "Brent holding 97.92 while the Jizan 40万桶/day plant stays shut.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "us-oil-inflation",
@@ -553,7 +557,11 @@
           "href": "https://www.theblockbeats.info/flash/366016"
         }
       ],
-      "mechanism": "Cash reopened into a three-month WTI high, so 0.6% on the S&P is an inflation-premium sell rather than a holiday catch-up. Morgan Stanley (8 September): markets cannot look past inflation while oil is rising. PPI on 10 September at 20:30 Beijing is the next print."
+      "mechanism": "The 10-year is now pricing 4.79% from 4.78%, so the change is an oil- inflation selloff that marked the S&P 500 down 0.6% and the Dow down 1.2%. The oil-inflation tape transmitted into FedWatch at 60.4% for a 25bp September hike and from there into USTs and US equities. The read retires if the 10-year reprints below 4.78% while FedWatch stays at 60.4%. Horizon is days, ending at the next US cash session.",
+      "trigger": "The 10-year through 4.79% with FedWatch above 60.4%.",
+      "invalidator": "The 10-year back below 4.78% while FedWatch stays at 60.4%.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "china-cpi-ppi",
@@ -578,7 +586,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 0.8% CPI print and a 3.8% PPI print are the first domestic tape of the same energy-and-hardware pulse that sold US cash. CICC (6 September): they already had August inflation edging higher before this release. China August credit aggregates, still on this morning’s 见闻 breakfast tape, are the next print."
+      "mechanism": "China CPI is now pricing 0.8% y/y and PPI 3.8% y/y, so the change is an oil-and-AI price pulse into A/H shares and CGBs. Energy prices and AI hardware costs transmitted into the 3.8% PPI print and from there into CGBs, with summer travel lifting the 0.8% CPI. The read retires if NBS reprints CPI below 0.8% while PPI stays at 3.8%. Horizon is weeks, ending at the next NBS CPI and PPI release.",
+      "trigger": "NBS CPI reprinting above 0.8%, or PPI above 3.8%.",
+      "invalidator": "NBS CPI reprinting below 0.8% while PPI stays at 3.8%.",
+      "horizon": "weeks",
+      "status": "new"
     },
     {
       "id": "china-ai-trade",
@@ -602,7 +614,11 @@
           "href": "https://www.cnfin.com/yw-lb/detail/20260908/4466766_1.html"
         }
       ],
-      "mechanism": "A 25% export-value print with only 4.1% semiconductor volume is why ChiNext could sell to 3359.72 after Monday’s optics bid. CICC (8 August): they expected August volumes to rebound after the typhoon, with electronics still the AI pull. The next customs print is the October release."
+      "mechanism": "USD exports are now pricing 4014.4亿美元, up 25%, against imports at 2823.6亿美元 and a 1190.9亿美元 surplus, so the change is an AI price print while ChiNext closed 3359.72, down 1.15%. Semiconductor export value more than doubled while volumes rose 4.1%, which transmitted into that ChiNext drop, the A/H exposure. The read retires if ChiNext reprints above 3359.72 while semiconductor volumes stay at 4.1%. Horizon is days, ending at the next ChiNext close.",
+      "trigger": "ChiNext reversing 3359.72 after the 4014.4 billion export print.",
+      "invalidator": "ChiNext holding 3359.72 while semiconductor export volumes stay at 4.1%.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "yen-bessent",
@@ -626,7 +642,11 @@
           "href": "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
         }
       ],
-      "mechanism": "A 153.88 print after Bessent’s market-maker warning is still an intervention-and-BOJ squeeze. CICC (6 September): last week’s yen bid was a policy-expectation squeeze. The BOJ decision on 17–18 September is the settle."
+      "mechanism": "USD/JPY is now pricing 153.88, with a 152.89 session low, so the change is a yen extension after Bessent told shorts he is the market- maker. Bessent’s challenge transmitted into the 153.88 print and the 152.89 low, which is the JPY exposure, and the Nikkei sank 1.7% on that same yen move. The read retires if USD/JPY reprints back through 153.88. Horizon is days, ending at the next USD/JPY close or official Tokyo FX comment.",
+      "trigger": "USD/JPY reprinting back through 153.88.",
+      "invalidator": "USD/JPY holding 152.89 while the Nikkei stays down 1.7%.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "copper-tariff",
@@ -646,7 +666,11 @@
           "href": "https://wallstreetcn.com/articles/3781361"
         }
       ],
-      "mechanism": "A record at 14708 is a refined-copper tariff squeeze. US CPI on 11 September, through industrial demand, is the next print."
+      "mechanism": "LME copper is now pricing 14708 a tonne against talk of a US tariff on refined copper, so the change is a record that also sold gold. Tariff talk transmitted into the 14708 record close, and that record also sold gold, which is the Copper exposure. The read retires if LME copper reprints below 14708 a tonne. Horizon is days, ending at the next LME copper close.",
+      "trigger": "LME copper giving back 14708 a tonne.",
+      "invalidator": "LME copper holding 14708 a tonne.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "btc-78300",
@@ -670,7 +694,11 @@
           "href": "https://www.theblockbeats.info/flash/365966"
         }
       ],
-      "mechanism": "A $77,600 low against $78,300 support is a risk-off print beside oil. CPI on 11 September, through the dollar, is the next print."
+      "mechanism": "Bitcoin is now pricing a 78,300 support test after trading as low as 77,600, so the change is a handle check as Strategy skipped another add. The 77,600 low transmitted into the 78,300 support test after Strategy bought back 176 million of STRC, which is the BTC exposure. The read retires if Cointelegraph reprints bitcoin below 77,600. Horizon is days, ending at the next bitcoin close or Strategy add print.",
+      "trigger": "Bitcoin reclaiming 78,300.",
+      "invalidator": "Bitcoin reprinting below 77,600.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "novartis-europe",
@@ -694,7 +722,11 @@
           "href": "https://wallstreetcn.com/articles/3781361"
         }
       ],
-      "mechanism": "A 13.9% Novartis print is a pipeline event, which is why the Stoxx 600 could close at 649.60 while US cash sold on oil. The ECB decision on 10 September is the settle."
+      "mechanism": "Novartis is now pricing a 13.9% US-listed drop against a discouraging myotonic-dystrophy study, so the change is a record single-name fall while the Stoxx 600 closed 649.60, down 0.05%. The 13.9% Novartis drop transmitted into a held European-stock tape at 649.60, which is the EU equities exposure. The read retires if Novartis reverses the 13.9% drop while the Stoxx 600 holds 649.60. Horizon is days, ending at the next Stoxx 600 close.",
+      "trigger": "Novartis reversing the 13.9% drop.",
+      "invalidator": "Stoxx 600 holding 649.60 while Novartis stays down 13.9%.",
+      "horizon": "days",
+      "status": "new"
     }
   ],
   "globalRegime": "US cash reopened and sold. Brent settled at $97.92 after Kharg. The 10-year yield was 4.79%. NBS printed August CPI at 0.8% and PPI at 3.8%. CPI on 11 September still settles the FOMC at 02:00 Beijing on 17 September.",

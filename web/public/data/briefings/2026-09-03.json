@@ -545,7 +545,11 @@
           "href": "https://www.theblockbeats.info/flash/364835"
         }
       ],
-      "mechanism": "A second month of rising German inflation with energy up double digits keeps the ECB from following any Fed pause, so Bunds carry a hike premium into Berlin. Every Hormuz flare feeds euro rates through the energy line before it reaches the euro itself. The ECB decision on 10 September, the same day as the Destatis finals, is the settle."
+      "mechanism": "German CPI is now pricing 2.9% against 2.8% in July, with energy at 10.5% and core at 2.4%, so the change is a second month of re- acceleration. Energy at 10.5% transmitted into a sixth Bunds down session and from there into EUR as Machlup named 2.75% as the restrictive threshold. The read retires if Destatis finals reprint energy below 10.5% while core stays at 2.4%. Horizon is days, ending at the Destatis finals on 10 September.",
+      "trigger": "Destatis August CPI finals, or German core back below 2.4%.",
+      "invalidator": "Destatis energy reprinting below 10.5% while core stays at 2.4%.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "yen-intervention",
@@ -571,7 +575,11 @@
           "href": "https://english.news.cn/20260902/9b5384e0336449868b319adcf8920144/c.html"
         }
       ],
-      "mechanism": "A stronger yen plus a hawk who will not rule out a bigger hike hits exporters and the JGB curve at the same time, which is why the Nikkei lost nearly 3% while the 10-year touched 3%. Until the Ministry of Finance confirms it sold dollars, this is a threat that traders price, so the move can fade as fast as it came. USD/JPY holding under 158 or a dated MOF confirmation would turn it into a trend."
+      "mechanism": "USD/JPY is now pricing 158.71 after trading as far as 158.22, so the change is a yen jump on intervention talk that marked the Nikkei 225 at 64,325.64, down 2.85%. The yen jump transmitted into that 2.85% Nikkei drop and into a 3.015% 10-year JGB yield, which is the JPY, Nikkei, and JGBs chain. The read retires if USD/JPY reprints back through 158.71 while the Nikkei holds 64,325.64. Horizon is days, ending at the next official Tokyo FX comment or USD/JPY close.",
+      "trigger": "USD/JPY reprinting through 158.22.",
+      "invalidator": "USD/JPY holding 158.71 while the Nikkei holds 64,325.64.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "us-adp-rebound",
@@ -600,7 +608,11 @@
           "href": "https://www.cnbc.com/2026/09/02/bond-yields-treasurys-inflation.html"
         }
       ],
-      "mechanism": "A soft ADP did not move the curve, so the market still treats the September meeting as a coin flip, and equities bounced on the hope that Friday’s payrolls tip it the other way. CICC (1 September): Miao Yanliang reads the data as too weak to justify Warsh’s hawk turn, which is the bull case for duration if payrolls confirm ADP. August employment at 20:30 Beijing on 4 September decides which side FedWatch settles on."
+      "mechanism": "ADP is now pricing 38,000 August private payrolls against a 47,000 Dow Jones estimate, so the change is a labor miss that still left the 10-year at 4.79% while the S&P 500 closed 7,666.60, up 0.5%. The 38,000 miss transmitted into a held 4.79% 10-year and from there into the US equities bounce, which is the USTs-to-US-equities chain into payrolls. The read retires if the official 10-year reprints below 4.79% after the 38,000 ADP miss. Horizon is days, ending at the August employment release.",
+      "trigger": "August employment, or ADP reprinting at or above the 47,000 estimate.",
+      "invalidator": "The 10-year back below 4.79% after the 38,000 ADP miss.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "oil-hormuz",
@@ -620,7 +632,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Roughly three million barrels a day are still missing from the strait, so crude keeps a premium even on a day the White House talks about a short campaign. A one-percent up-day after Tuesday’s five-dollar jump says the market is holding the premium rather than adding to it. The OPEC+ quota decision this weekend and any dated Hormuz flow print above 20 million are what would let WTI give back $90."
+      "mechanism": "WTI is now pricing 91.01 and Brent 95.63, both up about 1%, so the change is a near-six-week high that still prices a war premium. Trump’s Hormuz-control line sat beside Wright’s more than 17 million barrels a day against about 20 million before the war, and that flow gap transmitted into the 95.63 Brent print, which is the Oil exposure. The read retires if the next CNBC Brent settle reprints below 95.63. Horizon is days, ending at the OPEC+ weekend quota decision or the next dated Hormuz flow print.",
+      "trigger": "A dated Hormuz flow print, or Brent giving back 95.63.",
+      "invalidator": "Brent holding 95.63 while WTI stays at 91.01.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "id": "gold-btc",
@@ -645,7 +661,11 @@
           "href": "https://hedgeco.net/news/09/2026/spot-bitcoin-etfs-posted-a-236-5-million-net-outflow-on-september-1.html"
         }
       ],
-      "mechanism": "Both assets trade the same dollar and real-yield beta, and both bounced when the dollar slipped, but the ETF tape shows bitcoin’s bounce came without new money while gold’s came with it. That gap is why gold holds near record territory while bitcoin struggles to keep $77,000. The next daily ETF flow print and Friday’s payrolls, through the dollar, are what decide whether the two split further."
+      "mechanism": "Spot gold is now pricing 4,373.87, up 1.1%, against bitcoin reclaiming 77,000 after a 76,400 low, so the change is a dollar-soft bounce that only gold had buyers for. Gold’s 1.1% rise transmitted into the 77,000 bitcoin reclaim after a 236.5 million US spot bitcoin ETF outflow, which is the Gold-to-BTC chain. The read retires if Kitco reprints spot gold below 4,373.87 while bitcoin loses 76,400. Horizon is days, ending at the next dated gold and bitcoin close.",
+      "trigger": "Bitcoin holding 77,000 with gold through 4,373.87.",
+      "invalidator": "Spot gold giving back 4,373.87 while bitcoin loses 76,400.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "id": "china-cny-omo",
@@ -674,7 +694,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A governor ruling out devaluation while letting a CNY600bn drain stand tells the market the yuan is the anchor and onshore liquidity is the variable, which is a tighter mix for A-shares than the moderately loose label suggests. ChiNext falling more than twice as much as Shanghai says growth names rather than the index are paying for it. Today’s 3 September OMO take-up shows whether the drain was one day or a stance."
+      "mechanism": "Shanghai is now pricing 3941.39, down 0.97%, against a 598.5 billion net drain and Pan’s no-devaluation line, so the change is an A-share drop beside a CNY hold. Pan’s no-devaluation line sat beside zero reverse-repo ops, and that 598.5 billion drain transmitted into the 3312.24 ChiNext close, down 2.39%, which is the A/H and CNY chain. The read retires if Shanghai reprints above 3941.39 while the drain stays at 598.5 billion. Horizon is weeks, ending at the next dated PBOC reverse-repo add.",
+      "trigger": "ChiNext reversing 3312.24, or a dated reverse-repo add after the 598.5 billion drain.",
+      "invalidator": "Shanghai holding 3941.39 while the drain stays at 598.5 billion.",
+      "horizon": "weeks",
+      "status": "new"
     }
   ],
   "globalRegime": "The new tape is a Germany 2.9% chart against a 4.79% US 10-year and $95.63 Brent. The S&P 500 rebounded to 7,666.60 after three down days. The yen jumped and traders watched for intervention. Gold bounced as the dollar slipped. September is a 64% hike coin-flip into Waller tonight and payrolls on Friday.",

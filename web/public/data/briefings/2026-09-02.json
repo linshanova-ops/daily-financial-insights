@@ -512,8 +512,8 @@
           "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-01092026-ap"
         }
       ],
-      "mechanism": "A 3.3% euro-area flash is a European inflation tape, not the US 4.79% 10-year. Energy at 14.3% is the same Hormuz channel as WTI at $90.22, but the chart itself is Eurostat, not the oil close. The ECB’s Berlin meeting on 10 September is the next policy date that can confirm or fade that hike read.",
-      "trigger": "The 10 September ECB decision in Berlin, or core back below 2.4%.",
+      "mechanism": "Euro-area CPI is now pricing 3.3% against 2.9% in July, with energy at 14.3% after 10.3%, so the change is the highest headline since 2023 and a hike-consolidation print. Energy at 14.3% transmitted into the 财经早茶 ECB-hike read and from there into Bunds and EUR, with Oil as the energy line. The read retires if Eurostat core reprints below 2.4% while energy stays at 14.3%. Horizon is days, ending at the 10 September ECB decision in Berlin.",
+      "trigger": "The 10 September ECB decision, or core back below 2.4%.",
       "invalidator": "The ECB holding in Berlin while energy stays at 14.3%.",
       "horizon": "days",
       "status": "new"
@@ -548,11 +548,11 @@
           "href": "https://www.theblockbeats.info/flash/364740"
         }
       ],
-      "mechanism": "A $90.22 WTI settle is a cash close, not Tuesday’s open tape. A second strike in three days is a risk-premium tape. Bessent’s two-year bypass is a horizon, not today’s barrel. Euro-area energy at 14.3% is how that premium shows up in European CPI.",
-      "trigger": "A dated Hormuz flow print, or WTI giving back $90.",
-      "invalidator": "WTI holding $90 while tanker counts keep rising.",
+      "mechanism": "WTI is now pricing 90.22, up 5.2%, and Brent 94.65, up 4.6%, so the change is a break of 90 after another US-Iran exchange. The 1 September CENTCOM strikes and Tehran’s missiles at Jordan transmitted into that 90.22 WTI settle, which is the Oil exposure. The read retires if the next CNBC WTI settle reprints below 90.22. Horizon is days, ending at the next dated Hormuz flow print.",
+      "trigger": "A dated Hormuz flow print, or WTI giving back 90.22.",
+      "invalidator": "WTI holding 90.22 while Brent stays at 94.65.",
       "horizon": "days",
-      "status": "new"
+      "status": "continuing"
     },
     {
       "id": "us-flattening",
@@ -615,9 +615,9 @@
           "href": "https://www.theblockbeats.info/flash/364746"
         }
       ],
-      "mechanism": "A 4.39% 2-year next to a 4.79% 10-year is a flattener, not Monday’s long-end steepener. CICC (1 September)：the hawk bar is theirs, and the official curve is Treasury. A 68% September hike and a 3.0% JGB are the same oil-to-hike beta as the Nasdaq at 26,099.77. Citadel’s 9.6万亿美元 expiry is a September calendar, not Tuesday’s close.",
-      "trigger": "ADP at 20:15 Beijing today, or August employment at 20:30 Beijing on 4 September.",
-      "invalidator": "The 10-year back below 4.75% while FedWatch stays at 68%.",
+      "mechanism": "The 10-year is now pricing 4.79% against 4.39% on the 2-year, so the change is a short-led flattening that marked the Nasdaq at 26,099.77 and the S&P 500 at 7,631.47, down 0.7%. August ISM manufacturing at 54.6 against a 55.3 estimate transmitted into that 4.79% 10-year and from there into USTs, USD, US equities, and JPY as Japan’s 10-year yielded 3.0%. CICC (1 September): Miao Yanliang reads Warsh as raising the bar to 2% clearly and fast, and says CPI from 4.2% to 3.4% plus a 10.3万人 payroll revision do not justify that hawk turn, which is evidence inside that UST chain. The read retires if the official 10-year reprints below 4.79% while FedWatch stays at 68%. Horizon is days, ending at August employment.",
+      "trigger": "August employment, or ISM manufacturing reprinting at or above the 55.3 estimate.",
+      "invalidator": "The 10-year back below 4.79% while FedWatch stays at 68%.",
       "horizon": "days",
       "status": "new"
     },
@@ -656,11 +656,11 @@
           "href": "https://research.glassnode.com/the-week-onchain-week-34-2026/"
         }
       ],
-      "mechanism": "Gold down 2.7% into a 4.79% 10-year is the same hike beta as bitcoin near $77,363. Monday’s $216.7 million ETF inflow is a flow print, not Tuesday’s cash tape. Glassnode’s $81k–$86k band is still overhead. Zinc is a metals squeeze, not this duration book.",
-      "trigger": "A dated gold hold with bitcoin closing above $81,000, or the reverse.",
-      "invalidator": "Both gold and bitcoin reversing as the 10-year stays at 4.79%.",
+      "mechanism": "Spot gold is now pricing 4,329.47, down 2.7%, against bitcoin at 77,363, so the change is another dump as oil lifted hike bets. A 2.7% gold drop transmitted into the 77,363 bitcoin print after 216.7 million of Monday US spot bitcoin ETF inflows, which is the Gold-to- BTC chain. Glassnode (26 August): overhead supply still sits between $81k and $86k, which is evidence inside that BTC band. The read retires if CNBC reprints spot gold back through 4,329.47 while bitcoin holds 77,363. Horizon is days, ending at the next dated gold and bitcoin close.",
+      "trigger": "Bitcoin closing above 77,363 on a gold hold through 4,329.47.",
+      "invalidator": "Spot gold reversing through 4,329.47 while bitcoin holds 77,363.",
       "horizon": "days",
-      "status": "new"
+      "status": "continuing"
     },
     {
       "id": "china-tax-shein-omo",
@@ -716,9 +716,9 @@
           "href": "https://www.koreaherald.com/article/10859127"
         }
       ],
-      "mechanism": "A 20% IIT plug is a tax-base tape, not Tuesday’s 3979.89 close. SHEIN at 48.5港元 is a listing print after a 9.8% wash. Overnight 3590亿元 was the last day of that window; the 2 September 7-day take-up was not printed at gather. PV at 12.86亿千瓦 is installed capacity, not generation.",
+      "mechanism": "SHEIN is now pricing 48.5港元, down 0.12% versus the offer after a 9.8% intraday drop, against a new 20% foreign-individual dividend tax, so the change is an H-share listing that also sold Shanghai to 3979.89, down 0.16%. The 20% IIT start transmitted into the 3393.43 ChiNext close, down 1.32%, and the 25,329 Hang Seng close, down 0.93 percent, which is the A/H exposure. A 1.40% 7-day reverse repo beside the overnight-window close added a liquidity hop inside that same A/H chain. The read retires if Shanghai reprints above 3979.89 while ChiNext holds 3393.43. Horizon is weeks, ending at a dated 7-day take-up after the overnight window ended.",
       "trigger": "A dated 2 September 7-day take-up, or ChiNext giving back 3393.43.",
-      "invalidator": "Official overnight ops staying at zero while Shanghai holds 3979.89.",
+      "invalidator": "Shanghai holding 3979.89 while the 7-day reverse repo stays at 1.40%.",
       "horizon": "weeks",
       "status": "new"
     }

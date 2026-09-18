@@ -480,7 +480,11 @@
           "href": "https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html"
         }
       ],
-      "mechanism": "The $79,575 million reserve drop is the August yen-buying hitting the official tape, and a Labor Day-thin break of 155 is why USD/JPY printed 154.06. CICC (7 August): Washington joined the yen-buying so Tokyo would not have to dump Treasuries, and FIMA is the path that does not sell UST. The BOJ decision on 17–18 September is the settle."
+      "mechanism": "Official reserves are now pricing 1.207 trillion against 1.287 trillion, so the change is a 79,575 million drop that marked USD/JPY at 154.06, through 155. The 79,575 million reserve drop transmitted through the 155 handle and into the 154.06 print, the strongest yen since February, which is the JPY exposure. The read retires if USD/JPY reprints back through 154.06 while reserves stay at 1,207,524 million. Horizon is days, ending at the next official Tokyo reserve or USD/JPY close.",
+      "trigger": "USD/JPY reprinting back through 154.06.",
+      "invalidator": "USD/JPY holding 154.06 while official reserves stay at 1,207,524 million.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "oil-jizan",
@@ -508,7 +512,11 @@
           "href": "https://www.cnbc.com/2026/09/07/cnbc-daily-open-trump-iran-war-oil-prices-nuclear-deal.html"
         }
       ],
-      "mechanism": "A second Jizan hit with the refinery still shut is why Brent can settle at $97 beside a 10-ship Hormuz tape, and diesel at $5.85 is the same war premium in US pump prices. CPI on 11 September, through the energy line, is the next print."
+      "mechanism": "Brent is now pricing 97, up 0.75%, against another Aramco Jizan hit, so the change is a seven-week-high war premium. The Jizan 40万桶/day shutdown since July and about 10 commercial ships a day through Hormuz transmitted into that 0.75% Brent settle, which is the Oil exposure, as US diesel averaged 5.85 a gallon. The read retires if Brent gives back the 0.75% settle while diesel stays at 5.85. Horizon is days, ending at the next dated Hormuz transit count.",
+      "trigger": "Brent giving back the 0.75% settle at 97, or Hormuz transit reprinting above 10 ships a day.",
+      "invalidator": "Brent holding the 0.75% gain while US diesel stays at 5.85 a gallon.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "china-nim-recap",
@@ -536,7 +544,11 @@
           "href": "https://m.cnfin.com/yw-lb/zixun/20260907/4466317_1.html"
         }
       ],
-      "mechanism": "A CNY360bn core-tier-one top-up sits next to NIM at 1.41%, and a 45亿元 net drain after an equal three-month rollover leaves the 7-day rate uncut. CICC (2 September): swap-implied cut expectations sit at a historically strong level while the 7-day rate has gone uncut this year. China August trade on 8 September is the next print."
+      "mechanism": "China commercial-bank NIM is now pricing 1.41% in the second quarter after 1.40% in the first, so the change is a record-low margin beside a 3600亿元 recap. The 1.41% NIM transmitted into the 3600亿元 recap plan and a net 45亿元 drain after a 5亿元 7-day reverse repo, which is the A/H exposure. The read retires if NFRA reprints NIM below 1.41% while the recap stays at 3600亿元. Horizon is weeks, ending at the next NFRA NIM release.",
+      "trigger": "NFRA NIM reprinting below 1.41%.",
+      "invalidator": "NIM holding 1.41% while the recap stays at 3600亿元.",
+      "horizon": "weeks",
+      "status": "new"
     },
     {
       "id": "ainext-hsi",
@@ -564,7 +576,11 @@
           "href": "https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html"
         }
       ],
-      "mechanism": "Optics and memory were the Monday AI-hardware bid, which is why ChiNext closed at 3398.68 while Hang Seng sold to 25,413.12. Goldman Sachs (7 September): first cover of 中际旭创 H at Buy, citing silicon-photonics leadership. China August exports on 8 September are the next print."
+      "mechanism": "ChiNext is now pricing 3398.68, up 3.41%, against the Hang Seng at 25,413.12, down 0.93%, so the change is an A-share optics rip that sold H-shares. The 3.41% ChiNext jump transmitted into Shanghai at 3932.70, up 0.07%, and Shenzhen at 13774.91, up 1.91%, which is the A/H split. The read retires if ChiNext reprints below 3398.68 while the Hang Seng holds 25,413.12. Horizon is days, ending at the next ChiNext and Hang Seng close.",
+      "trigger": "ChiNext giving back 3398.68, or Hang Seng reversing 25,413.12.",
+      "invalidator": "ChiNext holding 3398.68 while Hang Seng stays at 25,413.12.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "pboc-gold",
@@ -588,7 +604,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Official buying is still adding in a 22nd month, so 7673万盎司 is a reserve allocation print while Monday gold sold in the Asia session. CPI on 11 September, through real yields, is the next print."
+      "mechanism": "PBOC gold reserves are now pricing 7673万盎司, up 65万盎司, against August FX reserves at 34383亿美元, up 195亿美元, so the change is a 22nd straight month of official buying. The 195亿美元 FX-reserve rise transmitted into the 65万盎司 gold add and that 22nd month, the largest monthly add since November 2023, which is the Gold exposure. The read retires if SAFE reprints gold reserves below 7673万盎司. Horizon is weeks, ending at the next SAFE gold-reserve print.",
+      "trigger": "SAFE gold reserves reprinting below 7673万盎司.",
+      "invalidator": "PBOC gold add reprinting at 0 after 22 months at 7673万盎司.",
+      "horizon": "weeks",
+      "status": "new"
     },
     {
       "id": "btc-liquid",
@@ -612,7 +632,11 @@
           "href": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest"
         }
       ],
-      "mechanism": "A 4,000 BTC federation hole is a sidechain-credit event, and $986.9 million of weekly ETF inflows show allocators still added into the same week. Glassnode (2 September): spot is boxed between short-term-holder supply below and long-term-holder supply above. CPI on 11 September, through the dollar, is the next print."
+      "mechanism": "Bitcoin is now pricing a 4,000 BTC Liquid hole, with 3,998.5 BTC still unreturned, so the change is an operational drain sitting beside 986.9 million of weekly US spot bitcoin ETF inflows. The 4,000 BTC withdrawal transmitted into the unreturned 3,998.5 BTC update, which is the BTC exposure, even as ETF inflows printed 986.9 million. The read retires if the 3,998.5 BTC is returned while ETF inflows hold 986.9 million. Horizon is days, ending at the next Liquid recovery update or US spot bitcoin ETF flow print.",
+      "trigger": "The 3,998.5 BTC hole returning, or US spot bitcoin ETF inflows reprinting below 986.9 million.",
+      "invalidator": "The 3,998.5 BTC remaining unreturned while ETF inflows hold 986.9 million.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "euro-gdp",
@@ -637,7 +661,11 @@
           "href": "https://wallstreetcn.com/articles/3781261"
         }
       ],
-      "mechanism": "A 0.6% final versus a 0.4% flash is a growth beat, but Bunds sold a fifth session on oil, so the print did not buy duration. Deutsche Bank (7 September): markets underestimate how much the Fed and the ECB still need to hike to contain inflation. The ECB decision on 10 September is the settle."
+      "mechanism": "Euro-area Q2 GDP is now pricing 0.6% q/q against a 0.4% flash, so the change is an upward revision that sold Bunds for a fifth session. The 0.6% GDP beat transmitted into that Bunds selloff as high oil fed inflation worry, and the Stoxx 600 closed at 649.90, which is the Bunds and EUR chain. The read retires if Eurostat reprints Q2 GDP back at 0.4% while the Stoxx 600 holds 649.90. Horizon is days, ending as Bunds reprice the 0.6% GDP revision.",
+      "trigger": "Eurostat Q2 GDP reprinting back at the 0.4% flash.",
+      "invalidator": "The Stoxx 600 holding 649.90 while Q2 GDP stays at 0.6%.",
+      "horizon": "days",
+      "status": "new"
     }
   ],
   "globalRegime": "US cash was closed for Labor Day. The new tape is a yen break through 155 to 154.06 after Tokyo’s reserve drop, and Brent at $97 after another Jizan strike. Payrolls are still Friday’s 162,000 beat. CPI on 11 September still settles the FOMC at 02:00 Beijing on 17 September.",

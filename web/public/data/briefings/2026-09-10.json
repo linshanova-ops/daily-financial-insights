@@ -518,7 +518,11 @@
           "href": "https://wallstreetcn.com/articles/3781450"
         }
       ],
-      "mechanism": "A $6bn operation that still sat at the low end of Street hopes left official 10-year yields at 4.83%, so 0.48% on the S&P is a term-premium sell rather than a growth scare. CICC (24 August): the 10-year problem is term premium — willingness to hold the bond — rather than the hike path. PPI at 20:30 Beijing today is the next print."
+      "mechanism": "The 10-year is now pricing 4.83% on the official curve, and 4.845% on the CNBC screen, against a 4.935% 1 November 2023 high, so the change is a 2023-high yield that a 6bn long-end buyback failed to cap, with the S&P 500 at 7636.36, down 0.48%. The disappointed 6bn buyback transmitted into that 4.83% official 10-year and from there into USTs and US equities. The read retires if the official 10-year reprints below 4.83% after the 6bn buyback. Horizon is days, ending at the next US Treasury close or buyback operation.",
+      "trigger": "The 10-year through 4.845%, or the S&P giving back 7636.36.",
+      "invalidator": "The official 10-year back below 4.83% after the 6bn buyback.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "oil-hormuz-101",
@@ -542,7 +546,11 @@
           "href": "https://www.eia.gov/outlooks/steo/"
         }
       ],
-      "mechanism": "A $101.21 settle on tanker hits is a Hormuz supply print sitting on already-thin distillate. CICC (20 July): demand destruction already caps how long a war premium can sit. PPI at 20:30 Beijing today, through the energy line, is the next print."
+      "mechanism": "Brent is now pricing 101.21, up 3.4%, so the change is the first close above 100 since July after the US destroyed five Iranian tankers. The tanker strikes transmitted into that 101.21 settle, which is the Oil exposure, as EIA said August Brent averaged 91 and inventories are down 400 million barrels this year. The read retires if the next AP Brent settle reprints below 101.21. Horizon is days, ending at the next dated tanker or Hormuz flow print.",
+      "trigger": "Brent giving back 101.21.",
+      "invalidator": "Brent holding 101.21 after the 3.4% settle.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "china-cpi-ppi",
@@ -571,7 +579,11 @@
           "href": "https://finance.caixin.com/2026-09-10/102483361.html"
         }
       ],
-      "mechanism": "A 0.8% CPI print and a 3.8% PPI print are the onshore tape of the same energy pulse that sold US cash. CICC (6 September): they already had August inflation edging higher before this release. The 金融强国 briefing at 15:00 Beijing today is the next print."
+      "mechanism": "China CPI is now pricing 0.8% y/y and PPI 3.8% y/y, with energy CPI at 4.1% from 0.6% adding 0.28pp to the headline, so the change is an imported energy pulse into A/H shares and CGBs. Energy CPI at 4.1% transmitted into the 0.8% headline and the 3.8% PPI, which is the CGB and A/H chain, even as core remains soft. The read retires if NBS reprints energy CPI back at 0.6% while headline stays at 0.8%. Horizon is weeks, ending at the next NBS CPI and PPI release.",
+      "trigger": "NBS energy CPI reprinting above 4.1%.",
+      "invalidator": "Energy CPI back at 0.6% while headline stays at 0.8%.",
+      "horizon": "weeks",
+      "status": "continuing"
     },
     {
       "id": "europe-ecb",
@@ -596,7 +608,11 @@
           "href": "https://www.destatis.de/EN/Press/2026/08/PE26_311_611.html"
         }
       ],
-      "mechanism": "A 1.41% Stoxx drop into a widely expected 25bp deposit-rate move is the oil-inflation premium landing on Bunds and European equities together. Destatis finals at 14:00 Beijing and the ECB deposit rate at 20:15 settle it."
+      "mechanism": "The Stoxx 600 is now pricing a 1.41% drop, the largest since July, against Destatis inflation at 2.9%, so the change is an ECB-hike tape that also sold the FTSE 100 1.31% to 10670.06. German 2.9% CPI transmitted into higher ECB hike bets and from there into Bunds and EU equities. The read retires if Destatis finals reprint below 2.9% while the ECB holds. Horizon is days, ending at the ECB decision and the Destatis finals.",
+      "trigger": "Stoxx 600 extending the 1.41% drop, or Destatis finals above 2.9%.",
+      "invalidator": "The ECB holding while Destatis stays at 2.9%.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "copper-tariff",
@@ -616,7 +632,11 @@
           "href": "https://wallstreetcn.com/articles/3781441"
         }
       ],
-      "mechanism": "A 14858.5 record is a refined-copper tariff squeeze plus mine tightness, a different mechanism from Hormuz oil. CICC (5 August): mine-supply growth is turning negative while a US refined-copper tariff remains in play. US CPI on 11 September is the next print."
+      "mechanism": "LME three-month copper is now pricing as high as 14858.5 a tonne, and COMEX 6.894 a pound, so the change is another record on a refined- copper tariff and supply tightness. The tariff-and-tightness tape transmitted into that 14858.5 high, which is the Copper exposure, as gold’s gain narrowed. The read retires if LME copper reprints below 14858.5 while COMEX stays at 6.894. Horizon is days, ending at the next LME copper close.",
+      "trigger": "LME copper giving back 14858.5.",
+      "invalidator": "LME copper holding 14858.5 while COMEX stays at 6.894.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "id": "yen-carry",
@@ -640,7 +660,11 @@
           "href": "https://cointelegraph.com/markets/bitcoin-fails-to-reclaim-80k-as-bessent-fuels-yen-strength-around-153-per-dollar"
         }
       ],
-      "mechanism": "A 153.65 print on a third stronger session is still an intervention-and-BOJ squeeze. Morgan Stanley (9 September): yen strength alone does not unwind EM carry while global growth and equities still hold. The BOJ decision on 17–18 September is the settle."
+      "mechanism": "USD/JPY is now pricing 153.65 against the Cointelegraph 153 handle, so the change is a third-day yen strengthening, the strongest since February, as Bessent kept intervention risk live. The third-day yen bid transmitted into Bessent’s intervention-risk line and from there into the 153.65 print, which is the JPY exposure. The read retires if USD/JPY reprints back through 153.65. Horizon is days, ending at the next USD/JPY close or official Tokyo FX comment.",
+      "trigger": "USD/JPY reprinting back through 153.65.",
+      "invalidator": "USD/JPY holding 153.65.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "gold-btc-duration",
@@ -669,7 +693,11 @@
           "href": "https://www.theblockbeats.info/flash/366180"
         }
       ],
-      "mechanism": "August gold ETF inflows beside bitcoin failing $80,000 is duration-beta into Friday’s CPI, and a SOPR print of 1.002 says the coins that moved were still in profit. CPI on 11 September is the next print."
+      "mechanism": "Gold ETFs are now pricing 4,189 tonnes of holdings after an 18bn August inflow, so the change is a duration bid while bitcoin failed 80,000 at about 7.82万美元. The 18bn gold-ETF inflow transmitted into 4,189 tonnes and 615bn of AUM, while bitcoin failed 80,000 with SOPR at 1.002, which is the Gold-to-BTC chain. The read retires if bitcoin reclaims 80,000 while SOPR holds 1.002. Horizon is days, ending at the next bitcoin close or gold-ETF flow print.",
+      "trigger": "Bitcoin reclaiming 80,000, or gold ETF holdings reprinting below 4,189 tonnes.",
+      "invalidator": "Bitcoin staying below 80,000 while SOPR holds 1.002.",
+      "horizon": "days",
+      "status": "new"
     }
   ],
   "globalRegime": "US cash sold a third session into $101.21 Brent and a $6bn buyback miss. The official 10-year yield was 4.83%. NBS printed August CPI at 0.8% and PPI at 3.8%. The ECB prints in Berlin today. FOMC is still 02:00 Beijing on 17 September.",

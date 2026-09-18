@@ -8,7 +8,11 @@ const good = {
   fact: "CNBC: WTI settled at $91.01. Wright: 17 million b/d moved through Hormuz on Monday.",
   factSources: [{ label: "CNBC", href: "https://x" }],
   mechanism:
-    "Oil holds a war premium while flows stay below 20 million. CICC (2 September): the strait, not OPEC, sets the price. OPEC+ meets this weekend.",
+    "WTI is now pricing $91.01 against Monday’s Hormuz flows at 17 million b/d, so the change is a war-premium settle. Those 17 million b/d transmitted into the $91.01 cash close, which is the Oil exposure. CICC (2 September): the strait, not OPEC, sets the price. The read retires if WTI reprints below $91.01.",
+  trigger: "WTI reprinting at or above $91.01.",
+  invalidator: "WTI reprinting below $91.01 on the next cash settle.",
+  horizon: "days",
+  status: "new",
 };
 
 describe("checkThemeCards", () => {
@@ -19,9 +23,16 @@ describe("checkThemeCards", () => {
     const fact = Array(4).fill("AP: the S&P rose 0.5%.").join(" ");
     assert.match(checkThemeCards({ themeCards: [{ ...good, fact }] }).message, /1–3/);
   });
+  it("fails a short so-what", () => {
+    const mechanism = "Oil keeps a war premium. CICC (2 September): the strait sets the price.";
+    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /3–5/);
+  });
   it("fails a long so-what", () => {
-    const mechanism = Array(4).fill("Oil keeps a war premium.").join(" ");
-    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /1–3/);
+    const mechanism = Array(6).fill("Oil keeps a war premium.").join(" ");
+    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /3–5/);
+  });
+  it("fails a missing trigger", () => {
+    assert.match(checkThemeCards({ themeCards: [{ ...good, trigger: "" }] }).message, /missing trigger/);
   });
   it("fails sourcing caveats as so-what", () => {
     const mechanism = "That figure is 09:57 a.m. EDT, not a settle.";

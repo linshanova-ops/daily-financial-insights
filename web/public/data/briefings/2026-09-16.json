@@ -482,7 +482,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 5.00% official 10-year after a 5.04% session high is the curve carrying a September hike while term premium still sits in the long end. CICC (14 September): a September hike is about Fed credibility after Warsh’s Jackson Hole commitment, which is why the 10-year can reprice without the inflation thesis having to change. The FOMC decision at 02:00 Beijing on 17 September is the next print."
+      "mechanism": "The 10-year is now pricing 5.00% on the official 15 September curve against 4.97% late Monday and a 5.04% overnight touch, so the change is an official close that locked in a 2007 high into 92% odds of a 25 basis-point hike. A 5.00% official 10-year next to a 4.67% 2-year and a 5.36% 30-year transmitted into the UST exposure as the 20-year sale showed soft demand. The read retires if the official U.S. Treasury 10-year reprints below 5.00%. Horizon is days, ending at the FOMC decision.",
+      "trigger": "Official U.S. Treasury 10-year reprinting above 5.00%.",
+      "invalidator": "Official U.S. Treasury 10-year reprinting below 5.00%.",
+      "horizon": "days",
+      "status": "continuing"
     },
     {
       "id": "oil-yanbu-libya",
@@ -510,7 +514,11 @@
           "href": "https://wallstreetcn.com/articles/3781834"
         }
       ],
-      "mechanism": "A 108.75 Brent settle with Yanbu loadings halted is still a supply-floor tape, even if Wright talks about a restart in days. Goldman Sachs (15 September): oil sets the bond market and the bond market sets risk assets until energy stops rising. The FOMC decision at 02:00 Beijing on 17 September is the next energy-policy print."
+      "mechanism": "Brent is now pricing 108.75, up 2.9%, against WTI at 105.83, up 4.4%, so the change is a supply-risk bid as Yanbu halted and Libya stopped fields. A 108.75 Brent settle transmitted through the WTI 105.83 close into the Oil exposure. The read retires if AP reprints Brent below 108.75 after an East-West restart. Horizon is days, ending at Energy Secretary Wright's window for an East-West restart.",
+      "trigger": "AP Brent settle reprinting above 108.75.",
+      "invalidator": "AP Brent settle reprinting below 108.75 after an East-West restart.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "clarity-btc",
@@ -539,7 +547,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 49-50 cloture miss next to a 10.1% Coinbase drop is the listed-crypto book taking the vote, while 75,560 is the spot handle giving way. Spot that already failed a Senate 60-vote bar will keep trading the hike. The FOMC decision at 02:00 Beijing on 17 September is the next print."
+      "mechanism": "Bitcoin is now pricing 75,560, a September low, against a 49-50 Senate Clarity cloture vote that missed the 60-vote bar, so the change is a spot handle that gave way as Coinbase Global fell 10.1%. A 49-50 cloture miss transmitted into the 10.1% Coinbase drop and the 75,560 Cointelegraph print, which is the BTC and US equities exposure. The read retires if Cointelegraph reprints bitcoin above 75,560. Horizon is days, ending at the FOMC decision.",
+      "trigger": "Cointelegraph bitcoin reprinting above 75,560.",
+      "invalidator": "Cointelegraph bitcoin reprinting below 75,560.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "china-activity-omo",
@@ -568,7 +580,11 @@
           "href": "https://www.yicai.com/news/103365212.html"
         }
       ],
-      "mechanism": "A 1100亿元 7-day print next to a 6000亿元 overnight cap is a tax-period backstop under Shanghai’s 3864.28 close. Industrial production at 5.2% can re-accelerate while consumption stays the slow side of the print. Overnight reverse repos through 17 September are the next prints."
+      "mechanism": "Shanghai is now pricing 3864.28, down 0.54%, against August industrial production at 5.2% y/y, so the change is an A-share close that absorbed a 1100亿元 7-day reverse-repo allotment. A 1100亿元 7-day print next to 6000亿元 overnight reverse repos transmitted through the 5.2% IP print into the 3864.28 Shanghai close, which is the A/H shares and CGBs exposure. The read retires if NBS reprints August industrial production below 5.2% y/y. Horizon is days, ending at the next PBOC open-market operation.",
+      "trigger": "NBS industrial production reprinting above 5.2% y/y with Shanghai holding 3864.28.",
+      "invalidator": "NBS industrial production reprinting below 5.2% y/y, or Shanghai reprinting below 3864.28.",
+      "horizon": "days",
+      "status": "new"
     },
     {
       "id": "nvda-rebound",
@@ -592,7 +608,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 7,585.73 S&P close next to Nvidia’s 0.6% bounce is the AI-capex book stabilizing after Monday’s safety tape while cash still paid the higher 10-year. Huang’s no-new-law line keeps the capex book from treating a safety letter as a shutdown, so chips can bounce while the index still prints a lower close. The FOMC decision at 02:00 Beijing on 17 September is the next risk-asset print."
+      "mechanism": "The S&P 500 is now pricing 7,585.73, down 34.25 points, against Nvidia's 0.6% bounce after a 3.4% drop, so the change is chips stabilizing while cash still paid higher yields. A 0.6% Nvidia bounce and a 2.2% AMD climb transmitted into the 7,585.73 S&P close, the Dow at 52,093.11, and the Nasdaq at 25,981.57, which is the US equities exposure. The read retires if WTOP AP reprints the S&P 500 below 7,585.73 while Nvidia reprints below a 0.6% bounce. Horizon is days, ending at the FOMC decision.",
+      "trigger": "Nvidia reprinting above a 0.6% bounce with the S&P 500 holding 7,585.73.",
+      "invalidator": "S&P 500 reprinting below 7,585.73 while Nvidia reprints below a 0.6% bounce.",
+      "horizon": "days",
+      "status": "new"
     }
   ],
   "globalRegime": "US cash fell 0.4% into a 108.75 Brent settle and a 5.00% official 10-year after the session printed 5.04%. Senate Clarity cloture failed 49–50. FOMC is still 02:00 Beijing on 17 September.",

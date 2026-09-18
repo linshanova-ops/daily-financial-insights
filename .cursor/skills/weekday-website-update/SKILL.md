@@ -105,7 +105,14 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 ## Theme card
 
-One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: what moved, why it matters for which books, which dated print settles it.
+One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: what is priced, how it transmits into which books, which reading retires it. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`.
+
+So what (`mechanism`) is 3–5 sentences in this order, no preamble:
+
+1. Repricing — “⟨asset⟩ is now pricing ⟨N⟩ against ⟨prior/consensus⟩, so the change is ⟨direction and size⟩.”
+2. Transmission — ≥2 observable hops ending at a named `assets` exposure. Optional one `House (d Month):` view inside this chain as evidence, never as the conclusion.
+3. Falsifier — a number plus the series/release that retires the read. No falsifier from available data → do not publish the card.
+4. Horizon — `days` / `weeks` / `quarter` plus the event that ends it. Never “is the next print/settle/tape”.
 
 ```yaml
 - id: german-cpi-energy
@@ -120,15 +127,23 @@ One card = one force. Count follows the tape. A reader finishes a card in 20 sec
   factSources:             # exactly those cites, ≤ 4 chips
     - { label: Destatis, href: ... }
     - { label: 彭博财经早茶 Sep 3, href: ... }
-  mechanism: >-            # So what, 2–3 sentences: books; optional `House (d Month): view`; dated next print.
-    A second month of rising German inflation with energy up double digits keeps the ECB from following any Fed pause, so Bunds carry a hike premium into Berlin.
-    CICC (1 September): euro-area export orders are rising for the first time in four years, which is why the ECB can afford to stay restrictive while the Fed debates a hike.
-    The ECB decision on 10 September is the settle.
+  mechanism: >-
+    Bunds are now pricing a 2.9% German flash against a 2.8% July print and energy at 10.5%, so the change is a second month of re-acceleration.
+    A 2.9% flash with energy +10.5% transmitted into a sixth Bunds down-session, which is the Bunds exposure.
+    CICC (1 September): euro-area export orders are rising, which is evidence the ECB can stay restrictive.
+    The read retires if Destatis reprints flash CPI at or below the 2.8% July rate.
+    Horizon is days, ending at the Destatis CPI finals.
+  trigger: Destatis flash CPI reprinting at or above 2.9% y/y with energy at or above 10.5%.
+  invalidator: Destatis reprinting flash CPI at or below the 2.8% July rate.
+  horizon: days
+  status: new              # vs previous briefing: continuing / escalated / retired / new
 ```
 
-**Desk view.** One per card, optional — never pad. Named house or official with a date (GS, MS, JPM, BofA, Nomura, CICC, IEA, OPEC, Glassnode, IMF, BIS, a central banker). Adds a mechanism, number, or position the prints lack, for *this* card’s books. Search CICC per force; 财经早茶 GS/MS/JPM lines; 见闻 sell-side; Glassnode inbox. Source in `keySources`. Two houses in one sentence only when they disagree.
+**Desk view.** One per card, optional — never pad. Named house or official with a date (GS, MS, JPM, BofA, Nomura, CICC, IEA, OPEC, Glassnode, IMF, BIS, a central banker). At most one third-party view, inside the transmission chain as evidence, never as the conclusion. Search CICC per force; 财经早茶 GS/MS/JPM lines; 见闻 sell-side; Glassnode inbox. Source in `keySources`. Two houses in one sentence only when they disagree.
 
-`verify-briefing` fails dumps (fact or so-what >3, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, no `House (d Month):` on any card). Unused prints → What changed. Sourcing caveats → `singleSource`. No CLAIM. No `trigger`/`invalidator`/`horizon`/`status`. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
+Stay on this card’s books. Do not write “keep X on the other card”, “this is not the Y book”, or “rather than the ⟨other⟩ spillover”. Only numbers already in this card’s `fact` or `factSources`. Paragraph must add information `fact` does not contain. Banned phrases: "sets the next tape", "is the next print", "is the settle", "keeps the case alive", "takes … off the tape", "treating … as", "pricing some of the … back out", "room for", "still leaves … on the table", "worth watching". Banned opener: "A ⟨number⟩ ⟨thing⟩ next to a ⟨number⟩ ⟨thing⟩ is…". Banned tail: calendar event whose predicate is next print/settle/tape — move it into eventCalendar/watch.
+
+`verify-briefing` fails dumps (fact not 1–3, so-what not 3–5, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, missing `trigger`/`invalidator`/`horizon`/`status`, no `House (d Month):` on any card). Unused prints → What changed. Sourcing caveats → `singleSource`. No CLAIM. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
 
 **Bitcoin:** `gn metric` if keyed; else inbox Week on Chain as desk view. Do not invent on-chain sizes.
 

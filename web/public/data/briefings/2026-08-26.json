@@ -451,9 +451,9 @@
           "href": "https://wallstreetcn.com/articles/3780294"
         }
       ],
-      "mechanism": "A corridor talk can reprice the war premium without a tanker count. CICC (March)：if Hormuz reopened quickly, Brent could oscillate around $80–90, with the speed of any drop still limited by how fast forced Gulf output returns. $88.58 is that band, not a confirmed Strait reopening.",
-      "trigger": "A dated escorted-tanker print, or a signed corridor.",
-      "invalidator": "Oil reversing higher with no flow recovery.",
+      "mechanism": "WTI is now pricing 82.36, down 3.1%, and Brent 88.58, down 3.9%, so the change is a diplomacy-led drop after a brief break of 90 in Brent. A 3.1% WTI drop to 82.36 transmitted into Brent at 88.58 and into USD, with Iran and Oman talking a corridor in 30 to 60 days. The read retires if oil reverses higher through 82.36 / 88.58 with no flow recovery. Horizon is days, ending at a dated escorted-tanker print or a signed corridor.",
+      "trigger": "A dated escorted-tanker print that holds WTI below 82.36, or a signed corridor.",
+      "invalidator": "Oil reversing higher through 82.36 / 88.58 with no flow recovery.",
       "horizon": "days",
       "status": "new"
     },
@@ -492,9 +492,9 @@
           "href": "https://www.cnbc.com/2026/08/24/stock-market-today-live-updates.html"
         }
       ],
-      "mechanism": "This is oil into duration, not buybacks already working. CICC (24 August)：a $4bn long-end operation is a signal, not the outstanding stock, and it is not QE. BlockBeats：the first ≥$4bn print is still 9 September. Tonight’s PCE is the next inflation gate before Warsh.",
-      "trigger": "July core PCE versus the 0.2% month-on-month estimate, or Warsh on Friday.",
-      "invalidator": "The 10-year back above 4.70% with oil still falling.",
+      "mechanism": "The 10-year is now pricing 4.64% against 4.17% on the 2-year and 5.17% on the 30-year, so the change is a long-end outperformance as oil cut hike bets. August confidence at 89.4 versus the 90.2 estimate transmitted into July new-home sales at 607,000, down 10.5% from 678,000, and into USTs. The read retires if the 10-year reprints above 4.64% with oil still falling. Horizon is days, ending at July core PCE, or Warsh on Friday.",
+      "trigger": "July core PCE, or the 10-year back above 4.64% into Warsh on Friday.",
+      "invalidator": "The 10-year reprinting above 4.64% with oil still falling.",
       "horizon": "days",
       "status": "new"
     },
@@ -534,9 +534,9 @@
           "href": "https://research.glassnode.com/the-week-onchain-week-33-2026/"
         }
       ],
-      "mechanism": "If gold were only a duration trade, a 6 bp drop in the 30-year yield would not need a new high. CICC (24 August)：the dollar, not the S&P earnings tape, is where the Treasury-buyback argument showed up, and gold and crypto bid as substitutes. The 19 August Glassnode frame is last week’s on-chain map; this week’s $80,000 print sits above that True Market Mean near $75.8k, so treat W34 as the cost-basis map, not as today’s close.",
-      "trigger": "A dated gold give-back with bitcoin holding $80,000, or the reverse.",
-      "invalidator": "Both gold and bitcoin reversing as the 10-year stays below 4.64%.",
+      "mechanism": "Spot gold is now pricing 4,662.05 after a session high of 4,696.83, so the change is an extension of the three-month high as bitcoin crossed 80,000 and tagged 81,240.68 before closing at 78,216. A 4,662.05 close transmitted into bitcoin at 81,240.68 then 78,216, which is the Gold-to-BTC chain. Glassnode (19 August): that week's spot was still $60–65k, with short- term-holder cost near 68.5k below True Market Mean near 75.8k. The read retires if both gold and bitcoin reverse as gold reprints below 4,662.05. Horizon is days, ending at the next spot-gold and CoinDesk bitcoin prints.",
+      "trigger": "A dated gold give-back below 4,662.05 with bitcoin holding 80,000, or the reverse.",
+      "invalidator": "Both gold and bitcoin reversing as gold reprints below 4,662.05.",
       "horizon": "days",
       "status": "new"
     },
@@ -559,9 +559,9 @@
           "href": "https://wallstreetcn.com/articles/3780294"
         }
       ],
-      "mechanism": "A copper record on tariff-and-inventory signals is not the same book as oil falling on Hormuz talks. It can keep running if US trade policy keeps pulling metal into US warehouses.",
-      "trigger": "A dated COMEX-LME spread blowout, or a US copper-tariff print.",
-      "invalidator": "Copper giving back the record with no new tariff step.",
+      "mechanism": "London copper is now pricing a record close that slipped back toward 14,200 a tonne, so the change is another LME and COMEX high on policy and tight supply. A 14,200 handle transmitted into the Copper book and into Commodities. The read retires if copper gives back the 14,200 area with no new tariff step. Horizon is days, ending at a dated COMEX-LME spread blowout or a US copper-tariff print.",
+      "trigger": "A dated COMEX-LME spread blowout through 14,200, or a US copper-tariff print.",
+      "invalidator": "Copper giving back the 14,200 record with no new tariff step.",
       "horizon": "days",
       "status": "new"
     },
@@ -595,9 +595,9 @@
           "href": "https://www.theblockbeats.info/flash/363137"
         }
       ],
-      "mechanism": "Yields fell and chips finally bid. Read it as AI-capex beta into tonight’s report, not as a rates rally already proving the cycle. HSBC’s $360 target is a view, not the close. BlockBeats：VOO’s 43亿美元 week still concentrates Nvidia and Apple, so a miss can travel beyond the chip tape.",
-      "trigger": "Nvidia’s Wednesday report, or a session where SOXX gives back the bounce.",
-      "invalidator": "Guidance that holds 910亿美元 ±2% with chips still bid.",
+      "mechanism": "Nvidia is now pricing a 2.2% bounce after a 2.9% drop that was the heaviest S&P weight, so the change is a seven-day decline that snapped with AMD +4.9% and Micron +2.5%. A 2.2% Nvidia gain transmitted into US equities into the Wednesday report, with Street looking for about 918.5亿美元 of second-quarter revenue against guidance of 910亿美元 ±2%. The read retires if guidance holds 910亿美元 ±2% with chips still bid below the 2.2% bounce. Horizon is days, ending at Nvidia's Wednesday report.",
+      "trigger": "Nvidia's Wednesday report, or a session where SOXX gives back the 2.2% bounce.",
+      "invalidator": "Guidance that holds 910亿美元 ±2% with chips still bid below the 2.2% bounce.",
       "horizon": "days",
       "status": "new"
     },
@@ -624,9 +624,9 @@
           "href": "https://www.cnbc.com/2026/08/24/stock-market-today-live-updates.html"
         }
       ],
-      "mechanism": "An 8 September start is a near-term CAD and metals-input tape, not the 2027 auto list from Monday. The dollar-for-dollar match keeps the Canada fight in the same week as PCE and Nvidia.",
-      "trigger": "A dated restart of talks, or the 8 September list taking effect.",
-      "invalidator": "The 8 September list walked back with no new US step.",
+      "mechanism": "CAD is now pricing Canada's doubled steel and aluminum tariffs at 50% covering C$27.6bn of US goods from 8 September, so the change is a dollar-for-dollar match of the 50% US levies with a C$7.5bn support package. A 27.6bn counter-tariff list transmitted into CAD and into US equities. The read retires if the 8 September list is walked back with no new US step through the 27.6bn cover. Horizon is days, ending at the 8 September list coming into force.",
+      "trigger": "A dated restart of talks, or the 8 September 27.6bn list coming into force.",
+      "invalidator": "The 8 September list walked back with no new US step through the 27.6bn cover.",
       "horizon": "days",
       "status": "new"
     },
@@ -656,9 +656,9 @@
           "href": "https://www.yicai.com/news/103331390.html"
         }
       ],
-      "mechanism": "An IPO-supply rebound is listings thaw, not a consumption print. CICC (17 August)：domestic demand is still the gap, and the desk is still waiting for stimulus to show up in the data. 钟才文 plus 积极财政 is the language; wait for a dated yuan size.",
-      "trigger": "A dated incremental fiscal package with a yuan size, or ChiNext holding a bounce.",
-      "invalidator": "IPO prints stall with no demand package.",
+      "mechanism": "Shanghai is now pricing a 0.19% rise against Shenzhen −0.35% and ChiNext −1.00% on 1.83万亿元 of turnover, so the change is a heavy- turnover session under the largest quarterly A-share IPO bar since mid-2023. H1 growth of 4.7% transmitted into that 0.19% Shanghai print and into A/H shares, with MLF still CNY500bn against CNY600bn maturing. The read retires if IPO prints stall and ChiNext reprints below the 1.00% decline with no demand package. Horizon is weeks, ending at a dated incremental fiscal package with a yuan size.",
+      "trigger": "A dated incremental fiscal package with a yuan size, or ChiNext holding a bounce above the 1.00% decline.",
+      "invalidator": "IPO prints stall with ChiNext reprinting the 1.00% decline and no demand package.",
       "horizon": "weeks",
       "status": "new"
     },
@@ -689,11 +689,11 @@
           "href": "https://wallstreetcn.com/articles/3780294"
         }
       ],
-      "mechanism": "Insider buying after an 8% placing gap is a confidence tape, not a China demand print. The HK$80bn still funds AI capex. Today’s expected close is the next dated step.",
-      "trigger": "The 26 August close, or a session where 9988 gives back the placing gap.",
-      "invalidator": "The placing delayed with no further insider buying.",
+      "mechanism": "Alibaba is now pricing insider support after Jack Ma bought more than HK$600m and Cai Chongxin bought 720,000 shares at about HK$113.46, so the change is a placing-gap defense with the placing at HK$112.70. A 720,000-share Cai buy at 113.46 transmitted into Wu Yongming's 350,000 shares at HK$111.6 and into A/H shares, with Hang Seng −0.02% and XPeng-W −9.2%. The read retires if the placing is delayed through 26 August with no further insider buying above the 112.70 price. Horizon is days, ending at the 26 August close.",
+      "trigger": "The 26 August close, or a session where 9988 gives back the 112.70 placing gap.",
+      "invalidator": "The placing delayed through 26 August with no further insider buying above 112.70.",
       "horizon": "days",
-      "status": "continuing"
+      "status": "new"
     }
   ],
   "globalRegime": "The new tape is Hormuz diplomacy plus a chip bounce. Brent settled at $88.58 and the 10-year yield fell to 4.64%. The S&P 500 rose 0.32%, and Nvidia ended a seven-day drop. Canada matched 50% steel and aluminum tariffs. Gold is still a May high. The 财经早茶 chart is A-share IPO fundraising, not TGA cash.",

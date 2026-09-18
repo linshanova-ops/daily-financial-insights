@@ -48,15 +48,24 @@ export function unixToDateString(unixSeconds) {
  * Yahoo sometimes publishes a session timestamp with `close: null` while
  * exposing the completed official close in chart.meta. Append that quote only
  * when it belongs to a newer UTC session date than the last usable chart close.
+ * Thin indexes (HSTECH.HK) often return one chart bar even on range=1mo;
+ * day-change then lives in meta.chartPreviousClose.
  */
 export function withYahooMetaFallback(pairs, meta = {}) {
   const out = [...pairs];
   const price = Number(meta.regularMarketPrice);
   const time = Number(meta.regularMarketTime);
-  if (!Number.isFinite(price) || !Number.isFinite(time)) return out;
-  const last = out[out.length - 1];
-  if (!last || unixToDateString(time) > unixToDateString(last.t)) {
-    out.push({ t: time, c: price });
+  if (Number.isFinite(price) && Number.isFinite(time)) {
+    const last = out[out.length - 1];
+    if (!last || unixToDateString(time) > unixToDateString(last.t)) {
+      out.push({ t: time, c: price });
+    }
+  }
+  if (out.length === 1) {
+    const prevClose = Number(meta.chartPreviousClose);
+    if (Number.isFinite(prevClose) && prevClose !== 0 && prevClose !== out[0].c) {
+      out.unshift({ t: out[0].t - 86400, c: prevClose });
+    }
   }
   return out;
 }

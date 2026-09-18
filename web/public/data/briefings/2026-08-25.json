@@ -511,9 +511,9 @@
           "href": "https://www.theblockbeats.info/flash/363197"
         }
       ],
-      "mechanism": "The 今日图表 is TGA cash stock, not the S&P close. If gold were only a duration trade, it should have fallen with a 4 bp drop in the 30-year yield, but it did not. CICC (24 August): a $4bn long-end buyback is a signal, not the outstanding stock, and Treasury cannot drain the TGA without limit — it is not QE. BlockBeats (24 August): the $1tn headline is about $200bn usable, and a refill still drains. BlockBeats (63476): gold and bitcoin are trading the Bessent reaction function, not QE delivered. The 19.2亿美元 ETF week is chase after a 23% tape, not a new QE print. Strategy up 5.1% with Coinbase down 1.1% is a treasury-beta bid, not an exchange-volume bid. Monday’s CoinDesk print near $77,800 sits above that 19 August True Market Mean near $75.8k, so this week is still a local bounce until realized P/L reclaims 2 (Glassnode W34).",
-      "trigger": "A dated TGA draw, or the 9 September ≥$4bn operation.",
-      "invalidator": "Yields back up with gold and bitcoin giving back Monday’s bid.",
+      "mechanism": "The 10-year is now pricing 4.70% and the 30-year 5.23% against a TGA cash balance the chart shows above $900bn, so the change is a buyback- funding path that also bid gold to 4,651.24 and bitcoin around 77,800. A 4.70% 10-year transmitted into spot gold at 4,651.24 and bitcoin around 77,800, which is the USTs-to-Gold-and-BTC chain. Glassnode (19 August): that week's spot was still $60–65k, with short- term-holder cost near 68.5k below True Market Mean near 75.8k, and realized P/L near 0.75 versus exhaustion below 0.5. The read retires if yields reprint above 4.70% / 5.23% with gold and bitcoin giving back 4,651.24 and 77,800. Horizon is days, ending at a dated TGA draw or the 9 September $4bn operation.",
+      "trigger": "A dated TGA draw, or the 9 September $4bn operation as the 10-year holds 4.70%.",
+      "invalidator": "Yields back above 4.70% / 5.23% with gold and bitcoin giving back 4,651.24 and 77,800.",
       "horizon": "days",
       "status": "new"
     },
@@ -548,9 +548,9 @@
           "href": "https://www.theblockbeats.info/flash/363264"
         }
       ],
-      "mechanism": "Yields fell and chips still sold. Read it as AI-capex and memory beta into Wednesday’s print, not as a rates rally. Storage sold harder than Nvidia. HSBC’s $360 target is a view, not the close.",
-      "trigger": "Nvidia’s Wednesday report, or a session where SOXX holds a bounce.",
-      "invalidator": "Chips rallying through PCE with no earnings follow-through.",
+      "mechanism": "The S&P 500 is now pricing 7,652.86, down 0.3%, against Nvidia −2.9% as the heaviest weight, so the change is a seventh down day for Nvidia that pulled chips and the Nasdaq to 25,980.19 down 0.8%. A 2.9% Nvidia drop transmitted into Micron −5.8% and Broadcom −2.6% and into the 7,652.86 S&P close, which is the US equities sleeve. The read retires if chips rally through PCE with Nvidia reprinting above the 2.9% loss. Horizon is days, ending at Nvidia's Wednesday report.",
+      "trigger": "Nvidia's Wednesday report, or a session where SOXX holds a bounce after the 2.9% Nvidia drop.",
+      "invalidator": "Chips rallying through PCE with Nvidia reprinting above the 2.9% loss and no earnings follow-through.",
       "horizon": "days",
       "status": "new"
     },
@@ -573,11 +573,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A sanctions headline that does not tighten barrels can be sold. A Navy-escorted tanker count is still not a confirmed Strait closure.",
-      "trigger": "A dated secondary list that hits Chinese refiners, or a flow shutdown.",
-      "invalidator": "Quiet oil with no new isolation step.",
+      "mechanism": "WTI is now pricing 84.89, down about 2.5%, and Brent 92.06, down about 2.5%, so the change is an isolation-plan rollout that sold oil. A 2.5% WTI drop to 84.89 transmitted into Brent at 92.06 and into USD. The read retires if Brent reprints above 92.06 on a secondary list that hits Chinese refiners. Horizon is days, ending at a dated secondary list or a flow shutdown.",
+      "trigger": "A dated secondary list that hits Chinese refiners and lifts Brent above 92.06, or a flow shutdown.",
+      "invalidator": "Quiet oil below 92.06 Brent with no new isolation step.",
       "horizon": "days",
-      "status": "continuing"
+      "status": "new"
     },
     {
       "id": "canada-auto-2027",
@@ -598,9 +598,9 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "A 2027 start is a political tape into midterms more than a same-week growth shock. Saturday’s $20bn list is the same Canada fight.",
-      "trigger": "Canada’s Tuesday response, or a dated restart of talks.",
-      "invalidator": "The 2027 auto tariff walked back with no new list.",
+      "mechanism": "CAD is now pricing 50% tariffs on Canadian cars, trucks, auto parts, and steel from 1 January 2027 against non-US autos already at 25% and Canadian steel already at 50%, so the change is a 2027 auto threat on top of Saturday's 50% duties. A 50% 2027 auto tariff transmitted into CAD as the weakest G10 currency and into US equities. The read retires if the 2027 auto tariff is walked back with no new list by 8 September. Horizon is days, ending at Canada's Tuesday response or a dated restart of talks.",
+      "trigger": "Canada's Tuesday response to the 2027 50% auto tariff, or a dated restart of talks.",
+      "invalidator": "The 2027 auto tariff walked back with no new list by 8 September.",
       "horizon": "days",
       "status": "new"
     },
@@ -627,9 +627,9 @@
           "href": "https://wallstreetcn.com/articles/3780189"
         }
       ],
-      "mechanism": "第一财经: this is 缩长增短 (shrink long-term cash, add overnight), not a tightening cycle. ChiNext’s 3.21% drop is chips, not MLF.",
-      "trigger": "A dated incremental fiscal package, or DR007 holding above 1.4%.",
-      "invalidator": "MLF rerolled large with no month-end overnight ops.",
+      "mechanism": "Shanghai is now pricing a 0.59% decline and ChiNext a 3.21% decline against an undersized CNY500bn MLF versus CNY600bn maturing, so the change is a net drain into month-end overnight cash. A 0.59% Shanghai drop transmitted into ChiNext −3.21% and into China rates, with overnight reverse repos capped at CNY600bn from 27 August. The read retires if MLF is rerolled large with no month-end overnight ops and Shanghai holds above the 0.59% decline. Horizon is days, ending at the 1 September overnight window close.",
+      "trigger": "A dated incremental fiscal package, or Shanghai extending the 0.59% decline into 1 September.",
+      "invalidator": "MLF rerolled large with no month-end overnight ops and Shanghai off the 0.59% decline.",
       "horizon": "days",
       "status": "new"
     },
@@ -664,11 +664,11 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "This is dilution for AI capex, not a China demand print. Hang Seng can fall on the placing while CSI 300 does something else. BlockBeats: the book is SWF and long-only demand, which can coexist with an 8% gap.",
-      "trigger": "The 26 August close, or a session where 9988 gives back the placing gap.",
-      "invalidator": "The placing cancelled or resized with no AI spend follow-through.",
+      "mechanism": "Alibaba is now pricing the placing at HK$112.70, 8.37% below the 21 August Hong Kong close, so the change is an 80bn raise that cut the stock more than 8%. An 8.37% discount transmitted into A/H shares and into Asia equities, with Cai Chongxin and Wu Yongming buying about HK$120m the next day. The read retires if the placing is cancelled or resized with no AI spend follow-through through 26 August. Horizon is days, ending at the 26 August close.",
+      "trigger": "The 26 August close, or a session where 9988 gives back the 8.37% placing gap.",
+      "invalidator": "The placing cancelled or resized with no AI spend follow-through through 26 August.",
       "horizon": "days",
-      "status": "continuing"
+      "status": "new"
     }
   ],
   "globalRegime": "The new tape is a TGA-funding report plus a chip selloff. The 10-year yield fell to 4.70% and the S&P 500 still fell 0.28%. Nvidia dropped a seventh day. Oil fell after the Iran isolation plan. Gold is a three-month high. Trump threatened 50% Canadian auto tariffs from 2027. PBOC is shrinking MLF. Alibaba’s placing hit Hong Kong.",

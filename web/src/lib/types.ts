@@ -38,7 +38,11 @@ export interface ThemeCard {
   fact: string;
   factSources?: FactSource[];
   mechanism: string;
-  /** Not rendered; legacy briefings only. New cards end `mechanism` with the dated next print. */
+  /**
+   * Structured watch fields, rendered on the card.
+   * The date/time of the next print belongs in `eventCalendar` and the skim
+   * `watch` string — never in `mechanism`.
+   */
   trigger?: string;
   invalidator?: string;
   horizon?: string;

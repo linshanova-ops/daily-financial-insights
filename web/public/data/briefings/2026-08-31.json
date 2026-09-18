@@ -560,9 +560,9 @@
           "href": "https://en.infomaxai.com/news/articleView.html?idxno=137205"
         }
       ],
-      "mechanism": "A 51.7 Michigan final is a confidence tape, not a duration delivery. CICC (31 August)：the hawkish reaction was not a panic, with stocks limited and the 10-year only 4bp higher on their screen. The official 30-year closed at 5.22%, which is a rise, not that down-tick. 华尔街见闻：Carpenter’s next-year QT of more than $1.5tn is a balance-sheet path, not the 4.73% 10-year itself. A 4.0% one-year inflation print is still above 2%.",
-      "trigger": "August employment at 20:30 Beijing on 4 September, or the 10-year back below 4.67% with Michigan still at 51.7.",
-      "invalidator": "The 10-year back below 4.67% while Warsh’s 3.7% PCE still stands.",
+      "mechanism": "Michigan sentiment is now pricing 51.7 against 55.2 in July, with year-ahead inflation at 4.0% and Warsh’s 12-month PCE at 3.7%, so the change is a confidence drop that still left September hike odds at 55.7%. That 3.7% PCE print plus six-month PCE at 4.1% transmitted into FedWatch at 55.7% and from there into the official 4.34% 2-year and 4.73% 10-year, which is the USTs, USD, and US equities chain. CICC (31 August): they read CME from 35% to 58% and a 2-year jump of more than 10bp, and they saw the 30-year down, which is evidence inside that UST chain. The read retires if the official 10-year reprints below 4.73% while Warsh’s 3.7% PCE still stands. Horizon is days, ending at the August employment release.",
+      "trigger": "August employment, or the 10-year back below 4.73% with Michigan still at 51.7.",
+      "invalidator": "The 10-year back below 4.73% while Warsh’s 3.7% PCE still stands.",
       "horizon": "days",
       "status": "new"
     },
@@ -598,11 +598,11 @@
           "href": "https://research.glassnode.com/the-week-onchain-week-34-2026/"
         }
       ],
-      "mechanism": "Gold down 2.75% into a 4.34% 2-year is the same dollar-hike book as bitcoin losing $80,000. CICC (31 August)：they also had gold about 3% lower after the speech. Glassnode’s $81k–$86k band is still overhead, not Friday’s $78,442 dip. Ether’s $102.1m inflow is a separate ETF book.",
-      "trigger": "A dated gold hold with bitcoin closing above $81,000, or the reverse.",
-      "invalidator": "Both gold and bitcoin reversing as the 2-year stays above 4.34%.",
+      "mechanism": "Spot gold is now pricing 4,474.45, down 2.75%, against bitcoin at 78,442 after circling 79,500, so the change is a joint dump as hike odds rose. A 2.75% gold drop and a 201.9 million US spot bitcoin ETF outflow transmitted into the 78,442 Bitstamp print, which is the Gold-to-BTC chain under a stronger USD. Glassnode (26 August): overhead supply sits between $81k and $86k, with tests at $83.3k above and $70.0k below, which is evidence inside that BTC band. The read retires if CNBC reprints spot gold back through 4,474.45 while bitcoin holds 79,500. Horizon is days, ending at the next dated gold and bitcoin close.",
+      "trigger": "Bitcoin closing above the Glassnode 83.3k overhead test, or spot gold reversing the 2.75% drop through 4,474.45.",
+      "invalidator": "Spot gold reversing through 4,474.45 while bitcoin reclaims 79,500.",
       "horizon": "days",
-      "status": "new"
+      "status": "continuing"
     },
     {
       "id": "oil-larak",
@@ -626,9 +626,9 @@
           "href": "https://www.usatoday.com/story/news/world/2026/08/30/us-iran-war-larak-island-iran-war/91539747007/"
         }
       ],
-      "mechanism": "A weekly loss into $89.31 Brent is a fading-premium tape. A Sunday Larak strike is a new risk-premium tape, not that Friday settle. Monday’s Asia open is an open, not a new cash close.",
-      "trigger": "A dated Hormuz flow print, or Brent giving back the Asia-open bid.",
-      "invalidator": "Brent holding the bid while tanker counts keep rising.",
+      "mechanism": "WTI is now pricing 83.40, down about 4% on the week, and Brent 89.31, down more than 5%, so the change is a weekly giveback that then bid Brent at the Monday Asia open after the Larak strike. The Friday weekly giveback at 83.40 and 89.31 then the 30 August CENTCOM strike on two IRGC launchers transmitted into that Asia-open Brent bid, which is the Oil exposure. The read retires if the next CNBC Brent settle reprints below 89.31. Horizon is days, ending at the next dated Hormuz flow print.",
+      "trigger": "A dated Hormuz flow print, or Brent giving back 89.31.",
+      "invalidator": "Brent holding 89.31 while WTI stays at 83.40.",
       "horizon": "days",
       "status": "new"
     },
@@ -678,9 +678,9 @@
           "href": "https://finance.sina.com.cn/jjxw/2026-08-29/doc-inipxyyv8788450.shtml"
         }
       ],
-      "mechanism": "A 40-year cap is a repayment-term tape, not a yuan size. 财经早茶：Goldman Sachs’s Shan Hui said a longer term can cut the monthly payment and still raise lifetime interest. July retail at +0.6% and FAI at −6.7% are the demand prints the 40-year rule is supposed to lean on. Monday’s open is an open, not Friday’s 3952.18 close. Overnight 4470亿元 is month-end plumbing under a CNY600bn cap.",
-      "trigger": "Today’s PMI prints at 09:30 Beijing, or ChiNext giving back the Monday open.",
-      "invalidator": "PMI holding while the 40-year rule is still just a term cap.",
+      "mechanism": "Shanghai is now pricing 3952.18, down 0.11%, against a 40-year housing-loan cap and H1 GDP at 4.7%, so the change is an A-share close that absorbed a longer loan term. The 40-year cap sat beside July retail at 0.6% and January–July FAI at −6.7%, and that demand tape transmitted into Monday’s Shanghai open at −0.65% and ChiNext at −1.67%, which is the A/H exposure. The read retires if Shanghai reprints above 3952.18 while H1 GDP stays at 4.7% and the 40-year rule remains a term cap. Horizon is weeks, ending at the next NDRC demand print.",
+      "trigger": "ChiNext reversing the 1.67% Monday open, or Shanghai holding 3952.18 through the PMI prints.",
+      "invalidator": "Shanghai holding 3952.18 while H1 GDP stays at 4.7% and the 40-year rule remains a term cap.",
       "horizon": "weeks",
       "status": "new"
     }
