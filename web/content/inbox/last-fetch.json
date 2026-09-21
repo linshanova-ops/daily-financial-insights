@@ -1,25 +1,17 @@
 {
-  "at": "2026-09-21T01:02:31.708Z",
+  "at": "2026-09-21T01:22:23.885Z",
   "briefingDate": "2026-09-21",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-21.md",
-      "subject": "彭博财经早茶：中美启动纽约经贸磋商；美国达成格陵兰安全协议",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5350,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-21.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-21.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W38.md",
-      "subject": "彭博周末茶歇：美联储重启加息",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 5415,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：中美启动纽约经贸磋商；美国达成格陵兰安全协议",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-21.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：美联储重启加息",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W38.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：日本央行料加息；美国或推迟产能过剩关税",
