@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-18T06:04:43.004Z",
-  "latest": "2026-09-18",
+  "generatedAt": "2026-09-21T01:20:06.298Z",
+  "latest": "2026-09-21",
   "briefings": [
+    {
+      "date": "2026-09-21",
+      "title": "Daily Financial Briefing",
+      "marketTone": "US cash closed mixed after the official 10-year yield printed 5.01% and Brent settled at 103.87. The S&P 500 closed at 7,650.50, up 0.2%. The 财经早茶 chart is Bank of America calling the 2-year back toward 5%. The Bank of Japan hiked to 1.25%. Shanghai closed at 3911.87.",
+      "coverageWindow": "September 18–21, 2026"
+    },
     {
       "date": "2026-09-18",
       "title": "Daily Financial Briefing",
