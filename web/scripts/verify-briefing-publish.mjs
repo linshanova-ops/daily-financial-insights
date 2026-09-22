@@ -19,6 +19,7 @@ import {
 import { checkLatestEventCalendarWindow } from "./lib/event-calendar-window-check.mjs";
 import { checkBloombergChartDate } from "./lib/bloomberg-chart-date-check.mjs";
 import { checkThemeCards } from "./lib/theme-card-check.mjs";
+import { checkGlobalChinaNoCloseDup } from "./lib/global-china-close-check.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const webRoot = path.join(__dirname, "..");
@@ -96,6 +97,13 @@ function main() {
       process.exit(1);
     }
     console.log("[verify-briefing] themeCards shape OK");
+
+    const gcCheck = checkGlobalChinaNoCloseDup(latest);
+    if (!gcCheck.ok) {
+      console.error(`\n[verify-briefing] FAIL — Global/China:\n  ${gcCheck.message}\n`);
+      process.exit(1);
+    }
+    console.log("[verify-briefing] Global/China close dedupe OK");
 
     if (/\bCLAIM\b/.test(JSON.stringify(latest))) {
       console.error(
