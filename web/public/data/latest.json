@@ -137,6 +137,15 @@
       "influence": "Rate change effective 24 September. Summary of Opinions 1 October. Tankan 1 October."
     },
     {
+      "label": "华尔街见闻早餐 9月21日",
+      "href": "https://wallstreetcn.com/articles/3782126",
+      "books": [
+        "rates",
+        "fx"
+      ],
+      "influence": "Friday BOJ 7-2 hike to around 1.25%, effective 24 September. Used for the continuing BOJ card; 22 September breakfast FM-Radio was not on the wire."
+    },
+    {
       "label": "DOL UI claims PDF",
       "href": "https://www.dol.gov/ui/data.pdf",
       "books": [
@@ -360,22 +369,22 @@
         "USTs",
         "US equities"
       ],
-      "fact": "US Treasury: the official 21 September curve printed 4.76% on the 2-year, 4.96% on the 10-year, and 5.29% on the 30-year, after Friday's official 5.01% 10-year. Seattle Times AP: the session 10-year yield fell to 4.95% and the S&P 500 rose 114.20 points, or 1.5%, to 7,764.70. 财经早茶 美国债市: 油价连日回落推动中长期美债上涨.",
+      "fact": "US Treasury: the official 21 September curve printed 4.76% on the 2-year, 4.96% on the 10-year, and 5.29% on the 30-year, after Friday's official 5.01% 10-year. Boston 25: the session 10-year yield fell to 4.95% and the S&P 500 rose 114.20 points, or 1.5%, to 7764.70. 财经早茶 美国债市: 油价连日回落推动中长期美债上涨.",
       "factSources": [
         {
           "label": "U.S. Treasury curve",
           "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202609"
         },
         {
-          "label": "Seattle Times AP Monday close",
-          "href": "https://www.seattletimes.com/business/how-major-us-stock-indexes-fared-monday-9-21-2026/"
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
         },
         {
           "label": "彭博财经早茶 Sep 22",
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "The 10-year is now pricing 4.96% against Friday's official 5.01%, so the change is a 5 basis-point drop that took duration back under 5%. A 4.96% official 10-year transmitted into the 7,764.70 S&P close, which is the US equities exposure. The read retires if the official 10-year reprints at or above 5.01%. Horizon is days, ending at Thursday DOL weekly claims.",
+      "mechanism": "The 10-year is now pricing 4.96% against Friday's official 5.01%, so the change is a 5 basis-point drop that took duration back under 5%. A 4.96% official 10-year transmitted into the 7764.70 S&P close, which is the US equities exposure. The read retires if the official 10-year reprints at or above 5.01%. Horizon is days, ending at Thursday DOL weekly claims.",
       "trigger": "Official 10-year reprinting at or above 5.01%.",
       "invalidator": "Official 10-year reprinting below 4.96%.",
       "horizon": "days",
@@ -497,11 +506,11 @@
       "assets": [
         "JPY"
       ],
-      "fact": "Bank of Japan calendar: the 1.25% overnight-call guideline becomes effective on 24 September. 财经早茶 外汇市场: 除瑞郎外的G10货币兑美元普跌，日元表现落后.",
+      "fact": "Bank of Japan: the 1.25% overnight-call guideline becomes effective on 24 September. 财经早茶 外汇市场: 除瑞郎外的G10货币兑美元普跌，日元表现落后.",
       "factSources": [
         {
-          "label": "Bank of Japan calendar",
-          "href": "https://www.boj.or.jp/en/about/calendar/"
+          "label": "华尔街见闻早餐 9月21日",
+          "href": "https://wallstreetcn.com/articles/3782126"
         },
         {
           "label": "彭博财经早茶 Sep 22",
@@ -612,11 +621,11 @@
       ]
     },
     {
-      "text": "Seattle Times AP：标普涨1.5%报7764.70。道指涨0.7%报52048.83。纳指报27122.09。罗素2000报2875.36。",
+      "text": "Boston 25 AP：标普涨1.5%报7764.70。道指涨0.7%报52048.83。纳指报27122.09。",
       "sources": [
         {
-          "label": "Seattle Times AP Monday close",
-          "href": "https://www.seattletimes.com/business/how-major-us-stock-indexes-fared-monday-9-21-2026/"
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
         }
       ]
     },
@@ -955,7 +964,7 @@
         "timeBeijing": "",
         "region": "Other",
         "category": "central-bank",
-        "event": "BOJ 1.25% call-rate guideline becomes effective",
+        "event": "BOJ overnight-call guideline becomes effective",
         "themeId": "boj-cpi",
         "source": {
           "label": "Bank of Japan calendar",
