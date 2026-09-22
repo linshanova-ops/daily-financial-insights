@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-22T05:41:29.320Z",
+  "at": "2026-09-22T06:02:04.695Z",
   "briefingDate": "2026-09-22",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-22.md",
-      "subject": "彭博财经早茶:  中美对贸易休战延长存分歧；Meta智能体走红提振芯片股",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6376,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-22.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-22.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶:  中美对贸易休战延长存分歧；Meta智能体走红提振芯片股",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-22.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：中美启动纽约经贸磋商；美国达成格陵兰安全协议",
