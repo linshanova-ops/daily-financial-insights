@@ -103,14 +103,14 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 ## Theme card
 
-One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: what is priced, how it transmits into which books, which reading retires it. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`.
+One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: the logic, one external view inside it, which of this card's books it moves, and what would change the theme. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`. Do not end So what with the dated next print.
 
-So what (`mechanism`) is 3–5 sentences in this order, no preamble:
+So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
 
-1. Repricing — “⟨asset⟩ is now pricing ⟨N⟩ against ⟨prior/consensus⟩, so the change is ⟨direction and size⟩.”
-2. Transmission — ≥2 observable hops ending at a named `assets` exposure. Optional one `House (d Month):` view inside this chain as evidence, never as the conclusion.
-3. Falsifier — a number plus the series/release that retires the read. No falsifier from available data → do not publish the card.
-4. Horizon — `days` / `weeks` / `quarter` plus the event that ends it. Never “is the next print/settle/tape”.
+1. Judgment — the logic the tape implies. Do not restate Fact, Summary, Markets at a glance, or Closes. Do not cite the Fact article again as a second summary.
+2. One external view — exactly one named house or official already in the tape, format `House (d Month):`, inside the logic as evidence. Never a second view. Never a second summary of that article.
+3. Asset effect — how this theme affects this card's `assets`. If it moves no book, say so in one clause. Do not invent a spillover.
+4. Forward factor — what would change the theme. A falsifier. Not a calendar pointer. Not “the next print is…”.
 
 ```yaml
 - id: german-cpi-energy
@@ -126,20 +126,19 @@ So what (`mechanism`) is 3–5 sentences in this order, no preamble:
     - { label: Destatis, href: ... }
     - { label: 彭博财经早茶 Sep 3, href: ... }
   mechanism: >-
-    Bunds are now pricing a 2.9% German flash against a 2.8% July print and energy at 10.5%, so the change is a second month of re-acceleration.
-    A 2.9% flash with energy +10.5% transmitted into a sixth Bunds down-session, which is the Bunds exposure.
+    Energy is leading the CPI basket, so Bunds are paying an energy-led restriction premium.
     CICC (1 September): euro-area export orders are rising, which is evidence the ECB can stay restrictive.
-    The read retires if Destatis reprints flash CPI at or below the 2.8% July rate.
-    Horizon is days, ending at the Destatis CPI finals.
+    That premium is the Bunds and EUR exposure.
+    The theme changes if energy stops leading the basket, or if the flash is revised back to the prior pace.
   trigger: Destatis flash CPI reprinting at or above 2.9% y/y with energy at or above 10.5%.
   invalidator: Destatis reprinting flash CPI at or below the 2.8% July rate.
   horizon: days
   status: new              # vs previous briefing: continuing / escalated / retired / new
 ```
 
-**Desk view.** One per card, optional — never pad. Named house or official with a date (GS, MS, JPM, BofA, Nomura, CICC, IEA, OPEC, Glassnode, IMF, BIS, a central banker). At most one third-party view, inside the transmission chain as evidence, never as the conclusion. Search CICC per force; 财经早茶 GS/MS/JPM lines; 见闻 sell-side; Glassnode inbox. Source in `keySources`. Two houses in one sentence only when they disagree.
+**Desk view.** Exactly one per card, from the tape — never pad a second, never invent a house. Named house or official with a date (GS, MS, JPM, BofA, Nomura, CICC, IEA, OPEC, Glassnode, IMF, BIS, a central banker, 财经早茶). Format `House (d Month):` inside the judgment as evidence, never as a second summary of the article. Search CICC per force; 财经早茶 GS/MS/JPM lines; 见闻 sell-side; Glassnode inbox. Source in `keySources`.
 
-Stay on this card’s books. Do not write “keep X on the other card”, “this is not the Y book”, or “rather than the ⟨other⟩ spillover”. Only numbers already in this card’s `fact` or `factSources`. Paragraph must add information `fact` does not contain. Banned phrases: "sets the next tape", "is the next print", "is the settle", "keeps the case alive", "takes … off the tape", "treating … as", "pricing some of the … back out", "room for", "still leaves … on the table", "worth watching". Banned opener: "A ⟨number⟩ ⟨thing⟩ next to a ⟨number⟩ ⟨thing⟩ is…". Banned tail: calendar event whose predicate is next print/settle/tape — move it into eventCalendar/watch.
+Stay on this card’s books. Do not write “keep X on the other card”, “this is not the Y book”, or “rather than the ⟨other⟩ spillover”. Only numbers already in this card’s `fact` or `factSources`. Paragraph must add logic `fact` does not contain — do not restate Fact, Summary, Markets at a glance, or Closes. Banned phrases: "sets the next tape", "is the next print", "is the settle", "keeps the case alive", "takes … off the tape", "treating … as", "pricing some of the … back out", "room for", "still leaves … on the table", "worth watching", "this card". Banned opener: "A ⟨number⟩ ⟨thing⟩ next to a ⟨number⟩ ⟨thing⟩ is…". Banned opener: "⟨asset⟩ is now pricing ⟨N⟩ against ⟨prior⟩". Banned tail: "Horizon is …, ending at …", or any calendar event whose predicate is the next print/settle/tape — that date lives in `eventCalendar` / `watch`, and `horizon` is only the field.
 
 `verify-briefing` fails dumps (fact not 1–3, so-what not 3–5, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, missing `trigger`/`invalidator`/`horizon`/`status`, no `House (d Month):` on any card). Unused prints → What changed. Sourcing caveats → `singleSource`. No CLAIM. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
 
