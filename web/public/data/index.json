@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-21T01:20:06.298Z",
-  "latest": "2026-09-21",
+  "generatedAt": "2026-09-22T05:59:22.412Z",
+  "latest": "2026-09-22",
   "briefings": [
+    {
+      "date": "2026-09-22",
+      "title": "Daily Financial Briefing",
+      "marketTone": "US cash closed higher after Brent settled at 100.34 and the official 10-year yield printed 4.96%. The S&P 500 closed at 7,764.70, up 1.5%. The 财经早茶 chart is AMD through a 1 trillion dollar market cap. Shanghai closed at 3949.91.",
+      "coverageWindow": "September 21–22, 2026"
+    },
     {
       "date": "2026-09-21",
       "title": "Daily Financial Briefing",
