@@ -84,8 +84,8 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Chart | `figures` (chart-of-day **only** if `bloomberg-$TODAY` PNG exists). Renders after Markets at a glance, before Themes. |
 | Key sources | `keySources` — **unique** prints/desk views only. Each row: `label`, `href`, `books[]` (asset-class ids it actually moves), `influence` (one line: the print and which book it changes). One href once. No Yahoo quote HTML. No second chip for a desk already used as the primary. |
 | Event calendar | `eventCalendar` windowStart=briefing date, windowEnd=Friday after the Friday-on-or-after (this week + next); ~8–20 dated rows; mainland China only on calendar; `watchItems: []` |
-| Global | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions` |
-| China | `chinaStance`, `chinaChanged`, `chinaImplies`, `chinaDivergences` |
+| Global | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions`. Closes already live in `marketDashboard` — do **not** repeat index/yield/oil/FX close prints in Global stance or What-changed. Keep any Global line that is not a repeated close (policy, diplomacy, ETF flow, desk color). |
+| China | `chinaStance`, `chinaChanged`, `chinaImplies`, `chinaDivergences`. Same rule: no repeated A/H or other close prints already on the Market closes tape. Keep non-close China lines (PBOC stance, working-level talks, listings, geopolitics). |
 | Sources | Renders `keySources` classified by book. `sources` = leftovers cited only on What-changed. `singleSource` = caveats. |
 | (not rendered) | `signals: []`. `assetClasses` / `assetFramework` — do **not** spend the run filling six books; the site does not show them. |
 
@@ -103,14 +103,14 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 ## Theme card
 
-One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: the logic, one external view inside it, which of this card's books it moves, and what would change the theme. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`. Do not end So what with the dated next print.
+One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: what matters, why (in words the cited sources would use), which of this card's books it moves, and what would change the theme. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`. Do not end So what with the dated next print.
 
 So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
 
-1. Judgment — the logic the tape implies. Do not restate Fact, Summary, Markets at a glance, or Closes. Do not cite the Fact article again as a second summary.
-2. One external view — exactly one named house or official already in the tape, format `House (d Month):`, inside the logic as evidence. Never a second view. Never a second summary of that article.
-3. Asset effect — how this theme affects this card's `assets`. If it moves no book, say so in one clause. Do not invent a spillover.
-4. Forward factor — what would change the theme. A falsifier. Not a calendar pointer. Not “the next print is…”.
+1. **Pivotal point + core logic** — in simple explicit sentences, state what the cited sources mean and why it matters. Use the words the source would use. Do not invent labels the articles do not use (`usage proxy`, `narrative multiple`, `meeting premium`, `profit cushion`, `disruption premium`, and the same pattern). Do not restate Fact, Summary, Markets at a glance, or Closes. Do not cite the Fact article again as a second summary.
+2. **One external view (only if it is the logic)** — at most one named house or official already in the captured sources, format `House (d Month):`, and only when that desk view *is* the logic of the card. Never invent a second article. Never a second summary of that article. Skip the desk sentence if no such view is already on the card.
+3. **Asset effect** — how this theme affects this card's `assets`. If it moves no book, say so in one clause. Do not invent a spillover.
+4. **Forward factor** — what would change the theme. A falsifier. Not a calendar pointer. Not “the next print is…”.
 
 ```yaml
 - id: german-cpi-energy
@@ -126,9 +126,9 @@ So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
     - { label: Destatis, href: ... }
     - { label: 彭博财经早茶 Sep 3, href: ... }
   mechanism: >-
-    Energy is leading the CPI basket, so Bunds are paying an energy-led restriction premium.
-    CICC (1 September): euro-area export orders are rising, which is evidence the ECB can stay restrictive.
-    That premium is the Bunds and EUR exposure.
+    Energy is leading the CPI basket, so Bunds are under pressure from that energy-led inflation.
+    CICC (1 September): euro-area export orders are rising, which is why the ECB can stay restrictive.
+    That is the Bunds and EUR exposure.
     The theme changes if energy stops leading the basket, or if the flash is revised back to the prior pace.
   trigger: Destatis flash CPI reprinting at or above 2.9% y/y with energy at or above 10.5%.
   invalidator: Destatis reprinting flash CPI at or below the 2.8% July rate.
@@ -136,15 +136,15 @@ So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
   status: new              # vs previous briefing: continuing / escalated / retired / new
 ```
 
-**Desk view.** Exactly one per card, from the tape — never pad a second, never invent a house. Named house or official with a date (GS, MS, JPM, BofA, Nomura, CICC, IEA, OPEC, Glassnode, IMF, BIS, a central banker, 财经早茶). Format `House (d Month):` inside the judgment as evidence, never as a second summary of the article. Search CICC per force; 财经早茶 GS/MS/JPM lines; 见闻 sell-side; Glassnode inbox. Source in `keySources`.
+**Desk view.** At most one per card, and only when it is already in the captured sources and it is the card's logic — never pad a second, never invent a house, never use a desk line as a second article summary. Named house or official with a date (GS, MS, JPM, BofA, Nomura, CICC, IEA, OPEC, Glassnode, IMF, BIS, a central banker, 财经早茶). Format `House (d Month):`. Search CICC per force; 财经早茶 GS/MS/JPM lines; 见闻 sell-side; Glassnode inbox. Source in `keySources`. Across the set, at least one card must carry a dated desk view (`verify-briefing`).
 
-Stay on this card’s books. Do not write “keep X on the other card”, “this is not the Y book”, or “rather than the ⟨other⟩ spillover”. Only numbers already in this card’s `fact` or `factSources`. Paragraph must add logic `fact` does not contain — do not restate Fact, Summary, Markets at a glance, or Closes. Banned phrases: "sets the next tape", "is the next print", "is the settle", "keeps the case alive", "takes … off the tape", "treating … as", "pricing some of the … back out", "room for", "still leaves … on the table", "worth watching", "this card". Banned opener: "A ⟨number⟩ ⟨thing⟩ next to a ⟨number⟩ ⟨thing⟩ is…". Banned opener: "⟨asset⟩ is now pricing ⟨N⟩ against ⟨prior⟩". Banned tail: "Horizon is …, ending at …", or any calendar event whose predicate is the next print/settle/tape — that date lives in `eventCalendar` / `watch`, and `horizon` is only the field.
+Stay on this card’s books. Do not write “keep X on the other card”, “this is not the Y book”, or “rather than the ⟨other⟩ spillover”. Only numbers already in this card’s `fact` or `factSources`. Paragraph must add logic `fact` does not contain — do not restate Fact, Summary, Markets at a glance, or Closes. Banned phrases: "sets the next tape", "is the next print", "is the settle", "keeps the case alive", "takes … off the tape", "treating … as", "pricing some of the … back out", "room for", "still leaves … on the table", "worth watching", "this card", "usage proxy", "narrative multiple", "meeting premium", "profit cushion", "disruption premium". Banned opener: "A ⟨number⟩ ⟨thing⟩ next to a ⟨number⟩ ⟨thing⟩ is…". Banned opener: "⟨asset⟩ is now pricing ⟨N⟩ against ⟨prior⟩". Banned tail: "Horizon is …, ending at …", or any calendar event whose predicate is the next print/settle/tape — that date lives in `eventCalendar` / `watch`, and `horizon` is only the field.
 
 `verify-briefing` fails dumps (fact not 1–3, so-what not 3–5, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, missing `trigger`/`invalidator`/`horizon`/`status`, no `House (d Month):` on any card). Unused prints → What changed. Sourcing caveats → `singleSource`. No CLAIM. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
 
 **Bitcoin:** `gn metric` if keyed; else inbox Week on Chain as desk view. Do not invent on-chain sizes.
 
-Self-check before PR: every **rendered** table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; BlockBeats four books on matching Themes or the miss named in `singleSource`; if a chart is present its PNG date is `$TODAY`; Themes titles/facts match that chart and today’s desk (no Theme citing yesterday’s PNG as 今日图表); every Theme fits the **Theme card** block above; `marketOverview` is today’s mail 市场一览 (Chinese, mail order — not 见闻 市场收报), and the page title is **Markets at a glance**; prose is complete sentences (not keyword stitches); the word CLAIM does not appear in the briefing YAML; no invented tape; no duplicate `keySources` href; every key source has `books` + `influence`.
+Self-check before PR: every **rendered** table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; BlockBeats four books on matching Themes or the miss named in `singleSource`; if a chart is present its PNG date is `$TODAY`; Themes titles/facts match that chart and today’s desk (no Theme citing yesterday’s PNG as 今日图表); every Theme fits the **Theme card** block above; `marketOverview` is today’s mail 市场一览 (Chinese, mail order — not 见闻 市场收报), and the page title is **Markets at a glance**; Global/China do not repeat close prints already on Market closes; prose is complete sentences (not keyword stitches); the word CLAIM does not appear in the briefing YAML; no invented tape; no duplicate `keySources` href; every key source has `books` + `influence`.
 
 Do not record a walkthrough video.
 ---
