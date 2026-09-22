@@ -1,8 +1,18 @@
 {
-  "at": "2026-09-21T05:44:11.247Z",
-  "briefingDate": "2026-09-21",
+  "at": "2026-09-22T05:41:29.320Z",
+  "briefingDate": "2026-09-22",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-22.md",
+      "subject": "彭博财经早茶:  中美对贸易休战延长存分歧；Meta智能体走红提振芯片股",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6376,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-22.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-22.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-21.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-08.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-07.md",
       "skipped": true
     }
   ],
@@ -149,11 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美加贸易战恐升级；马来西亚拟采用华为AI芯片",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-08.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：特朗普突然向沃什施压降息；中国大举补充金融机构资本",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-07.md"
     }
   ]
 }
