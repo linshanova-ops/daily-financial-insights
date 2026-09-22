@@ -20,6 +20,9 @@ const NUMBER = /\d[\d,]*\.\d+%?|\d+%|\d{1,3}(?:,\d{3})+/g;
 
 const DESK_VIEW = /\(\d{1,2} [A-Z][a-z]+\)[:：] /;
 
+const JARGON =
+  /narrative multiple|discount-rate relief|flow-built profit cushion|meeting premium|term premium|re-rate the/i;
+
 export function checkThemeCards(briefing) {
   const cards = Array.isArray(briefing.themeCards) ? briefing.themeCards : [];
   const problems = [];
@@ -38,6 +41,8 @@ export function checkThemeCards(briefing) {
     if (!String(c?.status || "").trim()) problems.push(`${id}: missing status`);
     const m = META.exec(String(c?.mechanism || ""));
     if (m) problems.push(`${id}: so-what is a sourcing caveat, not judgment: "${m[0]}"`);
+    const j = JARGON.exec(String(c?.mechanism || ""));
+    if (j) problems.push(`${id}: so-what uses jargon ("${j[0]}"); write plain logic`);
     for (const s of c?.factSources || []) {
       if (/finance\.yahoo\.com\/quote/.test(String(s?.href || ""))) {
         problems.push(`${id}: Yahoo quote HTML is not a print; inject levels stay in marketDashboard`);

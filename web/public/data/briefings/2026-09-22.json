@@ -355,7 +355,7 @@
           "href": "https://www.seattletimes.com/business/how-major-us-stock-indexes-fared-monday-9-21-2026/"
         }
       ],
-      "mechanism": "A free-chart rank is a usage proxy, and US equities just capitalized it as chip demand, which is a narrative multiple until accelerator orders confirm it. CICC (25 August): overseas AI remains in a high-prosperity phase, which is the desk evidence that a usage headline can still re-rate the chip sleeve. The exposure is US equities. The theme changes if accelerator orders fail to follow the ranking, or if the equity bid fades while the ranking holds.",
+      "mechanism": "Muse topping US free app charts told the market that people are actually using Meta's AI, not just watching a launch event. Investors treated that as fresh chip demand and bid the semiconductor group hard. CICC (25 August): overseas AI demand is still in a strong phase, which fits why a usage headline can lift the whole chip sleeve. This moves US equities. The read breaks if accelerator orders lag the app ranking, or if the equity bid fades while the ranking holds.",
       "trigger": "Nasdaq reprinting at or above 27,122.09 with AMD still through 1 trillion dollars.",
       "invalidator": "Nasdaq reprinting below 27,122.09.",
       "horizon": "days",
@@ -384,7 +384,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "The long end eased on the inflation channel while the front end sat still, so USTs repriced term premium and US equities got the discount-rate relief, with the policy path left unchanged. Saint Louis Fed (22 September): further hikes may still be needed to contain inflation, which is evidence the official bias stayed tight against that bid. The exposures are USTs and US equities. The theme changes if the front end starts to price further hikes, or if the long end cheapens while oil stays soft.",
+      "mechanism": "Falling oil eased inflation fears, so long-dated Treasury yields dropped while short rates barely moved. That mix helped stocks more than it signaled a Fed pivot. Saint Louis Fed (22 September): more rate hikes may still be needed to contain inflation, so the policy bias stayed tight even as bonds rallied. This hits USTs and US equities. The read reverses if short-end rates start pricing more hikes, or if long yields rise again while oil stays soft.",
       "trigger": "Official 10-year reprinting at or above 5.01%.",
       "invalidator": "Official 10-year reprinting below 4.96%.",
       "horizon": "days",
@@ -412,7 +412,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Crude is shedding a disruption premium because barrels are moving through the strait again, so the Oil book is marking shipping risk and leaving demand out of the explanation. 财经早茶 (22 September): Russia is set to extend its diesel export ban, which is evidence products can stay tight while that crude premium comes out. The exposure is Oil. The theme changes if Hormuz loadings stall or the diplomatic track breaks, which would put the disruption premium back into crude.",
+      "mechanism": "Oil fell for a fourth day because more Saudi barrels are moving through Hormuz and traders hope diplomacy on Iran may improve. The market is taking war-risk premium out of crude, not calling demand weak. 财经早茶 (22 September): Russia may extend its diesel export ban, so refined products can stay tight even as crude eases. This is the Oil book. Premium comes back if Hormuz loadings stall or the diplomatic track breaks.",
       "trigger": "Dated Brent reprinting at or below 100.34.",
       "invalidator": "Dated Brent reprinting above 100.34.",
       "horizon": "days",
@@ -440,7 +440,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Two inflow sessions have lifted spot through the ETF cohort's average cost, so BTC is holding a profit cushion built by flow. Nansen (22 September): that average cost is the holders' line, which is evidence the cushion is an entry price. The channel is the BTC book. The theme changes if ETF flow turns to outflow while spot holds above that cost, or if spot falls back through the cost and the cushion is gone.",
+      "mechanism": "Back-to-back US spot bitcoin ETF inflows helped push price above where many ETF holders got in. Holding above that average cost can keep dip-buying alive while flows stay positive. Nansen (22 September): the ETF-holder average cost line is the reference for that cushion. This is BTC. The setup fails if ETFs flip to outflows while price stays high, or price drops back through that average.",
       "trigger": "Cointelegraph bitcoin reprinting above 86,332 on a fresh US spot ETF inflow.",
       "invalidator": "Cointelegraph bitcoin reprinting below 86,332.",
       "horizon": "days",
@@ -465,7 +465,7 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "Equities have marked a meeting as scheduled, while the tariff clock still turns on an unsigned extension length, so the bid is a meeting premium with the term sheet open. 财经早茶 (22 September): the two sides want different lengths for the truce, which is evidence the open item is duration. A/H shares and US equities both carry that open term. The theme changes if an extension length is agreed, or if the length stays unsigned and the meeting premium comes out.",
+      "mechanism": "Markets have priced in the Xi visit, but the tariff truce still has no agreed extension length. Until that term is signed, the rally is hope for a deal while the term sheet stays open. 财经早茶 (22 September): Washington and Beijing want different truce durations, which is why the open issue is how long, not whether to talk. A/H shares and US equities both carry that uncertainty. The risk fades if a dated extension is announced, or returns if the visit ends with no term.",
       "trigger": "A dated truce-extension term printing on or before 25 September.",
       "invalidator": "The 23–25 September visit ending without a dated extension term.",
       "horizon": "days",
@@ -493,7 +493,7 @@
           "href": "https://www.zhitongcaijing.com/content/detail/1498699.html"
         }
       ],
-      "mechanism": "A/H shares are trading a risk bid on policy continuity: funding instruments are unchanged, and the symposium's live channel is foreign access. 第一财经 (21 September): opening was in the same remarks as the stance, which is evidence foreign access is the channel into the shares. The exposure is A/H shares. The theme changes if a rate, reserve-requirement, or liquidity instrument is added, or if the access language is withdrawn.",
+      "mechanism": "Domestic shares rose on steady policy messaging: no new rate or reserve- requirement cut, but the PBOC chief paired a moderately loose stance with a pledge to widen two-way market access for foreign institutions. 第一财经 (21 September): opening sat in the same remarks as the stance, so foreign access is the live policy channel for equities. A/H shares. Changes if Beijing adds a rate, RRR, or liquidity tool, or walks back the access language.",
       "trigger": "Shanghai reprinting at or above 3949.91.",
       "invalidator": "Shanghai reprinting below 3949.91.",
       "horizon": "days",
@@ -517,14 +517,14 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ],
-      "mechanism": "The call-rate guideline is a future funding rate, so JPY shows no hike premium and moves no separate book. 财经早茶 (22 September): G10 foreign exchange followed the dollar, which is evidence the yen's session was that dollar move. The asset effect on JPY is that absence of a hike premium. The theme changes if the yen starts to lead G10 once the guideline is the rate banks fund, or if the Bank of Japan sets a lower guideline.",
+      "mechanism": "The BOJ already voted to lift the call rate to 1.25%, but that level does not bind bank funding until 24 September. Until then, yen trading looks like broad dollar strength with little BOJ hike priced in. 财经早茶 (22 September): most G10 currencies fell against the dollar while yen lagged, which matches a dollar-led session. JPY shows little separate hike premium yet. That changes if yen leads G10 once the new guideline is live, or if the Bank of Japan signals a lower path.",
       "trigger": "Bank of Japan reprinting the call-rate guideline above 1.25%.",
       "invalidator": "Bank of Japan reprinting the call-rate guideline below 1.25%.",
       "horizon": "days",
       "status": "continuing"
     }
   ],
-  "globalRegime": "The official 10-year yield printed 4.96% and Brent settled at 100.34, leaving the S&P 500 at 7,764.70. AMD closed through 1 trillion dollars and the Nasdaq printed a 27,122.09 record. He Lifeng talks continue through 23 September ahead of Xi's 23–25 September visit.",
+  "globalRegime": "Fed speakers are still warning inflation may need more hikes while oil's four-day drop eased pressure on long-dated bonds. Meta's Muse app hit the top of US free charts and lifted chip sentiment ahead of He Lifeng's trade talks and Xi's 23–25 September US visit.",
   "globalChanged": [
     {
       "text": "美国贸易代表格里尔称中美在延长贸易休战安排的条款上仍存在分歧，暗示华府倾向于延长三至六个月。而有报道称北京希望延长更久",
@@ -619,65 +619,21 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ]
-    },
-    {
-      "text": "Boston 25 AP：标普涨1.5%报7764.70。道指涨0.7%报52048.83。纳指报27122.09。",
-      "sources": [
-        {
-          "label": "Boston 25 AP Monday wrap",
-          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
-        }
-      ]
-    },
-    {
-      "text": "US Treasury：官方9月21日曲线2年4.76%、10年4.96%、30年5.29%。",
-      "sources": [
-        {
-          "label": "U.S. Treasury curve",
-          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202609"
-        }
-      ]
-    },
-    {
-      "text": "Boston 25：布伦特结算100.34，跌3.4%。WTI结算95.78。",
-      "sources": [
-        {
-          "label": "Boston 25 AP Monday wrap",
-          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
-        },
-        {
-          "label": "Kiplinger Monday close",
-          "href": "https://www.kiplinger.com/investing/stocks/nasdaq-jumps-599-points-to-hit-a-new-high-stock-market-today"
-        }
-      ]
-    },
-    {
-      "text": "Cointelegraph：比特币盘中高点86332。律动：现货比特币ETF周五净流入4.330亿美元。",
-      "sources": [
-        {
-          "label": "Cointelegraph Monday bitcoin",
-          "href": "https://cointelegraph.com/markets/bitcoin-price-86k-analysis-sees-crypto-new-bull-market"
-        },
-        {
-          "label": "BlockBeats bitcoin squeeze",
-          "href": "https://www.theblockbeats.info/flash/368308"
-        }
-      ]
     }
   ],
   "globalImplies": [
     {
-      "text": "Do not read a 100.34 Brent settle as a finished supply recovery. The same oil channel still sits under a 10-year that printed 4.96%."
+      "text": "Softer crude is easing inflation pressure on bonds, but Fed speakers still argue rates may need to go higher — so the tape is not a clean pivot story."
     },
     {
-      "text": "CICC (25 August): overseas AI remains in a high-prosperity phase, which is why a 9.9% AMD close can sit next to a 27,122.09 Nasdaq record."
+      "text": "CICC (25 August): overseas AI remains in a high-prosperity phase, which fits why a usage headline can lift chip stocks even when macro policy sounds hawkish."
     },
     {
       "text": "财经早茶 (22 September): Greer still disagrees on the truce term, which is the near-term path the 23–25 September Xi visit still has to settle."
     }
   ],
   "globalTensions": "Official 10-year 4.96% versus AP session 4.95% versus Friday official 5.01%. Official 2-year 4.76% unchanged. AP 1.5% / 7,764.70 versus inbox 7,764.70 +1.5%. Cointelegraph 86,332 versus inbox 86,512.60 versus 律动 as high as 87,300. Boston 25 Brent 100.34 versus Kiplinger WTI 95.78. 见闻 AMD +9.9% versus 律动 more than 9% versus Kiplinger +10.0%.",
-  "chinaStance": "Shanghai closed at 3949.91 on 21 September, up 0.97%. Hang Seng closed at 25042.71, up 1.18%. Hang Seng Tech closed at 4423.29, up 0.4%. Pan Gongsheng restated a moderately loose stance and two-way opening. He Lifeng talks run through 23 September.",
+  "chinaStance": "Pan Gongsheng restated a moderately loose stance and two-way opening at a symposium with foreign financial institutions. He Lifeng's working-level trade talks with the United States run through 23 September ahead of Xi's US visit.",
   "chinaChanged": [
     {
       "text": "中国财政部副部长廖岷表示，周一在工作层继续和美国方面讨论人工智能、投资和贸易等议题，落实牵头人达成的共识",
@@ -685,10 +641,6 @@
         {
           "label": "彭博财经早茶 Sep 22",
           "href": "https://www.bloomberg.com/asia"
-        },
-        {
-          "label": "Boston 25 AP Monday wrap",
-          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
         }
       ]
     },
@@ -767,32 +719,14 @@
           "href": "https://www.bloomberg.com/asia"
         }
       ]
-    },
-    {
-      "text": "同花顺：9月21日沪指涨0.97%报3949.91；深成指涨0.65%；创业板指涨0.80%。",
-      "sources": [
-        {
-          "label": "同花顺 A股",
-          "href": "https://stock.10jqka.com.cn/20260921/c680135309.shtml"
-        }
-      ]
-    },
-    {
-      "text": "智通财经：9月21日恒指涨1.18%报25042.71。恒生科技涨0.4%报4423.29。",
-      "sources": [
-        {
-          "label": "智通财经 Hang Seng",
-          "href": "https://www.zhitongcaijing.com/content/detail/1498699.html"
-        }
-      ]
     }
   ],
   "chinaImplies": [
     {
-      "text": "A 3949.91 Shanghai close next to a moderately loose Pan Gongsheng restatement keeps the domestic activity book in front of the funds-rate spillover."
+      "text": "Pan Gongsheng's opening pledge keeps foreign access in the policy story while funding tools stay unchanged, so domestic shares trade policy tone more than a fresh liquidity injection."
     },
     {
-      "text": "The 23–25 September Xi visit still sits on Greer's unfinished truce term, which is why the New York working-level round and the Hang Seng 25042.71 close remain on the A/H book."
+      "text": "The 23–25 September Xi visit still sits on Greer's unfinished truce term, which is why the New York working-level round stays on the A/H book even when index levels look calm."
     }
   ],
   "chinaDivergences": "Shanghai +0.97% versus Hang Seng +1.18% versus an S&P +1.5% chip tape. 21 September A-share close versus 22 September 财经早茶. Mail 3–6 month truce term is Bloomberg-hub-only and is named in singleSource, not as a Theme digit.",
