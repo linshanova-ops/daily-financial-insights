@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-23T01:22:33.161Z",
+  "at": "2026-09-23T01:33:51.910Z",
   "briefingDate": "2026-09-23",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-23.md",
-      "subject": "彭博财经早茶:  特朗普称赞美伊会谈；中国AI数据安全调查",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6688,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-23.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-23.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶:  特朗普称赞美伊会谈；中国AI数据安全调查",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-23.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  中美对贸易休战延长存分歧；Meta智能体走红提振芯片股",
