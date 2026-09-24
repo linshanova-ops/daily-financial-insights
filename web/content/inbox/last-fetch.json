@@ -1,25 +1,17 @@
 {
-  "at": "2026-09-24T01:06:26.206Z",
+  "at": "2026-09-24T01:18:52.330Z",
   "briefingDate": "2026-09-24",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-24.md",
-      "subject": "彭博财经早茶:  中美贸易休战延长两月；习近平访美",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6879,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-24.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-24.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W39.md",
-      "subject": "Escape Velocity",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2314,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶:  中美贸易休战延长两月；习近平访美",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-24.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "Escape Velocity",
+      "path": "web/content/inbox/glassnode-insights/2026-W39.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  特朗普称赞美伊会谈；中国AI数据安全调查",
