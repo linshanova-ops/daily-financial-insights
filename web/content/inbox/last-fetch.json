@@ -1,8 +1,26 @@
 {
-  "at": "2026-09-23T05:24:50.558Z",
-  "briefingDate": "2026-09-23",
+  "at": "2026-09-24T01:06:26.206Z",
+  "briefingDate": "2026-09-24",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-24.md",
+      "subject": "彭博财经早茶:  中美贸易休战延长两月；习近平访美",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6879,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-24.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-24.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W39.md",
+      "subject": "Escape Velocity",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 2314,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-23.md",
@@ -26,11 +44,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-18.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W38.md",
       "skipped": true
     },
     {
@@ -62,11 +75,6 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-10.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-09.md",
-      "skipped": true
     }
   ],
   "skipped": [
@@ -96,9 +104,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-18.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Glassnode x Bybit: The State of Crypto Derivatives [New report]",
-      "path": "web/content/inbox/glassnode-insights/2026-W38.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -149,11 +157,6 @@
       "reason": "weekly-duplicate",
       "subject": "The Ceiling Everyone Can See",
       "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：美国袭击伊朗油轮；中国通胀料升温",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-09.md"
     }
   ]
 }
