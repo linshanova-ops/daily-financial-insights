@@ -1,16 +1,16 @@
 {
-  "at": "2026-09-24T05:42:45.104Z",
-  "briefingDate": "2026-09-24",
+  "at": "2026-09-25T01:05:56.312Z",
+  "briefingDate": "2026-09-25",
   "ok": true,
   "saved": [
     {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-24.md",
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W39.md",
       "skipped": true
     },
     {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W39.md",
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-24.md",
       "skipped": true
     },
     {
@@ -62,23 +62,23 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-11.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-10.md",
-      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "weekly-exists",
+      "subject": "A signal that caught the rally",
+      "path": "web/content/inbox/glassnode-insights/2026-W39.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  中美贸易休战延长两月；习近平访美",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-24.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Escape Velocity",
-      "path": "web/content/inbox/glassnode-insights/2026-W39.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -149,16 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美债回购未满上限；月之暗面被指蒸馏",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-11.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：苹果折叠屏手机亮相；美债回购力度逊预期",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-10.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "The Ceiling Everyone Can See",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
     }
   ]
 }
