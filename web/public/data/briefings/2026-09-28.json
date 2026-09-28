@@ -173,7 +173,7 @@
     },
     {
       "label": "Guggenheim 2026 US calendar",
-      "href": "https://www.guggenheiminvestments.com/services/advisor-resources/us-economic-calendar",
+      "href": "https://portal.guggenheiminvestments.com/services/advisor-resources/us-economic-calendar",
       "books": [
         "rates"
       ],
@@ -852,7 +852,7 @@
         "themeId": "ust-duration",
         "source": {
           "label": "Guggenheim 2026 US calendar",
-          "href": "https://www.guggenheiminvestments.com/services/advisor-resources/us-economic-calendar"
+          "href": "https://portal.guggenheiminvestments.com/services/advisor-resources/us-economic-calendar"
         }
       },
       {
@@ -891,7 +891,7 @@
         "themeId": "ust-duration",
         "source": {
           "label": "Guggenheim 2026 US calendar",
-          "href": "https://www.guggenheiminvestments.com/services/advisor-resources/us-economic-calendar"
+          "href": "https://portal.guggenheiminvestments.com/services/advisor-resources/us-economic-calendar"
         }
       },
       {
@@ -904,7 +904,7 @@
         "themeId": "ust-duration",
         "source": {
           "label": "Guggenheim 2026 US calendar",
-          "href": "https://www.guggenheiminvestments.com/services/advisor-resources/us-economic-calendar"
+          "href": "https://portal.guggenheiminvestments.com/services/advisor-resources/us-economic-calendar"
         }
       },
       {
