@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-25T01:14:06.794Z",
-  "latest": "2026-09-25",
+  "generatedAt": "2026-09-28T01:13:24.878Z",
+  "latest": "2026-09-28",
   "briefings": [
+    {
+      "date": "2026-09-28",
+      "title": "Daily Financial Briefing",
+      "marketTone": "The official 30-year yield rose to 5.49% while the 10-year eased to 5.17%. Brent settled at 104.32 after Friday's reopening hopes, and over the weekend Trump rejected Iran's Hormuz plan. The 财经早茶 chart is the US-China summit list, including a 300亿美元 reciprocal tariff arrangement. Mainland markets reopen with an overnight reverse-repo cap of 10000亿元.",
+      "coverageWindow": "September 25–28, 2026"
+    },
     {
       "date": "2026-09-25",
       "title": "Daily Financial Briefing",
