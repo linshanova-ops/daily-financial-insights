@@ -135,20 +135,12 @@
       "influence": "Overnight reverse repos from 28 September to 8 October, daily cap 10000亿元, up from 6000亿元."
     },
     {
-      "label": "上交所 休市安排",
-      "href": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20260915_10832273.shtml",
+      "label": "新浪 国庆休市",
+      "href": "https://finance.sina.com.cn/stock/s/2026-09-22/doc-inissiti8945678.shtml",
       "books": [
         "asia-equities"
       ],
-      "influence": "Shanghai closes 1–7 October and reopens 8 October."
-    },
-    {
-      "label": "中国经济网 港股通安排",
-      "href": "http://finance.ce.cn/stock/gsgdbd/202609/t20260918_3220093.shtml",
-      "books": [
-        "asia-equities"
-      ],
-      "influence": "Stock Connect is suspended 1–7 October."
+      "influence": "A-shares and Stock Connect are closed 1–7 October and reopen 8 October."
     },
     {
       "label": "彭博 Markets Daily China / 财经早茶",
@@ -831,8 +823,8 @@
         "event": "Shanghai Stock Exchange closed for National Day through 7 October",
         "themeId": "china-fiscal",
         "source": {
-          "label": "上交所 休市安排",
-          "href": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20260915_10832273.shtml"
+          "label": "新浪 国庆休市",
+          "href": "https://finance.sina.com.cn/stock/s/2026-09-22/doc-inissiti8945678.shtml"
         }
       },
       {
@@ -844,8 +836,8 @@
         "event": "Stock Connect suspended through 7 October",
         "themeId": "china-fiscal",
         "source": {
-          "label": "中国经济网 港股通安排",
-          "href": "http://finance.ce.cn/stock/gsgdbd/202609/t20260918_3220093.shtml"
+          "label": "新浪 国庆休市",
+          "href": "https://finance.sina.com.cn/stock/s/2026-09-22/doc-inissiti8945678.shtml"
         }
       },
       {
@@ -883,8 +875,8 @@
         "event": "Shanghai Stock Exchange reopens after National Day",
         "themeId": "china-fiscal",
         "source": {
-          "label": "上交所 休市安排",
-          "href": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20260915_10832273.shtml"
+          "label": "新浪 国庆休市",
+          "href": "https://finance.sina.com.cn/stock/s/2026-09-22/doc-inissiti8945678.shtml"
         }
       }
     ]
