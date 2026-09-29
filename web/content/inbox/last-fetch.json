@@ -1,17 +1,12 @@
 {
-  "at": "2026-09-29T01:02:08.334Z",
+  "at": "2026-09-29T01:17:31.906Z",
   "briefingDate": "2026-09-29",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-29.md",
-      "subject": "彭博财经早茶:  中国酝酿增量政策；美伊僵局持续",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6662,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-09-29.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-29.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -70,6 +65,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶:  中国酝酿增量政策；美伊僵局持续",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-29.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  美中峰会成果清单；伊朗重开海峡方案遭拒",
