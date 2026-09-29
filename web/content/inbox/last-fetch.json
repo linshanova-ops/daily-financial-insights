@@ -1,8 +1,18 @@
 {
-  "at": "2026-09-28T06:10:50.955Z",
-  "briefingDate": "2026-09-28",
+  "at": "2026-09-29T01:02:08.334Z",
+  "briefingDate": "2026-09-29",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-29.md",
+      "subject": "彭博财经早茶:  中国酝酿增量政策；美伊僵局持续",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6662,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-09-29.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-09-29.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-28.md",
@@ -56,11 +66,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-15.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-14.md",
       "skipped": true
     }
   ],
@@ -139,11 +144,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：特朗普反对AI减速；中国新增人民币贷款逊预期",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-15.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：火热CPI扫清美联储加息障碍；AI巨头齐声呼吁放慢开发",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-14.md"
     }
   ]
 }
