@@ -74,4 +74,5 @@ End every report with:
 - **Pushing markdown without JSON** — always run `npm run verify-briefing` immediately before commit; CI fails if `latest.json` drifted from markdown.
 - **Leaving yesterday’s Themes** — after merging today’s 财经早茶, rewrite `themeCards` (and skim `signal`) from that tape. A Theme whose title or fact still names yesterday’s PNG or yesterday’s desk color is unpublished work.
 - **Chart write-up from a neighbor bullet** — open the 今日图表 PNG first. Title and analysis describe that image (series, units, what it shows). Never use an adjacent news bullet as the chart write-up. An empty 今日图表 section is not a caption.
+- If the 今日图表 body is empty, title and analysis come only from the opened PNG; do not reuse the neighboring section’s topic (30 Sep: consumer confidence on the USDA soy chart).
 - **Keyword-stitch copy** — grabbing three tokens from a source and joining them with slashes or hyphens is not a sentence. If a reader cannot say the line aloud, rewrite it.
