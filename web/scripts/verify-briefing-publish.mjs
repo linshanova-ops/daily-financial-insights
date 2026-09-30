@@ -18,6 +18,7 @@ import {
 } from "./lib/briefing-json-sync-check.mjs";
 import { checkLatestEventCalendarWindow } from "./lib/event-calendar-window-check.mjs";
 import { checkBloombergChartDate } from "./lib/bloomberg-chart-date-check.mjs";
+import { checkEmptyChartNotNeighbor } from "./lib/bloomberg-chart-neighbor-check.mjs";
 import { checkThemeCards } from "./lib/theme-card-check.mjs";
 import { checkGlobalChinaNoCloseDup } from "./lib/global-china-close-check.mjs";
 
@@ -90,6 +91,26 @@ function main() {
       process.exit(1);
     }
     console.log("[verify-briefing] bloomberg-chart-of-day date OK");
+
+    const fig = (latest.figures || []).find(
+      (f) => f?.id === "bloomberg-chart-of-day",
+    );
+    const mailPath = path.join(
+      webRoot,
+      "content/inbox/bloomberg-markets-daily-china",
+      `${latest.date}.md`,
+    );
+    if (fig && fs.existsSync(mailPath)) {
+      const neighborCheck = checkEmptyChartNotNeighbor(
+        fs.readFileSync(mailPath, "utf8"),
+        [fig.title, fig.analysis].filter(Boolean).join(" "),
+      );
+      if (!neighborCheck.ok) {
+        console.error(`\n[verify-briefing] FAIL — ${neighborCheck.message}\n`);
+        process.exit(1);
+      }
+      console.log("[verify-briefing] empty 今日图表 not filled from neighbor");
+    }
 
     const themeCheck = checkThemeCards(latest);
     if (!themeCheck.ok) {
