@@ -1,8 +1,16 @@
 {
-  "at": "2026-09-30T06:12:42.045Z",
-  "briefingDate": "2026-09-30",
+  "at": "2026-10-01T01:10:58.103Z",
+  "briefingDate": "2026-10-01",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W40.md",
+      "subject": "Strength Meets a Wall",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 2297,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-30.md",
@@ -16,11 +24,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-28.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W39.md",
       "skipped": true
     },
     {
@@ -57,11 +60,6 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-17.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-16.md",
-      "skipped": true
     }
   ],
   "skipped": [
@@ -81,9 +79,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-28.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "A signal that caught the rally",
-      "path": "web/content/inbox/glassnode-insights/2026-W39.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -129,16 +127,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：美联储三年来首次加息；华府获准对俄油买家征税",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-17.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Breakdown into Thin Support",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：美联储料加息；贝森特将会晤何立峰",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-16.md"
     }
   ]
 }
