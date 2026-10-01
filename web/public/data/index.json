@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-09-30T09:28:14.820Z",
-  "latest": "2026-09-30",
+  "generatedAt": "2026-10-01T01:25:34.925Z",
+  "latest": "2026-10-01",
   "briefings": [
+    {
+      "date": "2026-10-01",
+      "title": "Daily Financial Briefing",
+      "marketTone": "The official 30-year yield rose to 5.64% and the 10-year to 5.29%, while the 2-year eased to 4.88%. August core PCE was 3.0% on the year and second-quarter GDP was revised up to 2.2%. Brent settled at 103.53 after US-Iran talks stayed stuck on sequencing. Shanghai's last pre-holiday close was 3,842.19, up 0.31%, as the first-home subsidy starts today and manufacturing PMI printed 50.1%.",
+      "coverageWindow": "September 30–October 1, 2026"
+    },
     {
       "date": "2026-09-30",
       "title": "Daily Financial Briefing",
