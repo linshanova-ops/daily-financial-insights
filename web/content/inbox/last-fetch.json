@@ -1,17 +1,12 @@
 {
-  "at": "2026-10-02T01:13:48.317Z",
+  "at": "2026-10-02T01:27:26.153Z",
   "briefingDate": "2026-10-02",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-02.md",
-      "subject": "彭博财经早茶:  美国或向中东增兵；法国财政担忧",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6832,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-02.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-02.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -65,6 +60,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶:  美国或向中东增兵；法国财政担忧",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-02.md"
+    },
     {
       "reason": "weekly-exists",
       "subject": "Strength Meets a Wall",
