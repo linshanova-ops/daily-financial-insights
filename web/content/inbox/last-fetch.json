@@ -1,8 +1,18 @@
 {
-  "at": "2026-10-01T06:43:41.127Z",
-  "briefingDate": "2026-10-01",
+  "at": "2026-10-02T01:13:48.317Z",
+  "briefingDate": "2026-10-02",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-02.md",
+      "subject": "彭博财经早茶:  美国或向中东增兵；法国财政担忧",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6832,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-02.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-02.png"
+    },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W40.md",
@@ -51,11 +61,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-18.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-17.md",
       "skipped": true
     }
   ],
@@ -119,16 +124,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：日本央行料加息；美国或推迟产能过剩关税",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-18.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Glassnode x Bybit: The State of Crypto Derivatives [New report]",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：美联储三年来首次加息；华府获准对俄油买家征税",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-17.md"
     }
   ]
 }
