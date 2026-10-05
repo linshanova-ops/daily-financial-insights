@@ -1,17 +1,12 @@
 {
-  "at": "2026-10-05T01:01:28.405Z",
+  "at": "2026-10-05T01:12:48.699Z",
   "briefingDate": "2026-10-05",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-05.md",
-      "subject": "彭博财经早茶: 非农就业削弱美加息前景；七国集团联手降油价",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6761,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-05.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-05.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -60,6 +55,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 非农就业削弱美加息前景；七国集团联手降油价",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-05.md"
+    },
     {
       "reason": "weekly-exists",
       "subject": "What if an agent did the research for you?",
