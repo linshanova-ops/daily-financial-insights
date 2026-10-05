@@ -1,16 +1,26 @@
 {
-  "at": "2026-10-02T06:30:42.598Z",
-  "briefingDate": "2026-10-02",
+  "at": "2026-10-05T01:01:28.405Z",
+  "briefingDate": "2026-10-05",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-02.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-05.md",
+      "subject": "彭博财经早茶: 非农就业削弱美加息前景；七国集团联手降油价",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6761,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-05.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-05.png"
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W40.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-02.md",
       "skipped": true
     },
     {
@@ -47,28 +57,23 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-21.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-weekend-tea",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W38.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-18.md",
-      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "weekly-exists",
+      "subject": "What if an agent did the research for you?",
+      "path": "web/content/inbox/glassnode-insights/2026-W40.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  美国或向中东增兵；法国财政担忧",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-02.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Strength Meets a Wall",
-      "path": "web/content/inbox/glassnode-insights/2026-W40.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -114,16 +119,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：中美启动纽约经贸磋商；美国达成格陵兰安全协议",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-21.md"
-    },
-    {
-      "reason": "weekly-exists",
-      "subject": "彭博周末茶歇：美联储重启加息",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W38.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：日本央行料加息；美国或推迟产能过剩关税",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-18.md"
     }
   ]
 }
