@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-02T01:24:55.537Z",
-  "latest": "2026-10-02",
+  "generatedAt": "2026-10-05T01:10:25.665Z",
+  "latest": "2026-10-05",
   "briefings": [
+    {
+      "date": "2026-10-05",
+      "title": "Daily Financial Briefing",
+      "marketTone": "September payrolls rose only 29,000 and the unemployment rate was 4.2%, but the official 30-year yield still finished at 5.63%. The S&P 500 rose 0.7% to 7,722.72. November WTI settled at 91.11 after the G7 set a 100 million barrel release, while December Brent held at 102.25. Euro-area flash inflation printed 3.8%, with energy at 18.8%.",
+      "coverageWindow": "October 2–5, 2026"
+    },
     {
       "date": "2026-10-02",
       "title": "Daily Financial Briefing",
