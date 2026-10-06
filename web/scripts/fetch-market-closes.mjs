@@ -19,6 +19,7 @@ import {
   parseUsDate,
   unixToDateString,
   withYahooMetaFallback,
+  yahooPrevIsUsable,
 } from "./lib/market-closes-format.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -72,6 +73,21 @@ function yahooSource(symbol, label) {
   };
 }
 
+function priorPublishedClose(rowId, lastClose) {
+  // ponytail: scans briefing files newest-first. Fine until the dashboard folder is huge.
+  const dir = path.join(__dirname, "../content/briefings");
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".md")).sort().reverse();
+  for (const file of files) {
+    const parsed = matter(fs.readFileSync(path.join(dir, file), "utf8"));
+    const rows = (parsed.data.marketDashboard?.groups || []).flatMap((g) => g.rows || []);
+    const row = rows.find((r) => r.id === rowId);
+    if (!row?.latest) continue;
+    const n = Number(String(row.latest).replace(/[$,%]/g, "").replace(/,/g, ""));
+    if (Number.isFinite(n) && yahooPrevIsUsable(n, lastClose)) return n;
+  }
+  return null;
+}
+
 async function rowFromYahoo({
   id,
   asset,
@@ -81,7 +97,11 @@ async function rowFromYahoo({
   suffix = "",
   sourceLabel,
 }) {
-  const { prev, last } = await yahooPair(symbol);
+  let { prev, last } = await yahooPair(symbol);
+  if (!prev || !yahooPrevIsUsable(prev.c, last.c)) {
+    const prior = priorPublishedClose(id, last.c);
+    if (prior != null) prev = { c: prior, t: last.t - 86400 };
+  }
   const latest = formatLevel(last.c, { decimals, prefix, suffix });
   const change = prev ? formatPctChange(prev.c, last.c) : null;
   return {
