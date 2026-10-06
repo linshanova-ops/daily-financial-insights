@@ -9,6 +9,7 @@ import {
   parseUsDate,
   withYahooMetaFallback,
   unixToDateString,
+  yahooPrevIsUsable,
 } from "./market-closes-format.mjs";
 
 describe("market-closes-format", () => {
@@ -68,5 +69,19 @@ describe("market-closes-format", () => {
       { t: 1789709126, c: 4390.16 },
     ]);
     assert.equal(formatPctChange(result[0].c, result[1].c), "+1.84%");
+  });
+
+  it("does not seed a previous close that is the same bar", () => {
+    const pairs = [{ t: 1791187706, c: 4183.68017578125 }];
+    assert.deepEqual(
+      withYahooMetaFallback(pairs, {
+        regularMarketPrice: 4183.68,
+        regularMarketTime: 1791187706,
+        chartPreviousClose: 4183.68,
+      }),
+      pairs,
+    );
+    assert.equal(yahooPrevIsUsable(4183.68, 4183.68017578125), false);
+    assert.equal(yahooPrevIsUsable(4157.94, 4183.68), true);
   });
 });

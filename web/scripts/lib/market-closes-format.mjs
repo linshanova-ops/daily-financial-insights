@@ -63,11 +63,19 @@ export function withYahooMetaFallback(pairs, meta = {}) {
   }
   if (out.length === 1) {
     const prevClose = Number(meta.chartPreviousClose);
-    if (Number.isFinite(prevClose) && prevClose !== 0 && prevClose !== out[0].c) {
+    // ponytail: a previous close that prints as 0.00% is the same bar, not a prior session.
+    // Caller can then use the last published briefing level. Drop this when Yahoo sends history.
+    if (Number.isFinite(prevClose) && prevClose !== 0 && yahooPrevIsUsable(prevClose, out[0].c)) {
       out.unshift({ t: out[0].t - 86400, c: prevClose });
     }
   }
   return out;
+}
+
+/** False when the only "previous" close rounds to a 0.00% day change. */
+export function yahooPrevIsUsable(prev, last) {
+  const formatted = formatPctChange(prev, last);
+  return Boolean(formatted) && !/^([+−-])?0\.00%$/.test(formatted);
 }
 
 /** Parse MM/DD/YYYY treasury CSV date → YYYY-MM-DD */
