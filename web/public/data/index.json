@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-05T01:10:25.665Z",
-  "latest": "2026-10-05",
+  "generatedAt": "2026-10-06T01:23:31.745Z",
+  "latest": "2026-10-06",
   "briefings": [
+    {
+      "date": "2026-10-06",
+      "title": "Daily Financial Briefing",
+      "marketTone": "The Nasdaq rose 1.05% to a record 27,477.31 while the 30-year yield finished at 5.66% and the ISM services prices index hit 74.0. November WTI settled at 89.43 and December Brent at 100.32. The French 10-year premium over Germany narrowed to 138 basis points in the Monday afternoon reading. Brazil's equity index rose 7.70% after the first round.",
+      "coverageWindow": "October 5–6, 2026"
+    },
     {
       "date": "2026-10-05",
       "title": "Daily Financial Briefing",
