@@ -1,17 +1,12 @@
 {
-  "at": "2026-10-07T01:02:03.274Z",
+  "at": "2026-10-07T01:23:47.168Z",
   "briefingDate": "2026-10-07",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-07.md",
-      "subject": "彭博财经早茶: 美国关注俄疑似肺鼠疫；贝森特安抚债务担忧",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6362,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-07.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-07.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -60,6 +55,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 美国关注俄疑似肺鼠疫；贝森特安抚债务担忧",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-07.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 巴西资产飙升；德法提议对华贸易新武器",
