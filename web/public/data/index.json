@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-06T01:23:31.745Z",
-  "latest": "2026-10-06",
+  "generatedAt": "2026-10-07T01:19:44.242Z",
+  "latest": "2026-10-07",
   "briefings": [
+    {
+      "date": "2026-10-07",
+      "title": "Daily Financial Briefing",
+      "marketTone": "The S&P 500 closed at a record 7,818.93 while the 30-year yield fell to 5.64%. November WTI settled at 89.44 and October COMEX gold at 4,159.20. German factory orders fell 10.6% on the month.",
+      "coverageWindow": "October 6–7, 2026"
+    },
     {
       "date": "2026-10-06",
       "title": "Daily Financial Briefing",
