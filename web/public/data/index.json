@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-07T01:19:44.242Z",
-  "latest": "2026-10-07",
+  "generatedAt": "2026-10-08T01:18:32.386Z",
+  "latest": "2026-10-08",
   "briefings": [
+    {
+      "date": "2026-10-08",
+      "title": "Daily Financial Briefing",
+      "marketTone": "The 30-year yield rose to 5.67% and the S&P 500 fell 0.22% to 7,801.77. November WTI settled at 88.28 and October gold at 4,113.80. One-year consumer inflation expectations rose to 3.9%. The chart is the New York Fed survey.",
+      "coverageWindow": "October 7–8, 2026"
+    },
     {
       "date": "2026-10-07",
       "title": "Daily Financial Briefing",
