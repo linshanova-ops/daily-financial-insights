@@ -1,25 +1,17 @@
 {
-  "at": "2026-10-08T01:02:53.999Z",
+  "at": "2026-10-08T01:22:40.113Z",
   "briefingDate": "2026-10-08",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-08.md",
-      "subject": "彭博财经早茶:  欧盟拟限制中国混动车；美联储会议纪要",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6400,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-08.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-08.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W41.md",
-      "subject": "Recent buyers sold into Bitcoin's breakout",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2916,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -63,6 +55,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶:  欧盟拟限制中国混动车；美联储会议纪要",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-08.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "Recent buyers sold into Bitcoin's breakout",
+      "path": "web/content/inbox/glassnode-insights/2026-W41.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国关注俄疑似肺鼠疫；贝森特安抚债务担忧",
