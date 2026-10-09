@@ -1,0 +1,767 @@
+{
+  "date": "2026-07-16",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "July 15–16, 2026",
+  "publishedAt": "2026-07-16T12:25:23.000Z",
+  "keySources": [
+    {
+      "label": "TSMC — Q2 2026 results",
+      "href": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+    },
+    {
+      "label": "Bank of Korea — Jul 16 rate decision",
+      "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
+    },
+    {
+      "label": "NY Fed — Williams Jul 15 speech",
+      "href": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260715"
+    },
+    {
+      "label": "BLS — June PPI",
+      "href": "https://www.bls.gov/news.release/archives/ppi_07152026.htm"
+    },
+    {
+      "label": "BLS — June CPI",
+      "href": "https://www.bls.gov/news.release/archives/cpi_07142026.htm"
+    },
+    {
+      "label": "Yahoo Finance — Jul 15 US closes (^GSPC/^IXIC/^DJI/^RUT)",
+      "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "label": "CNBC — Brent/WTI Jul 15 settle",
+      "href": "https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html"
+    },
+    {
+      "label": "US Treasury — yield curve",
+      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+    },
+    {
+      "label": "NBS — China H1 / Q2 GDP",
+      "href": "https://www.stats.gov.cn/english/PressRelease/202607/t20260715_1964120.html"
+    },
+    {
+      "label": "Caixin — PBOC private lending",
+      "href": "https://www.caixinglobal.com/2026-07-16/chinas-central-bank-channels-760-billion-yuan-toward-private-sector-lending-102464637.html"
+    },
+    {
+      "label": "第一财经 — PBOC Jul 15 briefing",
+      "href": "https://www.yicai.com/news/103276618.html"
+    },
+    {
+      "label": "京报网 — Jul 16 A-share close",
+      "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
+    },
+    {
+      "label": "华尔街见闻 — Changxin IPO Jul 16",
+      "href": "https://wallstreetcn.com/articles/3776521"
+    },
+    {
+      "label": "The Standard — Hang Seng Jul 16",
+      "href": "https://www.thestandard.com.hk/finance/article/337431/Hang-Seng-Index-hits-over-one-month-high-on-Thursday-Alibaba-up-by-3pc"
+    },
+    {
+      "label": "Cointelegraph — BTC Jul 15",
+      "href": "https://cointelegraph.com/markets/bitcoin-hits-655k-as-more-surprise-us-inflation-data-sparks-three-week-btc-price-high"
+    },
+    {
+      "label": "Yahoo Finance — SOX",
+      "href": "https://finance.yahoo.com/quote/%5ESOX/history/"
+    },
+    {
+      "label": "Seoul Economic Daily — Kospi Jul 16",
+      "href": "https://en.sedaily.com/finance/2026/07/16/kospi-closes-down-46381-points-or-637-percent-at-682060"
+    }
+  ],
+  "figures": [
+    {
+      "id": "tsmc-revenue",
+      "title": "TSMC Q2 revenue",
+      "kind": "stat",
+      "display": "$40.20bn",
+      "delta": "Top of guide · GM 67.7%",
+      "note": "TSMC IR, Jul 16",
+      "source": {
+        "label": "TSMC IR",
+        "href": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      }
+    },
+    {
+      "id": "ppi-fd",
+      "title": "June PPI final demand",
+      "kind": "stat",
+      "display": "−0.3%",
+      "delta": "+5.5% y/y · m/m miss",
+      "note": "BLS, released Jul 15",
+      "source": {
+        "label": "BLS PPI",
+        "href": "https://www.bls.gov/news.release/archives/ppi_07152026.htm"
+      }
+    },
+    {
+      "id": "brent",
+      "title": "Brent settle",
+      "kind": "stat",
+      "display": "$84.95",
+      "delta": "+$0.22 · Jul 15 Sep futures",
+      "note": "CNBC settle",
+      "source": {
+        "label": "CNBC oil",
+        "href": "https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html"
+      }
+    },
+    {
+      "id": "treasury-10y",
+      "title": "US 10y Treasury",
+      "kind": "stat",
+      "display": "4.55%",
+      "delta": "Jul 15 daily curve",
+      "note": "US Treasury",
+      "source": {
+        "label": "US Treasury",
+        "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+      }
+    },
+    {
+      "id": "us-close-bars",
+      "title": "Jul 15 US session % change",
+      "kind": "bars",
+      "unit": "%",
+      "note": "Official closes — Yahoo Finance Jul 15 (SOX cited separately)",
+      "source": {
+        "label": "Yahoo Finance Jul 15 (^GSPC)",
+        "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+      },
+      "sources": [
+        {
+          "label": "Yahoo Finance Jul 15 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^RUT)",
+          "href": "https://finance.yahoo.com/quote/%5ERUT/"
+        }
+      ],
+      "points": [
+        {
+          "label": "Dow",
+          "value": 0.29
+        },
+        {
+          "label": "S&P",
+          "value": 0.38
+        },
+        {
+          "label": "Nasdaq",
+          "value": 0.62
+        },
+        {
+          "label": "Russell",
+          "value": 0.39
+        }
+      ]
+    },
+    {
+      "id": "asia-bars",
+      "title": "Jul 16 Shanghai close % change",
+      "kind": "bars",
+      "unit": "%",
+      "note": "Official close — 京报网 (Kospi/HSI cited separately with SED / The Standard)",
+      "source": {
+        "label": "京报网",
+        "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
+      },
+      "points": [
+        {
+          "label": "Shanghai",
+          "value": -1.85
+        }
+      ]
+    }
+  ],
+  "marketTone": "TSMC Q2 beat and raised FY26 revenue >40% confirmed AI demand, but H2 margin compression and BOK's first hike in 3.5 years sent Kospi −6.37%; Williams (Jul 15) said inflation peaked while Jul 15 CPI/PPI both missed and Brent settled $84.95.",
+  "summary": [
+    {
+      "text": "TSMC Q2 (Jul 16, IR): revenue $40.20bn at top of guide ($39.0–40.2bn), GM 67.7%, EPS $4.31; Q3 guide $44.6–45.8bn; FY26 revenue growth >40% and capex $60–64bn — but management warned H2 gross margins below H1 and ADRs fell ~4% on margin/capex cost fears.",
+      "sources": [
+        {
+          "label": "TSMC IR",
+          "href": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+        }
+      ]
+    },
+    {
+      "text": "Jul 16 Asia whipsaw: Kospi −6.37% to 6,820.60 (Samsung −8.77%, SK Hynix −11.53%) after Jul 15 +6.24% — BOK raised base rate +25bp to 2.75% (first hike since Jan 2023) and TSMC margin guide landed soft.",
+      "sources": [
+        {
+          "label": "Seoul Economic Daily",
+          "href": "https://en.sedaily.com/finance/2026/07/16/kospi-closes-down-46381-points-or-637-percent-at-682060"
+        },
+        {
+          "label": "Bank of Korea",
+          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
+        }
+      ]
+    },
+    {
+      "text": "Jul 15 US close (Yahoo Finance): S&P +0.38% to 7,572.40, Nasdaq +0.62% to 26,269.23 — second session of gains after June CPI/PPI both missed vs consensus; SOX −2.08% to 12,398.89 (Micron −8.02%).",
+      "sources": [
+        {
+          "label": "Yahoo Finance Jul 15 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^RUT)",
+          "href": "https://finance.yahoo.com/quote/%5ERUT/"
+        },
+        {
+          "label": "Yahoo Finance SOX",
+          "href": "https://finance.yahoo.com/quote/%5ESOX/history/"
+        }
+      ]
+    },
+    {
+      "text": "Williams (Jul 15, NY Fed): inflation 'unquestionably too high' at ~4% but 'encouraging reasons to expect inflation has peaked'; current 3.50%–3.75% stance 'well positioned'; GDP ~2–2¼% and inflation to ~3.25% by year-end — dovish filter after CPI/PPI misses.",
+      "sources": [
+        {
+          "label": "NY Fed",
+          "href": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260715"
+        }
+      ]
+    },
+    {
+      "text": "China Jul 16: Shanghai −1.85% (broke 3900), Shenzhen −1.97%, ChiNext −2.95% (京报网); Hang Seng +1.33% to ~25,008 (The Standard); PBOC >CNY760bn private relending YTD (Caixin); 长鑫科技 Changxin DRAM IPO subscription day (华尔街见闻 3776521).",
+      "sources": [
+        {
+          "label": "京报网",
+          "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
+        },
+        {
+          "label": "The Standard",
+          "href": "https://www.thestandard.com.hk/finance/article/337431/Hang-Seng-Index-hits-over-one-month-high-on-Thursday-Alibaba-up-by-3pc"
+        },
+        {
+          "label": "Caixin",
+          "href": "https://www.caixinglobal.com/2026-07-16/chinas-central-bank-channels-760-billion-yuan-toward-private-sector-lending-102464637.html"
+        },
+        {
+          "label": "华尔街见闻 Changxin",
+          "href": "https://wallstreetcn.com/articles/3776521"
+        }
+      ]
+    }
+  ],
+  "signal": "TSMC confirms AI demand (Q2 $40.2bn, FY26 >40% growth) but H2 margin compression + BOK hike to 2.75% whipsawed Kospi −6.37% after Jul 15 +6.24% — the semi beta is revenue-strong, margin-fragile, and rate-sensitive.",
+  "watch": "TSMC H2 gross-margin path and $60–64bn capex execution after the Jul 16 revenue beat but ~4% ADR drop — does Korea's −6.37% close mark a crowded-trade unwind or a buying dip?",
+  "globalRegime": "The Fed holds at 3.50%–3.75%. June CPI and PPI both missed consensus, and Williams (Jul 15) said inflation likely peaked with policy 'well positioned.' Jul 15 US indexes closed higher while SOX fell 2.08%. Brent settled $84.95 and WTI $79.60 as CENTCOM strikes and the Iran port blockade persisted. Jul 16 brought TSMC's record Q2 ($40.20bn) with an H2 margin warning and BOK's first hike since 2023 (+25bp to 2.75%), sending Kospi −6.37%.",
+  "globalChanged": [
+    {
+      "text": "TSMC Q2 (Jul 16, IR): net revenue $40.20bn (guide $39.0–40.2bn), GM 67.7%, operating margin 60.3%; Q3 revenue guide $44.6–45.8bn, GM 65.0%–67.0%; FY26 revenue growth >40% (prior >30%) and capex $60–64bn (prior $52–56bn); H2 gross margins expected below H1 on 2nm ramp/overseas fabs.",
+      "sources": [
+        {
+          "label": "TSMC IR",
+          "href": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+        }
+      ]
+    },
+    {
+      "text": "BOK (Jul 16): unanimous +25bp hike to 2.75% from 2.50% — first increase since Jan 2023; cites strong export/investment growth, inflation above target, and financial-stability risks (AP/BOK).",
+      "sources": [
+        {
+          "label": "Bank of Korea",
+          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
+        },
+        {
+          "label": "AP",
+          "href": "https://apnews.com/article/south-korea-rate-hike-inflation-semiconductor-fad756c430007b891ff275043fea1453"
+        }
+      ]
+    },
+    {
+      "text": "Jul 16 Kospi official close −6.37% to 6,820.60; Samsung −8.77% to 255,000 won; SK Hynix −11.53% to 1,842,000 won — reversing Jul 15 +6.24% gain (Seoul Economic Daily).",
+      "sources": [
+        {
+          "label": "Seoul Economic Daily",
+          "href": "https://en.sedaily.com/finance/2026/07/16/kospi-closes-down-46381-points-or-637-percent-at-682060"
+        }
+      ]
+    },
+    {
+      "text": "Jul 15 US official close (Yahoo Finance): S&P +0.38% to 7,572.40, Nasdaq +0.62% to 26,269.23, Dow +0.29% to 52,658.64; Russell 2000 +0.38% to 2,976.26.",
+      "sources": [
+        {
+          "label": "Yahoo Finance Jul 15 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^RUT)",
+          "href": "https://finance.yahoo.com/quote/%5ERUT/"
+        }
+      ]
+    },
+    {
+      "text": "Jul 15 rates/commodities: 10y Treasury 4.55% (Treasury curve, Jul 15); Brent Sep futures settled +$0.22 at $84.95; WTI Aug settled +$0.26 at $79.60 (CNBC).",
+      "sources": [
+        {
+          "label": "US Treasury",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "CNBC oil",
+          "href": "https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html"
+        }
+      ]
+    },
+    {
+      "text": "June PPI miss (BLS, Jul 15): final demand −0.3% m/m (vs unchanged consensus), +5.5% y/y — second straight disinflation print after Jul 14 CPI miss.",
+      "sources": [
+        {
+          "label": "BLS PPI",
+          "href": "https://www.bls.gov/news.release/archives/ppi_07152026.htm"
+        }
+      ]
+    },
+    {
+      "text": "Williams (Jul 15, NY Fed): three inflation drivers (tariffs, Middle East energy, AI investment); expects inflation peaked and to decline to ~3.25% by year-end; GDP ~2–2¼%; unemployment to edge to 4% by 2028.",
+      "sources": [
+        {
+          "label": "NY Fed",
+          "href": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260715"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "TSMC's revenue/capex raise validates AI demand, but H2 margin compression means the market prices profitability, not just top-line — Jul 16 Kospi −6.37% is the cross-asset read-through."
+    },
+    {
+      "text": "BOK tightening into a semi rally creates a regional rate-differential shock for Korea's leveraged chip positioning — especially after Jul 15 CPI relief lifted Kospi +6.24%."
+    },
+    {
+      "text": "Williams' Jul 15 dovish frame supports a Jul Fed hold, but Brent $84.95 settle and BOK hike remind that global inflation risks are not uniformly easing."
+    }
+  ],
+  "globalTensions": "TSMC revenue beat vs H2 margin warning; CPI/PPI misses vs Brent $84.95; Williams 'inflation peaked' vs BOK hawkish hike; Jul 15 US indices up while SOX −2.08%, then Jul 16 Kospi −6.37% despite AI demand confirmation.",
+  "chinaStance": "Moderately loose via quantity and structural relending, cautious on price — Jul 15 PBOC net +CNY500bn buyout RR and SCIO briefing reaffirmed 7-day OMO as main policy rate; Jul 16 Caixin reports >CNY760bn private-sector relending YTD and offshore-yuan market expansion; no LPR-cut signal while oil lifts import-inflation risk.",
+  "chinaChanged": [
+    {
+      "text": "Jul 16 A-share close (京报网/中新经纬): Shanghai −1.85% (broke 3900), Shenzhen −1.97%, ChiNext −2.95%; STAR 50 −4%+; turnover ~CNY2.42tn; storage/semis weak, pharma/media selective strength.",
+      "sources": [
+        {
+          "label": "京报网",
+          "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
+        }
+      ]
+    },
+    {
+      "text": "Jul 16 Hang Seng close +1.33% to ~25,008 (over one-month high); Hang Seng Tech +1.98% — H-shares diverged from onshore weakness (The Standard).",
+      "sources": [
+        {
+          "label": "The Standard",
+          "href": "https://www.thestandard.com.hk/finance/article/337431/Hang-Seng-Index-hits-over-one-month-high-on-Thursday-Alibaba-up-by-3pc"
+        }
+      ]
+    },
+    {
+      "text": "PBOC Jul 15 buyout RR: CNY1.4tn (14000亿元) 6-month operation; CNY900bn maturing → net +CNY500bn (5000亿元) (新华网).",
+      "sources": [
+        {
+          "label": "新华网",
+          "href": "https://www.news.cn/money/20260715/0a0a81d87ad8440cb1e9efd086be3aa8/c.html"
+        }
+      ]
+    },
+    {
+      "text": "PBOC Jul 15 SCIO briefing (第一财经): Deputy Governor Zou Lan — 7-day OMO remains the main policy rate / market pricing anchor; overnight OMO used for ultra-short liquidity; structural tools can expand if needed.",
+      "sources": [
+        {
+          "label": "第一财经",
+          "href": "https://www.yicai.com/news/103276618.html"
+        }
+      ]
+    },
+    {
+      "text": "Caixin (Jul 16): PBOC has channeled >CNY760bn (7600亿元) via private-sector relending and structural programs YTD (Jul 15 SCIO briefing).",
+      "sources": [
+        {
+          "label": "Caixin",
+          "href": "https://www.caixinglobal.com/2026-07-16/chinas-central-bank-channels-760-billion-yuan-toward-private-sector-lending-102464637.html"
+        }
+      ]
+    },
+    {
+      "text": "Caixin (Jul 16): PBOC outlines offshore-yuan liquidity plan — swap lines, cross-border flows, offshore repo/bond trading to deepen CNH market.",
+      "sources": [
+        {
+          "label": "Caixin offshore yuan",
+          "href": "https://www.caixinglobal.com/2026-07-16/pboc-moves-to-deepen-offshore-yuan-liquidity-broaden-asset-supply-102464635.html"
+        }
+      ]
+    },
+    {
+      "text": "Q2 GDP 4.3% y/y (NBS, Jul 15) vs ~4.5% consensus — weakest since Q4 2022; nominal GDP +5.9% y/y ended 12-quarter deflation streak (Caixin).",
+      "sources": [
+        {
+          "label": "NBS",
+          "href": "https://www.stats.gov.cn/english/PressRelease/202607/t20260715_1964120.html"
+        },
+        {
+          "label": "Caixin GDP",
+          "href": "https://www.caixinglobal.com/2026-07-15/chinas-growth-misses-but-ai-and-oil-prices-snap-its-3-year-deflation-streak-102464387.html"
+        }
+      ]
+    },
+    {
+      "text": "Jul 16: 长鑫科技 Changxin DRAM IPO online/offline subscription day (华尔街见闻) — STAR Market issue up to ~76.9亿股 (10% of post-deal share count) per the Jul 9 2026 prospectus/询价 announcement.",
+      "sources": [
+        {
+          "label": "华尔街见闻 Changxin",
+          "href": "https://wallstreetcn.com/articles/3776521"
+        }
+      ]
+    },
+    {
+      "text": "Jul 15 Bitcoin (Cointelegraph): BTC/USD reached ~$65,500 intraday — three-week high after the June PPI miss.",
+      "sources": [
+        {
+          "label": "Cointelegraph",
+          "href": "https://cointelegraph.com/markets/bitcoin-hits-655k-as-more-surprise-us-inflation-data-sparks-three-week-btc-price-high"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "Jul 16 onshore tape sold hard (Shanghai −1.85%, broke 3900) despite global AI headlines — domestic growth disappointment and storage/semis weakness still dominate A-share beta while H-shares (+1.33%) diverged."
+    },
+    {
+      "text": "CNY500bn buyout RR net plus >CNY760bn structural relending shows quantity easing is active, but Zou Lan's rate guidance and oil near $85 argue against an imminent LPR cut."
+    },
+    {
+      "text": "Changxin IPO and Nvidia H20 resumption (BlockBeats) are supply-chain positives, but Jul 16 A-share semis/PCB still lagged Korea's Jul 15 CPI/semi rip and Jul 16 unwind."
+    }
+  ],
+  "chinaDivergences": "Jul 15 Kospi +6.24% vs Shanghai −0.29%; Jul 16 Kospi −6.37% vs Shanghai −1.85% (broke 3900) while Hang Seng +1.33% — Korea's leveraged semi beta whipsaws; onshore weakness vs H-share strength. TSMC revenue beat vs H2 margin warning split AI bulls from margin bears globally.",
+  "assetFramework": [
+    {
+      "asset": "US equities (S&P 500 / Nasdaq)",
+      "regime": "Fed path via real yields — CPI/PPI relief vs oil/tariff tug; AI earnings as secondary support",
+      "driver": "Jul 15 close S&P +0.38% / Nasdaq +0.62%; Williams Jul 15 'inflation peaked'; TSMC Q2 beat Jul 16 with margin warning",
+      "driverSources": [
+        {
+          "label": "Yahoo Finance Jul 15 (^GSPC)",
+          "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^IXIC)",
+          "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^DJI)",
+          "href": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo Finance Jul 15 (^RUT)",
+          "href": "https://finance.yahoo.com/quote/%5ERUT/"
+        },
+        {
+          "label": "NY Fed",
+          "href": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260715"
+        },
+        {
+          "label": "TSMC IR",
+          "href": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+        }
+      ],
+      "read": "Rates-relief beta held Jul 15; Jul 16 TSMC revenue beat supports AI but margin guide caps enthusiasm — leadership trade, not blanket lift",
+      "invalidator": "Equities fall while 10y also falls for 2+ sessions — growth fear replacing the rates regime"
+    },
+    {
+      "asset": "US Treasuries (10y)",
+      "regime": "Inflation prints vs consensus + Fed communication — data-led range",
+      "driver": "10y 4.55% Jul 15 (Treasury); CPI/PPI both missed; Williams Jul 15 expects inflation peaked, glide to 3.25% by year-end",
+      "driverSources": [
+        {
+          "label": "US Treasury",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "NY Fed",
+          "href": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260715"
+        }
+      ],
+      "read": "Disinflation prints pulled yields lower Jul 14–15; Williams' dovish peak-inflation frame supports duration unless oil re-accelerates",
+      "invalidator": "10y back above 4.65% without a hot data print — term premium / fiscal regime"
+    },
+    {
+      "asset": "US dollar (DXY)",
+      "regime": "Rate differentials with a Hormuz safe-haven bid",
+      "driver": "CPI/PPI missed Jul 14–15; Brent settled $84.95 Jul 15; BOK hiked +25bp Jul 16",
+      "driverSources": [
+        {
+          "label": "CNBC oil",
+          "href": "https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html"
+        },
+        {
+          "label": "Bank of Korea",
+          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
+        }
+      ],
+      "read": "Softer Fed path vs oil/geo bid and regional hikes roughly offset — no decisive DXY break verified at Jul 15 close",
+      "invalidator": "DXY breaks lower while BOK signals further hikes and Brent >$85"
+    },
+    {
+      "asset": "Gold (COMEX)",
+      "regime": "Real-yield beta day-to-day with a CB/fiscal-hedge floor",
+      "driver": "Jul 15 COMEX settle −0.42% at $4,044.00; Jul 14 settle $4,061.10 (+1.60%)",
+      "driverSources": [
+        {
+          "label": "GoldSeek / Dow Jones",
+          "href": "https://goldseek.com/article/comex-gold-settles-042-lower-404400"
+        }
+      ],
+      "read": "Gave back part of the CPI bounce as oil stayed firm — classic tug between real yields and energy shock",
+      "invalidator": "Gold falls >3% while real yields decline — hedge-demand floor questioned"
+    },
+    {
+      "asset": "Oil (Brent)",
+      "regime": "Geopolitical supply risk — Hormuz blockade premium dominates demand signals",
+      "driver": "Brent Sep settled $84.95 Jul 15 (+$0.22); WTI Aug $79.60; CENTCOM strikes + Iran port blockade (CNBC)",
+      "driverSources": [
+        {
+          "label": "CNBC",
+          "href": "https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html"
+        }
+      ],
+      "read": "Supply-risk beta intact — overwriting June CPI energy relief for forward inflation",
+      "invalidator": "Brent settles below $78 with Hormuz crossings >40/day"
+    },
+    {
+      "asset": "China equities (Shanghai / ChiNext)",
+      "regime": "Domestic growth/liquidity vs selective global risk beta — A/H split",
+      "driver": "Shanghai −1.85% Jul 16 (京报网); Hang Seng +1.33%; Jul 15 Q2 GDP 4.3% miss; Changxin IPO subscription Jul 16",
+      "driverSources": [
+        {
+          "label": "京报网",
+          "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
+        },
+        {
+          "label": "The Standard",
+          "href": "https://www.thestandard.com.hk/finance/article/337431/Hang-Seng-Index-hits-over-one-month-high-on-Thursday-Alibaba-up-by-3pc"
+        },
+        {
+          "label": "NBS",
+          "href": "https://www.stats.gov.cn/english/PressRelease/202607/t20260715_1964120.html"
+        }
+      ],
+      "read": "Onshore sold off hard Jul 16 while H-shares rose — A/H split widened; Changxin IPO + semi weakness weighed A-shares",
+      "invalidator": "Shanghai reclaims 4,000 on rising volume with DR007 ≤1.40%"
+    },
+    {
+      "asset": "CNY",
+      "regime": "PBOC fix as policy signal; quantity easing without price easing",
+      "driver": "7-day OMO remains main policy rate (Yicai/Zou Lan); buyout RR net +CNY500bn; >CNY760bn private relending YTD; offshore-yuan expansion plan (Caixin)",
+      "driverSources": [
+        {
+          "label": "第一财经",
+          "href": "https://www.yicai.com/news/103276618.html"
+        },
+        {
+          "label": "Caixin",
+          "href": "https://www.caixinglobal.com/2026-07-16/chinas-central-bank-channels-760-billion-yuan-toward-private-sector-lending-102464637.html"
+        }
+      ],
+      "read": "Stable-fix regime — quantity/structural tools active, LPR pivot not signaled; CNH deepening is internationalization, not depreciation signal",
+      "invalidator": "Fix persistently weaker than model estimates for a week"
+    },
+    {
+      "asset": "Bitcoin",
+      "regime": "High-beta global liquidity asset in the oil→Fed chain",
+      "driver": "Jul 15 BTC ~$65,500 intraday high on PPI relief (Cointelegraph); Brent settled $84.95",
+      "driverSources": [
+        {
+          "label": "Cointelegraph",
+          "href": "https://cointelegraph.com/markets/bitcoin-hits-655k-as-more-surprise-us-inflation-data-sparks-three-week-btc-price-high"
+        },
+        {
+          "label": "CNBC oil",
+          "href": "https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html"
+        }
+      ],
+      "read": "Disinflation beta lifted BTC into the mid-$65k area even with Brent near $85 — still rates/liquidity-led, not a safe-haven decouple",
+      "invalidator": "BTC falls while September hike odds also fall and Brent eases — would break the rates-beta frame"
+    }
+  ],
+  "signals": [
+    {
+      "grade": "STRONG",
+      "name": "TSMC confirms AI demand but H2 margin compression bites",
+      "evidence": "Q2 revenue $40.20bn at guide ceiling, GM 67.7%; FY26 revenue >40%, capex $60–64bn; H2 GM below H1 warned; ADRs ~−4% (TSMC IR Jul 16).",
+      "evidenceSources": [
+        {
+          "label": "TSMC IR",
+          "href": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+        }
+      ],
+      "mechanism": "Revenue/capex raise validates AI cycle; margin guide shifts the falsifier from demand to profitability — crowded longs de-risk.",
+      "disprovedIf": "H2 GM holds ≥67% and Kospi reclaims 7,200 within five sessions."
+    },
+    {
+      "grade": "STRONG",
+      "name": "BOK first hike whipsaws Korea semi beta",
+      "evidence": "BOK +25bp to 2.75% Jul 16 unanimous; Kospi −6.37% (Samsung −8.77%, SK Hynix −11.53%) after Jul 15 +6.24% (BOK/Seoul Economic Daily).",
+      "evidenceSources": [
+        {
+          "label": "Bank of Korea",
+          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11062944&menuNo=400022"
+        },
+        {
+          "label": "Seoul Economic Daily",
+          "href": "https://en.sedaily.com/finance/2026/07/16/kospi-closes-down-46381-points-or-637-percent-at-682060"
+        }
+      ],
+      "mechanism": "Regional tightening into leveraged chip positioning amplifies profit-taking after CPI-relief rally — rate differential shock on top of TSMC margin fears.",
+      "disprovedIf": "Kospi recovers >50% of Jul 16 loss within three sessions with no further BOK tightening signal."
+    },
+    {
+      "grade": "STRONG",
+      "name": "Core disinflation confirmed — CPI and PPI both miss",
+      "evidence": "CPI core flat m/m / 2.6% y/y; PPI final demand −0.3% m/m / 5.5% y/y (BLS Jul 14–15).",
+      "evidenceSources": [
+        {
+          "label": "BLS CPI",
+          "href": "https://www.bls.gov/news.release/archives/cpi_07142026.htm"
+        },
+        {
+          "label": "BLS PPI",
+          "href": "https://www.bls.gov/news.release/archives/ppi_07152026.htm"
+        }
+      ],
+      "mechanism": "Back-to-back downside surprises vs consensus ease near-term re-hike urgency and support duration — unless officials dismiss prints as backward-looking vs oil/tariffs.",
+      "disprovedIf": "September hike probability reclaims >70% and 10y yields break above 4.65% within one week."
+    },
+    {
+      "grade": "MODERATE",
+      "name": "Williams dovish peak-inflation frame after soft prints",
+      "evidence": "Jul 15 speech: inflation ~4% but 'encouraging reasons to expect inflation has peaked'; GDP ~2–2¼%; inflation to ~3.25% by year-end; policy 'well positioned' (NY Fed).",
+      "evidenceSources": [
+        {
+          "label": "NY Fed",
+          "href": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260715"
+        }
+      ],
+      "mechanism": "NY Fed leadership sets interpretive frame — markets can weigh backward-looking CPI/PPI against forward oil/BOK tightening.",
+      "disprovedIf": "Multiple Fed speakers explicitly cite tariff goods inflation to keep September hike odds >60%."
+    },
+    {
+      "grade": "MODERATE",
+      "name": "Hormuz oil premium persists at Jul 15 settle",
+      "evidence": "Brent settled $84.95 Jul 15; CENTCOM strikes and Iran port blockade ongoing (CNBC).",
+      "evidenceSources": [
+        {
+          "label": "CNBC",
+          "href": "https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html"
+        }
+      ],
+      "mechanism": "Forward energy inflation risk limits how much June CPI/PPI can reprice the Fed path.",
+      "disprovedIf": "Brent settles below $78 for three sessions with Hormuz crossings >40/day."
+    },
+    {
+      "grade": "WEAK",
+      "name": "China quantity easing without A-share beta",
+      "evidence": "PBOC net +CNY500bn buyout RR Jul 15; >CNY760bn private relending YTD (Caixin); Shanghai −1.85% Jul 16 (京报网).",
+      "evidenceSources": [
+        {
+          "label": "Caixin",
+          "href": "https://www.caixinglobal.com/2026-07-16/chinas-central-bank-channels-760-billion-yuan-toward-private-sector-lending-102464637.html"
+        },
+        {
+          "label": "京报网",
+          "href": "https://news.bjd.com.cn/2026/07/16/11868551.shtml"
+        }
+      ],
+      "mechanism": "Liquidity lands but Q2 GDP miss keeps onshore growth beta constrained while Korea whipsaws on global semi flows.",
+      "disprovedIf": "CSI 300 reclaims 4,850 with northbound inflows >CNY5bn for two sessions."
+    }
+  ],
+  "watchItems": [
+    {
+      "priority": "HIGH",
+      "headline": "TSMC H2 gross-margin path and $60–64bn capex execution",
+      "why": "STRONG TSMC signal — revenue beat confirmed AI but margin guide triggered de-risking.",
+      "watch": "Q3 GM guide 65.0%–67.0%; management H2 below-H1 comment; TSMC ADR vs Jul 16 pre-market −4%.",
+      "trigger": "Further GM guide-down or capex overshoot knocks SOX below 12,200 and Kospi below 6,500.",
+      "invalidator": "Q3 GM prints ≥67% with stable H2 commentary and Kospi reclaims 7,200 within five sessions.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "HIGH",
+      "headline": "BOK tightening path after first hike",
+      "why": "STRONG Korea signal — +25bp Jul 16 whipsawed semis after Jul 15 CPI rally.",
+      "watch": "BOK forward guidance; Kospi vs 6,820.60 Jul 16 close; SK Hynix/Samsung vs Jul 16 lows.",
+      "trigger": "BOK signals another hike within two meetings and Kospi closes below 6,500.",
+      "invalidator": "BOK pauses with inflation forecast cut and Kospi holds 7,000+ for a week.",
+      "horizon": "weeks",
+      "status": "new"
+    },
+    {
+      "priority": "HIGH",
+      "headline": "Hormuz / Brent settle band",
+      "why": "MODERATE energy-premium signal that can overwrite June CPI/PPI.",
+      "watch": "Brent daily settle (Jul 15: $84.95); CENTCOM / Hormuz flow headlines.",
+      "trigger": "Brent settles above $86 for 3 sessions or crossings stay depressed.",
+      "invalidator": "Brent settle below $80 with crossings >40/day and no new escalation for 5 days.",
+      "horizon": "days",
+      "status": "continuing"
+    },
+    {
+      "priority": "MEDIUM",
+      "headline": "Williams peak-inflation frame vs BOK/oil",
+      "why": "MODERATE Fed-communication signal after CPI/PPI misses.",
+      "watch": "Fed speakers after Williams Jul 15; 10y vs 4.55% Jul 15; core PCE next print.",
+      "trigger": "Two+ Fed officials cite tariff/oil inflation to keep September hike odds >60%.",
+      "invalidator": "September hike odds fall below 40% with core PCE ≤0.2% m/m.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "priority": "LOW",
+      "headline": "Contrarian — Jul 15–16 semi whipsaw fully priced",
+      "why": "Kospi +6.24% then −6.37% with TSMC revenue beat = crowded positioning stress test.",
+      "watch": "Kospi giving back Jul 15 gain while TSMC FY26 guide holds >40%.",
+      "trigger": "Kospi below 6,700 with TSMC maintaining AI demand commentary = unwind, not regime break.",
+      "invalidator": "Kospi reclaims 7,200 with SOX >12,650 within five sessions.",
+      "horizon": "days",
+      "status": "new"
+    }
+  ],
+  "sources": "TSMC IR (Q2 2026), Bank of Korea (Jul 16 decision), NY Fed (Williams Jul 15), Bureau of Labor Statistics (June CPI/PPI archives), Yahoo Finance (Jul 15 US close); AP (BOK), US Treasury yield curve, CNBC (Jul 15 Brent/WTI settle), Yahoo Finance (SOX), NBS (H1/Q2 GDP), 新华网 (PBOC Jul 15 buyout RR), Caixin Global (Jul 15 GDP deflator; Jul 16 private relending/offshore yuan), 第一财经/Yicai (Jul 15 PBOC SCIO briefing), 京报网 (Jul 16 A-share close), The Standard (Hang Seng Jul 16), 华尔街见闻 (Changxin IPO 3776521), BlockBeats (Jul 15 Nvidia H20 flash), Cointelegraph (Jul 15 BTC), GoldSeek/Dow Jones (COMEX gold Jul 15 settle), Seoul Economic Daily (Kospi Jul 16).",
+  "singleSource": "Rejected 华尔街见闻 3751275 (Williams hawkish ~1pp tariff / GDP ~1%) — Jul 16 2025 article, not 2026 (use NY Fed wil260715). Rejected 华尔街见闻 3751205 (Shanghai −0.03% / Hang Seng −0.29% wrap reused for Jul 16 2026) — wrong-year A/H tape; replaced with 京报网 Shanghai −1.85% and The Standard Hang Seng +1.33%. Rejected BlockBeats 302924 BTC $116,800. Dropped Investing.com TSMC secondary (bot-blocked; TSMC IR is primary). Softened Yicai M2/1.40% prints not present in the fetchable page body.",
+  "slug": "2026-07-16"
+}
