@@ -1,8 +1,18 @@
 {
-  "at": "2026-10-08T06:54:16.184Z",
-  "briefingDate": "2026-10-08",
+  "at": "2026-10-09T01:04:16.188Z",
+  "briefingDate": "2026-10-09",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-09.md",
+      "subject": "彭博财经早茶: 美国称暂不打伊朗；人行反驳人民币低估论",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6520,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-09.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-09.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-08.md",
@@ -46,11 +56,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-28.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-24.md",
       "skipped": true
     }
   ],
@@ -109,16 +114,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  美中峰会成果清单；伊朗重开海峡方案遭拒",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-28.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "A signal that caught the rally",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶:  中美贸易休战延长两月；习近平访美",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-24.md"
     }
   ]
 }
