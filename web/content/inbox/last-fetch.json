@@ -1,17 +1,12 @@
 {
-  "at": "2026-10-09T01:04:16.188Z",
+  "at": "2026-10-09T01:26:41.339Z",
   "briefingDate": "2026-10-09",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-09.md",
-      "subject": "彭博财经早茶: 美国称暂不打伊朗；人行反驳人民币低估论",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6520,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-09.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-09.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -60,6 +55,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 美国称暂不打伊朗；人行反驳人民币低估论",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-09.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  欧盟拟限制中国混动车；美联储会议纪要",
