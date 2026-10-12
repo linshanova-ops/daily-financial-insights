@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-09T01:23:17.735Z",
-  "latest": "2026-10-09",
+  "generatedAt": "2026-10-12T01:24:43.721Z",
+  "latest": "2026-10-12",
   "briefings": [
+    {
+      "date": "2026-10-12",
+      "title": "Daily Financial Briefing",
+      "marketTone": "The 30-year yield held at 5.60% while the 2-year rose to 4.80%. November WTI settled at 91.85 and diesel futures fell to 4.64 dollars a gallon. October gold settled at 4191.00, through 4159.2. The Nasdaq rose to 27,366.17 and stayed under 27,538.69. Offshore yuan broke 6.70. The chart is panda bonds marked for overseas use.",
+      "coverageWindow": "October 9–12, 2026"
+    },
     {
       "date": "2026-10-09",
       "title": "Daily Financial Briefing",
