@@ -1,8 +1,18 @@
 {
-  "at": "2026-10-12T06:49:45.168Z",
-  "briefingDate": "2026-10-12",
+  "at": "2026-10-13T07:15:41.376Z",
+  "briefingDate": "2026-10-13",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-13.md",
+      "subject": "彭博财经早茶: 俄乌违反停火安排；Meta新模型亮相",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6404,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-13.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-13.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-12.md",
@@ -56,11 +66,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-29.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-28.md",
       "skipped": true
     }
   ],
@@ -129,11 +134,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  中国酝酿增量政策；美伊僵局持续",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-29.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶:  美中峰会成果清单；伊朗重开海峡方案遭拒",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-28.md"
     }
   ]
 }
