@@ -223,7 +223,7 @@
         "Oil"
       ],
       "status": "escalated",
-      "fact": "财经早茶：沙特面临新一轮无人机和巡航导弹袭击，至少十艘空载超级油轮避开波斯湾航线。 华尔街见闻：11月WTI涨2.06%至93.74美元/桶，12月布伦特涨1.84%至106.65美元/桶，收于两周高位；前一周WTI结算价为91.85美元/桶。",
+      "fact": "财经早茶：沙特面临新一轮无人机和巡航导弹袭击，至少十艘空载超级油轮避开波斯湾航线。 华尔街见闻：11月WTI涨2.06%至93.74美元/桶，12月布伦特涨1.84%至106.65美元/桶，收于两周高位。 华尔街见闻：前一周11月WTI结算价为91.85美元/桶。",
       "factSources": [
         {
           "label": "彭博财经早茶 Oct 13",
@@ -232,6 +232,10 @@
         {
           "label": "华尔街见闻 10月13日早餐",
           "href": "https://wallstreetcn.com/articles/3783479"
+        },
+        {
+          "label": "华尔街见闻 10月12日早餐",
+          "href": "https://wallstreetcn.com/articles/3783316"
         }
       ],
       "mechanism": "When empty VLCCs skip the Gulf, export schedules lose slack and buyers pay up on supply fear before barrels are missed. CICC (21 September): with stocks already low, each Hormuz headline adds more premium than the same news would have last spring. Oil carries the 93.74 WTI and 106.65 Brent closes on the tape. The theme changes if Gulf tanker traffic normalizes while WTI falls back under 91.85.",
@@ -419,18 +423,18 @@
         "Bitcoin"
       ],
       "status": "continuing",
-      "fact": "财经早茶：比特币报81894.84美元，跌1.3%。律动：Coinbase比特币溢价指数连续20日为负，暂报-0.1398%。",
+      "fact": "华尔街见闻：比特币最新报82625.12美元，较上周五基本持平。律动：Coinbase比特币溢价指数连续20日为负，暂报-0.1398%。",
       "factSources": [
         {
-          "label": "彭博财经早茶 Oct 13",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "华尔街见闻 10月13日早餐",
+          "href": "https://wallstreetcn.com/articles/3783479"
         },
         {
           "label": "律动 10月13日快讯",
           "href": "https://www.theblockbeats.info/newsflash/371200"
         }
       ],
-      "mechanism": "A negative Coinbase premium for 20 days means US buyers are not leading the tape even when headline prices hold. 律动 (13 October): the reading near -0.1398% is a recent low. Bitcoin carries the soft US bid alongside the 81894.84 desk quote. The theme changes if the premium turns positive for a week.",
+      "mechanism": "A negative Coinbase premium for 20 days means US buyers are not leading the tape even when headline prices hold. 律动 (13 October): the reading near -0.1398% is a recent low. Bitcoin carries the soft US bid alongside the 82625.12 quote on the tape. The theme changes if the premium turns positive for a week.",
       "trigger": "Coinbase premium staying negative for 20 consecutive days.",
       "invalidator": "Coinbase premium turning positive for seven straight days.",
       "horizon": "days"
@@ -676,7 +680,7 @@
       ]
     },
     {
-      "text": "财经早茶：有“非洲手机之王”之称的传音控股将香港招股价定在35.30港元，预计周四在港交所挂牌交易。",
+      "text": "财经早茶：有“非洲手机之王”之称的传音控股确定香港招股价，预计周四在港交所挂牌交易。",
       "sources": [
         {
           "label": "彭博财经早茶 Oct 13",
