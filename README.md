@@ -6,6 +6,8 @@ Cursor Agent Skills for the full daily financial research pipeline — from gath
 
 **Entry point (website):** [syravocado](https://linshanova-ops.github.io/daily-financial-insights/) — Next.js app in [`web/`](./web/) that renders briefings from `web/content/briefings/` and live-polls the JSON feed on `main`.
 
+**Agent handoff (full pipeline):** **[docs/WEBSITE_PIPELINE_HANDOFF.md](./docs/WEBSITE_PIPELINE_HANDOFF.md)** — UI sections, briefing schema, inbox/calendar/fund pipelines, verify gate, and a lean daily-update checklist for other agents.
+
 ## Public website (permanent)
 
 See **[docs/PUBLIC_SITE.md](./docs/PUBLIC_SITE.md)** for GitHub Pages and the weekday 09:00 China-time Cursor Automation.
