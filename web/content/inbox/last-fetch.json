@@ -1,8 +1,26 @@
 {
-  "at": "2026-10-13T08:32:32.178Z",
-  "briefingDate": "2026-10-13",
+  "at": "2026-10-14T01:04:29.771Z",
+  "briefingDate": "2026-10-14",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-14.md",
+      "subject": "彭博财经早茶: 中国重磅数据；华尔街大行财报",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6995,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-14.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-14.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W42.md",
+      "subject": "Q3 at Glassnode: Alpha Lab, orderbook data, and more",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 9297,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-13.md",
@@ -29,11 +47,6 @@
       "skipped": true
     },
     {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W41.md",
-      "skipped": true
-    },
-    {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-07.md",
       "skipped": true
@@ -56,11 +69,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-30.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-29.md",
       "skipped": true
     }
   ],
@@ -91,9 +99,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-08.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Recent buyers sold into Bitcoin's breakout",
-      "path": "web/content/inbox/glassnode-insights/2026-W41.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -129,11 +137,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  中国祭出政策组合拳；美国消费者信心大降",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-30.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶:  中国酝酿增量政策；美伊僵局持续",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-29.md"
     }
   ]
 }
