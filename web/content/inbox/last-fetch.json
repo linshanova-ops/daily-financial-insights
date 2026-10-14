@@ -1,25 +1,17 @@
 {
-  "at": "2026-10-14T01:04:29.771Z",
+  "at": "2026-10-14T01:28:06.161Z",
   "briefingDate": "2026-10-14",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-14.md",
-      "subject": "彭博财经早茶: 中国重磅数据；华尔街大行财报",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6995,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-14.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-14.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W42.md",
-      "subject": "Q3 at Glassnode: Alpha Lab, orderbook data, and more",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 9297,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -73,6 +65,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 中国重磅数据；华尔街大行财报",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-14.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "Q3 at Glassnode: Alpha Lab, orderbook data, and more",
+      "path": "web/content/inbox/glassnode-insights/2026-W42.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 俄乌违反停火安排；Meta新模型亮相",
