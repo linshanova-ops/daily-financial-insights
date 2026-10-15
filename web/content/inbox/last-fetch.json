@@ -1,16 +1,26 @@
 {
-  "at": "2026-10-14T05:40:52.337Z",
-  "briefingDate": "2026-10-14",
+  "at": "2026-10-15T01:05:57.174Z",
+  "briefingDate": "2026-10-15",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-14.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-15.md",
+      "subject": "彭博财经早茶:  强CPI重燃美加息担忧；中国信贷增速回升",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 7077,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-15.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-15.png"
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W42.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-14.md",
       "skipped": true
     },
     {
@@ -57,23 +67,23 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-02.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-30.md",
-      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "weekly-exists",
+      "subject": "The top buyers have turned Bitcoin back twice",
+      "path": "web/content/inbox/glassnode-insights/2026-W42.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 中国重磅数据；华尔街大行财报",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-14.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Q3 at Glassnode: Alpha Lab, orderbook data, and more",
-      "path": "web/content/inbox/glassnode-insights/2026-W42.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -129,16 +139,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  美国或向中东增兵；法国财政担忧",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-02.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Strength Meets a Wall",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶:  中国祭出政策组合拳；美国消费者信心大降",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-09-30.md"
     }
   ]
 }
