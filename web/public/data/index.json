@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-14T01:24:35.426Z",
-  "latest": "2026-10-14",
+  "generatedAt": "2026-10-15T01:27:43.916Z",
+  "latest": "2026-10-15",
   "briefings": [
+    {
+      "date": "2026-10-15",
+      "title": "Daily Financial Briefing",
+      "marketTone": "September CPI rose 3.7% from a year earlier, above the 3.6% survey, and the S&P 500 fell 1.11% to 7718.94 while the Nasdaq fell 1.88% to 26692.87. Philadelphia semiconductor stocks fell 4.3% for a sixth session. November WTI rose 1.01% to 95.09 as Brent rose to 106.06. The 2-year yield rose to 4.8101% and the 10-year yield eased to 5.1959%. The chart shows the 30-year mortgage contract rate back at 7.5%.",
+      "coverageWindow": "October 14–15, 2026"
+    },
     {
       "date": "2026-10-14",
       "title": "Daily Financial Briefing",
