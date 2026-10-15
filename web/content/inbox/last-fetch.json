@@ -1,17 +1,12 @@
 {
-  "at": "2026-10-15T01:05:57.174Z",
+  "at": "2026-10-15T01:32:40.564Z",
   "briefingDate": "2026-10-15",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-15.md",
-      "subject": "彭博财经早茶:  强CPI重燃美加息担忧；中国信贷增速回升",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 7077,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-15.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-15.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -70,6 +65,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶:  强CPI重燃美加息担忧；中国信贷增速回升",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-15.md"
+    },
     {
       "reason": "weekly-exists",
       "subject": "The top buyers have turned Bitcoin back twice",
