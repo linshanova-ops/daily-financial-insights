@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-15T01:31:02.075Z",
-  "latest": "2026-10-15",
+  "generatedAt": "2026-10-16T01:19:06.573Z",
+  "latest": "2026-10-16",
   "briefings": [
+    {
+      "date": "2026-10-16",
+      "title": "Daily Financial Briefing",
+      "marketTone": "September producer prices rose 6.3% from a year earlier, above the 5.4% survey, and copper fell while the 10-year yield fell to 5.0892%. The Dow rose 1.08% to 52177.69 and the Nasdaq rose 0.08% to 26713.03. WTI rose to 97.97 as Brent slipped to 105.92. The chart shows China's goods sales to the EU back near the top of the scale.",
+      "coverageWindow": "October 15–16, 2026"
+    },
     {
       "date": "2026-10-15",
       "title": "Daily Financial Briefing",
