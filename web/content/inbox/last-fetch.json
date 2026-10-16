@@ -1,17 +1,12 @@
 {
-  "at": "2026-10-16T01:03:45.628Z",
+  "at": "2026-10-16T01:22:28.023Z",
   "briefingDate": "2026-10-16",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-16.md",
-      "subject": "彭博财经早茶: 华府敦促释放更多储备油；欧盟或对华出新招",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6467,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-16.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-16.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 华府敦促释放更多储备油；欧盟或对华出新招",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-16.md"
+    },
     {
       "reason": "unmatched",
       "subject": "Glassnode x Coinbase Institutional: Charting Crypto Q4 2026 [New report]",
