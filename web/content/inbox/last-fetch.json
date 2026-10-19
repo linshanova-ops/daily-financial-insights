@@ -1,25 +1,17 @@
 {
-  "at": "2026-10-19T01:03:07.732Z",
+  "at": "2026-10-19T01:29:15.153Z",
   "briefingDate": "2026-10-19",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-19.md",
-      "subject": "彭博财经早茶：特朗普放松对俄制裁引发党内反弹；法国爆发严重骚乱",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 7515,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-19.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-19.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W42.md",
-      "subject": "彭博周末茶歇：沙特遇袭 中东冲突再次升级",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 8724,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：特朗普放松对俄制裁引发党内反弹；法国爆发严重骚乱",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-19.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：沙特遇袭 中东冲突再次升级",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W42.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 华府敦促释放更多储备油；欧盟或对华出新招",
