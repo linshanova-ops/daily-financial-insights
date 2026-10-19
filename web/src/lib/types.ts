@@ -39,6 +39,11 @@ export interface ThemeCard {
   factSources?: FactSource[];
   mechanism: string;
   /**
+   * Reader-facing Chinese field 「跟你的反应」 — after So what, before
+   * Horizon / Trigger / Invalidator. Optional; omit on archive cards.
+   */
+  readerReaction?: string;
+  /**
    * Structured watch fields, rendered on the card.
    * The date/time of the next print belongs in `eventCalendar` and the skim
    * `watch` string — never in `mechanism`.

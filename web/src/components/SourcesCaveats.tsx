@@ -143,9 +143,8 @@ export function SourcesCaveats({
           {singleSource}
         </p>
       </div>
-      <blockquote className="mt-8 border-l-2 border-forest pl-4 text-sm italic leading-relaxed text-ink-soft">
-        This report is research and information synthesis, not investment
-        advice. Verify figures against primary sources before acting on them.
+      <blockquote className="mt-8 border-l-2 border-forest pl-4 text-sm leading-relaxed text-ink-soft">
+        牛油果是市场信息整理与自我观察练习入口。不荐股、不承诺收益、不是投资顾问。文中「跟你的反应」只帮助你看见自己的情绪与手痒模式，不构成买卖建议。
       </blockquote>
     </section>
   );

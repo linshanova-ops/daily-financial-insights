@@ -107,35 +107,45 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                   <p className="mt-2 text-base leading-relaxed text-ink-soft">
                     {theme.mechanism}
                   </p>
-                  {theme.trigger || theme.invalidator || theme.horizon ? (
-                    <dl className="mt-4 grid gap-3 text-sm leading-relaxed text-ink-soft md:grid-cols-3">
-                      {theme.horizon ? (
-                        <div>
-                          <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
-                            Horizon
-                          </dt>
-                          <dd className="mt-1">{theme.horizon}</dd>
-                        </div>
-                      ) : null}
-                      {theme.trigger ? (
-                        <div>
-                          <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
-                            Trigger
-                          </dt>
-                          <dd className="mt-1">{theme.trigger}</dd>
-                        </div>
-                      ) : null}
-                      {theme.invalidator ? (
-                        <div>
-                          <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
-                            Invalidator
-                          </dt>
-                          <dd className="mt-1">{theme.invalidator}</dd>
-                        </div>
-                      ) : null}
-                    </dl>
-                  ) : null}
                 </div>
+                {theme.readerReaction?.trim() ? (
+                  <div>
+                    <p className="text-xs font-semibold tracking-[0.18em] text-ink">
+                      跟你的反应
+                    </p>
+                    <p className="mt-2 text-base leading-relaxed text-ink-soft">
+                      {theme.readerReaction.trim()}
+                    </p>
+                  </div>
+                ) : null}
+                {theme.trigger || theme.invalidator || theme.horizon ? (
+                  <dl className="grid gap-3 text-sm leading-relaxed text-ink-soft md:grid-cols-3">
+                    {theme.horizon ? (
+                      <div>
+                        <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
+                          Horizon
+                        </dt>
+                        <dd className="mt-1">{theme.horizon}</dd>
+                      </div>
+                    ) : null}
+                    {theme.trigger ? (
+                      <div>
+                        <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
+                          Trigger
+                        </dt>
+                        <dd className="mt-1">{theme.trigger}</dd>
+                      </div>
+                    ) : null}
+                    {theme.invalidator ? (
+                      <div>
+                        <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
+                          Invalidator
+                        </dt>
+                        <dd className="mt-1">{theme.invalidator}</dd>
+                      </div>
+                    ) : null}
+                  </dl>
+                ) : null}
               </div>
             </li>
           ))}
