@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-19T01:26:20.624Z",
-  "latest": "2026-10-19",
+  "generatedAt": "2026-10-20T01:26:05.864Z",
+  "latest": "2026-10-20",
   "briefings": [
+    {
+      "date": "2026-10-20",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Monday was a chip bounce with oil and yields still high. The Nasdaq rose 1.11% to 26430.886, WTI rose 2.22% to 103.66, and Brent eased 0.28% to 109.55. The 10-year yield rose to about 5.14%. The chart is the average S&P 500 year after a US midterm, drawn at 15%.",
+      "coverageWindow": "October 19–20, 2026"
+    },
     {
       "date": "2026-10-19",
       "title": "Daily Financial Briefing",
