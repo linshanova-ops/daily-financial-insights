@@ -1,8 +1,18 @@
 {
-  "at": "2026-10-19T05:32:50.197Z",
-  "briefingDate": "2026-10-19",
+  "at": "2026-10-20T01:06:22.526Z",
+  "briefingDate": "2026-10-20",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-20.md",
+      "subject": "彭博财经早茶: 法国骚乱渐息；人行拟换政策利率品种",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6673,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-20.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-20.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-19.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-06.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-05.md",
       "skipped": true
     }
   ],
@@ -149,11 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 巴西资产飙升；德法提议对华贸易新武器",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-06.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 非农就业削弱美加息前景；七国集团联手降油价",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-05.md"
     }
   ]
 }
