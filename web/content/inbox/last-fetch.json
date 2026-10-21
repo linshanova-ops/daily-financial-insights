@@ -1,8 +1,18 @@
 {
-  "at": "2026-10-20T05:35:32.293Z",
-  "briefingDate": "2026-10-20",
+  "at": "2026-10-21T01:05:59.154Z",
+  "briefingDate": "2026-10-21",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-21.md",
+      "subject": "彭博财经早茶: SpaceX和特斯拉讨论合并；中国新设数据央企",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6365,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-21.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-21.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-20.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-07.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-06.md",
       "skipped": true
     }
   ],
@@ -149,11 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国关注俄疑似肺鼠疫；贝森特安抚债务担忧",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-07.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 巴西资产飙升；德法提议对华贸易新武器",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-06.md"
     }
   ]
 }
