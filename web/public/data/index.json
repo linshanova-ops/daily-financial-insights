@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-20T01:26:05.864Z",
-  "latest": "2026-10-20",
+  "generatedAt": "2026-10-21T01:23:22.627Z",
+  "latest": "2026-10-21",
   "briefings": [
+    {
+      "date": "2026-10-21",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Tuesday was an earnings day for the Dow, a smaller oil settle after a denied Iran deal, and a record-low pending-home-sales print. The S&P 500 rose 0.28% to 7712.57, WTI fell 1.80% to 101.79, and the 10-year yield fell to 5.1126%. The France-Germany 10-year spread reached 153bp. The chart is the pending home sales index at its lowest point on the page.",
+      "coverageWindow": "October 20–21, 2026"
+    },
     {
       "date": "2026-10-20",
       "title": "Daily Financial Briefing",

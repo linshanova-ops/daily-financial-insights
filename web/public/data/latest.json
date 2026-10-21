@@ -1,39 +1,58 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "title": "Daily Financial Briefing",
-  "coverageWindow": "October 19–20, 2026",
-  "publishedAt": "2026-10-20T01:24:02.104Z",
+  "coverageWindow": "October 20–21, 2026",
+  "publishedAt": "2026-10-21T01:22:36.075Z",
   "keySources": [
     {
-      "label": "华尔街见闻 10月20日早餐",
-      "href": "https://wallstreetcn.com/articles/3783954",
+      "label": "华尔街见闻 10月21日早餐",
+      "href": "https://wallstreetcn.com/articles/3784074",
       "books": [
         "us-equities",
         "asia-equities",
         "rates",
-        "commodities"
+        "commodities",
+        "fx"
       ],
-      "influence": "Monday closes: S&P 500 7690.73, Nasdaq 26430.886, WTI 103.66, Brent 109.55, the 10-year yield about 5.14%, SOX +1.6%, and CoreWeave still down with a bond yield through 16%."
+      "influence": "Tuesday closes: S&P 500 7712.57, Dow 52495.88, Nasdaq 26424.82, WTI 101.79, Brent 108.79, the 10-year yield 5.1126%, pending home sales down 7.3% to 66, and the France-Germany 10-year spread at 153bp."
     },
     {
-      "label": "第一财经 10月19日潘功胜",
-      "href": "https://www.yicai.com/news/103399075.html",
+      "label": "新华社 10月20日美股",
+      "href": "https://english.news.cn/20261021/9692e53048304bf2b1db73025ad1608f/c.html",
+      "books": [
+        "us-equities",
+        "commodities",
+        "rates"
+      ],
+      "influence": "Xinhua: Dow 52495.88, S&P 500 7712.57, Nasdaq 26424.82, WTI 101.79, Brent 108.79, and pending home sales down 7.3%."
+    },
+    {
+      "label": "华尔街见闻 10月21日盘后",
+      "href": "https://wallstreetcn.com/articles/3783983",
       "books": [
         "rates",
-        "asia-equities"
+        "us-equities"
       ],
-      "influence": "Pan said the PBOC will study switching the main open-market operation from seven days to overnight, so the overnight repo rate becomes the policy rate."
+      "influence": "ING said the new US data almost all favored bonds. Housing starts fell 5.2% to 1.221 million, below the 1.305 million estimate. CoreWeave closed up 1.65% after touching 57.235."
     },
     {
-      "label": "财新 10月19日GDP",
-      "href": "https://economy.caixin.com/2026-10-19/102494668.html",
+      "label": "第一财经 10月21日LPR",
+      "href": "https://www.yicai.com/news/103401281.html",
+      "books": [
+        "rates"
+      ],
+      "influence": "October LPR was unchanged for a 17th month, 1-year 3.0% and 5-year 3.5%."
+    },
+    {
+      "label": "财新 10月21日数据集团",
+      "href": "https://finance.caixin.com/2026-10-21/102495440.html",
       "books": [
         "asia-equities"
       ],
-      "influence": "Third-quarter real GDP rose 4.5% y/y, the first three quarters rose 4.6%, and the quarter rose 1.2% q/q."
+      "influence": "Caixin: the state set up National Data Group and put it on the SASAC central-enterprise list."
     },
     {
-      "label": "彭博财经早茶 Oct 20",
+      "label": "彭博财经早茶 Oct 21",
       "href": "https://www.bloomberg.com/asia",
       "books": [
         "us-equities",
@@ -42,7 +61,7 @@
         "fx",
         "asia-equities"
       ],
-      "influence": "20 October 财经早茶. Chip bounce, French bonds leading the selloff, Brent still high on the war, and the PBOC overnight-rate plan."
+      "influence": "21 October 财经早茶. SpaceX beat and merger talks, a denied Iran deal, French bonds through 150bp at the close, and a record-low pending-sales index."
     },
     {
       "label": "CICC 石油霍尔木兹",
@@ -59,7 +78,7 @@
         "us-equities",
         "rates"
       ],
-      "influence": "CICC (12 October). A lasting funding squeeze has yet to show, but a short-term shock can still disturb AI fundraising."
+      "influence": "CICC (12 October). US financing demand is heavy, and higher real funding pressure has the market questioning AI leverage."
     },
     {
       "label": "CICC 法国预算",
@@ -68,119 +87,114 @@
         "rates",
         "fx"
       ],
-      "influence": "CICC (12 October). Concessions needed to pass the French budget can limit how far the fiscal premium comes back."
+      "influence": "CICC (12 October). The French budget can still pass, but how much fiscal adjustment survives decides how far the OAT premium comes back."
     },
     {
       "label": "CICC 金融街论坛",
-      "href": "http://mp.weixin.qq.com/s?__biz=Mzg3NjYwMjA3OQ==&mid=2247509427&idx=1&sn=f756b13b76b5b7260af888a660da0025&chksm=cee71c9147880348697ff5801fe2cdafec9a38edbab383def31ded8f0035efaabf7bb5d426f6&scene=0&xtrack=1#rd",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865343&idx=1&sn=0db6719efaa193c65d765697e53b9796&chksm=eb5918a812a8b7a4f5b41d0bf7898e28b53b078aec5e51de7bddfc392e33937c5db9412415f6&scene=0&xtrack=1#rd",
       "books": [
         "rates"
       ],
-      "influence": "CICC (20 October). Switching the main operation to overnight lines the policy rate up with the market rate. The note treats it as a framework step."
+      "influence": "CICC (20 October). With LPR unchanged, the framework change supports funding but does not have to pull long yields lower."
     },
     {
-      "label": "CICC 内需",
-      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247852961&idx=1&sn=f8bc3c6ac119ebe68b67ca79009bf965&chksm=eb7cfb4fb11b1f5c0ca48311fe69a0a7592c0c2d1e8934188fe20a62b19d97d95ffcf856d592&scene=0&xtrack=1#rd",
+      "label": "美联储议息日历",
+      "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "books": [
-        "asia-equities"
+        "rates"
       ],
-      "influence": "CICC (11 August). Household demand is still the weak leg, so a small growth uptick does not close the split with tech and exports."
-    },
-    {
-      "label": "华尔街见闻 一周展望",
-      "href": "https://wallstreetcn.com/articles/3783913",
-      "books": [
-        "rates",
-        "us-equities"
-      ],
-      "influence": "The week ahead is tech earnings with the Fed in its quiet period before the October meeting."
+      "influence": "The FOMC calendar lists a 27-28 October 2026 meeting. The decision is still ahead."
     }
   ],
   "figures": [
     {
       "id": "bloomberg-chart-of-day",
-      "title": "Average S&P 500 return in the year after a midterm is 15%",
+      "title": "Pending home sales index falls to the lowest point on the chart",
       "kind": "insight",
-      "imageSrc": "/inbox-charts/bloomberg-2026-10-20.png",
-      "analysis": "The image is one bar chart. Orange bars are the 12-month percent return after each US midterm. The horizontal axis runs from 1950 through the early 2020s. The vertical scale is marked at 0, 5, 10, 15, 20, 25, and 30. A dashed line is labeled as the average return of 15%. The tallest bar, in the mid-1950s, reaches the top of the scale near 30. A bar in the mid-1980s is only a sliver above zero. Most bars after 2000 fall short of the dashed line, and the final bar sits near 11. The subtitle says the average 12-month return after a midterm is 15%.",
+      "imageSrc": "/inbox-charts/bloomberg-2026-10-21.png",
+      "analysis": "The image is one orange line, labeled as the pending home sales index. The vertical scale runs from 60 to 130. The horizontal axis is marked at 2005, 2010, 2015, 2020, and 2025. The line peaks near the top of the scale in the mid-2000s, drops to the mid-70s around 2010, and spikes back near the top in 2020 and 2021. It then falls through 2022 and 2023 into the low 70s and moves sideways. The latest point is the lowest on the chart, just above the 60 line. The subtitle says the index fell 7.3% because mortgage rates are high. The source line names the National Association of Realtors.",
       "source": {
-        "label": "彭博财经早茶 Oct 20",
+        "label": "彭博财经早茶 Oct 21",
         "href": "https://www.bloomberg.com/asia"
       }
     }
   ],
-  "marketTone": "Monday was a chip bounce with oil and yields still high. The Nasdaq rose 1.11% to 26430.886, WTI rose 2.22% to 103.66, and Brent eased 0.28% to 109.55. The 10-year yield rose to about 5.14%. The chart is the average S&P 500 year after a US midterm, drawn at 15%.",
+  "marketTone": "Tuesday was an earnings day for the Dow, a smaller oil settle after a denied Iran deal, and a record-low pending-home-sales print. The S&P 500 rose 0.28% to 7712.57, WTI fell 1.80% to 101.79, and the 10-year yield fell to 5.1126%. The France-Germany 10-year spread reached 153bp. The chart is the pending home sales index at its lowest point on the page.",
   "summary": [
     {
-      "text": "华尔街见闻: the S&P 500 rose 0.41% to 7690.73, the Dow fell 0.07% to 51966.03, and the Nasdaq rose 1.11% to 26430.886.",
+      "text": "华尔街见闻: the Dow rose 1.02% to 52495.88, the S&P 500 rose 0.28% to 7712.57, and the Nasdaq fell 0.02% to 26424.82.",
       "sources": [
         {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
+        },
+        {
+          "label": "新华社 10月20日美股",
+          "href": "https://english.news.cn/20261021/9692e53048304bf2b1db73025ad1608f/c.html"
         }
       ]
     },
     {
-      "text": "华尔街见闻: November WTI rose 2.22% to 103.66 dollars a barrel and December Brent fell 0.28% to 109.55 dollars. The 10-year yield was about 5.14%, up about 7bp, and the 2-year yield was about 4.77%. COMEX gold fell 0.49% to 4139 dollars.",
+      "text": "华尔街见闻: November WTI fell 1.80% to 101.79 dollars a barrel and December Brent fell 0.69% to 108.79 dollars. The 10-year yield was 5.1126%, down 2.71bp, and the 2-year yield was 4.7804%, up 1.28bp.",
       "sources": [
         {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       ]
     },
     {
-      "text": "华尔街见闻: the Shanghai Composite rose 0.39% to 3730.92, the Shenzhen Component rose 0.13% to 11817.42, and the ChiNext index fell 0.94% to 2746.29. The Stoxx 600 fell 0.80% to 639.56.",
+      "text": "华尔街见闻: the Shanghai Composite rose 0.12% to 3735.37 and the ChiNext index fell 0.26% to 2739.20. The Hang Seng fell 1.32% to 23867.74 and the Hang Seng Tech index fell 1.52% to 4045.91. The Nikkei fell 1.3% to 64075.42 and the Kospi fell 3.7% to 5552.74.",
       "sources": [
         {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       ]
     },
     {
-      "text": "华尔街见闻: the Philadelphia semiconductor index rose 1.6% and ended an eight-session drop. CoreWeave fell more than 0.4%, and its unsecured bond yield moved through 16%.",
+      "text": "华尔街见闻: September pending home sales fell 7.3% to 66, the lowest since the series began in 2001. The France-Germany 10-year spread reached 153bp, with the French 10-year near 4.94% and the German 10-year at 3.43%.",
       "sources": [
         {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       ]
     }
   ],
-  "signal": "WTI at 103.66 and Brent at 109.55 are still a Strait tape, and the 10-year yield rose to about 5.14% with the barrel. Chips rose 1.6% for one session after eight down days. CoreWeave fell again and its bond yield is through 16%. French bonds sold off even as the curfews calmed the streets. China printed 4.5% real growth for the third quarter, and the PBOC is studying an overnight policy rate.",
-  "watch": "China publishes the 1-year and 5-year loan prime rates at 09:00 Beijing. Lane speaks at 12:15. The industry ministry briefs at 15:00. US housing starts, permits, and pending home sales are this evening. GM, GE Aerospace, and RTX report before the US open, and Netflix reports after the close. The FOMC decision is 02:00 Beijing on 29 October.",
+  "signal": "WTI at 101.79 and Brent at 108.79 are still a Strait tape after a denied deal knocked Brent off an intraday high above 110. Pending home sales fell 7.3% to 66, and the 10-year yield eased to 5.1126%. The France-Germany spread reached 153bp. Anthropic's half-year loss is above 807亿美元. The PBOC left the 1-year LPR at 3.0% and the 5-year at 3.5%.",
+  "watch": "Lane speaks at 12:15 Beijing and UK September CPI is at 14:00. Bailey speaks at 21:00. EIA crude inventories are at 22:30. Meta and Tesla report after the US close. The PBOC runs overnight reverse repos from 21 October through 2 November. The FOMC decision is 02:00 Beijing on 29 October.",
   "marketOverview": {
-    "asOfDate": "2026-10-20",
-    "note": "From the 20 October 财经早茶 市场一览, in mail order. Closes live in Market closes and the sourced summary.",
+    "asOfDate": "2026-10-21",
+    "note": "From the 21 October 财经早茶 市场一览, in mail order. Closes live in Market closes and the sourced summary.",
     "items": [
       {
         "label": "美国股市",
-        "text": "芯片股反弹提振大盘，AI盈利前景吸引逢低买入"
+        "text": "标普500指数小幅收高，其ETF盘后续涨，受SpaceX强劲财报提振"
       },
       {
         "label": "中概股",
-        "text": "金龙中国指数下跌，京东和万国数据对指数拖累最大"
+        "text": "金龙中国指数两连跌后反弹，Maase和小鹏对指数贡献最大"
       },
       {
         "label": "美国债市",
-        "text": "国债小幅走低，油价上涨与风险偏好回升带来压力"
+        "text": "国债涨跌不一，长期国债走高推动收益率曲线趋平"
       },
       {
         "label": "外汇市场",
-        "text": "彭博美元指数小幅反弹，法国严重骚乱令欧元承压"
+        "text": "彭博美元指数触及三周低点，受油价回落影响；境内外人民币录得四连涨"
       },
       {
         "label": "欧洲股债",
-        "text": "法国国债领跌全球债市，10年期法德利差走阔10个基点。法国局势动荡拖累欧洲股市下跌，焦点转向企业财报"
+        "text": "德国国债领涨欧债，市场下调对欧洲央行加息幅度预期。欧洲股市持稳，医疗保健和旅游休闲板块表现较好"
       },
       {
         "label": "能源",
-        "text": "布伦特原油高位震荡，中东战事再度升温加剧供应风险，但技术阻力限制涨势"
+        "text": "原油期货下跌，交易员研判美伊谈判进展相关报道"
       },
       {
         "label": "金属",
-        "text": "伦敦期铜走低，投资者对铜牛市心生警惕。金价小幅下跌"
+        "text": "金价小幅下跌，交易员评估美联储利率走向及美伊谈判进展。伦敦期铜小幅反弹"
       }
     ],
     "source": {
@@ -190,582 +204,536 @@
   },
   "themeCards": [
     {
-      "id": "hormuz-tankers",
-      "title": "WTI rose for an eighth day while Brent stayed near 110",
+      "id": "housing-pending",
+      "title": "Pending home sales fell to a series low and long yields eased",
       "grade": "STRONG",
       "assets": [
-        "Oil",
         "USTs"
       ],
-      "status": "escalated",
-      "fact": "华尔街见闻：WTI 11月原油期货收涨2.22%，报103.66美元/桶；布伦特12月原油期货收跌0.28%，报109.55美元/桶。 到债市尾盘，美国10年期基准国债收益率约为5.14%，日内升约7个基点。",
+      "status": "new",
+      "fact": "华尔街见闻：9月成屋待售合同签约指数骤降7.3%至66，创2001年有记录以来最低。 10年期收益率跌2.71个基点，报5.1126%。",
       "factSources": [
         {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
+        },
+        {
+          "label": "新华社 10月20日美股",
+          "href": "https://english.news.cn/20261021/9692e53048304bf2b1db73025ad1608f/c.html"
         }
       ],
-      "mechanism": "WTI's eighth up day to 103.66, with Brent still at 109.55, says the Strait risk is still in the barrel after Brent slipped. CICC (20 July): months of inventory draws and a nearly finished reserve release leave a thinner buffer, so a fresh stop can lift the premium faster. Oil carries the 103.66 and 109.55 settles, and Treasuries carry the 5.14% yield. The theme changes if tanker attacks stop and Brent falls back through 109.55.",
-      "trigger": "WTI at 103.66 on an eighth up day, Brent at 109.55, and the 10-year yield at 5.14%.",
-      "invalidator": "Tanker attacks stop and Brent falls back through 109.55.",
+      "mechanism": "Pending sales at 66 after a 7.3% drop is a high-rate freeze in the existing-home market, and the 10-year yield fell 2.71bp to 5.1126%. ING (21 October): the new batch of US data almost all favored bonds. Treasuries carry the 5.1126% yield. The theme changes if the pending-sales index rises back through 66.",
+      "trigger": "Pending home sales at 66 after a 7.3% drop, with the 10-year yield at 5.1126%.",
+      "invalidator": "The pending-sales index rises back through 66.",
       "horizon": "days"
     },
     {
-      "id": "semis-selloff",
-      "title": "One up day has not finished the chip slide",
+      "id": "hormuz-tankers",
+      "title": "Oil settled lower after a denied Iran deal and stayed high",
       "grade": "STRONG",
       "assets": [
-        "Nasdaq"
+        "Oil"
       ],
       "status": "continuing",
-      "fact": "华尔街见闻：费城半导体指数收涨1.6%，终结八连跌。 纳指收涨1.11%，报26430.886点。",
+      "fact": "华尔街见闻：WTI 11月合约跌1.80%，报101.79美元/桶；布伦特12月合约跌0.69%，报108.79美元/桶。 盘中布伦特曾冲上110美元，并因谈判消息一度跌逾3%。",
       "factSources": [
         {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
+        },
+        {
+          "label": "新华社 10月20日美股",
+          "href": "https://english.news.cn/20261021/9692e53048304bf2b1db73025ad1608f/c.html"
         }
       ],
-      "mechanism": "One up day after eight down days leaves the slide unfinished. 财经早茶 (20 October): hedge funds cut technology at the fastest pace in at least ten years over the five sessions through 15 October, and they still hold a large book. The Nasdaq carries the 1.11% rise to 26430.886. The theme changes if the Philadelphia semiconductor index posts a second up session.",
-      "trigger": "A 1.6% up day that ends an eight-session drop, with the Nasdaq at 26430.886.",
-      "invalidator": "Two consecutive up sessions in the Philadelphia semiconductor index.",
+      "mechanism": "A denied deal pulled Brent off an intraday high above 110, and the closes at 101.79 and 108.79 still leave a war premium in the barrel. CICC (20 July): months of inventory draws and a nearly finished reserve release leave a thinner buffer, so a fresh stop can lift that premium faster. Oil carries the 101.79 and 108.79 settles. The theme changes if tanker attacks stop and Brent settles below 108.79.",
+      "trigger": "WTI at 101.79 and Brent at 108.79 after an intraday high above 110.",
+      "invalidator": "Tanker attacks stop and Brent settles below 108.79.",
+      "horizon": "days"
+    },
+    {
+      "id": "france-oats",
+      "title": "The France-Germany spread closed at 153bp",
+      "grade": "MODERATE",
+      "assets": [
+        "OATs"
+      ],
+      "status": "escalated",
+      "fact": "华尔街见闻：10月20日法德10年期国债利差升破150个基点、达到153个基点，为10月2日以来最高。 法国10年期国债收益率维持在4.94%附近，德国同期下行3个基点至3.43%。",
+      "factSources": [
+        {
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
+        }
+      ],
+      "mechanism": "The France-Germany 10-year spread at 153bp, with the French yield near 4.94% and the German yield at 3.43%, is a budget premium that got wider. CICC (12 October): the 2027 budget can still pass through politics, but how much of the fiscal adjustment survives decides how far this premium comes back. OATs carry the 153bp spread and the 4.94% yield. The theme changes if the spread falls back through 150 and French bank shares rise.",
+      "trigger": "The France-Germany 10-year spread at 153bp, with the French 10-year near 4.94%.",
+      "invalidator": "That spread falls back through 150 and French bank shares rise.",
       "horizon": "days"
     },
     {
       "id": "ai-credit",
-      "title": "CoreWeave's bond yield is through 16% after another down day",
+      "title": "Anthropic's filing shows a half-year loss above 80 billion dollars",
       "grade": "MODERATE",
       "assets": [
         "US credit"
       ],
       "status": "escalated",
-      "fact": "华尔街见闻：CoreWeave跌逾0.4%，无担保债券收益率破16%。 高盛将评级上调至买入，目标价106美元，最新收盘价61.39美元。",
+      "fact": "华尔街见闻：Anthropic上半年净亏损超过807亿美元，总算力承诺支出将超6000亿美元。",
       "factSources": [
         {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       ],
-      "mechanism": "Another down day with the bond yield through 16% means the credit scare is still being priced after the upgrade. CICC (12 October): a lasting funding squeeze has yet to show, but a short-term shock can still disturb how AI firms raise money. US credit carries the 0.4% drop and the 16% yield. The theme changes if that yield falls back through 16% and the shares rise.",
-      "trigger": "CoreWeave down more than 0.4% with the unsecured yield through 16%.",
-      "invalidator": "That yield falls back through 16% and the shares rise.",
-      "horizon": "days"
-    },
-    {
-      "id": "france-oats",
-      "title": "French bonds sold off as the street unrest calmed",
-      "grade": "MODERATE",
-      "assets": [
-        "OATs",
-        "Stoxx"
-      ],
-      "status": "new",
-      "fact": "华尔街见闻：法德10年期国债利差盘中扩大至146个基点，10年期法债收益率盘中飙升15个基点。 欧洲斯托克600指数收跌0.80%，报639.56点。",
-      "factSources": [
-        {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
-        }
-      ],
-      "mechanism": "French bonds led the drop on a day the curfews were calming the streets, which points to the budget fight. CICC (12 October): concessions needed to pass the budget can limit how far this fiscal premium comes back. OATs and European stocks carry the 146bp intraday spread and the 0.80% drop to 639.56. The theme changes if that spread falls back through 146 and the bank shares rise.",
-      "trigger": "The France-Germany 10-year spread at 146bp intraday and the Stoxx 600 at 639.56.",
-      "invalidator": "That spread falls back through 146 and French bank shares rise.",
+      "mechanism": "Anthropic's own filing puts a half-year loss above 807亿美元 on a compute commitment above 6000亿美元, which is a funding hole large enough to matter for credit. CICC (12 October): US financing demand is heavy, and higher real funding pressure has the market questioning how long the AI chain can keep using leverage. US credit carries that loss and that commitment. The theme changes if the reported loss is revised below 807亿美元, or if the commitment is cut below 6000亿美元.",
+      "trigger": "A half-year net loss above 807亿美元 and a compute commitment above 6000亿美元.",
+      "invalidator": "The reported loss is revised below 807亿美元, or the commitment is cut below 6000亿美元.",
       "horizon": "days"
     },
     {
       "id": "pboc-overnight",
-      "title": "The PBOC is moving the policy rate to overnight",
+      "title": "LPR stayed put while the overnight anchor moved into implementation",
       "grade": "MODERATE",
       "assets": [
         "CGBs"
       ],
-      "status": "new",
-      "fact": "第一财经：潘功胜说，将研究择机把公开市场主要操作品种的期限从7天切换为隔夜，公开市场隔夜回购利率将成为主要政策利率。 贷款定价将从比较单一地参考贷款市场报价利率转向更多基准，并存贷款基准利率将退出。",
+      "status": "escalated",
+      "fact": "华尔街见闻：10月1年期LPR为3.0%、5年期以上为3.5%，连续第17个月不变，政策利率换锚至隔夜进入落地阶段。",
       "factSources": [
         {
-          "label": "第一财经 10月19日潘功胜",
-          "href": "https://www.yicai.com/news/103399075.html"
-        }
-      ],
-      "mechanism": "The overnight switch makes the rate the PBOC operates the same rate the market already uses as its target. CICC (20 October): that lines the policy rate up with the overnight market and is a framework step. The speech moves CGBs only if the short rate shifts, and this speech gives no new yield. The theme changes if the bank keeps the seven-day rate as the main tool, or if a later operation changes the overnight rate.",
-      "trigger": "A public plan to switch the main open-market tenor from seven days to overnight.",
-      "invalidator": "The seven-day rate stays the main tool, or a later operation changes the overnight rate.",
-      "horizon": "weeks"
-    },
-    {
-      "id": "china-growth",
-      "title": "Real growth ticked up and the equity tape split",
-      "grade": "MODERATE",
-      "assets": [
-        "Shanghai",
-        "ChiNext"
-      ],
-      "status": "new",
-      "fact": "财新：三季度GDP同比增长4.5%，前三季度同比增长4.6%，环比增长1.2%。 华尔街见闻：上证指数收涨0.39%，报3730.92点；创业板指收跌0.94%，报2746.29点。",
-      "factSources": [
-        {
-          "label": "财新 10月19日GDP",
-          "href": "https://economy.caixin.com/2026-10-19/102494668.html"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         },
         {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "第一财经 10月21日LPR",
+          "href": "https://www.yicai.com/news/103401281.html"
         }
       ],
-      "mechanism": "A small step up in real growth, with Shanghai higher and ChiNext lower, is an uneven quarter. CICC (11 August): household demand is still the weak leg, so a growth uptick does not by itself close the split between tech and consumption. Shanghai carries the 0.39% rise to 3730.92 and ChiNext carries the 0.94% drop to 2746.29. The theme changes if the next real growth rate falls back through 4.5%, or if Shanghai and ChiNext later move together.",
-      "trigger": "Third-quarter real GDP at 4.5% with Shanghai at 3730.92 and ChiNext at 2746.29.",
-      "invalidator": "The next real growth rate falls back through 4.5%, or Shanghai and ChiNext later move together.",
+      "mechanism": "Holding the 1-year LPR at 3.0% and the 5-year at 3.5% while the text moves the anchor to overnight is a tool change at an unchanged quote. CICC (20 October): with LPR held steady, the framework change supports funding but does not have to pull long yields lower. CGBs carry the 3.0% and 3.5% quotes, and this hold gives them no new cut. The theme changes if the bank keeps the seven-day rate as the main tool, or if a later operation changes the overnight rate.",
+      "trigger": "LPR unchanged at 3.0% and 3.5% while the overnight anchor is described as entering implementation.",
+      "invalidator": "The seven-day rate stays the main tool, or a later operation changes the overnight rate.",
       "horizon": "weeks"
     }
   ],
-  "globalRegime": "Monday's tape was a chip bounce beside oil that is still high and bonds that cheapened. French politics hit European bonds even as curfews calmed the streets. China printed a small step up in real growth and the central bank sketched an overnight policy rate. The chart is the historical average year for the S&P 500 after a midterm.",
+  "globalRegime": "Tuesday's tape was a Dow rise on industrial earnings beside a flat Nasdaq, oil that settled off the highs after a denied Iran deal, and long Treasuries that rallied with a record-low pending-sales print. French bonds cheapened further. China left LPR unchanged and described the overnight policy rate as moving into implementation. The chart is the pending home sales index.",
   "globalChanged": [
     {
-      "text": "财经早茶：在当局采取更严格安全措施，包括部分地区实施宵禁后，席卷法国多地的抗议活动已基本平息，骚乱局势逐渐缓和。",
+      "text": "财经早茶：得益于人工智能和星链业务大幅增长，SpaceX上季度利润和营收均超预期。CEO马斯克表示SpaceX和特斯拉已成立特别委员会研究潜在合并事宜。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：受政治因素影响，法国国债下跌，股市相对德国股市的估值折价创近二十年以来最大。",
+      "text": "财经早茶：AI服务器生产商超微电脑上季度初步业绩高于预期，股价盘后大涨并带动其他AI概念股走高。城堡投资的创始人格里芬表示，人工智能几乎肯定正处于泡沫之中。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：特朗普对于今年在中国与习近平、普京举行三方峰会持开放态度，暗示会谈重点是无核化，而非结束俄乌战争。他还淡化了外界对11月与朝鲜领导人金正恩会晤的预期。",
+      "text": "财经早茶：据报Anthropic上半财年净亏损807亿美元，未来数年或再花费7500亿美元购买算力。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：美国10月住宅建筑商信心降至14年低点，销售持续疲软。特朗普经济顾问哈塞特表示，9月消费者价格数据表明整体通胀仍需政策关注。",
+      "text": "财经早茶：包括总统在内的多位伊朗高官表示，如果美国不采取建立信任的措施，德黑兰不会与华府谈判。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：鉴于胡塞武装持续发动袭击，沙特将一年一度的未来投资倡议大会推迟至2027年举行，该国还延长了主要机场的航班起降限制。",
+      "text": "财经早茶：卡塔尔和巴基斯坦据报提出新方案以推动结束伊朗战争。知情外交官称，谈判仍在继续，但有关协议即将达成的报道并不准确。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：美国能源部长表示，受制裁油轮在通过审批程序后可以合法运输原油。德国总理默茨警告欧洲不要低估俄罗斯的威胁，称普京不仅要击败乌克兰，还要削弱欧洲民主。",
+      "text": "财经早茶：法国10年期国债相对于同期限德债收益率溢价自2012年以来首次收盘突破150基点。富兰克林邓普顿警告，法债若持续遭遇抛售，恐演变为欧债危机2.0版，且比上次危机更严重。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：苹果宣布10月28日举行新品发布会，将推出触控屏MacBook Pro。",
+      "text": "财经早茶：美国财政部长贝森特表示，看到资金流入美国债券市场，预计法国债市的动荡不会产生溢出效应。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：AI云计算公司Nscale据悉洽谈向Anthropic出售算力，潜在交易价值约450亿美元。Anthropic据报准备发布一款推理能力优于同侪的新模型。",
+      "text": "财经早茶：城堡证券总裁考虑扩大固定收益业务，称目前的产品和服务存在一些空白。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：高盛主经纪商业务部门数据显示，截至10月15日的五个交易日，对冲基金以至少十年来最快速度减持科技股，但目前在科技板块仍有大量仓位。",
+      "text": "财经早茶：由于房贷利率高企，美国9月二手房签约量指数降至纪录低点，新屋开工数降至四个月低位，为疫情以来最疲弱水平之一。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：巴西总统大选第二轮投票临近，新民调显示右翼候选人博索纳罗和现任总统卢拉的支持率不相上下。",
+      "text": "财经早茶：美国流媒体巨头Netflix预计营收增速连续第四个季度放缓，公司股价盘后一度重挫7%。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：美国宣布与中亚国家达成总值约120亿美元的贸易、投资和技术合作，国务卿卢比奥敦促美企在当地与中、俄企业竞争。",
+      "text": "财经早茶：美国银行完成自上周发布业绩以来第二笔投资级债券发行，两次发债累计融资100亿美元。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：纽约证交所对部分在NYSE American交易的期权延长交易时段，首批符合条件的标的证券包括英伟达、阿里巴巴、台积电等。",
+      "text": "华尔街见闻：SpaceX三季度营收同比增长161%至145.8亿美元，净利润44亿美元，为分析师预期18.8亿美元的2.3倍；AI业务收入75.6亿美元，同比增830%。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": "财经早茶：马斯克承诺明年向每个美国孩子赠送一股SpaceX股票，据悉其原则上同意通过特朗普账户发放。",
-      "sources": [
-        {
-          "label": "彭博财经早茶 Oct 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": "华尔街见闻：也门胡塞武装称过去48小时对沙特实施六次军事行动，并称沙特发动了200多次空袭。",
-      "sources": [
-        {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
-        }
-      ]
-    },
-    {
-      "text": "华尔街见闻：伊朗警告，即便有限度重启轰炸，世界也将面临严重能源危机。",
-      "sources": [
-        {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       ]
     }
   ],
   "globalImplies": [
     {
-      "text": "If tanker attacks continue, the eighth up day in WTI can extend even if Brent stays capped near this week's high."
+      "text": "If tanker attacks continue after the denied deal, Brent can move back through 108.79 even though Tuesday's settle was lower."
     },
     {
-      "text": "If chips post a second up session, the eight-day slide is the old tape. One up day leaves it in place."
+      "text": "If the French budget needs heavy concessions, the 153bp spread can stay wide after the street protests have already calmed."
     },
     {
-      "text": "If the French budget needs heavy concessions, the OAT spread can stay wide after the curfews have already calmed the streets."
+      "text": "If pending home sales stay at 66, the long-yield rally has a housing print behind it, and a rebound in that index would take the support away."
     }
   ],
-  "globalTensions": "WTI rose and Brent fell on the same afternoon. The Nasdaq rose with chip stocks while CoreWeave fell again and its bond yield pushed through 16%. French bonds led a selloff on a day the protests were calming. US yields rose with a higher equity tape, which is the opposite of Friday's rush into bonds.",
-  "chinaStance": "The PBOC is studying an overnight policy rate in place of the seven-day operation, and it plans a liquidity backstop for large non-bank redemptions. Real GDP rose 4.5% in the third quarter. Investment and property are still contracting, so the stance is a framework tweak beside a weak domestic leg.",
+  "globalTensions": "Oil settled lower on a day a tanker was reported to have hit a mine and officials denied an imminent deal. The Dow rose 1.02% while the Nasdaq fell 0.02%, and Anthropic printed a half-year loss above 807亿美元 on the same tape as a SpaceX profit beat. French bonds cheapened to a 153bp spread while long US yields fell. Gold fell with the dollar.",
+  "chinaStance": "The PBOC left the 1-year LPR at 3.0% and the 5-year at 3.5% for a 17th month, and the breakfast describes the overnight rate as the anchor moving into implementation. Foreign investors added China government bonds for a fifth month. The state set up a national data group under SASAC. The stance is a framework step and a new institution, with the loan quote unchanged.",
   "chinaChanged": [
     {
-      "text": "财经早茶：中国央行计划将政策利率从7天期品种切换为隔夜回购利率，并推动贷款利率定价基准改革，进一步优化短端利率调控机制。",
+      "text": "财经早茶：中国成立由中央政府直接管理的国家数据集团，相关人士称此举有助于大幅提升数据资源配置效率，加快构建全国一体化数据市场。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：中国央行将会同金融监管总局、证监会推出非银机构大额赎回流动性支持工具。行长潘功胜表示，将密切跟踪人工智能对经济、货币政策等的影响，前瞻性做好政策准备。",
+      "text": "财经早茶：在海外债市动荡之际，上月境外机构连续第五个月增持中国国债，幅度为5月份以来最大。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：中国央行推进科技金融协同布局，拟到2030年实现直接融资占比明显提升。",
+      "text": "财经早茶：中国9月代客净结汇创出年内次高，当月远期结汇签约额为2022年3月以来最高。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：中国外汇局局长朱鹤新表示，拟集中推出包括经常项目便利化一揽子政策在内的一批增量措施，推动外汇市场开放发展。",
+      "text": "财经早茶：英国商贸大臣对加征中国汽车关税持开放态度，但表示相关决策将基于本国自身利益而非欧盟的要求。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：中国证监会主席吴清表示，跨境跨市场跨行业风险传导值得高度警惕，全力应对多重超预期输入性风险挑战。",
+      "text": "财经早茶：青山控股等中国多家镍企据悉计划讨论协调削减在印尼电池材料工厂的产量。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：证监会明确违规转让证券处罚标准，统一处罚裁量尺度，规则将于12月1日起施行。",
+      "text": "财经早茶：DeepSeek推出开源工具DeepInfer，用于提高模型运行速度和计算资源使用效率，或有助企业降低AI运行成本。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：上周投资新兴市场的股票和债券ETF连续第二周吸引资金涌入，但投资者逆势撤出中港基金，景顺中国科技ETF单周资金流出量创其2009年成立以来最高纪录。",
+      "text": "财经早茶：路透援引知情人士报道称，字节跳动、阿里巴巴和腾讯已总计订购价值约350亿美元的英伟达芯片。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：中国将扩大无人机和工程机械装备出口管制范围，强化两用物项监管。",
+      "text": "财经早茶：宇树科技提示人形机器人行业尚处商业化早期，公司动态市盈率远超行业均值。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：美国政府以国家安全威胁为由，禁止联邦民用机构使用DeepSeek的产品或服务。据报DeepSeek与华为在新型AI芯片设计上密切合作。",
+      "text": "财经早茶：宁德时代第三季度净利润同比增长15%，不及分析师预期，外界对其较长期前景的担忧加剧。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：菲律宾外长召见中国大使，抗议后者有关在南海海上争端中“使用武力”的威胁。",
+      "text": "财经早茶：巴西据悉最快下周首次发行熊猫债，首期规模拟达50亿元人民币，目前正在敲定细节。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财经早茶：美国当局以窃取美国人士商业秘密为由，制裁与中国公民Linwei Ding相关的多家实体，包括创投公司奇绩创坛及其关联实体。",
+      "text": "财经早茶：台湾9月外销订单再次突破千亿美元，同比增速较上月有所放缓，但好于预估中值。",
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "财新：三季度GDP同比增长4.5%，前三季度同比增长4.6%，环比增长1.2%。",
+      "text": "财经早茶：因涉谷歌AI商业机密案而受到美国制裁后，中国风投企业奇绩创坛澄清称，公司并未投资至算科技。中国商务部敦促美国纠正针对中国AI企业的错误做法，警告将采取必要回应措施。",
       "sources": [
         {
-          "label": "财新 10月19日GDP",
-          "href": "https://economy.caixin.com/2026-10-19/102494668.html"
+          "label": "彭博财经早茶 Oct 21",
+          "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
-      "text": "华尔街见闻：9月社零同比增1.1%，1-9月城镇固定资产投资下降7.2%，房地产开发投资下降20.6%。",
+      "text": "第一财经：10月LPR连续17个月不变，1年期3.0%，5年期以上3.5%。",
       "sources": [
         {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "第一财经 10月21日LPR",
+          "href": "https://www.yicai.com/news/103401281.html"
+        }
+      ]
+    },
+    {
+      "text": "财新：国家数据集团成立，入列国资委监管百家央企。",
+      "sources": [
+        {
+          "label": "财新 10月21日数据集团",
+          "href": "https://finance.caixin.com/2026-10-21/102495440.html"
+        }
+      ]
+    },
+    {
+      "text": "华尔街见闻：中国人民银行将于10月21日至11月2日开展隔夜逆回购操作，每日操作量不超过1万亿元。",
+      "sources": [
+        {
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       ]
     }
   ],
   "chinaImplies": [
     {
-      "text": "If the overnight rate becomes the main tool without a cut, front-end funding follows the rate the market already trades, and CGBs do not get a new easing impulse from the speech alone."
+      "text": "If the overnight rate becomes the main tool and LPR stays at 3.0% and 3.5%, front-end funding follows the rate the market already trades, and CGBs do not get a new cut from this hold."
     },
     {
-      "text": "If investment keeps falling while real growth holds near 4.5%, the quarter is still an export and industry story, and ChiNext can stay soft against Shanghai."
+      "text": "If foreign buying of China government bonds continues while the French spread stays wide, CGBs remain the relative parking place the mail described."
     },
     {
-      "text": "If the non-bank redemption tool is funded and used, a bond-market run is less likely to force banks to sell into a falling CGB tape."
+      "text": "If the data group stays an organization chart without a published budget, it does not by itself move the equity book."
     }
   ],
-  "chinaDivergences": "Shanghai rose 0.39% while the ChiNext index fell 0.94%. Retail sales rose 1.1% and property investment fell 20.6% over January to September. The policy headline is an overnight rate framework, and the activity print is a small real-growth step with the domestic leg still weak.",
+  "chinaDivergences": "Shanghai rose 0.12% and the ChiNext index fell 0.26%, a smaller split than Monday. The Hang Seng Tech index fell 1.52% to 4045.91 while the onshore tape was nearly flat. LPR was unchanged on a day the breakfast called the overnight anchor an implementation step. Foreign bond buying was the flow, and the new data group was the institution.",
   "signals": [],
   "watchItems": [],
   "eventCalendar": {
-    "windowStart": "2026-10-20",
+    "windowStart": "2026-10-21",
     "windowEnd": "2026-10-30",
-    "note": "Briefing day through next Friday (30 October). Mainland China only on China rows. 2pm ET is 02:00 Beijing the next day. The FOMC decision on 28 October is 02:00 Beijing on 29 October and sits inside this window.",
+    "note": "Briefing day through next Friday (30 October). Mainland China only on China rows. 2pm ET is 02:00 Beijing the next day. The FOMC decision after the 27-28 October meeting is 02:00 Beijing on 29 October and sits inside this window.",
     "events": [
       {
-        "id": "cn-lpr-2026-10-20",
-        "date": "2026-10-20",
-        "timeBeijing": "09:00",
-        "region": "China",
-        "category": "data",
-        "event": "China 1-year and 5-year loan prime rates",
-        "themeId": "pboc-overnight",
-        "source": {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
-        }
-      },
-      {
-        "id": "lane-2026-10-20",
-        "date": "2026-10-20",
+        "id": "lane-2026-10-21",
+        "date": "2026-10-21",
         "timeBeijing": "12:15",
-        "region": "Europe",
+        "region": "EU",
         "category": "central-bank",
         "event": "ECB chief economist Lane speaks",
         "themeId": "france-oats",
         "source": {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       },
       {
-        "id": "uk-ilo-2026-10-20",
-        "date": "2026-10-20",
+        "id": "uk-cpi-2026-10-21",
+        "date": "2026-10-21",
         "timeBeijing": "14:00",
-        "region": "Europe",
+        "region": "UK",
         "category": "data",
-        "event": "UK August ILO unemployment",
+        "event": "UK September CPI, RPI, and public sector net borrowing",
         "source": {
-          "label": "彭博财经早茶 Oct 20",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       },
       {
-        "id": "cn-miit-2026-10-20",
-        "date": "2026-10-20",
-        "timeBeijing": "15:00",
-        "region": "China",
-        "category": "data",
-        "event": "MIIT briefing on industry and IT, January to September",
-        "themeId": "china-growth",
-        "source": {
-          "label": "彭博财经早茶 Oct 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "tw-orders-2026-10-20",
-        "date": "2026-10-20",
+        "id": "cipollone-2026-10-21",
+        "date": "2026-10-21",
         "timeBeijing": "16:00",
-        "region": "Asia",
-        "category": "data",
-        "event": "Taiwan September export orders",
+        "region": "EU",
+        "category": "central-bank",
+        "event": "ECB executive board member Cipollone speaks",
+        "themeId": "france-oats",
         "source": {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       },
       {
-        "id": "us-starts-2026-10-20",
-        "date": "2026-10-20",
-        "timeBeijing": "20:30",
+        "id": "huang-2026-10-21",
+        "date": "2026-10-21",
+        "timeBeijing": "17:00",
+        "region": "EU",
+        "category": "data",
+        "event": "Nvidia CEO Huang speaks at GTC Berlin",
+        "themeId": "ai-credit",
+        "source": {
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
+        }
+      },
+      {
+        "id": "bailey-2026-10-21",
+        "date": "2026-10-21",
+        "timeBeijing": "21:00",
+        "region": "UK",
+        "category": "central-bank",
+        "event": "Bank of England governor Bailey speaks",
+        "source": {
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
+        }
+      },
+      {
+        "id": "eia-2026-10-21",
+        "date": "2026-10-21",
+        "timeBeijing": "22:30",
         "region": "US",
         "category": "data",
-        "event": "US September housing starts",
+        "event": "EIA weekly crude, Cushing, and SPR inventories",
+        "themeId": "hormuz-tankers",
         "source": {
-          "label": "彭博财经早茶 Oct 20",
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
+        }
+      },
+      {
+        "id": "lagarde-2026-10-22",
+        "date": "2026-10-22",
+        "timeBeijing": "00:00",
+        "region": "EU",
+        "category": "central-bank",
+        "event": "ECB president Lagarde speaks",
+        "themeId": "france-oats",
+        "source": {
+          "label": "彭博财经早茶 Oct 21",
           "href": "https://www.bloomberg.com/asia"
         }
       },
       {
-        "id": "us-permits-2026-10-20",
-        "date": "2026-10-20",
-        "timeBeijing": "20:30",
+        "id": "earnings-2026-10-22",
+        "date": "2026-10-22",
+        "timeBeijing": "",
         "region": "US",
-        "category": "data",
-        "event": "US September building permits, initial",
+        "category": "earnings",
+        "event": "Meta, Tesla, Texas Instruments, IBM, and Lam Research report",
+        "themeId": "ai-credit",
         "source": {
-          "label": "彭博财经早茶 Oct 20",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       },
       {
-        "id": "us-pending-2026-10-20",
-        "date": "2026-10-20",
-        "timeBeijing": "22:00",
-        "region": "US",
-        "category": "data",
-        "event": "US September pending home sales",
-        "source": {
-          "label": "彭博财经早茶 Oct 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "cn-fx-2026-10-20",
-        "date": "2026-10-20",
+        "id": "pboc-repo-2026-10-21",
+        "date": "2026-10-21",
         "timeBeijing": "",
         "region": "China",
-        "category": "data",
-        "event": "China September bank FX settlement and sales",
+        "category": "central-bank",
+        "event": "PBOC overnight reverse repo operations, 21 October through 2 November",
         "themeId": "pboc-overnight",
         "source": {
-          "label": "彭博财经早茶 Oct 20",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       },
       {
-        "id": "fsf-2026-10-20",
-        "date": "2026-10-20",
+        "id": "fsf-2026-10-21",
+        "date": "2026-10-21",
         "timeBeijing": "",
         "region": "China",
         "category": "fiscal-flow",
-        "event": "Financial Street Forum continues in Beijing, through 22 October",
+        "event": "Financial Street Forum continues in Beijing",
         "themeId": "pboc-overnight",
         "source": {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       },
       {
-        "id": "apec-2026-10-20",
-        "date": "2026-10-20",
+        "id": "putin-2026-10-21",
+        "date": "2026-10-21",
         "timeBeijing": "",
-        "region": "Asia",
+        "region": "Other",
         "category": "fiscal-flow",
-        "event": "APEC finance ministers meet in Hong Kong",
+        "event": "A US presidential envoy is due to meet President Putin",
         "source": {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
-        }
-      },
-      {
-        "id": "earnings-2026-10-20",
-        "date": "2026-10-20",
-        "timeBeijing": "",
-        "region": "US",
-        "category": "data",
-        "event": "GM, GE Aerospace, and RTX before the US open; Netflix after the close",
-        "themeId": "semis-selloff",
-        "source": {
-          "label": "华尔街见闻 10月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3783954"
-        }
-      },
-      {
-        "id": "aapl-2026-10-28",
-        "date": "2026-10-28",
-        "timeBeijing": "",
-        "region": "US",
-        "category": "data",
-        "event": "Apple product event",
-        "source": {
-          "label": "彭博财经早茶 Oct 20",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "华尔街见闻 10月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3784074"
         }
       },
       {
@@ -775,21 +743,21 @@
         "region": "US",
         "category": "central-bank",
         "event": "FOMC rate decision, after the 27-28 October meeting",
-        "themeId": "hormuz-tankers",
+        "themeId": "housing-pending",
         "source": {
-          "label": "华尔街见闻 一周展望",
-          "href": "https://wallstreetcn.com/articles/3783913"
+          "label": "美联储议息日历",
+          "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
         }
       }
     ]
   },
-  "sources": "Mail tape is the 20 October 财经早茶. US, China, oil, yield, gold, SOX, and Stoxx closes in the summary are 华尔街见闻. Third-quarter GDP is 财新. Pan Gongsheng is 第一财经. CICC desk views are on the matching themes.",
-  "singleSource": "Last-kick of inbox-sync.yml at 2026-10-20T01:06Z brought the 20 October 财经早茶 and bloomberg-2026-10-20.png onto this branch before YAML. The 今日图表 body was empty; title and analysis come from the opened PNG (orange bars of the 12-month S&P 500 return after midterms, average marked at 15%). The mail header bitcoin price was 81962.21 and was not used. BlockBeats HTX flashes quoting bitcoin near 108000 were discarded as the wrong year against that header and against 见闻's intraday move back above 83000. No in-window BlockBeats ETF, stablecoin, street-target, or rates flash matched this tape. No GLASSNODE_API_KEY. CICC search returned the 20 July oil note, the 12 October AI-financing note, the 12 October France-budget note, the 20 October Financial Street note, and the 11 August domestic-demand note. The semis search returned historical bubble analogies, so that card uses the 财经早茶 prime-brokerage line. A second 20 October CICC note reads the overnight switch as a mild easing effect; the card uses the Financial Street note that treats it as a framework step. china-trade was omitted because its falsifier did not print and today's tape did not extend the EU export card. btc-etf stays off after yesterday's retirement; no new week flow was used. A Jin10 breakfast oil print (WTI near 98) conflicted with the 见闻, CNBC, and Reuters settle at 103.66 and was dropped. AP, CNBC, and Reuters match the 见闻 equity and oil settles used above. Yahoo quote HTML is only in Market closes. Market closes were injected at 2026-10-20T01:24:02.104Z. The Treasury 10-year in Market closes is 5.15%, up 6bp; 见闻 prose uses about 5.14%. Hang Seng and Hang Seng Tech rows are the 16 October bar (Tech 4108.24, up 1.16%) because the 20 October cash session had not printed a new daily bar at inject time. Nikkei and Kospi rows are the 20 October session. Bright Data MCP was unavailable; pages were fetched directly.",
-  "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market closes are the inject snapshot. Desk settles in the summary are 华尔街见闻. 450亿美元 is 45 billion dollars. 120亿美元 is 12 billion dollars. 4.5% and 4.6% are real GDP growth rates. 20.6% is the January-September fall in property development investment.",
-  "suggestions": "The live risks are WTI at 103.66 with attacks still being reported, one up day in chips after eight down days, and CoreWeave's bond yield through 16%. French bonds are the new political tape. China's loan prime rates are at 09:00 Beijing, and the FOMC decision is 02:00 Beijing on 29 October. This report is research and information synthesis, not investment advice.",
+  "sources": "Mail tape is the 21 October 财经早茶. US, Asia, oil, yield, housing, and the France-Germany spread in the summary are 华尔街见闻, with the US equity and oil settles also on Xinhua. LPR is 第一财经. The data group is 财新. CICC desk views are on the matching themes. The FOMC date is the Federal Reserve calendar.",
+  "singleSource": "Last-kick of inbox-sync.yml at 2026-10-21T01:05Z brought the 21 October 财经早茶 and bloomberg-2026-10-21.png onto this branch before YAML. The 今日图表 body was empty; title and analysis come from the opened PNG (one orange line of the pending home sales index, latest point the lowest on the chart, subtitle down 7.3%). An earlier 见闻 wrap said oil ended basically flat; that line was not used. The breakfast settle is WTI 101.79 and Brent 108.79, and Xinhua prints the same barrels. The mail header bitcoin price was 82896.87 and was not used. 见闻 has an intraday move through 83335 back toward 82500, with no second close. BlockBeats HTX flashes quoting bitcoin near 108000 to 113000 were discarded as the wrong year. No in-window BlockBeats ETF, stablecoin, street-target, or rates flash matched this tape. No GLASSNODE_API_KEY. 财经早茶 said Anthropic may spend another 7500亿美元 on compute; 见闻 said total compute commitments above 6000亿美元. The card uses the 807亿美元 loss and the 6000亿美元 commitment on the 见闻 page, and does not treat the two spend figures as one number. CoreWeave closed up 1.65% after touching 57.235; the prior 16% bond-yield invalidator was not reprinted, so that card was not retired. semis-selloff and china-growth were omitted because their falsifiers did not print and today's tape did not extend them. CICC search returned the 20 July oil note, the 12 October AI-financing note, the 12 October France-budget note, and the 20 October Financial Street note used on the LPR card. Yahoo quote HTML is only in Market closes. Market closes were injected at 2026-10-21T01:22:36.075Z. The Treasury CMT 10-year for 20 October is 5.12%, down 3bp; 见闻 prose uses 5.1126%. Hang Seng Tech is 4045.91, down 1.52%, as of 20 October. Nikkei and Kospi rows in Market closes are the 21 October session, while the summary uses the 20 October closes. The Yahoo Brent row is not the Tuesday 108.79 settle. Bright Data MCP was unavailable; pages were fetched directly.",
+  "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market closes are the inject snapshot. Desk settles in the summary are 华尔街见闻. 50亿元人民币 is CNY5bn. 1万亿元 is CNY1tn. 807亿美元 and 6000亿美元 are the 见闻 figures for Anthropic's loss and compute commitment. 7500亿美元 is the 财经早茶 wording for further compute spending and is not the same figure.",
+  "suggestions": "The live risks are Brent still at 108.79 with attacks still being reported, pending home sales at 66, and the France-Germany spread at 153bp. Anthropic's half-year loss is the AI funding print. UK CPI is at 14:00 Beijing, and the FOMC decision is 02:00 Beijing on 29 October. This report is research and information synthesis, not investment advice.",
   "disclaimer": "This report is research and information synthesis, not investment advice. Verify figures against primary sources before acting on them.",
   "marketDashboard": {
-    "asOf": "2026-10-20T01:24:02.104Z",
+    "asOf": "2026-10-21T01:22:36.075Z",
     "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
     "groups": [
       {
@@ -799,10 +767,10 @@
           {
             "id": "spx",
             "asset": "S&P 500",
-            "latest": "7,690.73",
-            "change": "+0.41%",
+            "latest": "7,712.57",
+            "change": "+0.28%",
             "changeDirection": "up",
-            "asOfDate": "2026-10-19",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "Yahoo Finance (^GSPC)",
               "href": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -811,10 +779,10 @@
           {
             "id": "nasdaq",
             "asset": "Nasdaq Composite",
-            "latest": "26,430.89",
-            "change": "+1.11%",
-            "changeDirection": "up",
-            "asOfDate": "2026-10-19",
+            "latest": "26,424.82",
+            "change": "−0.02%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "Yahoo Finance (^IXIC)",
               "href": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -823,10 +791,10 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "18.44",
-            "change": "−7.75%",
+            "latest": "17.31",
+            "change": "−6.13%",
             "changeDirection": "down",
-            "asOfDate": "2026-10-19",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "Yahoo Finance (^VIX)",
               "href": "https://finance.yahoo.com/quote/%5EVIX/"
@@ -835,10 +803,10 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "64,149.33",
-            "change": "−1.80%",
-            "changeDirection": "down",
-            "asOfDate": "2026-10-20",
+            "latest": "64,704.16",
+            "change": "+0.98%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-21",
             "source": {
               "label": "Yahoo Finance (^N225)",
               "href": "https://finance.yahoo.com/quote/%5EN225/"
@@ -847,10 +815,10 @@
           {
             "id": "kospi",
             "asset": "Kospi",
-            "latest": "5,568.71",
-            "change": "−1.75%",
-            "changeDirection": "down",
-            "asOfDate": "2026-10-20",
+            "latest": "5,698.24",
+            "change": "+2.62%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-21",
             "source": {
               "label": "Yahoo Finance (^KS11)",
               "href": "https://finance.yahoo.com/quote/%5EKS11/"
@@ -859,10 +827,10 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "24,186.83",
-            "change": "+0.52%",
-            "changeDirection": "up",
-            "asOfDate": "2026-10-16",
+            "latest": "23,867.74",
+            "change": "−1.32%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "Yahoo Finance (^HSI)",
               "href": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -871,10 +839,10 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "4,108.24",
-            "change": "+1.16%",
-            "changeDirection": "up",
-            "asOfDate": "2026-10-16",
+            "latest": "4,045.91",
+            "change": "−1.52%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "Yahoo Finance (HSTECH.HK)",
               "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
@@ -883,10 +851,10 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,730.92",
-            "change": "+0.39%",
+            "latest": "3,735.37",
+            "change": "+0.12%",
             "changeDirection": "up",
-            "asOfDate": "2026-10-19",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "Yahoo Finance (000001.SS)",
               "href": "https://finance.yahoo.com/quote/000001.SS/"
@@ -901,10 +869,10 @@
           {
             "id": "us02y",
             "asset": "US 2Y yield",
-            "latest": "4.77%",
-            "change": "+3.0 bp",
+            "latest": "4.79%",
+            "change": "+2.0 bp",
             "changeDirection": "up",
-            "asOfDate": "2026-10-19",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -914,9 +882,9 @@
             "id": "us05y",
             "asset": "US 5Y yield",
             "latest": "4.94%",
-            "change": "+5.0 bp",
-            "changeDirection": "up",
-            "asOfDate": "2026-10-19",
+            "change": "0.0 bp",
+            "changeDirection": "flat",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -925,10 +893,10 @@
           {
             "id": "us10y",
             "asset": "US 10Y yield",
-            "latest": "5.15%",
-            "change": "+6.0 bp",
-            "changeDirection": "up",
-            "asOfDate": "2026-10-19",
+            "latest": "5.12%",
+            "change": "−3.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -937,10 +905,10 @@
           {
             "id": "us30y",
             "asset": "US 30Y yield",
-            "latest": "5.48%",
-            "change": "+5.0 bp",
-            "changeDirection": "up",
-            "asOfDate": "2026-10-19",
+            "latest": "5.42%",
+            "change": "−6.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-20",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -955,10 +923,10 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "158.5750",
-            "change": "+0.49%",
-            "changeDirection": "up",
-            "asOfDate": "2026-10-20",
+            "latest": "158.3370",
+            "change": "−0.12%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-21",
             "source": {
               "label": "Yahoo Finance (JPY=X)",
               "href": "https://finance.yahoo.com/quote/JPY%3DX/"
@@ -967,10 +935,10 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.6802",
-            "change": "−0.16%",
+            "latest": "6.6673",
+            "change": "−0.35%",
             "changeDirection": "down",
-            "asOfDate": "2026-10-20",
+            "asOfDate": "2026-10-21",
             "source": {
               "label": "Yahoo Finance (CNY=X)",
               "href": "https://finance.yahoo.com/quote/CNY%3DX/"
@@ -979,10 +947,10 @@
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$4,141.50",
-            "change": "−0.95%",
+            "latest": "$4,126.80",
+            "change": "−0.80%",
             "changeDirection": "down",
-            "asOfDate": "2026-10-20",
+            "asOfDate": "2026-10-21",
             "source": {
               "label": "Yahoo Finance (GC=F)",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -991,10 +959,10 @@
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$109.79",
-            "change": "−0.06%",
-            "changeDirection": "down",
-            "asOfDate": "2026-10-20",
+            "latest": "$109.98",
+            "change": "+0.39%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-21",
             "source": {
               "label": "Yahoo Finance (BZ=F)",
               "href": "https://finance.yahoo.com/quote/BZ%3DF/"
@@ -1003,10 +971,10 @@
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$81,361",
-            "change": "−1.26%",
-            "changeDirection": "down",
-            "asOfDate": "2026-10-20",
+            "latest": "$82,800",
+            "change": "+1.77%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-21",
             "source": {
               "label": "CoinGecko",
               "href": "https://www.coingecko.com/en/coins/bitcoin"
@@ -1015,10 +983,10 @@
           {
             "id": "btc-funding",
             "asset": "BTC funding rate",
-            "latest": "0.0082%",
-            "change": "−0.179 bp",
-            "changeDirection": "down",
-            "asOfDate": "2026-10-20",
+            "latest": "0.0055%",
+            "change": "+0.026 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-21",
             "source": {
               "label": "OKX funding API",
               "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
@@ -1028,5 +996,5 @@
       }
     ]
   },
-  "slug": "2026-10-20"
+  "slug": "2026-10-21"
 }
