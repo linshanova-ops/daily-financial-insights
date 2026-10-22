@@ -1,8 +1,26 @@
 {
-  "at": "2026-10-21T05:36:13.324Z",
-  "briefingDate": "2026-10-21",
+  "at": "2026-10-22T01:03:36.885Z",
+  "briefingDate": "2026-10-22",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md",
+      "subject": "彭博财经早茶: Meta加码押注AI；美外交官撤离沙特",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6449,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-22.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-22.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W43.md",
+      "subject": "The top buyers still cap Bitcoin near $87K",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 2815,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-21.md",
@@ -34,11 +52,6 @@
       "skipped": true
     },
     {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W42.md",
-      "skipped": true
-    },
-    {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-14.md",
       "skipped": true
@@ -61,11 +74,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-08.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-07.md",
       "skipped": true
     }
   ],
@@ -106,9 +114,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-15.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "The top buyers have turned Bitcoin back twice",
-      "path": "web/content/inbox/glassnode-insights/2026-W42.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -144,16 +152,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶:  欧盟拟限制中国混动车；美联储会议纪要",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-08.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Recent buyers sold into Bitcoin's breakout",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 美国关注俄疑似肺鼠疫；贝森特安抚债务担忧",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-07.md"
     }
   ]
 }
