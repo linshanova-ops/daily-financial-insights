@@ -1,25 +1,17 @@
 {
-  "at": "2026-10-22T01:03:36.885Z",
+  "at": "2026-10-22T01:27:12.091Z",
   "briefingDate": "2026-10-22",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md",
-      "subject": "彭博财经早茶: Meta加码押注AI；美外交官撤离沙特",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6449,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-22.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-22.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W43.md",
-      "subject": "The top buyers still cap Bitcoin near $87K",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2815,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: Meta加码押注AI；美外交官撤离沙特",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "The top buyers still cap Bitcoin near $87K",
+      "path": "web/content/inbox/glassnode-insights/2026-W43.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: SpaceX和特斯拉讨论合并；中国新设数据央企",
