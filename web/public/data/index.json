@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-21T01:23:22.627Z",
-  "latest": "2026-10-21",
+  "generatedAt": "2026-10-22T01:24:26.061Z",
+  "latest": "2026-10-22",
   "briefings": [
+    {
+      "date": "2026-10-22",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Wednesday was an earnings rebound for the Nasdaq, a lower WTI settle beside a closer Middle East trigger, and a French 10-year through 5.0%. The S&P 500 rose 0.58% to 7757.17, WTI fell 0.68% to 97.15, and UK CPI rose to 3.5%. The chart is the average 12-month S&P return after US midterms, drawn at 15%.",
+      "coverageWindow": "October 21–22, 2026"
+    },
     {
       "date": "2026-10-21",
       "title": "Daily Financial Briefing",
