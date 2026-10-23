@@ -1,17 +1,12 @@
 {
-  "at": "2026-10-23T01:05:01.962Z",
+  "at": "2026-10-23T01:27:20.423Z",
   "briefingDate": "2026-10-23",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-23.md",
-      "subject": "彭博财经早茶: 美国拟限制对华生物技术投资; SK海力士子公司放弃IPO",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6554,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-23.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-23.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 美国拟限制对华生物技术投资; SK海力士子公司放弃IPO",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-23.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: Meta加码押注AI；美外交官撤离沙特",
