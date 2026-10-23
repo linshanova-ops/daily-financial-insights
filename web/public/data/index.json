@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-22T01:24:26.061Z",
-  "latest": "2026-10-22",
+  "generatedAt": "2026-10-23T01:24:55.264Z",
+  "latest": "2026-10-23",
   "briefings": [
+    {
+      "date": "2026-10-23",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Thursday was a Nasdaq selloff on AI funding, a Treasury rally back through 5%, and a higher oil settle after attacks on Saudi facilities. The S&P 500 fell 1.21% to 7663.43, Brent settled at 113.17, and the 10-year yield was 4.965%. The chart is panda-bond issuance, with this year's bar already above last year's full total.",
+      "coverageWindow": "October 22–23, 2026"
+    },
     {
       "date": "2026-10-22",
       "title": "Daily Financial Briefing",

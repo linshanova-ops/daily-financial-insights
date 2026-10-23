@@ -1,8 +1,18 @@
 {
-  "at": "2026-10-22T05:38:39.899Z",
-  "briefingDate": "2026-10-22",
+  "at": "2026-10-23T01:05:01.962Z",
+  "briefingDate": "2026-10-23",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-23.md",
+      "subject": "彭博财经早茶: 美国拟限制对华生物技术投资; SK海力士子公司放弃IPO",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6554,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-23.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-23.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-09.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-08.md",
       "skipped": true
     }
   ],
@@ -149,11 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国称暂不打伊朗；人行反驳人民币低估论",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-09.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶:  欧盟拟限制中国混动车；美联储会议纪要",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-08.md"
     }
   ]
 }
