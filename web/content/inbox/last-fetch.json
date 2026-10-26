@@ -1,25 +1,17 @@
 {
-  "at": "2026-10-26T01:06:11.488Z",
+  "at": "2026-10-26T01:27:56.153Z",
   "briefingDate": "2026-10-26",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-26.md",
-      "subject": "彭博财经早茶: 共和党“红墙州”告急；伊朗问题面临决断",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 7007,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-26.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-26.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W43.md",
-      "subject": "彭博周末茶歇：法国骚乱余烬未熄",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 8225,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 共和党“红墙州”告急；伊朗问题面临决断",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-26.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：法国骚乱余烬未熄",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W43.md"
+    },
     {
       "reason": "weekly-exists",
       "subject": "Glassnode x Fasanara Digital: Digital Asset Report Q4 2026 [New report]",
