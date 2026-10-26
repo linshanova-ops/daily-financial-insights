@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-23T01:24:55.264Z",
-  "latest": "2026-10-23",
+  "generatedAt": "2026-10-26T01:24:48.960Z",
+  "latest": "2026-10-26",
   "briefings": [
+    {
+      "date": "2026-10-26",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Friday was an oil-led session. Brent settled at 116.72 and WTI at 103.27 after further attacks on Saudi energy sites, the Dow fell 1.23% to 52215.16, and gold's October contract settled at 3991.1. The 10-year yield was about 4.99% and did not retake 5.0%. The chart is leveraged funds' euro position, through the most-short line since 2020.",
+      "coverageWindow": "October 23–26, 2026"
+    },
     {
       "date": "2026-10-23",
       "title": "Daily Financial Briefing",
