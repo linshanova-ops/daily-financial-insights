@@ -1,8 +1,31 @@
 {
-  "at": "2026-10-23T05:37:14.476Z",
-  "briefingDate": "2026-10-23",
+  "at": "2026-10-26T01:06:11.488Z",
+  "briefingDate": "2026-10-26",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-26.md",
+      "subject": "彭博财经早茶: 共和党“红墙州”告急；伊朗问题面临决断",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 7007,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-26.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-26.png"
+    },
+    {
+      "sourceId": "bloomberg-weekend-tea",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W43.md",
+      "subject": "彭博周末茶歇：法国骚乱余烬未熄",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 8225,
+      "mailbox": "[Gmail]/All Mail"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W43.md",
+      "skipped": true
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-23.md",
@@ -11,11 +34,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W43.md",
       "skipped": true
     },
     {
@@ -31,11 +49,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-19.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-weekend-tea",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W42.md",
       "skipped": true
     },
     {
@@ -62,14 +75,14 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-12.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-09.md",
-      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "weekly-exists",
+      "subject": "Glassnode x Fasanara Digital: Digital Asset Report Q4 2026 [New report]",
+      "path": "web/content/inbox/glassnode-insights/2026-W43.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国拟限制对华生物技术投资; SK海力士子公司放弃IPO",
@@ -81,9 +94,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "The top buyers still cap Bitcoin near $87K",
-      "path": "web/content/inbox/glassnode-insights/2026-W43.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -101,9 +114,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-19.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "彭博周末茶歇：沙特遇袭 中东冲突再次升级",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W42.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
     },
     {
       "reason": "exists-keep",
@@ -144,16 +157,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：华府允许普京出口柴油；中国对欧混动车出口或减半",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-12.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "彭博周末茶歇: 欧债动荡",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 美国称暂不打伊朗；人行反驳人民币低估论",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-09.md"
     }
   ]
 }
