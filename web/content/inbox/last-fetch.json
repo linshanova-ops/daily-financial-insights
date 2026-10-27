@@ -1,17 +1,12 @@
 {
-  "at": "2026-10-27T01:02:46.192Z",
+  "at": "2026-10-27T01:27:42.794Z",
   "briefingDate": "2026-10-27",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-27.md",
-      "subject": "彭博财经早茶: Anthropic招股书；巴西市场暴跌",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6541,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-27.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-27.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: Anthropic招股书；巴西市场暴跌",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-27.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 共和党“红墙州”告急；伊朗问题面临决断",
