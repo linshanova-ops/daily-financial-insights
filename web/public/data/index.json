@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-26T01:24:48.960Z",
-  "latest": "2026-10-26",
+  "generatedAt": "2026-10-27T01:24:01.819Z",
+  "latest": "2026-10-27",
   "briefings": [
+    {
+      "date": "2026-10-27",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Monday's crude settle fell after officials from Saudi Arabia, Pakistan, and Turkey went to Tehran, and US indexes rose with an AI stock filing. Brent settled at 115.81 and WTI at 101.76. The real fell 8.64% to 5.4092. The 10-year yield was 4.9946% and still short of 5%. The chart is the rolling average pump price, with the current-term line above the prior-term average.",
+      "coverageWindow": "October 26–27, 2026"
+    },
     {
       "date": "2026-10-26",
       "title": "Daily Financial Briefing",

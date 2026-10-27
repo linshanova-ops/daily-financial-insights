@@ -1,8 +1,18 @@
 {
-  "at": "2026-10-26T05:40:09.736Z",
-  "briefingDate": "2026-10-26",
+  "at": "2026-10-27T01:02:46.192Z",
+  "briefingDate": "2026-10-27",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-27.md",
+      "subject": "彭博财经早茶: Anthropic招股书；巴西市场暴跌",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6541,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-27.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-27.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-26.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-13.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-12.md",
       "skipped": true
     }
   ],
@@ -154,11 +159,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 俄乌违反停火安排；Meta新模型亮相",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-13.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：华府允许普京出口柴油；中国对欧混动车出口或减半",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-12.md"
     }
   ]
 }
