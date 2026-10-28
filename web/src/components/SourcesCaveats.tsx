@@ -1,14 +1,14 @@
 import type { ReactNode } from "react";
 import type { KeySource } from "@/lib/types";
-import type { LangText } from "@/lib/lang-text";
+import { enOf, type LangText } from "@/lib/lang-text";
 import { linkifySources } from "@/lib/source-links";
 import Link from "next/link";
 import { L } from "./L";
 import { Prose } from "./Prose";
 
 interface SourcesCaveatsProps {
-  sources: string;
-  singleSource: string;
+  sources: LangText;
+  singleSource: LangText;
   keySources?: KeySource[];
 }
 
@@ -176,7 +176,7 @@ export function SourcesCaveats({
         </ul>
       ) : null}
 
-      {sources?.trim() ? (
+      {enOf(sources).trim() ? (
         <p className="mt-8 text-sm leading-relaxed text-ink-soft">
           <span className="font-semibold text-ink">
             {classified ? (
