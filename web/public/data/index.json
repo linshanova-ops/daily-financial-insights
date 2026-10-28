@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-10-27T01:24:01.819Z",
-  "latest": "2026-10-27",
+  "generatedAt": "2026-10-28T01:22:17.731Z",
+  "latest": "2026-10-28",
   "briefings": [
+    {
+      "date": "2026-10-28",
+      "title": "Daily Financial Briefing",
+      "marketTone": "Tuesday's crude settle fell again while Gulf talks stayed in the lead, and US indexes rose for a second day. WTI settled at 99.90 and Brent at 113.88. The 10-year yield was 4.9843%. Shanghai fell 1.33% to 3648.30 and ChiNext fell 3.41%. The chart is a French consumer-sentiment index finishing just under the 85 line.",
+      "coverageWindow": "October 27–28, 2026"
+    },
     {
       "date": "2026-10-27",
       "title": "Daily Financial Briefing",
