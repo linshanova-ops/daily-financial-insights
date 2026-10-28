@@ -1,3 +1,4 @@
+import { enOf } from "@/lib/lang-text";
 import type { MarketOverview as MarketOverviewData } from "@/lib/types";
 import { accents } from "@/lib/module-accents";
 import { L } from "./L";
@@ -41,11 +42,11 @@ export function MarketOverview({ data }: MarketOverviewProps) {
         <ul className="mt-8 divide-y divide-line/70 border-y border-line/70">
           {items.map((item) => (
             <li
-              key={item.label}
+              key={enOf(item.label)}
               className="grid gap-2 py-4 sm:grid-cols-[9.5rem_1fr] sm:gap-6 sm:items-baseline"
             >
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/55">
-                {item.label}
+                <Prose text={item.label} />
               </p>
               <div>
                 <p className="text-sm leading-relaxed text-ink sm:text-base">

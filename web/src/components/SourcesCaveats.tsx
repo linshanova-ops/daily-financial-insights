@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import type { KeySource } from "@/lib/types";
+import type { LangText } from "@/lib/lang-text";
 import { linkifySources } from "@/lib/source-links";
-import { zhText } from "@/lib/edition-zh";
 import Link from "next/link";
 import { L } from "./L";
 import { Prose } from "./Prose";
@@ -44,13 +44,12 @@ function LinkedSourceText({ text }: { text: string }) {
   );
 }
 
-function BilingualSources({ text }: { text: string }) {
-  const zh = zhText(text);
-  if (zh === text) return <LinkedSourceText text={text} />;
+function BilingualSources({ text }: { text: LangText }) {
+  if (typeof text === "string") return <LinkedSourceText text={text} />;
   return (
     <L
-      en={<LinkedSourceText text={text} />}
-      zh={<LinkedSourceText text={zh} />}
+      en={<LinkedSourceText text={text.en} />}
+      zh={<LinkedSourceText text={text.zh} />}
     />
   );
 }

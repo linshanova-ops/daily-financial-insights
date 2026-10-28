@@ -6,6 +6,8 @@
  * are evidence-checked against chip pages by scan-source-links.
  */
 // ponytail: same sentence split as ThemeCards.tsx; "a.m. EDT" style clocks miscount, drop the clock.
+import { enOf } from "./lang-text.mjs";
+
 const sentences = (text) =>
   String(text || "")
     .trim()
@@ -29,19 +31,19 @@ export function checkThemeCards(briefing) {
   const seen = new Map();
   for (const c of cards) {
     const id = c?.id || "?";
-    const factN = sentences(c?.fact).length;
-    const soN = sentences(c?.mechanism).length;
+    const factN = sentences(enOf(c?.fact)).length;
+    const soN = sentences(enOf(c?.mechanism)).length;
     const chips = Array.isArray(c?.factSources) ? c.factSources.length : 0;
     if (factN < 1 || factN > 3) problems.push(`${id}: fact has ${factN} sentences (1–3)`);
     if (soN < 3 || soN > 5) problems.push(`${id}: so-what has ${soN} sentences (3–5)`);
     if (chips < 1 || chips > 4) problems.push(`${id}: ${chips} factSources (1–4)`);
-    if (!String(c?.trigger || "").trim()) problems.push(`${id}: missing trigger`);
-    if (!String(c?.invalidator || "").trim()) problems.push(`${id}: missing invalidator`);
-    if (!String(c?.horizon || "").trim()) problems.push(`${id}: missing horizon`);
+    if (!enOf(c?.trigger).trim()) problems.push(`${id}: missing trigger`);
+    if (!enOf(c?.invalidator).trim()) problems.push(`${id}: missing invalidator`);
+    if (!enOf(c?.horizon).trim()) problems.push(`${id}: missing horizon`);
     if (!String(c?.status || "").trim()) problems.push(`${id}: missing status`);
-    const m = META.exec(String(c?.mechanism || ""));
+    const m = META.exec(enOf(c?.mechanism));
     if (m) problems.push(`${id}: so-what is a sourcing caveat, not judgment: "${m[0]}"`);
-    const j = JARGON.exec(String(c?.mechanism || ""));
+    const j = JARGON.exec(enOf(c?.mechanism));
     if (j) problems.push(`${id}: so-what uses jargon ("${j[0]}"); write plain logic`);
     for (const s of c?.factSources || []) {
       if (/finance\.yahoo\.com\/quote/.test(String(s?.href || ""))) {
@@ -49,7 +51,7 @@ export function checkThemeCards(briefing) {
       }
     }
     const factNums = new Set();
-    for (const raw of String(c?.fact || "").match(NUMBER) || []) {
+    for (const raw of enOf(c?.fact).match(NUMBER) || []) {
       const n = raw.replace(/[,%]/g, "");
       if (n.length < 3) continue;
       factNums.add(n);
@@ -57,7 +59,7 @@ export function checkThemeCards(briefing) {
       if (prev && prev !== id) problems.push(`${id}: ${raw} already printed on ${prev}`);
       else seen.set(n, id);
     }
-    for (const raw of String(c?.mechanism || "").match(NUMBER) || []) {
+    for (const raw of enOf(c?.mechanism).match(NUMBER) || []) {
       const n = raw.replace(/[,%]/g, "");
       if (n.length >= 3 && !factNums.has(n)) {
         problems.push(`${id}: so-what cites ${raw} that is not in this card's fact`);
@@ -68,7 +70,7 @@ export function checkThemeCards(briefing) {
     problems.push(`all ${cards.length} cards are ${cards[0].grade}; grade the tape`);
   }
   // ponytail: presence only — `House (4 September): …` somewhere; the filter itself is judgment in the skill.
-  if (cards.length && !cards.some((c) => DESK_VIEW.test(String(c?.mechanism || "")))) {
+  if (cards.length && !cards.some((c) => DESK_VIEW.test(enOf(c?.mechanism)))) {
     problems.push("no card carries a dated desk view (`House (d Month): …`); CICC / house views were skipped");
   }
   return problems.length ? { ok: false, message: problems.join("\n  ") } : { ok: true };

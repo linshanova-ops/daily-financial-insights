@@ -1,3 +1,4 @@
+import type { LangText } from "@/lib/lang-text";
 import { formatBriefingDate } from "@/lib/briefings-format";
 import { formatPublishedAt } from "@/lib/format-published";
 import { L } from "./L";
@@ -6,7 +7,7 @@ import { WelcomeWave } from "./WelcomeWave";
 
 interface BriefingHeroProps {
   date: string;
-  marketTone: string;
+  marketTone: LangText;
   publishedAt?: string | null;
   showCta?: boolean;
   /** Full brand hero on landing, skim on Today, compact on archive detail pages. */

@@ -1,9 +1,8 @@
-import { zhText } from "@/lib/edition-zh";
+import type { LangText } from "@/lib/lang-text";
 import { L } from "./L";
 
-/** Current-edition prose. Unmapped strings (already Chinese, or an older edition) stay as published. */
-export function Prose({ text }: { text: string }) {
-  const zh = zhText(text);
-  if (zh === text) return text;
-  return <L en={text} zh={zh} />;
+/** A pair is this edition's two sentences. A plain string is an older edition, shown as published. */
+export function Prose({ text }: { text: LangText }) {
+  if (typeof text === "string") return text;
+  return <L en={text.en} zh={text.zh} />;
 }

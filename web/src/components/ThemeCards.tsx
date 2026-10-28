@@ -1,3 +1,4 @@
+import type { LangText } from "@/lib/lang-text";
 import type { SignalGrade, ThemeCard } from "@/lib/types";
 import { gradeZh, statusZh } from "@/lib/lang";
 import { themesByGrade } from "@/lib/theme-grade-order";
@@ -35,6 +36,23 @@ function CiteLine({ line }: { line: string }) {
     );
   }
   return <li>{line}</li>;
+}
+
+function FactLines({ fact }: { fact: LangText }) {
+  const list = (text: string) => (
+    <ul className="mt-2 space-y-2 text-base leading-relaxed text-ink-soft">
+      {lines(text).map((line, i) => (
+        <CiteLine key={i} line={line} />
+      ))}
+    </ul>
+  );
+  if (typeof fact === "string") return list(fact);
+  return (
+    <>
+      <div className="lang-en">{list(fact.en)}</div>
+      <div className="lang-zh">{list(fact.zh)}</div>
+    </>
+  );
 }
 
 /** Cross-asset forces: fact lines, then so-what as judgment prose. */
@@ -97,11 +115,7 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink">
                     <L en="Fact" zh="事实" />
                   </p>
-                  <ul className="mt-2 space-y-2 text-base leading-relaxed text-ink-soft">
-                    {lines(theme.fact).map((line, i) => (
-                      <CiteLine key={i} line={line} />
-                    ))}
-                  </ul>
+                  <FactLines fact={theme.fact} />
                   {theme.factSources?.length ? (
                     <div className="mt-2">
                       <SourceButton sources={theme.factSources} />

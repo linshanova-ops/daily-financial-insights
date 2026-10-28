@@ -1,3 +1,4 @@
+import { enOf, type LangText } from "./lang-text";
 import type { FactSource, SourcedFact } from "./types";
 
 /** Normalize legacy string bullets and new { text, sources } facts. */
@@ -11,7 +12,7 @@ export function asSourcedFacts(
 }
 
 export function factKey(fact: SourcedFact, index: number): string {
-  return `${index}-${fact.text.slice(0, 48)}`;
+  return `${index}-${enOf(fact.text as LangText).slice(0, 48)}`;
 }
 
 export function primarySource(fact: SourcedFact): FactSource | undefined {

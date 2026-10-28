@@ -70,6 +70,10 @@ Read and execute these skills; do not jump to YAML:
 - **Do not write CLAIM on the website.** It is an agent gate, not a reader label. Name the desk (`财经早茶`, `律动`, `CICC`). Never `CLAIM — inbox` or `desk/CLAIM`. The source chip already says who said it.
 - Beat/miss vs **estimate** only. `10亿元 = CNY1bn`. Crypto: two dated sources. Omit unverifiable numbers.
 
+## Both languages
+
+Every reader-facing sentence in the YAML is `{ en, zh }`. No side translation file. `en` is an English sentence. `zh` is a Chinese sentence. A source name stays the publication’s own name (华尔街见闻, 财新, 第一财经, 律动, CNBC, CICC, Yahoo); the sentence around it is in that language. `verify-briefing` fails the latest file if a rendered sentence is missing either side.
+
 ## Website YAML — every rendered section
 
 Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
@@ -144,7 +148,7 @@ Stay on this card’s books. Do not write “keep X on the other card”, “thi
 
 **Bitcoin:** `gn metric` if keyed; else inbox Week on Chain as desk view. Do not invent on-chain sizes.
 
-Self-check before PR: every **rendered** table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; BlockBeats four books on matching Themes or the miss named in `singleSource`; if a chart is present its PNG date is `$TODAY`; Themes titles/facts match that chart and today’s desk (no Theme citing yesterday’s PNG as 今日图表); every Theme fits the **Theme card** block above; `marketOverview` is today’s mail 市场一览 (Chinese, mail order — not 见闻 市场收报), and the page title is **Markets at a glance**; prose is complete sentences (not keyword stitches); the word CLAIM does not appear in the briefing YAML; no invented tape; no duplicate `keySources` href; every key source has `books` + `influence`.
+Self-check before PR: every **rendered** table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; BlockBeats four books on matching Themes or the miss named in `singleSource`; if a chart is present its PNG date is `$TODAY`; Themes titles/facts match that chart and today’s desk (no Theme citing yesterday’s PNG as 今日图表); every Theme fits the **Theme card** block above; `marketOverview` is today’s mail 市场一览 (Chinese, mail order — not 见闻 市场收报), and the page title is **Markets at a glance**; prose is complete sentences (not keyword stitches) and every rendered sentence is `{ en, zh }`; the word CLAIM does not appear in the briefing YAML; no invented tape; no duplicate `keySources` href; every key source has `books` + `influence`.
 
 Do not record a walkthrough video.
 ---
