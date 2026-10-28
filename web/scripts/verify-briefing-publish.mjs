@@ -20,6 +20,8 @@ import { checkLatestEventCalendarWindow } from "./lib/event-calendar-window-chec
 import { checkBloombergChartDate } from "./lib/bloomberg-chart-date-check.mjs";
 import { checkEmptyChartNotNeighbor } from "./lib/bloomberg-chart-neighbor-check.mjs";
 import { checkThemeCards } from "./lib/theme-card-check.mjs";
+import { checkBilingual } from "./lib/bilingual-check.mjs";
+import { enOf } from "./lib/lang-text.mjs";
 import { checkGlobalChinaNoCloseDup } from "./lib/global-china-close-check.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -103,7 +105,7 @@ function main() {
     if (fig && fs.existsSync(mailPath)) {
       const neighborCheck = checkEmptyChartNotNeighbor(
         fs.readFileSync(mailPath, "utf8"),
-        [fig.title, fig.analysis].filter(Boolean).join(" "),
+        [enOf(fig.title), enOf(fig.analysis)].filter(Boolean).join(" "),
       );
       if (!neighborCheck.ok) {
         console.error(`\n[verify-briefing] FAIL — ${neighborCheck.message}\n`);
@@ -111,6 +113,13 @@ function main() {
       }
       console.log("[verify-briefing] empty 今日图表 not filled from neighbor");
     }
+
+    const bilingual = checkBilingual(latest);
+    if (!bilingual.ok) {
+      console.error(`\n[verify-briefing] FAIL — languages:\n  ${bilingual.message}\n`);
+      process.exit(1);
+    }
+    console.log("[verify-briefing] both languages OK");
 
     const themeCheck = checkThemeCards(latest);
     if (!themeCheck.ok) {

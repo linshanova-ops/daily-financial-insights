@@ -14,6 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
+import { enOf } from "./lib/lang-text.mjs";
 import {
   findBnYiMismatches,
   pageHasCnyBnEvidence,
@@ -955,21 +956,21 @@ function loadClaimGroups() {
       if (!Array.isArray(arr)) continue;
       arr.forEach((item, i) => {
         if (item && typeof item === "object" && item.text) {
-          addGroup(`${file}.${name}[${i}]`, item.text, item.sources);
+          addGroup(`${file}.${name}[${i}]`, enOf(item.text), item.sources);
         }
       });
     }
 
     if (Array.isArray(data.themeCards)) {
       data.themeCards.forEach((card, i) => {
-        addGroup(`${file}.themeCards[${i}].fact`, card?.fact, card?.factSources);
+        addGroup(`${file}.themeCards[${i}].fact`, enOf(card?.fact), card?.factSources);
       });
     }
 
     if (Array.isArray(data.figures)) {
       data.figures.forEach((fig, i) => {
         if (!fig?.source?.href) return;
-        let text = [fig.title, fig.display, fig.delta, fig.analysis]
+        let text = [enOf(fig.title), fig.display, fig.delta, enOf(fig.analysis)]
           .filter(Boolean)
           .join(" ");
         if (Array.isArray(fig.points)) {
@@ -993,7 +994,7 @@ function loadClaimGroups() {
 
     if (data.marketOverview?.source?.href && Array.isArray(data.marketOverview.items)) {
       const text = data.marketOverview.items
-        .map((it) => `${it?.label || ""} ${it?.text || ""}`)
+        .map((it) => `${enOf(it?.label)} ${enOf(it?.text)}`)
         .join(" ");
       addGroup(`${file}.marketOverview`, text, [data.marketOverview.source]);
     }

@@ -1,3 +1,5 @@
+import { L } from "./L";
+
 interface SectionNavProps {
   hasFigures?: boolean;
   hasMarketOverview?: boolean;
@@ -14,19 +16,19 @@ export function SectionNav({
   hasCalendar = false,
 }: SectionNavProps) {
   const items = [
-    { href: "#skim", label: "Summary" },
+    { href: "#skim", en: "Summary", zh: "摘要" },
     ...(hasMarketDashboard
-      ? [{ href: "#market-dashboard", label: "Closes" }]
+      ? [{ href: "#market-dashboard", en: "Closes", zh: "收盘" }]
       : []),
     ...(hasMarketOverview
-      ? [{ href: "#market-overview", label: "Markets at a glance" }]
+      ? [{ href: "#market-overview", en: "Markets at a glance", zh: "市场一览" }]
       : []),
-    ...(hasFigures ? [{ href: "#key-figures", label: "Figures" }] : []),
-    ...(hasThemes ? [{ href: "#themes", label: "Themes" }] : []),
-    ...(hasCalendar ? [{ href: "#calendar", label: "Calendar" }] : []),
-    { href: "#global-situation", label: "Global" },
-    { href: "#china-situation", label: "China" },
-    { href: "#sources", label: "Sources" },
+    ...(hasFigures ? [{ href: "#key-figures", en: "Figures", zh: "数据" }] : []),
+    ...(hasThemes ? [{ href: "#themes", en: "Themes", zh: "主题" }] : []),
+    ...(hasCalendar ? [{ href: "#calendar", en: "Calendar", zh: "日历" }] : []),
+    { href: "#global-situation", en: "Global", zh: "全球" },
+    { href: "#china-situation", en: "China", zh: "中国" },
+    { href: "#sources", en: "Sources", zh: "来源" },
   ];
 
   return (
@@ -41,7 +43,7 @@ export function SectionNav({
             href={item.href}
             className="focus-ring shrink-0 px-3 py-1.5 text-xs font-semibold tracking-wide text-ink-soft transition-colors hover:text-forest"
           >
-            {item.label}
+            <L en={item.en} zh={item.zh} />
           </a>
         ))}
       </div>

@@ -7,6 +7,8 @@ import {
   type BriefingIndexItem,
 } from "@/lib/content-feed";
 import { formatBriefingDate } from "@/lib/briefings-format";
+import { L } from "./L";
+import { Prose } from "./Prose";
 
 interface LiveArchiveProps {
   initialItems: BriefingIndexItem[];
@@ -41,7 +43,11 @@ export function LiveArchive({ initialItems }: LiveArchiveProps) {
   }, []);
 
   if (items.length === 0) {
-    return <p className="mt-12 text-ink-soft">No briefings published yet.</p>;
+    return (
+      <p className="mt-12 text-ink-soft">
+        <L en="No briefings published yet." zh="尚无已发布简报。" />
+      </p>
+    );
   }
 
   return (
@@ -54,14 +60,17 @@ export function LiveArchive({ initialItems }: LiveArchiveProps) {
           >
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-forest">
-                {formatBriefingDate(briefing.date)}
+                <L
+                  en={formatBriefingDate(briefing.date)}
+                  zh={formatBriefingDate(briefing.date, "zh")}
+                />
               </p>
               <h2 className="display mt-2 text-2xl tracking-tight text-ink group-hover:text-forest">
-                {briefing.title}
+                <Prose text={briefing.title} />
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-relaxed text-ink-soft sm:text-right">
-              {briefing.marketTone}
+              <Prose text={briefing.marketTone} />
             </p>
           </Link>
         </li>

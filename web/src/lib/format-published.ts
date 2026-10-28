@@ -2,11 +2,14 @@
 export const BRIEFING_PUBLISH_TIMEZONE = "Asia/Shanghai";
 
 /** Format a briefing publishedAt / feed generatedAt for the homepage. */
-export function formatPublishedAt(iso?: string | null): string | null {
+export function formatPublishedAt(
+  iso?: string | null,
+  lang: "en" | "zh" = "en",
+): string | null {
   if (!iso) return null;
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return null;
-  return date.toLocaleString("en-US", {
+  return date.toLocaleString(lang === "zh" ? "zh-CN" : "en-US", {
     month: "short",
     day: "numeric",
     year: "numeric",
@@ -34,8 +37,15 @@ export function daysSincePublished(
 export function freshnessStatusLine(
   iso?: string | null,
   nowMs: number = Date.now(),
+  lang: "en" | "zh" = "en",
 ): string {
   const days = daysSincePublished(iso, nowMs);
+  if (lang === "zh") {
+    if (days == null) return "当前为最新已发布版本。";
+    if (days === 0) return "最新一期于今日发布。";
+    if (days === 1) return "最新一期发布于 1 天前。";
+    return `最新一期发布于 ${days} 天前。`;
+  }
   if (days == null) {
     return "Showing the latest published edition.";
   }

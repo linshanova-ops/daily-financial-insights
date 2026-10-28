@@ -359,7 +359,10 @@ export async function buildMarketDashboard() {
 
   return {
     asOf: new Date().toISOString(),
-    note: "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    note: {
+      en: "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+      zh: "股票、外汇、黄金期货和布伦特期货采用 Yahoo 最近两个日线收盘（布伦特一行是 Yahoo BZ=F，与 CNBC 官方结算价不是同一报价）；美国国债采用官方日度收益率曲线（相对前值的基点）；比特币为 CoinGecko 的 24 小时变动；资金费率比较相邻的 OKX 报价。快照取自生成时点，不是本页实时行情。",
+    },
     groups,
   };
 }

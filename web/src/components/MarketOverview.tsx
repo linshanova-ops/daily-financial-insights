@@ -1,5 +1,8 @@
+import { enOf } from "@/lib/lang-text";
 import type { MarketOverview as MarketOverviewData } from "@/lib/types";
 import { accents } from "@/lib/module-accents";
+import { L } from "./L";
+import { Prose } from "./Prose";
 import { SourceButton } from "./SourceButton";
 
 interface MarketOverviewProps {
@@ -27,26 +30,27 @@ export function MarketOverview({ data }: MarketOverviewProps) {
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          Markets at a glance
+          <L en="Markets at a glance" zh="市场一览" />
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          Desk copy from the morning mail. Dated prints sit in Closes and
-          Themes — do not mix the two.
-          {data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}
+          <L
+            en={`Desk copy from the morning mail. Dated prints sit in Closes and Themes, kept separate.${data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}`}
+            zh={`晨间邮件中的市场叙述。注明日期的报价见「收盘」与「主题」，两处分列。${data.asOfDate ? `行情日 ${data.asOfDate}。` : ""}`}
+          />
         </p>
 
         <ul className="mt-8 divide-y divide-line/70 border-y border-line/70">
           {items.map((item) => (
             <li
-              key={item.label}
+              key={enOf(item.label)}
               className="grid gap-2 py-4 sm:grid-cols-[9.5rem_1fr] sm:gap-6 sm:items-baseline"
             >
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/55">
-                {item.label}
+                <Prose text={item.label} />
               </p>
               <div>
                 <p className="text-sm leading-relaxed text-ink sm:text-base">
-                  {item.text}
+                  <Prose text={item.text} />
                 </p>
                 <SourceButton sources={item.sources} />
               </div>
@@ -57,7 +61,9 @@ export function MarketOverview({ data }: MarketOverviewProps) {
         <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1">
           <SourceButton sources={[data.source]} />
           {data.note ? (
-            <span className="text-xs text-ink/50">{data.note}</span>
+            <span className="text-xs text-ink/50">
+              <Prose text={data.note} />
+            </span>
           ) : null}
         </div>
       </div>

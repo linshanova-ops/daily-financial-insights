@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
+import { L } from "@/components/L";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
@@ -30,10 +31,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${fraunces.variable} ${manrope.variable} antialiased`}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var q=new URLSearchParams(location.search).get("lang");var l=q==="zh"||q==="en"?q:"en";document.documentElement.dataset.lang=l;document.documentElement.lang=l==="zh"?"zh-CN":"en";})();`,
+          }}
+        />
         <a href="#main-content" className="skip-link focus-ring">
-          Skip to content
+          <L en="Skip to content" zh="跳到正文" />
         </a>
         <div className="site-shell">
           <SiteHeader />

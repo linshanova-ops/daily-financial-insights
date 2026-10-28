@@ -1,20 +1,23 @@
 "use client";
 
+import type { ReactNode } from "react";
 import type { FactLine } from "@/lib/types";
 import { asSourcedFacts, factKey } from "@/lib/sourced-facts";
 import { accents, type ModuleAccent } from "@/lib/module-accents";
 import { Bullet } from "./Bullet";
 import { KindLabel } from "./KindLabel";
+import { L } from "./L";
+import { Prose } from "./Prose";
 
 interface SituationBlockProps {
   id?: string;
   eyebrow: string;
-  title: string;
-  stanceLabel: string;
+  title: ReactNode;
+  stanceLabel: ReactNode;
   stance: string;
   changed: FactLine[];
   implies: FactLine[];
-  tensionsLabel: string;
+  tensionsLabel: ReactNode;
   tensions: string;
   accent?: ModuleAccent;
   band?: boolean;
@@ -62,7 +65,7 @@ export function SituationBlock({
             <span className={`font-semibold ${a.stanceLabel}`}>
               {stanceLabel}:{" "}
             </span>
-            {stance}
+            <Prose text={stance} />
           </p>
         </div>
 
@@ -70,7 +73,7 @@ export function SituationBlock({
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
-                What changed
+                <L en="What changed" zh="有何变化" />
               </h3>
               <KindLabel kind="fact" />
             </div>
@@ -81,7 +84,7 @@ export function SituationBlock({
                   dotClass={a.bulletDot}
                   sources={item.sources}
                 >
-                  {item.text}
+                  <Prose text={item.text} />
                 </Bullet>
               ))}
             </ul>
@@ -89,14 +92,14 @@ export function SituationBlock({
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
-                What it implies
+                <L en="What it implies" zh="推论" />
               </h3>
               <KindLabel kind="judgment" />
             </div>
             <ul className="mt-4 space-y-4 text-base leading-relaxed text-ink-soft">
               {implyFacts.map((item, index) => (
                 <Bullet key={factKey(item, index)} dotClass={a.bulletDot}>
-                  {item.text}
+                  <Prose text={item.text} />
                 </Bullet>
               ))}
             </ul>
@@ -111,7 +114,7 @@ export function SituationBlock({
             <KindLabel kind="judgment" />
           </div>
           <p className="mt-3 max-w-4xl text-base leading-relaxed text-ink-soft">
-            {tensions}
+            <Prose text={tensions} />
           </p>
         </div>
       </div>

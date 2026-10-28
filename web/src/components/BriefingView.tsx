@@ -9,6 +9,8 @@ import { SourcesCaveats } from "./SourcesCaveats";
 import { KeyFigures } from "./KeyFigures";
 import { MarketDashboard } from "./MarketDashboard";
 import { MarketOverview } from "./MarketOverview";
+import { L } from "./L";
+import { Prose } from "./Prose";
 import { PreviousBriefingLink } from "./PreviousBriefingLink";
 import { SectionNav } from "./SectionNav";
 
@@ -77,7 +79,8 @@ export function BriefingView({
       {hasThemes ? <ThemeCards themes={themeCards} /> : null}
       <PreviousBriefingLink previousDate={previousDate} />
       <div className="mx-auto mb-2 w-full max-w-6xl px-5 pt-4 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
-        Coverage window: {briefing.coverageWindow}
+        <L en="Coverage window: " zh="覆盖区间：" />
+        <Prose text={briefing.coverageWindow} />
       </div>
       {hasCalendar && eventCalendar?.events ? (
         <EventCalendarView
@@ -90,12 +93,12 @@ export function BriefingView({
       <SituationBlock
         id="global-situation"
         eyebrow="财经早茶"
-        title="Global"
-        stanceLabel="Regime"
+        title={<L en="Global" zh="全球" />}
+        stanceLabel={<L en="Regime" zh="格局" />}
         stance={briefing.globalRegime}
         changed={briefing.globalChanged}
         implies={briefing.globalImplies}
-        tensionsLabel="Tensions"
+        tensionsLabel={<L en="Tensions" zh="张力" />}
         tensions={briefing.globalTensions}
         accent="azure"
         band
@@ -103,12 +106,12 @@ export function BriefingView({
       <SituationBlock
         id="china-situation"
         eyebrow="财经早茶"
-        title="China"
-        stanceLabel="Policy stance"
+        title={<L en="China" zh="中国" />}
+        stanceLabel={<L en="Policy stance" zh="政策立场" />}
         stance={briefing.chinaStance}
         changed={briefing.chinaChanged}
         implies={briefing.chinaImplies}
-        tensionsLabel="Divergences to watch"
+        tensionsLabel={<L en="Divergences to watch" zh="需关注的分歧" />}
         tensions={briefing.chinaDivergences}
         accent="crimson"
       />

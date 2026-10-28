@@ -28,6 +28,7 @@ describe("freshnessStatusLine", () => {
     const now = Date.parse("2026-08-06T07:00:00.000Z");
     assert.equal(daysSincePublished(published, now), 3);
     assert.match(freshnessStatusLine(published, now), /3 days ago/);
+    assert.match(freshnessStatusLine(published, now, "zh"), /3 天前/);
   });
 
   it("says today when published within 24h", () => {

@@ -72,7 +72,7 @@ body {
     radial-gradient(1200px 600px at 10% -10%, rgba(122, 28, 40, 0.14), transparent 55%),
     radial-gradient(900px 500px at 90% 0%, rgba(181, 106, 60, 0.12), transparent 50%),
     linear-gradient(180deg, #f3e9eb 0%, var(--mist) 40%, #efe6e8 100%);
-  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-family: var(--font-manrope), "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", system-ui, sans-serif;
 }
 
 body::before {
@@ -127,8 +127,35 @@ a {
 }
 
 .display {
-  font-family: var(--font-fraunces), Georgia, serif;
+  font-family: var(--font-fraunces), "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", Georgia, serif;
   font-optical-sizing: auto;
+}
+
+/* Default (no data-lang) is English, the current page. */
+html[data-lang="zh"] .lang-en { display: none; }
+html:not([data-lang="zh"]) .lang-zh { display: none; }
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.lang-switch a {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.lang-switch a + a {
+  border-left: 1px solid var(--line);
+}
+
+html[data-lang="zh"] .lang-switch a[data-lang-btn="zh"],
+html:not([data-lang="zh"]) .lang-switch a[data-lang-btn="en"] {
+  background: var(--forest);
+  color: var(--paper);
 }
 
 .reveal {
@@ -180,10 +207,6 @@ a {
   animation: avocado-wave 3s ease-in-out 0.1s 1 both;
 }
 
-.welcome-wave__line {
-  animation: welcome-line-fade 3s ease 0.1s 1 both;
-}
-
 @keyframes avocado-wave {
   0% {
     transform: rotate(0deg) scale(1);
@@ -214,21 +237,6 @@ a {
   }
 }
 
-@keyframes welcome-line-fade {
-  0% {
-    opacity: 0;
-  }
-  8% {
-    opacity: 1;
-  }
-  82% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -240,12 +248,7 @@ a {
   .reveal-delay-3,
   .grade-pulse,
   .animate-pulse,
-  .welcome-wave__avocado,
-  .welcome-wave__line {
+  .welcome-wave__avocado {
     animation: none !important;
-  }
-
-  .welcome-wave__line {
-    opacity: 0 !important;
   }
 }

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import syrMark from "../../public/brand/syr-mark.png";
+import { LangSwitch } from "./LangSwitch";
 import { SiteNav } from "./SiteNav";
 
 export function SiteHeader() {
   return (
-    <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
+    <header className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-3 px-5 py-5 sm:px-8">
       <Link
         href="/"
         className="focus-ring display flex items-center gap-2.5 text-lg tracking-tight text-forest sm:gap-3 sm:text-xl"
@@ -20,7 +21,10 @@ export function SiteHeader() {
         />
         <span>syravocado</span>
       </Link>
-      <SiteNav />
+      <div className="flex items-center gap-4 sm:gap-6">
+        <LangSwitch />
+        <SiteNav />
+      </div>
     </header>
   );
 }

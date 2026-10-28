@@ -1,12 +1,21 @@
 {
-  "generatedAt": "2026-10-28T01:22:17.731Z",
+  "generatedAt": "2026-10-28T07:05:17.208Z",
   "latest": "2026-10-28",
   "briefings": [
     {
       "date": "2026-10-28",
-      "title": "Daily Financial Briefing",
-      "marketTone": "Tuesday's crude settle fell again while Gulf talks stayed in the lead, and US indexes rose for a second day. WTI settled at 99.90 and Brent at 113.88. The 10-year yield was 4.9843%. Shanghai fell 1.33% to 3648.30 and ChiNext fell 3.41%. The chart is a French consumer-sentiment index finishing just under the 85 line.",
-      "coverageWindow": "October 27–28, 2026"
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "Tuesday's crude settle fell again while Gulf talks stayed in the lead, and US indexes rose for a second day. WTI settled at 99.90 and Brent at 113.88. The 10-year yield was 4.9843%. Shanghai fell 1.33% to 3648.30 and ChiNext fell 3.41%. The chart is a French consumer-sentiment index finishing just under the 85 line.",
+        "zh": "周二原油结算价再度下跌，海湾谈判仍居主导，美股指数则连续第二个交易日上涨。WTI 结算价为 99.90，布伦特结算价为 113.88。10年期收益率为 4.9843%。上证综指下跌 1.33% 至 3648.30，创业板指下跌 3.41%。今日图表为法国消费者信心指数，收在 85 一线略下方。"
+      },
+      "coverageWindow": {
+        "en": "October 27–28, 2026",
+        "zh": "2026年10月27日至28日"
+      }
     },
     {
       "date": "2026-10-27",

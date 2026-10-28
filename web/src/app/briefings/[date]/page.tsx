@@ -1,3 +1,4 @@
+import { enOf } from "@/lib/lang-text";
 import { notFound } from "next/navigation";
 import { BriefingView } from "@/components/BriefingView";
 import {
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: BriefingPageProps) {
   }
   return {
     title: formatBriefingDate(briefing.date),
-    description: briefing.marketTone,
+    description: enOf(briefing.marketTone),
   };
 }
 

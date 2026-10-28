@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
+import { L } from "./L";
 
 export function useCollapsedList<T>(items: T[], initialVisible = 5) {
   const [expanded, setExpanded] = useState(false);
@@ -22,16 +23,16 @@ interface CollapseToggleProps {
   expanded: boolean;
   hiddenCount: number;
   onToggle: () => void;
-  moreLabel?: string;
-  lessLabel?: string;
+  moreLabel?: ReactNode;
+  lessLabel?: ReactNode;
 }
 
 export function CollapseToggle({
   expanded,
   hiddenCount,
   onToggle,
-  moreLabel = "Show more",
-  lessLabel = "Show less",
+  moreLabel = <L en="Show more" zh="展开" />,
+  lessLabel = <L en="Show less" zh="收起" />,
 }: CollapseToggleProps) {
   return (
     <button

@@ -1,5 +1,9 @@
+import type { LangText } from "@/lib/lang-text";
 import type { SignalGrade, ThemeCard } from "@/lib/types";
+import { gradeZh, statusZh } from "@/lib/lang";
 import { themesByGrade } from "@/lib/theme-grade-order";
+import { L } from "./L";
+import { Prose } from "./Prose";
 import { SourceButton } from "./SourceButton";
 
 const gradeStyles: Record<SignalGrade, string> = {
@@ -34,6 +38,23 @@ function CiteLine({ line }: { line: string }) {
   return <li>{line}</li>;
 }
 
+function FactLines({ fact }: { fact: LangText }) {
+  const list = (text: string) => (
+    <ul className="mt-2 space-y-2 text-base leading-relaxed text-ink-soft">
+      {lines(text).map((line, i) => (
+        <CiteLine key={i} line={line} />
+      ))}
+    </ul>
+  );
+  if (typeof fact === "string") return list(fact);
+  return (
+    <>
+      <div className="lang-en">{list(fact.en)}</div>
+      <div className="lang-zh">{list(fact.zh)}</div>
+    </>
+  );
+}
+
 /** Cross-asset forces: fact lines, then so-what as judgment prose. */
 export function ThemeCards({ themes }: ThemeCardsProps) {
   if (!themes.length) return null;
@@ -48,11 +69,11 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
         <div className="flex flex-wrap items-center gap-3">
           <span className="h-6 w-1 rounded-full bg-amber" aria-hidden />
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber">
-            Today&apos;s themes
+            <L en="Today's themes" zh="今日主题" />
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          What moves markets today
+          <L en="What moves markets today" zh="今日市场驱动" />
         </h2>
         <ol className="mt-8 space-y-6">
           {ordered.map((theme, index) => (
@@ -66,34 +87,35 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h3 className="text-lg font-semibold tracking-tight text-ink sm:text-xl">
-                  {theme.title}
+                  <Prose text={theme.title} />
                 </h3>
                 <span
                   className={`px-2 py-0.5 text-xs font-bold tracking-[0.14em] ${gradeStyles[theme.grade]}`}
                 >
-                  {theme.grade}
+                  <L en={theme.grade} zh={gradeZh(theme.grade)} />
                 </span>
                 {theme.status && theme.status !== "continuing" ? (
                   <span className="text-xs uppercase tracking-[0.16em] text-ink/40">
-                    {theme.status}
+                    <L en={theme.status} zh={statusZh(theme.status)} />
                   </span>
                 ) : null}
                 {theme.assets?.length ? (
                   <span className="text-xs tracking-wide text-ink/45">
-                    {theme.assets.join(" · ")}
+                    {theme.assets.map((asset, i) => (
+                      <span key={`${asset}-${i}`}>
+                        {i > 0 ? " · " : null}
+                        <Prose text={asset} />
+                      </span>
+                    ))}
                   </span>
                 ) : null}
               </div>
               <div className="mt-4 flex flex-col gap-4">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink">
-                    Fact
+                    <L en="Fact" zh="事实" />
                   </p>
-                  <ul className="mt-2 space-y-2 text-base leading-relaxed text-ink-soft">
-                    {lines(theme.fact).map((line, i) => (
-                      <CiteLine key={i} line={line} />
-                    ))}
-                  </ul>
+                  <FactLines fact={theme.fact} />
                   {theme.factSources?.length ? (
                     <div className="mt-2">
                       <SourceButton sources={theme.factSources} />
@@ -102,35 +124,41 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink">
-                    So what
+                    <L en="Implication" zh="含义" />
                   </p>
                   <p className="mt-2 text-base leading-relaxed text-ink-soft">
-                    {theme.mechanism}
+                    <Prose text={theme.mechanism} />
                   </p>
                   {theme.trigger || theme.invalidator || theme.horizon ? (
                     <dl className="mt-4 grid gap-3 text-sm leading-relaxed text-ink-soft md:grid-cols-3">
                       {theme.horizon ? (
                         <div>
                           <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
-                            Horizon
+                            <L en="Horizon" zh="期限" />
                           </dt>
-                          <dd className="mt-1">{theme.horizon}</dd>
+                          <dd className="mt-1">
+                            <Prose text={theme.horizon} />
+                          </dd>
                         </div>
                       ) : null}
                       {theme.trigger ? (
                         <div>
                           <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
-                            Trigger
+                            <L en="Trigger" zh="触发" />
                           </dt>
-                          <dd className="mt-1">{theme.trigger}</dd>
+                          <dd className="mt-1">
+                            <Prose text={theme.trigger} />
+                          </dd>
                         </div>
                       ) : null}
                       {theme.invalidator ? (
                         <div>
                           <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
-                            Invalidator
+                            <L en="Invalidator" zh="失效条件" />
                           </dt>
-                          <dd className="mt-1">{theme.invalidator}</dd>
+                          <dd className="mt-1">
+                            <Prose text={theme.invalidator} />
+                          </dd>
                         </div>
                       ) : null}
                     </dl>
