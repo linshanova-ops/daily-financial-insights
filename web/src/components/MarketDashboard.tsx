@@ -1,5 +1,5 @@
 import type { MarketDashboard as MarketDashboardData } from "@/lib/types";
-import { groupZh } from "@/lib/lang";
+import { assetZh, groupZh } from "@/lib/lang";
 import { accents } from "@/lib/module-accents";
 import { L } from "./L";
 import { Prose } from "./Prose";
@@ -92,8 +92,7 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                         className="border-b border-line/60 last:border-0"
                       >
                         <td className="py-2.5 pr-3 font-medium text-ink">
-                          {/* Published print. Brent row stays Yahoo BZ=F. */}
-                          {row.asset}
+                          <L en={row.asset} zh={assetZh(row.id, row.asset)} />
                         </td>
                         <td className="py-2.5 pr-3 tabular-nums text-ink">
                           {row.latest}
