@@ -1,6 +1,7 @@
 import { formatBriefingDate } from "@/lib/briefings-format";
 import { formatPublishedAt } from "@/lib/format-published";
 import { L } from "./L";
+import { Prose } from "./Prose";
 import { WelcomeWave } from "./WelcomeWave";
 
 interface BriefingHeroProps {
@@ -106,7 +107,7 @@ export function BriefingHero({
               compact ? "text-base sm:text-lg" : "text-lg sm:text-xl"
             }`}
           >
-            {marketTone}
+            <Prose text={marketTone} />
           </p>
           {showCta ? (
             <div className="reveal reveal-delay-3 flex flex-wrap items-center gap-4">

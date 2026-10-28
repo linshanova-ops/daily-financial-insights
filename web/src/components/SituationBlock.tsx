@@ -7,6 +7,7 @@ import { accents, type ModuleAccent } from "@/lib/module-accents";
 import { Bullet } from "./Bullet";
 import { KindLabel } from "./KindLabel";
 import { L } from "./L";
+import { Prose } from "./Prose";
 
 interface SituationBlockProps {
   id?: string;
@@ -64,7 +65,7 @@ export function SituationBlock({
             <span className={`font-semibold ${a.stanceLabel}`}>
               {stanceLabel}:{" "}
             </span>
-            {stance}
+            <Prose text={stance} />
           </p>
         </div>
 
@@ -83,7 +84,7 @@ export function SituationBlock({
                   dotClass={a.bulletDot}
                   sources={item.sources}
                 >
-                  {item.text}
+                  <Prose text={item.text} />
                 </Bullet>
               ))}
             </ul>
@@ -91,14 +92,14 @@ export function SituationBlock({
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
-                <L en="What it implies" zh="意味着什么" />
+                <L en="What it implies" zh="推论" />
               </h3>
               <KindLabel kind="judgment" />
             </div>
             <ul className="mt-4 space-y-4 text-base leading-relaxed text-ink-soft">
               {implyFacts.map((item, index) => (
                 <Bullet key={factKey(item, index)} dotClass={a.bulletDot}>
-                  {item.text}
+                  <Prose text={item.text} />
                 </Bullet>
               ))}
             </ul>
@@ -113,7 +114,7 @@ export function SituationBlock({
             <KindLabel kind="judgment" />
           </div>
           <p className="mt-3 max-w-4xl text-base leading-relaxed text-ink-soft">
-            {tensions}
+            <Prose text={tensions} />
           </p>
         </div>
       </div>

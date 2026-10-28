@@ -2,6 +2,7 @@ import type { MarketDashboard as MarketDashboardData } from "@/lib/types";
 import { groupZh } from "@/lib/lang";
 import { accents } from "@/lib/module-accents";
 import { L } from "./L";
+import { Prose } from "./Prose";
 import { SourceButton } from "./SourceButton";
 
 interface MarketDashboardProps {
@@ -119,7 +120,7 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
 
         {data.note ? (
           <p className="mt-8 max-w-3xl text-xs leading-relaxed text-ink/50">
-            {data.note}
+            <Prose text={data.note} />
           </p>
         ) : null}
       </div>

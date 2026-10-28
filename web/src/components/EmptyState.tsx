@@ -5,7 +5,7 @@ export function EmptyState() {
   return (
     <section className="mx-auto flex min-h-[70vh] w-full max-w-3xl flex-col justify-center px-5 py-20 sm:px-8">
       <h1 className="display text-4xl tracking-tight text-ink sm:text-5xl">
-        <L en="No briefings published yet" zh="还没有已发布的简报" />
+        <L en="No briefings published yet" zh="尚无已发布简报" />
       </h1>
       <p className="mt-5 text-lg leading-relaxed text-ink-soft">
         <L

@@ -1,6 +1,7 @@
 import type { MarketOverview as MarketOverviewData } from "@/lib/types";
 import { accents } from "@/lib/module-accents";
 import { L } from "./L";
+import { Prose } from "./Prose";
 import { SourceButton } from "./SourceButton";
 
 interface MarketOverviewProps {
@@ -32,8 +33,8 @@ export function MarketOverview({ data }: MarketOverviewProps) {
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           <L
-            en={`Desk copy from the morning mail. Dated prints sit in Closes and Themes — do not mix the two.${data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}`}
-            zh={`晨间邮件的桌面叙述。有日期的报价在「收盘」和「主题」，不要混在一起。${data.asOfDate ? `行情日 ${data.asOfDate}。` : ""}`}
+            en={`Desk copy from the morning mail. Dated prints sit in Closes and Themes, kept separate.${data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}`}
+            zh={`晨间邮件中的市场叙述。注明日期的报价见「收盘」与「主题」，两处分列。${data.asOfDate ? `行情日 ${data.asOfDate}。` : ""}`}
           />
         </p>
 
@@ -48,7 +49,7 @@ export function MarketOverview({ data }: MarketOverviewProps) {
               </p>
               <div>
                 <p className="text-sm leading-relaxed text-ink sm:text-base">
-                  {item.text}
+                  <Prose text={item.text} />
                 </p>
                 <SourceButton sources={item.sources} />
               </div>
@@ -59,7 +60,9 @@ export function MarketOverview({ data }: MarketOverviewProps) {
         <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1">
           <SourceButton sources={[data.source]} />
           {data.note ? (
-            <span className="text-xs text-ink/50">{data.note}</span>
+            <span className="text-xs text-ink/50">
+              <Prose text={data.note} />
+            </span>
           ) : null}
         </div>
       </div>

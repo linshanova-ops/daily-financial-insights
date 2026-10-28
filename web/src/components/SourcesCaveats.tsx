@@ -1,8 +1,10 @@
 import type { ReactNode } from "react";
 import type { KeySource } from "@/lib/types";
 import { linkifySources } from "@/lib/source-links";
+import { zhText } from "@/lib/edition-zh";
 import Link from "next/link";
 import { L } from "./L";
+import { Prose } from "./Prose";
 
 interface SourcesCaveatsProps {
   sources: string;
@@ -42,6 +44,17 @@ function LinkedSourceText({ text }: { text: string }) {
   );
 }
 
+function BilingualSources({ text }: { text: string }) {
+  const zh = zhText(text);
+  if (zh === text) return <LinkedSourceText text={text} />;
+  return (
+    <L
+      en={<LinkedSourceText text={text} />}
+      zh={<LinkedSourceText text={zh} />}
+    />
+  );
+}
+
 function bookLabel(id: string): ReactNode {
   const pair = BOOK_LABELS[id];
   if (!pair) return id;
@@ -71,7 +84,7 @@ export function SourcesCaveats({
         </p>
       </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-        <L en="Where the numbers came from" zh="数字从哪来" />
+        <L en="Where the numbers came from" zh="数字出处" />
       </h2>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
         <L
@@ -141,7 +154,7 @@ export function SourcesCaveats({
               ) : null}
               {s.influence ? (
                 <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-soft">
-                  {s.influence}
+                  <Prose text={s.influence} />
                 </p>
               ) : null}
             </li>
@@ -173,7 +186,7 @@ export function SourcesCaveats({
               <L en="Also consulted: " zh="另参考：" />
             )}
           </span>
-          <LinkedSourceText text={sources} />
+          <BilingualSources text={sources} />
         </p>
       ) : null}
 
@@ -182,7 +195,7 @@ export function SourcesCaveats({
           <span className="font-semibold text-ink">
             <L en="Single-source risk: " zh="单一来源风险：" />
           </span>
-          {singleSource}
+          <Prose text={singleSource} />
         </p>
       </div>
       <blockquote className="mt-8 border-l-2 border-forest pl-4 text-sm italic leading-relaxed text-ink-soft">

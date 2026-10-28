@@ -1,6 +1,7 @@
 import type { CalendarEvent, EventCalendar } from "@/lib/types";
 import { KindLabel } from "./KindLabel";
 import { L } from "./L";
+import { Prose } from "./Prose";
 import { SourceButton } from "./SourceButton";
 
 interface EventCalendarViewProps {
@@ -54,7 +55,9 @@ export function EventCalendarView({
           </p>
         </div>
         {calendar.note ? (
-          <p className="mt-1 max-w-2xl text-xs text-ink/40">{calendar.note}</p>
+          <p className="mt-1 max-w-2xl text-xs text-ink/40">
+            <Prose text={calendar.note} />
+          </p>
         ) : null}
 
         {events.length === 0 ? (
@@ -84,7 +87,7 @@ export function EventCalendarView({
                   <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-ink/40 sm:hidden">
                     {row.region}{" "}
                   </span>
-                  {row.event}
+                  <Prose text={row.event} />
                   {(row.consensus || row.prior) && (
                     <span className="ml-1.5 font-normal text-ink/45">
                       {row.consensus ? (
@@ -106,7 +109,11 @@ export function EventCalendarView({
                       href={`#theme-${row.themeId}`}
                       className="focus-ring text-[10px] font-semibold uppercase tracking-[0.12em] text-forest underline-offset-2 hover:underline"
                     >
-                      {themeTitles[row.themeId] ?? <L en="Theme" zh="主题" />}
+                      {themeTitles[row.themeId] ? (
+                        <Prose text={themeTitles[row.themeId]} />
+                      ) : (
+                        <L en="Theme" zh="主题" />
+                      )}
                     </a>
                   ) : null}
                   <SourceButton

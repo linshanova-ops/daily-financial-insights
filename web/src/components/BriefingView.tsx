@@ -10,6 +10,7 @@ import { KeyFigures } from "./KeyFigures";
 import { MarketDashboard } from "./MarketDashboard";
 import { MarketOverview } from "./MarketOverview";
 import { L } from "./L";
+import { Prose } from "./Prose";
 import { PreviousBriefingLink } from "./PreviousBriefingLink";
 import { SectionNav } from "./SectionNav";
 
@@ -79,7 +80,7 @@ export function BriefingView({
       <PreviousBriefingLink previousDate={previousDate} />
       <div className="mx-auto mb-2 w-full max-w-6xl px-5 pt-4 text-xs uppercase tracking-[0.18em] text-ink/45 sm:px-8">
         <L en="Coverage window: " zh="覆盖区间：" />
-        {briefing.coverageWindow}
+        <Prose text={briefing.coverageWindow} />
       </div>
       {hasCalendar && eventCalendar?.events ? (
         <EventCalendarView
@@ -93,7 +94,7 @@ export function BriefingView({
         id="global-situation"
         eyebrow="财经早茶"
         title={<L en="Global" zh="全球" />}
-        stanceLabel={<L en="Regime" zh="状态" />}
+        stanceLabel={<L en="Regime" zh="格局" />}
         stance={briefing.globalRegime}
         changed={briefing.globalChanged}
         implies={briefing.globalImplies}
@@ -110,7 +111,7 @@ export function BriefingView({
         stance={briefing.chinaStance}
         changed={briefing.chinaChanged}
         implies={briefing.chinaImplies}
-        tensionsLabel={<L en="Divergences to watch" zh="需留意的分歧" />}
+        tensionsLabel={<L en="Divergences to watch" zh="需关注的分歧" />}
         tensions={briefing.chinaDivergences}
         accent="crimson"
       />

@@ -5,10 +5,10 @@ export default function NotFound() {
   return (
     <section className="mx-auto flex min-h-[60vh] w-full max-w-3xl flex-col justify-center px-5 py-20 sm:px-8">
       <h1 className="display text-4xl tracking-tight text-ink">
-        <L en="Briefing not found" zh="找不到该期简报" />
+        <L en="Briefing not found" zh="没有该期简报" />
       </h1>
       <p className="mt-4 text-lg text-ink-soft">
-        <L en="That date is not in the archive." zh="归档里没有这个日期。" />
+        <L en="That date is not in the archive." zh="归档中没有该日期。" />
       </p>
       <Link
         href="/briefings"

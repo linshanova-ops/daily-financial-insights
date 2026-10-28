@@ -1,5 +1,6 @@
 import type { BriefingFigure, FigurePoint } from "@/lib/types";
 import { L } from "./L";
+import { Prose } from "./Prose";
 import { SourceButton } from "./SourceButton";
 
 interface KeyFiguresProps {
@@ -104,7 +105,9 @@ function FigureSource({ figure }: { figure: BriefingFigure }) {
     <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1">
       <SourceButton sources={[figure.source]} />
       {figure.note ? (
-        <span className="text-xs text-ink/50">{figure.note}</span>
+        <span className="text-xs text-ink/50">
+          <Prose text={figure.note} />
+        </span>
       ) : null}
     </div>
   );
@@ -127,12 +130,12 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          <L en="Numbers that define the day" zh="定义今天的数字" />
+          <L en="Numbers that define the day" zh="界定当日的数字" />
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           <L
             en="Verified prints from this briefing — each figure links to its primary source. Chart-of-the-day insights come from 彭博 今日图表 when available."
-            zh="本简报里核对过的数字，每个都链到原始来源。有彭博今日图表时，图表解读来自那里。"
+            zh="本简报中经核对的数字均链接至原始来源。若有彭博今日图表，解读取自该图。"
           />
         </p>
 
@@ -147,7 +150,7 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
                   <L en="Chart of the day" zh="今日图表" />
                 </p>
                 <h3 className="display mt-2 text-2xl tracking-tight text-ink sm:text-3xl">
-                  {figure.title}
+                  <Prose text={figure.title} />
                 </h3>
                 {assetUrl(figure.imageSrc) ? (
                   <figure className="mt-5 overflow-hidden border border-ink/10 bg-mist/40">
@@ -174,7 +177,7 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
                     <span className="font-semibold text-forest">
                       <L en="Analysis · " zh="解读 · " />
                     </span>
-                    {figure.analysis}
+                    <Prose text={figure.analysis} />
                   </p>
                 ) : null}
                 <FigureSource figure={figure} />
@@ -191,7 +194,7 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
                 className="border-t-2 border-forest pt-4"
               >
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/55">
-                  {figure.title}
+                  <Prose text={figure.title} />
                 </p>
                 <p className="display mt-3 text-4xl tracking-tight text-ink tabular-nums">
                   {figure.display}
@@ -212,7 +215,7 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
             {charts.map((figure) => (
               <article key={figure.id} className="border-t-2 border-forest pt-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/55">
-                  {figure.title}
+                  <Prose text={figure.title} />
                 </p>
                 <BarRows points={figure.points ?? []} unit={figure.unit} />
                 <FigureSource figure={figure} />

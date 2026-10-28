@@ -5,6 +5,7 @@ import { statusZh } from "@/lib/lang";
 import { CollapseToggle, useCollapsedList } from "./CollapsibleList";
 import { KindLabel } from "./KindLabel";
 import { L } from "./L";
+import { Prose } from "./Prose";
 
 const priorityStyles: Record<WatchPriority, string> = {
   HIGH: "text-strong",
@@ -29,7 +30,7 @@ export function WatchList({ items }: WatchListProps) {
         <div className="flex flex-wrap items-center gap-3">
           <span className="h-6 w-1 rounded-full bg-copper" aria-hidden />
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-copper">
-            <L en="What to watch" zh="关注什么" />
+            <L en="What to watch" zh="待观察事项" />
           </p>
           <KindLabel kind="judgment" />
         </div>
@@ -56,35 +57,43 @@ export function WatchList({ items }: WatchListProps) {
                 </span>
               </div>
               <h3 className="display mt-2 text-2xl tracking-tight text-ink">
-                {item.headline}
+                <Prose text={item.headline} />
               </h3>
               <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink-soft">
-                {item.why}
+                <Prose text={item.why} />
               </p>
               <dl className="mt-5 grid gap-3 text-sm leading-relaxed text-ink-soft md:grid-cols-2">
                 <div>
                   <dt className="font-semibold text-ink">
                     <L en="Watch" zh="关注" />
                   </dt>
-                  <dd className="mt-1">{item.watch}</dd>
+                  <dd className="mt-1">
+                    <Prose text={item.watch} />
+                  </dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-ink">
                     <L en="Horizon" zh="期限" />
                   </dt>
-                  <dd className="mt-1">{item.horizon}</dd>
+                  <dd className="mt-1">
+                    <Prose text={item.horizon} />
+                  </dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-ink">
                     <L en="Trigger" zh="触发" />
                   </dt>
-                  <dd className="mt-1">{item.trigger}</dd>
+                  <dd className="mt-1">
+                    <Prose text={item.trigger} />
+                  </dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-ink">
                     <L en="Invalidator" zh="失效条件" />
                   </dt>
-                  <dd className="mt-1">{item.invalidator}</dd>
+                  <dd className="mt-1">
+                    <Prose text={item.invalidator} />
+                  </dd>
                 </div>
               </dl>
             </li>
@@ -95,7 +104,7 @@ export function WatchList({ items }: WatchListProps) {
             expanded={expanded}
             hiddenCount={hiddenCount}
             onToggle={toggle}
-            moreLabel={<L en="Show more watch items" zh="展开更多关注" />}
+            moreLabel={<L en="Show more watch items" zh="展开其余事项" />}
           />
         ) : null}
       </div>

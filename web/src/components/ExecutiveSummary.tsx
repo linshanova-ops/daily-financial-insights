@@ -3,6 +3,7 @@ import { asSourcedFacts, factKey } from "@/lib/sourced-facts";
 import { accents } from "@/lib/module-accents";
 import { Bullet } from "./Bullet";
 import { L } from "./L";
+import { Prose } from "./Prose";
 
 interface ExecutiveSummaryProps {
   summary: FactLine[];
@@ -32,7 +33,7 @@ export function ExecutiveSummary({
         </p>
       </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-        <L en="The day in five minutes" zh="五分钟看完" />
+        <L en="The day in five minutes" zh="五分钟概览" />
       </h2>
       <ul className="mt-8 space-y-4 text-base leading-relaxed text-ink-soft sm:text-lg">
         {facts.map((item, index) => (
@@ -41,7 +42,7 @@ export function ExecutiveSummary({
             dotClass={a.bulletDot}
             sources={item.sources}
           >
-            {item.text}
+            <Prose text={item.text} />
           </Bullet>
         ))}
       </ul>
@@ -50,13 +51,17 @@ export function ExecutiveSummary({
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-forest">
             <L en="Signal" zh="信号" />
           </p>
-          <p className="mt-2 text-base leading-relaxed text-ink">{signal}</p>
+          <p className="mt-2 text-base leading-relaxed text-ink">
+            <Prose text={signal} />
+          </p>
         </div>
         <div className="border-l-2 border-copper/40 bg-copper/5 p-4">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-copper">
             <L en="Watch" zh="关注" />
           </p>
-          <p className="mt-2 text-base leading-relaxed text-ink">{watch}</p>
+          <p className="mt-2 text-base leading-relaxed text-ink">
+            <Prose text={watch} />
+          </p>
         </div>
       </div>
     </section>

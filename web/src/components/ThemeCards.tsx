@@ -2,6 +2,7 @@ import type { SignalGrade, ThemeCard } from "@/lib/types";
 import { gradeZh, statusZh } from "@/lib/lang";
 import { themesByGrade } from "@/lib/theme-grade-order";
 import { L } from "./L";
+import { Prose } from "./Prose";
 import { SourceButton } from "./SourceButton";
 
 const gradeStyles: Record<SignalGrade, string> = {
@@ -54,7 +55,7 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          <L en="What moves markets today" zh="今天什么在推动市场" />
+          <L en="What moves markets today" zh="今日市场驱动" />
         </h2>
         <ol className="mt-8 space-y-6">
           {ordered.map((theme, index) => (
@@ -68,7 +69,7 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h3 className="text-lg font-semibold tracking-tight text-ink sm:text-xl">
-                  {theme.title}
+                  <Prose text={theme.title} />
                 </h3>
                 <span
                   className={`px-2 py-0.5 text-xs font-bold tracking-[0.14em] ${gradeStyles[theme.grade]}`}
@@ -82,7 +83,12 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                 ) : null}
                 {theme.assets?.length ? (
                   <span className="text-xs tracking-wide text-ink/45">
-                    {theme.assets.join(" · ")}
+                    {theme.assets.map((asset, i) => (
+                      <span key={`${asset}-${i}`}>
+                        {i > 0 ? " · " : null}
+                        <Prose text={asset} />
+                      </span>
+                    ))}
                   </span>
                 ) : null}
               </div>
@@ -104,10 +110,10 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink">
-                    <L en="So what" zh="所以呢" />
+                    <L en="Implication" zh="含义" />
                   </p>
                   <p className="mt-2 text-base leading-relaxed text-ink-soft">
-                    {theme.mechanism}
+                    <Prose text={theme.mechanism} />
                   </p>
                   {theme.trigger || theme.invalidator || theme.horizon ? (
                     <dl className="mt-4 grid gap-3 text-sm leading-relaxed text-ink-soft md:grid-cols-3">
@@ -116,7 +122,9 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                           <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
                             <L en="Horizon" zh="期限" />
                           </dt>
-                          <dd className="mt-1">{theme.horizon}</dd>
+                          <dd className="mt-1">
+                            <Prose text={theme.horizon} />
+                          </dd>
                         </div>
                       ) : null}
                       {theme.trigger ? (
@@ -124,7 +132,9 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                           <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
                             <L en="Trigger" zh="触发" />
                           </dt>
-                          <dd className="mt-1">{theme.trigger}</dd>
+                          <dd className="mt-1">
+                            <Prose text={theme.trigger} />
+                          </dd>
                         </div>
                       ) : null}
                       {theme.invalidator ? (
@@ -132,7 +142,9 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                           <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
                             <L en="Invalidator" zh="失效条件" />
                           </dt>
-                          <dd className="mt-1">{theme.invalidator}</dd>
+                          <dd className="mt-1">
+                            <Prose text={theme.invalidator} />
+                          </dd>
                         </div>
                       ) : null}
                     </dl>

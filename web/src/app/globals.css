@@ -207,10 +207,6 @@ html:not([data-lang="zh"]) .lang-switch a[data-lang-btn="en"] {
   animation: avocado-wave 3s ease-in-out 0.1s 1 both;
 }
 
-.welcome-wave__line {
-  animation: welcome-line-fade 3s ease 0.1s 1 both;
-}
-
 @keyframes avocado-wave {
   0% {
     transform: rotate(0deg) scale(1);
@@ -241,21 +237,6 @@ html:not([data-lang="zh"]) .lang-switch a[data-lang-btn="en"] {
   }
 }
 
-@keyframes welcome-line-fade {
-  0% {
-    opacity: 0;
-  }
-  8% {
-    opacity: 1;
-  }
-  82% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -267,12 +248,7 @@ html:not([data-lang="zh"]) .lang-switch a[data-lang-btn="en"] {
   .reveal-delay-3,
   .grade-pulse,
   .animate-pulse,
-  .welcome-wave__avocado,
-  .welcome-wave__line {
+  .welcome-wave__avocado {
     animation: none !important;
-  }
-
-  .welcome-wave__line {
-    opacity: 0 !important;
   }
 }
