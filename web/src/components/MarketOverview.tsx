@@ -1,5 +1,6 @@
 import type { MarketOverview as MarketOverviewData } from "@/lib/types";
 import { accents } from "@/lib/module-accents";
+import { L } from "./L";
 import { SourceButton } from "./SourceButton";
 
 interface MarketOverviewProps {
@@ -27,12 +28,13 @@ export function MarketOverview({ data }: MarketOverviewProps) {
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          Markets at a glance
+          <L en="Markets at a glance" zh="市场一览" />
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          Desk copy from the morning mail. Dated prints sit in Closes and
-          Themes — do not mix the two.
-          {data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}
+          <L
+            en={`Desk copy from the morning mail. Dated prints sit in Closes and Themes — do not mix the two.${data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}`}
+            zh={`晨间邮件的桌面叙述。有日期的报价在「收盘」和「主题」，不要混在一起。${data.asOfDate ? `行情日 ${data.asOfDate}。` : ""}`}
+          />
         </p>
 
         <ul className="mt-8 divide-y divide-line/70 border-y border-line/70">

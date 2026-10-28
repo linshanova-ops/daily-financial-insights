@@ -1,5 +1,6 @@
 import { formatBriefingDate } from "@/lib/briefings-format";
 import { formatPublishedAt } from "@/lib/format-published";
+import { L } from "./L";
 import { WelcomeWave } from "./WelcomeWave";
 
 interface BriefingHeroProps {
@@ -21,7 +22,8 @@ export function BriefingHero({
   variant = "full",
   marketsHref = "#market-dashboard",
 }: BriefingHeroProps) {
-  const publishedLabel = formatPublishedAt(publishedAt);
+  const publishedEn = formatPublishedAt(publishedAt);
+  const publishedZh = formatPublishedAt(publishedAt, "zh");
   const compact = variant === "compact";
   const skim = variant === "skim";
 
@@ -59,13 +61,19 @@ export function BriefingHero({
           }`}
         >
           <p className="reveal text-xs font-semibold uppercase tracking-[0.28em] text-forest">
-            {formatBriefingDate(date)}
+            <L
+              en={formatBriefingDate(date)}
+              zh={formatBriefingDate(date, "zh")}
+            />
           </p>
           {compact ? (
             <h1 className="display reveal reveal-delay-1 max-w-4xl text-4xl leading-[1.05] tracking-tight text-ink sm:text-5xl">
-              {formatBriefingDate(date)}
+              <L
+                en={formatBriefingDate(date)}
+                zh={formatBriefingDate(date, "zh")}
+              />
               <span className="mt-2 block text-xl font-normal tracking-normal text-forest sm:text-2xl">
-                Daily briefing
+                <L en="Daily briefing" zh="每日简报" />
               </span>
             </h1>
           ) : (
@@ -84,13 +92,13 @@ export function BriefingHero({
                     : "mt-3 text-2xl sm:text-3xl lg:text-4xl"
                 }`}
               >
-                Daily Financial Insights
+                <L en="Daily Financial Insights" zh="每日金融洞察" />
               </span>
             </h1>
           )}
-          {publishedLabel ? (
+          {publishedEn ? (
             <p className="reveal reveal-delay-1 text-sm font-medium tracking-wide text-ink/55">
-              Published {publishedLabel}
+              <L en={`Published ${publishedEn}`} zh={`发布于 ${publishedZh}`} />
             </p>
           ) : null}
           <p
@@ -107,14 +115,14 @@ export function BriefingHero({
                   href={marketsHref}
                   className="focus-ring inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
                 >
-                  Markets at a glance
+                  <L en="Markets at a glance" zh="市场一览" />
                 </a>
               ) : (
                 <a
                   href="#executive-summary"
                   className="focus-ring inline-flex items-center bg-forest px-5 py-3 text-sm font-semibold text-paper transition hover:bg-forest-bright"
                 >
-                  Read briefing
+                  <L en="Read briefing" zh="阅读简报" />
                 </a>
               )}
             </div>

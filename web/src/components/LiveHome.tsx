@@ -8,6 +8,7 @@ import {
 } from "@/lib/content-feed";
 import { formatPublishedAt, freshnessStatusLine } from "@/lib/format-published";
 import { BriefingView } from "./BriefingView";
+import { L } from "./L";
 import { LiveStatus } from "./LiveStatus";
 
 /** Pick up newly published briefings without a full page reload. */
@@ -65,13 +66,27 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 sm:px-8">
         <LiveStatus updatedAt={updatedAt} live={live} />
         <p className="pb-2 text-sm text-ink-soft" role="status">
-          {publishedAt
-            ? freshnessStatusLine(publishedAt)
-            : "Showing the latest published edition."}{" "}
-          Weekday editions publish at 09:00 Beijing.
+          {publishedAt ? (
+            <L
+              en={freshnessStatusLine(publishedAt)}
+              zh={freshnessStatusLine(publishedAt, Date.now(), "zh")}
+            />
+          ) : (
+            <L
+              en="Showing the latest published edition."
+              zh="当前为最新已发布版本。"
+            />
+          )}{" "}
+          <L
+            en="Weekday editions publish at 09:00 Beijing."
+            zh="工作日版于北京时间 09:00 发布。"
+          />
           {publishedAt ? (
             <span className="mt-1 block text-xs text-ink/45">
-              Published {formatPublishedAt(publishedAt)}
+              <L
+                en={`Published ${formatPublishedAt(publishedAt)}`}
+                zh={`发布于 ${formatPublishedAt(publishedAt, "zh")}`}
+              />
             </span>
           ) : null}
         </p>

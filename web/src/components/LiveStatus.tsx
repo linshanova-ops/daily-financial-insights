@@ -1,5 +1,7 @@
 "use client";
 
+import { L } from "./L";
+
 interface LiveStatusProps {
   updatedAt: string | null;
   live: boolean;
@@ -15,11 +17,14 @@ export function LiveStatus({ updatedAt, live }: LiveStatusProps) {
         aria-hidden
       />
       <span className="font-semibold uppercase tracking-[0.18em] text-ink/50">
-        {live ? "Live feed" : "Static copy"}
+        {live ? <L en="Live feed" zh="实时" /> : <L en="Static copy" zh="静态" />}
       </span>
       {updatedAt ? (
         <span className="text-ink/45">
-          Updated {new Date(updatedAt).toLocaleString()}
+          <L
+            en={`Updated ${new Date(updatedAt).toLocaleString("en-US")}`}
+            zh={`更新于 ${new Date(updatedAt).toLocaleString("zh-CN")}`}
+          />
         </span>
       ) : null}
     </div>

@@ -1,3 +1,4 @@
+import { L } from "@/components/L";
 import { LiveArchive } from "@/components/LiveArchive";
 import { getAllBriefings } from "@/lib/briefings";
 
@@ -16,14 +17,16 @@ export default function BriefingsArchivePage() {
   return (
     <section className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8">
       <p className="text-xs font-semibold uppercase tracking-[0.24em] text-copper">
-        Archive
+        <L en="Archive" zh="归档" />
       </p>
       <h1 className="display mt-3 text-4xl tracking-tight text-ink sm:text-5xl">
-        Past briefings
+        <L en="Past briefings" zh="往期简报" />
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-ink-soft">
-        Each entry is a dated output from the daily financial research pipeline.
-        This list refreshes automatically when new briefings land on main.
+        <L
+          en="Each entry is a dated output from the daily financial research pipeline. This list refreshes automatically when new briefings land on main."
+          zh="每条都是每日金融研究流程的一份按日期产出。新简报进入 main 后，这个列表会自动更新。"
+        />
       </p>
       <LiveArchive initialItems={briefings} />
     </section>

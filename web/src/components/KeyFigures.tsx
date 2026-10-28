@@ -1,4 +1,5 @@
 import type { BriefingFigure, FigurePoint } from "@/lib/types";
+import { L } from "./L";
 import { SourceButton } from "./SourceButton";
 
 interface KeyFiguresProps {
@@ -122,16 +123,17 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
         <div className="flex items-center gap-3">
           <span className="h-6 w-1 rounded-full bg-forest" aria-hidden />
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-forest">
-            Key figures
+            <L en="Key figures" zh="关键数字" />
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          Numbers that define the day
+          <L en="Numbers that define the day" zh="定义今天的数字" />
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
-          Verified prints from this briefing — each figure links to its primary
-          source. Chart-of-the-day insights come from 彭博 今日图表 when
-          available.
+          <L
+            en="Verified prints from this briefing — each figure links to its primary source. Chart-of-the-day insights come from 彭博 今日图表 when available."
+            zh="本简报里核对过的数字，每个都链到原始来源。有彭博今日图表时，图表解读来自那里。"
+          />
         </p>
 
         {insights.length ? (
@@ -142,7 +144,7 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
                 className="border-t-2 border-forest bg-gradient-to-br from-mist/80 to-transparent pt-5"
               >
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-forest">
-                  Chart of the day · 今日图表
+                  <L en="Chart of the day" zh="今日图表" />
                 </p>
                 <h3 className="display mt-2 text-2xl tracking-tight text-ink sm:text-3xl">
                   {figure.title}
@@ -169,7 +171,9 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
                 ) : null}
                 {figure.analysis ? (
                   <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink">
-                    <span className="font-semibold text-forest">Analysis · </span>
+                    <span className="font-semibold text-forest">
+                      <L en="Analysis · " zh="解读 · " />
+                    </span>
                     {figure.analysis}
                   </p>
                 ) : null}

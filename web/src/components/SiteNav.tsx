@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { L } from "./L";
 
 const links = [
-  { href: "/", label: "Today" },
-  { href: "/briefings", label: "Archive" },
-  { href: "/pipeline", label: "Pipeline" },
+  { href: "/", en: "Today", zh: "今日" },
+  { href: "/briefings", en: "Archive", zh: "归档" },
+  { href: "/pipeline", en: "Pipeline", zh: "流程" },
 ];
 
 function isActive(pathname: string, href: string): boolean {
@@ -32,7 +33,7 @@ export function SiteNav() {
                 : "text-ink-soft"
             }`}
           >
-            {link.label}
+            <L en={link.en} zh={link.zh} />
           </Link>
         );
       })}

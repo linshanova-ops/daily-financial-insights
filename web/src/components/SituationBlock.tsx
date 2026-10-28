@@ -1,20 +1,22 @@
 "use client";
 
+import type { ReactNode } from "react";
 import type { FactLine } from "@/lib/types";
 import { asSourcedFacts, factKey } from "@/lib/sourced-facts";
 import { accents, type ModuleAccent } from "@/lib/module-accents";
 import { Bullet } from "./Bullet";
 import { KindLabel } from "./KindLabel";
+import { L } from "./L";
 
 interface SituationBlockProps {
   id?: string;
   eyebrow: string;
-  title: string;
-  stanceLabel: string;
+  title: ReactNode;
+  stanceLabel: ReactNode;
   stance: string;
   changed: FactLine[];
   implies: FactLine[];
-  tensionsLabel: string;
+  tensionsLabel: ReactNode;
   tensions: string;
   accent?: ModuleAccent;
   band?: boolean;
@@ -70,7 +72,7 @@ export function SituationBlock({
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
-                What changed
+                <L en="What changed" zh="有何变化" />
               </h3>
               <KindLabel kind="fact" />
             </div>
@@ -89,7 +91,7 @@ export function SituationBlock({
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
-                What it implies
+                <L en="What it implies" zh="意味着什么" />
               </h3>
               <KindLabel kind="judgment" />
             </div>
