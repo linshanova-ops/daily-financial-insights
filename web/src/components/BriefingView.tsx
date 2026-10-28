@@ -112,7 +112,7 @@ export function BriefingView({
         changed={briefing.chinaChanged}
         implies={briefing.chinaImplies}
         tensionsLabel={<L en="Divergences to watch" zh="需关注的分歧" />}
-        tensions={briefing.chinaDivergences}
+        tensions={briefing.chinaDivergences || briefing.chinaTensions || ""}
         accent="crimson"
       />
       <SourcesCaveats

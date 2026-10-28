@@ -253,6 +253,7 @@ export interface BriefingFrontmatter {
   chinaChanged: FactLine[];
   chinaImplies: FactLine[];
   chinaDivergences: string;
+  chinaTensions?: string;
   /** Stable per-asset regime lens (alpha/beta framework); optional for older briefings. */
   assetFramework?: AssetView[];
   /**
