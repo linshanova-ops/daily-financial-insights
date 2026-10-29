@@ -1,4 +1,5 @@
 import type { CalendarEvent, EventCalendar } from "@/lib/types";
+import { regionZh } from "@/lib/lang";
 import { KindLabel } from "./KindLabel";
 import { L } from "./L";
 import { Prose } from "./Prose";
@@ -72,21 +73,18 @@ export function EventCalendarView({
             {events.map((row) => (
               <li
                 key={row.id}
-                className="grid grid-cols-[4.5rem_2.75rem_minmax(0,1fr)_auto] items-baseline gap-x-2 gap-y-0.5 py-1.5 text-sm sm:grid-cols-[5.5rem_3rem_4rem_minmax(0,1fr)_auto]"
+                className="flex flex-wrap items-baseline gap-x-2 gap-y-1 py-2 text-sm sm:grid sm:grid-cols-[5.5rem_3rem_4rem_minmax(0,1fr)_auto] sm:py-1.5"
               >
                 <span className="tabular-nums text-xs text-ink/45">
                   <L en={formatDay(row.date, "en")} zh={formatDay(row.date, "zh")} />
                 </span>
-                <span className="tabular-nums text-xs text-ink/45">
-                  {row.timeBeijing ?? "—"}
+                <span className={`${row.timeBeijing ? "" : "hidden sm:inline"} tabular-nums text-xs text-ink/45`}>
+                  {row.timeBeijing || "—"}
                 </span>
-                <span className="hidden text-[10px] font-semibold uppercase tracking-[0.12em] text-ink/40 sm:inline">
-                  {row.region}
+                <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-ink/40">
+                  <L en={row.region} zh={regionZh(row.region)} />
                 </span>
-                <span className="min-w-0 font-medium text-ink">
-                  <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-ink/40 sm:hidden">
-                    {row.region}{" "}
-                  </span>
+                <span className="min-w-0 basis-full font-medium text-ink sm:basis-auto">
                   <Prose text={row.event} />
                   {(row.consensus || row.prior) && (
                     <span className="ml-1.5 font-normal text-ink/45">
@@ -103,7 +101,7 @@ export function EventCalendarView({
                     </span>
                   )}
                 </span>
-                <span className="flex shrink-0 flex-wrap items-center justify-end gap-2">
+                <span className="flex basis-full flex-wrap items-center justify-start gap-2 sm:basis-auto sm:shrink-0 sm:justify-end">
                   {row.themeId ? (
                     <a
                       href={`#theme-${row.themeId}`}

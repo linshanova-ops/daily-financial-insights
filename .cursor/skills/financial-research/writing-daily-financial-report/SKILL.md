@@ -46,7 +46,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 
 Before finalizing website YAML, re-check:
 
-1. Every index % change matches the named index's **close** (not another Asia index).
+1. Every index % change matches the named index's **close** (not another Asia index). Do not label an unfinished session as a daily close; mark it 盘中 / intraday with the quote time.
 2. Every official print matches the primary release (BLS/NBS/PBOC/Fed).
 3. Beat/miss labels match actual vs estimate (**less = miss estimate**, **more = beat estimate**).
 4. PBOC OMO: ops size, maturity, **net** = ops − maturity, with correct 亿元→CNY bn conversion.
@@ -73,6 +73,6 @@ End every report with:
 - **Losing traceability while editing** — tightening prose must not detach claims from their sources; keep at least outlet names on key facts.
 - **Pushing markdown without JSON** — always run `npm run verify-briefing` immediately before commit; CI fails if `latest.json` drifted from markdown.
 - **Leaving yesterday’s Themes** — after merging today’s 财经早茶, rewrite `themeCards` (and skim `signal`) from that tape. A Theme whose title or fact still names yesterday’s PNG or yesterday’s desk color is unpublished work.
-- **Chart write-up from a neighbor bullet** — open the 今日图表 PNG first. Title and analysis describe that image (series, units, what it shows). Never use an adjacent news bullet as the chart write-up. An empty 今日图表 section is not a caption.
+- **Chart write-up from a neighbor bullet** — open the 今日图表 PNG first. Read the latest point on the opened PNG. An image read is 约 / about unless a data file confirms it. Title and analysis describe that image (series, units, what it shows). Never use an adjacent news bullet as the chart write-up. An empty 今日图表 section is not a caption.
 - If the 今日图表 body is empty, title and analysis come only from the opened PNG; do not reuse the neighboring section’s topic (30 Sep: consumer confidence on the USDA soy chart).
 - **Keyword-stitch copy** — grabbing three tokens from a source and joining them with slashes or hyphens is not a sentence. If a reader cannot say the line aloud, rewrite it.

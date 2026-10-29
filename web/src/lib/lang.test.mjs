@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { assetZh, gradeZh, groupZh, resolveLang, statusZh } from "./lang.ts";
+import { assetZh, gradeZh, groupZh, regionZh, resolveLang, statusZh } from "./lang.ts";
 
 describe("resolveLang", () => {
   it("uses ?lang= when it is zh or en, else keeps zh, else English", () => {
@@ -24,5 +24,8 @@ describe("chrome enums", () => {
     assert.equal(assetZh("spx", "S&P 500"), "标普500");
     assert.equal(assetZh("brent", "Brent futures (Yahoo)"), "布伦特期货（Yahoo）");
     assert.equal(assetZh("nope", "Some new print"), "Some new print");
+    assert.equal(regionZh("Other"), "其他");
+    assert.equal(regionZh("China"), "中国");
+    assert.equal(regionZh("US"), "美国");
   });
 });

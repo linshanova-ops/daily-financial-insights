@@ -19,7 +19,7 @@ export function SiteNav() {
   const pathname = usePathname() ?? "/";
 
   return (
-    <nav aria-label="Primary" className="flex items-center gap-5 text-sm font-medium">
+    <nav aria-label="Primary" className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm font-medium">
       {links.map((link) => {
         const active = isActive(pathname, link.href);
         return (
@@ -27,7 +27,7 @@ export function SiteNav() {
             key={link.href}
             href={link.href}
             aria-current={active ? "page" : undefined}
-            className={`focus-ring transition-colors hover:text-forest ${
+            className={`focus-ring py-2 transition-colors hover:text-forest ${
               active
                 ? "text-forest underline decoration-copper/60 underline-offset-4"
                 : "text-ink-soft"

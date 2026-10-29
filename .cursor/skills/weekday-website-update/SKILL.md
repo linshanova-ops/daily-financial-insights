@@ -78,7 +78,7 @@ Both sides state the same facts: a number, date, name, direction, or story match
 
 Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facing page is that language, in desk prose. Do not leave the other language’s sentences on the page.
 
-Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts.
+Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time.
 
 The greeting under the avocado stays on both pages. Do not remove either line. Do not fade them. English: Welcome to syravocado — hope you enjoy today’s brief. Chinese: 欢迎你来到小果，希望你喜欢今天的简报！
 
@@ -93,7 +93,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Themes | `themeCards` — see **Theme card** below. `verify-briefing` fails the dump shape. |
 | Market closes | `marketDashboard` via inject only. Renders after Summary, **before** Markets at a glance and Themes. |
 | Markets at a glance | `marketOverview` — fill from mail **市场一览**: **Chinese, one bullet each, in mail order**. Section title follows the page language (Markets at a glance / 市场一览). Do not replace the 财经早茶 desk with English books. Extra dated prints live in Closes / Themes. Do not copy Yahoo inject levels into this paragraph. Do **not** fill `assetClasses`. |
-| Chart | `figures` (chart-of-day **only** if `bloomberg-$TODAY` PNG exists). Open the PNG first; title and analysis describe that image (series, units, what it shows). Never an adjacent news bullet. Renders after Markets at a glance, before Themes. |
+| Chart | `figures` (chart-of-day **only** if `bloomberg-$TODAY` PNG exists). Open the PNG first; title and analysis describe that image (series, units, what it shows). Read the latest point on the opened PNG. An image read is 约 / about unless a data file confirms it. Never an adjacent news bullet. Renders after Markets at a glance, before Themes. |
 | Key sources | `keySources` — **unique** prints/desk views only. Each row: `label`, `href`, `books[]` (asset-class ids it actually moves), `influence` (one line: the print and which book it changes). One href once. No Yahoo quote HTML. No second chip for a desk already used as the primary. |
 | Event calendar | `eventCalendar` windowStart=briefing date, windowEnd=Friday after the Friday-on-or-after (this week + next); ~8–20 dated rows; mainland China only on calendar; `watchItems: []` |
 | Global | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions` — **do not repeat Market closes prints** (indices, yields, oil settle, BTC level). Keep narrative and desk news; extra AP/Treasury close bullets belong in `marketDashboard` / Themes / skim `summary`, not `globalChanged`. |

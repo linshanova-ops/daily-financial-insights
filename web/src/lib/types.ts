@@ -184,6 +184,8 @@ export interface MarketDashboardRow {
   changeDirection?: "up" | "down" | "flat";
   asOfDate: string;
   source: FactSource;
+  /** Futures vs the other print, when this row is not that print. */
+  printNote?: string;
 }
 
 export interface MarketDashboardGroup {

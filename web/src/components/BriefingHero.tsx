@@ -69,7 +69,7 @@ export function BriefingHero({
             />
           </p>
           {compact ? (
-            <h1 className="display reveal reveal-delay-1 max-w-4xl text-4xl leading-[1.05] tracking-tight text-ink sm:text-5xl">
+            <h1 className="display reveal reveal-delay-1 max-w-4xl text-balance text-3xl leading-tight tracking-tight text-ink sm:text-5xl">
               <L
                 en={formatBriefingDate(date)}
                 zh={formatBriefingDate(date, "zh")}

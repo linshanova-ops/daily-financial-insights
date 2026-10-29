@@ -21,7 +21,7 @@ export function SiteHeader() {
         />
         <span>syravocado</span>
       </Link>
-      <div className="flex items-center gap-4 sm:gap-6">
+      <div className="flex w-full flex-wrap items-center gap-x-3 gap-y-2 sm:w-auto sm:gap-6">
         <LangSwitch />
         <SiteNav />
       </div>

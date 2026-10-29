@@ -1,4 +1,5 @@
 import type { BriefingFigure, FigurePoint } from "@/lib/types";
+import { enOf, zhOf } from "@/lib/lang-text";
 import { L } from "./L";
 import { Prose } from "./Prose";
 import { SourceButton } from "./SourceButton";
@@ -157,8 +158,10 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={assetUrl(figure.imageSrc)}
-                      alt={figure.title || "Bloomberg chart of the day"}
-                      className="h-auto w-full max-h-[28rem] object-contain object-left bg-white"
+                      alt={enOf(figure.title) || "Chart of the day"}
+                      data-alt-en={enOf(figure.title) || "Chart of the day"}
+                      data-alt-zh={zhOf(figure.title) || "今日图表"}
+                      className="h-auto w-full max-w-full max-h-[28rem] object-contain bg-white"
                     />
                   </figure>
                 ) : null}

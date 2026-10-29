@@ -36,12 +36,12 @@ export function SectionNav({
       aria-label="Briefing sections"
       className="sticky top-0 z-20 border-b border-line/80 bg-mist/90 backdrop-blur-md"
     >
-      <div className="mx-auto flex w-full max-w-6xl items-center gap-3 overflow-x-auto px-5 py-2 sm:px-8">
+      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-x-1 gap-y-0.5 px-3 py-1 sm:px-8">
         {items.map((item) => (
           <a
             key={item.href}
             href={item.href}
-            className="focus-ring shrink-0 px-3 py-1.5 text-xs font-semibold tracking-wide text-ink-soft transition-colors hover:text-forest"
+            className="focus-ring px-2.5 py-2 text-xs font-semibold tracking-wide text-ink-soft transition-colors hover:text-forest"
           >
             <L en={item.en} zh={item.zh} />
           </a>

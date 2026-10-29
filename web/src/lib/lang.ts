@@ -61,3 +61,16 @@ const ASSET_ZH: Record<string, string> = {
 export function assetZh(id: string, en: string): string {
   return ASSET_ZH[id] ?? en;
 }
+
+const REGION_ZH: Record<string, string> = {
+  US: "美国",
+  China: "中国",
+  Japan: "日本",
+  UK: "英国",
+  EU: "欧盟",
+  Other: "其他",
+};
+
+export function regionZh(region: string): string {
+  return REGION_ZH[region] ?? region;
+}

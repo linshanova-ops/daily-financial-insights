@@ -5,6 +5,7 @@ import { linkifySources } from "@/lib/source-links";
 import Link from "next/link";
 import { L } from "./L";
 import { Prose } from "./Prose";
+import { isSubscriptionMail, SourceLabel } from "./SourceButton";
 
 interface SourcesCaveatsProps {
   sources: LangText;
@@ -133,14 +134,20 @@ export function SourcesCaveats({
               key={`${s.label}-${s.href}`}
               className="border-t border-line/70 pt-4"
             >
-              <a
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4 transition hover:text-forest-bright"
-              >
-                {s.label}
-              </a>
+              {isSubscriptionMail(s.href) ? (
+                <span className="font-semibold text-ink">
+                  <SourceLabel source={s} />
+                </span>
+              ) : (
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4 transition hover:text-forest-bright"
+                >
+                  {s.label}
+                </a>
+              )}
               {s.books?.length ? (
                 <p className="mt-1 text-xs tracking-wide text-ink/45">
                   {s.books.map((id, index) => (
@@ -163,14 +170,20 @@ export function SourcesCaveats({
         <ul className="mt-8 flex flex-wrap gap-2">
           {keySources.map((s) => (
             <li key={`${s.label}-${s.href}`}>
-              <a
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="focus-ring inline-flex rounded-sm border border-line bg-paper/80 px-2.5 py-1 text-xs font-medium text-ink-soft transition hover:border-forest/40 hover:text-forest"
-              >
-                {s.label}
-              </a>
+              {isSubscriptionMail(s.href) ? (
+                <span className="inline-flex max-w-full whitespace-normal rounded-sm border border-line bg-paper/80 px-2.5 py-1 text-xs font-medium text-ink-soft">
+                  <SourceLabel source={s} />
+                </span>
+              ) : (
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus-ring inline-flex rounded-sm border border-line bg-paper/80 px-2.5 py-1 text-xs font-medium text-ink-soft transition hover:border-forest/40 hover:text-forest"
+                >
+                  {s.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>

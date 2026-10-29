@@ -38,7 +38,7 @@
       }
     },
     {
-      "label": "彭博财经早茶 Oct 28",
+      "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
       "href": "https://www.bloomberg.com/asia",
       "books": [
         "us-equities",
@@ -227,24 +227,24 @@
     {
       "id": "bloomberg-chart-of-day",
       "title": {
-        "en": "French consumer sentiment ends this chart just under the 85 line",
-        "zh": "法国消费者信心指数在本图收于 85 一线略下方。"
+        "en": "French consumer sentiment ends this chart about 80",
+        "zh": "法国消费者信心指数在本图收于约 80。"
       },
       "kind": "insight",
       "imageSrc": "/inbox-charts/bloomberg-2026-10-28.png",
       "analysis": {
-        "en": "One orange line plots a consumer-sentiment index. The vertical scale runs from 75 to 105, with a gridline every five points. The horizontal scale runs from 2014 through 2026. The line peaks near the top gridline twice, once late in the 2010s and once near 2021, then drops to the 80 gridline in 2022. It climbs back toward the low 90s around 2024 and then falls, finishing just under the 85 gridline, where a short purple tick marks the last reading. The footnote names the national statistics institute as the source.",
-        "zh": "一条橙色曲线描绘消费者信心指数。纵轴自 75 至 105，每五个点一条网格线。横轴自 2014 年至 2026 年。曲线两次接近顶部网格线，一次在 2010 年代后期，一次在 2021 年附近，随后于 2022 年落到 80 的网格线。2024 年前后回升至 90 出头，然后回落，收在 85 网格线略下方，末点有一短紫色刻度。脚注写明来源为该国统计机构。"
+        "en": "One orange line plots a consumer-sentiment index. The vertical scale runs from 75 to 105, with a gridline every five points. The horizontal scale runs from 2014 through 2026. The line peaks near the top gridline twice, once late in the 2010s and once near 2021, then drops to the 80 gridline in 2022. It climbs back toward the low 90s around 2024 and then falls, finishing about 80, where a short purple tick marks the last reading. The footnote names the national statistics institute as the source.",
+        "zh": "一条橙色曲线描绘消费者信心指数。纵轴自 75 至 105，每五个点一条网格线。横轴自 2014 年至 2026 年。曲线两次接近顶部网格线，一次在 2010 年代后期，一次在 2021 年附近，随后于 2022 年落到 80 的网格线。2024 年前后回升至 90 出头，然后回落，收在约 80，末点有一短紫色刻度。脚注写明来源为该国统计机构。"
       },
       "source": {
-        "label": "彭博财经早茶 Oct 28",
+        "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
         "href": "https://www.bloomberg.com/asia"
       }
     }
   ],
   "marketTone": {
-    "en": "Tuesday's crude settle fell again while Gulf talks stayed in the lead, and US indexes rose for a second day. WTI settled at 99.90 and Brent at 113.88. The 10-year yield was 4.9843%. Shanghai fell 1.33% to 3648.30 and ChiNext fell 3.41%. The chart is a French consumer-sentiment index finishing just under the 85 line.",
-    "zh": "周二原油结算价再度下跌，海湾谈判仍居主导，美股指数则连续第二个交易日上涨。WTI 结算价为 99.90，布伦特结算价为 113.88。10年期收益率为 4.9843%。上证综指下跌 1.33% 至 3648.30，创业板指下跌 3.41%。今日图表为法国消费者信心指数，收在 85 一线略下方。"
+    "en": "Tuesday's crude settle fell again while Gulf talks stayed in the lead, and US indexes rose for a second day. WTI settled at 99.90 and Brent at 113.88. The 10-year yield was 4.9843%. Shanghai fell 1.33% to 3648.30 and ChiNext fell 3.41%. The chart is a French consumer-sentiment index finishing about 80.",
+    "zh": "周二原油结算价再度下跌，海湾谈判仍居主导，美股指数则连续第二个交易日上涨。WTI 结算价为 99.90，布伦特结算价为 113.88。10年期收益率为 4.9843%。上证综指下跌 1.33% 至 3648.30，创业板指下跌 3.41%。今日图表为法国消费者信心指数，收在约 80。"
   },
   "summary": [
     {
@@ -309,8 +309,8 @@
     }
   ],
   "signal": {
-    "en": "Brent settled at 113.88 and WTI at 99.90 as the Gulf pullback extended, and the S&P 500 rose 0.60% to 7722.60 with another heavily subscribed AI share sale. The 10-year yield was 4.9843%. Shanghai fell 1.33% to 3648.30, so Monday's hold is gone. The chart is French consumer sentiment just under the 85 line.",
-    "zh": "海湾回落延续，布伦特结算价为 113.88，WTI 为 99.90；标普500上涨 0.60% 至 7722.60，同时一笔人工智能股票发行获得高倍认购。10年期收益率为 4.9843%。上证综指下跌 1.33% 至 3648.30，周一的企稳没有延续。今日图表是法国消费者信心，收在 85 一线略下方。"
+    "en": "Brent settled at 113.88 and WTI at 99.90 as the Gulf pullback extended, and the S&P 500 rose 0.60% to 7722.60 with another heavily subscribed AI share sale. The 10-year yield was 4.9843%. Shanghai fell 1.33% to 3648.30, so Monday's hold is gone. The chart is French consumer sentiment about 80.",
+    "zh": "海湾回落延续，布伦特结算价为 113.88，WTI 为 99.90；标普500上涨 0.60% 至 7722.60，同时一笔人工智能股票发行获得高倍认购。10年期收益率为 4.9843%。上证综指下跌 1.33% 至 3648.30，周一的企稳没有延续。今日图表是法国消费者信心，收在约 80。"
   },
   "watch": {
     "en": "Australia's September CPI is at 08:30 Beijing. The UK budget is at 20:30, and the Bank of Canada decides at 21:45. Alphabet and Microsoft report after the US close. The FOMC decision is 02:00 Beijing on 29 October, and the chair's press conference is at 02:30. The ECB decides on 29 October. The Fifth Plenum runs through 29 October. The Bank of Japan statement is 30 October. US midterms are 3 November.",
@@ -428,7 +428,7 @@
           "href": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
         },
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ],
@@ -473,7 +473,7 @@
           "href": "https://wallstreetcn.com/articles/3784617"
         },
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ],
@@ -522,7 +522,7 @@
           "href": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
         },
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ],
@@ -608,21 +608,21 @@
           "href": "https://wallstreetcn.com/articles/3784617"
         },
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ],
       "mechanism": {
-        "en": "Gold rose on a day yields barely moved and equities rose, so this bounce stands apart from the Treasury tape. Morgan Stanley (28 October): gold has failed as a hedge in sharp equity selloffs since 2020, while it has cushioned violent Treasury selloffs, and the bank still prefers gold among metals. Gold carries the 1.09% rise in the spot price to 4060.55. The theme changes if spot gold falls back through 4060.55.",
-        "zh": "黄金上涨的这一天，收益率几乎未动，股市也在上涨，因此这轮反弹与美债行情相互独立。摩根士丹利（10月28日）：自 2020 年以来，黄金在股市急跌中没有起到对冲作用，但在美债剧烈抛售中提供了缓冲；该行在金属中仍偏好黄金。黄金对应的是现货价格上涨 1.09% 至 4060.55。若现货黄金跌回 4060.55 下方，这一判断不再成立。"
+        "en": "Gold rose on a day yields barely moved and equities rose, so this bounce stands apart from the Treasury tape. Morgan Stanley (28 October): gold has failed as a hedge in sharp equity selloffs since 2020, while it has cushioned violent Treasury selloffs, and the bank still prefers gold among metals. Gold carries the 1.09% rise in the spot price to 4060.55. The theme changes if that dip-buying reverses.",
+        "zh": "黄金上涨的这一天，收益率几乎未动，股市也在上涨，因此这轮反弹与美债行情相互独立。摩根士丹利（10月28日）：自 2020 年以来，黄金在股市急跌中没有起到对冲作用，但在美债剧烈抛售中提供了缓冲；该行在金属中仍偏好黄金。黄金对应的是现货价格上涨 1.09% 至 4060.55。若这轮逢低买盘逆转，这一判断不再成立。"
       },
       "trigger": {
         "en": "Spot gold rose 1.09% to 4060.55 and moved back through 4000.",
         "zh": "现货黄金上涨 1.09% 至 4060.55，重新站上 4000。"
       },
       "invalidator": {
-        "en": "Spot gold falls back through 4060.55.",
-        "zh": "现货黄金跌回 4060.55 下方。"
+        "en": "Dip-buying reverses.",
+        "zh": "逢低买盘逆转。"
       },
       "horizon": {
         "en": "days",
@@ -653,7 +653,7 @@
           "href": "https://wallstreetcn.com/articles/3784617"
         },
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ],
@@ -694,7 +694,7 @@
       },
       "factSources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ],
@@ -769,7 +769,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -781,7 +781,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -793,7 +793,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -805,7 +805,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -817,7 +817,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -829,7 +829,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -841,7 +841,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -853,7 +853,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -865,7 +865,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -877,7 +877,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -889,7 +889,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -901,7 +901,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -913,7 +913,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -925,7 +925,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -1003,7 +1003,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -1015,7 +1015,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -1027,7 +1027,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -1039,7 +1039,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -1051,7 +1051,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -1063,7 +1063,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -1075,7 +1075,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
@@ -1087,7 +1087,7 @@
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         },
         {
@@ -1178,7 +1178,7 @@
           "zh": "澳大利亚9月 CPI"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1193,7 +1193,7 @@
           "zh": "新西兰储备银行利率决定"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1208,7 +1208,7 @@
           "zh": "台湾9月景气监测指标"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1223,7 +1223,7 @@
           "zh": "香港9月贸易"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1238,7 +1238,7 @@
           "zh": "东山精密在香港上市"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1253,7 +1253,7 @@
           "zh": "美国9月商品贸易差额初值"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1268,7 +1268,7 @@
           "zh": "英国预算案"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1283,7 +1283,7 @@
           "zh": "欧洲央行首席经济学家莱恩讲话"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1298,7 +1298,7 @@
           "zh": "加拿大央行利率决定"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1329,7 +1329,7 @@
           "zh": "德国总统访华，行程至 10月31日"
         },
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1377,7 +1377,7 @@
         },
         "themeId": "ust-duration",
         "source": {
-          "label": "彭博财经早茶 Oct 28",
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
           "href": "https://www.bloomberg.com/asia"
         }
       },
@@ -1436,8 +1436,8 @@
     "zh": "邮件底稿是 10月28日财经早茶。摘要中的美股指数和原油收盘来自华尔街见闻和 CNBC。收益率、黄金以及 A 股和香港收盘来自华尔街见闻。工业企业利润来自财新。10月27日逆回购来自第一财经。全会来自财新。比特币越过 $80,000 以及币安的巴西申请来自律动。中金的研究观点写在对应主题上。央行日期来自美联储、欧洲央行和日本银行的日历。"
   },
   "singleSource": {
-    "en": "Last-kick of inbox-sync.yml at 2026-10-28T01:01Z brought the 28 October 财经早茶 and bloomberg-2026-10-28.png onto this branch before YAML (workflow 40612506966). The 今日图表 body was empty; title and analysis come from the opened PNG, an orange consumer-sentiment index from 2014 to 2026 that finishes just under the 85 gridline. hormuz-tankers, ust-duration, and ai-credit are escalated: Brent fell further from 115.81 to 113.88, the FOMC meeting is now in session, and the AI share sale drew five times demand on a second up day. a-shares is retired because Shanghai closed at 3648.30, through Monday's 3697.52, and ChiNext fell again. brazil-real, eu-gas, us-gasoline, and france-oats were omitted: their falsifiers did not print and today's tape did not refresh those levels. france-confidence, gold, copper, and boj-cpi are new. The 7.24% Taiwan M2 figure and the 0.52 times public subscription were left off the page because they sit only on the newsletter hub. Bitcoin prints were not merged: the mail header was 63633.26, the breakfast was 80753.50, and the 律动 flash was an intraday cross of $80,000 with a 0.10% 24-hour change that is not the close. 250亿美元 is USD25bn. 4120亿元 is CNY412bn, 10000亿元 is CNY1000bn, 3980亿元 is CNY398bn, and the net add of 10140亿元 is CNY1014bn. No 28 October yuan fix was on 第一财经; the latest operation cited is 27 October. The latest Glassnode inbox is Week 42, received 21 October, outside this window, so no on-chain size is used. There is no stable 律动 flash for a Tuesday street-rating note or a Tuesday oil settle; the two flashes above are the in-window 律动 items.   CICC search ran for oil, the October bond survey, AI capex, French bonds, A-share ETFs, copper supply, and the Bank of Japan. Market closes were injected at 2026-10-28T01:19:25.942Z and stay in that block. Hang Seng Tech there is 3800.43 with a day change of −1.48%. Nikkei 63960.59 and Kospi 5904.79 are dated 28 October in the inject and are not the breakfast tape, so they are not in the summary. Yahoo Brent 110.60 is not the 113.88 settle. Yahoo gold futures 4071.20 are not spot 4060.55. CoinGecko bitcoin 80568 is a third print and was not merged with the header, the breakfast, or the 律动 cross. The Treasury curve in that block prints the 10-year at 4.99 and the 2-year at 4.70, while 见闻 prints 4.9843% and 4.7286%. Onshore yuan at 03:00 was 6.6670; the inject USD/CNY row is 6.6558 and is not that fix. Yahoo quote HTML stays in Market closes.",
-    "zh": "inbox-sync.yml 于 2026-10-28T01:01Z 的收尾运行，在写入 YAML 之前，将 10月28日财经早茶与 bloomberg-2026-10-28.png 放入本分支（工作流 40612506966）。今日图表正文为空；标题与解读来自所打开的 PNG，为一条橙色消费者信心指数，时间自 2014 年至 2026 年，收于 85 网格线略下方。hormuz-tankers、ust-duration 与 ai-credit 列为升级：布伦特由 115.81 进一步下跌至 113.88，联邦公开市场委员会会议正在举行，人工智能股票发行在第二个上涨日获得五倍认购。a-shares 撤下，因上证收于 3648.30，跌破周一的 3697.52，且创业板再度下跌。brazil-real、eu-gas、us-gasoline 与 france-oats 未列入：其证伪条件未在行情中出现，且当日行情未更新这些水平。france-confidence、gold、copper 与 boj-cpi 为新增。台湾 M2 增速 7.24% 与 0.52 倍公开发售未写入页面，因二者仅见于简讯汇总页。比特币报价未合并：邮件页眉为 63633.26，早茶为 80753.50，律动快讯为盘中越过 $80,000、24 小时变动 0.10%，并非收盘价。250亿美元 即 USD25bn。4120亿元 即 CNY412bn，10000亿元 即 CNY1000bn，3980亿元 即 CNY398bn，净投放 10140亿元 即 CNY1014bn。第一财经没有 10月28日的人民币中间价；所引最近一次操作为 10月27日。最新 Glassnode 收件为 Week 42，收到日期为 10月21日，不在本窗口内，故未采用链上规模。没有稳定的律动快讯覆盖周二的卖方评级或周二原油结算；上文两则是窗口内的律动条目。中金检索覆盖原油、10月债券调查、人工智能资本开支、法国国债、A股 ETF、铜供应与日本银行。市场收盘于 2026-10-28T01:19:25.942Z 注入，并保留在该区块。其中恒生科技指数为 3800.43，日变动 −1.48%。日经指数 63960.59 与韩国综合指数 5904.79 在注入数据中日期为 10月28日，并非早茶行情，故未写入摘要。Yahoo 布伦特 110.60 并非 113.88 的结算价。Yahoo 黄金期货 4071.20 并非现货 4060.55。CoinGecko 比特币 80568 为第三组报价，未与页眉、早茶或律动的越过价合并。该区块国债曲线将 10 年期记为 4.99、2 年期记为 4.70，见闻则为 4.9843% 与 4.7286%。北京时间 03:00 的在岸人民币为 6.6670；注入数据中的 USD/CNY 为 6.6558，并非该中间价。Yahoo 行情 HTML 保留在市场收盘中。"
+    "en": "Bitcoin prints were not merged: the mail header was 63633.26, the breakfast was 80753.50, the 律动 flash was an intraday cross of $80,000 with a 0.10% 24-hour change and is not a close, and the dashboard CoinGecko quote is 80568. The dashboard Treasury curve prints the 10-year at 4.99 and the 2-year at 4.70; 华尔街见闻 prints 4.9843% and 4.7286%. Dashboard Brent futures at 110.60 are an intraday futures quote, not the 113.88 settle. Dashboard gold futures at 4071.20 are an intraday futures quote, not spot 4060.55. Onshore yuan at 03:00 Beijing was 6.6670; the dashboard USD/CNY is 6.6558 and is not that fix. 第一财经 has no 28 October yuan fix; the operation cited is 27 October.",
+    "zh": "比特币报价未合并：邮件页眉为 63633.26，早茶为 80753.50，律动快讯为盘中越过 $80,000、24 小时变动 0.10%，并非收盘价，看板中 CoinGecko 报价为 80568。看板国债曲线将 10 年期记为 4.99、2 年期记为 4.70，华尔街见闻则为 4.9843% 与 4.7286%。看板布伦特期货 110.60 是期货盘中报价，不是 113.88 的结算价。看板黄金期货 4071.20 是期货盘中报价，不是现货 4060.55。北京时间 03:00 的在岸人民币为 6.6670；看板美元/人民币为 6.6558，并非该中间价。第一财经没有 10月28日的人民币中间价；所引操作为 10月27日。"
   },
   "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market closes are the inject snapshot. Desk settles in the summary are 华尔街见闻 and CNBC. 250亿美元 is USD25bn. 10140亿元 is CNY1014bn. This report is research and information synthesis, not investment advice.",
   "suggestions": "The live risks are Brent at 113.88, the 10-year yield at 4.9843%, Shanghai at 3648.30, and an AI share sale of 250亿美元 that drew five times demand. The FOMC decision is 02:00 Beijing on 29 October. This report is research and information synthesis, not investment advice.",
@@ -1445,8 +1445,8 @@
   "marketDashboard": {
     "asOf": "2026-10-28T01:19:25.942Z",
     "note": {
-      "en": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
-      "zh": "股票、外汇、黄金期货和布伦特期货采用 Yahoo 最近两个日线收盘（布伦特一行是 Yahoo BZ=F，与 CNBC 官方结算价不是同一报价）；美国国债采用官方日度收益率曲线（相对前值的基点）；比特币为 CoinGecko 的 24 小时变动；资金费率比较相邻的 OKX 报价。快照取自生成时点，不是本页实时行情。"
+      "en": "Equities, FX, gold futures, and Brent futures use the latest Yahoo daily bar; a session still open at the snapshot is intraday, not a close (Brent row is Yahoo BZ=F — not the same print as the CNBC settle); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+      "zh": "股票、外汇、黄金期货和布伦特期货采用 Yahoo 最近日线柱；快照时尚未收盘的时段是盘中，不是收盘（布伦特一行是 Yahoo BZ=F，与 CNBC 结算价不是同一报价）；美国国债采用官方日度收益率曲线（相对前值的基点）；比特币为 CoinGecko 的 24 小时变动；资金费率比较相邻的 OKX 报价。快照取自生成时点，不是本页实时行情。"
     },
     "groups": [
       {
@@ -1640,6 +1640,10 @@
             "change": "+0.81%",
             "changeDirection": "up",
             "asOfDate": "2026-10-28",
+            "printNote": {
+              "en": "futures intraday, not spot 4060.55",
+              "zh": "期货盘中，并非现货 4060.55"
+            },
             "source": {
               "label": "Yahoo Finance (GC=F)",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -1652,6 +1656,10 @@
             "change": "−4.50%",
             "changeDirection": "down",
             "asOfDate": "2026-10-28",
+            "printNote": {
+              "en": "futures intraday, not the 113.88 settle",
+              "zh": "期货盘中，并非结算价 113.88"
+            },
             "source": {
               "label": "Yahoo Finance (BZ=F)",
               "href": "https://finance.yahoo.com/quote/BZ%3DF/"
