@@ -46,7 +46,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 
 Before finalizing website YAML, re-check:
 
-1. Every index % change matches the named index's **close** (not another Asia index). Do not label an unfinished session as a daily close; mark it 盘中 / intraday with the quote time.
+1. Every index % change matches the named index's **close** (not another Asia index). Do not label an unfinished session as a daily close; mark it 盘中 / intraday with the quote time. Nikkei and Kospi use the previous completed daily close (收盘 / close plus that session date), not the intraday print.
 2. Every official print matches the primary release (BLS/NBS/PBOC/Fed).
 3. Beat/miss labels match actual vs estimate (**less = miss estimate**, **more = beat estimate**).
 4. PBOC OMO: ops size, maturity, **net** = ops − maturity, with correct 亿元→CNY bn conversion.
@@ -56,7 +56,7 @@ Before finalizing website YAML, re-check:
 8. **Crypto prints:** prefer dated Cointelegraph / CoinDesk / Yahoo Finance BTC-USD (or similar) over a single BlockBeats HTX flash. If BlockBeats is used for crypto color, triangulate the level against an independent dated source before publishing.
 9. Every `href` on a sourced fact must support the number claimed; if the page is wrong-year or off-level, replace the source — do not keep a convenient link.
 10. **Site-wide publish gate:** after writing YAML, from `web/` run **`npm run verify-briefing`** (sync-data, JSON-in-git check, then scan-links). It fetches **all** cited hrefs (every briefing field + `web/src`), checks publication year, and verifies claim numbers appear on the cited page(s). Failures block publish; fix the cite/claim or add bad IDs to `web/scripts/rejected-source-ids.json`. Chinese and English state the same facts (number, date, name, direction, story). Do not invent numbers, closes, or dates, or turn a figure into a different fact. A publication’s own name stays inside a sentence of the page language. Brent stays Yahoo BZ=F, labeled 布伦特期货（Yahoo）. Do not call it Platts.
-11. **Live market dashboard on every update** — before verify/commit, from `web/` run `node scripts/fetch-market-closes.mjs --inject content/briefings/YYYY-MM-DD.md` so `marketDashboard.asOf` and row prints reflect the latest available closes/intraday (Asia same-day where open, except Nikkei and Kospi, which use the previous completed daily close while that session is open; US prior session until US cash close). Set `publishedAt` to current UTC at that same moment (not the first draft time). Note the re-inject timestamp in `singleSource`. **Do not copy inject levels into sourced summary/drivers** that cite `finance.yahoo.com/quote/` — quote HTML has no print; `scan-links` will fail.
+11. **Live market dashboard on every update** — before verify/commit, from `web/` run `node scripts/fetch-market-closes.mjs --inject content/briefings/YYYY-MM-DD.md` so `marketDashboard.asOf` and row prints reflect the latest available closes/intraday (Asia same-day where open; US prior session until US cash close). Set `publishedAt` to current UTC at that same moment (not the first draft time). Note the re-inject timestamp in `singleSource`. **Do not copy inject levels into sourced summary/drivers** that cite `finance.yahoo.com/quote/` — quote HTML has no print; `scan-links` will fail.
 12. **Commit markdown + JSON together** — never push briefing `.md` without regenerated `web/public/data/briefings/*.json` and `latest.json` from the same verify run.
 
 ## Mandatory Disclaimer
