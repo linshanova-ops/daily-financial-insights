@@ -129,40 +129,6 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                   <p className="mt-2 text-base leading-relaxed text-ink-soft">
                     <Prose text={theme.mechanism} />
                   </p>
-                  {theme.trigger || theme.invalidator || theme.horizon ? (
-                    <dl className="mt-4 grid gap-3 text-sm leading-relaxed text-ink-soft md:grid-cols-3">
-                      {theme.horizon ? (
-                        <div>
-                          <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
-                            <L en="Horizon" zh="期限" />
-                          </dt>
-                          <dd className="mt-1">
-                            <Prose text={theme.horizon} />
-                          </dd>
-                        </div>
-                      ) : null}
-                      {theme.trigger ? (
-                        <div>
-                          <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
-                            <L en="Trigger" zh="触发" />
-                          </dt>
-                          <dd className="mt-1">
-                            <Prose text={theme.trigger} />
-                          </dd>
-                        </div>
-                      ) : null}
-                      {theme.invalidator ? (
-                        <div>
-                          <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink/45">
-                            <L en="Invalidator" zh="失效条件" />
-                          </dt>
-                          <dd className="mt-1">
-                            <Prose text={theme.invalidator} />
-                          </dd>
-                        </div>
-                      ) : null}
-                    </dl>
-                  ) : null}
                 </div>
               </div>
             </li>

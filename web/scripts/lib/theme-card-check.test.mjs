@@ -19,6 +19,13 @@ describe("checkThemeCards", () => {
   it("passes a tight card", () => {
     assert.equal(checkThemeCards({ themeCards: [good] }).ok, true);
   });
+  it("passes without trigger, invalidator, or horizon", () => {
+    const card = { ...good };
+    delete card.trigger;
+    delete card.invalidator;
+    delete card.horizon;
+    assert.equal(checkThemeCards({ themeCards: [card] }).ok, true);
+  });
   it("fails a fact dump", () => {
     const fact = Array(4).fill("AP: the S&P rose 0.5%.").join(" ");
     assert.match(checkThemeCards({ themeCards: [{ ...good, fact }] }).message, /1–3/);
@@ -30,9 +37,6 @@ describe("checkThemeCards", () => {
   it("fails a long so-what", () => {
     const mechanism = Array(6).fill("Oil keeps a war premium.").join(" ");
     assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /3–5/);
-  });
-  it("fails a missing trigger", () => {
-    assert.match(checkThemeCards({ themeCards: [{ ...good, trigger: "" }] }).message, /missing trigger/);
   });
   it("fails sourcing caveats as so-what", () => {
     const mechanism = "That figure is 09:57 a.m. EDT, not a settle.";
