@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-10-28T07:05:17.208Z",
-  "latest": "2026-10-28",
+  "generatedAt": "2026-10-29T01:34:42.800Z",
+  "latest": "2026-10-29",
   "briefings": [
+    {
+      "date": "2026-10-29",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "The Fed held the funds rate at 3.75% to 4%, and the Treasury curve steepened, with the 10-year yield at 5.0175%. WTI settled at 102.78 and Brent at 115.32. The S&P 500 rose 0.28% to 7743.98. Shanghai rose 0.91% to 3681.47. The chart is stacked quarterly cash from long-dated borrowing, with one 2026 bar at the 140 line.",
+        "zh": "美联储将联邦基金利率维持在 3.75% 至 4%，国债曲线走陡，10年期收益率为 5.0175%。WTI 结算价为 102.78，布伦特为 115.32。标普500上涨 0.28% 至 7743.98。上证上涨 0.91% 至 3681.47。今日图表是长期借款带来的季度现金柱，2026 年有一根柱落在 140 的线上。"
+      },
+      "coverageWindow": {
+        "en": "October 28–29, 2026",
+        "zh": "2026年10月28日至29日"
+      }
+    },
     {
       "date": "2026-10-28",
       "title": {

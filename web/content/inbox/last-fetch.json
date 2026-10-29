@@ -1,8 +1,26 @@
 {
-  "at": "2026-10-28T06:28:36.992Z",
-  "briefingDate": "2026-10-28",
+  "at": "2026-10-29T01:05:01.147Z",
+  "briefingDate": "2026-10-29",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md",
+      "subject": "彭博财经早茶: 美联储按兵不动；华大系被美国列入黑名单",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6723,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-29.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-29.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W44.md",
+      "subject": "Most long-term Bitcoin holders are underwater",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 2483,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-28.md",
@@ -21,11 +39,6 @@
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W43.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W43.md",
       "skipped": true
     },
     {
@@ -62,11 +75,6 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-15.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-14.md",
-      "skipped": true
     }
   ],
   "skipped": [
@@ -91,9 +99,9 @@
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W43.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Glassnode x Fasanara Digital: Digital Asset Report Q4 2026 [New report]",
-      "path": "web/content/inbox/glassnode-insights/2026-W43.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -149,11 +157,6 @@
       "reason": "weekly-duplicate",
       "subject": "The top buyers have turned Bitcoin back twice",
       "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 中国重磅数据；华尔街大行财报",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-14.md"
     }
   ]
 }
