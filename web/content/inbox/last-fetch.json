@@ -1,25 +1,17 @@
 {
-  "at": "2026-10-29T01:05:01.147Z",
+  "at": "2026-10-29T01:42:41.507Z",
   "briefingDate": "2026-10-29",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md",
-      "subject": "彭博财经早茶: 美联储按兵不动；华大系被美国列入黑名单",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6723,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-29.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-29.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W44.md",
-      "subject": "Most long-term Bitcoin holders are underwater",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2483,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 美联储按兵不动；华大系被美国列入黑名单",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "Most long-term Bitcoin holders are underwater",
+      "path": "web/content/inbox/glassnode-insights/2026-W44.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 博索纳罗逃离巴西；东山精密港股上市",
