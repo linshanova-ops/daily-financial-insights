@@ -1492,10 +1492,10 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "63,960.59",
-            "change": "+2.85%",
+            "latest": "63,268.37",
+            "change": "+1.73%",
             "changeDirection": "up",
-            "asOfDate": "2026-10-28",
+            "asOfDate": "2026-10-27",
             "source": {
               "label": "Yahoo Finance (^N225)",
               "href": "https://finance.yahoo.com/quote/%5EN225/"
@@ -1504,10 +1504,10 @@
           {
             "id": "kospi",
             "asset": "Kospi",
-            "latest": "5,904.79",
-            "change": "+7.96%",
+            "latest": "5,638.34",
+            "change": "+3.09%",
             "changeDirection": "up",
-            "asOfDate": "2026-10-28",
+            "asOfDate": "2026-10-27",
             "source": {
               "label": "Yahoo Finance (^KS11)",
               "href": "https://finance.yahoo.com/quote/%5EKS11/"

@@ -8,6 +8,7 @@ import {
   formatSignedPct,
   parseUsDate,
   withYahooMetaFallback,
+  selectDisplayedBar,
   unixToDateString,
   yahooPrevIsUsable,
 } from "./market-closes-format.mjs";
@@ -25,6 +26,26 @@ describe("market-closes-format", () => {
     assert.equal(formatBpChange(4.55, 4.57), "+2.0 bp");
     assert.equal(changeDirection("−0.51%"), "down");
     assert.equal(changeDirection("+2.0 bp"), "up");
+  });
+
+  it("uses the previous completed close for an open Nikkei or Kospi session", () => {
+    const snap = "2026-10-28T01:19:25.942Z";
+    const t = (day) => Date.parse(`${day}T00:00:00Z`) / 1000;
+    const pairs = [
+      { t: t("2026-10-26"), c: 62189.65 },
+      { t: t("2026-10-27"), c: 63268.37 },
+      { t: t("2026-10-28"), c: 63960.59 },
+    ];
+    for (const id of ["nikkei", "kospi"]) {
+      const bar = selectDisplayedBar(id, pairs, snap);
+      assert.equal(unixToDateString(bar.last.t), "2026-10-27");
+      assert.equal(bar.last.c, 63268.37);
+    }
+    assert.equal(unixToDateString(selectDisplayedBar("brent", pairs, snap).last.t), "2026-10-28");
+    assert.equal(
+      unixToDateString(selectDisplayedBar("nikkei", pairs, "2026-10-28T07:00:00.000Z").last.t),
+      "2026-10-28",
+    );
   });
 
   it("parses dates", () => {

@@ -17,6 +17,7 @@ import {
   formatPctChange,
   formatSignedPct,
   parseUsDate,
+  selectDisplayedBar,
   unixToDateString,
   withYahooMetaFallback,
   yahooPrevIsUsable,
@@ -60,9 +61,7 @@ async function yahooPair(symbol) {
   }
   pairs = withYahooMetaFallback(pairs, result.meta);
   if (pairs.length < 1) throw new Error(`Yahoo: no closes for ${symbol}`);
-  const last = pairs[pairs.length - 1];
-  const prev = pairs.length >= 2 ? pairs[pairs.length - 2] : null;
-  return { prev, last, symbol };
+  return { pairs, symbol };
 }
 
 function yahooSource(symbol, label) {
@@ -97,7 +96,8 @@ async function rowFromYahoo({
   suffix = "",
   sourceLabel,
 }) {
-  let { prev, last } = await yahooPair(symbol);
+  const { pairs } = await yahooPair(symbol);
+  let { prev, last } = selectDisplayedBar(id, pairs, new Date().toISOString());
   if (!prev || !yahooPrevIsUsable(prev.c, last.c)) {
     const prior = priorPublishedClose(id, last.c);
     if (prior != null) prev = { c: prior, t: last.t - 86400 };

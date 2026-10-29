@@ -78,6 +78,55 @@ export function yahooPrevIsUsable(prev, last) {
   return Boolean(formatted) && !/^([+−-])?0\.00%$/.test(formatted);
 }
 
+/**
+ * Nikkei and Kospi are already open at the morning snapshot, so Yahoo's last
+ * daily bar is an unfinished print. Show the previous completed bar instead.
+ * Same cash closes as session-print.ts. Other ids, including Brent, stay on the last bar.
+ */
+const PRIOR_CLOSE_IF_OPEN = {
+  nikkei: { timeZone: "Asia/Tokyo", close: "15:00" },
+  kospi: { timeZone: "Asia/Seoul", close: "15:30" },
+};
+
+function zonedEpoch(date, hhmm, timeZone) {
+  const [y, m, d] = date.split("-").map(Number);
+  const [hh, mm] = hhmm.split(":").map(Number);
+  const want = Date.UTC(y, m - 1, d, hh, mm);
+  const fmt = new Intl.DateTimeFormat("en-US", {
+    timeZone,
+    hourCycle: "h23",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  let ms = want;
+  for (let i = 0; i < 3; i++) {
+    const map = {};
+    for (const p of fmt.formatToParts(new Date(ms))) map[p.type] = p.value;
+    const got = Date.UTC(+map.year, +map.month - 1, +map.day, +map.hour, +map.minute);
+    ms += want - got;
+  }
+  return ms;
+}
+
+function sessionStillOpen(id, asOfDate, snapshotIso) {
+  const spec = PRIOR_CLOSE_IF_OPEN[id];
+  if (!spec || !asOfDate) return false;
+  const snap = Date.parse(snapshotIso);
+  if (!Number.isFinite(snap)) return false;
+  return snap < zonedEpoch(asOfDate, spec.close, spec.timeZone);
+}
+
+/** Bar to print, and the bar before it for the day change. */
+export function selectDisplayedBar(id, pairs, snapshotIso) {
+  if (!pairs?.length) return { last: null, prev: null };
+  let i = pairs.length - 1;
+  if (sessionStillOpen(id, unixToDateString(pairs[i].t), snapshotIso) && i >= 1) i -= 1;
+  return { last: pairs[i], prev: i >= 1 ? pairs[i - 1] : null };
+}
+
 /** Parse MM/DD/YYYY treasury CSV date → YYYY-MM-DD */
 export function parseUsDate(mdy) {
   const m = String(mdy).trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);

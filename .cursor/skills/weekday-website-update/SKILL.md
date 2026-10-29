@@ -78,7 +78,7 @@ Both sides state the same facts: a number, date, name, direction, or story match
 
 Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facing page is that language, in desk prose. Do not leave the other language’s sentences on the page.
 
-Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time.
+Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Nikkei and Kospi are the exception: use the previous completed daily close and label that session date 收盘 / close.
 
 The greeting under the avocado stays on both pages. Do not remove either line. Do not fade them. English: Welcome to syravocado — hope you enjoy today’s brief. Chinese: 欢迎你来到小果，希望你喜欢今天的简报！
 
