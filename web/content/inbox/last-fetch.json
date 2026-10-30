@@ -1,17 +1,12 @@
 {
-  "at": "2026-10-30T06:40:49.275Z",
+  "at": "2026-10-30T07:37:40.297Z",
   "briefingDate": "2026-10-30",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-30.md",
-      "subject": "彭博财经早茶: 美国通胀率升高；欧洲央行按兵不动",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6695,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-10-30.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-30.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 美国通胀率升高；欧洲央行按兵不动",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-30.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美联储按兵不动；华大系被美国列入黑名单",
