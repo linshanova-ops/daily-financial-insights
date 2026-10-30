@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-10-29T07:57:23.001Z",
-  "latest": "2026-10-29",
+  "generatedAt": "2026-10-30T07:41:41.372Z",
+  "latest": "2026-10-30",
   "briefings": [
+    {
+      "date": "2026-10-30",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "US third-quarter GDP grew 3.4% and September PCE inflation rose to 3.6%, while the ECB held and Lagarde will leave early. The S&P 500 fell 0.30% to 7720.39 and Alphabet fell 13% after search revenue missed. Shanghai fell 0.82% to 3651.43 as AI hardware sold off. Brent settled at 114.88 and spot gold at 4021.23. The chart shows decades of Fed balance-sheet growth and reserve balances now easing from the 2022 peak.",
+        "zh": "美国第三季度 GDP 增长 3.4%，9 月 PCE 通胀升至 3.6%，欧洲央行按兵不动，拉加德将提前卸任。标普500下跌 0.30% 至 7720.39，Alphabet 在搜索收入不及预期后下跌 13%。上证下跌 0.82% 至 3651.43，算力硬件链重挫。布伦特结算价为 114.88，现货黄金为 4021.23。今日图表展示美联储资产负债表数十年扩张，以及准备金余额自 2022 年峰值回落。"
+      },
+      "coverageWindow": {
+        "en": "October 29–30, 2026",
+        "zh": "2026年10月29日至30日"
+      }
+    },
     {
       "date": "2026-10-29",
       "title": {
