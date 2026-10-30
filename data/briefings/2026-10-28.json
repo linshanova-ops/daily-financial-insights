@@ -1,0 +1,1697 @@
+{
+  "date": "2026-10-28",
+  "title": {
+    "en": "Daily Financial Briefing",
+    "zh": "每日金融简报"
+  },
+  "coverageWindow": {
+    "en": "October 27–28, 2026",
+    "zh": "2026年10月27日至28日"
+  },
+  "publishedAt": "2026-10-28T01:19:25.942Z",
+  "keySources": [
+    {
+      "label": "华尔街见闻 10月28日早餐",
+      "href": "https://wallstreetcn.com/articles/3784617",
+      "books": [
+        "us-equities",
+        "asia-equities",
+        "rates",
+        "commodities",
+        "fx"
+      ],
+      "influence": {
+        "en": "Tuesday closes: S&P 500 7722.60, Nasdaq 26477.81, Dow 52377.57, WTI 99.90, Brent 113.88, the 10-year yield 4.9843%, Shanghai 3648.30, and spot gold 4060.55. Morgan Stanley's gold note is on this page.",
+        "zh": "周二收盘：标普500 7722.60，纳斯达克 26477.81，道琼斯 52377.57，WTI 99.90，布伦特 113.88，10年期收益率 4.9843%，上证 3648.30，现货黄金 4060.55。摩根士丹利的黄金点评在本页。"
+      }
+    },
+    {
+      "label": "CNBC live blog",
+      "href": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html",
+      "books": [
+        "us-equities",
+        "commodities"
+      ],
+      "influence": {
+        "en": "CNBC's Tuesday settle: Dow 52377.57, S&P 500 7722.60, Nasdaq 26477.81, WTI 99.90, and Brent 113.88.",
+        "zh": "CNBC 的周二结算：道琼斯 52377.57，标普500 7722.60，纳斯达克 26477.81，WTI 99.90，布伦特 113.88。"
+      }
+    },
+    {
+      "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+      "href": "https://www.bloomberg.com/asia",
+      "books": [
+        "us-equities",
+        "rates",
+        "commodities",
+        "fx",
+        "asia-equities"
+      ],
+      "influence": {
+        "en": "28 October 财经早茶. Gulf cooling, the Meta share sale, the French confidence chart, and the Dongshan listing.",
+        "zh": "10月28日财经早茶。海湾降温、Meta 的股票发行、法国信心图表，以及东山精密上市。"
+      }
+    },
+    {
+      "label": "财新 10月27日工业利润",
+      "href": "https://economy.caixin.com/2026-10-27/102497850.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": {
+        "en": "September industrial profits rose 14.4% year on year. The January–September total rose 15.5%.",
+        "zh": "9月工业企业利润同比增长 14.4%。1月至9月累计增长 15.5%。"
+      }
+    },
+    {
+      "label": "第一财经 10月27日逆回购",
+      "href": "https://www.yicai.com/news/103410483.html",
+      "books": [
+        "rates",
+        "fx"
+      ],
+      "influence": {
+        "en": "On 27 October the PBOC did 4120亿元 of 7-day reverse repos at 1.40% and 10000亿元 overnight, with 3980亿元 maturing.",
+        "zh": "10月27日，央行开展 4120亿元 7天期逆回购，操作利率 1.40%，并开展 10000亿元 隔夜逆回购，当日 3980亿元 到期。"
+      }
+    },
+    {
+      "label": "财新 10月26日五中全会",
+      "href": "https://china.caixin.com/2026-10-26/102497337.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": {
+        "en": "The Fifth Plenum opened on 26 October. The draft decision is on party discipline, and the session runs through 29 October.",
+        "zh": "五中全会于 10月26日开幕。讨论稿关于党的纪律，会期至 10月29日。"
+      }
+    },
+    {
+      "label": "律动 比特币重上8万美元",
+      "href": "https://en.theblockbeats.news/flash/373915",
+      "books": [
+        "crypto"
+      ],
+      "influence": {
+        "en": "A 27 October 律动 flash said bitcoin had rebounded through $80,000. That tick is not the breakfast close.",
+        "zh": "10月27日一条律动快讯称比特币反弹站上 $80,000。该报价并非早茶中的收盘价。"
+      }
+    },
+    {
+      "label": "律动 币安巴西牌照",
+      "href": "https://en.theblockbeats.news/flash/373930",
+      "books": [
+        "crypto"
+      ],
+      "influence": {
+        "en": "Binance applied to Brazil's central bank for a crypto service license and plans to delist local assets.",
+        "zh": "币安向巴西央行申请加密服务牌照，并计划在当地下架一批资产。"
+      }
+    },
+    {
+      "label": "CICC 石油地缘库存",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzkzNjI4NjIxNA==&mid=2247505899&idx=1&sn=4a8bc1c5f2f117a0170e487f0aae713d&chksm=c3eac8580f7cfa44404d31f4f2b5c6937d870063d84bcd38210bda2e9192a26bbed759686d1e&scene=0&xtrack=1#rd",
+      "books": [
+        "commodities"
+      ],
+      "influence": {
+        "en": "CICC (30 June). The low-inventory mark from the Strait shock is hard to erase and can hold a higher floor under oil.",
+        "zh": "中金（6月30日）。海峡冲击留下的低库存痕迹难以抹去，并可在油价下方形成更高的支撑。"
+      }
+    },
+    {
+      "label": "CICC 10月债市调查",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzAwNzMzODYyNg==&mid=2650606326&idx=1&sn=f94222e671c06a6e151a7a39a73cef51&chksm=826b97c048931c457a144b040494876a0738d36dbcbdc34472baa385c168bcbf7b1266dac87f&scene=0&xtrack=1#rd",
+      "books": [
+        "rates"
+      ],
+      "influence": {
+        "en": "CICC (24 October). In their survey, haven assets were still the main allocation, and a larger share of respondents wanted to extend duration.",
+        "zh": "中金（10月24日）。在其调查中，避险资产仍是主要配置，倾向于延长久期的受访者占比上升。"
+      }
+    },
+    {
+      "label": "CICC 海外AI投资",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247861443&idx=1&sn=01608ffe47e213408e4af23de0bd1b42&chksm=eb73f004d496892e5c949602687b53a484d0a974a6a60cd39a85d14dc13e7bc41149203ba542&scene=0&xtrack=1#rd",
+      "books": [
+        "us-equities"
+      ],
+      "influence": {
+        "en": "CICC (22 September). Overseas AI capital spending is still growing, but the pace may slow from the fourth quarter.",
+        "zh": "中金（9月22日）。海外人工智能资本开支仍在增长，但增速或自四季度放缓。"
+      }
+    },
+    {
+      "label": "CICC 法国预算",
+      "href": "http://mp.weixin.qq.com/s?__biz=Mzg4OTY5NzE3Ng==&mid=2247512590&idx=1&sn=bd927753fb5b5239cceb6fc51b33b4bc&chksm=cef1464e6313460369018641802b2ebf973613eb39c12769aa282555f02626f4b2fa3126dd7b&scene=0&xtrack=1#rd",
+      "books": [
+        "rates",
+        "fx"
+      ],
+      "influence": {
+        "en": "CICC (12 October). Concessions required to pass the French budget can limit how far the OAT premium comes back.",
+        "zh": "中金（10月12日）。为通过法国预算所需的让步，会限制法国国债溢价能收回多少。"
+      }
+    },
+    {
+      "label": "CICC 宽基ETF",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247864956&idx=4&sn=52b45e99d444273a7a3c0dfa0569a57c&chksm=eb00381915a0a9853fd3ffbb36a03cf51990da93f254434db84e295dcf7c8f5e21c01c207510&scene=0&xtrack=1#rd",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": {
+        "en": "CICC (19 October). In the latest choppy stretch, the broad equity ETFs they track saw net inflows pick up again.",
+        "zh": "中金（10月19日）。在最近这一段震荡里，其跟踪的宽基股票 ETF 净流入再度加快。"
+      }
+    },
+    {
+      "label": "CICC 铜矿供给",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247863949&idx=3&sn=cdf8ae54dad537c9b6b4719a34b37ab8&chksm=ebb4c29025669bf5540fae23aace6a722643e50b30deca88c85c19fcf9ad3d2779b4b69bc7bf&scene=0&xtrack=1#rd",
+      "books": [
+        "commodities"
+      ],
+      "influence": {
+        "en": "CICC (13 October). Mine supply growth over the next few years still struggles to match demand, and the tight balance has not changed.",
+        "zh": "中金（10月13日）。未来数年矿山供应的增长仍难跟上需求，紧平衡没有改变。"
+      }
+    },
+    {
+      "label": "CICC 日本央行",
+      "href": "http://mp.weixin.qq.com/s?__biz=Mzg4OTY5NzE3Ng==&mid=2247510965&idx=1&sn=1924c0c506a1e4f915b7ee8382761e2f&chksm=ce22605cad05aba401d931c8a31043577b16ea9331e4da92015964f57f5188df0e7f0416bd93&scene=0&xtrack=1#rd",
+      "books": [
+        "rates",
+        "fx"
+      ],
+      "influence": {
+        "en": "CICC (17 June). The Bank of Japan raised its policy rate at that meeting and said further hikes were still ahead.",
+        "zh": "中金（6月17日）。日本银行在那次会议上上调政策利率，并表示进一步加息仍在前面。"
+      }
+    },
+    {
+      "label": "美联储议息日历",
+      "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "books": [
+        "rates"
+      ],
+      "influence": {
+        "en": "The FOMC calendar lists a 27-28 October 2026 meeting. The decision is 02:00 Beijing on 29 October.",
+        "zh": "联邦公开市场委员会日历列有 2026年10月27日至28日的会议。决定在 10月29日北京时间 02:00。"
+      }
+    },
+    {
+      "label": "欧洲央行议息日历",
+      "href": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "books": [
+        "fx",
+        "rates"
+      ],
+      "influence": {
+        "en": "The ECB Governing Council monetary-policy meeting runs 28-29 October, with the decision on 29 October.",
+        "zh": "欧洲央行管理委员会货币政策会议为 10月28日至29日，决定在 10月29日。"
+      }
+    },
+    {
+      "label": "日本银行议息日历",
+      "href": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "books": [
+        "rates",
+        "fx"
+      ],
+      "influence": {
+        "en": "The Bank of Japan meets 29-30 October. The policy statement is dated 30 October.",
+        "zh": "日本银行会议为 10月29日至30日。政策声明的日期是 10月30日。"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": {
+        "en": "French consumer sentiment ends this chart about 80",
+        "zh": "法国消费者信心指数在本图收于约 80。"
+      },
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-10-28.png",
+      "analysis": {
+        "en": "One orange line plots a consumer-sentiment index. The vertical scale runs from 75 to 105, with a gridline every five points. The horizontal scale runs from 2014 through 2026. The line peaks near the top gridline twice, once late in the 2010s and once near 2021, then drops to the 80 gridline in 2022. It climbs back toward the low 90s around 2024 and then falls, finishing about 80, where a short purple tick marks the last reading. The footnote names the national statistics institute as the source.",
+        "zh": "一条橙色曲线描绘消费者信心指数。纵轴自 75 至 105，每五个点一条网格线。横轴自 2014 年至 2026 年。曲线两次接近顶部网格线，一次在 2010 年代后期，一次在 2021 年附近，随后于 2022 年落到 80 的网格线。2024 年前后回升至 90 出头，然后回落，收在约 80，末点有一短紫色刻度。脚注写明来源为该国统计机构。"
+      },
+      "source": {
+        "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+        "href": "https://www.bloomberg.com/asia"
+      }
+    }
+  ],
+  "marketTone": {
+    "en": "Tuesday's crude settle fell again while Gulf talks stayed in the lead, and US indexes rose for a second day. WTI settled at 99.90 and Brent at 113.88. The 10-year yield was 4.9843%. Shanghai fell 1.33% to 3648.30 and ChiNext fell 3.41%. The chart is a French consumer-sentiment index finishing about 80.",
+    "zh": "周二原油结算价再度下跌，海湾谈判仍居主导，美股指数则连续第二个交易日上涨。WTI 结算价为 99.90，布伦特结算价为 113.88。10年期收益率为 4.9843%。上证综指下跌 1.33% 至 3648.30，创业板指下跌 3.41%。今日图表为法国消费者信心指数，收在约 80。"
+  },
+  "summary": [
+    {
+      "text": {
+        "en": "The S&P 500 rose 0.60% to 7722.60, the Nasdaq rose 1.18% to 26477.81, and the Dow rose 0.03% to 52377.57. 华尔街见闻 and CNBC printed the same closes.",
+        "zh": "华尔街见闻：标普500上涨 0.60% 至 7722.60，纳斯达克上涨 1.18% 至 26477.81，道琼斯上涨 0.03% 至 52377.57。CNBC 收盘价相同。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        },
+        {
+          "label": "CNBC live blog",
+          "href": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "December WTI fell 1.83% to 99.90 and December Brent fell 1.67% to 113.88. Spot gold rose 1.09% to 4060.55. The 10-year yield fell 0.41 basis points to 4.9843%. 华尔街见闻 and CNBC printed the same settles.",
+        "zh": "华尔街见闻：12月 WTI 下跌 1.83% 至 99.90，12月布伦特下跌 1.67% 至 113.88。CNBC 结算价相同。现货黄金上涨 1.09% 至 4060.55。10年期收益率下降 0.41 个基点至 4.9843%。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        },
+        {
+          "label": "CNBC live blog",
+          "href": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The Shanghai Composite fell 1.33% to 3648.30, Shenzhen fell 2.50% to 11245.73, and ChiNext fell 3.41% to 2548.15. The Hang Seng fell 0.73% to 23041.32 and Hang Seng Tech fell 1.48% to 3800.43. 华尔街见闻 printed those closes.",
+        "zh": "华尔街见闻：上证综指下跌 1.33% 至 3648.30，深证成指下跌 2.50% 至 11245.73，创业板指下跌 3.41% 至 2548.15。恒生指数下跌 0.73% 至 23041.32，恒生科技指数下跌 1.48% 至 3800.43。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "September industrial profits rose 14.4% from a year earlier, and the January–September total rose 15.5%, 财新 reported. The PBOC conducted 4120亿元 of 7-day reverse repos at 1.40% and 10000亿元 overnight, with 3980亿元 maturing, 第一财经 reported.",
+        "zh": "财新：9月工业企业利润同比增长 14.4%，1月至9月累计增长 15.5%。第一财经：央行开展 4120亿元 7天期逆回购，操作利率 1.40%，并开展 10000亿元 隔夜逆回购，当日 3980亿元 到期。"
+      },
+      "sources": [
+        {
+          "label": "财新 10月27日工业利润",
+          "href": "https://economy.caixin.com/2026-10-27/102497850.html"
+        },
+        {
+          "label": "第一财经 10月27日逆回购",
+          "href": "https://www.yicai.com/news/103410483.html"
+        }
+      ]
+    }
+  ],
+  "signal": {
+    "en": "Brent settled at 113.88 and WTI at 99.90 as the Gulf pullback extended, and the S&P 500 rose 0.60% to 7722.60 with another heavily subscribed AI share sale. The 10-year yield was 4.9843%. Shanghai fell 1.33% to 3648.30, so Monday's hold is gone. The chart is French consumer sentiment about 80.",
+    "zh": "海湾回落延续，布伦特结算价为 113.88，WTI 为 99.90；标普500上涨 0.60% 至 7722.60，同时一笔人工智能股票发行获得高倍认购。10年期收益率为 4.9843%。上证综指下跌 1.33% 至 3648.30，周一的企稳没有延续。今日图表是法国消费者信心，收在约 80。"
+  },
+  "watch": {
+    "en": "Australia's September CPI is at 08:30 Beijing. The UK budget is at 20:30, and the Bank of Canada decides at 21:45. Alphabet and Microsoft report after the US close. The FOMC decision is 02:00 Beijing on 29 October, and the chair's press conference is at 02:30. The ECB decides on 29 October. The Fifth Plenum runs through 29 October. The Bank of Japan statement is 30 October. US midterms are 3 November.",
+    "zh": "澳大利亚9月 CPI 于北京时间 08:30 公布。英国预算案于 20:30 公布，加拿大央行于 21:45 公布利率决定。Alphabet 与微软在美股收盘后发布业绩。联邦公开市场委员会的决定在 10月29日北京时间 02:00，主席新闻发布会在 02:30。欧洲央行于 10月29日作决定。五中全会持续至 10月29日。日本银行的政策声明在 10月30日。美国中期选举在 11月3日。"
+  },
+  "marketOverview": {
+    "asOfDate": "2026-10-28",
+    "note": {
+      "en": "From the 28 October 财经早茶, in mail order. Closes live in Market closes and the sourced summary.",
+      "zh": "取自 10月28日财经早茶的市场一览，顺序与邮件一致。收盘价见市场收盘和有来源的摘要。"
+    },
+    "items": [
+      {
+        "label": {
+          "en": "US equities",
+          "zh": "美国股市"
+        },
+        "text": {
+          "en": "Tech shares lifted the broader market as expectations of an easing in the Middle East rose.",
+          "zh": "科技股走强提振大盘，对中东局势缓和的预期升温"
+        }
+      },
+      {
+        "label": {
+          "en": "China ADRs",
+          "zh": "中概股"
+        },
+        "text": {
+          "en": "The Golden Dragon China index edged down. NetEase and H World were the largest drags.",
+          "zh": "金龙中国指数小幅下跌，网易和华住集团对指数拖累最大"
+        }
+      },
+      {
+        "label": {
+          "en": "US Treasuries",
+          "zh": "美国债市"
+        },
+        "text": {
+          "en": "Treasuries were mixed, and the curve flattened after the 5-year auction. Moves were limited ahead of the Fed decision.",
+          "zh": "国债涨跌不一，5年期国债标售后收益率曲线走平。美联储宣布利率决议前夕市场波动有限"
+        }
+      },
+      {
+        "label": {
+          "en": "Foreign exchange",
+          "zh": "外汇市场"
+        },
+        "text": {
+          "en": "The Bloomberg dollar index rose for a third day, near a two-week high, as investors waited on the Fed and the Bank of Canada.",
+          "zh": "彭博美元指数三连涨，逼近两周高点，投资者等待美联储和加拿大央行利率决定"
+        }
+      },
+      {
+        "label": {
+          "en": "Europe",
+          "zh": "欧洲股债"
+        },
+        "text": {
+          "en": "Gilt yields held steady as traders waited on Wednesday's UK budget. European equities rose, helped by lower oil and the US data.",
+          "zh": "英债收益率持稳，交易员等待周三公布的英国政府预算案。欧洲股市上涨，受油价下跌和美国数据提振"
+        }
+      },
+      {
+        "label": {
+          "en": "Energy",
+          "zh": "能源"
+        },
+        "text": {
+          "en": "Oil kept falling as traders weighed signs of a cooler Gulf and waited on the Israeli election.",
+          "zh": "油价继续回落，交易员权衡波斯湾局势降温迹象，并等待以色列大选结果"
+        }
+      },
+      {
+        "label": {
+          "en": "Metals",
+          "zh": "金属"
+        },
+        "text": {
+          "en": "The premium of London spot copper over futures jumped to a two-month high, a sign of tighter near-term supply. Dip-buying lifted gold.",
+          "zh": "伦敦现货铜较期铜的溢价飙升至两个月来最高水平，显示短期供应压力加剧。逢低买盘推动黄金反弹"
+        }
+      }
+    ],
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    }
+  },
+  "themeCards": [
+    {
+      "id": "hormuz-tankers",
+      "title": {
+        "en": "Crude fell again as Gulf talks kept the risk premium on the back foot",
+        "zh": "海湾谈判压住风险溢价，原油再度下跌"
+      },
+      "grade": "STRONG",
+      "assets": [
+        {
+          "en": "Oil",
+          "zh": "原油"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "The December WTI contract fell 1.83% to 99.90 dollars a barrel and the December Brent contract fell 1.67% to 113.88, 华尔街见闻 reported. Oil kept falling as traders weighed signs of a cooler Gulf and waited on the Israeli election, 财经早茶 reported.",
+        "zh": "华尔街见闻：WTI 12月合约跌1.83%报99.90美元/桶，布伦特12月合约跌1.67%报113.88美元/桶。 财经早茶：油价继续回落，交易员权衡波斯湾局势降温迹象，并等待以色列大选结果。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        },
+        {
+          "label": "CNBC live blog",
+          "href": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": {
+        "en": "Talks extended the crude drop, and a strike on a Saudi export terminal did not turn the settle around. CICC (30 June): the low-inventory mark left by the Strait shock is hard to erase and can hold a higher floor under oil. Oil carries the 99.90 WTI settle and the 113.88 Brent settle. The theme changes if those talks break and Brent rises back through 113.88.",
+        "zh": "谈判使原油跌势延续，对沙特出口终端的袭击并未扭转结算价。中金（6月30日）：海峡冲击留下的低库存痕迹难以抹去，并可在油价下方形成更高的支撑。原油对应的是 WTI 结算价 99.90 和布伦特结算价 113.88。若谈判破裂且布伦特重新升破 113.88，这一判断不再成立。"
+      },
+      "trigger": {
+        "en": "WTI at 99.90 and Brent at 113.88 as Gulf cooling extended the drop.",
+        "zh": "海湾降温把跌势延长，WTI 为 99.90，布伦特为 113.88。"
+      },
+      "invalidator": {
+        "en": "The talks break and Brent rises back through 113.88.",
+        "zh": "谈判破裂，且布伦特重新升破 113.88。"
+      },
+      "horizon": {
+        "en": "days",
+        "zh": "数日"
+      }
+    },
+    {
+      "id": "ust-duration",
+      "title": {
+        "en": "The Treasury curve flattened again and the 10-year stayed under 5%",
+        "zh": "国债曲线再度走平，10年期收益率仍低于 5%"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "Treasuries",
+          "zh": "美国国债"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "The 10-year yield fell 0.41 basis points to 4.9843%, the 2-year rose 1.27 basis points to 4.7286%, and the 30-year fell 0.53 basis points to 5.2975%, 华尔街见闻 reported. The curve flattened after the 5-year auction, with limited moves ahead of the Fed decision, 财经早茶 reported.",
+        "zh": "华尔街见闻：10年期收益率跌0.41个基点报4.9843%，2年期涨1.27个基点报4.7286%，30年期跌0.53个基点报5.2975%。 财经早茶：5年期国债标售后收益率曲线走平，美联储宣布利率决议前夕市场波动有限。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        },
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": {
+        "en": "The curve flattened because the two-year yield rose and the thirty-year yield fell, while the ten-year yield stayed under 5%. CICC (24 October): in their October investor survey, haven assets were still the main allocation, and a larger share of respondents wanted to extend duration. Treasuries carry the 4.9843% ten-year yield and the 4.7286% two-year yield. The theme changes if the ten-year yield closes at 5% or higher.",
+        "zh": "曲线走平，是因为 2 年期收益率上升、30 年期收益率下降，而 10 年期收益率仍低于 5%。中金（10月24日）：在其 10 月投资者调查中，避险资产仍是主要配置，倾向于延长久期的受访者占比上升。美债对应的是 10 年期收益率 4.9843% 和 2 年期收益率 4.7286%。若 10 年期收益率收于 5% 或更高，这一判断不再成立。"
+      },
+      "trigger": {
+        "en": "A 10-year yield of 4.9843% that stayed under 5%, with the 2-year at 4.7286%, after the 5-year auction.",
+        "zh": "5 年期国债标售之后，10 年期收益率为 4.9843%，仍低于 5%，2 年期为 4.7286%。"
+      },
+      "invalidator": {
+        "en": "The 10-year yield closes at 5% or higher.",
+        "zh": "10 年期收益率收于 5% 或更高。"
+      },
+      "horizon": {
+        "en": "days",
+        "zh": "数日"
+      }
+    },
+    {
+      "id": "ai-credit",
+      "title": {
+        "en": "A second equity up day landed on a heavily subscribed AI share sale",
+        "zh": "美股连续第二个交易日上涨，人工智能股票发行获得高倍认购"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "US equities",
+          "zh": "美股"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "The S&P 500 rose 0.60% to 7722.60 and the Nasdaq rose 1.18% to 26477.81, 华尔街见闻 reported. Meta's 250亿美元 share sale drew five times demand, 财经早茶 reported.",
+        "zh": "华尔街见闻：标普500涨0.60%报7722.60点，纳指涨1.18%报26477.81点。 财经早茶：Meta的250亿美元股票发行交易据悉获得五倍认购。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        },
+        {
+          "label": "CNBC live blog",
+          "href": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": {
+        "en": "A second up day landed on a share sale that found five times the demand, so the financing for this build got larger. CICC (22 September): overseas AI capital spending is still growing, but the pace may slow from the fourth quarter. US equities carry the 0.60% S&P 500 rise to 7722.60 and the 1.18% Nasdaq rise to 26477.81. The theme changes if that share sale is pulled or those two indexes give back this rise.",
+        "zh": "第二个上涨日伴随一笔获得五倍认购的股票发行，相关建设融资的规模因此扩大。中金（9月22日）：海外人工智能资本开支仍在增长，但增速或自四季度放缓。美股对应的是标普500上涨 0.60% 至 7722.60，以及纳斯达克上涨 1.18% 至 26477.81。若该发行被撤回，或这两个指数回吐这一涨幅，这一判断不再成立。"
+      },
+      "trigger": {
+        "en": "The S&P 500 rose 0.60% to 7722.60 and the Nasdaq rose 1.18% to 26477.81 as a 250亿美元 share sale drew five times demand.",
+        "zh": "标普500上涨 0.60% 至 7722.60，纳斯达克上涨 1.18% 至 26477.81，同时一笔 250亿美元 的股票发行获得五倍认购。"
+      },
+      "invalidator": {
+        "en": "The share sale is pulled or the S&P 500 and the Nasdaq give back this rise.",
+        "zh": "股票发行被撤回，或标普500与纳斯达克回吐这一涨幅。"
+      },
+      "horizon": {
+        "en": "days",
+        "zh": "数日"
+      }
+    },
+    {
+      "id": "a-shares",
+      "title": {
+        "en": "Shanghai gave back Monday's hold and ChiNext fell again",
+        "zh": "上证未能守住周一的企稳，创业板再度下跌"
+      },
+      "grade": "STRONG",
+      "assets": [
+        {
+          "en": "A-shares",
+          "zh": "A股"
+        }
+      ],
+      "status": "retired",
+      "fact": {
+        "en": "The Shanghai Composite fell 1.33% to 3648.30, the Shenzhen Component fell 2.50% to 11245.73, and ChiNext fell 3.41% to 2548.15, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：沪指跌1.33%报3648.30点，深证成指跌2.50%报11245.73点，创业板指跌3.41%报2548.15点。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        }
+      ],
+      "mechanism": {
+        "en": "The small Shanghai hold did not last a second session, and the growth board fell harder than the benchmark. CICC (19 October): in the latest choppy stretch, the broad equity ETFs they track saw net inflows pick up again. A-shares carry the 1.33% drop to 3648.30 and the 3.41% ChiNext drop to 2548.15. The old hold is finished unless Shanghai closes back above 3648.30 and ChiNext rises.",
+        "zh": "上证的企稳未能延续至第二个交易日，成长板块跌幅大于基准指数。中金（10月19日）：在最近这一段震荡里，其跟踪的宽基股票 ETF 净流入再度加快。A股对应的是上证下跌 1.33% 至 3648.30，以及创业板下跌 3.41% 至 2548.15。除非上证重新收在 3648.30 之上且创业板上涨，否则原先的企稳已经结束。"
+      },
+      "trigger": {
+        "en": "Shanghai fell 1.33% to 3648.30 and ChiNext fell 3.41% to 2548.15.",
+        "zh": "上证下跌 1.33% 至 3648.30，创业板下跌 3.41% 至 2548.15。"
+      },
+      "invalidator": {
+        "en": "Shanghai closes back above 3648.30 and ChiNext rises.",
+        "zh": "上证重新收在 3648.30 之上，且创业板上涨。"
+      },
+      "horizon": {
+        "en": "days",
+        "zh": "数日"
+      }
+    },
+    {
+      "id": "gold",
+      "title": {
+        "en": "Spot gold bounced back through 4000 while yields barely moved",
+        "zh": "收益率几乎未动，现货黄金反弹重新站上 4000"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "Gold",
+          "zh": "黄金"
+        }
+      ],
+      "status": "new",
+      "fact": {
+        "en": "Spot gold rose 1.09% to 4060.55 dollars and moved back through 4000, 华尔街见闻 reported. Dip-buying lifted gold, 财经早茶 reported.",
+        "zh": "华尔街见闻：现货黄金涨1.09%报4060.55美元，重新站上4000美元。 财经早茶：逢低买盘推动黄金反弹。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        },
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": {
+        "en": "Gold rose on a day yields barely moved and equities rose, so this bounce stands apart from the Treasury tape. Morgan Stanley (28 October): gold has failed as a hedge in sharp equity selloffs since 2020, while it has cushioned violent Treasury selloffs, and the bank still prefers gold among metals. Gold carries the 1.09% rise in the spot price to 4060.55. The theme changes if that dip-buying reverses.",
+        "zh": "黄金上涨的这一天，收益率几乎未动，股市也在上涨，因此这轮反弹与美债行情相互独立。摩根士丹利（10月28日）：自 2020 年以来，黄金在股市急跌中没有起到对冲作用，但在美债剧烈抛售中提供了缓冲；该行在金属中仍偏好黄金。黄金对应的是现货价格上涨 1.09% 至 4060.55。若这轮逢低买盘逆转，这一判断不再成立。"
+      },
+      "trigger": {
+        "en": "Spot gold rose 1.09% to 4060.55 and moved back through 4000.",
+        "zh": "现货黄金上涨 1.09% 至 4060.55，重新站上 4000。"
+      },
+      "invalidator": {
+        "en": "Dip-buying reverses.",
+        "zh": "逢低买盘逆转。"
+      },
+      "horizon": {
+        "en": "days",
+        "zh": "数日"
+      }
+    },
+    {
+      "id": "copper",
+      "title": {
+        "en": "The cash premium in copper jumped to a two-month high",
+        "zh": "铜的现货升水升至两个月高位"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "Copper",
+          "zh": "铜"
+        }
+      ],
+      "status": "new",
+      "fact": {
+        "en": "LME copper rose 147 dollars to 14,474 dollars a tonne, and the cash premium over three-month copper rose to 206 dollars a tonne, 华尔街见闻 reported. That premium is the highest in two months and near-term supply is tighter, 财经早茶 reported.",
+        "zh": "华尔街见闻：LME期铜涨147美元，报14,474美元/吨，现货较三个月期铜的溢价升至每吨206美元。 财经早茶：伦敦现货铜较期铜的溢价飙升至两个月来最高水平，显示短期供应压力加剧。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        },
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": {
+        "en": "The cash contract's premium over three-month copper is a shortage of metal now, which is a different force from the gold bounce. CICC (13 October): mine supply growth over the next few years still struggles to match demand, and the tight balance has not changed. Copper carries the 14,474 dollar LME price and the 206 dollar cash premium. The theme changes if that cash premium falls back and the backwardation disappears.",
+        "zh": "现货合约相对三个月期铜的升水，反映的是当前金属短缺，与黄金反弹并非同一力量。中金（10月13日）：未来数年矿山供应的增长仍难跟上需求，紧平衡没有改变。铜对应的是伦铜价格 14,474 美元和现货升水 206 美元。若该升水回落、期货贴水结构消失，这一判断不再成立。"
+      },
+      "trigger": {
+        "en": "LME copper at 14,474 dollars a tonne, with the cash premium at 206 dollars, the highest in two months.",
+        "zh": "伦铜报每吨 14,474 美元，现货升水 206 美元，为两个月高位。"
+      },
+      "invalidator": {
+        "en": "The cash premium over three-month copper falls back from 206 dollars.",
+        "zh": "相对三个月期铜的现货升水自 206 美元回落。"
+      },
+      "horizon": {
+        "en": "days",
+        "zh": "数日"
+      }
+    },
+    {
+      "id": "france-confidence",
+      "title": {
+        "en": "French consumer sentiment fell to a 13-year low",
+        "zh": "法国消费者信心降至 13 年低点"
+      },
+      "grade": "WEAK",
+      "assets": [
+        {
+          "en": "OATs",
+          "zh": "法国国债"
+        }
+      ],
+      "status": "new",
+      "fact": {
+        "en": "The bond selloff and the unrest pulled French consumer confidence in October down to a 13-year low, 财经早茶 reported.",
+        "zh": "财经早茶：受债券抛售潮及社会动荡冲击，法国10月消费者信心指数降至13年低点。"
+      },
+      "factSources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": {
+        "en": "A 13-year low in the confidence index is the household side of the bond selloff and the unrest. CICC (12 October): the concessions required to pass the budget can limit how far the premium comes back. OATs do not get a fresh yield on this tape, so the exposure is the confidence index itself. The theme changes if the index turns up from this low or a named budget deal passes.",
+        "zh": "信心指数降至 13 年低点，对应债券抛售与社会动荡在居民部门的表现。中金（10月12日）：为通过预算所需的让步，会限制溢价能收回多少。本期行情没有给出法国国债的新收益率，敞口就是信心指数本身。若该指数自这一低点回升，或一项已具名的预算协议获得通过，这一判断不再成立。"
+      },
+      "trigger": {
+        "en": "French consumer confidence at a 13-year low on the October print.",
+        "zh": "10月读数显示，法国消费者信心处于 13 年低点。"
+      },
+      "invalidator": {
+        "en": "The index turns up from this low, or a named budget deal passes.",
+        "zh": "该指数自这一低点回升，或一项已具名的预算协议获得通过。"
+      },
+      "horizon": {
+        "en": "days",
+        "zh": "数日"
+      }
+    },
+    {
+      "id": "boj-cpi",
+      "title": {
+        "en": "Japan's core inflation gauge accelerated to 3.2%",
+        "zh": "日本核心通胀指标加速至 3.2%"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "JPY",
+          "zh": "日元"
+        }
+      ],
+      "status": "new",
+      "fact": {
+        "en": "The September consumer-price index excluding fresh food and special factors rose 3.2% from a year earlier, after 2.6% in August, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：剔除生鲜食品及特殊因素后的9月消费者价格同比上涨3.2%，8月为2.6%。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        }
+      ],
+      "mechanism": {
+        "en": "A 3.2% core reading, up from 2.6%, is faster inflation than the prior month, and the hike path is the rates question under it. CICC (17 June): the bank raised its policy rate at that meeting and said further hikes were still ahead. The yen does not get a separate settle on this tape, so the exposure is that inflation print. The theme changes if the core measure is revised back to 2.6% or lower.",
+        "zh": "核心读数 3.2%，高于前值 2.6%，通胀快于上月，对应的利率问题是加息路径。中金（6月17日）：日本银行在那次会议上上调政策利率，并表示进一步加息仍在前面。本期行情没有单独的日元结算价，敞口就是这一通胀读数。若该核心指标被下修至 2.6% 或更低，这一判断不再成立。"
+      },
+      "trigger": {
+        "en": "The BOJ-style core index at 3.2% in September, up from 2.6%.",
+        "zh": "9月日本银行口径的核心指数为 3.2%，前值为 2.6%。"
+      },
+      "invalidator": {
+        "en": "That core measure is revised back to 2.6% or lower.",
+        "zh": "该核心指标被下修至 2.6% 或更低。"
+      },
+      "horizon": {
+        "en": "days",
+        "zh": "数日"
+      }
+    }
+  ],
+  "globalRegime": {
+    "en": "Tuesday extended the crude pullback and gave US indexes a second up day, with an AI share sale that drew heavy demand. The Treasury curve flattened again and the 10-year yield stayed under 5%. Shanghai gave back Monday's hold. Spot gold rose back through 4000, and the cash premium in copper widened. The chart is French consumer sentiment at a 13-year low.",
+    "zh": "周二原油回落延续，美股指数连续第二个交易日上涨，一笔人工智能股票发行获得大量认购。国债曲线再度走平，10年期收益率仍低于 5%。上证未能守住周一的企稳。现货黄金重新站上 4000，铜的现货升水走阔。今日图表是处于 13 年低点的法国消费者信心。"
+  },
+  "globalChanged": [
+    {
+      "text": {
+        "en": "The Fed publishes its decision on Wednesday afternoon US time, 财经早茶 reported. Policymakers are widely expected to hold, and December may bring the second rate increase of the year.",
+        "zh": "财经早茶：美东时间周三下午美联储将公布利率决定，普遍预计决策者将按兵不动，12月可能进行今年第二次加息。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Iran's supreme leader Khamenei restated the conditions for ending the war with the United States, 财经早茶 reported. China's foreign ministry said it will send an envoy to the region to keep the situation from worsening.",
+        "zh": "财经早茶：伊朗最高领袖哈梅内伊重申结束对美战争的前提条件。中国外交部表示将向该地区派遣特使，防止局势进一步恶化。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The Trump administration plans to issue a visa to Bolsonaro, who lost the Brazilian presidential race, and he has reportedly arrived in the United States, 财经早茶 reported. Brazilian authorities are investigating whether the campaign received illegal foreign funding, including a group linked to Vice President Vance.",
+        "zh": "财经早茶：特朗普政府计划向竞选巴西总统失败的博索纳罗发放签证，博索纳罗据报已经抵美，巴西当局正在调查其竞选是否获得非法外国资助，其中包括一个与美国副总统万斯有关的团体。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The Conference Board said US consumer confidence rose in October for the first time in four months, with better readings on jobs and business conditions, 财经早茶 reported.",
+        "zh": "财经早茶：世界大型企业联合会数据显示，美国10月消费者信心指数四个月来首次上升，受访者对就业和商业环境看法改善。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "US durable-goods orders in September posted their largest gain in five months, 财经早茶 reported. New-home sales edged down that month, and builders' price cuts did not offset the jump in mortgage rates.",
+        "zh": "财经早茶：美国9月耐用品订单创五个月来最大增幅。当月新建住宅销量小幅下降，建筑商降价促销措施未能抵消房贷利率飙升的影响。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Polls show Democrats may take at least one chamber of Congress from the Republicans, 财经早茶 reported. The Treasury market doubts that kind of divided government would contain the fiscal deficit.",
+        "zh": "财经早茶：民调显示，民主党可能从共和党手中夺取国会两院中至少一院的控制权，美债市场质疑此类“分裂政府”或无助于遏制财政赤字。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Israel's election exit polls show opposition leader Eisenkot slightly ahead of Prime Minister Netanyahu, 财经早茶 reported. The count is still underway and the final result can change.",
+        "zh": "财经早茶：以色列大选出口民调显示，反对派领导人埃森科特略微领先现任总理内塔尼亚胡。计票工作仍在进行，最终结果可能发生变化。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Billionaire Novogratz said anxiety in global credit about AI spending may be near a peak, after which the market should settle, 财经早茶 reported. Meta's 250亿美元 share sale reportedly drew five times demand.",
+        "zh": "财经早茶：亿万富豪Novogratz称，全球信贷市场对AI支出的焦虑或许已接近顶峰，之后市场将逐步趋稳。Meta的250亿美元股票发行交易据悉获得五倍认购。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Oracle will bring Cerebras computers into its AI cloud, and Oracle Cloud Infrastructure will start deploying them in the first half of 2027, 财经早茶 reported.",
+        "zh": "财经早茶：甲骨文将在AI云服务中引入Cerebras计算机，甲骨文云基础设施将从2027年上半年开始部署这些设备。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Apple introduced a new 24-inch iMac and an entry-level MacBook Pro with a 14-inch screen, 财经早茶 reported. On Wednesday the company unveils the high-end touch-screen MacBook Pro.",
+        "zh": "财经早茶：苹果推出新款24英寸iMac和配备14英寸屏幕的入门级MacBook Pro。周三该公司将揭晓MacBook Pro高端触屏款。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The bond selloff and the unrest pulled French consumer confidence in October down to a 13-year low, 财经早茶 reported.",
+        "zh": "财经早茶：受债券抛售潮及社会动荡冲击，法国10月消费者信心指数降至13年低点。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "GM plans to move its listing from the NYSE to Nasdaq starting 17 November, and the ticker stays GM, 财经早茶 reported.",
+        "zh": "财经早茶：通用汽车计划11月17日起将上市地点从纽约证交所迁至纳斯达克，股票代码仍为GM。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Two Sigma's two founders are reportedly considering a sale of part of their stakes to break a decision deadlock from a long dispute, 财经早茶 reported.",
+        "zh": "财经早茶：Two Sigma两位创始人据悉考虑出售部分股份，以解决长期不和造成的决策僵局。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Millennium is reportedly exploring prediction-market data, including Polymarket, to help set trading strategy, 财经早茶 reported.",
+        "zh": "财经早茶：Millennium据悉探索利用Polymarket等预测市场的数据来协助制定交易策略。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The Houthis struck the Saudi oil-export terminal at Ras Tanura. Saudi air defenses intercepted the incoming missiles and drones, and the oil decline did not reverse, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：胡塞武装袭击沙特石油出口终端拉斯塔努拉，沙特防空系统拦截来袭导弹与无人机，油价跌势没有因此转回。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Bitcoin moved back through $80,000, 律动 reported. That flash is an intraday cross, not the breakfast close.",
+        "zh": "律动：比特币重新站上$80,000。该快讯是盘中越线，不是早餐里的收盘价。"
+      },
+      "sources": [
+        {
+          "label": "律动 比特币重上8万美元",
+          "href": "https://en.theblockbeats.news/flash/373915"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Binance applied to Brazil's central bank for a crypto-service license and plans to delist a set of local assets, 律动 reported.",
+        "zh": "律动：币安向巴西央行申请加密服务牌照，并计划在当地下架一批资产。"
+      },
+      "sources": [
+        {
+          "label": "律动 币安巴西牌照",
+          "href": "https://en.theblockbeats.news/flash/373930"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": {
+        "en": "If the Gulf talks break, the drop from 113.88 can reverse, and the low-inventory floor is the part that remains.",
+        "zh": "若海湾谈判破裂，自 113.88 起的下跌可以逆转，低库存形成的底部仍然存在。"
+      }
+    },
+    {
+      "text": {
+        "en": "If the AI share sale is pulled, Tuesday's equity bounce was a subscription headline and the financing worry is back in the lead.",
+        "zh": "若人工智能股票发行被撤回，周二的股市反弹便只是一则认购消息，融资方面的担忧重新居于主导。"
+      }
+    },
+    {
+      "text": {
+        "en": "If the ten-year yield closes at 5% or higher, the flat curve under 5% is done.",
+        "zh": "若 10 年期收益率收于 5% 或更高，5% 下方的平坦曲线就结束了。"
+      }
+    }
+  ],
+  "globalTensions": {
+    "en": "Crude settled lower while spot gold rose. US indexes rose while the ten-year yield barely moved. Shanghai fell and ChiNext fell harder, with banks the names that rose on the breakfast tape. The dollar index rose for a third day on the mail while gold rose. Conference Board confidence rose in the United States while the French confidence index on the chart fell to a 13-year low.",
+    "zh": "原油结算价下跌，现货黄金上涨。美股指数上涨，10年期收益率几乎未动。上证下跌，创业板跌幅更大，早茶行情里上涨的是银行股。邮件中美元指数连续第三个交易日上涨，黄金同时上涨。美国世界大型企业联合会信心上升，而图上的法国信心指数降至 13 年低点。"
+  },
+  "chinaStance": {
+    "en": "The Fifth Plenum is still in session through 29 October. Caixin says the draft decision is on party discipline. September industrial profits rose 14.4%, and the year-to-date total rose 15.5%, while ChiNext fell 3.41%. On 27 October the PBOC rolled a large overnight reverse repo alongside the 7-day operation at 1.40%. No 28 October yuan fix was on 第一财经 at publish time. The onshore yuan on the breakfast tape was 6.6670 at 03:00 Beijing.",
+    "zh": "五中全会仍在举行，会期至 10月29日。财新称讨论稿涉及党的纪律。9月工业企业利润增长 14.4%，年初至今累计增长 15.5%，同期创业板下跌 3.41%。10月27日，央行在 1.40% 的 7 天期操作之外，滚动开展了大规模隔夜逆回购。发布时，第一财经尚未刊登 10月28日的人民币中间价。早茶行情里，北京时间 03:00 的在岸人民币为 6.6670。"
+  },
+  "chinaChanged": [
+    {
+      "text": {
+        "en": "The United States may extend by two months the pause on port fees for China-linked ships, and is in contact with Beijing, 财经早茶 reported.",
+        "zh": "财经早茶：美国可能将针对中国关联船舶的港口停靠费暂停措施延长两个月，目前正在与北京方面进行接触。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "PCB maker Dongshan Precision lists in Hong Kong on Wednesday, the largest Hong Kong listing in nearly two months, at 86.8 Hong Kong dollars a share. The public offer was not fully subscribed, 财经早茶 reported.",
+        "zh": "财经早茶：印刷电路板制造商东山精密周三将登陆港交所，这是香港近两个月规模最大的上市交易，发行价定为每股86.8港元，公开发售未获足额认购。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "US regulators told TP-Link that some of its Wi-Fi routers breach power limits, which could open the way to a wider ban on the company's devices, 财经早茶 reported.",
+        "zh": "财经早茶：美国监管部门告知TP-Link，其部分Wi-Fi路由器违反功率水平限制，此举可能为进一步禁止该公司的设备铺平道路。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "After several Chinese firms ended partnerships, the French footballer Kylian Mbappé apologized for remarks taken as an insult to Mao Zedong, 财经早茶 reported.",
+        "zh": "财经早茶：在多家中企宣布终止合作后，法国足球明星基利安·姆巴佩就其被认为侮辱毛泽东的争议言论道歉。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "As the territorial dispute between China and the Philippines intensifies, Beijing will lower the rank of its representative to this week's ASEAN defense ministers' meeting in the Philippines, 财经早茶 reported.",
+        "zh": "财经早茶：随着中国与菲律宾的领土争端加剧，北京将降低本周赴菲律宾参加东盟防长扩大会的代表级别。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Taiwan's money-supply growth rose last month, and foreign-currency deposits topped 10 trillion Taiwan dollars for the first time, 财经早茶 reported.",
+        "zh": "财经早茶：台湾上月货币供应量年增率上升，外汇存款首度突破10兆元台币。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "SK Hynix's flash unit Solidigm reportedly plans to invest 450亿美元 in a new US chip plant, but wants Washington to allow an upgrade of its China facilities first, 财经早茶 reported.",
+        "zh": "财经早茶：韩国SK海力士旗下闪存公司Solidigm据悉拟投资450亿美元新建美国芯片厂，但要求华府同意其先升级中国设施。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Pop Mart expects last quarter's sales to fall 45%-50% from a year earlier, on a cooler Labubu craze and a high comparison base, 财经早茶 reported.",
+        "zh": "财经早茶：泡泡玛特预计上季度销售额同比下降45%-50%，受Labubu热度减退及去年比较基数较高等因素影响。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "On 27 October the PBOC conducted 4120亿元 of 7-day reverse repos at 1.40% and 10000亿元 overnight, with 3980亿元 maturing, 第一财经 reported.",
+        "zh": "第一财经：10月27日央行开展4120亿元7天期逆回购，操作利率1.40%，并开展10000亿元隔夜逆回购，当日3980亿元到期。"
+      },
+      "sources": [
+        {
+          "label": "第一财经 10月27日逆回购",
+          "href": "https://www.yicai.com/news/103410483.html"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Profits at industrial firms above a designated size rose 14.4% in September from a year earlier, 10.2 percentage points faster than the prior month, 财新 reported. The January–September total rose 15.5%.",
+        "zh": "财新：9月规模以上工业企业利润同比增长14.4%，增速比上月回升10.2个百分点。1至9月累计同比增长15.5%。"
+      },
+      "sources": [
+        {
+          "label": "财新 10月27日工业利润",
+          "href": "https://economy.caixin.com/2026-10-27/102497850.html"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The fifth plenum opened in Beijing on the morning of 26 October and runs through 29 October, 财新 reported. The draft decision is on sustained, strict party governance.",
+        "zh": "财新：中共二十届五中全会10月26日上午在北京开始举行，会期至10月29日。讨论稿是关于持之以恒推进全面从严治党。"
+      },
+      "sources": [
+        {
+          "label": "财新 10月26日五中全会",
+          "href": "https://china.caixin.com/2026-10-26/102497337.html"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": {
+        "en": "If the plenum text stays on party discipline, the profit print does not hand growth boards a stimulus bid.",
+        "zh": "若全会文本仍落在党的纪律上，利润数据不会为成长板块带来刺激行情。"
+      }
+    },
+    {
+      "text": {
+        "en": "If the overnight reverse repo stays this large beside a 7-day operation at 1.40%, the stance is still ample liquidity.",
+        "zh": "若隔夜逆回购维持这一规模，并与 1.40% 的 7 天期操作并列，立场仍是流动性充裕。"
+      }
+    },
+    {
+      "text": {
+        "en": "If ChiNext stays down while industrial profits are up 14.4%, the profit print and the equity tape are two different stories.",
+        "zh": "若创业板继续下跌而工业企业利润增长 14.4%，利润数据和股市行情并非同一条线索。"
+      }
+    }
+  ],
+  "chinaDivergences": {
+    "en": "Industrial profits rose 14.4% and ChiNext fell 3.41%. Banks rose on the breakfast tape while the growth boards fell. The onshore yuan was 6.6670 at 03:00 Beijing on that tape, and a 28 October fix was not on 第一财经. The plenum draft is about party discipline while the PBOC's latest operation is a large overnight liquidity add.",
+    "zh": "工业企业利润增长 14.4%，创业板下跌 3.41%。早茶行情里银行上涨，成长板块下跌。该行情中北京时间 03:00 的在岸人民币为 6.6670，第一财经上没有 10月28日的中间价。全会讨论稿关于党的纪律，而央行最近一次操作是大规模隔夜流动性投放。"
+  },
+  "signals": [],
+  "watchItems": [],
+  "eventCalendar": {
+    "windowStart": "2026-10-28",
+    "windowEnd": "2026-11-06",
+    "note": {
+      "en": "Briefing day through next Friday (6 November). Mainland China only on China rows. 2pm ET is 02:00 Beijing the next day. The FOMC decision after the 27-28 October meeting is 02:00 Beijing on 29 October and sits inside this window.",
+      "zh": "自简报日至下周五（11月6日）。中国一行只列中国内地。美东时间下午 2 点是次日北京时间 02:00。10月27日至28日会议之后的联邦公开市场委员会决定在 10月29日北京时间 02:00，落在本窗口内。"
+    },
+    "events": [
+      {
+        "id": "au-cpi-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "08:30",
+        "region": "Other",
+        "category": "data",
+        "event": {
+          "en": "Australia September CPI",
+          "zh": "澳大利亚9月 CPI"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "nz-rbnz-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "09:00",
+        "region": "Other",
+        "category": "central-bank",
+        "event": {
+          "en": "Reserve Bank of New Zealand rate decision",
+          "zh": "新西兰储备银行利率决定"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "tw-signal-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "16:00",
+        "region": "Other",
+        "category": "data",
+        "event": {
+          "en": "Taiwan September monitoring indicator",
+          "zh": "台湾9月景气监测指标"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "hk-trade-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "16:30",
+        "region": "Other",
+        "category": "data",
+        "event": {
+          "en": "Hong Kong September trade",
+          "zh": "香港9月贸易"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "dongshan-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "",
+        "region": "Other",
+        "category": "earnings",
+        "event": {
+          "en": "Dongshan Precision lists in Hong Kong",
+          "zh": "东山精密在香港上市"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "us-trade-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": {
+          "en": "US September advance goods trade balance",
+          "zh": "美国9月商品贸易差额初值"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "uk-budget-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "20:30",
+        "region": "Other",
+        "category": "fiscal-flow",
+        "event": {
+          "en": "UK budget statement",
+          "zh": "英国预算案"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "ecb-lane-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "21:20",
+        "region": "EU",
+        "category": "central-bank",
+        "event": {
+          "en": "ECB chief economist Lane speaks",
+          "zh": "欧洲央行首席经济学家莱恩讲话"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "boc-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "21:45",
+        "region": "Other",
+        "category": "central-bank",
+        "event": {
+          "en": "Bank of Canada rate decision",
+          "zh": "加拿大央行利率决定"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "us-earnings-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "",
+        "region": "US",
+        "category": "earnings",
+        "event": {
+          "en": "Alphabet and Microsoft report after the US cash close",
+          "zh": "Alphabet 与微软在美股收盘后发布业绩"
+        },
+        "themeId": "ai-credit",
+        "source": {
+          "label": "华尔街见闻 10月28日早餐",
+          "href": "https://wallstreetcn.com/articles/3784617"
+        }
+      },
+      {
+        "id": "de-china-2026-10-28",
+        "date": "2026-10-28",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "fiscal-flow",
+        "event": {
+          "en": "German president visits China through 31 October",
+          "zh": "德国总统访华，行程至 10月31日"
+        },
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "plenum-2026-10-29",
+        "date": "2026-10-29",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "fiscal-flow",
+        "event": {
+          "en": "Fifth Plenum due to conclude, in session since 26 October",
+          "zh": "五中全会预计结束，自 10月26日起举行"
+        },
+        "themeId": "a-shares",
+        "source": {
+          "label": "财新 10月26日五中全会",
+          "href": "https://china.caixin.com/2026-10-26/102497337.html"
+        }
+      },
+      {
+        "id": "fomc-2026-10-29",
+        "date": "2026-10-29",
+        "timeBeijing": "02:00",
+        "region": "US",
+        "category": "central-bank",
+        "event": {
+          "en": "FOMC rate decision, after the 27-28 October meeting",
+          "zh": "联邦公开市场委员会利率决定，会期为 10月27日至28日"
+        },
+        "themeId": "ust-duration",
+        "source": {
+          "label": "美联储议息日历",
+          "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      },
+      {
+        "id": "fomc-press-2026-10-29",
+        "date": "2026-10-29",
+        "timeBeijing": "02:30",
+        "region": "US",
+        "category": "central-bank",
+        "event": {
+          "en": "Fed chair press conference",
+          "zh": "美联储主席新闻发布会"
+        },
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 · 博索纳罗逃离巴西；东山精密港股上市 · 2026-10-28",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "ecb-2026-10-29",
+        "date": "2026-10-29",
+        "timeBeijing": "",
+        "region": "EU",
+        "category": "central-bank",
+        "event": {
+          "en": "ECB monetary policy decision and press conference",
+          "zh": "欧洲央行货币政策决定及新闻发布会"
+        },
+        "themeId": "france-confidence",
+        "source": {
+          "label": "欧洲央行议息日历",
+          "href": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+        }
+      },
+      {
+        "id": "boj-2026-10-30",
+        "date": "2026-10-30",
+        "timeBeijing": "",
+        "region": "Japan",
+        "category": "central-bank",
+        "event": {
+          "en": "Bank of Japan policy statement, meeting 29-30 October",
+          "zh": "日本银行政策声明，会议为 10月29日至30日"
+        },
+        "themeId": "boj-cpi",
+        "source": {
+          "label": "日本银行议息日历",
+          "href": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+        }
+      },
+      {
+        "id": "us-midterms-2026-11-03",
+        "date": "2026-11-03",
+        "timeBeijing": "",
+        "region": "US",
+        "category": "fiscal-flow",
+        "event": {
+          "en": "US midterm elections",
+          "zh": "美国中期选举"
+        },
+        "themeId": "ust-duration",
+        "source": {
+          "label": "华尔街见闻 10月27日早餐",
+          "href": "https://wallstreetcn.com/articles/3784513"
+        }
+      }
+    ]
+  },
+  "sources": {
+    "en": "Mail tape is the 28 October 财经早茶. US index and oil closes in the summary are 华尔街见闻 and CNBC. Yields, gold, and A-share and Hong Kong closes are 华尔街见闻. Industrial profits are 财新. The 27 October reverse repo is 第一财经. The plenum is 财新. Bitcoin's cross of $80,000 and the Binance Brazil filing are 律动. CICC desk views are on the matching themes. Central-bank dates are the Fed, ECB, and Bank of Japan calendars.",
+    "zh": "邮件底稿是 10月28日财经早茶。摘要中的美股指数和原油收盘来自华尔街见闻和 CNBC。收益率、黄金以及 A 股和香港收盘来自华尔街见闻。工业企业利润来自财新。10月27日逆回购来自第一财经。全会来自财新。比特币越过 $80,000 以及币安的巴西申请来自律动。中金的研究观点写在对应主题上。央行日期来自美联储、欧洲央行和日本银行的日历。"
+  },
+  "singleSource": {
+    "en": "Bitcoin prints were not merged: the mail header was 63633.26, the breakfast was 80753.50, the 律动 flash was an intraday cross of $80,000 with a 0.10% 24-hour change and is not a close, and the dashboard CoinGecko quote is 80568. The dashboard Treasury curve prints the 10-year at 4.99 and the 2-year at 4.70; 华尔街见闻 prints 4.9843% and 4.7286%. Dashboard Brent futures at 110.60 are an intraday futures quote, not the 113.88 settle. Dashboard gold futures at 4071.20 are an intraday futures quote, not spot 4060.55. Onshore yuan at 03:00 Beijing was 6.6670; the dashboard USD/CNY is 6.6558 and is not that fix. 第一财经 has no 28 October yuan fix; the operation cited is 27 October.",
+    "zh": "比特币报价未合并：邮件页眉为 63633.26，早茶为 80753.50，律动快讯为盘中越过 $80,000、24 小时变动 0.10%，并非收盘价，看板中 CoinGecko 报价为 80568。看板国债曲线将 10 年期记为 4.99、2 年期记为 4.70，华尔街见闻则为 4.9843% 与 4.7286%。看板布伦特期货 110.60 是期货盘中报价，不是 113.88 的结算价。看板黄金期货 4071.20 是期货盘中报价，不是现货 4060.55。北京时间 03:00 的在岸人民币为 6.6670；看板美元/人民币为 6.6558，并非该中间价。第一财经没有 10月28日的人民币中间价；所引操作为 10月27日。"
+  },
+  "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market closes are the inject snapshot. Desk settles in the summary are 华尔街见闻 and CNBC. 250亿美元 is USD25bn. 10140亿元 is CNY1014bn. This report is research and information synthesis, not investment advice.",
+  "suggestions": "The live risks are Brent at 113.88, the 10-year yield at 4.9843%, Shanghai at 3648.30, and an AI share sale of 250亿美元 that drew five times demand. The FOMC decision is 02:00 Beijing on 29 October. This report is research and information synthesis, not investment advice.",
+  "disclaimer": "This report is research and information synthesis, not investment advice. Verify figures against primary sources before acting on them.",
+  "marketDashboard": {
+    "asOf": "2026-10-28T01:19:25.942Z",
+    "note": {
+      "en": "Equities, FX, gold futures, and Brent futures use the latest Yahoo daily bar; a session still open at the snapshot is intraday, not a close (Brent row is Yahoo BZ=F — not the same print as the CNBC settle); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+      "zh": "股票、外汇、黄金期货和布伦特期货采用 Yahoo 最近日线柱；快照时尚未收盘的时段是盘中，不是收盘（布伦特一行是 Yahoo BZ=F，与 CNBC 结算价不是同一报价）；美国国债采用官方日度收益率曲线（相对前值的基点）；比特币为 CoinGecko 的 24 小时变动；资金费率比较相邻的 OKX 报价。快照取自生成时点，不是本页实时行情。"
+    },
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,722.60",
+            "change": "+0.60%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "26,477.81",
+            "change": "+1.18%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "17.52",
+            "change": "−4.73%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "63,268.37",
+            "change": "+1.73%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "kospi",
+            "asset": "Kospi",
+            "latest": "5,638.34",
+            "change": "+3.09%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "23,041.32",
+            "change": "−0.73%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "3,800.43",
+            "change": "−1.48%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,648.30",
+            "change": "−1.33%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.70%",
+            "change": "+2.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.82%",
+            "change": "−2.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.99%",
+            "change": "−1.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.30%",
+            "change": "−1.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-27",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "157.8760",
+            "change": "+0.22%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-28",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.6558",
+            "change": "−0.21%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-28",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,071.20",
+            "change": "+0.81%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-28",
+            "printNote": {
+              "en": "futures intraday, not spot 4060.55",
+              "zh": "期货盘中，并非现货 4060.55"
+            },
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$110.60",
+            "change": "−4.50%",
+            "changeDirection": "down",
+            "asOfDate": "2026-10-28",
+            "printNote": {
+              "en": "futures intraday, not the 113.88 settle",
+              "zh": "期货盘中，并非结算价 113.88"
+            },
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$80,568",
+            "change": "+0.52%",
+            "changeDirection": "up",
+            "asOfDate": "2026-10-28",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0100%",
+            "change": "0.000 bp",
+            "changeDirection": "flat",
+            "asOfDate": "2026-10-28",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-10-28"
+}
