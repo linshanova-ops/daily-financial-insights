@@ -1,8 +1,18 @@
 {
-  "at": "2026-10-29T06:40:05.712Z",
-  "briefingDate": "2026-10-29",
+  "at": "2026-10-30T06:40:49.275Z",
+  "briefingDate": "2026-10-30",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-30.md",
+      "subject": "彭博财经早茶: 美国通胀率升高；欧洲央行按兵不动",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6695,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-10-30.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-10-30.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-16.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-15.md",
       "skipped": true
     }
   ],
@@ -144,21 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 华府敦促释放更多储备油；欧盟或对华出新招",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-16.md"
-    },
-    {
-      "reason": "unmatched",
-      "subject": "Glassnode x Coinbase Institutional: Charting Crypto Q4 2026 [New report]",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶:  强CPI重燃美加息担忧；中国信贷增速回升",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-15.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "The top buyers have turned Bitcoin back twice",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
     }
   ]
 }
