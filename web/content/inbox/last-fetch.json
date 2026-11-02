@@ -1,25 +1,17 @@
 {
-  "at": "2026-11-02T01:02:20.422Z",
+  "at": "2026-11-02T01:33:49.278Z",
   "briefingDate": "2026-11-02",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-02.md",
-      "subject": "彭博财经早茶：中国或研究稳定股市举措；币安开始恢复客户提款",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 7194,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-02.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-02.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W44.md",
-      "subject": "彭博周末茶歇: 巴西大选余波",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 8511,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：中国或研究稳定股市举措；币安开始恢复客户提款",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-02.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇: 巴西大选余波",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W44.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国通胀率升高；欧洲央行按兵不动",
