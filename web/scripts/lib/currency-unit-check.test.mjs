@@ -54,5 +54,15 @@ describe("findBnYiMismatches", () => {
       pageHasCnyBnEvidence("本月MLF加量续作1000亿元", "100"),
       true,
     );
+    assert.equal(
+      pageHasCnyBnEvidence("国新与诚通持仓约1485.40亿元", "148.54"),
+      true,
+    );
+    assert.equal(
+      pageHasCnyBnEvidence("持仓约1,485.40亿元", "148.54"),
+      true,
+    );
+    assert.equal(pageHasCnyBnEvidence("14854亿元", "148.54"), false);
+    assert.equal(pageHasCnyBnEvidence("10000亿元", "100"), false);
   });
 });

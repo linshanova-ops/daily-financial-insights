@@ -1,8 +1,26 @@
 {
-  "at": "2026-10-30T07:44:25.318Z",
-  "briefingDate": "2026-10-30",
+  "at": "2026-11-02T01:02:20.422Z",
+  "briefingDate": "2026-11-02",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-02.md",
+      "subject": "彭博财经早茶：中国或研究稳定股市举措；币安开始恢复客户提款",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 7194,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-02.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-02.png"
+    },
+    {
+      "sourceId": "bloomberg-weekend-tea",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W44.md",
+      "subject": "彭博周末茶歇: 巴西大选余波",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 8511,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-30.md",
@@ -34,11 +52,6 @@
       "skipped": true
     },
     {
-      "sourceId": "bloomberg-weekend-tea",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W43.md",
-      "skipped": true
-    },
-    {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-23.md",
       "skipped": true
@@ -61,11 +74,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-19.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-16.md",
       "skipped": true
     }
   ],
@@ -101,9 +109,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-26.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "彭博周末茶歇：法国骚乱余烬未熄",
-      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W43.md"
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
     },
     {
       "reason": "weekly-duplicate",
@@ -139,16 +147,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：特朗普放松对俄制裁引发党内反弹；法国爆发严重骚乱",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-19.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "彭博周末茶歇：沙特遇袭 中东冲突再次升级",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 华府敦促释放更多储备油；欧盟或对华出新招",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-16.md"
     }
   ]
 }
