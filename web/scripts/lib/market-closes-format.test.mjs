@@ -7,6 +7,7 @@ import {
   formatPctChange,
   formatSignedPct,
   parseUsDate,
+  impliedPriorClose,
   withYahooMetaFallback,
   selectDisplayedBar,
   unixToDateString,
@@ -18,6 +19,13 @@ describe("market-closes-format", () => {
     assert.equal(formatLevel(7533.77), "7,533.77");
     assert.equal(formatLevel(4.57, { decimals: 2, suffix: "%" }), "4.57%");
     assert.equal(formatLevel(63825, { decimals: 0, prefix: "$" }), "$63,825");
+  });
+
+  it("recovers the prior close from a stored day change", () => {
+    const prior = impliedPriorClose("3,755.38", "+0.30%");
+    assert.ok(Math.abs(prior - 3755.38 / 1.003) < 1e-6);
+    assert.equal(formatPctChange(prior, 3754.9), "+0.29%");
+    assert.equal(impliedPriorClose("10", "flat"), null);
   });
 
   it("formats percent and bp changes with direction", () => {

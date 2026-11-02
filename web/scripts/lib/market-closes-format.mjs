@@ -72,6 +72,23 @@ export function withYahooMetaFallback(pairs, meta = {}) {
   return out;
 }
 
+/**
+ * Recover the prior session close from a stored day-change.
+ * Used when Yahoo reprints the same session (one bar, chartPreviousClose identical)
+ * and the last briefing already computed that session's change.
+ */
+export function impliedPriorClose(latest, changeText) {
+  const n = Number(String(latest ?? "").replace(/[$,%]/g, "").replace(/,/g, ""));
+  const m = String(changeText || "")
+    .replace("−", "-")
+    .match(/^([+-]?)(\d+(?:\.\d+)?)%$/);
+  if (!Number.isFinite(n) || !m) return null;
+  const pct = (m[1] === "-" ? -1 : 1) * Number(m[2]);
+  const denom = 1 + pct / 100;
+  if (!Number.isFinite(denom) || denom === 0) return null;
+  return n / denom;
+}
+
 /** False when the only "previous" close rounds to a 0.00% day change. */
 export function yahooPrevIsUsable(prev, last) {
   const formatted = formatPctChange(prev, last);

@@ -51,10 +51,11 @@ export function pageHasCnyBnEvidence(pageText, bnAmount) {
     `(?:CNY|RMB|￥)?\\s*${escapeRegex(bnAmount)}\\s*(?:bn|billion)\\b`,
     "i",
   );
-  // Allow 666.07亿元 to evidence CNY66.6bn / CNY66.607bn (same integer 亿 stem).
-  const yiRe = new RegExp(
-    `${escapeRegex(yi)}(?:\\.\\d+)?\\s*亿(?:元)?`,
-    "i",
-  );
+  // Integer stem 666 matches 666.07亿元. A decimal stem 1485.4 must also match
+  // 1485.40亿元 (trailing zero), without letting 100 match 1000.
+  const yiPattern = yi.includes(".")
+    ? `${escapeRegex(yi)}\\d*`
+    : `${escapeRegex(yi)}(?:\\.\\d+)?`;
+  const yiRe = new RegExp(`${yiPattern}\\s*亿(?:元)?`, "i");
   return bnRe.test(text) || yiRe.test(text);
 }

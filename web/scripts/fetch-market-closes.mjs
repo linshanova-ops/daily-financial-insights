@@ -16,6 +16,7 @@ import {
   formatLevel,
   formatPctChange,
   formatSignedPct,
+  impliedPriorClose,
   parseUsDate,
   selectDisplayedBar,
   unixToDateString,
@@ -72,7 +73,7 @@ function yahooSource(symbol, label) {
   };
 }
 
-function priorPublishedClose(rowId, lastClose) {
+function priorPublishedClose(rowId, lastClose, lastDate) {
   // ponytail: scans briefing files newest-first. Fine until the dashboard folder is huge.
   const dir = path.join(__dirname, "../content/briefings");
   const files = fs.readdirSync(dir).filter((f) => f.endsWith(".md")).sort().reverse();
@@ -81,6 +82,15 @@ function priorPublishedClose(rowId, lastClose) {
     const rows = (parsed.data.marketDashboard?.groups || []).flatMap((g) => g.rows || []);
     const row = rows.find((r) => r.id === rowId);
     if (!row?.latest) continue;
+    // Same session republished (Yahoo one bar). A stored change under 0.05% is a
+    // quote revision, not the prior session — keep scanning. Otherwise recover
+    // that session's prior close from the stored day change.
+    if (lastDate && row.asOfDate === lastDate) {
+      const implied = impliedPriorClose(row.latest, row.change);
+      const recovered = implied != null ? formatPctChange(implied, lastClose) : null;
+      if (recovered && !/^([+−-])?0\.0[0-4]%$/.test(recovered)) return implied;
+      continue;
+    }
     const n = Number(String(row.latest).replace(/[$,%]/g, "").replace(/,/g, ""));
     if (Number.isFinite(n) && yahooPrevIsUsable(n, lastClose)) return n;
   }
@@ -99,7 +109,7 @@ async function rowFromYahoo({
   const { pairs } = await yahooPair(symbol);
   let { prev, last } = selectDisplayedBar(id, pairs, new Date().toISOString());
   if (!prev || !yahooPrevIsUsable(prev.c, last.c)) {
-    const prior = priorPublishedClose(id, last.c);
+    const prior = priorPublishedClose(id, last.c, unixToDateString(last.t));
     if (prior != null) prev = { c: prior, t: last.t - 86400 };
   }
   const latest = formatLevel(last.c, { decimals, prefix, suffix });
