@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-10-30T07:41:41.372Z",
-  "latest": "2026-10-30",
+  "generatedAt": "2026-11-02T01:27:52.523Z",
+  "latest": "2026-11-02",
   "briefings": [
+    {
+      "date": "2026-11-02",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "Friday was the worst US equity day in nearly five months. The S&P 500 fell 1.82% to 7580.07 and the Nasdaq fell 2.86% to 25437, with Intel down nearly 29% in its largest daily drop since 1974. Brent settled at 117.64 and COMEX gold at 3885.7, a one-year low. China's manufacturing PMI fell to 49.3. The chart shows headline inflation drawn accelerating while core stays near the target.",
+        "zh": "周五是近五个月来美股最差的一天。标普500下跌 1.82% 至 7580.07，纳斯达克下跌 2.86% 至 25437，英特尔跌近 29%，为 1974 年以来最大单日跌幅。布伦特结算价 117.64，COMEX 黄金 3885.7，创一年新低。中国制造业 PMI 降至 49.3。图表显示整体通胀读数抬头，核心读数仍贴近目标。"
+      },
+      "coverageWindow": {
+        "en": "October 30–November 2, 2026",
+        "zh": "2026年10月30日至11月2日"
+      }
+    },
     {
       "date": "2026-10-30",
       "title": {
