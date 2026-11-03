@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-11-02T01:27:52.523Z",
-  "latest": "2026-11-02",
+  "generatedAt": "2026-11-03T01:31:49.518Z",
+  "latest": "2026-11-03",
   "briefings": [
+    {
+      "date": "2026-11-03",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "Monday took the Iran premium out of oil. WTI fell 7.36% to 96.46 and Brent fell 7.63% to 104.77, while the Nasdaq fell 1.07% to 25164.32 and the Dow rose. China cut the buyback relending rate from 1.25% to 1%, and Shanghai rose 1.08% to 3638.03. The chart draws 2026 Nov-Dec government-bond net financing at about 21000, second only to 2024.",
+        "zh": "周一的谈判把伊朗溢价从油价里拿掉了。WTI 下跌 7.36% 至 96.46，布伦特下跌 7.63% 至 104.77，纳斯达克下跌 1.07% 至 25164.32，道琼斯上涨。中国把回购增持再贷款利率从 1.25% 降至 1%，上证上涨 1.08% 至 3638.03。图表把 2026 年 11 月至 12 月政府债净融资画在约 21000，仅次于 2024 年。"
+      },
+      "coverageWindow": {
+        "en": "November 2–3, 2026",
+        "zh": "2026年11月2日至11月3日"
+      }
+    },
     {
       "date": "2026-11-02",
       "title": {
