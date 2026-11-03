@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-02T07:00:47.187Z",
-  "briefingDate": "2026-11-02",
+  "at": "2026-11-03T01:05:06.913Z",
+  "briefingDate": "2026-11-03",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-03.md",
+      "subject": "彭博财经早茶: 中国加大资本市场支持；美伊愿意和谈",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6516,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-03.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-03.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-02.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-20.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-19.md",
       "skipped": true
     }
   ],
@@ -144,11 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 法国骚乱渐息；人行拟换政策利率品种",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-20.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：特朗普放松对俄制裁引发党内反弹；法国爆发严重骚乱",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-19.md"
     }
   ]
 }
