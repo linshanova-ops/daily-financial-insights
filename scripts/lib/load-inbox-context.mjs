@@ -156,7 +156,7 @@ export function formatInboxPromptBlock(items, fetchStatus = null) {
   if (fetchStatus) {
     if (fetchStatus.ok === false) {
       statusLines.push(
-        `INBOX FETCH STATUS: FAILED (${fetchStatus.reason || "unknown"}). Merge any captures listed below — do not invent newsletter content. If none listed, add a short caveats/singleSource note.`,
+        `INBOX FETCH STATUS: FAILED (${fetchStatus.reason || "unknown"}). Merge any captures listed below — do not invent newsletter content. If none listed, leave the page without that mail. Do not write singleSource.`,
       );
     } else {
       const n = Array.isArray(fetchStatus.saved) ? fetchStatus.saved.length : 0;

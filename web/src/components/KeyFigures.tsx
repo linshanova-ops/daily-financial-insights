@@ -131,12 +131,12 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          <L en="Numbers that define the day" zh="界定当日的数字" />
+          <L en="Numbers that define the day" zh="今天的关键数字" />
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           <L
             en="Verified prints from this briefing — each figure links to its primary source. Chart-of-the-day insights come from 彭博 今日图表 when available."
-            zh="本简报中经核对的数字均链接至原始来源。若有彭博今日图表，解读取自该图。"
+            zh="核对过的数字都链到原始来源。有彭博今日图表时，解读按这张图来写。"
           />
         </p>
 

@@ -35,7 +35,7 @@ export function MarketOverview({ data }: MarketOverviewProps) {
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           <L
             en={`Desk copy from the morning mail. Dated prints sit in Closes and Themes, kept separate.${data.asOfDate ? ` Tape date ${data.asOfDate}.` : ""}`}
-            zh={`晨间邮件中的市场叙述。注明日期的报价见「收盘」与「主题」，两处分列。${data.asOfDate ? `行情日 ${data.asOfDate}。` : ""}`}
+            zh={`以下来自晨报的市场一览。带日期的报价写在「收盘」和「主题」，不写在这里。${data.asOfDate ? `行情日 ${data.asOfDate}。` : ""}`}
           />
         </p>
 

@@ -25,11 +25,11 @@ git add .github/workflows/inbox-sync.yml
 git commit -m "chore: last-kick IMAP at 09:00"
 git push
 for i in $(seq 1 12); do test -f "$MAIL" && break; git pull; sleep 10; done
-# If still missing, name IMAP miss in singleSource — do not start a 90-min loop.
+# If still missing, stop. Do not write singleSource. Do not start a 90-min loop.
 test -f "$MAIL"
 ```
 
-Capture at this updating time (miss → name it in `singleSource`, do not substitute):
+Capture at this updating time (miss → do not substitute, and do not write `singleSource`):
 
 | Source | On the page |
 |--------|-------------|
@@ -60,8 +60,8 @@ Read and execute these skills; do not jump to YAML:
 1. Beijing date `YYYY-MM-DD` = today `Asia/Shanghai`.
 2. Inbox: `$TODAY` 财经早茶 is on disk from the 09:00 last-kick (Monday: also `bloomberg-weekend-tea` if present). Map **that file** in the same pass as 见闻/CICC/prints. Do not merge yesterday’s 财经早茶 as today’s 市场一览. **今日图表** only if `inbox-charts/bloomberg-$TODAY.*` exists — never reuse yesterday’s PNG.
 3. Inbox map (one pass — do not ship the figure then leave Themes/calendar on yesterday): 国际要闻 → `globalChanged` **Chinese, one bullet each, in mail order** (do not replace the mail with English primaries; extra prints can follow). 大中华 → `chinaChanged`; 市场一览 → `marketOverview.items` **Chinese, one bullet each, in mail order** (do not replace the mail with English books **or with 见闻「市场收报」**; do not add 加密/A股/欧洲股市 unless those labels are in the mail; English section title stays **Markets at a glance** (中文 市场一览)). 日程/央行动态 → `eventCalendar`; 今日图表 → `figures` id `bloomberg-chart-of-day` **only** with `$TODAY` PNG. Then **rewrite `themeCards` from that same mail + prints**: one card per **independent** market force (count follows the tape — not a 3–5 cap). Include each large 市场一览 move that has its own mechanism (gold/bitcoin with duration is a Theme; oil on geopolitics is another). Merge cards that share a mechanism. Skip headlines that do not change a book. Bloomberg `www.bloomberg.com/asia` is a hub (403 in CI) — put distinctive sizes on a second source (见闻 / Treasury / AP) or drop the digit.
-4. China minimum: in-window cite from **华尔街见闻**, **Caixin or 第一财经**, and **BlockBeats** — or name the miss in `singleSource`.
-5. **CICC (required attempt):** theme-then-search via `cicc-research-article-search` (`APP_ID`/`APP_SECRET`; `python3 .cursor/skills/cicc-research-article-search/scripts/get_data.py "<theme>" --no-save`). Paraphrase only. Treat as a desk view, never a print. Write `CICC (date)：…` — do not write the word CLAIM. Put on matching `themeCards` / `globalImplies` — not as a What-changed print. Public cite = WeChat if that is what the skill returns. No VIP reprint. No invented notes. If env/search fails: say so in `singleSource`.
+4. China minimum: in-window cite from **华尔街见闻**, **Caixin or 第一财经**, and **BlockBeats**. If one is missing, leave it off the page. Do not write `singleSource`.
+5. **CICC (required attempt):** theme-then-search via `cicc-research-article-search` (`APP_ID`/`APP_SECRET`; `python3 .cursor/skills/cicc-research-article-search/scripts/get_data.py "<theme>" --no-save`). Paraphrase only. Treat as a desk view, never a print. Write `CICC (date)：…` — do not write the word CLAIM. Put on matching `themeCards` / `globalImplies` — not as a What-changed print. Public cite = WeChat if that is what the skill returns. No VIP reprint. No invented notes. If env/search fails: skip that note. Do not write `singleSource`.
 
 ## FACT vs CLAIM (judgment)
 
@@ -80,7 +80,7 @@ Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facin
 
 Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price.
 
-Chinese uses 万/亿. English uses million/billion. Never write "hundred million".
+Chinese uses 万/亿. English uses million/billion. Never write "hundred million". Do not repeat the other language's number in parentheses. One sentence keeps one scale.
 
 A price move names the session (cash close, intraday, or after hours). Do not invent a clock time.
 
@@ -102,7 +102,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Event calendar | `eventCalendar` windowStart=briefing date, windowEnd=Friday after the Friday-on-or-after (this week + next); ~8–20 dated rows; mainland China only on calendar; `watchItems: []` |
 | Global | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions` — **do not repeat Market closes prints** (indices, yields, oil settle, BTC level). Keep narrative and desk news; extra AP/Treasury close bullets belong in `marketDashboard` / Themes / skim `summary`, not `globalChanged`. |
 | China | `chinaStance`, `chinaChanged`, `chinaImplies`, `chinaDivergences` — same rule: no second A/H index close table in What changed; stance is policy and flows, not re-listing Shanghai/Hang Seng levels already in Market closes. |
-| Sources | Renders `keySources` classified by book. `sources` = leftovers cited only on What-changed. `singleSource` = caveats. |
+| Sources | Renders `keySources` classified by book. `sources` = leftovers cited only on What-changed. Do not write `singleSource`. The page does not show a single-source risk block. |
 | (not rendered) | `signals: []`. `assetClasses` / `assetFramework` — do **not** spend the run filling six books; the site does not show them. |
 
 ## Publish
@@ -119,7 +119,7 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 ## Theme card
 
-One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: the logic, one external view inside it, which of this card's books it moves, and what would change the theme. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`. Do not end So what with the dated next print.
+One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: the logic, one external view inside it, which of this card's books it moves, and what would change the theme. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`. The skim `watch` string keeps about five next items, not the whole calendar. Do not end So what with the dated next print.
 
 So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
 
@@ -153,11 +153,11 @@ So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
 
 Stay on this card’s books. Do not write “keep X on the other card”, “this is not the Y book”, or “rather than the ⟨other⟩ spillover”. Only numbers already in this card’s `fact` or `factSources`. Paragraph must add logic `fact` does not contain — do not restate Fact, Summary, Markets at a glance, or Closes. **Plain language:** short sentences; state the pivotal point and the cause-effect chain from the cited article. No hedge-fund jargon (e.g. "narrative multiple", "discount-rate relief", "flow-built profit cushion", "meeting premium", "term premium") — if the logic is simple, write it simply. Banned phrases: "sets the next tape", "is the next print", "is the settle", "keeps the case alive", "takes … off the tape", "treating … as", "pricing some of the … back out", "room for", "still leaves … on the table", "worth watching", "this card". Banned opener: "A ⟨number⟩ ⟨thing⟩ next to a ⟨number⟩ ⟨thing⟩ is…". Banned opener: "⟨asset⟩ is now pricing ⟨N⟩ against ⟨prior⟩". Banned tail: "Horizon is …, ending at …", or any calendar event whose predicate is the next print/settle/tape — that date lives in `eventCalendar` / `watch`.
 
-`verify-briefing` fails dumps (fact not 1–3, so-what not 3–5, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, missing `status`, no `House (d Month):` on any card). Unused prints → What changed. Sourcing caveats → `singleSource`. No CLAIM. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
+`verify-briefing` fails dumps (fact not 1–3, so-what not 3–5, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, missing `status`, no `House (d Month):` on any card). Unused prints → What changed. Do not write `singleSource`. No CLAIM. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
 
 **Bitcoin:** `gn metric` if keyed; else inbox Week on Chain as desk view. Do not invent on-chain sizes.
 
-Self-check before PR: every **rendered** table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; BlockBeats four books on matching Themes or the miss named in `singleSource`; if a chart is present its PNG date is `$TODAY`; Themes titles/facts match that chart and today’s desk (no Theme citing yesterday’s PNG as 今日图表); every Theme fits the **Theme card** block above; `marketOverview` is today’s mail 市场一览 (Chinese, mail order — not 见闻 市场收报), and the English section title is **Markets at a glance**; prose is complete sentences (not keyword stitches) and every rendered sentence is `{ en, zh }`; the word CLAIM does not appear in the briefing YAML; no invented tape; no duplicate `keySources` href; every key source has `books` + `influence`; header, closes map, greeting, and same-fact rules above still hold.
+Self-check before PR: every **rendered** table row above is non-empty **except** omit `bloomberg-chart-of-day` when `$TODAY` PNG is missing; CICC attempted; China three desks or caveat; BlockBeats four books on matching Themes when the tape has them; if a chart is present its PNG date is `$TODAY`; Themes titles/facts match that chart and today’s desk (no Theme citing yesterday’s PNG as 今日图表); every Theme fits the **Theme card** block above; `marketOverview` is today’s mail 市场一览 (Chinese, mail order — not 见闻 市场收报), and the English section title is **Markets at a glance**; prose is complete sentences (not keyword stitches) and every rendered sentence is `{ en, zh }`; the word CLAIM does not appear in the briefing YAML; no invented tape; no duplicate `keySources` href; every key source has `books` + `influence`; header, closes map, greeting, and same-fact rules above still hold.
 
 Do not record a walkthrough video.
 ---
