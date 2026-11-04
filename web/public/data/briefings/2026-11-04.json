@@ -282,7 +282,11 @@
           "zh": "铜价跌至七周低点，市场权衡AI交易与美伊冲突前景。金价下跌，交易员在美国中期选举日避免建立大规模头寸"
         }
       }
-    ]
+    ],
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    }
   },
   "themeCards": [
     {
