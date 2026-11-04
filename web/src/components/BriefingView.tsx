@@ -98,7 +98,7 @@ export function BriefingView({
         stance={briefing.globalRegime}
         changed={briefing.globalChanged}
         implies={briefing.globalImplies}
-        tensionsLabel={<L en="Tensions" zh="张力" />}
+        tensionsLabel={<L en="Tensions" zh="矛盾" />}
         tensions={briefing.globalTensions}
         accent="azure"
         band
@@ -117,7 +117,6 @@ export function BriefingView({
       />
       <SourcesCaveats
         sources={briefing.sources}
-        singleSource={briefing.singleSource}
         keySources={briefing.keySources}
       />
     </>

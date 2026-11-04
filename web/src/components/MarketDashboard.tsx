@@ -87,7 +87,7 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           <L
             en={`Snapshot as of generate time${data.asOf ? asOfLabel(data.asOf, "en") : ""}. Not live-updating on this page.`}
-            zh={`生成时点的快照${data.asOf ? asOfLabel(data.asOf, "zh") : ""}。本页不实时更新。`}
+            zh={`生成时的快照${data.asOf ? asOfLabel(data.asOf, "zh") : ""}。本页不实时更新。`}
           />
         </p>
 

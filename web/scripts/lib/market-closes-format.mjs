@@ -188,7 +188,7 @@ export function gapPrintNote(gap) {
   }
   return {
     en: `Stale print. Missing session ${dates}.`,
-    zh: `过期报价。缺少时段 ${dates}。`,
+    zh: `这是更早的收盘，缺了交易日 ${dates}。`,
   };
 }
 

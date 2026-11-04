@@ -1,4 +1,5 @@
 import type { LangText } from "@/lib/lang-text";
+import { dropRestatedScale } from "../../scripts/lib/scale-paren.mjs";
 import type { SignalGrade, ThemeCard } from "@/lib/types";
 import { gradeZh, statusZh } from "@/lib/lang";
 import { themesByGrade } from "@/lib/theme-grade-order";
@@ -39,13 +40,16 @@ function CiteLine({ line }: { line: string }) {
 }
 
 function FactLines({ fact }: { fact?: LangText | null }) {
-  const list = (text: string) => (
-    <ul className="mt-2 space-y-2 text-base leading-relaxed text-ink-soft">
-      {lines(text).map((line, i) => (
-        <CiteLine key={i} line={line} />
-      ))}
-    </ul>
-  );
+  const list = (raw: string) => {
+    const text = dropRestatedScale(raw);
+    return (
+      <ul className="mt-2 space-y-2 text-base leading-relaxed text-ink-soft">
+        {lines(text).map((line, i) => (
+          <CiteLine key={i} line={line} />
+        ))}
+      </ul>
+    );
+  };
   if (!fact || typeof fact === "string") return fact ? list(fact) : null;
   return (
     <>

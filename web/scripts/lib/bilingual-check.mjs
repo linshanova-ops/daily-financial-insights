@@ -2,6 +2,8 @@
  * Latest briefing only. Older files stay one language.
  * ponytail: rendered sentences must be { en, zh } in the YAML the weekday publish writes.
  */
+import { otherHasSameAmount } from "./scale-paren.mjs";
+
 const NAMES = ["华尔街见闻", "第一财经", "财经早茶", "今日图表", "财新", "律动", "见闻", "彭博"];
 
 function significant(s) {
@@ -33,10 +35,10 @@ function visit(value, where, problems) {
   if (!/[\u4e00-\u9fff]/.test(value.zh)) problems.push(`${where}: Chinese side has no Chinese`);
   if (/Platts|普氏/.test(value.en + value.zh)) problems.push(`${where}: Platts`);
   for (const n of significant(value.en)) {
-    if (!value.zh.includes(n)) problems.push(`${where}: ${n} missing in zh`);
+    if (!otherHasSameAmount(n, value.zh)) problems.push(`${where}: ${n} missing in zh`);
   }
   for (const n of significant(value.zh)) {
-    if (!value.en.includes(n)) problems.push(`${where}: ${n} missing in en`);
+    if (!otherHasSameAmount(n, value.en)) problems.push(`${where}: ${n} missing in en`);
   }
 }
 

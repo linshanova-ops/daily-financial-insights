@@ -92,7 +92,7 @@ export function SituationBlock({
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
-                <L en="What it implies" zh="推论" />
+                <L en="What it implies" zh="这意味着" />
               </h3>
               <KindLabel kind="judgment" />
             </div>

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import type { Briefing } from "./types";
 import { enOf } from "./lang-text";
+import { dropRestatedScale } from "../../scripts/lib/scale-paren.mjs";
+
+export { dropRestatedScale };
 
 /** First few sentences of the day's tone, for the title and the share description. */
 export function briefingFacts(tone: string, count = 3): string {
@@ -28,7 +31,7 @@ export function briefingPageMeta(
   briefing: Pick<Briefing, "date" | "marketTone">,
 ): Metadata {
   const date = formatBriefingDate(briefing.date);
-  const facts = briefingFacts(enOf(briefing.marketTone));
+  const facts = dropRestatedScale(briefingFacts(enOf(briefing.marketTone)));
   const title = `${date}: ${facts}`;
   const description = `${date}. ${facts}`;
   return {

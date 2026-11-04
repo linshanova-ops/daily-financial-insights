@@ -277,7 +277,7 @@ export interface BriefingFrontmatter {
   signals: Signal[];
   watchItems: WatchItem[];
   sources: string;
-  singleSource: string;
+  singleSource?: string;
 }
 
 export interface Briefing extends BriefingFrontmatter {

@@ -9,7 +9,6 @@ import { isSubscriptionMail, SourceLabel } from "./SourceButton";
 
 interface SourcesCaveatsProps {
   sources: LangText;
-  singleSource: LangText;
   keySources?: KeySource[];
 }
 
@@ -67,7 +66,6 @@ function isClassified(sources: KeySource[]) {
 
 export function SourcesCaveats({
   sources,
-  singleSource,
   keySources = [],
 }: SourcesCaveatsProps) {
   const classified = isClassified(keySources);
@@ -84,7 +82,7 @@ export function SourcesCaveats({
         </p>
       </div>
       <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-        <L en="Where the numbers came from" zh="数字出处" />
+        <L en="Where the numbers came from" zh="数字从哪来" />
       </h2>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
         <L
@@ -95,7 +93,7 @@ export function SourcesCaveats({
           }
           zh={
             classified
-              ? "每个来源只列一次。标签是该数字实际影响的板块。"
+              ? "每个来源只列一次。标签是它实际影响的市场。"
               : "本期可点击的来源。"
           }
         />
@@ -202,14 +200,6 @@ export function SourcesCaveats({
         </p>
       ) : null}
 
-      <div className="mt-8 space-y-4 text-base leading-relaxed text-ink-soft">
-        <p>
-          <span className="font-semibold text-ink">
-            <L en="Single-source risk: " zh="单一来源风险：" />
-          </span>
-          <Prose text={singleSource} />
-        </p>
-      </div>
       <blockquote className="mt-8 border-l-2 border-forest pl-4 text-sm italic leading-relaxed text-ink-soft">
         <L
           en="This report is research and information synthesis, not investment advice. Verify figures against primary sources before acting on them."
