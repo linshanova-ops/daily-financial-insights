@@ -46,7 +46,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 
 Before finalizing website YAML, re-check:
 
-1. Every index % change matches the named index's **close** (not another Asia index). Do not label an unfinished session as a daily close; mark it 盘中 / intraday with the quote time. Nikkei and Kospi use the previous completed daily close (收盘 / close plus that session date), not the intraday print.
+1. Every index % change matches the named index's **close** (not another Asia index). Do not label an unfinished session as a daily close; mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price.
 2. Every official print matches the primary release (BLS/NBS/PBOC/Fed).
 3. Beat/miss labels match actual vs estimate (**less = miss estimate**, **more = beat estimate**).
 4. PBOC OMO: ops size, maturity, **net** = ops − maturity, with correct 亿元→CNY bn conversion.

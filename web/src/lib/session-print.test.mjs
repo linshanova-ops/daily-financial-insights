@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
+import { sourcesWithHref } from "./source-links.ts";
 import { sessionKind, shanghaiQuote } from "./session-print.ts";
 
 const SNAP = "2026-10-28T01:19:25.942Z";
@@ -16,6 +17,16 @@ describe("sessionKind at the 09:19 Asia/Shanghai snapshot", () => {
     assert.equal(sessionKind("shanghai", "2026-10-27", SNAP), "close");
     assert.equal(sessionKind("us10y", "2026-10-27", SNAP), "close");
     assert.equal(sessionKind("nikkei", "2026-10-28", "2026-10-28T07:00:00.000Z"), "close");
+    assert.equal(sessionKind("nikkei", "2026-11-04", "2026-11-04T06:10:00.000Z"), "intraday");
+    assert.equal(sessionKind("nikkei", "2026-11-04", "2026-11-04T06:30:00.000Z"), "close");
+  });
+
+  it("drops a source that has no href", () => {
+    assert.deepEqual(sourcesWithHref(undefined), []);
+    assert.deepEqual(
+      sourcesWithHref([undefined, { label: "x" }, { label: "y", href: "https://a" }]),
+      [{ label: "y", href: "https://a" }],
+    );
   });
 
   it("prints the Shanghai quote time", () => {

@@ -9,6 +9,7 @@ import {
   parseUsDate,
   impliedPriorClose,
   withYahooMetaFallback,
+  gapPrintNote,
   selectDisplayedBar,
   unixToDateString,
   yahooPrevIsUsable,
@@ -54,6 +55,42 @@ describe("market-closes-format", () => {
       unixToDateString(selectDisplayedBar("nikkei", pairs, "2026-10-28T07:00:00.000Z").last.t),
       "2026-10-28",
     );
+    const mid = selectDisplayedBar("nikkei", pairs, "2026-10-28T06:10:00.000Z");
+    assert.equal(unixToDateString(mid.last.t), "2026-10-27");
+  });
+
+  it("labels a skipped weekday as a holiday when a later bar exists, otherwise stale", () => {
+    const snap = "2026-11-04T01:22:00.000Z";
+    const t = (day) => Date.parse(`${day}T00:00:00Z`) / 1000;
+    const holiday = selectDisplayedBar(
+      "nikkei",
+      [
+        { t: t("2026-11-02"), c: 63081.86 },
+        { t: t("2026-11-04"), c: 63100 },
+      ],
+      snap,
+    );
+    assert.equal(unixToDateString(holiday.last.t), "2026-11-02");
+    assert.equal(holiday.gap.kind, "holiday");
+    assert.deepEqual(holiday.gap.dates, ["2026-11-03"]);
+    assert.match(gapPrintNote(holiday.gap).en, /Holiday 2026-11-03/);
+
+    const stale = selectDisplayedBar("kospi", [{ t: t("2026-11-02"), c: 5859.08 }], snap);
+    assert.equal(stale.gap.kind, "stale");
+    assert.deepEqual(stale.gap.dates, ["2026-11-03"]);
+    assert.match(gapPrintNote(stale.gap).en, /Missing session 2026-11-03/);
+
+    const filled = selectDisplayedBar(
+      "nikkei",
+      [
+        { t: t("2026-11-02"), c: 1 },
+        { t: t("2026-11-03"), c: 2 },
+        { t: t("2026-11-04"), c: 3 },
+      ],
+      snap,
+    );
+    assert.equal(unixToDateString(filled.last.t), "2026-11-03");
+    assert.equal(filled.gap, null);
   });
 
   it("parses dates", () => {

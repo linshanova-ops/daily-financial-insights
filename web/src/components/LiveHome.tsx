@@ -24,8 +24,6 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
   const [publishedAt, setPublishedAt] = useState<string | null>(
     initialBriefing.publishedAt ?? null,
   );
-  const [updatedAt, setUpdatedAt] = useState<string | null>(null);
-  const [live, setLive] = useState(false);
 
   const pullFeed = useCallback(async (signal?: AbortSignal) => {
     try {
@@ -37,14 +35,12 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
 
       setBriefing(next);
       setPublishedAt(next.publishedAt ?? index.generatedAt ?? null);
-      setUpdatedAt(new Date().toISOString());
-      setLive(true);
 
       const priorDate =
         index.briefings.find((item) => item.date !== next.date)?.date ?? null;
       setPreviousDate(priorDate);
     } catch {
-      if (!signal?.aborted) setLive(false);
+      // keep the edition already on the page
     }
   }, []);
 
@@ -64,7 +60,9 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
   return (
     <>
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 sm:px-8">
-        <LiveStatus updatedAt={updatedAt} live={live} />
+        <LiveStatus
+          snapshotAt={briefing.marketDashboard?.asOf ?? publishedAt}
+        />
         <p className="pb-2 text-sm text-ink-soft" role="status">
           {publishedAt ? (
             <L

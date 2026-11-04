@@ -43,7 +43,7 @@ export function SituationBlock({
   return (
     <section
       id={id}
-      className={`scroll-mt-24 ${band ? "section-band border-y border-line/60 bg-paper/55" : ""}`}
+      className={`scroll-mt-40 ${band ? "section-band border-y border-line/60 bg-paper/55" : ""}`}
     >
       <div className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
         <div className="flex items-center gap-3">

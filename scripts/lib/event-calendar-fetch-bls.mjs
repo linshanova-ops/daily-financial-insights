@@ -40,22 +40,48 @@ const MONTHS = {
 };
 
 /**
- * US Eastern clock time → Beijing `HH:mm`.
- * Project mapping: EDT offset used as +12h same calendar day
- * (e.g. 08:30 ET → 20:30 Beijing). Not DST-aware.
+ * US Eastern clock on `date` → Beijing `HH:mm`.
+ * Uses America/New_York on that date, so the hour follows the event's own offset.
  */
-export function easternTimeToBeijing(timeEt) {
-  const m = String(timeEt || "")
+export function easternTimeToBeijing(timeEt, date) {
+  const raw = String(timeEt || "")
     .trim()
-    .match(/^(\d{1,2}):(\d{2})\s*(AM|PM)?$/i);
-  if (!m) return undefined;
+    .replace(/\./g, "")
+    .replace(/\s+/g, " ");
+  const m = raw.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)?$/i);
+  if (!m || !/^\d{4}-\d{2}-\d{2}$/.test(String(date || ""))) return undefined;
   let hour = Number(m[1]);
   const minute = Number(m[2]);
   const ampm = (m[3] || "").toUpperCase();
   if (ampm === "PM" && hour < 12) hour += 12;
   if (ampm === "AM" && hour === 12) hour = 0;
-  const beijingHour = (hour + 12) % 24;
-  return `${String(beijingHour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
+  if (hour > 23 || minute > 59) return undefined;
+  const [y, mo, d] = date.split("-").map(Number);
+  const want = Date.UTC(y, mo - 1, d, hour, minute);
+  const fmt = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    hourCycle: "h23",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  let ms = want;
+  for (let i = 0; i < 3; i++) {
+    const map = {};
+    for (const p of fmt.formatToParts(new Date(ms))) map[p.type] = p.value;
+    const got = Date.UTC(+map.year, +map.month - 1, +map.day, +map.hour, +map.minute);
+    ms += want - got;
+  }
+  const bj = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Shanghai",
+    hourCycle: "h23",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).formatToParts(new Date(ms));
+  const get = (type) => bj.find((p) => p.type === type)?.value ?? "00";
+  return `${get("hour").padStart(2, "0")}:${get("minute").padStart(2, "0")}`;
 }
 
 function stripTags(html) {
@@ -137,7 +163,7 @@ export function parseBlsScheduleHtml(html, { windowStart, windowEnd }) {
     events.push({
       id: `bls-${slug}-${date}`,
       date,
-      timeBeijing: easternTimeToBeijing(timeText),
+      timeBeijing: easternTimeToBeijing(timeText, date),
       region: "US",
       category: "data",
       event: title,

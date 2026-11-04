@@ -2,10 +2,8 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 import { fetchGovFixtures } from "./event-calendar-fetch-gov.mjs";
-import {
-  parseFedCalendarJson,
-  easternTimeToBeijing,
-} from "./event-calendar-fetch-fed.mjs";
+import { easternTimeToBeijing } from "./event-calendar-fetch-bls.mjs";
+import { parseFedCalendarJson } from "./event-calendar-fetch-fed.mjs";
 
 const blsHtml = readFileSync(
   new URL("../fixtures/event-calendar/bls-schedule-2026-sample.html", import.meta.url),
@@ -95,8 +93,9 @@ describe("parseFedCalendarJson", () => {
     assert.ok(events.every((ev) => ev.region === "US"));
     assert.ok(events.every((ev) => ev.category === "central-bank"));
     assert.ok(events.every((ev) => ev.source.href.includes("federalreserve.gov")));
-    // Project mapping: ET +12h same calendar day (2:00 p.m. ET → 02:00 Beijing).
-    assert.equal(easternTimeToBeijing("2:00 p.m."), "02:00");
-    assert.equal(easternTimeToBeijing("8:30 AM"), "20:30");
+    assert.equal(easternTimeToBeijing("2:00 p.m.", "2026-08-19"), "02:00");
+    assert.equal(easternTimeToBeijing("8:30 AM", "2026-08-19"), "20:30");
+    assert.equal(easternTimeToBeijing("2:00 p.m.", "2026-11-04"), "03:00");
+    assert.equal(easternTimeToBeijing("8:30 AM", "2026-11-04"), "21:30");
   });
 });

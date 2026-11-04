@@ -67,7 +67,7 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
   return (
     <section
       id="market-dashboard"
-      className="scroll-mt-24 section-band border-y border-line/70 bg-paper/55"
+      className="scroll-mt-40 section-band border-y border-line/70 bg-paper/55"
     >
       <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
         <div className="flex items-center gap-3">

@@ -39,7 +39,7 @@ export function EventCalendarView({
   return (
     <section
       id="calendar"
-      className="section-band scroll-mt-24 border-y border-line/60 bg-paper/55"
+      className="section-band scroll-mt-40 border-y border-line/60 bg-paper/55"
     >
       <div className="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -78,8 +78,8 @@ export function EventCalendarView({
                 <span className="tabular-nums text-xs text-ink/45">
                   <L en={formatDay(row.date, "en")} zh={formatDay(row.date, "zh")} />
                 </span>
-                <span className={`${row.timeBeijing ? "" : "hidden sm:inline"} tabular-nums text-xs text-ink/45`}>
-                  {row.timeBeijing || "—"}
+                <span className="tabular-nums text-xs text-ink/45">
+                  {row.timeBeijing || <L en="unconfirmed" zh="待确认" />}
                 </span>
                 <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-ink/40">
                   <L en={row.region} zh={regionZh(row.region)} />

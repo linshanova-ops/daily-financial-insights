@@ -3,7 +3,7 @@ const CLOSE_AT: Record<string, { timeZone: string; close: string }> = {
   spx: { timeZone: "America/New_York", close: "16:00" },
   nasdaq: { timeZone: "America/New_York", close: "16:00" },
   vix: { timeZone: "America/New_York", close: "16:00" },
-  nikkei: { timeZone: "Asia/Tokyo", close: "15:00" },
+  nikkei: { timeZone: "Asia/Tokyo", close: "15:30" },
   kospi: { timeZone: "Asia/Seoul", close: "15:30" },
   hsi: { timeZone: "Asia/Hong_Kong", close: "16:00" },
   hstech: { timeZone: "Asia/Hong_Kong", close: "16:00" },

@@ -16,7 +16,7 @@ export function MarketOverview({ data }: MarketOverviewProps) {
   const accent = accents.copper;
 
   return (
-    <section id="market-overview" className="scroll-mt-24">
+    <section id="market-overview" className="scroll-mt-40">
       <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
         <div className="flex flex-wrap items-center gap-3">
           <span

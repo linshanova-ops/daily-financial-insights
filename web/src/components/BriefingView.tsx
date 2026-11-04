@@ -62,7 +62,7 @@ export function BriefingView({
         hasThemes={hasThemes}
         hasCalendar={hasCalendar || hasWatchFallback}
       />
-      <div id="skim" className="scroll-mt-28">
+      <div id="skim" className="scroll-mt-40">
         <ExecutiveSummary
           summary={briefing.summary}
           signal={briefing.signal}

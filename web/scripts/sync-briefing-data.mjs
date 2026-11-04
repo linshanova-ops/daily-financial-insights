@@ -60,6 +60,17 @@ if (briefings[0]) {
   );
 }
 
+const site = "https://linshanova-ops.github.io/daily-financial-insights";
+const locs = [`${site}/`, ...briefings.map((item) => `${site}/briefings/${item.date}/`)];
+const sitemap = [
+  `<?xml version="1.0" encoding="UTF-8"?>`,
+  `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
+  ...locs.map((loc) => `  <url><loc>${loc}</loc></url>`),
+  `</urlset>`,
+  ``,
+].join("\n");
+fs.writeFileSync(path.join(root, "public", "sitemap.xml"), sitemap);
+
 console.log(
   `[sync] Wrote ${briefings.length} briefing(s). Latest: ${index.latest ?? "none"}`,
 );

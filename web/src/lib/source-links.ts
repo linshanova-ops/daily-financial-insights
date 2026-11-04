@@ -88,6 +88,13 @@ export const SOURCE_CATALOG: SourceLink[] = [
   },
 ];
 
+/** Drop a missing source or a source with no href. A blank href stays off the page. */
+export function sourcesWithHref<T extends { href?: string }>(
+  sources?: readonly (T | null | undefined)[] | null,
+): T[] {
+  return (sources || []).filter((source): source is T => Boolean(source?.href));
+}
+
 export function linkifySources(text: string): Array<string | SourceLink> {
   if (!text?.trim()) return [];
 
