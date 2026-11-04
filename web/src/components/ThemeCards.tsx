@@ -63,7 +63,7 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
   return (
     <section
       id="themes"
-      className="section-band scroll-mt-28 border-y border-line/60 bg-paper/40"
+      className="section-band scroll-mt-40 border-y border-line/60 bg-paper/40"
     >
       <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
         <div className="flex flex-wrap items-center gap-3">
@@ -75,12 +75,18 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
           <L en="What moves markets today" zh="今日市场驱动" />
         </h2>
+        <p className="mt-2 max-w-2xl text-sm text-ink-soft">
+          <L
+            en="Strong, moderate, and weak mark how important the item is, not how certain a trade is."
+            zh="强、中、弱表示这件事有多重要，不是一笔交易有多确定。"
+          />
+        </p>
         <ol className="mt-8 space-y-6">
           {ordered.map((theme, index) => (
             <li
               key={theme.id}
               id={`theme-${theme.id}`}
-              className="scroll-mt-28 border-b border-line pb-6 last:border-b-0"
+              className="scroll-mt-40 border-b border-line pb-6 last:border-b-0"
             >
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <span className="text-sm font-semibold text-ink/40">

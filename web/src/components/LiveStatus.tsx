@@ -1,32 +1,22 @@
 "use client";
 
+import { formatPublishedAt } from "@/lib/format-published";
 import { L } from "./L";
 
 interface LiveStatusProps {
-  updatedAt: string | null;
-  live: boolean;
+  snapshotAt: string | null;
 }
 
-export function LiveStatus({ updatedAt, live }: LiveStatusProps) {
+/** The feed check is not a live price. The market note still says the page is not a live quote. */
+export function LiveStatus({ snapshotAt }: LiveStatusProps) {
+  const en = snapshotAt ? formatPublishedAt(snapshotAt) : null;
+  const zh = snapshotAt ? formatPublishedAt(snapshotAt, "zh") : null;
   return (
-    <div className="flex items-center gap-3 pb-2 text-xs">
-      <span
-        className={`inline-flex h-2 w-2 rounded-full ${
-          live ? "bg-forest-bright animate-pulse" : "bg-ink/30"
-        }`}
-        aria-hidden
+    <p className="pb-2 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">
+      <L
+        en={en ? `Content checked. Snapshot ${en}.` : "Content checked."}
+        zh={zh ? `内容已核对。快照 ${zh}。` : "内容已核对。"}
       />
-      <span className="font-semibold uppercase tracking-[0.18em] text-ink/50">
-        {live ? <L en="Live feed" zh="实时" /> : <L en="Static copy" zh="静态" />}
-      </span>
-      {updatedAt ? (
-        <span className="text-ink/45">
-          <L
-            en={`Updated ${new Date(updatedAt).toLocaleString("en-US")}`}
-            zh={`更新于 ${new Date(updatedAt).toLocaleString("zh-CN")}`}
-          />
-        </span>
-      ) : null}
-    </div>
+    </p>
   );
 }

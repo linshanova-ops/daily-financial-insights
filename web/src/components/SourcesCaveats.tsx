@@ -75,7 +75,7 @@ export function SourcesCaveats({
   return (
     <section
       id="sources"
-      className="scroll-mt-24 mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
+      className="scroll-mt-40 mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
     >
       <div className="flex items-center gap-3">
         <span className="h-6 w-1 rounded-full bg-ink/50" aria-hidden />

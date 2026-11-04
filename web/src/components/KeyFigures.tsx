@@ -122,7 +122,7 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
   const charts = figures.filter((f) => f.kind === "bars");
 
   return (
-    <section id="key-figures" className="scroll-mt-24">
+    <section id="key-figures" className="scroll-mt-40">
       <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
         <div className="flex items-center gap-3">
           <span className="h-6 w-1 rounded-full bg-forest" aria-hidden />

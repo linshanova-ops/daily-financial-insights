@@ -1,8 +1,7 @@
-import { enOf } from "@/lib/lang-text";
 import { notFound } from "next/navigation";
 import { BriefingView } from "@/components/BriefingView";
+import { briefingPageMeta } from "@/lib/briefings-format";
 import {
-  formatBriefingDate,
   getAllBriefingDates,
   getAllBriefings,
   getBriefingByDate,
@@ -22,10 +21,7 @@ export async function generateMetadata({ params }: BriefingPageProps) {
   if (!briefing) {
     return { title: "Briefing not found" };
   }
-  return {
-    title: formatBriefingDate(briefing.date),
-    description: enOf(briefing.marketTone),
-  };
+  return briefingPageMeta(briefing);
 }
 
 export default async function BriefingPage({ params }: BriefingPageProps) {
