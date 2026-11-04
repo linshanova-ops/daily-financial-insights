@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-11-03T01:31:49.518Z",
-  "latest": "2026-11-03",
+  "generatedAt": "2026-11-04T01:27:21.504Z",
+  "latest": "2026-11-04",
   "briefings": [
+    {
+      "date": "2026-11-04",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "Tuesday's tape bought chips back and sold crude and gold. The Nasdaq rose 0.83% to 25372.01 while Brent fell 1.12% to 103.60 and COMEX gold fell 0.74% to 3927.24. Job openings rose to 7.523 million, above a 7.164 million survey, and the 10-year yield rose to 4.9435%. Shanghai fell 0.82% to 3608.10. The chart draws openings at about 7.5 million and layoffs at about 1.6 million.",
+        "zh": "周二的行情买回了芯片，卖掉了原油和黄金。纳斯达克上涨 0.83% 至 25372.01，布伦特下跌 1.12% 至 103.60，COMEX 黄金下跌 0.74% 至 3927.24。职位空缺升至 7.523 million，高于 7.164 million 的预期，10年期收益率升至 4.9435%。上证下跌 0.82% 至 3608.10。图表把职位空缺画在约 7.5 million，裁员画在约 1.6 million。"
+      },
+      "coverageWindow": {
+        "en": "November 3–4, 2026",
+        "zh": "2026年11月3日至11月4日"
+      }
+    },
     {
       "date": "2026-11-03",
       "title": {
