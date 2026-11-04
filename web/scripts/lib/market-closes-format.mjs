@@ -96,12 +96,16 @@ export function yahooPrevIsUsable(prev, last) {
 }
 
 /**
- * Nikkei and Kospi are already open at the morning snapshot, so Yahoo's last
- * daily bar is an unfinished print. Show the previous completed bar instead.
+ * Nikkei and Kospi can already be open at the morning snapshot. Walk back to
+ * the latest bar whose session has finished. A weekday gap before a later bar
+ * is a holiday; a weekday gap with no later bar is a stale print.
+ * ponytail: a traded session missing from a feed that then resumes looks like
+ * a holiday, and a holiday with no later bar yet looks stale. Upgrade path: an
+ * exchange holiday list.
  * Same cash closes as session-print.ts. Other ids, including Brent, stay on the last bar.
  */
 const PRIOR_CLOSE_IF_OPEN = {
-  nikkei: { timeZone: "Asia/Tokyo", close: "15:00" },
+  nikkei: { timeZone: "Asia/Tokyo", close: "15:30" },
   kospi: { timeZone: "Asia/Seoul", close: "15:30" },
 };
 
@@ -136,12 +140,56 @@ function sessionStillOpen(id, asOfDate, snapshotIso) {
   return snap < zonedEpoch(asOfDate, spec.close, spec.timeZone);
 }
 
-/** Bar to print, and the bar before it for the day change. */
+function isoAddDays(iso, n) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d + n)).toISOString().slice(0, 10);
+}
+
+/** Weekdays strictly between two YYYY-MM-DD dates. Weekends are not sessions. */
+function weekdaysBetween(start, end) {
+  const dates = [];
+  if (!start || !end || start >= end) return dates;
+  let d = isoAddDays(start, 1);
+  while (d < end) {
+    const dow = new Date(`${d}T00:00:00Z`).getUTCDay();
+    if (dow !== 0 && dow !== 6) dates.push(d);
+    d = isoAddDays(d, 1);
+  }
+  return dates;
+}
+
+/** Bar to print, the bar before it, and a holiday or stale gap when one exists. */
 export function selectDisplayedBar(id, pairs, snapshotIso) {
-  if (!pairs?.length) return { last: null, prev: null };
+  if (!pairs?.length) return { last: null, prev: null, gap: null };
   let i = pairs.length - 1;
-  if (sessionStillOpen(id, unixToDateString(pairs[i].t), snapshotIso) && i >= 1) i -= 1;
-  return { last: pairs[i], prev: i >= 1 ? pairs[i - 1] : null };
+  while (i >= 1 && sessionStillOpen(id, unixToDateString(pairs[i].t), snapshotIso)) i -= 1;
+  const last = pairs[i];
+  const newer = i + 1 < pairs.length ? pairs[i + 1] : null;
+  const snap = Date.parse(snapshotIso);
+  const end = newer
+    ? unixToDateString(newer.t)
+    : Number.isFinite(snap)
+      ? new Date(snap).toISOString().slice(0, 10)
+      : null;
+  const dates = weekdaysBetween(unixToDateString(last.t), end);
+  const gap = dates.length ? { kind: newer ? "holiday" : "stale", dates } : null;
+  return { last, prev: i >= 1 ? pairs[i - 1] : null, gap };
+}
+
+/** Reader label for a gap. No backup price. */
+export function gapPrintNote(gap) {
+  if (!gap?.dates?.length) return null;
+  const dates = gap.dates.join(", ");
+  if (gap.kind === "holiday") {
+    return {
+      en: `Previous-session close. Holiday ${dates}.`,
+      zh: `上一交易日收盘。休市 ${dates}。`,
+    };
+  }
+  return {
+    en: `Stale print. Missing session ${dates}.`,
+    zh: `过期报价。缺少时段 ${dates}。`,
+  };
 }
 
 /** Parse MM/DD/YYYY treasury CSV date → YYYY-MM-DD */

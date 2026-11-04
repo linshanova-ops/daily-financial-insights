@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { sourcesWithHref } from "@/lib/source-links";
 import type { FactSource } from "@/lib/types";
 import { L } from "./L";
 
@@ -33,16 +34,17 @@ export function SourceButton({
   sources,
   markSingle = false,
 }: SourceButtonProps) {
-  if (!sources?.length) return null;
+  const linked = sourcesWithHref(sources);
+  if (!linked.length) return null;
 
   return (
     <span className="mt-1.5 inline-flex flex-wrap items-center gap-1.5 align-middle">
-      {markSingle && sources.length === 1 ? (
+      {markSingle && linked.length === 1 ? (
         <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-ink/40">
           单源
         </span>
       ) : null}
-      {sources.map((source) => {
+      {linked.map((source) => {
         const className =
           "focus-ring inline-flex max-w-full whitespace-normal rounded-sm border border-line bg-paper/80 px-1.5 py-1 text-left text-[10px] font-medium leading-snug tracking-wide text-ink-soft";
         if (isSubscriptionMail(source.href)) {

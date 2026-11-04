@@ -18,6 +18,7 @@ import {
   formatSignedPct,
   impliedPriorClose,
   parseUsDate,
+  gapPrintNote,
   selectDisplayedBar,
   unixToDateString,
   withYahooMetaFallback,
@@ -107,14 +108,14 @@ async function rowFromYahoo({
   sourceLabel,
 }) {
   const { pairs } = await yahooPair(symbol);
-  let { prev, last } = selectDisplayedBar(id, pairs, new Date().toISOString());
+  let { prev, last, gap } = selectDisplayedBar(id, pairs, new Date().toISOString());
   if (!prev || !yahooPrevIsUsable(prev.c, last.c)) {
     const prior = priorPublishedClose(id, last.c, unixToDateString(last.t));
     if (prior != null) prev = { c: prior, t: last.t - 86400 };
   }
   const latest = formatLevel(last.c, { decimals, prefix, suffix });
   const change = prev ? formatPctChange(prev.c, last.c) : null;
-  return {
+  const row = {
     id,
     asset,
     latest,
@@ -123,6 +124,9 @@ async function rowFromYahoo({
     asOfDate: unixToDateString(last.t),
     source: yahooSource(symbol, sourceLabel),
   };
+  const printNote = gapPrintNote(gap);
+  if (printNote) row.printNote = printNote;
+  return row;
 }
 
 async function fetchTreasuryRows() {

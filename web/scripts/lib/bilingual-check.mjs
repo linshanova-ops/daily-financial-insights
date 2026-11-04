@@ -15,6 +15,8 @@ function strayCjk(s) {
   return (t.match(/[\u4e00-\u9fff]/g) || []).length;
 }
 
+const WORKFLOW = /\.ya?ml\b|inbox-sync|last-kick|\bthis branch\b|ust-duration|\bShanova\//;
+
 function visit(value, where, problems) {
   if (typeof value === "string") {
     problems.push(`${where}: sentence is one language`);
@@ -41,7 +43,12 @@ function visit(value, where, problems) {
 export function checkBilingual(briefing) {
   const problems = [];
   const one = (value, where) => {
-    if (value) visit(value, where, problems);
+    if (!value) return;
+    visit(value, where, problems);
+    const parts = typeof value === "string" ? [value] : [value.en, value.zh];
+    if (parts.some((s) => typeof s === "string" && WORKFLOW.test(s))) {
+      problems.push(`${where}: workflow id on the reader page`);
+    }
   };
   const many = (arr, where, field) => {
     (arr || []).forEach((item, i) => one(item?.[field], `${where}[${i}].${field}`));

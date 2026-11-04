@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T01:27:21.504Z",
+  "generatedAt": "2026-11-04T08:54:43.345Z",
   "latest": "2026-11-04",
   "briefings": [
     {
@@ -9,8 +9,8 @@
         "zh": "每日金融简报"
       },
       "marketTone": {
-        "en": "Tuesday's tape bought chips back and sold crude and gold. The Nasdaq rose 0.83% to 25372.01 while Brent fell 1.12% to 103.60 and COMEX gold fell 0.74% to 3927.24. Job openings rose to 7.523 million, above a 7.164 million survey, and the 10-year yield rose to 4.9435%. Shanghai fell 0.82% to 3608.10. The chart draws openings at about 7.5 million and layoffs at about 1.6 million.",
-        "zh": "周二的行情买回了芯片，卖掉了原油和黄金。纳斯达克上涨 0.83% 至 25372.01，布伦特下跌 1.12% 至 103.60，COMEX 黄金下跌 0.74% 至 3927.24。职位空缺升至 7.523 million，高于 7.164 million 的预期，10年期收益率升至 4.9435%。上证下跌 0.82% 至 3608.10。图表把职位空缺画在约 7.5 million，裁员画在约 1.6 million。"
+        "en": "Tuesday's tape bought chips back and sold crude and gold. The Nasdaq rose 0.83% to 25372.01 while Brent fell 1.12% to 103.60 and COMEX gold fell 0.74% to 3927.24. Job openings rose to 7.523 million (752.3), above a 7.164 million (716.4) survey, and the 10-year yield rose to 4.9435%. Shanghai fell 0.82% to 3608.10. The chart draws openings at about 7.5 million (750) and layoffs at about 1.6 million (160).",
+        "zh": "周二的行情买回了芯片，卖掉了原油和黄金。纳斯达克上涨 0.83% 至 25372.01，布伦特下跌 1.12% 至 103.60，COMEX 黄金下跌 0.74% 至 3927.24。职位空缺升至 752.3万（7.523），高于 716.4万（7.164）的预期，10年期收益率升至 4.9435%。上证下跌 0.82% 至 3608.10。图表把职位空缺画在约 750万（7.5），裁员画在约 160万（1.6）。"
       },
       "coverageWindow": {
         "en": "November 3–4, 2026",
@@ -389,19 +389,28 @@
     {
       "date": "2026-08-19",
       "title": "Daily Financial Briefing",
-      "marketTone": "Tuesday close sold chips (S&P −0.7%, Nasdaq −1.3%) next to BofA/NVDA 今日图表 (CLAIM). Sovereign long-end still near 2007; desk 国债扭转跌势. China still 4.5/0.6/−6.7. Oil is Iran-CLAIM.",
+      "marketTone": {
+        "en": "Tuesday's close sold chips: the S&P fell 0.7% and the Nasdaq fell 1.3%, beside the BofA Nvidia chart. Long-term government yields are still near 2007 levels. China is still the July activity miss. Oil follows the Iran desk line.",
+        "zh": "周二收盘卖掉了芯片：标普下跌 0.7%，纳斯达克下跌 1.3%，旁边是美国银行的英伟达图。长期国债收益率仍接近 2007 年的水平。中国仍是 7 月经济活动不及预期。原油跟着伊朗交易台的说法走。"
+      },
       "coverageWindow": "August 18–19, 2026"
     },
     {
       "date": "2026-08-18",
       "title": "Daily Financial Briefing",
-      "marketTone": "Three books set the day: US duration (30Y two-decade high vs pause-odds), China demand (NBS July miss), and oil as Iran-CLAIM beta. Dashboard holds the prints; Themes/Assets are the transmission.",
+      "marketTone": {
+        "en": "The day is US long-end yields at a two-decade high against pause odds, a miss in China's July activity, and oil moving with the Iran desk line. The dashboard holds the prints.",
+        "zh": "这一天是美国长端收益率处在二十年高位、而暂停加息的赔率仍在，中国7月经济活动不及预期，以及原油跟着伊朗交易台的说法走。看板上是这些数据。"
+      },
       "coverageWindow": "August 17–18, 2026"
     },
     {
       "date": "2026-08-17",
       "title": "Daily Financial Briefing",
-      "marketTone": "Friday’s retail-sales miss pulls the S&P off Thursday’s record while China July loans print a contraction, PBOC overnight plumbing hits the tax window, and inbox Iran-isolation talk stays a CLAIM.",
+      "marketTone": {
+        "en": "Friday's retail-sales miss pulls the S&P off Thursday's record. China July loans contracted, and PBOC overnight operations hit the tax window. The Iran isolation line is a desk comment, not a confirmed print.",
+        "zh": "周五零售销售不及预期，标普从周四的纪录回落。中国7月贷款收缩，央行隔夜操作碰上缴税窗口。伊朗孤立那一句是交易台评论，不是已确认的数据。"
+      },
       "coverageWindow": "August 14–17, 2026"
     },
     {

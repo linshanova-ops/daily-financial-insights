@@ -97,7 +97,7 @@ export function parseBeaScheduleHtml(html, { windowStart, windowEnd }) {
       events.push({
         id: `bea-${slug}-${date}`,
         date,
-        timeBeijing: easternTimeToBeijing(timeEt),
+        timeBeijing: easternTimeToBeijing(timeEt, date),
         region: "US",
         category: "data",
         event: title,

@@ -81,8 +81,8 @@
         "us-equities"
       ],
       "influence": {
-        "en": "BlockBeats (4 November). AMD third-quarter revenue rose 45% to 13.38 billion dollars, and the shares rose more than 9% after hours.",
-        "zh": "律动（11月4日）。AMD 第三季度营收增长 45% 至 13.38 billion dollars，盘后涨超 9%。"
+        "en": "BlockBeats (4 November). AMD third-quarter revenue rose 45% to 13.38 billion dollars (133.8), and the shares rose more than 9% after hours.",
+        "zh": "律动（11月4日）。AMD 第三季度营收增长 45% 至 133.8亿美元（13.38），盘后涨超 9%。"
       }
     },
     {
@@ -104,8 +104,8 @@
         "crypto"
       ],
       "influence": {
-        "en": "BlockBeats (3 November). After a 6.3 billion dollar theft, Binance bitcoin depth within 1% of the price fell about 30%, from 45 million dollars to 32 million dollars.",
-        "zh": "律动（11月3日）。6.3 billion dollars 被盗后，币安比特币在价格 1% 以内的深度下降约 30%，从 45 million dollars 降至 32 million dollars。"
+        "en": "BlockBeats (3 November). After a 6.3 billion dollar (63) theft, Binance bitcoin depth within 1% of the price fell about 30%, from 45 million dollars (4500) to 32 million dollars (3200).",
+        "zh": "律动（11月3日）。63亿美元（6.3）被盗后，币安比特币在价格 1% 以内的深度下降约 30%，从 4500万美元（45） 降至 3200万美元（32）。"
       }
     },
     {
@@ -130,8 +130,8 @@
       "kind": "insight",
       "imageSrc": "/inbox-charts/bloomberg-2026-11-04.png",
       "analysis": {
-        "en": "The upper red series is job openings, in millions, from 2021 to the latest point. That point sits between the 6.0 and 8.0 gridlines, about 7.5 million. The lower blue series is layoffs, in millions. Its latest point is just above the 1.5 million gridline, about 1.6 million. The footer names the US Bureau of Labor Statistics. These levels are about-reads of the image.",
-        "zh": "上方红色曲线是职位空缺，单位为百万人，自 2021 年至最新点。最新点位于 6.0 与 8.0 刻度之间，约 7.5 million。下方蓝色曲线是裁员，单位为百万人。最新点略高于 1.5 million 刻度，约 1.6 million。图注来源为美国劳工统计局。这些读数来自图像，是约数。"
+        "en": "The upper red series is job openings, in millions, from 2021 to the latest point. That point sits between the 6.0 and 8.0 gridlines, about 7.5 million (750). The lower blue series is layoffs, in millions. Its latest point is just above the 1.5 million (150) gridline, about 1.6 million (160). The footer names the US Bureau of Labor Statistics. These levels are about-reads of the image.",
+        "zh": "上方红色曲线是职位空缺，纵轴以百万计，自 2021 年至最新点。最新点位于 6.0 与 8.0 刻度之间，约 750万（7.5）。下方蓝色曲线是裁员，纵轴以百万计。最新点略高于 150万（1.5）刻度，约 160万（1.6）。图注来源为美国劳工统计局。这些读数来自图像，是约数。"
       },
       "source": {
         "label": "财经早茶 Nov 4",
@@ -140,8 +140,8 @@
     }
   ],
   "marketTone": {
-    "en": "Tuesday's tape bought chips back and sold crude and gold. The Nasdaq rose 0.83% to 25372.01 while Brent fell 1.12% to 103.60 and COMEX gold fell 0.74% to 3927.24. Job openings rose to 7.523 million, above a 7.164 million survey, and the 10-year yield rose to 4.9435%. Shanghai fell 0.82% to 3608.10. The chart draws openings at about 7.5 million and layoffs at about 1.6 million.",
-    "zh": "周二的行情买回了芯片，卖掉了原油和黄金。纳斯达克上涨 0.83% 至 25372.01，布伦特下跌 1.12% 至 103.60，COMEX 黄金下跌 0.74% 至 3927.24。职位空缺升至 7.523 million，高于 7.164 million 的预期，10年期收益率升至 4.9435%。上证下跌 0.82% 至 3608.10。图表把职位空缺画在约 7.5 million，裁员画在约 1.6 million。"
+    "en": "Tuesday's tape bought chips back and sold crude and gold. The Nasdaq rose 0.83% to 25372.01 while Brent fell 1.12% to 103.60 and COMEX gold fell 0.74% to 3927.24. Job openings rose to 7.523 million (752.3), above a 7.164 million (716.4) survey, and the 10-year yield rose to 4.9435%. Shanghai fell 0.82% to 3608.10. The chart draws openings at about 7.5 million (750) and layoffs at about 1.6 million (160).",
+    "zh": "周二的行情买回了芯片，卖掉了原油和黄金。纳斯达克上涨 0.83% 至 25372.01，布伦特下跌 1.12% 至 103.60，COMEX 黄金下跌 0.74% 至 3927.24。职位空缺升至 752.3万（7.523），高于 716.4万（7.164）的预期，10年期收益率升至 4.9435%。上证下跌 0.82% 至 3608.10。图表把职位空缺画在约 750万（7.5），裁员画在约 160万（1.6）。"
   },
   "summary": [
     {
@@ -183,7 +183,7 @@
     {
       "text": {
         "en": "September job openings rose to 7.523 million (752.3), above the 7.164 million survey (716.4). 华尔街见闻 printed the release. The RBA raised the cash rate to 4.85% from 4.60%.",
-        "zh": "华尔街见闻：9月职位空缺升至 7.523 million（752.3万），高于预期 7.164 million（716.4万）。澳洲联储将现金利率由 4.60% 上调至 4.85%。"
+        "zh": "华尔街见闻：9月职位空缺升至 752.3万（7.523），高于预期 716.4万（7.164）。澳洲联储将现金利率由 4.60% 上调至 4.85%。"
       },
       "sources": [
         {
@@ -198,12 +198,12 @@
     }
   ],
   "signal": {
-    "en": "The chip bounce, Nasdaq 25372.01 and the semiconductor index up 2.64%, sat next to a funding bill that is still being sold. Brent at 103.60 and gold at 3927.24 fell together after a hotter openings print, 7.523 million against a 7.164 million survey, lifted the 10-year yield to 4.9435%. Shanghai fell 0.82% to 3608.10 even as swap-facility money was awarded. The PBOC raised the FX reserve ratio from 4% to 6%, and onshore yuan closed at 6.6765. The chart puts openings near 7.5 million and layoffs near 1.6 million.",
-    "zh": "芯片反弹里，纳斯达克收到 25372.01，半导体指数上涨 2.64%，旁边仍是一笔在出售的融资账单。布伦特 103.60 与黄金 3927.24 一起下跌。更热的职位空缺，7.523 million 相对预期 7.164 million，把 10年期收益率抬到 4.9435%。互换便利资金落地的同一天，上证下跌 0.82% 至 3608.10。央行把外汇存款准备金率从 4% 提高到 6%，在岸人民币收于 6.6765。图表把职位空缺画在约 7.5 million，裁员画在约 1.6 million。"
+    "en": "The chip bounce, Nasdaq 25372.01 and the semiconductor index up 2.64%, sat next to a funding bill that is still being sold. Brent at 103.60 and gold at 3927.24 fell together after a hotter openings print, 7.523 million (752.3) against a 7.164 million (716.4) survey, lifted the 10-year yield to 4.9435%. Shanghai fell 0.82% to 3608.10 even as swap-facility money was awarded. The PBOC raised the FX reserve ratio from 4% to 6%, and onshore yuan closed at 6.6765. The chart puts openings near 7.5 million (750) and layoffs near 1.6 million (160).",
+    "zh": "芯片反弹里，纳斯达克收到 25372.01，半导体指数上涨 2.64%，旁边仍是一笔在出售的融资账单。布伦特 103.60 与黄金 3927.24 一起下跌。更热的职位空缺，752.3万（7.523）相对预期 716.4万（7.164），把 10年期收益率抬到 4.9435%。互换便利资金落地的同一天，上证下跌 0.82% 至 3608.10。央行把外汇存款准备金率从 4% 提高到 6%，在岸人民币收于 6.6765。图表把职位空缺画在约 750万（7.5），裁员画在约 160万（1.6）。"
   },
   "watch": {
-    "en": "Today at 08:30 Beijing time, Hong Kong October PMI, prior 49.2. At 09:45, China October RatingDog services PMI, survey 51.7 after 51.6. At 10:00, the NDRC briefing. At 17:00, euro-area October services PMI final, survey 51.7 and flash 51.7. At 17:30, UK services PMI final, survey 53.1. At 18:00, euro-area October CPI, survey 4% after 3.8% year on year and 0.4% after 0.6% month on month. At 21:15, US October ADP, survey up 6.7 after 9, in units of ten thousand. At 21:20, ECB chief economist Lane. At 21:30, US September trade, survey deficit 1079 hundred million dollars after 1056, and the Treasury refunding. At 22:45, US services PMI final, survey 57.9. At 23:00, US October ISM services, survey 54.8 after 54.9. On 5 November at 02:45, Bank of France governor Moulin, and the Bank of England decides, 见闻 prior 3.75% and survey 4.00%. US October payrolls are 6 November, 见闻 survey 6.5 after 2.9, in units of ten thousand. China October reserves are 7 November. China October CPI is 9 November and trade is 10 November.",
-    "zh": "今天 08:30，香港 10 月 PMI，前值 49.2。09:45，中国 10 月 RatingDog 服务业 PMI，预估 51.7，前值 51.6。10:00，国家发展改革委发布会。17:00，欧元区 10 月服务业 PMI 终值，预估 51.7，初值 51.7。17:30，英国服务业 PMI 终值，预估 53.1。18:00，欧元区 10 月消费者价格，同比预估 4%、前值 3.8%，环比预估 0.4%、前值 0.6%。21:15，美国 10 月 ADP，预估增加 6.7，前值增加 9，单位为万人。21:20，欧洲央行首席经济学家 Lane。21:30，美国 9 月贸易，预估逆差 1079 hundred million dollars，前值 1056，以及美国财政部再融资。22:45，美国服务业 PMI 终值，预估 57.9。23:00，美国 10 月 ISM 非制造业，预估 54.8，前值 54.9。11月5日 02:45，法国央行行长 Moulin 讲话；英国央行决议，见闻前值 3.75%，预估 4.00%。美国 10 月非农在 11月6日，见闻预估 6.5，前值 2.9，单位为万人。中国 10 月外汇储备在 11月7日。中国 10 月 CPI 在 11月9日，进出口在 11月10日。"
+    "en": "Today at 08:30 Beijing time, Hong Kong October PMI, prior 49.2. At 09:45, China October RatingDog services PMI, survey 51.7 after 51.6. At 10:00, the NDRC briefing. At 17:00, euro-area October services PMI final, survey 51.7 and flash 51.7. At 17:30, UK services PMI final, survey 53.1. At 18:00, euro-area October CPI, survey 4% after 3.8% year on year and 0.4% after 0.6% month on month. At 21:15, US October ADP, survey up 6.7 after 9, in units of ten thousand. At 21:20, ECB chief economist Lane. At 21:30, US September trade, survey deficit 107.9 billion dollars (1079) after 105.6 billion (1056), and the Treasury refunding. At 22:45, US services PMI final, survey 57.9. At 23:00, US October ISM services, survey 54.8 after 54.9. On 5 November at 02:45, Bank of France governor Moulin, and the Bank of England decides, 见闻 prior 3.75% and survey 4.00%. US October payrolls are 6 November, 见闻 survey 6.5 after 2.9, in units of ten thousand. China October reserves are 7 November. China October CPI is 9 November and trade is 10 November.",
+    "zh": "今天 08:30，香港 10 月 PMI，前值 49.2。09:45，中国 10 月 RatingDog 服务业 PMI，预估 51.7，前值 51.6。10:00，国家发展改革委发布会。17:00，欧元区 10 月服务业 PMI 终值，预估 51.7，初值 51.7。17:30，英国服务业 PMI 终值，预估 53.1。18:00，欧元区 10 月消费者价格，同比预估 4%、前值 3.8%，环比预估 0.4%、前值 0.6%。21:15，美国 10 月 ADP，预估增加 6.7，前值增加 9，单位为万人。21:20，欧洲央行首席经济学家 Lane。21:30，美国 9 月贸易，预估逆差 1079亿美元（107.9），前值 1056亿（105.6），以及美国财政部再融资。22:45，美国服务业 PMI 终值，预估 57.9。23:00，美国 10 月 ISM 非制造业，预估 54.8，前值 54.9。11月5日 02:45，法国央行行长 Moulin 讲话；英国央行决议，见闻前值 3.75%，预估 4.00%。美国 10 月非农在 11月6日，见闻预估 6.5，前值 2.9，单位为万人。中国 10 月外汇储备在 11月7日。中国 10 月 CPI 在 11月9日，进出口在 11月10日。"
   },
   "marketOverview": {
     "asOfDate": "2026-11-04",
@@ -333,8 +333,8 @@
       ],
       "status": "continuing",
       "fact": {
-        "en": "The Nasdaq rose 0.83% to 25372.01 and the Philadelphia semiconductor index rose 2.64%, 华尔街见闻 reported. BlockBeats said AMD third-quarter revenue rose 45% to 13.38 billion dollars, and the shares rose more than 9% after hours.",
-        "zh": "华尔街见闻：纳斯达克上涨 0.83% 至 25372.01，费城半导体指数上涨 2.64%。律动：AMD 第三季度营收增长 45% 至 13.38 billion dollars，盘后涨超 9%。"
+        "en": "The Nasdaq rose 0.83% to 25372.01 and the Philadelphia semiconductor index rose 2.64%, 华尔街见闻 reported. BlockBeats said AMD third-quarter revenue rose 45% to 13.38 billion dollars (133.8), and the shares rose more than 9% after hours.",
+        "zh": "华尔街见闻：纳斯达克上涨 0.83% 至 25372.01，费城半导体指数上涨 2.64%。律动：AMD 第三季度营收增长 45% 至 133.8亿美元（13.38），盘后涨超 9%。"
       },
       "factSources": [
         {
@@ -396,7 +396,7 @@
       "status": "escalated",
       "fact": {
         "en": "September job openings rose to 7.523 million (752.3), above the 7.164 million survey (716.4), 华尔街见闻 reported. The 10-year yield rose to 4.9435% and the 2-year yield rose to 4.6122%.",
-        "zh": "华尔街见闻：9月职位空缺升至 7.523 million（752.3万），高于预期 7.164 million（716.4万）。10年期收益率升至 4.9435%，2年期收益率升至 4.6122%。"
+        "zh": "华尔街见闻：9月职位空缺升至 752.3万（7.523），高于预期 716.4万（7.164）。10年期收益率升至 4.9435%，2年期收益率升至 4.6122%。"
       },
       "factSources": [
         {
@@ -405,8 +405,8 @@
         }
       ],
       "mechanism": {
-        "en": "A hotter openings print took back the morning bond rally and steepened the curve. 财经早茶 (4 November): Treasuries gave back the early gain as the openings data came in strong. Treasuries carry openings of 7.523 million against a 7.164 million survey and the 4.9435% ten-year yield. The theme changes if the next labor print misses its survey and the ten-year yield falls.",
-        "zh": "更热的职位空缺把早盘债市涨幅吐了回去，曲线变陡。财经早茶（11月4日）：职位空缺数据偏强，国债回吐早盘涨幅。美债对应 7.523 million 的空缺相对 7.164 million 的预期，以及 4.9435% 的 10 年期收益率。若下一次劳动力数据不及预期且 10 年期收益率回落，这一判断不再成立。"
+        "en": "A hotter openings print took back the morning bond rally and steepened the curve. 财经早茶 (4 November): Treasuries gave back the early gain as the openings data came in strong. Treasuries carry openings of 7.523 million (752.3) against a 7.164 million (716.4) survey and the 4.9435% ten-year yield. The theme changes if the next labor print misses its survey and the ten-year yield falls.",
+        "zh": "更热的职位空缺把早盘债市涨幅吐了回去，曲线变陡。财经早茶（11月4日）：职位空缺数据偏强，国债回吐早盘涨幅。美债对应 752.3万（7.523） 的空缺相对 716.4万（7.164）的预期，以及 4.9435% 的 10 年期收益率。若下一次劳动力数据不及预期且 10 年期收益率回落，这一判断不再成立。"
       }
     },
     {
@@ -424,7 +424,7 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "Shanghai fell 0.82% to 3608.10 and ChiNext fell 2.73% to 2391.65, 华尔街见闻 reported. The third swap facility was awarded, including 100 hundred million yuan (CNY10bn) each to CITIC Securities and Guotai Haitong.",
+        "en": "Shanghai fell 0.82% to 3608.10 and ChiNext fell 2.73% to 2391.65, 华尔街见闻 reported. The third swap facility was awarded, including 10 billion yuan (100) each to CITIC Securities and Guotai Haitong.",
         "zh": "华尔街见闻：上证下跌 0.82% 至 3608.10，创业板下跌 2.73% 至 2391.65。第三批互换便利落地，中信证券和国泰海通各中标 100 亿元（CNY10bn）。"
       },
       "factSources": [
@@ -453,8 +453,8 @@
       ],
       "status": "new",
       "fact": {
-        "en": "Onshore yuan closed at 6.6765 per dollar, down 307 points, after the PBOC said the FX reserve-requirement ratio rises from 4% to 6% on 15 November, 财新 reported. 华尔街见闻 said the hike can freeze about 240 hundred million dollars of FX liquidity, and offshore yuan fell past 6.6757.",
-        "zh": "财新：在岸人民币收于 6.6765，下跌 307 点；央行称外汇存款准备金率 11月15日由 4% 升至 6%。华尔街见闻：此次上调约可冻结 240 hundred million dollars 外汇流动性，离岸人民币跌破 6.6757。"
+        "en": "Onshore yuan closed at 6.6765 per dollar, down 307 points, after the PBOC said the FX reserve-requirement ratio rises from 4% to 6% on 15 November, 财新 reported. 华尔街见闻 said the hike can freeze about 24 billion dollars (240) of FX liquidity, and offshore yuan fell past 6.6757.",
+        "zh": "财新：在岸人民币收于 6.6765，下跌 307 点；央行称外汇存款准备金率 11月15日由 4% 升至 6%。华尔街见闻：此次上调约可冻结 240亿美元（24）外汇流动性，离岸人民币跌破 6.6757。"
       },
       "factSources": [
         {
@@ -519,8 +519,8 @@
       ],
       "status": "continuing",
       "fact": {
-        "en": "BlockBeats: after a 6.3 billion dollar theft, Binance bitcoin depth within 1% of the price fell about 30%, from 45 million dollars to 32 million dollars. 华尔街见闻: turning the coins into cash cost about 1.19 hundred million dollars in slippage, and Tether and Circle froze about 18 hundred million dollars of stablecoins. The same BlockBeats desk relayed a Glassnode note that sellers were capitulating below 80,000 dollars.",
-        "zh": "律动：6.3 billion dollars 被盗后，币安比特币在价格 1% 以内的深度下降约 30%，从 45 million dollars 降至 32 million dollars。华尔街见闻：把币换成现金的滑点损失约 1.19 hundred million dollars，Tether 与 Circle 冻结约 18 hundred million dollars 稳定币。同一家律动转述 Glassnode：卖盘在 80,000 美元下方投降。"
+        "en": "BlockBeats: after a 6.3 billion dollar (63) theft, Binance bitcoin depth within 1% of the price fell about 30%, from 45 million dollars (4500) to 32 million dollars (3200). 华尔街见闻: turning the coins into cash cost about 119 million dollars (1.19) in slippage, and Tether and Circle froze about 1.8 billion dollars (18) of stablecoins. The same BlockBeats desk relayed a Glassnode note that sellers were capitulating below 80,000 dollars.",
+        "zh": "律动：63亿美元（6.3）被盗后，币安比特币在价格 1% 以内的深度下降约 30%，从 4500万美元（45） 降至 3200万美元（32）。华尔街见闻：把币换成现金的滑点损失约 1.19亿美元（119），Tether 与 Circle 冻结约 18亿美元（1.8）稳定币。同一家律动转述 Glassnode：卖盘在 80,000 美元下方投降。"
       },
       "factSources": [
         {
@@ -537,8 +537,8 @@
         }
       ],
       "mechanism": {
-        "en": "The firm is paying dealers more to quote because the theft left a thinner book. Glassnode (2 November): sellers have been capitulating below 80,000 dollars. Bitcoin carries the 6.3 billion dollar theft and the 1.19 hundred million dollars of slippage. The theme changes if that depth is rebuilt and withdrawals slow without another large theft.",
-        "zh": "公司在给报价方加价，因为被盗之后订单簿变薄了。Glassnode（11月2日）：卖盘在 80,000 美元下方持续投降。比特币对应 6.3 billion dollars 的被盗，以及 1.19 hundred million dollars 的滑点损失。若深度修复且提款放缓、又没有另一笔大额被盗，这一判断不再成立。"
+        "en": "The firm is paying dealers more to quote because the theft left a thinner book. Glassnode (2 November): sellers have been capitulating below 80,000 dollars. Bitcoin carries the 6.3 billion dollar (63) theft and the 119 million dollars (1.19) of slippage. The theme changes if that depth is rebuilt and withdrawals slow without another large theft.",
+        "zh": "公司在给报价方加价，因为被盗之后订单簿变薄了。Glassnode（11月2日）：卖盘在 80,000 美元下方持续投降。比特币对应 63亿美元（6.3） 的被盗，以及 1.19亿美元（119） 的滑点损失。若深度修复且提款放缓、又没有另一笔大额被盗，这一判断不再成立。"
       }
     }
   ],
@@ -561,8 +561,8 @@
     },
     {
       "text": {
-        "en": "Trump said that from year-end the United States will stop the annual 40 hundred million dollars of aid to Israel, 财经早茶 reported.",
-        "zh": "财经早茶：特朗普称今年年底起将停止每年给以色列的 40 hundred million dollars 援助。"
+        "en": "Trump said that from year-end the United States will stop the annual 4 billion dollars (40) of aid to Israel, 财经早茶 reported.",
+        "zh": "财经早茶：特朗普称今年年底起将停止每年给以色列的 40亿美元（4）援助。"
       },
       "sources": [
         {
@@ -586,7 +586,7 @@
     {
       "text": {
         "en": "September job openings rose to a four-month high and layoffs fell to a more-than-one-year low, so firms' demand for labor firmed, 财经早茶 reported. 华尔街见闻 put openings at 7.523 million (752.3), above the 7.164 million survey (716.4).",
-        "zh": "财经早茶：9月职位空缺升至四个月高点，裁员降至一年多低点，企业对劳动力的需求增强。华尔街见闻：空缺 7.523 million（752.3万），高于预期 7.164 million（716.4万）。"
+        "zh": "财经早茶：9月职位空缺升至四个月高点，裁员降至一年多低点，企业对劳动力的需求增强。华尔街见闻：空缺 752.3万（7.523），高于预期 716.4万（7.164）。"
       },
       "sources": [
         {
@@ -637,8 +637,8 @@
     },
     {
       "text": {
-        "en": "AMD's revenue outlook beat estimates and the shares jumped after hours, 财经早茶 reported. BlockBeats put third-quarter revenue at 13.38 billion dollars, up 45%, with the shares up more than 9% after hours.",
-        "zh": "财经早茶：AMD 营收展望超预期，股价盘后大涨。律动：第三季度营收 13.38 billion dollars，增长 45%，盘后涨超 9%。"
+        "en": "AMD's revenue outlook beat estimates and the shares jumped after hours, 财经早茶 reported. BlockBeats put third-quarter revenue at 13.38 billion dollars (133.8), up 45%, with the shares up more than 9% after hours.",
+        "zh": "财经早茶：AMD 营收展望超预期，股价盘后大涨。律动：第三季度营收 133.8亿美元（13.38），增长 45%，盘后涨超 9%。"
       },
       "sources": [
         {
@@ -653,8 +653,8 @@
     },
     {
       "text": {
-        "en": "Meta is seeking at least 200 hundred million dollars across a cross-border bond sale, with the dollar tranche about 150 hundred million dollars and demand near 4 times the deal. The first euro bond could price as soon as Wednesday, 财经早茶 reported.",
-        "zh": "财经早茶：Meta 寻求通过跨境债券筹资至少 200 hundred million dollars，美元债约 150 hundred million dollars，认购接近 4 倍。最早周三进行首次欧元债发行。"
+        "en": "Meta is seeking at least 20 billion dollars (200) across a cross-border bond sale, with the dollar tranche about 15 billion dollars (150) and demand near 4 times the deal. The first euro bond could price as soon as Wednesday, 财经早茶 reported.",
+        "zh": "财经早茶：Meta 寻求通过跨境债券筹资至少 200亿美元（20），美元债约 150亿美元（15），认购接近 4 倍。最早周三进行首次欧元债发行。"
       },
       "sources": [
         {
@@ -755,8 +755,8 @@
     },
     {
       "text": {
-        "en": "If the next labor print is as hot as openings at 7.523 million, the 4.9435% ten-year yield can keep rising.",
-        "zh": "若下一次劳动力数据像 7.523 million 的职位空缺一样偏热，4.9435% 的 10 年期收益率可以继续上升。"
+        "en": "If the next labor print is as hot as openings at 7.523 million (752.3), the 4.9435% ten-year yield can keep rising.",
+        "zh": "若下一次劳动力数据像 752.3万（7.523）的职位空缺一样偏热，4.9435% 的 10 年期收益率可以继续上升。"
       }
     }
   ],
@@ -907,8 +907,8 @@
     },
     {
       "text": {
-        "en": "Onshore yuan closed at 6.6765, down 307 points, after the PBOC raised the FX reserve-requirement ratio from 4% to 6% effective 15 November, 财新 reported. 华尔街见闻 put the frozen FX liquidity near 240 hundred million dollars and offshore yuan past 6.6757.",
-        "zh": "财新：在岸人民币收于 6.6765，下跌 307 点；外汇存款准备金率 11月15日起由 4% 升至 6%。华尔街见闻：冻结的外汇流动性约 240 hundred million dollars，离岸人民币跌破 6.6757。"
+        "en": "Onshore yuan closed at 6.6765, down 307 points, after the PBOC raised the FX reserve-requirement ratio from 4% to 6% effective 15 November, 财新 reported. 华尔街见闻 put the frozen FX liquidity near 24 billion dollars (240) and offshore yuan past 6.6757.",
+        "zh": "财新：在岸人民币收于 6.6765，下跌 307 点；外汇存款准备金率 11月15日起由 4% 升至 6%。华尔街见闻：冻结的外汇流动性约 240亿美元（24），离岸人民币跌破 6.6757。"
       },
       "sources": [
         {
@@ -923,7 +923,7 @@
     },
     {
       "text": {
-        "en": "The third swap facility was awarded, including 100 hundred million yuan (CNY10bn) each for CITIC Securities and Guotai Haitong. The Huaxia STAR 50 ETF traded more than 220 hundred million yuan (CNY22bn), 华尔街见闻 reported.",
+        "en": "The third swap facility was awarded, including 10 billion yuan (100) each for CITIC Securities and Guotai Haitong. The Huaxia STAR 50 ETF traded more than 22 billion yuan (220), 华尔街见闻 reported.",
         "zh": "华尔街见闻：第三批互换便利落地，中信证券和国泰海通各中标 100 亿元（CNY10bn）。华夏科创50ETF 成交超过 220 亿元（CNY22bn）。"
       },
       "sources": [
@@ -958,8 +958,8 @@
     "windowStart": "2026-11-04",
     "windowEnd": "2026-11-13",
     "note": {
-      "en": "Briefing day through next Friday (13 November). Mainland China only on China rows. No FOMC meeting falls in this window. FOMC at 14:00 ET would be 02:00 Beijing the next day; none is scheduled here.",
-      "zh": "自简报日至下周五（11月13日）。中国一行只列中国内地。本窗口内没有 FOMC 会议。FOMC 若在美东 14:00，对应北京时间次日 02:00；本窗口没有这场会。"
+      "en": "Briefing day through next Friday (13 November). Mainland China only on China rows. No FOMC meeting falls in this window. FOMC at 14:00 ET would be 03:00 Beijing on 5 November; none is scheduled here.",
+      "zh": "自简报日至下周五（11月13日）。中国一行只列中国内地。本窗口内没有 FOMC 会议。FOMC 若在 11月4日美东 14:00，对应北京时间 11月5日 03:00；本窗口没有这场会。"
     },
     "events": [
       {
@@ -1261,8 +1261,8 @@
     "zh": "邮件底稿是 11月4日财经早茶。股票、原油、黄金、收益率、A 股与职位空缺来自华尔街见闻。财新覆盖在岸人民币收盘。澳洲联储声明覆盖现金利率上调。律动覆盖 AMD、摩根士丹利的表述、币安深度，以及 Glassnode 笔记。中金 11月4日的笔记写在人民币主题上。"
   },
   "singleSource": {
-    "en": "Last-kick of inbox-sync.yml at 2026-11-04T01:02Z brought the 4 November mail and the chart PNG onto this branch. The 今日图表 body was empty; the title and analysis are an about-read of that PNG. The mail header bitcoin quote 77,756.06 stays off the page, and the 见闻 line of about 7.78 stays off the prose, so the only bitcoin level is the Market closes row. Yahoo quote levels stay in Market closes only. Spot gold at 3920.81 is omitted so the gold level in the summary is the COMEX settle of 3927.24. BlockBeats flash 375297 printed a 10-year yield of 4.948%, which disagrees with 见闻 at 4.9435%, so the yield used is 见闻. ust-duration stays omitted because the 10-year is 4.9435%, still under 5%. This week's Glassnode mail is an API note, so the on-chain line remains the 2 November post relayed by BlockBeats. BlockBeats covers crypto, the AI chip chain, a street comment, and oil color. CICC search for oil returned May-to-September notes and they are unused. The in-window CICC note is 4 November on the FX reserve ratio. No 3-4 November CICC note on A-shares was used. 第一财经 was unused as the China cite; 财新 is the cite. Hong Kong GDP of 5.2% stays off the page because that figure is only in the newsletter. The Anthropic revenue line repeats yesterday's filing and is not reprinted. The Market closes snapshot is 2026-11-04T01:22:31.723Z. The Nikkei row is 63,081.86, down 0.33%, dated 2026-11-02, the prior completed close, because 3 November was a holiday. The Kospi row is the 2026-11-02 bar at 5,859.08, up 2.24%, from the prior session, so the 见闻 Kospi close stays out of Market closes. Yahoo Brent at 104.41, down 0.34%, and Yahoo gold at 3,941.40, down 0.71%, differ from the 见闻 settles of 103.60 and 3927.24. Yahoo USDCNY at 6.6696 differs from the 财新 onshore close of 6.6765.",
-    "zh": "任务于 2026-11-04T01:02Z last-kick inbox-sync.yml，11月4日邮件与图表 PNG 回到本分支。今日图表正文为空；标题与解读是对该 PNG 的约读。邮件页眉比特币报价 77,756.06 不写入页面，华尔街见闻约 7.78 万美元也不写入正文，因此唯一的比特币水平是市场收盘那一行。Yahoo 报价只留在市场收盘。现货黄金 3920.81 未写入，摘要里的黄金水平用 COMEX 结算价 3927.24。律动快讯 375297 的 10 年期收益率为 4.948%，与华尔街见闻的 4.9435% 不一致，因此采用见闻。ust-duration 继续不单列，因为 10 年期是 4.9435%，仍低于 5%。本周 Glassnode 邮件是接口说明，链上那一句仍是律动转述的 11月2日帖子。律动覆盖加密、AI 芯片链、一条卖方评论，以及原油颜色。中金的石油检索返回 5 月至 9 月的笔记，未采用。窗口内的中金笔记是 11月4日外汇存款准备金率。没有采用 11月3日至 4 日关于 A 股的中金笔记。中国财经通讯用的是财新，第一财经未用作这条引用。香港 GDP 5.2% 只出现在通讯里，因此没有写上页面。Anthropic 营收是昨天那份文件的重复，没有再写一遍。市场收盘快照时间是 2026-11-04T01:22:31.723Z。日经一行是 63,081.86，下跌 0.33%，日期 2026-11-02，因为 11月3日休市，这是上一个完整收盘。韩国综合指数一行是 2026-11-02 的柱 5,859.08，上涨 2.24%，来自上一个交易时段，因此华尔街见闻的韩国收盘没有写入市场收盘。Yahoo 布伦特 104.41、下跌 0.34%，Yahoo 黄金 3,941.40、下跌 0.71%，与华尔街见闻结算价 103.60 和 3927.24 不同。Yahoo 美元兑人民币 6.6696 与财新在岸收盘 6.6765 不同。"
+    "en": "The 4 November mail and the chart PNG are in. The 今日图表 body was empty; the title and analysis are an about-read of that PNG. The mail header bitcoin quote 77,756.06 stays off the page, and the 见闻 line of about 7.78 stays off the prose, so the only bitcoin level is the Market closes row. Yahoo quote levels stay in Market closes only. Spot gold at 3920.81 is omitted so the gold level in the summary is the COMEX settle of 3927.24. BlockBeats flash 375297 printed a 10-year yield of 4.948%, which disagrees with 见闻 at 4.9435%, so the yield used is 见闻. The duration card stays off this page because the 10-year is 4.9435%, still under 5%. This week's Glassnode mail is an API note, so the on-chain line remains the 2 November post relayed by BlockBeats. BlockBeats covers crypto, the AI chip chain, a street comment, and oil color. CICC search for oil returned May-to-September notes and they are unused. The in-window CICC note is 4 November on the FX reserve ratio. No 3-4 November CICC note on A-shares was used. 第一财经 was unused as the China cite; 财新 is the cite. Hong Kong GDP of 5.2% stays off the page because that figure is only in the newsletter. The Anthropic revenue line repeats yesterday's filing and is not reprinted. The Market closes snapshot is 2026-11-04T01:22:31.723Z. The Nikkei row is 63,081.86, down 0.33%, dated 2026-11-02, the previous-session close, because 3 November was a holiday. The Kospi row is the 2026-11-02 bar at 5,859.08, up 2.24%. That print is stale. The missing session is 2026-11-03, and the 见闻 Kospi close is not written into Market closes. Yahoo Brent at 104.41, down 0.34%, and Yahoo gold at 3,941.40, down 0.71%, differ from the 见闻 settles of 103.60 and 3927.24. Yahoo USDCNY at 6.6696 differs from the 财新 onshore close of 6.6765.",
+    "zh": "11月4日邮件和图表 PNG 已经在。今日图表正文为空；标题与解读是对该 PNG 的约读。邮件页眉比特币报价 77,756.06 不写入页面，华尔街见闻约 7.78 万美元也不写入正文，因此唯一的比特币水平是市场收盘那一行。Yahoo 报价只留在市场收盘。现货黄金 3920.81 未写入，摘要里的黄金水平用 COMEX 结算价 3927.24。律动快讯 375297 的 10 年期收益率为 4.948%，与华尔街见闻的 4.9435% 不一致，因此采用见闻。久期那一张不放上这个页面，因为 10 年期是 4.9435%，仍低于 5%。本周 Glassnode 邮件是接口说明，链上那一句仍是律动转述的 11月2日帖子。律动覆盖加密、AI 芯片链、一条卖方评论，以及原油颜色。中金的石油检索返回 5 月至 9 月的笔记，未采用。窗口内的中金笔记是 11月4日外汇存款准备金率。没有采用 11月3日至 4 日关于 A 股的中金笔记。中国财经通讯用的是财新，第一财经未用作这条引用。香港 GDP 5.2% 只出现在通讯里，因此没有写上页面。Anthropic 营收是昨天那份文件的重复，没有再写一遍。市场收盘快照时间是 2026-11-04T01:22:31.723Z。日经一行是 63,081.86，下跌 0.33%，日期 2026-11-02，因为 11月3日休市，这是上一交易日收盘。韩国综合指数一行是 2026-11-02 的柱 5,859.08，上涨 2.24%。这一报价已过期，缺少时段 2026-11-03，华尔街见闻的韩国收盘没有写入市场收盘。Yahoo 布伦特 104.41、下跌 0.34%，Yahoo 黄金 3,941.40、下跌 0.71%，与华尔街见闻结算价 103.60 和 3927.24 不同。Yahoo 美元兑人民币 6.6696 与财新在岸收盘 6.6765 不同。"
   },
   "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market closes are the inject snapshot. Desk settles in the summary are 华尔街见闻. This report is research and information synthesis, not investment advice.",
   "marketDashboard": {
@@ -1319,6 +1319,10 @@
             "change": "−0.33%",
             "changeDirection": "down",
             "asOfDate": "2026-11-02",
+            "printNote": {
+              "en": "Previous-session close. Holiday 2026-11-03.",
+              "zh": "上一交易日收盘。休市 2026-11-03。"
+            },
             "source": {
               "label": "Yahoo Finance (^N225)",
               "href": "https://finance.yahoo.com/quote/%5EN225/"
@@ -1331,6 +1335,10 @@
             "change": "+2.24%",
             "changeDirection": "up",
             "asOfDate": "2026-11-02",
+            "printNote": {
+              "en": "Stale print. Missing session 2026-11-03.",
+              "zh": "过期报价。缺少时段 2026-11-03。"
+            },
             "source": {
               "label": "Yahoo Finance (^KS11)",
               "href": "https://finance.yahoo.com/quote/%5EKS11/"
@@ -1409,6 +1417,10 @@
             "change": "+4.0 bp",
             "changeDirection": "up",
             "asOfDate": "2026-11-03",
+            "printNote": {
+              "en": "华尔街见闻 4.9435%, not this Treasury curve print of 4.95%.",
+              "zh": "华尔街见闻 4.9435%，不是这一笔国债曲线 4.95%。"
+            },
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -1451,6 +1463,10 @@
             "change": "+0.32%",
             "changeDirection": "up",
             "asOfDate": "2026-11-04",
+            "printNote": {
+              "en": "财新 onshore close 6.6765, not this Yahoo print.",
+              "zh": "财新在岸收盘 6.6765，不是这一笔 Yahoo 报价。"
+            },
             "source": {
               "label": "Yahoo Finance (CNY=X)",
               "href": "https://finance.yahoo.com/quote/CNY%3DX/"
@@ -1463,6 +1479,10 @@
             "change": "−0.71%",
             "changeDirection": "down",
             "asOfDate": "2026-11-04",
+            "printNote": {
+              "en": "华尔街见闻 COMEX settle 3927.24, not this Yahoo futures print.",
+              "zh": "华尔街见闻 COMEX 结算价 3927.24，不是这一笔 Yahoo 期货报价。"
+            },
             "source": {
               "label": "Yahoo Finance (GC=F)",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
@@ -1475,6 +1495,10 @@
             "change": "−0.34%",
             "changeDirection": "down",
             "asOfDate": "2026-11-04",
+            "printNote": {
+              "en": "华尔街见闻 settle 103.60, not this Yahoo BZ=F print.",
+              "zh": "华尔街见闻结算价 103.60，不是这一笔 Yahoo BZ=F 报价。"
+            },
             "source": {
               "label": "Yahoo Finance (BZ=F)",
               "href": "https://finance.yahoo.com/quote/BZ%3DF/"

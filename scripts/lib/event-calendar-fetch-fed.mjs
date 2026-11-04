@@ -1,4 +1,5 @@
 // scripts/lib/event-calendar-fetch-fed.mjs
+import { easternTimeToBeijing } from "./event-calendar-fetch-bls.mjs";
 
 const FED_CALENDAR_JSON = "https://www.federalreserve.gov/json/calendar.json";
 const FED_FOMC_HTML = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm";
@@ -30,27 +31,6 @@ const MONTHS = {
   november: 11,
   december: 12,
 };
-
-/**
- * US Eastern clock time → Beijing `HH:mm`.
- * EDT offset used as +12h same calendar day (not DST-aware).
- * Accepts "2:00 p.m.", "14:00", "8:30 AM".
- */
-export function easternTimeToBeijing(timeEt) {
-  const raw = String(timeEt || "")
-    .trim()
-    .replace(/\./g, "")
-    .replace(/\s+/g, " ");
-  const m = raw.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)?$/i);
-  if (!m) return undefined;
-  let hour = Number(m[1]);
-  const minute = Number(m[2]);
-  const ampm = (m[3] || "").toUpperCase();
-  if (ampm === "PM" && hour < 12) hour += 12;
-  if (ampm === "AM" && hour === 12) hour = 0;
-  const beijingHour = (hour + 12) % 24;
-  return `${String(beijingHour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
-}
 
 function stripTags(html) {
   return String(html || "")
@@ -125,10 +105,10 @@ export function parseFedCalendarJson(text, { windowStart, windowEnd }) {
     const month = Number(ym[2]);
     const title = stripTags(row?.title || "").trim();
     if (!title) continue;
-    const timeBeijing = easternTimeToBeijing(row?.time);
     for (const day of parseDayList(row?.days)) {
       const date = ymd(year, month, day);
       if (!inWindow(date, windowStart, windowEnd)) continue;
+      const timeBeijing = easternTimeToBeijing(row?.time, date);
       const slug = slugify(title) || "fed-event";
       events.push({
         id: `fed-${slug}-${date}`,
@@ -172,7 +152,7 @@ export function parseFomcCalendarsHtml(html, { windowStart, windowEnd }) {
       events.push({
         id: `fed-fomc-meeting-${date}`,
         date,
-        timeBeijing: easternTimeToBeijing("2:00 p.m."),
+        timeBeijing: easternTimeToBeijing("2:00 p.m.", date),
         region: "US",
         category: "central-bank",
         event: title,
