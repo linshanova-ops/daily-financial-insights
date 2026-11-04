@@ -61,8 +61,10 @@ jobs:
           path: web/out
 
       # Mirror export to gh-pages so a manual Pages source switch can go live
-      # if the Actions deploy queue is still wedged.
+      # if the Actions deploy queue is still wedged. A rejected force-push
+      # (GitHub 500) must not skip the Actions deploy below.
       - name: Mirror to gh-pages branch
+        continue-on-error: true
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
