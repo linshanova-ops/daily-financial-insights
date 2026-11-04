@@ -1,8 +1,26 @@
 {
-  "at": "2026-11-03T07:25:48.129Z",
-  "briefingDate": "2026-11-03",
+  "at": "2026-11-04T01:02:38.684Z",
+  "briefingDate": "2026-11-04",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-04.md",
+      "subject": "彭博财经早茶: 美国中期选举登场；潘功胜重申稳市",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6635,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-04.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-04.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W45.md",
+      "subject": "Every metric now reports its computation lag",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 2094,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-03.md",
@@ -26,11 +44,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W44.md",
       "skipped": true
     },
     {
@@ -62,11 +75,6 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-21.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-20.md",
-      "skipped": true
     }
   ],
   "skipped": [
@@ -96,9 +104,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Most long-term Bitcoin holders are underwater",
-      "path": "web/content/inbox/glassnode-insights/2026-W44.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -144,11 +152,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: SpaceX和特斯拉讨论合并；中国新设数据央企",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-21.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 法国骚乱渐息；人行拟换政策利率品种",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-20.md"
     }
   ]
 }
