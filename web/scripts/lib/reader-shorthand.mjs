@@ -6,6 +6,33 @@
 const EARLY_EN = "Early test. Summary omitted.";
 const EARLY_ZH = "早期测试期，摘要从略。";
 
+/**
+ * Desk names already used on the site. Longest key first so 见闻 does not
+ * eat 华尔街见闻 and 彭博财经早茶 keeps a space.
+ * ponytail: static pairs, add a row when a new Chinese desk shows on the English page.
+ */
+const SOURCE_EN = [
+  ["彭博 Markets Daily China / 财经早茶", "Bloomberg Markets Daily China"],
+  ["彭博财经早茶", "Bloomberg Markets Daily China"],
+  ["华尔街见闻", "Wallstreetcn"],
+  ["第一财经", "Yicai"],
+  ["财经早茶", "Markets Daily China"],
+  ["今日图表", "Chart of the Day"],
+  ["同花顺", "Tonghuashun"],
+  ["共同社", "Kyodo"],
+  ["新华社", "Xinhua"],
+  ["财新", "Caixin"],
+  ["律动", "BlockBeats"],
+  ["见闻", "Wallstreetcn"],
+  ["彭博", "Bloomberg"],
+].sort((a, b) => b[0].length - a[0].length);
+
+export function englishSourceNames(text) {
+  let s = String(text ?? "");
+  for (const [zh, en] of SOURCE_EN) s = s.split(zh).join(en);
+  return s;
+}
+
 export function stripInternalShorthand(text) {
   if (!text) return "";
   const raw = String(text);
@@ -30,11 +57,11 @@ export function stripInternalShorthand(text) {
   return s;
 }
 
-export function readerLine(text) {
+export function readerLine(text, lang) {
   const raw = String(text ?? "");
   const stripped = stripInternalShorthand(raw);
   if (/\bCLAIM\b|Iran-CLAIM/.test(raw) && !stripped.replace(/[\s.。;；]/g, "")) {
     return /[\u4e00-\u9fff]/.test(raw) ? EARLY_ZH : EARLY_EN;
   }
-  return stripped;
+  return lang === "en" ? englishSourceNames(stripped) : stripped;
 }

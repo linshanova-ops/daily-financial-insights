@@ -2,6 +2,7 @@ import type { BriefingFigure, FigurePoint } from "@/lib/types";
 import { enOf, zhOf } from "@/lib/lang-text";
 import { L } from "./L";
 import { Prose } from "./Prose";
+import { englishSourceNames } from "../../scripts/lib/reader-shorthand.mjs";
 import { SourceButton } from "./SourceButton";
 
 interface KeyFiguresProps {
@@ -135,7 +136,9 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           <L
-            en="Verified prints from this briefing — each figure links to its primary source. Chart-of-the-day insights come from 彭博 今日图表 when available."
+            en={englishSourceNames(
+              "Verified prints from this briefing — each figure links to its primary source. Chart-of-the-day insights come from 彭博 今日图表 when available.",
+            )}
             zh="核对过的数字都链到原始来源。有彭博今日图表时，解读按这张图来写。"
           />
         </p>

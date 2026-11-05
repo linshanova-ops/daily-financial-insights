@@ -3,8 +3,8 @@ import { dropRestatedScale } from "../../scripts/lib/scale-paren.mjs";
 import { readerLine } from "../../scripts/lib/reader-shorthand.mjs";
 import { L } from "./L";
 
-function show(text: string) {
-  const line = readerLine(dropRestatedScale(text));
+function show(text: string, lang?: "en") {
+  const line = readerLine(dropRestatedScale(text), lang);
   return line || null;
 }
 
@@ -13,7 +13,7 @@ export function Prose({ text }: { text?: LangText | null }) {
   if (!text || typeof text === "string") {
     return text ? show(text) : null;
   }
-  const en = show(text.en);
+  const en = show(text.en, "en");
   const zh = show(text.zh);
   if (!en && !zh) return null;
   return <L en={en ?? ""} zh={zh ?? ""} />;
