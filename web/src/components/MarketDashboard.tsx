@@ -120,7 +120,14 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                 ))}
               </ul>
               <div className="mt-3 hidden overflow-x-auto sm:block">
-                <table className="w-full min-w-[36rem] border-collapse text-left text-sm">
+                <table className="w-full min-w-[36rem] table-fixed border-collapse text-left text-sm">
+                  <colgroup>
+                    <col className="w-[24%]" />
+                    <col className="w-[16%]" />
+                    <col className="w-[14%]" />
+                    <col className="w-[26%]" />
+                    <col />
+                  </colgroup>
                   <thead>
                     <tr className="border-b border-line text-xs uppercase tracking-[0.14em] text-ink/45">
                       <th className="py-2 pr-3 font-semibold">
@@ -150,15 +157,15 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                           <L en={row.asset} zh={assetZh(row.id, row.asset)} />
                         </td>
                         <td className="py-2.5 pr-3 tabular-nums text-ink">
-                          {row.latest}
+                          <span className="whitespace-nowrap">{row.latest}</span>
                           <PrintNote note={row.printNote} />
                         </td>
                         <td
-                          className={`py-2.5 pr-3 tabular-nums font-semibold ${changeClass(row.changeDirection)}`}
+                          className={`py-2.5 pr-3 whitespace-nowrap tabular-nums font-semibold ${changeClass(row.changeDirection)}`}
                         >
                           {row.change ?? "—"}
                         </td>
-                        <td className="py-2.5 pr-3 text-ink-soft">
+                        <td className="py-2.5 pr-3 whitespace-nowrap text-ink-soft">
                           <SessionMark row={row} snapshot={data.asOf} />
                         </td>
                         <td className="py-2.5">
