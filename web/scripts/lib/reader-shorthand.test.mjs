@@ -42,7 +42,9 @@ describe("reader shorthand", () => {
     );
     assert.equal(readerLine("财经早茶", "en"), "Markets Daily China");
     assert.equal(readerLine("律动 原油收盘"), "律动 原油收盘");
-    assert.equal(readerLine("律动 原油收盘", "en"), "BlockBeats 原油收盘");
+    assert.equal(readerLine("律动 原油收盘", "en"), "BlockBeats oil settle");
+    assert.equal(readerLine("华尔街见闻 11月5日早餐"), "华尔街见闻 11月5日早餐");
+    assert.equal(readerLine("华尔街见闻 11月5日早餐", "en"), "Wallstreetcn Nov 5 breakfast");
     assert.equal(readerLine("（CLAIM — 见闻）", "en"), "早期测试期，摘要从略。");
 
     const desks = ["华尔街见闻", "第一财经", "财经早茶", "今日图表", "同花顺", "共同社", "新华社", "财新", "律动", "见闻", "彭博"];
@@ -78,6 +80,8 @@ describe("reader shorthand", () => {
       for (const desk of desks) {
         assert.equal(shown.includes(desk), false, `${desk} still in ${shown}`);
       }
+      assert.equal(/[\u4e00-\u9fff]/.test(shown), false, shown);
+      assert.equal(readerLine(label), label);
     }
     assert.equal(labels.some((label) => label.includes("华尔街见闻")), true);
     assert.equal(labels.some((label) => label.includes("律动")), true);

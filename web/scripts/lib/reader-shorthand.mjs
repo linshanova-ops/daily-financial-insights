@@ -7,9 +7,10 @@ const EARLY_EN = "Early test. Summary omitted.";
 const EARLY_ZH = "早期测试期，摘要从略。";
 
 /**
- * Desk names already used on the site. Longest key first so 见闻 does not
- * eat 华尔街见闻 and 彭博财经早茶 keeps a space.
- * ponytail: static pairs, add a row when a new Chinese desk shows on the English page.
+ * Desk names and chip tails already used in English on the site.
+ * Longest key first so 见闻 does not eat 华尔街见闻 and a dated tail
+ * does not eat a shorter one.
+ * ponytail: static pairs, add a row when a new Chinese chip shows on the English page.
  */
 const SOURCE_EN = [
   ["彭博 Markets Daily China / 财经早茶", "Bloomberg Markets Daily China"],
@@ -25,6 +26,18 @@ const SOURCE_EN = [
   ["律动", "BlockBeats"],
   ["见闻", "Wallstreetcn"],
   ["彭博", "Bloomberg"],
+  ["11月5日 选举与油价", "Nov 5 election and oil"],
+  ["11月4日 稳汇率", "Nov 4 yuan"],
+  ["11月5日早知道", "Nov 5 morning brief"],
+  ["11月5日早餐", "Nov 5 breakfast"],
+  ["买断式逆回购", "outright reverse repo"],
+  ["日韩收盘", "Nikkei/Kospi closes"],
+  ["本周日程", "Week calendar"],
+  ["日经收盘", "Nikkei close"],
+  ["美股收盘", "US close"],
+  ["港股收盘", "Hong Kong close"],
+  ["原油收盘", "oil settle"],
+  ["Meta欧元债", "Meta euro bond"],
 ].sort((a, b) => b[0].length - a[0].length);
 
 export function englishSourceNames(text) {
