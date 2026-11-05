@@ -3,7 +3,7 @@ import type { MarketOverview as MarketOverviewData } from "@/lib/types";
 import { accents } from "@/lib/module-accents";
 import { L } from "./L";
 import { Prose } from "./Prose";
-import { SourceButton } from "./SourceButton";
+import { SourceButton, SourceName } from "./SourceButton";
 
 interface MarketOverviewProps {
   data: MarketOverviewData;
@@ -26,7 +26,7 @@ export function MarketOverview({ data }: MarketOverviewProps) {
           <p
             className={`text-xs font-semibold uppercase tracking-[0.24em] ${accent.eyebrow}`}
           >
-            财经早茶
+            <SourceName text="财经早茶" />
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">

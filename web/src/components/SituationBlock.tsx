@@ -8,6 +8,7 @@ import { Bullet } from "./Bullet";
 import { KindLabel } from "./KindLabel";
 import { L } from "./L";
 import { Prose } from "./Prose";
+import { SourceName } from "./SourceButton";
 
 interface SituationBlockProps {
   id?: string;
@@ -51,7 +52,7 @@ export function SituationBlock({
           <p
             className={`text-xs font-semibold uppercase tracking-[0.24em] ${a.eyebrow}`}
           >
-            {eyebrow}
+            <SourceName text={eyebrow} />
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">

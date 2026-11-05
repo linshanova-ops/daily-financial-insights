@@ -2,11 +2,11 @@ import type { ReactNode } from "react";
 import type { KeySource } from "@/lib/types";
 import { enOf, type LangText } from "@/lib/lang-text";
 import { linkifySources } from "@/lib/source-links";
-import { stripInternalShorthand } from "../../scripts/lib/reader-shorthand.mjs";
+import { englishSourceNames, stripInternalShorthand } from "../../scripts/lib/reader-shorthand.mjs";
 import Link from "next/link";
 import { L } from "./L";
 import { Prose } from "./Prose";
-import { isSubscriptionMail, SourceLabel } from "./SourceButton";
+import { isSubscriptionMail, SourceLabel, SourceName } from "./SourceButton";
 
 interface SourcesCaveatsProps {
   sources: LangText;
@@ -22,13 +22,14 @@ const BOOK_LABELS: Record<string, [string, string]> = {
   crypto: ["Crypto", "加密"],
 };
 
-function LinkedSourceText({ text }: { text: string }) {
+function LinkedSourceText({ text, lang }: { text: string; lang?: "en" }) {
   const parts = linkifySources(stripInternalShorthand(text));
+  const show = (s: string) => (lang === "en" ? englishSourceNames(s) : s);
   return (
     <>
       {parts.map((part, index) =>
         typeof part === "string" ? (
-          <span key={`t-${index}`}>{part}</span>
+          <span key={`t-${index}`}>{show(part)}</span>
         ) : (
           <a
             key={`${part.label}-${index}`}
@@ -37,7 +38,7 @@ function LinkedSourceText({ text }: { text: string }) {
             rel="noopener noreferrer"
             className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4 transition hover:text-forest-bright"
           >
-            {part.label}
+            {show(part.label)}
           </a>
         ),
       )}
@@ -49,7 +50,7 @@ function BilingualSources({ text }: { text: LangText }) {
   if (typeof text === "string") return <LinkedSourceText text={text} />;
   return (
     <L
-      en={<LinkedSourceText text={text.en} />}
+      en={<LinkedSourceText text={text.en} lang="en" />}
       zh={<LinkedSourceText text={text.zh} />}
     />
   );
@@ -144,7 +145,7 @@ export function SourcesCaveats({
                   rel="noopener noreferrer"
                   className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4 transition hover:text-forest-bright"
                 >
-                  {stripInternalShorthand(s.label)}
+                  <SourceName text={s.label} />
                 </a>
               )}
               {s.books?.length ? (
@@ -180,7 +181,7 @@ export function SourcesCaveats({
                   rel="noopener noreferrer"
                   className="focus-ring inline-flex rounded-sm border border-line bg-paper/80 px-2.5 py-1 text-xs font-medium text-ink-soft transition hover:border-forest/40 hover:text-forest"
                 >
-                  {stripInternalShorthand(s.label)}
+                  <SourceName text={s.label} />
                 </a>
               )}
             </li>

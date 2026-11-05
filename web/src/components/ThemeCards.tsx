@@ -41,8 +41,8 @@ function CiteLine({ line }: { line: string }) {
 }
 
 function FactLines({ fact }: { fact?: LangText | null }) {
-  const list = (raw: string) => {
-    const text = readerLine(dropRestatedScale(raw));
+  const list = (raw: string, lang?: "en") => {
+    const text = readerLine(dropRestatedScale(raw), lang);
     return (
       <ul className="mt-2 space-y-2 text-base leading-relaxed text-ink-soft">
         {lines(text).map((line, i) => (
@@ -54,7 +54,7 @@ function FactLines({ fact }: { fact?: LangText | null }) {
   if (!fact || typeof fact === "string") return fact ? list(fact) : null;
   return (
     <>
-      <div className="lang-en">{list(fact.en)}</div>
+      <div className="lang-en">{list(fact.en, "en")}</div>
       <div className="lang-zh">{list(fact.zh)}</div>
     </>
   );

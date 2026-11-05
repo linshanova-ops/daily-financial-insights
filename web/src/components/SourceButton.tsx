@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { sourcesWithHref } from "@/lib/source-links";
 import type { FactSource } from "@/lib/types";
-import { stripInternalShorthand } from "../../scripts/lib/reader-shorthand.mjs";
+import { readerLine } from "../../scripts/lib/reader-shorthand.mjs";
 import { L } from "./L";
 
 interface SourceButtonProps {
@@ -20,13 +20,22 @@ export function isSubscriptionMail(href: string): boolean {
   }
 }
 
+/** Same string on both languages until a Chinese desk name is in it. */
+export function SourceName({ text }: { text: string }): ReactNode {
+  const zh = readerLine(text);
+  const en = readerLine(text, "en");
+  if (en === zh) return en;
+  return <L en={en} zh={zh} />;
+}
+
 export function SourceLabel({ source }: { source: FactSource }): ReactNode {
-  const label = stripInternalShorthand(source.label);
-  if (!isSubscriptionMail(source.href)) return label;
+  if (!isSubscriptionMail(source.href)) return <SourceName text={source.label} />;
+  const zh = readerLine(source.label);
+  const en = readerLine(source.label, "en");
   return (
     <L
-      en={`${label} · subscription mail`}
-      zh={`${label} · 订阅邮件来源`}
+      en={`${en} · subscription mail`}
+      zh={`${zh} · 订阅邮件来源`}
     />
   );
 }
@@ -47,13 +56,13 @@ export function SourceButton({
         </span>
       ) : null}
       {linked.map((source) => {
-        const label = stripInternalShorthand(source.label);
+        const label = readerLine(source.label);
         if (!label) return null;
         const className =
           "focus-ring inline-flex max-w-full whitespace-normal rounded-sm border border-line bg-paper/80 px-1.5 py-1 text-left text-[10px] font-medium leading-snug tracking-wide text-ink-soft";
         if (isSubscriptionMail(source.href)) {
           return (
-            <span key={`${source.label}-mail`} className={className} title={label}>
+            <span key={`${source.label}-mail`} className={className}>
               <SourceLabel source={source} />
             </span>
           );
@@ -64,10 +73,9 @@ export function SourceButton({
             href={source.href}
             target="_blank"
             rel="noopener noreferrer"
-            title={label}
             className={`${className} transition hover:border-forest/40 hover:text-forest`}
           >
-            {label}
+            <SourceName text={source.label} />
           </a>
         );
       })}
