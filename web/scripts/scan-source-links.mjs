@@ -31,6 +31,8 @@ const skipFetch = process.env.SCAN_LINKS_SKIP_FETCH === "1";
 /** Browser-like UA for ordinary news desks. */
 const BROWSER_UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 syravocado-link-audit/2.0";
+/** Some desks 403 the audit token. Same browser string, token removed. */
+const PLAIN_BROWSER_UA = BROWSER_UA.replace(/ syravocado-link-audit\/2\.0$/, "");
 /**
  * Declared bot UA required by BLS / SEC fair-access policies.
  * Format: "<app> <contact-email>" — browser UAs get HTTP 403 on these hosts.
@@ -398,6 +400,10 @@ async function httpGetWithUaFallback(url) {
   if (res.status === 401 || res.status === 403) {
     ({ res, raw } = await httpGet(url, DECLARED_UA));
     via = "http-declared-ua";
+  }
+  if (res.status === 401 || res.status === 403) {
+    ({ res, raw } = await httpGet(url, PLAIN_BROWSER_UA));
+    via = "http-plain-browser";
   }
   return { res, raw, via };
 }

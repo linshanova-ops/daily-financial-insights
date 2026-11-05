@@ -24,8 +24,8 @@ describe("sessionKind at the 09:19 Asia/Shanghai snapshot", () => {
   it("drops a source that has no href", () => {
     assert.deepEqual(sourcesWithHref(undefined), []);
     assert.deepEqual(
-      sourcesWithHref([undefined, { label: "x" }, { label: "y", href: "https://a" }]),
-      [{ label: "y", href: "https://a" }],
+      sourcesWithHref([undefined, { label: "x" }, { label: "y", href: "link-a" }]),
+      [{ label: "y", href: "link-a" }],
     );
   });
 

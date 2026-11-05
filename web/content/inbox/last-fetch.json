@@ -1,16 +1,26 @@
 {
-  "at": "2026-11-04T07:07:56.705Z",
-  "briefingDate": "2026-11-04",
+  "at": "2026-11-05T01:05:46.161Z",
+  "briefingDate": "2026-11-05",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-04.md",
-      "skipped": true
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-05.md",
+      "subject": "彭博财经早茶: 美民主党横扫两院；珠海华发获政府支持",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6639,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-05.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-05.png"
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W45.md",
+      "skipped": true
+    },
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-04.md",
       "skipped": true
     },
     {
@@ -62,23 +72,23 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-21.md",
-      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "weekly-exists",
+      "subject": "Bitcoin is retesting its August breakout levels",
+      "path": "web/content/inbox/glassnode-insights/2026-W45.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国中期选举登场；潘功胜重申稳市",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-04.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Every metric now reports its computation lag",
-      "path": "web/content/inbox/glassnode-insights/2026-W45.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -144,16 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: Meta加码押注AI；美外交官撤离沙特",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "The top buyers still cap Bitcoin near $87K",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: SpaceX和特斯拉讨论合并；中国新设数据央企",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-21.md"
     }
   ]
 }
