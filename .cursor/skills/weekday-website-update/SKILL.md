@@ -74,6 +74,8 @@ Read and execute these skills; do not jump to YAML:
 
 Every reader-facing sentence in the YAML is `{ en, zh }`. No side translation file. `en` is an English sentence. `zh` is a Chinese sentence. A source name stays the publication’s own name (华尔街见闻, 财新, 第一财经, 律动, CNBC, CICC, Yahoo); the sentence around it is in that language. `verify-briefing` fails the latest file if a rendered sentence is missing either side.
 
+English page source names and chip topic tails go through the map in `web/scripts/lib/reader-shorthand.mjs`. The Chinese page keeps the Chinese labels. Add a missing pair there instead of hardcoding a one-off string.
+
 Both sides state the same facts: a number, date, name, direction, or story matches. Do not translate a figure into a different fact. Do not invent numbers, closes, or dates.
 
 Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facing page is that language, in desk prose. Do not leave the other language’s sentences on the page.
