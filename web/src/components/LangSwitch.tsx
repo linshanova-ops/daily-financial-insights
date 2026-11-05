@@ -67,7 +67,9 @@ export function LangSwitch() {
     };
     run();
     const obs = new MutationObserver(run);
-    obs.observe(root, {
+    // ponytail: body, not <html>. The title script rewrites <title> on data-lang;
+    // watching that childList sets data-lang again and the tab never goes idle.
+    obs.observe(document.body, {
       childList: true,
       subtree: true,
       attributes: true,
