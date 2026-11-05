@@ -79,15 +79,20 @@ export function otherHasSameAmount(n, other) {
     [x / 10, "billion"],
     [x * 100, "million"],
     [x / 100, "亿"],
+    [x / 10000, "万"],
+    [x * 10000, ""],
   ];
   for (const [v, unit] of pairs) {
     const s = fmt(v);
     if (!s || s === "0") continue;
-    const num = esc(s);
-    const re =
-      unit === "万" || unit === "亿"
-        ? new RegExp(`(?<!\\d)${num}(?!\\d)\\s*${unit}`)
-        : new RegExp(`(?<!\\d)${num}(?!\\d)\\s+${unit}`);
+    const plain = esc(s);
+    const comma = s.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const num = comma === s ? plain : `${esc(comma)}|${plain}`;
+    const re = !unit
+      ? new RegExp(`(?<!\\d)(?:${num})(?!\\d)`)
+      : unit === "万" || unit === "亿"
+        ? new RegExp(`(?<!\\d)(?:${num})(?!\\d)\\s*${unit}`)
+        : new RegExp(`(?<!\\d)(?:${num})(?!\\d)\\s+${unit}`);
     if (re.test(other)) return true;
   }
   return false;

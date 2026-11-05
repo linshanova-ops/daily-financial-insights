@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { sourcesWithHref } from "@/lib/source-links";
 import type { FactSource } from "@/lib/types";
+import { stripInternalShorthand } from "../../scripts/lib/reader-shorthand.mjs";
 import { L } from "./L";
 
 interface SourceButtonProps {
@@ -20,11 +21,12 @@ export function isSubscriptionMail(href: string): boolean {
 }
 
 export function SourceLabel({ source }: { source: FactSource }): ReactNode {
-  if (!isSubscriptionMail(source.href)) return source.label;
+  const label = stripInternalShorthand(source.label);
+  if (!isSubscriptionMail(source.href)) return label;
   return (
     <L
-      en={`${source.label} · subscription mail`}
-      zh={`${source.label} · 订阅邮件来源`}
+      en={`${label} · subscription mail`}
+      zh={`${label} · 订阅邮件来源`}
     />
   );
 }
@@ -45,11 +47,13 @@ export function SourceButton({
         </span>
       ) : null}
       {linked.map((source) => {
+        const label = stripInternalShorthand(source.label);
+        if (!label) return null;
         const className =
           "focus-ring inline-flex max-w-full whitespace-normal rounded-sm border border-line bg-paper/80 px-1.5 py-1 text-left text-[10px] font-medium leading-snug tracking-wide text-ink-soft";
         if (isSubscriptionMail(source.href)) {
           return (
-            <span key={`${source.label}-mail`} className={className} title={source.label}>
+            <span key={`${source.label}-mail`} className={className} title={label}>
               <SourceLabel source={source} />
             </span>
           );
@@ -60,10 +64,10 @@ export function SourceButton({
             href={source.href}
             target="_blank"
             rel="noopener noreferrer"
-            title={source.label}
+            title={label}
             className={`${className} transition hover:border-forest/40 hover:text-forest`}
           >
-            {source.label}
+            {label}
           </a>
         );
       })}

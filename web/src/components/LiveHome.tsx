@@ -76,8 +76,8 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
             />
           )}{" "}
           <L
-            en="Weekday editions publish at 09:00 Beijing."
-            zh="工作日版于北京时间 09:00 发布。"
+            en="Weekday editions publish at 09:30 Beijing."
+            zh="工作日版于北京时间 09:30 发布。"
           />
           {publishedAt ? (
             <span className="mt-1 block text-xs text-ink/45">

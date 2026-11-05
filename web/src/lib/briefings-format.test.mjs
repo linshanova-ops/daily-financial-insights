@@ -28,5 +28,7 @@ describe("dropRestatedScale", () => {
     assert.equal(otherHasSameAmount("7.523", "职位空缺升至 752.3万"), true);
     assert.equal(otherHasSameAmount("752.3", "rose to 7.523 million"), true);
     assert.equal(otherHasSameAmount("4.9435", "收益率 4.90%"), false);
+    assert.equal(otherHasSameAmount("86,000", "增加8.6万"), true);
+    assert.equal(otherHasSameAmount("8.6", "rose by 86,000 jobs"), true);
   });
 });

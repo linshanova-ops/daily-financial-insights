@@ -1,5 +1,6 @@
 import type { LangText } from "@/lib/lang-text";
 import { dropRestatedScale } from "../../scripts/lib/scale-paren.mjs";
+import { readerLine } from "../../scripts/lib/reader-shorthand.mjs";
 import type { SignalGrade, ThemeCard } from "@/lib/types";
 import { gradeZh, statusZh } from "@/lib/lang";
 import { themesByGrade } from "@/lib/theme-grade-order";
@@ -41,7 +42,7 @@ function CiteLine({ line }: { line: string }) {
 
 function FactLines({ fact }: { fact?: LangText | null }) {
   const list = (raw: string) => {
-    const text = dropRestatedScale(raw);
+    const text = readerLine(dropRestatedScale(raw));
     return (
       <ul className="mt-2 space-y-2 text-base leading-relaxed text-ink-soft">
         {lines(text).map((line, i) => (
@@ -120,6 +121,14 @@ export function ThemeCards({ themes }: ThemeCardsProps) {
                   </span>
                 ) : null}
               </div>
+              {theme.grade === "STRONG" && theme.status === "retired" ? (
+                <p className="mt-2 text-sm text-ink-soft">
+                  <L
+                    en="Yesterday's call ended; today's call is the one on the card."
+                    zh="昨天的判断已经结束；今天的判断就是这张卡片上的。"
+                  />
+                </p>
+              ) : null}
               <div className="mt-4 flex flex-col gap-4">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink">

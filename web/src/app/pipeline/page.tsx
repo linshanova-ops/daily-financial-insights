@@ -15,8 +15,8 @@ export default function PipelinePage() {
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft">
         <L
-          en="Weekdays at 09:00 China time the site publishes that morning’s 彭博 财经早茶 plus dated primary prints (Treasury, Fed, AP closes, PBOC/NBS, 华尔街见闻 / 财新 / 第一财经). The page shows the sourced tape and a few themes — not a six-book asset matrix and not a live feed."
-          zh="每个工作日北京时间 09:00，本站发布当日早晨的彭博财经早茶，以及注明日期的原始数据（美国国债、美联储、美联社收盘、央行与统计局、华尔街见闻 / 财新 / 第一财经）。页面呈现有来源的行情和少数主题，不是六大类资产矩阵，也不是实时行情。"
+          en="Weekdays at 09:30 Beijing the site publishes that morning’s 彭博 财经早茶 plus dated primary prints (Treasury, Fed, AP closes, PBOC/NBS, 华尔街见闻 / 财新 / 第一财经). The page shows the sourced tape and a few themes — not a six-book asset matrix and not a live feed."
+          zh="每个工作日北京时间 09:30，本站发布当日早晨的彭博财经早茶，以及注明日期的原始数据（美国国债、美联储、美联社收盘、央行与统计局、华尔街见闻 / 财新 / 第一财经）。页面呈现有来源的行情和少数主题，不是六大类资产矩阵，也不是实时行情。"
         />
       </p>
       <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">

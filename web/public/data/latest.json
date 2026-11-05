@@ -47,7 +47,7 @@
         "asia-equities"
       ],
       "influence": {
-        "en": "Caixin (5 November). Democrats retook Congress. On 4 November the STAR 50 rose nearly 10%, turnover was 20519亿元, and more than 4600 stocks rose.",
+        "en": "Caixin (5 November). Democrats retook Congress. On 4 November the STAR 50 rose nearly 10%, turnover was 2,051.9 billion yuan, and more than 4600 stocks rose.",
         "zh": "财新（11月5日）。民主党重掌国会。11月4日科创50涨近10%，成交额20519亿元，超4600只个股上涨。"
       }
     },
@@ -126,7 +126,7 @@
         "rates"
       ],
       "influence": {
-        "en": "Yicai (4 November). The PBOC will conduct a 3000亿元 three-month outright reverse repo on 5 November.",
+        "en": "Yicai (4 November). The PBOC will conduct a 300 billion yuan three-month outright reverse repo on 5 November.",
         "zh": "第一财经（11月4日）。央行11月5日开展3000亿元3个月期买断式逆回购。"
       }
     },
@@ -231,7 +231,7 @@
     },
     {
       "text": {
-        "en": "October ADP employment rose by 8.6 in units of ten thousand and beat the survey. The ISM services index fell to 54.5. Euro-area October CPI rose 4.0% from a year earlier, with energy up 20.8%. 华尔街见闻 printed those releases.",
+        "en": "October ADP employment rose by 86,000 jobs and beat the survey. The ISM services index fell to 54.5. Euro-area October CPI rose 4.0% from a year earlier, with energy up 20.8%. 华尔街见闻 printed those releases.",
         "zh": "华尔街见闻：10月ADP就业增加8.6万，高于预期。ISM服务业指数降至54.5。欧元区10月CPI同比上涨4.0%，能源价格上涨20.8%。"
       },
       "sources": [
@@ -247,8 +247,8 @@
     "zh": "民主党横扫国会，道指上涨3.03%至53356.12，布伦特下跌8.67%至94.62。黄金上涨3.39%至4061.1，10年期收益率约为4.89%，当天回落。纳斯达克收在25736.51，其中的芯片和数据中心股下跌。上证上涨2.16%至3686.17。离岸人民币盘中失守6.68。图上苹果增加的市值略高于3000亿美元，标题把七家公司的合计变化写在近1万亿美元。"
   },
   "watch": {
-    "en": "Beijing time. 16:00 Taiwan October CPI, survey 2.6% after 2.73%. 20:00 Bank of England decision, 财经早茶 survey 4% after 3.75%. 21:30 US initial jobless claims, survey 19.6 after 19.4, in units of ten thousand. 23:40 ECB chief economist Lane speaks. On 6 November, US October payrolls, time unconfirmed, prior 见闻 survey 6.5 after 2.9, in units of ten thousand.",
-    "zh": "北京时间。16:00台湾10月消费者物价指数，预期2.6%，前值2.73%。20:00英国央行决议，财经早茶记载的预期是4%，现值为3.75%。21:30美国上周首次申领失业救济，预期19.6万，前值19.4万。23:40欧洲央行首席经济学家Lane讲话。11月6日美国10月非农就业，时间待确认，此前华尔街见闻记载的预期是6.5万，前值2.9万。"
+    "en": "Beijing time. 16:00 Taiwan October CPI, survey 2.6% after 2.73%. 20:00 Bank of England decision, 财经早茶 survey 4% after 3.75%. 21:30 US initial jobless claims, survey 196,000 after 194,000. 23:40 ECB chief economist Lane speaks. On 6 November, US October payrolls at 21:30 Beijing (08:30 US Eastern), prior 见闻 survey 65,000 after 29,000.",
+    "zh": "北京时间。16:00台湾10月消费者物价指数，预期2.6%，前值2.73%。20:00英国央行决议，财经早茶记载的预期是4%，现值为3.75%。21:30美国上周首次申领失业救济，预期19.6万，前值19.4万。23:40欧洲央行首席经济学家Lane讲话。11月6日美国10月非农就业，北京时间21:30（美东08:30），此前华尔街见闻记载的预期是6.5万，前值2.9万。"
   },
   "marketOverview": {
     "asOfDate": "2026-11-05",
@@ -421,8 +421,8 @@
         }
       ],
       "mechanism": {
-        "en": "Gold rose on a day crude fell, with the weaker dollar and lower yields as the path. 财经早茶 (5 November): gold broke above 4000 dollars an ounce as the dollar and Treasury yields fell. Gold carries the 3.39% rise to 4061.1. The theme changes if futures fall back through 4061.1.",
-        "zh": "原油下跌的这一天黄金上涨，路径是更弱的美元和更低的收益率。 财经早茶（11月5日）：美元和美债收益率走低，金价升破每盎司4000美元。 黄金上涨3.39%至4061.1。 若期货跌回4061.1下方，这个判断就不成立。"
+        "en": "Gold rose on a day crude fell, with the weaker dollar and lower yields as the path. 财经早茶 (5 November): gold broke above 4000 dollars an ounce as the dollar and Treasury yields fell. Gold carries the 3.39% rise to 4061.1.",
+        "zh": "原油下跌的这一天黄金上涨，路径是更弱的美元和更低的收益率。 财经早茶（11月5日）：美元和美债收益率走低，金价升破每盎司4000美元。 黄金上涨3.39%至4061.1。"
       }
     },
     {
@@ -440,7 +440,7 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "The 10-year yield was about 4.89%, down about 7 basis points, and the 2-year yield was about 4.58%, down about 5 basis points, 华尔街见闻 reported. October ADP employment rose by 8.6 in units of ten thousand and beat its survey, while the ISM services index fell to 54.5, a three-month low.",
+        "en": "The 10-year yield was about 4.89%, down about 7 basis points, and the 2-year yield was about 4.58%, down about 5 basis points, 华尔街见闻 reported. October ADP employment rose by 86,000 jobs and beat its survey, while the ISM services index fell to 54.5, a three-month low.",
         "zh": "华尔街见闻：10年期收益率约为4.89%，日内降约7个基点；2年期收益率约为4.58%，日内降约5个基点。10月ADP就业增加8.6万，高于预期；ISM服务业指数降至54.5，为三个月最低。"
       },
       "factSources": [
@@ -637,7 +637,7 @@
     },
     {
       "text": {
-        "en": "The ISM services index fell to 54.5, the slowest expansion in three months, and price pressures stayed fast. ADP private employment rose by 8.6 in units of ten thousand and beat the survey, 华尔街见闻 reported.",
+        "en": "The ISM services index fell to 54.5, the slowest expansion in three months, and price pressures stayed fast. ADP private employment rose by 86,000 jobs and beat the survey, 华尔街见闻 reported.",
         "zh": "华尔街见闻：10月ISM服务业指数降至54.5，为三个月最低，价格压力仍快。ADP私营部门新增就业8.6万，高于预期。"
       },
       "sources": [
@@ -747,7 +747,7 @@
     },
     {
       "text": {
-        "en": "If payrolls are as firm as the ADP gain of 8.6 in units of ten thousand and the ten-year yield rises through 4.89%, the bond rally fades.",
+        "en": "If payrolls are as firm as the ADP gain of 86,000 jobs and the ten-year yield rises through 4.89%, the bond rally fades.",
         "zh": "若非农就业像ADP增加的8.6万一样扎实，且10年期收益率升破4.89%，债市涨势就会消退。"
       }
     }
@@ -757,7 +757,7 @@
     "zh": "道指上涨3.03%至53356.12，英伟达和半导体指数跌超3%。布伦特下跌8.67%至94.62，黄金同一天上涨3.39%至4061.1。ADP就业高于预期，10年期收益率仍降至约4.89%。欧元区CPI上涨4.0%，邮件仍称欧洲国债上涨。"
   },
   "chinaStance": {
-    "en": "The financial-work report heard by the NPC still says monetary policy stays moderately loose, 华尔街见闻 reported. The new liquidity step is smaller than the paper coming due: 第一财经 said the PBOC will conduct 3000亿元 of three-month outright reverse repos on 5 November, and 华尔街见闻 said 5000亿元 of that tenor matures. The FX reserve ratio still rises from 4% to 6% on 15 November, and offshore yuan lost 6.68. Local support showed up as Zhuhai arranging resources for Huafa, while the rating agency put the group on negative watch.",
+    "en": "The financial-work report heard by the NPC still says monetary policy stays moderately loose, 华尔街见闻 reported. The new liquidity step is smaller than the paper coming due: 第一财经 said the PBOC will conduct 300 billion yuan of three-month outright reverse repos on 5 November, and 华尔街见闻 said 500 billion yuan of that tenor matures. The FX reserve ratio still rises from 4% to 6% on 15 November, and offshore yuan lost 6.68. Local support showed up as Zhuhai arranging resources for Huafa, while the rating agency put the group on negative watch.",
     "zh": "华尔街见闻：全国人大听取的金融工作报告仍称继续实施适度宽松的货币政策。新的流动性操作小于到期量：第一财经称央行11月5日开展3000亿元3个月期买断式逆回购，华尔街见闻称该期限有5000亿元到期。外汇存款准备金率仍将于11月15日由4%升至6%，离岸人民币失守6.68。地方支持体现在珠海为华发安排资源，评级机构则把集团列入负面观察。"
   },
   "chinaChanged": [
@@ -787,7 +787,7 @@
     },
     {
       "text": {
-        "en": "October robot-industry financing slowed to 110亿元, nearly 70% below the June record, IT Juzi data showed, 财经早茶 reported.",
+        "en": "October robot-industry financing slowed to 11 billion yuan, nearly 70% below the June record, IT Juzi data showed, 财经早茶 reported.",
         "zh": "财经早茶：根据投资数据平台IT桔子，10月中国机器人行业融资放缓至110亿元，较6月创下的历史高点下降近70%。"
       },
       "sources": [
@@ -847,7 +847,7 @@
     },
     {
       "text": {
-        "en": "The PBOC will conduct a 3000亿元 three-month outright reverse repo on 5 November 2026, 第一财经 reported. 华尔街见闻 said 2575亿元 of overnight reverse repos, 1150亿元 of seven-day reverse repos, and 5000亿元 of three-month outright reverse repos mature.",
+        "en": "The PBOC will conduct a 300 billion yuan three-month outright reverse repo on 5 November 2026, 第一财经 reported. 华尔街见闻 said 257.5 billion yuan of overnight reverse repos, 115 billion yuan of seven-day reverse repos, and 500 billion yuan of three-month outright reverse repos mature.",
         "zh": "第一财经：2026年11月5日，中国人民银行将开展3000亿元买断式逆回购操作，期限为3个月。华尔街见闻：有2575亿元隔夜逆回购、1150亿元7天期逆回购、5000亿元三个月期买断式逆回购到期。"
       },
       "sources": [
@@ -863,7 +863,7 @@
     },
     {
       "text": {
-        "en": "Foreign investors sold 1499亿元 of Taiwanese stocks on Wednesday, the most in nearly three weeks, 财经早茶 reported.",
+        "en": "Foreign investors sold 149.9 billion New Taiwan dollars of Taiwanese stocks on Wednesday, the most in nearly three weeks, 财经早茶 reported.",
         "zh": "财经早茶：外资周三卖超台股1499亿元台币，创近三周以来最大量。"
       },
       "sources": [
@@ -875,7 +875,7 @@
     },
     {
       "text": {
-        "en": "On 4 November the STAR 50 rose nearly 10%, turnover was 20519亿元, and more than 4600 stocks rose. Hong Kong shares also rebounded in the afternoon, 财新 reported.",
+        "en": "On 4 November the STAR 50 rose nearly 10%, turnover was 2,051.9 billion yuan, and more than 4600 stocks rose. Hong Kong shares also rebounded in the afternoon, 财新 reported.",
         "zh": "财新：11月4日科创50暴涨近10%，全市场成交额20519亿元，超4600只个股上涨。港股午后亦显著反弹。"
       },
       "sources": [
@@ -913,8 +913,8 @@
   "chinaImplies": [
     {
       "text": {
-        "en": "If the 3000亿元 operation stays below the 5000亿元 maturity, November liquidity is being trimmed on a day A-shares rose.",
-        "zh": "若3000亿元的操作仍小于5000亿元的到期量，A股上涨的这一天，11月的流动性是在收。"
+        "en": "The 300 billion yuan three-month operation against 500 billion yuan maturing is a net drain of 200 billion yuan for that tenor, on a day A-shares rose.",
+        "zh": "3000亿元的3个月期操作相对5000亿元到期，这一期限净回笼2000亿元，发生在A股上涨的这一天。"
       }
     },
     {
@@ -925,7 +925,7 @@
     }
   ],
   "chinaDivergences": {
-    "en": "Shanghai rose 2.16% to 3686.17 and ChiNext rose 6.40% to 2544.73 while offshore yuan lost 6.68. The PBOC is conducting 3000亿元 of reverse repos against 5000亿元 maturing. Monetary policy is still described as moderately loose. Euro-area CPI at 4.0% sat next to a rally in European government bonds in the morning mail.",
+    "en": "Shanghai rose 2.16% to 3686.17 and ChiNext rose 6.40% to 2544.73 while offshore yuan lost 6.68. The PBOC is conducting 300 billion yuan of reverse repos against 500 billion yuan maturing. Monetary policy is still described as moderately loose. Euro-area CPI at 4.0% sat next to a rally in European government bonds in the morning mail.",
     "zh": "上证上涨2.16%至3686.17，创业板上涨6.40%至2544.73，离岸人民币却失守6.68。央行开展3000亿元逆回购，到期量是5000亿元。货币政策仍被表述为适度宽松。欧元区CPI为4.0%，早茶却称欧洲国债上涨。"
   },
   "signals": [],
@@ -975,7 +975,7 @@
         "region": "China",
         "category": "central-bank",
         "event": {
-          "en": "PBOC 3000亿元 three-month outright reverse repo",
+          "en": "PBOC 300 billion yuan three-month outright reverse repo",
           "zh": "中国央行开展3000亿元3个月期买断式逆回购"
         },
         "themeId": "china-equity-support",
@@ -1096,7 +1096,7 @@
         "region": "US",
         "category": "data",
         "event": {
-          "en": "US initial jobless claims, survey 19.6 after 19.4, in units of ten thousand",
+          "en": "US initial jobless claims, survey 196,000 after 194,000",
           "zh": "美国上周首次申领失业救济，预期19.6万，前值19.4万"
         },
         "themeId": "us-growth-inflation",
@@ -1200,12 +1200,12 @@
       {
         "id": "us-nfp-2026-11-06",
         "date": "2026-11-06",
-        "timeBeijing": "",
+        "timeBeijing": "21:30",
         "region": "US",
         "category": "data",
         "event": {
-          "en": "US October payrolls, prior 见闻 survey 6.5 after 2.9, in units of ten thousand",
-          "zh": "美国10月非农就业，此前华尔街见闻记载的预期为6.5万，前值2.9万"
+          "en": "US October payrolls at 21:30 Beijing (08:30 US Eastern), prior 见闻 survey 65,000 after 29,000",
+          "zh": "美国10月非农就业，北京时间21:30（美东08:30），此前华尔街见闻记载的预期为6.5万，前值2.9万"
         },
         "themeId": "us-growth-inflation",
         "source": {
