@@ -67,7 +67,7 @@ Read and execute these skills; do not jump to YAML:
 
 - **FACT:** primary or triangulated print (BLS, AP close, Treasury, PR Newswire, Yicai OMO, Yahoo official index).
 - **CLAIM:** inbox desk, third-party view, CICC, unverified size. Never promote a desk view to a close/print.
-- **Do not write CLAIM on the website.** It is an agent gate, not a reader label. Name the desk (`财经早茶`, `律动`, `CICC`). Never `CLAIM — inbox` or `desk/CLAIM`. The source chip already says who said it.
+- **Do not write CLAIM on the website.** It is an agent gate, not a reader label. Name the desk (`财经早茶`, `律动`, `CICC`). Never `CLAIM — inbox` or `desk/CLAIM`. The source chip already says who said it. No workflow ids in published copy (`.yml`, inbox-sync, last-kick, branch names).
 - Beat/miss vs **estimate** only. `10亿元 = CNY1bn`. Crypto: two dated sources. Omit unverifiable numbers.
 
 ## Both languages
@@ -78,13 +78,15 @@ Both sides state the same facts: a number, date, name, direction, or story match
 
 Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facing page is that language, in desk prose. Do not leave the other language’s sentences on the page.
 
-Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price.
+Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price. Nikkei and Kospi show the prior completed close. Tokyo cash close is 15:30 (Seoul cash close is 15:30).
 
 Chinese uses 万/亿. English uses million/billion and a number such as 86,000. Never write "hundred million", 亿元, or "ten thousand" in English. Taiwan equity flow is in New Taiwan dollars. Do not repeat the other language's number in parentheses. One sentence keeps one scale.
 
-A price move names the session (cash close, intraday, or after hours). Do not invent a clock time.
+A price move names the session (cash close, intraday, or after hours). Do not invent a clock time. US October payrolls are 21:30 Beijing. Do not write 待确认 once that clock is known.
 
 The greeting under the avocado stays on both pages. Do not remove either line. Do not fade them. English: Welcome to syravocado — hope you enjoy today’s brief. Chinese: 欢迎你来到小果，希望你喜欢今天的简报！
+
+LangSwitch observes `document.body` only. Do not observe `documentElement` or `<html>`, and do not add another observer. The title script rewrites `<title>` on `data-lang`; a childList watch under `<html>` retriggers forever and freezes the tab. The tab and share title is one short line. `?lang=zh` keeping the English `<title>` until a click is accepted. Reader-facing copy says the edition publishes at 09:30 Beijing.
 
 ## Website YAML — every rendered section
 
@@ -151,7 +153,7 @@ So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
 
 **Desk view.** Exactly one per card, from the tape — never pad a second, never invent a house. Named house or official with a date (GS, MS, JPM, BofA, Nomura, CICC, IEA, OPEC, Glassnode, IMF, BIS, a central banker, 财经早茶). Format `House (d Month):` inside the judgment as evidence, never as a second summary of the article. Search CICC per force; 财经早茶 GS/MS/JPM lines; 见闻 sell-side; Glassnode inbox. Source in `keySources`.
 
-Stay on this card’s books. Do not write “keep X on the other card”, “this is not the Y book”, or “rather than the ⟨other⟩ spillover”. Only numbers already in this card’s `fact` or `factSources`. Paragraph must add logic `fact` does not contain — do not restate Fact, Summary, Markets at a glance, or Closes. **Plain language:** short sentences; state the pivotal point and the cause-effect chain from the cited article. No hedge-fund jargon (e.g. "narrative multiple", "discount-rate relief", "flow-built profit cushion", "meeting premium", "term premium") — if the logic is simple, write it simply. Banned phrases: "sets the next tape", "is the next print", "is the settle", "keeps the case alive", "takes … off the tape", "treating … as", "pricing some of the … back out", "room for", "still leaves … on the table", "worth watching", "this card". Banned opener: "A ⟨number⟩ ⟨thing⟩ next to a ⟨number⟩ ⟨thing⟩ is…". Banned opener: "⟨asset⟩ is now pricing ⟨N⟩ against ⟨prior⟩". Banned tail: "Horizon is …, ending at …", or any calendar event whose predicate is the next print/settle/tape — that date lives in `eventCalendar` / `watch`.
+Stay on this card’s books. Do not write “keep X on the other card”, “this is not the Y book”, or “rather than the ⟨other⟩ spillover”. Only numbers already in this card’s `fact` or `factSources`. Paragraph must add logic `fact` does not contain — do not restate Fact, Summary, Markets at a glance, or Closes. **Plain language:** short sentences; state the pivotal point and the cause-effect chain from the cited article. No hedge-fund jargon (e.g. "narrative multiple", "discount-rate relief", "flow-built profit cushion", "meeting premium", "term premium") — if the logic is simple, write it simply. Banned phrases: "sets the next tape", "is the next print", "is the settle", "keeps the case alive", "takes … off the tape", "treating … as", "pricing some of the … back out", "room for", "still leaves … on the table", "worth watching", "this card". Banned opener: "A ⟨number⟩ ⟨thing⟩ next to a ⟨number⟩ ⟨thing⟩ is…". Banned opener: "⟨asset⟩ is now pricing ⟨N⟩ against ⟨prior⟩". Banned tail: "Horizon is …, ending at …", or any calendar event whose predicate is the next print/settle/tape — that date lives in `eventCalendar` / `watch`. Do not write `horizon`, `trigger`, or `invalidator` on a theme. No mechanical gold invalidation line.
 
 `verify-briefing` fails dumps (fact not 1–3, so-what not 3–5, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, missing `status`, no `House (d Month):` on any card). Unused prints → What changed. Do not write `singleSource`. No CLAIM. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
 
