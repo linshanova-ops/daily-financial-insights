@@ -162,6 +162,7 @@
       },
       "kind": "insight",
       "imageSrc": "/inbox-charts/bloomberg-2026-11-05.png",
+      "imageSrcEn": "/inbox-charts/bloomberg-2026-11-05-en.png",
       "analysis": {
         "en": "Seven bars show the one-day change in market value, in billions of dollars. Green bars are gains and red bars are losses. From the left, the red bars are Nvidia at about 85 billion dollars and Tesla at about 55 billion dollars. The green bars are Meta at about 30 billion dollars, Alphabet at about 135 billion, Amazon at about 175 billion, Microsoft at about 250 billion, and Apple just above 300 billion dollars. The heading on the image says the combined market value rose by nearly 1 trillion dollars. These bar heights are about-reads of the image.",
         "zh": "七根柱表示市值的单日变化，单位是十亿美元。绿柱是增加，红柱是减少。从左起，红柱是英伟达约850亿美元、特斯拉约550亿美元。绿柱是 Meta约300亿美元、Alphabet约1350亿美元、亚马逊约1750亿美元、微软约2500亿美元，苹果略高于3000亿美元。图上的标题写合计市值增加近1万亿美元。这些柱高是看图读出的约数。"

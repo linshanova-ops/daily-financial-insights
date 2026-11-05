@@ -170,6 +170,8 @@ export interface BriefingFigure {
    * (e.g. "/inbox-charts/bloomberg-2026-07-21.jpg").
    */
   imageSrc?: string;
+  /** English-labeled copy of imageSrc. Chinese page keeps imageSrc. */
+  imageSrcEn?: string;
   source: FactSource;
   /** Optional extra cites for accuracy gate (UI still uses `source`). */
   sources?: FactSource[];

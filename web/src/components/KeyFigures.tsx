@@ -155,14 +155,31 @@ export function KeyFigures({ figures }: KeyFiguresProps) {
                 </h3>
                 {assetUrl(figure.imageSrc) ? (
                   <figure className="mt-5 overflow-hidden border border-ink/10 bg-mist/40">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={assetUrl(figure.imageSrc)}
-                      alt={enOf(figure.title) || "Chart of the day"}
-                      data-alt-en={enOf(figure.title) || "Chart of the day"}
-                      data-alt-zh={zhOf(figure.title) || "今日图表"}
-                      className="h-auto w-full max-w-full max-h-[28rem] object-contain bg-white"
-                    />
+                    {assetUrl(figure.imageSrcEn) ? (
+                      <>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={assetUrl(figure.imageSrcEn)}
+                          alt={enOf(figure.title) || "Chart of the day"}
+                          className="lang-en h-auto w-full max-w-full max-h-[28rem] object-contain bg-white"
+                        />
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={assetUrl(figure.imageSrc)}
+                          alt={zhOf(figure.title) || "今日图表"}
+                          className="lang-zh h-auto w-full max-w-full max-h-[28rem] object-contain bg-white"
+                        />
+                      </>
+                    ) : (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img
+                        src={assetUrl(figure.imageSrc)}
+                        alt={enOf(figure.title) || "Chart of the day"}
+                        data-alt-en={enOf(figure.title) || "Chart of the day"}
+                        data-alt-zh={zhOf(figure.title) || "今日图表"}
+                        className="h-auto w-full max-w-full max-h-[28rem] object-contain bg-white"
+                      />
+                    )}
                   </figure>
                 ) : null}
                 {figure.display ? (
