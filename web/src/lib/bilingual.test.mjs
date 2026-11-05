@@ -10,7 +10,7 @@ describe("latest briefing languages", () => {
     );
     const result = checkBilingual(latest);
     assert.equal(result.ok, true, result.message);
-    assert.equal(latest.summary[0].text.en.startsWith("On Tuesday the Dow"), true);
+    assert.equal(latest.summary[0].text.en.startsWith("On Wednesday the Dow"), true);
     assert.match(latest.summary[0].text.zh, /标普500/);
   });
 });

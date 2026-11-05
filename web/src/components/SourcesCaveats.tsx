@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import type { KeySource } from "@/lib/types";
 import { enOf, type LangText } from "@/lib/lang-text";
 import { linkifySources } from "@/lib/source-links";
+import { stripInternalShorthand } from "../../scripts/lib/reader-shorthand.mjs";
 import Link from "next/link";
 import { L } from "./L";
 import { Prose } from "./Prose";
@@ -22,7 +23,7 @@ const BOOK_LABELS: Record<string, [string, string]> = {
 };
 
 function LinkedSourceText({ text }: { text: string }) {
-  const parts = linkifySources(text);
+  const parts = linkifySources(stripInternalShorthand(text));
   return (
     <>
       {parts.map((part, index) =>
@@ -143,7 +144,7 @@ export function SourcesCaveats({
                   rel="noopener noreferrer"
                   className="focus-ring font-semibold text-forest underline decoration-copper/40 underline-offset-4 transition hover:text-forest-bright"
                 >
-                  {s.label}
+                  {stripInternalShorthand(s.label)}
                 </a>
               )}
               {s.books?.length ? (
@@ -179,7 +180,7 @@ export function SourcesCaveats({
                   rel="noopener noreferrer"
                   className="focus-ring inline-flex rounded-sm border border-line bg-paper/80 px-2.5 py-1 text-xs font-medium text-ink-soft transition hover:border-forest/40 hover:text-forest"
                 >
-                  {s.label}
+                  {stripInternalShorthand(s.label)}
                 </a>
               )}
             </li>

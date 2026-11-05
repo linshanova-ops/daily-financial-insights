@@ -80,7 +80,7 @@ Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facin
 
 Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price.
 
-Chinese uses 万/亿. English uses million/billion. Never write "hundred million". Do not repeat the other language's number in parentheses. One sentence keeps one scale.
+Chinese uses 万/亿. English uses million/billion and a number such as 86,000. Never write "hundred million", 亿元, or "ten thousand" in English. Taiwan equity flow is in New Taiwan dollars. Do not repeat the other language's number in parentheses. One sentence keeps one scale.
 
 A price move names the session (cash close, intraday, or after hours). Do not invent a clock time.
 

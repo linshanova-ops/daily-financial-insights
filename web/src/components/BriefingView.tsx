@@ -9,6 +9,7 @@ import { SourcesCaveats } from "./SourcesCaveats";
 import { KeyFigures } from "./KeyFigures";
 import { MarketDashboard } from "./MarketDashboard";
 import { MarketOverview } from "./MarketOverview";
+import { briefingTitleScript } from "@/lib/briefings-format";
 import { L } from "./L";
 import { Prose } from "./Prose";
 import { PreviousBriefingLink } from "./PreviousBriefingLink";
@@ -45,6 +46,9 @@ export function BriefingView({
 
   return (
     <>
+      <script
+        dangerouslySetInnerHTML={{ __html: briefingTitleScript(briefing) }}
+      />
       <BriefingHero
         date={briefing.date}
         marketTone={briefing.marketTone}

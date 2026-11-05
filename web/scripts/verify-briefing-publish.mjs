@@ -23,6 +23,7 @@ import { checkThemeCards } from "./lib/theme-card-check.mjs";
 import { checkBilingual } from "./lib/bilingual-check.mjs";
 import { enOf } from "./lib/lang-text.mjs";
 import { checkGlobalChinaNoCloseDup } from "./lib/global-china-close-check.mjs";
+import { stripInternalShorthand } from "./lib/reader-shorthand.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const webRoot = path.join(__dirname, "..");
@@ -135,13 +136,23 @@ function main() {
     }
     console.log("[verify-briefing] Global/China close dedupe OK");
 
-    if (/\bCLAIM\b/.test(JSON.stringify(latest))) {
+    const briefingDir = path.join(webRoot, "public/data/briefings");
+    const briefingFiles = fs
+      .readdirSync(briefingDir)
+      .filter((name) => name.endsWith(".json"));
+    const claimLeft = briefingFiles.filter((name) => {
+      const raw = fs.readFileSync(path.join(briefingDir, name), "utf8");
+      return /\bCLAIM\b|Iran-CLAIM/.test(stripInternalShorthand(raw));
+    });
+    if (claimLeft.length) {
       console.error(
-        "\n[verify-briefing] FAIL — latest.json contains CLAIM. That word is an agent gate, not a reader label. Name the desk (财经早茶, 律动, CICC).\n",
+        `\n[verify-briefing] FAIL — reader text still has CLAIM in ${claimLeft.join(", ")}. That word is an agent gate, not a reader label.\n`,
       );
       process.exit(1);
     }
-    console.log("[verify-briefing] no CLAIM on the page");
+    console.log(
+      `[verify-briefing] no CLAIM in reader text (${briefingFiles.length} briefings)`,
+    );
   }
 
   runStep("scan-links", "npm", ["run", "scan-links"], webRoot);
