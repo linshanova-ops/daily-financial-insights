@@ -96,7 +96,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 
 | Site | YAML |
 |------|------|
-| Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject) |
+| Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject). The intro’s first sentence has a subject: English “the market sold…”, Chinese “市场抛售…”. |
 | Skim | `summary` (sourced bullets), `signal`, `watch` — this is what the homepage shows first |
 | Themes | `themeCards` — see **Theme card** below. `verify-briefing` fails the dump shape. |
 | Market closes | `marketDashboard` via inject only. Renders after Summary, **before** Markets at a glance and Themes. |
