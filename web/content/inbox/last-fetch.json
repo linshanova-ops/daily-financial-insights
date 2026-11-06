@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-05T07:36:39.082Z",
-  "briefingDate": "2026-11-05",
+  "at": "2026-11-06T01:02:45.375Z",
+  "briefingDate": "2026-11-06",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-06.md",
+      "subject": "彭博财经早茶: 美国科技股暴跌；中国铜现货溢价飙升",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6522,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-06.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-06.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-05.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-23.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md",
       "skipped": true
     }
   ],
@@ -149,11 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国拟限制对华生物技术投资; SK海力士子公司放弃IPO",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-23.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: Meta加码押注AI；美外交官撤离沙特",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-22.md"
     }
   ]
 }
