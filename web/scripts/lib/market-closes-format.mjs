@@ -97,11 +97,8 @@ export function yahooPrevIsUsable(prev, last) {
 
 /**
  * Nikkei and Kospi can already be open at the morning snapshot. Walk back to
- * the latest bar whose session has finished. A weekday gap before a later bar
- * is a holiday; a weekday gap with no later bar is a stale print.
- * ponytail: a traded session missing from a feed that then resumes looks like
- * a holiday, and a holiday with no later bar yet looks stale. Upgrade path: an
- * exchange holiday list.
+ * the latest bar whose 15:30 cash session has finished. That close is the print.
+ * A weekday hole is not a holiday and not a missing session.
  * Same cash closes as session-print.ts. Other ids, including Brent, stay on the last bar.
  */
 const PRIOR_CLOSE_IF_OPEN = {
@@ -171,7 +168,8 @@ export function selectDisplayedBar(id, pairs, snapshotIso) {
     : Number.isFinite(snap)
       ? new Date(snap).toISOString().slice(0, 10)
       : null;
-  const dates = weekdaysBetween(unixToDateString(last.t), end);
+  // Completed Tokyo/Seoul close: no missing or holiday stamp. Other ids still flag a weekday hole.
+  const dates = PRIOR_CLOSE_IF_OPEN[id] ? [] : weekdaysBetween(unixToDateString(last.t), end);
   const gap = dates.length ? { kind: newer ? "holiday" : "stale", dates } : null;
   return { last, prev: i >= 1 ? pairs[i - 1] : null, gap };
 }

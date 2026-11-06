@@ -59,7 +59,7 @@ describe("market-closes-format", () => {
     assert.equal(unixToDateString(mid.last.t), "2026-10-27");
   });
 
-  it("labels a skipped weekday as a holiday when a later bar exists, otherwise stale", () => {
+  it("does not mark a completed Nikkei or Kospi close as a holiday or a missing session", () => {
     const snap = "2026-11-04T01:22:00.000Z";
     const t = (day) => Date.parse(`${day}T00:00:00Z`) / 1000;
     const holiday = selectDisplayedBar(
@@ -71,14 +71,15 @@ describe("market-closes-format", () => {
       snap,
     );
     assert.equal(unixToDateString(holiday.last.t), "2026-11-02");
-    assert.equal(holiday.gap.kind, "holiday");
-    assert.deepEqual(holiday.gap.dates, ["2026-11-03"]);
-    assert.match(gapPrintNote(holiday.gap).en, /Holiday 2026-11-03/);
+    assert.equal(holiday.gap, null);
 
     const stale = selectDisplayedBar("kospi", [{ t: t("2026-11-02"), c: 5859.08 }], snap);
-    assert.equal(stale.gap.kind, "stale");
-    assert.deepEqual(stale.gap.dates, ["2026-11-03"]);
-    assert.match(gapPrintNote(stale.gap).en, /Missing session 2026-11-03/);
+    assert.equal(unixToDateString(stale.last.t), "2026-11-02");
+    assert.equal(stale.gap, null);
+
+    const other = selectDisplayedBar("spx", [{ t: t("2026-11-02"), c: 100 }], snap);
+    assert.equal(other.gap.kind, "stale");
+    assert.match(gapPrintNote(other.gap).en, /Missing session 2026-11-03/);
 
     const filled = selectDisplayedBar(
       "nikkei",
