@@ -93,6 +93,38 @@ describe("market-closes-format", () => {
     assert.equal(filled.gap, null);
   });
 
+  it("prints the completed 5 Nov Nikkei and Kospi close on the 6 Nov morning snapshot", () => {
+    const snap = "2026-11-06T01:25:36.149Z";
+    const t = (day) => Date.parse(`${day}T00:00:00Z`) / 1000;
+    const nikkei = selectDisplayedBar(
+      "nikkei",
+      [
+        { t: t("2026-11-04"), c: 62188.62890625 },
+        { t: t("2026-11-05"), c: 61077.8984375 },
+        { t: t("2026-11-06"), c: 57858.609375 },
+      ],
+      snap,
+    );
+    assert.equal(unixToDateString(nikkei.last.t), "2026-11-05");
+    assert.equal(formatLevel(nikkei.last.c), "61,077.90");
+    assert.equal(formatPctChange(nikkei.prev.c, nikkei.last.c), "−1.79%");
+    assert.equal(nikkei.gap, null);
+
+    const kospi = selectDisplayedBar(
+      "kospi",
+      [
+        { t: t("2026-11-04"), c: 5683.7998046875 },
+        { t: t("2026-11-05"), c: 5383.7998046875 },
+        { t: t("2026-11-06"), c: 5131.79 },
+      ],
+      snap,
+    );
+    assert.equal(unixToDateString(kospi.last.t), "2026-11-05");
+    assert.equal(formatLevel(kospi.last.c), "5,383.80");
+    assert.equal(formatPctChange(kospi.prev.c, kospi.last.c), "−5.28%");
+    assert.equal(kospi.gap, null);
+  });
+
   it("parses dates", () => {
     assert.equal(parseUsDate("07/16/2026"), "2026-07-16");
     assert.equal(unixToDateString(1784208600), "2026-07-16");
