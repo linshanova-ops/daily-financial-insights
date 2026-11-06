@@ -78,7 +78,7 @@ English page source names and chip topic tails go through the map in `web/script
 
 Both sides state the same facts: a number, date, name, direction, or story matches. Do not translate a figure into a different fact. Do not invent numbers, closes, or dates.
 
-Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facing page is that language, in desk prose. Do not leave the other language’s sentences on the page. `globalRegime` and `chinaStance` are sentences a reader would say in that language, not a word-for-word translation of the other side.
+Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facing page is that language, in desk prose. Do not leave the other language’s sentences on the page. Intro, judgements, themes, watch, mapped closes labels, and chips are written in that language as a reader would say them, same facts, not a word-for-word translation: plain Chinese on the Chinese page, plain English on the English page, no calques.
 
 Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price. Nikkei and Kospi show the prior completed close. Tokyo cash close is 15:30 (Seoul cash close is 15:30). Do not mark that completed close missing or a holiday.
 
