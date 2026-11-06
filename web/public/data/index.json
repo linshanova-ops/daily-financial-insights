@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-11-05T06:14:19.472Z",
-  "latest": "2026-11-05",
+  "generatedAt": "2026-11-06T01:29:57.539Z",
+  "latest": "2026-11-06",
   "briefings": [
+    {
+      "date": "2026-11-06",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "Thursday's tape sold US technology and bought safety. The Nasdaq fell 5.52% to 24314.997, the S&P 500 fell 4.36% to 7353.73, and the Dow fell 3.44% to 51523.06. December WTI rose 2.72% to 90.52 and COMEX gold rose 1.02% to 4102.50. The 10-year yield was 4.8326%. The Hang Seng rose 3.67% to 24796.98. The chart's latest spike is about minus 2.5 trillion dollars of Nasdaq-100 market value.",
+        "zh": "周四市场抛售美国科技股、买入避险资产。纳斯达克下跌5.52%至24314.997，标普500下跌4.36%至7353.73，道指下跌3.44%至51523.06。12月WTI上涨2.72%至90.52，COMEX黄金上涨1.02%至4102.50。10年期收益率为4.8326%。恒生指数上涨3.67%至24796.98。图上最新的尖刺大约是纳斯达克100指数市值减少2.5万亿美元。"
+      },
+      "coverageWindow": {
+        "en": "November 5–6, 2026",
+        "zh": "2026年11月5日至11月6日"
+      }
+    },
     {
       "date": "2026-11-05",
       "title": {
