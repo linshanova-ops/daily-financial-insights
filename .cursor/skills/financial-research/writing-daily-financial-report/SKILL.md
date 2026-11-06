@@ -38,7 +38,7 @@ Use [assets/report-template.md](assets/report-template.md) as the skeleton. Sect
 - **Confidence language is calibrated:** *is/did* for confirmed facts; *appears/suggests* for graded inference; *possible/worth watching* for weak signals. Never present a WEAK signal in *is* language.
 - **Facts before interpretation** within each section — reader should be able to see where reporting ends and judgment begins
 - **Length:** ~1,000–1,500 words total. Executive summary ≤ 120 words.
-- **Complete sentences on the website.** `marketTone`, `summary`, `signal`, Theme `title`/`fact`/`mechanism`, and Global/China stance must read as prose a busy person can follow. Do not stitch source keywords into a headline (“Treasury ≥$4bn long-end buybacks are the US rates / equity / USD sleeve”, “hike-if-inflation”, “NBS 4.5/0.6/−6.7”). Name who did what, with the number, then what it means.
+- **Complete sentences on the website.** `marketTone`, `summary`, `signal`, Theme `title`/`fact`/`mechanism`, and Global/China stance must read as prose a busy person can follow. Do not stitch source keywords into a headline (“Treasury ≥$4bn long-end buybacks are the US rates / equity / USD sleeve”, “hike-if-inflation”, “NBS 4.5/0.6/−6.7”). Name who did what, with the number, then what it means. The intro’s first sentence has a subject: English “the market sold…”, Chinese “市场抛售…”.
 - **Quiet days:** say "little regime-relevant news today" in one line rather than inflating minor items. A short honest report beats a padded one.
 - **Language:** match the user's request language (Chinese request → Chinese report, keeping key terms/tickers in original form)
 
