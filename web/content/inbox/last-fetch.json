@@ -1,17 +1,12 @@
 {
-  "at": "2026-11-06T01:02:45.375Z",
+  "at": "2026-11-06T01:33:18.044Z",
   "briefingDate": "2026-11-06",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-06.md",
-      "subject": "彭博财经早茶: 美国科技股暴跌；中国铜现货溢价飙升",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6522,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-06.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-06.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 美国科技股暴跌；中国铜现货溢价飙升",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-06.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美民主党横扫两院；珠海华发获政府支持",
