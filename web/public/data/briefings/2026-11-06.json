@@ -1183,7 +1183,7 @@
     "en": "Mail tape is the 6 November 财经早茶. Equity, oil, gold, yield, Hong Kong, yuan, and bitcoin prints are 华尔街见闻. 财新 covers the 1.13 trillion dollar drop in the seven largest US technology companies. 第一财经 covers the PBOC reverse repo and the day's data list. 律动 covers bitcoin under 76,000 dollars and the Kospi circuit breaker. CICC's 6 November note sits on AI oversight, oil, gold, and the dollar.",
     "zh": "邮件底稿是11月6日财经早茶。股票、原油、黄金、收益率、港股、人民币和比特币来自华尔街见闻。财新覆盖美国科技七巨头1.13万亿美元的市值下降。第一财经覆盖央行逆回购和当日数据日程。律动覆盖比特币跌破7.6万美元和韩国综指熔断。中金11月6日的笔记写在AI监管、原油、黄金和美元上。"
   },
-  "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market closes are the inject snapshot. Desk settles in the summary are 华尔街见闻, 财新, and 律动. Nikkei and Kospi rows in Market closes are the Yahoo bar dated 4 November; the 5 November cash session is missing from that feed. Friday morning levels in What changed are intraday. This report is research and information synthesis, not investment advice.",
+  "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market closes are the inject snapshot. Desk settles in the summary are 华尔街见闻, 财新, and 律动. Nikkei and Kospi rows in Market closes are the Yahoo cash close dated 5 November. Friday morning levels in What changed are intraday. This report is research and information synthesis, not investment advice.",
   "marketDashboard": {
     "asOf": "2026-11-06T01:25:36.149Z",
     "note": {
@@ -1234,33 +1234,25 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "62,188.63",
-            "change": "−1.42%",
+            "latest": "61,077.90",
+            "change": "−1.79%",
             "changeDirection": "down",
-            "asOfDate": "2026-11-04",
+            "asOfDate": "2026-11-05",
             "source": {
               "label": "Yahoo Finance (^N225)",
               "href": "https://finance.yahoo.com/quote/%5EN225/"
-            },
-            "printNote": {
-              "en": "Stale print. Missing session 2026-11-05.",
-              "zh": "这是更早的收盘，缺了交易日 2026-11-05。"
             }
           },
           {
             "id": "kospi",
             "asset": "Kospi",
-            "latest": "5,683.80",
-            "change": "+0.62%",
-            "changeDirection": "up",
-            "asOfDate": "2026-11-04",
+            "latest": "5,383.80",
+            "change": "−5.28%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-05",
             "source": {
               "label": "Yahoo Finance (^KS11)",
               "href": "https://finance.yahoo.com/quote/%5EKS11/"
-            },
-            "printNote": {
-              "en": "Stale print. Missing session 2026-11-05.",
-              "zh": "这是更早的收盘，缺了交易日 2026-11-05。"
             }
           },
           {
