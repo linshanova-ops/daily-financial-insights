@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-11-06T04:52:33.111Z",
-  "latest": "2026-11-06",
+  "generatedAt": "2026-11-09T01:29:41.760Z",
+  "latest": "2026-11-09",
   "briefings": [
+    {
+      "date": "2026-11-09",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "On Friday the market bought back some of the technology shares it had sold, and a strong jobs report pushed Treasury yields up. The S&P 500 rose 0.31% to 7376.86. The Nasdaq rose 1.09% to 24579.42. The Dow fell 0.46% to 51285.73. The 10-year yield was about 4.86%. January Brent was nearly flat at 98.32 dollars. COMEX gold fell 0.93% to 4064.5 dollars. Shanghai fell 1.10% to 3649.18. The chart's last payroll bar is positive and sits below the 200 thousand line.",
+        "zh": "周五，市场买回一部分此前抛出的科技股，强劲的就业报告把美国国债收益率推高。标普500上涨0.31%，收于7376.86点。纳斯达克上涨1.09%，收于24579.42点。道指下跌0.46%，收于51285.73点。10年期收益率约为4.86%。1月布伦特几乎持平在98.32美元。COMEX黄金下跌0.93%，至4064.5美元。上证下跌1.10%，收于3649.18点。图上最后一根非农柱在零线上方，低于200千的网格线。"
+      },
+      "coverageWindow": {
+        "en": "November 6–9, 2026",
+        "zh": "2026年11月6日至11月9日"
+      }
+    },
     {
       "date": "2026-11-06",
       "title": {
