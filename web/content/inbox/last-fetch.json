@@ -1,25 +1,17 @@
 {
-  "at": "2026-11-09T01:05:52.400Z",
+  "at": "2026-11-09T01:32:55.446Z",
   "briefingDate": "2026-11-09",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-09.md",
-      "subject": "彭博财经早茶: 黄仁勋承认婚外情；美强劲就业支持加息",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 7202,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-09.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-09.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W45.md",
-      "subject": "彭博周末茶歇: 美国“蓝潮”已至",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 7972,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 黄仁勋承认婚外情；美强劲就业支持加息",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-09.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇: 美国“蓝潮”已至",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W45.md"
+    },
     {
       "reason": "weekly-exists",
       "subject": "Alpha Lab is now included in your Pro subscription",
