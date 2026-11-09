@@ -88,6 +88,56 @@ describe("reader shorthand", () => {
     assert.equal(readerLine(labels.find((label) => label.includes("律动"))), labels.find((label) => label.includes("律动")));
   });
 
+  it("uses each language's amount units", () => {
+    assert.equal(readerLine("6.5万", "en"), "65 thousand");
+    assert.equal(readerLine("1亿", "en"), "100 million");
+    assert.equal(readerLine("1万亿", "en"), "1 trillion");
+    assert.equal(readerLine("6.5 in ten thousands", "en"), "65 thousand");
+    assert.equal(readerLine("1485.40 hundred million yuan", "en"), "148.54 billion yuan");
+    assert.equal(readerLine("12.817亿美元", "en"), "1.2817 billion dollars");
+    assert.equal(readerLine("200千", "en"), "200 thousand");
+    assert.equal(readerLine("200 thousand", "en"), "200 thousand");
+    assert.equal(readerLine("3405.2 billion dollars", "en"), "3405.2 billion dollars");
+    assert.equal(readerLine("200千的网格线"), "20万的网格线");
+    assert.equal(readerLine("离150千比离200千更近"), "离15万比离20万更近");
+    assert.equal(readerLine("1.2817 billion dollars"), "12.817亿美元");
+    assert.equal(readerLine("78.3 million ounces"), "7830万盎司");
+    assert.equal(readerLine("1.2 trillion dollars"), "1.2万亿美元");
+    assert.equal(readerLine("34052亿美元"), "34052亿美元");
+    assert.equal(readerLine("单位是千人"), "单位是千人");
+
+    const latest = JSON.parse(
+      fs.readFileSync(
+        path.join(path.dirname(fileURLToPath(import.meta.url)), "../../public/data/latest.json"),
+        "utf8",
+      ),
+    );
+    const problems = [];
+    const walk = (value) => {
+      if (!value || typeof value !== "object") return;
+      if (typeof value.en === "string") {
+        const shown = readerLine(value.en, "en");
+        if (/[万亿千]|hundred million|ten thousand/i.test(shown)) problems.push(shown);
+      }
+      if (typeof value.zh === "string") {
+        const shown = readerLine(value.zh);
+        if (/\b(?:million|billion|trillion|thousand)s?\b|百万|\d+(?:\.\d+)?千/i.test(shown)) {
+          problems.push(shown);
+        }
+      }
+      if (Array.isArray(value)) {
+        value.forEach(walk);
+        return;
+      }
+      for (const [key, child] of Object.entries(value)) {
+        if (key === "en" || key === "zh") continue;
+        if (child && typeof child === "object") walk(child);
+      }
+    };
+    walk(latest);
+    assert.deepEqual(problems, []);
+  });
+
   it("leaves no CLAIM in the 19 Aug briefing", () => {
     const raw = fs.readFileSync(aug19, "utf8");
     const shown = stripInternalShorthand(raw);

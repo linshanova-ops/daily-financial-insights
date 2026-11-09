@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import type { KeySource } from "@/lib/types";
 import { enOf, type LangText } from "@/lib/lang-text";
 import { linkifySources } from "@/lib/source-links";
-import { englishSourceNames, stripInternalShorthand } from "../../scripts/lib/reader-shorthand.mjs";
+import { readerLine, stripInternalShorthand } from "../../scripts/lib/reader-shorthand.mjs";
 import Link from "next/link";
 import { L } from "./L";
 import { Prose } from "./Prose";
@@ -24,7 +24,7 @@ const BOOK_LABELS: Record<string, [string, string]> = {
 
 function LinkedSourceText({ text, lang }: { text: string; lang?: "en" }) {
   const parts = linkifySources(stripInternalShorthand(text));
-  const show = (s: string) => (lang === "en" ? englishSourceNames(s) : s);
+  const show = (s: string) => readerLine(s, lang);
   return (
     <>
       {parts.map((part, index) =>
