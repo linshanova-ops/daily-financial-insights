@@ -125,7 +125,7 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 ## Theme card
 
-One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: the logic, one external view inside it, which of this card's books it moves, and what would change the theme. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`. The skim `watch` string keeps about five next items, not the whole calendar. Do not end So what with the dated next print.
+One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: the logic, one external view inside it, which of this card's books it moves, and what would change the theme. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`. The skim `watch` string keeps about five next items, not the whole calendar. Do not end So what with the dated next print. Do not end a theme implication with “if … the theme changes” / “这个判断就不成立”.
 
 So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
 
