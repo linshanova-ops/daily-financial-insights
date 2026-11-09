@@ -80,11 +80,143 @@ export function stripInternalShorthand(text) {
   return s;
 }
 
+const AMT = String.raw`\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?`;
+
+function amount(s) {
+  return Number(String(s).replace(/,/g, ""));
+}
+
+function trim(n) {
+  return String(Math.round(n * 1e6) / 1e6);
+}
+
+/** Largest unit a reader would say. 1万 = 10 thousand, 1亿 = 100 million, 1万亿 = 1 trillion. */
+function enCount(n) {
+  const sign = n < 0 ? "-" : "";
+  const abs = Math.abs(n);
+  const scales = [
+    [1e12, "trillion"],
+    [1e9, "billion"],
+    [1e6, "million"],
+    [1e3, "thousand"],
+  ];
+  for (const [div, name] of scales) {
+    if (abs + 1e-8 >= div) return `${sign}${trim(abs / div)} ${name}`;
+  }
+  return `${sign}${trim(abs)}`;
+}
+
+function zhCount(n) {
+  const sign = n < 0 ? "-" : "";
+  const abs = Math.abs(n);
+  if (abs + 1e-8 >= 1e12) return `${sign}${trim(abs / 1e12)}万亿`;
+  if (abs + 1e-8 >= 1e8) return `${sign}${trim(abs / 1e8)}亿`;
+  if (abs + 1e-8 >= 1e4) return `${sign}${trim(abs / 1e4)}万`;
+  if (abs + 1e-8 >= 1e3) return `${sign}${trim(abs / 1e3)}千`;
+  if (abs + 1e-8 >= 100) return `${sign}${trim(abs / 100)}百`;
+  return `${sign}${trim(abs)}`;
+}
+
+const ZH_CCY = {
+  美元: " dollars",
+  欧元: " euros",
+  英镑: " pounds",
+  盎司: " ounces",
+  元: " yuan",
+  人: " people",
+};
+
+const EN_CCY = {
+  dollars: "美元",
+  dollar: "美元",
+  yuan: "元",
+  ounces: "盎司",
+  ounce: "盎司",
+  euros: "欧元",
+  euro: "欧元",
+  pounds: "英镑",
+  pound: "英镑",
+};
+
+function zhCcy(word) {
+  return word ? EN_CCY[word.toLowerCase()] || "" : "";
+}
+
+/**
+ * English: thousand, million, billion, trillion.
+ * Chinese: 个, 百, 千, 万, 亿, on a scale a reader would say.
+ * ponytail: a number glued to the unit. A scale named only later in the sentence stays.
+ */
+function unitsForLang(text, lang) {
+  if (!text) return text || "";
+  if (lang === "en") return toEnglishUnits(text);
+  return toChineseUnits(text);
+}
+
+function toEnglishUnits(text) {
+  let s = text;
+  const zhTail = "(美元|欧元|英镑|盎司|元|人)?";
+  s = s.replace(
+    new RegExp(`(${AMT})\\s+after\\s+a\\s+prior\\s+(${AMT}),\\s+in\\s+units\\s+of\\s+ten\\s+thousand(?:\\s+([A-Za-z]+))?`, "gi"),
+    (_, a, b, noun) =>
+      `${enCount(amount(a) * 1e4)} after a prior ${enCount(amount(b) * 1e4)}${noun ? ` ${noun}` : ""}`,
+  );
+  s = s.replace(new RegExp(`(${AMT})\\s*(万亿|亿|万|千)${zhTail}`, "g"), (_, n, unit, suf) => {
+    const mul = unit === "万亿" ? 1e12 : unit === "亿" ? 1e8 : unit === "万" ? 1e4 : 1e3;
+    return `${enCount(amount(n) * mul)}${ZH_CCY[suf] || ""}`;
+  });
+  const enTail = "(?:\\s+(dollars?|yuan|ounces?|euros?|pounds?))?";
+  s = s.replace(
+    new RegExp(`(${AMT})\\s+hundred\\s+million${enTail}`, "gi"),
+    (_, n, ccy) => `${enCount(amount(n) * 1e8)}${ccy ? ` ${ccy}` : ""}`,
+  );
+  s = s.replace(
+    new RegExp(`(${AMT})\\s+in\\s+ten\\s+thousands?${enTail}`, "gi"),
+    (_, n, ccy) => `${enCount(amount(n) * 1e4)}${ccy ? ` ${ccy}` : ""}`,
+  );
+  s = s.replace(
+    new RegExp(`(${AMT})\\s+ten\\s+thousands?(?:\\s+([A-Za-z]+))?`, "gi"),
+    (_, n, noun) => `${enCount(amount(n) * 1e4)}${noun ? ` ${noun}` : ""}`,
+  );
+  return s;
+}
+
+function toChineseUnits(text) {
+  let s = text;
+  s = s.replace(new RegExp(`(${AMT})\\s*千(?!亿)`, "g"), (full, n) => {
+    const x = amount(n);
+    return x >= 10 ? zhCount(x * 1e3) : full;
+  });
+  s = s.replace(new RegExp(`(${AMT})\\s*百万(美元|元|盎司|欧元|英镑|人)?`, "g"), (_, n, suf) => {
+    return zhCount(amount(n) * 1e6) + (suf || "");
+  });
+  const ccy = "(?:\\s+(dollars?|yuan|ounces?|euros?|pounds?))?";
+  const swap = (word, mul) => {
+    s = s.replace(new RegExp(`(${AMT})\\s+${word}${ccy}`, "gi"), (_, n, tail) => {
+      return zhCount(amount(n) * mul) + zhCcy(tail);
+    });
+  };
+  s = s.replace(
+    new RegExp(`(${AMT})\\s+hundred\\s+million${ccy}`, "gi"),
+    (_, n, tail) => zhCount(amount(n) * 1e8) + zhCcy(tail),
+  );
+  s = s.replace(
+    new RegExp(`(${AMT})\\s+(?:in\\s+)?ten\\s+thousands?${ccy}`, "gi"),
+    (_, n, tail) => zhCount(amount(n) * 1e4) + zhCcy(tail),
+  );
+  swap("trillions?", 1e12);
+  swap("billions?", 1e9);
+  swap("millions?", 1e6);
+  swap("thousands?", 1e3);
+  return s;
+}
+
 export function readerLine(text, lang) {
   const raw = String(text ?? "");
   const stripped = stripInternalShorthand(raw);
   if (/\bCLAIM\b|Iran-CLAIM/.test(raw) && !stripped.replace(/[\s.。;；]/g, "")) {
     return /[\u4e00-\u9fff]/.test(raw) ? EARLY_ZH : EARLY_EN;
   }
-  return lang === "en" ? englishSourceNames(stripped) : stripped;
+  const line = lang === "en" ? englishSourceNames(stripped) : stripped;
+  return unitsForLang(line, lang === "en" ? "en" : "zh");
 }

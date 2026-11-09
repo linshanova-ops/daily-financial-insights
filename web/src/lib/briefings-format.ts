@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { Briefing } from "./types";
 import { enOf, zhOf } from "./lang-text";
+import { readerLine } from "../../scripts/lib/reader-shorthand.mjs";
 import { dropRestatedScale } from "../../scripts/lib/scale-paren.mjs";
 
 export { dropRestatedScale };
@@ -48,8 +49,8 @@ export function briefingTitles(
   briefing: Pick<Briefing, "date" | "marketTone">,
 ): { en: string; zh: string } {
   return {
-    en: `${shortDate(briefing.date, "en")} financial briefing｜${firstLine(enOf(briefing.marketTone))}｜Syravocado`,
-    zh: `${shortDate(briefing.date, "zh")}金融简报｜${firstLine(zhOf(briefing.marketTone))}｜Syravocado`,
+    en: `${shortDate(briefing.date, "en")} financial briefing｜${readerLine(firstLine(enOf(briefing.marketTone)), "en")}｜Syravocado`,
+    zh: `${shortDate(briefing.date, "zh")}金融简报｜${readerLine(firstLine(zhOf(briefing.marketTone)))}｜Syravocado`,
   };
 }
 

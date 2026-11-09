@@ -84,6 +84,8 @@ Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps 
 
 Chinese uses 万/亿. English uses million/billion and a number such as 86,000. Never write "hundred million", 亿元, or "ten thousand" in English. Taiwan equity flow is in New Taiwan dollars. Do not repeat the other language's number in parentheses. One sentence keeps one scale.
 
+English amounts use only thousand, million, billion, or trillion. Chinese amounts use only 个, 百, 千, 万, or 亿, at the scale a reader would say (20万, not 200千; 65 thousand, not “6.5 in ten thousands”).
+
 A price move names the session (cash close, intraday, or after hours). Do not invent a clock time. US October payrolls are 21:30 Beijing. Do not write 待确认 once that clock is known.
 
 The greeting under the avocado stays on both pages. Do not remove either line. Do not fade them. English: Welcome to syravocado — hope you enjoy today’s brief. Chinese: 欢迎你来到小果，希望你喜欢今天的简报！
