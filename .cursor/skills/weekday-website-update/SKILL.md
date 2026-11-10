@@ -80,6 +80,25 @@ Both sides state the same facts: a number, date, name, direction, or story match
 
 Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facing page is that language, in desk prose. Do not leave the other language’s sentences on the page. Intro, judgements, themes, watch, mapped closes labels, and chips are written in that language as a reader would say them, same facts, not a word-for-word translation: plain Chinese on the Chinese page, plain English on the English page, no calques.
 
+Voice, in reader sentences:
+
+- Write the move (“stocks rose, crude prices fell”). Do not write “the market bought” or “the market sold” unless those trades happened.
+- A price change is not a flow, a position, or a motive. An inflow is not a purchase.
+- Do not turn two events that happened together into a cause.
+- Name bond yields or bond prices. Do not write “the short end rose” alone.
+- For an exchange rate, name the pair and which currency rose.
+- Use “exposure” only for a real holding or a risk sensitivity, not an index level.
+- Replace tape, book, print, bid, path, and story with the market, indicator, price, or event, unless that word is the technical term.
+- Do not write “the later profit path”, “at the same clock”, “about-reads”, “the copper book”, or “the hike case is still in the two-year”.
+- Name the market (US stocks, A-shares, the index). Do not widen it to global markets.
+- Do not write 自己在跌, 认购很满, 压力会凉下来, 这一头, 那笔, or 篮子.
+- For the yuan, do not use 站上 or 跌破 in a way that flips which currency strengthened.
+- A headline names the development, not a bar’s shape.
+- Say whether a figure is a release, a forecast, or an approximate chart reading.
+- A source’s new wording is not a market change.
+- Compare an old price with the date, not “Thursday’s level”.
+- Attribute with “X reported”. Do not say a source printed the number.
+
 Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price. Nikkei and Kospi show the prior completed close. Tokyo cash close is 15:30 (Seoul cash close is 15:30). Do not mark that completed close missing or a holiday.
 
 - At the 09:25 Beijing snapshot the Yahoo chart can list the next session’s open bar and omit the finished 15:30 Tokyo/Seoul close. That close is fulldayPrice minus fulldayChange in the same payload. Insert that one finished weekday. Do not keep Friday, and do not stamp the row missing or a holiday.
@@ -100,7 +119,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 
 | Site | YAML |
 |------|------|
-| Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject). The intro’s first sentence has a subject: English “the market sold…”, Chinese “市场抛售…”. |
+| Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject). The intro’s first sentence has a subject: English “US stocks fell…”, Chinese “美股下跌…”. |
 | Skim | `summary` (sourced bullets), `signal`, `watch` — this is what the homepage shows first |
 | Themes | `themeCards` — see **Theme card** below. `verify-briefing` fails the dump shape. |
 | Market closes | `marketDashboard` via inject only. Renders after Summary, **before** Markets at a glance and Themes. |
@@ -152,8 +171,8 @@ So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
   mechanism: >-
     Energy is leading the CPI basket, so Bunds are paying an energy-led restriction premium.
     CICC (1 September): euro-area export orders are rising, which is evidence the ECB can stay restrictive.
-    That premium is the Bunds and EUR exposure.
-    The theme changes if energy stops leading the basket, or if the flash is revised back to the prior pace.
+    Bunds and the euro are paying that premium.
+    That judgment weakens if energy stops leading the price index, or if the flash is revised back to the prior pace.
   status: new              # vs previous briefing: continuing / escalated / retired / new
 ```
 
