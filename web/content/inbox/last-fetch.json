@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-09T07:30:07.584Z",
-  "briefingDate": "2026-11-09",
+  "at": "2026-11-10T01:02:25.788Z",
+  "briefingDate": "2026-11-10",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-10.md",
+      "subject": "彭博财经早茶: Anthropic或即将启动IPO推介；中国贸易数据",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6505,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-10.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-10.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-09.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-27.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-26.md",
       "skipped": true
     }
   ],
@@ -149,11 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: Anthropic招股书；巴西市场暴跌",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-27.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 共和党“红墙州”告急；伊朗问题面临决断",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-26.md"
     }
   ]
 }
