@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-11-09T01:29:41.760Z",
-  "latest": "2026-11-09",
+  "generatedAt": "2026-11-10T01:27:05.600Z",
+  "latest": "2026-11-10",
   "briefings": [
+    {
+      "date": "2026-11-10",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "The market bought back equities and sold crude. The S&P 500 rose 2.35% to 7549.94. The Nasdaq rose 2.74% to 25253.14. The Dow rose 2.15% to 52389.75. Nvidia fell 4.27%. December WTI fell 4.38% to 86.85 dollars and January Brent fell 5.85% to 92.57 dollars. The 10-year yield rose to 4.8738% and the 2-year yield rose to 4.5594%. COMEX November gold rose 1.00% to 4105.00 dollars. Shanghai rose 0.32% to 3660.79. The chart's last orange bar is shorter than the one before it.",
+        "zh": "市场买回股票，并卖出原油。标普500上涨2.35%，收于7549.94点。纳斯达克上涨2.74%，收于25253.14点。道指上涨2.15%，收于52389.75点。英伟达下跌4.27%。12月WTI下跌4.38%，至86.85美元。1月布伦特下跌5.85%，至92.57美元。10年期收益率升至4.8738%，2年期升至4.5594%。COMEX 11月黄金上涨1.00%，至4105.00美元。上证上涨0.32%，收于3660.79点。图上最后一根橙柱比前一根短。"
+      },
+      "coverageWindow": {
+        "en": "November 9–10, 2026",
+        "zh": "2026年11月9日至11月10日"
+      }
+    },
     {
       "date": "2026-11-09",
       "title": {
