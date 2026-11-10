@@ -73,7 +73,7 @@ export function EventCalendarView({
             {events.map((row) => (
               <li
                 key={row.id}
-                className="flex flex-wrap items-baseline gap-x-2 gap-y-1 py-2 text-sm sm:grid sm:grid-cols-[5.5rem_3rem_4rem_minmax(0,1fr)_auto] sm:py-1.5"
+                className="flex flex-wrap items-baseline gap-x-2 gap-y-1 py-2 text-sm sm:grid sm:grid-cols-[5.5rem_3rem_4rem_minmax(10rem,1fr)_minmax(0,1fr)] sm:py-1.5"
               >
                 <span className="tabular-nums text-xs text-ink/45">
                   <L en={formatDay(row.date, "en")} zh={formatDay(row.date, "zh")} />
@@ -101,11 +101,11 @@ export function EventCalendarView({
                     </span>
                   )}
                 </span>
-                <span className="flex basis-full flex-wrap items-center justify-start gap-2 sm:basis-auto sm:shrink-0 sm:justify-end">
+                <span className="flex min-w-0 basis-full flex-wrap items-center justify-start gap-2 sm:basis-auto sm:justify-end">
                   {row.themeId ? (
                     <a
                       href={`#theme-${row.themeId}`}
-                      className="focus-ring text-[10px] font-semibold uppercase tracking-[0.12em] text-forest underline-offset-2 hover:underline"
+                      className="focus-ring min-w-0 text-[10px] font-semibold uppercase tracking-[0.12em] text-forest underline-offset-2 hover:underline"
                     >
                       {themeTitles[row.themeId] ? (
                         <Prose text={themeTitles[row.themeId]} />
