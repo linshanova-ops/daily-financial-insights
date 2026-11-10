@@ -1,17 +1,12 @@
 {
-  "at": "2026-11-10T01:02:25.788Z",
+  "at": "2026-11-10T01:30:07.724Z",
   "briefingDate": "2026-11-10",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-10.md",
-      "subject": "彭博财经早茶: Anthropic或即将启动IPO推介；中国贸易数据",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6505,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-10.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-10.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: Anthropic或即将启动IPO推介；中国贸易数据",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-10.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 黄仁勋承认婚外情；美强劲就业支持加息",
