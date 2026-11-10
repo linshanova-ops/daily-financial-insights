@@ -82,6 +82,8 @@ Header: 中文 is `?lang=zh`; English is the default URL. The whole reader-facin
 
 Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price. Nikkei and Kospi show the prior completed close. Tokyo cash close is 15:30 (Seoul cash close is 15:30). Do not mark that completed close missing or a holiday.
 
+- At the 09:25 Beijing snapshot the Yahoo chart can list the next session’s open bar and omit the finished 15:30 Tokyo/Seoul close. That close is fulldayPrice minus fulldayChange in the same payload. Insert that one finished weekday. Do not keep Friday, and do not stamp the row missing or a holiday.
+
 Chinese uses 万/亿. English uses million/billion and a number such as 86,000. Never write "hundred million", 亿元, or "ten thousand" in English. Taiwan equity flow is in New Taiwan dollars. Do not repeat the other language's number in parentheses. One sentence keeps one scale.
 
 English amounts use only thousand, million, billion, or trillion. Chinese amounts use only 个, 百, 千, 万, or 亿, at the scale a reader would say (20万, not 200千; 65 thousand, not “6.5 in ten thousands”).
