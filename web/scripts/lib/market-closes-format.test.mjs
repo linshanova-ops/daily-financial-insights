@@ -9,6 +9,7 @@ import {
   parseUsDate,
   impliedPriorClose,
   withYahooMetaFallback,
+  fillMissingPriorClose,
   gapPrintNote,
   selectDisplayedBar,
   unixToDateString,
@@ -124,6 +125,47 @@ describe("market-closes-format", () => {
     assert.equal(formatLevel(kospi.last.c), "5,383.80");
     assert.equal(formatPctChange(kospi.prev.c, kospi.last.c), "−5.28%");
     assert.equal(kospi.gap, null);
+  });
+
+  it("does not stamp a finished 15:30 close missing when the chart skipped that session", () => {
+    const snap = "2026-11-10T01:25:09.063Z";
+    const t = (day) => Date.parse(`${day}T00:00:00Z`) / 1000;
+    const skipped = [
+      { t: t("2026-11-06"), c: 57434.76953125 },
+      { t: t("2026-11-10"), c: 60459.578125 },
+    ];
+    const filled = fillMissingPriorClose("nikkei", skipped, {
+      fulldayPrice: 60459.58,
+      fulldayChange: 1684.078,
+    });
+    const bar = selectDisplayedBar("nikkei", filled, snap);
+    assert.equal(unixToDateString(bar.last.t), "2026-11-09");
+    assert.equal(formatLevel(bar.last.c), "58,775.50");
+    assert.equal(formatPctChange(bar.prev.c, bar.last.c), "+2.33%");
+    assert.equal(bar.gap, null);
+
+    const kospi = selectDisplayedBar(
+      "kospi",
+      fillMissingPriorClose(
+        "kospi",
+        [
+          { t: t("2026-11-06"), c: 5059.68994140625 },
+          { t: t("2026-11-10"), c: 5239.1298828125 },
+        ],
+        { fulldayPrice: 5239.13, fulldayChange: 220.28 },
+      ),
+      snap,
+    );
+    assert.equal(unixToDateString(kospi.last.t), "2026-11-09");
+    assert.equal(formatLevel(kospi.last.c), "5,018.85");
+    assert.equal(kospi.gap, null);
+
+    const holiday = fillMissingPriorClose("nikkei", skipped, {
+      fulldayPrice: 60459.58,
+      fulldayChange: 60459.58 - 57434.76953125,
+    });
+    assert.equal(holiday.length, 2);
+    assert.equal(fillMissingPriorClose("spx", skipped, { fulldayPrice: 60459.58, fulldayChange: 1684.078 }), skipped);
   });
 
   it("parses dates", () => {

@@ -18,6 +18,7 @@ import {
   formatSignedPct,
   impliedPriorClose,
   parseUsDate,
+  fillMissingPriorClose,
   gapPrintNote,
   selectDisplayedBar,
   unixToDateString,
@@ -46,7 +47,7 @@ async function fetchText(url) {
 }
 
 /** Last two non-null daily closes from Yahoo chart API. */
-async function yahooPair(symbol) {
+async function yahooPair(symbol, id) {
   const encoded = encodeURIComponent(symbol);
   // range=1mo; thin indexes still often yield one bar (HSTECH.HK) — prev is chartPreviousClose.
   const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encoded}?interval=1d&range=1mo`;
@@ -61,7 +62,7 @@ async function yahooPair(symbol) {
       pairs.push({ t: timestamps[i], c: closes[i] });
     }
   }
-  pairs = withYahooMetaFallback(pairs, result.meta);
+  pairs = fillMissingPriorClose(id, withYahooMetaFallback(pairs, result.meta), result.meta);
   if (pairs.length < 1) throw new Error(`Yahoo: no closes for ${symbol}`);
   return { pairs, symbol };
 }
@@ -107,7 +108,7 @@ async function rowFromYahoo({
   suffix = "",
   sourceLabel,
 }) {
-  const { pairs } = await yahooPair(symbol);
+  const { pairs } = await yahooPair(symbol, id);
   let { prev, last, gap } = selectDisplayedBar(id, pairs, new Date().toISOString());
   if (!prev || !yahooPrevIsUsable(prev.c, last.c)) {
     const prior = priorPublishedClose(id, last.c, unixToDateString(last.t));
