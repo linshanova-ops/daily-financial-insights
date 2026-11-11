@@ -4,7 +4,7 @@ import { EMA_FORM, emaPrompts, markShown, readerId, shanghaiDay, shownToday } fr
 
 it("renders no EMA modals until the form url is set", () => {
   assert.deepEqual(emaPrompts({ url: "" }), []);
-  assert.equal(emaPrompts({ url: "https://x/formResponse" }).length, 2);
+  assert.equal(emaPrompts({ url: "set" }).length, 2);
   if (!EMA_FORM.url) assert.deepEqual(emaPrompts(EMA_FORM), []);
 });
 
