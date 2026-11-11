@@ -5,7 +5,6 @@ import { accents } from "@/lib/module-accents";
 import { quoteKind, shanghaiQuote } from "@/lib/session-print";
 import { L } from "./L";
 import { Prose } from "./Prose";
-import { SourceName } from "./SourceButton";
 
 interface MarketDashboardProps {
   data: MarketDashboardData;
@@ -70,7 +69,6 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
   const rows = groups.flatMap((g) => g.rows);
   const noted = rows.filter((r) => r.printNote);
   const noteNo = (row: MarketDashboardRow) => noted.indexOf(row) + 1 || undefined;
-  const sources = rows.map((r) => r.source).filter((src, i, all) => src?.href && all.findIndex((o) => o?.href === src.href) === i);
   const dates = new Map<string, Set<string>>();
   for (const r of rows) {
     const kind = quoteKind(r.id, r.asOfDate, data.asOf);
@@ -205,22 +203,6 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
               zh={`日期：${datesLine(1)}。盘中和24小时报价截至 ${snapClock}。`}
             />
           </p>
-          <p>
-            <L en="Sources: " zh="来源：" />
-            {sources.map((src, i) => (
-              <span key={src.href}>
-                {i ? " · " : null}
-                <a href={src.href} target="_blank" rel="noopener noreferrer" className="focus-ring underline decoration-line underline-offset-2 hover:text-forest">
-                  <SourceName text={src.label} />
-                </a>
-              </span>
-            ))}
-          </p>
-          {data.note ? (
-            <p>
-              <Prose text={data.note} />
-            </p>
-          ) : null}
         </div>
       </div>
     </section>
