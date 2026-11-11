@@ -25,6 +25,28 @@ export function readerId(): string {
   }
 }
 
+/** YYYY-MM-DD in Asia/Shanghai, the briefing's day. */
+export const shanghaiDay = (d = new Date()) => d.toLocaleDateString("en-CA", { timeZone: "Asia/Shanghai" });
+
+const shownThisPage = new Set<string>();
+
+/** Each prompt shows once per day per browser (answered or skipped); per page if storage is blocked. */
+export function shownToday(id: string): boolean {
+  try {
+    return localStorage.getItem(`ema-${id}`) === shanghaiDay();
+  } catch {
+    return shownThisPage.has(id);
+  }
+}
+
+export function markShown(id: string) {
+  try {
+    localStorage.setItem(`ema-${id}`, shanghaiDay());
+  } catch {
+    shownThisPage.add(id);
+  }
+}
+
 /** Each prompt opens once, when `target` scrolls into view. */
 export function emaPrompts(form: { url: string }) {
   if (!form.url) return [];

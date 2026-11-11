@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import avocadoMascot from "../../public/brand/avocado-mascot.png";
-import { EMA_FORM, emaPrompts, readerId } from "@/lib/ema";
+import { EMA_FORM, emaPrompts, markShown, readerId, shownToday } from "@/lib/ema";
 import { L } from "./L";
 
 const PROMPTS = emaPrompts(EMA_FORM);
@@ -43,21 +43,30 @@ export function EmaPrompts({ date }: { date: string }) {
   const [thanked, setThanked] = useState<string | null>(null);
 
   useEffect(() => {
+    // Only hits after the reader's own input count: not the load state, nor a #hash landing's (smooth) jump past both targets.
+    let armed = false;
+    const arm = () => (armed = true);
+    const inputs = ["wheel", "touchmove", "keydown", "pointerdown"];
+    inputs.forEach((t) => addEventListener(t, arm, { passive: true }));
     const observers = PROMPTS.map(({ id, target }) => {
       const key = `ema-${id}`;
       const dialog = document.getElementById(key) as HTMLDialogElement | null;
       const el = document.querySelector(target);
-      const obs = new IntersectionObserver((entries) => {
-        if (!entries.some((e) => e.isIntersecting) || !dialog || dialog.open) return;
+      // Root stretched far up: ratio 1 means the target's bottom has come on screen, however tall it is.
+      const obs = new IntersectionObserver(([e]) => {
+        if (!armed || e.intersectionRatio < 1 || !dialog || dialog.open) return;
         obs.disconnect();
-        sessionStorage.setItem(key, "1");
+        markShown(id);
         setLang(pageLang());
         dialog.showModal();
-      }, { rootMargin: "0px 0px -50% 0px" });
-      if (el && !sessionStorage.getItem(key)) obs.observe(el);
+      }, { rootMargin: "100000px 100000px 0px 100000px", threshold: 1 });
+      if (el && !shownToday(id)) obs.observe(el);
       return obs;
     });
-    return () => observers.forEach((o) => o.disconnect());
+    return () => {
+      inputs.forEach((t) => removeEventListener(t, arm));
+      observers.forEach((o) => o.disconnect());
+    };
   }, []);
 
   function answer(dialog: HTMLDialogElement, modal: string, value: string) {
