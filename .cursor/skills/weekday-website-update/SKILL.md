@@ -98,6 +98,12 @@ Voice, in reader sentences:
 - A source’s new wording is not a market change.
 - Compare an old price with the date, not “Thursday’s level”.
 - Attribute with “X reported”. Do not say a source printed the number.
+- When the company changes, name it again. Keep a share move separate from another company's fundraising and founder share sales, and say whether the amount is an IPO, a private placement, or both.
+- A claim that a price level broke uses the same contract, or a named continuous series. If the contracts differ, report each price on its own.
+- “Above expectations” states the reading and the forecast. Write export growth as a pace. Separate talks from easing tensions.
+- The intro is one or two sentences on the day's main line. Levels and full percentage changes stay in the summary or the closes.
+- A chart title names the region, the indicator, and the finding.
+- Delete a sentence whose only point is that the next session the other way ends the move.
 
 Market closes: `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price. Nikkei and Kospi show the prior completed close. Tokyo cash close is 15:30 (Seoul cash close is 15:30). Do not mark that completed close missing or a holiday.
 

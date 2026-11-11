@@ -90,12 +90,12 @@ export function SourcesCaveats({
         <L
           en={
             classified
-              ? "Each source once. Tags are the books the print actually moves. "
+              ? "Each source once. Tags identify the markets discussed in each source. "
               : "Clickable sources for this edition. "
           }
           zh={
             classified
-              ? "每个来源只列一次。标签是它实际影响的市场。"
+              ? "每个来源只列一次。标签标出该来源讨论的市场。"
               : "本期可点击的来源。"
           }
         />
