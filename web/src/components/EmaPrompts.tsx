@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import avocadoMascot from "../../public/brand/avocado-mascot.png";
-import { EMA_FORM, emaPrompts } from "@/lib/ema";
+import { EMA_FORM, emaPrompts, readerId } from "@/lib/ema";
 import { L } from "./L";
 
 const PROMPTS = emaPrompts(EMA_FORM);
@@ -66,6 +66,7 @@ export function EmaPrompts({ date }: { date: string }) {
       [entry.date]: date,
       [entry.lang]: pageLang(),
       [entry.modal]: modal,
+      [entry.reader]: readerId(),
       [entry[QUESTIONS[modal].field]]: value,
     });
     fetch(EMA_FORM.url, { method: "POST", mode: "no-cors", body }).catch(() => {});

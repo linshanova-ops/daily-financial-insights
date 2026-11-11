@@ -7,8 +7,23 @@ export const EMA_FORM = {
     modal: "entry.0",
     affect: "entry.0",
     thinking: "entry.0",
+    reader: "entry.0",
   },
 };
+
+let pageReader = "";
+
+/** Anonymous id kept in localStorage so answers pair up across modals and days. Per-page if storage is blocked. */
+export function readerId(): string {
+  const make = () => `r-${crypto.randomUUID().slice(0, 8)}`;
+  try {
+    let id = localStorage.getItem("ema-reader");
+    if (!id) localStorage.setItem("ema-reader", (id = make()));
+    return id;
+  } catch {
+    return (pageReader ||= make());
+  }
+}
 
 /** Each prompt opens once, when `target` scrolls into view. */
 export function emaPrompts(form: { url: string }) {
