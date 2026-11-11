@@ -14,6 +14,7 @@ import { L } from "./L";
 import { Prose } from "./Prose";
 import { PreviousBriefingLink } from "./PreviousBriefingLink";
 import { SectionNav } from "./SectionNav";
+import { EmaPrompts } from "./EmaPrompts";
 
 interface BriefingViewProps {
   briefing: Briefing;
@@ -123,6 +124,7 @@ export function BriefingView({
         sources={briefing.sources}
         keySources={briefing.keySources}
       />
+      <EmaPrompts date={briefing.date} />
     </>
   );
 }
