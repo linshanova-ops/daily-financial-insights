@@ -44,4 +44,6 @@ Retired since last report: {items whose invalidators hit; omit this line entirel
 
 Primary sources consulted: {outlets}. Single-source items relied on: {list or "none"}.
 
+Corrections: {first published time; updated time; one line per corrected number, event time, or attribution — omit when none}
+
 > This report is research and information synthesis, not investment advice. Verify figures against primary sources before acting on them.

@@ -1,5 +1,5 @@
 /**
- * Global / China What-changed bullets are for desk news, not a second Market closes table.
+ * Global / China What-changed bullets are for desk news, not a second Market snapshot table.
  */
 const CLOSE_SOURCE =
   /Seattle Times AP|Boston 25 AP|U\.S\. Treasury curve|Kiplinger Monday close|Cointelegraph Monday bitcoin|^同花顺 A股$|智通财经 Hang Seng/;

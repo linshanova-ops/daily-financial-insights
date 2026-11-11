@@ -48,7 +48,7 @@ export const BLOOMBERG_SECTION_DEFS = [
     id: "marketOverview",
     title: "市场一览",
     mergeTo:
-      "marketOverview.items[] (REQUIRED when present) — above Market closes; NOT globalChanged/chinaChanged",
+      "marketOverview.items[] (REQUIRED when present) — above Market snapshot; NOT globalChanged/chinaChanged",
     patterns: [/^市场一览/],
   },
   {
