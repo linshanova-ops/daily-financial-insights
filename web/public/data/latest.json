@@ -9,6 +9,21 @@
     "zh": "2026年11月10日至11月11日"
   },
   "publishedAt": "2026-11-11T01:31:14.806Z",
+  "updatedAt": "2026-11-11T15:16:38.000Z",
+  "corrections": [
+    {
+      "en": "Anthropic: 90.4 billion dollars is the total deal size including shares sold by existing holders; net proceeds to Anthropic are about 84.6 billion dollars at the price-range midpoint, per the SEC filing.",
+      "zh": "Anthropic：904亿美元是含老股出售的交易总规模；按SEC招股书的发行价区间中点估算，公司净募资约846亿美元。"
+    },
+    {
+      "en": "Added the BLS, Eurostat and SEC releases beside the CPI, euro-area chart and Anthropic figures, and the quote type beside each Market snapshot row.",
+      "zh": "在CPI、欧元区图表和Anthropic数字旁补上BLS、欧盟统计局和SEC原始来源，并在行情快照每一行旁标注报价类型。"
+    },
+    {
+      "en": "Calendar: the three 07:30 speeches are marked past scheduled time at publish, and Veterans Day is marked all day.",
+      "zh": "日历：三场07:30讲话按发布时间标为已过预定时间，退伍军人节标为全天。"
+    }
+  ],
   "keySources": [
     {
       "label": "华尔街见闻 11月11日早餐",
@@ -68,8 +83,41 @@
         "us-equities"
       ],
       "influence": {
-        "en": "BlockBeats (11 November). Seven Anthropic co-founders plan to sell 1.75 billion dollars of shares. Anthropic is seeking up to 90.4 billion dollars through an IPO and a private placement together, at a fully diluted value of about 1.4 trillion dollars.",
-        "zh": "律动（11月11日）。Anthropic的七位创始人计划出售17.5亿美元股票。公司拟通过IPO和私募配售合计筹资至多904亿美元，完全稀释价值约1.4万亿美元。"
+        "en": "BlockBeats (11 November). Seven Anthropic co-founders plan to sell 1.75 billion dollars of shares. The IPO and the private placement together total up to 90.4 billion dollars, including shares sold by existing holders, at a fully diluted value of about 1.4 trillion dollars.",
+        "zh": "律动（11月11日）。Anthropic的七位创始人计划出售17.5亿美元股票。IPO与同步私募交易总规模最高约904亿美元，含老股出售，完全稀释价值约1.4万亿美元。"
+      }
+    },
+    {
+      "label": "SEC Anthropic S-1/A",
+      "href": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+      "books": [
+        "us-equities"
+      ],
+      "influence": {
+        "en": "Anthropic's amended S-1 (10 November). The price range is 70 to 78 dollars a share. At the 74 dollar midpoint, net proceeds to Anthropic from the IPO and the concurrent private placement are about 84.6 billion dollars, before the underwriters' option.",
+        "zh": "Anthropic修订版S-1招股书（11月10日）。发行价区间为每股70至78美元。按74美元的区间中点估算，公司从IPO和同步私募获得的净募资约846亿美元，未计承销商超额配售。"
+      }
+    },
+    {
+      "label": "BLS CPI October",
+      "href": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+      "books": [
+        "rates"
+      ],
+      "influence": {
+        "en": "BLS (10 November). October consumer prices rose 0.4% from September, after a 0.6% rise in September. Core prices rose 0.3%.",
+        "zh": "美国劳工统计局（11月10日）。10月CPI环比上涨0.4%，9月为上涨0.6%。核心CPI环比上涨0.3%。"
+      }
+    },
+    {
+      "label": "Eurostat October flash HICP",
+      "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap",
+      "books": [
+        "rates"
+      ],
+      "influence": {
+        "en": "Eurostat (4 November). The October flash estimate puts euro-area inflation at 4.0% from a year earlier, and 2.5% excluding energy, food, alcohol and tobacco.",
+        "zh": "欧盟统计局（11月4日）。10月初值显示欧元区通胀同比4.0%，剔除能源、食品、酒精和烟草后为2.5%。"
       }
     },
     {
@@ -79,8 +127,8 @@
         "crypto"
       ],
       "influence": {
-        "en": "BlockBeats (10 November), citing Farside. US spot bitcoin ETFs had a net outflow of 201 million dollars.",
-        "zh": "律动（11月10日）引述Farside。美国现货比特币ETF净流出2.01亿美元。"
+        "en": "BlockBeats (10 November), citing Farside. US spot bitcoin ETFs had a net outflow of 201 million dollars on 9 November, US time.",
+        "zh": "律动（11月10日）引述Farside。美国现货比特币ETF在美东时间11月9日净流出2.01亿美元。"
       }
     },
     {
@@ -139,13 +187,23 @@
       "imageSrc": "/inbox-charts/bloomberg-2026-11-11.png",
       "imageSrcEn": "/inbox-charts/bloomberg-2026-11-11-en.png",
       "analysis": {
-        "en": "Euro-area headline inflation is about 4% on the chart, about twice the ECB's 2% target. Core inflation is still near that target. Both figures are approximate readings from the chart.",
-        "zh": "图中欧元区整体通胀约为4%，约为欧洲央行2%目标的两倍。核心通胀仍靠近这一目标。两者均为图上估读。"
+        "en": "Euro-area headline inflation is about 4% on the chart, about twice the ECB's 2% target, and core inflation is much closer to that target. Both are approximate readings from the chart. Eurostat's October flash estimate puts headline inflation at 4.0% from a year earlier, and 2.5% excluding energy, food, alcohol and tobacco.",
+        "zh": "图中欧元区整体通胀约为4%，约为欧洲央行2%目标的两倍，核心通胀离这一目标近得多，两者均为图上估读。欧盟统计局10月初值：整体通胀同比4.0%，剔除能源、食品、酒精和烟草后为2.5%。"
       },
       "source": {
         "label": "财经早茶 Nov 11",
         "href": "https://www.bloomberg.com/asia"
-      }
+      },
+      "sources": [
+        {
+          "label": "财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Eurostat October flash HICP",
+          "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap"
+        }
+      ]
     }
   ],
   "marketTone": {
@@ -191,8 +249,8 @@
     },
     {
       "text": {
-        "en": "COMEX December gold fell 2.0% to 4030.20 dollars, 华尔街见闻 reported.",
-        "zh": "华尔街见闻：COMEX 12月黄金下跌2.0%至4030.20美元。"
+        "en": "COMEX December gold fell 2.0% to settle at 4030.20 dollars on 10 November, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：11月10日COMEX 12月黄金下跌2.0%，结算价为4030.20美元。"
       },
       "sources": [
         {
@@ -231,8 +289,8 @@
     }
   ],
   "signal": {
-    "en": "US consumer prices rose 0.4% in October from the previous month, above the 0.3% forecast, and US stocks fell as Treasury yields rose. Crude futures fell again, with Brent trading below 90 dollars a barrel during the session, and Qatar kept pressing for a US-Iran understanding. December COMEX gold futures fell 2%. Nvidia fell more than the indexes. China's exports rose 35.2% from a year earlier, 1.1 percentage points slower than September, and brokers have started buying shares under the third swap facility. On the chart, euro-area headline inflation is about twice the target.",
-    "zh": "美国10月消费价格环比上涨0.4%，高于预期的0.3%，美股下跌，美债收益率上升。原油期货续跌，布伦特盘中跌破每桶90美元，卡塔尔仍在推动美伊谈判。COMEX 12月黄金期货下跌2%。英伟达跌幅大于指数。中国10月出口同比增长35.2%，较9月放缓1.1个百分点，券商已经用第三批互换便利开始买入股票。图上，欧元区整体通胀大约是目标的两倍。"
+    "en": "US consumer prices rose 0.4% in October from the previous month, slower than September's 0.6% but above the 0.3% forecast, and US stocks fell as Treasury yields rose. Crude futures fell again, with Brent trading below 90 dollars a barrel during the session, and Qatar kept pressing for a US-Iran understanding. December COMEX gold futures fell 2%. Nvidia fell more than the indexes. China's exports rose 35.2% from a year earlier, 1.1 percentage points slower than September, and brokers have started buying shares under the third swap facility. On the chart, euro-area headline inflation is about twice the target.",
+    "zh": "美国10月CPI环比上涨0.4%，低于9月的0.6%，但高于市场预期的0.3%，美股下跌，美债收益率上升。原油期货续跌，布伦特盘中跌破每桶90美元，卡塔尔仍在推动美伊谈判。COMEX 12月黄金期货下跌2%。英伟达跌幅大于指数。中国10月出口同比增长35.2%，较9月放缓1.1个百分点，券商已经用第三批互换便利开始买入股票。图上，欧元区整体通胀大约是目标的两倍。"
   },
   "watch": {
     "en": "Germany's October CPI final is at 15:00 Beijing. Cipollone speaks at 15:50, Nagel at 16:15, and Lagarde at 17:45. US October PPI is on 13 November at 21:30 Beijing. The US bond market is shut today for Veterans Day.",
@@ -320,8 +378,8 @@
     {
       "id": "us-growth-inflation",
       "title": {
-        "en": "Hotter consumer prices lifted the 2-year yield more than the 10-year yield",
-        "zh": "更高的消费价格让两年期收益率升幅大于十年期"
+        "en": "US CPI topped forecasts, and the 2-year Treasury yield rose more than the 10-year yield",
+        "zh": "美国CPI高于预期，2年期美债收益率升幅超过10年期"
       },
       "grade": "STRONG",
       "assets": [
@@ -332,10 +390,14 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "October consumer prices rose 0.4% on the month and core prices rose 0.3%, above estimates of 0.3% and 0.2%, 华尔街见闻 reported. The 2-year yield rose 18 basis points to 4.725%, and the 10-year yield rose 12.55 basis points to 4.9875%.",
-        "zh": "华尔街见闻：10月消费价格环比上涨0.4%，核心价格上涨0.3%，高于0.3%和0.2%的估计。两年期收益率上涨18个基点至4.725%，10年期上涨12.55个基点至4.9875%。"
+        "en": "BLS: consumer prices rose 0.4% in October from September, slower than September's 0.6% rise, and core prices rose 0.3%. Both readings were above the 0.3% and 0.2% forecasts, and the 2-year yield rose 18 basis points to 4.725% while the 10-year yield rose 12.55 basis points to 4.9875%, 华尔街见闻 reported. The Market snapshot shows the Treasury's official daily yields instead.",
+        "zh": "美国劳工统计局：10月CPI环比上涨0.4%，低于9月的0.6%，核心CPI环比上涨0.3%。华尔街见闻：两者分别高于0.3%和0.2%的市场预期，2年期美债收益率上涨18个基点至4.725%，10年期上涨12.55个基点至4.9875%。行情快照展示的是美国财政部官方日度收益率。"
       },
       "factSources": [
+        {
+          "label": "BLS CPI October",
+          "href": "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+        },
         {
           "label": "华尔街见闻 11月11日早餐",
           "href": "https://wallstreetcn.com/articles/3785684"
@@ -382,8 +444,8 @@
     {
       "id": "anthropic-raise",
       "title": {
-        "en": "Anthropic seeks up to 90.4 billion dollars through an IPO and a private placement",
-        "zh": "Anthropic拟通过IPO和私募配售合计筹资至多904亿美元"
+        "en": "Anthropic's IPO and concurrent private placement total up to about 90.4 billion dollars",
+        "zh": "Anthropic IPO与同步私募交易总规模最高约904亿美元"
       },
       "grade": "MODERATE",
       "assets": [
@@ -394,18 +456,22 @@
       ],
       "status": "new",
       "fact": {
-        "en": "Seven Anthropic co-founders plan to sell 1.75 billion dollars of shares, and Anthropic is seeking up to 90.4 billion dollars through an IPO and a private placement together, at a fully diluted value of about 1.4 trillion dollars, 律动 reported.",
-        "zh": "律动：Anthropic的七位创始人计划出售17.5亿美元股票。公司拟通过IPO和私募配售合计筹资至多904亿美元，完全稀释价值约1.4万亿美元。"
+        "en": "Anthropic's amended S-1 sets a price range of 70 to 78 dollars a share, adds a 26.0 billion dollar concurrent private placement, and has existing holders selling shares in the IPO. At the 74 dollar midpoint, the filing puts net proceeds to Anthropic at about 84.6 billion dollars, before the underwriters' option to buy more shares. 律动 reported a total deal size of up to 90.4 billion dollars including the holders' sale, and that seven co-founders plan to sell 1.75 billion dollars of shares.",
+        "zh": "Anthropic修订版S-1招股书：发行价区间为每股70至78美元，另有260亿美元同步私募，部分现有股东在IPO中出售老股。按74美元的区间中点估算，公司净募资约846亿美元，未计承销商超额配售。律动：交易总规模最高约904亿美元，含老股出售；七位联合创始人计划出售17.5亿美元股票。"
       },
       "factSources": [
+        {
+          "label": "SEC Anthropic S-1/A",
+          "href": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+        },
         {
           "label": "律动 Anthropic",
           "href": "https://en.theblockbeats.news/flash/376644"
         }
       ],
       "mechanism": {
-        "en": "The founders' sale and the company raise are both Anthropic's, in one filing. BlockBeats (11 November): the seven co-founders plan to sell 1.75 billion dollars of shares, and the company is seeking up to 90.4 billion dollars through the IPO and a private placement together. The day's note gives no link from that fundraising to Nvidia's share move.",
-        "zh": "创始人出售和公司筹资都是Anthropic的，写在同一份文件里。律动（11月11日）：七位创始人计划出售17.5亿美元股票，公司拟通过IPO和私募配售合计筹资至多904亿美元。当天的记录没有把这笔筹资写成英伟达股价的原因。"
+        "en": "The 90.4 billion dollar figure is the whole deal, not the cash Anthropic keeps: it counts the private placement and the shares existing holders sell at the top of the range. The company's own estimate is about 84.6 billion dollars at the 74 dollar midpoint, and the founders' sale goes to the founders. 财经早茶 (11 November): the deal could pass the record SpaceX set. The effect is on US equities through the new listing, and the day's notes give no link from it to Nvidia's share move. A final price outside the 70 to 78 dollar range would change both the deal size and the net proceeds.",
+        "zh": "904亿美元是整笔交易的规模，不是Anthropic留下的钱：按区间上限计算，它包括同步私募和现有股东出售的老股。按74美元的区间中点，公司自己估算的净募资约846亿美元，创始人售股的钱归创始人。财经早茶（11月11日）：这笔交易规模有望超过SpaceX创下的纪录。影响落在美股的新上市上，当天的记录没有把它和英伟达股价联系起来。若最终发行价落在70至78美元区间之外，交易规模和净募资都会改变。"
       }
     },
     {
@@ -452,8 +518,8 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "December COMEX gold futures fell 2.0% to settle at 4030.20 dollars an ounce, 华尔街见闻 reported.",
-        "zh": "华尔街见闻：COMEX 12月黄金期货下跌2.0%，结算价为每盎司4030.20美元。"
+        "en": "December COMEX gold futures fell 2.0% to settle at 4030.20 dollars an ounce on 10 November, 华尔街见闻 reported. The Market snapshot shows Yahoo's intraday gold futures quote, not this settle.",
+        "zh": "华尔街见闻：11月10日COMEX 12月黄金期货下跌2.0%，结算价为每盎司4030.20美元。行情快照展示的是Yahoo黄金期货盘中价，不是这个结算价。"
       },
       "factSources": [
         {
@@ -549,8 +615,8 @@
         }
       ],
       "mechanism": {
-        "en": "Exports rose 35.2% from a year earlier, 1.1 percentage points slower than September, and imports rose 41.6%. CICC (10 November): exports matched the survey, imports were above it, and the rise in export prices may already be past its peak, so the overall pace can slow as the base gets higher. Those paces did not come with a large move in A-shares.",
-        "zh": "出口同比增长35.2%，较9月放缓1.1个百分点，进口同比增长41.6%。中金（11月10日）：出口与调查一致，进口高于调查，出口价格的升幅或已过高点，所以随着基数抬高，整体增速可以放缓。这样的增速没有让A股出现大的波动。"
+        "en": "Exports rose 35.2% from a year earlier, 1.1 percentage points slower than September, and imports rose 41.6%. CICC (10 November): exports matched the survey, imports were above it, and the rise in export prices may already be past its peak, so the overall pace could slow as the base gets higher. Those paces did not come with a large move in A-shares.",
+        "zh": "出口同比增长35.2%，较9月放缓1.1个百分点，进口同比增长41.6%。中金（11月10日）：出口与调查一致，进口高于调查，出口价格的升幅或已过高点，所以随着基数抬高，整体增速可能放缓。这样的增速没有让A股出现大的波动。"
       }
     },
     {
@@ -568,18 +634,22 @@
       ],
       "status": "new",
       "fact": {
-        "en": "The head of the Bundesbank said euro-area consumer-price gains are too high, and the ECB has a solid reason to raise rates next month, 财经早茶 reported.",
-        "zh": "财经早茶：德国央行行长表示，欧元区消费者价格涨幅过高，欧洲央行下个月有充分理由加息。"
+        "en": "Eurostat: the October flash estimate puts euro-area inflation at 4.0% from a year earlier, twice the ECB's 2% target, and 2.5% excluding energy, food, alcohol and tobacco. The head of the Bundesbank said euro-area consumer-price gains are too high, and the ECB has a solid reason to raise rates next month, 财经早茶 reported.",
+        "zh": "欧盟统计局：10月初值显示欧元区通胀同比4.0%，是欧洲央行2%目标的两倍，剔除能源、食品、酒精和烟草后为2.5%。财经早茶：德国央行行长表示，欧元区消费者价格涨幅过高，欧洲央行下个月有充分理由加息。"
       },
       "factSources": [
+        {
+          "label": "Eurostat October flash HICP",
+          "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap"
+        },
         {
           "label": "彭博财经早茶 Nov 11",
           "href": "https://www.bloomberg.com/asia"
         }
       ],
       "mechanism": {
-        "en": "On the chart, euro-area headline inflation is about twice the target, and core inflation is still near it, so the gap is in the headline rate. 财经早茶 (11 November): euro-area consumer prices are too high, and there is a solid reason to raise rates next month. European government bonds fell with US Treasuries.",
-        "zh": "图上欧元区整体通胀大约是目标的两倍，核心通胀仍靠近目标，所以缺口在整体通胀。财经早茶（11月11日）：欧元区消费价格过高，下个月有充分理由加息。欧洲国债跟着美国国债下跌。"
+        "en": "Headline inflation is at 4.0% while the measure excluding energy, food, alcohol and tobacco is at 2.5%, so most of the gap to the 2% target is in the headline rate. 财经早茶 (11 November): euro-area consumer prices are too high, and there is a solid reason to raise rates next month. European government bonds fell with US Treasuries.",
+        "zh": "整体通胀为4.0%，剔除能源、食品、酒精和烟草后为2.5%，所以与2%目标的缺口主要在整体通胀。财经早茶（11月11日）：欧元区消费价格过高，下个月有充分理由加息。欧洲国债跟着美国国债下跌。"
       }
     },
     {
@@ -597,8 +667,8 @@
       ],
       "status": "new",
       "fact": {
-        "en": "US spot bitcoin ETFs had a net outflow of 201 million dollars, 律动 reported, citing Farside.",
-        "zh": "律动引述Farside：美国现货比特币ETF净流出2.01亿美元。"
+        "en": "US spot bitcoin ETFs had a net outflow of 201 million dollars on 9 November, US time, 律动 reported, citing Farside.",
+        "zh": "律动引述Farside：美国现货比特币ETF在美东时间11月9日净流出2.01亿美元。"
       },
       "factSources": [
         {
@@ -607,14 +677,14 @@
         }
       ],
       "mechanism": {
-        "en": "A net outflow means those funds redeemed more than they created, so coins left the listed product. BlockBeats (10 November): that day's net outflow was 201 million dollars. The effect is in the US spot bitcoin ETFs.",
-        "zh": "净流出意味着这些基金的赎回多于申购，所以币离开了这个上市产品。律动（11月10日）：当天净流出2.01亿美元。影响在美国现货比特币ETF。"
+        "en": "The figure is a net flow across the funds, not a change in their bitcoin holdings. BlockBeats (10 November), citing Farside: the net outflow on 9 November was 201 million dollars. The effect is on US spot bitcoin ETFs; the day's sources give no holdings data, so any change in the funds' bitcoin balances is not known. Issuer holdings reports would show whether those balances fell.",
+        "zh": "这是这些基金合计的净流量，不是它们比特币持仓的变化。律动（11月10日）引述Farside：11月9日净流出2.01亿美元。影响在美国现货比特币ETF；当天的来源没有持仓数据，所以基金的比特币持仓有没有变化并不清楚。发行商的持仓报告能说明持仓是否下降。"
       }
     }
   ],
   "globalRegime": {
-    "en": "US stocks fell, and Treasury yields rose, after US consumer prices rose 0.4% in October from the previous month, above the 0.3% forecast. The 2-year yield rose more than the 10-year yield. Crude futures fell again, with Brent under 90 dollars during the session, and December COMEX gold futures fell 2%. China's exports rose 35.2% from a year earlier, brokers have started buying shares, and Shanghai edged higher. On the chart, euro-area headline inflation is about twice the target, and core inflation is still near it.",
-    "zh": "美国10月消费价格环比上涨0.4%，高于预期的0.3%，美股下跌，美债收益率上升。两年期收益率升幅大于十年期。原油期货续跌，布伦特盘中跌到90美元下方，COMEX 12月黄金期货下跌2%。中国10月出口同比增长35.2%，券商已经开始买入股票，上证小幅收高。图上，欧元区整体通胀大约是目标的两倍，核心通胀仍靠近目标。"
+    "en": "US stocks fell, and Treasury yields rose, after US consumer prices rose 0.4% in October from the previous month, slower than September's 0.6% but above the 0.3% forecast. The 2-year yield rose more than the 10-year yield. Crude futures fell again, with Brent under 90 dollars during the session, and December COMEX gold futures fell 2%. China's exports rose 35.2% from a year earlier, brokers have started buying shares, and Shanghai edged higher. Eurostat's October flash puts euro-area inflation at 4.0%, twice the ECB target, and 2.5% excluding energy, food, alcohol and tobacco.",
+    "zh": "美国10月CPI环比上涨0.4%，低于9月的0.6%，但高于市场预期的0.3%，美股下跌，美债收益率上升。两年期收益率升幅大于十年期。原油期货续跌，布伦特盘中跌到90美元下方，COMEX 12月黄金期货下跌2%。中国10月出口同比增长35.2%，券商已经开始买入股票，上证小幅收高。欧盟统计局10月初值显示欧元区通胀为4.0%，是欧洲央行目标的两倍，剔除能源、食品、酒精和烟草后为2.5%。"
   },
   "globalChanged": [
     {
@@ -643,8 +713,8 @@
     },
     {
       "text": {
-        "en": "Anthropic plans to raise up to 90.4 billion dollars through an IPO and a private placement, which could pass the record SpaceX set, and the fully diluted value would be about 1.4 trillion dollars. Goldman Sachs is reported to expect 685 billion dollars of revenue by 2030, 财经早茶 reported.",
-        "zh": "财经早茶：Anthropic拟通过IPO和私募配售筹资至多904亿美元，规模有望超SpaceX创下的纪录，完全摊薄估值将约为1.4万亿美元。高盛据悉预测该公司到2030年营收将达6850亿美元。"
+        "en": "Anthropic's IPO and private placement could total up to 90.4 billion dollars, including shares sold by existing holders, which could pass the record SpaceX set, and the fully diluted value would be about 1.4 trillion dollars. Goldman Sachs is reported to expect 685 billion dollars of revenue by 2030, 财经早茶 reported.",
+        "zh": "财经早茶：Anthropic的IPO与同步私募交易总规模最高约904亿美元，含老股出售，规模有望超SpaceX创下的纪录，完全摊薄估值将约为1.4万亿美元。高盛据悉预测该公司到2030年营收将达6850亿美元。"
       },
       "sources": [
         {
@@ -801,26 +871,26 @@
   "globalImplies": [
     {
       "text": {
-        "en": "If core prices keep rising 0.3% a month, the 2-year yield can stay above 4.725%.",
-        "zh": "如果核心价格继续每个月上涨0.3%，两年期收益率可以维持在4.725%上方。"
+        "en": "If core prices keep rising 0.3% a month, the 2-year yield could stay above 4.725%.",
+        "zh": "若核心CPI继续每月上涨0.3%，2年期美债收益率可能维持在4.725%上方。"
       }
     },
     {
       "text": {
-        "en": "If the Iran talks break, the drop in December WTI and January Brent can reverse.",
-        "zh": "如果伊朗谈判破裂，12月WTI和1月布伦特的下跌可以反过来。"
+        "en": "If the US-Iran talks break down, oil prices could rebound.",
+        "zh": "若美伊谈判破裂，油价可能反弹。"
       }
     },
     {
       "text": {
-        "en": "If the headline line on the chart comes back to the core line, the euro-area gap the Bundesbank is pointing at narrows.",
-        "zh": "如果图上的整体那条线回到核心那条线，德国央行指出的欧元区缺口会收窄。"
+        "en": "If euro-area headline inflation falls back toward the 2.5% rate excluding energy, food, alcohol and tobacco, the gap the Bundesbank pointed to could narrow.",
+        "zh": "若欧元区整体通胀回落到接近剔除能源、食品、酒精和烟草后的2.5%，德国央行指出的缺口可能收窄。"
       }
     }
   ],
   "globalTensions": {
-    "en": "US stocks fell with higher yields, while Japanese and Korean stocks rose. Crude and gold fell together. The desk notes give different reasons: Qatar is still pressing for a US-Iran understanding on crude, and rate-increase bets for gold. Nvidia fell more than the indexes. Anthropic's co-founders plan to sell 1.75 billion dollars of shares, and the company is seeking up to 90.4 billion dollars through an IPO and a private placement.",
-    "zh": "美股随收益率上升而下跌，日韩股市上涨。原油和黄金一起下跌。简报里的原因不同：原油对应卡塔尔仍在推动的美伊谈判，黄金对应加息押注。英伟达跌幅大于指数。Anthropic的创始人计划出售17.5亿美元股票，公司拟通过IPO和私募配售合计筹资至多904亿美元。"
+    "en": "US stocks fell with higher yields, while Japanese and Korean stocks rose. Crude and gold fell together. The desk notes give different reasons: Qatar is still pressing for a US-Iran understanding on crude, and rate-increase bets for gold. Nvidia fell more than the indexes. Anthropic's co-founders plan to sell 1.75 billion dollars of shares, and the company's IPO and private placement total up to 90.4 billion dollars including that sale, while net proceeds to Anthropic are about 84.6 billion dollars at the midpoint of the price range.",
+    "zh": "美股随收益率上升而下跌，日韩股市上涨。原油和黄金一起下跌。简报里的原因不同：原油对应卡塔尔仍在推动的美伊谈判，黄金对应加息押注。英伟达跌幅大于指数。Anthropic的创始人计划出售17.5亿美元股票，IPO与同步私募交易总规模最高约904亿美元，含老股出售；按发行价区间中点估算，公司净募资约846亿美元。"
   },
   "chinaStance": {
     "en": "The third swap facility has moved from an announcement into share buying, and Shanghai closed slightly higher. China's October exports rose 35.2% from a year earlier, 1.1 percentage points slower than September. Offshore yuan was a bit weaker on the session.",
@@ -927,14 +997,14 @@
   "chinaImplies": [
     {
       "text": {
-        "en": "If the base effect lifts, the 35.2% export pace can slow, which is what CICC described on 10 November.",
-        "zh": "如果基数抬高，35.2%的出口增速可以放缓，这是中金11月10日描述的路径。"
+        "en": "If the base effect lifts, the 35.2% export pace could slow, which is what CICC described on 10 November.",
+        "zh": "若基数抬高，35.2%的出口增速可能放缓，这是中金11月10日描述的情形。"
       }
     },
     {
       "text": {
-        "en": "If the broker buying stops and Shanghai closes lower, the support from the third swap facility fades.",
-        "zh": "如果券商停止买入，并且上证收低，第三批互换便利的支撑会消退。"
+        "en": "If the broker buying stops and Shanghai closes lower, the support from the third swap facility could fade.",
+        "zh": "若券商停止买入、上证收低，第三批互换便利的支撑可能消退。"
       }
     }
   ],
@@ -1114,6 +1184,7 @@
         "id": "cn-fx-rrr-2026-11-15",
         "date": "2026-11-15",
         "timeBeijing": "",
+        "timing": "all-day",
         "region": "China",
         "category": "central-bank",
         "event": {
@@ -1129,6 +1200,7 @@
         "id": "anthropic-ipo-2026-11-18",
         "date": "2026-11-18",
         "timeBeijing": "",
+        "timing": "unconfirmed",
         "region": "US",
         "category": "ipo",
         "event": {
@@ -1174,10 +1246,10 @@
     ]
   },
   "sources": {
-    "en": "The mail copy is the 11 November 财经早茶. Tuesday equity, yield, oil, gold, and Asia closes are 华尔街见闻. October trade is 财新. 律动 covers Anthropic's founder share sale and the IPO plus private placement, the bitcoin ETF outflow, the Qatar talks, and Goolsbee. CICC's 10 November note sits on exports. The chart figures are approximate readings from the chart.",
-    "zh": "邮件底稿是11月11日财经早茶。周二的股票、收益率、原油、黄金和亚洲收盘来自华尔街见闻。10月贸易来自财新。律动覆盖Anthropic创始人售股，以及IPO与私募配售合计筹资、比特币ETF流出、卡塔尔谈判和古尔斯比。中金11月10日的笔记写在出口上。图上的数字是从图上读出的约数。"
+    "en": "The mail copy is the 11 November 财经早茶. Tuesday equity, yield, oil, gold, and Asia closes are 华尔街见闻. October trade is 财新. 律动 covers Anthropic's founder share sale and the total IPO plus private placement deal size; the SEC filing gives net proceeds. BLS and Eurostat give the CPI and euro-area inflation releases. 律动 also covers the bitcoin ETF outflow, the Qatar talks, and Goolsbee. CICC's 10 November note sits on exports. The chart figures are approximate readings from the chart.",
+    "zh": "邮件底稿是11月11日财经早茶。周二的股票、收益率、原油、黄金和亚洲收盘来自华尔街见闻。10月贸易来自财新。律动覆盖Anthropic创始人售股和IPO与同步私募交易总规模，SEC招股书给出净募资。BLS和欧盟统计局给出CPI和欧元区通胀数据。律动还覆盖比特币ETF流出、卡塔尔谈判和古尔斯比。中金11月10日的笔记写在出口上。图上的数字是从图上读出的约数。"
   },
-  "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market closes are the inject snapshot. The chart heights are approximate readings of the image. Desk lines name the desk.",
+  "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market snapshot are the inject snapshot. The chart heights are approximate readings of the image. Desk lines name the desk.",
   "marketDashboard": {
     "asOf": "2026-11-11T01:31:14.806Z",
     "note": {
@@ -1301,6 +1373,10 @@
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            },
+            "printNote": {
+              "en": "The text cites 4.725%, up 18 basis points, from the 10 November market close (华尔街见闻).",
+              "zh": "正文引用的是11月10日市场收盘4.725%，上涨18个基点（华尔街见闻）。"
             }
           },
           {
@@ -1325,6 +1401,10 @@
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            },
+            "printNote": {
+              "en": "The text cites 4.9875%, up 12.55 basis points, from the 10 November market close (华尔街见闻).",
+              "zh": "正文引用的是11月10日市场收盘4.9875%，上涨12.55个基点（华尔街见闻）。"
             }
           },
           {
@@ -1379,6 +1459,11 @@
             "source": {
               "label": "Yahoo Finance (GC=F)",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            },
+            "contract": "2026-12",
+            "printNote": {
+              "en": "The text cites the 10 November COMEX December settle, 4,030.20 dollars (华尔街见闻).",
+              "zh": "正文引用的是11月10日COMEX 12月合约结算价4,030.20美元（华尔街见闻）。"
             }
           },
           {
@@ -1391,6 +1476,10 @@
             "source": {
               "label": "Yahoo Finance (BZ=F)",
               "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            },
+            "printNote": {
+              "en": "The text cites January Brent at 91.49 dollars on 10 November (华尔街见闻).",
+              "zh": "正文引用的是11月10日1月布伦特91.49美元（华尔街见闻）。"
             }
           },
           {
