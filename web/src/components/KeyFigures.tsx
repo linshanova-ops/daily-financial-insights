@@ -105,7 +105,9 @@ function BarRows({
 function FigureSource({ figure }: { figure: BriefingFigure }) {
   return (
     <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1">
-      <SourceButton sources={[figure.source]} />
+      <SourceButton
+        sources={[figure.source, ...(figure.sources ?? []).filter((s) => s.href !== figure.source.href)]}
+      />
       {figure.note ? (
         <span className="text-xs text-ink/50">
           <Prose text={figure.note} />

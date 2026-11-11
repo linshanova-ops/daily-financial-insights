@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { sourcesWithHref } from "./source-links.ts";
-import { sessionKind, shanghaiQuote } from "./session-print.ts";
+import { quoteKind, sessionKind, shanghaiQuote } from "./session-print.ts";
 
 const SNAP = "2026-10-28T01:19:25.942Z";
 
@@ -29,9 +29,17 @@ describe("sessionKind at the 09:19 Asia/Shanghai snapshot", () => {
     );
   });
 
-  it("prints the Shanghai quote time", () => {
+  it("prints the Shanghai quote date and time", () => {
     const q = shanghaiQuote(SNAP);
-    assert.match(q, /^09:19 /);
+    assert.match(q, /^2026-10-28 09:19 /);
     assert.match(q, /GMT\+8|UTC\+8/);
+  });
+
+  it("labels yields, 24h crypto change, and funding apart from closes", () => {
+    assert.equal(quoteKind("us10y", "2026-10-27", SNAP), "yield");
+    assert.equal(quoteKind("btc", "2026-10-28", SNAP), "24h");
+    assert.equal(quoteKind("btc-funding", "2026-10-28", SNAP), "funding");
+    assert.equal(quoteKind("gold", "2026-10-28", SNAP), "intraday");
+    assert.equal(quoteKind("spx", "2026-10-27", SNAP), "close");
   });
 });

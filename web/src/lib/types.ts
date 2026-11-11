@@ -86,13 +86,22 @@ export type EventCategory =
   | "central-bank"
   | "earnings"
   | "ipo"
-  | "fiscal-flow";
+  | "fiscal-flow"
+  | "holiday"
+  | "geopolitics";
 
 /** Dated release / speech in the Event Calendar (replaces narrative Watch). */
 export interface CalendarEvent {
   id: string;
   date: string;
   timeBeijing?: string;
+  /**
+   * Status when `timeBeijing` is empty: all-day (holiday, effective date),
+   * tbd (event confirmed, clock not), unconfirmed (the event itself is not).
+   * Default: holiday → all-day, else tbd. A timed row at or before publish is
+   * "past scheduled time" on the page — not proof it happened.
+   */
+  timing?: "all-day" | "tbd" | "unconfirmed";
   region: EventRegion;
   category: EventCategory;
   event: string;
@@ -173,11 +182,14 @@ export interface BriefingFigure {
   /** English-labeled copy of imageSrc. Chinese page keeps imageSrc. */
   imageSrcEn?: string;
   source: FactSource;
-  /** Optional extra cites for accuracy gate (UI still uses `source`). */
+  /** Extra cites shown beside `source` (e.g. the official release behind the chart's numbers). */
   sources?: FactSource[];
 }
 
-/** One tape row in the Market Dashboard closes table. */
+/**
+ * One row in the Market snapshot. The page labels the quote type from `id`
+ * (close / intraday / official daily yield / 24h change / funding print).
+ */
 export interface MarketDashboardRow {
   id: string;
   asset: string;
@@ -186,7 +198,9 @@ export interface MarketDashboardRow {
   changeDirection?: "up" | "down" | "flat";
   asOfDate: string;
   source: FactSource;
-  /** Futures vs the other print, when this row is not that print. */
+  /** Futures contract month (YYYY-MM), only when the feed names it. */
+  contract?: string;
+  /** Holiday/stale gap, or how this quote differs from the one the text cites. */
   printNote?: string;
 }
 
@@ -196,7 +210,7 @@ export interface MarketDashboardGroup {
   rows: MarketDashboardRow[];
 }
 
-/** Snapshot of market closes captured at briefing generate time. */
+/** Market snapshot captured at briefing generate time. */
 export interface MarketDashboard {
   asOf: string;
   note?: string;
@@ -228,8 +242,12 @@ export interface BriefingFrontmatter {
   date: string;
   title: string;
   coverageWindow: string;
-  /** ISO timestamp when this briefing was published (UTC). */
+  /** ISO timestamp when this briefing was first published (UTC). Never moved by a correction. */
   publishedAt?: string;
+  /** ISO timestamp of the latest post-publish correction (UTC). */
+  updatedAt?: string;
+  /** One line per correction to a number, event time, or attribution. */
+  corrections?: string[];
   marketTone: string;
   summary: FactLine[];
   signal: string;
@@ -240,12 +258,12 @@ export interface BriefingFrontmatter {
   figures?: BriefingFigure[];
   /**
    * Qualitative 市场一览 desk color from 彭博 daily email.
-   * Site chrome: Markets at a glance, after Market closes — not a substitute
+   * Site chrome: Markets at a glance, after Market snapshot — not a substitute
    * for marketDashboard prints.
    */
   marketOverview?: MarketOverview;
   /**
-   * Market closes tape (indices / yields / FX / commodities / crypto).
+   * Market snapshot (indices / yields / FX / commodities / crypto).
    * Populated at generate time by fetch-market-closes.mjs — not live on the page.
    */
   marketDashboard?: MarketDashboard;

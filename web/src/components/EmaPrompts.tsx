@@ -12,8 +12,8 @@ const PROMPTS = emaPrompts(EMA_FORM);
 const QUESTIONS: Record<string, { field: "affect" | "thinking"; en: string; zh: string; options: string[][] }> = {
   "market-closes": {
     field: "affect",
-    en: "How do these closes make you feel right now?",
-    zh: "看到这些收盘数据，你现在的感受是？",
+    en: "How do these market numbers make you feel right now?",
+    zh: "看到这些行情数据，你现在的感受是？",
     options: [
       ["😰", "Anxious", "焦虑"],
       ["😟", "Uneasy", "有点不安"],

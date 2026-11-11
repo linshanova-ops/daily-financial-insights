@@ -1,4 +1,5 @@
-import type { CalendarEvent, EventCalendar } from "@/lib/types";
+import type { EventCalendar } from "@/lib/types";
+import { calendarStatus, sortCalendar } from "@/lib/event-calendar-window";
 import { regionZh } from "@/lib/lang";
 import { KindLabel } from "./KindLabel";
 import { L } from "./L";
@@ -8,15 +9,16 @@ import { SourceButton } from "./SourceButton";
 interface EventCalendarViewProps {
   calendar: EventCalendar;
   themeTitles?: Record<string, string>;
+  /** Status clock: this issue's publish time, not the reader's. */
+  publishedAt?: string | null;
 }
 
-function sortEvents(events: CalendarEvent[]): CalendarEvent[] {
-  return [...events].sort((a, b) => {
-    const byDate = a.date.localeCompare(b.date);
-    if (byDate !== 0) return byDate;
-    return (a.timeBeijing ?? "99:99").localeCompare(b.timeBeijing ?? "99:99");
-  });
-}
+const STATUS = {
+  past: { en: "Past scheduled time", zh: "已过预定时间" },
+  "all-day": { en: "All day", zh: "全天" },
+  tbd: { en: "Time TBD", zh: "时间未定" },
+  unconfirmed: { en: "Event unconfirmed", zh: "事件待确认" },
+};
 
 function formatDay(iso: string, lang: "en" | "zh"): string {
   const dt = new Date(`${iso}T12:00:00Z`);
@@ -33,8 +35,9 @@ function formatDay(iso: string, lang: "en" | "zh"): string {
 export function EventCalendarView({
   calendar,
   themeTitles = {},
+  publishedAt,
 }: EventCalendarViewProps) {
-  const events = sortEvents(calendar.events ?? []);
+  const events = sortCalendar(calendar.events ?? [], publishedAt);
 
   return (
     <section
@@ -70,16 +73,20 @@ export function EventCalendarView({
           </p>
         ) : (
           <ul className="mt-4 divide-y divide-line/70 border-y border-line/70">
-            {events.map((row) => (
+            {events.map((row) => {
+              const status = calendarStatus(row, publishedAt);
+              return (
               <li
                 key={row.id}
-                className="flex flex-wrap items-baseline gap-x-2 gap-y-1 py-2 text-sm sm:grid sm:grid-cols-[5.5rem_3rem_4rem_minmax(10rem,1fr)_minmax(0,1fr)] sm:py-1.5"
+                className="flex flex-wrap items-baseline gap-x-2 gap-y-1 py-2 text-sm sm:grid sm:grid-cols-[5.5rem_6.5rem_4rem_minmax(10rem,1fr)_minmax(0,1fr)] sm:py-1.5"
               >
                 <span className="tabular-nums text-xs text-ink/45">
                   <L en={formatDay(row.date, "en")} zh={formatDay(row.date, "zh")} />
                 </span>
                 <span className="tabular-nums text-xs text-ink/45">
-                  {row.timeBeijing || <L en="unconfirmed" zh="待确认" />}
+                  {row.timeBeijing}
+                  {row.timeBeijing && status ? " · " : null}
+                  {status ? <L {...STATUS[status]} /> : null}
                 </span>
                 <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-ink/40">
                   <L en={row.region} zh={regionZh(row.region)} />
@@ -125,7 +132,8 @@ export function EventCalendarView({
                   />
                 </span>
               </li>
-            ))}
+              );
+            })}
           </ul>
         )}
       </div>

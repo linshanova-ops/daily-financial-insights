@@ -210,6 +210,15 @@ export function gapPrintNote(gap) {
   };
 }
 
+/** Yahoo futures meta "Gold Dec 26" → "2026-12". Null when the feed does not name a month. */
+export function contractMonth(meta = {}) {
+  if (meta.instrumentType !== "FUTURE") return null;
+  const m = /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{2})$/.exec(meta.shortName || "");
+  if (!m) return null;
+  const mm = "JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(m[1]) / 3 + 1;
+  return `20${m[2]}-${String(mm).padStart(2, "0")}`;
+}
+
 /** Parse MM/DD/YYYY treasury CSV date → YYYY-MM-DD */
 export function parseUsDate(mdy) {
   const m = String(mdy).trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);

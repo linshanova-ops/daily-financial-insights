@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import {
   changeDirection,
+  contractMonth,
   formatBpChange,
   formatLevel,
   formatPctChange,
@@ -224,5 +225,11 @@ describe("market-closes-format", () => {
     );
     assert.equal(yahooPrevIsUsable(4183.68, 4183.68017578125), false);
     assert.equal(yahooPrevIsUsable(4157.94, 4183.68), true);
+  });
+
+  it("names a futures contract month only when Yahoo does", () => {
+    assert.equal(contractMonth({ instrumentType: "FUTURE", shortName: "Gold Dec 26" }), "2026-12");
+    assert.equal(contractMonth({ instrumentType: "FUTURE", shortName: "Brent Crude Oil Last Day Financ" }), null);
+    assert.equal(contractMonth({ instrumentType: "INDEX", shortName: "Nikkei Dec 26" }), null);
   });
 });

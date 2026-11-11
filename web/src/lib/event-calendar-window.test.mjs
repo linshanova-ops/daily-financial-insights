@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import {
+  calendarStatus,
   eventWindowForBriefingDate,
+  sortCalendar,
   nextFridayOnOrAfter,
   nextWeekFridayAfter,
 } from "./event-calendar-window.ts";
@@ -44,5 +46,27 @@ describe("eventWindowForBriefingDate", () => {
       windowStart: "2026-08-06",
       windowEnd: "2026-08-14",
     });
+  });
+});
+
+describe("calendar status at publish time", () => {
+  const PUB = "2026-08-06T01:30:00.000Z"; // 09:30 Beijing
+  const rows = [
+    { id: "later", date: "2026-08-07", timeBeijing: "20:30" },
+    { id: "tbd", date: "2026-08-06", timeBeijing: "" },
+    { id: "early", date: "2026-08-06", timeBeijing: "07:30" },
+    { id: "holiday", date: "2026-08-06", timeBeijing: "", category: "holiday" },
+    { id: "noon", date: "2026-08-06", timeBeijing: "12:00" },
+    { id: "maybe", date: "2026-08-10", timing: "unconfirmed" },
+  ];
+
+  it("marks a time at or before publish as past, untimed rows by their timing", () => {
+    const status = Object.fromEntries(rows.map((r) => [r.id, calendarStatus(r, PUB)]));
+    assert.deepEqual(status, { later: null, tbd: "tbd", early: "past", holiday: "all-day", noon: null, maybe: "unconfirmed" });
+    assert.equal(calendarStatus(rows[2], null), null);
+  });
+
+  it("puts trackable rows first by time and past-time rows last", () => {
+    assert.deepEqual(sortCalendar(rows, PUB).map((r) => r.id), ["holiday", "noon", "tbd", "later", "maybe", "early"]);
   });
 });

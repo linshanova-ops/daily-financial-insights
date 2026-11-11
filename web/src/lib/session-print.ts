@@ -56,6 +56,18 @@ export function sessionKind(
   return snap >= zonedEpoch(asOfDate, spec.close, spec.timeZone) ? "close" : "intraday";
 }
 
+/** Quote type shown beside each Market snapshot row. */
+export function quoteKind(
+  id: string,
+  asOfDate: string,
+  snapshotIso?: string,
+): "close" | "intraday" | "yield" | "24h" | "funding" {
+  if (/^us\d+y$/.test(id)) return "yield";
+  if (id === "btc") return "24h";
+  if (id === "btc-funding") return "funding";
+  return snapshotIso ? sessionKind(id, asOfDate, snapshotIso) : "close";
+}
+
 /** Quote clock for an intraday row. One zone: the snapshot is Asia/Shanghai. */
 export function shanghaiQuote(snapshotIso: string): string {
   const parts = new Intl.DateTimeFormat("en-GB", {
@@ -66,5 +78,6 @@ export function shanghaiQuote(snapshotIso: string): string {
     timeZoneName: "shortOffset",
   }).formatToParts(new Date(snapshotIso));
   const get = (type: string) => parts.find((p) => p.type === type)?.value ?? "";
-  return `${get("hour")}:${get("minute")} ${get("timeZoneName")}`.trim();
+  const day = new Date(snapshotIso).toLocaleDateString("en-CA", { timeZone: "Asia/Shanghai" });
+  return `${day} ${get("hour")}:${get("minute")} ${get("timeZoneName")}`.trim();
 }

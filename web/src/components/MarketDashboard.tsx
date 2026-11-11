@@ -2,7 +2,7 @@ import type { MarketDashboard as MarketDashboardData, MarketDashboardRow } from 
 import type { LangText } from "@/lib/lang-text";
 import { assetZh, groupZh } from "@/lib/lang";
 import { accents } from "@/lib/module-accents";
-import { sessionKind, shanghaiQuote } from "@/lib/session-print";
+import { quoteKind, shanghaiQuote } from "@/lib/session-print";
 import { L } from "./L";
 import { Prose } from "./Prose";
 import { SourceButton } from "./SourceButton";
@@ -28,11 +28,6 @@ function changeClass(direction?: "up" | "down" | "flat"): string {
   return "text-ink-soft";
 }
 
-function rowKind(row: MarketDashboardRow, snapshot?: string): "close" | "intraday" {
-  if (!snapshot) return "close";
-  return sessionKind(row.id, row.asOfDate, snapshot);
-}
-
 function SessionMark({
   row,
   snapshot,
@@ -40,14 +35,30 @@ function SessionMark({
   row: MarketDashboardRow;
   snapshot?: string;
 }) {
-  const kind = rowKind(row, snapshot);
-  if (kind === "close") {
-    return (
-      <L en={`${row.asOfDate} close`} zh={`${row.asOfDate} 收盘`} />
-    );
+  const quote = snapshot ? shanghaiQuote(snapshot) : row.asOfDate;
+  switch (quoteKind(row.id, row.asOfDate, snapshot)) {
+    case "intraday":
+      return <L en={`${quote} intraday`} zh={`${quote} 盘中`} />;
+    case "yield":
+      return <L en={`${row.asOfDate} official daily yield`} zh={`${row.asOfDate} 官方日度收益率`} />;
+    case "24h":
+      return <L en={`24h change to ${quote}`} zh={`截至 ${quote} 的24小时变动`} />;
+    case "funding":
+      return <L en={`${row.asOfDate} funding print`} zh={`${row.asOfDate} 资金费率结算`} />;
+    default:
+      return <L en={`${row.asOfDate} close`} zh={`${row.asOfDate} 收盘`} />;
   }
-  const quote = snapshot ? shanghaiQuote(snapshot) : "";
-  return <L en={`intraday ${quote}`} zh={`盘中 ${quote}`} />;
+}
+
+function Contract({ month }: { month?: string }) {
+  const m = month && /^(\d{4})-(\d{2})$/.exec(month);
+  if (!m) return null;
+  const en = new Date(Date.UTC(+m[1], +m[2] - 1, 15)).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
+  return (
+    <span className="block text-xs font-normal text-ink-soft">
+      <L en={`${en} contract`} zh={`${m[1]}年${+m[2]}月合约`} />
+    </span>
+  );
 }
 
 function PrintNote({ note }: { note?: string }) {
@@ -82,7 +93,7 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
           </p>
         </div>
         <h2 className="display mt-3 text-3xl tracking-tight text-ink sm:text-4xl">
-          <L en="Market closes" zh="市场收盘" />
+          <L en="Market snapshot" zh="行情快照" />
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">
           <L
@@ -103,6 +114,7 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                     <div className="flex items-baseline justify-between gap-3">
                       <span className="min-w-0 font-medium text-ink">
                         <L en={row.asset} zh={assetZh(row.id, row.asset)} />
+                        <Contract month={row.contract} />
                       </span>
                       <span className="shrink-0 tabular-nums text-ink">{row.latest}</span>
                     </div>
@@ -137,10 +149,10 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                         <L en="Latest" zh="最新" />
                       </th>
                       <th className="py-2 pr-3 font-semibold">
-                        <L en="Day chg" zh="日变动" />
+                        <L en="Change" zh="变动" />
                       </th>
                       <th className="py-2 pr-3 font-semibold">
-                        <L en="Date" zh="日期" />
+                        <L en="Time · quote type" zh="时点 · 报价类型" />
                       </th>
                       <th className="py-2 font-semibold">
                         <L en="Source" zh="来源" />
@@ -155,6 +167,7 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                       >
                         <td className="py-2.5 pr-3 font-medium text-ink">
                           <L en={row.asset} zh={assetZh(row.id, row.asset)} />
+                          <Contract month={row.contract} />
                         </td>
                         <td className="py-2.5 pr-3 tabular-nums text-ink">
                           <span className="whitespace-nowrap">{row.latest}</span>

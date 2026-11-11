@@ -12,6 +12,7 @@ import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import {
   changeDirection,
+  contractMonth,
   formatBpChange,
   formatLevel,
   formatPctChange,
@@ -64,7 +65,7 @@ async function yahooPair(symbol, id) {
   }
   pairs = fillMissingPriorClose(id, withYahooMetaFallback(pairs, result.meta), result.meta);
   if (pairs.length < 1) throw new Error(`Yahoo: no closes for ${symbol}`);
-  return { pairs, symbol };
+  return { pairs, symbol, contract: contractMonth(result.meta) };
 }
 
 function yahooSource(symbol, label) {
@@ -108,7 +109,7 @@ async function rowFromYahoo({
   suffix = "",
   sourceLabel,
 }) {
-  const { pairs } = await yahooPair(symbol, id);
+  const { pairs, contract } = await yahooPair(symbol, id);
   let { prev, last, gap } = selectDisplayedBar(id, pairs, new Date().toISOString());
   if (!prev || !yahooPrevIsUsable(prev.c, last.c)) {
     const prior = priorPublishedClose(id, last.c, unixToDateString(last.t));
@@ -125,6 +126,7 @@ async function rowFromYahoo({
     asOfDate: unixToDateString(last.t),
     source: yahooSource(symbol, sourceLabel),
   };
+  if (contract) row.contract = contract;
   const printNote = gapPrintNote(gap);
   if (printNote) row.printNote = printNote;
   return row;
