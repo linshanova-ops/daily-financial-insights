@@ -53,7 +53,7 @@ export function EmaPrompts({ date }: { date: string }) {
         sessionStorage.setItem(key, "1");
         setLang(pageLang());
         dialog.showModal();
-      });
+      }, { rootMargin: "0px 0px -50% 0px" });
       if (el && !sessionStorage.getItem(key)) obs.observe(el);
       return obs;
     });
