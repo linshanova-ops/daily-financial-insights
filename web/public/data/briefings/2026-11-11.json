@@ -470,7 +470,7 @@
         }
       ],
       "mechanism": {
-        "en": "The 90.4 billion dollar figure is the whole deal, not the cash Anthropic keeps: it counts the private placement and the shares existing holders sell at the top of the range. The company's own estimate is about 84.6 billion dollars at the 74 dollar midpoint, and the founders' sale goes to the founders. 财经早茶 (11 November): the deal could pass the record SpaceX set. The effect is on US equities through the new listing, and the day's notes give no link from it to Nvidia's share move. A final price outside the 70 to 78 dollar range would change both the deal size and the net proceeds.",
+        "en": "The 90.4 billion dollar figure covers the whole deal at the top of the range: the IPO, the private placement, and the shares existing holders sell. What Anthropic keeps is smaller, about 84.6 billion dollars at the 74 dollar midpoint by its own estimate, because the founders' sale goes to the founders. 财经早茶 (11 November): the deal could pass the record SpaceX set. The effect is on US equities through the new listing, and the day's notes give no link from it to Nvidia's share move. A final price outside the 70 to 78 dollar range would change both the deal size and the net proceeds.",
         "zh": "904亿美元是整笔交易的规模，不是Anthropic留下的钱：按区间上限计算，它包括同步私募和现有股东出售的老股。按74美元的区间中点，公司自己估算的净募资约846亿美元，创始人售股的钱归创始人。财经早茶（11月11日）：这笔交易规模有望超过SpaceX创下的纪录。影响落在美股的新上市上，当天的记录没有把它和英伟达股价联系起来。若最终发行价落在70至78美元区间之外，交易规模和净募资都会改变。"
       }
     },
@@ -677,7 +677,7 @@
         }
       ],
       "mechanism": {
-        "en": "The figure is a net flow across the funds, not a change in their bitcoin holdings. BlockBeats (10 November), citing Farside: the net outflow on 9 November was 201 million dollars. The effect is on US spot bitcoin ETFs; the day's sources give no holdings data, so any change in the funds' bitcoin balances is not known. Issuer holdings reports would show whether those balances fell.",
+        "en": "The figure is a net flow across the funds; it says nothing direct about their bitcoin holdings. BlockBeats (10 November), citing Farside: the net outflow on 9 November was 201 million dollars. The effect is on US spot bitcoin ETFs; the day's sources give no holdings data, so any change in the funds' bitcoin balances is unknown. Issuer holdings reports would show whether those balances fell.",
         "zh": "这是这些基金合计的净流量，不是它们比特币持仓的变化。律动（11月10日）引述Farside：11月9日净流出2.01亿美元。影响在美国现货比特币ETF；当天的来源没有持仓数据，所以基金的比特币持仓有没有变化并不清楚。发行商的持仓报告能说明持仓是否下降。"
       }
     }
