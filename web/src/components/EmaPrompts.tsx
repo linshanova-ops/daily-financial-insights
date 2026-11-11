@@ -9,21 +9,16 @@ import { L } from "./L";
 const PROMPTS = emaPrompts(EMA_FORM);
 
 // The English label is the submitted value: Google Forms rejects choices that don't match an option.
-const QUESTIONS: Record<string, { field: "affect" | "thinking"; en: string; zh: string; cols: string; options: string[][] }> = {
+const QUESTIONS: Record<string, { field: "affect" | "thinking"; en: string; zh: string; options: string[][] }> = {
   "market-closes": {
     field: "affect",
     en: "How do these closes make you feel right now?",
     zh: "看到这些收盘数据，你现在的感受是？",
-    cols: "grid-cols-3",
     options: [
-      ["😨", "Scared", "害怕"],
       ["😰", "Anxious", "焦虑"],
-      ["😤", "Frustrated", "烦躁"],
-      ["😔", "Disappointed", "失落"],
-      ["😐", "Calm", "平静"],
-      ["🤔", "Curious", "好奇"],
-      ["😌", "Relieved", "松了口气"],
-      ["🙂", "Hopeful", "有信心"],
+      ["😟", "Uneasy", "有点不安"],
+      ["😐", "Neutral", "平静"],
+      ["🙂", "Reassured", "安心"],
       ["🤩", "Excited", "兴奋"],
     ],
   },
@@ -31,7 +26,6 @@ const QUESTIONS: Record<string, { field: "affect" | "thinking"; en: string; zh: 
     field: "thinking",
     en: "After today's themes, what's your first thought?",
     zh: "读完今天的主题，你的第一个想法是？",
-    cols: "grid-cols-5",
     options: [
       ["🏃", "I want to act now", "想马上行动"],
       ["⏳", "I'll wait and watch", "再观察一下"],
@@ -101,7 +95,7 @@ export function EmaPrompts({ date }: { date: string }) {
             <h2 id={`ema-${id}-title`} className="text-base font-semibold">
               <L en={q.en} zh={q.zh} />
             </h2>
-            <div className={`mt-4 grid gap-1 ${q.cols}`}>
+            <div className="mt-4 grid grid-cols-5 gap-1">
               {q.options.map(([emoji, en, zh]) => (
                 <button
                   key={en}
