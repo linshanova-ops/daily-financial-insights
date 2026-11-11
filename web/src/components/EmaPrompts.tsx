@@ -8,7 +8,7 @@ import { L } from "./L";
 
 const PROMPTS = emaPrompts(EMA_FORM);
 
-// The English label is the submitted value: Google Forms rejects choices that don't match an option.
+// Submitted as "English: emoji 中文", the form's option text; Google Forms rejects choices that don't match.
 const QUESTIONS: Record<string, { field: "affect" | "thinking"; en: string; zh: string; options: string[][] }> = {
   "market-closes": {
     field: "affect",
@@ -103,7 +103,7 @@ export function EmaPrompts({ date }: { date: string }) {
                   type="button"
                   aria-label={lang === "zh" ? zh : en}
                   className="focus-ring flex flex-col items-center gap-1 rounded px-1 py-2 text-center text-xs leading-tight hover:bg-line/40"
-                  onClick={(event) => answer(event.currentTarget.closest("dialog")!, id, en)}
+                  onClick={(event) => answer(event.currentTarget.closest("dialog")!, id, `${en}: ${emoji} ${zh}`)}
                 >
                   <span className="text-2xl" aria-hidden>{emoji}</span>
                   <L en={en} zh={zh} />

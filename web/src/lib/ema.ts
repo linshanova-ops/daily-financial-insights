@@ -1,13 +1,13 @@
 /** Google Form for the reader check-ins. Empty url = no modals. Ids come from the form's pre-filled link. */
 export const EMA_FORM = {
-  url: "", // https://docs.google.com/forms/d/e/<form-id>/formResponse
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSc8-3M5l20sEGIgLgzHOixQ91LQC2EscLBgR85nbXVNw51PXA/formResponse",
   entry: {
-    date: "entry.0",
-    lang: "entry.0",
-    modal: "entry.0",
-    affect: "entry.0",
-    thinking: "entry.0",
-    reader: "entry.0",
+    date: "entry.197380171",
+    lang: "entry.1719329092",
+    modal: "entry.108618894",
+    affect: "entry.1655608938",
+    thinking: "entry.913333609",
+    reader: "entry.302496883",
   },
 };
 
