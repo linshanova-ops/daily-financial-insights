@@ -5,7 +5,7 @@ import { accents } from "@/lib/module-accents";
 import { quoteKind, shanghaiQuote } from "@/lib/session-print";
 import { L } from "./L";
 import { Prose } from "./Prose";
-import { SourceButton } from "./SourceButton";
+import { SourceName } from "./SourceButton";
 
 interface MarketDashboardProps {
   data: MarketDashboardData;
@@ -17,6 +17,7 @@ function asOfLabel(iso: string, lang: "en" | "zh"): string {
     day: "numeric",
     hour: "2-digit",
     minute: "2-digit",
+    timeZone: "Asia/Shanghai",
     timeZoneName: "short",
   });
   return lang === "zh" ? `（${formatted}）` : ` (${formatted})`;
@@ -28,45 +29,37 @@ function changeClass(direction?: "up" | "down" | "flat"): string {
   return "text-ink-soft";
 }
 
-function SessionMark({
-  row,
-  snapshot,
-}: {
-  row: MarketDashboardRow;
-  snapshot?: string;
-}) {
-  const quote = snapshot ? shanghaiQuote(snapshot) : row.asOfDate;
-  switch (quoteKind(row.id, row.asOfDate, snapshot)) {
-    case "intraday":
-      return <L en={`${quote} intraday`} zh={`${quote} 盘中`} />;
-    case "yield":
-      return <L en={`${row.asOfDate} official daily yield`} zh={`${row.asOfDate} 官方日度收益率`} />;
-    case "24h":
-      return <L en={`24h change to ${quote}`} zh={`截至 ${quote} 的24小时变动`} />;
-    case "funding":
-      return <L en={`${row.asOfDate} funding print`} zh={`${row.asOfDate} 资金费率结算`} />;
-    default:
-      return <L en={`${row.asOfDate} close`} zh={`${row.asOfDate} 收盘`} />;
+const TAG = {
+  close: ["Close", "收盘"],
+  yield: ["Official yield", "官方收益率"],
+  "24h": ["24h", "24小时"],
+  funding: ["Funding", "资金费率"],
+} as const;
+
+/** One short quote-type tag per row; dates and sources sit in the footnote. */
+function QuoteTag({ row, snapshot }: { row: MarketDashboardRow; snapshot?: string }) {
+  const kind = quoteKind(row.id, row.asOfDate, snapshot);
+  if (kind === "intraday") {
+    const hhmm = snapshot ? shanghaiQuote(snapshot).split(" ")[1] : "";
+    return <L en={`Intraday ${hhmm}`} zh={`盘中 ${hhmm}`} />;
   }
+  const [en, zh] = TAG[kind];
+  return <L en={en} zh={zh} />;
 }
 
-function Contract({ month }: { month?: string }) {
-  const m = month && /^(\d{4})-(\d{2})$/.exec(month);
-  if (!m) return null;
-  const en = new Date(Date.UTC(+m[1], +m[2] - 1, 15)).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
+function AssetName({ row, note }: { row: MarketDashboardRow; note?: number }) {
+  const m = row.contract && /^(\d{4})-(\d{2})$/.exec(row.contract);
+  const en = m && new Date(Date.UTC(+m[1], +m[2] - 1, 15)).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
   return (
-    <span className="block text-xs font-normal text-ink-soft">
-      <L en={`${en} contract`} zh={`${m[1]}年${+m[2]}月合约`} />
-    </span>
-  );
-}
-
-function PrintNote({ note }: { note?: string }) {
-  if (!note) return null;
-  return (
-    <p className="mt-1 text-xs font-normal leading-snug text-ink-soft">
-      <Prose text={note as LangText} />
-    </p>
+    <>
+      <L en={row.asset} zh={assetZh(row.id, row.asset)} />
+      {m ? <span className="font-normal text-ink-soft"> · <L en={en} zh={`${m[1]}年${+m[2]}月`} /></span> : null}
+      {note ? (
+        <sup className="ml-0.5">
+          <a href={`#snapshot-note-${note}`} className="focus-ring text-forest">{note}</a>
+        </sup>
+      ) : null}
+    </>
   );
 }
 
@@ -74,6 +67,19 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
   const accent = accents.copper;
   const groups = data.groups?.filter((g) => g.rows?.length) ?? [];
   if (!groups.length) return null;
+  const rows = groups.flatMap((g) => g.rows);
+  const noted = rows.filter((r) => r.printNote);
+  const noteNo = (row: MarketDashboardRow) => noted.indexOf(row) + 1 || undefined;
+  const sources = rows.map((r) => r.source).filter((src, i, all) => src?.href && all.findIndex((o) => o?.href === src.href) === i);
+  const dates = new Map<string, Set<string>>();
+  for (const r of rows) {
+    const kind = quoteKind(r.id, r.asOfDate, data.asOf);
+    if (kind === "intraday" || kind === "24h") continue;
+    dates.set(kind, (dates.get(kind) ?? new Set()).add(r.asOfDate));
+  }
+  const datesLine = (lang: 0 | 1) =>
+    [...dates].map(([kind, d]) => `${TAG[kind as keyof typeof TAG][lang]} ${[...d].join(", ")}`).join(" · ");
+  const snapClock = data.asOf ? shanghaiQuote(data.asOf) : "";
 
   return (
     <section
@@ -113,20 +119,17 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                   <li key={row.id} className="py-3">
                     <div className="flex items-baseline justify-between gap-3">
                       <span className="min-w-0 font-medium text-ink">
-                        <L en={row.asset} zh={assetZh(row.id, row.asset)} />
-                        <Contract month={row.contract} />
+                        <AssetName row={row} note={noteNo(row)} />
                       </span>
                       <span className="shrink-0 tabular-nums text-ink">{row.latest}</span>
                     </div>
-                    <PrintNote note={row.printNote} />
                     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
                       <span className={`tabular-nums font-semibold ${changeClass(row.changeDirection)}`}>
                         {row.change ?? "—"}
                       </span>
                       <span className="text-ink-soft">
-                        <SessionMark row={row} snapshot={data.asOf} />
+                        <QuoteTag row={row} snapshot={data.asOf} />
                       </span>
-                      <SourceButton sources={[row.source]} />
                     </div>
                   </li>
                 ))}
@@ -134,10 +137,9 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
               <div className="mt-3 hidden overflow-x-auto sm:block">
                 <table className="w-full min-w-[36rem] table-fixed border-collapse text-left text-sm">
                   <colgroup>
-                    <col className="w-[24%]" />
-                    <col className="w-[16%]" />
-                    <col className="w-[14%]" />
-                    <col className="w-[26%]" />
+                    <col className="w-[40%]" />
+                    <col className="w-[20%]" />
+                    <col className="w-[18%]" />
                     <col />
                   </colgroup>
                   <thead>
@@ -152,10 +154,7 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                         <L en="Change" zh="变动" />
                       </th>
                       <th className="py-2 pr-3 font-semibold">
-                        <L en="Time · quote type" zh="时点 · 报价类型" />
-                      </th>
-                      <th className="py-2 font-semibold">
-                        <L en="Source" zh="来源" />
+                        <L en="Quote" zh="报价类型" />
                       </th>
                     </tr>
                   </thead>
@@ -166,23 +165,18 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                         className="border-b border-line/60 last:border-0"
                       >
                         <td className="py-2.5 pr-3 font-medium text-ink">
-                          <L en={row.asset} zh={assetZh(row.id, row.asset)} />
-                          <Contract month={row.contract} />
+                          <AssetName row={row} note={noteNo(row)} />
                         </td>
-                        <td className="py-2.5 pr-3 tabular-nums text-ink">
-                          <span className="whitespace-nowrap">{row.latest}</span>
-                          <PrintNote note={row.printNote} />
+                        <td className="py-2.5 pr-3 whitespace-nowrap tabular-nums text-ink">
+                          {row.latest}
                         </td>
                         <td
                           className={`py-2.5 pr-3 whitespace-nowrap tabular-nums font-semibold ${changeClass(row.changeDirection)}`}
                         >
                           {row.change ?? "—"}
                         </td>
-                        <td className="py-2.5 pr-3 whitespace-nowrap text-ink-soft">
-                          <SessionMark row={row} snapshot={data.asOf} />
-                        </td>
-                        <td className="py-2.5">
-                          <SourceButton sources={[row.source]} />
+                        <td className="py-2.5 whitespace-nowrap text-ink-soft">
+                          <QuoteTag row={row} snapshot={data.asOf} />
                         </td>
                       </tr>
                     ))}
@@ -193,11 +187,41 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
           ))}
         </div>
 
-        {data.note ? (
-          <p className="mt-8 max-w-3xl text-xs leading-relaxed text-ink/50">
-            <Prose text={data.note} />
+        <div className="mt-8 max-w-3xl space-y-3 border-t border-line/70 pt-5 text-base leading-relaxed text-ink-soft">
+          {noted.length ? (
+            <ol className="space-y-2">
+              {noted.map((row, i) => (
+                <li key={row.id} id={`snapshot-note-${i + 1}`} className="scroll-mt-40">
+                  <sup className="mr-1 text-forest">{i + 1}</sup>
+                  <span className="font-medium text-ink"><L en={row.asset} zh={assetZh(row.id, row.asset)} />: </span>
+                  <Prose text={row.printNote as LangText} />
+                </li>
+              ))}
+            </ol>
+          ) : null}
+          <p>
+            <L
+              en={`Dates: ${datesLine(0)}. Intraday and 24h quotes as of ${snapClock}.`}
+              zh={`日期：${datesLine(1)}。盘中和24小时报价截至 ${snapClock}。`}
+            />
           </p>
-        ) : null}
+          <p>
+            <L en="Sources: " zh="来源：" />
+            {sources.map((src, i) => (
+              <span key={src.href}>
+                {i ? " · " : null}
+                <a href={src.href} target="_blank" rel="noopener noreferrer" className="focus-ring underline decoration-line underline-offset-2 hover:text-forest">
+                  <SourceName text={src.label} />
+                </a>
+              </span>
+            ))}
+          </p>
+          {data.note ? (
+            <p>
+              <Prose text={data.note} />
+            </p>
+          ) : null}
+        </div>
       </div>
     </section>
   );

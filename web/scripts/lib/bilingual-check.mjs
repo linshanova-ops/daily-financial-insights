@@ -81,7 +81,6 @@ export function checkBilingual(briefing) {
   (briefing.marketDashboard?.groups || []).forEach((g) =>
     (g.rows || []).forEach((r) => one(r.printNote, `marketDashboard.${r.id}.printNote`)),
   );
-  (briefing.corrections || []).forEach((c, i) => one(c, `corrections[${i}]`));
   one(briefing.eventCalendar?.note, "eventCalendar.note");
   many(briefing.eventCalendar?.events, "event", "event");
   many(briefing.keySources, "keySources", "influence");

@@ -9,21 +9,6 @@
     "zh": "2026年11月10日至11月11日"
   },
   "publishedAt": "2026-11-11T01:31:14.806Z",
-  "updatedAt": "2026-11-11T15:16:38.000Z",
-  "corrections": [
-    {
-      "en": "Anthropic: 90.4 billion dollars is the total deal size including shares sold by existing holders; net proceeds to Anthropic are about 84.6 billion dollars at the price-range midpoint, per the SEC filing.",
-      "zh": "Anthropic：904亿美元是含老股出售的交易总规模；按SEC招股书的发行价区间中点估算，公司净募资约846亿美元。"
-    },
-    {
-      "en": "Added the BLS, Eurostat and SEC releases beside the CPI, euro-area chart and Anthropic figures, and the quote type beside each Market snapshot row.",
-      "zh": "在CPI、欧元区图表和Anthropic数字旁补上BLS、欧盟统计局和SEC原始来源，并在行情快照每一行旁标注报价类型。"
-    },
-    {
-      "en": "Calendar: the three 07:30 speeches are marked past scheduled time at publish, and Veterans Day is marked all day.",
-      "zh": "日历：三场07:30讲话按发布时间标为已过预定时间，退伍军人节标为全天。"
-    }
-  ],
   "keySources": [
     {
       "label": "华尔街见闻 11月11日早餐",

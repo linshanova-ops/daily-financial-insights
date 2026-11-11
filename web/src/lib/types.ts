@@ -242,12 +242,8 @@ export interface BriefingFrontmatter {
   date: string;
   title: string;
   coverageWindow: string;
-  /** ISO timestamp when this briefing was first published (UTC). Never moved by a correction. */
+  /** ISO timestamp when this briefing was published (UTC). */
   publishedAt?: string;
-  /** ISO timestamp of the latest post-publish correction (UTC). */
-  updatedAt?: string;
-  /** One line per correction to a number, event time, or attribution. */
-  corrections?: string[];
   marketTone: string;
   summary: FactLine[];
   signal: string;

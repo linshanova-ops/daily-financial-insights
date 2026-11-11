@@ -69,7 +69,7 @@ Read and execute these skills; do not jump to YAML:
 - **CLAIM:** inbox desk, third-party view, CICC, unverified size. Never promote a desk view to a close/print.
 - **Do not write CLAIM on the website.** It is an agent gate, not a reader label. Name the desk (`财经早茶`, `律动`, `CICC`). Never `CLAIM — inbox` or `desk/CLAIM`. The source chip already says who said it. No workflow ids in published copy (`.yml`, inbox-sync, last-kick, branch names).
 - Beat/miss vs **estimate** only. `10亿元 = CNY1bn`. Crypto: two dated sources. Omit unverifiable numbers.
-- `docs/CONTENT_ACCURACY.md` rules 12–16 apply to every issue: deal size vs net proceeds, labeled snapshot quotes, calendar `timing`, named comparisons, sources beside numbers, and the correction log.
+- `docs/CONTENT_ACCURACY.md` rules 12–16 apply to every issue: deal size vs net proceeds, labeled snapshot quotes, calendar `timing`, named comparisons, sources beside numbers, and silent post-publish fixes.
 
 ## Both languages
 
@@ -109,7 +109,7 @@ Voice, in reader sentences:
 - A chart title names the region, the indicator, and the finding.
 - Delete a sentence whose only point is that the next session the other way ends the move.
 
-Market snapshot (行情快照; was Market closes): `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price. Nikkei and Kospi show the prior completed close. Tokyo cash close is 15:30 (Seoul cash close is 15:30). Do not mark that completed close missing or a holiday. The page labels each row's quote type from its id (close, intraday with Beijing time, official daily yield, 24h change, funding print) and shows `contract` when the inject found the futures month; never type a contract month by hand. After the final inject, add a `printNote` `{ en, zh }` on any row whose asset the text quotes from another source (a COMEX settle vs Yahoo intraday, a desk's market-close yield vs the Treasury curve), and a clause beside that number in the text.
+Market snapshot (行情快照; was Market closes): `?lang=zh` uses the shared `assetZh` map; the default page keeps the English names. Brent row stays Yahoo `BZ=F`, Chinese label 布伦特期货（Yahoo）. Not Platts. Do not label an unfinished session as a daily close. Mark it 盘中 / intraday with the quote time. Use the latest completed session the feed actually has. A holiday is the previous-session close plus the holiday. A print older than that latest session is stale, with the missing date. Do not show a stale price with no marker, and do not invent a backup price. Nikkei and Kospi show the prior completed close. Tokyo cash close is 15:30 (Seoul cash close is 15:30). Do not mark that completed close missing or a holiday. The page tags each row with one short quote type from its id (close, intraday with Beijing time, official yield, 24h, funding) and the `contract` month inline when the inject found it; never type a contract month by hand. Sources, dates and every `printNote` render in one numbered footnote block under the snapshot. After the final inject, add a `printNote` `{ en, zh }` on any row whose asset the text quotes from another source (a COMEX settle vs Yahoo intraday, a desk's market-close yield vs the Treasury curve), and a clause beside that number in the text.
 
 - At the 09:25 Beijing snapshot the Yahoo chart can list the next session’s open bar and omit the finished 15:30 Tokyo/Seoul close. That close is fulldayPrice minus fulldayChange in the same payload. Insert that one finished weekday. Do not keep Friday, and do not stamp the row missing or a holiday.
 
@@ -129,7 +129,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 
 | Site | YAML |
 |------|------|
-| Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject; never moved later). A post-publish fix to a number, event time, or attribution sets `updatedAt` and adds one `{ en, zh }` line to `corrections`. The intro’s first sentence has a subject: English “US stocks fell…”, Chinese “美股下跌…”. |
+| Hero | `marketTone`, `publishedAt` (set to dashboard `asOf` after inject; never moved later). A post-publish fix to a number, event time, or attribution corrects the content in place: no updated time, no correction note. The intro’s first sentence has a subject: English “US stocks fell…”, Chinese “美股下跌…”. |
 | Skim | `summary` (sourced bullets), `signal`, `watch` — this is what the homepage shows first |
 | Themes | `themeCards` — see **Theme card** below. `verify-briefing` fails the dump shape. |
 | Market snapshot | `marketDashboard` via inject only, plus `printNote` on rows the text quotes from another source. Renders after Summary, **before** Markets at a glance and Themes. |

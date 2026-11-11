@@ -54,8 +54,6 @@ export function BriefingView({
         date={briefing.date}
         marketTone={briefing.marketTone}
         publishedAt={briefing.publishedAt ?? publishedAtFallback}
-        updatedAt={briefing.updatedAt}
-        corrections={briefing.corrections}
         showCta={showHeroCta}
         variant={heroVariant}
         marketsHref={

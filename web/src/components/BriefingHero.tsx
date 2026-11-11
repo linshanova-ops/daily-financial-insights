@@ -9,8 +9,6 @@ interface BriefingHeroProps {
   date: string;
   marketTone: LangText;
   publishedAt?: string | null;
-  updatedAt?: string;
-  corrections?: LangText[];
   showCta?: boolean;
   /** Full brand hero on landing, skim on Today, compact on archive detail pages. */
   variant?: "full" | "compact" | "skim";
@@ -22,16 +20,12 @@ export function BriefingHero({
   date,
   marketTone,
   publishedAt,
-  updatedAt,
-  corrections = [],
   showCta = true,
   variant = "full",
   marketsHref = "#market-dashboard",
 }: BriefingHeroProps) {
   const publishedEn = formatPublishedAt(publishedAt);
   const publishedZh = formatPublishedAt(publishedAt, "zh");
-  const updatedEn = formatPublishedAt(updatedAt);
-  const updatedZh = formatPublishedAt(updatedAt, "zh");
   const compact = variant === "compact";
   const skim = variant === "skim";
 
@@ -107,18 +101,7 @@ export function BriefingHero({
           {publishedEn ? (
             <p className="reveal reveal-delay-1 text-sm font-medium tracking-wide text-ink/55">
               <L en={`Published ${publishedEn}`} zh={`发布于 ${publishedZh}`} />
-              {updatedEn ? <L en={` · Updated ${updatedEn}`} zh={` · 更新于 ${updatedZh}`} /> : null}
             </p>
-          ) : null}
-          {corrections.length ? (
-            <ul className="reveal reveal-delay-1 max-w-2xl space-y-1 text-sm text-ink-soft">
-              {corrections.map((line, i) => (
-                <li key={i}>
-                  <L en="Correction: " zh="更正：" />
-                  <Prose text={line} />
-                </li>
-              ))}
-            </ul>
           ) : null}
           <p
             className={`reveal reveal-delay-2 max-w-2xl leading-relaxed text-ink-soft ${
