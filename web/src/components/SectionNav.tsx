@@ -18,7 +18,7 @@ export function SectionNav({
   const items = [
     { href: "#skim", en: "Summary", zh: "摘要" },
     ...(hasMarketDashboard
-      ? [{ href: "#market-dashboard", en: "Closes", zh: "收盘" }]
+      ? [{ href: "#market-dashboard", en: "Snapshot", zh: "行情快照" }]
       : []),
     ...(hasMarketOverview
       ? [{ href: "#market-overview", en: "Markets at a glance", zh: "市场一览" }]
