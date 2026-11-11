@@ -193,7 +193,7 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
               {noted.map((row, i) => (
                 <li key={row.id} id={`snapshot-note-${i + 1}`} className="scroll-mt-40">
                   <sup className="mr-1 text-forest">{i + 1}</sup>
-                  <span className="font-medium text-ink"><L en={row.asset} zh={assetZh(row.id, row.asset)} />: </span>
+                  <span className="font-medium text-ink"><L en={row.asset} zh={assetZh(row.id, row.asset)} /><L en=": " zh="：" /></span>
                   <Prose text={row.printNote as LangText} />
                 </li>
               ))}

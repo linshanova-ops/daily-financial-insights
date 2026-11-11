@@ -60,13 +60,13 @@ describe("calendar status at publish time", () => {
     { id: "maybe", date: "2026-08-10", timing: "unconfirmed" },
   ];
 
-  it("marks a time at or before publish as past, untimed rows by their timing", () => {
-    const status = Object.fromEntries(rows.map((r) => [r.id, calendarStatus(r, PUB)]));
-    assert.deepEqual(status, { later: null, tbd: "tbd", early: "past", holiday: "all-day", noon: null, maybe: "unconfirmed" });
-    assert.equal(calendarStatus(rows[2], null), null);
+  it("labels untimed rows by their timing", () => {
+    const status = Object.fromEntries(rows.map((r) => [r.id, calendarStatus(r)]));
+    assert.deepEqual(status, { later: null, tbd: "tbd", early: null, holiday: "all-day", noon: null, maybe: "unconfirmed" });
   });
 
-  it("puts trackable rows first by time and past-time rows last", () => {
-    assert.deepEqual(sortCalendar(rows, PUB).map((r) => r.id), ["holiday", "noon", "tbd", "later", "maybe", "early"]);
+  it("drops rows timed before publish and sorts the rest by time", () => {
+    assert.deepEqual(sortCalendar(rows, PUB).map((r) => r.id), ["holiday", "noon", "tbd", "later", "maybe"]);
+    assert.ok(sortCalendar(rows, null).some((r) => r.id === "early"));
   });
 });

@@ -9,12 +9,11 @@ import { SourceButton } from "./SourceButton";
 interface EventCalendarViewProps {
   calendar: EventCalendar;
   themeTitles?: Record<string, string>;
-  /** Status clock: this issue's publish time, not the reader's. */
+  /** Rows timed before this issue's publish time are hidden (not the reader's clock). */
   publishedAt?: string | null;
 }
 
 const STATUS = {
-  past: { en: "Past scheduled time", zh: "已过预定时间" },
   "all-day": { en: "All day", zh: "全天" },
   tbd: { en: "Time TBD", zh: "时间未定" },
   unconfirmed: { en: "Event unconfirmed", zh: "事件待确认" },
@@ -74,7 +73,7 @@ export function EventCalendarView({
         ) : (
           <ul className="mt-4 divide-y divide-line/70 border-y border-line/70">
             {events.map((row) => {
-              const status = calendarStatus(row, publishedAt);
+              const status = calendarStatus(row);
               return (
               <li
                 key={row.id}

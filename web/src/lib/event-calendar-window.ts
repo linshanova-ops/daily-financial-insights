@@ -38,25 +38,23 @@ function formatUtcDate(dt: Date): string {
 }
 
 type CalendarRow = { date: string; timeBeijing?: string; timing?: "all-day" | "tbd" | "unconfirmed"; category?: string };
-export type CalendarStatus = "past" | "all-day" | "tbd" | "unconfirmed" | null;
+export type CalendarStatus = "all-day" | "tbd" | "unconfirmed" | null;
 
-/** Status at the briefing's publish time (Beijing), so archives keep their own clock. */
-export function calendarStatus(row: CalendarRow, publishedAt?: string | null): CalendarStatus {
-  if (row.timeBeijing) {
-    const at = Date.parse(`${row.date}T${row.timeBeijing}:00+08:00`);
-    const pub = publishedAt ? Date.parse(publishedAt) : NaN;
-    return at <= pub ? "past" : null;
-  }
+export function calendarStatus(row: CalendarRow): CalendarStatus {
+  if (row.timeBeijing) return null;
   return row.timing ?? (row.category === "holiday" ? "all-day" : "tbd");
 }
 
-/** Still-trackable rows first by date and time (all-day leads its day); past-time rows last. */
+/**
+ * Drops rows timed before the issue's publishedAt (archives keep their own clock),
+ * then sorts by date and time; all-day leads its day, untimed rows trail it.
+ */
 export function sortCalendar<T extends CalendarRow>(rows: T[], publishedAt?: string | null): T[] {
-  const key = (r: T) => {
-    const s = calendarStatus(r, publishedAt);
-    return `${s === "past" ? 1 : 0}${r.date}${r.timeBeijing || (s === "all-day" ? "00:00" : "99:99")}`;
-  };
-  return [...rows].sort((a, b) => key(a).localeCompare(key(b)));
+  const pub = publishedAt ? Date.parse(publishedAt) : NaN;
+  const key = (r: T) => `${r.date}${r.timeBeijing || (calendarStatus(r) === "all-day" ? "00:00" : "99:99")}`;
+  return rows
+    .filter((r) => !r.timeBeijing || !(Date.parse(`${r.date}T${r.timeBeijing}:00+08:00`) < pub))
+    .sort((a, b) => key(a).localeCompare(key(b)));
 }
 
 export function eventWindowForBriefingDate(isoDate: string): {
