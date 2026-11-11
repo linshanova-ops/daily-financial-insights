@@ -1,22 +1,29 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
+import avocadoMascot from "../../public/brand/avocado-mascot.png";
 import { EMA_FORM, emaPrompts } from "@/lib/ema";
 import { L } from "./L";
 
 const PROMPTS = emaPrompts(EMA_FORM);
 
 // The English label is the submitted value: Google Forms rejects choices that don't match an option.
-const QUESTIONS: Record<string, { field: "affect" | "thinking"; en: string; zh: string; options: string[][] }> = {
+const QUESTIONS: Record<string, { field: "affect" | "thinking"; en: string; zh: string; cols: string; options: string[][] }> = {
   "market-closes": {
     field: "affect",
     en: "How do these closes make you feel right now?",
     zh: "看到这些收盘数据，你现在的感受是？",
+    cols: "grid-cols-3",
     options: [
+      ["😨", "Scared", "害怕"],
       ["😰", "Anxious", "焦虑"],
-      ["😟", "Uneasy", "有点不安"],
-      ["😐", "Neutral", "平静"],
-      ["🙂", "Reassured", "安心"],
+      ["😤", "Frustrated", "烦躁"],
+      ["😔", "Disappointed", "失落"],
+      ["😐", "Calm", "平静"],
+      ["🤔", "Curious", "好奇"],
+      ["😌", "Relieved", "松了口气"],
+      ["🙂", "Hopeful", "有信心"],
       ["🤩", "Excited", "兴奋"],
     ],
   },
@@ -24,6 +31,7 @@ const QUESTIONS: Record<string, { field: "affect" | "thinking"; en: string; zh: 
     field: "thinking",
     en: "After today's themes, what's your first thought?",
     zh: "读完今天的主题，你的第一个想法是？",
+    cols: "grid-cols-5",
     options: [
       ["🏃", "I want to act now", "想马上行动"],
       ["⏳", "I'll wait and watch", "再观察一下"],
@@ -68,7 +76,7 @@ export function EmaPrompts({ date }: { date: string }) {
     });
     fetch(EMA_FORM.url, { method: "POST", mode: "no-cors", body }).catch(() => {});
     setThanked(modal);
-    setTimeout(() => dialog.close(), 1200);
+    setTimeout(() => dialog.close(), 1500);
   }
 
   return PROMPTS.map(({ id }) => {
@@ -81,15 +89,19 @@ export function EmaPrompts({ date }: { date: string }) {
         className="m-auto w-[min(400px,calc(100vw-2rem))] max-h-[calc(100dvh-2rem)] border border-line bg-paper p-5 text-sm text-ink backdrop:bg-ink/40"
       >
         {thanked === id ? (
-          <p role="status" className="py-6 text-center text-base font-medium">
+          <div role="status" className="flex flex-col items-center gap-2 py-4 text-base font-medium">
+            <span className="ema-beat relative">
+              <Image src={avocadoMascot} alt="" width={80} height={80} className="h-20 w-20 object-contain" />
+              <span className="absolute -right-1 -top-1 text-2xl text-crimson" aria-hidden>♥</span>
+            </span>
             <L en="Thanks!" zh="谢谢！" />
-          </p>
+          </div>
         ) : (
           <>
             <h2 id={`ema-${id}-title`} className="text-base font-semibold">
               <L en={q.en} zh={q.zh} />
             </h2>
-            <div className="mt-4 grid grid-cols-5 gap-1">
+            <div className={`mt-4 grid gap-1 ${q.cols}`}>
               {q.options.map(([emoji, en, zh]) => (
                 <button
                   key={en}

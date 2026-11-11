@@ -241,6 +241,16 @@ html:not([data-lang="zh"]) .lang-switch a[data-lang-btn="en"] {
   }
 }
 
+.ema-beat {
+  animation: ema-beat 700ms ease-out 1;
+}
+
+@keyframes ema-beat {
+  0% { transform: scale(0.8); }
+  45% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -252,7 +262,8 @@ html:not([data-lang="zh"]) .lang-switch a[data-lang-btn="en"] {
   .reveal-delay-3,
   .grade-pulse,
   .animate-pulse,
-  .welcome-wave__avocado {
+  .welcome-wave__avocado,
+  .ema-beat {
     animation: none !important;
   }
 }
