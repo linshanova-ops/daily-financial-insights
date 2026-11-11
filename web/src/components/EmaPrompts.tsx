@@ -43,29 +43,40 @@ export function EmaPrompts({ date }: { date: string }) {
   const [thanked, setThanked] = useState<string | null>(null);
 
   useEffect(() => {
-    // Only hits after the reader's own input count: not the load state, nor a #hash landing's (smooth) jump past both targets.
+    // Only the reader's own scrolling counts: not the load state, a #hash landing, or a link jump (menu) and its smooth sweep.
     let armed = false;
-    const arm = () => (armed = true);
-    const inputs = ["wheel", "touchmove", "keydown", "pointerdown"];
-    inputs.forEach((t) => addEventListener(t, arm, { passive: true }));
-    const observers = PROMPTS.map(({ id, target }) => {
-      const key = `ema-${id}`;
-      const dialog = document.getElementById(key) as HTMLDialogElement | null;
+    const onInput = (e: Event) => {
+      const linkPress = e.type === "pointerdown" || (e as KeyboardEvent).key === "Enter";
+      armed = !(linkPress && (e.target as Element).closest?.("a"));
+    };
+    const bottomOnScreen = (el: Element) => {
+      const { bottom } = el.getBoundingClientRect();
+      return bottom >= 0 && bottom <= innerHeight;
+    };
+    const watched = PROMPTS.flatMap(({ id, target }) => {
       const el = document.querySelector(target);
-      // Root stretched far up: ratio 1 means the target's bottom has come on screen, however tall it is.
-      const obs = new IntersectionObserver(([e]) => {
-        if (!armed || e.intersectionRatio < 1 || !dialog || dialog.open) return;
-        obs.disconnect();
-        markShown(id);
-        setLang(pageLang());
-        dialog.showModal();
-      }, { rootMargin: "100000px 100000px 0px 100000px", threshold: 1 });
-      if (el && !shownToday(id)) obs.observe(el);
-      return obs;
+      const dialog = document.getElementById(`ema-${id}`) as HTMLDialogElement | null;
+      return el && dialog && !shownToday(id) ? [{ id, el, dialog, on: bottomOnScreen(el), done: false }] : [];
     });
+    // Opens when the target's bottom comes on screen, from below or above, however tall the target is.
+    const onScroll = () => {
+      for (const w of watched) {
+        const on = bottomOnScreen(w.el);
+        if (armed && on && !w.on && !w.done && !w.dialog.open) {
+          w.done = true;
+          markShown(w.id);
+          setLang(pageLang());
+          w.dialog.showModal();
+        }
+        w.on = on;
+      }
+    };
+    const inputs = ["wheel", "touchmove", "keydown", "pointerdown"];
+    inputs.forEach((t) => addEventListener(t, onInput, { passive: true }));
+    addEventListener("scroll", onScroll, { passive: true });
     return () => {
-      inputs.forEach((t) => removeEventListener(t, arm));
-      observers.forEach((o) => o.disconnect());
+      inputs.forEach((t) => removeEventListener(t, onInput));
+      removeEventListener("scroll", onScroll);
     };
   }, []);
 
