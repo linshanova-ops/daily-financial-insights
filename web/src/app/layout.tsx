@@ -35,7 +35,7 @@ export default function RootLayout({
       <body className={`${fraunces.variable} ${manrope.variable} antialiased`}>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var q=new URLSearchParams(location.search).get("lang");var l=q==="zh"||q==="en"?q:"en";document.documentElement.dataset.lang=l;document.documentElement.lang=l==="zh"?"zh-CN":"en";})();`,
+            __html: `(function(){var q=new URLSearchParams(location.search).get("lang");var l=q==="zh"||q==="en"?q:"en";document.documentElement.dataset.lang=l;document.documentElement.lang=l==="zh"?"zh-CN":"en";history.scrollRestoration="manual";addEventListener("pageshow",function(e){if(e.persisted&&!location.hash)scrollTo({top:0,behavior:"instant"});});})();`,
           }}
         />
         <a href="#main-content" className="skip-link focus-ring">
