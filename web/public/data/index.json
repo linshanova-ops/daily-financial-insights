@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-11-10T08:41:33.017Z",
-  "latest": "2026-11-10",
+  "generatedAt": "2026-11-11T01:32:43.071Z",
+  "latest": "2026-11-11",
   "briefings": [
+    {
+      "date": "2026-11-11",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "US stocks fell, and Treasury yields rose. The S&P 500 fell 0.38% to 7520.93. The Nasdaq fell 0.74% to 25065.87. The Dow fell 0.30% to 52231.89. Nvidia fell more than 5%. December WTI fell 0.93% to 86.04 dollars and January Brent fell 1.17% to 91.49 dollars. The 10-year yield rose to 4.9875% and the 2-year yield rose to 4.725%. COMEX December gold fell 2.0% to 4030.20 dollars. The Shanghai Composite rose 0.08% to 3663.72. On the chart, headline inflation is about twice the target, and the core rate is still near it.",
+        "zh": "美股下跌，美债收益率上升。标普500下跌0.38%，收于7520.93点。纳斯达克下跌0.74%，收于25065.87点。道指下跌0.30%，收于52231.89点。英伟达跌幅超过5%。12月WTI下跌0.93%，至86.04美元。1月布伦特下跌1.17%，至91.49美元。10年期美债收益率升至4.9875%，2年期收益率升至4.725%。COMEX 12月黄金下跌2.0%，至4030.20美元。上证指数上涨0.08%，收于3663.72点。图上，整体通胀大约是目标的两倍，核心通胀仍靠近目标。"
+      },
+      "coverageWindow": {
+        "en": "November 10–11, 2026",
+        "zh": "2026年11月10日至11月11日"
+      }
+    },
     {
       "date": "2026-11-10",
       "title": {
