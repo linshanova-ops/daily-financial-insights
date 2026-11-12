@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-11-11T15:17:20.658Z",
-  "latest": "2026-11-11",
+  "generatedAt": "2026-11-12T01:30:41.678Z",
+  "latest": "2026-11-12",
   "briefings": [
+    {
+      "date": "2026-11-12",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "US stocks rose, and crude prices rose. COMEX gold futures fell under 4000 dollars. On the chart, China's technology-goods exports rose faster than total exports.",
+        "zh": "美股上涨，原油价格上涨。COMEX黄金期货跌到4000美元下方。图上，中国科技产品出口增速高于整体出口。"
+      },
+      "coverageWindow": {
+        "en": "November 11–12, 2026",
+        "zh": "2026年11月11日至11月12日"
+      }
+    },
     {
       "date": "2026-11-11",
       "title": {
