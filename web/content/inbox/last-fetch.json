@@ -1,8 +1,26 @@
 {
-  "at": "2026-11-11T07:24:33.990Z",
-  "briefingDate": "2026-11-11",
+  "at": "2026-11-12T01:06:29.943Z",
+  "briefingDate": "2026-11-12",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-12.md",
+      "subject": "彭博财经早茶：黄仁勋或被罢免；富豪补税助中国个税收入激增",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 7255,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-12.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-12.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W46.md",
+      "subject": "Stablecoin supply is shrinking fast",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 2641,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-11.md",
@@ -21,11 +39,6 @@
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W45.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W45.md",
       "skipped": true
     },
     {
@@ -62,11 +75,6 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-28.md",
-      "skipped": true
     }
   ],
   "skipped": [
@@ -91,9 +99,9 @@
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W45.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Alpha Lab is now included in your Pro subscription",
-      "path": "web/content/inbox/glassnode-insights/2026-W45.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -144,16 +152,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美联储按兵不动；华大系被美国列入黑名单",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Most long-term Bitcoin holders are underwater",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 博索纳罗逃离巴西；东山精密港股上市",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-28.md"
     }
   ]
 }
