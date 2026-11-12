@@ -31,12 +31,12 @@ describe("checkThemeCards", () => {
     assert.match(checkThemeCards({ themeCards: [{ ...good, fact }] }).message, /1–3/);
   });
   it("fails a short so-what", () => {
-    const mechanism = "Oil keeps a war premium. CICC (2 September): the strait sets the price.";
-    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /3–5/);
+    const mechanism = "Oil keeps a war premium.";
+    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /2–4/);
   });
   it("fails a long so-what", () => {
     const mechanism = Array(6).fill("Oil keeps a war premium.").join(" ");
-    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /3–5/);
+    assert.match(checkThemeCards({ themeCards: [{ ...good, mechanism }] }).message, /2–4/);
   });
   it("fails sourcing caveats as so-what", () => {
     const mechanism = "That figure is 09:57 a.m. EDT, not a settle.";

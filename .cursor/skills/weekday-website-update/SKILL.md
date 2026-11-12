@@ -156,14 +156,13 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 ## Theme card
 
-One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: the logic, one external view inside it, which of this card's books it moves, and what would change the theme. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`. The skim `watch` string keeps about five next items, not the whole calendar. Do not end So what with the dated next print. Do not end a theme implication with “if … the theme changes” / “这个判断就不成立”.
+One card = one force. Count follows the tape. A reader finishes a card in 20 seconds: the logic, one external view inside it, and which of this card's books it moves. The date/time of the next print belongs in `eventCalendar` and the skim `watch` string — never in `mechanism`. The skim `watch` string keeps about five next items, not the whole calendar. Do not end So what with the dated next print. Do not end So what with a conditional falsifier (“If …, this …” / “若…，这次…”).
 
-So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
+So what (`mechanism`) is 2–4 sentences, no preamble, in this order:
 
 1. Judgment — the logic the tape implies. Do not restate Fact, Summary, Markets at a glance, or Market snapshot. Do not cite the Fact article again as a second summary.
 2. One external view — exactly one named house or official already in the tape, format `House (d Month):`, inside the logic as evidence. Never a second view. Never a second summary of that article.
 3. Asset effect — how this theme affects this card's `assets`. If it moves no book, say so in one clause. Do not invent a spillover.
-4. Forward factor — what would change the theme. A falsifier. Not a calendar pointer. Not “the next print is…”.
 
 ```yaml
 - id: german-cpi-energy
@@ -182,7 +181,6 @@ So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
     Energy is leading the CPI basket, so Bunds are paying an energy-led restriction premium.
     CICC (1 September): euro-area export orders are rising, which is evidence the ECB can stay restrictive.
     Bunds and the euro are paying that premium.
-    That judgment weakens if energy stops leading the price index, or if the flash is revised back to the prior pace.
   status: new              # vs previous briefing: continuing / escalated / retired / new
 ```
 
@@ -190,7 +188,7 @@ So what (`mechanism`) is 3–5 sentences, no preamble, in this order:
 
 Stay on this card’s books. Do not write “keep X on the other card”, “this is not the Y book”, or “rather than the ⟨other⟩ spillover”. Only numbers already in this card’s `fact` or `factSources`. Paragraph must add logic `fact` does not contain — do not restate Fact, Summary, Markets at a glance, or Market snapshot. **Plain language:** short sentences; state the pivotal point and the cause-effect chain from the cited article. No hedge-fund jargon (e.g. "narrative multiple", "discount-rate relief", "flow-built profit cushion", "meeting premium", "term premium") — if the logic is simple, write it simply. Banned phrases: "sets the next tape", "is the next print", "is the settle", "keeps the case alive", "takes … off the tape", "treating … as", "pricing some of the … back out", "room for", "still leaves … on the table", "worth watching", "this card". Banned opener: "A ⟨number⟩ ⟨thing⟩ next to a ⟨number⟩ ⟨thing⟩ is…". Banned opener: "⟨asset⟩ is now pricing ⟨N⟩ against ⟨prior⟩". Banned tail: "Horizon is …, ending at …", or any calendar event whose predicate is the next print/settle/tape — that date lives in `eventCalendar` / `watch`. Do not write `horizon`, `trigger`, or `invalidator` on a theme. No mechanical gold invalidation line.
 
-`verify-briefing` fails dumps (fact not 1–3, so-what not 3–5, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, missing `status`, no `House (d Month):` on any card). Unused prints → What changed. Do not write `singleSource`. No CLAIM. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
+`verify-briefing` fails dumps (fact not 1–3, so-what not 2–4, chips not 1–4, Yahoo quote chips, all same grade, so-what number missing from fact, missing `status`, no `House (d Month):` on any card). Unused prints → What changed. Do not write `singleSource`. No CLAIM. Mail 市场一览 is `marketOverview`, never Yahoo. Merge cards that share a mechanism; keep oil separate when the desk names geopolitics. Chip `themeId` on calendar rows.
 
 **Bitcoin:** `gn metric` if keyed; else inbox Week on Chain as desk view. Do not invent on-chain sizes.
 
