@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-12T07:53:08.760Z",
-  "briefingDate": "2026-11-12",
+  "at": "2026-11-13T01:04:53.655Z",
+  "briefingDate": "2026-11-13",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-13.md",
+      "subject": "彭博财经早茶：黄仁勋被迫下台；特朗普淡化美伊协议前景",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 7226,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-13.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-13.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-12.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-30.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md",
       "skipped": true
     }
   ],
@@ -149,11 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国通胀率升高；欧洲央行按兵不动",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-30.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 美联储按兵不动；华大系被美国列入黑名单",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-10-29.md"
     }
   ]
 }
