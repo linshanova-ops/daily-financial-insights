@@ -29,21 +29,25 @@ function changeClass(direction?: "up" | "down" | "flat"): string {
 }
 
 const TAG = {
-  close: ["Close", "收盘"],
-  yield: ["Official yield", "官方收益率"],
+  close: ["close", "收盘"],
+  yield: ["official yield", "官方收益率"],
   "24h": ["24h", "24小时"],
-  funding: ["Funding", "资金费率"],
+  funding: ["funding", "资金费率"],
 } as const;
 
-/** One short quote-type tag per row; dates and sources sit in the footnote. */
+/**
+ * Print date + quote type. Closes, yields and funding use the row's market-local bar date;
+ * intraday and 24h quotes use the snapshot's Beijing date, matching the Beijing clock shown.
+ */
 function QuoteTag({ row, snapshot }: { row: MarketDashboardRow; snapshot?: string }) {
   const kind = quoteKind(row.id, row.asOfDate, snapshot);
-  if (kind === "intraday") {
-    const hhmm = snapshot ? shanghaiQuote(snapshot).split(" ")[1] : "";
-    return <L en={`Intraday ${hhmm}`} zh={`盘中 ${hhmm}`} />;
-  }
-  const [en, zh] = TAG[kind];
-  return <L en={en} zh={zh} />;
+  const [bjDate, hhmm] = snapshot ? shanghaiQuote(snapshot).split(" ") : [row.asOfDate, ""];
+  const live = kind === "intraday" || kind === "24h";
+  const [, m, d] = (live ? bjDate : row.asOfDate).split("-").map(Number);
+  const en = `${new Date(Date.UTC(2000, m - 1, d)).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })} `;
+  const zh = `${m}月${d}日 `;
+  if (kind === "intraday") return <L en={`${en}intraday ${hhmm}`} zh={`${zh}盘中 ${hhmm}`} />;
+  return <L en={en + TAG[kind][0]} zh={zh + TAG[kind][1]} />;
 }
 
 function AssetName({ row, note }: { row: MarketDashboardRow; note?: number }) {
@@ -69,15 +73,6 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
   const rows = groups.flatMap((g) => g.rows);
   const noted = rows.filter((r) => r.printNote);
   const noteNo = (row: MarketDashboardRow) => noted.indexOf(row) + 1 || undefined;
-  const dates = new Map<string, Set<string>>();
-  for (const r of rows) {
-    const kind = quoteKind(r.id, r.asOfDate, data.asOf);
-    if (kind === "intraday" || kind === "24h") continue;
-    dates.set(kind, (dates.get(kind) ?? new Set()).add(r.asOfDate));
-  }
-  const datesLine = (lang: 0 | 1) =>
-    [...dates].map(([kind, d]) => `${TAG[kind as keyof typeof TAG][lang]} ${[...d].join(", ")}`).join(" · ");
-  const snapClock = data.asOf ? shanghaiQuote(data.asOf) : "";
 
   return (
     <section
@@ -185,8 +180,8 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
           ))}
         </div>
 
-        <div className="mt-8 max-w-3xl space-y-3 border-t border-line/70 pt-5 text-base leading-relaxed text-ink-soft">
-          {noted.length ? (
+        {noted.length ? (
+          <div className="mt-8 max-w-3xl border-t border-line/70 pt-5 text-base leading-relaxed text-ink-soft">
             <ol className="space-y-2">
               {noted.map((row, i) => (
                 <li key={row.id} id={`snapshot-note-${i + 1}`} className="scroll-mt-40">
@@ -196,14 +191,8 @@ export function MarketDashboard({ data }: MarketDashboardProps) {
                 </li>
               ))}
             </ol>
-          ) : null}
-          <p>
-            <L
-              en={`Dates: ${datesLine(0)}. Intraday and 24h quotes as of ${snapClock}.`}
-              zh={`日期：${datesLine(1)}。盘中和24小时报价截至 ${snapClock}。`}
-            />
-          </p>
-        </div>
+          </div>
+        ) : null}
       </div>
     </section>
   );
