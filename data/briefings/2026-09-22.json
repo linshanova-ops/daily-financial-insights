@@ -1,0 +1,1209 @@
+{
+  "date": "2026-09-22",
+  "title": "Daily Financial Briefing",
+  "coverageWindow": "September 21–22, 2026",
+  "publishedAt": "2026-09-22T05:53:31.367Z",
+  "keySources": [
+    {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia",
+      "books": [
+        "us-equities",
+        "commodities",
+        "rates",
+        "fx",
+        "asia-equities",
+        "crypto"
+      ],
+      "influence": "22 September 财经早茶. Chart is AMD market cap through $1 trillion. 市场一览 is that mail in Chinese, mail order."
+    },
+    {
+      "label": "Seattle Times — AP Monday close",
+      "href": "https://www.seattletimes.com/business/how-major-us-stock-indexes-fared-monday-9-21-2026/",
+      "books": [
+        "us-equities",
+        "rates",
+        "commodities"
+      ],
+      "influence": "S&P 7,764.70 +1.5%, Dow 52,048.83 +0.7%, Nasdaq 27,122.09 +2.3%, Russell 2,875.36 +0.5%. Session 10-year fell to 4.95%. Brent back toward $100."
+    },
+    {
+      "label": "Boston 25 — AP Monday wrap",
+      "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/",
+      "books": [
+        "us-equities",
+        "commodities",
+        "rates",
+        "crypto"
+      ],
+      "influence": "Brent fell 3.4% to $100.34. Session 10-year eased to 4.95% from 5.01%. AMD rallied 9.9% to a $1 trillion market value. Bitcoin rose above $86,000. Xi visit 23–25 September."
+    },
+    {
+      "label": "U.S. Treasury curve",
+      "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202609",
+      "books": [
+        "rates"
+      ],
+      "influence": "Official 21 September curve: 2-year 4.76%, 10-year 4.96%, 30-year 5.29%."
+    },
+    {
+      "label": "华尔街见闻 Muse/AMD",
+      "href": "https://wallstreetcn.com/articles/3782248",
+      "books": [
+        "us-equities"
+      ],
+      "influence": "Muse topped US free app charts. Meta closed +11%. AMD closed +9.9% with market cap through $1 trillion. Intel closed +12%."
+    },
+    {
+      "label": "华尔街见闻 Nasdaq wrap",
+      "href": "https://wallstreetcn.com/articles/3782270",
+      "books": [
+        "us-equities"
+      ],
+      "influence": "Nasdaq 100 closed about +2.83%. Arm +15%, Intel +12%, AMD nearly +10%. Wells Fargo raised Meta to $796."
+    },
+    {
+      "label": "Kiplinger Monday close",
+      "href": "https://www.kiplinger.com/investing/stocks/nasdaq-jumps-599-points-to-hit-a-new-high-stock-market-today",
+      "books": [
+        "us-equities",
+        "commodities"
+      ],
+      "influence": "Nasdaq 27,122 record. AMD +10.0% briefly through $1 trillion. Meta +11.4%. WTI settled $95.78, down 4.5%."
+    },
+    {
+      "label": "Cointelegraph Monday bitcoin",
+      "href": "https://cointelegraph.com/markets/bitcoin-price-86k-analysis-sees-crypto-new-bull-market",
+      "books": [
+        "crypto"
+      ],
+      "influence": "Bitstamp high 86,332. Sunday weekly close 81,120."
+    },
+    {
+      "label": "同花顺 A股",
+      "href": "https://stock.10jqka.com.cn/20260921/c680135309.shtml",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "21 September close: Shanghai 3949.91 +0.97%. Shenzhen +0.65%. ChiNext +0.80%."
+    },
+    {
+      "label": "智通财经 Hang Seng",
+      "href": "https://www.zhitongcaijing.com/content/detail/1498699.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": "Hang Seng 25042.71 +1.18% on 21 September. Hang Seng Tech 4423.29 +0.4%."
+    },
+    {
+      "label": "第一财经 央行座谈会",
+      "href": "https://www.yicai.com/news/103372723.html",
+      "books": [
+        "asia-equities",
+        "rates"
+      ],
+      "influence": "21 September: Pan Gongsheng said the PBOC will keep a moderately loose stance and steadily widen two-way financial-market opening."
+    },
+    {
+      "label": "BlockBeats AMD",
+      "href": "https://www.theblockbeats.info/flash/368277",
+      "books": [
+        "us-equities"
+      ],
+      "influence": "律动: AMD rose more than 9% on 21 September, with market cap through $1 trillion."
+    },
+    {
+      "label": "BlockBeats bitcoin squeeze",
+      "href": "https://www.theblockbeats.info/flash/368308",
+      "books": [
+        "crypto"
+      ],
+      "influence": "律动: bitcoin printed as high as 87,300 after an 82,000 break. Nansen: Friday US spot ETF inflow 4.33亿美元 after Thursday 1.6亿美元. ETF-holder average cost about 8.22万美元."
+    },
+    {
+      "label": "CICC AI基础设施",
+      "href": "http://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247854947&idx=3&sn=65837991c6f04cc95c502899023db3f9",
+      "books": [
+        "us-equities"
+      ],
+      "influence": "CICC (25 August): overseas AI remains in a high-prosperity phase."
+    },
+    {
+      "label": "Bank of Japan calendar",
+      "href": "https://www.boj.or.jp/en/about/calendar/",
+      "books": [
+        "rates"
+      ],
+      "influence": "Rate change effective 24 September. Summary of Opinions 1 October. Tankan 1 October."
+    },
+    {
+      "label": "华尔街见闻早餐 9月21日",
+      "href": "https://wallstreetcn.com/articles/3782126",
+      "books": [
+        "rates",
+        "fx"
+      ],
+      "influence": "Friday BOJ 7-2 hike to around 1.25%, effective 24 September. Used for the continuing BOJ card; 22 September breakfast FM-Radio was not on the wire."
+    },
+    {
+      "label": "DOL UI claims PDF",
+      "href": "https://www.dol.gov/ui/data.pdf",
+      "books": [
+        "rates"
+      ],
+      "influence": "Weekly initial jobless claims due 24 September at 20:30 Beijing."
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": "今日图表（彭博 Sep 22）— AMD跻身市值万亿美元俱乐部",
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-09-22.png",
+      "analysis": "彭博「今日图表」标题写的是AMD跻身市值万亿美元俱乐部，图例是AMD市值一条线，标注收盘突破1万亿美元，来源彭博。这不是美银2年期国债，也不是上证综指。 Boston 25: AMD rallied 9.9% and saw its total market value hit $1 trillion. 华尔街见闻: AMD收涨9.9%，市值首次收于1万亿美元整数位上方. Distinctive Bloomberg-hub-only ticks are omitted; the numbered path is the AP wrap and 见闻 close.",
+      "source": {
+        "label": "彭博 Markets Daily China / 财经早茶",
+        "href": "https://www.bloomberg.com/asia"
+      }
+    }
+  ],
+  "marketTone": "US cash closed higher after Brent settled at 100.34 and the official 10-year yield printed 4.96%. The S&P 500 closed at 7,764.70, up 1.5%. The 财经早茶 chart is AMD through a 1 trillion dollar market cap. Shanghai closed at 3949.91.",
+  "summary": [
+    {
+      "text": "US Treasury: the official 21 September curve printed 4.76% on the 2-year, 4.96% on the 10-year, and 5.29% on the 30-year. 财经早茶 今日图表: AMD market cap closed through 1 trillion dollars.",
+      "sources": [
+        {
+          "label": "U.S. Treasury curve",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202609"
+        },
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+        }
+      ]
+    },
+    {
+      "text": "Seattle Times AP: the S&P 500 closed at 7,764.70, up 1.5%, the Dow at 52,048.83, up 0.7%, and the Nasdaq at 27,122.09, up 2.3%. Boston 25: Brent settled at 100.34, down 3.4%.",
+      "sources": [
+        {
+          "label": "Seattle Times AP Monday close",
+          "href": "https://www.seattletimes.com/business/how-major-us-stock-indexes-fared-monday-9-21-2026/"
+        },
+        {
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+        }
+      ]
+    },
+    {
+      "text": "同花顺: Shanghai closed at 3949.91 on 21 September, up 0.97%. 第一财经: Pan Gongsheng said the PBOC will keep a moderately loose stance and steadily widen two-way opening. Cointelegraph: bitcoin printed a Bitstamp high of 86,332.",
+      "sources": [
+        {
+          "label": "同花顺 A股",
+          "href": "https://stock.10jqka.com.cn/20260921/c680135309.shtml"
+        },
+        {
+          "label": "第一财经 央行座谈会",
+          "href": "https://www.yicai.com/news/103372723.html"
+        },
+        {
+          "label": "Cointelegraph Monday bitcoin",
+          "href": "https://cointelegraph.com/markets/bitcoin-price-86k-analysis-sees-crypto-new-bull-market"
+        }
+      ]
+    },
+    {
+      "text": "Boston 25: China's Foreign Ministry confirmed Xi Jinping will pay a state visit to the United States between 23 and 25 September. 财经早茶: USTR Greer said the two sides still disagree on how long to extend the trade truce.",
+      "sources": [
+        {
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+        },
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "signal": "The official 10-year printed 4.96% after Friday's 5.01%, and Brent settled at 100.34 on a fourth down-session. The 财经早茶 chart is AMD through 1 trillion dollars, and the Nasdaq closed at a 27,122.09 record. He Lifeng talks run through 23 September ahead of the Xi visit.",
+  "watch": "Nagel is 16:30 Beijing. Richmond Fed manufacturing is 22:00. Williams is 22:05. Jefferson is 22:20. He Lifeng talks run through 23 September. Xi is in the United States 23–25 September. US claims are Thursday. BOJ 1.25% becomes effective 24 September. PCE is 30 September.",
+  "marketOverview": {
+    "asOfDate": "2026-09-22",
+    "note": "财经早茶 市场一览. Dated prints sit in Closes and Themes. Do not mix the Yahoo inject into these lines.",
+    "items": [
+      {
+        "label": "美国股市",
+        "text": "芯片股走强推动标普500指数创下8月初以来最佳单日表现，Meta领涨科技股",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "Seattle Times AP Monday close",
+            "href": "https://www.seattletimes.com/business/how-major-us-stock-indexes-fared-monday-9-21-2026/"
+          }
+        ]
+      },
+      {
+        "label": "中概股",
+        "text": "金龙中国指数连续第三天上涨，阿里巴巴和腾讯音乐对指数贡献最大",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          }
+        ]
+      },
+      {
+        "label": "美国债市",
+        "text": "油价连日回落推动中长期美债上涨，欧洲政府债券大涨也带来提振",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "U.S. Treasury curve",
+            "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202609"
+          }
+        ]
+      },
+      {
+        "label": "外汇市场",
+        "text": "彭博美元指数小幅走高，此前美联储官员暗示将进一步加息。除瑞郎外的G10货币兑美元普跌，日元表现落后",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          }
+        ]
+      },
+      {
+        "label": "欧洲股债",
+        "text": "德国国债创5月以来最大涨幅，对央行加息押注降温。欧洲股市创7月以来最大涨幅，能源价格回落缓解通胀担忧",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "Seattle Times AP Monday close",
+            "href": "https://www.seattletimes.com/business/how-major-us-stock-indexes-fared-monday-9-21-2026/"
+          }
+        ]
+      },
+      {
+        "label": "能源",
+        "text": "原油期货连续第四天下跌，有迹象显示，沙特正加大经由霍尔木兹海峡的原油出口，同时市场再度对美伊战争出现外交进展抱有希望",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          },
+          {
+            "label": "Boston 25 AP Monday wrap",
+            "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+          }
+        ]
+      },
+      {
+        "label": "金属",
+        "text": "铜价延续涨势，有迹象显示中国供应趋紧。随着投资者权衡美联储可能进一步加息的风险，金价下跌",
+        "sources": [
+          {
+            "label": "彭博 Markets Daily China",
+            "href": "https://www.bloomberg.com/asia"
+          }
+        ]
+      }
+    ],
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    }
+  },
+  "themeCards": [
+    {
+      "id": "semis",
+      "title": "AMD closed through a 1 trillion dollar market cap as Muse lifted chip demand",
+      "grade": "STRONG",
+      "assets": [
+        "US equities"
+      ],
+      "fact": "财经早茶 今日图表：AMD跻身市值万亿美元俱乐部，标注收盘突破1万亿美元。 Boston 25: Advanced Micro Devices rallied 9.9% and saw its total market value hit $1 trillion, and 华尔街见闻 has AMD +9.9% with Meta +11%. Seattle Times AP: the Nasdaq composite rose 599.55 points, or 2.3%, to 27,122.09.",
+      "factSources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+        },
+        {
+          "label": "华尔街见闻 Muse/AMD",
+          "href": "https://wallstreetcn.com/articles/3782248"
+        },
+        {
+          "label": "Seattle Times AP Monday close",
+          "href": "https://www.seattletimes.com/business/how-major-us-stock-indexes-fared-monday-9-21-2026/"
+        }
+      ],
+      "mechanism": "Muse topping US free app charts told the market that people are actually using Meta's AI, not just watching a launch event. Investors treated that as fresh chip demand and bid the semiconductor group hard. CICC (25 August): overseas AI demand is still in a strong phase, which fits why a usage headline can lift the whole chip sleeve. This moves US equities. The read breaks if accelerator orders lag the app ranking, or if the equity bid fades while the ranking holds.",
+      "trigger": "Nasdaq reprinting at or above 27,122.09 with AMD still through 1 trillion dollars.",
+      "invalidator": "Nasdaq reprinting below 27,122.09.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "ust-duration",
+      "title": "The official 10-year printed 4.96% after Friday's 5.01% close",
+      "grade": "STRONG",
+      "assets": [
+        "USTs",
+        "US equities"
+      ],
+      "fact": "US Treasury: the official 21 September curve printed 4.76% on the 2-year, 4.96% on the 10-year, and 5.29% on the 30-year, after Friday's official 5.01% 10-year. Boston 25: the session 10-year yield fell to 4.95% and the S&P 500 rose 114.20 points, or 1.5%, to 7764.70. 财经早茶 美国债市: 油价连日回落推动中长期美债上涨.",
+      "factSources": [
+        {
+          "label": "U.S. Treasury curve",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202609"
+        },
+        {
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+        },
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Falling oil eased inflation fears, so long-dated Treasury yields dropped while short rates barely moved. That mix helped stocks more than it signaled a Fed pivot. Saint Louis Fed (22 September): more rate hikes may still be needed to contain inflation, so the policy bias stayed tight even as bonds rallied. This hits USTs and US equities. The read reverses if short-end rates start pricing more hikes, or if long yields rise again while oil stays soft.",
+      "trigger": "Official 10-year reprinting at or above 5.01%.",
+      "invalidator": "Official 10-year reprinting below 4.96%.",
+      "horizon": "days",
+      "status": "continuing"
+    },
+    {
+      "id": "brent-oil-rally",
+      "title": "Brent settled at 100.34 on a fourth down-session",
+      "grade": "STRONG",
+      "assets": [
+        "Oil"
+      ],
+      "fact": "Boston 25: Brent oil fell 3.4% to $100.34. Kiplinger: front-month WTI slumped 4.5% to $95.78 per barrel. 财经早茶 能源: 原油期货连续第四天下跌，有迹象显示沙特正加大经由霍尔木兹海峡的原油出口.",
+      "factSources": [
+        {
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+        },
+        {
+          "label": "Kiplinger Monday close",
+          "href": "https://www.kiplinger.com/investing/stocks/nasdaq-jumps-599-points-to-hit-a-new-high-stock-market-today"
+        },
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Oil fell for a fourth day because more Saudi barrels are moving through Hormuz and traders hope diplomacy on Iran may improve. The market is taking war-risk premium out of crude, not calling demand weak. 财经早茶 (22 September): Russia may extend its diesel export ban, so refined products can stay tight even as crude eases. This is the Oil book. Premium comes back if Hormuz loadings stall or the diplomatic track breaks.",
+      "trigger": "Dated Brent reprinting at or below 100.34.",
+      "invalidator": "Dated Brent reprinting above 100.34.",
+      "horizon": "days",
+      "status": "escalated"
+    },
+    {
+      "id": "btc-etf",
+      "title": "Bitcoin printed 86,332 after Friday's 433 million ETF inflow",
+      "grade": "MODERATE",
+      "assets": [
+        "BTC"
+      ],
+      "fact": "Cointelegraph: BTC/USD hit a 33-week high of 86,332 on Bitstamp on 21 September, with Sunday's weekly close at 81,120. 律动: US spot bitcoin ETFs took in 4.33亿美元 on Friday after 1.6亿美元 on Thursday, and Nansen puts ETF holders' average cost at about 8.22万美元. 财经早茶 names bitcoin in the market snapshot without using that handle as the print.",
+      "factSources": [
+        {
+          "label": "Cointelegraph Monday bitcoin",
+          "href": "https://cointelegraph.com/markets/bitcoin-price-86k-analysis-sees-crypto-new-bull-market"
+        },
+        {
+          "label": "BlockBeats bitcoin squeeze",
+          "href": "https://www.theblockbeats.info/flash/368308"
+        },
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Back-to-back US spot bitcoin ETF inflows helped push price above where many ETF holders got in. Holding above that average cost can keep dip-buying alive while flows stay positive. Nansen (22 September): the ETF-holder average cost line is the reference for that cushion. This is BTC. The setup fails if ETFs flip to outflows while price stays high, or price drops back through that average.",
+      "trigger": "Cointelegraph bitcoin reprinting above 86,332 on a fresh US spot ETF inflow.",
+      "invalidator": "Cointelegraph bitcoin reprinting below 86,332.",
+      "horizon": "days",
+      "status": "escalated"
+    },
+    {
+      "id": "us-china-trade",
+      "title": "Xi's 23–25 September visit is still sitting on an unfinished truce term",
+      "grade": "MODERATE",
+      "assets": [
+        "A/H shares",
+        "US equities"
+      ],
+      "fact": "Boston 25: China's Foreign Ministry on Monday confirmed that Xi Jinping will pay a state visit to the United States between 23 and 25 September, and indexes gained 1.2% in Hong Kong. 财经早茶 国际要闻: 美国贸易代表格里尔称中美在延长贸易休战安排的条款上仍存在分歧. 财经早茶 大中华: 财政部副部长廖岷表示周一在工作层继续和美国方面讨论人工智能、投资和贸易等议题.",
+      "factSources": [
+        {
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+        },
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "Markets have priced in the Xi visit, but the tariff truce still has no agreed extension length. Until that term is signed, the rally is hope for a deal while the term sheet stays open. 财经早茶 (22 September): Washington and Beijing want different truce durations, which is why the open issue is how long, not whether to talk. A/H shares and US equities both carry that uncertainty. The risk fades if a dated extension is announced, or returns if the visit ends with no term.",
+      "trigger": "A dated truce-extension term printing on or before 25 September.",
+      "invalidator": "The 23–25 September visit ending without a dated extension term.",
+      "horizon": "days",
+      "status": "new"
+    },
+    {
+      "id": "china-fiscal",
+      "title": "Shanghai closed at 3949.91 as Pan Gongsheng kept a moderately loose stance",
+      "grade": "MODERATE",
+      "assets": [
+        "A/H shares"
+      ],
+      "fact": "同花顺: Shanghai closed at 3949.91 on 21 September, up 0.97%. 第一财经: Pan Gongsheng said the PBOC will implement a moderately loose monetary policy and steadily widen two-way financial-market opening. 智通财经: Hang Seng closed at 25042.71 on 21 September, up 1.18%, and Hang Seng Tech closed at 4423.29, up 0.4%.",
+      "factSources": [
+        {
+          "label": "同花顺 A股",
+          "href": "https://stock.10jqka.com.cn/20260921/c680135309.shtml"
+        },
+        {
+          "label": "第一财经 央行座谈会",
+          "href": "https://www.yicai.com/news/103372723.html"
+        },
+        {
+          "label": "智通财经 Hang Seng",
+          "href": "https://www.zhitongcaijing.com/content/detail/1498699.html"
+        }
+      ],
+      "mechanism": "Domestic shares rose on steady policy messaging: no new rate or reserve- requirement cut, but the PBOC chief paired a moderately loose stance with a pledge to widen two-way market access for foreign institutions. 第一财经 (21 September): opening sat in the same remarks as the stance, so foreign access is the live policy channel for equities. A/H shares. Changes if Beijing adds a rate, RRR, or liquidity tool, or walks back the access language.",
+      "trigger": "Shanghai reprinting at or above 3949.91.",
+      "invalidator": "Shanghai reprinting below 3949.91.",
+      "horizon": "days",
+      "status": "continuing"
+    },
+    {
+      "id": "boj-cpi",
+      "title": "The BOJ 1.25% guideline is still waiting on the 24 September effective date",
+      "grade": "WEAK",
+      "assets": [
+        "JPY"
+      ],
+      "fact": "Bank of Japan: the 1.25% overnight-call guideline becomes effective on 24 September. 财经早茶 外汇市场: 除瑞郎外的G10货币兑美元普跌，日元表现落后.",
+      "factSources": [
+        {
+          "label": "华尔街见闻早餐 9月21日",
+          "href": "https://wallstreetcn.com/articles/3782126"
+        },
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": "The BOJ already voted to lift the call rate to 1.25%, but that level does not bind bank funding until 24 September. Until then, yen trading looks like broad dollar strength with little BOJ hike priced in. 财经早茶 (22 September): most G10 currencies fell against the dollar while yen lagged, which matches a dollar-led session. JPY shows little separate hike premium yet. That changes if yen leads G10 once the new guideline is live, or if the Bank of Japan signals a lower path.",
+      "trigger": "Bank of Japan reprinting the call-rate guideline above 1.25%.",
+      "invalidator": "Bank of Japan reprinting the call-rate guideline below 1.25%.",
+      "horizon": "days",
+      "status": "continuing"
+    }
+  ],
+  "globalRegime": "Fed speakers are still warning inflation may need more hikes while oil's four-day drop eased pressure on long-dated bonds. Meta's Muse app hit the top of US free charts and lifted chip sentiment ahead of He Lifeng's trade talks and Xi's 23–25 September US visit.",
+  "globalChanged": [
+    {
+      "text": "美国贸易代表格里尔称中美在延长贸易休战安排的条款上仍存在分歧，暗示华府倾向于延长三至六个月。而有报道称北京希望延长更久",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "据报美国财长贝森特拟提交开设中美AI热线的方案，特朗普将在本周与习近平会晤前决定是否批准",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "圣路易斯联储行长称，可能需要进一步加息才能遏制通胀。芝加哥联储行长表示，通胀重返2%的道路可能难免遭遇阵痛",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "Meta智能体Muse登上美国谷歌和苹果免费应用榜首位，激发市场对芯片需求的乐观预期，费城半导体指数大涨逾4%，AMD跻身市值万亿美元俱乐部",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻 Muse/AMD",
+          "href": "https://wallstreetcn.com/articles/3782248"
+        }
+      ]
+    },
+    {
+      "text": "美国银行对热门AI融资交易的参与度落后同侪，交易部门业绩恐受影响。标普称，未来几年银行业对AI的应用将日益影响其信用评级",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "贝森特将Hugging Face事件归责OpenAI管理层，称责任在人而非AI",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "俄罗斯据悉势将把柴油出口禁令在9月到期后进一步延长。据报特朗普周日与乌克兰总统泽连斯基通电话，要求其停止攻击俄罗斯炼油厂",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "普京据悉计划出席今年在深圳举行的APEC峰会，但可能不会赴美参加特朗普出席的二十国集团峰会",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "派拉蒙天舞与美国12个州的总检察长及美国编剧工会就相关诉讼达成和解，扫清了收购华纳兄弟探索所面临的障碍",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "摩根大通与卡塔尔投资局拟建立200亿美元投资伙伴关系",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": "Softer crude is easing inflation pressure on bonds, but Fed speakers still argue rates may need to go higher — so the tape is not a clean pivot story."
+    },
+    {
+      "text": "CICC (25 August): overseas AI remains in a high-prosperity phase, which fits why a usage headline can lift chip stocks even when macro policy sounds hawkish."
+    },
+    {
+      "text": "财经早茶 (22 September): Greer still disagrees on the truce term, which is the near-term path the 23–25 September Xi visit still has to settle."
+    }
+  ],
+  "globalTensions": "Official 10-year 4.96% versus AP session 4.95% versus Friday official 5.01%. Official 2-year 4.76% unchanged. AP 1.5% / 7,764.70 versus inbox 7,764.70 +1.5%. Cointelegraph 86,332 versus inbox 86,512.60 versus 律动 as high as 87,300. Boston 25 Brent 100.34 versus Kiplinger WTI 95.78. 见闻 AMD +9.9% versus 律动 more than 9% versus Kiplinger +10.0%.",
+  "chinaStance": "Pan Gongsheng restated a moderately loose stance and two-way opening at a symposium with foreign financial institutions. He Lifeng's working-level trade talks with the United States run through 23 September ahead of Xi's US visit.",
+  "chinaChanged": [
+    {
+      "text": "中国财政部副部长廖岷表示，周一在工作层继续和美国方面讨论人工智能、投资和贸易等议题，落实牵头人达成的共识",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国央行与多家外资金融机构高管举行座谈会，行长潘功胜表示将稳步扩大金融市场双向开放",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "第一财经 央行座谈会",
+          "href": "https://www.yicai.com/news/103372723.html"
+        }
+      ]
+    },
+    {
+      "text": "美国、韩国和日本外长表示坚决反对经济胁迫和非市场政策，强调维护台海和平稳定的重要性",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国外长王毅在与德国外长通话时表示，中国和欧盟是全面战略伙伴，不应打贸易战，中德双方有必要加强战略沟通",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "香港联交所刊发第二阶段上市机制竞争力检讨谘询文件，拟针对须予公布的交易、关连交易和分拆上市相关规则进行改革",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "The Information报道，DeepSeek料最快第四季度获得新一批华为芯片，用以训练AI模型",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中央社：台湾微软预计未来2-3年AI算力需求仍将大于供给，计划在台扩建数据中心",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "中国开除原中央军委副主席张又侠、原军委联合参谋部参谋长刘振立党籍军籍，称两人对党不忠诚并收受巨额钱款",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": "美国众议院军事委员会表示，正在对今年早些时候一批可能涉及敏感技术的F-35战斗机部件赴美维修途中改道香港一事进行调查",
+      "sources": [
+        {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": "Pan Gongsheng's opening pledge keeps foreign access in the policy story while funding tools stay unchanged, so domestic shares trade policy tone more than a fresh liquidity injection."
+    },
+    {
+      "text": "The 23–25 September Xi visit still sits on Greer's unfinished truce term, which is why the New York working-level round stays on the A/H book even when index levels look calm."
+    }
+  ],
+  "chinaDivergences": "Shanghai +0.97% versus Hang Seng +1.18% versus an S&P +1.5% chip tape. 21 September A-share close versus 22 September 财经早茶. Mail 3–6 month truce term is Bloomberg-hub-only and is named in singleSource, not as a Theme digit.",
+  "signals": [],
+  "eventCalendar": {
+    "windowStart": "2026-09-22",
+    "windowEnd": "2026-10-02",
+    "note": "Briefing day through next Friday (Oct 2). Mainland China only on China rows (no TW/HK/Macao). Calendar from 22 September 财经早茶 日程 plus BOJ, claims, and PCE. Bloomberg estimate digits are omitted (hub 403). Next FOMC is 29–30 October, after this window (2pm ET = 02:00 Beijing the next day).",
+    "events": [
+      {
+        "id": "bullock-2026-09-22",
+        "date": "2026-09-22",
+        "timeBeijing": "11:10",
+        "region": "Other",
+        "category": "central-bank",
+        "event": "RBA Governor Bullock speech",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "nagel-2026-09-22",
+        "date": "2026-09-22",
+        "timeBeijing": "16:30",
+        "region": "Other",
+        "category": "central-bank",
+        "event": "ECB Governing Council member Nagel speech",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "richmond-fed-2026-09-22",
+        "date": "2026-09-22",
+        "timeBeijing": "22:00",
+        "region": "US",
+        "category": "data",
+        "event": "Richmond Fed September manufacturing index",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "euro-confidence-2026-09-22",
+        "date": "2026-09-22",
+        "timeBeijing": "22:00",
+        "region": "Other",
+        "category": "data",
+        "event": "Euro-area September consumer-confidence flash",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "williams-2026-09-22",
+        "date": "2026-09-22",
+        "timeBeijing": "22:05",
+        "region": "US",
+        "category": "central-bank",
+        "event": "New York Fed President Williams speech",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "simkus-2026-09-22",
+        "date": "2026-09-22",
+        "timeBeijing": "22:10",
+        "region": "Other",
+        "category": "central-bank",
+        "event": "ECB Governing Council member Simkus speech",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "jefferson-2026-09-22",
+        "date": "2026-09-22",
+        "timeBeijing": "22:20",
+        "region": "US",
+        "category": "central-bank",
+        "event": "Fed Vice Chair Jefferson speech",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "he-lifeng-talks-2026-09-22",
+        "date": "2026-09-22",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "other",
+        "event": "He Lifeng trade talks in the United States (through 23 September)",
+        "themeId": "us-china-trade",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "barkin-2026-09-23",
+        "date": "2026-09-23",
+        "timeBeijing": "01:00",
+        "region": "US",
+        "category": "central-bank",
+        "event": "Richmond Fed President Barkin speech",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "nagel-2026-09-23",
+        "date": "2026-09-23",
+        "timeBeijing": "03:30",
+        "region": "Other",
+        "category": "central-bank",
+        "event": "ECB Governing Council member Nagel speech",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "彭博财经早茶 Sep 22",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "unga-iran-2026-09-23",
+        "date": "2026-09-23",
+        "timeBeijing": "",
+        "region": "Other",
+        "category": "other",
+        "event": "Iranian president scheduled to address the UN General Assembly",
+        "themeId": "brent-oil-rally",
+        "source": {
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+        }
+      },
+      {
+        "id": "xi-us-visit-2026-09-23",
+        "date": "2026-09-23",
+        "timeBeijing": "",
+        "region": "US",
+        "category": "other",
+        "event": "Xi Jinping state visit to the United States (23–25 September)",
+        "themeId": "us-china-trade",
+        "source": {
+          "label": "Boston 25 AP Monday wrap",
+          "href": "https://www.boston25news.com/news/business/stocks-advance-after/RXXCMTYUTQZYRHWCVROE4WSPNY/"
+        }
+      },
+      {
+        "id": "boj-rate-effective-2026-09-24",
+        "date": "2026-09-24",
+        "timeBeijing": "",
+        "region": "Other",
+        "category": "central-bank",
+        "event": "BOJ overnight-call guideline becomes effective",
+        "themeId": "boj-cpi",
+        "source": {
+          "label": "Bank of Japan calendar",
+          "href": "https://www.boj.or.jp/en/about/calendar/"
+        }
+      },
+      {
+        "id": "us-claims-2026-09-24",
+        "date": "2026-09-24",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "US weekly initial jobless claims",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "DOL UI claims PDF",
+          "href": "https://www.dol.gov/ui/data.pdf"
+        }
+      },
+      {
+        "id": "us-pce-2026-09-30",
+        "date": "2026-09-30",
+        "timeBeijing": "20:30",
+        "region": "US",
+        "category": "data",
+        "event": "US August PCE inflation",
+        "themeId": "ust-duration",
+        "source": {
+          "label": "Guggenheim 2026 US calendar",
+          "href": "https://www.guggenheiminvestments.com/services/advisor-resources/us-economic-calendar"
+        }
+      },
+      {
+        "id": "boj-opinions-2026-10-01",
+        "date": "2026-10-01",
+        "timeBeijing": "07:50",
+        "region": "Other",
+        "category": "central-bank",
+        "event": "BOJ Summary of Opinions from the 17–18 September meeting",
+        "themeId": "boj-cpi",
+        "source": {
+          "label": "Bank of Japan calendar",
+          "href": "https://www.boj.or.jp/en/about/calendar/"
+        }
+      },
+      {
+        "id": "boj-tankan-2026-10-01",
+        "date": "2026-10-01",
+        "timeBeijing": "07:50",
+        "region": "Other",
+        "category": "data",
+        "event": "BOJ Tankan September summary",
+        "themeId": "boj-cpi",
+        "source": {
+          "label": "Bank of Japan calendar",
+          "href": "https://www.boj.or.jp/en/about/calendar/"
+        }
+      }
+    ]
+  },
+  "watchItems": [],
+  "sources": "22 September 财经早茶 IMAP landed on this branch via last-kick of inbox-sync.yml (on.push). 市场一览 is that mail in Chinese, mail order — not 见闻 市场收报. 今日图表 is AMD through 1 trillion dollars. CICC is the 25 August overseas-AI note, paraphrased without distinctive WeChat-only digits. Yicai is the 21 September Pan Gongsheng symposium. 华尔街见闻 breakfast FM-Radio for 22 September was not on the wire at gather; 3782248 and 3782270 are the 见闻 desk. BlockBeats 368277 is the tech/AI book; 368308 is the BTC/ETF and street-ratings book. Cointelegraph is the BTC print.",
+  "singleSource": "Inbox 07:03 pm ET snapshot (S&P 7,764.70 +1.5%, FXI 34.91, BBDXY 1,204.30, BTC 86,512.60) is not 市场一览. AP 1.5% / 7,764.70 matches the inbox S&P print and is not mixed unlabeled with 见闻. Session 10-year AP 4.95% is not mixed unlabeled with Treasury 4.96%. Official 2-year 4.76% is unchanged from Friday. Cointelegraph 86,332 is not mixed unlabeled with inbox 86,512.60 or 律动 87,300. Boston 25 Brent 100.34 versus Kiplinger WTI 95.78 is flagged here. Mail 三至六个月 truce term is Bloomberg-hub-only and is not a Theme digit. 华尔街见闻早餐FM-Radio 22 September was missing at gather; 3782248/3782270 are used. Caixin 财经早知道 22 September was missing; Yicai is the 21 September PBOC symposium. 律动 had no dated oil/macro flash in-window; Boston 25 is the Brent print. No GLASSNODE_API_KEY; 律动 Nansen cost 82,200 is the BTC desk view. Yahoo quote HTML is not used in summary. Hang Seng Tech day-change is 智通 +0.4% on 21 September; inject may show a later Asia print. Next FOMC is 29–30 October, after this calendar window (2pm ET = 02:00 Beijing the next day). Dashboard re-injected at publishedAt.",
+  "caveats": "Event Calendar mainland China only. Brent Yahoo BZ=F in Market closes is futures, not the Boston 25 100.34 settle. Asia levels live only in Market Dashboard. 10-year 4.96% is the Treasury daily curve from Monday. FOMC was 16 September, 14:00 ET / 02:00 Beijing on 17 September.",
+  "suggestions": "Today: Nagel at 16:30 Beijing. Richmond Fed manufacturing is 22:00. Williams is 22:05. Jefferson is 22:20. He Lifeng talks run through 23 September. Xi is in the United States 23–25 September. This report is research and information synthesis, not investment advice.",
+  "disclaimer": "This report is research and information synthesis, not investment advice. Verify figures against primary sources before acting on them.",
+  "marketDashboard": {
+    "asOf": "2026-09-22T05:53:31.367Z",
+    "note": "Equities, FX, gold futures, and Brent futures use the latest two Yahoo daily closes (Brent row is Yahoo BZ=F — not the same print as CNBC official settle when both appear); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,764.70",
+            "change": "+1.49%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-21",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "27,122.09",
+            "change": "+2.26%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-21",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "14.87",
+            "change": "+0.41%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-21",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "65,018.95",
+            "change": "+1.38%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-18",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "kospi",
+            "asset": "Kospi",
+            "latest": "6,999.96",
+            "change": "−0.11%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "25,102.35",
+            "change": "+0.24%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,446.10",
+            "change": "+0.52%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,952.87",
+            "change": "+0.08%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.76%",
+            "change": "0.0 bp",
+            "changeDirection": "flat",
+            "asOfDate": "2026-09-21",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.83%",
+            "change": "−3.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-21",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.96%",
+            "change": "−5.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-21",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.29%",
+            "change": "−5.0 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-21",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "157.4720",
+            "change": "+0.27%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.6962",
+            "change": "−0.02%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,360.70",
+            "change": "−0.53%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$97.61",
+            "change": "−2.72%",
+            "changeDirection": "down",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$85,520",
+            "change": "+4.87%",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0100%",
+            "change": "+0.798 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-09-22",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-09-22"
+}

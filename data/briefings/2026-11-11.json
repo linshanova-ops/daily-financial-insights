@@ -1,0 +1,1499 @@
+{
+  "date": "2026-11-11",
+  "title": {
+    "en": "Daily Financial Briefing",
+    "zh": "每日金融简报"
+  },
+  "coverageWindow": {
+    "en": "November 10–11, 2026",
+    "zh": "2026年11月10日至11月11日"
+  },
+  "publishedAt": "2026-11-11T01:31:14.806Z",
+  "keySources": [
+    {
+      "label": "华尔街见闻 11月11日早餐",
+      "href": "https://wallstreetcn.com/articles/3785684",
+      "books": [
+        "us-equities",
+        "rates",
+        "commodities",
+        "asia-equities",
+        "fx"
+      ],
+      "influence": {
+        "en": "Tuesday's closes: S&P 500 7520.93, Nasdaq 25065.87, Dow 52231.89, 10-year yield 4.9875%, 2-year yield 4.725%, WTI 86.04, Brent 91.49, COMEX December gold 4030.20, Shanghai 3663.72, Nikkei 225 60459.58.",
+        "zh": "周二收盘：标普500 7520.93，纳斯达克 25065.87，道指 52231.89，10年期收益率 4.9875%，2年期 4.725%，WTI 86.04，布伦特 91.49，COMEX 12月黄金 4030.20，上证 3663.72，日经225 60459.58。"
+      }
+    },
+    {
+      "label": "财新 10月出口",
+      "href": "https://economy.caixin.com/2026-11-10/102503103.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": {
+        "en": "Caixin (10 November), citing customs. October exports rose 35.2% from a year earlier and imports rose 41.6%. The export pace eased 1.1 percentage points from September.",
+        "zh": "财新（11月10日）引述海关。10月出口同比增长35.2%，进口同比增长41.6%。出口增速较9月放缓1.1个百分点。"
+      }
+    },
+    {
+      "label": "彭博财经早茶 Nov 11",
+      "href": "https://www.bloomberg.com/asia",
+      "books": [
+        "us-equities",
+        "rates",
+        "commodities",
+        "asia-equities"
+      ],
+      "influence": {
+        "en": "11 November 财经早茶. Indexes fell, the 2-year yield had its biggest rise in 19 months, crude kept falling, and gold's drop widened. The chart is euro-area inflation against the target.",
+        "zh": "11月11日财经早茶。股指下跌，两年期收益率创19个月最大升幅，原油续跌，金价跌幅扩大。图是欧元区通胀相对目标的位置。"
+      }
+    },
+    {
+      "label": "中金 11月10日 出口",
+      "href": "https://mp.weixin.qq.com/s?__biz=MzU0MTkwMTczOQ==&mid=2247515378&idx=1&sn=e4e74a7ac071b57361f8aaec51e0b855&chksm=fa01afe9952e176215a3d0c5d8c832c3c0dd966cdf5617bf021c814470ef230cc6d56f5d14bc&scene=0&xtrack=1#rd",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": {
+        "en": "CICC (10 November). Exports matched the survey, imports were above it, and the rise in export prices may already be past its peak.",
+        "zh": "中金（11月10日）。出口与调查一致，进口高于调查，出口价格的同比升幅或已过高点。"
+      }
+    },
+    {
+      "label": "律动 Anthropic",
+      "href": "https://en.theblockbeats.news/flash/376644",
+      "books": [
+        "us-equities"
+      ],
+      "influence": {
+        "en": "BlockBeats (11 November). Seven Anthropic co-founders plan to sell 1.75 billion dollars of shares. The IPO and the private placement together total up to 90.4 billion dollars, including shares sold by existing holders, at a fully diluted value of about 1.4 trillion dollars.",
+        "zh": "律动（11月11日）。Anthropic的七位创始人计划出售17.5亿美元股票。IPO与同步私募交易总规模最高约904亿美元，含老股出售，完全稀释价值约1.4万亿美元。"
+      }
+    },
+    {
+      "label": "SEC Anthropic S-1/A",
+      "href": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+      "books": [
+        "us-equities"
+      ],
+      "influence": {
+        "en": "Anthropic's amended S-1 (10 November). The price range is 70 to 78 dollars a share. At the 74 dollar midpoint, net proceeds to Anthropic from the IPO and the concurrent private placement are about 84.6 billion dollars, before the underwriters' option.",
+        "zh": "Anthropic修订版S-1招股书（11月10日）。发行价区间为每股70至78美元。按74美元的区间中点估算，公司从IPO和同步私募获得的净募资约846亿美元，未计承销商超额配售。"
+      }
+    },
+    {
+      "label": "BLS CPI October",
+      "href": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+      "books": [
+        "rates"
+      ],
+      "influence": {
+        "en": "BLS (10 November). October consumer prices rose 0.4% from September, after a 0.6% rise in September. Core prices rose 0.3%.",
+        "zh": "美国劳工统计局（11月10日）。10月CPI环比上涨0.4%，9月为上涨0.6%。核心CPI环比上涨0.3%。"
+      }
+    },
+    {
+      "label": "Eurostat October flash HICP",
+      "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap",
+      "books": [
+        "rates"
+      ],
+      "influence": {
+        "en": "Eurostat (4 November). The October flash estimate puts euro-area inflation at 4.0% from a year earlier, and 2.5% excluding energy, food, alcohol and tobacco.",
+        "zh": "欧盟统计局（11月4日）。10月初值显示欧元区通胀同比4.0%，剔除能源、食品、酒精和烟草后为2.5%。"
+      }
+    },
+    {
+      "label": "律动 比特币ETF",
+      "href": "https://en.theblockbeats.news/flash/376477",
+      "books": [
+        "crypto"
+      ],
+      "influence": {
+        "en": "BlockBeats (10 November), citing Farside. US spot bitcoin ETFs had a net outflow of 201 million dollars on 9 November, US time.",
+        "zh": "律动（11月10日）引述Farside。美国现货比特币ETF在美东时间11月9日净流出2.01亿美元。"
+      }
+    },
+    {
+      "label": "律动 美伊",
+      "href": "https://en.theblockbeats.news/flash/376651",
+      "books": [
+        "commodities"
+      ],
+      "influence": {
+        "en": "BlockBeats (11 November). Qatar has secured at least two weeks to keep pushing a US-Iran understanding.",
+        "zh": "律动（11月11日）。卡塔尔争取到至少两周，继续推动美伊达成谅解。"
+      }
+    },
+    {
+      "label": "律动 Goolsbee",
+      "href": "https://en.theblockbeats.news/flash/376663",
+      "books": [
+        "rates"
+      ],
+      "influence": {
+        "en": "BlockBeats (11 November). Chicago Fed president Goolsbee said price pressures are spreading beyond energy and AI-related goods.",
+        "zh": "律动（11月11日）。芝加哥联储行长古尔斯比说，价格压力正在扩散到能源和人工智能相关商品以外。"
+      }
+    },
+    {
+      "label": "BLS release schedule",
+      "href": "https://www.bls.gov/schedule/2026/11_sched.htm",
+      "books": [
+        "rates"
+      ],
+      "influence": {
+        "en": "BLS calendar. October PPI is 13 November at 08:30 US Eastern. Veterans Day has no release.",
+        "zh": "美国劳工统计局日程。10月PPI在11月13日美东08:30。退伍军人节没有发布。"
+      }
+    },
+    {
+      "label": "第一财经 外汇存准",
+      "href": "https://www.yicai.com/news/103431057.html",
+      "books": [
+        "fx"
+      ],
+      "influence": {
+        "en": "Yicai (8 November). The FX reserve requirement rises 2 percentage points to 6% on 15 November.",
+        "zh": "第一财经（11月8日）。11月15日起外汇存款准备金率上调2个百分点至6%。"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "bloomberg-chart-of-day",
+      "title": {
+        "en": "Euro-area headline inflation is about twice the ECB target",
+        "zh": "欧元区整体通胀大约是欧洲央行目标的两倍"
+      },
+      "kind": "insight",
+      "imageSrc": "/inbox-charts/bloomberg-2026-11-11.png",
+      "imageSrcEn": "/inbox-charts/bloomberg-2026-11-11-en.png",
+      "analysis": {
+        "en": "Euro-area headline inflation is about 4% on the chart, about twice the ECB's 2% target, and core inflation is much closer to that target. Both are approximate readings from the chart. Eurostat's October flash estimate puts headline inflation at 4.0% from a year earlier, and 2.5% excluding energy, food, alcohol and tobacco.",
+        "zh": "图中欧元区整体通胀约为4%，约为欧洲央行2%目标的两倍，核心通胀离这一目标近得多，两者均为图上估读。欧盟统计局10月初值：整体通胀同比4.0%，剔除能源、食品、酒精和烟草后为2.5%。"
+      },
+      "source": {
+        "label": "财经早茶 Nov 11",
+        "href": "https://www.bloomberg.com/asia"
+      },
+      "sources": [
+        {
+          "label": "财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "Eurostat October flash HICP",
+          "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap"
+        }
+      ]
+    }
+  ],
+  "marketTone": {
+    "en": "US stocks fell, and Treasury yields rose. Crude prices fell again, December COMEX gold futures fell, and on the chart euro-area headline inflation is about twice the ECB target.",
+    "zh": "美股下跌，美债收益率上升。原油价格续跌，COMEX 12月黄金期货下跌，图上欧元区整体通胀大约是欧洲央行目标的两倍。"
+  },
+  "summary": [
+    {
+      "text": {
+        "en": "The S&P 500 fell 0.38% to 7520.93, the Nasdaq fell 0.74% to 25065.87, and the Dow fell 0.30% to 52231.89. Nvidia fell more than 5%, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：标普500下跌0.38%至7520.93，纳斯达克下跌0.74%至25065.87，道指下跌0.30%至52231.89。英伟达跌幅超过5%。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "December WTI fell 0.93% to 86.04 dollars and January Brent fell 1.17% to 91.49 dollars, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：12月WTI下跌0.93%至86.04美元，1月布伦特下跌1.17%至91.49美元。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The 10-year yield rose 12.55 basis points to 4.9875%, and the 2-year yield rose 18 basis points to 4.725%, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：10年期收益率上涨12.55个基点至4.9875%，2年期上涨18个基点至4.725%。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "COMEX December gold fell 2.0% to settle at 4030.20 dollars on 10 November, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：11月10日COMEX 12月黄金下跌2.0%，结算价为4030.20美元。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Shanghai rose 0.08% to 3663.72, 华尔街见闻 reported. October exports rose 35.2% from a year earlier and imports rose 41.6%, 财新 reported.",
+        "zh": "华尔街见闻：上证上涨0.08%至3663.72。财新：10月出口同比增长35.2%，进口同比增长41.6%。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        },
+        {
+          "label": "财新 10月出口",
+          "href": "https://economy.caixin.com/2026-11-10/102503103.html"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The Nikkei 225 rose 2.87% to 60459.58, the Kospi rose 4.39% to 5239.13, the Hang Seng rose 0.44% to 24557.04, and the Hang Seng Tech index rose 1.08% to 4084.45, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：日经225上涨2.87%至60459.58，韩国综合指数上涨4.39%至5239.13，恒生指数上涨0.44%至24557.04，恒生科技指数上涨1.08%至4084.45。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ]
+    }
+  ],
+  "signal": {
+    "en": "US consumer prices rose 0.4% in October from the previous month, slower than September's 0.6% but above the 0.3% forecast, and US stocks fell as Treasury yields rose. Crude futures fell again, with Brent trading below 90 dollars a barrel during the session, and Qatar kept pressing for a US-Iran understanding. December COMEX gold futures fell 2%. Nvidia fell more than the indexes. China's exports rose 35.2% from a year earlier, 1.1 percentage points slower than September, and brokers have started buying shares under the third swap facility. On the chart, euro-area headline inflation is about twice the target.",
+    "zh": "美国10月CPI环比上涨0.4%，低于9月的0.6%，但高于市场预期的0.3%，美股下跌，美债收益率上升。原油期货续跌，布伦特盘中跌破每桶90美元，卡塔尔仍在推动美伊谈判。COMEX 12月黄金期货下跌2%。英伟达跌幅大于指数。中国10月出口同比增长35.2%，较9月放缓1.1个百分点，券商已经用第三批互换便利开始买入股票。图上，欧元区整体通胀大约是目标的两倍。"
+  },
+  "watch": {
+    "en": "Germany's October CPI final is at 15:00 Beijing. Cipollone speaks at 15:50, Nagel at 16:15, and Lagarde at 17:45. US October PPI is on 13 November at 21:30 Beijing. The US bond market is shut today for Veterans Day.",
+    "zh": "德国10月CPI终值在北京时间15:00。Cipollone在15:50讲话，Nagel在16:15，拉加德在17:45。美国10月PPI在11月13日北京时间21:30。美国债市今天因退伍军人节休市。"
+  },
+  "marketOverview": {
+    "items": [
+      {
+        "label": {
+          "en": "US stocks",
+          "zh": "美国股市"
+        },
+        "text": {
+          "en": "Major indexes fell together, and the hot inflation reading lifted hike expectations.",
+          "zh": "主要股指普跌，火热通胀数据推高加息预期"
+        }
+      },
+      {
+        "label": {
+          "en": "China ADRs",
+          "zh": "中概股"
+        },
+        "text": {
+          "en": "The Nasdaq Golden Dragon China Index fell again. Alibaba and Nio were the biggest drags.",
+          "zh": "金龙中国指数续跌，阿里巴巴和蔚来对指数拖累最大"
+        }
+      },
+      {
+        "label": {
+          "en": "Treasuries",
+          "zh": "美国债市"
+        },
+        "text": {
+          "en": "The strong CPI reading drove the biggest rise in the 2-year yield in 19 months. Demand at the 10-year auction was weaker than expected, and the 5% coupon is the highest in 20 years.",
+          "zh": "强劲的CPI数据推动两年期美债收益率创19个月来最大升幅。10年期国债招标认购需求不及预期，5%的票面利率创20年来最高"
+        }
+      },
+      {
+        "label": {
+          "en": "FX",
+          "zh": "外汇市场"
+        },
+        "text": {
+          "en": "The Bloomberg dollar index rose. The strong CPI reading firmed expectations for a December rate increase.",
+          "zh": "彭博美元指数上涨，强劲的CPI数据巩固美联储12月加息预期"
+        }
+      },
+      {
+        "label": {
+          "en": "Europe",
+          "zh": "欧洲股债"
+        },
+        "text": {
+          "en": "European government bonds fell with US Treasuries, and hike bets rose. European stocks moved close to a record and kept ahead of US stocks.",
+          "zh": "欧债随美债下跌，市场提高加息押注。欧洲股市逼近历史高点，延续跑赢美股势头"
+        }
+      },
+      {
+        "label": {
+          "en": "Energy",
+          "zh": "能源"
+        },
+        "text": {
+          "en": "Crude futures fell again, with bets that the Iran situation would cool further.",
+          "zh": "原油期货续跌，市场押注伊朗局势进一步降温"
+        }
+      },
+      {
+        "label": {
+          "en": "Metals",
+          "zh": "金属"
+        },
+        "text": {
+          "en": "Gold's drop widened as bets on a Federal Reserve rate increase rose. London copper and other industrial metals fell.",
+          "zh": "随着对美联储加息押注升温，金价扩大跌幅，伦敦期铜等工业金属普跌"
+        }
+      }
+    ],
+    "source": {
+      "label": "彭博 Markets Daily China / 财经早茶",
+      "href": "https://www.bloomberg.com/asia"
+    }
+  },
+  "themeCards": [
+    {
+      "id": "us-growth-inflation",
+      "title": {
+        "en": "US CPI topped forecasts, and the 2-year Treasury yield rose more than the 10-year yield",
+        "zh": "美国CPI高于预期，2年期美债收益率升幅超过10年期"
+      },
+      "grade": "STRONG",
+      "assets": [
+        {
+          "en": "Treasuries",
+          "zh": "美国国债"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "BLS: consumer prices rose 0.4% in October from September, slower than September's 0.6% rise, and core prices rose 0.3%. Both readings were above the 0.3% and 0.2% forecasts, and the 2-year yield rose 18 basis points to 4.725% while the 10-year yield rose 12.55 basis points to 4.9875%, 华尔街见闻 reported. The Market snapshot shows the Treasury's official daily yields instead.",
+        "zh": "美国劳工统计局：10月CPI环比上涨0.4%，低于9月的0.6%，核心CPI环比上涨0.3%。华尔街见闻：两者分别高于0.3%和0.2%的市场预期，2年期美债收益率上涨18个基点至4.725%，10年期上涨12.55个基点至4.9875%。行情快照展示的是美国财政部官方日度收益率。"
+      },
+      "factSources": [
+        {
+          "label": "BLS CPI October",
+          "href": "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+        },
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ],
+      "mechanism": {
+        "en": "October consumer prices rose 0.4% on the month, above the 0.3% estimate, and the 2-year yield rose more than the 10-year yield, so the curve flattened. Goolsbee (11 November): price pressures are spreading beyond energy and the AI-related categories, and services prices are still high. Treasury yields rose, and US stocks fell with them.",
+        "zh": "10月消费价格环比上涨0.4%，高于0.3%的预期，两年期收益率升幅大于十年期，所以收益率曲线进一步变平。古尔斯比（11月11日）：价格压力正在扩散到能源和人工智能相关品类以外，服务价格仍然高。美债收益率上升，美股跟着下跌。"
+      }
+    },
+    {
+      "id": "after-hours-tech",
+      "title": {
+        "en": "US stocks fell, and Nvidia fell more",
+        "zh": "美股下跌，英伟达跌得更多"
+      },
+      "grade": "STRONG",
+      "assets": [
+        {
+          "en": "US equities",
+          "zh": "美股"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "The S&P 500 fell 0.38% to 7520.93 and the Nasdaq fell 0.74% to 25065.87, while Nvidia fell more than 5% and lost 430 billion dollars of market value over two days, 华尔街见闻 reported. Nvidia's independent directors hired an outside law firm for a full review of Jensen Huang's affair, 财经早茶 reported.",
+        "zh": "华尔街见闻：标普500下跌0.38%至7520.93，纳斯达克下跌0.74%至25065.87，英伟达跌幅超过5%，两日市值损失4300亿美元。财经早茶：英伟达独立董事聘请外部律所，对黄仁勋的事件展开全面调查。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        },
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": {
+        "en": "US stocks fell with the inflation reading, and Nvidia fell more than the indexes. 财经早茶 (11 November): the independent directors hired an outside law firm for a full review of Jensen Huang's affair. The share move and that review are separate items in the day's news.",
+        "zh": "美股跟着通胀数据下跌，英伟达跌幅大于指数。财经早茶（11月11日）：独立董事聘请外部律所，对黄仁勋的事件展开全面调查。股价变动和这项调查是当天新闻里的两件事。"
+      }
+    },
+    {
+      "id": "anthropic-raise",
+      "title": {
+        "en": "Anthropic's IPO and concurrent private placement total up to about 90.4 billion dollars",
+        "zh": "Anthropic IPO与同步私募交易总规模最高约904亿美元"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "US equities",
+          "zh": "美股"
+        }
+      ],
+      "status": "new",
+      "fact": {
+        "en": "Anthropic's amended S-1 sets a price range of 70 to 78 dollars a share, adds a 26 billion dollar concurrent private placement, and has existing holders selling shares in the IPO. At the 74 dollar midpoint, the filing puts net proceeds to Anthropic at about 84.6 billion dollars, before the underwriters' option to buy more shares. 律动 reported a total deal size of up to 90.4 billion dollars including the holders' sale, and that seven co-founders plan to sell 1.75 billion dollars of shares.",
+        "zh": "Anthropic修订版S-1招股书：发行价区间为每股70至78美元，另有260亿美元同步私募，部分现有股东在IPO中出售老股。按74美元的区间中点估算，公司净募资约846亿美元，未计承销商超额配售。律动：交易总规模最高约904亿美元，含老股出售；七位联合创始人计划出售17.5亿美元股票。"
+      },
+      "factSources": [
+        {
+          "label": "SEC Anthropic S-1/A",
+          "href": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+        },
+        {
+          "label": "律动 Anthropic",
+          "href": "https://en.theblockbeats.news/flash/376644"
+        }
+      ],
+      "mechanism": {
+        "en": "The 90.4 billion dollar figure covers the whole deal at the top of the range: the IPO, the private placement, and the shares existing holders sell. What Anthropic keeps is smaller, about 84.6 billion dollars at the 74 dollar midpoint by its own estimate, because the founders' sale goes to the founders. 财经早茶 (11 November): the deal could pass the record SpaceX set. The effect is on US equities through the new listing, and the day's notes give no link from it to Nvidia's share move.",
+        "zh": "904亿美元是整笔交易的规模，不是Anthropic留下的钱：按区间上限计算，它包括同步私募和现有股东出售的老股。按74美元的区间中点，公司自己估算的净募资约846亿美元，创始人售股的钱归创始人。财经早茶（11月11日）：这笔交易规模有望超过SpaceX创下的纪录。影响落在美股的新上市上，当天的记录没有把它和英伟达股价联系起来。"
+      }
+    },
+    {
+      "id": "oil-iran",
+      "title": {
+        "en": "Crude futures fell again, and Brent traded under 90 dollars",
+        "zh": "原油期货续跌，布伦特盘中跌破每桶90美元"
+      },
+      "grade": "STRONG",
+      "assets": [
+        {
+          "en": "Oil",
+          "zh": "原油"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "December WTI fell 0.93% to 86.04 dollars and January Brent fell 1.17% to 91.49 dollars, and Brent traded under 90 dollars during the session for the first time since August, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：12月WTI下跌0.93%至86.04美元，1月布伦特下跌1.17%至91.49美元，盘中跌破90美元，为8月以来首次。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ],
+      "mechanism": {
+        "en": "Crude futures fell again, and Brent traded under 90 dollars during the session. BlockBeats (11 November): Qatar has secured at least two weeks to keep pushing a US-Iran understanding. The lower prices are the December WTI and January Brent contracts.",
+        "zh": "原油期货又跌了一天，布伦特盘中跌到90美元下方。律动（11月11日）：卡塔尔争取到至少两周，继续推动美伊达成谅解。下跌的是12月WTI和1月布伦特。"
+      }
+    },
+    {
+      "id": "gold-rates",
+      "title": {
+        "en": "December COMEX gold futures fell 2%",
+        "zh": "COMEX 12月黄金期货下跌2%"
+      },
+      "grade": "STRONG",
+      "assets": [
+        {
+          "en": "Gold",
+          "zh": "黄金"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "December COMEX gold futures fell 2.0% to settle at 4030.20 dollars an ounce on 10 November, 华尔街见闻 reported. The Market snapshot shows Yahoo's intraday gold futures quote, not this settle.",
+        "zh": "华尔街见闻：11月10日COMEX 12月黄金期货下跌2.0%，结算价为每盎司4030.20美元。行情快照展示的是Yahoo黄金期货盘中价，不是这个结算价。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ],
+      "mechanism": {
+        "en": "December COMEX gold futures fell 2.0% and settled at 4030.20 dollars an ounce. 财经早茶 (11 November): the drop widened as bets on a Federal Reserve rate increase rose. The move is in the December contract.",
+        "zh": "COMEX 12月黄金期货下跌2.0%，结算价为每盎司4030.20美元。财经早茶（11月11日）：对美联储加息的押注升温，金价跌幅扩大。变动在12月合约。"
+      }
+    },
+    {
+      "id": "copper",
+      "title": {
+        "en": "London copper fell",
+        "zh": "伦敦期铜下跌"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "Copper",
+          "zh": "铜"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "LME copper fell 1.57%, or 218 dollars, to 13679 dollars a tonne, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：伦敦期铜下跌1.57%，即218美元，至每吨13679美元。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ],
+      "mechanism": {
+        "en": "London copper fell 1.57% to 13679 dollars a tonne. 财经早茶 (11 November): London copper and other industrial metals fell as bets on a Federal Reserve rate increase rose. The change showed up in the copper price, with those other industrial metals.",
+        "zh": "伦敦期铜下跌1.57%，至每吨13679美元。财经早茶（11月11日）：对美联储加息的押注升温，伦敦期铜和其他工业金属下跌。变化落在铜价上，其他工业金属一起下跌。"
+      }
+    },
+    {
+      "id": "china-equity-support",
+      "title": {
+        "en": "Brokers started buying shares, and Shanghai rose",
+        "zh": "券商开始买入股票，上证上涨"
+      },
+      "grade": "STRONG",
+      "assets": [
+        {
+          "en": "A-shares",
+          "zh": "A股"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "Shanghai rose 0.08% to 3663.72 and the ChiNext index rose 1.46% to 2494.40, 华尔街见闻 reported. At least 10 brokers finished a first round of stock buying under the third swap facility, and the broker CICC's amount was 16.3 billion yuan.",
+        "zh": "华尔街见闻：上证上涨0.08%至3663.72，创业板指上涨1.46%至2494.40。至少10家券商完成第三批互换便利项下的首批股票买入，中金公司的金额为163亿元。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ],
+      "mechanism": {
+        "en": "The third swap facility has turned into share buying, and Shanghai closed higher. The disclosed amount at the broker CICC was 16.3 billion yuan, and at least 10 brokers finished a first round. The ChiNext index rose more than Shanghai.",
+        "zh": "第三批互换便利已经变成买入股票，上证收高。中金公司披露的金额是163亿元，至少10家券商完成了首批买入。创业板指涨幅大于上证。"
+      }
+    },
+    {
+      "id": "china-exports",
+      "title": {
+        "en": "China's October exports rose 35.2% from a year earlier, and the pace eased",
+        "zh": "中国10月出口同比增长35.2%，增速已经放缓"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "Exports",
+          "zh": "出口"
+        }
+      ],
+      "status": "new",
+      "fact": {
+        "en": "October exports rose 35.2% from a year earlier, 1.1 percentage points slower than September, and imports rose 41.6%, 财新 reported.",
+        "zh": "财新：10月出口同比增长35.2%，较9月放缓1.1个百分点，进口同比增长41.6%。"
+      },
+      "factSources": [
+        {
+          "label": "财新 10月出口",
+          "href": "https://economy.caixin.com/2026-11-10/102503103.html"
+        }
+      ],
+      "mechanism": {
+        "en": "Exports rose 35.2% from a year earlier, 1.1 percentage points slower than September, and imports rose 41.6%. CICC (10 November): exports matched the survey, imports were above it, and the rise in export prices may already be past its peak, so the overall pace could slow as the base gets higher. Those paces did not come with a large move in A-shares.",
+        "zh": "出口同比增长35.2%，较9月放缓1.1个百分点，进口同比增长41.6%。中金（11月10日）：出口与调查一致，进口高于调查，出口价格的升幅或已过高点，所以随着基数抬高，整体增速可能放缓。这样的增速没有让A股出现大的波动。"
+      }
+    },
+    {
+      "id": "euro-cpi",
+      "title": {
+        "en": "Euro-area headline inflation is about twice the target",
+        "zh": "欧元区整体通胀大约是目标的两倍"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "European bonds",
+          "zh": "欧洲债券"
+        }
+      ],
+      "status": "new",
+      "fact": {
+        "en": "Eurostat: the October flash estimate puts euro-area inflation at 4.0% from a year earlier, twice the ECB's 2% target, and 2.5% excluding energy, food, alcohol and tobacco. The head of the Bundesbank said euro-area consumer-price gains are too high, and the ECB has a solid reason to raise rates next month, 财经早茶 reported.",
+        "zh": "欧盟统计局：10月初值显示欧元区通胀同比4.0%，是欧洲央行2%目标的两倍，剔除能源、食品、酒精和烟草后为2.5%。财经早茶：德国央行行长表示，欧元区消费者价格涨幅过高，欧洲央行下个月有充分理由加息。"
+      },
+      "factSources": [
+        {
+          "label": "Eurostat October flash HICP",
+          "href": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap"
+        },
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": {
+        "en": "Headline inflation is at 4.0% while the measure excluding energy, food, alcohol and tobacco is at 2.5%, so most of the gap to the 2% target is in the headline rate. 财经早茶 (11 November): euro-area consumer prices are too high, and there is a solid reason to raise rates next month. European government bonds fell with US Treasuries.",
+        "zh": "整体通胀为4.0%，剔除能源、食品、酒精和烟草后为2.5%，所以与2%目标的缺口主要在整体通胀。财经早茶（11月11日）：欧元区消费价格过高，下个月有充分理由加息。欧洲国债跟着美国国债下跌。"
+      }
+    },
+    {
+      "id": "btc-etf",
+      "title": {
+        "en": "US spot bitcoin funds had another net outflow",
+        "zh": "美国现货比特币基金又出现净流出"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "Bitcoin",
+          "zh": "比特币"
+        }
+      ],
+      "status": "new",
+      "fact": {
+        "en": "US spot bitcoin ETFs had a net outflow of 201 million dollars on 9 November, US time, 律动 reported, citing Farside.",
+        "zh": "律动引述Farside：美国现货比特币ETF在美东时间11月9日净流出2.01亿美元。"
+      },
+      "factSources": [
+        {
+          "label": "律动 比特币ETF",
+          "href": "https://en.theblockbeats.news/flash/376477"
+        }
+      ],
+      "mechanism": {
+        "en": "The figure is a net flow across the funds; it says nothing direct about their bitcoin holdings. BlockBeats (10 November), citing Farside: the net outflow on 9 November was 201 million dollars. The effect is on US spot bitcoin ETFs; the day's sources give no holdings data, so any change in the funds' bitcoin balances is unknown. Issuer holdings reports would show whether those balances fell.",
+        "zh": "这是这些基金合计的净流量，不是它们比特币持仓的变化。律动（11月10日）引述Farside：11月9日净流出2.01亿美元。影响在美国现货比特币ETF；当天的来源没有持仓数据，所以基金的比特币持仓有没有变化并不清楚。发行商的持仓报告能说明持仓是否下降。"
+      }
+    }
+  ],
+  "globalRegime": {
+    "en": "US stocks fell, and Treasury yields rose, after US consumer prices rose 0.4% in October from the previous month, slower than September's 0.6% but above the 0.3% forecast. The 2-year yield rose more than the 10-year yield. Crude futures fell again, with Brent under 90 dollars during the session, and December COMEX gold futures fell 2%. China's exports rose 35.2% from a year earlier, brokers have started buying shares, and Shanghai edged higher. Eurostat's October flash puts euro-area inflation at 4.0%, twice the ECB target, and 2.5% excluding energy, food, alcohol and tobacco.",
+    "zh": "美国10月CPI环比上涨0.4%，低于9月的0.6%，但高于市场预期的0.3%，美股下跌，美债收益率上升。两年期收益率升幅大于十年期。原油期货续跌，布伦特盘中跌到90美元下方，COMEX 12月黄金期货下跌2%。中国10月出口同比增长35.2%，券商已经开始买入股票，上证小幅收高。欧盟统计局10月初值显示欧元区通胀为4.0%，是欧洲央行目标的两倍，剔除能源、食品、酒精和烟草后为2.5%。"
+  },
+  "globalChanged": [
+    {
+      "text": {
+        "en": "October core consumer prices rose more than expected. Fed officials hinted that rate increases could be larger in the coming months, and Governor Waller said December may need a single 50 basis point increase. The 2-year yield had its biggest rise in 19 months, 财经早茶 reported.",
+        "zh": "财经早茶：美国10月核心CPI升幅超预期，美联储官员暗示未来数月可能加大升息力度，理事沃勒称12月或需一次性加息50基点。两年期美债收益率创19个月来最大升幅。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Fed governor Bowman warned that weaker-than-expected returns on AI investment could lead to a large drop in equity valuations, 财经早茶 reported.",
+        "zh": "财经早茶：美联储理事鲍曼警告称，AI投资回报不及预期或导致股市估值大幅回调。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Anthropic's IPO and private placement could total up to 90.4 billion dollars, including shares sold by existing holders, which could pass the record SpaceX set, and the fully diluted value would be about 1.4 trillion dollars. Goldman Sachs is reported to expect 685 billion dollars of revenue by 2030, 财经早茶 reported.",
+        "zh": "财经早茶：Anthropic的IPO与同步私募交易总规模最高约904亿美元，含老股出售，规模有望超SpaceX创下的纪录，完全摊薄估值将约为1.4万亿美元。高盛据悉预测该公司到2030年营收将达6850亿美元。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Anthropic moved into AI office software and is competing more directly with Microsoft and Google, 财经早茶 reported.",
+        "zh": "财经早茶：Anthropic进军人工智能办公软件，与微软、谷歌展开更直接的竞争。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Secretary of State Rubio said the first day of talks among Russia, the United States, and Ukraine was productive, and Washington wants Europe more involved, 财经早茶 reported.",
+        "zh": "财经早茶：美国国务卿卢比奥表示，俄美乌三方会谈首日磋商富有成效，华府希望欧洲更多参与进来。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The head of the Bundesbank said euro-area consumer-price gains are too high, and the ECB has a solid reason to raise rates next month, 财经早茶 reported.",
+        "zh": "财经早茶：德国央行行长表示，欧元区消费者价格涨幅过高，欧洲央行下个月有充分理由加息。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The ECB's chief economist said France's fiscal problems should be handled in Paris, and the central bank should not use crisis tools for them, 财经早茶 reported.",
+        "zh": "财经早茶：欧洲央行首席经济学家表示，法国财政问题应由巴黎方面自行解决，央行不应为此动用危机应对工具。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "House Republicans voted to block an impeachment motion against Defense Secretary Hegseth, and Trump defended Hegseth again, 财经早茶 reported.",
+        "zh": "财经早茶：美国众议院共和党人投票阻止了针对国防部长海格塞斯的弹劾动议，特朗普再度为海格塞斯辩护。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "US gasoline prices fell under 4 dollars a gallon for the first time since July, and the Energy Information Administration raised its 2027 forecasts for gasoline and diesel, 财经早茶 reported.",
+        "zh": "财经早茶：美国汽油价格自7月以来首次跌破每加仑4美元，但能源信息管理局上调2027年汽油和柴油价格预测。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Nvidia's independent directors hired an outside law firm for a full review of Jensen Huang's affair, 财经早茶 reported.",
+        "zh": "财经早茶：英伟达独立董事聘请外部律所，对黄仁勋婚外情事件展开全面调查。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Pay consultants expect another big bonus year for Wall Street bankers, while the industry outlook is still in doubt, 财经早茶 reported.",
+        "zh": "财经早茶：薪酬咨询公司预计，华尔街银行家有望迎来又一个奖金大年，但行业前景依然存疑。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "CoreWeave raised its annual revenue outlook, which eased worry that the business was slowing, 财经早茶 reported.",
+        "zh": "财经早茶：人工智能算力提供商CoreWeave上调年度营收展望，缓解了投资者对其业务放缓的担忧。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Qatar has secured at least two weeks to keep pushing a US-Iran understanding and to avoid another US strike, 律动 reported, citing The Jerusalem Post.",
+        "zh": "律动引述《耶路撒冷邮报》：卡塔尔争取到至少两周，继续推动美伊达成谅解，以避免美国再次打击。"
+      },
+      "sources": [
+        {
+          "label": "律动 美伊",
+          "href": "https://en.theblockbeats.news/flash/376651"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Chicago Fed president Goolsbee said price pressures are spreading beyond energy and AI-related goods, and services prices are still high, 律动 reported.",
+        "zh": "律动：芝加哥联储行长古尔斯比说，价格压力正在扩散到能源和人工智能相关商品以外，服务价格仍然高。"
+      },
+      "sources": [
+        {
+          "label": "律动 Goolsbee",
+          "href": "https://en.theblockbeats.news/flash/376663"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "TSMC's October revenue rose 59.7% from a year earlier, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：台积电10月营收同比增长59.7%。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ]
+    }
+  ],
+  "globalImplies": [
+    {
+      "text": {
+        "en": "If core prices keep rising 0.3% a month, the 2-year yield could stay above 4.725%.",
+        "zh": "若核心CPI继续每月上涨0.3%，2年期美债收益率可能维持在4.725%上方。"
+      }
+    },
+    {
+      "text": {
+        "en": "If the US-Iran talks break down, oil prices could rebound.",
+        "zh": "若美伊谈判破裂，油价可能反弹。"
+      }
+    },
+    {
+      "text": {
+        "en": "If euro-area headline inflation falls back toward the 2.5% rate excluding energy, food, alcohol and tobacco, the gap the Bundesbank pointed to could narrow.",
+        "zh": "若欧元区整体通胀回落到接近剔除能源、食品、酒精和烟草后的2.5%，德国央行指出的缺口可能收窄。"
+      }
+    }
+  ],
+  "globalTensions": {
+    "en": "US stocks fell with higher yields, while Japanese and Korean stocks rose. Crude and gold fell together. The desk notes give different reasons: Qatar is still pressing for a US-Iran understanding on crude, and rate-increase bets for gold. Nvidia fell more than the indexes. Anthropic's co-founders plan to sell 1.75 billion dollars of shares, and the company's IPO and private placement total up to 90.4 billion dollars including that sale, while net proceeds to Anthropic are about 84.6 billion dollars at the midpoint of the price range.",
+    "zh": "美股随收益率上升而下跌，日韩股市上涨。原油和黄金一起下跌。简报里的原因不同：原油对应卡塔尔仍在推动的美伊谈判，黄金对应加息押注。英伟达跌幅大于指数。Anthropic的创始人计划出售17.5亿美元股票，IPO与同步私募交易总规模最高约904亿美元，含老股出售；按发行价区间中点估算，公司净募资约846亿美元。"
+  },
+  "chinaStance": {
+    "en": "The third swap facility has moved from an announcement into share buying, and Shanghai closed slightly higher. China's October exports rose 35.2% from a year earlier, 1.1 percentage points slower than September. Offshore yuan was a bit weaker on the session.",
+    "zh": "第三批互换便利已经从公告变成买入股票，上证小幅收高。中国10月出口同比增长35.2%，较9月放缓1.1个百分点。离岸人民币这一交易日略弱。"
+  },
+  "chinaChanged": [
+    {
+      "text": {
+        "en": "Alibaba plans to list its chip-design unit T-Head separately on the main board in Hong Kong, and the exchange has allowed Alibaba to proceed, 财经早茶 reported.",
+        "zh": "财经早茶：阿里巴巴拟分拆芯片设计子公司平头哥于香港交易所主板独立上市，港交所已批准阿里巴巴推进有关计划。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Iran's parliamentary speaker said China is playing a prominent role in pushing the war toward an end, Iranian semi-official media reported, 财经早茶 said.",
+        "zh": "财经早茶：伊朗半官方媒体报道称，伊朗议长表示中国在推动战争结束方面发挥着突出作用。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Foreign minister Wang Yi said China and the EU should settle frictions through dialogue, and he hopes France will help keep China-EU trade steady, 财经早茶 reported.",
+        "zh": "财经早茶：中国外长王毅表示，中欧双方应致力于通过对话协商妥善解决摩擦分歧，希望法国帮助推动中欧经贸关系稳定发展。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The Ministry of Finance said China's first renminbi green sovereign bond in Canada drew 13.5 times subscription, 财经早茶 reported.",
+        "zh": "财经早茶：中国财政部表示，首次在加拿大发行的人民币绿色主权债券总计吸引13.5倍认购。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "New World Development's major shareholder, Chow Tai Fook Enterprises, is seeking a 5 billion Hong Kong dollar loan and may sign as soon as this month, 财经早茶 reported.",
+        "zh": "财经早茶：新世界发展大股东周大福企业据悉寻求50亿港元贷款，最早可能在本月签署。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "October exports rose 35.2% from a year earlier, 1.1 percentage points slower than September, and imports rose 41.6%, 财新 reported, citing customs.",
+        "zh": "财新引述海关：10月出口同比增长35.2%，较9月放缓1.1个百分点，进口同比增长41.6%。"
+      },
+      "sources": [
+        {
+          "label": "财新 10月出口",
+          "href": "https://economy.caixin.com/2026-11-10/102503103.html"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "At least 10 brokers finished a first round of stock buying under the third swap facility, and the broker CICC's amount was 16.3 billion yuan, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：至少10家券商完成第三批互换便利项下的首批股票买入，中金公司的金额为163亿元。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Offshore yuan was at 6.6762, about 0.1% weaker than the prior session, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：离岸人民币报6.6762，较前一交易日走弱约0.1%。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月11日早餐",
+          "href": "https://wallstreetcn.com/articles/3785684"
+        }
+      ]
+    }
+  ],
+  "chinaImplies": [
+    {
+      "text": {
+        "en": "If the base effect lifts, the 35.2% export pace could slow, which is what CICC described on 10 November.",
+        "zh": "若基数抬高，35.2%的出口增速可能放缓，这是中金11月10日描述的情形。"
+      }
+    },
+    {
+      "text": {
+        "en": "If the broker buying stops and Shanghai closes lower, the support from the third swap facility could fade.",
+        "zh": "若券商停止买入、上证收低，第三批互换便利的支撑可能消退。"
+      }
+    }
+  ],
+  "chinaDivergences": {
+    "en": "Shanghai rose only 0.08% while the ChiNext index rose 1.46%. Exports rose 35.2% from a year earlier and the equity move was small. Offshore yuan was a bit weaker that day. US stocks fell while the Nikkei 225 and the Kospi rose.",
+    "zh": "上证只上涨0.08%，创业板指上涨1.46%。出口同比增长35.2%，股市波动不大。这一天离岸人民币略弱。美股下跌，日经225和韩国综合指数上涨。"
+  },
+  "signals": [],
+  "watchItems": [],
+  "eventCalendar": {
+    "windowStart": "2026-11-11",
+    "windowEnd": "2026-11-20",
+    "note": {
+      "en": "Dates run from this briefing, 11 November, through next Friday, 20 November. Rows marked China are mainland China only. No Federal Reserve policy meeting falls in these dates. After the November switch to standard time, a policy decision at 14:00 US Eastern would be 03:00 Beijing the next day.",
+      "zh": "日期从本期简报的11月11日到下周五11月20日。标为中国的，只包括中国内地。这段时间没有美联储议息会议。11月已经切换到标准时间，如果美联储在美东时间14:00做决定，就是次日北京时间03:00。"
+    },
+    "events": [
+      {
+        "id": "paulson-2026-11-11",
+        "date": "2026-11-11",
+        "timeBeijing": "07:30",
+        "region": "US",
+        "category": "central-bank",
+        "event": {
+          "en": "Philadelphia Fed president Paulson speaks",
+          "zh": "费城联储行长保尔森讲话"
+        },
+        "themeId": "us-growth-inflation",
+        "source": {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "bowman-2026-11-11",
+        "date": "2026-11-11",
+        "timeBeijing": "07:30",
+        "region": "US",
+        "category": "central-bank",
+        "event": {
+          "en": "Fed vice chair for supervision Bowman speaks",
+          "zh": "美联储负责监管的副主席鲍曼讲话"
+        },
+        "themeId": "us-growth-inflation",
+        "source": {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "goolsbee-2026-11-11",
+        "date": "2026-11-11",
+        "timeBeijing": "07:30",
+        "region": "US",
+        "category": "central-bank",
+        "event": {
+          "en": "Chicago Fed president Goolsbee speaks",
+          "zh": "芝加哥联储行长古尔斯比讲话"
+        },
+        "themeId": "us-growth-inflation",
+        "source": {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "de-cpi-2026-11-11",
+        "date": "2026-11-11",
+        "timeBeijing": "15:00",
+        "region": "Other",
+        "category": "data",
+        "event": {
+          "en": "Germany October CPI, final",
+          "zh": "德国10月消费者价格指数终值"
+        },
+        "themeId": "euro-cpi",
+        "source": {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "cipollone-2026-11-11",
+        "date": "2026-11-11",
+        "timeBeijing": "15:50",
+        "region": "Other",
+        "category": "central-bank",
+        "event": {
+          "en": "ECB executive board member Cipollone speaks",
+          "zh": "欧洲央行执委Cipollone讲话"
+        },
+        "themeId": "euro-cpi",
+        "source": {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "nagel-2026-11-11",
+        "date": "2026-11-11",
+        "timeBeijing": "16:15",
+        "region": "Other",
+        "category": "central-bank",
+        "event": {
+          "en": "Bundesbank president Nagel speaks",
+          "zh": "德国央行行长Nagel讲话"
+        },
+        "themeId": "euro-cpi",
+        "source": {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "lagarde-2026-11-11",
+        "date": "2026-11-11",
+        "timeBeijing": "17:45",
+        "region": "Other",
+        "category": "central-bank",
+        "event": {
+          "en": "ECB president Lagarde speaks",
+          "zh": "欧洲央行行长拉加德讲话"
+        },
+        "themeId": "euro-cpi",
+        "source": {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "us-holiday-2026-11-11",
+        "date": "2026-11-11",
+        "timeBeijing": "",
+        "region": "US",
+        "category": "holiday",
+        "event": {
+          "en": "US Veterans Day, bond market shut, no BLS release",
+          "zh": "美国退伍军人节，债市休市，劳工统计局不发布数据"
+        },
+        "source": {
+          "label": "BLS release schedule",
+          "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+        }
+      },
+      {
+        "id": "cuba-envoy-2026-11-11",
+        "date": "2026-11-11",
+        "timeBeijing": "",
+        "region": "China",
+        "category": "geopolitics",
+        "event": {
+          "en": "Cuba's party and government envoy Rodriguez visits China through 13 November",
+          "zh": "古巴党和政府特使罗德里格斯访华，至11月13日"
+        },
+        "source": {
+          "label": "彭博财经早茶 Nov 11",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "us-ppi-2026-11-13",
+        "date": "2026-11-13",
+        "timeBeijing": "21:30",
+        "region": "US",
+        "category": "data",
+        "event": {
+          "en": "US October PPI, 08:30 US Eastern",
+          "zh": "美国10月PPI，美东时间08:30"
+        },
+        "themeId": "us-growth-inflation",
+        "source": {
+          "label": "BLS release schedule",
+          "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+        }
+      },
+      {
+        "id": "cn-fx-rrr-2026-11-15",
+        "date": "2026-11-15",
+        "timeBeijing": "",
+        "timing": "all-day",
+        "region": "China",
+        "category": "central-bank",
+        "event": {
+          "en": "FX reserve requirement rises",
+          "zh": "外汇存款准备金率上调"
+        },
+        "source": {
+          "label": "第一财经 外汇存准",
+          "href": "https://www.yicai.com/news/103431057.html"
+        }
+      },
+      {
+        "id": "anthropic-ipo-2026-11-18",
+        "date": "2026-11-18",
+        "timeBeijing": "",
+        "timing": "unconfirmed",
+        "region": "US",
+        "category": "ipo",
+        "event": {
+          "en": "Anthropic IPO is due to be priced",
+          "zh": "Anthropic的IPO预定定价"
+        },
+        "themeId": "anthropic-raise",
+        "source": {
+          "label": "律动 Anthropic",
+          "href": "https://en.theblockbeats.news/flash/376644"
+        }
+      },
+      {
+        "id": "us-import-2026-11-17",
+        "date": "2026-11-17",
+        "timeBeijing": "21:30",
+        "region": "US",
+        "category": "data",
+        "event": {
+          "en": "US import and export price indexes",
+          "zh": "美国进出口价格指数"
+        },
+        "source": {
+          "label": "BLS release schedule",
+          "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+        }
+      },
+      {
+        "id": "us-states-2026-11-20",
+        "date": "2026-11-20",
+        "timeBeijing": "21:30",
+        "region": "US",
+        "category": "data",
+        "event": {
+          "en": "US state employment for October",
+          "zh": "美国10月各州就业"
+        },
+        "source": {
+          "label": "BLS release schedule",
+          "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+        }
+      }
+    ]
+  },
+  "sources": {
+    "en": "The mail copy is the 11 November 财经早茶. Tuesday equity, yield, oil, gold, and Asia closes are 华尔街见闻. October trade is 财新. 律动 covers Anthropic's founder share sale and the total IPO plus private placement deal size; the SEC filing gives net proceeds. BLS and Eurostat give the CPI and euro-area inflation releases. 律动 also covers the bitcoin ETF outflow, the Qatar talks, and Goolsbee. CICC's 10 November note sits on exports. The chart figures are approximate readings from the chart.",
+    "zh": "邮件底稿是11月11日财经早茶。周二的股票、收益率、原油、黄金和亚洲收盘来自华尔街见闻。10月贸易来自财新。律动覆盖Anthropic创始人售股和IPO与同步私募交易总规模，SEC招股书给出净募资。BLS和欧盟统计局给出CPI和欧元区通胀数据。律动还覆盖比特币ETF流出、卡塔尔谈判和古尔斯比。中金11月10日的笔记写在出口上。图上的数字是从图上读出的约数。"
+  },
+  "caveats": "Event Calendar mainland China only on China rows. Equity, yield, oil, and bitcoin rows in Market snapshot are the inject snapshot. The chart heights are approximate readings of the image. Desk lines name the desk.",
+  "marketDashboard": {
+    "asOf": "2026-11-11T01:31:14.806Z",
+    "note": {
+      "en": "Equities, FX, gold futures, and Brent futures use the latest Yahoo daily bar; a session still open at the snapshot is intraday, not a close (Brent row is Yahoo BZ=F — not the same print as the CNBC settle); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
+      "zh": "股票、外汇、黄金期货和布伦特期货采用 Yahoo 最近日线柱；快照时尚未收盘的时段是盘中，不是收盘（布伦特一行是 Yahoo BZ=F，与 CNBC 结算价不是同一报价）；美国国债采用官方日度收益率曲线（相对前值的基点）；比特币为 CoinGecko 的 24 小时变动；资金费率比较相邻的 OKX 报价。快照取自生成时点，不是本页实时行情。"
+    },
+    "groups": [
+      {
+        "id": "global-equities",
+        "title": "Global equities",
+        "rows": [
+          {
+            "id": "spx",
+            "asset": "S&P 500",
+            "latest": "7,520.93",
+            "change": "−0.38%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "Yahoo Finance (^GSPC)",
+              "href": "https://finance.yahoo.com/quote/%5EGSPC/"
+            }
+          },
+          {
+            "id": "nasdaq",
+            "asset": "Nasdaq Composite",
+            "latest": "25,065.88",
+            "change": "−0.74%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "Yahoo Finance (^IXIC)",
+              "href": "https://finance.yahoo.com/quote/%5EIXIC/"
+            }
+          },
+          {
+            "id": "vix",
+            "asset": "VIX",
+            "latest": "19.46",
+            "change": "−2.31%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "Yahoo Finance (^VIX)",
+              "href": "https://finance.yahoo.com/quote/%5EVIX/"
+            }
+          },
+          {
+            "id": "nikkei",
+            "asset": "Nikkei 225",
+            "latest": "60,459.58",
+            "change": "+2.87%",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "Yahoo Finance (^N225)",
+              "href": "https://finance.yahoo.com/quote/%5EN225/"
+            }
+          },
+          {
+            "id": "kospi",
+            "asset": "Kospi",
+            "latest": "5,239.13",
+            "change": "+4.39%",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "Yahoo Finance (^KS11)",
+              "href": "https://finance.yahoo.com/quote/%5EKS11/"
+            }
+          },
+          {
+            "id": "hsi",
+            "asset": "Hang Seng",
+            "latest": "24,557.04",
+            "change": "+0.44%",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "Yahoo Finance (^HSI)",
+              "href": "https://finance.yahoo.com/quote/%5EHSI/"
+            }
+          },
+          {
+            "id": "hstech",
+            "asset": "Hang Seng Tech",
+            "latest": "4,084.45",
+            "change": "+1.08%",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "Yahoo Finance (HSTECH.HK)",
+              "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
+            }
+          },
+          {
+            "id": "shanghai",
+            "asset": "Shanghai Composite",
+            "latest": "3,663.72",
+            "change": "+0.08%",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "Yahoo Finance (000001.SS)",
+              "href": "https://finance.yahoo.com/quote/000001.SS/"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us-treasuries",
+        "title": "US Treasuries",
+        "rows": [
+          {
+            "id": "us02y",
+            "asset": "US 2Y yield",
+            "latest": "4.73%",
+            "change": "+17.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            },
+            "printNote": {
+              "en": "The text cites 4.725%, up 18 basis points, from the 10 November market close (华尔街见闻).",
+              "zh": "正文引用的是11月10日市场收盘4.725%，上涨18个基点（华尔街见闻）。"
+            }
+          },
+          {
+            "id": "us05y",
+            "asset": "US 5Y yield",
+            "latest": "4.81%",
+            "change": "+14.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          },
+          {
+            "id": "us10y",
+            "asset": "US 10Y yield",
+            "latest": "4.98%",
+            "change": "+10.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            },
+            "printNote": {
+              "en": "The text cites 4.9875%, up 12.55 basis points, from the 10 November market close (华尔街见闻).",
+              "zh": "正文引用的是11月10日市场收盘4.9875%，上涨12.55个基点（华尔街见闻）。"
+            }
+          },
+          {
+            "id": "us30y",
+            "asset": "US 30Y yield",
+            "latest": "5.35%",
+            "change": "+9.0 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-10",
+            "source": {
+              "label": "U.S. Treasury",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fx-commodities-crypto",
+        "title": "FX / Commodities / Crypto",
+        "rows": [
+          {
+            "id": "usdjpy",
+            "asset": "USD/JPY",
+            "latest": "158.9170",
+            "change": "+0.59%",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-11",
+            "source": {
+              "label": "Yahoo Finance (JPY=X)",
+              "href": "https://finance.yahoo.com/quote/JPY%3DX/"
+            }
+          },
+          {
+            "id": "usdcny",
+            "asset": "USD/CNY",
+            "latest": "6.6698",
+            "change": "−0.04%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-11",
+            "source": {
+              "label": "Yahoo Finance (CNY=X)",
+              "href": "https://finance.yahoo.com/quote/CNY%3DX/"
+            }
+          },
+          {
+            "id": "gold",
+            "asset": "Gold (futures)",
+            "latest": "$4,040.10",
+            "change": "−1.81%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-11",
+            "source": {
+              "label": "Yahoo Finance (GC=F)",
+              "href": "https://finance.yahoo.com/quote/GC%3DF/"
+            },
+            "contract": "2026-12",
+            "printNote": {
+              "en": "The text cites the 10 November COMEX December settle, 4,030.20 dollars (华尔街见闻).",
+              "zh": "正文引用的是11月10日COMEX 12月合约结算价4,030.20美元（华尔街见闻）。"
+            }
+          },
+          {
+            "id": "brent",
+            "asset": "Brent futures (Yahoo)",
+            "latest": "$92.08",
+            "change": "−0.53%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-11",
+            "source": {
+              "label": "Yahoo Finance (BZ=F)",
+              "href": "https://finance.yahoo.com/quote/BZ%3DF/"
+            },
+            "printNote": {
+              "en": "The text cites January Brent at 91.49 dollars on 10 November (华尔街见闻).",
+              "zh": "正文引用的是11月10日1月布伦特91.49美元（华尔街见闻）。"
+            }
+          },
+          {
+            "id": "btc",
+            "asset": "BTC/USD",
+            "latest": "$73,557",
+            "change": "−2.01%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-11",
+            "source": {
+              "label": "CoinGecko",
+              "href": "https://www.coingecko.com/en/coins/bitcoin"
+            }
+          },
+          {
+            "id": "btc-funding",
+            "asset": "BTC funding rate",
+            "latest": "0.0100%",
+            "change": "+0.516 bp",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-11",
+            "source": {
+              "label": "OKX funding API",
+              "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "slug": "2026-11-11"
+}
