@@ -152,7 +152,11 @@ SCAN_LINKS_SKIP_FETCH=1 npm run verify-briefing
 
 Commit md + JSON together. PR `[skip netlify] content: publish YYYY-MM-DD daily briefing` — mark **ready**, not draft.
 
-Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` or `git checkout main && git merge && git push origin main` if `gh` is 403). Push to `main` fires Pages; if `latest.json` on Pages is still yesterday, dispatch **Deploy syravocado to GitHub Pages**. Confirm live `…/data/latest.json` `date` is `$TODAY`, then stop.
+Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` or `git checkout main && git merge && git push origin main` if `gh` is 403). Push to `main` fires Pages; if `latest.json` on Pages is still yesterday, dispatch **Deploy syravocado to GitHub Pages**. Confirm live `…/data/latest.json` `date` is `$TODAY`, then write the daily post below and stop.
+
+## Daily post (not on the website)
+
+After the live check, write one plain-text Chinese post of 200–300 Chinese characters (count them; punctuation, digits and Latin letters do not count) from `$TODAY`'s published briefing. Use only facts and numbers already on the page; add no new claim, number, or source. Open with a few sentences of key takeaways: the market tone and two or three of the biggest moves or themes. End by prompting readers to notice their own emotions and behavioral leanings after reading, using questions or a self-check (e.g. 你现在更焦虑还是更平静？更想马上操作，还是想再等等？). Do not give trading advice or tell readers to buy, sell or hold. No markdown, hashtags or emoji; a site link only if it reads naturally. Do not put it in the briefing YAML or anywhere on the site. Save it as `/cursor/stores/bc-1594bfb2-5689-45de-8877-6bd771f56eca/docs/posts/$TODAY.md` (post text only) and paste the same text verbatim in the run's final reply.
 
 ## Theme card
 
