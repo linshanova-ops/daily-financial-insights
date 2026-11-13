@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-11-12T01:30:41.678Z",
-  "latest": "2026-11-12",
+  "generatedAt": "2026-11-13T01:32:46.247Z",
+  "latest": "2026-11-13",
   "briefings": [
+    {
+      "date": "2026-11-13",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "marketTone": {
+        "en": "US stocks fell as Nvidia's chief executive stepped down, and crude prices rose after the US president played down a deal with Iran. On the chart, adjusted profit growth slowed at three Chinese technology firms.",
+        "zh": "美股下跌，英伟达首席执行官卸任。美国总统淡化与伊朗达成协议之后，原油价格上涨。图上，三家中国科技公司的调整后利润增速放缓。"
+      },
+      "coverageWindow": {
+        "en": "November 12–13, 2026",
+        "zh": "2026年11月12日至11月13日"
+      }
+    },
     {
       "date": "2026-11-12",
       "title": {
