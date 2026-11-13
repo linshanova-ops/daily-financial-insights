@@ -156,7 +156,29 @@ Wait for **Briefing accuracy gate**. When green: merge to `main` (`gh pr merge` 
 
 ## Daily post (not on the website)
 
-After the live check, write one plain-text Chinese post of 200–300 Chinese characters (count them; punctuation, digits and Latin letters do not count) from `$TODAY`'s published briefing, under a title in the fixed format “牛油果日报｜<事实A>与<事实B>”: the day's two core facts as short noun phrases, plain and declarative, at most 15 Chinese characters in the whole title (｜ not counted). No question, exclamation, suspense, emoji or invented claim. The title is the first line of the post in the final reply. Example: “牛油果日报｜英伟达换帅与油价上行”. Use only facts and numbers already on the page; add no new claim, number, or source. Open with a few sentences of key takeaways: the market tone and two or three of the biggest moves or themes. End by prompting readers to notice their own emotions and behavioral leanings after reading, using questions or a self-check (e.g. 你现在更焦虑还是更平静？更想马上操作，还是想再等等？). Do not give trading advice or tell readers to buy, sell or hold. No markdown, hashtags or emoji; a site link only if it reads naturally. Do not put it in the briefing YAML or anywhere on the site. Do not save it anywhere (no store file, no repo file); put the title and text only in the run's final reply.
+After the live check, write the daily post from `$TODAY`'s published briefing in exactly this shape (same lines, same blank lines; only the `<…>` parts change):
+
+```text
+🥑牛油果日报｜<事实A>与<事实B>
+读世界，也读自己｜每天少一点噪音，多一点「原来如此」
+
+📚 <summary>
+
+<self-check>
+
+市场每天都在变，但你的反应模式，往往不变。看见它，就是改变的开始✨
+
+—— Avocadough🥑
+
+#howto用好AI #金融 #心理 #认知思维 #自我成长 #这个网站真好用 #美股 #A股 #vibecoding #avocadough
+```
+
+- Title: the day's two core facts as short noun phrases, plain and declarative, at most 15 Chinese characters (🥑 and ｜ not counted). No question, exclamation, suspense or invented claim. Example: “🥑牛油果日报｜英伟达换帅与油价上行”.
+- `<summary>` + `<self-check>` together are 200–300 Chinese characters (punctuation, digits and Latin letters do not count). Use only facts and numbers already on the page; add no new claim, number, or source.
+- `<summary>`: a few sentences of key takeaways: the market tone and two or three of the biggest moves or themes.
+- `<self-check>`: prompt readers to notice their own emotions and behavioral leanings after reading, with questions or a self-check (e.g. 你现在更焦虑还是更平静？更想马上操作，还是想再等等？). No trading advice; do not tell readers to buy, sell or hold.
+- The subtitle, closing line, signature and hashtag line stay verbatim. No other emoji, hashtags or markdown; a site link only if it reads naturally.
+- Do not put it in the briefing YAML or anywhere on the site. Do not save it anywhere (no store file, no repo file); put the post only in the run's final reply.
 
 ## Theme card
 
