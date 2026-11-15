@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T01:32:46.247Z",
+  "generatedAt": "2026-11-15T11:06:52.048Z",
   "latest": "2026-11-13",
   "briefings": [
     {
@@ -7,6 +7,10 @@
       "title": {
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Nvidia CEO Exit, Oil Up",
+        "zh": "英伟达换帅与油价上行"
       },
       "marketTone": {
         "en": "US stocks fell as Nvidia's chief executive stepped down, and crude prices rose after the US president played down a deal with Iran. On the chart, adjusted profit growth slowed at three Chinese technology firms.",
@@ -23,6 +27,10 @@
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
       },
+      "spine": {
+        "en": "Dollar Up, Gold Under 4000",
+        "zh": "美元走强与金破四千"
+      },
       "marketTone": {
         "en": "US stocks rose, and crude prices rose. COMEX gold futures fell under 4000 dollars. On the chart, China's technology-goods exports rose faster than total exports.",
         "zh": "美股上涨，原油价格上涨。COMEX黄金期货跌到4000美元下方。图上，中国科技产品出口增速高于整体出口。"
@@ -37,6 +45,10 @@
       "title": {
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Hot CPI Hits Treasuries",
+        "zh": "CPI超预期美债承压"
       },
       "marketTone": {
         "en": "US stocks fell, and Treasury yields rose. Crude prices fell again, December COMEX gold futures fell, and on the chart euro-area headline inflation is about twice the ECB target.",
@@ -53,6 +65,10 @@
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
       },
+      "spine": {
+        "en": "Nvidia Lags, Oil Slides",
+        "zh": "英伟达逆跌与油价新低"
+      },
       "marketTone": {
         "en": "US stocks rose, and crude prices fell. Nvidia fell while the indexes rose. On the chart, the estimated monthly rise in US consumer prices is smaller than the month before.",
         "zh": "美股上涨，原油价格下跌。指数上涨，英伟达下跌。图上，美国消费价格月度涨幅的估计低于前一个月。"
@@ -67,6 +83,10 @@
       "title": {
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Hot Jobs, Yields Rise",
+        "zh": "非农偏热与稳市机制"
       },
       "marketTone": {
         "en": "On Friday the market bought back some of the technology shares it had sold, and a strong jobs report pushed Treasury yields up. The S&P 500 rose 0.31% to 7376.86. The Nasdaq rose 1.09% to 24579.42. The Dow fell 0.46% to 51285.73. The 10-year yield was about 4.86%. January Brent was nearly flat at 98.32 dollars. COMEX gold fell 0.93% to 4064.5 dollars. Shanghai fell 1.10% to 3649.18. The chart's last payroll bar is positive and sits below the 200 thousand line.",
@@ -83,6 +103,10 @@
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
       },
+      "spine": {
+        "en": "Tech Rout, Hang Seng Up",
+        "zh": "科技股重挫港股逆升"
+      },
       "marketTone": {
         "en": "Thursday, the market sold US technology shares and moved into safer assets. The Nasdaq fell 5.52% to 24,314.997. The S&P 500 fell 4.36% to 7,353.73. The Dow fell 3.44% to 51,523.06. December WTI rose 2.72% to 90.52 dollars. COMEX gold rose 1.02% to 4,102.50 dollars. The 10-year yield was 4.8326%. The Hang Seng rose 3.67% to 24,796.98. The chart shows Nasdaq-100 market value down about 2.5 trillion dollars.",
         "zh": "周四，市场抛售美国科技股，资金转向避险。纳斯达克下跌5.52%，收于24,314.997点。标普500下跌4.36%，收于7,353.73点。道指下跌3.44%，收于51,523.06点。12月美油上涨2.72%，至90.52美元。纽约黄金上涨1.02%，至4,102.50美元。10年期收益率报4.8326%。恒生指数上涨3.67%，收于24,796.98点。图上纳斯达克100的市值下降约2.5万亿美元。"
@@ -97,6 +121,10 @@
       "title": {
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Congress Flips, Oil Drops",
+        "zh": "国会易主与油价急跌"
       },
       "marketTone": {
         "en": "Wednesday's tape bought the broad US market and sold crude. The Dow rose 3.03% to 53356.12, the S&P 500 rose 1.58% to 7688.62, and the Nasdaq rose 1.44% to 25736.51, while January Brent fell 8.67% to 94.62 and COMEX gold rose 3.39% to 4061.1. The 10-year yield was about 4.89%. Shanghai rose 2.16% to 3686.17. The chart's tallest green bar is just above 300 billion dollars, and the heading puts the combined change near 1 trillion dollars.",
@@ -113,6 +141,10 @@
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
       },
+      "spine": {
+        "en": "Chips Rebound, Jobs Hot",
+        "zh": "芯片回暖与空缺走高"
+      },
       "marketTone": {
         "en": "Tuesday's tape bought chips back and sold crude and gold. The Nasdaq rose 0.83% to 25372.01 while Brent fell 1.12% to 103.60 and COMEX gold fell 0.74% to 3927.24. Job openings rose to 7.523 million, above a 7.164 million survey, and the 10-year yield rose to 4.9435%. Shanghai fell 0.82% to 3608.10. The chart draws openings at about 7.5 million and layoffs at about 1.6 million.",
         "zh": "周二芯片股回升，原油和黄金下跌。纳斯达克上涨 0.83% 至 25372.01，布伦特下跌 1.12% 至 103.60，COMEX 黄金下跌 0.74% 至 3927.24。职位空缺升至 752.3万，高于预期 716.4万。10年期收益率升至 4.9435%。上证下跌 0.82% 至 3608.10。图上，职位空缺大约在 750万，裁员大约在 160万。"
@@ -128,6 +160,10 @@
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
       },
+      "spine": {
+        "en": "Oil Sheds Iran Premium",
+        "zh": "伊朗溢价退出油价"
+      },
       "marketTone": {
         "en": "Monday took the Iran premium out of oil. WTI fell 7.36% to 96.46 and Brent fell 7.63% to 104.77, while the Nasdaq fell 1.07% to 25164.32 and the Dow rose. China cut the buyback relending rate from 1.25% to 1%, and Shanghai rose 1.08% to 3638.03. The chart draws 2026 Nov-Dec government-bond net financing at about 21000, second only to 2024.",
         "zh": "周一的谈判把伊朗溢价从油价里拿掉了。WTI 下跌 7.36% 至 96.46，布伦特下跌 7.63% 至 104.77，纳斯达克下跌 1.07% 至 25164.32，道琼斯上涨。中国把回购增持再贷款利率从 1.25% 降至 1%，上证上涨 1.08% 至 3638.03。图表把 2026 年 11 月至 12 月政府债净融资画在约 21000，仅次于 2024 年。"
@@ -142,6 +178,10 @@
       "title": {
         "en": "Daily Financial Briefing",
         "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Intel Plunge, Gold Low",
+        "zh": "英特尔暴跌与金价新低"
       },
       "marketTone": {
         "en": "Friday was the worst US equity day in nearly five months. The S&P 500 fell 1.82% to 7580.07 and the Nasdaq fell 2.86% to 25437, with Intel down nearly 29% in its largest daily drop since 1974. Brent settled at 117.64 and COMEX gold at 3885.7, a one-year low. China's manufacturing PMI fell to 49.3. The chart shows headline inflation drawn accelerating while core stays near the target.",

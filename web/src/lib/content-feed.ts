@@ -3,6 +3,7 @@ import type { Briefing } from "./types";
 export interface BriefingIndexItem {
   date: string;
   title: string;
+  spine?: string;
   marketTone: string;
   coverageWindow: string;
 }

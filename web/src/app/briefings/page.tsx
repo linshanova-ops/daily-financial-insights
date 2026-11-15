@@ -10,6 +10,7 @@ export default function BriefingsArchivePage() {
   const briefings = getAllBriefings().map((item) => ({
     date: item.date,
     title: item.title,
+    spine: item.spine,
     marketTone: item.marketTone,
     coverageWindow: item.coverageWindow,
   }));
@@ -24,8 +25,8 @@ export default function BriefingsArchivePage() {
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-ink-soft">
         <L
-          en="Each entry is a dated output from the daily financial research pipeline. This list refreshes automatically when new briefings land on main."
-          zh="每条都是每日金融研究流程的一份按日期产出。新简报进入 main 后，这个列表会自动更新。"
+          en="Each book is one day's briefing, shelved by month. Pick a spine to open it. New briefings are shelved automatically when they land on main."
+          zh="每本书是一天的简报，按月上架。点击书脊即可打开。新简报进入 main 后会自动上架。"
         />
       </p>
       <LiveArchive initialItems={briefings} />

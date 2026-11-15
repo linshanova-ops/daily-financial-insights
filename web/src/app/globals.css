@@ -251,9 +251,84 @@ html:not([data-lang="zh"]) .lang-switch a[data-lang-btn="en"] {
   100% { transform: scale(1); }
 }
 
+/* Archive bookshelf: one board per wrapped row of spines. */
+.shelf {
+  --row: 15.75rem;
+  --board: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.3rem;
+  margin: 0;
+  padding: 0 0.75rem;
+  list-style: none;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0 calc(var(--row) - var(--board)),
+      #9a6f4f calc(var(--row) - var(--board)) calc(var(--row) - var(--board) + 3px),
+      #6b4a34 calc(var(--row) - var(--board) + 3px) var(--row)
+    ),
+    rgba(122, 28, 40, 0.04);
+}
+
+.shelf-slot {
+  display: flex;
+  align-items: flex-end;
+  height: var(--row);
+  padding-bottom: var(--board);
+}
+
+.spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.65rem 0 1rem;
+  overflow: hidden;
+  color: var(--paper);
+  background:
+    linear-gradient(to bottom, transparent 2.35rem, rgba(226, 184, 150, 0.6) 2.35rem 2.5rem, transparent 2.5rem),
+    linear-gradient(to top, transparent 0.45rem, rgba(226, 184, 150, 0.6) 0.45rem 0.6rem, transparent 0.6rem),
+    var(--spine);
+  border-radius: 3px 3px 1px 1px;
+  box-shadow: inset 3px 0 0 rgba(255, 255, 255, 0.14), inset -4px 0 0 rgba(0, 0, 0, 0.2);
+  transition: transform 180ms ease;
+}
+
+.spine:hover,
+.spine:focus-visible {
+  transform: translateY(-0.5rem);
+}
+
+.spine-day {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.spine-title {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  writing-mode: vertical-rl;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+
+html[data-lang="zh"] .spine-title {
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .spine {
+    transition: none;
   }
 
   .reveal,

@@ -241,6 +241,8 @@ export interface MarketOverview {
 export interface BriefingFrontmatter {
   date: string;
   title: string;
+  /** Archive book-spine title, ≤10字 / short EN. */
+  spine?: string;
   coverageWindow: string;
   /** ISO timestamp when this briefing was published (UTC). */
   publishedAt?: string;

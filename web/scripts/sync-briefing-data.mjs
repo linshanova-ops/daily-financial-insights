@@ -43,6 +43,7 @@ const index = {
   briefings: briefings.map((item) => ({
     date: item.date,
     title: item.title,
+    spine: item.spine,
     marketTone: item.marketTone,
     coverageWindow: item.coverageWindow,
   })),

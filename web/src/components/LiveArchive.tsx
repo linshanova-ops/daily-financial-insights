@@ -1,14 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import {
   fetchBriefingIndex,
   type BriefingIndexItem,
 } from "@/lib/content-feed";
 import { formatBriefingDate } from "@/lib/briefings-format";
+import { enOf, zhOf } from "@/lib/lang-text";
+import { spineTitle } from "@/lib/spine-title";
 import { L } from "./L";
-import { Prose } from "./Prose";
+
+/** All ≥4.5:1 against paper text. */
+const SPINE_COLORS = [
+  "var(--forest)",
+  "var(--azure)",
+  "#2f5d3f",
+  "var(--violet)",
+  "var(--amber)",
+  "var(--ink-soft)",
+  "var(--crimson)",
+];
+const SPINE_HEIGHTS = [13, 14.25, 12.25, 13.75];
 
 interface LiveArchiveProps {
   initialItems: BriefingIndexItem[];
@@ -65,30 +78,38 @@ export function LiveArchive({ initialItems }: LiveArchiveProps) {
           <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">
             <L en={monthLabel(month.key)} zh={monthLabel(month.key, "zh")} />
           </h2>
-          <ul className="mt-3 divide-y divide-line border-y border-line">
-            {month.rows.map((briefing) => (
-              <li key={briefing.date}>
-                <Link
-                  href={`/briefings/${briefing.date}`}
-                  className="group flex flex-col gap-2 py-6 transition hover:bg-paper/60 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8 sm:px-2"
-                >
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-forest">
+          <ul className="shelf mt-3">
+            {[...month.rows].reverse().map((briefing) => {
+              const day = Number(briefing.date.slice(8));
+              const tone = briefing.marketTone;
+              const en = enOf(briefing.spine) || spineTitle(enOf(tone));
+              const zh =
+                zhOf(briefing.spine) ||
+                (typeof tone === "string" ? en : spineTitle(zhOf(tone), "zh"));
+              const style = {
+                "--spine": SPINE_COLORS[day % SPINE_COLORS.length],
+                height: `${SPINE_HEIGHTS[day % SPINE_HEIGHTS.length]}rem`,
+                width: day % 3 === 0 ? "3.25rem" : "2.75rem",
+              } as CSSProperties;
+              return (
+                <li key={briefing.date} className="shelf-slot">
+                  <Link href={`/briefings/${briefing.date}`} className="spine" style={style}>
+                    <span className="sr-only">
                       <L
                         en={formatBriefingDate(briefing.date)}
                         zh={formatBriefingDate(briefing.date, "zh")}
                       />
-                    </p>
-                    <h3 className="display mt-2 text-2xl tracking-tight text-ink group-hover:text-forest">
-                      <Prose text={briefing.title} />
-                    </h3>
-                  </div>
-                  <p className="max-w-xl text-sm leading-relaxed text-ink-soft sm:text-right">
-                    <Prose text={briefing.marketTone} />
-                  </p>
-                </Link>
-              </li>
-            ))}
+                    </span>
+                    <span className="spine-day display" aria-hidden="true">
+                      {day}
+                    </span>
+                    <span className="spine-title">
+                      <L en={en} zh={zh} />
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </section>
       ))}
