@@ -140,6 +140,7 @@ Clone structure from the latest `web/content/briefings/*.md`. Fill all of:
 | Global | `globalRegime`, `globalChanged`, `globalImplies`, `globalTensions` — **do not repeat Market snapshot prints** (indices, yields, oil settle, BTC level). Keep narrative and desk news; extra AP/Treasury close bullets belong in `marketDashboard` / Themes / skim `summary`, not `globalChanged`. |
 | China | `chinaStance`, `chinaChanged`, `chinaImplies`, `chinaDivergences` — same rule: no second A/H index close table in What changed; stance is policy and flows, not re-listing Shanghai/Hang Seng levels already in Market snapshot. |
 | Sources | Renders `keySources` classified by book. `sources` = leftovers cited only on What-changed. Do not write `singleSource`. The page does not show a single-source risk block. |
+| Archive | `spine: { en, zh }` — the day's book-spine title: plain and serious, ZH ≤10 字, EN short Title Case, like `英伟达换帅与油价上行` / `Nvidia CEO Exit, Oil Up`. Keep the Archive bookshelf design as is. |
 | (not rendered) | `signals: []`. `assetClasses` / `assetFramework` — do **not** spend the run filling six books; the site does not show them. |
 
 ## Publish
