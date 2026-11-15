@@ -25,8 +25,8 @@ export default function BriefingsArchivePage() {
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-ink-soft">
         <L
-          en="Each book is one day's briefing, newest on the right. Pick a spine to open it. New briefings are shelved automatically when they land on main."
-          zh="每本书是一天的简报，最新的在右边。点击书脊即可打开。新简报进入 main 后会自动上架。"
+          en="Each book is one day's briefing, newest on the right. Pick a spine to open it."
+          zh="每本书是一天的简报，最新的在右边。点击书脊即可打开。"
         />
       </p>
       <LiveArchive initialItems={briefings} />
