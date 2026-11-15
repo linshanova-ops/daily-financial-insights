@@ -1,6 +1,10 @@
 {
   "date": "2026-09-11",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "ECB Hikes, Stocks Slide",
+    "zh": "欧央行加息美股四连跌"
+  },
   "coverageWindow": "September 10–11, 2026",
   "publishedAt": "2026-09-11T02:56:52.908Z",
   "keySources": [

@@ -1,6 +1,10 @@
 {
   "date": "2026-07-21",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "A-Shares Rally, ChiNext +7%",
+    "zh": "A股大涨创业板领涨"
+  },
   "coverageWindow": "July 20–21, 2026",
   "publishedAt": "2026-07-21T12:46:35.000Z",
   "keySources": [

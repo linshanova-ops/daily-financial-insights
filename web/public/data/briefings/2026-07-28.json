@@ -1,6 +1,10 @@
 {
   "date": "2026-07-28",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Oil Relief, Nvidia Worries",
+    "zh": "油价急跌与英伟达承压"
+  },
   "coverageWindow": "July 27–28, 2026",
   "publishedAt": "2026-07-28T02:59:39Z",
   "keySources": [

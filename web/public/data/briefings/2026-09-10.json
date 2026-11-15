@@ -1,6 +1,10 @@
 {
   "date": "2026-09-10",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Brent Tops $100 Again",
+    "zh": "布伦特重上百元"
+  },
   "coverageWindow": "September 9–10, 2026",
   "publishedAt": "2026-09-10T02:53:22.682Z",
   "keySources": [

@@ -1,6 +1,10 @@
 {
   "date": "2026-08-31",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Michigan Sentiment Slips",
+    "zh": "密歇根信心回落"
+  },
   "coverageWindow": "August 28–31, 2026",
   "publishedAt": "2026-08-31T02:42:52.231Z",
   "keySources": [

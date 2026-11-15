@@ -1,6 +1,10 @@
 {
   "date": "2026-07-17",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Chips Slide, A-Shares Sink",
+    "zh": "芯片回调A股重挫"
+  },
   "coverageWindow": "July 16–17, 2026",
   "publishedAt": "2026-07-17T16:39:15.000Z",
   "keySources": [

@@ -4,4 +4,6 @@ declare module "*.mjs" {
   export function stripInternalShorthand(text: string): string;
   export function englishSourceNames(text: string): string;
   export function readerLine(text: string, lang?: "en" | "zh"): string;
+  export function spineTitle(tone: string, lang?: "en" | "zh"): string;
+  export function spineTopic(title: string): string;
 }

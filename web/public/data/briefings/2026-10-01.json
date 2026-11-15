@@ -1,6 +1,10 @@
 {
   "date": "2026-10-01",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Core PCE 3%, GDP Revised Up",
+    "zh": "PCE回落GDP上修"
+  },
   "coverageWindow": "September 30–October 1, 2026",
   "publishedAt": "2026-10-01T01:19:13.398Z",
   "keySources": [

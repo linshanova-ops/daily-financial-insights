@@ -1,6 +1,10 @@
 {
   "date": "2026-08-06",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Hormuz Talks Keep Oil Soft",
+    "zh": "霍尔木兹谈判压油价"
+  },
   "coverageWindow": "August 3–6, 2026",
   "publishedAt": "2026-08-06T07:47:38Z",
   "keySources": [

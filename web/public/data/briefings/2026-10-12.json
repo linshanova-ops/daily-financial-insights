@@ -1,6 +1,10 @@
 {
   "date": "2026-10-12",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Gold Breaks Higher",
+    "zh": "黄金突破上行"
+  },
   "coverageWindow": "October 9–12, 2026",
   "publishedAt": "2026-10-12T01:22:46.509Z",
   "keySources": [

@@ -1,6 +1,10 @@
 {
   "date": "2026-07-24",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Oil $100, Tariffs Hit China",
+    "zh": "油破百与关税压A股"
+  },
   "coverageWindow": "July 23–24, 2026",
   "publishedAt": "2026-07-24T12:20:08.373Z",
   "keySources": [

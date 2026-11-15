@@ -1,6 +1,10 @@
 {
   "date": "2026-10-26",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Saudi Sites Attacked",
+    "zh": "沙特设施遇袭油价涨"
+  },
   "coverageWindow": "October 23–26, 2026",
   "publishedAt": "2026-10-26T01:22:57.348Z",
   "keySources": [

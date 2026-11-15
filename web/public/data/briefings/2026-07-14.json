@@ -1,6 +1,10 @@
 {
   "date": "2026-07-14",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "CPI Miss Eases Hike Fear",
+    "zh": "CPI回落缓解加息忧"
+  },
   "coverageWindow": "July 13–14, 2026",
   "publishedAt": "2026-07-14T20:30:00.000Z",
   "keySources": [

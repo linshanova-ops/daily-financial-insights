@@ -1,6 +1,10 @@
 {
   "date": "2026-10-07",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "S&P Record Close",
+    "zh": "标普创收盘新高"
+  },
   "coverageWindow": "October 6–7, 2026",
   "publishedAt": "2026-10-07T01:17:08.350Z",
   "keySources": [

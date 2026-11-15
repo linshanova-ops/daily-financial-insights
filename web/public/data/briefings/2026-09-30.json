@@ -1,6 +1,10 @@
 {
   "date": "2026-09-30",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "30-Year Hits 5.59%",
+    "zh": "三十年期美债续升"
+  },
   "coverageWindow": "September 29–30, 2026",
   "publishedAt": "2026-09-30T01:16:41.560Z",
   "keySources": [

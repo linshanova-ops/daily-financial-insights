@@ -1,6 +1,10 @@
 {
   "date": "2026-10-08",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Inflation Expectations Rise",
+    "zh": "通胀预期升温"
+  },
   "coverageWindow": "October 7–8, 2026",
   "publishedAt": "2026-10-08T01:18:08.693Z",
   "keySources": [

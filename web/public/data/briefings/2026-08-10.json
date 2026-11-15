@@ -1,6 +1,10 @@
 {
   "date": "2026-08-10",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Soft Payrolls Cut Hike Odds",
+    "zh": "非农疲软加息预期降"
+  },
   "coverageWindow": "August 7–10, 2026",
   "publishedAt": "2026-08-10T06:39:13Z",
   "keySources": [

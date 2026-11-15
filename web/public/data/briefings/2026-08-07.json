@@ -1,6 +1,10 @@
 {
   "date": "2026-08-07",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Hormuz Terms Lift Oil",
+    "zh": "霍尔木兹草案推油价"
+  },
   "coverageWindow": "August 6–7, 2026",
   "publishedAt": "2026-08-07T06:21:11Z",
   "keySources": [

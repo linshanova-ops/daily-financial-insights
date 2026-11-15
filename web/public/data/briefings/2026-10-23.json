@@ -1,6 +1,10 @@
 {
   "date": "2026-10-23",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "AI Funding Selloff",
+    "zh": "AI融资引发抛售"
+  },
   "coverageWindow": "October 22–23, 2026",
   "publishedAt": "2026-10-23T01:19:39.777Z",
   "keySources": [

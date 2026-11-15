@@ -1,6 +1,10 @@
 {
   "date": "2026-07-31",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Tech Rebound, China PMI Dips",
+    "zh": "科技反弹与PMI走弱"
+  },
   "coverageWindow": "July 30–31, 2026",
   "publishedAt": "2026-07-31T06:36:32Z",
   "keySources": [

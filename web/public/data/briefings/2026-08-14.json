@@ -1,6 +1,10 @@
 {
   "date": "2026-08-14",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Soft PPI, S&P Record",
+    "zh": "PPI疲软标普新高"
+  },
   "coverageWindow": "August 13–14, 2026",
   "publishedAt": "2026-08-14T03:13:46.749Z",
   "keySources": [

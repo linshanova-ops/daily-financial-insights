@@ -1,6 +1,10 @@
 {
   "date": "2026-07-16",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "TSMC Beat, Kospi Tumbles",
+    "zh": "台积电超预期韩股挫"
+  },
   "coverageWindow": "July 15–16, 2026",
   "publishedAt": "2026-07-16T12:25:23.000Z",
   "keySources": [

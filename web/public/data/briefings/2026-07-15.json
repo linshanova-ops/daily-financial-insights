@@ -1,6 +1,10 @@
 {
   "date": "2026-07-15",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Double Disinflation Miss",
+    "zh": "CPI与PPI齐降温"
+  },
   "coverageWindow": "July 14–15, 2026",
   "publishedAt": "2026-07-15T15:40:00.000Z",
   "keySources": [

@@ -1,6 +1,10 @@
 {
   "date": "2026-09-07",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Payrolls Beat Big",
+    "zh": "非农大超预期"
+  },
   "coverageWindow": "September 4–7, 2026",
   "publishedAt": "2026-09-07T02:50:45.541Z",
   "keySources": [

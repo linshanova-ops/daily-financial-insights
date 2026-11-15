@@ -1,6 +1,10 @@
 {
   "date": "2026-10-15",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Hot CPI, Chips Sink",
+    "zh": "CPI超预期芯片续跌"
+  },
   "coverageWindow": "October 14–15, 2026",
   "publishedAt": "2026-10-15T01:25:46.623Z",
   "keySources": [

@@ -1,6 +1,10 @@
 {
   "date": "2026-10-13",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Tankers Avoid the Gulf",
+    "zh": "油轮避开波斯湾"
+  },
   "coverageWindow": "October 10–13, 2026",
   "publishedAt": "2026-10-13T08:18:16.255Z",
   "keySources": [

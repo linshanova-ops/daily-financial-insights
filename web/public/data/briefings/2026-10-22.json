@@ -1,6 +1,10 @@
 {
   "date": "2026-10-22",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Nasdaq Earnings Rebound",
+    "zh": "纳指财报反弹"
+  },
   "coverageWindow": "October 21–22, 2026",
   "publishedAt": "2026-10-22T01:23:34.903Z",
   "keySources": [

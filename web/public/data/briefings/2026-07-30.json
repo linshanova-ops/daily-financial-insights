@@ -1,6 +1,10 @@
 {
   "date": "2026-07-30",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Hawkish Fed Hold",
+    "zh": "美联储鹰派按兵不动"
+  },
   "coverageWindow": "July 29–30, 2026",
   "publishedAt": "2026-07-30T01:18:58Z",
   "keySources": [

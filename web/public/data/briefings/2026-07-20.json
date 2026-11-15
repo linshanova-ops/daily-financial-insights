@@ -1,6 +1,10 @@
 {
   "date": "2026-07-20",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Brent Tops $90",
+    "zh": "布伦特突破90美元"
+  },
   "coverageWindow": "July 17–20, 2026",
   "publishedAt": "2026-07-20T13:10:02.000Z",
   "keySources": [

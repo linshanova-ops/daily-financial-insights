@@ -1,6 +1,10 @@
 {
   "date": "2026-08-12",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Hormuz Dispute Into CPI",
+    "zh": "CPI前夕海峡僵持"
+  },
   "coverageWindow": "August 11–12, 2026",
   "publishedAt": "2026-08-12T07:20:00Z",
   "keySources": [

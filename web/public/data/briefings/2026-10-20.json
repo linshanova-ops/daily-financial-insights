@@ -1,6 +1,10 @@
 {
   "date": "2026-10-20",
   "title": "Daily Financial Briefing",
+  "spine": {
+    "en": "Chip Bounce, Oil Still High",
+    "zh": "芯片反弹油价高企"
+  },
   "coverageWindow": "October 19–20, 2026",
   "publishedAt": "2026-10-20T01:24:02.104Z",
   "keySources": [
