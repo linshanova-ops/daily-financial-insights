@@ -1,25 +1,17 @@
 {
-  "at": "2026-11-16T01:02:09.023Z",
+  "at": "2026-11-16T01:27:46.115Z",
   "briefingDate": "2026-11-16",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-16.md",
-      "subject": "彭博财经早茶: 美财长促英伟达高层改组；美伊“非战非和”僵局难破",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 7265,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-16.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-16.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W46.md",
-      "subject": "彭博周末茶歇：黄仁勋离职 AI界迎来巨变",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 9237,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 美财长促英伟达高层改组；美伊“非战非和”僵局难破",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-16.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇：黄仁勋离职 AI界迎来巨变",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W46.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：黄仁勋被迫下台；特朗普淡化美伊协议前景",
