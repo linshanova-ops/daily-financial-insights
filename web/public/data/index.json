@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-15T11:32:04.107Z",
-  "latest": "2026-11-13",
+  "generatedAt": "2026-11-16T01:24:07.201Z",
+  "latest": "2026-11-16",
   "briefings": [
+    {
+      "date": "2026-11-16",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "PPI High, Nvidia Shakeup",
+        "zh": "物价新高与英伟达改组"
+      },
+      "marketTone": {
+        "en": "US stocks fell on Friday, and the 10-year Treasury yield is 5.15% after October producer prices rose 6.5% from a year earlier. On the chart, a fully diluted bar is labeled 1.4 trillion dollars, below the yellow market-value bars.",
+        "zh": "美股周五下跌。10月生产者价格同比上涨6.5%之后，10年期国债收益率报5.15%。图上，一根完全摊薄的条标成1.4万亿美元，低于黄色的市值条。"
+      },
+      "coverageWindow": {
+        "en": "November 13–16, 2026",
+        "zh": "2026年11月13日至11月16日"
+      }
+    },
     {
       "date": "2026-11-13",
       "title": {
