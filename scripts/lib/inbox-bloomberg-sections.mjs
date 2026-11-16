@@ -209,7 +209,7 @@ export function formatBloombergForPrompt(text, { maxSectionChars = 1600 } = {}) 
     parts.push(
       "## 今日图表 → Figures (REQUIRED)\n" +
         "Add figures[] id=bloomberg-chart-of-day kind=insight; open chartImage PNG; " +
-        "title+analysis must describe the chart itself (metric, standout levels, footnote). " +
+        "title+analysis must say what the chart means and the market impact behind it, not labels, lines, or annotations. " +
         "Do not substitute a neighboring geopolitics bullet or write 'image saved / no caption'.\n\n" +
         chartDay.join("\n\n"),
     );
