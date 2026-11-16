@@ -179,7 +179,7 @@ After the live check, write the daily post from `$TODAY`'s published briefing in
 - Title: the day's two core facts as short noun phrases, plain and declarative, at most 15 Chinese characters (🥑 and ｜ not counted). No question, exclamation, suspense or invented claim. Example: “🥑牛油果日报｜英伟达换帅与油价上行”.
 - `<summary>` + `<self-check>` together are 200–300 Chinese characters (punctuation, digits and Latin letters do not count). Use only facts and numbers already on the page; add no new claim, number, or source.
 - `<summary>`: a few sentences of key takeaways: the market tone and two or three of the biggest moves or themes.
-- `<self-check>`: prompt readers to notice their own emotions and behavioral leanings after reading, with questions or a self-check (e.g. 你现在更焦虑还是更平静？更想马上操作，还是想再等等？). No trading advice; do not tell readers to buy, sell or hold.
+- `<self-check>` (this paragraph, every day, do not vary it): 读完先别急着行动。留意一下自己此刻是紧、是松，还是没什么感觉，以及你最想做的那一下。看见这个反应，就够了。
 - The subtitle, closing line, signature and hashtag line stay verbatim. No other emoji, hashtags or markdown; a site link only if it reads naturally.
 - Do not put it in the briefing YAML or anywhere on the site. Do not save it anywhere (no store file, no repo file); put the post only in the run's final reply.
 

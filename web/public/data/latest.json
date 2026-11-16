@@ -74,8 +74,8 @@
         "asia-equities"
       ],
       "influence": {
-        "en": "16 November 财经早茶. The Treasury secretary wants a new Nvidia leadership, Brent was about flat, and the chart ranks a fully diluted value against US company market values.",
-        "zh": "11月16日财经早茶。财政部长希望英伟达换一套领导层，布伦特大致持平。图把一个完全摊薄估值和美国公司市值放在一起。"
+        "en": "16 November 财经早茶. The Treasury secretary wants a new Nvidia leadership, Brent was about flat, and a fully diluted value of 1.4 trillion dollars would rank just under Tesla.",
+        "zh": "11月16日财经早茶。财政部长希望英伟达换一套领导层，布伦特大致持平。1.4万亿美元的完全摊薄估值将排在特斯拉之下。"
       }
     },
     {
@@ -151,15 +151,15 @@
     {
       "id": "bloomberg-chart-of-day",
       "title": {
-        "en": "US company values, with one fully diluted bar at the bottom",
-        "zh": "美国公司市值，底部有一根完全摊薄估值的条"
+        "en": "A 1.4 trillion dollar fully diluted value would rank just under Tesla",
+        "zh": "1.4万亿美元的完全摊薄估值将排在特斯拉之下"
       },
       "kind": "insight",
       "imageSrc": "/inbox-charts/bloomberg-2026-11-16.png",
       "imageSrcEn": "/inbox-charts/bloomberg-2026-11-16-en.png",
       "analysis": {
-        "en": "Yellow bars are market value in trillion dollars. Apple is labeled 5.2. Two bars are labeled 3.9, then Alphabet 3.6, Amazon 2.9, SpaceX 1.9, Meta and Broadcom 1.7, and Tesla 1.5. The pink bar is a fully diluted potential value labeled 1.4. These figures are the labels on the chart.",
-        "zh": "黄条是市值，单位是万亿美元。苹果标成5.2。有两根标成3.9，然后Alphabet是3.6，亚马逊2.9，SpaceX 1.9，Meta和博通1.7，特斯拉1.5。粉色条是完全摊薄口径的潜在估值，标成1.4。这些数字是图上的标签。"
+        "en": "Market value is 5.2 trillion dollars at Apple, 3.9 at Nvidia and at Microsoft, 3.6 at Alphabet, 2.9 at Amazon, 1.9 at SpaceX, 1.7 at Meta and at Broadcom, and 1.5 at Tesla. A fully diluted potential value of 1.4 trillion dollars would rank just under Tesla, so the US stock market would have to take a listing of that size.",
+        "zh": "苹果市值为5.2万亿美元，英伟达和微软各为3.9万亿，Alphabet为3.6万亿，亚马逊为2.9万亿，SpaceX为1.9万亿，Meta和博通各为1.7万亿，特斯拉为1.5万亿。完全摊薄口径的潜在估值为1.4万亿美元，刚好低于特斯拉，美股要承接的是这个体量的上市。"
       },
       "source": {
         "label": "财经早茶 Nov 16",
@@ -174,8 +174,8 @@
     }
   ],
   "marketTone": {
-    "en": "US stocks fell on Friday, and the 10-year Treasury yield is 5.15% after October producer prices rose 6.5% from a year earlier. On the chart, a fully diluted bar is labeled 1.4 trillion dollars, below the yellow market-value bars.",
-    "zh": "美股周五下跌。10月生产者价格同比上涨6.5%之后，10年期国债收益率报5.15%。图上，一根完全摊薄的条标成1.4万亿美元，低于黄色的市值条。"
+    "en": "US stocks fell on Friday, and the 10-year Treasury yield is 5.15% after October producer prices rose 6.5% from a year earlier. A fully diluted potential value of 1.4 trillion dollars would rank just under Tesla, so the US stock market would have to take a listing of that size.",
+    "zh": "美股周五下跌。10月生产者价格同比上涨6.5%之后，10年期国债收益率报5.15%。完全摊薄口径的潜在估值1.4万亿美元将排在特斯拉之下，美股要承接这个体量的上市。"
   },
   "summary": [
     {
@@ -280,8 +280,8 @@
     }
   ],
   "signal": {
-    "en": "US stocks fell on Friday, Nvidia's weekly drop was the largest in a year and a half, and the 10-year Treasury yield is 5.15%. October producer prices rose 6.5% from a year earlier, below the 6.6% forecast. Brent was nearly flat at 95.84 dollars. Shanghai fell to 3634.35, and October social financing rose 1.15 trillion yuan, down from 3.55 trillion yuan in September. On the chart, the fully diluted bar is labeled 1.4 trillion dollars.",
-    "zh": "美股周五下跌，英伟达的周跌幅是一年半来最大的，10年期国债收益率报5.15%。10月生产者价格同比上涨6.5%，低于6.6%的预测。布伦特基本持平，报95.84美元。上证跌至3634.35。10月社会融资增加1.15万亿元，9月为3.55万亿元。图上，完全摊薄的条标成1.4万亿美元。"
+    "en": "US stocks fell on Friday, Nvidia's weekly drop was the largest in a year and a half, and the 10-year Treasury yield is 5.15%. October producer prices rose 6.5% from a year earlier, below the 6.6% forecast. Brent was nearly flat at 95.84 dollars. Shanghai fell to 3634.35, and October social financing rose 1.15 trillion yuan, down from 3.55 trillion yuan in September. A fully diluted potential value of 1.4 trillion dollars would rank just under Tesla, so the US stock market would have to take a listing of that size.",
+    "zh": "美股周五下跌，英伟达的周跌幅是一年半来最大的，10年期国债收益率报5.15%。10月生产者价格同比上涨6.5%，低于6.6%的预测。布伦特基本持平，报95.84美元。上证跌至3634.35。10月社会融资增加1.15万亿元，9月为3.55万亿元。完全摊薄口径的潜在估值1.4万亿美元将排在特斯拉之下，美股要承接这个体量的上市。"
   },
   "watch": {
     "en": "China publishes October activity data at 10:00 Beijing, including industrial output, retail sales, and fixed investment. Barr speaks at 18:00, Williams at 22:05, and Chair Warsh at 01:00 Beijing on 17 November. Xi, Putin, and Trump meet in Shenzhen on 19 November.",
@@ -506,8 +506,8 @@
     {
       "id": "anthropic-raise",
       "title": {
-        "en": "A fully diluted value of 1.4 trillion dollars sits below Tesla on the chart",
-        "zh": "图上1.4万亿美元的完全摊薄估值低于特斯拉"
+        "en": "A 1.4 trillion dollar fully diluted value would rank just under Tesla",
+        "zh": "1.4万亿美元的完全摊薄估值将排在特斯拉之下"
       },
       "grade": "MODERATE",
       "assets": [
@@ -518,8 +518,8 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "The chart labels Apple at 5.2 trillion dollars, two companies at 3.9, Alphabet at 3.6, Amazon at 2.9, SpaceX at 1.9, Meta and Broadcom at 1.7, Tesla at 1.5, and a fully diluted bar at 1.4 trillion dollars. 财经早茶 reported that the Anthropic offering is set to exclude investors in mainland China and Hong Kong.",
-        "zh": "图上苹果标成5.2万亿美元，两家公司标成3.9，Alphabet 3.6，亚马逊2.9，SpaceX 1.9，Meta和博通1.7，特斯拉1.5，完全摊薄的条是1.4万亿美元。财经早茶：Anthropic的发行据悉把中国内地和香港的机构投资者排除在外。"
+        "en": "Market value is 5.2 trillion dollars at Apple, 3.9 at Nvidia and at Microsoft, 3.6 at Alphabet, 2.9 at Amazon, 1.9 at SpaceX, 1.7 at Meta and at Broadcom, and 1.5 at Tesla, and a fully diluted potential value is 1.4 trillion dollars. 财经早茶 reported that the Anthropic offering is set to exclude investors in mainland China and Hong Kong.",
+        "zh": "苹果市值为5.2万亿美元，英伟达和微软各为3.9万亿，Alphabet为3.6万亿，亚马逊为2.9万亿，SpaceX为1.9万亿，Meta和博通各为1.7万亿，特斯拉为1.5万亿。完全摊薄口径的潜在估值为1.4万亿美元。财经早茶：Anthropic的发行据悉把中国内地和香港的机构投资者排除在外。"
       },
       "factSources": [
         {
@@ -528,8 +528,8 @@
         }
       ],
       "mechanism": {
-        "en": "The pink bar is a fully diluted potential value, and 1.4 trillion dollars would sit just under Tesla's 1.5. 财经早茶 (16 November): mainland and Hong Kong institutions are set to be left out of the offering. US equities are the market that would have to take a listing of that size.",
-        "zh": "粉色条是完全摊薄口径的潜在估值，1.4万亿美元刚好在特斯拉的1.5之下。财经早茶（11月16日）：中国内地和香港的机构据悉进不了这次发行。美股要承接的是这个体量的上市。"
+        "en": "A fully diluted potential value of 1.4 trillion dollars would rank just under Tesla at 1.5, so a listing of that size would enter the US stock market among the largest companies. 财经早茶 (16 November): mainland and Hong Kong institutions are set to be left out of the offering. US equities are the market that would have to take that listing.",
+        "zh": "完全摊薄口径的潜在估值1.4万亿美元刚好低于特斯拉的1.5万亿，这个体量的上市会排进美国市值最高的公司里。财经早茶（11月16日）：中国内地和香港的机构据悉进不了这次发行。美股要承接的是这个体量的上市。"
       }
     },
     {
