@@ -172,6 +172,8 @@ After the live check, write the daily post from `$TODAY`'s published briefing in
 —— Avocadough🥑
 
 #howto用好AI #金融 #心理 #认知思维 #自我成长 #这个网站真好用 #美股 #A股 #vibecoding #avocadough
+
+本内容仅为公开信息整理，不构成任何投资建议或专业意见。
 ```
 
 - Title: the day's two core facts as short noun phrases, plain and declarative, at most 15 Chinese characters (🥑 and ｜ not counted). No question, exclamation, suspense or invented claim. Example: “🥑牛油果日报｜英伟达换帅与油价上行”.
