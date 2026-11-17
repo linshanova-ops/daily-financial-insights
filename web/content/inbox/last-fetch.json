@@ -1,17 +1,12 @@
 {
-  "at": "2026-11-17T01:04:02.905Z",
+  "at": "2026-11-17T01:32:26.045Z",
   "briefingDate": "2026-11-17",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-17.md",
-      "subject": "彭博财经早茶：华府封堵芯片管制漏洞；特朗普力挺黄仁勋",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6454,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-17.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-17.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：华府封堵芯片管制漏洞；特朗普力挺黄仁勋",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-17.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美财长促英伟达高层改组；美伊“非战非和”僵局难破",
