@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-16T01:24:07.201Z",
-  "latest": "2026-11-16",
+  "generatedAt": "2026-11-17T01:29:22.560Z",
+  "latest": "2026-11-17",
   "briefings": [
+    {
+      "date": "2026-11-17",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Tech Slide, Bond Buying",
+        "zh": "科技重挫与国债增持"
+      },
+      "marketTone": {
+        "en": "US stocks fell for a third day, and Treasury yields eased. Foreign investors added to China government bonds for a sixth month.",
+        "zh": "美股三连跌，美国国债收益率回落。境外机构连续第六个月增持中国国债。"
+      },
+      "coverageWindow": {
+        "en": "November 16–17, 2026",
+        "zh": "2026年11月16日至11月17日"
+      }
+    },
     {
       "date": "2026-11-16",
       "title": {
