@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-16T07:30:33.155Z",
-  "briefingDate": "2026-11-16",
+  "at": "2026-11-17T01:04:02.905Z",
+  "briefingDate": "2026-11-17",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-17.md",
+      "subject": "彭博财经早茶：华府封堵芯片管制漏洞；特朗普力挺黄仁勋",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6454,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-17.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-17.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-16.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-03.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-02.md",
       "skipped": true
     }
   ],
@@ -149,11 +154,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 中国加大资本市场支持；美伊愿意和谈",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-03.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：中国或研究稳定股市举措；币安开始恢复客户提款",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-02.md"
     }
   ]
 }
