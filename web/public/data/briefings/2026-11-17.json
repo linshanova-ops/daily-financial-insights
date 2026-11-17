@@ -555,8 +555,8 @@
     {
       "id": "anthropic-raise",
       "title": {
-        "en": "Nvidia's results and the Anthropic listing are both still ahead",
-        "zh": "英伟达业绩和Anthropic上市都还在前面"
+        "en": "Funds cut positions before Nvidia's results and the Anthropic listing",
+        "zh": "英伟达业绩和Anthropic上市还没落地，资金已先减仓"
       },
       "grade": "MODERATE",
       "assets": [
@@ -581,8 +581,8 @@
         }
       ],
       "mechanism": {
-        "en": "The listing and the results are close enough that positions were cut before either one. 华尔街见闻 (17 November): neither event has landed, and funds reduced positions ahead of them. US equities are the market that would have to absorb the listing.",
-        "zh": "上市和业绩都近到资金提前减仓。华尔街见闻（11月17日）：两件事都还没落地，资金事先降低了仓位。美股是要承接这场上市的市场。"
+        "en": "The two events have not landed, funds already cut positions ahead of both, and the stock market is still waiting on the results and the listing. 华尔街见闻 (17 November): neither event has landed this week, and funds reduced exposure before either one. US equities are the positions that were cut.",
+        "zh": "两件事都还没落地，资金已经先减了仓，股市还在等业绩和这场上市。华尔街见闻（11月17日）：两项事件本周都还没落地，资金事先降低了仓位。减掉的是美股仓位。"
       }
     },
     {
