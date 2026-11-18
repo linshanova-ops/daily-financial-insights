@@ -1,25 +1,17 @@
 {
-  "at": "2026-11-18T01:03:43.551Z",
+  "at": "2026-11-18T01:34:32.416Z",
   "briefingDate": "2026-11-18",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-18.md",
-      "subject": "彭博财经早茶：英伟达终迎财报利好；字节芯片贷款或被搁置",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6848,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-18.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-18.png"
+      "skipped": true
     },
     {
       "sourceId": "glassnode-insights",
       "path": "web/content/inbox/glassnode-insights/2026-W47.md",
-      "subject": "Capitulation Underway",
-      "from": "\"Glassnode\" <insights@glassnode.com>",
-      "chars": 2583,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：英伟达终迎财报利好；字节芯片贷款或被搁置",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-18.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "Capitulation Underway",
+      "path": "web/content/inbox/glassnode-insights/2026-W47.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：华府封堵芯片管制漏洞；特朗普力挺黄仁勋",
