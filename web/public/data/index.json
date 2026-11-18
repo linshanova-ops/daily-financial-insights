@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-17T01:29:22.560Z",
-  "latest": "2026-11-17",
+  "generatedAt": "2026-11-18T01:31:05.497Z",
+  "latest": "2026-11-18",
   "briefings": [
+    {
+      "date": "2026-11-18",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Nvidia Beat, Fourth Drop",
+        "zh": "英伟达财报与四连跌"
+      },
+      "marketTone": {
+        "en": "US stocks fell for a fourth day, and Nvidia's revenue outlook beat estimates after the close. Treasury yields eased, and crude prices rose after a US strike on Qeshm.",
+        "zh": "美股四连跌，英伟达盘后的营收展望超过预期。美国国债收益率回落。美军袭击格什姆岛之后，原油上涨。"
+      },
+      "coverageWindow": {
+        "en": "November 17–18, 2026",
+        "zh": "2026年11月17日至11月18日"
+      }
+    },
     {
       "date": "2026-11-17",
       "title": {
