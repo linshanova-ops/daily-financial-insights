@@ -166,8 +166,8 @@ After the live check, write the daily post from `$TODAY`'s published briefing in
 📚 <summary>
 
 读完先别急着行动。
-🗣️看看自己此刻的身体：肩膀有没有抬起？呼吸是浅了，还是没什么变化？
-🧠再看一眼念头：是想马上刷新更多消息，还是想关掉这些信息页面？
+🗣️先回到身体：肩膀有没有抬起，呼吸有没有变浅。紧张常常先出现在这里，念头还没来得及解释。
+🧠再看念头：你是想再刷一条，还是想把页面关掉。这是在找确定感，还是信息已经够了。
 
 市场每天都在变，但你的反应模式，往往不变。看见它，就是改变的开始✨
 
@@ -177,7 +177,7 @@ P.S. 本内容仅为公开信息整理，不构成任何投资建议或专业意
 ```
 
 - Title: the day's two core facts as short noun phrases, plain and declarative, at most 15 Chinese characters (🥑 and ｜ not counted). No question, exclamation, suspense or invented claim. Example: “🥑牛油果日报｜英伟达换帅与油价上行”.
-- `<summary>` is 200–300 Chinese characters (punctuation, digits and Latin letters do not count). State what happened. Stay neutral: do not say a move 驱动 the market, and do not read as investment advice. Use only facts and numbers already on the page; add no new claim, number, or source.
+- `<summary>` is 200–300 Chinese characters (punctuation, digits and Latin letters do not count). Carry one or two ideas, not a stack of numbers. Keep a figure only when it carries the idea. Stay neutral: no 驱动, nothing readable as investment advice. Use only facts and numbers already on the page; add no new claim, number, or source.
 - The three lines after `<summary>`, the closing line, and —— Avocadough🥑 stay verbatim. No hashtags. No site-promotion sentence.
 - Last line, verbatim: P.S. 本内容仅为公开信息整理，不构成任何投资建议或专业意见。
 - Do not put it in the briefing YAML or anywhere on the site. Do not save it anywhere (no store file, no repo file); put the post only in the run's final reply.
