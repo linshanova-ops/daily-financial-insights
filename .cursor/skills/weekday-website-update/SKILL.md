@@ -165,22 +165,21 @@ After the live check, write the daily post from `$TODAY`'s published briefing in
 
 📚 <summary>
 
-<self-check>
+读完先别急着行动。
+🗣️看看自己此刻的身体：肩膀有没有抬起？呼吸是浅了，还是没什么变化？
+🧠再看一眼念头：是想马上刷新更多消息，还是想关掉这些信息页面？
 
 市场每天都在变，但你的反应模式，往往不变。看见它，就是改变的开始✨
 
 —— Avocadough🥑
 
-#howto用好AI #金融 #心理 #认知思维 #自我成长 #这个网站真好用 #美股 #A股 #vibecoding #avocadough
-
-本内容仅为公开信息整理，不构成任何投资建议或专业意见。
+P.S. 本内容仅为公开信息整理，不构成任何投资建议或专业意见。
 ```
 
 - Title: the day's two core facts as short noun phrases, plain and declarative, at most 15 Chinese characters (🥑 and ｜ not counted). No question, exclamation, suspense or invented claim. Example: “🥑牛油果日报｜英伟达换帅与油价上行”.
-- `<summary>` + `<self-check>` together are 200–300 Chinese characters (punctuation, digits and Latin letters do not count). Use only facts and numbers already on the page; add no new claim, number, or source.
-- `<summary>`: a few sentences of key takeaways: the market tone and two or three of the biggest moves or themes.
-- `<self-check>` (this paragraph, every day, do not vary it): 读完先别急着行动。留意一下自己此刻是紧、是松，还是没什么感觉，以及你最想做的那一下。看见这个反应，就够了。
-- The subtitle, closing line, signature and hashtag line stay verbatim. No other emoji, hashtags or markdown; a site link only if it reads naturally.
+- `<summary>` is 200–300 Chinese characters (punctuation, digits and Latin letters do not count). State what happened. Stay neutral: do not say a move 驱动 the market, and do not read as investment advice. Use only facts and numbers already on the page; add no new claim, number, or source.
+- The three lines after `<summary>`, the closing line, and —— Avocadough🥑 stay verbatim. No hashtags. No site-promotion sentence.
+- Last line, verbatim: P.S. 本内容仅为公开信息整理，不构成任何投资建议或专业意见。
 - Do not put it in the briefing YAML or anywhere on the site. Do not save it anywhere (no store file, no repo file); put the post only in the run's final reply.
 
 ## Theme card
