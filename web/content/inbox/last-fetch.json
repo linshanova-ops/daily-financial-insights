@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-18T08:06:15.104Z",
-  "briefingDate": "2026-11-18",
+  "at": "2026-11-19T01:02:27.996Z",
+  "briefingDate": "2026-11-19",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-19.md",
+      "subject": "彭博财经早茶：美联储加息共识增强；腾讯AI支出挤压盈利",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6687,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-19.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-19.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-18.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-05.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-04.md",
       "skipped": true
     }
   ],
@@ -149,11 +154,6 @@
       "reason": "weekly-duplicate",
       "subject": "Bitcoin is retesting its August breakout levels",
       "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 美国中期选举登场；潘功胜重申稳市",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-04.md"
     }
   ]
 }

@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-18T01:31:05.497Z",
-  "latest": "2026-11-18",
+  "generatedAt": "2026-11-19T01:28:42.986Z",
+  "latest": "2026-11-19",
   "briefings": [
+    {
+      "date": "2026-11-19",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Fifth Drop, Gold Low",
+        "zh": "标普五连跌与金价新低"
+      },
+      "marketTone": {
+        "en": "US stocks split, and the S&P 500 fell for a fifth day. The Fed's October minutes showed a wider hike consensus, and gold and crude prices fell.",
+        "zh": "美股涨跌分化，标普500连续第五日下跌。美联储10月会议纪要显示加息共识更广，黄金和原油下跌。"
+      },
+      "coverageWindow": {
+        "en": "November 18–19, 2026",
+        "zh": "2026年11月18日至11月19日"
+      }
+    },
     {
       "date": "2026-11-18",
       "title": {
