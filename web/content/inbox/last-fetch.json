@@ -1,17 +1,12 @@
 {
-  "at": "2026-11-19T01:02:27.996Z",
+  "at": "2026-11-19T01:31:43.967Z",
   "briefingDate": "2026-11-19",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-19.md",
-      "subject": "彭博财经早茶：美联储加息共识增强；腾讯AI支出挤压盈利",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6687,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-19.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-19.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：美联储加息共识增强；腾讯AI支出挤压盈利",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-19.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：英伟达终迎财报利好；字节芯片贷款或被搁置",
