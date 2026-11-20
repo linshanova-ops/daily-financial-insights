@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-19T08:14:45.442Z",
-  "briefingDate": "2026-11-19",
+  "at": "2026-11-20T01:02:56.161Z",
+  "briefingDate": "2026-11-20",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-20.md",
+      "subject": "彭博财经早茶：Anthropic首秀表现稳健；阿里巴巴寄望自研芯片",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 7320,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-20.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-20.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-19.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-06.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-05.md",
       "skipped": true
     }
   ],
@@ -144,16 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国科技股暴跌；中国铜现货溢价飙升",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-06.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 美民主党横扫两院；珠海华发获政府支持",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-05.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Bitcoin is retesting its August breakout levels",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
     }
   ]
 }
