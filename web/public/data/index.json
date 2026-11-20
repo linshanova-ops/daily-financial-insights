@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-19T01:28:42.986Z",
-  "latest": "2026-11-19",
+  "generatedAt": "2026-11-20T01:24:35.650Z",
+  "latest": "2026-11-20",
   "briefings": [
+    {
+      "date": "2026-11-20",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Sixth Drop, Gold Down",
+        "zh": "标普六连跌与金价续跌"
+      },
+      "marketTone": {
+        "en": "US stocks fell hard, and the S&P 500 dropped for a sixth day. Anthropic rose on its first day, and gold fell for a fourth day.",
+        "zh": "美股大跌，标普500连续第六日下跌。Anthropic上市首日上涨，黄金连续第四日下跌。"
+      },
+      "coverageWindow": {
+        "en": "November 19–20, 2026",
+        "zh": "2026年11月19日至11月20日"
+      }
+    },
     {
       "date": "2026-11-19",
       "title": {
