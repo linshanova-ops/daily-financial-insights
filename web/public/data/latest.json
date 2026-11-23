@@ -1,88 +1,117 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-23",
   "title": {
     "en": "Daily Financial Briefing",
     "zh": "每日金融简报"
   },
   "spine": {
-    "en": "Sixth Drop, Gold Down",
-    "zh": "标普六连跌与金价续跌"
+    "en": "Seventh Drop, Gold Week",
+    "zh": "标普七连跌与金价周跌"
   },
   "coverageWindow": {
-    "en": "November 19–20, 2026",
-    "zh": "2026年11月19日至11月20日"
+    "en": "November 20–23, 2026",
+    "zh": "2026年11月20日至11月23日"
   },
-  "publishedAt": "2026-11-20T01:24:03.899Z",
+  "publishedAt": "2026-11-23T01:27:05.603Z",
   "keySources": [
     {
-      "label": "华尔街见闻 11月20日早餐",
-      "href": "https://wallstreetcn.com/articles/3786319",
+      "label": "华尔街见闻 11月23日早餐",
+      "href": "https://wallstreetcn.com/articles/3786450",
+      "books": [
+        "us-equities",
+        "rates",
+        "commodities",
+        "asia-equities"
+      ],
+      "influence": {
+        "en": "Wallstreetcn breakfast (23 November). Friday closes, the weekly drops, October personal-income tax at 89.6%, and the margin cut.",
+        "zh": "华尔街见闻早餐（11月23日）。周五收盘、周跌幅、10月个人所得税89.6%，以及融资保证金调整。"
+      }
+    },
+    {
+      "label": "华尔街见闻 11月21日早餐",
+      "href": "https://wallstreetcn.com/articles/3786416",
       "books": [
         "us-equities",
         "asia-equities",
+        "commodities",
         "rates",
         "fx",
-        "commodities"
+        "crypto"
       ],
       "influence": {
-        "en": "Wallstreetcn breakfast (20 November). Thursday closes for US, China, and Hong Kong stocks, the COMEX gold contract, WTI and Brent, the dollar index, and offshore yuan at 6.6999.",
-        "zh": "华尔街见闻早餐（11月20日）。周四美股、A股和港股收盘、COMEX黄金、WTI和布伦特、美元指数，以及离岸人民币6.6999。"
+        "en": "Wallstreetcn breakfast (21 November). Nvidia at 125.5, Hang Seng Tech at 3511.14, LME copper at 12160, bitcoin at 58951, and the dollar index at 103.817.",
+        "zh": "华尔街见闻早餐（11月21日）。英伟达125.5美元，恒生科技指数3511.14，伦铜12160美元，比特币58951美元，美元指数103.817。"
       }
     },
     {
-      "label": "华尔街见闻 11月20日美股",
-      "href": "https://wallstreetcn.com/articles/3786267",
+      "label": "华尔街见闻 11月23日亚太",
+      "href": "https://wallstreetcn.com/articles/3786472",
       "books": [
         "us-equities",
-        "commodities"
+        "asia-equities"
       ],
       "influence": {
-        "en": "Wallstreetcn (20 November). Nvidia at 145.98, AMD at 489.19, and Anthropic's close at 97.17. The session low in gold was the lowest since September 2025.",
-        "zh": "华尔街见闻（11月20日）。英伟达145.98美元，AMD 489.19美元，Anthropic收于97.17美元。黄金盘中低点为2025年9月以来最低。"
+        "en": "Wallstreetcn (23 November). Goldman on the selloff, Nasdaq 100 futures up as much as 2.6%, and an early Kospi drop with Tokyo closed.",
+        "zh": "华尔街见闻（11月23日）。高盛对这次抛售的看法，纳斯达克100期货一度上涨2.6%，韩国综指早盘下跌且东京休市。"
       }
     },
     {
-      "label": "第一财经 11月20日",
-      "href": "https://www.yicai.com/news/103447266.html",
-      "books": [
-        "us-equities"
-      ],
-      "influence": {
-        "en": "Yicai (20 November). The same Dow, S&P 500, and Nasdaq closes: 49097.06, 7175.83, and 23879.20.",
-        "zh": "第一财经（11月20日）。同一组道指、标普500和纳斯达克收盘：49097.06、7175.83和23879.20。"
-      }
-    },
-    {
-      "label": "第一财经 11月19日",
-      "href": "https://www.yicai.com/news/103446772.html",
+      "label": "华尔街见闻 11月22日稳市",
+      "href": "https://wallstreetcn.com/articles/3786475",
       "books": [
         "asia-equities"
       ],
       "influence": {
-        "en": "Yicai (19 November). Shanghai 3577.62, Shenzhen 10583.20, ChiNext 2293.34, STAR50 1270.78, and turnover of 1.31 trillion yuan.",
-        "zh": "第一财经（11月19日）。上证3577.62，深证成指10583.20，创业板指2293.34，科创50为1270.78，成交1.31万亿元。"
+        "en": "Wallstreetcn (22 November). The margin floor goes from 100% to 80% on 30 November, alongside fee relief and a ChiNext market-making draft.",
+        "zh": "华尔街见闻（11月22日）。融资保证金下限从100%调至80%，11月30日起施行，同时还有降费和创业板做市征求意见。"
       }
     },
     {
-      "label": "新华社 11月20日油价",
-      "href": "https://www.news.cn/20261120/ba01aac1e8bc4abe89f6e7ee5e97b11f/c.html",
+      "label": "第一财经 11月21日",
+      "href": "https://www.yicai.com/news/103448914.html",
       "books": [
-        "commodities"
+        "us-equities",
+        "commodities",
+        "rates"
       ],
       "influence": {
-        "en": "Xinhua (20 November). December WTI settled at 83.21 dollars, down 0.06%, and January Brent settled at 91.98 dollars, up 0.03%.",
-        "zh": "新华社（11月20日）。12月WTI收于83.21美元，下跌0.06%；1月布伦特收于91.98美元，上涨0.03%。"
+        "en": "Yicai (21 November). The same Dow, S&P 500, and Nasdaq closes, December gold at 3515.40, and December WTI at 83.98.",
+        "zh": "第一财经（11月21日）。同一组道指、标普500和纳斯达克收盘，12月黄金3515.40美元，12月WTI 83.98美元。"
       }
     },
     {
-      "label": "新华社 11月19日港股",
-      "href": "https://www.news.cn/gangao/20261119/0fc787e98ae3484183137ed93ea544c2/c.html",
+      "label": "第一财经 11月23日日程",
+      "href": "https://www.yicai.com/news/103449427.html",
       "books": [
         "asia-equities"
       ],
       "influence": {
-        "en": "Xinhua (19 November). The Hang Seng closed at 22841.62, down 1.95%. Hang Seng Tech closed at 3649.14, down 2.33%. Tencent closed at 348.4 Hong Kong dollars, down 6.55%.",
-        "zh": "新华社（11月19日）。恒生指数收于22841.62，下跌1.95%。恒生科技指数收于3649.14，下跌2.33%。腾讯收于348.4港元，下跌6.55%。"
+        "en": "Yicai (23 November). The first 18 active ETFs list today, and the Tokyo cash market is closed.",
+        "zh": "第一财经（11月23日）。首批18只主动ETF今日上市，东京股市休市。"
+      }
+    },
+    {
+      "label": "财新 11月23日",
+      "href": "https://finance.caixin.com/2026-11-23/102507672.html",
+      "books": [
+        "us-equities",
+        "rates"
+      ],
+      "influence": {
+        "en": "Caixin (23 November). October fiscal revenue rose 3.4% from a year earlier, and the Nasdaq fell 5.28%.",
+        "zh": "财新（11月23日）。10月财政收入同比增长3.4%，纳斯达克下跌5.28%。"
+      }
+    },
+    {
+      "label": "新华社 11月22日两融",
+      "href": "https://www.xinhuanet.com/20261122/50bbccb787fe4658bd58259f073515eb/c.html",
+      "books": [
+        "asia-equities"
+      ],
+      "influence": {
+        "en": "Xinhua (22 November). The margin floor falls from 100% to 80% on 30 November, with a theoretical increment near 400 billion yuan.",
+        "zh": "新华社（11月22日）。融资保证金下限从100%降至80%，11月30日起实施，理论上增量资金近4000亿元。"
       }
     },
     {
@@ -92,32 +121,32 @@
         "rates"
       ],
       "influence": {
-        "en": "US Treasury curve for 19 November. The 2-year yield is 4.76%, the 10-year is 5.04%, and the 30-year is 5.40%. On 18 November they were 4.80%, 5.07%, and 5.41%.",
-        "zh": "美国财政部收益率曲线，11月19日。2年期4.76%，10年期5.04%，30年期5.40%。11月18日分别为4.80%、5.07%和5.41%。"
+        "en": "US Treasury curve for 20 November. The 2-year yield is 4.63%, the 10-year is 4.92%, and the 30-year is 5.31%. On 19 November they were 4.76%, 5.04%, and 5.40%.",
+        "zh": "美国财政部收益率曲线，11月20日。2年期4.63%，10年期4.92%，30年期5.31%。11月19日分别为4.76%、5.04%和5.40%。"
       }
     },
     {
-      "label": "财新 11月20日",
-      "href": "https://finance.caixin.com/2026-11-20/102506835.html",
+      "label": "CNBC live blog",
+      "href": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
       "books": [
-        "fx",
-        "commodities"
-      ],
-      "influence": {
-        "en": "Caixin (20 November). Xi's four points on how major powers should deal with each other, and the line that a nuclear war cannot be won and must not be fought.",
-        "zh": "财新（11月20日）。习近平关于大国如何相处的四点看法，以及核战争打不赢也打不得。"
-      }
-    },
-    {
-      "label": "律动 古尔斯比",
-      "href": "https://www.theblockbeats.info/flash/378294",
-      "books": [
-        "rates",
+        "us-equities",
+        "commodities",
         "crypto"
       ],
       "influence": {
-        "en": "BlockBeats (20 November). Chicago Fed president Goolsbee said a larger-than-usual increase is not ruled out.",
-        "zh": "律动（11月20日）。芝加哥联储行长古尔斯比说，不排除幅度大于通常水平的加息。"
+        "en": "CNBC live blog. Friday closes for the S&P 500, Nasdaq, and Dow, spot gold at 3520.05, and bitcoin below 60000 dollars.",
+        "zh": "CNBC直播博客。周五标普500、纳斯达克和道指收盘，现货黄金3520.05美元，比特币跌破60000美元。"
+      }
+    },
+    {
+      "label": "律动 11月22日",
+      "href": "https://www.theblockbeats.info/flash/378600",
+      "books": [
+        "crypto"
+      ],
+      "influence": {
+        "en": "BlockBeats (22 November). Bitcoin at 59593 dollars, up 1.76% over 24 hours on the HTX quote.",
+        "zh": "律动（11月22日）。HTX报价下比特币59593美元，24小时上涨1.76%。"
       }
     },
     {
@@ -128,8 +157,8 @@
         "rates"
       ],
       "influence": {
-        "en": "CICC (15 November). The dollar's rise has come from the shift in officials' tone, and a 50 basis point step was not yet in the price.",
-        "zh": "中金（11月15日）。美元走强来自官员态度的转变，50个基点的加息还没有计入价格。"
+        "en": "CICC (15 November). The dollar's rise came from officials' hawkish turn, and a 25 basis point December increase was fully in the price then.",
+        "zh": "中金（11月15日）。美元走强来自官员的鹰派转向，当时12月加息25个基点已经完全计入价格。"
       }
     },
     {
@@ -144,7 +173,7 @@
       }
     },
     {
-      "label": "彭博财经早茶 Nov 20",
+      "label": "彭博财经早茶 Nov 23",
       "href": "https://www.bloomberg.com/asia",
       "books": [
         "us-equities",
@@ -154,8 +183,8 @@
         "asia-equities"
       ],
       "influence": {
-        "en": "20 November 财经早茶. Anthropic's debut, the Hormuz risk, Alibaba's own chips, and the Hong Kong dollar-bond sale.",
-        "zh": "11月20日财经早茶。Anthropic首秀、霍尔木兹风险、阿里巴巴的自研芯片，以及在香港发行的美元主权债。"
+        "en": "23 November 财经早茶. The AI unwind, the margin cut, Iran, and the gold import chart.",
+        "zh": "11月23日财经早茶。人工智能交易瓦解、融资保证金下调、伊朗，以及黄金进口这张图。"
       }
     }
   ],
@@ -163,53 +192,69 @@
     {
       "id": "bloomberg-chart-of-day",
       "title": {
-        "en": "Approved earlier-generation chip sales cluster in two firms",
-        "zh": "较早一代芯片的获批销售集中在两家公司"
+        "en": "Gold imports make the goods surplus look smaller",
+        "zh": "黄金进口让货物顺差看起来更小"
       },
       "kind": "insight",
-      "imageSrc": "/inbox-charts/bloomberg-2026-11-20.png",
-      "imageSrcEn": "/inbox-charts/bloomberg-2026-11-20-en.png",
+      "imageSrc": "/inbox-charts/bloomberg-2026-11-23.png",
+      "imageSrcEn": "/inbox-charts/bloomberg-2026-11-23-en.png",
       "analysis": {
-        "en": "The Tencent bar runs past the 140 mark, counted in thousands. The Alibaba bar ends between the 60 and 80 marks. The Baidu bar ends just past the 40 mark. The BYD bar is a short mark beside the axis. Tencent and Alibaba hold most of the licensed amount in the figure, so those two firms account for the bulk of this approved supply.",
-        "zh": "腾讯的柱越过刻度140，单位是千枚。阿里巴巴的柱落在60到80之间。百度的柱刚过40。比亚迪的柱是零轴旁边的短柱。腾讯和阿里巴巴占了图中大部分许可数量，获批供应集中在这两家公司。"
+        "en": "The dark line, which leaves gold out, ends at about 7 percent of GDP. The pale line, which keeps gold in, ends at about 5.6 percent. The gap is wider than in early 2025, so the published balance understates the goods gap.",
+        "zh": "剔除黄金的深色线终点大约在GDP的7%。保留黄金的浅色线终点大约在5.6%。缺口比2025年初更宽，所以公布的顺差低看了货物缺口。"
       },
       "source": {
-        "label": "财经早茶 Nov 20",
+        "label": "财经早茶 Nov 23",
         "href": "https://www.bloomberg.com/asia"
       },
       "sources": [
         {
-          "label": "财经早茶 Nov 20",
+          "label": "财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     }
   ],
   "marketTone": {
-    "en": "US stocks fell hard, and the S&P 500 dropped for a sixth day. Anthropic rose on its first day, and gold fell for a fourth day.",
-    "zh": "美股大跌，标普500连续第六日下跌。Anthropic上市首日上涨，黄金连续第四日下跌。"
+    "en": "US stocks fell hard, and the S&P 500 dropped for a seventh day into a correction. Gold had its largest weekly drop in eight months.",
+    "zh": "美股大跌，标普500连续第七日下跌并进入回调。黄金录得八个月来最大单周跌幅。"
   },
   "summary": [
     {
       "text": {
-        "en": "The Dow fell 2.19% to 49097.06, the S&P 500 fell 2.02% to 7175.83, a sixth straight drop, and the Nasdaq fell 2.25% to 23879.20, 华尔街见闻 and 第一财经 reported.",
-        "zh": "华尔街见闻、第一财经：道指下跌2.19%至49097.06，标普500下跌2.02%至7175.83，为连续第六日下跌，纳斯达克下跌2.25%至23879.20。"
+        "en": "The Dow fell 1.93% to 48147.33, the S&P 500 fell 3.70% to 6910.39, a seventh straight drop, and the Nasdaq fell 5.28% to 22617.73. For the week the Dow fell 8.02%, the S&P 500 fell 8.61%, and the Nasdaq fell 10.02%, 华尔街见闻 and 第一财经 reported.",
+        "zh": "华尔街见闻、第一财经：道指下跌1.93%至48147.33，标普500下跌3.70%至6910.39，连续第七日下跌，纳斯达克下跌5.28%至22617.73。全周道指下跌8.02%，标普500下跌8.61%，纳斯达克下跌10.02%。"
       },
       "sources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月23日早餐",
+          "href": "https://wallstreetcn.com/articles/3786450"
         },
         {
-          "label": "第一财经 11月20日",
-          "href": "https://www.yicai.com/news/103447266.html"
+          "label": "第一财经 11月21日",
+          "href": "https://www.yicai.com/news/103448914.html"
         }
       ]
     },
     {
       "text": {
-        "en": "The US Treasury 2-year yield is 4.76%, the 10-year is 5.04%, and the 30-year is 5.40%. On 18 November they were 4.80%, 5.07%, and 5.41%.",
-        "zh": "美国财政部：2年期收益率4.76%，10年期5.04%，30年期5.40%。11月18日分别为4.80%、5.07%和5.41%。"
+        "en": "Nvidia fell 14% to 125.5 dollars, and the Philadelphia semiconductor index fell 10.73%. Anthropic fell 8.5% to 88.91 dollars, 华尔街见闻 and 第一财经 reported.",
+        "zh": "华尔街见闻、第一财经：英伟达下跌14%至125.5美元，费城半导体指数下跌10.73%。Anthropic下跌8.5%至88.91美元。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
+        },
+        {
+          "label": "第一财经 11月21日",
+          "href": "https://www.yicai.com/news/103448914.html"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The US Treasury 2-year yield is 4.63%, the 10-year is 4.92%, and the 30-year is 5.31%. On 19 November they were 4.76%, 5.04%, and 5.40%.",
+        "zh": "美国财政部：2年期收益率4.63%，10年期4.92%，30年期5.31%。11月19日分别为4.76%、5.04%和5.40%。"
       },
       "sources": [
         {
@@ -220,111 +265,63 @@
     },
     {
       "text": {
-        "en": "December WTI fell 0.06% to 83.21 dollars and January Brent rose 0.03% to 91.98 dollars, Xinhua and 华尔街见闻 reported. The Market snapshot Brent row is the Yahoo BZ=F quote, a different quote from this January price.",
-        "zh": "新华社、华尔街见闻：12月WTI下跌0.06%至83.21美元，1月布伦特上涨0.03%至91.98美元。行情快照的布伦特一行是Yahoo的BZ=F报价，和这一1月价格不是同一报价。"
+        "en": "COMEX December gold settled at 3515.40 dollars, down 4.62%. December WTI rose 0.93% to 83.98 dollars, and January Brent rose 0.64% to 92.57 dollars, 第一财经 and 华尔街见闻 reported.",
+        "zh": "第一财经、华尔街见闻：COMEX 12月黄金结算价3515.40美元，下跌4.62%。12月WTI上涨0.93%至83.98美元，1月布伦特上涨0.64%至92.57美元。"
       },
       "sources": [
         {
-          "label": "新华社 11月20日油价",
-          "href": "https://www.news.cn/20261120/ba01aac1e8bc4abe89f6e7ee5e97b11f/c.html"
+          "label": "第一财经 11月21日",
+          "href": "https://www.yicai.com/news/103448914.html"
         },
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月23日早餐",
+          "href": "https://wallstreetcn.com/articles/3786450"
         }
       ]
     },
     {
       "text": {
-        "en": "The COMEX continuous gold contract fell 2.16% to 3660.9 dollars an ounce, and spot gold fell 1.70% to 3661.51 dollars, 华尔街见闻 reported. The Market snapshot gold row is the Yahoo futures quote, a different quote from these prices.",
-        "zh": "华尔街见闻：COMEX当月连续合约下跌2.16%至每盎司3660.9美元，现货黄金下跌1.70%至3661.51美元。行情快照的黄金一行是Yahoo期货报价，和这两个价格不是同一报价。"
+        "en": "Shanghai fell 1.22% to 3533.79, Shenzhen fell 3.09% to 10256.39, and the ChiNext fell 3.54% to 2212.13. Turnover was above 1.43 trillion yuan. The Hang Seng fell 1.89% to 22410.80, and Hang Seng Tech fell 3.78% to 3511.14, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：上证指数下跌1.22%至3533.79，深证成指下跌3.09%至10256.39，创业板指下跌3.54%至2212.13，成交超过1.43万亿元。恒生指数下跌1.89%至22410.80，恒生科技指数下跌3.78%至3511.14。"
       },
       "sources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Shanghai fell 0.28% to 3577.62, Shenzhen fell 0.71% to 10583.20, and the ChiNext index fell 0.79% to 2293.34. STAR50 rose 1.83% to 1270.78. Turnover was 1.31 trillion yuan, a low for the year, 第一财经 and 华尔街见闻 reported.",
-        "zh": "第一财经、华尔街见闻：上证下跌0.28%至3577.62，深证成指下跌0.71%至10583.20，创业板指下跌0.79%至2293.34。科创50上涨1.83%至1270.78。成交1.31万亿元，创年内新低。"
-      },
-      "sources": [
-        {
-          "label": "第一财经 11月19日",
-          "href": "https://www.yicai.com/news/103446772.html"
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
         },
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月23日早餐",
+          "href": "https://wallstreetcn.com/articles/3786450"
         }
       ]
     },
     {
       "text": {
-        "en": "The Hang Seng fell 1.95% to 22841.62, and the Hang Seng Tech index fell 2.33% to 3649.14. Tencent fell 6.55% to 348.4 Hong Kong dollars, Xinhua reported. Main-board turnover was 229.549 billion Hong Kong dollars.",
-        "zh": "新华社：恒生指数下跌1.95%至22841.62，恒生科技指数下跌2.33%至3649.14。腾讯下跌6.55%至348.4港元。主板成交2295.49亿港元。"
+        "en": "The Nikkei 225 fell 5.1% to 56436.65, and the Kospi fell 5.2% to 4869.96, 华尔街见闻 reported. Bitcoin fell 4.8% to 58951 dollars.",
+        "zh": "华尔街见闻：日经225下跌5.1%至56436.65，韩国综指下跌5.2%至4869.96。比特币下跌4.8%至58951美元。"
       },
       "sources": [
         {
-          "label": "新华社 11月19日港股",
-          "href": "https://www.news.cn/gangao/20261119/0fc787e98ae3484183137ed93ea544c2/c.html"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "The Nikkei 225 rose 0.71% to 59444.21, and the Kospi rose 1.39% to 5137.89, 华尔街见闻 reported. Those are the completed Thursday closes.",
-        "zh": "华尔街见闻：日经225上涨0.71%至59444.21，韩国综指上涨1.39%至5137.89。这是周四已经完成的收盘。"
-      },
-      "sources": [
-        {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "The dollar index rose to 103.895, the highest since April 2025. Offshore yuan weakened to 6.6999 per dollar in the session, the weakest since mid-October, 华尔街见闻 reported. The Market snapshot USD/CNY row is the Yahoo quote, a different quote from this offshore price.",
-        "zh": "华尔街见闻：美元指数升至103.895，为2025年4月以来最高。离岸人民币盘中走弱至1美元兑6.6999，为10月中旬以来最弱。行情快照的美元兑人民币一行是Yahoo报价，和这一离岸价格不是同一报价。"
-      },
-      "sources": [
-        {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "LME three-month copper fell 0.14% to 12453 dollars a tonne, 华尔街见闻 reported.",
-        "zh": "华尔街见闻：LME三个月期铜下跌0.14%至每吨12453美元。"
-      },
-      "sources": [
-        {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
         }
       ]
     }
   ],
   "signal": {
-    "en": "The S&P 500 fell 2.02% to 7175.83, a sixth straight drop, and the Nasdaq fell 2.25% to 23879.20. The 10-year Treasury yield is 5.04%, down from 5.07% on 18 November. December WTI fell 0.06% to 83.21 dollars, and the COMEX continuous gold contract fell 2.16% to 3660.9 dollars.",
-    "zh": "标普500下跌2.02%至7175.83，连续第六日下跌，纳斯达克下跌2.25%至23879.20。10年期国债收益率报5.04%，11月18日为5.07%。12月WTI下跌0.06%至83.21美元。COMEX当月连续黄金合约下跌2.16%至3660.9美元。"
+    "en": "The AI unwind took US stocks into a correction, and Treasury yields fell even while a December increase stayed likely.",
+    "zh": "人工智能交易的瓦解把美股带进了回调，国债收益率下降了，12月加息仍然较有可能。"
   },
   "watch": {
-    "en": "UK retail sales are at 15:00 Beijing. The Hang Seng index review is due after the cash close. ECB president Lagarde speaks at 16:30. Fed governor Waller speaks at 21:25. The University of Michigan sentiment final is at 23:00.",
-    "zh": "英国零售销售在北京时间15:00。恒生指数检讨在收市后公布。欧洲央行行长拉加德在16:30讲话。美联储理事沃勒在21:25讲话。密歇根大学消费者信心终值在23:00。"
+    "en": "Eurozone and UK PMI flashes are this afternoon. The US PMI flash is at 22:45 Beijing. Pill speaks at 21:00. The margin cut takes effect on 30 November. PBOC bills are tendered in Hong Kong on 24 November.",
+    "zh": "欧元区和英国PMI初值在今天下午。美国PMI初值在北京时间22:45。Pill在21:00讲话。融资保证金调整在11月30日生效。央行票据在11月24日于香港招标。"
   },
   "themeCards": [
     {
       "id": "after-hours-tech",
       "title": {
-        "en": "The S&P 500 fell for a sixth day as Anthropic opened higher",
-        "zh": "Anthropic高开，标普500仍六连跌"
+        "en": "The S&P 500 fell for a seventh day into a correction",
+        "zh": "标普500七连跌，进入回调"
       },
       "grade": "STRONG",
       "assets": [
@@ -335,33 +332,33 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "The Dow fell 2.19% to 49097.06, the S&P 500 fell 2.02% to 7175.83, a sixth straight drop, and the Nasdaq fell 2.25% to 23879.20, 华尔街见闻 and 第一财经 reported. Nvidia fell 3.30% to 145.98, a sixth down day, the Philadelphia semiconductor index fell 2.41%, and AMD closed down 7.72% at 489.19, 华尔街见闻 reported. Anthropic opened at 111.50 dollars, up 34.3% from the 83 dollar price, and closed at 97.17 dollars, up 17.1%, with a market value of 1.27 trillion dollars, 华尔街见闻 reported.",
-        "zh": "华尔街见闻、第一财经：道指下跌2.19%至49097.06，标普500下跌2.02%至7175.83，连续第六日下跌，纳斯达克下跌2.25%至23879.20。华尔街见闻：英伟达下跌3.30%至145.98，为连续第六日下跌，费城半导体指数下跌2.41%，AMD收跌7.72%至489.19。华尔街见闻：Anthropic开盘111.50美元，较83美元的发行价上涨34.3%，收于97.17美元，上涨17.1%，市值1.27万亿美元。"
+        "en": "The Dow fell 1.93% to 48147.33, the S&P 500 fell 3.70% to 6910.39, a seventh straight drop and more than 10% below its October high, and the Nasdaq fell 5.28% to 22617.73, 华尔街见闻 and 第一财经 reported. Nvidia fell 14% to 125.5 dollars, and the Philadelphia semiconductor index fell 10.73%, 华尔街见闻 reported. Anthropic fell 8.5% to 88.91 dollars, 第一财经 reported.",
+        "zh": "华尔街见闻、第一财经：道指下跌1.93%至48147.33，标普500下跌3.70%至6910.39，连续第七日下跌，且较低点回落超过10%，纳斯达克下跌5.28%至22617.73。华尔街见闻：英伟达下跌14%至125.5美元，费城半导体指数下跌10.73%。第一财经：Anthropic下跌8.5%至88.91美元。"
       },
       "factSources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月23日早餐",
+          "href": "https://wallstreetcn.com/articles/3786450"
         },
         {
-          "label": "华尔街见闻 11月20日美股",
-          "href": "https://wallstreetcn.com/articles/3786267"
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
         },
         {
-          "label": "第一财经 11月20日",
-          "href": "https://www.yicai.com/news/103447266.html"
+          "label": "第一财经 11月21日",
+          "href": "https://www.yicai.com/news/103448914.html"
         }
       ],
       "mechanism": {
-        "en": "The indexes fell to the day's lows as the new shares opened, so a higher first print did not lift chip shares. 财经早茶 (20 November): the steady debut failed to restore confidence in the AI trade, and the S&P 500 fell for a sixth day. US stocks fell, and the new shares still closed up 17.1%.",
-        "zh": "新股开盘时，指数落到了当天的低点，所以更高的开盘价没有带起芯片股。财经早茶（11月20日）：稳健的首秀没有恢复市场对人工智能交易的信心，标普500连续第六日下跌。美股下跌了，新股仍然收涨17.1%。"
+        "en": "The seventh down day took the S&P 500 more than 10% below its October high, so the AI unwind is now a correction. Goldman (23 November): the selloff is a chance to add risk, but positions are still high, so a full washout may still lie ahead. US stocks are the market that fell.",
+        "zh": "连续第七日下跌，把标普500带到了10月高点下方超过10%的位置，所以人工智能交易的瓦解现在是一次回调。高盛（11月23日）：这次抛售是增加风险的机会，但仓位仍然偏高，彻底的出清可能还在后面。下跌的是美股。"
       }
     },
     {
       "id": "us-growth-inflation",
       "title": {
-        "en": "Yields fell again while a larger hike stayed open",
-        "zh": "收益率再降，更大幅度的加息仍留着"
+        "en": "Yields fell hard as December hike odds were marked down",
+        "zh": "12月加息概率下调，收益率大降"
       },
       "grade": "STRONG",
       "assets": [
@@ -376,8 +373,8 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "The US Treasury 2-year yield is 4.76%, the 10-year is 5.04%, and the 30-year is 5.40%. On 18 November they were 4.80%, 5.07%, and 5.41%. The dollar index rose to 103.895, the highest since April 2025, and Chicago Fed president Goolsbee said a larger-than-usual increase is still an option, 华尔街见闻 and 律动 reported.",
-        "zh": "美国财政部：2年期收益率4.76%，10年期5.04%，30年期5.40%。11月18日分别为4.80%、5.07%和5.41%。华尔街见闻、律动：美元指数升至103.895，为2025年4月以来最高。芝加哥联储行长古尔斯比说，更大幅度的加息仍是选项。"
+        "en": "The US Treasury 2-year yield is 4.63%, the 10-year is 4.92%, and the 30-year is 5.31%. On 19 November they were 4.76%, 5.04%, and 5.40%. The odds of a 25 basis point increase in December fell to 91.4%, and the odds of 50 basis points by the end of January fell to 57.7%, 第一财经 reported.",
+        "zh": "美国财政部：2年期收益率4.63%，10年期4.92%，30年期5.31%。11月19日分别为4.76%、5.04%和5.40%。第一财经：12月加息25个基点的概率降至91.4%，到1月底累计加息50个基点的概率降至57.7%。"
       },
       "factSources": [
         {
@@ -385,24 +382,20 @@
           "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         },
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
-        },
-        {
-          "label": "律动 古尔斯比",
-          "href": "https://www.theblockbeats.info/flash/378294"
+          "label": "第一财经 11月21日",
+          "href": "https://www.yicai.com/news/103448914.html"
         }
       ],
       "mechanism": {
-        "en": "Yields fell again on a day when a larger increase was left open, so the tighter talk showed up in the dollar. CICC (15 November): the dollar's rise has come from the shift in officials' tone, and a step of 50 basis points was not yet in the price. The 10-year yield fell to 5.04%, and the dollar rose to 103.895.",
-        "zh": "更大幅度的加息还留在选项里的这一天，收益率又降了，更紧的说法体现在美元上。中金（11月15日）：美元走强来自官员态度的转变，50个基点那一步还没有计入价格。10年期收益率降到了5.04%，美元升到了103.895。"
+        "en": "Yields fell on a day when traders marked down the December increase, so the haven bid showed up in bond prices. CICC (15 November): officials' hawkish turn had lifted the dollar, and a December increase of 25 basis points was fully in the price then. The 10-year yield fell to 4.92%.",
+        "zh": "交易员下调12月加息的这一天，收益率下降了，避险买盘体现在债券价格上。中金（11月15日）：官员的鹰派转向推高了美元，当时12月加息25个基点已经完全计入价格。10年期收益率降到了4.92%。"
       }
     },
     {
       "id": "gold-rates",
       "title": {
-        "en": "Gold fell for a fourth day and stayed at a September 2025 low",
-        "zh": "黄金连跌第四天，仍在2025年9月的低位"
+        "en": "December gold fell 4.62% in an eight-month weekly drop",
+        "zh": "12月黄金下跌4.62%，周跌幅为八个月最大"
       },
       "grade": "STRONG",
       "assets": [
@@ -413,33 +406,29 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "The COMEX continuous gold contract fell 2.16% to 3660.9 dollars an ounce, and spot gold fell 1.70% to 3661.51 dollars, 华尔街见闻 reported. Gold fell for a fourth straight day, 财经早茶 reported. The session low was the lowest since September 2025, 华尔街见闻 reported.",
-        "zh": "华尔街见闻：COMEX当月连续合约下跌2.16%至每盎司3660.9美元，现货黄金下跌1.70%至3661.51美元。财经早茶：黄金连续第四日下跌。华尔街见闻：盘中低点为2025年9月以来最低。"
+        "en": "COMEX December gold settled at 3515.40 dollars an ounce, down 4.62%, 第一财经 reported. Spot gold fell 2.81% to 3520.05 dollars, and the week was the worst in eight months, CNBC reported.",
+        "zh": "第一财经：COMEX 12月黄金结算价每盎司3515.40美元，下跌4.62%。CNBC：现货黄金下跌2.81%至3520.05美元，这一周是八个月来最差的一周。"
       },
       "factSources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "第一财经 11月21日",
+          "href": "https://www.yicai.com/news/103448914.html"
         },
         {
-          "label": "华尔街见闻 11月20日美股",
-          "href": "https://wallstreetcn.com/articles/3786267"
-        },
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "CNBC live blog",
+          "href": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
         }
       ],
       "mechanism": {
-        "en": "A fourth down day extended the low since September 2025, on a session when hike talk got louder and the dollar rose. Jefferies (20 November): similar macro periods have left gold weak, though the latest comparable case later rose. Gold is the market that fell.",
-        "zh": "连续第四日下跌，把2025年9月以来的低点又往下带了一步，当天加息的说法更响，美元也在升。杰富瑞（11月20日）：类似的宏观组合里黄金偏弱，不过最近一个可比时期后来出现了上涨。黄金是下跌的那个市场。"
+        "en": "A 4.62% drop in the December contract extended the selloff, and the week was the largest in eight months. 财经早茶 (23 November): the hike outlook pulled gold down. Gold is the market that fell.",
+        "zh": "12月合约下跌4.62%，把跌势又延伸了一步，这一周是八个月来最大的一周。财经早茶（11月23日）：加息前景拖累了黄金。下跌的是黄金。"
       }
     },
     {
       "id": "oil",
       "title": {
-        "en": "Crude settled almost flat after an intraday Hormuz jump",
-        "zh": "霍尔木兹盘中推高油价，结算几乎走平"
+        "en": "Crude rose on Friday and still fell for a third week",
+        "zh": "原油周五上涨，仍连跌第三周"
       },
       "grade": "MODERATE",
       "assets": [
@@ -450,33 +439,29 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "December WTI fell 0.06% to 83.21 dollars a barrel, and January Brent rose 0.03% to 91.98 dollars, Xinhua and 华尔街见闻 reported. Prices jumped after tankers hit mines in the Strait of Hormuz, and the settle gave that jump back, 华尔街见闻 reported. Attacks on tankers in the strait have increased since October, and Western officials see a higher chance of a new large US strike, though no decision has been made, 财经早茶 reported.",
-        "zh": "新华社、华尔街见闻：12月WTI下跌0.06%至每桶83.21美元，1月布伦特上涨0.03%至91.98美元。华尔街见闻：霍尔木兹海峡油轮触雷后价格跳升，结算时涨幅回吐。财经早茶：10月以来，对海峡油轮的袭击明显增多。西方官员认为美国发动新一轮大规模打击的可能性上升，但还没有最终决定。"
+        "en": "December WTI rose 0.93% to 83.98 dollars a barrel, and January Brent rose 0.64% to 92.57 dollars, 华尔街见闻 and 第一财经 reported. For the week, WTI fell 5.17% and Brent fell 3.41%, a third straight down week, 华尔街见闻 reported.",
+        "zh": "华尔街见闻、第一财经：12月WTI上涨0.93%至每桶83.98美元，1月布伦特上涨0.64%至92.57美元。华尔街见闻：全周WTI下跌5.17%，布伦特下跌3.41%，连续第三周下跌。"
       },
       "factSources": [
         {
-          "label": "新华社 11月20日油价",
-          "href": "https://www.news.cn/20261120/ba01aac1e8bc4abe89f6e7ee5e97b11f/c.html"
+          "label": "华尔街见闻 11月23日早餐",
+          "href": "https://wallstreetcn.com/articles/3786450"
         },
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
-        },
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "第一财经 11月21日",
+          "href": "https://www.yicai.com/news/103448914.html"
         }
       ],
       "mechanism": {
-        "en": "The closing prices were almost unchanged after the intraday jump, so the higher strike risk did not stay in the settle. 财经早茶 (20 November): crude was roughly flat even as worry grew that the Middle East conflict would escalate again. December WTI closed at 83.21 dollars.",
-        "zh": "盘中跳升之后，收盘价几乎没变，所以更高的打击风险没有留在结算价里。财经早茶（11月20日）：尽管担忧中东冲突会再次升级，原油大致持平。12月WTI收在83.21美元。"
+        "en": "Friday's settle rose, while the week fell for a third time, so the strike risk did not hold in the weekly price. 财经早茶 (23 November): traders are weighing another US strike on Iran against ample supply. December WTI closed at 83.98 dollars.",
+        "zh": "周五的结算价上涨了，这一周却是第三次下跌，所以打击风险没有留在周度价格里。财经早茶（11月23日）：交易员在美国再次打击伊朗的风险和充裕的供应之间权衡。12月WTI收在83.98美元。"
       }
     },
     {
       "id": "copper",
       "title": {
-        "en": "London copper steadied while the China import premium hit a record",
-        "zh": "伦铜企稳，中国进口溢价创纪录"
+        "en": "London copper fell to its lowest since March",
+        "zh": "伦铜跌至3月以来最低"
       },
       "grade": "MODERATE",
       "assets": [
@@ -487,70 +472,25 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "LME three-month copper fell 0.14% to 12453 dollars a tonne, steadying after the prior session's drop, 华尔街见闻 reported. The Yangshan import premium more than doubled in the past week to a record, and traders started moving copper from the US to China, 财经早茶 reported.",
-        "zh": "华尔街见闻：LME三个月期铜下跌0.14%至每吨12453美元，在前一日下跌之后企稳。财经早茶：洋山进口铜溢价过去一周上涨逾一倍，创下纪录，交易商开始把美国的铜运往中国。"
+        "en": "LME three-month copper fell 366 dollars to 12160 dollars a tonne, and the session low of 12020 was the lowest since 24 March, 华尔街见闻 reported. The week was down about 9.3%.",
+        "zh": "华尔街见闻：LME三个月期铜下跌366美元至每吨12160美元，盘中低点12020美元，为3月24日以来最低。全周下跌约9.3%。"
       },
       "factSources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
-        },
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
         }
       ],
       "mechanism": {
-        "en": "Futures only steadied, while the China import premium jumped to a record, so the tight spot market and the futures price pulled apart. 财经早茶 (20 November): the premium more than doubled, and traders are shipping copper from the US to China. Copper is the market where the premium and the futures price diverged.",
-        "zh": "期货只是企稳，中国进口溢价却创了纪录，所以紧的现货和期货价格分开了。财经早茶（11月20日）：溢价上涨逾一倍，交易商正在把美国的铜运往中国。铜是溢价和期货价格出现分化的市场。"
-      }
-    },
-    {
-      "id": "chip-export",
-      "title": {
-        "en": "Alibaba's own chips meet a limit that the share prices already show",
-        "zh": "阿里寄望自研芯片，股价已经先跌了"
-      },
-      "grade": "MODERATE",
-      "assets": [
-        {
-          "en": "China tech",
-          "zh": "中国科技股"
-        },
-        {
-          "en": "Hong Kong equities",
-          "zh": "港股"
-        }
-      ],
-      "status": "escalated",
-      "fact": {
-        "en": "Alibaba's revenue rose 10% to 271.519 billion yuan, and cloud revenue rose 53% to 60.973 billion yuan, 华尔街见闻 reported. The chief executive said self-developed chips should offset the US rules, while data-center construction can still be slowed in the near term, 财经早茶 reported. Tencent fell 6.55% to 348.4 Hong Kong dollars, and the Hang Seng Tech index fell 2.33% to 3649.14, Xinhua reported.",
-        "zh": "华尔街见闻：阿里巴巴营收同比增长10%至2715.19亿元，云业务收入同比增长53%至609.73亿元。财经早茶：首席执行官说，自研芯片应能抵消美国的新规，但数据中心建设短期内仍可能放慢。新华社：腾讯下跌6.55%至348.4港元，恒生科技指数下跌2.33%至3649.14。"
-      },
-      "factSources": [
-        {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
-        },
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        },
-        {
-          "label": "新华社 11月19日港股",
-          "href": "https://www.news.cn/gangao/20261119/0fc787e98ae3484183137ed93ea544c2/c.html"
-        }
-      ],
-      "mechanism": {
-        "en": "The approved supply in the figure clusters in the two firms that already spend the most on computing, and the shares still fell. 财经早茶 (20 November): self-developed chips should offset the US rules, but data-center construction can still be slowed in the near term. Alibaba, Tencent, and the Hang Seng Tech index are carrying that limit.",
-        "zh": "图里获批的供应集中在两家本来就在算力上花钱最多的公司，股价仍然下跌。财经早茶（11月20日）：自研芯片应能抵消美国的新规，但数据中心建设短期内仍可能放慢。阿里巴巴、腾讯和恒生科技指数承担着这条限制。"
+        "en": "London copper fell to its lowest since March, so the prior session's steadying did not last. 财经早茶 (23 November): the AI unwind pulled metals lower with it. Copper is the market that made that low.",
+        "zh": "伦铜跌到了3月以来的最低，所以上一个交易日的企稳没有延续。财经早茶（11月23日）：人工智能交易的瓦解把金属一起带低了。创下这个低点的是铜。"
       }
     },
     {
       "id": "europe-short-rates",
       "title": {
-        "en": "European stocks fell for a fourth day as bonds fell too",
-        "zh": "欧洲股市四连跌，债券也在跌"
+        "en": "European stocks had their biggest weekly drop since April 2025",
+        "zh": "欧洲股市创2025年4月以来最大周跌幅"
       },
       "grade": "MODERATE",
       "assets": [
@@ -565,25 +505,29 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "The STOXX 600 fell 0.87% to 638.41, a fourth straight drop, the FTSE 100 fell 0.93%, the DAX fell 1.06%, and the CAC 40 fell 0.81%, 华尔街见闻 reported.",
-        "zh": "华尔街见闻：STOXX 600下跌0.87%至638.41，连续第四日下跌。富时100下跌0.93%，德国DAX下跌1.06%，法国CAC 40下跌0.81%。"
+        "en": "The STOXX 600 fell 2% to 625.65, and it fell 5.80% on the week, the largest weekly drop since April 2025, 华尔街见闻 reported. The DAX fell 2.60% to 24802.78, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：STOXX 600下跌2%至625.65，全周下跌5.80%，为2025年4月以来最大周跌幅。德国DAX下跌2.60%至24802.78。"
       },
       "factSources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月23日早餐",
+          "href": "https://wallstreetcn.com/articles/3786450"
+        },
+        {
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
         }
       ],
       "mechanism": {
-        "en": "European stocks fell for a fourth day, and bonds fell on the same session. 财经早茶 (20 November): European bonds fell as investors stayed alert to inflation risk while oil jumped during the session and then settled flat. European stocks and bonds are the markets that moved.",
-        "zh": "欧洲股市连续第四日下跌，债券同一天也在跌。财经早茶（11月20日）：油价盘中跳升、结算走平，投资者对通胀风险保持警惕，欧洲债券下跌。欧洲股市和欧洲债券是跟着动的市场。"
+        "en": "European stocks had their biggest weekly drop since April 2025, and German bonds rose in the same week. 财经早茶 (23 November): the tech selloff fed haven demand for German bonds. European stocks and German bonds are the markets that moved.",
+        "zh": "欧洲股市创下2025年4月以来最大的周跌幅，德国国债在同一周上涨。财经早茶（11月23日）：科技股抛售给德国国债带来了避险需求。跟着动的是欧洲股市和德国国债。"
       }
     },
     {
       "id": "btc-etf",
       "title": {
-        "en": "Bitcoin fell again as hike talk got louder",
-        "zh": "加息说法更响，比特币再跌"
+        "en": "Bitcoin fell below 60000 as an ETF outflow hit a record",
+        "zh": "比特币跌破60000，ETF流出创纪录"
       },
       "grade": "MODERATE",
       "assets": [
@@ -594,27 +538,138 @@
       ],
       "status": "escalated",
       "fact": {
-        "en": "Bitcoin fell 1.92% to 61776 dollars, 华尔街见闻 reported.",
-        "zh": "华尔街见闻：比特币下跌1.92%至61776美元。"
+        "en": "Bitcoin fell 4.8% to 58951 dollars and traded below 60000, 华尔街见闻 and CNBC reported. BlackRock's spot bitcoin ETF had a one-day net outflow of 541 million dollars, the largest since the 2024 listing, 华尔街见闻 reported. On 22 November it stood at 59593 dollars, up 1.76% over 24 hours, 律动 reported.",
+        "zh": "华尔街见闻、CNBC：比特币下跌4.8%至58951美元，并跌破60000美元。华尔街见闻：贝莱德现货比特币ETF单日净流出5.41亿美元，为2024年上市以来最大。律动：11月22日比特币报59593美元，24小时上涨1.76%。"
       },
       "factSources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
+        },
+        {
+          "label": "CNBC live blog",
+          "href": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "律动 11月22日",
+          "href": "https://www.theblockbeats.info/flash/378600"
         }
       ],
       "mechanism": {
-        "en": "The drop landed on a day of louder hike talk and a hard fall in US stocks. Glassnode (17 November): realized losses reached a level seen only near past cycle lows. Bitcoin pays no yield, and it fell with that higher-rate talk.",
-        "zh": "这一跌落在加息说法更响、美股大跌的一天。Glassnode（11月17日）：已实现亏损达到过去只在周期低点附近出现过的水平。比特币不产生利息，跟着这个更高利率的说法下跌。"
+        "en": "Friday's drop went through 60000 dollars, and a large ETF outflow landed on the same day. Glassnode (17 November): realized losses had reached a level seen only near past cycle lows. Bitcoin pays no interest, and it fell with US stocks.",
+        "zh": "周五的下跌穿过了60000美元，同一天出现了大额ETF流出。Glassnode（11月17日）：已实现亏损已经达到过去只在周期低点附近出现过的水平。比特币不产生利息，跟着美股下跌。"
+      }
+    },
+    {
+      "id": "chip-export",
+      "title": {
+        "en": "Hong Kong tech fell as the Nvidia sales probe widened",
+        "zh": "港股科技下跌，英伟达销售调查扩大"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "Hong Kong equities",
+          "zh": "港股"
+        },
+        {
+          "en": "China tech",
+          "zh": "中国科技股"
+        }
+      ],
+      "status": "escalated",
+      "fact": {
+        "en": "The Hang Seng Tech index fell 3.78% to 3511.14, and the Hang Seng fell 1.89% to 22410.80, 华尔街见闻 reported. The SEC is reviewing Nvidia's accounting, and California is looking at advanced chip sales to China, 财经早茶 and 华尔街见闻 reported.",
+        "zh": "华尔街见闻：恒生科技指数下跌3.78%至3511.14，恒生指数下跌1.89%至22410.80。财经早茶、华尔街见闻：美国证券交易委员会正在审查英伟达的会计，加州也在调查向中国出售先进芯片的问题。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
+        },
+        {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ],
+      "mechanism": {
+        "en": "Hong Kong tech shares fell while the probe of chip sales widened, so the control story and the price moved together. 财经早茶 (23 November): Bessent urged a full check of chip sales, and orders for H200 chips from China are scarce. Hang Seng Tech is the market that fell.",
+        "zh": "港股科技下跌的同时，芯片销售的调查扩大了，所以管制这件事和价格一起动了。财经早茶（11月23日）：贝森特要求彻查芯片销售，中国对H200芯片的订单很少。下跌的是恒生科技指数。"
+      }
+    },
+    {
+      "id": "china-equity-support",
+      "title": {
+        "en": "Exchanges cut the financed-buying margin floor to 80%",
+        "zh": "交易所把融资保证金下限降到80%"
+      },
+      "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "A-shares",
+          "zh": "A股"
+        }
+      ],
+      "status": "new",
+      "fact": {
+        "en": "The Shanghai, Shenzhen, and Beijing exchanges will cut the minimum margin for financed stock purchases from 100% to 80% on 30 November, Xinhua and 华尔街见闻 reported. Xinhua said the change could theoretically free nearly 400 billion yuan.",
+        "zh": "新华社、华尔街见闻：沪深北交易所将把融资买入股票的最低保证金比例从100%降至80%，11月30日起实施。新华社称，这次调整理论上可带来近4000亿元增量资金。"
+      },
+      "factSources": [
+        {
+          "label": "新华社 11月22日两融",
+          "href": "https://www.xinhuanet.com/20261122/50bbccb787fe4658bd58259f073515eb/c.html"
+        },
+        {
+          "label": "华尔街见闻 11月22日稳市",
+          "href": "https://wallstreetcn.com/articles/3786475"
+        }
+      ],
+      "mechanism": {
+        "en": "A lower minimum lets the same collateral support a larger financed purchase, and open contracts can be recalculated on the new ratio. 财经早茶 (23 November): the three exchanges moved after Chinese stocks stayed under pressure. A-shares are the market the rule is aimed at.",
+        "zh": "更低的下限让同样的担保品可以支持更大的融资买入，未了结的合约也可以按新比例重算。财经早茶（11月23日）：三大交易所是在中国股市持续承压之后行动的。这条规则对着的是A股。"
       }
     },
     {
       "id": "cny-fx",
       "title": {
-        "en": "Offshore yuan weakened to its softest since mid-October",
-        "zh": "离岸人民币走弱至10月中旬以来最弱"
+        "en": "The yuan firmed while the dollar still rose on the week",
+        "zh": "人民币走强，美元全周仍上涨"
       },
       "grade": "MODERATE",
+      "assets": [
+        {
+          "en": "Offshore yuan",
+          "zh": "离岸人民币"
+        },
+        {
+          "en": "US dollar",
+          "zh": "美元"
+        }
+      ],
+      "status": "continuing",
+      "fact": {
+        "en": "The ICE dollar index fell 0.08% to 103.817 on Friday and rose 0.39% on the week, a fourth straight up week, 华尔街见闻 reported. Onshore yuan finished the night session at 6.6714 per dollar, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：ICE美元指数周五下跌0.08%至103.817，全周上涨0.39%，连续第四周上涨。在岸人民币夜盘收于1美元兑6.6714。"
+      },
+      "factSources": [
+        {
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
+        }
+      ],
+      "mechanism": {
+        "en": "The yuan firmed on a day when haven trades favored the yen and the Swiss franc, and the dollar index still rose over the week. 财经早茶 (23 November): the dollar index recovered its intraday loss as those haven trades lifted the yen and the franc. The yuan is the rate that firmed on the day.",
+        "zh": "避险交易偏向日元和瑞郎的这一天，人民币走强了，美元指数全周仍然上涨。财经早茶（11月23日）：这些避险交易推高日元和瑞郎时，美元指数收回了盘中的失地。当天走强的是人民币。"
+      }
+    },
+    {
+      "id": "china-gold-imports",
+      "title": {
+        "en": "Gold imports make the measured goods surplus look smaller",
+        "zh": "黄金进口让测到的货物顺差更小"
+      },
+      "grade": "WEAK",
       "assets": [
         {
           "en": "Offshore yuan",
@@ -623,18 +678,18 @@
       ],
       "status": "new",
       "fact": {
-        "en": "Offshore yuan weakened to 6.6999 per dollar in the session, the weakest since mid-October, 华尔街见闻 reported.",
-        "zh": "华尔街见闻：离岸人民币盘中走弱至1美元兑6.6999，为10月中旬以来最弱。"
+        "en": "Gold imports jumped this year and pushed the measured goods surplus down, while the surplus with gold removed is a larger share of GDP, 财经早茶 reported. The surplus is on track to top 1 trillion dollars for a second straight year.",
+        "zh": "财经早茶：今年黄金进口激增，压低了测到的货物顺差，剔除黄金之后的顺差占GDP的比重更大。货物顺差有望连续第二年超过1万亿美元。"
       },
       "factSources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
         }
       ],
       "mechanism": {
-        "en": "Offshore yuan weakened while the dollar rose to its highest since April 2025, and the move did not come with a new China policy step. 财经早茶 (20 November): the drop was also a late reaction to a broad fall in emerging-market currencies. Offshore yuan is the market that weakened.",
-        "zh": "美元升至2025年4月以来最高的同时，离岸人民币走弱，这一步没有伴随新的中国政策动作。财经早茶（11月20日）：这也是对近期新兴市场货币普跌的滞后反应。走弱的是离岸人民币。"
+        "en": "Gold imports sit inside the goods bill, so the published surplus is smaller than the surplus with gold removed. 财经早茶 (23 November): those imports jumped this year and can keep weighing on the measured surplus. This reading did not set Friday's yuan price.",
+        "zh": "黄金进口记在货物账里，所以公布的顺差小于剔除黄金之后的顺差。财经早茶（11月23日）：这些进口今年跳增，还可能继续压低测到的顺差。这个读数没有决定周五的人民币价格。"
       }
     }
   ],
@@ -646,8 +701,8 @@
           "zh": "美国股市"
         },
         "text": {
-          "en": "The S&P 500 fell for a sixth day. Anthropic's steady debut did not restore confidence.",
-          "zh": "标普500指数六连跌，Anthropic上市首秀稳健表现难振市场信心。"
+          "en": "The S&P 500 is well below its October record as worry about an AI unwind spread.",
+          "zh": "标普500指数自10月纪录高点下跌逾10%，人工智能交易瓦解的担忧席卷华尔街。"
         }
       },
       {
@@ -656,8 +711,8 @@
           "zh": "中概股"
         },
         "text": {
-          "en": "The Golden Dragon index fell for a fourth day. NetEase and Baidu were the biggest drags.",
-          "zh": "金龙中国指数四连跌，网易和百度集团对指数拖累最大。"
+          "en": "The Golden Dragon index fell for a fifth day. Baidu and NetEase were the biggest drags.",
+          "zh": "金龙中国指数五连跌，百度和网易对指数拖累最大。"
         }
       },
       {
@@ -666,8 +721,8 @@
           "zh": "美国债市"
         },
         "text": {
-          "en": "Haven demand lifted Treasuries, and the yield curve steepened.",
-          "zh": "避险情绪推动国债上涨，收益率曲线陡化。"
+          "en": "Treasuries rose sharply as investors left technology stocks.",
+          "zh": "美债大涨，投资者撤离科技股提振避险需求。"
         }
       },
       {
@@ -676,8 +731,8 @@
           "zh": "外汇市场"
         },
         "text": {
-          "en": "The Bloomberg dollar index set a high of more than 19 months as haven demand rose.",
-          "zh": "彭博美元指数创下逾19个月新高，市场避险情绪升温。"
+          "en": "The Bloomberg dollar index recovered its intraday loss. Haven trades lifted the yen and the Swiss franc.",
+          "zh": "彭博美元指数收复盘中失地，避险交易推动日元和瑞郎上涨。"
         }
       },
       {
@@ -686,8 +741,8 @@
           "zh": "欧洲股债"
         },
         "text": {
-          "en": "European bonds fell as higher oil prices kept investors alert to inflation risk. European stocks fell for a fourth day, the longest run since August.",
-          "zh": "欧洲债券下跌，油价上涨令投资者对通胀风险保持警惕。欧洲股市四连跌，创8月份以来最长连跌纪录。"
+          "en": "German bonds rose as the global technology selloff fed haven demand. European stocks had their biggest weekly drop since April 2025.",
+          "zh": "德国国债上涨，全球科技股抛售提振避险需求。欧洲股市创2025年4月以来最大周跌幅。"
         }
       },
       {
@@ -696,8 +751,8 @@
           "zh": "能源"
         },
         "text": {
-          "en": "Crude futures were roughly flat. The market worried the Middle East conflict would escalate again, even as Trump faced pressure to deal with the Iran war through diplomacy.",
-          "zh": "原油期货基本持平。尽管特朗普面临通过外交途径解决伊朗战争的压力，市场仍担忧中东冲突将再度升级。"
+          "en": "Oil fell for a third straight week as traders weighed another US strike on Iran against ample supply.",
+          "zh": "油价连续第三周下跌，交易员在美国再次打击伊朗的风险与充裕的原油供应之间进行权衡。"
         }
       },
       {
@@ -706,8 +761,8 @@
           "zh": "金属"
         },
         "text": {
-          "en": "London copper bounced a little after Wednesday's plunge. Fed hike expectations pulled gold down for a fourth day.",
-          "zh": "伦敦期铜在周三暴跌后小幅反弹。美联储加息预期拖累金价连续第四天走低。"
+          "en": "Copper fell to its lowest since March as the AI unwind sparked a broad metal selloff. The hike outlook gave gold its largest weekly drop in eight months.",
+          "zh": "铜价跌至3月以来最低水平，人工智能交易瓦解引发金属市场普遍抛售。美联储加息前景拖累黄金创八个月最大单周跌幅。"
         }
       }
     ],
@@ -717,175 +772,223 @@
     }
   },
   "globalRegime": {
-    "en": "US stocks fell hard, and the S&P 500 dropped for a sixth day. Anthropic rose on its first day, and that did not stop the drop. Treasury yields fell, the dollar made another high, and gold fell for a fourth day. Crude finished almost flat.",
-    "zh": "美股大跌，标普500六连跌。Anthropic上市首日上涨，没有止住这段下跌。国债收益率回落，美元再创新高，黄金连续第四日下跌。原油收盘几乎走平。"
+    "en": "US stocks fell into a correction, and the S&P 500 dropped for a seventh day. Treasury yields fell as traders marked down a December increase. Gold had its largest weekly drop in eight months, while crude rose on Friday and still fell for a third week.",
+    "zh": "美股进入回调，标普500连续第七日下跌。交易员下调12月加息之后，国债收益率下降。黄金录得八个月来最大周跌幅。原油周五上涨，仍连跌第三周。"
   },
   "globalChanged": [
     {
       "text": {
-        "en": "The leaders of China, the US, and Russia held a trilateral summit in Shenzhen on Thursday. They discussed Ukraine, the Middle East, nuclear risk, and UN reform, and they agreed to increase production and supply of refined oil products, 财经早茶 reported.",
-        "zh": "财经早茶：美中俄元首周四在深圳举行三方峰会，就乌克兰和中东局势、核风险及联合国改革交换意见，三国领导人同意增加精炼石油产品的生产与供应。"
+        "en": "The AI trade unwound. The Nasdaq 100 had its worst week since March 2020 and is near a bear market. The S&P 500 sits well below its October high. MSCI emerging-market stocks entered a bear market, 财经早茶 reported.",
+        "zh": "财经早茶：全球人工智能交易迅速瓦解。纳斯达克100指数创2020年3月以来最差单周表现，逼近熊市。标普500指数明显低于10月高点。MSCI新兴市场股票指数跌入熊市。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "After the Shenzhen meetings, APEC leaders agreed to cooperate on rebalancing the world economy and to keep trade corridors open. The statement did not mention tariffs or protectionism, 财经早茶 reported.",
-        "zh": "财经早茶：APEC领导人在深圳会议后发表联合声明，同意加强全球经济再平衡合作并保持贸易走廊开放。声明未提及关税和保护主义。"
+        "en": "Goldman's volatility fear gauge was near an extreme on Friday. The trading desk sees a tactical entry in US stocks, but positions are still high, the Fed is expected to keep raising rates, and doubts about AI returns remain, 财经早茶 and 华尔街见闻 reported.",
+        "zh": "财经早茶、华尔街见闻：高盛的波动率恐慌指数上周五接近历史极值。交易部门认为美股接近战术性买点，但仓位仍然偏高，美联储料将继续加息，人工智能投资回报的疑虑还在。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Trump told European allies that his talks with Putin went well. He told NBC he would not decide the Ukraine question without consulting Zelensky, 财经早茶 reported.",
-        "zh": "财经早茶：特朗普据悉告诉欧洲盟友，他与普京的会谈顺利。他还对NBC记者表示，不会在未与泽连斯基磋商的情况下就乌克兰问题作出决定。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "US envoy Kushner said Trump is open to giving Ukraine a security assurance like NATO Article 5, and that Russia has accepted the idea of basing that assurance on Article 5, 财经早茶 reported.",
-        "zh": "财经早茶：美国特使库什纳称，特朗普对向乌克兰提供类似北约第五条的安全保障持开放态度，并称俄罗斯已接受安全保障以第五条为基础的概念。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Iranian attacks on tankers passing through the Strait of Hormuz have increased since October. Tehran said it will not negotiate the nuclear issue before the strait is settled, 财经早茶 reported.",
-        "zh": "财经早茶：伊朗对途经霍尔木兹海峡油轮的袭击自10月以来明显增多。德黑兰称，在海峡问题解决之前，不会就核问题展开谈判。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Western officials said the chance of a new large US strike on Iran has risen in recent days. Trump has not made a final decision, 财经早茶 reported.",
-        "zh": "财经早茶：西方官员称，美国对伊朗发动新一轮大规模打击的可能性近日上升，特朗普尚未作出最终决定。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Rate futures price the Fed, the ECB, and the Bank of England finishing their increases by the end of 2027 and then holding rates broadly steady at least through 2031, 财经早茶 reported.",
-        "zh": "财经早茶：利率期货定价显示，交易员押注美联储、欧洲央行和英国央行在2027年底完成加息后，至少到2031年基本维持利率不变。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "The average rate on a 30-year fixed US mortgage rose, and it has now spent nine straight weeks at a high level for the first time since 2023, 财经早茶 reported.",
-        "zh": "财经早茶：美国30年期固定利率抵押贷款平均利率上升，自2023年以来首次连续九周处在高位，房地产市场继续承压。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Anthropic rose 17% on its first day, and that debut did not restore confidence in the AI trade. The S&P 500 fell for a sixth day, 财经早茶 and 华尔街见闻 reported.",
-        "zh": "财经早茶、华尔街见闻：Anthropic上市首日上涨17%。首秀没有提振市场对人工智能交易的信心，标普500指数录得六连跌。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         },
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月23日亚太",
+          "href": "https://wallstreetcn.com/articles/3786472"
         }
       ]
     },
     {
       "text": {
-        "en": "AMD fell as much as 11% intraday after Hunterbrook disclosed a short tied to China risk. AMD denied wrongdoing. California is also looking at whether Nvidia misled investors on China-related risk, 财经早茶 and 华尔街见闻 reported.",
-        "zh": "财经早茶、华尔街见闻：AMD盘中一度下跌11%，Hunterbrook以中国业务风险为由做空。AMD否认存在不当行为。加州还在调查英伟达是否在中国相关风险上误导投资者。"
+        "en": "SpaceX is raising debt to buy AI chips, and the yield on the main bonds is above 8%, 财经早茶 reported.",
+        "zh": "财经早茶：SpaceX为采购人工智能芯片进行债务融资，主要债券收益率超过8%。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Nvidia is at an 18-month low and nearly half its October high. Reuters said US regulators are looking at its accounting. California is also looking at whether Nvidia illegally sold advanced chips to China and misled investors, 财经早茶 reported.",
+        "zh": "财经早茶：英伟达股价创18个月新低，较10月高点已近腰斩。路透称美国监管机构在调查其会计。加州也在调查英伟达是否违法向中国出售先进芯片并误导投资者。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The US director of national intelligence said the Justice Department is investigating former Megaspeed executive Alice Huang and her firm. Treasury secretary Bessent urged Nvidia to review its chip sales, 财经早茶 reported.",
+        "zh": "财经早茶：美国国家情报总监表示，司法部正在调查Megaspeed前高管Alice Huang及其公司。财长贝森特敦促英伟达彻查芯片销售。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Fed governor Cook warned that waiting to raise rates could force a larger tightening later. The Philadelphia Fed president favors a careful pace and is willing to act at a string of coming meetings, 财经早茶 reported.",
+        "zh": "财经早茶：美联储理事库克警告，若延迟加息，未来可能需要更大幅度地收紧。费城联储行长主张以审慎步伐加息，并愿意在接下来的会议上连续行动。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Bessent warned that tightening too far on the latest inflation data could hurt the economy, and that the financial system is showing fragile spots, 财经早茶 reported.",
+        "zh": "财经早茶：贝森特警告，若因最新通胀数据过度收紧，可能危及美国经济，并指出金融体系出现脆弱迹象。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The stock drop led traders to mark down hike bets for this year. Swap markets are no longer sure the Fed will raise rates in December, and haven demand lifted Treasuries on Friday, 财经早茶 reported.",
+        "zh": "财经早茶：股市下跌促使交易员下调年内加息押注。互换市场不再笃定美联储12月会加息。避险情绪推动美国国债周五上涨。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "After a Sunday emergency meeting, senior Korean officials said they will prepare a stock stabilization fund in stages and relax daily buyback limits for three months, 财经早茶 and 华尔街见闻 reported.",
+        "zh": "财经早茶、华尔街见闻：韩国高层金融官员周日紧急会议后说，将分阶段准备股市稳定基金，并把上市公司每日回购限额放宽三个月。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         },
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月23日亚太",
+          "href": "https://wallstreetcn.com/articles/3786472"
         }
       ]
     },
     {
       "text": {
-        "en": "The House Foreign Affairs Committee published license data through May on earlier-generation AI chips approved for sale to Tencent, Alibaba, Baidu, and BYD, 财经早茶 reported.",
-        "zh": "财经早茶：美国众议院外交事务委员会公布了截至5月的许可数据，涉及批准向腾讯、阿里巴巴、百度和比亚迪销售的较早一代人工智能芯片。"
+        "en": "Iran's foreign minister said the stockpile dispute can be solved if highly enriched uranium stays in the country. Trump told Fox he is still talking with Tehran indirectly and would rather resume strikes after the new year if there is no deal, 财经早茶 reported.",
+        "zh": "财经早茶：伊朗外长表示，在高浓缩铀不运出境的前提下，库存争端有可能找到办法。特朗普对福克斯新闻说，目前仍在与德黑兰间接对话，若达不成协议，他倾向于新年后再恢复打击。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "Alphabet returned to the Canadian bond market after six months and plans a five-part sale, 财经早茶 reported.",
-        "zh": "财经早茶：Alphabet时隔六个月重返加拿大债券市场，计划发行五档债券。"
+        "en": "US trade representative Greer said the Section 301 probe of global industrial overcapacity will be finished before year-end. That can raise trade tension before the US-China truce expires in January, 财经早茶 reported.",
+        "zh": "财经早茶：美国贸易代表格里尔表示，针对全球工业产能过剩的301调查会在年底前完成。这可能在美中休战明年1月到期前加剧贸易紧张。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "Chicago Fed president Goolsbee said every option is open at next month's meeting, including a larger-than-usual increase, 律动 and 华尔街见闻 reported.",
-        "zh": "律动、华尔街见闻：芝加哥联储行长古尔斯比说，下月会议上所有选项都在，不排除单次加息幅度超出常规。"
+        "en": "Trump threatened a heavy tax on US firms that build data centers abroad. He said a trade deal with Mexico is close, and that more work remains with Canada. Greer called Canada's warmer trade ties with China a step backward, 财经早茶 reported.",
+        "zh": "财经早茶：特朗普威胁对在海外建设数据中心的美国企业征收重税。他说美国接近与墨西哥达成贸易协议，与加拿大仍有更多工作要做。格里尔称加拿大缓和对华贸易关系是倒退。"
       },
       "sources": [
         {
-          "label": "律动 古尔斯比",
-          "href": "https://www.theblockbeats.info/flash/378294"
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "OpenAI's chief scientist called for limits on more capable models until researchers can understand and monitor them. Chief executive Altman agreed, 财经早茶 reported.",
+        "zh": "财经早茶：OpenAI首席科学家呼吁，在研究人员能更好理解和监控之前，对能力更强的模型设限。首席执行官Altman表示赞同。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "CrowdStrike is in talks to buy Zscaler. A deal would create a firm worth about 265 billion dollars, one of the largest in cybersecurity, 财经早茶 and 华尔街见闻 reported.",
+        "zh": "财经早茶、华尔街见闻：CrowdStrike据悉洽谈收购Zscaler。若成交，合计市值约2650亿美元，会是网络安全行业最大的交易之一。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
         },
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Russia rejects putting Ukraine's NATO membership into a peace deal, including a quasi-member option. Poland said two Russian missiles and one jet-powered drone fell in eastern Poland on Friday, 财经早茶 reported.",
+        "zh": "财经早茶：俄罗斯反对把乌克兰加入北约写进和平协议，准成员方案也不接受。波兰称，两枚俄罗斯导弹和一架喷气动力无人机周五坠落在波兰东部。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The University of Michigan sentiment final rose to 51.5 from 48.0 in October. The one-year inflation expectation fell to 3.7% from 4.7%, and the longer-run expectation fell to 3.3% from 3.5%, 第一财经 reported.",
+        "zh": "第一财经：密歇根大学消费者信心指数终值升至51.5，10月为48.0。一年期通胀预期从4.7%降至3.7%，长期通胀预期从3.5%降至3.3%。"
+      },
+      "sources": [
+        {
+          "label": "第一财经 11月21日",
+          "href": "https://www.yicai.com/news/103448914.html"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Nasdaq 100 futures rose as much as 2.6% in Asian hours, while the Kospi fell more than 3% early and Tokyo was shut for a holiday, 华尔街见闻 reported.",
+        "zh": "华尔街见闻：亚洲时段纳斯达克100期货一度上涨2.6%，韩国综指早盘下跌超过3%，东京因假期休市。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月23日亚太",
+          "href": "https://wallstreetcn.com/articles/3786472"
         }
       ]
     }
@@ -893,205 +996,193 @@
   "globalImplies": [
     {
       "text": {
-        "en": "If December brings a larger increase, the dollar can stay supported even after the 10-year yield fell to 5.04%.",
-        "zh": "若12月加息幅度更大，即使10年期收益率已经降到5.04%，美元仍可能得到支撑。"
+        "en": "If December odds keep falling, the dollar's weekly rise can fade even if officials still talk about higher rates.",
+        "zh": "若12月加息的概率继续下降，美元这一周的上涨可能褪去，即便官员仍在谈更高的利率。"
       }
     },
     {
       "text": {
-        "en": "If tanker attacks interrupt shipments through the Strait of Hormuz, crude could rise from the 83.21 dollar close.",
-        "zh": "若油轮袭击打断霍尔木兹海峡的出货，原油可能从83.21美元的收盘价回升。"
+        "en": "If the stock drop spreads past chips, Friday's bond rally can extend, because that rally came from leaving technology shares.",
+        "zh": "若股价下跌扩散到芯片以外，周五的债券上涨还可以延续，因为那次上涨来自资金离开科技股。"
       }
     },
     {
       "text": {
-        "en": "If the new shares keep giving back the first-day gain, the sixth straight drop in the S&P 500 can extend.",
-        "zh": "若新股继续吐回首日涨幅，标普500的六连跌可能延长。"
+        "en": "If talks with Iran fail and strikes resume after the new year, the third weekly drop in crude can reverse.",
+        "zh": "若与伊朗的谈判失败、新年后恢复打击，原油连续第三周的下跌可能反过来。"
       }
     }
   ],
   "globalTensions": {
-    "en": "Anthropic closed higher while the S&P 500 fell for a sixth day. Treasury yields fell while a Fed official left a larger increase open. Crude settled almost flat after an intraday jump. Gold fell for a fourth day on a session when stocks also fell.",
-    "zh": "Anthropic收涨，标普500却六连跌。有联储官员把更大幅度的加息留在选项里，国债收益率却降了。原油盘中跳升，结算几乎走平。股市下跌的这一天，黄金连续第四日下跌。"
+    "en": "Bonds rose while stocks fell. Gold fell with stocks, so it did not act as a shelter on Friday. Crude rose on the day and fell on the week. Tokyo is closed Monday, the Kospi opened lower, and US futures bounced.",
+    "zh": "债券上涨，股票下跌。黄金跟着股票下跌，周五没有起到避风的作用。原油当天上涨、全周下跌。周一东京休市，韩国综指低开，美国股指期货反弹。"
   },
   "chinaStance": {
-    "en": "Beijing called the Xi-Trump meeting positive and constructive and agreed an action plan for a stable relationship. The finance ministry sold dollar sovereign bonds in Hong Kong at a zero spread to Treasuries. The first active ETFs are leaning toward blue chips.",
-    "zh": "中方称习近平与特朗普的会晤是积极、建设性的，并同意为稳定关系制定行动计划。财政部在香港发行的美元主权债，定价较同期限美债为零溢价。首批主动ETF更倾向蓝筹。"
+    "en": "The three exchanges cut the financed-buying margin after a weak Friday, while the loan prime rate stayed unchanged. The budget surplus is a one-off personal-tax gain.",
+    "zh": "三大交易所在疲弱的周五之后下调了融资保证金，贷款市场报价利率则维持不变。财政盈余来自一次性的个人所得税。"
   },
   "chinaChanged": [
     {
       "text": {
-        "en": "The Chinese government called the Xi-Trump meeting positive and constructive. The two sides agreed to build a constructive strategic relationship and to draw up an action plan, 财经早茶 reported.",
-        "zh": "财经早茶：中国政府称，习近平与特朗普的会晤是积极、建设性的。双方同意构建建设性战略稳定关系，并制定行动计划。"
+        "en": "The Shanghai, Shenzhen, and Beijing exchanges will cut the minimum margin for financed stock purchases from 100% to 80% on 30 November, Xinhua and 华尔街见闻 reported. Xinhua said that could theoretically free nearly 400 billion yuan.",
+        "zh": "新华社、华尔街见闻：沪深北交易所将把融资买入证券的最低保证金比例从100%降至80%，11月30日起实施。新华社称，理论上可带来近4000亿元增量资金。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Xi received Trump with high protocol. Beijing appears to want the leaders' personal tie to keep the chip-export dispute from escalating, 财经早茶 reported.",
-        "zh": "财经早茶：习近平以高规格礼遇接待特朗普。北京似乎寻求借助两位领导人的个人关系，遏制芯片出口管制争端进一步升级。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "The finance ministry sold dollar sovereign bonds in Hong Kong at a zero spread to Treasuries, and the size was half of last year's sale, 财经早茶 reported.",
-        "zh": "财经早茶：中国财政部在香港发行美元主权债，据悉定价较同期限美债为零溢价，发行规模较去年减少一半。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Eighteen active ETFs list on 23 November. Their average equity position is 56.71%, and together they raised 36 billion yuan, 华尔街见闻 reported. 财经早茶 said the allocation leans toward blue chips.",
-        "zh": "华尔街见闻：18只主动ETF将于11月23日上市，平均股票仓位56.71%，合计募集360亿元。财经早茶：配置上更倾向蓝筹。"
-      },
-      "sources": [
-        {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "新华社 11月22日两融",
+          "href": "https://www.xinhuanet.com/20261122/50bbccb787fe4658bd58259f073515eb/c.html"
         },
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "华尔街见闻 11月22日稳市",
+          "href": "https://wallstreetcn.com/articles/3786475"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Taiwan's financial regulator banned short sales below the prior close. The national security fund said it has entered the market to steady local shares, 财经早茶 reported.",
+        "zh": "财经早茶：台湾金管会全面禁止平盘以下放空。台湾国安基金表示已经进场稳定台股。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "Hang Seng Indexes is due to publish its quarterly review after Friday's close. Hang Seng Tech is expected to widen from 30 names to 50, and CATL and Zhongji Innolight may be added, 财经早茶 reported.",
-        "zh": "财经早茶：恒生指数公司预计在周五收市后公布季度检讨。恒生科技指数成份股数量或从30只扩大至50只，宁德时代和中际旭创或被纳入。"
+        "en": "The Taiwan exchange discussed lowering the maintenance ratio on financed share purchases with local brokers, 财经早茶 reported.",
+        "zh": "财经早茶：台湾证券交易所与本地券商讨论降低融资买入股票的担保维持率。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "Offshore yuan weakened to 6.6999 per dollar in the session, the weakest since mid-October, 华尔街见闻 reported.",
-        "zh": "华尔街见闻：离岸人民币盘中走弱至1美元兑6.6999，为10月中旬以来最弱。"
+        "en": "October brought the first budget surplus in a year, as a one-off personal-tax jump from offshore wealth offset higher spending, 财经早茶 reported. October personal income tax rose 89.6%, January-October stamp duty rose 54.1%, and land-sale revenue fell 25.8%, 华尔街见闻 reported. October fiscal revenue rose 3.4% from a year earlier, 财新 reported.",
+        "zh": "财经早茶：10月广义政府收入高于支出，一年来首次盈余，离岸财富的一次性个人所得税抵消了支出回升。华尔街见闻：10月个人所得税同比增长89.6%，1至10月印花税增长54.1%，土地出让收入同比下降25.8%。财新：10月财政收入同比增长3.4%。"
       },
       "sources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Alibaba's revenue was slightly above the estimate. The chief executive said self-developed chips should offset the US rules, while data-center construction can still be slowed in the near term, 财经早茶 reported. Cloud revenue rose 53%, 华尔街见闻 reported.",
-        "zh": "财经早茶：阿里巴巴上财季营收略超预期。首席执行官吴泳铭称，自研芯片应能抵消美国芯片管制的影响，但数据中心建设短期内仍可能受到拖累。华尔街见闻：云业务收入同比增长53%。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         },
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "华尔街见闻 11月23日早餐",
+          "href": "https://wallstreetcn.com/articles/3786450"
+        },
+        {
+          "label": "财新 11月23日",
+          "href": "https://finance.caixin.com/2026-11-23/102507672.html"
         }
       ]
     },
     {
       "text": {
-        "en": "Ant Group's profit rose in the quarter through June. Fair-value gains helped, and AI investment offset part of the increase, 财经早茶 reported.",
-        "zh": "财经早茶：蚂蚁集团截至6月的季度利润增长，公允价值收益提振业绩，人工智能投资抵消了部分增幅。"
+        "en": "The goods surplus is on track to top 1 trillion dollars for a second year, but gold imports make the measured surplus look smaller, 财经早茶 reported.",
+        "zh": "财经早茶：货物贸易顺差有望连续第二年超过1万亿美元，但黄金进口让测到的顺差看起来更小。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "Pinduoduo's revenue rose 0.1% to 108.341 billion yuan, below the estimate, and the US premarket turned from a drop to a gain, 华尔街见闻 reported.",
-        "zh": "华尔街见闻：拼多多营收同比增长0.1%至1083.41亿元，低于预期，美股盘前由跌转涨。"
+        "en": "The securities regulator told some law firms it will not approve certain red-chip listings outside the mainland, 财经早茶 reported.",
+        "zh": "财经早茶：证监会告知部分律师事务所，不会批准一些红筹企业到内地以外上市。"
       },
       "sources": [
         {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
-        }
-      ]
-    },
-    {
-      "text": {
-        "en": "Nscale is still supplying ByteDance with Nvidia GPUs. That supply will need a US government license, and the deal faces a stricter review, 财经早茶 reported.",
-        "zh": "财经早茶：英国算力服务商Nscale仍在向字节跳动提供英伟达GPU算力。这笔供应据悉需要美国政府许可，交易面临更严格的审查。"
-      },
-      "sources": [
-        {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "Moonshot ended an arrangement to use Nvidia chips through an Indonesia data center, The Information reported. TSMC and Samsung paused some chip shipments to Chinese customers, the Financial Times reported, 财经早茶 said.",
-        "zh": "财经早茶：The Information报道，月之暗面终止了通过印尼数据中心使用英伟达芯片的安排。英国金融时报报道，台积电和三星电子暂停向部分中国客户供应芯片。"
+        "en": "Hang Seng Tech will expand from 30 names to 50 names, effective 7 December, including CATL and Luxshare, 财经早茶 and 华尔街见闻 reported.",
+        "zh": "财经早茶、华尔街见闻：恒生科技指数成分股将从30只增加到50只，12月7日生效，纳入宁德时代和立讯精密等公司。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        },
+        {
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "Taiwan's October export orders rose at a record pace, and the third-quarter current-account surplus was the second highest on record, 财经早茶 reported.",
+        "zh": "财经早茶：台湾10月外销订单同比增速创纪录。第三季经常帐顺差为历年单季次高。"
+      },
+      "sources": [
+        {
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "Hong Kong family office Anther Capital closed an AI position of about 3.9 billion dollars last quarter, including Micron and Western Digital, 财经早茶 reported.",
-        "zh": "财经早茶：香港家族办公室Anther Capital上季度解除了约39亿美元的人工智能持仓，包括美光和西部数据。"
+        "en": "Taiwan's central bank said exporters kept selling dollars as the trade surplus grew, even with a wider rate gap versus the US, 财经早茶 reported.",
+        "zh": "财经早茶：台湾央行表示，即便台美利差扩大，出口商仍在卖出美元，卖汇金额随顺差扩大而增加。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "China's copper market saw a historic squeeze. The Yangshan import premium more than doubled in the past week to a record, and traders started shipping copper that had built up in the US to China, 财经早茶 reported.",
-        "zh": "财经早茶：中国铜市场出现历史性的逼空。洋山进口铜溢价过去一周上涨逾一倍，创下纪录，交易商开始把美国累积的铜库存运往中国。"
+        "en": "Bessent said China wants its own chips and that orders for Nvidia's H200 are scarce. He said the leaders agreed that superintelligence should not take major military action on its own, 财经早茶 reported.",
+        "zh": "财经早茶：贝森特表示，中国寻求自主芯片，对英伟达H200的订单很少。他说元首们同意，超级智能不应自主实施重大军事行动。"
       },
       "sources": [
         {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       ]
     },
     {
       "text": {
-        "en": "Xi set out four points on how major powers should deal with each other: mutual respect, peaceful coexistence, win-win cooperation, and dialogue. The three leaders said a nuclear war cannot be won and must not be fought, 财新 reported.",
-        "zh": "财新：习近平就大国如何相处提出四点，相互尊重、和平共处、合作共赢、对话协商。三国领导人表示，核战争打不赢，也打不得。"
+        "en": "The planning agency urged faster spending on government investment projects. China will also expand rules for token-based computing services, 财经早茶 reported.",
+        "zh": "财经早茶：发改委敦促加快政府投资项目的建设和资金支付。中国还将完善词元服务的计量和测评规范。"
       },
       "sources": [
         {
-          "label": "财新 11月20日",
-          "href": "https://finance.caixin.com/2026-11-20/102506835.html"
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      ]
+    },
+    {
+      "text": {
+        "en": "The loan prime rate was unchanged for an 18th month, at 3% for one year and 3.5% for five years, 华尔街见闻 reported. The first 18 active ETFs list today, and the Tokyo cash market is closed, 第一财经 reported.",
+        "zh": "华尔街见闻：贷款市场报价利率连续第18个月不变，1年期3%，5年期以上3.5%。第一财经：首批18只主动ETF今日上市，东京股市休市。"
+      },
+      "sources": [
+        {
+          "label": "华尔街见闻 11月23日早餐",
+          "href": "https://wallstreetcn.com/articles/3786450"
+        },
+        {
+          "label": "第一财经 11月23日日程",
+          "href": "https://www.yicai.com/news/103449427.html"
         }
       ]
     }
@@ -1099,243 +1190,227 @@
   "chinaImplies": [
     {
       "text": {
-        "en": "If self-developed chips do not arrive in time, Alibaba's data-center build can stay slow even after cloud revenue rose 53%.",
-        "zh": "若自研芯片不能按时到位，即便云业务收入已经增长53%，阿里巴巴的数据中心建设仍可能放慢。"
+        "en": "If investors use the lower margin, financed buying can rise into a market that just had a weak Friday. The theoretical 400 billion yuan is not cash that has arrived.",
+        "zh": "若投资者用上更低的保证金，融资买入可能增加，而市场刚刚经历了一个疲弱的周五。理论上的4000亿元还不是已经到来的资金。"
       }
     },
     {
       "text": {
-        "en": "If the Yangshan premium stays at a record, more copper can move from the US to China.",
-        "zh": "若洋山溢价维持在纪录高位，更多的铜可能从美国运往中国。"
+        "en": "If the personal-tax jump does not repeat, the October surplus can disappear even if the margin rule stays easier.",
+        "zh": "若个人所得税的跳增不再出现，10月的盈余可能消失，即便保证金规则仍然更松。"
       }
     }
   ],
   "chinaDivergences": {
-    "en": "STAR50 rose 1.83% while Shanghai fell 0.28% and turnover was 1.31 trillion yuan, a low for the year. Treasury yields fell while a larger hike stayed open. Copper futures were nearly flat while the Yangshan premium more than doubled.",
-    "zh": "科创50上涨1.83%，上证下跌0.28%，成交1.31万亿元，创年内新低。更大幅度的加息仍留在选项里，国债收益率却降了。铜期货几乎走平，洋山溢价上涨逾一倍。"
+    "en": "Officials eased financing rules over the weekend after A-shares and Hong Kong shares fell on Friday. The yuan firmed even as the dollar rose on the week. The published goods surplus is smaller than the surplus with gold imports removed.",
+    "zh": "周五A股和港股下跌之后，官员在周末放宽了融资规则。美元全周上涨，人民币却走强。公布的货物顺差小于剔除黄金进口之后的顺差。"
   },
   "signals": [],
   "watchItems": [],
   "eventCalendar": {
-    "windowStart": "2026-11-20",
-    "windowEnd": "2026-11-27",
+    "windowStart": "2026-11-23",
+    "windowEnd": "2026-12-04",
     "note": {
-      "en": "Dates run from this briefing, 20 November, through next Friday, 27 November. Rows marked China are mainland China only. No Federal Reserve policy decision falls in these dates. After the November switch to standard time, a decision at 14:00 US Eastern is 03:00 Beijing the next day.",
-      "zh": "日期从本期简报的11月20日到下周五11月27日。标为中国的，只包括中国内地。这段时间没有美联储议息决定。11月已经切换到标准时间，如果美联储在美东时间14:00做决定，就是次日北京时间03:00。"
+      "en": "Dates run from this briefing, 23 November, through next Friday, 4 December. Rows marked China are mainland China only. No Federal Reserve policy decision falls in these dates. After the November switch to standard time, a decision at 14:00 US Eastern is 03:00 Beijing the next day.",
+      "zh": "日期从本期简报的11月23日到下周五12月4日。标为中国的，只包括中国内地。这段时间没有美联储议息决定。11月已经切换到标准时间，如果美联储在美东时间14:00做决定，就是次日北京时间03:00。"
     },
     "events": [
       {
-        "id": "cipollone-2026-11-20",
-        "date": "2026-11-20",
-        "timeBeijing": "11:10",
-        "region": "Other",
-        "category": "speech",
-        "event": {
-          "en": "ECB executive board member Cipollone speaks",
-          "zh": "欧洲央行执委奇波洛内讲话"
-        },
-        "themeId": "europe-short-rates",
-        "source": {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "uk-retail-2026-11-20",
-        "date": "2026-11-20",
-        "timeBeijing": "15:00",
-        "region": "Other",
-        "category": "data",
-        "event": {
-          "en": "UK October retail sales",
-          "zh": "英国10月零售销售"
-        },
-        "themeId": "europe-short-rates",
-        "source": {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "taiwan-orders-2026-11-20",
-        "date": "2026-11-20",
+        "id": "tw-unemployment-2026-11-23",
+        "date": "2026-11-23",
         "timeBeijing": "16:00",
         "region": "Other",
         "category": "data",
         "event": {
-          "en": "Taiwan October export orders",
-          "zh": "台湾10月外销订单"
+          "en": "Taiwan October unemployment rate",
+          "zh": "台湾10月失业率"
         },
         "themeId": "chip-export",
         "source": {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       },
       {
-        "id": "hsi-review-2026-11-20",
-        "date": "2026-11-20",
-        "timeBeijing": "16:00",
-        "region": "Other",
-        "category": "corporate",
-        "event": {
-          "en": "Hang Seng index quarterly review after the cash close",
-          "zh": "恒生指数季度检讨于收市后公布"
-        },
-        "themeId": "chip-export",
-        "source": {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "hk-cpi-2026-11-20",
-        "date": "2026-11-20",
-        "timeBeijing": "16:30",
+        "id": "tw-m2-2026-11-23",
+        "date": "2026-11-23",
+        "timeBeijing": "16:20",
         "region": "Other",
         "category": "data",
         "event": {
-          "en": "Hong Kong October composite CPI",
-          "zh": "香港10月综合消费物价指数"
+          "en": "Taiwan October M2 money supply",
+          "zh": "台湾10月M2货币供应"
         },
         "themeId": "cny-fx",
         "source": {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       },
       {
-        "id": "lagarde-2026-11-20",
-        "date": "2026-11-20",
-        "timeBeijing": "16:30",
+        "id": "ez-mfg-pmi-2026-11-23",
+        "date": "2026-11-23",
+        "timeBeijing": "17:00",
         "region": "Other",
-        "category": "speech",
+        "category": "data",
         "event": {
-          "en": "ECB president Lagarde speaks",
-          "zh": "欧洲央行行长拉加德讲话"
+          "en": "Eurozone November manufacturing PMI flash",
+          "zh": "欧元区11月制造业PMI初值"
         },
         "themeId": "europe-short-rates",
         "source": {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       },
       {
-        "id": "nagel-2026-11-20",
-        "date": "2026-11-20",
+        "id": "ez-svc-pmi-2026-11-23",
+        "date": "2026-11-23",
+        "timeBeijing": "17:00",
+        "region": "Other",
+        "category": "data",
+        "event": {
+          "en": "Eurozone November services PMI flash",
+          "zh": "欧元区11月服务业PMI初值"
+        },
+        "themeId": "europe-short-rates",
+        "source": {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "uk-mfg-pmi-2026-11-23",
+        "date": "2026-11-23",
+        "timeBeijing": "17:30",
+        "region": "Other",
+        "category": "data",
+        "event": {
+          "en": "UK November manufacturing PMI flash",
+          "zh": "英国11月制造业PMI初值"
+        },
+        "themeId": "europe-short-rates",
+        "source": {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "uk-svc-pmi-2026-11-23",
+        "date": "2026-11-23",
+        "timeBeijing": "17:30",
+        "region": "Other",
+        "category": "data",
+        "event": {
+          "en": "UK November services PMI flash",
+          "zh": "英国11月服务业PMI初值"
+        },
+        "themeId": "europe-short-rates",
+        "source": {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "pill-2026-11-23",
+        "date": "2026-11-23",
         "timeBeijing": "21:00",
         "region": "Other",
         "category": "speech",
         "event": {
-          "en": "Bundesbank president Nagel speaks",
-          "zh": "德国央行行长纳格尔讲话"
+          "en": "Bank of England chief economist Pill speaks",
+          "zh": "英国央行首席经济学家Pill讲话"
         },
         "themeId": "europe-short-rates",
         "source": {
-          "label": "彭博财经早茶 Nov 20",
+          "label": "彭博财经早茶 Nov 23",
           "href": "https://www.bloomberg.com/asia"
         }
       },
       {
-        "id": "waller-2026-11-20",
-        "date": "2026-11-20",
-        "timeBeijing": "21:25",
-        "region": "Other",
-        "category": "speech",
-        "event": {
-          "en": "Fed governor Waller speaks",
-          "zh": "美联储理事沃勒讲话"
-        },
-        "themeId": "us-growth-inflation",
-        "source": {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "michigan-2026-11-20",
-        "date": "2026-11-20",
-        "timeBeijing": "23:00",
-        "region": "Other",
-        "category": "data",
-        "event": {
-          "en": "University of Michigan sentiment final for November",
-          "zh": "美国11月密歇根大学消费者信心指数终值"
-        },
-        "themeId": "us-growth-inflation",
-        "source": {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "euro-confidence-2026-11-20",
-        "date": "2026-11-20",
-        "timeBeijing": "23:00",
-        "region": "Other",
-        "category": "data",
-        "event": {
-          "en": "Euro-area consumer confidence flash for November",
-          "zh": "欧元区11月消费者信心指数初值"
-        },
-        "themeId": "europe-short-rates",
-        "source": {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "trump-press-2026-11-21",
-        "date": "2026-11-21",
-        "timeBeijing": "01:00",
-        "region": "Other",
-        "category": "geopolitics",
-        "event": {
-          "en": "President Trump holds a press conference",
-          "zh": "美国总统特朗普举行新闻发布会"
-        },
-        "themeId": "oil",
-        "source": {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "cook-2026-11-21",
-        "date": "2026-11-21",
-        "timeBeijing": "01:15",
-        "region": "Other",
-        "category": "speech",
-        "event": {
-          "en": "Fed governor Cook speaks",
-          "zh": "美联储理事库克讲话"
-        },
-        "themeId": "us-growth-inflation",
-        "source": {
-          "label": "彭博财经早茶 Nov 20",
-          "href": "https://www.bloomberg.com/asia"
-        }
-      },
-      {
-        "id": "active-etf-2026-11-23",
+        "id": "cfnai-2026-11-23",
         "date": "2026-11-23",
-        "timeBeijing": "09:30",
-        "region": "China",
-        "category": "corporate",
+        "timeBeijing": "21:30",
+        "region": "Other",
+        "category": "data",
         "event": {
-          "en": "First eighteen active ETFs list in Shanghai and Shenzhen",
-          "zh": "首批18只主动ETF在沪深上市"
+          "en": "Chicago Fed national activity index for October",
+          "zh": "芝加哥联储10月全美经济活动指数"
         },
-        "themeId": "chip-export",
+        "themeId": "us-growth-inflation",
         "source": {
-          "label": "华尔街见闻 11月20日早餐",
-          "href": "https://wallstreetcn.com/articles/3786319"
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "us-mfg-pmi-2026-11-23",
+        "date": "2026-11-23",
+        "timeBeijing": "22:45",
+        "region": "Other",
+        "category": "data",
+        "event": {
+          "en": "US November manufacturing PMI flash",
+          "zh": "美国11月制造业PMI初值"
+        },
+        "themeId": "us-growth-inflation",
+        "source": {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "us-svc-pmi-2026-11-23",
+        "date": "2026-11-23",
+        "timeBeijing": "22:45",
+        "region": "Other",
+        "category": "data",
+        "event": {
+          "en": "US November services PMI flash",
+          "zh": "美国11月服务业PMI初值"
+        },
+        "themeId": "us-growth-inflation",
+        "source": {
+          "label": "彭博财经早茶 Nov 23",
+          "href": "https://www.bloomberg.com/asia"
+        }
+      },
+      {
+        "id": "pboc-bills-2026-11-24",
+        "date": "2026-11-24",
+        "timing": "tbd",
+        "region": "Other",
+        "category": "policy",
+        "event": {
+          "en": "PBOC tenders central-bank bills in Hong Kong",
+          "zh": "中国央行在香港招标发行央行票据"
+        },
+        "themeId": "cny-fx",
+        "source": {
+          "label": "华尔街见闻 11月21日早餐",
+          "href": "https://wallstreetcn.com/articles/3786416"
+        }
+      },
+      {
+        "id": "margin-2026-11-30",
+        "date": "2026-11-30",
+        "timing": "all-day",
+        "region": "China",
+        "category": "policy",
+        "event": {
+          "en": "Financed-buying margin floor of 80% takes effect",
+          "zh": "融资保证金下限80%开始实施"
+        },
+        "themeId": "china-equity-support",
+        "source": {
+          "label": "新华社 11月22日两融",
+          "href": "https://www.xinhuanet.com/20261122/50bbccb787fe4658bd58259f073515eb/c.html"
         }
       }
     ]
   },
   "marketDashboard": {
-    "asOf": "2026-11-20T01:24:03.899Z",
+    "asOf": "2026-11-23T01:27:05.603Z",
     "note": {
       "en": "Equities, FX, gold futures, and Brent futures use the latest Yahoo daily bar; a session still open at the snapshot is intraday, not a close (Brent row is Yahoo BZ=F — not the same print as the CNBC settle); US Treasuries use the official daily yield curve (bp vs prior print); BTC is CoinGecko 24h change; funding compares adjacent OKX prints. Snapshot captured at generate time — not live on the page.",
       "zh": "股票、外汇、黄金期货和布伦特期货采用 Yahoo 最近日线柱；快照时尚未收盘的时段是盘中，不是收盘（布伦特一行是 Yahoo BZ=F，与 CNBC 结算价不是同一报价）；美国国债采用官方日度收益率曲线（相对前值的基点）；比特币为 CoinGecko 的 24 小时变动；资金费率比较相邻的 OKX 报价。快照取自生成时点，不是本页实时行情。"
@@ -1348,10 +1423,10 @@
           {
             "id": "spx",
             "asset": "S&P 500",
-            "latest": "7,175.83",
-            "change": "−2.02%",
+            "latest": "6,910.39",
+            "change": "−3.70%",
             "changeDirection": "down",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "Yahoo Finance (^GSPC)",
               "href": "https://finance.yahoo.com/quote/%5EGSPC/"
@@ -1360,10 +1435,10 @@
           {
             "id": "nasdaq",
             "asset": "Nasdaq Composite",
-            "latest": "23,879.20",
-            "change": "−2.25%",
+            "latest": "22,617.73",
+            "change": "−5.28%",
             "changeDirection": "down",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "Yahoo Finance (^IXIC)",
               "href": "https://finance.yahoo.com/quote/%5EIXIC/"
@@ -1372,10 +1447,10 @@
           {
             "id": "vix",
             "asset": "VIX",
-            "latest": "28.44",
-            "change": "+15.80%",
+            "latest": "35.89",
+            "change": "+26.20%",
             "changeDirection": "up",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "Yahoo Finance (^VIX)",
               "href": "https://finance.yahoo.com/quote/%5EVIX/"
@@ -1384,10 +1459,14 @@
           {
             "id": "nikkei",
             "asset": "Nikkei 225",
-            "latest": "59,444.21",
-            "change": "+0.71%",
-            "changeDirection": "up",
-            "asOfDate": "2026-11-19",
+            "latest": "56,436.65",
+            "change": "−5.06%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-20",
+            "printNote": {
+              "en": "Text cites the Nikkei 225 at 56436.65, down 5.1% (华尔街见闻). This row is the Yahoo close, down 5.06%.",
+              "zh": "正文引用的是日经225收于56436.65、下跌5.1%（华尔街见闻）。这一行是 Yahoo 收盘，下跌5.06%。"
+            },
             "source": {
               "label": "Yahoo Finance (^N225)",
               "href": "https://finance.yahoo.com/quote/%5EN225/"
@@ -1396,10 +1475,14 @@
           {
             "id": "kospi",
             "asset": "Kospi",
-            "latest": "5,137.89",
-            "change": "+1.39%",
-            "changeDirection": "up",
-            "asOfDate": "2026-11-19",
+            "latest": "4,869.96",
+            "change": "−5.21%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-20",
+            "printNote": {
+              "en": "Text cites the Kospi at 4869.96, down 5.2% (华尔街见闻). This row is the Yahoo close, down 5.21%.",
+              "zh": "正文引用的是韩国综指收于4869.96、下跌5.2%（华尔街见闻）。这一行是 Yahoo 收盘，下跌5.21%。"
+            },
             "source": {
               "label": "Yahoo Finance (^KS11)",
               "href": "https://finance.yahoo.com/quote/%5EKS11/"
@@ -1408,10 +1491,10 @@
           {
             "id": "hsi",
             "asset": "Hang Seng",
-            "latest": "22,841.62",
-            "change": "−1.95%",
+            "latest": "22,410.80",
+            "change": "−1.89%",
             "changeDirection": "down",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "Yahoo Finance (^HSI)",
               "href": "https://finance.yahoo.com/quote/%5EHSI/"
@@ -1420,10 +1503,10 @@
           {
             "id": "hstech",
             "asset": "Hang Seng Tech",
-            "latest": "3,649.14",
-            "change": "−2.33%",
+            "latest": "3,511.14",
+            "change": "−3.78%",
             "changeDirection": "down",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "Yahoo Finance (HSTECH.HK)",
               "href": "https://finance.yahoo.com/quote/HSTECH.HK/"
@@ -1432,10 +1515,10 @@
           {
             "id": "shanghai",
             "asset": "Shanghai Composite",
-            "latest": "3,577.62",
-            "change": "−0.28%",
+            "latest": "3,533.79",
+            "change": "−1.22%",
             "changeDirection": "down",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "Yahoo Finance (000001.SS)",
               "href": "https://finance.yahoo.com/quote/000001.SS/"
@@ -1450,10 +1533,10 @@
           {
             "id": "us02y",
             "asset": "US 2Y yield",
-            "latest": "4.76%",
-            "change": "−4.0 bp",
+            "latest": "4.63%",
+            "change": "−13.0 bp",
             "changeDirection": "down",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -1462,10 +1545,10 @@
           {
             "id": "us05y",
             "asset": "US 5Y yield",
-            "latest": "4.86%",
-            "change": "−3.0 bp",
+            "latest": "4.71%",
+            "change": "−15.0 bp",
             "changeDirection": "down",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -1474,10 +1557,10 @@
           {
             "id": "us10y",
             "asset": "US 10Y yield",
-            "latest": "5.04%",
-            "change": "−3.0 bp",
+            "latest": "4.92%",
+            "change": "−12.0 bp",
             "changeDirection": "down",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -1486,10 +1569,10 @@
           {
             "id": "us30y",
             "asset": "US 30Y yield",
-            "latest": "5.40%",
-            "change": "−1.0 bp",
+            "latest": "5.31%",
+            "change": "−9.0 bp",
             "changeDirection": "down",
-            "asOfDate": "2026-11-19",
+            "asOfDate": "2026-11-20",
             "source": {
               "label": "U.S. Treasury",
               "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/textview?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -1504,10 +1587,10 @@
           {
             "id": "usdjpy",
             "asset": "USD/JPY",
-            "latest": "159.3440",
-            "change": "−0.02%",
+            "latest": "158.8740",
+            "change": "−0.52%",
             "changeDirection": "down",
-            "asOfDate": "2026-11-20",
+            "asOfDate": "2026-11-23",
             "source": {
               "label": "Yahoo Finance (JPY=X)",
               "href": "https://finance.yahoo.com/quote/JPY%3DX/"
@@ -1516,75 +1599,75 @@
           {
             "id": "usdcny",
             "asset": "USD/CNY",
-            "latest": "6.6783",
-            "change": "+0.16%",
-            "changeDirection": "up",
-            "asOfDate": "2026-11-20",
+            "latest": "6.6613",
+            "change": "−0.08%",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-23",
+            "printNote": {
+              "en": "Text cites onshore yuan at 6.6714 per dollar in the Friday night session (华尔街见闻). This row is the Yahoo quote at 6.6613, down 0.08%.",
+              "zh": "正文引用的是周五夜盘在岸人民币1美元兑6.6714（华尔街见闻）。这一行是 Yahoo 报价6.6613，下跌0.08%。"
+            },
             "source": {
               "label": "Yahoo Finance (CNY=X)",
               "href": "https://finance.yahoo.com/quote/CNY%3DX/"
-            },
-            "printNote": {
-              "en": "The text cites offshore yuan at 6.6999 per dollar (华尔街见闻). This row is the Yahoo quote.",
-              "zh": "正文引用的是离岸人民币6.6999（华尔街见闻）。这一行是雅虎报价。"
             }
           },
           {
             "id": "gold",
             "asset": "Gold (futures)",
-            "latest": "$3,606.20",
-            "change": "−3.63%",
-            "changeDirection": "down",
-            "asOfDate": "2026-11-20",
+            "latest": "$3,618.10",
+            "change": "+2.92%",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-23",
             "source": {
               "label": "Yahoo Finance (GC=F)",
               "href": "https://finance.yahoo.com/quote/GC%3DF/"
             },
             "contract": "2026-12",
             "printNote": {
-              "en": "The text cites the COMEX continuous contract at 3660.9, down 2.16%, and spot gold at 3661.51, down 1.70% (华尔街见闻). This row is the Yahoo futures quote.",
-              "zh": "正文引用的是COMEX当月连续合约3660.9，下跌2.16%，以及现货黄金3661.51，下跌1.70%（华尔街见闻）。这一行是雅虎期货报价。"
+              "en": "Text cites the COMEX December settle at 3515.40 dollars, down 4.62% (第一财经), and spot gold at 3520.05 dollars, down 2.81% (CNBC). This row is the Yahoo GC=F quote at 3618.10, up 2.92%.",
+              "zh": "正文引用的是COMEX 12月黄金结算价3515.40美元、下跌4.62%（第一财经），以及现货黄金3520.05美元、下跌2.81%（CNBC）。这一行是 Yahoo GC=F 报价3618.10，上涨2.92%。"
             }
           },
           {
             "id": "brent",
             "asset": "Brent futures (Yahoo)",
-            "latest": "$89.66",
-            "change": "−2.49%",
+            "latest": "$89.88",
+            "change": "−2.91%",
             "changeDirection": "down",
-            "asOfDate": "2026-11-20",
+            "asOfDate": "2026-11-23",
             "source": {
               "label": "Yahoo Finance (BZ=F)",
               "href": "https://finance.yahoo.com/quote/BZ%3DF/"
             },
             "printNote": {
-              "en": "The text cites January Brent at 91.98, up 0.03%, and December WTI at 83.21, down 0.06% (Xinhua, 华尔街见闻). This row is the Yahoo BZ=F quote.",
-              "zh": "正文引用的是1月布伦特91.98，上涨0.03%，以及12月WTI 83.21，下跌0.06%（新华社、华尔街见闻）。这一行是雅虎BZ=F报价。"
+              "en": "Text cites January Brent at 92.57 dollars, up 0.64%, and December WTI at 83.98 dollars, up 0.93% (华尔街见闻, 第一财经). This row is Yahoo BZ=F at 89.88, down 2.91%.",
+              "zh": "正文引用的是1月布伦特92.57美元、上涨0.64%，以及12月WTI 83.98美元、上涨0.93%（华尔街见闻、第一财经）。这一行是 Yahoo BZ=F 报价89.88，下跌2.91%。"
             }
           },
           {
             "id": "btc",
             "asset": "BTC/USD",
-            "latest": "$62,410",
-            "change": "−0.64%",
-            "changeDirection": "down",
-            "asOfDate": "2026-11-20",
+            "latest": "$60,906",
+            "change": "+1.32%",
+            "changeDirection": "up",
+            "asOfDate": "2026-11-23",
             "source": {
               "label": "CoinGecko",
               "href": "https://www.coingecko.com/en/coins/bitcoin"
             },
             "printNote": {
-              "en": "The text cites bitcoin at 61776 dollars, down 1.92% (华尔街见闻). This row is the CoinGecko quote.",
-              "zh": "正文引用的是比特币61776美元，下跌1.92%（华尔街见闻）。这一行是CoinGecko报价。"
+              "en": "Text cites Friday's print at 58951 dollars, down 4.8% (华尔街见闻), and 59593 dollars, up 1.76% on 22 November (律动). This row is the CoinGecko quote at 60906 dollars, up 1.32%.",
+              "zh": "正文引用的是周五收于58951美元、下跌4.8%（华尔街见闻），以及11月22日的59593美元、上涨1.76%（律动）。这一行是 CoinGecko 报价60906美元，上涨1.32%。"
             }
           },
           {
             "id": "btc-funding",
             "asset": "BTC funding rate",
-            "latest": "-0.0016%",
-            "change": "+0.022 bp",
-            "changeDirection": "up",
-            "asOfDate": "2026-11-20",
+            "latest": "0.0015%",
+            "change": "−0.076 bp",
+            "changeDirection": "down",
+            "asOfDate": "2026-11-23",
             "source": {
               "label": "OKX funding API",
               "href": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP"
@@ -1594,5 +1677,5 @@
       }
     ]
   },
-  "slug": "2026-11-20"
+  "slug": "2026-11-23"
 }

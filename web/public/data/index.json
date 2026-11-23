@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-20T01:24:35.650Z",
-  "latest": "2026-11-20",
+  "generatedAt": "2026-11-23T01:30:03.098Z",
+  "latest": "2026-11-23",
   "briefings": [
+    {
+      "date": "2026-11-23",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Seventh Drop, Gold Week",
+        "zh": "标普七连跌与金价周跌"
+      },
+      "marketTone": {
+        "en": "US stocks fell hard, and the S&P 500 dropped for a seventh day into a correction. Gold had its largest weekly drop in eight months.",
+        "zh": "美股大跌，标普500连续第七日下跌并进入回调。黄金录得八个月来最大单周跌幅。"
+      },
+      "coverageWindow": {
+        "en": "November 20–23, 2026",
+        "zh": "2026年11月20日至11月23日"
+      }
+    },
     {
       "date": "2026-11-20",
       "title": {
