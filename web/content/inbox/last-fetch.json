@@ -1,25 +1,17 @@
 {
-  "at": "2026-11-23T01:06:22.499Z",
+  "at": "2026-11-23T01:33:05.001Z",
   "briefingDate": "2026-11-23",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-23.md",
-      "subject": "彭博财经早茶：全球AI交易迅速瓦解；亚洲多地加码稳市举措",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 7606,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-23.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-23.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-weekend-tea",
       "path": "web/content/inbox/bloomberg-weekend-tea/2026-W47.md",
-      "subject": "彭博周末茶歇: 中美俄峰会",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 7869,
-      "mailbox": "[Gmail]/All Mail"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -78,6 +70,16 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：全球AI交易迅速瓦解；亚洲多地加码稳市举措",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-23.md"
+    },
+    {
+      "reason": "weekly-exists",
+      "subject": "彭博周末茶歇: 中美俄峰会",
+      "path": "web/content/inbox/bloomberg-weekend-tea/2026-W47.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：Anthropic首秀表现稳健；阿里巴巴寄望自研芯片",
