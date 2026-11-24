@@ -20,6 +20,7 @@ export function SiteHeader() {
           priority
         />
         <span>syravocado</span>
+        <span>Avocadough牛油果日报</span>
       </Link>
       <div className="flex w-full flex-wrap items-center gap-x-3 gap-y-2 sm:w-auto sm:gap-6">
         <LangSwitch />

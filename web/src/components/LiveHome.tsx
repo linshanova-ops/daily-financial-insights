@@ -94,7 +94,6 @@ export function LiveHome({ initialBriefing }: LiveHomeProps) {
         heroVariant="skim"
         previousDate={previousDate}
         publishedAtFallback={publishedAt}
-        homeTitle
       />
     </>
   );

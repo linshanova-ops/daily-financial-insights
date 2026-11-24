@@ -6,9 +6,7 @@ import { briefingPageMeta } from "@/lib/briefings-format";
 
 export function generateMetadata(): Metadata {
   const briefing = getLatestBriefing();
-  return briefing
-    ? briefingPageMeta(briefing, true)
-    : { title: { absolute: "Avocadough牛油果日报 · syravocado" } };
+  return briefing ? briefingPageMeta(briefing) : {};
 }
 
 export default function HomePage() {
