@@ -22,6 +22,7 @@ interface BriefingViewProps {
   heroVariant?: "full" | "compact" | "skim";
   previousDate?: string | null;
   publishedAtFallback?: string | null;
+  homeTitle?: boolean;
 }
 
 export function BriefingView({
@@ -30,6 +31,7 @@ export function BriefingView({
   heroVariant = "full",
   previousDate = null,
   publishedAtFallback = null,
+  homeTitle = false,
 }: BriefingViewProps) {
   const figures = briefing.figures ?? [];
   const themeCards: ThemeCard[] = briefing.themeCards ?? [];
@@ -48,7 +50,7 @@ export function BriefingView({
   return (
     <>
       <script
-        dangerouslySetInnerHTML={{ __html: briefingTitleScript(briefing) }}
+        dangerouslySetInnerHTML={{ __html: briefingTitleScript(briefing, homeTitle) }}
       />
       <BriefingHero
         date={briefing.date}

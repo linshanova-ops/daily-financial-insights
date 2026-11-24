@@ -47,27 +47,31 @@ function shortDate(date: string, lang: "en" | "zh"): string {
 /** Date, one line from that day's own text, and the brand. */
 export function briefingTitles(
   briefing: Pick<Briefing, "date" | "marketTone">,
+  home = false,
 ): { en: string; zh: string } {
+  const brand = home ? "Avocadough牛油果日报 · syravocado" : "Syravocado";
   return {
-    en: `${shortDate(briefing.date, "en")} financial briefing｜${readerLine(firstLine(enOf(briefing.marketTone)), "en")}｜Syravocado`,
-    zh: `${shortDate(briefing.date, "zh")}金融简报｜${readerLine(firstLine(zhOf(briefing.marketTone)))}｜Syravocado`,
+    en: `${shortDate(briefing.date, "en")} financial briefing｜${readerLine(firstLine(enOf(briefing.marketTone)), "en")}｜${brand}`,
+    zh: `${shortDate(briefing.date, "zh")}金融简报｜${readerLine(firstLine(zhOf(briefing.marketTone)))}｜${brand}`,
   };
 }
 
 export function briefingTitleScript(
   briefing: Pick<Briefing, "date" | "marketTone">,
+  home = false,
 ): string {
-  const titles = briefingTitles(briefing);
+  const titles = briefingTitles(briefing, home);
   return `(function(){var en=${JSON.stringify(titles.en)},zh=${JSON.stringify(titles.zh)};function apply(){document.title=document.documentElement.dataset.lang==="zh"?zh:en}apply();new MutationObserver(apply).observe(document.documentElement,{attributes:true,attributeFilter:["data-lang"]})})();`;
 }
 
 /** The tab title is one line. The longer facts stay in the description. */
 export function briefingPageMeta(
   briefing: Pick<Briefing, "date" | "marketTone">,
+  home = false,
 ): Metadata {
   const date = formatBriefingDate(briefing.date);
   const facts = dropRestatedScale(briefingFacts(enOf(briefing.marketTone)));
-  const titles = briefingTitles(briefing);
+  const titles = briefingTitles(briefing, home);
   const description = `${date}. ${facts}`;
   return {
     title: { absolute: titles.en },
