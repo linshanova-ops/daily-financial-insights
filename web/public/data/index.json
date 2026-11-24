@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-23T01:30:03.098Z",
-  "latest": "2026-11-23",
+  "generatedAt": "2026-11-24T01:29:39.062Z",
+  "latest": "2026-11-24",
   "briefings": [
+    {
+      "date": "2026-11-24",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Huang Returns, Oil Low",
+        "zh": "黄仁勋复职与油价新低"
+      },
+      "marketTone": {
+        "en": "US stocks had their largest rise in more than a year and a half after Jensen Huang returned as Nvidia's chief executive. January crude settled at a three-month low.",
+        "zh": "黄仁勋回归英伟达之后，美股创下一年半多来最大涨幅。1月原油结算在三个月低点。"
+      },
+      "coverageWindow": {
+        "en": "November 23–24, 2026",
+        "zh": "2026年11月23日至11月24日"
+      }
+    },
     {
       "date": "2026-11-23",
       "title": {

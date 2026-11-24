@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-23T08:28:32.597Z",
-  "briefingDate": "2026-11-23",
+  "at": "2026-11-24T01:05:34.696Z",
+  "briefingDate": "2026-11-24",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-24.md",
+      "subject": "彭博财经早茶：黄仁勋重掌英伟达帅印；美国将Megaspeed列入黑名单",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6534,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-24.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-24.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-23.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-10.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-09.md",
       "skipped": true
     }
   ],
@@ -139,11 +144,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: Anthropic或即将启动IPO推介；中国贸易数据",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-10.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 黄仁勋承认婚外情；美强劲就业支持加息",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-09.md"
     }
   ]
 }
