@@ -1,17 +1,12 @@
 {
-  "at": "2026-11-24T01:05:34.696Z",
+  "at": "2026-11-24T01:33:54.754Z",
   "briefingDate": "2026-11-24",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-24.md",
-      "subject": "彭博财经早茶：黄仁勋重掌英伟达帅印；美国将Megaspeed列入黑名单",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6534,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-24.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-24.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶：黄仁勋重掌英伟达帅印；美国将Megaspeed列入黑名单",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-24.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：全球AI交易迅速瓦解；亚洲多地加码稳市举措",
