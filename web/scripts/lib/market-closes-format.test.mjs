@@ -169,6 +169,24 @@ describe("market-closes-format", () => {
     assert.equal(fillMissingPriorClose("spx", skipped, { fulldayPrice: 60459.58, fulldayChange: 1684.078 }), skipped);
   });
 
+  it("inserts the latest finished close when a holiday and a null bar leave two weekdays", () => {
+    const snap = "2026-11-25T01:20:48.771Z";
+    const t = (day) => Date.parse(`${day}T00:00:00Z`) / 1000;
+    const pairs = [
+      { t: t("2026-11-20"), c: 56436.6484375 },
+      { t: t("2026-11-25"), c: 57006.8984375 },
+    ];
+    const filled = fillMissingPriorClose("nikkei", pairs, {
+      fulldayPrice: 57006.9,
+      fulldayChange: -1637.73,
+    });
+    const bar = selectDisplayedBar("nikkei", filled, snap);
+    assert.equal(unixToDateString(bar.last.t), "2026-11-24");
+    assert.equal(formatLevel(bar.last.c), "58,644.63");
+    assert.equal(formatPctChange(bar.prev.c, bar.last.c), "+3.91%");
+    assert.equal(bar.gap, null);
+  });
+
   it("parses dates", () => {
     assert.equal(parseUsDate("07/16/2026"), "2026-07-16");
     assert.equal(unixToDateString(1784208600), "2026-07-16");

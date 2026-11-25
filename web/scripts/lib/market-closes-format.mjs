@@ -158,21 +158,24 @@ function weekdaysBetween(start, end) {
 /**
  * Morning Nikkei/Kospi charts can include today's open bar and skip the
  * finished 15:30 session. That close is fulldayPrice − fulldayChange.
- * chartPreviousClose is not that session. One missing weekday only.
+ * chartPreviousClose is not that session. A holiday plus a null bar leaves
+ * more than one weekday in the hole; fulldayChange is still the latest one.
+ * ponytail: inserts only that latest missing weekday, not every date in the hole.
  */
 export function fillMissingPriorClose(id, pairs, meta = {}) {
   if (!PRIOR_CLOSE_IF_OPEN[id] || pairs?.length < 2) return pairs;
   const last = pairs[pairs.length - 1];
   const prev = pairs[pairs.length - 2];
   const hole = weekdaysBetween(unixToDateString(prev.t), unixToDateString(last.t));
-  if (hole.length !== 1) return pairs;
+  if (!hole.length) return pairs;
   const price = Number(meta.fulldayPrice);
   const change = Number(meta.fulldayChange);
   if (!Number.isFinite(price) || !Number.isFinite(change)) return pairs;
   if (Math.abs(price - Number(last.c)) > 0.05) return pairs;
   const prior = price - change;
   if (!yahooPrevIsUsable(prior, last.c) || !yahooPrevIsUsable(prev.c, prior)) return pairs;
-  return [...pairs.slice(0, -1), { t: Date.parse(`${hole[0]}T00:00:00Z`) / 1000, c: prior }, last];
+  const day = hole[hole.length - 1];
+  return [...pairs.slice(0, -1), { t: Date.parse(`${day}T00:00:00Z`) / 1000, c: prior }, last];
 }
 
 /** Bar to print, the bar before it, and a holiday or stale gap when one exists. */
