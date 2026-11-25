@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-24T01:29:39.062Z",
-  "latest": "2026-11-24",
+  "generatedAt": "2026-11-25T01:25:27.799Z",
+  "latest": "2026-11-25",
   "briefings": [
+    {
+      "date": "2026-11-25",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Chips Fade, Oil Up",
+        "zh": "芯片回吐与油价反弹"
+      },
+      "marketTone": {
+        "en": "US stocks split after Monday's surge. Chips and the Nasdaq fell, the Dow rose, and January crude settled higher after more attacks near Hormuz.",
+        "zh": "周一暴涨之后，美股走势分化。芯片股和纳斯达克下跌，道指上涨，霍尔木兹附近再有船只遇袭后，1月原油结算走高。"
+      },
+      "coverageWindow": {
+        "en": "November 24–25, 2026",
+        "zh": "2026年11月24日至11月25日"
+      }
+    },
     {
       "date": "2026-11-24",
       "title": {

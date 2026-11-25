@@ -1,8 +1,26 @@
 {
-  "at": "2026-11-24T10:35:59.421Z",
-  "briefingDate": "2026-11-24",
+  "at": "2026-11-25T01:02:00.663Z",
+  "briefingDate": "2026-11-25",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-25.md",
+      "subject": "彭博财经早茶：黄仁勋称每天接受心理治疗；美国应急物资大涨价",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 7725,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-25.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-25.png"
+    },
+    {
+      "sourceId": "glassnode-insights",
+      "path": "web/content/inbox/glassnode-insights/2026-W48.md",
+      "subject": "Bitcoin fell first, stocks are following",
+      "from": "\"Glassnode\" <insights@glassnode.com>",
+      "chars": 2623,
+      "mailbox": "[Gmail]/All Mail"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-24.md",
@@ -34,11 +52,6 @@
       "skipped": true
     },
     {
-      "sourceId": "glassnode-insights",
-      "path": "web/content/inbox/glassnode-insights/2026-W47.md",
-      "skipped": true
-    },
-    {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-17.md",
       "skipped": true
@@ -62,14 +75,14 @@
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-11.md",
       "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-10.md",
-      "skipped": true
     }
   ],
   "skipped": [
+    {
+      "reason": "weekly-duplicate",
+      "subject": "Black Week: ask your agent who is buying this dip",
+      "from": "\"Glassnode\" <insights@glassnode.com>"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶：黄仁勋重掌英伟达帅印；美国将Megaspeed列入黑名单",
@@ -101,9 +114,9 @@
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-18.md"
     },
     {
-      "reason": "weekly-exists",
+      "reason": "weekly-duplicate",
       "subject": "Capitulation Underway",
-      "path": "web/content/inbox/glassnode-insights/2026-W47.md"
+      "from": "\"Glassnode\" <insights@glassnode.com>"
     },
     {
       "reason": "exists-keep",
@@ -139,11 +152,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 美国通胀超预期；Anthropic势创融资纪录",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-11.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: Anthropic或即将启动IPO推介；中国贸易数据",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-10.md"
     }
   ]
 }
