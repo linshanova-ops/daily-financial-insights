@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-25T01:25:27.799Z",
-  "latest": "2026-11-25",
+  "generatedAt": "2026-11-26T01:26:42.750Z",
+  "latest": "2026-11-26",
   "briefings": [
+    {
+      "date": "2026-11-26",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Nvidia Rating, Oil Up",
+        "zh": "英伟达信评与油价"
+      },
+      "marketTone": {
+        "en": "US stocks split on Wednesday. The Dow rose, the Nasdaq fell, and crude settled higher after an attack on a Saudi refinery.",
+        "zh": "周三美股走势分化。道指上涨，纳斯达克下跌，沙特一座炼厂遇袭后原油结算走高。"
+      },
+      "coverageWindow": {
+        "en": "November 25–26, 2026",
+        "zh": "2026年11月25日至11月26日"
+      }
+    },
     {
       "date": "2026-11-25",
       "title": {
