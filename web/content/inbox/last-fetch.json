@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-25T09:26:11.377Z",
-  "briefingDate": "2026-11-25",
+  "at": "2026-11-26T01:03:02.891Z",
+  "briefingDate": "2026-11-26",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-26.md",
+      "subject": "彭博财经早茶: 华府拟加中国关税；标普可能下调英伟达信评",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6175,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-26.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-26.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-25.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-12.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-11.md",
       "skipped": true
     }
   ],
@@ -144,16 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：黄仁勋或被罢免；富豪补税助中国个税收入激增",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-12.md"
-    },
-    {
-      "reason": "weekly-duplicate",
-      "subject": "Stablecoin supply is shrinking fast",
-      "from": "\"Glassnode\" <insights@glassnode.com>"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶: 美国通胀超预期；Anthropic势创融资纪录",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-11.md"
     }
   ]
 }
