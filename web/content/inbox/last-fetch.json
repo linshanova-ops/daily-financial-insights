@@ -1,8 +1,18 @@
 {
-  "at": "2026-11-26T09:04:03.436Z",
-  "briefingDate": "2026-11-26",
+  "at": "2026-11-27T01:03:55.386Z",
+  "briefingDate": "2026-11-27",
   "ok": true,
   "saved": [
+    {
+      "sourceId": "bloomberg-markets-daily-china",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-27.md",
+      "subject": "彭博财经早茶: 科威特指控伊朗袭击其重要设施；欧洲央行新掌门何许人",
+      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
+      "chars": 6181,
+      "mailbox": "[Gmail]/All Mail",
+      "chartImage": "/inbox-charts/bloomberg-2026-11-27.png",
+      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-27.png"
+    },
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-26.md",
@@ -61,11 +71,6 @@
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-13.md",
-      "skipped": true
-    },
-    {
-      "sourceId": "bloomberg-markets-daily-china",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-12.md",
       "skipped": true
     }
   ],
@@ -144,11 +149,6 @@
       "reason": "exists-keep",
       "subject": "彭博财经早茶：黄仁勋被迫下台；特朗普淡化美伊协议前景",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-13.md"
-    },
-    {
-      "reason": "exists-keep",
-      "subject": "彭博财经早茶：黄仁勋或被罢免；富豪补税助中国个税收入激增",
-      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-12.md"
     }
   ]
 }
