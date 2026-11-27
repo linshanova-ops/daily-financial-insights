@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-11-26T01:26:42.750Z",
-  "latest": "2026-11-26",
+  "generatedAt": "2026-11-27T01:26:10.842Z",
+  "latest": "2026-11-27",
   "briefings": [
+    {
+      "date": "2026-11-27",
+      "title": {
+        "en": "Daily Financial Briefing",
+        "zh": "每日金融简报"
+      },
+      "spine": {
+        "en": "Jizan Attack, Europe Up",
+        "zh": "吉赞遇袭与欧股反弹"
+      },
+      "marketTone": {
+        "en": "US markets were closed on Thursday. Brent rose after another attack on a Saudi refinery, and European stocks rebounded.",
+        "zh": "周四美国市场休市。沙特另一座炼厂遇袭后布伦特上涨，欧洲股市反弹。"
+      },
+      "coverageWindow": {
+        "en": "November 26–27, 2026",
+        "zh": "2026年11月26日至11月27日"
+      }
+    },
     {
       "date": "2026-11-26",
       "title": {
