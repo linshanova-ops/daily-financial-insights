@@ -1,17 +1,12 @@
 {
-  "at": "2026-11-27T01:03:55.386Z",
+  "at": "2026-11-27T01:30:31.718Z",
   "briefingDate": "2026-11-27",
   "ok": true,
   "saved": [
     {
       "sourceId": "bloomberg-markets-daily-china",
       "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-27.md",
-      "subject": "彭博财经早茶: 科威特指控伊朗袭击其重要设施；欧洲央行新掌门何许人",
-      "from": "\"Bloomberg\" <noreply@news.bloomberg.com>",
-      "chars": 6181,
-      "mailbox": "[Gmail]/All Mail",
-      "chartImage": "/inbox-charts/bloomberg-2026-11-27.png",
-      "chartRel": "web/public/inbox-charts/bloomberg-2026-11-27.png"
+      "skipped": true
     },
     {
       "sourceId": "bloomberg-markets-daily-china",
@@ -75,6 +70,11 @@
     }
   ],
   "skipped": [
+    {
+      "reason": "exists-keep",
+      "subject": "彭博财经早茶: 科威特指控伊朗袭击其重要设施；欧洲央行新掌门何许人",
+      "path": "web/content/inbox/bloomberg-markets-daily-china/2026-11-27.md"
+    },
     {
       "reason": "exists-keep",
       "subject": "彭博财经早茶: 华府拟加中国关税；标普可能下调英伟达信评",
